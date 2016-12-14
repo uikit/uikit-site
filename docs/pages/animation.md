@@ -9,10 +9,10 @@ Add one of the `.uk-animation-*` classes to any element. The animation is shown 
 | Class | Description |
 | --- | --- |
 | `.uk-animation-fade` | The element fades in. |
-| `.uk-animation-scale-up`<br> `.uk-animation-scale-down` | The element scales up or down. |
-| `.uk-animation-slide-top`<br> `.uk-animation-slide-bottom`  `.uk-animation-slide-left`<br> `.uk-animation-slide-right` | The element slides in from the top, bottom, left or right. |
-| `.uk-animation-slide-top-small`<br> `.uk-animation-slide-bottom-small`   `.uk-animation-slide-left-small`<br> `.uk-animation-slide-right-small` | The element slides in from the top, bottom, left or right with a smaller distance. |
-| `.uk-animation-slide-top-medium`<br> `.uk-animation-slide-bottom-medium`  `.uk-animation-slide-left-medium`<br> `.uk-animation-slide-right-medium` | The element slides in from the top, bottom, left or right with a medium distance. |
+| `.uk-animation-scale-up`<br> `.uk-animation-scale-down` | The element fades in and scales up or down. |
+| `.uk-animation-slide-top`<br> `.uk-animation-slide-bottom`  `.uk-animation-slide-left`<br> `.uk-animation-slide-right` | The element fades and slides in from the top, bottom, left or right by its own height or width. |
+| `.uk-animation-slide-top-small`<br> `.uk-animation-slide-bottom-small`   `.uk-animation-slide-left-small`<br> `.uk-animation-slide-right-small` | The element fades and slides in from the top, bottom, left or right with a smaller distance which is specified by a fixed pixel value. |
+| `.uk-animation-slide-top-medium`<br> `.uk-animation-slide-bottom-medium`  `.uk-animation-slide-left-medium`<br> `.uk-animation-slide-right-medium` | The element fades and slides in from the top, bottom, left or right with a medium distance which is specified by a fixed pixel value. |
 | `.uk-animation-kenburns` | The element scales very slowly up without fading in. |
 | `.uk-animation-shake` | The element shakes. |
 
@@ -217,35 +217,10 @@ To play animations at a faster speed, add the `.uk-animation-fast` class to the 
 
 
 ```example
-<div class="uk-child-width-1-3@m" uk-grid>
+<div class="uk-width-1-3@m">
     <div class="uk-animation-toggle">
         <div class="uk-card uk-card-default uk-card-body uk-animation-fast uk-animation-fade">
             <p class="uk-text-center">Fade</p>
-        </div>
-    </div>
-    <div class="uk-animation-toggle">
-        <div class="uk-card uk-card-default uk-card-body uk-animation-fast uk-animation-scale-up">
-            <p class="uk-text-center">Scale Up</p>
-        </div>
-    </div>
-    <div class="uk-animation-toggle">
-        <div class="uk-card uk-card-default uk-card-body uk-animation-fast uk-animation-scale-down">
-            <p class="uk-text-center">Scale Down</p>
-        </div>
-    </div>
-    <div class="uk-animation-toggle">
-        <div class="uk-card uk-card-default uk-card-body uk-animation-fast uk-animation-shake">
-            <p class="uk-text-center">Shake</p>
-        </div>
-    </div>
-    <div class="uk-animation-toggle">
-        <div class="uk-card uk-card-default uk-card-body uk-animation-fast uk-animation-slide-left">
-            <p class="uk-text-center">Left</p>
-        </div>
-    </div>
-    <div class="uk-animation-toggle">
-        <div class="uk-card uk-card-default uk-card-body uk-animation-fast uk-animation-slide-top">
-            <p class="uk-text-center">Top</p>
         </div>
     </div>
 </div>
@@ -285,16 +260,25 @@ By default, scaling animations originate from the center. To modify this behavio
 
 ## Ken Burns
 
-To add a simple Ken Burns effect, add the `.uk-animation-kenburns` class to any image.
+To add a simple Ken Burns effect, add the `.uk-animation-kenburns` class to any image. You can also apply the `.uk-animation-reverse` or one of the `.uk-transform-origin` classes to modify the effect.
 
 ```html
 <img class="uk-animation-kenburns" src="" alt="">
 ```
 
+By default the animation starts on page load. In this example we used the [Scrollspy](scrollspy.md) component, to toggle the effect when the image enters the view.
+
 ```example
-<div class="uk-overflow-hidden">
-    <img src="../docs/images/placeholder_800x400_1.jpg" width="800" height="400" alt="Example image" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+<div class="uk-child-width-1-2@m uk-grid-small" uk-grid>
+    <div>
+        <div class="uk-overflow-hidden">
+            <img src="../docs/images/placeholder_800x400_1.jpg" width="800" height="400" alt="Example image" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+        </div>
+    </div>
+    <div>
+        <div class="uk-overflow-hidden">
+            <img src="../docs/images/placeholder_800x400_1.jpg" width="800" height="400" alt="Example image" class="uk-animation-reverse uk-transform-origin-top-right" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+        </div>
+    </div>
 </div>
 ```
-
-By default the animation starts on page load. Within this example we used the [Scrollspy](scrollspy.md) component, to toggle the effect when the image enters the view.

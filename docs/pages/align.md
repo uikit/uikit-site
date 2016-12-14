@@ -26,7 +26,7 @@ To align images or other elements with spacing between the text and the element,
 
 ***
 
-## Responsive behavior
+## Responsive
 
 UIkit provides a number of responsive alignment classes. Basically, they work just like the usual alignment classes, except that they have suffixes that represent the breakpoint from which they come to effect.
 
