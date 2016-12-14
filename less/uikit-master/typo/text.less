@@ -1,0 +1,61 @@
+//
+// Component: Base
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+//
+// New
+//
+
+@text-lead-font-family:                         @global-primary-font-family;
+@text-lead-font-weight:                         @global-primary-font-weight;
+@text-lead-text-transform:                      @global-primary-text-transform;
+@text-lead-letter-spacing:                      @global-primary-letter-spacing;
+
+@text-meta-font-family:                         @global-secondary-font-family;
+@text-meta-font-weight:                         @global-secondary-font-weight;
+@text-meta-text-transform:                      @global-secondary-text-transform;
+@text-meta-letter-spacing:                      @global-secondary-letter-spacing;
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-text-lead() {
+    font-family: @text-lead-font-family;
+    font-weight: @text-lead-font-weight;
+    text-transform: @text-lead-text-transform;
+    letter-spacing: @text-lead-letter-spacing;
+}
+
+.hook-text-meta() {
+    font-family: @text-meta-font-family;
+    font-weight: @text-meta-font-weight;
+    text-transform: @text-meta-text-transform;
+    letter-spacing: @text-meta-letter-spacing;
+}
+
+
+// Size modifiers
+// ========================================================================
+
+.hook-text-small() {}
+
+.hook-text-large() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-text-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-text-lead() {}
+.hook-inverse-text-meta() {}

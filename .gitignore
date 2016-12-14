@@ -1,0 +1,7 @@
+/node_modules
+/assets/*
+!/assets/google
+/css
+main.min.js
+.DS_Store
+.idea

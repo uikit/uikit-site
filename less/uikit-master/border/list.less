@@ -1,0 +1,51 @@
+//
+// Component: List
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+//
+// New
+//
+
+@list-striped-border-width:                     0;
+@list-striped-border:                           transparent;
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-list-divider() {}
+
+.hook-list-striped() { border-bottom: @list-striped-border-width solid @list-striped-border; }
+
+.hook-list-bullet() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-list-misc() {
+
+    .uk-list-striped > li:first-child { border-top: @list-striped-border-width solid @list-striped-border; }
+
+}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-list-striped-border:                  @inverse-global-border;
+
+.hook-inverse-list-divider() {}
+.hook-inverse-list-striped() {
+
+    &:first-child { border-top-color: @inverse-list-striped-border; }
+
+    border-bottom-color: @inverse-list-striped-border;
+
+}
+.hook-inverse-list-bullet() {}

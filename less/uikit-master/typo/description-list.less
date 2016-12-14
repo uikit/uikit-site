@@ -1,0 +1,44 @@
+//
+// Component: Description list
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+//
+// New
+//
+
+@description-list-term-font-size:                      @global-font-size;
+@description-list-term-font-family:                    @global-secondary-font-family;
+@description-list-term-font-weight:                    @global-secondary-font-weight;
+@description-list-term-text-transform:                 @global-secondary-text-transform;
+@description-list-term-letter-spacing:                 @global-secondary-letter-spacing;
+
+
+// Component
+// ========================================================================
+
+.hook-description-list-term() {
+    font-size: @description-list-term-font-size;
+    font-family: @description-list-term-font-family;
+    font-weight: @description-list-term-font-weight;
+    text-transform: @description-list-term-text-transform;
+    letter-spacing: @description-list-term-letter-spacing;
+}
+
+.hook-description-list-description() {}
+
+
+// Style modifier
+// ========================================================================
+
+.hook-description-list-divider-term() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-description-list-misc() {}

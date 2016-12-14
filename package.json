@@ -1,0 +1,21 @@
+{
+    "name"            : "site.uikit",
+    "version"         : "0.0.1",
+    "license"         : "Commercial",
+
+    "scripts": {
+        "setup": "npm install && bower install && npm run compile-uikit && npm run compile",
+        "compile-less": "mkdir css & lessc less/theme.less > css/theme.css --relative-urls --rootpath=../less/ -x",
+        "compile-js": "webpack -d",
+        "compile-uikit": "cd assets/uikit && npm install && npm run images && npm run compile-js",
+        "compile": "npm run compile-js && npm run compile-less"
+    },
+
+    "devDependencies": {
+        "babel-core": "^6.14.0",
+        "babel-loader": "^6.2.5",
+        "babel-preset-es2015": "^6.14.0",
+        "vue-loader": "^9.7.0",
+        "webpack": "2.1.0-beta.22"
+    }
+}

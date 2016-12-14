@@ -1,0 +1,74 @@
+//
+// Component: Article
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+//
+// New
+//
+
+@article-title-color:                           @global-emphasis-color;
+@article-title-font-family:                     @global-primary-font-family;
+@article-title-font-weight:                     @global-primary-font-weight;
+@article-title-text-transform:                  @global-primary-text-transform;
+@article-title-letter-spacing:                  @global-primary-letter-spacing;
+
+@article-meta-font-family:                      @global-secondary-font-family;
+@article-meta-font-weight:                      @global-secondary-font-weight;
+@article-meta-text-transform:                   @global-secondary-text-transform;
+@article-meta-letter-spacing:                   @global-secondary-letter-spacing;
+
+
+// Component
+// ========================================================================
+
+.hook-article() {}
+
+
+// Adjacent sibling
+// ========================================================================
+
+.hook-article-adjacent() {}
+
+
+// Title
+// ========================================================================
+
+.hook-article-title() {
+    color: @article-title-color;
+    font-family: @article-title-font-family;
+    font-weight: @article-title-font-weight;
+    text-transform: @article-title-text-transform;
+    letter-spacing: @article-title-letter-spacing;
+}
+
+
+// Meta
+// ========================================================================
+
+.hook-article-meta() {
+    font-family: @article-meta-font-family;
+    font-weight: @article-meta-font-weight;
+    text-transform: @article-meta-text-transform;
+    letter-spacing: @article-meta-letter-spacing;
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-article-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-article-title-color:                  @inverse-global-emphasis-color;
+
+.hook-inverse-article-title() { color: @inverse-article-title-color; }
+
+.hook-inverse-article-meta() {}
