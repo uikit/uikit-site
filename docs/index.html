@@ -4,6 +4,8 @@
     <head>
         <title>UIkit 3</title>
         <meta charset="utf-8">
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/theme.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -22,17 +24,6 @@
         <script src="../assets/highlightjs/highlight.pack.min.js"></script>
         <script src="app/main.min.js"></script>
 
-        <style>
-
-            aside {
-                width: 200px;
-            }
-
-            .tm-scrollable-area {
-                height: 100%;
-                overflow: scroll;
-            }
-        </style>
     </head>
 
     <body>
@@ -68,14 +59,15 @@
 
                 </div>
 
-        </nav>
+            </nav>
+
             <div id="app" class="uk-flex-1 uk-position-relative">
 
                 <div class="uk-grid uk-position-cover">
 
-                    <div class="tm-scrollable-area">
-                        <div class="uk-panel uk-padding">
-                            <aside class="uk-visible@s">
+                    <div class="uk-height-1-1 uk-overflow-auto uk-visible@m">
+                        <div class="uk-panel uk-padding uk-width-medium">
+                            <aside>
                                 <ul class="uk-nav uk-nav-default">
                                     <li class="uk-nav-header">Getting Started</li>
                                     <router-link tag="li" to="introduction"><a>Introduction</a></router-link>
@@ -154,15 +146,15 @@
                         </div>
                     </div>
 
-                    <div class="uk-width-expand tm-scrollable-area">
+                    <div class="uk-width-expand uk-height-1-1 uk-overflow-auto">
 
-                        <div class="uk-padding uk-width-3-4@m uk-margin-auto uk-display-block">
+                        <div class="uk-padding uk-container">
                             <div class="uk-grid">
                                 <div class="uk-flex-1">
                                     <router-view></router-view>
                                 </div>
-                                <div>
-                                    <aside v-if="!loading">
+                                <div class="uk-visible@m">
+                                    <aside class="uk-width-medium" v-if="!loading">
 
                                         <ul class="uk-nav-default uk-nav-parent-icon uk-nav-accordion uk-nav" uk-sticky="offset: 20">
                                             <li v-for="(id, subject) in ids">
@@ -186,5 +178,6 @@
             </div>
         </div>
 
+        </div>
     </body>
 </html>

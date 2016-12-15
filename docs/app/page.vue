@@ -1,6 +1,5 @@
 <template>
     <div>
-        <div v-if="loading">Loading...</div>
         <div class="uk-alert uk-alert-danger" v-if="error">{{ error }}</div>
         <div ref="page"></div>
     </div>
