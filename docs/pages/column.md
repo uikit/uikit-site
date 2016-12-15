@@ -1,6 +1,6 @@
 # Column
 
-<p class="uk-text-lead">Display your content in multiple columns without having to split it in several containers.</p>
+<p class="uk-text-lead">Display your content in multiple text columns without having to split it in several containers.</p>
 
 ## Usage
 
@@ -25,7 +25,6 @@ Add one of the `.uk-column-*` classes to an element to display its inline conten
     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-
 </div>
 ```
 
@@ -53,7 +52,6 @@ UIkit provides a number of responsive column classes. Basically they work just l
     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-
 </div>
 ```
 
@@ -64,7 +62,7 @@ UIkit provides a number of responsive column classes. Basically they work just l
 To display a vertical line between columns, add the `.uk-column-divider` class.
 
 ```html
-<div class="uk-column-1-2"></div>
+<div class="uk-column-1-2 uk-column-divider"></div>
 ```
 
 ```example
@@ -74,7 +72,6 @@ To display a vertical line between columns, add the `.uk-column-divider` class.
     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-
 </div>
 ```
 
