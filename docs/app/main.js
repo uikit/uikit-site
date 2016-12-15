@@ -20,7 +20,9 @@ $(function () {
         data() {
             return {
                 ids: {},
-                loading: false
+                loading: false,
+                component: false,
+                page: false
             }
         },
         mounted() {

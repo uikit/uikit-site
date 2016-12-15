@@ -161,10 +161,10 @@
                                                 <a :href="'#'+id">{{ subject }}</a>
                                             </li>
                                             <li class="uk-nav-divider"></li>
-                                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: push"></span> Open Test</a></li>
-                                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: github"></span> Report Issue</a></li>
-                                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: question"></span> Get Help</a></li>
-                                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> Edit this Page</a></li>
+                                            <li v-if="component"><a :href="'../assets/uikit/tests/'+component+'.html'" target="_blank"><span class="uk-margin-small-right" uk-icon="icon: push"></span> Open Test</a></li>
+                                            <li><a href="https://github.com/uikit/uikit/issues" target="_blank"><span class="uk-margin-small-right" uk-icon="icon: github"></span> Report Issue</a></li>
+                                            <li><a href="https://gitter.im/uikit/uikit" target="_blank"><span class="uk-margin-small-right" uk-icon="icon: question"></span> Get Help</a></li>
+                                            <li><a :href="'https://github.com/uikit/uikit/tree/develop/docs/'+page+'.md'" target="_blank"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> Edit this Page</a></li>
                                         </ul>
 
                                     </aside>

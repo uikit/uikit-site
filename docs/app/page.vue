@@ -17,9 +17,7 @@ export default {
             loading: false,
             page: null,
             error: null,
-            cache: {},
-            ids: {},
-            test: 123
+            cache: {}
         }
     },
 
@@ -45,6 +43,9 @@ export default {
             this.error = null;
             this.ids = {};
 
+            this.$parent.component = false;
+            this.$parent.page = page;
+
             var defer = $.Deferred();
 
             defer.promise().done(content => {
@@ -62,10 +63,13 @@ export default {
 
                     this.createIds();
 
+                    this.$parent.component = page;
+
                     if (location.hash && $(location.hash.length)) {
                         scrollTo(0, $(location.hash).offset().top);
                     }
                 });
+
             }).fail(() => {
                 this.loading = false;
                 this.error = 'Failed loading page';
