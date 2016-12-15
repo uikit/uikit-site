@@ -2,44 +2,156 @@
 
 <p class="uk-text-lead">Create layout boxes with different styles.</p>
 
-UIkit uses cards to outline certain sections of your content, which can be styled differently. Typically, cards are arranged in grid columns from the [Grid component](grid.md).
+Use cards to outline parts of your content with a container. UIkit cards provide header and footer sections as well as different style modifiers and additional options. Typically, cards are arranged in grid columns from the [Grid component](grid.md).
 
 ***
 
 ## Usage
 
-The Card component consists of the card itself, the card body and the card title.
+The Card component consists of the card itself, the card body and an optional card title.
 
 | Class          | Description                                                                |
 |------------------|----------------------------------------------------------------------------|
 | `.uk-card`       | Add this class to a `<div>` element to define the Card component.          |
-| `.uk-card-body`  | Add this class to a `<div>` element inside the card to create padding between the card and its content. |
-| `.uk-card-title` | Add this class to a heading to define the card title.                     |
+| `.uk-card-body`  | Add this class to the card to create padding between the card and its content. |
+| `.uk-card-title` | Add this class to a heading to define a card title.                     |
 
 ```html
-<div class="uk-card">
-    <div class="uk-card-body">
-        <h3 class="uk-card-title"></h3>
-    </div>
+<div class="uk-card uk-card-body">
+    <h3 class="uk-card-title"></h3>
 </div>
+```
+
+By default, a card is blank. That is why it is important to add a modifier class for styling. In our example we are using the `.uk-card-default` class.
+
+```example
+<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+    <h3 class="uk-card-title">Default</h3>
+    <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+```
+
+***
+
+## Style Modifiers
+
+UIkit includes a number of modifiers that can be used to add a specific style to cards.
+
+| Class                | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| `.uk-card-default`   | Add this class to create a visually styled box.                             |
+| `.uk-card-primary`   | Add this class to modify the card and emphasize it with a primary color.    |
+| `.uk-card-secondary` | Add this class to modify the card and give it a secondary background color. |
+
+```html
+<div class="uk-card uk-card-default"></div>
+
+<div class="uk-card uk-card-primary"></div>
+
+<div class="uk-card uk-card-secondary"></div>
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-width-1-2@m">
-    <div class="uk-card-body">
-        <h3 class="uk-card-title">Default</h3>
-        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="uk-child-width-1-3@m uk-grid-small" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-panel-title">Default</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-primary uk-card-body">
+            <h3 class="uk-panel-title">Primary</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-secondary uk-card-body">
+            <h3 class="uk-panel-title">Secondary</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
     </div>
 </div>
 ```
 
-**Note:** By default, a card is blank. That is why it is important to add a modifier class for styling. In our example we are using the `.uk-card-default` class.
+***
+
+### Hover
+
+To create a hover effect on the card, add the `.uk-card-hover` class. This comes in handy when working with anchors and can be combined with the other card modifiers.
+
+```html
+<div class="uk-card uk-card-hover"></div>
+```
+
+```example
+<div class="uk-child-width-1-2@s" uk-grid uk-height-match="target: > div > .uk-card">
+    <div>
+        <div class="uk-card uk-card-hover uk-card-body">
+            <h3 class="uk-panel-title">Hover</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+            <h3 class="uk-panel-title">Default</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+            <h3 class="uk-panel-title">Primary</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
+            <h3 class="uk-panel-title">Secondary</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+    </div>
+</div>
+```
+
+***
+
+## Size Modifiers
+
+You can apply different size modifiers to cards that will decrease or increase their padding.
+
+| Class            | Description                                |
+|------------------|--------------------------------------------|
+| `.uk-card-small` | Add this class to apply a smaller padding. |
+| `.uk-card-large` | Add this class to apply a larger padding.  |
+
+```html
+<div class="uk-card uk-card-small uk-card-default"></div>
+
+<div class="uk-card uk-card-large uk-card-default"></div>
+```
+
+```example
+<div class="uk-child-width-1-2@m" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-small uk-card-body">
+            <h3 class="uk-card-title">Small</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-large uk-card-body">
+            <h3 class="uk-card-title">Large</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+    </div>
+</div>
+```
 
 ***
 
 ## Header & Footer
 
-You can also divide a card into header and footer — around the default body. Just add the `.uk-card-header` or `.uk-card-footer` class to a `<div>` element inside the card.
+You can also divide a card into header and footer—around the default body. Just add the `.uk-card-header` or `.uk-card-footer` class to a `<div>` element inside the card.
 
 ```html
 <div class="uk-card">
@@ -73,173 +185,20 @@ You can also divide a card into header and footer — around the default body. J
 
 ***
 
-## Style Modifiers
-
-UIkit includes a number of modifiers that can be used to add a specific style to cards.
-
-### Default
-
-Add the `.uk-card-default` class to create a visually styled box.
-
-```html
-<div class="uk-card uk-card-default"></div>
-```
-
-```example
-<div class="uk-card uk-card-default uk-width-1-2@m">
-    <div class="uk-card-body">
-        <h3 class="uk-panel-title">Title</h3>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.uk-card-default</code>
-    </div>
-</div>
-```
-
-***
-
-### Primary
-
-Add the `.uk-card-primary` class to modify the card and emphasize it with a different color.
-
-```html
-<div class="uk-card uk-card-primary"></div>
-```
-
-```example
-<div class="uk-card uk-card-primary uk-width-1-2@m uk-light">
-    <div class="uk-card-body">
-        <h3 class="uk-panel-title">Title</h3>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.uk-card-primary</code>
-    </div>
-</div>
-```
-
-***
-
-### Secondary
-
-Add the `.uk-card-secondary` class to modify the card and give it an alternative background.
-
-```html
-<div class="uk-card uk-card-secondary"></div>
-```
-
-```example
-<div class="uk-card uk-card-secondary uk-width-1-2@m uk-light">
-    <div class="uk-card-body">
-        <h3 class="uk-panel-title">Title</h3>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.uk-card-secondary</code>
-    </div>
-</div>
-```
-
-***
-
-### Hover
-
-To create a hover effect on the card, add the `.uk-card-hover` class. This comes in handy when working with anchors and can be combined with the other card modifiers.
-
-```html
-<div class="uk-card uk-card-hover"></div>
-```
-
-```example
-<div class="uk-child-width-1-2@s" uk-grid uk-height-match="target: > div > .uk-card">
-    <div>
-        <div class="uk-card uk-card-hover">
-            <div class="uk-card-body">
-                <h3 class="uk-panel-title">Title</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.uk-card-hover</code>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-hover">
-            <div class="uk-card-body">
-                <h3 class="uk-panel-title">Title</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.uk-card-hover</code><br><code>.uk-card-default</code>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-primary uk-card-hover uk-light">
-            <div class="uk-card-body">
-                <h3 class="uk-panel-title">Title</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.uk-card-hover</code><br><code>.uk-card-primary</code>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-secondary uk-card-hover uk-light">
-            <div class="uk-card-body">
-                <h3 class="uk-panel-title">Title</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>.uk-card-hover</code><br><code>.uk-card-secondary</code>
-            </div>
-        </div>
-    </div>
-</div>
-```
-
-***
-
-## Size Modifiers
-
-You can apply different size modifiers to cards that will decrease or increase their padding.
-
-### Small
-
-To apply a smaller padding, add the `.uk-card-small` class.
-
-```html
-<div class="uk-card uk-card-small uk-card-default"></div>
-```
-
-```example
-<div class="uk-card uk-card-default uk-card-small uk-width-1-2@m">
-    <div class="uk-card-header">
-        <h3 class="uk-width-expand uk-card-title uk-margin-remove-bottom">Title</h3>
-    </div>
-    <div class="uk-card-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="uk-card-footer">
-        <a href="#" class="uk-button uk-button-text">Read more</a>
-    </div>
-</div>
-```
-
-***
-
-### Large
-
-To apply a larger padding, add the `.uk-card-large` class.
-
-```html
-<div class="uk-card uk-card-large uk-card-default"></div>
-```
-
-```example
-<div class="uk-card uk-card-default uk-card-large uk-width-1-2@m">
-    <div class="uk-card-header">
-        <h3 class="uk-width-expand uk-card-title uk-margin-remove-bottom">Title</h3>
-    </div>
-    <div class="uk-card-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="uk-card-footer">
-        <a href="#" class="uk-button uk-button-text">Read more</a>
-    </div>
-</div>
-```
-
-***
-
 ## Media
 
-To display an image inside a card without any spacing, add the `.uk-card-media` class to a `<div>` around the `<img>` element.
+To display an image inside a card without any spacing, add one of the following classes to a `<div>` around the `<img>` element. Mind that you need to modify the source order accordingly.
+
+| Class                  | Description                                                           |
+|------------------------|-----------------------------------------------------------------------|
+| `.uk-card-media-top`   | This class indicates that the media element is aligned to the top.    |
+| `.uk-card-media-top`   | This class indicates that the media element is aligned to the bottom. |
+| `.uk-card-media-left`  | This class indicates that the media element is aligned to the left.   |
+| `.uk-card-media-right` | This class indicates that the media element is aligned to the right.  |
 
 ```html
 <div class="uk-card uk-card-default">
-    <div class="uk-card-media">
+    <div class="uk-card-media-top">
         <img src="" alt="">
     </div>
     <div class="uk-card-body">
@@ -248,29 +207,11 @@ To display an image inside a card without any spacing, add the `.uk-card-media` 
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-width-1-2@s">
-    <div class="uk-card-media">
-        <img src="../docs/images/light.jpg" alt="">
-    </div>
-    <div class="uk-card-body">
-        <h3 class="uk-card-title">Media</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-    </div>
-</div>
-```
-
-***
-
-### Alignment
-
-Add the `.uk-card-media-top` class to align the image to the top of the card or the `.uk-card-media-bottom` class to align it to the bottom. Mind that you need to modify the source order accordingly.
-
-```example
 <div class="uk-child-width-1-2@m" uk-grid>
 
     <div>
         <div class="uk-card uk-card-default">
-            <div class="uk-card-media-top">
+            <div class="uk-card-media uk-card-media-top">
                 <img src="../docs/images/light.jpg" alt="">
             </div>
             <div class="uk-card-body">
@@ -295,14 +236,18 @@ Add the `.uk-card-media-top` class to align the image to the top of the card or 
 </div>
 ```
 
-Add the `.uk-card-media-left` class when aligning the image to the left or the `.uk-card-media-right` class when aligning it to the right. Also, add the `.uk-cover-container` class. Use the [Grid](grid.md) and [Width](width.md) components to achieve the actual alignment.
+***
+
+### Horizontal alignment
+
+When using the `.uk-card-media-left` or the `.uk-card-media-right` class, you also need to add the `.uk-cover-container` class from the [Cover component](cover.md). Add the `uk-cover` attribute to the image element and use the [Grid](grid.md) and [Width](width.md) components to achieve the actual alignment.
 
 Create a `<canvas>` element with your image's width and height, so that it will retain its dimensions, if the grid stacks on smaller viewports.
 
 ```html
 <div class="uk-card uk-card-default uk-child-width-1-2" uk-grid>
     <div class="uk-card-media-left uk-cover-container">
-        <img src="" alt="">
+        <img src="" alt="" uk-cover>
         <canvas width="" height=""></canvas>
     </div>
     <div>
@@ -342,5 +287,25 @@ Create a `<canvas>` element with your image's width and height, so that it will 
         </div>
     </div>
 
+</div>
+```
+
+***
+
+## Badge
+
+To position a badge inside a card, add the `.uk-card-badge` class to a container element.
+
+```html
+<div class="uk-card uk-card-body">
+    <div class="uk-card-badge"></div>
+</div>
+```
+
+```example
+<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+    <div class="uk-card-badge">Badge</div>
+    <h3 class="uk-card-title">Title</h3>
+    <p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 ```
