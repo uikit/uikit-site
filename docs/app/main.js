@@ -22,6 +22,8 @@ $(function () {
                 ids: {},
                 loading: false
             }
-        },
+        }
     }).$mount('#app');
+
+    $('#app').removeClass('uk-invisible');
 });
