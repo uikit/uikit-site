@@ -22,7 +22,7 @@ To apply this component, add the `.uk-button` class and a modifier such as `.uk-
 </p>
 ```
 
-**Note:** If you are displaying a number of buttons in a row, you can add a top margin to them, when they stack on smaller viewports. Just add the `uk-margin` attribute from the [Margin component](margin.md) to their parent element.
+**Note** If you are displaying a number of buttons in a row, you can add a top margin to them, when they stack on smaller viewports. Just add the `uk-margin` attribute from the [Margin component](margin.md) to their parent element.
 
 ***
 
@@ -36,9 +36,9 @@ There are several style modifiers available. Just add one of the following class
 | <button class="uk-button uk-button-default" type="button">Default</button> | `.uk-button-default` | Default button style. |
 | <button class="uk-button uk-button-primary" type="button">Primary</button> | `.uk-button-primary` | Indicates the primary action. |
 | <button class="uk-button uk-button-secondary" type="button">Secondary</button> | `.uk-button-secondary` | Indicates an important action. |
-| <button class="uk-button uk-button-danger" type="button">Danger</button> | `.uk-button-danger` | Indicates a dangerous action. |
-| <button class="uk-button uk-button-text" type="button">Text</button> | `.uk-button-text` | Adds an alternative text-based style. |
-| <button class="uk-button uk-button-link" type="button">Link</button>| `.uk-button-link` | Makes a `<button>` element look like an `<a>` element. |
+| <button class="uk-button uk-button-danger" type="button">Danger</button> | `.uk-button-danger` | Indicates a dangerous or negative action. |
+| <button class="uk-button uk-button-text" type="button">Text</button> | `.uk-button-text` | Applies an alternative, typographic style. |
+| <button class="uk-button uk-button-link" type="button">Link</button>| `.uk-button-link` | Makes a `<button>` look like an `<a>` element. |
 
 
 ***
@@ -70,15 +70,15 @@ Add the `.uk-button-small` or `.uk-button-large` class to a button to make it sm
 
 ***
 
-### Full width button
+## Width modifier
 
 Add the `.uk-width-1-1` class from the [Width component](width.md) and the button will take up full width.
 
 ### Example
 
 ```example
-<button class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom">Button</button>
-<button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Button</button>
+<button class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" type="button">Button</button>
+<button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom" type="button">Button</button>
 <button class="uk-button uk-button-secondary uk-width-1-1" type="button">Button</button>
 ```
 
