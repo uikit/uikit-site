@@ -122,7 +122,7 @@ export default {
 
             renderer.list = text => `<ul class="uk-list uk-list-bullet">${text}</ul>`;
             renderer.image = (href, title, text) => href.match(/modal$/) ? modal(href, text) : base.image(href, title, text);
-            renderer.link = (href, title, text) => href.match(/\.md/) ? base.link(href.replace(/\.md$/, ''), title, text) : base.link(href, title, text);
+            renderer.link = (href, title, text) => href.match(/\.md/) ? base.link(href.replace(/.md(.*)/, '$1'), title, text) : base.link(href, title, text);
             renderer.code = (code, lang, escaped) => lang == 'example' ? example(code) : '<div class="uk-margin-medium">'+base.code(code, lang, escaped)+'</div>';
             renderer.hr = () => `<hr class="uk-margin-large">`;
             renderer.table = (header, body) => `<div class="uk-overflow-auto"><table class="uk-table uk-table-striped"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
