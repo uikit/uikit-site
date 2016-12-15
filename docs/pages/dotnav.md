@@ -26,33 +26,6 @@ To create a navigation with dots, just add the `.uk-dotnav` class to an `<ul>` e
 
 ***
 
-## Dotnav and images
-
-For better visibility on images, for example when using the dotnav as a slideshow navigation, just put it inside a container with the `.uk-light` class.
-
-```html
-<div class="uk-inline">
-    <img src="" alt="">
-    <ul class="uk-dotnav">...</ul>
-</div>
-```
-
-```example
-<div class="uk-inline uk-light">
-    <img src="../docs/images/placeholder_800x400_1.jpg" alt="">
-    <ul class="uk-dotnav uk-position-medium uk-position-bottom-center">
-        <li class="uk-active"><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#">Item 3</a></li>
-        <li><a href="#">Item 4</a></li>
-        <li><a href="#">Item 5</a></li>
-        <li><a href="#">Item 6</a></li>
-    </ul>
-</div>
-```
-
-***
-
 ## Vertical dotnav
 
 The dotnav can also be displayed vertically. Just add the `.uk-dotnav-vertical` modifier.
@@ -70,6 +43,51 @@ The dotnav can also be displayed vertically. Just add the `.uk-dotnav-vertical` 
     <li><a href="#">Item 5</a></li>
     <li><a href="#">Item 6</a></li>
 </ul>
+```
+
+
+***
+
+## Dotnav and images
+
+For better visibility on images, for example when using the dotnav as a slideshow navigation, just put it inside a container with the `.uk-light` class.
+
+```html
+<div class="uk-inline">
+    <img src="" alt="">
+    <ul class="uk-dotnav">...</ul>
+</div>
+```
+
+```example
+<div class="uk-child-width-1-2@m uk-grid-small" uk-grid>
+    <div>
+        <div class="uk-position-relative uk-light">
+            <img src="../docs/images/dark.jpg" alt="">
+            <ul class="uk-dotnav uk-position-medium uk-position-bottom-center">
+                <li class="uk-active"><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+                <li><a href="#">Item 6</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="uk-position-relative">
+            <img src="../docs/images/light.jpg" alt="">
+            <ul class="uk-dotnav uk-dotnav-vertical uk-position-medium uk-position-center-right">
+                <li class="uk-active"><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+                <li><a href="#">Item 6</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 ```
 
 ***

@@ -19,7 +19,7 @@ Add one of the `.uk-column-*` classes to an element to display its inline conten
 ```
 
 ```example
-<div class="uk-column-1-2 uk-text-justify">
+<div class="uk-column-1-2">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
 
     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -47,7 +47,7 @@ UIkit provides a number of responsive column classes. Basically they work just l
 ```
 
 ```example
-<div class="uk-column-1-2@s uk-column-1-3@m uk-column-1-4@l uk-text-justify">
+<div class="uk-column-1-2@s uk-column-1-3@m uk-column-1-4@l">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
 
     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -64,11 +64,11 @@ UIkit provides a number of responsive column classes. Basically they work just l
 To display a vertical line between columns, add the `.uk-column-divider` class.
 
 ```html
-<div class="uk-column-1-2 uk-text-justify"></div>
+<div class="uk-column-1-2"></div>
 ```
 
 ```example
-<div class="uk-column-1-2 uk-column-divider uk-text-justify">
+<div class="uk-column-1-2 uk-column-divider">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
 
     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -85,7 +85,7 @@ To display a vertical line between columns, add the `.uk-column-divider` class.
 To have an inline element span the whole width of the columns, add the `.uk-column-span` class to the inner element.
 
 ```html
-<div class="uk-column-1-2 uk-text-justify">
+<div class="uk-column-1-2">
     ...
     <p class="uk-column-span"></p>
     ...
@@ -94,7 +94,7 @@ To have an inline element span the whole width of the columns, add the `.uk-colu
 
 
 ```example
-<div class="uk-column-1-2 uk-column-divider uk-text-justify">
+<div class="uk-column-1-2 uk-column-divider">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
 
     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

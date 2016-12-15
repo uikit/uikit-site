@@ -33,7 +33,7 @@ The Comment component consists of a comment header, including an avatar, a title
 <article class="uk-comment">
     <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
         <div class="uk-width-auto">
-            <img class="uk-comment-avatar" src="../docs/images/placeholder_200x200.svg" width="80" height="80" alt="">
+            <img class="uk-comment-avatar" src="../docs/images/avatar.jpg" width="80" height="80" alt="">
         </div>
         <div class="uk-width-expand">
             <h4 class="uk-comment-title uk-margin-remove">Author</h4>
@@ -75,7 +75,7 @@ Add the `.uk-comment-list` class to a `<ul>` element to create a list of comment
         <article class="uk-comment">
             <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
                 <div class="uk-width-auto">
-                    <img class="uk-comment-avatar" src="../docs/images/placeholder_200x200.svg" width="80" height="80" alt="">
+                    <img class="uk-comment-avatar" src="../docs/images/avatar.jpg" width="80" height="80" alt="">
                 </div>
                 <div class="uk-width-expand">
                     <h4 class="uk-comment-title uk-margin-remove">Author</h4>
@@ -95,7 +95,7 @@ Add the `.uk-comment-list` class to a `<ul>` element to create a list of comment
                 <article class="uk-comment uk-comment-primary">
                     <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
-                            <img class="uk-comment-avatar" src="../docs/images/placeholder_200x200.svg" width="80" height="80" alt="">
+                            <img class="uk-comment-avatar" src="../docs/images/avatar.jpg" width="80" height="80" alt="">
                         </div>
                         <div class="uk-width-expand">
                             <h4 class="uk-comment-title uk-margin-remove">Author</h4>
@@ -126,7 +126,7 @@ To style a comment differently, for example to highlight it as the admin's comme
 <article class="uk-comment uk-comment-primary">
     <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
         <div class="uk-width-auto">
-            <img class="uk-comment-avatar" src="../docs/images/placeholder_200x200.svg" width="80" height="80" alt="">
+            <img class="uk-comment-avatar" src="../docs/images/avatar.jpg" width="80" height="80" alt="">
         </div>
         <div class="uk-width-expand">
             <h4 class="uk-comment-title uk-margin-remove">Author</h4>

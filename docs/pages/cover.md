@@ -18,7 +18,7 @@ To have an image cover its parent element, add the `.uk-cover-container` class t
 
 ```example
 <div class="uk-cover-container" style="height: 300px">
-    <img uk-cover src="../docs/images/placeholder_800x400_2.jpg" alt="">
+    <img uk-cover src="../docs/images/dark.jpg" alt="">
 </div>
 ```
 
@@ -38,7 +38,7 @@ To position content absolutely on top of the covering element, add the `.uk-posi
 
 ```example
 <div class="uk-cover-container uk-light" style="height: 300px">
-    <img uk-cover src="../docs/images/placeholder_800x400_2.jpg" alt="">
+    <img uk-cover src="../docs/images/dark.jpg" alt="">
     <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
         <h1>Heading</h1>
     </div>
@@ -109,7 +109,7 @@ To add responsive behavior to your cover image, you need to create an invisible 
 ```example
 <div class="uk-cover-container uk-light" style="height: 300px">
     <canvas width="600" height="400"></canvas>
-    <img uk-cover src="../docs/images/placeholder_800x400_2.jpg" alt="">
+    <img uk-cover src="../docs/images/dark.jpg" alt="">
     <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
         <h1>Heading</h1>
     </div>

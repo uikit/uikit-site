@@ -272,12 +272,12 @@ By default the animation starts on page load. In this example we used the [Scrol
 <div class="uk-child-width-1-2@m uk-grid-small" uk-grid>
     <div>
         <div class="uk-overflow-hidden">
-            <img src="../docs/images/dark.jpg" width="800" height="400" alt="Example image" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+            <img src="../docs/images/photo.jpg" width="800" height="400" alt="Example image" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
         </div>
     </div>
     <div>
         <div class="uk-overflow-hidden">
-            <img src="../docs/images/dark.jpg" width="800" height="400" alt="Example image" class="uk-animation-reverse uk-transform-origin-top-right" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+            <img src="../docs/images/photo.jpg" width="800" height="400" alt="Example image" class="uk-animation-reverse uk-transform-origin-top-right" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
         </div>
     </div>
 </div>

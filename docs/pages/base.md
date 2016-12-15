@@ -46,7 +46,7 @@ The following list gives you a short overview of the most commonly used text-lev
 | `<dfn>`    | Create a definition term using the <dfn title="Defines a definition term">dfn element with a title</dfn>. |
 | `<em>`     | Emphasize text using the <em>em element</em>.                                                             |
 | `<i>`      | Set off part of a text by using the <i>i element</i>.                                                      |
-| `<img>`    | Define an image with the <img width="20" height="15" src="../docs/images/placeholder_200x150_2.svg"> element.             |
+| `<img>`    | Define an image with the <img width="20" src="../docs/images/dark.jpg"> element.             |
 | `<ins>`    | Mark document changes as inserted text using the <ins>ins element</ins>.                                  |
 | `<kbd>`    | Use a <kbd>keybord input element</kbd> to display input in the browser's default monospace font.        |
 | `<mark>`   | Highlight text with no semantic meaning using the <mark>mark element</mark>.                              |
@@ -176,5 +176,5 @@ Create a description list using the `<dl>` element. Use `<dt>` to define the ter
 Image, video, canvas and audio elements in UIkit are responsive by default. If the layout is narrowed, they adjust their size and keep their proportions. Resize the browser window to see the responsive behavior of the image.
 
 ```example
-<img src="images/placeholder_800x400_1.jpg" alt="Placeholder">
+<img src="images/photo.jpg" alt="Image">
 ```

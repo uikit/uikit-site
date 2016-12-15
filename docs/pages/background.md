@@ -22,16 +22,24 @@ To apply a background color to an element, add one of the following classes. The
 ```example
 <div class="uk-child-width-1-2@s uk-text-center" uk-grid>
     <div>
-        <div class="uk-background uk-padding">.uk-background</div>
+        <div class="uk-background uk-padding">
+            <p class="uk-h4 uk-margin-remove">Default</p>
+        </div>
     </div>
     <div>
-        <div class="uk-background-muted uk-padding">.uk-background-muted</div>
+        <div class="uk-background-muted uk-padding">
+            <p class="uk-h4 uk-margin-remove">Muted</p>
+        </div>
     </div>
     <div class="uk-light">
-        <div class="uk-background-primary uk-padding">.uk-background-primary</div>
+        <div class="uk-background-primary uk-padding">
+            <p class="uk-h4 uk-margin-remove">Primary</p>
+        </div>
     </div>
     <div class="uk-light">
-        <div class="uk-background-secondary uk-padding">.uk-background-secondary</div>
+        <div class="uk-background-secondary uk-padding">
+            <p class="uk-h4 uk-margin-remove">Secondary</p>
+        </div>
     </div>
 </div>
 ```

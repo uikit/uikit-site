@@ -55,7 +55,7 @@ You can also divide a card into header and footer — around the default body. J
 <div class="uk-card uk-card-default uk-width-1-2@m">
     <div class="uk-card-header">
         <div class="uk-grid-small uk-flex-middle uk-grid" uk-grid="">
-            <div class="uk-first-column"><img class="uk-border-circle" width="40" height="40" src="../docs/images/placeholder_200x200.svg"></div>
+            <div class="uk-first-column"><img class="uk-border-circle" width="40" height="40" src="../docs/images/avatar.jpg"></div>
             <div>
                 <h3 class="uk-width-expand uk-card-title uk-margin-remove-bottom">Title</h3>
                 <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
@@ -250,7 +250,7 @@ To display an image inside a card without any spacing, add the `.uk-card-media` 
 ```example
 <div class="uk-card uk-card-default uk-width-1-2@s">
     <div class="uk-card-media">
-        <img src="../docs/images/placeholder_600x400.svg" alt="">
+        <img src="../docs/images/light.jpg" alt="">
     </div>
     <div class="uk-card-body">
         <h3 class="uk-card-title">Media</h3>
@@ -271,7 +271,7 @@ Add the `.uk-card-media-top` class to align the image to the top of the card or 
     <div>
         <div class="uk-card uk-card-default">
             <div class="uk-card-media-top">
-                <img src="../docs/images/placeholder_600x400.svg" alt="">
+                <img src="../docs/images/light.jpg" alt="">
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title">Media Top</h3>
@@ -287,7 +287,7 @@ Add the `.uk-card-media-top` class to align the image to the top of the card or 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
             </div>
             <div class="uk-card-media-bottom">
-                <img src="../docs/images/placeholder_600x400.svg" alt="">
+                <img src="../docs/images/light.jpg" alt="">
             </div>
         </div>
     </div>
@@ -315,7 +315,7 @@ Create a `<canvas>` element with your image's width and height, so that it will 
 <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
 
     <div class="uk-card-media-left uk-cover-container">
-        <img src="../docs/images/placeholder_600x400.svg" alt="" uk-cover>
+        <img src="../docs/images/light.jpg" alt="" uk-cover>
         <canvas width="600" height="400"></canvas>
     </div>
 
@@ -331,7 +331,7 @@ Create a `<canvas>` element with your image's width and height, so that it will 
 <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
 
     <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-        <img src="../docs/images/placeholder_600x400.svg" alt="" uk-cover>
+        <img src="../docs/images/light.jpg" alt="" uk-cover>
         <canvas width="600" height="400"></canvas>
     </div>
 
