@@ -34,11 +34,11 @@ There are several style modifiers available. Just add one of the following class
 | Example | Class | Description |
 | --- | --- | --- |
 | <button class="uk-button uk-button-default" type="button">Default</button> | `.uk-button-default` | Default button style. |
-| <button class="uk-button uk-button-primary" type="button">Primary</button> | `.uk-button-primary` | Emphasizes to identify the primary action in a set of buttons. |
-| <button class="uk-button uk-button-secondary" type="button">Secondary</button> | `.uk-button-secondary` | Emphasizes by applying an alternative background color. |
-| <button class="uk-button uk-button-danger" type="button">Danger</button> | `.uk-button-danger` | Indicates a dangerous or negative action. |
-| <button class="uk-button uk-button-text" type="reset">Button</button> | `.uk-button-text` | Applies a custom styling, like body text with an icon, while maintaining button behavior. |
-|  <button class="uk-button uk-button-link" type="reset">Button</button>| `.uk-button-link` | Deemphasizes to look like a link while maintaining button behavior. |
+| <button class="uk-button uk-button-primary" type="button">Primary</button> | `.uk-button-primary` | Indicates the primary action. |
+| <button class="uk-button uk-button-secondary" type="button">Secondary</button> | `.uk-button-secondary` | Indicates an important action. |
+| <button class="uk-button uk-button-danger" type="button">Danger</button> | `.uk-button-danger` | Indicates a dangerous action. |
+| <button class="uk-button uk-button-text" type="button">Text</button> | `.uk-button-text` | Adds an alternative text-based style. |
+| <button class="uk-button uk-button-link" type="button">Link</button>| `.uk-button-link` | Makes a `<button>` element look like an `<a>` element. |
 
 
 ***
@@ -77,7 +77,9 @@ Add the `.uk-width-1-1` class from the [Width component](width.md) and the butto
 ### Example
 
 ```example
-<button class="uk-button uk-button-secondary uk-button-large uk-width-1-1 uk-margin-small-bottom">Button</button> <button class="uk-button uk-button-primary uk-button-large uk-width-1-1" type="button">Button</button>
+<button class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom">Button</button>
+<button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Button</button>
+<button class="uk-button uk-button-secondary uk-width-1-1" type="button">Button</button>
 ```
 
 ***
@@ -153,7 +155,7 @@ A button can be used to trigger a dropdown menu from the [Dropdown component](dr
 
 ### Button group with dropdowns
 
-Use button groups to split buttons into a standard action on the left and a dropdown toggle on the right. Just wrap the toggling button and the drop or dropdown inside a `<div` element and add the `.uk-inline` class.
+Use button groups to split buttons into a standard action on the left and a dropdown toggle on the right. Just wrap the toggling button and the drop or dropdown inside a `<div>` element and add the `.uk-inline` class from the [Utility component](utility.md)
 
 ```html
 <!-- A button group with a dropdown -->
