@@ -14,41 +14,37 @@
 
     <body>
 
-        <div class="uk-padding-small">
+        <nav class="uk-navbar-container">
 
-            <nav class="uk-navbar-container">
+            <div class="uk-navbar uk-padding uk-padding-remove-vertical">
 
-                <div class="uk-navbar">
+                <div class="uk-navbar-left" uk-scrollspy-class>
+                    <a class="uk-navbar-item uk-logo" href="./">
+                        <span class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 2"></span> UIkit <sup class="uk-margin-small-left">beta</sup>
+                    </a>
+                </div>
 
-                    <div class="uk-navbar-left" uk-scrollspy-class>
-                        <a class="uk-navbar-item uk-logo" href="./">
-                            <span class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 2"></span> UIkit <sup class="uk-margin-small-left">beta</sup>
-                        </a>
-                    </div>
-
-                    <div class="uk-navbar-right uk-visible@s" uk-scrollspy-class="uk-animation-slide-right-small">
-                        <div class="uk-navbar-item">
-                            <div class="uk-grid uk-flex-middle uk-grid" uk-grid="">
-                                <div>
-                                    <a class="uk-button uk-button-text" href="./docs" title="Documentation">Documentation</a>
-                                </div>
-                                <div>
-                                    <a class="uk-button uk-button-text" href="#" title="View Changelog">Changelog</a>
-                                </div>
-                                <div>
-                                    <a class="uk-button uk-button-secondary" href="./download.html" title="Download">
-                                        Download <span class="uk-margin-small-left" uk-icon="icon: download"></span>
-                                    </a>
-                                </div>
+                <div class="uk-navbar-right uk-visible@s" uk-scrollspy-class="uk-animation-slide-right-small">
+                    <div class="uk-navbar-item">
+                        <div class="uk-grid uk-flex-middle uk-grid" uk-grid="">
+                            <div>
+                                <a class="uk-button uk-button-text" href="./docs" title="Documentation">Documentation</a>
+                            </div>
+                            <div>
+                                <a class="uk-button uk-button-text" href="#" title="View Changelog">Changelog</a>
+                            </div>
+                            <div>
+                                <a class="uk-button uk-button-secondary" href="./download.html" title="Download">
+                                    Download <span class="uk-margin-small-left" uk-icon="icon: download"></span>
+                                </a>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-            </nav>
+            </div>
 
-        </div>
+        </nav>
 
         <div class="uk-section uk-flex uk-flex-middle uk-text-center" uk-height-viewport="mode: expand">
             <div class="uk-container">

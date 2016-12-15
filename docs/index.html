@@ -21,145 +21,170 @@
         <script src="../assets/uikit/js/components/sortable.min.js"></script>
         <script src="../assets/highlightjs/highlight.pack.min.js"></script>
         <script src="app/main.min.js"></script>
+
+        <style>
+
+            aside {
+                width: 200px;
+            }
+
+            .tm-scrollable-area {
+                height: 100%;
+                overflow: scroll;
+            }
+        </style>
     </head>
 
     <body>
 
-        <div class="uk-padding-small">
-
+        <div class="uk-flex uk-flex-column" uk-height-viewport>
             <nav class="uk-navbar-container">
 
-                    <div class="uk-navbar">
+                <div class="uk-navbar uk-padding uk-padding-remove-vertical">
 
-                        <div class="uk-navbar-left" uk-scrollspy-class>
-                            <a class="uk-navbar-item uk-logo" href="../">
-                                <span class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 2"></span> UIkit <sup class="uk-margin-small-left">beta</sup>
-                            </a>
+                    <div class="uk-navbar-left" uk-scrollspy-class>
+                        <a class="uk-navbar-item uk-logo" href="../">
+                            <span class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 2"></span> UIkit <sup class="uk-margin-small-left">beta</sup>
+                        </a>
+                    </div>
+
+                    <div class="uk-navbar-right uk-visible@s" uk-scrollspy-class="uk-animation-slide-right-small">
+                        <div class="uk-navbar-item">
+                            <div class="uk-grid uk-flex-middle uk-grid" uk-grid="">
+                                <div>
+                                    <a class="uk-button uk-button-text" href="./" title="Documentation">Documentation</a>
+                                </div>
+                                <div>
+                                    <a class="uk-button uk-button-text" href="#" title="View Changelog">Changelog</a>
+                                </div>
+                                <div>
+                                    <a class="uk-button uk-button-secondary" href="../download.html" title="Download">
+                                        Download <span class="uk-margin-small-left" uk-icon="icon: download"></span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="uk-navbar-right uk-visible@s" uk-scrollspy-class="uk-animation-slide-right-small">
-                            <div class="uk-navbar-item">
-                                <div class="uk-grid uk-flex-middle uk-grid" uk-grid="">
-                                    <div>
-                                        <a class="uk-button uk-button-text" href="./" title="Documentation">Documentation</a>
-                                    </div>
-                                    <div>
-                                        <a class="uk-button uk-button-text" href="#" title="View Changelog">Changelog</a>
-                                    </div>
-                                    <div>
-                                        <a class="uk-button uk-button-secondary" href="../download.html" title="Download">
-                                            Download <span class="uk-margin-small-left" uk-icon="icon: download"></span>
-                                        </a>
-                                    </div>
+                </div>
+
+        </nav>
+            <div id="app" class="uk-flex-1 uk-position-relative">
+
+                <div class="uk-grid uk-position-cover">
+
+                    <div class="tm-scrollable-area">
+                        <div class="uk-panel uk-padding">
+                            <aside class="uk-visible@s">
+                                <ul class="uk-nav uk-nav-default">
+                                    <li class="uk-nav-header">Getting Started</li>
+                                    <router-link tag="li" to="introduction"><a>Introduction</a></router-link>
+                                    <router-link tag="li" to="migration"><a>Migration</a></router-link>
+                                    <router-link tag="li" to="projectstructure"><a>Project Structure</a></router-link>
+                                </ul>
+                                <ul class="uk-nav uk-nav-default uk-margin-top">
+                                    <li class="uk-nav-header">Components</li>
+                                    <router-link tag="li" to="accordion"><a>Accordion</a></router-link>
+                                    <router-link tag="li" to="alert"><a>Alert</a></router-link>
+                                    <router-link tag="li" to="align"><a>Align</a></router-link>
+                                    <router-link tag="li" to="animation"><a>Animation</a></router-link>
+                                    <router-link tag="li" to="article"><a>Article</a></router-link>
+                                    <router-link tag="li" to="background"><a>Background</a></router-link>
+                                    <router-link tag="li" to="badge"><a>Badge</a></router-link>
+                                    <router-link tag="li" to="base"><a>Base</a></router-link>
+                                    <router-link tag="li" to="breadcrumb"><a>Breadcrumb</a></router-link>
+                                    <router-link tag="li" to="button"><a>Button</a></router-link>
+                                    <router-link tag="li" to="card"><a>Card</a></router-link>
+                                    <router-link tag="li" to="close"><a>Close</a></router-link>
+                                    <router-link tag="li" to="column"><a>Column</a></router-link>
+                                    <router-link tag="li" to="comment"><a>Comment</a></router-link>
+                                    <router-link tag="li" to="container"><a>Container</a></router-link>
+                                    <router-link tag="li" to="cover"><a>Cover</a></router-link>
+                                    <router-link tag="li" to="description-list"><a>Description List</a></router-link>
+                                    <router-link tag="li" to="divider"><a>Divider</a></router-link>
+                                    <router-link tag="li" to="dotnav"><a>Dotnav</a></router-link>
+                                    <router-link tag="li" to="drop" exact><a>Drop</a></router-link>
+                                    <router-link tag="li" to="dropdown"><a>Dropdown</a></router-link>
+                                    <router-link tag="li" to="flex"><a>Flex</a></router-link>
+                                    <router-link tag="li" to="form"><a>Form</a></router-link>
+                                    <router-link tag="li" to="grid"><a>Grid</a></router-link>
+                                    <router-link tag="li" to="heading"><a>Heading</a></router-link>
+                                    <router-link tag="li" to="icon" exact><a>Icon</a></router-link>
+                                    <router-link tag="li" to="iconnav"><a>Iconnav</a></router-link>
+                                    <router-link tag="li" to="inverse"><a>Inverse</a></router-link>
+                                    <router-link tag="li" to="label"><a>Label</a></router-link>
+                                    <router-link tag="li" to="link"><a>Link</a></router-link>
+                                    <router-link tag="li" to="list"><a>List</a></router-link>
+                                    <router-link tag="li" to="margin"><a>Margin</a></router-link>
+                                    <router-link tag="li" to="modal"><a>Modal</a></router-link>
+                                    <router-link tag="li" to="nav" exact><a>Nav</a></router-link>
+                                    <router-link tag="li" to="navbar"><a>Navbar</a></router-link>
+                                    <router-link tag="li" to="notification"><a>Notification</a></router-link>
+                                    <router-link tag="li" to="offcanvas"><a>Offcanvas</a></router-link>
+                                    <router-link tag="li" to="overlay"><a>Overlay</a></router-link>
+                                    <router-link tag="li" to="padding"><a>Padding</a></router-link>
+                                    <router-link tag="li" to="pagination"><a>Pagination</a></router-link>
+                                    <router-link tag="li" to="placeholder"><a>Placeholder</a></router-link>
+                                    <router-link tag="li" to="position"><a>Position</a></router-link>
+                                    <router-link tag="li" to="print"><a>Print</a></router-link>
+                                    <router-link tag="li" to="progress"><a>Progress</a></router-link>
+                                    <router-link tag="li" to="scroll" exact><a>Scroll</a></router-link>
+                                    <router-link tag="li" to="scrollspy"><a>Scrollspy</a></router-link>
+                                    <router-link tag="li" to="search"><a>Search</a></router-link>
+                                    <router-link tag="li" to="section"><a>Section</a></router-link>
+                                    <router-link tag="li" to="slidenav"><a>Slidenav</a></router-link>
+                                    <router-link tag="li" to="sortable"><a>Sortable</a></router-link>
+                                    <router-link tag="li" to="spinner"><a>Spinner</a></router-link>
+                                    <router-link tag="li" to="sticky"><a>Sticky</a></router-link>
+                                    <router-link tag="li" to="subnav"><a>Subnav</a></router-link>
+                                    <router-link tag="li" to="switcher"><a>Switcher</a></router-link>
+                                    <router-link tag="li" to="tab" exact><a>Tab</a></router-link>
+                                    <router-link tag="li" to="table"><a>Table</a></router-link>
+                                    <router-link tag="li" to="text"><a>Text</a></router-link>
+                                    <router-link tag="li" to="toggle"><a>Toggle</a></router-link>
+                                    <router-link tag="li" to="tooltip"><a>Tooltip</a></router-link>
+                                    <router-link tag="li" to="totop"><a>Totop</a></router-link>
+                                    <router-link tag="li" to="transition"><a>Transition</a></router-link>
+                                    <router-link tag="li" to="upload"><a>Upload</a></router-link>
+                                    <router-link tag="li" to="utility"><a>Utility</a></router-link>
+                                    <router-link tag="li" to="visibility"><a>Visibility</a></router-link>
+                                    <router-link tag="li" to="width"><a>Width</a></router-link>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-expand tm-scrollable-area">
+
+                        <div class="uk-padding uk-width-3-4@m uk-margin-auto uk-display-block">
+                            <div class="uk-grid">
+                                <div class="uk-flex-1">
+                                    <router-view></router-view>
+                                </div>
+                                <div>
+                                    <aside v-if="!loading">
+
+                                        <ul class="uk-nav-default uk-nav-parent-icon uk-nav-accordion uk-nav" uk-sticky="offset: 20">
+                                            <li v-for="(id, subject) in ids">
+                                                <a :href="'#'+id">{{ subject }}</a>
+                                            </li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: push"></span> Open Test</a></li>
+                                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: github"></span> Report Issue</a></li>
+                                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: question"></span> Get Help</a></li>
+                                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> Edit this Page</a></li>
+                                        </ul>
+
+                                    </aside>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-
-            </nav>
-
-        </div>
-
-        <div id="app" class="uk-section uk-padding-small">
-
-                <div class="uk-grid">
-                    <div class="uk-width-1-4 uk-visible@s">
-
-                        <ul class="uk-nav uk-nav-default">
-                            <li class="uk-nav-header">Getting Started</li>
-                            <router-link tag="li" to="introduction"><a>Introduction</a></router-link>
-                            <router-link tag="li" to="migration"><a>Migration</a></router-link>
-                            <router-link tag="li" to="projectstructure"><a>Project Structure</a></router-link>
-                        </ul>
-                        <ul class="uk-nav uk-nav-default uk-margin-top">
-                            <li class="uk-nav-header">Components</li>
-                            <router-link tag="li" to="accordion"><a>Accordion</a></router-link>
-                            <router-link tag="li" to="alert"><a>Alert</a></router-link>
-                            <router-link tag="li" to="align"><a>Align</a></router-link>
-                            <router-link tag="li" to="animation"><a>Animation</a></router-link>
-                            <router-link tag="li" to="article"><a>Article</a></router-link>
-                            <router-link tag="li" to="background"><a>Background</a></router-link>
-                            <router-link tag="li" to="badge"><a>Badge</a></router-link>
-                            <router-link tag="li" to="base"><a>Base</a></router-link>
-                            <router-link tag="li" to="breadcrumb"><a>Breadcrumb</a></router-link>
-                            <router-link tag="li" to="button"><a>Button</a></router-link>
-                            <router-link tag="li" to="card"><a>Card</a></router-link>
-                            <router-link tag="li" to="close"><a>Close</a></router-link>
-                            <router-link tag="li" to="column"><a>Column</a></router-link>
-                            <router-link tag="li" to="comment"><a>Comment</a></router-link>
-                            <router-link tag="li" to="container"><a>Container</a></router-link>
-                            <router-link tag="li" to="cover"><a>Cover</a></router-link>
-                            <router-link tag="li" to="description-list"><a>Description List</a></router-link>
-                            <router-link tag="li" to="divider"><a>Divider</a></router-link>
-                            <router-link tag="li" to="dotnav"><a>Dotnav</a></router-link>
-                            <router-link tag="li" to="drop" exact><a>Drop</a></router-link>
-                            <router-link tag="li" to="dropdown"><a>Dropdown</a></router-link>
-                            <router-link tag="li" to="flex"><a>Flex</a></router-link>
-                            <router-link tag="li" to="form"><a>Form</a></router-link>
-                            <router-link tag="li" to="grid"><a>Grid</a></router-link>
-                            <router-link tag="li" to="heading"><a>Heading</a></router-link>
-                            <router-link tag="li" to="icon" exact><a>Icon</a></router-link>
-                            <router-link tag="li" to="iconnav"><a>Iconnav</a></router-link>
-                            <router-link tag="li" to="inverse"><a>Inverse</a></router-link>
-                            <router-link tag="li" to="label"><a>Label</a></router-link>
-                            <router-link tag="li" to="link"><a>Link</a></router-link>
-                            <router-link tag="li" to="list"><a>List</a></router-link>
-                            <router-link tag="li" to="margin"><a>Margin</a></router-link>
-                            <router-link tag="li" to="modal"><a>Modal</a></router-link>
-                            <router-link tag="li" to="nav" exact><a>Nav</a></router-link>
-                            <router-link tag="li" to="navbar"><a>Navbar</a></router-link>
-                            <router-link tag="li" to="notification"><a>Notification</a></router-link>
-                            <router-link tag="li" to="offcanvas"><a>Offcanvas</a></router-link>
-                            <router-link tag="li" to="overlay"><a>Overlay</a></router-link>
-                            <router-link tag="li" to="padding"><a>Padding</a></router-link>
-                            <router-link tag="li" to="pagination"><a>Pagination</a></router-link>
-                            <router-link tag="li" to="placeholder"><a>Placeholder</a></router-link>
-                            <router-link tag="li" to="position"><a>Position</a></router-link>
-                            <router-link tag="li" to="print"><a>Print</a></router-link>
-                            <router-link tag="li" to="progress"><a>Progress</a></router-link>
-                            <router-link tag="li" to="scroll" exact><a>Scroll</a></router-link>
-                            <router-link tag="li" to="scrollspy"><a>Scrollspy</a></router-link>
-                            <router-link tag="li" to="search"><a>Search</a></router-link>
-                            <router-link tag="li" to="section"><a>Section</a></router-link>
-                            <router-link tag="li" to="slidenav"><a>Slidenav</a></router-link>
-                            <router-link tag="li" to="sortable"><a>Sortable</a></router-link>
-                            <router-link tag="li" to="spinner"><a>Spinner</a></router-link>
-                            <router-link tag="li" to="sticky"><a>Sticky</a></router-link>
-                            <router-link tag="li" to="subnav"><a>Subnav</a></router-link>
-                            <router-link tag="li" to="switcher"><a>Switcher</a></router-link>
-                            <router-link tag="li" to="tab" exact><a>Tab</a></router-link>
-                            <router-link tag="li" to="table"><a>Table</a></router-link>
-                            <router-link tag="li" to="text"><a>Text</a></router-link>
-                            <router-link tag="li" to="toggle"><a>Toggle</a></router-link>
-                            <router-link tag="li" to="tooltip"><a>Tooltip</a></router-link>
-                            <router-link tag="li" to="totop"><a>Totop</a></router-link>
-                            <router-link tag="li" to="transition"><a>Transition</a></router-link>
-                            <router-link tag="li" to="upload"><a>Upload</a></router-link>
-                            <router-link tag="li" to="utility"><a>Utility</a></router-link>
-                            <router-link tag="li" to="visibility"><a>Visibility</a></router-link>
-                            <router-link tag="li" to="width"><a>Width</a></router-link>
-                        </ul>
-                    </div>
-                    <div class="uk-width-expand">
-                        <div class="uk-container-small uk-margin-auto"><router-view></router-view></div>
-                    </div>
-                    <div class="uk-width-1-4 uk-visible@s" v-if="!loading">
-                        <ul class="uk-nav-default uk-nav-parent-icon uk-nav-accordion uk-nav" uk-sticky="offset: 20">
-                            <li v-for="(id, subject) in ids">
-                                <a :href="'#'+id">{{ subject }}</a>
-                            </li>
-                            <li class="uk-nav-divider"></li>
-                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: push"></span> Open Test</a></li>
-                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: github"></span> Report Issue</a></li>
-                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: question"></span> Get Help</a></li>
-                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> Edit this Page</a></li>
-                        </ul>
-                    </div>
                 </div>
 
+            </div>
         </div>
-
 
     </body>
 </html>
