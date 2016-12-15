@@ -1,39 +1,38 @@
 # Container
 
-<p class="uk-text-lead">This component allows you to align and center your site and grid content.</p>
+<p class="uk-text-lead">This component allows you to align and center your page and sections inside it.</p>
 
 ## Usage
 
-Add the `.uk-container` class to a block element to give it a max-width and wrap the main content of your website. The element will be centered and have padding on the sides, that adapts automatically for large screens.
+Add one of the following classes to a block element to give it a max-width and wrap the main content of your website. The element will be centered and have padding on the sides, that adapts automatically for large screens. The padding of nested containers will be removed.
+
+| Class                  | Description                                                                                                |
+|------------------------|------------------------------------------------------------------------------------------------------------|
+| `.uk-container`        | This class to create a default container.                                                                  |
+| `.uk-container-small`  | This class for a narrower container.                                                                       |
+| `.uk-container-large`  | This class for a wider container.                                                                          |
+| `.uk-container-expand` | This class, if you do not want to limit the container width but still want the dynamic horizontal padding. |
+
 
 ```html
 <div class="uk-container"></div>
+
+<div class="uk-container uk-container-small"></div>
+
+<div class="uk-container uk-container-large"></div>
+
+<div class="uk-container uk-container-expand"></div>
 ```
 
-```example
-<div class="uk-container">
-    <div class="uk-card uk-card-default">
-        <div class="uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    </div>
+***
+
+## Sections
+
+You can apply this component to modify the width of content inside sections from the [Section component](section.md).
+
+```html
+<div class="uk-section uk-section-primary">
+    <div class="uk-container uk-container-small"></div>
 </div>
 ```
 
-***
-
-## Small modifier
-
-Add the `.uk-container-small` class for a narrower container.
-
-```html
-<div class="uk-container uk-container-small"></div>
-```
-
-***
-
-## Expand modifier
-
-Add the `.uk-container-expand` class, if you do not want to limit the width of the container but still want the dynamic padding behaviour on the right and left side of the content.
-
-```html
-<div class="uk-container uk-container-expand"></div>
-```
