@@ -471,10 +471,10 @@ Images in UIkit adapt to the width of their parent container by default. To appl
 
 ```example
 <h4>Responsive Width</h4>
-<p><img class="uk-responsive-width" src="images/placeholder_800x400_1.jpg"></p>
+<p><img class="uk-responsive-width" src="images/size-h.jpg"></p>
 
 <h4>Preserve Width</h4>
-<p><img class="uk-preserve-width" src="images/placeholder_800x400_1.jpg"></p>
+<p><img class="uk-preserve-width" src="images/size-h.jpg"></p>
 ```
 
 ***
@@ -484,8 +484,8 @@ Images in UIkit adapt to the width of their parent container by default. To appl
 To add rounded corners to an element, like an image, just add the `.uk-border-rounded` class. To a apply a circled shape, add the `.uk-border-circle` class.
 
 ```example
-<img class="uk-border-rounded" src="images/placeholder_200x200.svg" width="200" height="200" alt="Border rounded">
-<img class="uk-border-circle" src="images/placeholder_200x200.svg" width="200" height="200" alt="Border circle">
+<img class="uk-border-rounded" src="images/avatar.jpg" width="200" height="200" alt="Border rounded">
+<img class="uk-border-circle" src="images/avatar.jpg" width="200" height="200" alt="Border circle">
 ```
 
 ***
@@ -512,7 +512,7 @@ With the new `.uk-logo` class you can easily define your logo, for example withi
 
 ```example
 <a class="uk-logo" href="#">
-    <img src="../docs/images/placeholder_logo.svg" alt="">
+    <img src="../docs/images/logo-placeholder.svg" alt="">
 </a>
 ```
 
@@ -530,7 +530,7 @@ SVGs or Scaleable Vector Graphics are really handy, for example to display a log
 
 ## Blend Modes
 
-Add one of the following classes to apply different blend modes to your backgrounds, for example when placing them on images. You can combine these with the [Overlay component](overlay.md).
+Add one of the following classes to apply different blend modes to your backgrounds, for example when placing them on images. You can combine these with the [Overlay component](overlay.md). For a better understanding of how background blend modes work, take a look at this [CSS Tricks article](https://css-tricks.com/almanac/properties/b/background-blend-mode/).
 
 
 | Class                              | Description                                               |
@@ -552,7 +552,7 @@ Add one of the following classes to apply different blend modes to your backgrou
 | `.uk-blend-luminosity`  | This class sets the blend mode to luminosity.  |
 
 ```html
-<div class="uk-inline">
+<div class="uk-position-relative">
     <div class="uk-blend-multiply uk-overlay uk-overlay-primary"></div>
     <img src="" alt="">
 </div>
@@ -562,121 +562,151 @@ Add one of the following classes to apply different blend modes to your backgrou
 <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-light" uk-grid>
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-multiply uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Multiply">
-            <div class="uk-position-center">Multiply</div>
+            <div class="uk-blend-multiply uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Multiply">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Multiply</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-screen uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Screen">
-            <div class="uk-position-center">Screen</div>
+            <div class="uk-blend-screen uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Screen">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Screen</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-overlay uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Overlay">
-            <div class="uk-position-center">Overlay</div>
+            <div class="uk-blend-overlay uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Overlay">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Overlay</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-darken uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Darken">
-            <div class="uk-position-center">Darken</div>
+            <div class="uk-blend-darken uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Darken">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Darken</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-lighten uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Lighten">
-            <div class="uk-position-center">Lighten</div>
+            <div class="uk-blend-lighten uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Lighten">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Lighten</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-color-dodge uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Color Dodge">
-            <div class="uk-position-center">Color Dodge</div>
+            <div class="uk-blend-color-dodge uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Color Dodge">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Color Dodge</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-color-burn uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Color Burn">
-            <div class="uk-position-center">Color Burn</div>
+            <div class="uk-blend-color-burn uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Color Burn">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Color Burn</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-hard-light uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Hard Light">
-            <div class="uk-position-center">Hard Light</div>
+            <div class="uk-blend-hard-light uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Hard Light">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Hard Light</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-        <div class="uk-blend-soft-light uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Soft Light">
-            <div class="uk-position-center">Soft Light</div>
+        <div class="uk-blend-soft-light uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Soft Light">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Soft Light</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-difference uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Difference">
-            <div class="uk-position-center">Difference</div>
+            <div class="uk-blend-difference uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Difference">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Difference</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-exclusion uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Exclusion">
-            <div class="uk-position-center">Exclusion</div>
+            <div class="uk-blend-exclusion uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Exclusion">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Exclusion</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-hue uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Hue">
-            <div class="uk-position-center">Hue</div>
+            <div class="uk-blend-hue uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Hue">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Hue</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-saturation uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Saturation">
-            <div class="uk-position-center">Saturation</div>
+            <div class="uk-blend-saturation uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Saturation">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Saturation</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-color uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Color">
-            <div class="uk-position-center">Color</div>
+            <div class="uk-blend-color uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Color">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Color</p>
+            </div>
         </div>
     </div>
 
     <div>
         <div class="uk-inline">
-            <div class="uk-blend-luminosity uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/placeholder_800x400_2.jpg" alt="Blend Luminosity">
-            <div class="uk-position-center">Luminosity</div>
+            <div class="uk-blend-luminosity uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
+            <img src="images/dark.jpg" alt="Blend Luminosity">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Luminosity</p>
+            </div>
         </div>
     </div>
 

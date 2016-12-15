@@ -53,7 +53,7 @@ To start the migration, replace the UIkit 2 of your website with UIkit 3 and run
   - ...
 ```
 
-![Console output](../docs/images/migration_console_800x500.gif)
+![Console output](../docs/images/migration-console.gif)
 
 Every notice or warning message tells you what to change, including a list of all affected HTML elements. More complex changes are explained with examples that are easy to follow. The best way to migrate is to fix one component after another. That way you can see if the error messages are gone after a reload and also see the changes on your site.
 

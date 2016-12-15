@@ -40,7 +40,7 @@ The following list gives you a short overview of the most commonly used text-lev
 
 ## Embedded content
 
-Images and other elements like `<audio>`, `<canvas>`, `<img>`, `<svg>` and `<video>` are responsive by default. If the layout is narrowed, they adjust their size and keep their proportions. Resize the browser window to see the responsive behavior of the image.
+Images and other elements like `<audio>`, `<canvas>`, `<img>`, `<svg>` and `<video>` are responsive by default. If the layout is narrowed, they adjust their size and keep their proportions. Resize the browser window to see the responsive behavior of the image.  To prevent this behavior, add the `.uk-preserve-width` class from the [Utility component](utility.md) to the element or any container.
 
 ```example
 <img src="images/photo.jpg" alt="Image">
