@@ -2,10 +2,17 @@
 
 <p class="uk-text-lead">This component provides the default style for all HTML elements.</p>
 
-The Base component utilizes the famous [Normalize.css](http://necolas.github.io/normalize.css/) to render all elements consistently across all browsers and applies the default style like colors, margins, font-sizes and more.
+The Base component utilizes the famous [Normalize.css](http://necolas.github.io/normalize.css/) to render elements consistently across all browsers and applies its default styling like colors, margins, font-sizes and more.
 
-**Note:** [Form](form.md), [Button](button.md) and [Table](table.md) elements are not normalized or styled by default. This happens in their specific compontent class. UIkit tries to apply as little style as possible to pain HTML elements to make it more robust and conflict free with 3rd party CSS.
+**Note** [Form](form.md), [Button](button.md) and [Table](table.md) elements are not normalized or styled by default. This happens in their specific component class. UIkit tries to apply as little styling as possible to plain HTML elements in order to remain robust and conflict free with 3rd party CSS.
 
+***
+
+## Links
+
+Turn text into hypertext using the <a href="#">&lt;a&gt;</a> element. You can also add the `.uk-link` class to a `<span>` or similar element to apply the default link styling. For additional styling options, take a look at the [Link component](link.md).
+
+***
 
 ## Text-level semantics
 
@@ -13,7 +20,6 @@ The following list gives you a short overview of the most commonly used text-lev
 
 | Element  | Description                                                                                                 |
 |----------|-------------------------------------------------------------------------------------------------------------|
-| `<a>`      | Turn text into hypertext using the <a href="#">a element</a> or add the `.uk-link` class.                 |
 | `<abbr>`   | Define an abbreviation using the <abbr title="Title Text">abbr element with a title</abbr>.               |
 | `<b>`      | Create bold text with the <b>b element</b>.                                                               |
 | `<cite>`   | Define the title of a work with the <cite>cite element</cite>.                                            |
@@ -40,7 +46,9 @@ The following list gives you a short overview of the most commonly used text-lev
 
 ## Embedded content
 
-Images and other elements like `<audio>`, `<canvas>`, `<img>`, `<svg>` and `<video>` are responsive by default. If the layout is narrowed, they adjust their size and keep their proportions. Resize the browser window to see the responsive behavior of the image.  To prevent this behavior, add the `.uk-preserve-width` class from the [Utility component](utility.md) to the element or any container.
+Images and other elements like `<audio>`, `<canvas>`, `<img>`, `<svg>` and `<video>` are responsive by default. If the layout is narrowed, they adjust their size and keep their proportions. To prevent this behavior, add the `.uk-preserve-width` class from the [Utility component](utility.md) to the element or any container.
+
+Resize the browser window to see the responsive behavior of the image.
 
 ```example
 <img src="images/photo.jpg" alt="Image">
@@ -62,7 +70,7 @@ Create a paragraph by using the `<p>` element.
 
 Use the `<h1>` to `<h6>` elements to define your headings.
 
-Add the `.uk-h1`, `.uk-h2`, `.uk-h3`, `.uk-h4`, `.uk-h5` or `.uk-h6` class to alter the size of your headings, for example have a h1 look like a h3.
+Add the `.uk-h1`, `.uk-h2`, `.uk-h3`, `.uk-h4`, `.uk-h5` or `.uk-h6` class to alter the size of your headings, for example have a h1 look like a h3. For additional styling options, take a look at the [Heading component](heading.md).
 
 ```example
 <h1>h1 Heading 1</h1>
@@ -77,7 +85,7 @@ Add the `.uk-h1`, `.uk-h2`, `.uk-h3`, `.uk-h4`, `.uk-h5` or `.uk-h6` class to al
 
 ## List
 
-Create an unordered list using the `<ul>` element and the `<ol>` element for ordered lists. The `<li>` element defines the list item.
+Create an unordered list using the `<ul>` element and the `<ol>` element for ordered lists. The `<li>` element defines the list item. For additional styling options, take a look at the [List component](list.md).
 
 ```example
 <ul>
@@ -102,7 +110,7 @@ Create an unordered list using the `<ul>` element and the `<ol>` element for ord
 
 ## Description List
 
-Create a description list using the `<dl>` element. Use `<dt>` to define the term and `<dd>` for the description.
+Create a description list using the `<dl>` element. Use `<dt>` to define the term and `<dd>` for the description. For additional styling options, take a look at the [Description List component](description-list.md).
 
 ```example
 <dl>
@@ -119,7 +127,7 @@ Create a description list using the `<dl>` element. Use `<dt>` to define the ter
 
 ## Horizontal Rule
 
-Create a horizontal rule by using the `<hr>` element.
+Create a horizontal rule by using the `<hr>` element. For additional styling options, take a look at the [Divider component](divider.md).
 
 ```example
 
@@ -150,7 +158,7 @@ To quote multiple lines of content from another source within your document, use
 
 For multiple lines of code, use the `<pre>` element. It creates a new text block that preserves spaces, tabs and line breaks. Nest a `<code>` element inside to define the code block.
 
-Note: Be sure to escape any angle brackets to make sure enclosed code is not interpreted as markup.
+**Note** Be sure to escape any angle brackets to make sure enclosed code is not interpreted as markup.
 
 ```example
 <pre><code>// Code example
