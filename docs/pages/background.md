@@ -56,13 +56,13 @@ This component features classes to specify the size of background images by keep
 ```example
 <div class="uk-child-width-1-2@s uk-light" uk-grid>
     <div>
-        <div class="uk-background-cover uk-height-medium uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            .uk-background-cover
+        <div class="uk-background-cover uk-height-medium uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+            <p class="uk-h4 uk-margin-remove">Cover</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-contain uk-background-muted uk-height-medium uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            .uk-background-contain
+        <div class="uk-background-contain uk-background-muted uk-height-medium uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+            <p class="uk-h4 uk-margin-remove">Contain</p>
         </div>
     </div>
 </div>
@@ -93,13 +93,13 @@ To alter the background position of your image — which is in the top left hand
 ```example
 <div class="uk-child-width-1-2@s uk-light" uk-grid>
     <div>
-        <div class="uk-background-top-right uk-height-medium uk-flex uk-flex-middle uk-flex-center" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            .uk-background-top-right
+        <div class="uk-background-top-right uk-height-medium uk-flex uk-flex-middle uk-flex-center" style="background-image: url(../docs/images/dark.jpg);">
+            <p class="uk-h4 uk-margin-remove">Top Right</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-top-left uk-height-medium uk-flex uk-flex-middle uk-flex-center" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            .uk-background-top-left
+        <div class="uk-background-top-left uk-height-medium uk-flex uk-flex-middle uk-flex-center" style="background-image: url(../docs/images/dark.jpg);">
+            <p class="uk-h4 uk-margin-remove">Top Left</p>
         </div>
     </div>
 </div>
@@ -116,7 +116,7 @@ To keep smaller images from repeating to fill the background area, add the `.uk-
 ```
 
 ```example
-<div class="uk-background-norepeat uk-background-center-center uk-background-muted uk-height-medium uk-width-large" style="background-image: url(../docs/images/placeholder_200x150_2.svg);"></div>
+<div class="uk-background-norepeat uk-background-center-center uk-background-muted uk-height-medium uk-width-large" style="background-image: url(../docs/images/dark.jpg);"></div>
 ```
 
 ***
@@ -131,7 +131,7 @@ You can also apply a fixed background attachment, so that the image remains in i
 
 ```example
 <div class="uk-position-relative">
-    <div class="uk-background-fixed uk-background-cover uk-height-medium uk-width-large" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);"></div>
+    <div class="uk-background-fixed uk-background-cover uk-height-medium uk-width-large" style="background-image: url(../docs/images/dark.jpg);"></div>
 </div>
 ```
 
@@ -155,7 +155,7 @@ Add one of the following classes to limit the display of background images to ce
 Resize your browser window to see the effect in the example below.
 
 ```example
-<div class="uk-background-image@m uk-background-muted uk-height-medium uk-width-large" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);"></div>
+<div class="uk-background-image@m uk-background-cover uk-background-muted uk-height-medium uk-width-large" style="background-image: url(../docs/images/dark.jpg);"></div>
 ```
 
 ***
@@ -191,92 +191,122 @@ Add one of the following classes to apply different blend modes to your backgrou
 <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-light" uk-grid>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Multiply</div>
+        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Multiply</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-screen uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Screen</div>
+        <div class="uk-background-blend-screen uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Screen</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-overlay uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Overlay</div>
+        <div class="uk-background-blend-overlay uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Overlay</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-darken uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Darken</div>
+        <div class="uk-background-blend-darken uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Darken</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-lighten uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Lighten</div>
+        <div class="uk-background-blend-lighten uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Lighten</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-color-dodge uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Color Dodge</div>
+        <div class="uk-background-blend-color-dodge uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Color Dodge</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-color-burn uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Color Burn</div>
+        <div class="uk-background-blend-color-burn uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Color Burn</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Hard Light</div>
+        <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Hard Light</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-soft-light uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Soft Light</div>
+        <div class="uk-background-blend-soft-light uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Soft Light</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-difference uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Difference</div>
+        <div class="uk-background-blend-difference uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Difference</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-exclusion uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Exclusion</div>
+        <div class="uk-background-blend-exclusion uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Exclusion</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-hue uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Hue</div>
+        <div class="uk-background-blend-hue uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Hue</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-saturation uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Saturation</div>
+        <div class="uk-background-blend-saturation uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Saturation</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-color uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Color</div>
+        <div class="uk-background-blend-color uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Color</p>
+            </div>
         </div>
     </div>
 
     <div class="uk-position-relative">
-        <div class="uk-background-blend-luminosity uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <div class="uk-position-center">Luminosity</div>
+        <div class="uk-background-blend-luminosity uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/dark.jpg);">
+            <div class="uk-position-center">
+                <p class="uk-h4 uk-margin-remove">Luminosity</p>
+            </div>
         </div>
     </div>
 
