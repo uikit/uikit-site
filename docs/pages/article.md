@@ -12,15 +12,14 @@ The article component consists of the article itself, a title and meta data.
 | `.uk-article-title` | Add this class to a heading to create an article title. Typically you would use a `<h1>` element for this. |
 | `.uk-article-meta` | Add this class to a paragraph which contains meta data about your article. |
 
-Use the `.uk-text-lead` class from the [Text component](text.md) to create a leading paragraph.
-
 ```html
 <article class="uk-article">
     <h1 class="uk-article-title"></h1>
     <p class="uk-article-meta"></p>
-    <p class="uk-text-lead"></p>
 </article>
 ```
+
+Use the `.uk-text-lead` class from the [Text component](text.md) to create a leading paragraph.
 
 ```example
 <article class="uk-article">

@@ -11,27 +11,27 @@ To apply a background color to an element, add one of the following classes. The
 | `.uk-background`           | Applies the default background color.    |
 | `.uk-background-muted`     | Applies a muted background color.        |
 | `.uk-background-primary`   | Applies the primary background color.    |
-| `.uk-background-secondary` | Applies an alternative background color. |
+| `.uk-background-secondary` | Applies a secondary background color. |
 
 ```html
 <div class="uk-background-primary"></div>
 ```
 
-**Note:** To adapt your content for better visibility on each background, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md).
+**Note** To adapt your content for better visibility on each background, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md). Use the [Padding component](padding.md) to add some padding to the elements.
 
 ```example
 <div class="uk-child-width-1-2@s uk-text-center" uk-grid>
     <div>
-        <div class="uk-background uk-padding"><code>.uk-background</code></div>
+        <div class="uk-background uk-padding">.uk-background</div>
     </div>
     <div>
-        <div class="uk-background-muted uk-padding"><code>.uk-background-muted</code></div>
+        <div class="uk-background-muted uk-padding">.uk-background-muted</div>
     </div>
-    <div>
-        <div class="uk-background-primary uk-padding uk-light"><code>.uk-background-primary</code></div>
+    <div class="uk-light">
+        <div class="uk-background-primary uk-padding">.uk-background-primary</div>
     </div>
-    <div>
-        <div class="uk-background-secondary uk-padding uk-light"><code>.uk-background-secondary</code></div>
+    <div class="uk-light">
+        <div class="uk-background-secondary uk-padding">.uk-background-secondary</div>
     </div>
 </div>
 ```
@@ -47,6 +47,8 @@ This component features classes to specify the size of background images by keep
 | `.uk-background-cover`   | Scales the background image to completely cover the containing area.                           |
 | `.uk-background-contain` | Scales the background image as far as its width and height can fit inside the containing area. |
 
+**Note** When using these classes, the background position automatically shifts to the middle and background-repeat is set to no-repeat.
+
 ```html
 <div class="uk-background-cover"></div>
 ```
@@ -55,12 +57,12 @@ This component features classes to specify the size of background images by keep
 <div class="uk-child-width-1-2@s uk-light" uk-grid>
     <div>
         <div class="uk-background-cover uk-height-medium uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <code>.uk-background-cover</code>
+            .uk-background-cover
         </div>
     </div>
     <div>
         <div class="uk-background-contain uk-background-muted uk-height-medium uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <code>.uk-background-contain</code>
+            .uk-background-contain
         </div>
     </div>
 </div>
@@ -71,8 +73,6 @@ This component features classes to specify the size of background images by keep
 ## Position
 
 To alter the background position of your image — which is in the top left hand corner of the area by default, add one of the following classes.
-
-**Note:** When using the `.uk-background-cover` or `.uk-background-contain` class, the background position automatically shifts to the middle.
 
 | Class                          | Description                                                          |
 |--------------------------------|----------------------------------------------------------------------|
@@ -94,12 +94,12 @@ To alter the background position of your image — which is in the top left hand
 <div class="uk-child-width-1-2@s uk-light" uk-grid>
     <div>
         <div class="uk-background-top-right uk-height-medium uk-flex uk-flex-middle uk-flex-center" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <code>.uk-background-top-right</code>
+            .uk-background-top-right
         </div>
     </div>
     <div>
-        <div class="uk-background-bottom-left uk-height-medium uk-flex uk-flex-middle uk-flex-center" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
-            <code>.uk-background-bottom-left</code>
+        <div class="uk-background-top-left uk-height-medium uk-flex uk-flex-middle uk-flex-center" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
+            .uk-background-top-left
         </div>
     </div>
 </div>
@@ -139,7 +139,7 @@ You can also apply a fixed background attachment, so that the image remains in i
 
 ## Responsive background image
 
-Add one of the following classes to limit the display of background images to certain viewport sizes.
+Add one of the following classes to limit the display of background images to certain viewport sizes. This is great in cases where the image and content overlap on a phone screen in a way that would make text illegible.
 
 | Class                     | Description                                                         |
 |---------------------------|---------------------------------------------------------------------|
@@ -155,7 +155,7 @@ Add one of the following classes to limit the display of background images to ce
 Resize your browser window to see the effect in the example below.
 
 ```example
-<div class="uk-background-image@m uk-height-medium uk-width-large" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);"></div>
+<div class="uk-background-image@m uk-background-muted uk-height-medium uk-width-large" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);"></div>
 ```
 
 ***
@@ -167,21 +167,21 @@ Add one of the following classes to apply different blend modes to your backgrou
 
 | Class                              | Description                                               |
 |------------------------------------|-----------------------------------------------------------|
-| `.uk-background-blend-multiply`    | This class sets the background blend mode to multiply.    |
-| `.uk-background-blend-screen`      | This class sets the background blend mode to screen.      |
-| `.uk-background-blend-overlay`     | This class sets the background blend mode to overlay.     |
-| `.uk-background-blend-darken`      | This class sets the background blend mode to darken.      |
-| `.uk-background-blend-lighten`     | This class sets the background blend mode to lighten.     |
-| `.uk-background-blend-color-dodge` | This class sets the background blend mode to color dodge. |
-| `.uk-background-blend-color-burn`  | This class sets the background blend mode to color burn.  |
-| `.uk-background-blend-hard-light`  | This class sets the background blend mode to hard light.  |
-| `.uk-background-blend-soft-light`  | This class sets the background blend mode to soft light.  |
-| `.uk-background-blend-difference`  | This class sets the background blend mode to difference.  |
-| `.uk-background-blend-exclusion`   | This class sets the background blend mode to exclusion.   |
-| `.uk-background-blend-hue`         | This class sets the background blend mode to hue.         |
-| `.uk-background-blend-saturation`  | This class sets the background blend mode to saturation.  |
-| `.uk-background-blend-color`       | This class sets the background blend mode to color.       |
-| `.uk-background-blend-luminosity`  | This class sets the background blend mode to luminosity.  |
+| `.uk-background-blend-multiply`    | This class sets the blend mode to multiply.    |
+| `.uk-background-blend-screen`      | This class sets the blend mode to screen.      |
+| `.uk-background-blend-overlay`     | This class sets the blend mode to overlay.     |
+| `.uk-background-blend-darken`      | This class sets the blend mode to darken.      |
+| `.uk-background-blend-lighten`     | This class sets the blend mode to lighten.     |
+| `.uk-background-blend-color-dodge` | This class sets the blend mode to color dodge. |
+| `.uk-background-blend-color-burn`  | This class sets the blend mode to color burn.  |
+| `.uk-background-blend-hard-light`  | This class sets the blend mode to hard light.  |
+| `.uk-background-blend-soft-light`  | This class sets the blend mode to soft light.  |
+| `.uk-background-blend-difference`  | This class sets the blend mode to difference.  |
+| `.uk-background-blend-exclusion`   | This class sets the blend mode to exclusion.   |
+| `.uk-background-blend-hue`         | This class sets the blend mode to hue.         |
+| `.uk-background-blend-saturation`  | This class sets the blend mode to saturation.  |
+| `.uk-background-blend-color`       | This class sets the blend mode to color.       |
+| `.uk-background-blend-luminosity`  | This class sets the blend mode to luminosity.  |
 
 ```html
 <div class="uk-background-blend-multiply uk-background-primary"></div>
@@ -190,91 +190,91 @@ Add one of the following classes to apply different blend modes to your backgrou
 ```example
 <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-light" uk-grid>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Multiply</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-screen uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Screen</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-overlay uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Overlay</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-darken uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Darken</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-lighten uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Lighten</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-color-dodge uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Color Dodge</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-color-burn uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Color Burn</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Hard Light</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-soft-light uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Soft Light</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-difference uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Difference</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-exclusion uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Exclusion</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-hue uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Hue</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-saturation uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Saturation</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-color uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Color</div>
         </div>
     </div>
 
-    <div class="uk-inline">
+    <div class="uk-position-relative">
         <div class="uk-background-blend-luminosity uk-background-primary uk-background-cover uk-height-small" style="background-image: url(../docs/images/placeholder_800x400_2.jpg);">
             <div class="uk-position-center">Luminosity</div>
         </div>
