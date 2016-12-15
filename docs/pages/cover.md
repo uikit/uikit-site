@@ -12,13 +12,13 @@ To have an image cover its parent element, add the `.uk-cover-container` class t
 
 ```html
 <div class="uk-cover-container">
-    <img uk-cover src="" alt="">
+    <img src="" alt="" uk-cover>
 </div>
 ```
 
 ```example
 <div class="uk-cover-container" style="height: 300px">
-    <img uk-cover src="../docs/images/dark.jpg" alt="">
+    <img src="../docs/images/dark.jpg" alt="" uk-cover>
 </div>
 ```
 
@@ -31,14 +31,14 @@ To position content absolutely on top of the covering element, add the `.uk-posi
 
 ```html
 <div class="uk-cover-container">
-    <img uk-cover src="" alt="">
+    <img src="" alt="" uk-cover>
     <div class="uk-position-cover"></div>
 </div>
 ```
 
 ```example
 <div class="uk-cover-container uk-light" style="height: 300px">
-    <img uk-cover src="../docs/images/dark.jpg" alt="">
+    <img src="../docs/images/dark.jpg" alt="" uk-cover>
     <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
         <h1>Heading</h1>
     </div>
