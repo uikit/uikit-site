@@ -139,7 +139,7 @@ When using a section with a background image, add the `.uk-section-media` class.
 ```
 
 ```example
-<div class="uk-section uk-section-media uk-light" style="background-image: url(../docs/images/placeholder_800x400_1.jpg)">
+<div class="uk-section uk-section-media uk-light uk-background-cover" style="background-image: url(../docs/images/dark.jpg)">
     <div class="uk-margin-small-left uk-margin-small-right">
 
         <h3>Section Media</h3>

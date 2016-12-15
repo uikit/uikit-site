@@ -170,7 +170,7 @@ Resize your browser window to see the effect in the example below.
 
 ## Blend Modes
 
-Add one of the following classes to apply different blend modes to your background image. You can combine these with the background color classes, as well.
+Add one of the following classes to apply different blend modes to your background image. You can combine these with the background color classes, as well. For a better understanding of how background blend modes work, take a look at this [CSS tricks article](https://css-tricks.com/almanac/properties/b/background-blend-mode/).
 
 
 | Class                              | Description                                               |

@@ -139,7 +139,7 @@ The Flex component can be combined with a grid from the [Grid component](grid.md
 ```example
 <div class="uk-flex uk-flex-middle" uk-grid>
     <div class="uk-width-1-3@m">
-        <div class="uk-panel"><img src="../docs/images/placeholder_600x400.svg" alt="Placeholder"></div>
+        <div class="uk-panel"><img src="../docs/images/light.jpg" alt="Image"></div>
     </div>
     <div class="uk-width-2-3@m uk-flex-middle">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>

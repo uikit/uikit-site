@@ -37,7 +37,7 @@ The Modal component consists of an overlay, a dialog and a close button. You can
 <div id="modal-example" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <img src="../docs/images/placeholder_800x600_1.jpg" alt="">
+        <img src="../docs/images/size1.jpg" alt="">
     </div>
 </div>
 ```
@@ -58,7 +58,7 @@ To center the modal dialog, add the `center: true` parameter to the `uk-modal` a
 <div id="modal-center" uk-modal="center: true">
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <img src="../docs/images/placeholder_800x600_1.jpg" alt="">
+        <img src="../docs/images/size1.jpg" alt="">
     </div>
 </div>
 ```
@@ -184,7 +184,7 @@ Using the [grid](grid.md) and [width](width.md) classes, you can create a nice, 
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full" type="button" uk-close></button>
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-            <div class="uk-background-cover" style="background-image: url('../docs/images/placeholder_300x455.svg');" uk-height-viewport></div>
+            <div class="uk-background-cover" style="background-image: url('../docs/images/photo.jpg');" uk-height-viewport></div>
             <div class="uk-padding-large">
                 <h1>Headline</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -210,7 +210,7 @@ To create a lightbox-like modal dialog, for example to display images, just add 
 <div id="modal-lightbox" class="uk-modal-lightbox" uk-modal="center: true">
     <button class="uk-modal-close-default" type="button" uk-close></button>
     <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle">
-        <img src="../docs/images/placeholder_800x600_1.jpg" alt="">
+        <img src="../docs/images/size1.jpg" alt="">
     </div>
     <div class="uk-modal-bar uk-position-bottom">
         Caption
