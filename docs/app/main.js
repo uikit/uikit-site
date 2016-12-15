@@ -22,8 +22,10 @@ $(function () {
                 ids: {},
                 loading: false
             }
+        },
+        mounted() {
+            this.$el.classList.remove('uk-invisible');
         }
     }).$mount('#app');
 
-    $('#app').removeClass('uk-invisible');
 });
