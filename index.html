@@ -9,9 +9,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/theme.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js"></script>
         <script src="assets/google/analytics.js"></script>
         <script src="assets/uikit/js/uikit.min.js"></script>
         <script src="assets/uikit/js/components/gif.min.js"></script>
+        <script src="js/site.min.js"></script>
     </head>
 
     <body>
@@ -20,14 +22,14 @@
 
             <div class="uk-navbar uk-padding uk-padding-remove-vertical">
 
-                <div class="uk-navbar-left" uk-scrollspy-class>
+                <div class="uk-navbar-left">
                     <a class="uk-navbar-item uk-logo">
                         <span class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 2"></span> UIkit <sup class="uk-margin-small-left">beta</sup>
                     </a>
                 </div>
 
-                <div class="uk-navbar-right uk-visible@s" uk-scrollspy-class="uk-animation-slide-right-small">
-                    <div class="uk-navbar-item">
+                <div class="uk-navbar-right">
+                    <div class="uk-navbar-item uk-visible@m">
                         <div class="uk-grid uk-flex-middle uk-grid" uk-grid="">
                             <div>
                                 <a class="uk-button uk-button-text" href="./docs" title="Documentation">Documentation</a>
@@ -42,6 +44,7 @@
                             </div>
                         </div>
                     </div>
+                    <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas" uk-toggle></a>
                 </div>
 
             </div>
@@ -65,6 +68,12 @@
                     <a class="uk-button uk-button-primary uk-margin-right" href="download.html">Download <span class="uk-margin-small-right" uk-icon="icon: download"></span></a>
                     <a class="uk-button uk-button-default" href="./docs">View Docs</a>
                 </div>
+            </div>
+        </div>
+
+        <div id="offcanvas" uk-offcanvas="mode: push">
+            <div class="uk-offcanvas-bar">
+                <div id="site-offcanvas"><site-offcanvas></site-offcanvas></div>
             </div>
         </div>
 

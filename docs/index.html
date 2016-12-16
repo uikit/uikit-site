@@ -22,6 +22,7 @@
         <script src="../assets/uikit/js/components/notification.min.js"></script>
         <script src="../assets/uikit/js/components/sortable.min.js"></script>
         <script src="../assets/highlightjs/highlight.pack.min.js"></script>
+        <script src="../js/site.min.js"></script>
         <script src="app/main.min.js"></script>
 
     </head>
@@ -33,14 +34,14 @@
 
                 <div class="uk-navbar uk-padding uk-padding-remove-vertical">
 
-                    <div class="uk-navbar-left" uk-scrollspy-class>
+                    <div class="uk-navbar-left">
                         <a class="uk-navbar-item uk-logo" href="../">
                             <span class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 2"></span> UIkit <sup class="uk-margin-small-left">beta</sup>
                         </a>
                     </div>
 
-                    <div class="uk-navbar-right uk-visible@s" uk-scrollspy-class="uk-animation-slide-right-small">
-                        <div class="uk-navbar-item">
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item uk-visible@m">
                             <div class="uk-grid uk-flex-middle uk-grid" uk-grid="">
                                 <div>
                                     <a class="uk-button uk-button-text" href="./" title="Documentation">Documentation</a>
@@ -55,6 +56,7 @@
                                 </div>
                             </div>
                         </div>
+                        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas" uk-toggle></a>
                     </div>
 
                 </div>
@@ -110,6 +112,11 @@
             </div>
         </div>
 
+        <div id="offcanvas" uk-offcanvas="mode: push">
+            <div class="uk-offcanvas-bar">
+                <div id="site-offcanvas"><site-offcanvas root="../"></site-offcanvas></div>
+            </div>
         </div>
+
     </body>
 </html>

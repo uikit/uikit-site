@@ -1,3 +1,16 @@
+
+const externals = {
+    vue: 'Vue',
+    uikit: 'UIkit',
+    jquery: 'jQuery'
+};
+
+const loaders = [
+    {loader: 'vue', test: /\.vue$/},
+    {loader: 'babel', test: /\.js$/, exclude: /node_modules/},
+    {loader: 'json', test: /\.json/}
+];
+
 module.exports = [
 
     {
@@ -5,17 +18,20 @@ module.exports = [
         output: {
             filename: './docs/app/main.min.js'
         },
-        externals: {
-            vue: 'Vue',
-            uikit: 'UIkit',
-            jquery: 'jQuery'
-        },
+        externals,
         module: {
-            loaders: [
-                {loader: 'vue', test: /\.vue$/},
-                {loader: 'babel', test: /\.js$/, exclude: /node_modules/},
-                {loader: 'json', test: /\.json/}
-            ]
+            loaders
+        }
+    },
+
+    {
+        entry: './js/site',
+        output: {
+            filename: './js/site.min.js'
+        },
+        externals,
+        module: {
+            loaders
         }
     }
 
