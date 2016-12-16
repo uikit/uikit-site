@@ -68,10 +68,10 @@
                     <div class="uk-height-1-1 uk-overflow-auto uk-visible@m">
                         <div class="uk-panel uk-padding uk-width-medium">
                             <aside>
-                                
+
                                 <ul class="uk-nav uk-nav-default uk-margin-top" v-for="(pages, category) in navigation">
                                     <li class="uk-nav-header">{{category}}</li>
-                                    <router-link tag="li" :to="p" v-for="(p, label) in pages"><a>{{label}}</a></router-link>
+                                    <router-link tag="li" :to="p" v-for="(p, label) in pages" exact><a>{{label}}</a></router-link>
                                 </ul>
 
                             </aside>
