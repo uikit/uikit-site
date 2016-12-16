@@ -139,7 +139,7 @@ export default {
             renderer.table = (header, body) => `<div class="uk-overflow-auto"><table class="uk-table uk-table-striped"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
             renderer.heading = (text, level) => {
                 return level == 2
-                    ? `<h${level} class="uk-position-relative uk-h${level>1 ? level+1 : level}"><a class="uk-text-muted uk-link-muted uk-position-absolute" href="#${text.toLowerCase().replace(/ /g,"-")}" style="transform:translateX(-30px)">#</a>${text}</h${level}>`
+                    ? `<h${level} class="uk-position-relative uk-h${level>1 ? level+1 : level}"><a class="uk-text-muted uk-link-muted uk-position-absolute uk-visible@m" href="#${text.toLowerCase().replace(/ /g,"-")}" style="transform:translateX(-30px)">#</a>${text}</h${level}>`
                     : `<h${level} class="uk-h${level>1 ? level+1 : level}">${text}</h${level}>`;
             }
 
