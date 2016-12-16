@@ -97,5 +97,7 @@ For better visibility on images, for example when using the dotnav as a slidesho
 The dotnav can also be centered vertically inside your viewport using the [Position component](position.md). This is useful for typical onepage websites.
 
 ```html
-<ul class="uk-dotnav uk-dotnav-vertical uk-position-medium uk-position-center-right uk-position-fixed">...</ul>
+<div class="uk-position-medium uk-position-center-right uk-position-fixed">
+    <ul class="uk-dotnav uk-dotnav-vertical">...</ul>
+</div>
 ```
