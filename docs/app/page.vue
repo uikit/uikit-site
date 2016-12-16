@@ -10,6 +10,8 @@
 import $ from 'jquery';
 import { escape } from 'he'
 
+const navigation = require('./navigation.json');
+
 export default {
 
     data() {
@@ -62,6 +64,8 @@ export default {
                     });
 
                     this.createIds();
+
+                    
 
                     this.$parent.component = page;
 

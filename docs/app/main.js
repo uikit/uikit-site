@@ -14,6 +14,8 @@ const routes = [
 
 ];
 
+const navigation = require('./navigation.json');
+
 $(function () {
     new Vue({
         router: new VueRouter({mode:'history', history: true,routes, linkActiveClass: 'uk-active'}),
@@ -22,7 +24,8 @@ $(function () {
                 ids: {},
                 loading: false,
                 component: false,
-                page: false
+                page: false,
+                navigation
             }
         },
         mounted() {

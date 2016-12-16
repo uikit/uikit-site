@@ -68,88 +68,12 @@
                     <div class="uk-height-1-1 uk-overflow-auto uk-visible@m">
                         <div class="uk-panel uk-padding uk-width-medium">
                             <aside>
-                                <ul class="uk-nav uk-nav-default">
-                                    <li class="uk-nav-header">Getting Started</li>
-                                    <router-link tag="li" to="introduction"><a>Introduction</a></router-link>
-                                    <router-link tag="li" to="migration"><a>Migration</a></router-link>
+                                
+                                <ul class="uk-nav uk-nav-default uk-margin-top" v-for="(pages, category) in navigation">
+                                    <li class="uk-nav-header">{{category}}</li>
+                                    <router-link tag="li" :to="p" v-for="(p, label) in pages"><a>{{label}}</a></router-link>
                                 </ul>
-                                <ul class="uk-nav uk-nav-default uk-margin-top">
-                                    <li class="uk-nav-header">Developer</li>
-                                    <router-link tag="li" to="projectstructure"><a>Project Structure</a></router-link>
-                                    <router-link tag="li" to="less-sass"><a>Less &amp; Sass files</a></router-link>
-                                    <router-link tag="li" to="theme"><a>Create a theme</a></router-link>
-                                    <router-link tag="li" to="javascript"><a>JavaScript</a></router-link>
-                                    <router-link tag="li" to="custom-prefix"><a>Custom prefix</a></router-link>
-                                    <router-link tag="li" to="rtl"><a>RTL version</a></router-link>
-                                </ul>
-                                <ul class="uk-nav uk-nav-default uk-margin-top">
-                                    <li class="uk-nav-header">Components</li>
-                                    <router-link tag="li" to="accordion"><a>Accordion</a></router-link>
-                                    <router-link tag="li" to="alert"><a>Alert</a></router-link>
-                                    <router-link tag="li" to="align"><a>Align</a></router-link>
-                                    <router-link tag="li" to="animation"><a>Animation</a></router-link>
-                                    <router-link tag="li" to="article"><a>Article</a></router-link>
-                                    <router-link tag="li" to="background"><a>Background</a></router-link>
-                                    <router-link tag="li" to="badge"><a>Badge</a></router-link>
-                                    <router-link tag="li" to="base"><a>Base</a></router-link>
-                                    <router-link tag="li" to="breadcrumb"><a>Breadcrumb</a></router-link>
-                                    <router-link tag="li" to="button"><a>Button</a></router-link>
-                                    <router-link tag="li" to="card"><a>Card</a></router-link>
-                                    <router-link tag="li" to="close"><a>Close</a></router-link>
-                                    <router-link tag="li" to="column"><a>Column</a></router-link>
-                                    <router-link tag="li" to="comment"><a>Comment</a></router-link>
-                                    <router-link tag="li" to="container"><a>Container</a></router-link>
-                                    <router-link tag="li" to="cover"><a>Cover</a></router-link>
-                                    <router-link tag="li" to="description-list"><a>Description List</a></router-link>
-                                    <router-link tag="li" to="divider"><a>Divider</a></router-link>
-                                    <router-link tag="li" to="dotnav"><a>Dotnav</a></router-link>
-                                    <router-link tag="li" to="drop" exact><a>Drop</a></router-link>
-                                    <router-link tag="li" to="dropdown"><a>Dropdown</a></router-link>
-                                    <router-link tag="li" to="flex"><a>Flex</a></router-link>
-                                    <router-link tag="li" to="form"><a>Form</a></router-link>
-                                    <router-link tag="li" to="grid"><a>Grid</a></router-link>
-                                    <router-link tag="li" to="heading"><a>Heading</a></router-link>
-                                    <router-link tag="li" to="icon" exact><a>Icon</a></router-link>
-                                    <router-link tag="li" to="iconnav"><a>Iconnav</a></router-link>
-                                    <router-link tag="li" to="inverse"><a>Inverse</a></router-link>
-                                    <router-link tag="li" to="label"><a>Label</a></router-link>
-                                    <router-link tag="li" to="link"><a>Link</a></router-link>
-                                    <router-link tag="li" to="list"><a>List</a></router-link>
-                                    <router-link tag="li" to="margin"><a>Margin</a></router-link>
-                                    <router-link tag="li" to="modal"><a>Modal</a></router-link>
-                                    <router-link tag="li" to="nav" exact><a>Nav</a></router-link>
-                                    <router-link tag="li" to="navbar"><a>Navbar</a></router-link>
-                                    <router-link tag="li" to="notification"><a>Notification</a></router-link>
-                                    <router-link tag="li" to="offcanvas"><a>Offcanvas</a></router-link>
-                                    <router-link tag="li" to="overlay"><a>Overlay</a></router-link>
-                                    <router-link tag="li" to="padding"><a>Padding</a></router-link>
-                                    <router-link tag="li" to="pagination"><a>Pagination</a></router-link>
-                                    <router-link tag="li" to="placeholder"><a>Placeholder</a></router-link>
-                                    <router-link tag="li" to="position"><a>Position</a></router-link>
-                                    <router-link tag="li" to="print"><a>Print</a></router-link>
-                                    <router-link tag="li" to="progress"><a>Progress</a></router-link>
-                                    <router-link tag="li" to="scroll" exact><a>Scroll</a></router-link>
-                                    <router-link tag="li" to="scrollspy"><a>Scrollspy</a></router-link>
-                                    <router-link tag="li" to="search"><a>Search</a></router-link>
-                                    <router-link tag="li" to="section"><a>Section</a></router-link>
-                                    <router-link tag="li" to="slidenav"><a>Slidenav</a></router-link>
-                                    <router-link tag="li" to="sortable"><a>Sortable</a></router-link>
-                                    <router-link tag="li" to="spinner"><a>Spinner</a></router-link>
-                                    <router-link tag="li" to="sticky"><a>Sticky</a></router-link>
-                                    <router-link tag="li" to="subnav"><a>Subnav</a></router-link>
-                                    <router-link tag="li" to="switcher"><a>Switcher</a></router-link>
-                                    <router-link tag="li" to="tab" exact><a>Tab</a></router-link>
-                                    <router-link tag="li" to="table"><a>Table</a></router-link>
-                                    <router-link tag="li" to="text"><a>Text</a></router-link>
-                                    <router-link tag="li" to="toggle"><a>Toggle</a></router-link>
-                                    <router-link tag="li" to="tooltip"><a>Tooltip</a></router-link>
-                                    <router-link tag="li" to="totop"><a>Totop</a></router-link>
-                                    <router-link tag="li" to="transition"><a>Transition</a></router-link>
-                                    <router-link tag="li" to="upload"><a>Upload</a></router-link>
-                                    <router-link tag="li" to="utility"><a>Utility</a></router-link>
-                                    <router-link tag="li" to="visibility"><a>Visibility</a></router-link>
-                                    <router-link tag="li" to="width"><a>Width</a></router-link>
-                                </ul>
+
                             </aside>
                         </div>
                     </div>
@@ -179,7 +103,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
 
