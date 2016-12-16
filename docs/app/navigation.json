@@ -9,7 +9,7 @@
     "Developer": {
 
         "Project Structure": "structure",
-        "Less & Sass files": "less-sass",
+        "Less files": "less",
         "Create a theme": "theme",
         "JavaScript": "javascript",
         "Custom prefix": "custom-prefix",
