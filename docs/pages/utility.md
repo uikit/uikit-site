@@ -365,7 +365,7 @@ You can view examples in the tests for [Height Viewport](../assets/uikit/tests/h
 
 To expand all children of a container to the same height, regardless of their content – for example, inside a grid – add the `uk-height-match` attribute.
 
-Note: Once grid columns extend to a width of 100%, their heights will no longer be matched. This makes sense, for example, if they stack vertically in narrower viewports.
+**Note** Once grid columns extend to a width of 100%, their heights will no longer be matched. This makes sense, for example, if they stack vertically in narrower viewports.
 
 ```html
 <div uk-grid uk-height-match>

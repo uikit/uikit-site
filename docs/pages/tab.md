@@ -151,6 +151,8 @@ Tabs can be used to trigger a dropdown menu from the [Dropdown component](dropdo
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Option      | Value           | Default | Description                                                                                              |
 |-------------|-----------------|---------|----------------------------------------------------------------------------------------------------------|
 | `connect`   | CSS selector    | false   | Related item's container. By default, this is the next element with the 'uk-switcher' class.             |

@@ -237,6 +237,8 @@ You can use the [Nav component](nav.md) inside an off-canvas to create a mobile 
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Option    | Value                     | Default | Description                                      |
 |-----------|---------------------------|---------|--------------------------------------------------|
 | `mode`    | String | `slide`   | Off-canvas animation mode: `slide`, `reveal`, `push` or `none`.  |

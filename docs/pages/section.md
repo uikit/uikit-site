@@ -48,7 +48,7 @@ To apply different background colors and paddings, add one of the following clas
 <div class="uk-section uk-section-primary"></div>
 ```
 
-Note: To properly display colors, borders and other elements on colored sections, you might want to apply the `.uk-light` class from the [Inverse component](inverse.md).
+**Note** To properly display colors, borders and other elements on colored sections, you might want to apply the `.uk-light` class from the [Inverse component](inverse.md).
 
 ```example
 <div class="uk-section uk-section-default">

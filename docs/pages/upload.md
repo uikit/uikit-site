@@ -158,6 +158,8 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Option | Value | Default | Description |
 | --- | --- |
 | `url` | String | '' | The request url. |

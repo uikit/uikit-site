@@ -48,7 +48,7 @@ Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md)
 </div>
 ```
 
-Note: You can also apply the [Visibility component](visibility.md), so that the slidenav only appears on hover.
+**Note** You can also apply the [Visibility component](visibility.md), so that the slidenav only appears on hover.
 
 ```example
 <div class="uk-child-width-1-2@m uk-grid-small" uk-grid>

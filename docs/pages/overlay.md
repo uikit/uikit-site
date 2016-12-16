@@ -13,7 +13,7 @@ To create a position context, add the `.uk-position-relative` class to a contain
 </div>
 ```
 
-Note: Add the `.uk-light` or `.uk-dark` class, so that elements will be optimized for better visibility on dark or light images.
+**Note** Add the `.uk-light` or `.uk-dark` class, so that elements will be optimized for better visibility on dark or light images.
 
 ```example
 <div class="uk-position-relative">

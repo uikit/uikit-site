@@ -125,6 +125,8 @@ For an example of the scrollspy nav, just check out our [Scrollspy test page](ht
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `cls` | String | uk-scrollspy-inview | Class to add when the element is in view. If two, comma separated classes are provided those will be toggled. |

@@ -244,6 +244,8 @@ Here is an overview of all currently available icons. Over the time, we will kee
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Option  | Value  | Default | Description          |
 |---------|--------|---------|----------------------|
 | `icon`  | String | ''      | The icon to display. |

@@ -96,7 +96,7 @@ You can also apply one or more custom classes to items when they are being dragg
 <ul uk-sortable="clsCustom: my-class">...</ul>
 ```
 
-Note: In this example, we are using a nav from the [Nav component](nav.md). When dragging an item it will change color and background.
+**Note** In this example, we are using a nav from the [Nav component](nav.md). When dragging an item it will change color and background.
 
 ```example
 <ul class="uk-nav uk-nav-default uk-width-medium" uk-sortable="clsCustom: uk-background-primary; uk-light">
@@ -110,7 +110,9 @@ Note: In this example, we are using a nav from the [Nav component](nav.md). When
 
 ***
 
-##Component options
+## Component options
+
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
 | Option           | Value  | Default                 | Description                                   |
 |------------------|--------|-------------------------|-----------------------------------------------|

@@ -99,6 +99,8 @@ Adding the `.uk-height-viewport` class from the [Utility component](utility.md) 
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `automute` | Boolean | true | Tries to automute the iframe's video. |

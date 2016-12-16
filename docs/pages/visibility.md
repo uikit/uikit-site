@@ -30,7 +30,7 @@ Add one of the `.uk-hidden-*` classes to hide the element from screens larger th
 ```
 
 
-Note: In this example the green elements are hidden on screens that are larger than the defined breakpoint. Resize your browser window to see the effect.
+**Note** In this example the green elements are hidden on screens that are larger than the defined breakpoint. Resize your browser window to see the effect.
 
 ```example
 <div class="uk-child-width-1-1@s uk-child-width-1-2@m uk-text-center" uk-grid>
@@ -87,7 +87,7 @@ Use `.uk-visible-*` classes to show the element for screens larger then the spec
 <div class="uk-visible@m"></div>
 ```
 
-Note: In this example the green elements are displayed on screens that are larger than the defined breakpoint. Resize your browser window to see the effect.
+**Note** In this example the green elements are displayed on screens that are larger than the defined breakpoint. Resize your browser window to see the effect.
 
 ```example
 <div class="uk-child-width-1-1@s uk-child-width-1-2@m uk-text-center" uk-grid>

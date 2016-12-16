@@ -38,6 +38,8 @@ $('#scroll-trigger').on('scrolled', function () {
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `duration` | Number | `1000` | Animation duration in milliseconds. |

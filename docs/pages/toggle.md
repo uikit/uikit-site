@@ -33,7 +33,7 @@ You can also toggle multiple items at the same time. Just use the appropriate se
 <p class="toggle2" hidden>Bazinga!</p>
 ```
 
-**Note:** In this example we added the `hidden` attribute to one of the items, so that only the other item will be shown. The toggle will switch visible states between both elements.
+**Note** In this example we added the `hidden` attribute to one of the items, so that only the other item will be shown. The toggle will switch visible states between both elements.
 
 ***
 
@@ -46,7 +46,7 @@ If you don't want to toggle the `.uk-hidden` class, you can also add your own cu
 <div id="toggle3" class="uk-card uk-card-default uk-margin-small"><div class="uk-card-body">Custom class? Yup.</div></div>
 ```
 
-**Note:** In this example we used the `.uk-card-primary` class to switch between different panel styles.
+**Note** In this example we used the `.uk-card-primary` class to switch between different panel styles.
 
 ***
 
@@ -62,6 +62,8 @@ The Toggle component allows you to add animations to items when toggling between
 ***
 
 ## Component options
+
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |

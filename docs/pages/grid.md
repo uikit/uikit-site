@@ -222,6 +222,8 @@ You can easily combine the grid with the [Flex component](flex.md). That way you
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Class          | Value  | Default         | Description                                                                                                |
 |----------------|--------|-----------------|------------------------------------------------------------------------------------------------------------|
 | `margin `      | String | uk-grid-margin  | This class is added to items that break into the next row, typically to create margin to the previous row. |

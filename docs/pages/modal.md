@@ -292,6 +292,8 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `center` | Boolean | `false` | Center the modal. |

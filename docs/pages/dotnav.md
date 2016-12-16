@@ -50,12 +50,12 @@ The dotnav can also be displayed vertically. Just add the `.uk-dotnav-vertical` 
 
 ## Dotnav and images
 
-For better visibility on images, for example when using the dotnav as a slideshow navigation, just put it inside a container with the `.uk-light` class.
+To position the dotnav on top of an element, add one of the `.uk-position-*` classes from the [Position component](position.md). For better visibility on images, for example when using the dotnav as a slideshow navigation, just put it inside a container with the `.uk-light` class from the [Inverse component](inverse.md).
 
 ```html
 <div class="uk-inline">
     <img src="" alt="">
-    <ul class="uk-dotnav">...</ul>
+    <ul class="uk-dotnav uk-position-mediun uk-position-bottom-center">...</ul>
 </div>
 ```
 
@@ -94,7 +94,7 @@ For better visibility on images, for example when using the dotnav as a slidesho
 
 ## Vertically center in viewport
 
-The dotnav can also be centered vertically inside your viewport using the [Position component](position.md). This is useful for typical onepage websites.
+The dotnav can also be centered vertically inside your viewport by adding the `.uk-position-center-right` and `.uk-position-fixed` classes from the [Position component](position.md). This is useful for typical onepage websites.
 
 ```html
 <div class="uk-position-medium uk-position-center-right uk-position-fixed">

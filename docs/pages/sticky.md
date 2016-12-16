@@ -158,7 +158,7 @@ Bind the sticky behavior to a specific element, so that it disappears after scro
 
 ***
 
-## Responsive Behavior
+## Responsive
 
 You also have the possibility of disabling the sticky behavior for different devices by applying the `media` option to the `uk-sticky` attribute and adding the appropriate viewport width.
 
@@ -170,6 +170,7 @@ You also have the possibility of disabling the sticky behavior for different dev
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
 | Option          | Value                                 | Default   | Description                                                                                                   |
 |-----------------|---------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------|

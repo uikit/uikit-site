@@ -421,6 +421,8 @@ To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribu
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Option      | Value        | Default | Description                                                                                              |
 |-------------|--------------|---------|----------------------------------------------------------------------------------------------------------|
 | `connect`   | CSS selector | false   | Related item's container. By default, this is the next element with the 'uk-switcher' class.             |

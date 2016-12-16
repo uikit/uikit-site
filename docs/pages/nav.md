@@ -23,7 +23,7 @@ To apply this component, add the `.uk-nav` class to a `<ul>` element. Use `<a>` 
 </div>
 ```
 
-**Note:** By default, the nav has no styling. That's why it is important to add a modifier class. In our example we are using the `.uk-nav-default` class.
+**Note** By default, the nav has no styling. That's why it is important to add a modifier class. In our example we are using the `.uk-nav-default` class.
 
 ***
 
@@ -72,7 +72,7 @@ Add the `.uk-parent` class to an item to turn it into a parent. Add the `.uk-nav
 
 By default, child menu items are always visible. To apply an accordion effect, just add the `uk-nav` attribute as well as the `.uk-nav-accordion` class to the main `<ul>`. Add the `.uk-nav-parent-icon` class to apply icons, indicating parent items.
 
-**Note:** Accordion navs don't need the `.uk-nav` class.
+**Note** Accordion navs don't need the `.uk-nav` class.
 
 ```html
 <ul class="uk-nav-parent-icon uk-nav-accordion" uk-nav>...</ul>
@@ -434,6 +434,8 @@ A nav can be used inside an off-canvas from the [Off-canvas component](offcanvas
 ***
 
 ## Component options
+
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
 | Class         | Value        | Default      | Description                                                                       |
 |---------------|--------------|--------------|-----------------------------------------------------------------------------------|

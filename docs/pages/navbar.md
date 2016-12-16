@@ -775,6 +775,8 @@ When using an image or colored background for the hero section of your website, 
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Class            | Value               | Default | Description                                                           |
 |------------------|---------------------|---------|-----------------------------------------------------------------------|
 | `align`          | left, right, center | left    | Dropdown alignment.                                                   |

@@ -302,6 +302,8 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Option           | Value                  | Default       | Description                                                                      |
 |------------------|------------------------|---------------|----------------------------------------------------------------------------------|
 | `toggle`         | String, Boolean  | `true`          | CSS selector for the element to be used as the toggler. By default, uses the preceding element.  |

@@ -39,6 +39,8 @@ Add one of the following options to the `uk-tooltip` attribute to adjust the too
 
 ## Component options
 
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
 | Option | Value | Default | Description |
 | --- | --- |
 | `pos` | String | 'bottom-left' | Tooltip position. |

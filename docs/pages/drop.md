@@ -11,7 +11,7 @@ To apply this component, just add the `uk-drop` attribute to a block element pla
 <div uk-drop></div>
 ```
 
-**Note:** The Drop component has no default styling. In this example, we've used a card from the [Card component](card.md) for visualization. A button toggles the drop.
+**Note** The Drop component has no default styling. In this example, we've used a card from the [Card component](card.md) for visualization. A button toggles the drop.
 
 ```example
 <button class="uk-button uk-button-default">Hover</button>
@@ -158,6 +158,8 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 ***
 
 ## Component options
+
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
 | Option           | Value                  | Default       | Description                                                                      |
 |------------------|------------------------|---------------|----------------------------------------------------------------------------------|

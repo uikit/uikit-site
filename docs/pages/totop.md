@@ -4,7 +4,7 @@
 
 The Totop component allows you to apply an icon to your to-top scroller. Just add the `uk-totop` attribute to an `<a>` element.
 
-Note: Scroll down the page to see an example in action.
+**Note** Scroll down the page to see an example in action.
 
 ```html
 <a href="" uk-totop></a>
