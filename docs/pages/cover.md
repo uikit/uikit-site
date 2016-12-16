@@ -16,32 +16,11 @@ To have an image cover its parent element, add the `.uk-cover-container` class t
 </div>
 ```
 
-```example
-<div class="uk-cover-container" style="height: 300px">
-    <img src="../docs/images/dark.jpg" alt="" uk-cover>
-</div>
-```
-
-
-***
-
-## Cover with content
-
-To position content absolutely on top of the covering element, add the `.uk-position-cover` class from the [Utility component](utility.md) to a container element following your image or video. If you want to center the content vertically and horizontally, just use the [Flex component](flex.md).
-
-```html
-<div class="uk-cover-container">
-    <img src="" alt="" uk-cover>
-    <div class="uk-position-cover"></div>
-</div>
-```
+To position content on top of the covering element, use the [Position component](position.md).
 
 ```example
-<div class="uk-cover-container uk-light" style="height: 300px">
+<div class="uk-cover-container uk-light uk-height-medium">
     <img src="../docs/images/dark.jpg" alt="" uk-cover>
-    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-        <h1>Heading</h1>
-    </div>
 </div>
 ```
 
@@ -54,19 +33,15 @@ To create a video that covers its parent container, add the `uk-cover` attribute
 ```html
 <div class="uk-cover-container">
     <video uk-cover></video>
-    <div class="uk-position-cover"></div>
 </div>
 ```
 
 ```example
-<div class="uk-cover-container uk-light" style="height: 300px">
+<div class="uk-cover-container uk-light uk-height-medium">
     <video uk-cover autoplay loop muted controls>
         <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
         <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
     </video>
-    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-        <h1>Heading</h1>
-    </div>
 </div>
 ```
 
@@ -79,16 +54,12 @@ To apply the Cover component to an iframe, you need to add the `uk-cover` attrib
 ```html
 <div class="uk-cover-container">
     <iframe src="" uk-cover></iframe>
-    <div class="uk-position-cover">...</div>
 </div>
 ```
 
 ```example
-<div class="uk-cover-container uk-light" style="height: 300px">
+<div class="uk-cover-container uk-light uk-height-medium">
     <iframe src="http://www.youtube.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>
-    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-        <h1>Heading</h1>
-    </div>
 </div>
 ```
 
@@ -102,17 +73,13 @@ To add responsive behavior to your cover image, you need to create an invisible 
 <div class="uk-cover-container">
     <canvas width="" height=""></canvas>
     <video uk-cover></video>
-    <div class="uk-position-cover"></div>
 </div>
 ```
 
 ```example
-<div class="uk-cover-container uk-light" style="height: 300px">
+<div class="uk-cover-container uk-light uk-height-medium">
     <canvas width="600" height="400"></canvas>
     <img uk-cover src="../docs/images/dark.jpg" alt="">
-    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-        <h1>Heading</h1>
-    </div>
 </div>
 ```
 
@@ -124,8 +91,7 @@ Adding the `.uk-height-viewport` class from the [Utility component](utility.md) 
 
 ```html
 <div class="uk-cover-container" uk-height-viewport>
-    <img uk-cover src="" alt="">
-    <div class="uk-position-cover"></div>
+    <img src="" alt="" uk-cover>
 </div>
 ```
 
