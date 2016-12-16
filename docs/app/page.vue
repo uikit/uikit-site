@@ -12,6 +12,12 @@ import { escape } from 'he'
 
 const navigation = require('./navigation.json');
 
+let components = [];
+
+Object.keys(navigation['Components']).forEach((label) => {
+    components.push(navigation['Components'][label]);
+});
+
 export default {
 
     data() {
@@ -65,9 +71,7 @@ export default {
 
                     this.createIds();
 
-                    
-
-                    this.$parent.component = page;
+                    this.$parent.component = components.indexOf(page) != -1 ? page : false;
 
                     if (location.hash && $(location.hash.length)) {
                         scrollTo(0, $(location.hash).offset().top);
