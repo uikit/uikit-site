@@ -11,13 +11,60 @@ Any content, like a button, can toggle the drop component. Just add the `uk-drop
 <div uk-drop></div>
 ```
 
-**Note** The Drop component has no default styling. In this example, we've used a card from the [Card component](card.md) for visualization. A button toggles the drop.
+A dropdown can be enabled by either hovering or clicking the the toggle. Just add the `mode: click` option to the attribute. If you want to group the toggle and the dropdown, you can just add the `.uk-inline` class to a container element around both.
+
+```html
+<div class="uk-inline">
+    <button class="uk-button"></button>
+    <div uk-drop="mode: click"></div>
+</div>
+```
+
+**Note** The Drop component has no default styling. In this example, we've used a card from the [Card component](card.md) for visualization. If you want to group the toggle and the drop, you can just add the `.uk-inline` class to a container element around both.
 
 ```example
 <div class="uk-inline">
     <button class="uk-button uk-button-default">Hover</button>
     <div uk-drop>
         <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+</div>
+
+<div class="uk-inline">
+    <button class="uk-button uk-button-default">Click</button>
+    <div uk-drop="mode: click">
+        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+</div>
+```
+
+***
+
+### Grid
+
+You can place a grid from the [Grid component](grid.md) inside a drop. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically, whenever the drop no longer fits its container, just add the `.uk-drop-grid` class.
+
+```html
+<div class="uk-width-large" uk-drop>
+    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
+    </div>
+</div>
+```
+
+Use one of the classes from the [Width component](width.md) to adjust the drop's width.
+
+```example
+<button class="uk-button uk-button-default">Hover</button>
+<div class="uk-width-large" uk-drop>
+    <div class="uk-card uk-card-body uk-card-default">
+        <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            </div>
+        </div>
     </div>
 </div>
 ```
@@ -29,7 +76,7 @@ Any content, like a button, can toggle the drop component. Just add the `uk-drop
 Add one of the following options to the `uk-drop` attribute to adjust the drop's alignment.
 
 ```html
-<div></div>
+<button></button>
 <div uk-drop="pos: top-left"></div>
 ```
 
@@ -40,12 +87,14 @@ Add one of the following options to the `uk-drop` attribute to adjust the drop's
         <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
 </div>
+
 <div class="uk-inline">
     <button class="uk-button uk-button-default">Bottom Justify</button>
     <div uk-drop="pos: bottom-justify">
         <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
 </div>
+
 <div class="uk-inline">
     <button class="uk-button uk-button-default">Right Center</button>
     <div uk-drop="pos: right-center">
@@ -86,14 +135,17 @@ By default, the drop flips automatically when it exceeds the viewport's edge. If
 
 ```example
 <div class="boundary uk-width-2-3@s uk-clearfix uk-padding-small" style="border: 1px dashed #e7e7e7;">
+
     <button class="uk-button uk-button-default ukfloat-left">Hover</button>
     <div uk-drop="boundary: .boundary">
         <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
+
     <button class="uk-button uk-button-default uk-float-right">Hover</button>
     <div uk-drop="boundary: .boundary">
         <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
+
 </div>
 ```
 
@@ -112,14 +164,17 @@ You can also align the drop to its boundary. To do so, add the `boundary-align: 
 
 ```example
 <div class="boundary-align uk-clearfix uk-padding-small" style="border: 1px dashed #e7e7e7;">
+
     <button class="uk-button uk-button-default uk-align-left uk-margin-remove">Justify</button>
     <div uk-drop="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
         <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
+
     <button class="uk-button uk-button-default uk-align-right uk-margin-remove">Center</button>
     <div uk-drop="pos: bottom-center; boundary: .boundary-align; boundary-align: true">
         <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
+
 </div>
 ```
 

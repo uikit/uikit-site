@@ -2,6 +2,10 @@
 
 <p class="uk-text-lead">Utilize the power of Flexbox to create a wide range of layouts.</p>
 
+The Flex component has an essential role in building layouts in UIkit. A lot of components, for example the [Grid](grid.md) as well as horizontal navigations, like the [Navbar](navbar.md), [Subnav](subnav.md), [Breadcrumb](breadcrumb.md), [Pagination](pagination.md), [Tab](tab.md) and [Dotnav](dotnav.md) rely on the Flex component.
+
+***
+
 ## Usage
 
 To apply this component, add the `.uk-flex` class to a `<div>` element. This will create the flex container. By default, all flex items are aligned to the left and matched in height and width.

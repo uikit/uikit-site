@@ -4,14 +4,14 @@
 
 ## Usage
 
-Any content, like a button, can toggle a dropdown. Just add the `uk-dropdown` attribute to a block element following the toggle.
+Basically, a dropdown is a specific case of the [drop](drop.md) that provides its own styling. Any content, like a button, can toggle a dropdown. Just add the `uk-dropdown` attribute to a block element following the toggle.
 
 ```html
 <button></button>
 <div uk-dropdown></div>
 ```
 
-A dropdown can be enabled by either hovering or clicking the the toggle. Just add the `mode: click` option to the attribute.
+A dropdown can be enabled by either hovering or clicking the the toggle. Just add the `mode: click` option to the attribute. If you want to group the toggle and the dropdown, you can just add the `.uk-inline` class to a container element around both.
 
 ```html
 <div class="uk-inline">
@@ -68,7 +68,7 @@ A dropdown can contain a nav from the [Nav component](nav.md). Just add the `.uk
 
 ### Grid
 
-You can place a grid from the [Grid component](grid.md) inside a dropdown, which can hold a navigation or any other content. Just wrap the content with a `<div>` and add the `uk-grid` attribute. To optimize the grid for use inside the dropdown, add the `.uk-dropdown-grid` class.
+You can place a grid from the [Grid component](grid.md) inside a dropdown, which can hold a navigation or any other content. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically, whenever the dropdown no longer fits its container, just add the `.uk-dropdown-grid` class.
 
 ```html
 <div class="uk-width-large" uk-dropdown>
@@ -111,7 +111,7 @@ Use one of the classes from the [Width component](width.md) to adjust the dropdo
 
 ***
 
-## Alignment modifiers
+## Position
 
 Add one of the following options to the `uk-dropdown` attribute to adjust the dropdown's alignment.
 
@@ -121,6 +121,21 @@ Add one of the following options to the `uk-dropdown` attribute to adjust the dr
 ```
 
 ```example
+<div class="uk-inline">
+    <button class="uk-button uk-button-default">Top Right</button>
+    <div uk-dropdown="pos: top-right">
+        <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+    </div>
+</div>
+
 <div class="uk-inline">
     <button class="uk-button uk-button-default">Bottom Justify</button>
     <div uk-dropdown="pos: bottom-justify">
@@ -135,6 +150,7 @@ Add one of the following options to the `uk-dropdown` attribute to adjust the dr
         </ul>
     </div>
 </div>
+
 <div class="uk-inline">
     <button class="uk-button uk-button-default">Right Center</button>
     <div uk-dropdown="pos: right-center">
@@ -183,6 +199,7 @@ By default, the dropdown flips automatically when it exceeds the viewport's edge
 
 ```example
 <div class="boundary uk-width-2-3@s uk-clearfix uk-padding-small" style="border: 1px dashed #e7e7e7;">
+
     <button class="uk-button uk-button-default uk-align-left uk-margin-remove">Hover</button>
     <div uk-dropdown="boundary: .boundary">
         <ul class="uk-nav uk-dropdown-nav">
@@ -195,6 +212,7 @@ By default, the dropdown flips automatically when it exceeds the viewport's edge
             <li><a href="#">Item</a></li>
         </ul>
     </div>
+
     <button class="uk-button uk-button-default uk-align-right uk-margin-remove">Hover</button>
     <div uk-dropdown="boundary: .boundary">
         <ul class="uk-nav uk-dropdown-nav">
@@ -207,8 +225,11 @@ By default, the dropdown flips automatically when it exceeds the viewport's edge
             <li><a href="#">Item</a></li>
         </ul>
     </div>
+
 </div>
 ```
+
+***
 
 ### Boundary align
 
@@ -223,6 +244,7 @@ You can also align the dropdown to its boundary. To do so, add the `boundary-ali
 
 ```example
 <div class="boundary-align uk-clearfix uk-padding-small" style="border: 1px dashed #e7e7e7;">
+
     <button class="uk-button uk-button-default uk-align-left uk-margin-remove">Justify</button>
     <div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
         <ul class="uk-nav uk-dropdown-nav">
@@ -235,6 +257,7 @@ You can also align the dropdown to its boundary. To do so, add the `boundary-ali
             <li><a href="#">Item</a></li>
         </ul>
     </div>
+
     <button class="uk-button uk-button-default uk-align-right uk-margin-remove">Center</button>
     <div uk-dropdown="pos: bottom-center; boundary: .boundary-align; boundary-align: true">
         <ul class="uk-nav uk-dropdown-nav">
@@ -247,6 +270,7 @@ You can also align the dropdown to its boundary. To do so, add the `boundary-ali
             <li><a href="#">Item</a></li>
         </ul>
     </div>
+
 </div>
 ```
 
@@ -254,7 +278,7 @@ You can also align the dropdown to its boundary. To do so, add the `boundary-ali
 
 ## Offset
 
-To define an offset between the dropdown container and the toggle, add the `offset: 10` option with your value, where the `10` can be any pixel value.
+To define a custom offset between the dropdown container and the toggle, add the `offset` option with a value for the offset, measured in pixels.
 
 ```html
 <div uk-dropdown="offset: 80"></div>
@@ -279,15 +303,15 @@ To define an offset between the dropdown container and the toggle, add the `offs
 
 ## Animation
 
-Apply one or more animations to the dropdown by adding the `animation: uk-animation-*` parameter with one of the classes from the [Animation component](animaton.md). You can also determine the animation's duration. Just add the `duration: 500` option with your value.
+Apply one or more animations to the dropdown by adding the `animation: uk-animation-*` option with one of the classes from the [Animation component](animaton.md). You can also determine the animation's duration. Just add the `duration` option with your value.
 
 ```html
-<div uk-dropdown="animation: uk-animation-scale-up; duration: 1000"></div>
+<div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000"></div>
 ```
 
 ```example
 <button class="uk-button uk-button-default">Hover</button>
-<div uk-dropdown="animation: uk-animation-scale-up; duration: 1000">
+<div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
     <ul class="uk-nav uk-dropdown-nav">
         <li class="uk-active"><a href="#">Active</a></li>
         <li><a href="#">Item</a></li>
@@ -308,14 +332,14 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option           | Value                  | Default       | Description                                                                      |
 |------------------|------------------------|---------------|----------------------------------------------------------------------------------|
-| `toggle`         | String, Boolean  | `true`          | CSS selector for the element to be used as the toggler. By default, uses the preceding element.  |
-| `pos`            | String                 | `bottom-left` | Dropdown position.                                                               |
-| `mode`           | String           | `hover`         | Dropdown trigger, either `hover` or `click` behavior.                                                       |
-| `delay-show`     | Number                 | `0`             | Delay time in ms before a dropdown is displayed in hover mode.                       |
-| `delay-hide`     | Number                 | `800`           | Delay time in ms before a dropdown is hidden in hover mode.                          |
-| `boundary`       | String           | `window`        | CSS selector of element to maintain the drop's visibility.                            |
+| `toggle`         | String, Boolean  | `true`          | CSS selector for the element to be used as the toggler. By default, the preceding element is used.  |
+| `pos`            | String                 | `bottom-left` | The position of the dropdown.                                                               |
+| `mode`           | String           | `hover`         | The dropdown trigger, either `hover` or `click` behavior.                                                       |
+| `delay-show`     | Number                 | `0`             | Delay time in milliseconds before a dropdown is displayed in hover mode.                       |
+| `delay-hide`     | Number                 | `800`           | Delay time in milliseconds before a dropdown is hidden in hover mode.                          |
+| `boundary`       | String           | `window`        | CSS selector of the element to maintain the drop's visibility.                            |
 | `boundary-align` | Boolean                | `false`         | Align the dropdown to its boundary.                                                  |
-| `flip`           | Boolean, String | `true`          | Automatically flip the drop? Possible values: `false`, `true`, `x` or `y`.                                                     |
+| `flip`           | Boolean, String | `true`          | Automatically flip the drop. Possible values are `false`, `true`, `x` or `y`.                                                     |
 | `offset`         | Number                 | `0`             | The offset of the dropdown's container.                                              |
 | `animation`      | String                 | `false`         | Space separated names of animations to apply. Comma separate for out animations. |
 | `duration`       | Number                 | `200`           | Animation duration in milliseconds.                                                          |
