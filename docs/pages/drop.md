@@ -14,9 +14,11 @@ Any content, like a button, can toggle the drop component. Just add the `uk-drop
 **Note** The Drop component has no default styling. In this example, we've used a card from the [Card component](card.md) for visualization. A button toggles the drop.
 
 ```example
-<button class="uk-button uk-button-default">Hover</button>
-<div uk-drop>
-    <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+<div class="uk-inline">
+    <button class="uk-button uk-button-default">Hover</button>
+    <div uk-drop>
+        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
 </div>
 ```
 

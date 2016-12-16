@@ -14,8 +14,10 @@ Any content, like a button, can toggle a dropdown. Just add the `uk-dropdown` at
 A dropdown can be enabled by either hovering or clicking the the toggle. Just add the `mode: click` option to the attribute.
 
 ```html
-<button class="uk-button"></button>
-<div uk-dropdown="mode: click"></div>
+<div class="uk-inline">
+    <button class="uk-button"></button>
+    <div uk-dropdown="mode: click"></div>
+</div>
 ```
 
 ```example
