@@ -4,10 +4,10 @@
 
 ## Usage
 
-To apply this component, just add the `uk-drop` attribute to a block element placed next to another block element.
+Any content, like a button, can toggle the drop component. Just add the `uk-drop` attribute to a block element following the toggle.
 
 ```html
-<div></div>
+<button></button>
 <div uk-drop></div>
 ```
 

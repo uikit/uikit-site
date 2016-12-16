@@ -7,7 +7,7 @@
 Any content, like a button, can toggle a dropdown. Just add the `uk-dropdown` attribute to a block element following the toggle.
 
 ```html
-<button class="uk-button"></button>
+<button></button>
 <div uk-dropdown></div>
 ```
 
