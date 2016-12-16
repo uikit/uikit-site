@@ -81,14 +81,14 @@
                     <div class="uk-width-expand uk-height-1-1 uk-overflow-auto uk-position-relative">
 
                         <div class="uk-padding uk-container">
-                            <div class="uk-grid">
-                                <div class="uk-flex-1">
+                            <div class="uk-grid uk-child-width-expand">
+                                <div>
                                     <router-view></router-view>
                                 </div>
-                                <div class="uk-visible@m">
-                                    <aside class="uk-width-medium" v-if="!loading">
+                                <div class="uk-width-medium uk-visible@m">
+                                    <aside v-if="!loading">
 
-                                        <ul class="uk-nav-default uk-nav-parent-icon uk-nav-accordion uk-nav" uk-sticky="offset: 20">
+                                        <ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-sticky="offset: 20">
                                             <li v-for="(id, subject) in ids">
                                                 <a :href="'#'+id">{{ subject }}</a>
                                             </li>
