@@ -84,11 +84,11 @@ By default, the drop flips automatically when it exceeds the viewport's edge. If
 
 ```example
 <div class="boundary uk-width-2-3@s uk-clearfix uk-padding-small" style="border: 1px dashed #e7e7e7;">
-    <button class="uk-button uk-button-default uk-align-left uk-margin-remove">Hover</button>
+    <button class="uk-button uk-button-default ukfloat-left">Hover</button>
     <div uk-drop="boundary: .boundary">
         <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
-    <button class="uk-button uk-button-default uk-align-right uk-margin-remove">Hover</button>
+    <button class="uk-button uk-button-default uk-float-right">Hover</button>
     <div uk-drop="boundary: .boundary">
         <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
@@ -125,7 +125,7 @@ You can also align the drop to its boundary. To do so, add the `boundary-align: 
 
 ## Offset
 
-To define a custom offset between the drop container and the toggle, add the `offset: 10` option with a value for the offset, measured in pixels.
+To define a custom offset between the drop container and the toggle, add the `offset` option with a value for the offset, measured in pixels.
 
 ```html
 <div uk-drop="offset: 80"></div>
@@ -142,15 +142,15 @@ To define a custom offset between the drop container and the toggle, add the `of
 
 ## Animation
 
-Apply one or more animations to the dropdown by adding the `animation: uk-animation-*` option with one of the classes from the [Animation component](animaton.md). You can also determine the animation's duration. Just add the `duration: 500` option with your value.
+Apply one or more animations to the dropdown by adding the `animation: uk-animation-*` option with one of the classes from the [Animation component](animaton.md). You can also determine the animation's duration. Just add the `duration` option with your value.
 
 ```html
-<div uk-drop="animation: uk-animation-scale-up; duration: 1000"></div>
+<div uk-drop="animation: uk-animation-slide-top-small; duration: 1000"></div>
 ```
 
 ```example
 <button class="uk-button uk-button-default">Hover</button>
-<div uk-drop="animation: uk-animation-scale-up; duration: 1000">
+<div uk-drop="animation: uk-animation-slide-top-small; duration: 1000">
     <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 </div>
 ```
