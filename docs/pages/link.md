@@ -14,6 +14,7 @@ If you want the link to a apply a muted instead of the default link color, just 
 <div class="uk-margin-small">
     <a class="uk-link-muted" href="#">Link</a>
 </div>
+
 <ul class="uk-link-muted">
     <li><a href="#">Link</a></li>
     <li><a href="#">Link</a></li>

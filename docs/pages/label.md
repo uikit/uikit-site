@@ -33,7 +33,10 @@ Add the `.uk-label-success`, `.uk-label-warning` or `.uk-label-danger` class for
 
 ```example
 <span class="uk-label">Default</span>
+
 <span class="uk-label uk-label-success">Success</span>
+
 <span class="uk-label uk-label-warning">Warning</span>
+
 <span class="uk-label uk-label-danger">Danger</span>
 ```

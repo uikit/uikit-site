@@ -45,6 +45,7 @@ Add one of the following classes to add smaller spacing to block elements.
 <div class="uk-margin-small uk-card uk-card-default uk-width-medium">
     <div class="uk-card-body uk-text-center"><code>.uk-margin-small</code></div>
 </div>
+
 <div class="uk-margin-small uk-card uk-card-default uk-width-medium">
     <div class="uk-card-body uk-text-center"><code>.uk-margin-small</code></div>
 </div>
@@ -68,6 +69,7 @@ Add one of the following classes to add medium spacing to block elements.
 <div class="uk-margin-medium uk-card uk-card-default uk-width-medium">
     <div class="uk-card-body uk-text-center"><code>.uk-margin-medium</code></div>
 </div>
+
 <div class="uk-margin-medium uk-card uk-card-default uk-width-medium">
     <div class="uk-card-body uk-text-center"><code>.uk-margin-medium</code></div>
 </div>
@@ -91,6 +93,7 @@ Add one of the following classes to add large spacing to block elements.
 <div class="uk-margin-large uk-card uk-card-default uk-width-medium">
     <div class="uk-card-body uk-text-center"><code>.uk-margin-large</code></div>
 </div>
+
 <div class="uk-margin-large uk-card uk-card-default uk-width-medium">
     <div class="uk-card-body uk-text-center"><code>.uk-margin-large</code></div>
 </div>
@@ -137,7 +140,9 @@ Add one of the following classes to remove margin from block elements.
 <div class="uk-card uk-card-default uk-width-medium">
     <div class="uk-card-body uk-text-center"></div>
 </div>
+
 <p class="uk-margin-remove-bottom uk-text-center uk-width-medium uk-background-muted">This is a <code>&lt;p&gt;</code> with no bottom margin.</p>
+
 <div class="uk-card uk-card-default uk-width-medium">
     <div class="uk-card-body uk-text-center"></div>
 </div>
@@ -160,6 +165,7 @@ Add one of the following classes to set auto margin. This can be useful to cente
 <div class="uk-margin-auto-left uk-card uk-card-default uk-width-medium">
     <div class="uk-card-body uk-text-center"><code>.uk-margin-auto-left</code></div>
 </div>
+
 <div class="uk-margin-auto uk-margin-top uk-card uk-card-default uk-width-medium">
     <div class="uk-card-body uk-text-center"><code>.uk-margin-auto</code><br><code>.uk-margin-top</code></div>
 </div>

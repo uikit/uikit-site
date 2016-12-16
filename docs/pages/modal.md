@@ -244,10 +244,15 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 
 ```example
 <p uk-margin>
+
     <a id="modal-dialog" class="uk-button uk-button-default" href="#">Dialog</a>
+
     <a id="modal-alert" class="uk-button uk-button-default" href="#">Alert</a>
+
     <a id="modal-confirm" class="uk-button uk-button-default" href="#">Confirm</a>
+
     <a id="modal-prompt" class="uk-button uk-button-default" href="#">Prompt</a>
+
     <script>
     (function () {
 
@@ -285,6 +290,7 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 
         })();
     </script>
+    
 </p>
 ```
 
