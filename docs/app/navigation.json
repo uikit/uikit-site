@@ -11,9 +11,7 @@
         "Project Structure": "structure",
         "Less files": "less",
         "Create a theme": "theme",
-        "JavaScript": "javascript",
-        "Custom prefix": "custom-prefix",
-        "RTL version": "rtl"
+        "JavaScript": "javascript"
     },
 
     "Components": {
