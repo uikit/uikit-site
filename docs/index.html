@@ -65,11 +65,11 @@
 
                 <div class="uk-grid uk-position-cover">
 
-                    <div class="uk-height-1-1 uk-overflow-auto uk-visible@m">
-                        <div class="uk-panel uk-padding uk-width-medium">
+                    <div class="uk-height-1-1 uk-width-medium uk-overflow-auto uk-visible@m">
+                        <div class="uk-panel uk-padding">
                             <aside>
 
-                                <ul class="uk-nav uk-nav-default uk-margin-top" v-for="(pages, category) in navigation">
+                                <ul class="uk-nav uk-nav-default" v-bind:class="{ 'uk-margin-top': index }" v-for="(pages, category, index) in navigation">
                                     <li class="uk-nav-header">{{category}}</li>
                                     <router-link tag="li" :to="p" v-for="(p, label) in pages" exact><a>{{label}}</a></router-link>
                                 </ul>
@@ -80,13 +80,13 @@
 
                     <div class="uk-width-expand uk-height-1-1 uk-overflow-auto uk-position-relative">
 
-                        <div class="uk-padding uk-container">
+                        <div class="uk-container">
                             <div class="uk-grid uk-child-width-expand">
                                 <div>
-                                    <router-view></router-view>
+                                    <router-view class="uk-padding uk-padding-remove-horizontal"></router-view>
                                 </div>
                                 <div class="uk-width-medium uk-visible@m">
-                                    <aside v-if="!loading">
+                                    <aside class="uk-padding" v-if="!loading">
 
                                         <ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-sticky="offset: 20">
                                             <li v-for="(id, subject) in ids">
