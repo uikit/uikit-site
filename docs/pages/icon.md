@@ -343,7 +343,7 @@ Use the modifier `.uk-icon-button` class on an `<a>` element to create an icon b
 You can also make any background image the size of an icon. Just add the `.uk-icon-image` class and a background image path.
 
 ```example
-<p><span class="uk-icon uk-icon-image uk-margin-small-right" style="background-image: url(../docs/images/dark.jpg);"></span>Image</p>
+<span class="uk-icon uk-icon-image" style="background-image: url(../docs/images/dark.jpg);"></span>
 ```
 
 ***
