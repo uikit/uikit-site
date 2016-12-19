@@ -4,7 +4,7 @@
 
 ## Usage
 
-To apply this component, add the `uk-icon` attribute to an `<i>` or `<span>` element. To display the actual icon, you need to append the `icon: ICON` parameter to the attribute. Et voilà, you have a vector icon, which inherits size and color just like your text does.
+To apply this component, add the `uk-icon` attribute to an `<i>` or `<span>` element. To display the actual icon, you need to append the `icon: NAME` parameter to the attribute. Et voilà, you have a vector icon, which inherits size and color just like your text does.
 
 ```html
 <i uk-icon="icon: check"></i>
