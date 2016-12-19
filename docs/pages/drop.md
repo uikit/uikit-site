@@ -151,7 +151,7 @@ By default, the drop flips automatically when it exceeds the viewport's edge. If
 
 ***
 
-### Boundary align
+### Boundary alignment
 
 You can also align the drop to its boundary. To do so, add the `boundary-align: true` option to the attribute.
 

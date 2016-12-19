@@ -231,7 +231,7 @@ By default, the dropdown flips automatically when it exceeds the viewport's edge
 
 ***
 
-### Boundary align
+### Boundary alignment
 
 You can also align the dropdown to its boundary. To do so, add the `boundary-align: true` option to the attribute.
 
