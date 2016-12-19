@@ -2,13 +2,15 @@
 
 <p class="uk-text-lead">Inverse the style of any component for light or dark backgrounds.</p>
 
-This component is extremely useful, as it allows you to optimize elements for all kinds of backgrounds – like primary colors or images. That way you can easily display a navbar on an image as well as a light, plain background, for example.
+This component is extremely useful, as it allows you to optimize elements for all kinds of backgrounds–like primary colors or images. That way you can easily display a navbar on an image as well as a light, plain background, for example.
 
 ***
 
 ## Usage
 
 Just add the `.uk-light` class to improve the visibility of objects on dark backgrounds in a light style. When using a dark style, add the `.uk-dark` class to elements on a light background.
+
+**Note** Only one class will come to effect, depending on the style you are using. For example, when using a style with a light background, you can only apply the `.uk-light` class to optimize content on dark backgrounds, as text will already be displayed in a dark color on light backgrounds—and vice versa.
 
 ```html
 <div class="uk-light"></div>

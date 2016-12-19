@@ -4,7 +4,7 @@
 
 ## Usage
 
-To create a label, just add the `.uk-label` class to a `<span>` or `<a>` element.
+To create a label, just add the `.uk-label` class to a `<span>` element.
 
 ```html
 <span class="uk-label"></span>
@@ -12,16 +12,21 @@ To create a label, just add the `.uk-label` class to a `<span>` or `<a>` element
 
 ```example
 <span class="uk-label">Label</span>
-<a class="uk-label">Link</a>
 
-<p><a class="uk-label">Default</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p><span class="uk-label">Default</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 ```
 
 ***
 
 ## Color Modifier
 
-Add the `.uk-label-success`, `.uk-label-warning` or `.uk-label-danger` class for additional colors.
+Add one of the following classes for additional colors.
+
+| Class               | Description                                               |
+|---------------------|-----------------------------------------------------------|
+| `.uk-label-success` | Add this class to indicate success or a positive message. |
+| `.uk-label-warning` | Add this class to indicate a warning.                     |
+| `.uk-label-danger`  | Add this class to indicate danger.                        |
 
 ```html
 <span class="uk-label uk-label-success"></span>

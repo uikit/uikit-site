@@ -2,12 +2,18 @@
 
 <p class="uk-text-lead">Place vector icons anywhere using an set of icons provided by UIkit.</p>
 
+UIkit comes with its own SVG icon system and a comprehensive library, which comprises a growing number of elegant outline icons. This component injects SVGs into the site, so that they adopt color and can be styled with CSS.
+
+***
+
 ## Usage
 
-To apply this component, add the `uk-icon` attribute to an `<i>` or `<span>` element. To display the actual icon, you need to append the `icon: NAME` parameter to the attribute. Et voilà, you have a vector icon, which inherits size and color just like your text does.
+To apply this component, add the `uk-icon` attribute to a `<span>` or `<a>` element. To display the actual icon, you need to append the `icon: NAME` parameter to the attribute. Et voilà, you have a vector icon, which inherits color just like your text does.
 
 ```html
 <span uk-icon="icon: check"></span>
+
+<a href="" uk-icon="icon: heart"></a>
 ```
 
 ```example
@@ -308,7 +314,7 @@ Add the `ratio: 2` parameter to the `uk-icon` attribute to double its size – o
 
 ## Icon Link
 
-To use an icon inside an anchor and reset the default link styling, add the `.uk-icon-link` class.
+To reset the default link styling to a more muted color when using an icon inside an anchor, add the `.uk-icon-link` class.
 
 ```html
 <a href="" class="uk-icon-link" uk-icon="icon: heart"></a>
@@ -340,7 +346,7 @@ Use the modifier `.uk-icon-button` class on an `<a>` element to create an icon b
 
 ## Icon Image
 
-You can also make any background image the size of an icon. Just add the `.uk-icon-image` class and a background image path.
+You can also make any background image scale to the size of an icon. Just add the `.uk-icon-image` class and a background image path.
 
 ```example
 <span class="uk-icon uk-icon-image" style="background-image: url(../docs/images/dark.jpg);"></span>

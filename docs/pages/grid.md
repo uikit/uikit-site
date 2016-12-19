@@ -3,13 +3,13 @@
 <p class="uk-text-lead">Create a fully responsive, fluid and nestable grid layout.</p>
 
 The Grid system of UIkit allows you to arrange block elements in columns and works closely together with the [Width component](width.md) to determine, how much space of the container each item will take up.
-It can also be combined with the [Flex component](flex.md).
+It can also be combined with the [Flex component](flex.md) to align and order grid items.
 
 ***
 
 ## Usage
 
-To create the grid container, add the `uk-grid` attribute to a `<div>` element. There's no need to add a class. Add child `<div>` elements to create the units.
+To create the grid container, add the `uk-grid` attribute to a `<div>` element. There's no need to add a class. Add child `<div>` elements to create the cells. By default, all grid cells are stacked. To place them side by side, add one of the classes from the [Width component](width.md).
 
 ```html
 <div uk-grid>
@@ -37,7 +37,7 @@ To create the grid container, add the `uk-grid` attribute to a `<div>` element. 
 
 ## Small Gutter
 
-To apply a smaller gutter between grid columns, add the `.uk-grid-small` class.
+To apply a smaller gutter between grid cells, add the `.uk-grid-small` class.
 
 ```html
 <div class="uk-grid-small" uk-grid>...</div>
@@ -61,7 +61,7 @@ To apply a smaller gutter between grid columns, add the `.uk-grid-small` class.
 
 ## Medium Gutter
 
-To apply a medium gutter between grid columns, add the `.uk-grid-medium` class.
+To apply a medium gutter between grid cells, add the `.uk-grid-medium` class.
 
 ```html
 <div class="uk-grid-medium" uk-grid>...</div>
@@ -85,7 +85,7 @@ To apply a medium gutter between grid columns, add the `.uk-grid-medium` class.
 
 ## Large Gutter
 
-To apply a large gutter between grid columns, add the `.uk-grid-large` class.
+To apply a large gutter between grid cells, add the `.uk-grid-large` class.
 
 ```html
 <div class="uk-grid-large" uk-grid>...</div>
@@ -133,7 +133,7 @@ To remove the grid gutter entirely, add the `.uk-grid-collapse` class.
 
 ## Divider
 
-Add the `.uk-grid-divider` class to separate grid columns with lines. This class can be combined with the size modifiers.
+Add the `.uk-grid-divider` class to separate grid cells with lines. This class can be combined with the size modifiers.
 
 ```html
 <div class="uk-grid-divider" uk-grid>...</div>
@@ -157,7 +157,7 @@ Add the `.uk-grid-divider` class to separate grid columns with lines. This class
 
 ## Match Height
 
-To match the height of grid columns, add the `.uk-grid-match` class as a CSS only solution.
+To match the height of grid cells, add the `.uk-grid-match` class as a CSS only solution. This automatically selects the direct child of each cell.
 
 ```html
 <div class="uk-grid-match" uk-grid>....</div>
@@ -166,36 +166,46 @@ To match the height of grid columns, add the `.uk-grid-match` class as a CSS onl
 ```example
 <div class="uk-grid-match uk-child-width-expand@s uk-text-center" uk-grid>
     <div>
-        <div class="uk-card uk-card-default uk-card-body">Item</div>
+        <div class="uk-card uk-card-default uk-card-body">Lorem ipsum</div>
      </div>
     <div>
-        <div class="uk-card uk-card-default uk-card-body">Item<br>2 lines</div>
+        <div class="uk-card uk-card-default uk-card-body">Lorem ipsum<br> dolor sit amet<br> consectetur</div>
     </div>
     <div>
-       <div class="uk-card uk-card-default uk-card-body">Item<br>with<br>3 lines</div>
+       <div class="uk-card uk-card-default uk-card-body">Lorem ipsum<br> dolor sit amet<br> consectetur<br>adipisicing</div>
     </div>
 </div>
 ```
 
-Alternatively, you can also match items via JavaScript. Just add the `uk-height-match` attribute from the [Utility component](utility.md).
+Often cards from the [Card component](card.md) are used inside a grid. Add the `target: SELECTOR` option to the `uk-height-match` attribute from the [Utility component](utility.md) for a more specific selection, like a card.
 
-```
-<div uk-grid uk-height-match="target: SELECTOR;">
-    <div></div>
-    <div></div>
+```html
+<div uk-grid uk-height-match="target: > div > .uk-card">
+    <div>
+        <div class="uk-card uk-card-default"></div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default"></div>
+    </div>
 </div>
 ```
 
 ```example
-<div class="uk-child-width-expand@s uk-text-center" uk-grid uk-height-match="target: > div > .uk-card;">
+<div class="uk-child-width-expand@s uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
     <div>
-        <div class="uk-card uk-card-default uk-card-body">Item</div>
+        <div class="uk-card uk-card-default uk-card-body">
+            Lorem ipsum
+        </div>
      </div>
     <div>
-        <div class="uk-card uk-card-default uk-card-body">Item<br>2 lines</div>
+        <div class="uk-card uk-card-default uk-card-body">
+            Lorem ipsum<br> dolor sit amet<br> consectetur
+        </div>
     </div>
     <div>
-       <div class="uk-card uk-card-default uk-card-body">Item<br>with<br>3 lines</div>
+        <div class="uk-card uk-card-default uk-card-body">
+           Lorem ipsum<br> dolor sit amet<br> consectetur<br>adipisicing
+        </div>
     </div>
 </div>
 ```
@@ -241,13 +251,13 @@ If the grid columns are evenly split, you can add one of the `.uk-child-width-*`
 ```example
 <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid>
     <div>
-        <div class="uk-card uk-card-default uk-card-body">1-3</div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-card-body">1-3</div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-card-body">1-3</div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
 </div>
 ```
@@ -258,7 +268,7 @@ For more detailed information, take a look at the [Width component](width.md).
 
 ## Grid and Flex
 
-You can easily combine the grid with the [Flex component](flex.md). That way you can center items, if they wrap into the next row or change the source ordering. This allows you, for example, to flip the columns' display order for wider viewports.
+You can easily combine the grid with the [Flex component](flex.md). That way you can center items, if they wrap into the next row or change the source ordering. This allows you, for example, to flip the cells' display order for wider viewports.
 
 ```html
 <div class="uk-flex-center" uk-grid>

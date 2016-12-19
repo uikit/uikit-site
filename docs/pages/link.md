@@ -4,11 +4,13 @@
 
 ## Link Muted
 
-If you want the link to a apply a muted instead of the default link color, just add the `.uk-link-muted` class to the anchor element or the parent element.
+The [Base component](base.md) determines the default link color. If you want the link to a apply a muted style instead, just add the `.uk-link-muted` class to the anchor element.
 
 ```html
 <a class="uk-link-muted" href=""></a>
 ```
+
+You can also add the class to a parent element and it will be applied to all `<a>` elements inside it.
 
 ```example
 <div class="uk-margin-small">
@@ -26,7 +28,7 @@ If you want the link to a apply a muted instead of the default link color, just 
 
 ## Link Reset
 
-To reset a link's color, so that it appears like regular body text, add the `.uk-link-reset` class.
+To reset a link's color, so that it inherits the color from its parent, add the `.uk-link-reset` class.
 
 ```example
 <a class="uk-link-reset" href="#">Link</a>

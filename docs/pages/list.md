@@ -4,7 +4,7 @@
 
 ## Usage
 
-To apply this component, add the `.uk-list` class to an unordered or ordered list. The list will now display without any spacing or list-style.
+The [Base component](base.md) already provides some styling for list elements. To apply this component, add the `.uk-list` class to an unordered or ordered list. The list will now display without any spacing or list-style.
 
 ```html
 <ul class="uk-list">
@@ -17,18 +17,14 @@ To apply this component, add the `.uk-list` class to an unordered or ordered lis
 ```example
 <ul class="uk-list">
     <li>List item 1</li>
-    <li>List item 1</li>
-    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
 </ul>
 ```
 
 ***
 
-## Modifiers
-
-To display the list in a different style, just add a modifier class to the the `.uk-list` class.
-
-### Bullet list
+## Bullet modifier
 
 Add the `.uk-list-bullet` class to display bullets in front of the list items.
 
@@ -46,7 +42,7 @@ Add the `.uk-list-bullet` class to display bullets in front of the list items.
 
 ***
 
-### Divider list
+## Divider modifier
 
 Add the `.uk-list-divider` class to separate list items with lines.
 
@@ -64,7 +60,7 @@ Add the `.uk-list-divider` class to separate list items with lines.
 
 ***
 
-### Striped list
+## Striped modifier
 
 Add zebra-striping to a list using the `.uk-list-striped` class.
 
@@ -82,16 +78,17 @@ Add zebra-striping to a list using the `.uk-list-striped` class.
 
 ***
 
-### List space
+## Size modifier
 
-Add the `.uk-list-large` class to increase the spacing between list items.
+Add the `.uk-list-large` class to increase the spacing between list items. You can combine this with any of the other list modifiers.
 
 ```html
 <ul class="uk-list uk-list-large">...</ul>
 ```
 
 ```example
-<div uk-grid class="uk-child-width-1-3@s">
+<div uk-grid class="uk-child-width-1-4@s">
+
     <div>
         <h4>Default</h4>  
         <ul class="uk-list uk-list-large">
@@ -118,5 +115,15 @@ Add the `.uk-list-large` class to increase the spacing between list items.
             <li>List item 3</li>
         </ul>
     </div>
+
+    <div>
+        <h4>Bullet</h4>  
+        <ul class="uk-list uk-list-large uk-list-bullet">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+    </div>
+
 </div>
 ```

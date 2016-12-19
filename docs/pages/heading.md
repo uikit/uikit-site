@@ -4,7 +4,7 @@
 
 ## Heading Primary
 
-To emphasize a heading with an alternative styling, for example a larger font size or a different color, add the `.uk-heading-primary` class.
+To emphasize a heading with an alternative styling, for example a larger font size or a different color, add the `.uk-heading-primary` class. Usually, you would use this class on a `<h1`>
 
 ```html
 <h1 class="uk-heading-primary"></h1>
@@ -18,7 +18,7 @@ To emphasize a heading with an alternative styling, for example a larger font si
 
 ## Heading Divider
 
-To apply a divider to a heading, add the `.uk-heading-divider` class.
+To apply a divider to a heading, add the `.uk-heading-divider` class. You can combine this with one of the heading classes from the [Base component](base.md#headings).
 
 ```html
 <h1 class="uk-heading-divider"></h1>
@@ -32,7 +32,7 @@ To apply a divider to a heading, add the `.uk-heading-divider` class.
 
 ## Heading Bullet
 
-To apply a bullet to a heading, add the `.uk-heading-bullet` class.
+To apply a bullet to a heading, add the `.uk-heading-bullet` class. You can combine this with one of the heading classes from the [Base component](base.md#headings).
 
 ```html
 <h1 class="uk-heading-bullet"></h1>
@@ -46,7 +46,7 @@ To apply a bullet to a heading, add the `.uk-heading-bullet` class.
 
 ## Heading Line
 
-To apply a vertically centered line to a heading, add the `.uk-heading-line` class and place a `<span>` element inside the heading element.
+To apply a vertically centered line to a heading, add the `.uk-heading-line` class and place a `<span>` element inside the heading element. You can combine this with one of the heading classes from the [Base component](base.md#headings).
 
 ```html
 <h1 class="uk-heading-line"><span></span></h1>
