@@ -18,19 +18,60 @@ Object.keys(navigation['Components']).forEach((label) => {
     components.push(navigation['Components'][label]);
 });
 
-function copyToClipboard(txt) {
+function copyToClipboard(code) {
 
     let successful;
 
     $('<textarea></textarea>')
         .css({opacity: '0', position : 'fixed' })
-        .val(txt)
+        .val(code)
         .appendTo('body')
         .select()
         .each(function() { successful = document.execCommand('copy') })
         .remove();
 
     return successful;
+}
+
+function openOnCodepen(code) {
+
+    let data = {
+        title              : '',
+        description        : '',
+        html               : code,
+        html_pre_processor : 'none',
+        css                : '',
+        css_pre_processor  : 'none',
+        css_starter        : 'neither',
+        css_prefix_free    : false,
+        js                 : '',
+        js_pre_processor   : 'none',
+        js_modernizr       : false,
+        js_library         : '',
+        html_classes       : '',
+        css_external       : '',
+        js_external        : ''
+    };
+
+    data =  JSON.stringify(data)
+      // Quotes will screw up the JSON
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&apos;");
+
+
+    var form =$(`
+        <form action="http://codepen.io/pen/define" method="POST" target="_blank">
+        <input type="hidden" name="data" value='${data}'>
+        </form>
+    `);
+
+    form.appendTo('body');
+
+    setTimeout(()=>{
+        form[0].submit();
+        form.remove();
+    }, 10);
+
 }
 
 export default {
@@ -89,6 +130,13 @@ export default {
                         } else {
                             UIkit.notification({message: "Copy failed", status: 'danger'});
                         }
+                    });
+
+                    $('a.js-codepen').on('click', function(e) {
+                        e.preventDefault();
+                        e.stopImmediatePropagation();
+
+                        openOnCodepen($(this.getAttribute('rel')).text());
                     });
 
                     $('[href="#"]', this.$el).on('click', e => {
@@ -152,6 +200,7 @@ export default {
                     <li><a href="#">Preview</a></li>
                     <li><a href="#">Markup</a></li>
                     <li style="margin-left:auto;"><a class="js-copy" rel="#${id}"><i uk-icon="icon: copy"></i> Copy</a></li>
+                    <li><a class="js-codepen" rel="#${id}"><i uk-icon="icon: copy"></i> Codepen</a></li>
                 </ul>
                 <ul class="uk-switcher uk-margin">
                     <li>${code}</li>
@@ -168,9 +217,7 @@ export default {
             renderer.hr = () => `<hr class="uk-margin-large">`;
             renderer.table = (header, body) => `<div class="uk-overflow-auto"><table class="uk-table uk-table-striped"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
             renderer.heading = (text, level) => {
-                return level == 2
-                    ? `<h${level} class="uk-position-relative uk-h${level>1 ? level+1 : level}"><a class="uk-text-muted uk-link-muted uk-position-absolute uk-visible@m" href="#${text.toLowerCase().replace(/ /g,"-")}" style="transform:translateX(-30px)">#</a>${text}</h${level}>`
-                    : `<h${level} class="uk-h${level>1 ? level+1 : level}">${text}</h${level}>`;
+                return `<h${level} class="uk-h${level>1 ? level+1 : level} tm-docs-heading"><a href="#${text.toLowerCase().replace(/ /g,"-")}">${text}</a></h${level}>`;
             }
 
             return marked(markdown, {renderer}, cb);

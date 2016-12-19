@@ -49,6 +49,33 @@
 html { overflow-y: scroll; }
 
 
+/* ========================================================================
+   Documentation Page
+ ========================================================================== */
+
+.tm-docs-navigation {
+    position: fixed;
+    padding: @navbar-nav-item-padding-horizontal;
+    top: @navbar-nav-item-height;
+    width: 200px;
+    bottom: 0;
+    border-right: 1px @global-border solid;
+    overflow: auto;
+}
+
+.tm-docs-heading a {
+    position: relative;
+    color: currentColor;
+    text-decoration: none;
+}
+
+h2.tm-docs-heading:hover a:before {
+    content: "#";
+    position: absolute;
+    left: -25px;
+    color: @global-muted-color;
+}
+
 /* Syntax Highlighter
  ========================================================================== */
 
