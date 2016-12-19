@@ -4,11 +4,11 @@
 
 ## Usage
 
-The Modal component consists of an overlay, a dialog and a close button. You can use any element to toggle a modal dialog. An `<a>` element needs to be linked to the modal's id. To enable the necessary JavaScript, add the `uk-toggle` attribute. If you are using another element, like a button, just add the `uk-toggle="target: #ID"` attribute to target the id of the modal container.
+The Modal component consists of an overlay, a dialog and an optional close button. You can use any element to toggle a modal dialog. To enable the necessary JavaScript, add the `uk-toggle` attribute. An `<a>` element needs to be linked to the modal's id. If you are using another element, like a button, just add the `uk-toggle="target: #ID"` attribute to target the id of the modal container.
 
 | Class/Attribute    | Description                                                                                                                                                                                                                                                       |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `.uk-modal`        | Add this class to a `<div>` element to create the dialog container and an overlay that blanks out the page. It is important to add an `id` to indicate the element for toggling.                                                                                    |
+| `.uk-modal`        | Add this class to a `<div>` element to create the modal container and an overlay that blanks out the page. It is important to add an `id` to indicate the element for toggling.                                                                                    |
 | `.uk-modal-dialog` | Add this class to a child `<div>` element to create the dialog box.                                                                                                                                                                                               |
 | `.uk-modal-close`  | Add this class to an `<a>` or `<button>` element to create a close button within the dialog box. We recommend adding the `uk-close` attribute from the [Close component](close.md) to give the button a proper styling, though you can also use text or an image. |
 | `.uk-modal-close-outside`   | Add this class to place the close button outside the modal.                                                                                                                                                                                           |
@@ -28,18 +28,24 @@ The Modal component consists of an overlay, a dialog and a close button. You can
 
 ```example
 <!-- This is a button toggling the modal -->
-<button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #modal-example">Open from button</button>
+<button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #modal-example">Open</button>
 
 <!-- This is an anchor toggling the modal -->
-<a href="#modal-example" uk-toggle>Open from link</a>
+<a href="#modal-example" uk-toggle>Open</a>
 
 <!-- This is the modal -->
 <div id="modal-example" uk-modal>
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <img src="../docs/images/size1.jpg" alt="">
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Headline</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button uk-button-primary" type="button">Save</button>
+        </p>
     </div>
 </div>
+
+
 ```
 
 ***
@@ -196,31 +202,6 @@ Using the [grid](grid.md) and [width](width.md) classes, you can create a nice, 
 
 ***
 
-## Lightbox modifier
-
-To create a lightbox-like modal dialog, for example to display images, just add the `.uk-modal-lightbox` class. The close button will adjust its position automatically to the dialog.
-
-```html
-<div id="my-id" class="uk-modal-lightbox" uk-modal="center: true">...</div>
-```
-
-```example
-<a class="uk-button uk-button-default" href="#modal-lightbox" uk-toggle>Open</a>
-
-<div id="modal-lightbox" class="uk-modal-lightbox" uk-modal="center: true">
-    <button class="uk-modal-close-default" type="button" uk-close></button>
-    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle">
-        <img src="../docs/images/size1.jpg" alt="">
-    </div>
-    <div class="uk-modal-bar uk-position-bottom">
-        Caption
-    </div>
-</div>
-```
-
-
-***
-
 ## Modal dialogs
 
 The component comes with a number of prepared modal dialogs that you can use for user interaction. You can call the dialog directly from JavaScript and use callback functions to process the user input.
@@ -290,7 +271,7 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 
         })();
     </script>
-    
+
 </p>
 ```
 
