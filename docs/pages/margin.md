@@ -19,19 +19,15 @@ Add one or more of the following classes to any block element to create vertical
 ```
 
 ```example
-<div class="uk-margin uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"><code>.uk-margin</code></div>
-</div>
-<div class="uk-margin uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"><code>.uk-margin</code></div>
-</div>
+<div class="uk-margin uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="uk-margin uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 ```
 
 ***
 
-## Smaller margin
+## Small margin
 
-Add one of the following classes to add smaller spacing to block elements.
+Add one of the following classes to add small spacing to block elements.
 
 | Class                       | Description                       |
 |-----------------------------|-----------------------------------|
@@ -42,13 +38,8 @@ Add one of the following classes to add smaller spacing to block elements.
 | `.uk-margin-small-right`    | Adds small right margin.          |
 
 ```example
-<div class="uk-margin-small uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"><code>.uk-margin-small</code></div>
-</div>
-
-<div class="uk-margin-small uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"><code>.uk-margin-small</code></div>
-</div>
+<div class="uk-margin-small uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="uk-margin-small uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 ```
 
 ***
@@ -66,13 +57,8 @@ Add one of the following classes to add medium spacing to block elements.
 | `.uk-margin-medium-right`    | Adds medium right margin.          |
 
 ```example
-<div class="uk-margin-medium uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"><code>.uk-margin-medium</code></div>
-</div>
-
-<div class="uk-margin-medium uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"><code>.uk-margin-medium</code></div>
-</div>
+<div class="uk-margin-medium uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="uk-margin-medium uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 ```
 
 ***
@@ -90,13 +76,8 @@ Add one of the following classes to add large spacing to block elements.
 | `.uk-margin-large-right`     | Adds large right margin.           |
 
 ```example
-<div class="uk-margin-large uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"><code>.uk-margin-large</code></div>
-</div>
-
-<div class="uk-margin-large uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"><code>.uk-margin-large</code></div>
-</div>
+<div class="uk-margin-large uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="uk-margin-large uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 ```
 
 ***
@@ -114,12 +95,8 @@ Add one of the following classes to add very large spacing to block elements.
 | `.uk-margin-xlarge-right`     | Adds larger right margin.           |
 
 ```example
-<div class="uk-margin-xlarge uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"><code>.uk-margin-xlarge</code></div>
-</div>
-<div class="uk-margin-xlarge uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"><code>.uk-margin-xlarge</code></div>
-</div>
+<div class="uk-margin-xlarge uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="uk-margin-xlarge uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 ```
 
 ***
@@ -136,16 +113,8 @@ Add one of the following classes to remove margin from block elements.
 | `.uk-margin-remove-left`      | Removes left margin.                |
 | `.uk-margin-remove-right`     | Removes right margin.               |
 
-```example
-<div class="uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"></div>
-</div>
-
-<p class="uk-margin-remove-bottom uk-text-center uk-width-medium uk-background-muted">This is a <code>&lt;p&gt;</code> with no bottom margin.</p>
-
-<div class="uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"></div>
-</div>
+```html
+<h1 class="uk-margin-remove"></h1>
 ```
 
 ***
@@ -162,13 +131,9 @@ Add one of the following classes to set auto margin. This can be useful to cente
 | `.uk-margin-auto-vertical`    | Sets top and bottom margin to auto.                |
 
 ```example
-<div class="uk-margin-auto-left uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"><code>.uk-margin-auto-left</code></div>
-</div>
+<div class="uk-margin uk-margin-auto uk-width-1-2@s uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 
-<div class="uk-margin-auto uk-margin-top uk-card uk-card-default uk-width-medium">
-    <div class="uk-card-body uk-text-center"><code>.uk-margin-auto</code><br><code>.uk-margin-top</code></div>
-</div>
+<div class="uk-margin uk-margin-auto-left uk-width-1-2@s uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 ```
 
 
