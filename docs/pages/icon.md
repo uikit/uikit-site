@@ -27,10 +27,8 @@ Add the `ratio: 2` parameter to the `uk-icon` attribute to double its size – o
 ```
 
 ```example
-<p><i class="uk-margin-small-right" uk-icon="icon: check"></i></p>
-<p><i class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.5"></i></p>
-<p><i class="uk-margin-small-right" uk-icon="icon: check; ratio: 2"></i></p>
-<p><i class="uk-margin-small-right" uk-icon="icon: check; ratio: 3"></i></p>
+<i class="uk-margin-small-right" uk-icon="icon: check; ratio: 2"></i>
+<i class="uk-margin-small-right" uk-icon="icon: check; ratio: 3.5"></i>
 ```
 
 ***
@@ -44,7 +42,9 @@ To use an icon inside an anchor and reset the default link styling, add the `.uk
 ```
 
 ```example
-<p><a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="icon: heart"></a> Hover the heart!</p>
+<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="icon: copy"></a>
+<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="icon: file-edit"></a>
+<a href="#" class="uk-icon-link" uk-icon="icon: trash"></a>
 ```
 
 ***
@@ -58,14 +58,16 @@ Use the modifier `.uk-icon-button` class on an `<a>` element to create an icon b
 ```
 
 ```example
-<a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
+<a href="" class="uk-icon-button" uk-icon="icon: google-plus"></a>
 ```
 
 ***
 
 ## Icon Image
 
-You can also load an external image as an icon. Just add the `.uk-icon-image` class and a background image path.
+You can also make any background image the size of an icon. Just add the `.uk-icon-image` class and a background image path.
 
 ```example
 <p><span class="uk-icon uk-icon-image uk-margin-small-right" style="background-image: url(../docs/images/dark.jpg);"></span>Image</p>
@@ -77,12 +79,12 @@ You can also load an external image as an icon. Just add the `.uk-icon-image` cl
 
 Here is an overview of all currently available icons. Over the time, we will keep adding new icons to the list.
 
+<h4 class="uk-heading-line"><span>App</span></h4>
+
 <div class="uk-child-width-1-3@s" uk-grid>
     <div>
 
         <ul class="uk-list">
-
-            <li><h4>App</h4></li>
             <li><span class="uk-margin-small-right" uk-icon="icon: home"></span> home</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: sign-in"></span> sign-in</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> sign-out</li>
@@ -105,6 +107,12 @@ Here is an overview of all currently available icons. Over the time, we will kee
             <li><span class="uk-margin-small-right" uk-icon="icon: location"></span> location</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: bookmark"></span> bookmark</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: code"></span> code</li>
+        </ul>
+
+    </div>
+    <div>
+
+        <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="icon: paint-bucket"></span> paint-bucket</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: camera"></span> camera</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: bell"></span> bell</li>
@@ -126,15 +134,16 @@ Here is an overview of all currently available icons. Over the time, we will kee
             <li><span class="uk-margin-small-right" uk-icon="icon: trash"></span> trash</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: move"></span> move</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: link"></span> link</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: question"></span> question</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: info"></span> info</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: warning"></span> warning</li>
+
         </ul>
 
     </div>
     <div>
 
         <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="icon: question"></span> question</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: info"></span> info</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: warning"></span> warning</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: image"></span> image</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> thumbnails</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: table"></span> table</li>
@@ -153,65 +162,150 @@ Here is an overview of all currently available icons. Over the time, we will kee
             <li><span class="uk-margin-small-right" uk-icon="icon: refresh"></span> refresh</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: play"></span> play</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: play-circle"></span> play-circle</li>
+        </ul>
 
-            <li><h4 class="uk-margin-top">Devices</h4></li>
+    </div>
+</div>
+
+<h4 class="uk-heading-line"><span>Devices</span></h4>
+
+<div class="uk-child-width-1-3@s" uk-grid>
+    <div>
+
+        <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="icon: tv"></span> tv</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: desktop"></span> desktop</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: laptop"></span> laptop</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: tablet"></span> tablet</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: phone"></span> phone</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: tablet-landscape"></span> tablet-landscape</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: phone-landscape"></span> phone landscape</li>
-
-            <li><h4 class="uk-margin-top">Storage</h4></li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: file"></span> file</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: copy"></span> copy</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: file-edit"></span> file-edit</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: folder"></span> folder</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: album"></span> album</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: push"></span> push</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: pull"></span> pull</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: server"></span> server</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: database"></span> database</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: cloud-upload"></span> cloud-upload</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: cloud-download"></span> cloud-download</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: download"></span> download</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: upload"></span> upload</li>
-
-            <li><h4 class="uk-margin-top">Direction</h4></li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: reply"></span> reply</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: forward"></span> forward</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: expand"></span> expand</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: shrink"></span> shrink</li>
-
         </ul>
 
     </div>
     <div>
 
         <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="icon: tablet"></span> tablet</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: phone"></span> phone</li>
+        </ul>
 
+    </div>
+    <div>
+
+        <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="icon: tablet-landscape"></span> tablet-landscape</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: phone-landscape"></span> phone landscape</li>
+        </ul>
+
+    </div>
+</div>
+
+<h4 class="uk-heading-line"><span>Storage</span></h4>
+
+<div class="uk-child-width-1-3@s" uk-grid>
+    <div>
+
+        <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="icon: file"></span> file</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: copy"></span> copy</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: file-edit"></span> file-edit</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: folder"></span> folder</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: album"></span> album</li>
+        </ul>
+
+    </div>
+    <div>
+
+        <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="icon: push"></span> push</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: pull"></span> pull</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: server"></span> server</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: database"></span> database</li>
+        </ul>
+
+    </div>
+    <div>
+
+        <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="icon: cloud-upload"></span> cloud-upload</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: cloud-download"></span> cloud-download</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: download"></span> download</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: upload"></span> upload</li>
+        </ul>
+
+    </div>
+</div>
+
+<h4 class="uk-heading-line"><span>Direction</span></h4>
+
+<div class="uk-child-width-1-3@s" uk-grid>
+    <div>
+
+        <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="icon: reply"></span> reply</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: forward"></span> forward</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: expand"></span> expand</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: shrink"></span> shrink</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: arrow-up"></span> arrow-up</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: arrow-down"></span> arrow-down</li>
+        </ul>
+
+    </div>
+    <div>
+
+        <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="icon: arrow-left"></span> arrow-left</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: arrow-right"></span> arrow-right</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: chevron-up"></span> chevron-up</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: chevron-down"></span> chevron-down</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: chevron-left"></span> chevron-left</li>
+        </ul>
+
+    </div>
+    <div>
+
+        <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="icon: chevron-right"></span> chevron-right</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: triangle-up"></span> triangle-up</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: triangle-down"></span> triangle-down</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: triangle-left"></span> triangle-left</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: triangle-right"></span> triangle-right</li>
+        </ul>
 
-            <li><h4 class="uk-margin-top">Editor</h4></li>
+    </div>
+</div>
+
+<h4 class="uk-heading-line"><span>Editor</span></h4>
+
+<div class="uk-child-width-1-3@s" uk-grid>
+    <div>
+
+        <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="icon: bold"></span> bold</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: italic"></span> italic</li>
+        </ul>
+
+    </div>
+    <div>
+
+        <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="icon: strikethrough"></span> strikethrough</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: video-camera"></span> video-camera</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: quote-right"></span> quote-right</li>
+        </ul>
 
-            <li><h4 class="uk-margin-top">Brands</h4></li>
+    </div>
+    <div>
+
+        <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="icon: quote-right"></span> quote-right</li>
+        </ul>
+
+    </div>
+</div>
+
+<h4 class="uk-heading-line"><span>Brands</span></h4>
+
+<div class="uk-child-width-1-3@s" uk-grid>
+    <div>
+
+        <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="icon: behance"></span> behance</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: dribbble"></span> dribbble</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: facebook"></span> facebook</li>
@@ -220,6 +314,12 @@ Here is an overview of all currently available icons. Over the time, we will kee
             <li><span class="uk-margin-small-right" uk-icon="icon: foursquare"></span> foursquare</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: tumblr"></span> tumblr</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: whatsapp"></span> whatsapp</li>
+        </ul>
+
+    </div>
+    <div>
+
+        <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="icon: soundcloud"></span> soundcloud</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: flickr"></span> flickr</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: google-plus"></span> google-plus</li>
@@ -228,6 +328,12 @@ Here is an overview of all currently available icons. Over the time, we will kee
             <li><span class="uk-margin-small-right" uk-icon="icon: vimeo"></span> vimeo</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: instagram"></span> instagram</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: joomla"></span> joomla</li>
+        </ul>
+
+    </div>
+    <div>
+
+        <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="icon: pagekit"></span> pagekit</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: pinterest"></span> pinterest</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: twitter"></span> twitter</li>
