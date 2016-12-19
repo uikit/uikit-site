@@ -4,11 +4,11 @@
 
 ## Usage
 
-Add one or more of the following classes to any block element to create vertical and/or horizontal margin.
+Add one or more of the following classes to any block element to create the same vertical and/or horizontal margin that a paragraph usually has.
 
 | Class               | Description                                                      |
 |---------------------|------------------------------------------------------------------|
-| `.uk-margin`        | Adds the same top and bottom margins that a paragraph usually has. |
+| `.uk-margin`        | Adds bottom margin and top margin, if it is preceded by another element. |
 |  `.uk-margin-top`   | Adds top margin.                                                 |
 | `.uk-margin-bottom` | Adds bottom margin.                                              |
 | `.uk-margin-left`   | Adds left margin.                                                |
@@ -112,6 +112,8 @@ Add one of the following classes to remove margin from block elements.
 | `.uk-margin-remove-bottom`    | Removes bottom margin.              |
 | `.uk-margin-remove-left`      | Removes left margin.                |
 | `.uk-margin-remove-right`     | Removes right margin.               |
+| `.uk-margin-remove-vertical`     | Removes all vertical margins.               |
+| `.uk-margin-remove-adjacent`     | Removes the top margin of the directly succeeding element.               |
 
 ```html
 <h1 class="uk-margin-remove"></h1>
@@ -121,7 +123,7 @@ Add one of the following classes to remove margin from block elements.
 
 ## Auto margin
 
-Add one of the following classes to set auto margin. This can be useful to center or otherwise align block elements.
+Add one of the following classes to set auto margin. This can be useful to center or otherwise align block elements with a fixed width as well as flex elements.
 
 | Class                         | Description                         |
 |-------------------------------|-------------------------------------|
@@ -136,7 +138,33 @@ Add one of the following classes to set auto margin. This can be useful to cente
 <div class="uk-margin uk-margin-auto-left uk-width-1-2@s uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 ```
 
+***
 
+## Margin on wrapping elements
+
+To add spacing to stacking elements, for example inline elements that wrap on smaller vieports, just add the `uk-margin` attribute to their parent container. It will automatically add the `.uk-margin-small-top` class to the lower element.
+
+```html
+<div uk-margin>
+    <button></button>
+    <button></button>
+</div>
+```
+
+```example
+<div uk-margin>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
+</div>
+```
 
 
 
