@@ -25,10 +25,6 @@ Add the `.uk-label-success`, `.uk-label-warning` or `.uk-label-danger` class for
 
 ```html
 <span class="uk-label uk-label-success"></span>
-
-<span class="uk-label uk-label-warning"></span>
-
-<span class="uk-label uk-label-danger"></span>
 ```
 
 ```example
