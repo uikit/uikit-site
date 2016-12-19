@@ -7,75 +7,18 @@
 To apply this component, add the `uk-icon` attribute to an `<i>` or `<span>` element. To display the actual icon, you need to append the `icon: NAME` parameter to the attribute. Et voilà, you have a vector icon, which inherits size and color just like your text does.
 
 ```html
-<i uk-icon="icon: check"></i>
+<span uk-icon="icon: check"></span>
 ```
 
 ```example
-<p><i uk-icon="icon: check"></i> A check icon</p>
-<p><a href="#" class="uk-margin-small-right" uk-icon="icon: heart"></a>An icon in an anchor</p>
-<button class="uk-button uk-button-default uk-margin-small"><span class="uk-margin-small-right" uk-icon="icon: tag"></span>A button with an icon</button>
+<span class="uk-margin-small-right" uk-icon="icon: check"></span>
+
+<a href="" uk-icon="icon: heart"></a>
 ```
 
 ***
 
-## Ratio
-
-Add the `ratio: 2` parameter to the `uk-icon` attribute to double its size – or any other number, depending on how big you want you icon to be.
-
-```html
-<i uk-icon="icon: check; ratio: 2"></i>
-```
-
-```example
-<i class="uk-margin-small-right" uk-icon="icon: check; ratio: 2"></i>
-<i class="uk-margin-small-right" uk-icon="icon: check; ratio: 3.5"></i>
-```
-
-***
-
-## Icon Link
-
-To use an icon inside an anchor and reset the default link styling, add the `.uk-icon-link` class.
-
-```html
-<a href="" class="uk-icon-link" uk-icon="icon: heart"></a>
-```
-
-```example
-<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="icon: copy"></a>
-<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="icon: file-edit"></a>
-<a href="#" class="uk-icon-link" uk-icon="icon: trash"></a>
-```
-
-***
-
-## Icon Button
-
-Use the modifier `.uk-icon-button` class on an `<a>` element to create an icon button, which can be used for social icons.
-
-```html
-<a href="" class="uk-icon-button" uk-icon="icon: twitter"></a>
-```
-
-```example
-<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
-<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
-<a href="" class="uk-icon-button" uk-icon="icon: google-plus"></a>
-```
-
-***
-
-## Icon Image
-
-You can also make any background image the size of an icon. Just add the `.uk-icon-image` class and a background image path.
-
-```example
-<p><span class="uk-icon uk-icon-image uk-margin-small-right" style="background-image: url(../docs/images/dark.jpg);"></span>Image</p>
-```
-
-***
-
-## Icon Mapping
+## Library
 
 Here is an overview of all currently available icons. Over the time, we will keep adding new icons to the list.
 
@@ -345,6 +288,63 @@ Here is an overview of all currently available icons. Over the time, we will kee
 
     </div>
 </div>
+
+***
+
+## Ratio
+
+Add the `ratio: 2` parameter to the `uk-icon` attribute to double its size – or any other number, depending on how big you want you icon to be.
+
+```html
+<span uk-icon="icon: check; ratio: 2"></span>
+```
+
+```example
+<span class="uk-margin-small-right" uk-icon="icon: check; ratio: 2"></span>
+<span class="uk-margin-small-right" uk-icon="icon: check; ratio: 3.5"></span>
+```
+
+***
+
+## Icon Link
+
+To use an icon inside an anchor and reset the default link styling, add the `.uk-icon-link` class.
+
+```html
+<a href="" class="uk-icon-link" uk-icon="icon: heart"></a>
+```
+
+```example
+<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="icon: copy"></a>
+<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="icon: file-edit"></a>
+<a href="#" class="uk-icon-link" uk-icon="icon: trash"></a>
+```
+
+***
+
+## Icon Button
+
+Use the modifier `.uk-icon-button` class on an `<a>` element to create an icon button, which can be used for social icons.
+
+```html
+<a href="" class="uk-icon-button" uk-icon="icon: twitter"></a>
+```
+
+```example
+<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
+<a href="" class="uk-icon-button" uk-icon="icon: google-plus"></a>
+```
+
+***
+
+## Icon Image
+
+You can also make any background image the size of an icon. Just add the `.uk-icon-image` class and a background image path.
+
+```example
+<p><span class="uk-icon uk-icon-image uk-margin-small-right" style="background-image: url(../docs/images/dark.jpg);"></span>Image</p>
+```
 
 ***
 
