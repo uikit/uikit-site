@@ -20,7 +20,7 @@ To create the grid container, add the `uk-grid` attribute to a `<div>` element. 
 
 
 ```example
-<div class="uk-child-width-1-1 uk-child-width-1-3@s uk-text-center" uk-grid>
+<div class="uk-child-width-expand@s uk-text-center" uk-grid>
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
@@ -44,7 +44,7 @@ To apply a smaller gutter between grid columns, add the `.uk-grid-small` class.
 ```
 
 ```example
-<div class="uk-grid-small uk-child-width-1-1 uk-child-width-1-3@s uk-text-center" uk-grid>
+<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
@@ -68,7 +68,7 @@ To apply a medium gutter between grid columns, add the `.uk-grid-medium` class.
 ```
 
 ```example
-<div class="uk-grid-medium uk-child-width-1-1 uk-child-width-1-3@s uk-text-center" uk-grid>
+<div class="uk-grid-medium uk-child-width-expand@s uk-text-center" uk-grid>
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
@@ -92,7 +92,7 @@ To apply a large gutter between grid columns, add the `.uk-grid-large` class.
 ```
 
 ```example
-<div class="uk-grid-large uk-child-width-1-1 uk-child-width-1-3@s uk-text-center" uk-grid>
+<div class="uk-grid-large uk-child-width-expand@s uk-text-center" uk-grid>
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
@@ -116,15 +116,15 @@ To remove the grid gutter entirely, add the `.uk-grid-collapse` class.
 ```
 
 ```example
-<div class="uk-grid-collapse uk-child-width-1-3@s uk-text-center" uk-grid>
+<div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
     <div>
-        <div class="uk-card uk-card-default uk-card-body">Item</div>
+        <div class="uk-background-muted uk-padding">Item</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-card-body">Item</div>
+        <div class="uk-background-primary uk-padding uk-light">Item</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-card-body">Item</div>
+        <div class="uk-background-secondary uk-padding uk-light">Item</div>
     </div>
 </div>
 ```
@@ -140,7 +140,7 @@ Add the `.uk-grid-divider` class to separate grid columns with lines. This class
 ```
 
 ```example
-<div class="uk-grid-divider uk-child-width-1-3@s uk-text-center" uk-grid>
+<div class="uk-grid-divider uk-child-width-expand@s uk-text-center" uk-grid>
    <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
@@ -164,16 +164,15 @@ To match the height of grid columns, add the `.uk-grid-match` class as a CSS onl
 ```
 
 ```example
-<div class="uk-grid-match uk-child-width-1-3@s uk-text-center" uk-grid>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">
-            Item<br><code>.uk-grid-match</code></div>
-     </div>
+<div class="uk-grid-match uk-child-width-expand@s uk-text-center" uk-grid>
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
+     </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item<br>2 lines</div>
     </div>
     <div>
-       <div class="uk-card uk-card-default uk-card-body">Item</div>
+       <div class="uk-card uk-card-default uk-card-body">Item<br>with<br>3 lines</div>
     </div>
 </div>
 ```
@@ -188,15 +187,15 @@ Alternatively, you can also match items via JavaScript. Just add the `uk-height-
 ```
 
 ```example
-<div class="uk-child-width-1-3@s uk-text-center" uk-grid uk-height-match="target: > div > .uk-card;">
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">Item<br><code>uk-height-match</code></div>
-    </div>
+<div class="uk-child-width-expand@s uk-text-center" uk-grid uk-height-match="target: > div > .uk-card;">
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
+     </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item<br>2 lines</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-card-body">Item</div>
+       <div class="uk-card uk-card-default uk-card-body">Item<br>with<br>3 lines</div>
     </div>
 </div>
 ```
