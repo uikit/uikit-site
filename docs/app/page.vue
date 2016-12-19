@@ -18,6 +18,21 @@ Object.keys(navigation['Components']).forEach((label) => {
     components.push(navigation['Components'][label]);
 });
 
+function copyToClipboard(txt) {
+
+    let successful;
+
+    $('<textarea></textarea>')
+        .css({opacity: '0', position : 'fixed' })
+        .val(txt)
+        .appendTo('body')
+        .select()
+        .each(function() { successful = document.execCommand('copy') })
+        .remove();
+
+    return successful;
+}
+
 export default {
 
     data() {
@@ -63,6 +78,17 @@ export default {
 
                     $('pre code').each((i, block) => {
                         hljs.highlightBlock(block);
+                    });
+
+                    $('a.js-copy').on('click', function(e) {
+                        e.preventDefault();
+                        e.stopImmediatePropagation();
+
+                        if (copyToClipboard($(this.getAttribute('rel')).text())) {
+                            UIkit.notification({message: "Code copied to clipboard", status: 'success'});
+                        } else {
+                            UIkit.notification({message: "Copy failed", status: 'danger'});
+                        }
                     });
 
                     $('[href="#"]', this.$el).on('click', e => {
@@ -119,13 +145,17 @@ export default {
                     </div></div>`;
             };
             var example = code => {
+
+                let id = 'code'+Math.floor((1 + Math.random()) * 0x10000).toString(16);
+
                 return `<ul uk-tab>
                     <li><a href="#">Preview</a></li>
                     <li><a href="#">Markup</a></li>
+                    <li style="margin-left:auto;"><a class="js-copy" rel="#${id}"><i uk-icon="icon: copy"></i> Copy</a></li>
                 </ul>
                 <ul class="uk-switcher uk-margin">
                     <li>${code}</li>
-                    <li><pre><code class="lang-html">${escape(code)}</code></pre>
+                    <li><pre><code id="${id}" class="lang-html">${escape(code)}</code></pre>
                     </li>
                     <li></li>
                 </ul>`;
