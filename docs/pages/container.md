@@ -8,10 +8,10 @@ Add one of the following classes to a block element to give it a max-width and w
 
 | Class                  | Description                                                                                                |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| `.uk-container`        | This class to create a default container.                                                                  |
-| `.uk-container-small`  | This class for a narrower container.                                                                       |
-| `.uk-container-large`  | This class for a wider container.                                                                          |
-| `.uk-container-expand` | This class, if you do not want to limit the container width but still want the dynamic horizontal padding. |
+| `.uk-container`        | Add this class to create a default container.                                                                  |
+| `.uk-container-small`  | Add this class for a narrower container.                                                                       |
+| `.uk-container-large`  | Add this class for a wider container.                                                                          |
+| `.uk-container-expand` | Add this class, if you do not want to limit the container width but still want the dynamic horizontal padding. |
 
 
 ```html

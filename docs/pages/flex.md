@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Utilize the power of Flexbox to create a wide range of layouts.</p>
 
-The Flex component has an essential role in building layouts in UIkit. A lot of components, for example the [Grid](grid.md) as well as horizontal navigations, like the [Navbar](navbar.md), [Subnav](subnav.md), [Breadcrumb](breadcrumb.md), [Pagination](pagination.md), [Tab](tab.md) and [Dotnav](dotnav.md) rely on the Flex component.
+The Flex component has an essential role in building layouts in UIkit. A lot of components, for example the [Grid](grid.md) as well as horizontal navigations, like the [Navbar](navbar.md), [Subnav](subnav.md), [Breadcrumb](breadcrumb.md), [Pagination](pagination.md), [Tab](tab.md) and [Dotnav](dotnav.md) are built with flexbox and can be used together with the utility classes from this component.
 
 ***
 
@@ -17,10 +17,10 @@ To apply this component, add the `.uk-flex` class to a `<div>` element. This wil
 ```
 
 ```example
-<div class="uk-flex uk-text-center">
-    <div class="uk-width-1-3 uk-card uk-card-default"><div class="uk-card-body">Flex Item</div></div>
-    <div class="uk-width-1-3 uk-card uk-card-default uk-margin-left"><div class="uk-card-body">Flex Item</div></div>
-    <div class="uk-width-1-3 uk-card uk-card-default uk-margin-left"><div class="uk-card-body">Flex Item</div></div>
+<div class="uk-flex uk-child-width-expand@s uk-text-center">
+    <div class="uk-card uk-card-default uk-card-body">Flex Item</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Flex Item</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Flex Item</div>
 </div>
 ```
 
@@ -32,21 +32,23 @@ By default, the flex container is displayed as a block element. To apply the beh
 
 ***
 
-## Modifiers
+## Alignment modifiers
 
-You can add a number of different classes to modify the flex behavior.
-
-### Alignment
-
-These classes define the horizontal and vertical alignment of flex items and distribute the space between them. Add one or more of them to the flex container in order to configure the alignments of the flex items.
+These classes define the horizontal alignment of flex items and distribute the space between them. Add one or more of them to the flex container in order to configure the alignments of the flex items. By default, flex items are aligned to the left as does the `.uk-flex-left` class.
 
 | Class              | Description                                                                                                                |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------|
 | `.uk-flex-left`    | Add this class to align flex items to the left.                                                                            |
 | `.uk-flex-center`  | Add this class to center flex items along the main axis.                                                                          |
 | `.uk-flex-right`   | Add this class to align flex items to the right.                                                                           |
-| `.uk-flex-between` | Add this class to distribute items evenly, with the first item at the beginning and last item at the end of the main axis. |
+| `.uk-flex-between` | Add this class to distribute items evenly, with equal space between the items along the main axis. |
 | `.uk-flex-around`  | Add this class to distribute items evenly with equal space on both sides of each item.                                     |
+
+These classes define the vertical alignment of flex items. By default, flex items fill the height of their container as does the `.uk-flex-stretch` class.
+
+
+| Class              | Description                                                                                                                |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------|
 | `.uk-flex-stretch` | Add this class to expand flex items to fill the height of their parent.                                                    |
 | `.uk-flex-top`     | Add this class to align flex items to the top.                                                                             |
 | `.uk-flex-middle`  | Add this class to center flex items along the cross axis.                                                                            |
@@ -58,15 +60,21 @@ These classes define the horizontal and vertical alignment of flex items and dis
 
 ```example
 <div class="uk-flex uk-flex-middle uk-flex-around uk-text-center">
-   <div class="uk-width-1-4 uk-card uk-card-default uk-card-small"><div class="uk-card-body">Item</div></div>
-   <div class="uk-width-1-4 uk-card uk-card-default"><div class="uk-card-body">Item</div></div>
-   <div class="uk-width-1-4 uk-card uk-card-default uk-card-large"><div class="uk-card-body">Item</div></div>
+  <div class="uk-width-1-4 uk-card uk-card-default uk-card-body uk-card-small">
+     Lorem ipsum
+   </div>
+   <div class="uk-width-1-4 uk-card uk-card-default uk-card-body uk-card-small">
+     Lorem ipsum<br> dolor sit amet<br> consectetur
+   </div>
+   <div class="uk-width-1-4 uk-card uk-card-default uk-card-body uk-card-small">
+     Lorem ipsum<br> dolor sit amet<br> consectetur<br>adipisicing
+   </div>
 </div>
 ```
 
 ***
 
-### Direction
+## Direction modifiers
 
 These classes define the axis that flex items are placed on and their direction. By default, items run horizontally from left to right.
 
@@ -79,41 +87,49 @@ These classes define the axis that flex items are placed on and their direction.
 
 ```example
 <div class="uk-flex uk-flex-column uk-flex-column-reverse">
-   <div class="uk-width-1-3 uk-card uk-card-default"><div class="uk-card-body">1</div></div>
-   <div class="uk-width-1-3 uk-card uk-card-default uk-margin-bottom"><div class="uk-card-body">2</div></div>
-   <div class="uk-width-1-3 uk-card uk-card-default uk-margin-bottom"><div class="uk-card-body">3</div></div>
+   <div class="uk-width-1-3 uk-card uk-card-default uk-card-body">1</div>
+   <div class="uk-width-1-3 uk-card uk-card-default uk-card-body uk-margin-bottom">2</div>
+   <div class="uk-width-1-3 uk-card uk-card-default uk-card-body uk-margin-bottom">3</div>
 </div>
 ```
 
 ***
 
-### Wrap
+## Wrap modifiers
 
-By default, flex items are fit into one line. Add the `.uk-flex-wrap` class to make them wrap into another line when they no longer fit the viewport. To change the items' direction so that they run from right to left, add the `.uk-flex-wrap-reverse` class. The following classes modify the alignment of wrapping flex items. To force the flex items into one line, just add the `.uk-flex-nowrap` class.
+By default, flex items are fit into one line and run from left to right. Add one of these classes to modify the behavior of wrapping flex items.
+
+| Class                   | Description                                                                                       |
+|-------------------------|---------------------------------------------------------------------------------------------------|
+| `.uk-flex-wrap`         | Add this class to make flex items wrap into another line when they no longer fit their container. |
+| `.uk-flex-wrap-reverse` | Add this class to change the items' direction so that they run from right to left.                |
+| `.uk-flex-nowrap`       | Add this class to force the flex items into one line. This is the default behavior.               |
+
+The following classes modify the alignment of wrapping flex items.
 
 | Class                   | Description                                                                                                                |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | `.uk-flex-wrap-stretch` | Add this class, so that item lines stretch to take up the remaining space                                                  |
+| `.uk-flex-wrap-between` | Add this class to distribute item lines evenly, with the first row at the top and last row at the bottom of the container. |
+| `.uk-flex-wrap-around`  | Add this class to distribute lines evenly with equal space at the top and bottom of each row.                              |
 | `.uk-flex-wrap-top`     | Add this class to align multiline flex items to the top.                                                                   |
 | `.uk-flex-wrap-middle`  | Add this class to vertically center multirow flex items.                                                                   |
 | `.uk-flex-wrap-bottom`  | Add this class to align multiline flex items to the bottom.                                                                |
-| `.uk-flex-wrap-between` | Add this class to distribute item lines evenly, with the first row at the top and last row at the bottom of the container. |
-| `.uk-flex-wrap-around`  | Add this class to distribute lines evenly with equal space at the top and bottom of each row.                              |
 
 ```example
-<div class="uk-flex uk-flex-wrap uk-flex-wrap-reverse uk-flex-wrap-around uk-background-muted" style="height: 300px;">
-    <div class="uk-width-1-3 uk-card uk-card-default uk-card-small"><div class="uk-card-body">1</div></div>
-    <div class="uk-width-1-2 uk-card uk-card-default uk-card-small uk-margin-left"><div class="uk-card-body">2</div></div>
-    <div class="uk-width-1-3 uk-card uk-card-default uk-card-small"><div class="uk-card-body">3</div></div>
-    <div class="uk-width-1-3 uk-card uk-card-default uk-card-small uk-margin-left"><div class="uk-card-body">4</div></div>
-    <div class="uk-width-1-2 uk-card uk-card-default uk-card-small"><div class="uk-card-body">5</div></div>
-    <div class="uk-width-1-3 uk-card uk-card-default uk-card-small uk-margin-left"><div class="uk-card-body">6</div></div>
+<div class="uk-flex uk-flex-wrap uk-flex-wrap-reverse uk-flex-wrap-around uk-background-muted uk-height-medium">
+    <div class="uk-width-1-3 uk-card uk-card-default uk-card-body uk-card-small">1</div>
+    <div class="uk-width-1-2 uk-card uk-card-default uk-card-body uk-card-small uk-margin-left">2</div>
+    <div class="uk-width-1-3 uk-card uk-card-default uk-card-body uk-card-small">3</div>
+    <div class="uk-width-1-3 uk-card uk-card-default uk-card-body uk-card-small uk-margin-left">4</div>
+    <div class="uk-width-1-2 uk-card uk-card-default uk-card-body uk-card-small">5</div>
+    <div class="uk-width-1-3 uk-card uk-card-default uk-card-body uk-card-small uk-margin-left">6</div>
 </div>
 ```
 
 ***
 
-### Item Order
+## Item order
 
 By default, flex items are laid out according to the source order. To display a certain item as the first or last one, just add one of these classes.
 
@@ -126,13 +142,32 @@ By default, flex items are laid out according to the source order. To display a 
 | `.uk-flex-first@l`<br> `.uk-flex-last@l`   | Affects device widths of _1200px_ and higher. |
 | `.uk-flex-first@xl`<br> `.uk-flex-last@xl` | Affects device widths of _1600px_ and higher. |
 
-```example
-<div class="uk-flex uk-text-center">
-   <div class="uk-width-1-3 uk-card uk-card-default uk-margin-left"><div class="uk-card-body">1</div></div>
-   <div class="uk-width-1-3 uk-card uk-card-default uk-margin-left"><div class="uk-card-body">2</div></div>
-   <div class="uk-width-1-3 uk-card uk-card-default uk-flex-first"><div class="uk-card-body">3</div></div>
+```html
+<div class="uk-flex">
+  <div></div>
+  <div class="uk-flex-first"></div>
 </div>
 ```
+
+```example
+<div class="uk-flex uk-child-width-expand@s uk-text-center">
+   <div class="uk-card uk-card-default uk-card-body uk-margin-left">1</div>
+   <div class="uk-card uk-card-default uk-card-body uk-margin-left">2</div>
+   <div class="uk-card uk-card-default uk-card-body uk-flex-first">3</div>
+</div>
+```
+
+***
+
+## Item dimensions
+
+To determine how much space a flex item should take up, add one of the following classes to the item. By default, items determine their size by their content, but are allowed to shrink.
+
+| Class           | Description                                            |
+|-----------------|--------------------------------------------------------|
+| `.uk-flex-none` | The box's size is determined by its content.           |
+| `.uk-flex-auto` | The space is allocated considering the item's content. |
+| `.uk-flex-1`    | The space is allocated solely based on flex.           |
 
 ***
 
