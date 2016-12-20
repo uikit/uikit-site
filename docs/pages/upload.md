@@ -13,23 +13,26 @@ This JavaScript component utilizes the latest XMLHttpRequest Level 2 specificati
 In this example we are using a simple button which opens up the file select window.
 
 ```example
-<button class="uk-form-custom uk-button uk-button-default">
-    Select
-    <input type="file" multiple="">
-</button>
+<div class="test-upload" uk-form-custom>
+    <input type="file" multiple>
+    <button class="uk-button uk-button-default" tabindex="-1">Select</button>
+</div>
 ```
 
 ***
 
 ## Drop Area
 
-This example shows how to realize a drop area with the option to select the file from a file window. 
+This example shows how to realize a drop area with the option to select the file from a file window.
 
 ```example
 <div class="test-upload uk-placeholder uk-text-center">
     <span uk-icon="icon: cloud-upload"></span>
     <span class="uk-text-middle">Attach binaries by dropping them here or</span>
-    <a class="uk-form-custom">selecting one<input type="file" multiple></a>
+    <div uk-form-custom>
+        <input type="file" multiple>
+        <span class="uk-link">selecting one</span>
+    </div>
 </div>
 
 <progress id="progressbar" class="uk-progress" value="0" max="100" hidden></progress>
