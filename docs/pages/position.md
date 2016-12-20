@@ -21,56 +21,53 @@ To apply this component, add one of the `.uk-position-*` classes to a block elem
 | `.uk-position-bottom-left`   | Positions the element at the bottom left.                |
 | `.uk-position-bottom-center` | Positions the element at the bottom center.              |
 | `.uk-position-bottom-right`  | Positions the element at the bottom right.               |
+| `.uk-position-cover`         | Positions the element to cover the whole container.      |
 
 ```html
-<div class="uk-panel">
+<div class="uk-position-relative">
+
+    <!-- Any content like an image here -->
+
     <div class="uk-position-center"></div>
+
 </div>
 ```
 
-Use the [Cover component](cover.md) to place the position elements on top of a media element that covers its container.
-
 ```example
-<div class="uk-child-width-1-2@xl uk-grid-small" uk-grid>
-    <div>
-        <div class="uk-cover-container uk-height-medium">
+<div class="uk-inline uk-margin">
 
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+    <img src="../docs/images/photo.jpg" alt="">
 
-            <div class="uk-position-top-left uk-overlay uk-overlay-default">Top Left</div>
+    <div class="uk-position-top-left uk-overlay uk-overlay-default">Top Left</div>
+    <div class="uk-position-top-center uk-overlay uk-overlay-default">Top Center</div>
+    <div class="uk-position-top-right uk-overlay uk-overlay-default">Top Right</div>
+    <div class="uk-position-center-left uk-overlay uk-overlay-default">Center Left</div>
+    <div class="uk-position-center uk-overlay uk-overlay-default">Center</div>
+    <div class="uk-position-center-right uk-overlay uk-overlay-default">Center Right</div>
+    <div class="uk-position-bottom-left uk-overlay uk-overlay-default">Bottom Left</div>
+    <div class="uk-position-bottom-center uk-overlay uk-overlay-default">Bottom Center</div>
+    <div class="uk-position-bottom-right uk-overlay uk-overlay-default">Bottom Right</div>
 
-            <div class="uk-position-top-center uk-overlay uk-overlay-default">Top Center</div>
+</div>
 
-            <div class="uk-position-top-right uk-overlay uk-overlay-default">Top Right</div>
+<div class="uk-inline uk-margin">
 
-            <div class="uk-position-center-left uk-overlay uk-overlay-default">Center Left</div>
+    <img src="../docs/images/photo.jpg" alt="">
 
-            <div class="uk-position-center uk-overlay uk-overlay-default">Center</div>
+    <div class="uk-position-top uk-overlay uk-overlay-default uk-text-center">Top</div>
+    <div class="uk-position-bottom uk-overlay uk-overlay-default uk-text-center">Bottom</div>
+    <div class="uk-position-left uk-overlay uk-overlay-default uk-flex uk-flex-middle">Left</div>
+    <div class="uk-position-right uk-overlay uk-overlay-default uk-flex uk-flex-middle">Right</div>
 
-            <div class="uk-position-center-right uk-overlay uk-overlay-default">Center Right</div>
+</div>
 
-            <div class="uk-position-bottom-left uk-overlay uk-overlay-default">Bottom Left</div>
+<div class="uk-inline uk-margin">
 
-            <div class="uk-position-bottom-center uk-overlay uk-overlay-default">Bottom Center</div>
+    <img src="../docs/images/photo.jpg" alt="">
 
-            <div class="uk-position-bottom-right uk-overlay uk-overlay-default">Bottom Right</div>
-        </div>
-    </div>
-    <div>
-        <div class="uk-cover-container uk-height-medium">
+    <div class="uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">Cover</div>
 
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
-
-            <div class="uk-position-top uk-overlay uk-overlay-default uk-text-center">Top Left</div>
-
-            <div class="uk-position-bottom uk-overlay uk-overlay-default uk-text-center">Top Center</div>
-
-            <div class="uk-position-left uk-overlay uk-overlay-default uk-flex uk-flex-middle">Center Left</div>
-
-            <div class="uk-position-right uk-overlay uk-overlay-default uk-flex uk-flex-middle">Top Right</div>
-
-        </div>
-    </div>
+</div>
 ```
 
 ***
@@ -84,27 +81,38 @@ To apply a small margin to position elements, add the `.uk-position-small` class
 ```
 
 ```example
-<div class="uk-cover-container uk-height-medium">
+<div class="uk-inline uk-margin">
 
-    <img src="../docs/images/photo.jpg" alt="" uk-cover>
+    <img src="../docs/images/photo.jpg" alt="">
 
     <div class="uk-position-small uk-position-top-left uk-overlay uk-overlay-default">Top Left</div>
-
     <div class="uk-position-small uk-position-top-center uk-overlay uk-overlay-default">Top Center</div>
-
     <div class="uk-position-small uk-position-top-right uk-overlay uk-overlay-default">Top Right</div>
-
     <div class="uk-position-small uk-position-center-left uk-overlay uk-overlay-default">Center Left</div>
-
     <div class="uk-position-small uk-position-center uk-overlay uk-overlay-default">Center</div>
-
     <div class="uk-position-small uk-position-center-right uk-overlay uk-overlay-default">Center Right</div>
-
     <div class="uk-position-small uk-position-bottom-left uk-overlay uk-overlay-default">Bottom Left</div>
-
     <div class="uk-position-small uk-position-bottom-center uk-overlay uk-overlay-default">Bottom Center</div>
-
     <div class="uk-position-small uk-position-bottom-right uk-overlay uk-overlay-default">Bottom Right</div>
+
+</div>
+
+<div class="uk-inline uk-margin">
+
+    <img src="../docs/images/photo.jpg" alt="">
+
+    <div class="uk-position-small uk-position-top uk-overlay uk-overlay-default uk-text-center">Top</div>
+    <div class="uk-position-small uk-position-bottom uk-overlay uk-overlay-default uk-text-center">Bottom</div>
+    <div class="uk-position-small uk-position-left uk-overlay uk-overlay-default uk-flex uk-flex-middle">Left</div>
+    <div class="uk-position-small uk-position-right uk-overlay uk-overlay-default uk-flex uk-flex-middle">Right</div>
+
+</div>
+
+<div class="uk-inline uk-margin">
+
+    <img src="../docs/images/photo.jpg" alt="">
+
+    <div class="uk-position-small uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">Cover</div>
 
 </div>
 ```
@@ -120,63 +128,39 @@ To apply a slightly larger margin to position elements, add the `.uk-position-me
 ```
 
 ```example
-<div class="uk-cover-container uk-height-medium">
+<div class="uk-inline uk-margin">
 
-    <img src="../docs/images/photo.jpg" alt="" uk-cover>
+    <img src="../docs/images/photo.jpg" alt="">
 
     <div class="uk-position-medium uk-position-top-left uk-overlay uk-overlay-default">Top Left</div>
-
     <div class="uk-position-medium uk-position-top-center uk-overlay uk-overlay-default">Top Center</div>
-
     <div class="uk-position-medium uk-position-top-right uk-overlay uk-overlay-default">Top Right</div>
-
     <div class="uk-position-medium uk-position-center-left uk-overlay uk-overlay-default">Center Left</div>
-
     <div class="uk-position-medium uk-position-center uk-overlay uk-overlay-default">Center</div>
-
     <div class="uk-position-medium uk-position-center-right uk-overlay uk-overlay-default">Center Right</div>
-
     <div class="uk-position-medium uk-position-bottom-left uk-overlay uk-overlay-default">Bottom Left</div>
-
     <div class="uk-position-medium uk-position-bottom-center uk-overlay uk-overlay-default">Bottom Center</div>
-
     <div class="uk-position-medium uk-position-bottom-right uk-overlay uk-overlay-default">Bottom Right</div>
-    
+
 </div>
-```
 
-***
+<div class="uk-inline uk-margin">
 
-## Cover Modifier
+    <img src="../docs/images/photo.jpg" alt="">
 
-If you want a position element to cover its container, just add the `.uk-position-cover` class.
+    <div class="uk-position-medium uk-position-top uk-overlay uk-overlay-default uk-text-center">Top</div>
+    <div class="uk-position-medium uk-position-bottom uk-overlay uk-overlay-default uk-text-center">Bottom</div>
+    <div class="uk-position-medium uk-position-left uk-overlay uk-overlay-default uk-flex uk-flex-middle">Left</div>
+    <div class="uk-position-medium uk-position-right uk-overlay uk-overlay-default uk-flex uk-flex-middle">Right</div>
 
-```html
-<div class="uk-position-cover"></div>
-```
+</div>
 
-This can be combined with the `.uk-position-small` and `.uk-position-medium` modifiers.
+<div class="uk-inline uk-margin">
 
-```example
-<div class="uk-child-width-1-3@l uk-grid-small" uk-grid>
-    <div>
-        <div class="uk-cover-container uk-height-small">
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
-            <div class="uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-middle uk-flex-center">Cover</div>
-        </div>
-    </div>
-    <div>
-        <div class="uk-cover-container uk-height-small">
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
-            <div class="uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-middle uk-flex-center">Small</div>
-        </div>
-    </div>
-    <div>
-        <div class="uk-cover-container uk-height-small">
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
-            <div class="uk-position-cover uk-position-medium uk-overlay uk-overlay-default uk-flex uk-flex-middle uk-flex-center">Medium</div>
-        </div>
-    </div>
+    <img src="../docs/images/photo.jpg" alt="">
+
+    <div class="uk-position-medium uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">Cover</div>
+
 </div>
 ```
 
