@@ -18,9 +18,7 @@ To apply this component, add one of the following classes to a block element.
 
 ```example
 <div class="uk-padding uk-background-muted uk-width-1-2@s">
-    <div class="uk-padding-small uk-background">
-        The gray area represents the regular padding that has been added to the parent container of this <code>&lt;div&gt;</code> element.
-    </div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 </div>
 ```
 
@@ -37,11 +35,3 @@ In some cases you want to remove padding from an element, rather than adding it.
 | `.uk-padding-remove-bottom`     | Removes bottom padding from an element.         |
 | `.uk-padding-remove-vertical`   | Removes top and bottom padding from an element. |
 | `.uk-padding-remove-horizontal` | Removes left and right padding from an element. |
-
-```example
-<div class="uk-padding uk-padding-remove-bottom uk-background-muted uk-width-1-2@s">
-    <div class="uk-padding-small uk-background">
-        The gray area represents the regular padding that has been added to the parent container of this <code>&lt;div&gt;</code> element.
-    </div>
-</div>
-```
