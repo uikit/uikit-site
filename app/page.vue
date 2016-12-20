@@ -44,6 +44,8 @@ export default {
             this.$page.html('');
             this.error = null;
 
+            this.$parent.page = page;
+
             var defer = $.Deferred();
 
             defer.promise().done(content => {
