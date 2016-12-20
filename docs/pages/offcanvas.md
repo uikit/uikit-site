@@ -10,7 +10,7 @@ The Off-canvas component is perfect for building a mobile navigation, similar to
 
 To apply this component, add the `uk-offcanvas` attribute to a parent `<div>` element. Add the `.uk-offcanvas-bar` class to a child `<div>` element.
 
-You can use any element to toggle an off-canvas sidebar. An `<a>` element needs to be linked to the id of the off-canvas container. To enable the necessary JavaScript, just add the `uk-toggle` attribute. If you are using another element, like a button, just add the `uk-toggle="target: #ID"` attribute to target the id of the off-canvas container.
+You can use any element to toggle an off-canvas sidebar. To enable the necessary JavaScript, add the `uk-toggle` attribute. An `<a>` element needs to be linked to the id of the off-canvas container. If you are using another element, like a button, just add the `uk-toggle="target: #ID"` attribute to target the id of the off-canvas container.
 
 ```html
 <!-- This is a button toggling the off-canvas -->
@@ -100,14 +100,10 @@ Add the `flip: true` parameter to the `uk-offcanvas` attribute to adjust its ali
 
 ## Animation modes
 
-By default, the off-canvas slides in. But you can actually choose between different animation modes for the off-canvas' entrance. Just add the `mode: reveal`, `mode-push` or `mode: none` parameter to the attribute.
+By default, the off-canvas slides in. But you can actually choose between different animation modes for the off-canvas' entrance. Just add the `mode: reveal`, `mode: push` or `mode: none` parameter to the `uk-offcanvas` attribute.
 
 ```html
 <div id="#my-id" uk-offcanvas="mode: push"></div>
-
-<div id="#my-id" uk-offcanvas="mode: reveal"></div>
-
-<div id="#my-id" uk-offcanvas="mode: none"></div>
 ```
 
 ```example
@@ -183,34 +179,9 @@ You can use the [Nav component](nav.md) inside an off-canvas to create a mobile 
 ```
 
 ```example
-<div class="uk-button-group">
-    <button class="uk-button uk-button-default" uk-toggle="target: #offcanvas-nav">Left</button>
-    <button class="uk-button uk-button-default" uk-toggle="target: #offcanvas-nav-right">Right</button>
-</div>
+<button class="uk-button uk-button-default" uk-toggle="target: #offcanvas-nav">Open</button>
 
 <div id="offcanvas-nav" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar">
-
-        <ul class="uk-nav uk-nav-default">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li class="uk-parent">
-                <a href="#">Parent</a>
-                <ul class="uk-nav-sub">
-                    <li><a href="#">Sub item</a></li>
-                    <li><a href="#">Sub item</a></li>
-                </ul>
-            </li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
-        </ul>
-
-    </div>
-</div>
-
-<div id="offcanvas-nav-right" uk-offcanvas="overlay: true; flip: true">
     <div class="uk-offcanvas-bar">
 
         <ul class="uk-nav uk-nav-default">
