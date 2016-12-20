@@ -366,13 +366,16 @@ Use a button or text as a file input.
     <div class="uk-margin">
         <div uk-form-custom>
             <input type="file">
-            <button class="uk-button uk-button-default">Button</button>
+            <button class="uk-button uk-button-default" tabindex="-1">Button</button>
         </div>
     </div>
 
     <div class="uk-margin">
         <span class="uk-text-middle">Here is a text</span>
-        <div class="uk-link" uk-form-custom>upload<input type="file">.</div>
+        <div uk-form-custom>
+            <input type="file">
+            <span class="uk-link">upload</span>
+        </div>
     </div>
 
 </form>
