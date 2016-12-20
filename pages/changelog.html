@@ -1,0 +1,71 @@
+
+
+<div class="uk-section uk-flex uk-flex-middle">
+    <div class="uk-container uk-container-small">
+
+        <h1 class="uk-text-center">Changelog</h1>
+
+        <div id="js-changelog"></div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(function() {
+
+        $.get('CHANGELOG.md', function(body) {
+
+            $('#js-changelog').html(parse(body));
+        });
+
+
+        function parse(markdown) {
+
+            var renderer = new marked.Renderer(), section;
+
+            renderer.list = text => `<ul class="uk-list">${text}</ul>`;
+
+            renderer.listitem = (text) => {
+
+                var label = '';
+
+                switch (section) {
+
+                    case 'Added':
+                        label = 'uk-label-success';
+                        break;
+
+                    case 'Removed':
+                    case 'Deprecated':
+                        label = 'uk-label-warning';
+                        break;
+
+                    case 'Fixed':
+                    case 'Security':
+                        label = 'uk-label-danger';
+                }
+
+                return `<li><span class="uk-label ${label} uk-margin-right uk-text-center uk-width-small">${section}</span> ${text}</li>`;
+            };
+
+            renderer.heading = (text, level) => {
+
+                text = text.replace(/(\(.*?\))/, '<span class="uk-text-muted">$1</span>');
+
+                if (level == 2) {
+                    return `<h${level}>${text}</h${level}>`;
+                }
+
+                if (level == 3) {
+                    section = text;
+                }
+
+                return '';
+            };
+
+            return marked(markdown, {renderer});
+        }
+    });
+
+</script>

@@ -126,9 +126,9 @@ export default {
                         e.stopImmediatePropagation();
 
                         if (copyToClipboard($(this.getAttribute('rel')).text())) {
-                            UIkit.notification({message: "Code copied to clipboard", status: 'success'});
+                            UIkit.notification({message: "Copied to clipboard", pos: 'bottom-right'});
                         } else {
-                            UIkit.notification({message: "Copy failed", status: 'danger'});
+                            UIkit.notification({message: "Copy failed", status: 'danger', pos: 'bottom-right'});
                         }
                     });
 
@@ -196,18 +196,27 @@ export default {
 
                 let id = 'code'+Math.floor((1 + Math.random()) * 0x10000).toString(16);
 
-                return `<ul uk-tab>
-                    <li><a href="#">Preview</a></li>
-                    <li><a href="#">Markup</a></li>
-                    <li style="margin-left:auto;"><a class="js-copy" rel="#${id}"><i uk-icon="icon: copy"></i> Copy</a></li>
-                    <li><a class="js-codepen" rel="#${id}"><i uk-icon="icon: copy"></i> Codepen</a></li>
-                </ul>
-                <ul class="uk-switcher uk-margin">
-                    <li>${code}</li>
-                    <li><pre><code id="${id}" class="lang-html">${escape(code)}</code></pre>
-                    </li>
-                    <li></li>
-                </ul>`;
+                return `
+                <div class="uk-position-relative">
+
+                    <ul uk-tab>
+                        <li><a href="#">Preview</a></li>
+                        <li><a href="#">Markup</a></li>
+                    </ul>
+
+                    <ul class="uk-switcher uk-margin">
+                        <li>${code}</li>
+                        <li><pre><code id="${id}" class="lang-html">${escape(code)}</code></pre></li>
+                    </ul>
+
+                    <div class="uk-position-top-right uk-margin-small-top">
+                        <ul class="uk-iconnav">
+                            <li><a class="js-copy" rel="#${id}"><i uk-icon="icon: copy;ratio:0.8"></i></a></li>
+                            <li><a class="js-codepen" rel="#${id}"><i uk-icon="icon: file-edit;ratio:0.8"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                `;
             }
 
             renderer.list = text => `<ul class="uk-list uk-list-bullet">${text}</ul>`;

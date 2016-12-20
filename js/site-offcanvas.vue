@@ -30,12 +30,7 @@ export default {
     },
 
     data() {
-        return {
-            navigation
-        }
-    },
-    ready() {
-        console.log(19)
+        return { navigation }
     }
 }
 

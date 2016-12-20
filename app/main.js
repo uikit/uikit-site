@@ -5,25 +5,23 @@ import Page from './page.vue';
 const routes = [
 
     {
-        path: '*/docs/', redirect: '*/docs/introduction'
+        path: './', redirect: '/index'
     },
 
     {
-        path: '*/docs/:page', component: Page
+        path: '*/:page', component: Page
     }
 
 ];
 
-const navigation = require('./navigation.json');
+const navigation = require('../docs/app/navigation.json');
 
 $(function () {
     new Vue({
         router: new VueRouter({mode:'history', history: true,routes, linkActiveClass: 'uk-active'}),
         data() {
             return {
-                ids: {},
                 loading: false,
-                component: false,
                 page: false,
                 navigation
             }
@@ -31,6 +29,6 @@ $(function () {
         mounted() {
             this.$el.classList.remove('uk-invisible');
         }
-    }).$mount('#docs');
+    }).$mount('#pages');
 
 });

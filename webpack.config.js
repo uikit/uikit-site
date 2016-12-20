@@ -14,9 +14,9 @@ const loaders = [
 module.exports = [
 
     {
-        entry: './docs/app/main',
+        entry: './app/main',
         output: {
-            filename: './docs/app/main.min.js'
+            filename: './app/main.min.js'
         },
         externals,
         module: {
@@ -25,9 +25,9 @@ module.exports = [
     },
 
     {
-        entry: './js/site',
+        entry: './docs/app/main',
         output: {
-            filename: './js/site.min.js'
+            filename: './docs/app/main.min.js'
         },
         externals,
         module: {
