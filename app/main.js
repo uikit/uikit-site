@@ -5,7 +5,7 @@ import Page from './page.vue';
 const routes = [
 
     {
-        path: './', redirect: '/index'
+        path: '/', redirect: '/index'
     },
 
     {
@@ -16,9 +16,21 @@ const routes = [
 
 const navigation = require('../docs/app/navigation.json');
 
+let base = '/';
+
+if (location.pathname && location.pathname != '/') {
+    base = location.pathname.split('/').slice(0, -1).join('/');
+}
+
 $(function () {
     new Vue({
-        router: new VueRouter({mode:'history', history: true,routes, linkActiveClass: 'uk-active'}),
+        router: new VueRouter({
+            mode:'history',
+            history: true,
+            linkActiveClass: 'uk-active',
+            base,
+            routes
+        }),
         data() {
             return {
                 loading: false,

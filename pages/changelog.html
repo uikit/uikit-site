@@ -14,11 +14,9 @@
 
     $(function() {
 
-        $.get('CHANGELOG.md', function(body) {
-
+        $.get('assets/uikit/CHANGELOG.md', {nc: Math.random()}, body => {
             $('#js-changelog').html(parse(body));
         });
-
 
         function parse(markdown) {
 
