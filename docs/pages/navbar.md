@@ -29,7 +29,6 @@ The Navbar component consists of a navbar container, the navbar itself and one o
 ```
 
 ```example
-<!-- left -->
 <nav class="uk-navbar-container uk-margin" uk-navbar>
     <div class="uk-navbar-left">
 
@@ -50,10 +49,26 @@ The Navbar component consists of a navbar container, the navbar itself and one o
 
     </div>
 </nav>
+```
 
-<!-- center -->
+***
+
+### Multiple navigations
+
+You can place more than one navigation inside a navbar container. That way you can have a left aligned, a centered and a right aligned navigation inside the same navbar.
+
+```html
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">.../div>
+    <div class="uk-navbar-center">.../div>
+    <div class="uk-navbar-right">.../div>
+</nav>
+```
+
+```example
 <nav class="uk-navbar-container uk-margin" uk-navbar>
-    <div class="uk-navbar-center">
+    <!-- left -->
+    <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
             <li class="uk-active"><a href="#">Active</a></li>
@@ -71,10 +86,8 @@ The Navbar component consists of a navbar container, the navbar itself and one o
         </ul>
 
     </div>
-</nav>
 
-<!-- right -->
-<nav class="uk-navbar-container uk-margin" uk-navbar>
+    <!-- right -->
     <div class="uk-navbar-right">
 
         <ul class="uk-navbar-nav">
@@ -98,7 +111,80 @@ The Navbar component consists of a navbar container, the navbar itself and one o
 
 ***
 
-### Navbar Subtitle
+### Click mode
+
+A parent item inside the navbar can be enabled by either hovering or clicking the the toggle. Just add the `mode: click` option to the `uk-navbar` attribute.
+
+```html
+<nav class="uk-navbar-container" uk-navbar="mode: click">...</nav>
+```
+
+```example
+<nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
+    <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li>
+                <a href="#">Parent</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Item</a></li>
+        </ul>
+
+    </div>
+</nav>
+```
+
+***
+
+## Transparent Navbar
+
+When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just add the `.uk-navbar-transparent` class to the `<nav>` element. If necessary, add the `.uk-light` or `.uk-dark` class to invert the navbar's color.
+
+```html
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>...</nav>
+```
+
+```example
+<div class="uk-position-relative">
+    <img src="../docs/images/light.jpg" alt="">
+    <div class="uk-position-top">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li>
+                        <a href="#">Parent</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+```
+
+***
+
+## Navbar Subtitle
 
 To define a subtitle, create a `<div>` element inside an item's `<a>` element. Add the `.uk-navbar-subtitle` class to another `<div>` element.
 
@@ -159,12 +245,7 @@ To define a subtitle, create a `<div>` element inside an item's `<a>` element. A
 
 ## Content
 
-You can also add custom content to the navbar, like text, icons, buttons or forms.
-
-| Element                                      | Description                                                                                                   |
-|----------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| `.uk-navbar-item`                            | Add this class to a `<div>` element that serves as a container for your content.                              |
-| `.uk-logo`                                   | Add this class from the [Utility component](utility.md) to an `<a>` or `<div>` element to indicate your brand. |
+You can also add custom content to the navbar, like text, icons, buttons or forms. Add the `.uk-navbar-item` class to a `<div>` element that serves as a container for your content
 
 ```html
 <div class="uk-navbar-container" uk-navbar>
@@ -174,6 +255,8 @@ You can also add custom content to the navbar, like text, icons, buttons or form
     </div>
 </div>
 ```
+
+Add the `.uk-logo` class from the [Utility component](utility.md) to an `<a>` or `<div>` element to indicate your brand.
 
 ```example
 <nav class="uk-navbar-container uk-margin" uk-navbar>
@@ -209,7 +292,7 @@ You can also add custom content to the navbar, like text, icons, buttons or form
 
 ### Toggle
 
-Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to an `<a>` or `<div>` element to create an icon as a toggle. By default, there is no JavaScript attached to the toggle. As an example, you can add an off-canvas navigation from the [Off-canvas component](offcanvas.md).
+Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to an `<a>` or `<div>` element to create an icon as a toggle. By default, there is no JavaScript attached to the toggle. As an example, you can add an off-canvas navigation from the [Off-canvas component](offcanvas.md) or a modal from the [Modal component](modal.md).
 
 ```html
 <div class="uk-navbar-container" uk-navbar>
@@ -548,7 +631,7 @@ To justify a dropdown, use the [Drop component](drop.md) and its position featur
 
 ## Dropbar
 
-A dropbar looks like a dropdown but extends to the full width of the navbar. To place dropdowns inside such a dropbar, add the `dropbar: true` option to the `uk-navbar`.
+A dropbar extends to the full width of the navbar and displays the dropdown without its default styling. To place dropdowns inside such a dropbar, add the `dropbar: true` option to the `uk-navbar`.
 
 ```html
 <nav class="uk-navbar-container" uk-navbar="dropbar: true;">...</nav>
@@ -612,7 +695,7 @@ A dropbar looks like a dropdown but extends to the full width of the navbar. To 
             <ul class="uk-navbar-nav">
                 <li>
                     <a href="#">Parent</a>
-                    <div class="uk-navbar-dropdown" uk-drop="cls-drop: uk-navbar-dropdown; boundary: !nav; flip: x">
+                    <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active"><a href="#">Active</a></li>
                             <li><a href="#">Item</a></li>
@@ -703,7 +786,7 @@ By default, the dropbar overlays the site content. Add the `dropbarMode: push;` 
             <ul class="uk-navbar-nav">
                 <li>
                     <a href="#">Parent</a>
-                    <div class="uk-navbar-dropdown" uk-drop="cls-drop: uk-navbar-dropdown; boundary: !nav; flip: x">
+                    <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active"><a href="#">Active</a></li>
                             <li><a href="#">Item</a></li>
@@ -722,46 +805,6 @@ By default, the dropbar overlays the site content. Add the `dropbarMode: push;` 
 
     <div class="uk-navbar-dropbar"></div>
 
-</div>
-```
-
-***
-
-## Transparent Navbar
-
-When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just add the `.uk-navbar-transparent` class to the `<nav>` element. If necessary, add the `.uk-light` or `.uk-dark` class to invert the navbar's color.
-
-```html
-<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>...</nav>
-```
-
-```example
-<div class="uk-position-relative">
-    <img src="../docs/images/light.jpg" alt="">
-    <div class="uk-position-top">
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-            <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li>
-                        <a href="#">Parent</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-header">Header</li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-divider"></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
 </div>
 ```
 

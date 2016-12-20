@@ -6,9 +6,10 @@
 
 The Modal component consists of an overlay, a dialog and an optional close button. You can use any element to toggle a modal dialog. To enable the necessary JavaScript, add the `uk-toggle` attribute. An `<a>` element needs to be linked to the modal's id. If you are using another element, like a button, just add the `uk-toggle="target: #ID"` attribute to target the id of the modal container.
 
+Add the `uk-modal` attribute to a `<div>` element to create the modal container and an overlay that blanks out the page. It is important to add an `id` to indicate the element for toggling. Use the following classes to define the modal's sections.
+
 | Class              | Description                                                                                                                                                                     |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `.uk-modal`        | Add this class to a `<div>` element to create the modal container and an overlay that blanks out the page. It is important to add an `id` to indicate the element for toggling. |
 | `.uk-modal-dialog` | Add this class to a child `<div>` element to create the dialog box.                                                                                                             |
 | `.uk-modal-body`   | Add this class to create padding between the the modal and its content.                                                                                                         |
 | `.uk-modal-title`  | Add this class to a heading element to create the modal title.                                                                                                                  |

@@ -4,7 +4,7 @@
 
 ## Usage
 
-This component applies a specially styled area to create a placeholder space. Just add the `.uk-placeholder` class to a `<div>` element.
+This component applies a specially styled area to create a placeholder space, which can be useful, for example in combination with the [Upload component](upload.md). Just add the `.uk-placeholder` class to a `<div>` element.
 
 ```html
 <div class="uk-placeholder"></div>

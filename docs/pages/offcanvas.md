@@ -100,14 +100,21 @@ Add the `flip: true` parameter to the `uk-offcanvas` attribute to adjust its ali
 
 ## Animation modes
 
-By default, the off-canvas slides in. But you can actually choose between different animation modes for the off-canvas' entrance. Just add the `mode: reveal`, `mode: push` or `mode: none` parameter to the `uk-offcanvas` attribute.
+By default, the off-canvas slides in. But you can actually choose between different animation modes for the off-canvas' entrance. Just add one of the following attributes.
+
+| Parameter      | Description                                                                   |
+|----------------|-------------------------------------------------------------------------------|
+| `mode: slide`  | The off-canvas slides out and overlays the content. This is the default mode. |
+| `mode: push`   | The off-canvas slides out and pushes the site.                                |
+| `mode: reveal` | The off-canvas slides out and reveals its content while pushing the site.     |
+| `mode: none`   | The off-canvas appears and overlays the content without an animation.         |
 
 ```html
 <div id="#my-id" uk-offcanvas="mode: push"></div>
 ```
 
 ```example
-<button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #offcanvas-slide">Slide (Default)</button>
+<button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #offcanvas-slide">Slide</button>
 
 <button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #offcanvas-push">Push</button>
 
