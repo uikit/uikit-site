@@ -11,8 +11,5 @@ This component applies a specially styled area to create a placeholder space. Ju
 ```
 
 ```example
-<div class="uk-placeholder uk-text-center">
-    <span class="uk-margin-small-right uk-text-muted" uk-icon="icon: cloud-upload"></span>
-    Attach binaries by dropping them here or <a href="#">selecting one</a>
-</div>
+<div class="uk-placeholder uk-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 ```
