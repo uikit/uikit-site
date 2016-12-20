@@ -12,20 +12,16 @@ The Pagination component consists of button-like styled links, that are aligned 
 | `.uk-active`     | Add this class to a list item to apply an active state and use a `<span>` instead of an `<a>` element.                         |
 | `.uk-disabled`   | Add this class to a list item to apply a disabled state and use a `<span>` instead of an `<a>` element.                        |
 
-To apply an ellipsis without any styling, just use a `<span>` element instead of an `<a>` element.
-
 ```html
 <ul class="uk-pagination">
     <li><a href="">...</a></li>
     <li class="uk-active"><span>...</span></li>
     <li class="uk-disabled"><span>...</span></li>
-    <li><span>...</span></li>
 </ul>
 ```
 
 ```example
 <ul class="uk-pagination" uk-margin>
-    <li class="uk-disabled"><a href="#"><span uk-pagination-previous></span></a></li>
     <li><a href="#"><span uk-pagination-previous></span></a></li>
     <li><a href="#">1</a></li>
     <li class="uk-disabled"><span>...</span></li>
@@ -39,7 +35,6 @@ To apply an ellipsis without any styling, just use a `<span>` element instead of
     <li class="uk-disabled"><span>...</span></li>
     <li><a href="#">20</a></li>
     <li><a href="#"><span uk-pagination-next></span></a></li>
-    <li class="uk-disabled"><a href="#"><span uk-pagination-next></span></a></li>
 </ul>
 ```
 
