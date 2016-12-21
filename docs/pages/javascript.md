@@ -1,6 +1,8 @@
 # JavaScript
 
-<p class="uk-text-lead">Use data attributes to apply JavaScript to UIkit components.</p>
+<p class="uk-text-lead">Use HTML attributes to apply the UIkit JavaScript components.</p>
+
+## Usage
 
 You can use all UIkit components by just adding `uk-*` attributes to your HTML elements without writing a single line of JavaScript. This is UIkit's best practice of using its components and should always be considered first.
 

@@ -8,7 +8,7 @@ First of all you need to download UIkit. You can find the whole project and all 
 
 ## File Structure
 
-In the ZIP file you will find all CSS, JavaScript and image files ready to use for your project. The core framework of UIkit has almost no styling in order to keep it slim. 
+In the ZIP file you will find all CSS, JavaScript and image files ready to use for your project. The core framework of UIkit has almost no styling in order to keep it slim.
 
 | Folder | Description |
 | --- | --- |
@@ -58,9 +58,9 @@ In the ZIP file you will find all CSS, JavaScript and image files ready to use f
 
 ***
 
-## HTML Page Markup
+## HTML Markup
 
-First off, make sure you have a solid code editor, for example Sublime Text. You need to add the compiled and preferably minified UIkit CSS and JavaScript to the header of your HTML5 document. jQuery is required as well. And that's it!
+First off, make sure you have a solid code editor, for example Sublime Text. You need to add the compiled and preferably minified UIkit CSS and JavaScript to the header of your HTML5 document. jQuery is required as well. For your basic setup, that's it.
 
 ```html
 <!DOCTYPE html>

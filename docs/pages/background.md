@@ -145,7 +145,7 @@ You can also apply a fixed background attachment, so that the image remains in i
 
 ***
 
-## Responsive background image
+## Responsive
 
 Add one of the following classes to limit the display of background images to certain viewport sizes. This is great in cases where the image and content overlap on a phone screen in a way that would make text illegible.
 

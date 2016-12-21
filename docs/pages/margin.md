@@ -140,9 +140,9 @@ Add one of the following classes to set auto margin. This can be useful to cente
 
 ***
 
-## Margin on wrapping elements
+## Dynamic wrapping
 
-To add spacing to stacking elements, for example inline elements that wrap on smaller vieports, just add the `uk-margin` attribute to their parent container. It will automatically add the `.uk-margin-small-top` class to the lower element.
+To add spacing to stacking elements, for example inline elements that wrap on smaller viewports, just add the `uk-margin` attribute to their parent container. It will automatically add the `.uk-margin-small-top` class to the lower element.
 
 ```html
 <div uk-margin>
@@ -165,8 +165,3 @@ To add spacing to stacking elements, for example inline elements that wrap on sm
     <button class="uk-button uk-button-default">Button</button>
 </div>
 ```
-
-
-
-
-

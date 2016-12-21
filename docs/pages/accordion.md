@@ -106,7 +106,7 @@ To display multiple content sections at the same time without one collapsing whe
 
 ***
 
-## Open one or more items initially
+## Set open items
 
 To specify which items should be opened initially, add the `.uk-open` class to the item. You can also use this to open multiple items. Just make sure to add the option `multiple: true` to the `uk-accordion` attribute.
 
