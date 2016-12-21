@@ -19,39 +19,19 @@ Typically, classes from the [Animation component](animation.md) are used togethe
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-card-body uk-margin" uk-scrollspy="cls:uk-animation-fade; repeat: true">
-    <h3>Fade</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-
-<div class="uk-card uk-card-default uk-card-body uk-margin" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
-    <h3>Scale up</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-
-<div class="uk-card uk-card-default uk-card-body uk-margin" uk-scrollspy="cls:uk-animation-scale-down; repeat: true">
-    <h3>Scale down</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-
-<div class="uk-card uk-card-default uk-card-body uk-margin" uk-scrollspy="cls:uk-animation-slide-top; repeat: true">
-    <h3>Slide top</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-
-<div class="uk-card uk-card-default uk-card-body uk-margin" uk-scrollspy="cls:uk-animation-slide-bottom; repeat: true">
-    <h3>Slide bottom</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-
-<div class="uk-card uk-card-default uk-card-body uk-margin" uk-scrollspy="cls:uk-animation-slide-right; repeat: true">
-    <h3>Slide right</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-
-<div class="uk-card uk-card-default uk-card-body uk-margin" uk-scrollspy="cls:uk-animation-slide-left; repeat: true">
-    <h3>Slide left</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+            <h3 class="uk-card-title">Left</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+            <h3 class="uk-card-title">Right</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
 </div>
 ```
 
@@ -64,14 +44,26 @@ This example uses the `repeat: true` option. Scroll up and down to see the trigg
 You can also group scrollspy elements, so you won't have to apply the attribute to each of them. Just add the `uk-scrollspy="target:MY-CLASS"` attribute to a container element, targeting the selector of the items you want to animate inside the container. When using a delay, it will be applied cumulatively to the items within the row that scrolls into view. The delay will be reseted for the next row within the group when it scrolls into view.
 
 ```html
-<div uk-scrollspy="target: > div; cls:uk-animation-fade">
+<div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500">
     <div></div>
     <div></div>
 </div>
 ```
 
 ```example
-<div class="uk-child-width-1-4@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; repeat: true">
+<div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Fade</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Fade</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
     <div>
         <div class="uk-card uk-card-default uk-card-body">
             <h3 class="uk-card-title">Fade</h3>
@@ -112,7 +104,16 @@ To automatically update the active menu item in a menu depending on the scroll p
 | `uk-scrollspy-nav="scroll:true"` | Applies the [Scroll component](scroll.md) when skipping between different sections of the site.|
 | `uk-scrollspy-nav="cls:MY-CLASS"` | By default ScrollspyNav toggles the uk-active class. Use the cls option to use your own class name.|
 
-For an example of the scrollspy nav, just check out our [Scrollspy test page](http://www.getuikit.com/tests/scrollspy.html).
+```html
+<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#groups">Groups</a></li>
+    <li><a href="#scrollspy-nav">Scrollspy Nav</a></li>
+    <li><a href="#component-options">Component options</a></li>
+</ul>
+```
+
+For an example of the scrollspy nav, just check out the fixed nav on the right side of this page or take a look at the test.
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
