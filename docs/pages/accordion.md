@@ -4,7 +4,12 @@
 
 ## Usage
 
-To apply the Accordion component, add the `uk-accordion` attribute to a container element. Each immediate child element of this container will become an item of the accordion. Add the `.uk-accordion-title` class to any first child element, like a heading, to create a toggle. Finally, add the `.uk-accordion-content` class to each of the content sections inside the items.
+The Accordion component consists of a surrounding container with the `uk-accordion` attribute, and a title and content part for each accordion item.
+
+| Class | Description |
+| ----- | ----------- |
+| `.uk-accordion-title` | Defines and styles the toggle for each accordion item. Typically used on a heading. |
+| `.uk-accordion-content` | Defines the content part for each accordion item. |
 
 ```html
 <ul uk-accordion>
@@ -151,10 +156,10 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
-| `targets` | String | > * | CSS selector of the element(s) to toggle. |
-| `active` | Number | false | Index of the element to open initially. |
-| `collapsible` | Boolean | true | Allow all items to be closed. |
-| `multiple` | Boolean | false | Allow multiple open items. |
-| `animation` | Boolean | true | Reveal item directly or with a transition. |
-| `transition` | String | ease | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
-| `duration` | Number | 200 | Animation duration in milliseconds. |
+| `targets` | String | `> *` | CSS selector of the element(s) to toggle. |
+| `active` | Number | `false` | Index of the element to open initially. |
+| `collapsible` | Boolean | `true` | Allow all items to be closed. |
+| `multiple` | Boolean | `false` | Allow multiple open items. |
+| `animation` | Boolean | `true` | Reveal item directly or with a transition. |
+| `transition` | String | `ease` | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
+| `duration` | Number | `200` | Animation duration in milliseconds. |

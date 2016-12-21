@@ -4,15 +4,15 @@
 
 ## Usage
 
-The Scrollspy component listens to page scrolling and triggers events based on the scroll position. For example, if you scroll down a page and an element appears in the viewport for the first time, you can trigger a smooth animation to fade in the element. Just add the `uk-scrollspy` attribute and the following options.
+The Scrollspy component listens to page scrolling and triggers events based on the scroll position. For example, if you scroll down a page and an element appears in the viewport for the first time, you can trigger a smooth animation to fade in the element. Just add the `uk-scrollspy` attribute which takes the following options.
 
-| Data attribute | Description |
+| Option | Description |
 | -------------- | ----------- |
 | `cls:'MY-CLASS'` | Applies the class only the first time the element appears in the viewport. |
 | `repeat: true` | Applies the class every time the element appears in the viewport. |
 | `delay:600` | Adds a delay in milliseconds to the animation. |
 
-Typically, classes from the [Animation component](animation.md) are used together with the scrollspy component.
+Typically, classes from the [Animation component](animation.md) are used together with the Scrollspy component.
 
 ```html
 <div uk-scrollspy="cls:uk-animation-fade"></div>
@@ -99,25 +99,18 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
-| `cls` | String | uk-scrollspy-inview | Class to add when the element is in view. If two, comma separated classes are provided those will be toggled. |
-| `hidden` | Boolean | true | Hides the element while out of view. |
-| `offset-top` | Number | 0 | Top offset before triggering in view. |
-| `offset-left` | Number | 0 | Left offset before triggering in view. |
-| `repeat` | Boolean | false | Applies the 'cls' class every time the element is in view. |
-| `delay` | Number | 0 | Delay time in ms. |
+| `cls` | String | `uk-scrollspy-inview` | Class to add when the element is in view. If two, comma separated classes are provided those will be toggled. |
+| `hidden` | Boolean | `true` | Hides the element while out of view. |
+| `offset-top` | Number | `0` | Top offset before triggering in view. |
+| `offset-left` | Number | `0` | Left offset before triggering in view. |
+| `repeat` | Boolean | `false` | Applies the `cls` class every time the element is in view. |
+| `delay` | Number | `0` | Delay time in ms. |
 
 ***
 
 ## Scrollspy Nav
 
-To automatically update the active menu item in a menu depending on the scroll position of your site, just add the `uk-scrollspy-nav` attribute to any navigation. Each menu item must link to the ID of its corresponding part of the site.
-
-| Data attribute | Description|
-| --- | --- |
-| `uk-scrollspy-nav` | Triggers the JavaScript necessary for the functionality of the scrollspy nav.|
-| `uk-scrollspy-nav="closest:MY-SELECTOR"` | Looks for the closest element that matches the selector by testing the element itself and traversing up through its ancestors in the DOM tree.|
-| `uk-scrollspy-nav="scroll:true"` | Applies the [Scroll component](scroll.md) when skipping between different sections of the site.|
-| `uk-scrollspy-nav="cls:MY-CLASS"` | By default ScrollspyNav toggles the uk-active class. Use the cls option to use your own class name.|
+To automatically update the active menu item depending on the scroll position of your site, add the `uk-scrollspy-nav` attribute to any navigation. Each menu item must link to the ID of its corresponding part of the site.
 
 ```html
 <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
@@ -126,17 +119,11 @@ To automatically update the active menu item in a menu depending on the scroll p
 </ul>
 ```
 
-For an example of the scrollspy nav, just check out the fixed nav on the right side of this page or take a look at the test.
-
-***
-
-### Options
-
-Any of these options can be applied to the `uk-scrollspy-nav` attribute. Separate multiple options with a semicolon.
+For an example of the scrollspy nav, just check out the fixed nav on the right side of this page or take a look at the test. Any of the following options can be applied to the `uk-scrollspy-nav` attribute. Separate multiple options with a semicolon.
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
-| `cls` | String | uk-active | Class to add to the active links. |
-| `closest` | String | uk-scrollspy-init-inview | Target to apply the class to. |
-| `scroll` | Boolean | false | Adds the [Scroll component](scroll.md) to its links. |
-| `overflow` | Boolean | true | If overflow is set to true, the first or last item will stay active if above or below the navigation. |
+| `cls` | String | `uk-active` | Class to add to the active links. |
+| `closest` | String | `uk-scrollspy-init-inview` | Target to apply the class to. |
+| `scroll` | Boolean | `false` | Adds the [Scroll component](scroll.md) to its links. |
+| `overflow` | Boolean | `true` | If overflow is set to true, the first or last item will stay active if above or below the navigation. |
