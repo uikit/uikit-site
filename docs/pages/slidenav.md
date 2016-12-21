@@ -34,14 +34,14 @@ To increase the size of the slidenav icons, add the `.uk-slidenav-large` class.
 
 ***
 
-## Position Slidenav
+## Position on image
 
-To position the slidenav over any content, like a slideshow or an image, just add one of the `.uk-position-*` classes from the [Position component](position.md). Wrap the nav and content inside a container element and add the `.uk-position-relative` class.
+To position the slidenav over any content, like a slideshow or an image, just add one of the `.uk-position-*` classes from the [Position component](position.md). Wrap the nav and content inside a container element and add the `.uk-inline` class from the [Utility component](utility.md#inline).
 
 Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to apply a light or dark color for better visibility.
 
 ```html
-<div class="uk-position-relative uk-light">
+<div class="uk-inline uk-light">
     <img src="" alt="">
     <a class="uk-position-center-left" href="" uk-slidenav="previous"></a>
     <a class="uk-position-center-right" href="" uk-slidenav="next"></a>
@@ -53,14 +53,14 @@ Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md)
 ```example
 <div class="uk-child-width-1-2@m uk-grid-small" uk-grid>
     <div>
-        <div class="uk-position-relative uk-visible-toggle uk-light">
+        <div class="uk-inline uk-visible-toggle uk-light">
             <img src="../docs/images/dark.jpg" alt="">
             <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav="next"></a>
         </div>
     </div>
     <div>
-        <div class="uk-position-relative uk-visible-toggle">
+        <div class="uk-inline uk-visible-toggle">
             <img src="../docs/images/light.jpg" alt="">
             <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav="next"></a>
@@ -76,7 +76,7 @@ Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md)
 To display a conjoint slidenav, wrap the slidenav items inside a `<div>` element and add the `.uk-slidenav-container` class, as well as one of the `.uk-position-*` classes.
 
 ```html
-<div class="uk-position-relative">
+<div class="uk-inline">
     <img src="" alt="">
     <div class="uk-slidenav-container uk-position-bottom-right">
         <a href="" uk-slidenav="previous"></a>
@@ -86,27 +86,30 @@ To display a conjoint slidenav, wrap the slidenav items inside a `<div>` element
 ```
 
 ```example
-<div class="uk-position-relative">
-    <img src="../docs/images/light.jpg" alt="">
+<div class="uk-child-width-1-2@m uk-grid-small" uk-grid>
 
-    <div class="uk-slidenav-container uk-position-top-left uk-position-small">
-        <a class="uk-slidenav-large" href="#" uk-slidenav="previous"></a>
-        <a class="uk-slidenav-large" href="#" uk-slidenav="next"></a>
+    <div>
+        <div class="uk-inline uk-light">
+            <img src="../docs/images/dark.jpg" alt="">
+
+            <div class="uk-slidenav-container uk-position-top-left uk-position-small">
+                <a class="uk-slidenav-large" href="#" uk-slidenav="previous"></a>
+                <a class="uk-slidenav-large" href="#" uk-slidenav="next"></a>
+            </div>
+
+        </div>
     </div>
 
-    <div class="uk-slidenav-container uk-position-top-right uk-position-small">
-        <a class="uk-slidenav-large" href="#" uk-slidenav="previous"></a>
-        <a class="uk-slidenav-large" href="#" uk-slidenav="next"></a>
+    <div>
+        <div class="uk-inline">
+            <img src="../docs/images/light.jpg" alt="">
+
+                <div class="uk-slidenav-container uk-position-bottom-right uk-position-small">
+                <a class="uk-slidenav-large" href="#" uk-slidenav="previous"></a>
+                <a class="uk-slidenav-large" href="#" uk-slidenav="next"></a>
+            </div>
+        </div>
     </div>
 
-    <div class="uk-slidenav-container uk-position-bottom-left uk-position-small">
-        <a class="uk-slidenav-large" href="#" uk-slidenav="previous"></a>
-        <a class="uk-slidenav-large" href="#" uk-slidenav="next"></a>
-    </div>
-
-    <div class="uk-slidenav-container uk-position-bottom-right uk-position-small">
-        <a class="uk-slidenav-large" href="#" uk-slidenav="previous"></a>
-        <a class="uk-slidenav-large" href="#" uk-slidenav="next"></a>
-    </div>
 </div>
 ```
