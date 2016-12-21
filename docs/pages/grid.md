@@ -2,8 +2,7 @@
 
 <p class="uk-text-lead">Create a fully responsive, fluid and nestable grid layout.</p>
 
-The Grid system of UIkit allows you to arrange block elements in columns and works closely together with the [Width component](width.md) to determine, how much space of the container each item will take up.
-It can also be combined with the [Flex component](flex.md) to align and order grid items.
+The Grid system of UIkit allows you to arrange block elements in columns and works closely together with the [Width component](width.md) to determine how much space of the container each item will take up. It can also be combined with the [Flex component](flex.md) to align and order grid items.
 
 ***
 

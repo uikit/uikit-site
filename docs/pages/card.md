@@ -2,13 +2,9 @@
 
 <p class="uk-text-lead">Create layout boxes with different styles.</p>
 
-Use cards to outline parts of your content with a container. UIkit cards provide header and footer sections as well as different style modifiers and additional options. Typically, cards are arranged in grid columns from the [Grid component](grid.md).
-
-***
-
 ## Usage
 
-The Card component consists of the card itself, the card body and an optional card title.
+The Card component consists of the card itself, the card body and an optional card title. Typically, cards are arranged in grid columns from the [Grid component](grid.md).
 
 | Class          | Description                                                                |
 |------------------|----------------------------------------------------------------------------|

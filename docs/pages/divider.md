@@ -2,7 +2,9 @@
 
 <p class="uk-text-lead">Create dividers to separate content and apply different styles to them.</p>
 
-Usually a simple `<hr>` element is used to illustrate a separation of different content parts. This component allows you to add different styles to these dividers.
+## Usage
+
+You can use a simple `<hr>` element to illustrate a separation of different content parts on your pages. The Divider component allows you to add different styles to these dividers.
 
 ***
 

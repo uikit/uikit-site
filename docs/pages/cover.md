@@ -1,10 +1,6 @@
 # Cover
 
-<p class="uk-text-lead">Expand images or videos to cover their entire container.</p>
-
-This component allows you to create fullscreen teasers using images, objects or even iframes. Regardless what kind of element, it will always be centered vertically and horizontally and cover its container without losing its proportions. You can also place additional content, like text or an image, on top of the image or video.
-
-***
+<p class="uk-text-lead">Expand images, videos or iframs to cover their entire container and place your own content on top.</p>
 
 ## Usage
 

@@ -2,11 +2,6 @@
 
 <p class="uk-text-lead">Easily create nicely looking description lists, which come in different styles.</p>
 
-
-There is no component class necessary to create a description list, but UIkit provides a couple of modifier classes to display the list in a different style.
-
-***
-
 ## Usage
 
 Add the `.uk-description-list` class to display terms and descriptions below each other.
