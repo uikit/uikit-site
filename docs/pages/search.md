@@ -126,7 +126,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
     <div class="nav-overlay uk-navbar-right">
 
-        <a class="uk-search-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
 
     </div>
 
@@ -160,7 +160,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
     <div class="uk-navbar-right">
 
         <div>
-            <a class="uk-search-toggle" uk-search-icon href="#"></a>
+            <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
             <div uk-drop="mode: click; pos: left-center; offset: 0">
                 <form class="uk-search uk-search-navbar uk-width-1-1">
                     <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
@@ -187,7 +187,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
     <div class="uk-navbar-right">
 
         <div>
-            <a class="uk-search-toggle" href="#" uk-search-icon></a>
+            <a class="uk-navbar-toggle" href="#" uk-search-icon></a>
             <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
 
                 <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -222,7 +222,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
     </div>
     <div class="uk-navbar-right">
 
-        <a class="uk-search-toggle" href="#modal-full" uk-search-icon uk-toggle></a>
+        <a class="uk-navbar-toggle" href="#modal-full" uk-search-icon uk-toggle></a>
 
     </div>
 </nav>
