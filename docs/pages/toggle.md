@@ -14,10 +14,7 @@ The toggle will add or remove a class or attribute from the item. By default, it
 ```
 
 ```example
-<p>
-    <button class="uk-button uk-button-default" uk-toggle="target: #toggle1">Button</button>
-    <a href="#" uk-toggle="target: #toggle1">Link</a>
-</p>
+<button class="uk-button uk-button-default" uk-toggle="target: #toggle1">Toggle</button>
 <p id="toggle1">What's up?</p>
 ```
 
@@ -39,11 +36,11 @@ You can also toggle multiple items at the same time. Just use the appropriate se
 
 ## Custom class
 
-If you don't want to toggle the `.uk-hidden` class, you can also add your own custom class.
+If you don't want to toggle the `hidden` attribute, you can also toggle a custom class.
 
 ```example
 <button class="uk-button uk-button-default" uk-toggle="target: #toggle3; cls: uk-card-primary">Toggle class</button>
-<div id="toggle3" class="uk-card uk-card-default uk-margin-small"><div class="uk-card-body">Custom class? Yup.</div></div>
+<div id="toggle3" class="uk-card uk-card-default uk-card-body uk-margin-small">Custom class? Yup.</div>
 ```
 
 **Note** In this example we used the `.uk-card-primary` class to switch between different panel styles.
@@ -52,11 +49,11 @@ If you don't want to toggle the `.uk-hidden` class, you can also add your own cu
 
 ## Animations
 
-The Toggle component allows you to add animations to items when toggling between them. Just add one of the .uk-animation-* classes from the Animation component to the animation parameter. The class will be applied to the in as well as the out animation. If you prefer a different out animation, just add another class.
+The Toggle component allows you to add animations to items when toggling between them. Just add one of the `.uk-animation-*` classes from the Animation component to the animation parameter. The class will be applied to the in as well as the out animation. If you prefer a different out animation, just add another class.
 
 ```example
 <button href="#toggle6" class="uk-button uk-button-default" uk-toggle="target: #toggle4; animation: uk-animation-fade">Toggle with animation</button>
-<div id="toggle4" class="uk-card uk-card-default uk-margin-small"><div class="uk-card-body">Animation</div></div>
+<div id="toggle4" class="uk-card uk-card-default uk-card-body uk-margin-small">Animation</div>
 ```
 
 ***
