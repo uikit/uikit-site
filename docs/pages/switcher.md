@@ -36,7 +36,7 @@ Typically, the switcher is combined with other components, some of which will be
 
 ***
 
-## Switch items from within content
+## Link between items
 
 In some cases you want to switch to another content section from within the active content. This is possible using the `uk-switcher-item` attribute. To target the items, you need to set the attribute to the number of the respective content item.
 
