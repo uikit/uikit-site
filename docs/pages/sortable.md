@@ -160,10 +160,10 @@ You can also apply one or more custom classes to items when they are being dragg
 <ul uk-sortable="clsCustom: my-class">...</ul>
 ```
 
-**Note** In this example, we are using a nav from the [Nav component](nav.md). When dragging an item it will change color and background.
+**Note** In this example, we are using a nav from the [Nav component](nav.md). When dragging an item it will change the text color.
 
 ```example
-<ul class="uk-nav uk-nav-default uk-width-medium" uk-sortable="clsCustom: uk-background-primary; uk-light">
+<ul class="uk-nav uk-nav-default uk-width-medium" uk-sortable="clsCustom: uk-text-warning">
     <li class="uk-active"><a href="#">Active</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
