@@ -36,16 +36,16 @@ To create a close button and enable its functionality, add the `.uk-alert-close`
 
 ***
 
-## Color modifiers
+## Style modifiers
 
-There are several color modifiers available. Just add one of the following classes to apply a different look.
+There are several style modifiers available. Just add one of the following classes to apply a different look.
 
 | Class               | Description                                                |
 |---------------------|------------------------------------------------------------|
-| `.uk-alert-primary` | Add this class to give the message a less subtle styling.  |
-| `.uk-alert-success` | Add this class to indicate success or a positive message.  |
-| `.uk-alert-warning` | Add this class to indicate a message containing a warning. |
-| `.uk-alert-danger`  | Add this class to indicate an important message.           |
+| `.uk-alert-primary` | Give the message a prominent styling. |
+| `.uk-alert-success` | Indicates success or a positive message. |
+| `.uk-alert-warning` | Indicates a message containing a warning. |
+| `.uk-alert-danger`  | Indicates an important or error message. |
 
 ```example
 <div class="uk-alert-primary" uk-alert>

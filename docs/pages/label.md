@@ -18,15 +18,15 @@ To create a label, just add the `.uk-label` class to a `<span>` element.
 
 ***
 
-## Color Modifiers
+## Style Modifiers
 
-Add one of the following classes for additional colors.
+Add one of the following classes for additional styles.
 
 | Class               | Description                                               |
 |---------------------|-----------------------------------------------------------|
-| `.uk-label-success` | Add this class to indicate success or a positive message. |
-| `.uk-label-warning` | Add this class to indicate a warning.                     |
-| `.uk-label-danger`  | Add this class to indicate danger.                        |
+| `.uk-label-success` | Indicates success or a positive message. |
+| `.uk-label-warning` | Indicates a warning.                     |
+| `.uk-label-danger`  | Indicates an error or important message. |
 
 ```html
 <span class="uk-label uk-label-success"></span>
