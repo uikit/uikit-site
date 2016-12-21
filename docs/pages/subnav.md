@@ -48,7 +48,6 @@ Add the `.uk-subnav-divider` class to separate menu items with lines.
     <li class="uk-active"><a href="#">Active</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
-    <li class="uk-disabled"><a href="#">Disabled</a></li>
 </ul>
 ```
 
@@ -67,7 +66,6 @@ Add the `.uk-subnav-pill` class to highlight the active menu item with a backgro
     <li class="uk-active"><a href="#">Active</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
-    <li class="uk-disabled"><a href="#">Disabled</a></li>
 </ul>
 ```
 
@@ -92,7 +90,7 @@ You can also use a dropdown from the [Dropdown component](dropdown.md) with a su
     <li><a href="#">Item</a></li>
     <li>
         <a href="#">More <span uk-icon="icon:  triangle-down"></span></a>
-        <div class="uk-margin-top" uk-dropdown="mode: click;">
+        <div uk-dropdown="mode: click;">
             <ul class="uk-nav uk-dropdown-nav">
                 <li class="uk-active"><a href="#">Active</a></li>
                 <li><a href="#">Item</a></li>
@@ -104,6 +102,5 @@ You can also use a dropdown from the [Dropdown component](dropdown.md) with a su
             </ul>
         </div>
     </li>
-    <li class="uk-disabled"><a href="#">Disabled</a></li>
 </ul>
 ```
