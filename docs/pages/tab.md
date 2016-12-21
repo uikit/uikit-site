@@ -44,7 +44,6 @@ Add the `.uk-tab-bottom` class to flip tab items to the bottom.
     <li class="uk-active"><a href="#">Left</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
-    <li class="uk-disabled"><a href="#">Disabled</a></li>
 </ul>
 ```
 
@@ -63,22 +62,18 @@ Add the `.uk-tab-left` or `.uk-tab-right` class to align tabs vertically to the 
 ```example
 <div class="uk-child-width-1-2@s" uk-grid>
     <div>
-        <h4>Left</h4>
         <ul class="uk-tab-left" uk-tab>
             <li class="uk-active"><a href="#">Left</a></li>
             <li><a href="#">Item</a></li>
             <li><a href="#">Item</a></li>
-            <li class="uk-disabled"><a href="#">Disabled</a></li>
         </ul>
     </div>
 
     <div>
-        <h4>Right</h4>
         <ul class="uk-tab-right" uk-tab>
-            <li class="uk-active"><a href="#">Left</a></li>
+            <li class="uk-active"><a href="#">Right</a></li>
             <li><a href="#">Item</a></li>
             <li><a href="#">Item</a></li>
-            <li class="uk-disabled"><a href="#">Disabled</a></li>
         </ul>
     </div>
 </div>
@@ -95,11 +90,23 @@ You can combine tabs with the [Flex component](flex.md) to modify the alignment 
 ```
 
 ```example
+<ul class="uk-flex-center" uk-tab>
+    <li class="uk-active"><a href="#">Center</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+</ul>
+
 <ul class="uk-flex-right" uk-tab>
-    <li class="uk-active"><a href="#">Left</a></li>
+    <li class="uk-active"><a href="#">Right</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
-    <li class="uk-disabled"><a href="#">Disabled</a></li>
+</ul>
+
+<ul class="uk-child-width-expand" uk-tab>
+    <li class="uk-active"><a href="#">Justify</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
 </ul>
 ```
 
@@ -128,7 +135,6 @@ Tabs can be used to trigger a dropdown menu from the [Dropdown component](dropdo
 ```example
 <ul uk-tab>
     <li class="uk-active"><a href="#">Active</a></li>
-    <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
     <li>
         <a href="#">More <span class="uk-margin-small-left" uk-icon="icon: triangle-down"></span></a>
