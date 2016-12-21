@@ -81,33 +81,39 @@ Add the `.uk-tab-left` or `.uk-tab-right` class to align tabs vertically to the 
 
 ***
 
-## Tab and Flex
+## Alignment
 
-You can combine tabs with the [Flex component](flex.md) to modify the alignment of the navigations.
+You can combine tabs with the [Flex component](flex.md) or the [Width component](width.md) to modify the alignment of the navigations.
 
 ```html
 <ul class="uk-flex-right" uk-tab>...</ul>
 ```
 
 ```example
-<ul class="uk-flex-center" uk-tab>
-    <li class="uk-active"><a href="#">Center</a></li>
-    <li><a href="#">Item</a></li>
-    <li><a href="#">Item</a></li>
-</ul>
+<div class="uk-margin-medium-top">
+    <ul class="uk-flex-center" uk-tab>
+        <li class="uk-active"><a href="#">Center</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div>
 
-<ul class="uk-flex-right" uk-tab>
-    <li class="uk-active"><a href="#">Right</a></li>
-    <li><a href="#">Item</a></li>
-    <li><a href="#">Item</a></li>
-</ul>
+<div>
+    <ul class="uk-flex-right" uk-tab>
+        <li class="uk-active"><a href="#">Right</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div>
 
-<ul class="uk-child-width-expand" uk-tab>
-    <li class="uk-active"><a href="#">Justify</a></li>
-    <li><a href="#">Item</a></li>
-    <li><a href="#">Item</a></li>
-    <li><a href="#">Item</a></li>
-</ul>
+<div>
+    <ul class="uk-child-width-expand" uk-tab>
+        <li class="uk-active"><a href="#">Justify</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div>
 ```
 
 ***
