@@ -2,13 +2,9 @@
 
 <p class="uk-text-lead">Create toggleable notifications that fade out automatically.</p>
 
-The notification will not fade out but remain visible when you hover the message until you stop hovering. You can also close the notification by clicking it.
-
-***
-
 ## Usage
 
-The Notification component provides a simple API which you can reuse in your application code. The following JavaScript code snippet gets you started.
+The notification will not fade out but remain visible when you hover the message until you stop hovering. You can also close the notification by clicking it. To show notifications, the component provides a simple JavaScript API. The following code snippet gets you started.
 
 ### JavaScript
 

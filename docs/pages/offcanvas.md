@@ -1,10 +1,6 @@
 # Off-canvas
 
-<p class="uk-text-lead">Create an off-canvas sidebar that slides in and out of the page.</p>
-
-The Off-canvas component is perfect for building a mobile navigation, similar to those which are popular with many native mobile apps, where a single button in the upper left corner toggles an off-canvas sidebar with a menu.
-
-***
+<p class="uk-text-lead">Create an off-canvas sidebar that slides in and out of the page, which is perfect for creating mobile navigations.</p>
 
 ## Usage
 
