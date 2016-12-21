@@ -174,9 +174,9 @@ The switcher is easily applied to the [Subnav component](subnav).
 </ul>
 
 <ul class="uk-switcher uk-margin">
-    <li>Hello!</li>
-    <li>Hello again!</li>
-    <li>Bazinga!</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
 </ul>
 ```
 
@@ -203,9 +203,9 @@ As an exception to the rule, add the `uk-tab` attribute instead of `uk-switcher`
 </ul>
 
 <ul class="uk-switcher uk-margin">
-    <li>Hello!</li>
-    <li>Hello again!</li>
-    <li>Bazinga!</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
 </ul>
 ```
 
@@ -229,8 +229,6 @@ Use the [Grid](grid) and [Width](width) components to display content correctly 
 ```example
 <div class="uk-child-width-1-2@s" uk-grid>
     <div>
-        <h4>Tab Left</h4>
-
         <div uk-grid>
             <div class="uk-width-auto@m">
                 <ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
@@ -241,16 +239,14 @@ Use the [Grid](grid) and [Width](width) components to display content correctly 
             </div>
             <div class="uk-width-expand@m">
                 <ul id="component-tab-left" class="uk-switcher">
-                    <li>Hello!</li>
-                    <li>Hello again!</li>
-                    <li>Bazinga!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
                 </ul>
             </div>
         </div>
     </div>
     <div>
-        <h4>Tab Right</h4>
-
         <div uk-grid>
             <div class="uk-width-auto@m uk-flex-last@m">
                 <ul class="uk-tab-right" uk-tab="connect: #component-tab-right; animation: uk-animation-fade">
@@ -261,9 +257,9 @@ Use the [Grid](grid) and [Width](width) components to display content correctly 
             </div>
             <div class="uk-width-expand@m">
                 <ul id="component-tab-right" class="uk-switcher">
-                    <li>Hello!</li>
-                    <li>Hello again!</li>
-                    <li>Bazinga!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
                 </ul>
             </div>
         </div>
@@ -285,46 +281,20 @@ The switcher can also be applied to buttons or button groups from the [Button co
 </div>
 
 <ul class="uk-switcher">...</ul>
-
-<!-- This is a switcher using a button group -->
-<div class="uk-button-group">
-    <button class="uk-button uk-button-default"></button>
-    <button class="uk-button uk-button-default"></button>
-</div>
-
-<ul class="uk-switcher">...</ul>
 ```
 
 ```example
-<div class="uk-child-width-1-2@m" uk-grid>
-    <div>
-        <div uk-switcher="animation: uk-animation-fade">
-            <a class="uk-button uk-button-default" href="#">Link</a>
-            <button class="uk-button uk-button-default">Button</button>
-            <button class="uk-button uk-button-default">Button</button>
-        </div>
-
-        <ul class="uk-switcher">
-            <li>Hello!</li>
-            <li>Hello again!</li>
-            <li>Bazinga!</li>
-        </ul>
-    </div>
-
-    <div>
-        <div class="uk-button-group" uk-switcher="animation: uk-animation-fade">
-            <a class="uk-button uk-button-default" href="#">Link</a>
-            <button class="uk-button uk-button-default">Button</button>
-            <button class="uk-button uk-button-default">Button</button>
-        </div>
-
-        <ul class="uk-switcher">
-            <li>Hello!</li>
-            <li>Hello again!</li>
-            <li>Bazinga!</li>
-        </ul>
-    </div>
+<div uk-switcher="animation: uk-animation-fade">
+    <a class="uk-button uk-button-default" href="#">Link</a>
+    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default">Button</button>
 </div>
+
+<ul class="uk-switcher uk-margin">
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+</ul>
 ```
 
 
@@ -336,10 +306,10 @@ To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribu
 
 ```html
 <div uk-grid>
-    <div class="uk-width-1-3">
+    <div class="uk-width-small">
         <ul class="uk-nav uk-nav-default" uk-switcher="connect: #my-id">...</ul>
     </div>
-    <div class="uk-width-2-4">
+    <div class="uk-width-expand">
         <ul id="my-id" class="uk-switcher">...</ul>
     </div>
 </div>
@@ -347,7 +317,7 @@ To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribu
 
 ```example
 <div uk-grid>
-    <div class="uk-width-1-3@m">
+    <div class="uk-width-small@m">
 
         <ul class="uk-nav uk-nav-default" uk-switcher="connect: #component-nav; animation: uk-animation-fade; toggle: > :not(.uk-nav-header)">
             <li><a href="#">Active</a></li>
@@ -356,12 +326,12 @@ To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribu
         </ul>
 
     </div>
-    <div class="uk-width-2-3@m">
+    <div class="uk-width-expand@m">
 
         <ul id="component-nav" class="uk-switcher">
-            <li>Hello!</li>
-            <li>Hello again!</li>
-            <li>Bazinga!</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
         </ul>
 
     </div>
