@@ -1,6 +1,6 @@
 # Project structure
 
-<p class="uk-text-lead">Dig into the core of UIkit and learn what it's all about.</p>
+<p class="uk-text-lead">Understand file structure of UIkit and learn how to compile it yourself.</p>
 
 ## Github
 
