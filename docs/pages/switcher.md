@@ -20,6 +20,8 @@ Typically, the switcher is combined with other components, some of which will be
 </ul>
 ```
 
+In this example we are using the [Subnav component](subnav.md).
+
 ```example
 <ul class="uk-subnav uk-subnav-pill" uk-switcher>
     <li><a href="#">Item</a></li>
@@ -66,7 +68,7 @@ Setting the attribute to `next` and `previous` will switch to the adjacent items
 
 ***
 
-## Connect multiple items
+## Connect multiple containers
 
 It is also possible to connect multiple content containers. Just add the `connect` parameter to the `uk-switcher` attribute and target their selectors.
 
@@ -130,7 +132,7 @@ You can apply all animations from the [Animation component](animation) to switch
 
 ***
 
-### Custom animations
+### Multiple animations
 
 You can also apply multiple animations from the [Animation component](animation). That way you can even create your own custom class to apply a different transition to the switcher.
 
