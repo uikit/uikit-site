@@ -1,15 +1,18 @@
 import $ from 'jquery';
 import Vue from 'vue';
+import App from './app.vue';
 import Page from './page.vue';
 
 const routes = [
 
     {
-        path: '/', redirect: '/index'
+        path: '/',
+        redirect: '/index'
     },
 
     {
-        path: '*/:page', component: Page
+        path: '*/:page',
+        component: Page
     }
 
 ];
@@ -23,24 +26,27 @@ if (location.pathname && location.pathname != '/') {
 }
 
 $(function () {
+
     new Vue({
-        router: new VueRouter({
-            mode:'history',
-            history: true,
-            linkActiveClass: 'uk-active',
-            base,
-            routes
+
+        el: '#app',
+
+        extends: App,
+
+        data: () => ({
+            loading: false,
+            page: false,
+            navigation
         }),
-        data() {
-            return {
-                loading: false,
-                page: false,
-                navigation
-            }
-        },
-        mounted() {
-            this.$el.classList.remove('uk-invisible');
-        }
-    }).$mount('#pages');
+
+        router: new VueRouter({
+            base,
+            routes,
+            mode: 'history',
+            history: true,
+            linkActiveClass: 'uk-active'
+        })
+
+    });
 
 });

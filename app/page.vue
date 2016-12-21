@@ -7,76 +7,71 @@
 
 <script>
 
-import $ from 'jquery';
-import { escape } from 'he'
+    import $ from 'jquery';
+    import { escape } from 'he'
 
-let components = [];
+    export default {
 
-export default {
-
-    data() {
-        return {
+        data: () => ({
             loading: false,
             page: null,
             error: null,
             cache: {}
-        }
-    },
+        }),
 
-    mounted() {
-        this.$page = $(this.$refs.page);
-        this.loadPage(this.$route.params.page);
-    },
-
-    watch: {
-        $route () {
+        mounted() {
+            this.$page = $(this.$refs.page);
             this.loadPage(this.$route.params.page);
-        }
-    },
+        },
 
-    methods: {
+        watch: {
+            $route () {
+                this.loadPage(this.$route.params.page);
+            }
+        },
 
-        loadPage(page) {
+        methods: {
 
-            scrollTo(0, 0);
+            loadPage(page) {
 
-            this.loading = true;
-            this.$page.html('');
-            this.error = null;
+                scrollTo(0, 0);
 
-            this.$parent.page = page;
+                this.loading = true;
+                this.$page.html('');
+                this.error = null;
 
-            var defer = $.Deferred();
+                this.$parent.page = page;
 
-            defer.promise().done(content => {
-                this.loading = false;
-                this.$page.html(content);
-                Vue.nextTick(() => {
+                var defer = $.Deferred();
 
-                    if (location.hash && $(location.hash.length)) {
-                        scrollTo(0, $(location.hash).offset().top);
-                    }
+                defer.promise().done(content => {
+                    this.loading = false;
+                    this.$page.html(content);
+                    Vue.nextTick(() => {
+                        if (location.hash && $(location.hash.length)) {
+                            scrollTo(0, $(location.hash).offset().top);
+                        }
+                    });
+
+                }).fail(() => {
+                    this.loading = false;
+                    this.error = 'Failed loading page';
                 });
 
-            }).fail(() => {
-                this.loading = false;
-                this.error = 'Failed loading page';
-            });
+                if (this.cache[page]) {
+                    defer.resolve(this.cache[page]);
+                    return;
+                }
 
-            if (this.cache[page]) {
-                defer.resolve(this.cache[page]);
-                return;
+                $.get(`pages/${page}.html`, {nc: Math.random()}).done(content => {
+
+                    this.cache[page] = content;
+                    defer.resolve(content);
+
+                }).fail(err => reject(err));
             }
-
-            $.get(`pages/${page}.html`, {nc: Math.random()}).done(content => {
-
-                this.cache[page] = content;
-                defer.resolve(content);
-
-            }).fail(err => reject(err));
         }
-    }
 
-}
+    }
 
 </script>
