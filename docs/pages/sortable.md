@@ -110,7 +110,7 @@ By default, the entire sortable element can be used for drag and drop sorting. T
 To be able to sort items from one list to another, you can group them by adding the `group: GROUP-NAME` option to the `uk-sortable` attribute on each list.
 
 ```example
-<div class="uk-child-width-1-3@s uk-grid-match" uk-grid>
+<div class="uk-child-width-1-3@s" uk-grid>
     <div>
         <h4>Group 1</h4>
         <div uk-sortable="group: sortable-group">
