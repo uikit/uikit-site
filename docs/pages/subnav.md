@@ -20,7 +20,7 @@ To apply this component, use the following classes. To align a subnav, for examp
 </ul>
 ```
 
-**Note** For a better layout, if items should wrap into the next row, ad the `uk-margin` attribute.
+**Note** For a better layout, if items should wrap into the next row, ad the `uk-margin` attribute from the [Margin component](margin.md).
 
 ```example
 <ul class="uk-subnav" uk-margin>
@@ -33,7 +33,7 @@ To apply this component, use the following classes. To align a subnav, for examp
 
 ***
 
-## Modifiers
+## Style Modifiers
 
 ### Subnav Divider
 
