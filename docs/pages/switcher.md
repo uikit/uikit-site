@@ -44,10 +44,10 @@ Setting the attribute to `next` and `previous` will switch to the adjacent items
 
 ```html
 <ul class="uk-switcher uk-margin">
-    <li>...<a href="" uk-switcher-item="0"></a>...</li>
-    <li>...<a href="" uk-switcher-item="1"></a>...</li>
-    <li>...<a href="" uk-switcher-item="next"></a>...</li>
-    <li>...<a href="" uk-switcher-item="previous"></a>...</li>
+    <li><a href="" uk-switcher-item="0"></a></li>
+    <li><a href="" uk-switcher-item="1"></a></li>
+    <li><a href="" uk-switcher-item="next"></a></li>
+    <li><a href="" uk-switcher-item="previous"></a></li>
 </ul>
 ```
 
@@ -86,13 +86,17 @@ It is also possible to connect multiple content containers. Just add the `connec
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
 </ul>
+
 <h4>Container 1</h4>
+
 <ul class="uk-switcher switcher-container uk-margin">
     <li>Hello!</li>
     <li>Hello again!</li>
     <li>Bazinga!</li>
 </ul>
+
 <h4>Container 2</h4>
+
 <ul class="uk-switcher switcher-container uk-margin">
     <li>Hello! The first item.</li>
     <li>Hello again! The second item.</li>
@@ -111,68 +115,17 @@ You can apply all animations from the [Animation component](animation) to switch
 ```
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid>
-    <div>
-        <h4>Fade</h4>
+<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+</ul>
 
-        <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-        </ul>
-
-        <ul class="uk-switcher uk-margin">
-            <li>Hello!</li>
-            <li>Hello again!</li>
-            <li>Bazinga!</li>
-        </ul>
-    </div>
-    <div>
-        <h4>Scale up</h4>
-
-        <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-scale-up">
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-        </ul>
-
-        <ul class="uk-switcher uk-margin">
-            <li>Hello!</li>
-            <li>Hello again!</li>
-            <li>Bazinga!</li>
-        </ul>
-    </div>
-    <div>
-        <h4>Shake</h4>
-
-        <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-shake">
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-        </ul>
-
-        <ul class="uk-switcher uk-margin">
-            <li>Hello!</li>
-            <li>Hello again!</li>
-            <li>Bazinga!</li>
-        </ul>
-    </div>
-    <div>
-        <h4>Slide</h4>
-
-        <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-slide-bottom">
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-        </ul>
-
-        <ul class="uk-switcher uk-margin">
-            <li>Hello!</li>
-            <li>Hello again!</li>
-            <li>Bazinga!</li>
-        </ul>
-    </div>
-</div>
+<ul class="uk-switcher uk-margin">
+    <li>Hello!</li>
+    <li>Hello again!</li>
+    <li>Bazinga!</li>
+</ul>
 ```
 
 ***
@@ -182,11 +135,11 @@ You can apply all animations from the [Animation component](animation) to switch
 You can also apply multiple animations from the [Animation component](animation). That way you can even create your own custom class to apply a different transition to the switcher.
 
 ```html
-<ul uk-switcher="animation: uk-animation-fade, uk-animation-slide-left">...</ul>
+<ul uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-mediu">...</ul>
 ```
 
 ```example
-<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade, uk-animation-slide-left">
+<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
@@ -334,22 +287,22 @@ The switcher can also be applied to buttons or button groups from the [Button co
 <ul class="uk-switcher">...</ul>
 
 <!-- This is a switcher using a button group -->
-<div class="uk-button-group" uk-switcher="connect: #my-id">
+<div class="uk-button-group">
     <button class="uk-button uk-button-default"></button>
     <button class="uk-button uk-button-default"></button>
 </div>
 
-<ul id="my-id" class="uk-switcher">...</ul>
+<ul class="uk-switcher">...</ul>
 ```
 
 ```example
 <div class="uk-child-width-1-2@m" uk-grid>
     <div>
-        <p uk-switcher="animation: uk-animation-fade">
+        <div uk-switcher="animation: uk-animation-fade">
             <a class="uk-button uk-button-default" href="#">Link</a>
             <button class="uk-button uk-button-default">Button</button>
             <button class="uk-button uk-button-default">Button</button>
-        </p>
+        </div>
 
         <ul class="uk-switcher">
             <li>Hello!</li>
@@ -359,15 +312,13 @@ The switcher can also be applied to buttons or button groups from the [Button co
     </div>
 
     <div>
-        <p class="uk-margin-remove">
-            <div class="uk-button-group" uk-switcher="connect: #component-button-group; animation: uk-animation-fade">
-                <a class="uk-button uk-button-default" href="#">Link</a>
-                <button class="uk-button uk-button-default">Button</button>
-                <button class="uk-button uk-button-default">Button</button>
-            </div>
-        </p>
+        <div class="uk-button-group" uk-switcher="animation: uk-animation-fade">
+            <a class="uk-button uk-button-default" href="#">Link</a>
+            <button class="uk-button uk-button-default">Button</button>
+            <button class="uk-button uk-button-default">Button</button>
+        </div>
 
-        <ul id="component-button-group" class="uk-switcher">
+        <ul class="uk-switcher">
             <li>Hello!</li>
             <li>Hello again!</li>
             <li>Bazinga!</li>
