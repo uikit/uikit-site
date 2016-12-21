@@ -11,16 +11,12 @@ To create an element that remains at the top of the viewport when scrolling down
 ```
 
 ```example
-<div class="uk-card uk-card-default" uk-sticky="bottom: #sticky-on-scroll-up">
-    <div class="uk-card-body">
-        Stick to the top
-    </div>
-</div>
+<div class="uk-card uk-card-default uk-card-body" uk-sticky="bottom: #sticky-on-scroll-up">Stick to the top</div>
 ```
 
 ***
 
-### Animation
+## Animation
 
 Add an animation from the [Animation component](animation.md) in order to have the sticky element reappear smoothly.
 
@@ -29,11 +25,7 @@ Add an animation from the [Animation component](animation.md) in order to have t
 ```
 
 ```example
-<div class="uk-card uk-card-default" uk-sticky="animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
-    <div class="uk-card-body">
-        Animation Slide Top
-    </div>
-</div>
+<div class="uk-card uk-card-default uk-card-body" uk-sticky="animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">Animation Slide Top</div>
 ```
 
 ***
@@ -47,11 +39,7 @@ You can also make the sticky element only show when scrolling up to save space. 
 ```
 
 ```example
-<div class="uk-card uk-card-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
-    <div class="uk-card-body">
-        Slide on scroll up
-    </div>
-</div>
+<div class="uk-card uk-card-default uk-card-body" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">Slide on scroll up</div>
 ```
 
 ***
@@ -65,11 +53,7 @@ You can also position the element below the viewport edge. Add the `offset` attr
 ```
 
 ```example
-<div class="uk-card uk-card-default" uk-sticky="offset: 100; bottom: #top">
-    <div class="uk-card-body">
-        Stick 100px below the top
-    </div>
-</div>
+<div class="uk-card uk-card-default uk-card-body" uk-sticky="offset: 100; bottom: #top">Stick 100px below the top</div>
 ```
 
 ***
@@ -95,20 +79,12 @@ To apply the sticky behavior with a delay, add the `top` attribute, which can be
 <div class="uk-child-width-1-2@s" uk-grid>
     <div>
         <div class="uk-background-muted uk-height-large">
-            <div class="uk-card uk-card-default" uk-sticky="top: 100; bottom: #bottom">
-                <div class="uk-card-body">
-                Stick to the top but only after 100px scrolling
-                </div>
-            </div>
+            <div class="uk-card uk-card-default uk-card-body" uk-sticky="top: 100; bottom: #bottom">Stick to the top but only after 100px scrolling</div>
         </div>
     </div>
     <div>
         <div id="container-1" class="uk-background-muted  uk-height-large">
-            <div class="uk-card uk-card-default" uk-sticky="top: #container-1; bottom: #bottom">
-                <div class="uk-card-body">
-                    Stick below the box
-                </div>
-            </div>
+            <div class="uk-card uk-card-default uk-card-body" uk-sticky="top: #container-1; bottom: #bottom">Stick below the box</div>
         </div>
     </div>
 </div>
@@ -136,21 +112,13 @@ Bind the sticky behavior to a specific element, so that it disappears after scro
     <div>
         <div class="uk-background-muted uk-height-large">
             <div class="uk-height-medium uk-background-secondary">
-                <div class="uk-card uk-card-default" uk-sticky="bottom: true">
-                    <div class="uk-card-body">
-                        Stick until the bottom of its parent container
-                    </div>
-                </div>
+                <div class="uk-card uk-card-default uk-card-body" uk-sticky="bottom: true">Stick until the bottom of its parent container</div>
             </div>
         </div>
     </div>
     <div>
         <div id="container-2" class="uk-background-muted  uk-height-large">
-            <div class="uk-card uk-card-default" uk-sticky="bottom: #container-2">
-                <div class="uk-card-body">
-                    Stick until the bottom of the box
-                </div>
-            </div>
+            <div class="uk-card uk-card-default uk-card-body" uk-sticky="bottom: #container-2">Stick until the bottom of the box</div>
         </div>
     </div>
 </div>
