@@ -1,6 +1,6 @@
 # Search
 
-<p class="uk-text-lead">Easily create a nicely looking search.</p>
+<p class="uk-text-lead">Easily create a nice looking search.</p>
 
 ## Usage
 
