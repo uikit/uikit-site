@@ -441,3 +441,13 @@ Use a button, text or a link as a select form. Just add the `target: SELECTOR` o
 
 </form>
 ```
+
+***
+
+## Component option
+
+You can add this option to the `uk-form-custom` attribute.
+
+| Option   | Value                 | Default | Description           |
+|----------|-----------------------|---------|-----------------------|
+| `target` | CSS selector, Boolean | false   | Value display target. |
