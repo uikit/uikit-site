@@ -10,8 +10,9 @@
 <script>
 
     import $ from 'jquery';
-    import { escape } from 'he'
-    import { parse, copyToClipboard, openOnCodepen } from './util';
+    import { escape } from 'he';
+    import copy from 'copy-to-clipboard';
+    import { parse, openOnCodepen } from './util';
 
     const navigation = require('./navigation.json');
 
@@ -35,7 +36,7 @@
 
                     e.preventDefault();
                     e.stopImmediatePropagation();
-                    if (copyToClipboard($(e.currentTarget.getAttribute('rel')).text())) {
+                    if (copy($(e.currentTarget.getAttribute('rel')).text())) {
                         UIkit.notification({message: "Copied!", pos: 'bottom-right'});
                     } else {
                         UIkit.notification({message: "Copy failed!", status: 'danger', pos: 'bottom-right'});

@@ -51,21 +51,6 @@ export function parse(markdown, cb) {
     return marked(markdown, {renderer}, cb);
 }
 
-export function copyToClipboard(code) {
-
-    let successful;
-
-    $('<textarea></textarea>')
-        .css({position: 'fixed'})
-        .val(code)
-        .appendTo('body')
-        .select()
-        .each(() => successful = document.execCommand('copy'))
-        .remove();
-
-    return successful;
-}
-
 // https://blog.codepen.io/documentation/api/prefill/
 export function openOnCodepen(code) {
 
