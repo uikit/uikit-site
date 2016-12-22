@@ -2,18 +2,28 @@
 
 <p class="uk-text-lead">Use responsive visibility classes to display or hide elements on different devices.</p>
 
-## Basic visibility classes
+## Usage
 
 Add one of these classes hide an element.
 
 | Class	| Description |
 | --- | --- |
-| `.uk-hidden`	| Hides the element on any device. |
+| `.uk-hidden`	| Hides the element on any device. This is more of a legacy class. The recommended way to do this, is to use the `hidden` attribute. |
 | `.uk-invisible`	| Hides the element without removing it from the document flow. |
+
+```html
+<div hidden></div>
+
+<div class="uk-invisible"></div>
+```
 
 ***
 
-## Hidden
+## Responsive
+
+This component provides responsive classes to hide or display elements on different viewports.
+
+### Hidden
 
 Add one of the `.uk-hidden-*` classes to hide the element from screens larger than a specified width.
 
@@ -55,7 +65,7 @@ Add one of the `.uk-hidden-*` classes to hide the element from screens larger th
 
 ***
 
-## Visible
+### Visible
 
 Use `.uk-visible-*` classes to show the element for screens larger then the specified width.
 
@@ -98,7 +108,7 @@ Use `.uk-visible-*` classes to show the element for screens larger then the spec
 
 ## Hover
 
-Use one of the following classes to display elements only when they are hovered.
+Use one of the following classes to display elements only when they are being hovered.
 
 | Class	| Description |
 | --- | --- |
@@ -115,7 +125,7 @@ Use one of the following classes to display elements only when they are hovered.
 ```example
 <div class="uk-width-1-2@s">
 
-    <h4>uk-hidden-hover</h4>
+    <h4>Hidden hover</h4>
 
     <div class="uk-visible-toggle" uk-grid>
         <div class="uk-width-expand">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
@@ -128,7 +138,7 @@ Use one of the following classes to display elements only when they are hovered.
         </div>
     </div>
 
-    <h4>uk-invisible-hover</h4>
+    <h4>Invisible hover</h4>
 
     <div class="uk-visible-toggle" uk-grid>
         <div class="uk-width-expand">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
