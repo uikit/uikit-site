@@ -38,7 +38,6 @@
 
         <router-view></router-view>
 
-
         <div id="offcanvas" uk-offcanvas="mode: push">
             <div class="uk-offcanvas-bar">
                 <div class="uk-panel">
