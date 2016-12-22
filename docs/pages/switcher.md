@@ -134,10 +134,10 @@ You can apply all animations from the [Animation component](animation) to switch
 
 ### Multiple animations
 
-You can also apply multiple animations from the [Animation component](animation). That way you can even create your own custom class to apply a different transition to the switcher.
+You can also apply multiple animations from the [Animation component](animation). That way you can add different in and out animations.
 
 ```html
-<ul uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-mediu">...</ul>
+<ul uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">...</ul>
 ```
 
 ```example
