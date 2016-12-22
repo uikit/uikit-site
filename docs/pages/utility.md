@@ -53,14 +53,10 @@ Floating is fundamental for creating all kinds of layouts. But floats need to be
 ```example
 <div class="uk-clearfix">
     <div class="uk-float-right">
-        <div class="uk-card uk-card-default">
-            <div class="uk-card-body">Right</div>
-        </div>
+        <div class="uk-card uk-card-default uk-card-body">Right</div>
     </div>
     <div class="uk-float-left">
-        <div class="uk-card uk-card-default">
-            <div class="uk-card-body">Left</div>
-        </div>
+        <div class="uk-card uk-card-default uk-card-body">Left</div>
     </div>
 </div>
 ```
@@ -313,25 +309,13 @@ UIkit provides a number of useful classes to alter a block element's height.
 ```example
 <div class="uk-child-width-1-3@s uk-grid-small" uk-grid>
     <div>
-        <div class="uk-height-small uk-card uk-card-default uk-flex uk-flex-middle">
-            <div class="uk-card-body">
-                <code>.uk-height-small</code>
-            </div>
-        </div>
+        <div class="uk-height-small uk-card uk-card-default uk-card-body uk-flex uk-flex-middle"><code>.uk-height-small</code></div>
     </div>
     <div>
-        <div class="uk-height-medium uk-card uk-card-default uk-flex uk-flex-middle">
-            <div class="uk-card-body">
-                <code>.uk-height-medium</code>
-            </div>
-        </div>
+        <div class="uk-height-medium uk-card uk-card-default uk-card-body uk-flex uk-flex-middle"><code>.uk-height-medium</code></div>
     </div>
     <div>
-        <div class="uk-height-large uk-card uk-card-default uk-flex uk-flex-middle">
-            <div class="uk-card-body">
-                <code>.uk-height-large</code>
-            </div>
-        </div>
+        <div class="uk-height-large uk-card uk-card-default uk-card-body uk-flex uk-flex-middle"><code>.uk-height-large</code></div>
     </div>
 </div>
 ```
