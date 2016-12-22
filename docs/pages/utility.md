@@ -4,12 +4,29 @@
 
 ## Panel
 
-UIkit uses panels to outline certain sections of your content. These can be arranged in grid columns from the [Grid component](grid.md) component, for example.
+UIkit uses panels to outline certain sections of your content. These can be arranged in grid columns from the [Grid component](grid.md) component, for example. 
 
-| Class | Description |
-| --- | --- |
-| `.uk-panel` | Add this class to a `<div>` element to define the panel. |
-| `.uk-panel-scrollable` | Add this class to give the panel 170px height and make it scrollable, if its content exceeds the height. |
+Add the `.uk-panel` class to a `<div>` element to create a position context, set box-sizing to border-box, apply a clearfix and to remove the bottom margin of its last child element. 
+
+```example
+<div class="uk-child-width-1-3@s" uk-grid>
+    <div class="uk-panel">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </div>
+    <div class="uk-panel">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </div>
+    <div class="uk-panel">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </div>
+</div>
+```
+
+***
+
+### Scrollable panel
+
+Add the `.uk-panel-scrollable` class to give the panel _170px_ height and make it scrollable, if its content exceeds the height. You can also add one of the `.uk-height-*` [classes](#height) from this component to apply a different height.
 
 ```example
 <div class="uk-panel uk-panel-scrollable">
@@ -41,13 +58,13 @@ UIkit uses panels to outline certain sections of your content. These can be arra
 
 ## Clearing and floating
 
-Floating is fundamental for creating all kinds of layouts. But floats need to be cleared or in the worst case, you might end up with a scrambled site. The following classes will help you to set up basic layouts.
+Floating elements are taken from the document flow and aligned to the left or right side of their container. It is important to clear floats or in the worst case, you might end up with a scrambled site. The following classes will help you to set up basic layouts.
 
 | Class | Description |
 | --- | --- |
 | `.uk-float-left` | Add this class to float the element to the left. |
 | `.uk-float-right` |  Add this class to float the element to the right. |
-| `.uk-clearfix` | Add this class to a parent container to clear floats. |
+| `.uk-clearfix` | Add this class to a parent container to clear floats. Alternatively, you can create a new block format context by adding the `.uk-overflow-hidden` class. |
 
 
 ```example
@@ -65,179 +82,86 @@ Floating is fundamental for creating all kinds of layouts. But floats need to be
 
 ## Overflow
 
-To clip content that exceeds the dimensions of its container, add the `.uk-overflow-hidden` class.
+This component provides different classes to modify an element's overflow behavior. 
 
-To create a container that provides a horizontal or vertical scrollbar whenever the elements inside it are wider or higher than the container itself, just add the `.uk-overflow-auto` class to a `<div>` element. This is useful when having to handle tables on a responsive website, which at some point would just get too big.
+| Class                 | Description                                                                                                                                                                               |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `.uk-overflow-hidden` | Add this class to clip content that exceeds the dimensions of its container and to create a new block format context.                                                                     |
+| `.uk-overflow-auto`   | Add this class to a `<div>` element to create a container that provides a horizontal or vertical scrollbar whenever the elements inside it are wider or higher than the container itself. |
 
-```example
-<div class="uk-child-width-1-2@m" uk-grid>
-    <div>
-        <h4>Overflow Hidden</h4>
-        <div class="uk-overflow-hidden uk-height-small uk-margin-large-bottom">
-            <table class="uk-table uk-table-striped uk-table-condensed uk-text-nowrap">
-                <thead>
-                    <tr>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                    </tr>
-                </tfoot>
-                <tbody>
-                    <tr>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                    </tr>
-                    <tr>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div>
-        <h4>Overflow Auto</h4>
-        <div class="uk-overflow-auto uk-height-small uk-margin-large-bottom">
-            <table class="uk-table uk-table-striped uk-table-condensed uk-text-nowrap">
-                <thead>
-                    <tr>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                        <th>Table Heading</th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                        <td>Table Footer</td>
-                    </tr>
-                </tfoot>
-                <tbody>
-                    <tr>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                    </tr>
-                    <tr>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                        <td>Table Data</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    <div>
-<div>
-```
-
-The `.uk-overflow-auto` class also works great on `<pre>` elements.
+**Note** The `.uk-overflow-auto` class is useful when having to handle tables on a responsive website, which at some point would just get too big. It also works great on `<pre>` elements.
 
 ```example
-<pre class="uk-overflow-auto uk-height-small">
-<code>&lt;div uk-grid&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div uk-grid&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div uk-grid&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div uk-grid&gt;&lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;&lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;&lt;/div&gt;
-
-&lt;div uk-grid&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div uk-grid&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div uk-grid&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div uk-grid&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-&lt;/div&gt;</code>
-</pre>
+<div class="uk-overflow-auto uk-height-small uk-margin-large-bottom">
+<table class="uk-table uk-table-striped uk-table-condensed uk-text-nowrap">
+    <thead>
+        <tr>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td>Table Footer</td>
+            <td>Table Footer</td>
+            <td>Table Footer</td>
+            <td>Table Footer</td>
+            <td>Table Footer</td>
+            <td>Table Footer</td>
+            <td>Table Footer</td>
+            <td>Table Footer</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+    </tbody>
+</table>
 ```
 
 ***
 
 ## Resize
 
-Add the `.uk-resize-vertical` or `.uk-resize` class to enable horizontal and/or vertical resizing of block elements.
+This component provides different classes for resizing block elements. 
+
+| Class                 | Description                                                         |
+|-----------------------|---------------------------------------------------------------------|
+| `.uk-resize-vertical` | Add this class to enable vertical resizing of block elements.                |
+| `.uk-resize`          | Add this class to enable horizontal and vertical resizing of block elements. |
+
+<p>Grab and drag the bottom right corner of each box below to resize it</p>
 
 ```example
 <div class="uk-child-width-1-2@s" uk-grid>
     <div>
-        <p>Grab and drag the bottom right corner to resize this box <strong>only vertically</strong>.</p>
         <pre class="uk-resize-vertical">
             <code>
+&lt;!-- Resize vertically --&gt;
 &lt;div uk-grid&gt;
     &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
     &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
@@ -251,9 +175,9 @@ Add the `.uk-resize-vertical` or `.uk-resize` class to enable horizontal and/or 
         </pre>
     </div>
     <div>
-        <p>Grab and drag the bottom right corner to resize this box <strong>vertically and horizontally</strong>.</p>
         <pre class="uk-resize">
             <code>
+&lt;!-- Resize horizontally and vertically --&gt;
 &lt;div uk-grid&gt;
     &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
     &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
@@ -285,9 +209,29 @@ Add one of these classes to change the display properties of an element.
 
 ## Inline
 
-To add inline-block behavior to an element, prevent content overflow and to create a position context for elements with absolute positioning, add the `.uk-inline` class. To clip overflowing child elements, add the `.uk-inline-clip` class.
+These classes work great together with the [Position component](position.md). For example, when you are using an overlay on an image that is smaller than its parent block element, the overlay will not exceed the image dimensions.
 
-This class can be used with the [Drop](drop.md), [Dropdown](dropdown.md), and [Position](position.md) components.
+| Class             | Description                                                                                                                                                  |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `.uk-inline`      | Add this class to add inline-block behavior to an element, prevent content overflow and to create a position context. |
+| `.uk-inline-clip` | Add this class to clip overflowing child elements.                                                                                                           |
+
+```html
+<div class="uk-inline">
+    <img alt="">
+    <div class="uk-position-cover"></div>
+</div>
+```
+
+```example
+<div class="uk-inline">
+
+    <img src="../docs/images/photo.jpg" width="300" alt="">
+
+    <div class="uk-position-medium uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">Overlay</div>
+
+</div>
+```
 
 ***
 
@@ -297,10 +241,10 @@ UIkit provides a number of useful classes to alter a block element's height.
 
 | Class                                          | Description                                                                       |
 |------------------------------------------------|-----------------------------------------------------------------------------------|
-| `.uk-height-1-1`                               | This class applies a height of 100%.                                              |
-| `.uk-height-small `<br> `.uk-max-height-small `   | These classes apply a height or max-height of 150px.                              |
-| `.uk-height-medium `<br> `.uk-max-height-medium ` | These classes apply a height or max-height of 300px.                              |
-| `.uk-height-large `<br> `.uk-max-height-large `   | These classes apply a height or max-height of 450px.                              |
+| `.uk-height-1-1`                               | This class applies a height of 100%. This only works, if the parent element has a set height.                                              |
+| `.uk-height-small `<br> `.uk-max-height-small `   | These classes apply a height or max-height of _150px_.                              |
+| `.uk-height-medium `<br> `.uk-max-height-medium ` | These classes apply a height or max-height of _300px_.                              |
+| `.uk-height-large `<br> `.uk-max-height-large `   | These classes apply a height or max-height of _450px_.                              |
 
 ```html
 <div class="uk-height-small"></div>
@@ -324,7 +268,7 @@ UIkit provides a number of useful classes to alter a block element's height.
 
 ### Viewport height
 
-Add the `.uk-height-viewport` class or the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `mode: offset` or `mode: expand` option to the attribute.
+Add the the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `mode: offset` or `mode: expand` option to the attribute.
 
 | Option | Description |
 | ------ | ----------- |
@@ -332,8 +276,6 @@ Add the `.uk-height-viewport` class or the `uk-height-viewport` attribute to cre
 | `mode: expand` | Expand the element's height to make a short page fill the viewport. |
 
 ```html
-<div class="uk-height-viewport"></div>
-
 <div uk-height-viewport></div>
 
 <div uk-height-viewport="mode: offset"></div>
@@ -352,23 +294,9 @@ To expand all children of a container to the same height, regardless of their co
 **Note** Once grid columns extend to a width of 100%, their heights will no longer be matched. This makes sense, for example, if they stack vertically in narrower viewports.
 
 ```html
-<div uk-grid uk-height-match>
+<div uk-height-match>
     <div></div>
     <div></div>
-</div>
-```
-
-```example
-<div class="uk-child-width-1-3@s uk-grid-divider" uk-grid uk-height-match>
-    <div>
-        <div class="uk-panel">Lorem Ipsum</div>
-    </div>
-    <div>
-        <div class="uk-panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-    </div>
-    <div>
-        <div class="uk-panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
-    </div>
 </div>
 ```
 
@@ -441,7 +369,7 @@ The table below lists the available settings of the `uk-height-match` attribute.
 
 ## Responsive objects
 
-Images in UIkit adapt to the width of their parent container by default. To apply responsive behavior to iframes, add the `uk-responsive` attribute . For media elements, like a video object, just add one of the following classes.
+In UIkit `<img>`, `<canvas>`, `<aufio>` and `<video>` elements adapt to the width of their parent container by default. To apply responsive behavior to iframes, add the `uk-responsive` attribute . For other element or to apply a different behavior, just add one of the following classes.
 
 | Class	| Description |
 | --- | --- |
@@ -453,19 +381,16 @@ Images in UIkit adapt to the width of their parent container by default. To appl
 <img class="uk-responsive-width" src="" alt="">
 ```
 
-```example
-<h4>Responsive Width</h4>
-<p><img class="uk-responsive-width" src="images/size-h.jpg"></p>
-
-<h4>Preserve Width</h4>
-<p><img class="uk-preserve-width" src="images/size-h.jpg"></p>
-```
-
 ***
 
 ## Border Radius
 
-To add rounded corners to an element, like an image, just add the `.uk-border-rounded` class. To a apply a circled shape, add the `.uk-border-circle` class.
+To modify the border radius of an element, like an image, add one of the following classes.
+
+| Class                | Description                                            |
+|----------------------|--------------------------------------------------------|
+| `.uk-border-rounded` | Add this class to apply rounded corners. |
+| `.uk-border-circle`  | Add this class to a apply a circled shape.             |
 
 ```example
 <img class="uk-border-rounded" src="images/avatar.jpg" width="200" height="200" alt="Border rounded">
@@ -486,7 +411,38 @@ With the `.uk-dropcap` class you can achieve a drop cap within a text by adding 
 
 ## Logo
 
-With the new `.uk-logo` class you can easily define your logo, for example within your navbar.
+With the new `.uk-logo` class you can easily define your logo, for example within your navbar. 
+
+```html
+<a class="uk-logo" href=""></a>
+```
+
+```example
+<div class="uk-child-width-1-2@s" uk-grid>
+    <div>
+        <div class="uk-position-relative">
+            <img src="../docs/images/light.jpg" alt="">
+            <div class="uk-position-medium uk-position-center">
+                <a class="uk-logo" href="#">
+                    Logo
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-position-relative">
+            <img src="../docs/images/dark.jpg" alt="">
+            <div class="uk-position-medium uk-position-center uk-light">
+                <a class="uk-logo" href="#">
+                    Logo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+You can use text or an `<img>` element, for example an SVG, as a logo.
 
 ```html
 <a class="uk-logo" href="">
@@ -508,6 +464,24 @@ SVGs or Scaleable Vector Graphics are really handy, for example to display a log
 
 ```html
 <img src="" uk-svg>
+```
+
+```example
+<img src="../assets/uikit/src/images/symbols/cloud-download.svg" uk-svg>
+```
+
+***
+
+## Gif
+
+To start playing an animated Gif only when it comes into the viewport, add the `uk-gif` attribute.
+
+```html
+<img src="" alt="" uk-gif
+```
+
+```example
+<img src="../docs/images/animated.gif" alt="" uk-gif>
 ```
 
 ***
@@ -736,6 +710,16 @@ To modify the origin of an animation, like scaling, add one of the `uk-transform
         </div>
     </div>
 </div>
+```
+
+***
+
+## Disabled
+
+To disable the click behavior of an element, like a button from the [Button component](button.md) add the `.uk-disabled` class.
+
+```example
+<button class="uk-disabled uk-button uk-button-default">Disabled</button>
 ```
 
 ***
