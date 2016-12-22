@@ -411,7 +411,7 @@ With the `.uk-dropcap` class you can achieve a drop cap within a text by adding 
 
 ## Logo
 
-With the new `.uk-logo` class you can easily define your logo, for example within your navbar. 
+With the new `.uk-logo` class you can easily define your logo, for example within your navbar. Add the `.uk-light` class from the [Inverse component](inverse.md) when displaying the image on dark backgrounds, so that its color will automatically be inverted for better visibility.
 
 ```html
 <a class="uk-logo" href=""></a>
@@ -474,7 +474,7 @@ SVGs or Scaleable Vector Graphics are really handy, for example to display a log
 
 ## Gif
 
-To start playing an animated Gif only when it comes into the viewport, add the `uk-gif` attribute.
+To start playing an animated Gif only when it comes into the viewport, add the `uk-gif` attribute. That way a user will see the animation right when he is supposed to.
 
 ```html
 <img src="" alt="" uk-gif
