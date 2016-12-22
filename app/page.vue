@@ -76,9 +76,7 @@
         methods: {
 
             setPage(page) {
-
                 this.page = page;
-
                 this.$nextTick(() => $('<div>').append(page).find('script').appendTo(this.$refs.container));
             }
 
