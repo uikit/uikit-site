@@ -11,36 +11,10 @@ To create an element that remains at the top of the viewport when scrolling down
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-card-body" uk-sticky="bottom: #sticky-on-scroll-up">Stick to the top</div>
+<div class="uk-card uk-card-default uk-card-body" uk-sticky="bottom: #offset">Stick to the top</div>
 ```
 
-***
-
-## Animation
-
-Add an animation from the [Animation component](animation.md) in order to have the sticky element reappear smoothly.
-
-```html
-<div uk-sticky="animation: uk-animation-slide-top"></div>
-```
-
-```example
-<div class="uk-card uk-card-default uk-card-body" uk-sticky="animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">Animation Slide Top</div>
-```
-
-***
-
-## Sticky on scroll up
-
-You can also make the sticky element only show when scrolling up to save space. Together with an animation, this makes for a very smooth experience.
-
-```html
-<div uk-sticky="show-on-up: true"></div>
-```
-
-```example
-<div class="uk-card uk-card-default uk-card-body" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">Slide on scroll up</div>
-```
+NOTE:
 
 ***
 
@@ -78,16 +52,42 @@ To apply the sticky behavior with a delay, add the `top` attribute, which can be
 ```example
 <div class="uk-child-width-1-2@s" uk-grid>
     <div>
-        <div class="uk-background-muted uk-height-large">
-            <div class="uk-card uk-card-default uk-card-body" uk-sticky="top: 100; bottom: #bottom">Stick to the top but only after 100px scrolling</div>
-        </div>
+        <div class="uk-card uk-card-default uk-card-body" uk-sticky="top: 200; bottom: #animation">Stick to the top but only after 200px scrolling</div>
     </div>
     <div>
-        <div id="container-1" class="uk-background-muted  uk-height-large">
-            <div class="uk-card uk-card-default uk-card-body" uk-sticky="top: #container-1; bottom: #bottom">Stick below the box</div>
+        <div id="container-1" class="uk-background-muted uk-height-medium" style="margin-bottom: 200px;">
+            <div class="uk-card uk-card-default uk-card-body" uk-sticky="top: #container-1; bottom: #animation">Stick to the top but below the box</div>
         </div>
     </div>
 </div>
+```
+
+***
+
+## Animation
+
+Add an animation from the [Animation component](animation.md) in order to have the sticky element reappear smoothly.
+
+```html
+<div uk-sticky="animation: uk-animation-slide-top"></div>
+```
+
+```example
+<div class="uk-card uk-card-default uk-card-body" uk-sticky="top: 100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">Animation Slide Top</div>
+```
+
+***
+
+## Sticky on scroll up
+
+You can also make the sticky element only show when scrolling up to save space. Together with an animation, this makes for a very smooth experience.
+
+```html
+<div uk-sticky="show-on-up: true"></div>
+```
+
+```example
+<div class="uk-card uk-card-default uk-card-body" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom" style="margin-bottom: 200px;">Slide in on scroll up</div>
 ```
 
 ***
@@ -110,18 +110,21 @@ Bind the sticky behavior to a specific element, so that it disappears after scro
 ```example
 <div class="uk-child-width-1-2@s" uk-grid>
     <div>
-        <div class="uk-background-muted uk-height-large">
-            <div class="uk-height-medium uk-background-secondary">
+        <div class="uk-background-muted uk-height-medium">
+            <div class="uk-height-medium uk-background-muted">
                 <div class="uk-card uk-card-default uk-card-body" uk-sticky="bottom: true">Stick until the bottom of its parent container</div>
             </div>
         </div>
     </div>
     <div>
-        <div id="container-2" class="uk-background-muted  uk-height-large">
-            <div class="uk-card uk-card-default uk-card-body" uk-sticky="bottom: #container-2">Stick until the bottom of the box</div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body" uk-sticky="bottom: #container-2">Stick until the next headline</div>
         </div>
     </div>
 </div>
+
+<h3 id="container-2">Some Headline</h3>
+
 ```
 
 ***
