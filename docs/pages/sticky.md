@@ -14,13 +14,13 @@ To create an element that remains at the top of the viewport when scrolling down
 <div class="uk-card uk-card-default uk-card-body" uk-sticky="bottom: #offset">Stick to the top</div>
 ```
 
-NOTE:
+**Note** Example elements on this page are only sticky until you scroll down to the next heading and disappear afterwards. This was done so as not to clutter your screen with all variations of sticky containers.
 
 ***
 
 ## Offset
 
-You can also position the element below the viewport edge. Add the `offset` attribute and the distance in pixels.
+You can position the element below the viewport edge. Add the `offset` attribute and the distance in pixels.
 
 ```html
 <div uk-sticky="offset: 100"
@@ -80,7 +80,7 @@ Add an animation from the [Animation component](animation.md) in order to have t
 
 ## Sticky on scroll up
 
-You can also make the sticky element only show when scrolling up to save space. Together with an animation, this makes for a very smooth experience.
+You can make the sticky element show only when scrolling up to save space. Together with an animation, this makes for a very smooth experience.
 
 ```html
 <div uk-sticky="show-on-up: true"></div>
@@ -94,7 +94,7 @@ You can also make the sticky element only show when scrolling up to save space. 
 
 ## Bottom
 
-Bind the sticky behavior to a specific element, so that it disappears after scrolling past that point of the page
+Bind the sticky behavior to a specific element, so that it disappears after scrolling past that point of the page.
 
 ```html
 <!-- Sticks until the bottom of its parent container -->
@@ -131,7 +131,7 @@ Bind the sticky behavior to a specific element, so that it disappears after scro
 
 ## Responsive
 
-You also have the possibility of disabling the sticky behavior for different devices by applying the `media` option to the `uk-sticky` attribute and adding the appropriate viewport width.
+You also have the possibility of disabling the sticky behavior for different devices by applying the `media` option to the `uk-sticky` attribute and adding the appropriate viewport width. The element will be sticky from the specified viewport width and upwards, but not below.
 
 ```html
 <div uk-sticky="media: 640"></div>
