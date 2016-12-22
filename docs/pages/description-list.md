@@ -1,6 +1,6 @@
 # Description list
 
-<p class="uk-text-lead">Easily create nicely looking description lists, which come in different styles.</p>
+<p class="uk-text-lead">Easily create nice looking description lists, which come in different styles.</p>
 
 ## Usage
 

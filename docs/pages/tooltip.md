@@ -1,6 +1,6 @@
 # Tooltip
 
-<p class="uk-text-lead">Easily create a nicely looking tooltip.</p>
+<p class="uk-text-lead">Easily create a nice looking tooltip.</p>
 
 ## Usage
 

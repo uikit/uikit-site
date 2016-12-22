@@ -18,7 +18,7 @@ To create a label, just add the `.uk-label` class to a `<span>` element.
 
 ***
 
-## Style Modifiers
+## Style modifiers
 
 Add one of the following classes for additional styles.
 

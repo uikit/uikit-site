@@ -33,7 +33,7 @@ To apply this component, use the following classes. To align a subnav, for examp
 
 ***
 
-## Style Modifiers
+## Style modifiers
 
 ### Subnav Divider
 

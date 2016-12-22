@@ -35,7 +35,7 @@ By default, a section is blank. That is why it is important to add a modifier cl
 
 ***
 
-## Style Modifiers
+## Style modifiers
 
 To apply different background colors and paddings, add one of the following classes. If two consecutive blocks have the same background color, the padding will automatically be divided.
 
