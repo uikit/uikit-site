@@ -1,17 +1,9 @@
-<template>
-
-    <div>
-        <div class="uk-alert uk-alert-danger" v-if="error">{{ error }}</div>
-        <div ref="container" v-html="doc"></div>
-    </div>
-
-</template>
-
 <script>
 
     import $ from 'jquery';
     import copy from 'copy-to-clipboard';
     import { parse, openOnCodepen } from './util';
+    import Page from '../../app/page.vue';
 
     const navigation = require('./navigation.json');
 
@@ -19,13 +11,12 @@
 
     export default {
 
+        extends: Page,
+
         data: () => ({
-            loading: false,
-            page: null,
-            error: null,
-            cache: {},
-            doc: ''
+            extension: 'md'
         }),
+
 
         mounted() {
 
@@ -58,51 +49,9 @@
 
         watch: {
 
-            $route: {
+            page() {
 
-                handler() {
-
-                    var page = this.$route.params.page;
-
-                    scrollTo(0, 0);
-
-                    this.loading = true;
-                    this.error = null;
-                    this.ids = {};
-
-                    this.$parent.page = page;
-                    this.$parent.component = components.indexOf(page) != -1 ? page : false;
-
-                    var defer = $.Deferred();
-
-                    defer.then(
-                        content => this.doc = content,
-                        () => this.error = 'Failed loading page'
-                    ).always(() => this.loading = false);
-
-                    if (this.cache[page]) {
-                        defer.resolve(this.cache[page]);
-                        return;
-                    }
-
-                    $.get(`pages/${page}.md`, {nc: Math.random()}).then(content => parse(content, (err, content) => {
-
-                        if (err) {
-                            defer.reject(err);
-                            return;
-                        }
-
-                        this.cache[page] = content;
-                        defer.resolve(content);
-
-                    }), err => reject(err));
-
-                },
-
-                immediate: true
-            },
-
-            doc() {
+                this.$parent.component = components.indexOf(this.$route.params.page) != -1 ? this.$route.params.page : false;
 
                 this.$nextTick(() => {
 
@@ -124,8 +73,23 @@
 
                     }, {});
 
-                    if (location.hash && $(location.hash).length) {
-                        scrollTo(0, $(location.hash).offset().top);
+                });
+
+            }
+
+        },
+
+        methods: {
+
+            setPage(page) {
+
+                parse(page, (err, content) => {
+
+                    if (err) {
+                        this.page = null;
+                        this.error = err;
+                    } else {
+                        this.page = content;
                     }
 
                 });

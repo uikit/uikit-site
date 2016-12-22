@@ -30,8 +30,8 @@ $(function () {
         data: () => ({
             navigation,
             ids: {},
-            loading: false,
             component: false,
+            loading: false,
             page: false
         }),
 

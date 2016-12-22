@@ -17,8 +17,6 @@ const routes = [
 
 ];
 
-const navigation = require('../docs/app/navigation.json');
-
 let base = '/';
 
 if (location.pathname && location.pathname != '/') {
@@ -35,8 +33,7 @@ $(function () {
 
         data: () => ({
             loading: false,
-            page: false,
-            navigation
+            page: false
         }),
 
         router: new VueRouter({
