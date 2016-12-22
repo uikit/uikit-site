@@ -40,7 +40,19 @@ $(function () {
             mode: 'history',
             history: true,
             linkActiveClass: 'uk-active'
-        })
+        }),
+
+        directives: {
+
+            scroll: {
+
+                inserted: function (el) {
+                    UIkit.scroll(el);
+                }
+
+            }
+
+        }
 
     });
 

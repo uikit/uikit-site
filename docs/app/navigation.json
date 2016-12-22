@@ -4,6 +4,7 @@
 
         "Introduction": "introduction",
         "Migration": "migration"
+
     },
 
     "Developer": {
@@ -12,6 +13,7 @@
         "Less files": "less",
         "Create a theme": "theme",
         "JavaScript": "javascript"
+
     },
 
     "Components": {
@@ -81,5 +83,7 @@
         "Utility": "utility",
         "Visibility": "visibility",
         "Width": "width"
+
     }
+
 }

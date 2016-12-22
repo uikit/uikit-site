@@ -55,7 +55,7 @@
 
                             <ul class="uk-nav uk-nav-default uk-nav-parent-icon">
                                 <li v-for="(id, subject) in ids">
-                                    <a :href="'#'+id">{{ subject }}</a>
+                                    <a v-scroll :href="'#'+id">{{ subject }}</a>
                                 </li>
                                 <li class="uk-nav-divider"></li>
                                 <li v-if="component"><a :href="'../assets/uikit/tests/'+component+'.html'" target="_blank"><span class="uk-margin-small-right" uk-icon="icon: push"></span> Open Test</a></li>
