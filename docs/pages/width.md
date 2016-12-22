@@ -64,7 +64,10 @@ Add one of the `.uk-width-*` classes to a container element to determine its siz
 
 The width component provides additional modifiers to give you more flexibility in the distribution of items.
 
-Add the `.uk-width-auto` class to an item, so it will only expand to the width of its own content. Add the `.uk-width-expand` class, so that the column expands to fill up the remaining space inside the container.
+| Class              | Description                                                                                     |
+|--------------------|-------------------------------------------------------------------------------------------------|
+| `.uk-width-auto`   | Add this class to an item, so it will only expand to the width of its own content.              |
+| `.uk-width-expand` | Add this class, so that the column expands to fill up the remaining space inside the container. |
 
 ```html
 <div uk-grid>
@@ -97,10 +100,11 @@ To create a grid whose child elements' widths are evenly split, you don't have t
 | `.uk-child-width-1-4`    | Divides the grid into fourths. |
 | `.uk-child-width-1-5`    | Divides the grid into fifths.  |
 | `.uk-child-width-1-6`    | Divides the grid into sixths.  |
-| `.uk-child-width-auto`<br> `.uk-child-width-expand`   | Divides the grid into equal units depending on the content size and the available space. |
+| `.uk-child-width-auto`   | Divides the grid into equal units depending on the content size. |
+| `.uk-child-width-expand` | Divides the grid into equal units depending on the available space. |
 
 ```html
-<div class="uk-child-width-1-5" uk-grid>
+<div class="uk-child-width-1-4" uk-grid>
     <div></div>
     <div></div>
     ...
@@ -108,7 +112,37 @@ To create a grid whose child elements' widths are evenly split, you don't have t
 ```
 
 ```example
-<div class="uk-child-width-1-5 uk-grid-small uk-text-center" uk-grid>
+<div class="uk-child-width-1-4 uk-grid-small uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+</div>
+```
+
+Items that use width classes with fractions will break into a new row, if they no longer fit their container's width. When using one of the _expand_ classes, however, the space will be evenly distributed among items that always stay in the same row.
+
+```html
+<div class="uk-child-width-expand" uk-grid>
+    <div></div>
+    <div></div>
+    ...
+</div>
+```
+
+```example
+<div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
