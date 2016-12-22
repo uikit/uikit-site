@@ -10,9 +10,9 @@
 
 <script type="text/javascript">
 
-    $(function() {
+    $(function () {
 
-        $.get('assets/uikit/CHANGELOG.md', {nc: Math.random()}, body => {
+        $.get('assets/uikit/CHANGELOG.md', {nc: Math.random()}, function (body) {
             $('#js-changelog').html(parse(body));
         });
 
@@ -20,9 +20,9 @@
 
             var renderer = new marked.Renderer(), section;
 
-            renderer.list = text => `<ul class="uk-list">${text}</ul>`;
+            renderer.list = text => '<ul class="uk-list">' + text + '</ul>';
 
-            renderer.listitem = (text) => {
+            renderer.listitem = function (text) {
 
                 var label = '';
 
@@ -42,15 +42,15 @@
                         label = 'uk-label-danger';
                 }
 
-                return `<li><span class="uk-label ${label} uk-margin-right uk-text-center uk-width-small">${section}</span> ${text}</li>`;
+                return '<li><span class="uk-label ' + label + ' uk-margin-right uk-text-center uk-width-small">' + section + '</span> ' + text + '</li>';
             };
 
-            renderer.heading = (text, level) => {
+            renderer.heading = function (text, level) {
 
                 text = text.replace(/(\(.*?\))/, '<span class="uk-text-muted">$1</span>');
 
                 if (level == 2) {
-                    return `<h${level}>${text}</h${level}>`;
+                    return '<h' + level + '>' + text + '</h' + level + '>';
                 }
 
                 if (level == 3) {
@@ -60,7 +60,7 @@
                 return '';
             };
 
-            return marked(markdown, {renderer});
+            return marked(markdown, {renderer: renderer});
         }
     });
 
