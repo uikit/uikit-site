@@ -10,7 +10,6 @@
 <script>
 
     import $ from 'jquery';
-    import { escape } from 'he';
     import copy from 'copy-to-clipboard';
     import { parse, openOnCodepen } from './util';
 
