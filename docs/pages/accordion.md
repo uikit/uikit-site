@@ -4,7 +4,7 @@
 
 ## Usage
 
-The Accordion component consists of a surrounding container with the `uk-accordion` attribute, and a title and content part for each accordion item.
+The Accordion component consists of a parent container with the `uk-accordion` attribute, and a title and content part for each accordion item.
 
 | Class | Description |
 | ----- | ----------- |

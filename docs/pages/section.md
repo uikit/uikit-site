@@ -167,6 +167,22 @@ When using a section with a background image, add the `.uk-section-media` class.
 
 You can add different paddings to each section or remove it altogether.
 
+### X-Small
+
+To decrease a section's padding to a minimum, add the `.uk-section-xsmall` class.
+
+```example
+<div class="uk-section uk-section-xsmall uk-section-muted">
+    <div class="uk-container">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+
+    </div>
+</div>
+```
+
+***
+
 ### Small
 
 To decrease a section's padding, add the `.uk-section-small` class.
@@ -221,7 +237,7 @@ To increase a section's padding, add the `.uk-section-large` class.
 
 ***
 
-### XLarge
+### X-Large
 
 To further increase a section's padding, add the `.uk-section-xlarge` class.
 
