@@ -275,6 +275,16 @@ To remove a section's padding, add the `.uk-padding-remove-vertical` class from 
 
 ***
 
+## Overlap
+
+Some UIkit themes use richer styles, including textured backgrounds and borders. In this case, you can add the `.uk-section-overlap` class, to apply a border image and a negative offset to the following section. Note that this only works in styles that implement the feature, if there are subsequent sections.
+
+```html
+<div class="uk-section uk-section-overlap"></div>
+```
+
+***
+
 ## Section and container
 
 You can place a container from the [Container component](container.md) to modify the width of content inside sections and add horizontal padding. Note that the padding of a nested container will be reset.

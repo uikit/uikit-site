@@ -399,6 +399,51 @@ To modify the border radius of an element, like an image, add one of the followi
 
 ***
 
+## Box Shadow
+
+You can apply different box shadows to elements. Just add one of the following classes.
+
+| Class                   | Description                                      |
+|-------------------------|--------------------------------------------------|
+| `.uk-box-shadow-small`  | Add this class to apply a small box shadow.      |
+| `.uk-box-shadow-medium` | Add this class to apply a medium box shadow.     |
+| `.uk-box-shadow-large`  | Add this class to apply a large box shadow.      |
+| `.uk-box-shadow-xlarge` | Add this class to apply a very large box shadow. |
+
+```html
+<div class="uk-box-shadow-small"></div>
+```
+
+```example
+<div class="uk-child-width-1-2@s uk-text-center" uk-grid>
+    <div>
+        <div class="uk-box-shadow-small uk-padding">
+            <p class="uk-h4 uk-margin-remove">Small</p>
+        </div>
+    </div>
+
+    <div>
+        <div class="uk-box-shadow-medium uk-padding">
+            <p class="uk-h4 uk-margin-remove">Medium</p>
+        </div>
+    </div>
+
+    <div>
+        <div class="uk-box-shadow-large uk-padding">
+            <p class="uk-h4 uk-margin-remove">Large</p>
+        </div>
+    </div>
+
+    <div>
+        <div class="uk-box-shadow-xlarge uk-padding">
+            <p class="uk-h4 uk-margin-remove">X-Large</p>
+        </div>
+    </div>
+</div>
+```
+
+***
+
 ## Drop Cap
 
 With the `.uk-dropcap` class you can achieve a drop cap within a text by adding it directly to the `<p>` element.
