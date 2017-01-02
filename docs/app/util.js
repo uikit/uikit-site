@@ -21,21 +21,21 @@ export function parse(markdown, cb) {
             let id = uniqueid(4);
 
             return `<div class="uk-position-relative">
-    
+
                         <ul uk-tab>
                             <li><a href="#">Preview</a></li>
                             <li><a href="#">Markup</a></li>
                         </ul>
-    
+
                         <ul class="uk-switcher uk-margin">
                             <li>${code}</li>
                             <li><pre><code id="${id}" class="lang-html">${escape(code)}</code></pre></li>
                         </ul>
-    
+
                         <div class="uk-position-top-right uk-margin-small-top">
                             <ul class="uk-iconnav">
-                                <li><a class="js-copy" rel="#${id}"><i uk-icon="icon: copy; ratio:0.8"></i></a></li>
-                                <li><a class="js-codepen" rel="#${id}"><i uk-icon="icon: file-edit; ratio:0.8"></i></a></li>
+                                <li><a class="js-copy" rel="#${id}"><img src="../images/copy-to-clipboard.svg" uk-svg></a></li>
+                                <li><a class="js-codepen" rel="#${id}"><img src="../images/test-flask.svg" uk-svg></a></li>
                             </ul>
                         </div>
                     </div>`;
