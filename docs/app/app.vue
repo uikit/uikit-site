@@ -86,6 +86,7 @@
                     </div>
                 </div>
 
+            </div>
         </div>
 
         <div id="offcanvas" uk-offcanvas="mode: push">
