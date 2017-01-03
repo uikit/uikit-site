@@ -57,8 +57,8 @@ Add one of the `.uk-hidden-*` classes to hide the element from screens larger th
         <div class="uk-hidden@l uk-card uk-card-default uk-card-body uk-card-small uk-text-success">✔ Large</div>
     </div>
     <div>
-        <div class="uk-visible@xl uk-card uk-card-default uk-card-body uk-card-small">XLarge</div>
-        <div class="uk-hidden@xl uk-card uk-card-default uk-card-body uk-card-small uk-text-success">✔ XLarge</div>
+        <div class="uk-visible@xl uk-card uk-card-default uk-card-body uk-card-small">X-Large</div>
+        <div class="uk-hidden@xl uk-card uk-card-default uk-card-body uk-card-small uk-text-success">✔ X-Large</div>
     </div>
 </div>
 ```
@@ -98,8 +98,8 @@ Use `.uk-visible-*` classes to show the element for screens larger then the spec
         <div class="uk-visible@l uk-card uk-card-default uk-card-body uk-card-small uk-text-success">✔ Large</div>
     </div>
     <div>
-        <div class="uk-hidden@xl uk-card uk-card-default uk-card-body uk-card-small">XLarge</div>
-        <div class="uk-visible@xl uk-card uk-card-default uk-card-body uk-card-small uk-text-success">✔ XLarge</div>
+        <div class="uk-hidden@xl uk-card uk-card-default uk-card-body uk-card-small">X-Large</div>
+        <div class="uk-visible@xl uk-card uk-card-default uk-card-body uk-card-small uk-text-success">✔ X-Large</div>
     </div>
 </div>
 ```
