@@ -1,0 +1,100 @@
+//
+// Component: Section
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+//
+// New
+//
+
+@internal-section-default-image:                    '';
+@internal-section-muted-image:                      '';
+@internal-section-primary-image:                    '';
+@internal-section-secondary-image:                  '';
+
+@internal-section-overlap-image:                    '';
+@internal-section-overlap-height:                   0;
+
+
+// Component
+// ========================================================================
+
+.hook-section() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-section-default() when not (@internal-section-default-image = '') {
+    background-image: url("@{internal-section-default-image}");
+    background-repeat: repeat;
+}
+
+.hook-section-muted() when not (@internal-section-muted-image = '') {
+    background-image: url("@{internal-section-muted-image}");
+    background-repeat: repeat;
+}
+
+.hook-section-primary() when not (@internal-section-primary-image = '') {
+    background-image: url("@{internal-section-primary-image}");
+    background-repeat: repeat;
+}
+
+.hook-section-secondary() when not (@internal-section-secondary-image = '') {
+    background-image: url("@{internal-section-secondary-image}");
+    background-repeat: repeat;
+}
+
+.hook-section-media() {}
+
+
+// Overlap modifier
+// ========================================================================
+
+.hook-section-overlap() when not (@internal-section-overlap-image = '') {
+
+    border-bottom: @internal-section-overlap-height solid transparent;
+
+    & + .uk-section { position: relative; }
+
+    & + .uk-section-default::before,
+    & + .uk-section-muted::before,
+    & + .uk-section-primary::before,
+    & + .uk-section-secondary::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -(@internal-section-overlap-height);
+        left: 0;
+        right: 0;
+        height: @internal-section-overlap-height;
+        background-repeat: repeat-x;
+    }
+
+    & + .uk-section-default::before {
+        .svg-fill(@internal-section-overlap-image, "#000", @section-default-background);
+    }
+
+    & + .uk-section-muted::before {
+        .svg-fill(@internal-section-overlap-image, "#000", @section-muted-background);
+    }
+
+    & + .uk-section-primary::before {
+        .svg-fill(@internal-section-overlap-image, "#000", @section-primary-background);
+    }
+
+    & + .uk-section-secondary::before {
+        .svg-fill(@internal-section-overlap-image, "#000", @section-secondary-background);
+    }
+
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-section-misc() {}

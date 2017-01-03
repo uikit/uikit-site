@@ -17,7 +17,7 @@
 @button-text-mode:                              line; // none, line, arrow, em-dash
 @button-text-border-width:                      @global-border-width;
 
-@internal-image-button-text-arrow:               "../../../../uikit-themes/master/images/button-text-arrow.svg";
+@internal-button-text-arrow-image:               "../../../../uikit-themes/master/images/button-text-arrow.svg";
 
 
 // Component
@@ -131,7 +131,7 @@
 // Icon
 //
 
-@internal-button-text-arrow-padding: 3px;
+@internal-button-text-arrow-padding: 5px;
 @internal-button-text-arrow-width: 22px;
 @internal-button-text-arrow-width-animation: 5px;
 
@@ -147,7 +147,7 @@
         bottom: 0;
         right: 0;
         width: @internal-button-text-arrow-width;
-        .svg-fill(@internal-image-button-text-arrow, "#000", @button-text-color);
+        .svg-fill(@internal-button-text-arrow-image, "#000", @button-text-color);
         background-repeat: no-repeat;
         background-position: ~'calc(100% - @{internal-button-text-arrow-width-animation}) 50%';
         -webkit-transition: background-position 0.2s ease-out;
@@ -159,7 +159,7 @@
 .hook-button-text-hover() when (@button-text-mode = arrow) {
 
     &::before {
-        .svg-fill(@internal-image-button-text-arrow, "#000", @button-text-hover-color);
+        .svg-fill(@internal-button-text-arrow-image, "#000", @button-text-hover-color);
         background-position: 100% 50%;
     }
 
@@ -217,10 +217,10 @@
 .hook-inverse-button-secondary-active() {}
 
 .hook-inverse-button-text() when (@button-text-mode = arrow) {
-    &::before { .svg-fill(@internal-image-button-text-arrow, "#000", @inverse-button-text-color); }
+    &::before { .svg-fill(@internal-button-text-arrow-image, "#000", @inverse-button-text-color); }
 }
 .hook-inverse-button-text-hover() when (@button-text-mode = arrow) {
-    &::before { .svg-fill(@internal-image-button-text-arrow, "#000", @inverse-button-text-hover-color); }
+    &::before { .svg-fill(@internal-button-text-arrow-image, "#000", @inverse-button-text-hover-color); }
 }
 
 .hook-inverse-button-text-disabled() {}

@@ -53,32 +53,27 @@
     border: @form-border-width solid @form-border;
 }
 
+// `!important` needed to override single line selector for `uk-select`
+
 .hook-form-focus() when not (@form-border-width = 0) {
-    border-color: @form-focus-border;
+    border-color: @form-focus-border !important;
 }
 
 .hook-form-disabled() when not (@form-border-width = 0) {
-    border-color: @form-disabled-border;
+    border-color: @form-disabled-border !important;
 }
-
-.uk-select:not([multiple]):not([size]):focus:extend(.uk-select:focus) {}
-.uk-select:not([multiple]):not([size]):disabled:extend(.uk-select:disabled) {}
 
 
 // Style modifiers
 // ========================================================================
 
 .hook-form-danger() when not (@form-border-width = 0) {
-    border-color: @form-danger-border;
+    border-color: @form-danger-border !important;
 }
-
-.uk-form-danger:not([multiple]):not([size]):extend(.uk-form-danger) {}
 
 .hook-form-success() when not (@form-border-width = 0) {
-    border-color: @form-success-border;
+    border-color: @form-success-border !important;
 }
-
-.uk-form-success:not([multiple]):not([size]):extend(.uk-form-success) {}
 
 .hook-form-blank() when not (@form-border-width = 0) {
     border-color: transparent;
@@ -149,16 +144,15 @@
 @inverse-form-radio-checked-border:                     transparent;
 
 .hook-inverse-form() when not (@form-border-width = 0) {
-    border-color: @inverse-form-border;
+    border-color: @inverse-form-border !important;
 }
 .hook-inverse-form-focus() when not (@form-border-width = 0) {
-    border-color: @inverse-form-focus-border;
+    border-color: @inverse-form-focus-border !important;
 }
 
 .hook-inverse-form-radio() when not (@form-border-width = 0) {
     border-color: @inverse-form-radio-border;
 }
-
 .hook-inverse-form-radio-focus() when not (@form-border-width = 0) {
     border-color: @inverse-form-radio-focus-border;
 }

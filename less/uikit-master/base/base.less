@@ -86,7 +86,7 @@
 // Blockquotes
 // ========================================================================
 
-.hook-base-blockquote() {
+.hook-base-blockquote() when not (@base-blockquote-text-align = inherit) {
     text-align: @base-blockquote-text-align;
 }
 

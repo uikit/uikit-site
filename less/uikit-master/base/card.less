@@ -182,20 +182,6 @@
 
     }
 
-    /*
-     * Badge
-     */
-
-    .uk-card-primary .uk-card-badge when (@card-primary-color-mode = @inverse-global-color-mode) {
-        color: @inverse-card-badge-color;
-        .hook-inverse-card-badge;
-    }
-
-    .uk-card-secondary .uk-card-badge when (@card-secondary-color-mode = @inverse-global-color-mode) {
-        color: @inverse-card-badge-color;
-        .hook-inverse-card-badge;
-    }
-
 }
 
 
@@ -203,6 +189,14 @@
 // ========================================================================
 
 @inverse-card-badge-background:                 transparent;
+
+.hook-inverse() {
+
+    .uk-card-badge {
+        .hook-inverse-card-badge;
+    }
+
+}
 
 .hook-inverse-card-badge() {}
 

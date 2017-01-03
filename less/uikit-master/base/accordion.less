@@ -17,8 +17,8 @@
 
 @accordion-icon-color:                         @global-color;
 
-@internal-image-accordion-icon-close:          "../../../images/accordion-close.svg";
-@internal-image-accordion-icon-open:           "../../../images/accordion-open.svg";
+@internal-accordion-icon-close-image:          "../../../images/accordion-close.svg";
+@internal-accordion-icon-open-image:           "../../../images/accordion-open.svg";
 
 
 // Component
@@ -46,12 +46,12 @@
         width: (@accordion-title-line-height * 1em);
         height: (@accordion-title-line-height * 1em);
         float: right;
-        .svg-fill(@internal-image-accordion-icon-close, "#000", @accordion-icon-color);
+        .svg-fill(@internal-accordion-icon-close-image, "#000", @accordion-icon-color);
         background-repeat: no-repeat;
         background-position: 50% 50%;
     }
 
-    .uk-open > &::after { .svg-fill(@internal-image-accordion-icon-open, "#000", @accordion-icon-color); }
+    .uk-open > &::after { .svg-fill(@internal-accordion-icon-open-image, "#000", @accordion-icon-color); }
 
 }
 
@@ -80,8 +80,8 @@
 
 .hook-inverse() {
 
-    .uk-accordion-title::after { .svg-fill(@internal-image-accordion-icon-close, "#000", @inverse-accordion-icon-color); }
+    .uk-accordion-title::after { .svg-fill(@internal-accordion-icon-close-image, "#000", @inverse-accordion-icon-color); }
 
-    .uk-open > .uk-accordion-title::after { .svg-fill(@internal-image-accordion-icon-open, "#000", @inverse-accordion-icon-color); }
+    .uk-open > .uk-accordion-title::after { .svg-fill(@internal-accordion-icon-open-image, "#000", @inverse-accordion-icon-color); }
 
 }

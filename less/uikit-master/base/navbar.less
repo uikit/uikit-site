@@ -109,12 +109,8 @@
 // Left
 //
 
-.hook-navbar-nav-item-line() when (@navbar-nav-item-line-margin-horizontal = 0) {
-    left: 0;
-}
-
-.hook-navbar-nav-item-line() when not (@navbar-nav-item-line-margin-horizontal = 0) {
-    left: ~'calc(0% + @{navbar-nav-item-line-margin-horizontal})';
+.hook-navbar-nav-item-line() {
+    left: @navbar-nav-item-line-margin-horizontal;
 }
 
 //
@@ -122,37 +118,28 @@
 //
 
 // No Slide
-.hook-navbar-nav-item-line() when not (@navbar-nav-item-line-slide-mode) and (@navbar-nav-item-line-margin-horizontal = 0) {
-    right: 0;
-}
-
-.hook-navbar-nav-item-line() when not (@navbar-nav-item-line-slide-mode) and not (@navbar-nav-item-line-margin-horizontal = 0) {
-    right: ~'calc(0% + @{navbar-nav-item-line-margin-horizontal})';
+.hook-navbar-nav-item-line() when not (@navbar-nav-item-line-slide-mode) {
+    right: @navbar-nav-item-line-margin-horizontal;
 }
 
 // Slide
+// 0 can't be unitless when using `calc`
+// 102% because of Safari rounding issue
+
 .hook-navbar-nav-item-line() when (@navbar-nav-item-line-slide-mode) and (@navbar-nav-item-line-margin-horizontal = 0) {
     right: 100%;
 }
 
 .hook-navbar-nav-item-line() when (@navbar-nav-item-line-slide-mode) and not (@navbar-nav-item-line-margin-horizontal = 0) {
-    right: ~'calc(100% - @{navbar-nav-item-line-margin-horizontal})';
+    right: ~'calc(102% - @{navbar-nav-item-line-margin-horizontal})';
 }
 
-.hook-navbar-nav-item-hover-line() when (@navbar-nav-item-line-slide-mode) and (@navbar-nav-item-line-margin-horizontal = 0) {
-    right: 0;
+.hook-navbar-nav-item-hover-line() when (@navbar-nav-item-line-slide-mode) {
+    right: @navbar-nav-item-line-margin-horizontal;
 }
 
-.hook-navbar-nav-item-active-line() when (@navbar-nav-item-line-slide-mode) and (@navbar-nav-item-line-margin-horizontal = 0) {
-    right: 0;
-}
-
-.hook-navbar-nav-item-hover-line() when (@navbar-nav-item-line-slide-mode) and not (@navbar-nav-item-line-margin-horizontal = 0) {
-    right: ~'calc(0% + @{navbar-nav-item-line-margin-horizontal})';
-}
-
-.hook-navbar-nav-item-active-line() when (@navbar-nav-item-line-slide-mode) and not (@navbar-nav-item-line-margin-horizontal = 0) {
-    right: ~'calc(0% + @{navbar-nav-item-line-margin-horizontal})';
+.hook-navbar-nav-item-active-line() when (@navbar-nav-item-line-slide-mode) {
+    right: @navbar-nav-item-line-margin-horizontal;
 }
 
 //

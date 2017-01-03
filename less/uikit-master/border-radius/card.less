@@ -35,15 +35,25 @@
 // Media
 // ========================================================================
 
-.hook-card-media() { overflow: hidden; }
+.hook-card-media() when not (@card-border-radius = 0) {
+    overflow: hidden;
+}
 
-.hook-card-media-top() { border-radius: @card-border-radius @card-border-radius 0 0; }
+.hook-card-media-top() when not (@card-border-radius = 0) {
+    border-radius: @card-border-radius @card-border-radius 0 0;
+}
 
-.hook-card-media-bottom() { border-radius: 0 0 @card-border-radius @card-border-radius; }
+.hook-card-media-bottom() when not (@card-border-radius = 0) {
+    border-radius: 0 0 @card-border-radius @card-border-radius;
+}
 
-.hook-card-media-left() { border-radius: @card-border-radius 0 0 @card-border-radius; }
+.hook-card-media-left() when not (@card-border-radius = 0) {
+    border-radius: @card-border-radius 0 0 @card-border-radius;
+}
 
-.hook-card-media-right() { border-radius: 0 @card-border-radius @card-border-radius 0; }
+.hook-card-media-right() when not (@card-border-radius = 0) {
+    border-radius: 0 @card-border-radius @card-border-radius 0;
+}
 
 
 // Title
