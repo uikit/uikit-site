@@ -42,6 +42,17 @@
    Theme
  ========================================================================== */
 
+@sidebar-left-width:     220px;
+@sidebar-left-width-xl:  300px;
+
+@sidebar-right-width:    200px;
+@sidebar-right-left:     0px;
+@sidebar-right-left-xl:  60px;
+
+
+/* HTML
+ ========================================================================== */
+
 /*
  * Force vertical scrollbar
  */
@@ -49,49 +60,86 @@
 html { overflow-y: scroll; }
 
 
-/* ========================================================================
-   Documentation Page
+/* Documentation Sidebars
  ========================================================================== */
 
-.tm-docs-navigation {
+/*
+ * Sidebar Left
+ */
+
+.tm-sidebar-left {
     position: fixed;
-    padding: @navbar-nav-item-padding-horizontal;
     top: @navbar-nav-item-height;
-    width: 200px;
     bottom: 0;
+    box-sizing: border-box;
+    width: @sidebar-left-width !important;
+    padding: 30px 30px 60px 30px;
     border-right: 1px @global-border solid;
     overflow: auto;
 }
 
-.tm-docs-heading a {
-    position: relative;
-    color: currentColor;
-    text-decoration: none;
-}
+/*
+ * Sidebar Right
+ */
 
-h2.tm-docs-heading:hover a:before {
-    content: "#";
+.tm-sidebar-right {
     position: absolute;
-    left: -25px;
-    color: @global-muted-color;
+    top: 0;
+    left: ~'calc(100% + @{sidebar-right-left})';
+    width: @sidebar-right-width;
 }
 
+/* Tablet landscape and bigger */
 @media (min-width: @breakpoint-medium) {
 
-    .tm-docs-view {
-        padding-left: 200px;
-    }
+    .tm-sidebar-left + .tm-main { padding-left: @sidebar-left-width; }
+
 }
 
-/* Syntax Highlighter
+/* Desktop and bigger */
+@media (min-width: @breakpoint-large) {
+
+    .tm-sidebar-right { left: ~'calc(100% + @{sidebar-right-left})'; }
+
+    .tm-sidebar-left + .tm-main { padding-left: @sidebar-left-width - (@sidebar-right-width + @sidebar-right-left); }
+
+}
+
+/* Large screen and bigger */
+@media (min-width: 1400px) {
+
+    .tm-sidebar-left {
+        width: @sidebar-left-width-xl !important;
+        padding: 45px 45px 60px 45px;
+    }
+
+    .tm-sidebar-right { left: ~'calc(100% + @{sidebar-right-left-xl})'; }
+
+    .tm-sidebar-left + .tm-main { padding-left: @sidebar-left-width-xl - (@sidebar-right-width + @sidebar-right-left-xl); }
+
+}
+
+
+/* Utilities
  ========================================================================== */
 
 /*
- * Reset highlight.js
+ * Heading fragment
  */
 
-.hljs {
-    padding: 0;
-    background: transparent;
-    overflow: visible;
+.tm-heading-fragment > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2.tm-heading-fragment > a {
+    display: block;
+    margin-left: -25px;
+}
+
+h2.tm-heading-fragment > a:before {
+    content: "#";
+    width: 25px;
+    float: left;
+    color: @global-muted-color;
 }
