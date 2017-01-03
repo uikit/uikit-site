@@ -42,7 +42,7 @@
    Theme
  ========================================================================== */
 
-@sidebar-left-width:     220px;
+@sidebar-left-width:     240px;
 @sidebar-left-width-xl:  300px;
 
 @sidebar-right-width:    200px;
@@ -73,7 +73,7 @@ html { overflow-y: scroll; }
     bottom: 0;
     box-sizing: border-box;
     width: @sidebar-left-width !important;
-    padding: 30px 30px 60px 30px;
+    padding: 40px 40px 60px 40px;
     border-right: 1px @global-border solid;
     overflow: auto;
 }
@@ -122,6 +122,22 @@ html { overflow-y: scroll; }
 
 /* Utilities
  ========================================================================== */
+
+/*
+ * Nav
+ */
+
+.tm-nav > li.uk-active > a { position: relative; }
+
+.tm-nav > li.uk-active > a:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -25px;
+    width: 15px;
+    border-top: 1px solid @global-primary-background;
+}
+
 
 /*
  * Heading fragment

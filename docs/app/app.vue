@@ -37,7 +37,7 @@
 
             <h3>Documentation</h3>
 
-            <ul class="uk-nav uk-nav-default" v-bind:class="{ 'uk-margin-top': index }" v-for="(pages, category, index) in navigation">
+            <ul class="tm-nav uk-nav uk-nav-default" v-bind:class="{ 'uk-margin-top': index }" v-for="(pages, category, index) in navigation">
                 <li class="uk-nav-header">{{category}}</li>
                 <router-link tag="li" :to="p" v-for="(p, label) in pages" exact><a>{{label}}</a></router-link>
             </ul>
@@ -50,9 +50,9 @@
                 <router-view></router-view>
 
                 <div class="tm-sidebar-right uk-visible@l">
-                    <div v-if="!loading" uk-sticky="offset: 120">
+                    <div v-if="!loading" uk-sticky="offset: 160">
 
-                        <ul class="uk-nav uk-nav-default uk-nav-parent-icon">
+                        <ul class="tm-nav uk-nav uk-nav-default uk-nav-parent-icon">
                             <li v-for="(id, subject) in ids">
                                 <a v-scroll :href="'#'+id">{{ subject }}</a>
                             </li>
