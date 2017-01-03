@@ -12,7 +12,7 @@ The Base component utilizes styling of the famous [Normalize.css](http://necolas
 
 ## Links
 
-Turn text into hypertext using the <a href="#">&lt;a&gt;</a> element. You can also add the `.uk-link` class to a `<span>` or similar element to apply the default link styling. For additional styling options, take a look at the [Link component](link.md).
+Turn text into hypertext using the `<a>` element. You can also add the `.uk-link` class to a `<span>` or similar element to apply the default link styling. For additional styling options, take a look at the [Link component](link.md).
 
 ***
 
