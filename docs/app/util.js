@@ -47,7 +47,7 @@ export function parse(markdown, cb) {
     renderer.code = (code, lang, escaped) => lang == 'example' ? example(code) : '<div class="uk-margin-medium">' + base.code(code, lang, escaped) + '</div>';
     renderer.hr = () => `<hr class="uk-margin-large">`;
     renderer.table = (header, body) => `<div class="uk-overflow-auto"><table class="uk-table uk-table-striped"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
-    renderer.heading = (text, level) => `<h${level} class="uk-h${level > 1 ? level + 1 : level} tm-docs-heading"><a href="#${text.toLowerCase().replace(/ /g, "-")}">${text}</a></h${level}>`;
+    renderer.heading = (text, level) => `<h${level} class="uk-h${level > 1 ? level + 1 : level} tm-docs-heading"><a href="#${text.toLowerCase().replace(/&(.+?);/g, '').replace(/  /g, '').replace(/[^a-z0-9-]/gi, '-').replace(/^-|-$/g, '')}">${text}</a></h${level}>`;
 
     return marked(markdown, {renderer}, cb);
 }
