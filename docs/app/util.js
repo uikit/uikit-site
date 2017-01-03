@@ -2,6 +2,11 @@ import uniqueid from 'unique-id';
 import $ from 'jquery';
 import { escape } from 'he';
 
+export function sluggify(text) {
+    return text.toLowerCase().trim().replace(/(&amp;| & )/g, '-and-').replace(/&(.+?);/g, '').replace(/[\s\W-]+/g, '-');
+}
+
+
 export function parse(markdown, cb) {
 
     var renderer = new marked.Renderer({langPrefix: 'lang-'}),
@@ -47,7 +52,7 @@ export function parse(markdown, cb) {
     renderer.code = (code, lang, escaped) => lang == 'example' ? example(code) : '<div class="uk-margin-medium">' + base.code(code, lang, escaped) + '</div>';
     renderer.hr = () => `<hr class="uk-margin-large">`;
     renderer.table = (header, body) => `<div class="uk-overflow-auto"><table class="uk-table uk-table-striped"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
-    renderer.heading = (text, level) => `<h${level} class="uk-h${level > 1 ? level + 1 : level} tm-docs-heading"><a href="#${text.toLowerCase().trim().replace(/&amp;/g, '-and-').replace(/[\s\W-]+/g, '-')}">${text}</a></h${level}>`;
+    renderer.heading = (text, level) => `<h${level} class="uk-h${level > 1 ? level + 1 : level} tm-docs-heading"><a href="#${sluggify(text)}">${text}</a></h${level}>`;
 
     return marked(markdown, {renderer}, cb);
 }

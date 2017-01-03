@@ -2,7 +2,7 @@
 
     import $ from 'jquery';
     import copy from 'copy-to-clipboard';
-    import { parse, openOnCodepen } from './util';
+    import { parse, openOnCodepen, sluggify } from './util';
     import Page from '../../app/page.vue';
 
     const navigation = require('./navigation.json');
@@ -61,7 +61,7 @@
 
                         el = $(el);
 
-                        let text = el.text().replace('#', ''), id = text.toLowerCase().replace(/ /g, '-');
+                        let text = el.text().replace('#', ''), id = sluggify(text);
 
                         el.attr('id', id);
 
