@@ -52,7 +52,7 @@
                 <div class="tm-sidebar-right uk-visible@l">
                     <div v-if="!loading" uk-sticky="offset: 160">
 
-                        <ul class="tm-nav uk-nav uk-nav-default uk-nav-parent-icon">
+                        <ul class="tm-nav uk-nav uk-nav-default uk-nav-parent-icon" v-scrollspynav>
                             <li v-for="(id, subject) in ids">
                                 <a v-scroll :href="'#'+id">{{ subject }}</a>
                             </li>

@@ -19,6 +19,20 @@ const routes = [
 
 const navigation = require('./navigation.json');
 
+
+Vue.directive('scrollspynav', {
+
+    componentUpdated: function (el) {
+
+        if (el.__uikit__ && el.__uikit__.scrollspyNav) {
+            el.__uikit__.scrollspyNav.$destroy()
+        }
+
+        UIkit.scrollspyNav(el, {closest: 'li', scroll: true});
+    }
+});
+
+
 $(function () {
 
     const app = new Vue({

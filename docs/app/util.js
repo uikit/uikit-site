@@ -6,14 +6,12 @@ export function sluggify(text) {
     return text.toLowerCase().trim().replace(/(&amp;| & )/g, '-and-').replace(/&(.+?);/g, '').replace(/[\s\W-]+/g, '-');
 }
 
-
 export function parse(markdown, cb) {
 
     var renderer = new marked.Renderer({langPrefix: 'lang-'}),
         base = new marked.Renderer({langPrefix: 'lang-'}),
-        slugify = text => text.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, ''),
         modal = (href, text) => {
-            var slug = 'modal-' + slugify(text);
+            var slug = 'modal-' + sluggify(text);
             return `<a href="#${slug}" uk-toggle><p class="uk-margin-large-bottom"><img src="${href}" alt="${text}"></p></a>
                     <div id="${slug}" class="uk-modal-full" uk-modal>
                     <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle uk-height-viewport">
