@@ -2,7 +2,7 @@
 
     <div>
 
-        <div class="uk-navbar-container" uk-sticky="top: 1; media: 960">
+        <div class="uk-navbar-container tm-navbar-container" uk-sticky="top: 1; media: 960">
 
             <nav class="uk-navbar">
 
@@ -22,7 +22,7 @@
                     </ul>
 
                     <div class="uk-navbar-item uk-visible@m">
-                        <a class="uk-button uk-button-secondary" href="../download">Download <span class="uk-margin-small-left" uk-icon="icon: download"></span></a>
+                        <a class="uk-button uk-button-default tm-button-default" href="../download">Download <span class="uk-margin-small-left" uk-icon="icon: download"></span></a>
                     </div>
 
                     <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas" uk-toggle></a>

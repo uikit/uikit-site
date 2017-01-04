@@ -50,6 +50,36 @@
 @sidebar-right-left:     0px;
 @sidebar-right-left-xl:  60px;
 
+//
+// Button overrides
+//
+
+@button-default-background:                     transparent;
+@button-default-hover-background:               transparent;
+
+@button-border-width:                           @global-border-width;
+
+@button-default-border:                         @global-border;
+@button-default-hover-border:                   darken(@global-border, 10%);
+@button-default-active-border:                  darken(@global-border, 20%);
+
+@inverse-button-default-background:             transparent;
+@inverse-button-default-color:                  @inverse-global-color;
+@inverse-button-default-hover-background:       transparent;
+@inverse-button-default-hover-color:            @inverse-global-emphasis-color;
+@inverse-button-default-active-background:      @inverse-global-primary-background;
+@inverse-button-default-active-color:           @inverse-global-inverse-color;
+@inverse-button-default-border:                 @inverse-global-muted-color;
+@inverse-button-default-hover-border:           @inverse-global-emphasis-color;
+@inverse-button-default-active-border:          @inverse-global-emphasis-color;
+
+//
+// Theme Navbar
+//
+
+@theme-navbar-background:                       linear-gradient(to left, #26A3F4, #1D87F1);
+@theme-navbar-color-mode:                       light;
+
 
 /* HTML
  ========================================================================== */
@@ -59,6 +89,14 @@
  */
 
 html { overflow-y: scroll; }
+
+
+/* Theme Navbar
+ ========================================================================== */
+
+.tm-navbar-container:not(.uk-navbar-transparent) { background: @theme-navbar-background; }
+
+.tm-navbar-container:not(.uk-navbar-transparent):extend(.uk-light all) when (@theme-navbar-color-mode = light) {}
 
 
 /* Documentation Sidebars
@@ -160,3 +198,11 @@ h2.tm-heading-fragment > a:before {
     float: left;
     color: @global-muted-color;
 }
+
+
+/*
+ * Button
+ */
+
+.tm-button-default,
+.tm-button-primary { border-radius: 500px; }

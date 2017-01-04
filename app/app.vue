@@ -2,7 +2,7 @@
 
     <div>
 
-        <nav class="uk-navbar-container" v-if="page != 'index'">
+        <nav class="uk-navbar-container tm-navbar-container" v-if="page != 'index'">
 
             <div class="uk-navbar">
 
@@ -22,7 +22,7 @@
                                 <a class="uk-button uk-button-text" href="./changelog" title="View Changelog">Changelog</a>
                             </div>
                             <div>
-                                <a class="uk-button uk-button-secondary" href="./download" title="Download">
+                                <a class="uk-button uk-button-default tm-button-default" href="./download" title="Download">
                                     Download <span class="uk-margin-small-left" uk-icon="icon: download"></span>
                                 </a>
                             </div>
