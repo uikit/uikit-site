@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Get familiar with the basic setup and structure of UIkit.</p>
 
-First of all you need to download UIkit. You can find the whole project and all source files on GitHub.
+First of all you need to download UIkit. Get the ZIP package or find the whole project and all source files on GitHub.
 
 ***
 
@@ -16,32 +16,33 @@ In the ZIP file you will find all CSS, JavaScript and image files ready to use f
 | `/images` | Contains all the images used within UIkit ( e.g. icons ) |
 | `/js`     | Contains all UIkit JavaScript files and minified versions. |
 
+**Note** This is the structure found in the ZIP file. Alternative sources, such as the GitHub version and the Bower package follow a slightly different structure and contain more files, for example Less files.
+
 ```html
 /css
 
-    <!-- UIkit with CSS components -->
+    <!-- UIkit with base styling for all components -->
     uikit.css
     uikit.min.css
 
-    <!-- Advanced components -->
-    /components
+    <!-- Styling of the included sample theme. Can be used instead of uikit.css -->
+    uikit.theme.css
+    uikit.theme.min.css
 
 /images
-    <!-- Background images -->
-    /backgrounds
 
-    <!-- Component specific images -->
-    /components
-
-    <!-- Icons -->
-    /symbols
+    <!--Includes images for icons, backgrounds and additional components -->
 
 /js
-    <!-- JavaScript and minified version -->
+    <!-- JavaScript of UIkit core and ALL components -->
     uikit.js
     uikit.min.js
 
-    <!-- Advanced components -->
+    <!-- JavaScript of core functionality, without additional components -->
+    uikit-core.js
+    uikit-core.min.js
+
+    <!-- Advanced components, only needed when including uikit-core.min.js -->
     /components
 ```
 

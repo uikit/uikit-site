@@ -1,6 +1,6 @@
 # Less files
 
-<p class="uk-text-lead">A separate Bower UIkit repository contains all distribution files including Less source files.</p>
+<p class="uk-text-lead">A separate Bower package contains all UIkit distribution files including Less source files, but omits source and build files that you will not need.</p>
 
 ## Install with Bower
 
@@ -27,4 +27,4 @@ Using Less is pretty straightforward. Just include UIkit and additional componen
 
 ### Working with Less
 
-When working with Less files and customizing the UIkit components, have a look at the [best practices](theme.md#best-practices) that we have collected.
+When working with Less files and customizing the UIkit components, have a look at the [best practices](theme.md#best-practices) we have collected.

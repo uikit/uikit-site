@@ -15,7 +15,10 @@ UIkit is built on [Less](http://lesscss.org), a CSS preprocessor, which adds var
 | Folder   | Description |
 | -------- | ----------- |
 | `/src`   | Contains all Less and JavaScript component files. |
+| `/dist`  | Contains the compiled CSS and concatenated JS files, updated on every release. |
 | `/tests` | Contains HTML test files of all components. |
+
+**Note** You might not need the whole Github source. If you just want the compiled files, you can simply download the ZIP package. If you want to include UIkit in your own project, you can grab the [Bower package](less.md) which also includes Less files.
 
 ***
 

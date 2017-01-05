@@ -121,9 +121,7 @@ custom/
         ...
 ```
 
-The entry point for the Less compiler:
-
-`/custom/my-theme.less`
+The entry point for the Less compiler, `/custom/my-theme.less`.
 
 ```less
 // Core
@@ -133,12 +131,9 @@ The entry point for the Less compiler:
 @import "my-theme/_import.less";
 ```
 
-**Note** The imported `uikit.less` is a prepared distribution that contains all UIkit components. If you do not need all of them, you can also choose `uikit.site.less` with components for a typical website or `uikit.app.less` with components for a typical webapp.
+Your theme folder has one file which imports all single component customizations, `custom/my-theme/_import.less`.
 
-Your theme folder has one file which imports all single component customizations:
-
-`custom/my-theme/_import.less`
-
+```
 @import "accordion.less";
 @import "alert.less";
 // ...
