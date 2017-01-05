@@ -50,7 +50,7 @@ export function parse(markdown, cb) {
     renderer.link = (href, title, text) => href.match(/\.md/) ? base.link(href.replace(/.md(.*)/, '$1'), title, text) : base.link(href, title, text);
     renderer.code = (code, lang, escaped) => lang == 'example' ? example(code) : '<div class="uk-margin-medium">' + base.code(code, lang, escaped) + '</div>';
     renderer.hr = () => `<hr class="uk-margin-large">`;
-    renderer.table = (header, body) => `<div class="uk-overflow-auto"><table class="uk-table uk-table-striped"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
+    renderer.table = (header, body) => `<div class="uk-overflow-auto"><table class="uk-table"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
     renderer.heading = (text, level) => `<h${level} class="uk-h${level > 1 ? level + 1 : level} tm-heading-fragment"><a href="#${sluggify(text)}">${text}</a></h${level}>`;
 
     return marked(markdown, {renderer}, cb);

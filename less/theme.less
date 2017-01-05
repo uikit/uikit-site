@@ -1,16 +1,5 @@
 // UIkit Core
-@import "../assets/uikit/src/less/uikit.less";
-
-// UIkit Master Theme
-@import "uikit-master/base/_import.less";
-@import "uikit-master/typo/_import.less";
-@import "uikit-master/border/_import.less";
-@import "uikit-master/border-radius/_import.less";
-@import "uikit-master/background-image/_import.less";
-@import "uikit-master/box-shadow/_import.less";
-
-// UIkit Theme
-@import "uikit/_import.less";
+@import "../assets/uikit/src/less/uikit.theme.less";
 
 // Highlight.js
 @import "highlight.less";
@@ -39,6 +28,71 @@
 }
 
 
+// UIkit
+// ========================================================================
+
+
+@global-font-family:                            ProximaNova;
+@global-font-size:                              15px;
+
+@global-xxlarge-font-size:                      38px;
+@global-xlarge-font-size:                       30px;
+@global-large-font-size:                        24px;
+@global-medium-font-size:                       20px;
+@global-small-font-size:                        14px;
+
+@global-muted-color:                            #aaa;
+
+@global-border:                                 #e5e5e5;
+
+
+//
+// Base
+//
+
+
+@base-code-font-size:                           12px;
+
+@base-heading-font-weight:                      300;
+
+@base-pre-font-size:                            12px;
+
+.hook-base-body() {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+
+//
+// Container
+//
+
+@container-small-max-width:                     650px;
+
+
+//
+// Nav
+//
+
+@nav-header-font-size:                          12px;
+
+//
+// Text
+//
+
+.hook-text-lead() {
+    font-weight: 300;
+}
+
+//
+// Inverse
+//
+
+@inverse-global-color:                          fade(@global-inverse-color, 80%);
+@inverse-global-muted-color:                    fade(@global-inverse-color, 60%);
+
+
 /* ========================================================================
    Theme
  ========================================================================== */
@@ -54,31 +108,30 @@
 // Button overrides
 //
 
-@button-default-background:                     transparent;
-@button-default-hover-background:               transparent;
+// @button-default-background:                     transparent;
+// @button-default-hover-background:               transparent;
 
-@button-border-width:                           @global-border-width;
+// @button-border-width:                           @global-border-width;
 
-@button-default-border:                         @global-border;
-@button-default-hover-border:                   darken(@global-border, 10%);
-@button-default-active-border:                  darken(@global-border, 20%);
+// @button-default-border:                         @global-border;
+// @button-default-hover-border:                   darken(@global-border, 10%);
+// @button-default-active-border:                  darken(@global-border, 20%);
 
-@inverse-button-default-background:             transparent;
-@inverse-button-default-color:                  @inverse-global-color;
-@inverse-button-default-hover-background:       transparent;
-@inverse-button-default-hover-color:            @inverse-global-emphasis-color;
-@inverse-button-default-active-background:      @inverse-global-primary-background;
-@inverse-button-default-active-color:           @inverse-global-inverse-color;
-@inverse-button-default-border:                 @inverse-global-muted-color;
-@inverse-button-default-hover-border:           @inverse-global-emphasis-color;
-@inverse-button-default-active-border:          @inverse-global-emphasis-color;
+// @inverse-button-default-background:             transparent;
+// @inverse-button-default-color:                  @inverse-global-color;
+// @inverse-button-default-hover-background:       transparent;
+// @inverse-button-default-hover-color:            @inverse-global-emphasis-color;
+// @inverse-button-default-active-background:      @inverse-global-primary-background;
+// @inverse-button-default-active-color:           @inverse-global-inverse-color;
+// @inverse-button-default-border:                 @inverse-global-muted-color;
+// @inverse-button-default-hover-border:           @inverse-global-emphasis-color;
+// @inverse-button-default-active-border:          @inverse-global-emphasis-color;
 
-//
-// Theme Navbar
-//
+// //
+// // Theme Navbar
+// //
 
-@theme-navbar-background:                       linear-gradient(to left, #26A3F4, #1D87F1);
-@theme-navbar-color-mode:                       light;
+
 
 
 /* HTML
@@ -94,9 +147,9 @@ html { overflow-y: scroll; }
 /* Theme Navbar
  ========================================================================== */
 
-.tm-navbar-container:not(.uk-navbar-transparent) { background: @theme-navbar-background; }
+// .tm-navbar-container:not(.uk-navbar-transparent) { background: @theme-navbar-background; }
 
-.tm-navbar-container:not(.uk-navbar-transparent):extend(.uk-light all) when (@theme-navbar-color-mode = light) {}
+// .tm-navbar-container:not(.uk-navbar-transparent):extend(.uk-light all) when (@theme-navbar-color-mode = light) {}
 
 
 /* Documentation Sidebars
@@ -159,8 +212,23 @@ html { overflow-y: scroll; }
 }
 
 
-/* Utilities
+
+
+
+/* UIkit modifier
  ========================================================================== */
+
+/*
+ * Navbar
+ */
+
+.tm-navbar-container:not(.uk-navbar-transparent) {
+    background: linear-gradient(to left, #26A3F4, #1D87F1);
+}
+
+// Color Mode
+.tm-navbar-container:not(.uk-navbar-transparent):extend(.uk-light all) {}
+
 
 /*
  * Nav
@@ -177,6 +245,25 @@ html { overflow-y: scroll; }
     border-top: 1px solid @global-primary-background;
 }
 
+.tm-nav .uk-nav-header {
+    padding: 8px 0;
+    border-bottom: 1px solid @global-border;
+}
+
+
+
+/*
+ * Button
+ */
+
+.tm-button-default,
+.tm-button-primary { border-radius: 500px; }
+
+
+
+
+/* Utilities
+ ========================================================================== */
 
 /*
  * Heading fragment
@@ -199,10 +286,3 @@ h2.tm-heading-fragment > a:before {
     color: @global-muted-color;
 }
 
-
-/*
- * Button
- */
-
-.tm-button-default,
-.tm-button-primary { border-radius: 500px; }
