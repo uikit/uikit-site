@@ -10,11 +10,11 @@ First of all you need to download UIkit. You can find the whole project and all 
 
 In the ZIP file you will find all CSS, JavaScript and image files ready to use for your project. The core framework of UIkit has almost no styling in order to keep it slim.
 
-| Folder | Description |
-| --- | --- |
-| /css | Contains all UIkit CSS files and minified versions. |
-| /images | Contains all the images used within UIkit ( e.g. icons ) |
-| /js | Contains all UIkit JavaScript files and minified versions. |
+| Folder    | Description |
+| --------- | --- |
+| `/css`    | Contains all UIkit CSS files and minified versions. |
+| `/images` | Contains all the images used within UIkit ( e.g. icons ) |
+| `/js`     | Contains all UIkit JavaScript files and minified versions. |
 
 ```html
 /css

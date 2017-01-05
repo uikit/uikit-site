@@ -7,14 +7,15 @@
 UIkit is hosted on [GitHub](https://github.com/uikit/uikit) and licensed under [MIT license](http://opensource.org/licenses/MIT). You're welcome to use it for all your personal and commercial projects. To access all source files, just clone the [Github repository](https://github.com/uikit/uikit) or [download](https://github.com/uikit/uikit/releases) the latest version.
 
 ***
+
 ## File structure
 
 UIkit is built on [Less](http://lesscss.org), a CSS preprocessor, which adds variables, mixins and much more to CSS. It compiles code written in Less into CSS. The main file structure of UIkit is as follows.
 
-| Folder | Description |
-| ------ | ----------- |
-| /src	 | Contains all Less and JavaScript component files. |
-| /tests | Contains HTML test files of all components. |
+| Folder   | Description |
+| -------- | ----------- |
+| `/src`   | Contains all Less and JavaScript component files. |
+| `/tests` | Contains HTML test files of all components. |
 
 ***
 
