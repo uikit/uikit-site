@@ -13,7 +13,7 @@
             </p>
 
             <div class="uk-margin">
-                <a class="uk-button uk-button-primary tm-button-primary uk-margin-right" href="download">
+                <a class="uk-button uk-button-primary tm-button-primary uk-margin-right" href="download" uikit-download>
                     <span class="uk-text-middle">Download</span>
                     <span uk-icon="icon: download"></span>
                 </a>
@@ -60,3 +60,36 @@
 
     </div>
 </div>
+
+
+<script>
+
+    jQuery(function($) {
+        $.ajax({
+                dataType : "jsonp",
+                url      : "https://api.github.com/repos/uikit/uikit?callback=ukghapi&nocache="+Math.random(),
+                success  : function(data){
+
+                    if(!data) return;
+
+                    if(data.data.watchers){
+                        $("[uikit-stargazers]").html(data.data.watchers);
+                    }
+
+                    if(data.data.forks){
+                        $("[uikit-forks]").html(data.data.forks);
+                    }
+                }
+            });
+
+        $.get("assets/uikit/package.json", {nocache: Math.random()}, function(data){
+
+            $(function(){
+                $("[uikit-download]").attr("href", "https://github.com/uikit/uikit/releases/download/v"+data.version+"/uikit-"+data.version+".zip")
+                $("[uikit-version]").text("Version "+data.version);
+            });
+
+        }, 'json');
+    });
+
+</script>
