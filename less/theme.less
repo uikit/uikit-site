@@ -31,7 +31,6 @@
 // UIkit
 // ========================================================================
 
-
 @global-font-family:                            ProximaNova;
 @global-font-size:                              15px;
 
@@ -45,17 +44,19 @@
 
 @global-border:                                 #e5e5e5;
 
-
 //
 // Base
 //
-
 
 @base-code-font-size:                           12px;
 
 @base-heading-font-weight:                      300;
 
 @base-pre-font-size:                            12px;
+@base-pre-padding:                              25px;
+@base-pre-background:                           @global-muted-background;
+@base-pre-border-width:                         0;
+@base-pre-border-radius:                        0;
 
 .hook-base-body() {
     -webkit-font-smoothing: antialiased;
@@ -63,13 +64,11 @@
     text-rendering: optimizeLegibility;
 }
 
-
 //
 // Container
 //
 
 @container-small-max-width:                     650px;
-
 
 //
 // Nav
@@ -78,12 +77,32 @@
 @nav-header-font-size:                          12px;
 
 //
+// Tab
+//
+
+@tab-item-padding-horizontal:                   20px;
+@tab-item-padding-vertical:                     10px;
+@tab-item-border-width:                         2px;
+@tab-item-font-size:                            12px;
+
+//
+// Table
+//
+
+@table-header-cell-font-size:                   12px;
+
+//
+// Label
+//
+
+@label-font-size:                               12px;
+
+//
 // Text
 //
 
-.hook-text-lead() {
-    font-weight: 300;
-}
+.hook-text-lead() { font-weight: 300; }
+.hook-text-large() { font-weight: 300; }
 
 //
 // Inverse
@@ -104,35 +123,6 @@
 @sidebar-right-left:     0px;
 @sidebar-right-left-xl:  60px;
 
-//
-// Button overrides
-//
-
-// @button-default-background:                     transparent;
-// @button-default-hover-background:               transparent;
-
-// @button-border-width:                           @global-border-width;
-
-// @button-default-border:                         @global-border;
-// @button-default-hover-border:                   darken(@global-border, 10%);
-// @button-default-active-border:                  darken(@global-border, 20%);
-
-// @inverse-button-default-background:             transparent;
-// @inverse-button-default-color:                  @inverse-global-color;
-// @inverse-button-default-hover-background:       transparent;
-// @inverse-button-default-hover-color:            @inverse-global-emphasis-color;
-// @inverse-button-default-active-background:      @inverse-global-primary-background;
-// @inverse-button-default-active-color:           @inverse-global-inverse-color;
-// @inverse-button-default-border:                 @inverse-global-muted-color;
-// @inverse-button-default-hover-border:           @inverse-global-emphasis-color;
-// @inverse-button-default-active-border:          @inverse-global-emphasis-color;
-
-// //
-// // Theme Navbar
-// //
-
-
-
 
 /* HTML
  ========================================================================== */
@@ -142,14 +132,6 @@
  */
 
 html { overflow-y: scroll; }
-
-
-/* Theme Navbar
- ========================================================================== */
-
-// .tm-navbar-container:not(.uk-navbar-transparent) { background: @theme-navbar-background; }
-
-// .tm-navbar-container:not(.uk-navbar-transparent):extend(.uk-light all) when (@theme-navbar-color-mode = light) {}
 
 
 /* Documentation Sidebars
@@ -260,6 +242,29 @@ html { overflow-y: scroll; }
 .tm-button-primary { border-radius: 500px; }
 
 
+//
+// Button overrides
+//
+
+// @button-default-background:                     transparent;
+// @button-default-hover-background:               transparent;
+
+// @button-border-width:                           @global-border-width;
+
+// @button-default-border:                         @global-border;
+// @button-default-hover-border:                   darken(@global-border, 10%);
+// @button-default-active-border:                  darken(@global-border, 20%);
+
+// @inverse-button-default-background:             transparent;
+// @inverse-button-default-color:                  @inverse-global-color;
+// @inverse-button-default-hover-background:       transparent;
+// @inverse-button-default-hover-color:            @inverse-global-emphasis-color;
+// @inverse-button-default-active-background:      @inverse-global-primary-background;
+// @inverse-button-default-active-color:           @inverse-global-inverse-color;
+// @inverse-button-default-border:                 @inverse-global-muted-color;
+// @inverse-button-default-hover-border:           @inverse-global-emphasis-color;
+// @inverse-button-default-active-border:          @inverse-global-emphasis-color;
+
 
 
 /* Utilities
@@ -285,4 +290,3 @@ h2.tm-heading-fragment > a:before {
     float: left;
     color: @global-muted-color;
 }
-
