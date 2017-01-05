@@ -71,10 +71,10 @@ export function openOnCodepen(code) {
         js: '',
         js_pre_processor: 'none',
         js_modernizr: false,
-        js_library: '',
+        js_library: 'jquery',
         html_classes: '',
-        css_external: '',
-        js_external: ''
+        css_external: 'https://getuikit.com/assets/uikit/css/uikit.theme.css',
+        js_external: 'https://getuikit.com/assets/uikit/js/uikit.js'
     };
 
     data = JSON.stringify(data)
