@@ -127,3 +127,4 @@ For an example of the scrollspy nav, just check out the fixed nav on the right s
 | `closest` | String | `uk-scrollspy-init-inview` | Target to apply the class to. |
 | `scroll` | Boolean | `false` | Adds the [Scroll component](scroll.md) to its links. |
 | `overflow` | Boolean | `true` | If overflow is set to true, the first or last item will stay active if above or below the navigation. |
+| `offset` | Number | `0` | Pixel offset added to scroll top. |
