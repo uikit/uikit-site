@@ -74,6 +74,13 @@
 @container-small-max-width:                     650px;
 
 //
+// Navbar
+//
+
+@inverse-navbar-nav-item-color:                @inverse-global-color;
+@inverse-navbar-nav-item-hover-color:          @inverse-global-emphasis-color;
+
+//
 // Nav
 //
 
@@ -106,6 +113,20 @@
 
 .hook-text-lead() { font-weight: 300; }
 .hook-text-large() { font-weight: 300; }
+
+//
+// Utility
+//
+
+@inverse-logo-color:                           @inverse-global-emphasis-color;
+@inverse-logo-hover-color:                     @inverse-global-emphasis-color;
+
+//
+// Off-canvas
+//
+
+@offcanvas-bar-background:                      #fff;
+@offcanvas-bar-color-mode:                      dark;
 
 //
 // Inverse
@@ -197,9 +218,6 @@ html { overflow-y: scroll; }
 }
 
 
-
-
-
 /* UIkit modifier
  ========================================================================== */
 
@@ -208,12 +226,43 @@ html { overflow-y: scroll; }
  */
 
 .tm-navbar-container:not(.uk-navbar-transparent) {
-    background: linear-gradient(to left, #26A3F4, #1D87F1);
+    background: linear-gradient(to left, #28a5f5, @global-primary-background);
 }
+
+.tm-navbar-container .uk-navbar-nav > li > a,
+.tm-navbar-container .uk-navbar-item:not(.uk-logo),
+.tm-navbar-container .uk-navbar-toggle { font-size: 12px; }
 
 // Color Mode
 .tm-navbar-container:not(.uk-navbar-transparent):extend(.uk-light all) {}
 
+// Line Mode
+@navbar-nav-item-line-margin-vertical:          30px;
+@navbar-nav-item-line-margin-horizontal:        @navbar-nav-item-padding-horizontal;
+@navbar-nav-item-line-height:                   1px;
+@navbar-nav-item-line-background:               currentColor;
+@navbar-nav-item-line-transition-duration:      0.3s;
+
+.tm-navbar-container .uk-navbar-nav > li > a {
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: @navbar-nav-item-line-margin-horizontal;
+        right: ~'calc(102% - @{navbar-nav-item-line-margin-horizontal})';
+        bottom: @navbar-nav-item-line-margin-vertical;
+        height: @navbar-nav-item-line-height;
+        background-color: @navbar-nav-item-line-background;
+        -webkit-transition: @navbar-nav-item-line-transition-duration ease-in-out;
+        transition: @navbar-nav-item-line-transition-duration ease-in-out;
+        -webkit-transition-property: right;
+        transition-property: right;
+    }
+}
+
+.tm-navbar-container .uk-navbar-nav > li > a:hover::before { right: @navbar-nav-item-line-margin-horizontal; }
 
 /*
  * Nav
@@ -234,8 +283,6 @@ html { overflow-y: scroll; }
     padding: 8px 0;
     border-bottom: 1px solid @global-border;
 }
-
-
 
 /*
  * Button

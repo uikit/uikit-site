@@ -42,14 +42,14 @@
             <div class="uk-offcanvas-bar">
                 <div class="uk-panel">
 
-                    <ul class="uk-nav uk-nav-default">
+                    <ul class="uk-nav uk-nav-default tm-nav">
                         <li class="uk-nav-header">General</li>
                         <li><a href="./index">Home</a></li>
                         <li><a href="./changelog">Changelog</a></li>
                         <li><a href="./download">Download</a></li>
                     </ul>
 
-                    <ul class="uk-nav uk-nav-default uk-margin-top" v-for="(pages, category, index) in navigation">
+                    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top" v-for="(pages, category, index) in navigation">
                         <li class="uk-nav-header">{{category}}</li>
                         <li v-for="(p, label) in pages" exact><a :href="'./docs/'+p">{{label}}</a></li>
                     </ul>
