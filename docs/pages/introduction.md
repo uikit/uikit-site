@@ -18,21 +18,10 @@ In the ZIP file you will find all CSS, JavaScript and image files ready to use f
 
 ```html
 /css
-    <!-- UIkit with the basic style -->
+
+    <!-- UIkit with CSS components -->
     uikit.css
     uikit.min.css
-
-    <!-- UIkit with all CSS components -->
-    uikit.all.css
-    uikit.all.min.css
-
-    <!-- UIkit with common CSS components for sites -->
-    uikit.site.css
-    uikit.site.min.css
-
-    <!-- UIkit with common CSS components for apps -->
-    uikit.app.css
-    uikit.app.min.css
 
     <!-- Advanced components -->
     /components

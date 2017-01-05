@@ -17,7 +17,7 @@ Download or clone UIkit and make sure you have Node installed (so that `npm` is 
 Create a file `my-theme.less` (or any other name) in the `/custom` folder and add the following import to include all Less components from the core framework. In this file, you will overwrite Less variables and add your own theme styles.
 
 ```less
-@import "../../src/less/uikit.all.less";
+@import "../../src/less/uikit.less";
 ```
 
 ### 3. Compile theme
@@ -32,7 +32,7 @@ The newly created themes will now be available in the test files, just navigate 
 
 ### Optional: Start with the default theme
 
-To get you started right away, we provide a default theme located in `/src/less/uikit.theme.all.less` which imports additional files from the `/src/less/theme` directory. This theme imports all default files and you will also find all theme files with their related hooks. So if you do not want to start empty, all you need to do is to duplicate this file and the `/src/less/theme` folder, move both into the `/custom` directory and rename them however you want.
+To get you started right away, we provide a default theme located in `/src/less/uikit.theme.less` which imports additional files from the `/src/less/theme` directory. This theme imports all default files and you will also find all theme files with their related hooks. So if you do not want to start empty, all you need to do is to duplicate this file and the `/src/less/theme` folder, move both into the `/custom` directory and rename them however you want.
 
 ***
 
@@ -101,7 +101,7 @@ Should there be neither a variable nor a hook available, you can of course creat
 
 ### Multiple Less files
 
-In the above examples, we have added all custom rules directly inside `/custom/my-theme.less`. When you simple change a few variables but are happy with the rest, this is perfectly fine. However, for more custom themes and larger projects, we recommend to only use this file as an entry point for the less compiler, but sort all rules into the according component files inside of a subfolder. This is the same structure that you can find in the default theme `/src/less/uikit.theme.all.less`.
+In the above examples, we have added all custom rules directly inside `/custom/my-theme.less`. When you simple change a few variables but are happy with the rest, this is perfectly fine. However, for more custom themes and larger projects, we recommend to only use this file as an entry point for the less compiler, but sort all rules into the according component files inside of a subfolder. This is the same structure that you can find in the default theme `/src/less/uikit.theme.less`.
 
 ```html
 custom/
@@ -127,19 +127,18 @@ The entry point for the Less compiler:
 
 ```less
 // Core
-@import "../../src/less/uikit.all.less";
+@import "../../src/less/uikit.less";
 
 // Theme
 @import "my-theme/_import.less";
 ```
 
-**Note** The imported `uikit.all.less` is a prepared distribution that contains all UIkit components. If you do not need all of them, you can also choose `uikit.site.less` with components for a typical website or `uikit.app.less` with components for a typical webapp.
+**Note** The imported `uikit.less` is a prepared distribution that contains all UIkit components. If you do not need all of them, you can also choose `uikit.site.less` with components for a typical website or `uikit.app.less` with components for a typical webapp.
 
 Your theme folder has one file which imports all single component customizations:
 
 `custom/my-theme/_import.less`
 
-```less
 @import "accordion.less";
 @import "alert.less";
 // ...

@@ -20,20 +20,10 @@ Using Less is pretty straightforward. Just include UIkit and additional componen
 
 ```
 // Import UIkit core
-@import "bower_components/uikit/src/less/uikit.all.less";
+@import "bower_components/uikit/src/less/uikit.less";
 
 // Your custom code goes here, e.g. mixins, variables
 ```
-
-### Included Less distributions
-
-In the example above, we have included `uikit.all.less` which imports all UIkit components. However, in some cases you do not need all of them. You can either import only the components, that you actually use in your project, or import one of the available distributions, that imports a number of components for typical use cases.
-
-| File | Description |
-| ---- | ----------- |
-| `uikit.all.less`  | Includes all UIkit components. |
-| `uikit.app.less`  | Includes components typically needed for web apps. |
-| `uikit.site.less` | Includes components typically used for standard websites. |
 
 ### Working with Less
 
