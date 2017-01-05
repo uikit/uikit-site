@@ -22,7 +22,10 @@
                     </ul>
 
                     <div class="uk-navbar-item uk-visible@m">
-                        <a class="uk-button uk-button-default tm-button-default" href="../download">Download <span class="uk-margin-small-left" uk-icon="icon: download"></span></a>
+                        <a class="uk-button uk-button-default tm-button-default" href="../download">
+                            <span class="uk-text-middle">Download</span>
+                            <span uk-icon="icon: download"></span>
+                        </a>
                     </div>
 
                     <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas" uk-toggle></a>
