@@ -2,7 +2,7 @@
 
     <div>
 
-        <nav class="uk-navbar-container tm-navbar-container" v-if="page != 'index'">
+        <nav class="uk-navbar-container tm-navbar-container">
 
             <div class="uk-navbar">
 
