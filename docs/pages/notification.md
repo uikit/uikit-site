@@ -89,7 +89,7 @@ You can close all open notifications by calling `UIkit.notification.closeAll()`.
 ```
 
 
-<script src="../assets/uikit/js/components/notification.min.js"></script>
+<script src="../assets/uikit/dist/js/components/notification.min.js"></script>
 <script>
 jQuery('button.demo').on('click', function() {
     UIkit.notification($(this).data());
