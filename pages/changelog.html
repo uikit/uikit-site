@@ -4,7 +4,7 @@
 
         <div class="uk-card uk-card-default uk-card-body">
 
-            <h1 class="uk-text-center">Changelog</h1>
+            <h1 class="uk-margin-medium uk-text-center">Changelog</h1>
 
             <div id="js-changelog"></div>
 
@@ -56,7 +56,7 @@
                 text = text.replace(/(\(.*?\))/, '<span class="uk-text-muted">$1</span>');
 
                 if (level == 2) {
-                    return '<h' + level + '>' + text + '</h' + level + '>';
+                    return '<h' + level + ' class="uk-h3">' + text + '</h' + level + '>';
                 }
 
                 if (level == 3) {
