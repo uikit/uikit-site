@@ -28,7 +28,7 @@ Vue.directive('scrollspynav', {
             el.__uikit__.scrollspyNav.$destroy()
         }
 
-        UIkit.scrollspyNav(el, {closest: 'li', scroll: true});
+        UIkit.scrollspyNav(el, {closest: 'li', scroll: true, offset: 100});
     }
 });
 
