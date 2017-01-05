@@ -436,7 +436,7 @@ The [Dropdown component](dropdown.md) allows you arrange the dropdown content in
 
     </div>
 
-</div>
+</nav>
 ```
 
 ***
@@ -560,7 +560,7 @@ Dropdowns can be aligned to the navbar's boundary. Just append the `boundary-ali
         </li>
     </div>
 
-</div>
+</nav>
 ```
 
 ***
