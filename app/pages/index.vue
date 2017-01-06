@@ -48,7 +48,7 @@
                     </li>
                 </ul>
 
-                <a class="uk-button uk-button-default tm-button-default uk-position-center-right uk-position-medium" href="./docs">UIkit 2 <span uk-icon="icon: arrow-right"></span></a>
+                <a class="uk-button uk-button-default tm-button-default uk-position-center-right uk-position-medium" href="./v2">UIkit 2 <span uk-icon="icon: arrow-right"></span></a>
 
             </div>
         </div>
