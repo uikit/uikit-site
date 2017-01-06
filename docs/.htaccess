@@ -1,7 +1,12 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # redirect v2 docs urls
+  RewriteRule ^(.*).html$ http://getuikit.com/v2/docs/$1.html [R=301,L]
+
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . index.html [L]
+
 </IfModule>
