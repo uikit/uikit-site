@@ -73,8 +73,8 @@ export function openOnCodepen(code) {
         js_modernizr: false,
         js_library: 'jquery',
         html_classes: '',
-        css_external: 'https://getuikit.com/assets/uikit/css/uikit.theme.css',
-        js_external: 'https://getuikit.com/assets/uikit/js/uikit.js'
+        css_external: 'https://getuikit.com/assets/uikit/dist/css/uikit.css',
+        js_external: 'https://getuikit.com/assets/uikit/dist/js/uikit.js'
     };
 
     data = JSON.stringify(data)
