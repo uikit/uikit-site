@@ -1,17 +1,22 @@
 <template>
 
-    <div class="uk-section uk-section-primary tm-section uk-preserve-color" uk-height-viewport="expand: true">
+    <div class="uk-section-primary tm-section">
 
-        <div class="uk-container uk-container-small">
+        <navbar></navbar>
 
-            <div class="uk-card uk-card-default uk-card-body">
+        <div class="uk-section uk-preserve-color" uk-height-viewport="expand: true">
+            <div class="uk-container uk-container-small">
 
-                <h1 class="uk-margin-medium uk-text-center">Changelog</h1>
 
-                <div ref="changelog"></div>
+                <div class="uk-card uk-card-default uk-card-body">
+
+                    <h1 class="uk-margin-medium uk-text-center">Changelog</h1>
+
+                    <div ref="changelog"></div>
+
+                </div>
 
             </div>
-
         </div>
 
     </div>

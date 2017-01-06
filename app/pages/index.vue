@@ -2,6 +2,8 @@
 
     <div class="uk-section-primary tm-section">
 
+        <navbar></navbar>
+
         <div class="uk-section uk-flex uk-flex-middle uk-text-center" uk-height-viewport="offset-top: true; offset-bottom: true">
             <div class="uk-width-1-1">
                 <div class="uk-container">
@@ -49,7 +51,7 @@
                 <a class="uk-button uk-button-default tm-button-default uk-position-center-right uk-position-medium" href="./docs">UIkit 2 <span uk-icon="icon: arrow-right"></span></a>
 
             </div>
-        </section>
+        </div>
 
     </div>
 

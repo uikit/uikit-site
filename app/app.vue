@@ -2,8 +2,6 @@
 
     <div>
 
-        <navbar></navbar>
-
         <router-view></router-view>
 
         <div id="offcanvas" uk-offcanvas="mode: push">
