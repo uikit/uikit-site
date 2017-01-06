@@ -2,11 +2,7 @@
 
     <div>
 
-        <div class="uk-navbar-container tm-navbar-container" uk-sticky="media: 960">
-
-            <navbar></navbar>
-
-        </div>
+        <navbar></navbar>
 
         <router-view></router-view>
 
