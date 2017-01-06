@@ -1,20 +1,19 @@
 import $ from 'jquery';
 import Vue from 'vue';
 import App from './app.vue';
-import Page from './page.vue';
 import Navbar from './navbar.vue';
+
+// Pages
+import IndexPage from './pages/index.vue';
+import ChangelogPage from './pages/changelog.vue';
+import DownloadPage from './pages/download.vue';
 
 const routes = [
 
-    {
-        path: '/',
-        redirect: '/index'
-    },
-
-    {
-        path: '*/:page',
-        component: Page
-    }
+    {path: '/', component: IndexPage },
+    {path: '/index', component: IndexPage },
+    {path: '/changelog', component: ChangelogPage },
+    {path: '/download', component: DownloadPage }
 
 ];
 
@@ -24,33 +23,25 @@ if (location.pathname && location.pathname != '/') {
     base = location.pathname.split('/').slice(0, -1).join('/');
 }
 
-$(function () {
+Vue.component('navbar', Navbar);
 
-    new Vue({
+new Vue({
 
-        el: '#app',
+    el: '#app',
 
-        extends: App,
+    extends: App,
 
-        data: () => ({
-            loading: false,
-            page: false
-        }),
+    data: () => ({
+        loading: false,
+        page: false
+    }),
 
-        router: new VueRouter({
-            base,
-            routes,
-            mode: 'history',
-            history: true,
-            linkActiveClass: 'uk-active'
-        }),
-
-        components: {
-
-            navbar: Navbar
-
-        }
-
-    });
+    router: new VueRouter({
+        base,
+        routes,
+        mode: 'history',
+        history: true,
+        linkActiveClass: 'uk-active'
+    })
 
 });

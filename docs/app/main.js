@@ -33,41 +33,38 @@ Vue.directive('scrollspynav', {
 });
 
 
-$(function () {
 
-    const app = new Vue({
+new Vue({
 
-        el: '#app',
+    el: '#app',
 
-        extends: App,
+    extends: App,
 
-        data: () => ({
-            navigation,
-            ids: {},
-            component: false,
-            loading: false,
-            page: false
-        }),
+    data: () => ({
+        navigation,
+        ids: {},
+        component: false,
+        loading: false,
+        page: false
+    }),
 
-        router: new VueRouter({
-            routes,
-            mode: 'history',
-            history: true,
-            linkActiveClass: 'uk-active'
-        }),
+    router: new VueRouter({
+        routes,
+        mode: 'history',
+        history: true,
+        linkActiveClass: 'uk-active'
+    }),
 
-        directives: {
+    directives: {
 
-            scroll: {
+        scroll: {
 
-                inserted: function (el) {
-                    UIkit.scroll(el);
-                }
-
+            inserted: function (el) {
+                UIkit.scroll(el);
             }
 
         }
 
-    });
+    }
 
 });

@@ -13,7 +13,7 @@
         <div class="uk-navbar-right">
 
             <ul class="uk-navbar-nav uk-visible@m">
-                <li><a href="./docs/">Documentation</a></li>
+                <li><a href="./docs/introduction">Documentation</a></li>
                 <router-link to="/changelog" tag="li"><a>Changelog</a></router-link>
             </ul>
 

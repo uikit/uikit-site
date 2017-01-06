@@ -8,7 +8,7 @@
 
                 <div class="uk-navbar-left">
 
-                    <a href="../index" class="uk-navbar-item uk-logo">
+                    <a href="../" class="uk-navbar-item uk-logo">
                         <span class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 2"></span> UIkit
                     </a>
 
