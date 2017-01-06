@@ -7,7 +7,7 @@
                 <div class="uk-container">
 
                     <p class="uk-margin-large-bottom">
-                        <img uk-svg src="./images/uikit-beta.svg">
+                        <img uk-svg :src="'./images/uikit-beta.svg'">
                     </p>
 
                     <p class="uk-margin-large uk-text-lead">
