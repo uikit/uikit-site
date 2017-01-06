@@ -1,3 +1,7 @@
+dependencies:
+  pre:
+    - bower update
+
 compile:
   override:
     - gulp compile
