@@ -1,5 +1,5 @@
 dependencies:
-  pre:
+  post:
     - bower update
 
 compile:
