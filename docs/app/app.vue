@@ -9,7 +9,7 @@
                 <div class="uk-navbar-left">
 
                     <a href="../" class="uk-navbar-item uk-logo">
-                        <span class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 2"></span> UIkit
+                        <canvas class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 2" width="40" height="40"></canvas> UIkit
                     </a>
 
                 </div>
@@ -22,7 +22,7 @@
                     </ul>
 
                     <div class="uk-navbar-item uk-visible@m">
-                        <a class="uk-button uk-button-default tm-button-default" href="../download">Download <span uk-icon="icon: download"></span>
+                        <a class="uk-button uk-button-default tm-button-default" href="../download">Download <canvas uk-icon="icon: download" width="20" height="20"></canvas>
                         </a>
                     </div>
 

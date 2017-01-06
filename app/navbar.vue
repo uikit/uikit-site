@@ -7,7 +7,7 @@
             <div class="uk-navbar-left">
 
                 <router-link class="uk-navbar-item uk-logo" to="/">
-                    <span class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 2"></span> UIkit
+                    <canvas class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 2" width="40" height="40"></canvas> UIkit
                 </router-link>
 
             </div>
@@ -20,7 +20,7 @@
                 </ul>
 
                 <div class="uk-navbar-item uk-visible@m">
-                    <router-link class="uk-button uk-button-default tm-button-default" to="/download">Download <span uk-icon="icon: download"></span>
+                    <router-link class="uk-button uk-button-default tm-button-default" to="/download">Download <canvas uk-icon="icon: download" width="40" height="40"></canvas>
                     </router-link>
                 </div>
 
