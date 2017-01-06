@@ -1,34 +1,36 @@
-<div class="uk-section uk-section-primary uk-flex uk-flex-middle uk-text-center" uk-height-viewport="mode: expand">
+<div class="uk-section uk-section-primary uk-flex uk-flex-middle uk-text-center">
     <div class="uk-width-1-1">
 
-        <div class="uk-container">
+        <div class="uk-container" uk-height-viewport="offset-top: true">
 
             <p class="uk-margin-large-bottom">
                 <span uk-icon="icon: uikit; ratio: 5"></span>
             </p>
 
-            <p class="uk-margin-large uk-text-large">
+            <p class="uk-margin-large uk-text-lead">
                 A lightweight and modular front-end framework<br class="uk-visible@s">
                 for developing fast and powerful web interfaces.
             </p>
 
-            <div class="uk-margin">
-                <a class="uk-button uk-button-primary tm-button-primary uk-margin-right" href="./download">
-                    <span class="uk-text-middle">Download</span>
-                    <span uk-icon="icon: download"></span>
-                </a>
-                <a class="uk-button uk-button-default tm-button-default" href="./docs">View Docs</a>
+            <div class="uk-child-width-auto uk-flex-inline uk-flex-center" uk-grid>
+                <div>
+                    <a class="uk-button uk-button-primary uk-button-large tm-button-primary" href="./docs">Get Started</a>
+                </div>
+                <div>
+                    <a class="uk-button uk-button-default uk-button-large tm-button-default" href="https://github.com/uikit/uikit">Github</a>
+                </div>
             </div>
 
         </div>
 
-        <div class="uk-position-bottom-center uk-position-medium">
-            <ul class="uk-subnav">
+        <div class="uk-container uk-container-expand uk-text-center uk-position-relative">
+
+            <ul class="uk-subnav uk-flex-inline uk-flex-middle uk-margin-remove">
                 <li>
-                    <a href="https://github.com/uikit/uikit">
-                        <span uk-icon="icon: github"></span>
-                        <span class="uk-text-middle">Github</span>
-                    </a>
+                    <span>
+                        <span class="uk-text-middle">Version</span>
+                        <span uikit-version></span>
+                    </span>
                 </li>
                 <li>
                     <a href="https://github.com/uikit/uikit/stargazers">
@@ -38,31 +40,25 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/uikit/uikit/network">
-                        <span uk-icon="icon: git-fork"></span>
-                        <span class="uk-text-middle" uikit-forks>1525</span>
-                        <span class="uk-text-middle">Forks</span>
-                    </a>
-                </li>
-                <li>
                     <a href="https://twitter.com/getuikit">
                         <span uk-icon="icon: twitter"></span>
-                        <span class="uk-text-middle">@getuikit</span>
+                        <span class="uk-text-middle">getuikit</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://gitter.im/uikit/uikit">
                         <span uk-icon="icon: commenting"></span>
-                        <span class="uk-text-middle">Community</span>
+                        <span class="uk-text-middle">Get Help</span>
                     </a>
                 </li>
             </ul>
-        </div>
 
-        <a class="uk-button uk-button-default tm-button-default uk-position-bottom-right uk-position-medium" href="./docs">
-            <span class="uk-text-middle">UIkit 2</span>
-            <span uk-icon="icon: arrow-right"></span>
-        </a>
+            <a class="uk-button uk-button-default tm-button-default uk-position-center-right uk-position-medium" href="./docs">
+                <span class="uk-text-middle">UIkit 2</span>
+                <span uk-icon="icon: arrow-right"></span>
+            </a>
+
+        </div>
 
     </div>
 </div>
@@ -91,7 +87,7 @@
         $.get("assets/uikit/package.json", {nocache: Math.random()}, function(data){
 
             $(function(){
-                $("[uikit-version]").text("Version "+data.version);
+                $("[uikit-version]").text(data.version);
             });
 
         }, 'json');
