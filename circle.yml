@@ -14,4 +14,4 @@ deployment:
   production:
     branch: master
     commands:
-      - rsync -avz --delete --exclude ".git*" --exclude "node_modules" --exclude "docs/fonts" --exclude "v2" . $UIKIT_SERVER
+      - rsync -avz --delete --exclude ".git*" --exclude "node_modules" --exclude "v2" --exclude "fonts" . $UIKIT_SERVER
