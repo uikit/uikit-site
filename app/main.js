@@ -2,6 +2,7 @@ import $ from 'jquery';
 import Vue from 'vue';
 import App from './app.vue';
 import Page from './page.vue';
+import Navbar from './navbar.vue';
 
 const routes = [
 
@@ -42,7 +43,13 @@ $(function () {
             mode: 'history',
             history: true,
             linkActiveClass: 'uk-active'
-        })
+        }),
+
+        components: {
+
+            navbar: Navbar
+
+        }
 
     });
 
