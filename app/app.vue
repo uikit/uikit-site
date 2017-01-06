@@ -22,9 +22,7 @@
                     </ul>
 
                     <div class="uk-navbar-item uk-visible@m">
-                        <router-link class="uk-button uk-button-default tm-button-default" to="/download">
-                            <span class="uk-text-middle">Download</span>
-                            <span uk-icon="icon: download"></span>
+                        <router-link class="uk-button uk-button-default tm-button-default" to="/download">Download <span uk-icon="icon: download"></span>
                         </router-link>
                     </div>
 
