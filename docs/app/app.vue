@@ -2,7 +2,7 @@
 
     <div>
 
-        <div class="uk-navbar-container tm-navbar-container" uk-sticky="top: 1; media: 960">
+        <div class="uk-navbar-container tm-navbar-container" uk-sticky="media: 960">
 
             <nav class="uk-navbar">
 
