@@ -1,10 +1,10 @@
 <template>
 
-    <div class="uk-section-primary tm-section">
+    <div class="uk-section-primary tm-section uk-preserve-color">
 
         <navbar></navbar>
 
-        <div class="uk-section uk-preserve-color" uk-height-viewport="expand: true">
+        <div class="uk-section" uk-height-viewport="expand: true">
             <div class="uk-container uk-container-small">
 
 
