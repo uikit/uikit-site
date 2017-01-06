@@ -22,10 +22,10 @@ Create a file `my-theme.less` (or any other name) in the `/custom` folder and ad
 
 ### 3. Compile theme
 
-Run the script `scripts/less.js` which will compile all themes in the `/custom` folder.
+Run the script `build/less.js` which will compile all themes in the `/custom` folder.
 
 ```sh
-node scripts/less
+node build/less
 ```
 
 The newly created themes will now be available in the test files, just navigate your browser to the index of the `/test` directory and select your theme from the Dropdown menu. The generated CSS files will be located in the `/css` folder.
