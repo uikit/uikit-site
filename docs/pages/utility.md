@@ -268,19 +268,20 @@ UIkit provides a number of useful classes to alter a block element's height.
 
 ### Viewport height
 
-Add the the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `mode: offset` or `mode: expand` option to the attribute.
+Add the the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `offset-top`, `offset-bottom` or `expand` option to the attribute.
 
 | Option | Description |
 | ------ | ----------- |
-| `mode: offset` | Subtracts the element's offset top from its height.  |
-| `mode: expand` | Expand the element's height to make a short page fill the viewport. |
+| `offset-top: true` | Subtracts the element's top offset from its height.  |
+| `offset-bottom: true` | Subtracts the element's bottom offset from its height.  |
+| `expand: true` | Expand the element's height to make a short page fill the viewport. |
 
 ```html
 <div uk-height-viewport></div>
 
-<div uk-height-viewport="mode: offset"></div>
+<div uk-height-viewport="offset-top: true"></div>
 
-<div uk-height-viewport="mode: expand"></div>
+<div uk-height-viewport="expand: true"></div>
 ```
 
 You can view examples in the tests for [Height Viewport](../assets/uikit/tests/height-viewport.html) and [Height Expand](../assets/uikit/tests/height-expand.html).
