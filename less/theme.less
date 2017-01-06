@@ -91,9 +91,11 @@
 //
 
 @tab-item-padding-horizontal:                   20px;
-@tab-item-padding-vertical:                     10px;
+@tab-item-padding-vertical:                     9px;
 @tab-item-border-width:                         2px;
 @tab-item-font-size:                            12px;
+
+.hook-tab-item() { line-height: 20px; }
 
 //
 // Table
@@ -285,11 +287,18 @@ html { overflow-y: scroll; }
 }
 
 /*
+ * Subnav
+ */
+
+.tm-subnav { margin-left: -50px; }
+.tm-subnav > * { padding-left: 50px; }
+.tm-subnav > * > :first-child { text-transform: capitalize; }
+
+/*
  * Width
  */
 
 .tm-width-small { width: 80px; }
-
 
 /*
  * Button
@@ -297,6 +306,28 @@ html { overflow-y: scroll; }
 
 .tm-button-default,
 .tm-button-primary { border-radius: 500px; }
+
+.tm-button-default {}
+
+.tm-button-primary {}
+
+.hook-inverse() {
+
+    .tm-button-default {}
+
+    .tm-button-primary {}
+
+}
+
+/*
+ * Section
+ */
+
+.tm-section .uk-text-lead {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+
 
 
 /* Utilities
