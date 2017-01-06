@@ -1,5 +1,5 @@
 {
-  "name": "yootheme-pro",
+  "name": "uikit-site",
   "dependencies": {
     "uikit": "git@github.com:yootheme/uikit3.git",
     "highlightjs": "^9.4.0"
