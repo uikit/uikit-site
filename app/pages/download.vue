@@ -2,7 +2,7 @@
 
     <div class="uk-section-primary tm-section">
 
-        <navbar></navbar>
+        <navbar class="uk-navbar-transparent"></navbar>
 
         <div class="uk-section uk-flex uk-flex-middle uk-text-center" uk-height-viewport="offset-top: true">
             <div class="uk-width-1-1">

@@ -2,7 +2,7 @@
 
     <div class="uk-section-primary tm-section uk-preserve-color">
 
-        <navbar></navbar>
+        <navbar class="uk-navbar-transparent uk-light"></navbar>
 
         <div class="uk-section" uk-height-viewport="expand: true">
             <div class="uk-container uk-container-small">
