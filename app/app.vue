@@ -8,9 +8,9 @@
 
                 <div class="uk-navbar-left">
 
-                    <a href="./" class="uk-navbar-item uk-logo">
+                    <router-link class="uk-navbar-item uk-logo" to="/">
                         <span class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 2"></span> UIkit
-                    </a>
+                    </router-link>
 
                 </div>
 
@@ -18,14 +18,14 @@
 
                     <ul class="uk-navbar-nav uk-visible@m">
                         <li><a href="./docs/">Documentation</a></li>
-                        <li><a href="./changelog">Changelog</a></li>
+                        <router-link to="/changelog" tag="li"><a>Changelog</a></router-link>
                     </ul>
 
                     <div class="uk-navbar-item uk-visible@m">
-                        <a class="uk-button uk-button-default tm-button-default" href="./download">
+                        <router-link class="uk-button uk-button-default tm-button-default" to="/download">
                             <span class="uk-text-middle">Download</span>
                             <span uk-icon="icon: download"></span>
-                        </a>
+                        </router-link>
                     </div>
 
                     <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas" uk-toggle></a>

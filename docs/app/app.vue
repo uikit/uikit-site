@@ -17,7 +17,7 @@
                 <div class="uk-navbar-right">
 
                     <ul class="uk-navbar-nav uk-visible@m">
-                        <li><a href="../docs/">Documentation</a></li>
+                        <li class="uk-active"><a href="../docs/">Documentation</a></li>
                         <li><a href="../changelog">Changelog</a></li>
                     </ul>
 
