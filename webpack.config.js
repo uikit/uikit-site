@@ -6,9 +6,9 @@ const externals = {
 };
 
 const loaders = [
-    {loader: 'vue', test: /\.vue$/},
-    {loader: 'babel', test: /\.js$/, exclude: /node_modules/},
-    {loader: 'json', test: /\.json/}
+    {loader: 'vue-loader', test: /\.vue$/},
+    {loader: 'buble-loader', test: /\.js$/, exclude: /node_modules/},
+    {loader: 'json-loader', test: /\.json/}
 ];
 
 module.exports = [

@@ -2,20 +2,19 @@
   "scripts": {
     "setup": "npm install && bower update && npm run compile",
     "compile": "npm run compile-js && npm run compile-less",
-    "compile-js": "./node_modules/.bin/webpack -d",
-    "compile-uikit": "cd assets/uikit && npm install && npm run images && npm run compile-js && npm run compile-less",
+    "compile-js": "./node_modules/.bin/webpack -p",
     "compile-less": "mkdir css & ./node_modules/.bin/lessc less/theme.less > css/theme.css --relative-urls --rootpath=../less/ -x"
   },
   "devDependencies": {
-    "babel-core": "^6.14.0",
-    "babel-loader": "^6.2.5",
-    "babel-preset-es2015": "^6.14.0",
+    "buble": "^0.15.1",
+    "buble-loader": "^0.4.0",
     "copy-to-clipboard": "^3.0.5",
     "he": "^1.1.0",
     "json-loader": "^0.5.4",
     "less": "^2.7.2",
     "unique-id": "0.0.1",
-    "vue-loader": "^9.7.0",
-    "webpack": "2.1.0-beta.22"
+    "vue-loader": "^10.0.2",
+    "vue-template-compiler": "^2.1.8",
+    "webpack": "2.2.0-rc.3"
   }
 }
