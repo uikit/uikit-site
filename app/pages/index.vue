@@ -17,7 +17,7 @@
                         for developing fast and powerful web interfaces.
                     </p>
 
-                    <div class="uk-child-width-auto uk-flex-inline uk-flex-center" uk-grid>
+                    <div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-flex-center" uk-grid>
                         <div>
                             <a class="uk-button uk-button-primary tm-button-primary" href="./docs">Get Started</a>
                         </div>
