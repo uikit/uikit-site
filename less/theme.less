@@ -87,6 +87,13 @@
 @nav-header-font-size:                          12px;
 
 //
+// Subnav
+//
+
+@inverse-subnav-item-color:                     @inverse-global-color;
+@inverse-subnav-item-hover-color:               @inverse-global-emphasis-color;
+
+//
 // Tab
 //
 
@@ -136,6 +143,7 @@
 
 @inverse-global-color:                          fade(@global-inverse-color, 80%);
 @inverse-global-muted-color:                    fade(@global-inverse-color, 60%);
+
 
 
 /* ========================================================================
@@ -233,13 +241,16 @@ html { overflow-y: scroll; }
 
 .tm-navbar-container .uk-navbar-nav > li > a,
 .tm-navbar-container .uk-navbar-item:not(.uk-logo),
-.tm-navbar-container .uk-navbar-toggle { font-size: 12px; }
+.tm-navbar-container .uk-navbar-toggle {
+    height: 70px;
+    font-size: 12px;
+}
 
 // Color Mode
 .tm-navbar-container:not(.uk-navbar-transparent):extend(.uk-light all) {}
 
 // Line Mode
-@navbar-nav-item-line-margin-vertical:          30px;
+@navbar-nav-item-line-margin-vertical:          20px;
 @navbar-nav-item-line-margin-horizontal:        @navbar-nav-item-padding-horizontal;
 @navbar-nav-item-line-height:                   1px;
 @navbar-nav-item-line-background:               currentColor;
@@ -313,9 +324,17 @@ html { overflow-y: scroll; }
 
 .hook-inverse() {
 
-    .tm-button-default {}
+    .tm-button-default {
+        color: @inverse-global-color;
+        border-color: @inverse-global-muted-color;
+    }
 
-    .tm-button-primary {}
+    .tm-button-primary {
+        background: #fff !important;
+        color: @global-primary-background !important;
+    }
+
+    .tm-button-primary:hover { box-shadow: 0 10px 40px rgba(30,135,240,1); }
 
 }
 

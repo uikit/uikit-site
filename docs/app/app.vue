@@ -3,35 +3,35 @@
     <div>
 
         <div class="uk-navbar-container tm-navbar-container" uk-sticky="media: 960">
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar">
 
-            <nav class="uk-navbar">
+                    <div class="uk-navbar-left">
 
-                <div class="uk-navbar-left">
-
-                    <a href="../" class="uk-navbar-item uk-logo uk-icon">
-                        <canvas class="uk-margin-small-right" uk-icon="icon: uikit; ratio: 1" width="40" height="40"></canvas> UIkit
-                    </a>
-
-                </div>
-
-                <div class="uk-navbar-right">
-
-                    <ul class="uk-navbar-nav uk-visible@m">
-                        <li class="uk-active"><a href="../docs/">Documentation</a></li>
-                        <li><a href="../changelog">Changelog</a></li>
-                    </ul>
-
-                    <div class="uk-navbar-item uk-visible@m">
-                        <a class="uk-button uk-button-default tm-button-default uk-icon" href="../download">Download <canvas uk-icon="icon: download" width="20" height="20"></canvas>
+                        <a href="../" class="uk-navbar-item uk-logo">
+                            <img class="uk-margin-small-right" uk-svg :src="'../images/uikit-logo.svg'"> UIkit
                         </a>
+
                     </div>
 
-                    <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas" uk-toggle></a>
+                    <div class="uk-navbar-right">
 
-                </div>
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li class="uk-active"><a href="../docs/">Documentation</a></li>
+                            <li><a href="../changelog">Changelog</a></li>
+                        </ul>
 
-            </nav>
+                        <div class="uk-navbar-item uk-visible@m">
+                            <a class="uk-button uk-button-default tm-button-default uk-icon" href="../download">Download <canvas uk-icon="icon: download" width="20" height="20"></canvas>
+                            </a>
+                        </div>
 
+                        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas" uk-toggle></a>
+
+                    </div>
+
+                </nav>
+            </div>
         </div>
 
         <div class="tm-sidebar-left uk-visible@m">

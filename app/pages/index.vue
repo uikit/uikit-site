@@ -8,11 +8,11 @@
             <div class="uk-width-1-1">
                 <div class="uk-container">
 
-                    <p class="uk-margin-large-bottom">
+                    <p>
                         <img uk-svg :src="'./images/uikit-logo-large.svg'">
                     </p>
 
-                    <p class="uk-margin-large uk-text-lead">
+                    <p class="uk-margin-medium uk-text-lead">
                         A lightweight and modular front-end framework<br class="uk-visible@s">
                         for developing fast and powerful web interfaces.
                     </p>
