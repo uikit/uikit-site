@@ -49,7 +49,7 @@
 
                     $.get(`pages/${page}.${this.extension}`, {nc: Math.random()}).then(content => {
 
-                        if (content.indexOf('<!DOCTYPE html>') != -1) {
+                        if (content.trim().indexOf('<!DOCTYPE html>') === 0) {
                             content = `<div class="uk-text-center">
                                 <h1>404</h1>
                                 <p class="uk-text-large">Page not found!</p>
