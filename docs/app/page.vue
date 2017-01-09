@@ -1,7 +1,6 @@
 <script>
 
     import $ from 'jquery';
-    import copy from 'copy-to-clipboard';
     import { parse, openOnCodepen, sluggify } from './util';
     import Page from '../../app/page.vue';
 
@@ -19,19 +18,15 @@
 
         mounted() {
 
+            (new Clipboard('a.js-copy', {
+                text: trigger => $(trigger.getAttribute('rel')).text()
+            })).on('success', e => {
+                UIkit.notification({message: 'Copied!', pos: 'bottom-right'});
+            }).on('error', e => {
+                UIkit.notification({message: 'Copy failed!', status: 'danger', pos: 'bottom-right'});
+            });
+
             $(this.$refs.container)
-
-                .on('click', 'a.js-copy', e => {
-
-                    e.preventDefault();
-                    e.stopImmediatePropagation();
-                    if (copy($(e.currentTarget.getAttribute('rel')).text())) {
-                        UIkit.notification({message: "Copied!", pos: 'bottom-right'});
-                    } else {
-                        UIkit.notification({message: "Copy failed!", status: 'danger', pos: 'bottom-right'});
-                    }
-
-                })
 
                 .on('click', 'a.js-codepen', e => {
 

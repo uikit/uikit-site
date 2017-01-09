@@ -2,7 +2,8 @@
 const externals = {
     vue: 'Vue',
     uikit: 'UIkit',
-    jquery: 'jQuery'
+    jquery: 'jQuery',
+    he: 'he'
 };
 
 const loaders = [

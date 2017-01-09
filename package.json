@@ -8,7 +8,6 @@
   "devDependencies": {
     "buble": "^0.15.1",
     "buble-loader": "^0.4.0",
-    "copy-to-clipboard": "^3.0.5",
     "he": "^1.1.0",
     "json-loader": "^0.5.4",
     "less": "^2.7.2",
