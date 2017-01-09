@@ -1,9 +1,8 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  RewriteCond %{HTTP:X-Forwarded-Proto} !=https [NC,OR]
-  RewriteCond %{HTTP_HOST} !^getuikit.com [NC]
-  RewriteRule ^(.*)$ https://getuikit.com/$1 [R=301,L,NC]
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f

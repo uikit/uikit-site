@@ -49,6 +49,13 @@
 
                     $.get(`pages/${page}.${this.extension}`, {nc: Math.random()}).then(content => {
 
+                        if (content.indexOf('<!DOCTYPE html>') != -1) {
+                            content = `<div class="uk-text-center">
+                                <h1>404</h1>
+                                <p class="uk-text-large">Page not found!</p>
+                            </div>`
+                        }
+
                         this.cache[page] = content;
                         defer.resolve(content);
 
