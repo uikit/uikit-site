@@ -1,7 +1,7 @@
 {
   "name": "uikit-site",
   "dependencies": {
-    "uikit": "git@github.com:yootheme/uikit3.git",
+    "uikit": "master",
     "highlightjs": "^9.4.0"
   },
   "private": true
