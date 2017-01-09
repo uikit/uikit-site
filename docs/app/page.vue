@@ -17,7 +17,6 @@
             extension: 'md'
         }),
 
-
         mounted() {
 
             $(this.$refs.container)
