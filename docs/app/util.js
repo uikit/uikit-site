@@ -37,8 +37,8 @@ export function parse(markdown, cb) {
 
                         <div class="uk-position-top-right uk-margin-small-top">
                             <ul class="uk-iconnav">
-                                <li><a class="js-copy" rel="#${id}"><img class="uk-icon" src="../images/icon-clipboard.svg" uk-svg></a></li>
-                                <li><a class="js-codepen" rel="#${id}"><img class="uk-icon" src="../images/icon-flask.svg" uk-svg></a></li>
+                                <li><a class="js-copy" title="Copy to Clipboard" uk-tooltip rel="#${id}"><img class="uk-icon" src="../images/icon-clipboard.svg" uk-svg></a></li>
+                                <li><a class="js-codepen" title="Edit on Codepen" uk-tooltip rel="#${id}"><img class="uk-icon" src="../images/icon-flask.svg" uk-svg></a></li>
                             </ul>
                         </div>
                     </div>`;
