@@ -10,6 +10,11 @@
   RewriteRule . index.html [L]
 </IfModule>
 
+<IfModule mod_substitute.c>
+    AddOutputFilterByType SUBSTITUTE text/html
+    Substitute "s|../node_modules/jquery/dist/jquery.js|https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js|i"
+</IfModule>
+
 <IfModule mod_expires.c>
 
     ExpiresActive on
