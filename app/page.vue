@@ -59,13 +59,15 @@
                 immediate: true
             },
 
-            page() {
+            page(page) {
 
                 this.$nextTick(() => {
 
                     if (location.hash && $(location.hash).length) {
                         scrollTo(0, $(location.hash).offset().top);
                     }
+
+                    $('<div>').append(page).find('script').appendTo(this.$refs.container)
 
                 });
 
@@ -77,7 +79,6 @@
 
             setPage(page) {
                 this.page = page;
-                this.$nextTick(() => $('<div>').append(page).find('script').appendTo(this.$refs.container));
             }
 
         }
