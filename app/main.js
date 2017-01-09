@@ -25,6 +25,8 @@ if (location.pathname && location.pathname != '/') {
 
 Vue.component('navbar', Navbar);
 
+const navigation = require('../docs/app/navigation.json');
+
 new Vue({
 
     el: '#app',
@@ -32,6 +34,7 @@ new Vue({
     extends: App,
 
     data: () => ({
+        navigation,
         loading: false,
         page: false
     }),
