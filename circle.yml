@@ -4,6 +4,7 @@ dependencies:
 
 compile:
   override:
+    - mkdir css
     - npm run compile
 
 test:
