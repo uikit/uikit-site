@@ -38,3 +38,22 @@
     </div>
 
 </template>
+
+<script>
+
+    import $ from 'jquery';
+
+    export default {
+
+        mounted() {
+
+            $.get("assets/uikit/package.json", {nocache: Math.random()}, data => {
+                setTimeout(() => {
+                    location.href = `https://github.com/uikit/uikit/releases/download/v${data.version}/uikit-${data.version}.zip`;
+                }, 100);
+            }, 'json');
+
+        }
+    }
+
+</script>
