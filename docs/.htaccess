@@ -1,6 +1,9 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
   # redirect v2 docs urls
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteRule ^(.*).html$ http://getuikit.com/v2/docs/$1.html [R=301,L]
