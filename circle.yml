@@ -4,7 +4,7 @@ dependencies:
 
 compile:
   override:
-    - gulp compile
+    - npm run compile
 
 test:
   override:
