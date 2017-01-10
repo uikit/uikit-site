@@ -188,7 +188,7 @@ To display an image inside a card without any spacing, add one of the following 
 | Class                  | Description                                                           |
 |------------------------|-----------------------------------------------------------------------|
 | `.uk-card-media-top`   | This class indicates that the media element is aligned to the top.    |
-| `.uk-card-media-top`   | This class indicates that the media element is aligned to the bottom. |
+| `.uk-card-media-bottom`| This class indicates that the media element is aligned to the bottom. |
 | `.uk-card-media-left`  | This class indicates that the media element is aligned to the left.   |
 | `.uk-card-media-right` | This class indicates that the media element is aligned to the right.  |
 
