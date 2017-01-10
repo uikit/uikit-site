@@ -35,8 +35,8 @@ To create a video that covers its parent container, add the `uk-cover` attribute
 ```example
 <div class="uk-cover-container uk-light uk-height-medium">
     <video uk-cover autoplay loop muted controls>
-        <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
-        <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
+        <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
+        <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
     </video>
 </div>
 ```
@@ -55,7 +55,7 @@ To apply the Cover component to an iframe, you need to add the `uk-cover` attrib
 
 ```example
 <div class="uk-cover-container uk-light uk-height-medium">
-    <iframe src="http://www.youtube.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>
+    <iframe src="//www.youtube.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>
 </div>
 ```
 
