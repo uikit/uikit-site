@@ -15,8 +15,8 @@ The toggle will add or remove a class or attribute from the item. By default, it
 
 ```example
 <div>
-    <button class="uk-button uk-button-default" uk-toggle="target: #toggle">Toggle</button>
-    <p id="toggle">What's up?</p>
+    <button class="uk-button uk-button-default" uk-toggle="target: #toggle-usage">Toggle</button>
+    <p id="toggle-usage">What's up?</p>
 </div>
 ```
 
