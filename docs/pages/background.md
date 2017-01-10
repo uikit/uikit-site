@@ -163,7 +163,10 @@ Add one of the following classes to limit the display of background images to ce
 Resize your browser window to see the effect in the example below.
 
 ```example
-<div class="uk-background-image@m uk-background-cover uk-background-muted uk-height-medium uk-width-large" style="background-image: url(../docs/images/dark.jpg);"></div>
+<div class="uk-background-image@m uk-background-cover uk-background-muted uk-height-medium uk-width-large uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+    <div class="uk-visible@m uk-light">Image shown</div>
+    <div class="uk-hidden@m">Image not shown</div>
+</div>
 ```
 
 ***
