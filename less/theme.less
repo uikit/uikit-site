@@ -7,11 +7,11 @@
 // Fonts
 @font-face {
     font-family: 'ProximaNova';
-    src: url('../fonts/ProximaNova-Thin-webfont.eot');
-    src: url('../fonts/ProximaNova-Thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ProximaNova-Thin-webfont.woff') format('woff'),
-         url('../fonts/ProximaNova-Thin-webfont.ttf') format('truetype'),
-         url('../fonts/ProximaNova-Thin-webfont.svg#ProximaNovaThin') format('svg');
+    src: url('../fonts/ProximaNova-Light-webfont.eot');
+    src: url('../fonts/ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Light-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Light-webfont.ttf') format('truetype'),
+         url('../fonts/ProximaNova-Light-webfont.svg#ProximaNovaLight') format('svg');
     font-weight: 300;
     font-style: normal;
 }
@@ -42,9 +42,7 @@
 @global-medium-font-size:                       20px;
 @global-small-font-size:                        14px;
 
-@global-muted-color:                            #aaa;
-
-@global-border:                                 #e5e5e5;
+@global-emphasis-color:                         #222;
 
 //
 // Base
@@ -347,12 +345,6 @@ html { overflow-y: scroll; }
                 linear-gradient(to left top, #28a5f5, @global-primary-background) 0 0 no-repeat;
 
 }
-
-.tm-section .uk-text-lead {
-    -webkit-font-smoothing: auto;
-    -moz-osx-font-smoothing: auto;
-}
-
 
 
 /* Utilities
