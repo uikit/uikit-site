@@ -47,27 +47,3 @@ Add the `.uk-description-list-divider` class to add a horizontal line between li
     <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
 </dl>
 ```
-
-***
-
-## Display as grid
-
-To display terms and descriptions side by side, you can use the Description list component in combination with the [Grid](grid.md) and [Width](width.md) components. That way you can also define the responsive behavior, so that the style will change back to the stacked description list on narrow viewports, like phones.
-
-```html
-<dl class="uk-description-list" uk-grid>
-    <dt class="uk-width-1-3@s"></dt>
-    <dd class="uk-width-2-3@s"></dd>
-</dl>
-```
-
-```example
-<dl class="uk-description-list" uk-grid>
-    <dt class="uk-width-1-3@s">Description term</dt>
-    <dd class="uk-width-2-3@s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
-    <dt class="uk-width-1-3@s">Description term</dt>
-    <dd class="uk-width-2-3@s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-    <dt class="uk-width-1-3@s uk-text-truncate">A long term is truncated</dt>
-    <dd class="uk-width-2-3@s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-</dl>
-```
