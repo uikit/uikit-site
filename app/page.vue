@@ -70,9 +70,11 @@
 
                 this.$nextTick(() => {
 
-                    if (location.hash && $(location.hash).length) {
-                        scrollTo(0, $(location.hash).offset().top);
-                    }
+                    requestAnimationFrame(() => {
+                        if (location.hash && $(location.hash).length) {
+                            scrollTo(0, $(location.hash).offset().top - 80);
+                        }
+                    });
 
                     $('<div>').append(page).find('script').appendTo(this.$refs.container)
 
