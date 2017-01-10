@@ -20,7 +20,6 @@ To create a navigation with dots, just add the `.uk-dotnav` class to an `<ul>` e
     <li><a href="#">Item 3</a></li>
     <li><a href="#">Item 4</a></li>
     <li><a href="#">Item 5</a></li>
-    <li><a href="#">Item 6</a></li>
 </ul>
 ```
 
@@ -41,7 +40,6 @@ The dotnav can also be displayed vertically. Just add the `.uk-dotnav-vertical` 
     <li><a href="#">Item 3</a></li>
     <li><a href="#">Item 4</a></li>
     <li><a href="#">Item 5</a></li>
-    <li><a href="#">Item 6</a></li>
 </ul>
 ```
 
@@ -64,27 +62,29 @@ To position the dotnav on top of an element, add one of the `.uk-position-*` cla
     <div>
         <div class="uk-position-relative uk-light">
             <img src="../docs/images/dark.jpg" alt="">
-            <ul class="uk-dotnav uk-position-medium uk-position-bottom-center">
-                <li class="uk-active"><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
-                <li><a href="#">Item 5</a></li>
-                <li><a href="#">Item 6</a></li>
-            </ul>
+            <div class="uk-position-medium uk-position-bottom-center">
+                <ul class="uk-dotnav uk-flex-nowrap">
+                    <li class="uk-active"><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div>
         <div class="uk-position-relative">
             <img src="../docs/images/light.jpg" alt="">
-            <ul class="uk-dotnav uk-dotnav-vertical uk-position-medium uk-position-center-right">
-                <li class="uk-active"><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
-                <li><a href="#">Item 5</a></li>
-                <li><a href="#">Item 6</a></li>
-            </ul>
+            <div class="uk-position-medium uk-position-center-right">
+                <ul class="uk-dotnav uk-dotnav-vertical">
+                    <li class="uk-active"><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
