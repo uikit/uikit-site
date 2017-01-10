@@ -4,7 +4,7 @@
 
 ## Usage
 
-Add one of these classes hide an element.
+Add one of these classes to hide an element.
 
 | Class	| Description |
 | --- | --- |
