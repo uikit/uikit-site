@@ -68,7 +68,7 @@ First off, make sure you have a solid code editor, for example Sublime Text. You
 
 Once you have finished implementing UIkit into your webpage, take a look at the UIkit components and get an overview of what UIkit is offering.
 
-## UIkit on cdnjs.com
+## CDN Links
 
 All versions of UIkit are hosted on the Cloudflare content delivery network via [cdnjs.com](https://cdnjs.com/libraries/uikit).
 
