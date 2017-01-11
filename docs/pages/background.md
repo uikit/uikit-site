@@ -199,109 +199,79 @@ Add one of the following classes to apply different blend modes to your backgrou
 ```example
 <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-small uk-light" uk-grid>
     <div>
-
         <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Multiply</p>
-        </div>
-
+       </div>
     </div>
     <div>
-
         <div class="uk-background-blend-screen uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Screen</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-overlay uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Overlay</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-darken uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Darken</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-lighten uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Lighten</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-color-dodge uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Color Dodge</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-color-burn uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Color Burn</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Hard Light</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-soft-light uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Soft Light</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-difference uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Difference</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-exclusion uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Exclusion</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-hue uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Hue</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-saturation uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Saturation</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-color uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Color</p>
         </div>
-
     </div>
     <div>
-
         <div class="uk-background-blend-luminosity uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Luminosity</p>
         </div>
-
     </div>
 </div>
 ```

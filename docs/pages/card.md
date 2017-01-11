@@ -48,23 +48,23 @@ UIkit includes a number of modifiers that can be used to add a specific style to
 ```
 
 ```example
-<div class="uk-child-width-1-3@m uk-grid-small" uk-grid>
+<div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
     <div>
         <div class="uk-card uk-card-default uk-card-body">
             <h3 class="uk-panel-title">Default</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
     </div>
     <div>
         <div class="uk-card uk-card-primary uk-card-body">
             <h3 class="uk-panel-title">Primary</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
     </div>
     <div>
         <div class="uk-card uk-card-secondary uk-card-body">
             <h3 class="uk-panel-title">Secondary</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
     </div>
 </div>
@@ -72,7 +72,7 @@ UIkit includes a number of modifiers that can be used to add a specific style to
 
 ***
 
-### Hover
+## Hover modifier
 
 To create a hover effect on the card, add the `.uk-card-hover` class. This comes in handy when working with anchors and can be combined with the other card modifiers.
 
@@ -81,29 +81,29 @@ To create a hover effect on the card, add the `.uk-card-hover` class. This comes
 ```
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid uk-height-match="target: > div > .uk-card">
+<div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
     <div>
         <div class="uk-card uk-card-hover uk-card-body">
             <h3 class="uk-panel-title">Hover</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
     </div>
     <div>
         <div class="uk-card uk-card-default uk-card-hover uk-card-body">
             <h3 class="uk-panel-title">Default</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
     </div>
     <div>
         <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
             <h3 class="uk-panel-title">Primary</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
     </div>
     <div>
         <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
             <h3 class="uk-panel-title">Secondary</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
     </div>
 </div>
@@ -127,17 +127,17 @@ You can apply different size modifiers to cards that will decrease or increase t
 ```
 
 ```example
-<div class="uk-child-width-1-2@m" uk-grid>
+<div class="uk-child-width-1-2@s" uk-grid>
     <div>
         <div class="uk-card uk-card-default uk-card-small uk-card-body">
             <h3 class="uk-card-title">Small</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
     <div>
         <div class="uk-card uk-card-default uk-card-large uk-card-body">
             <h3 class="uk-card-title">Large</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
 </div>
@@ -147,7 +147,7 @@ You can apply different size modifiers to cards that will decrease or increase t
 
 ## Header & Footer
 
-You can also divide a card into header and footer—around the default body. Just add the `.uk-card-header` or `.uk-card-footer` class to a `<div>` element inside the card.
+You can also divide a card into header and footer — around the default body. Just add the `.uk-card-header` or `.uk-card-footer` class to a `<div>` element inside the card.
 
 ```html
 <div class="uk-card">
@@ -162,10 +162,12 @@ You can also divide a card into header and footer—around the default body. Jus
 ```example
 <div class="uk-card uk-card-default uk-width-1-2@m">
     <div class="uk-card-header">
-        <div class="uk-grid-small uk-flex-middle uk-grid" uk-grid="">
-            <div class="uk-first-column"><img class="uk-border-circle" width="40" height="40" src="../docs/images/avatar.jpg"></div>
-            <div>
-                <h3 class="uk-width-expand uk-card-title uk-margin-remove-bottom">Title</h3>
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                <img class="uk-border-circle" width="40" height="40" src="../docs/images/avatar.jpg">
+            </div>
+            <div class="uk-width-expand">
+                <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
                 <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
             </div>
         </div>
@@ -197,17 +199,15 @@ To display an image inside a card without any spacing, add one of the following 
     <div class="uk-card-media-top">
         <img src="" alt="">
     </div>
-    <div class="uk-card-body">
-    </div>
+    <div class="uk-card-body"></div>
 </div>
 ```
 
 ```example
 <div class="uk-child-width-1-2@m" uk-grid>
-
     <div>
         <div class="uk-card uk-card-default">
-            <div class="uk-card-media uk-card-media-top">
+            <div class="uk-card-media-top">
                 <img src="../docs/images/light.jpg" alt="">
             </div>
             <div class="uk-card-body">
@@ -216,7 +216,6 @@ To display an image inside a card without any spacing, add one of the following 
             </div>
         </div>
     </div>
-
     <div>
         <div class="uk-card uk-card-default">
             <div class="uk-card-body">
@@ -228,7 +227,6 @@ To display an image inside a card without any spacing, add one of the following 
             </div>
         </div>
     </div>
-
 </div>
 ```
 
@@ -254,35 +252,29 @@ Create a `<canvas>` element with your image's width and height, so that it will 
 
 ```example
 <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-
     <div class="uk-card-media-left uk-cover-container">
         <img src="../docs/images/light.jpg" alt="" uk-cover>
         <canvas width="600" height="400"></canvas>
     </div>
-
     <div>
         <div class="uk-card-body">
             <h3 class="uk-card-title">Media Left</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
         </div>
     </div>
-
 </div>
 
 <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-
     <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
         <img src="../docs/images/light.jpg" alt="" uk-cover>
         <canvas width="600" height="400"></canvas>
     </div>
-
     <div>
         <div class="uk-card-body">
             <h3 class="uk-card-title">Media Right</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
         </div>
     </div>
-
 </div>
 ```
 

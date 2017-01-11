@@ -99,7 +99,7 @@ To create a button group, add the `.uk-button-group` class to a `<div>` element 
 ```example
 <div>
     <div class="uk-button-group">
-        <a class="uk-button uk-button-secondary" href="#">Link</a>
+        <button class="uk-button uk-button-secondary">Button</button>
         <button class="uk-button uk-button-secondary">Button</button>
         <button class="uk-button uk-button-secondary">Button</button>
     </div>
@@ -107,7 +107,7 @@ To create a button group, add the `.uk-button-group` class to a `<div>` element 
 
 <div class="uk-margin-small">
     <div class="uk-button-group">
-        <a class="uk-button uk-button-primary" href="#">Link</a>
+        <button class="uk-button uk-button-primary">Button</button>
         <button class="uk-button uk-button-primary">Button</button>
         <button class="uk-button uk-button-primary">Button</button>
     </div>
@@ -115,7 +115,7 @@ To create a button group, add the `.uk-button-group` class to a `<div>` element 
 
 <div>
     <div class="uk-button-group">
-        <a class="uk-button uk-button-danger" href="#">Link</a>
+        <button class="uk-button uk-button-danger">Button</button>
         <button class="uk-button uk-button-danger">Button</button>
         <button class="uk-button uk-button-danger">Button</button>
     </div>

@@ -48,12 +48,14 @@ The following list gives you a short overview of the most commonly used text-lev
 
 ## Embedded content
 
-Images and other elements like `<audio>`, `<canvas>`, `<img>`, `<svg>` and `<video>` are responsive by default. If the layout is narrowed, they adjust their size and keep their proportions. To prevent this behavior, add the `.uk-preserve-width` class from the [Utility component](utility.md) to the element or any container.
+Images and other elements like `<audio>`, `<canvas>`, `<img>`, `<svg>` and `<video>` are responsive by default in UIkit. If the layout is narrowed, they adjust their size and keep their proportions. To prevent this behavior, add the `.uk-preserve-width` class from the [Utility component](utility.md) to the element or any container.
 
 Resize the browser window to see the responsive behavior of the image.
 
 ```example
-<img src="images/photo.jpg" alt="Image">
+<div class="uk-width-large">
+    <img src="images/photo.jpg" alt="Image">
+</div>
 ```
 
 ***
@@ -85,7 +87,7 @@ Add the `.uk-h1`, `.uk-h2`, `.uk-h3`, `.uk-h4`, `.uk-h5` or `.uk-h6` class to al
 
 ***
 
-## List
+## Lists
 
 Create an unordered list using the `<ul>` element and the `<ol>` element for ordered lists. The `<li>` element defines the list item. For additional styling options, take a look at the [List component](list.md).
 
