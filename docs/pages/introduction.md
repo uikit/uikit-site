@@ -67,3 +67,19 @@ First off, make sure you have a solid code editor, for example Sublime Text. You
 ```
 
 Once you have finished implementing UIkit into your webpage, take a look at the UIkit components and get an overview of what UIkit is offering.
+
+## UIkit on cdnjs.com
+
+All versions of UIkit are hosted on the Cloudflare content delivery network via [cdnjs.com](https://cdnjs.com/libraries/uikit).
+
+### Example
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.xx.x/css/uikit.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.xx.x/js/uikit.min.js"></script>
+```
+
+## UIkit autocomplete for IDE's
+
+To work even more efficiently, we recommend that you install one of the autocomplete plugins for your favourite IDE or code editor. This saves loads of time, as you won't have to look up and type all UIkit classes and markup.
+
+We'll update this section as soon as these plugins are available.
