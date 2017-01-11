@@ -17,7 +17,7 @@ Download or clone UIkit and make sure you have Node installed (so that `npm` is 
 Create a file `my-theme.less` (or any other name) in the `/custom` folder and add the following import to include all Less components from the core framework. In this file, you will overwrite Less variables and add your own theme styles.
 
 ```less
-@import "../../src/less/uikit.less";
+@import "../src/less/uikit.less";
 ```
 
 ### 3. Compile theme
