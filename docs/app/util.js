@@ -59,7 +59,8 @@ export function parse(markdown, cb) {
 // https://blog.codepen.io/documentation/api/prefill/
 export function openOnCodepen(code) {
 
-    let data = {
+    let nc = Date.now() % 9999,
+        data = {
         title: '',
         description: '',
         html: code,
@@ -73,8 +74,8 @@ export function openOnCodepen(code) {
         js_modernizr: false,
         js_library: 'jquery',
         html_classes: '',
-        css_external: 'https://getuikit.com/assets/uikit/dist/css/uikit.css',
-        js_external: 'https://getuikit.com/assets/uikit/dist/js/uikit.js'
+        css_external: `https://getuikit.com/assets/uikit/dist/css/uikit.css?nc=${nc}`,
+        js_external: `https://getuikit.com/assets/uikit/dist/js/uikit.js?nc=${nc}`
     };
 
     data = JSON.stringify(data)
