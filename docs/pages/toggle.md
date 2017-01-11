@@ -9,13 +9,13 @@ To apply this component, just add the `uk-toggle="target: #ID"` attribute to a `
 The toggle will add or remove a class or attribute from the item. By default, it adds the `hidden` attribute to hide the element.
 
 ```html
-<button uk-toggle="target: #my-id"></button>
+<button uk-toggle="target: #my-id" type="button"></button>
 <p id="my-id"></p>
 ```
 
 ```example
 <div>
-    <button class="uk-button uk-button-default" uk-toggle="target: #toggle-usage">Toggle</button>
+    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage">Toggle</button>
     <p id="toggle-usage">What's up?</p>
 </div>
 ```
@@ -27,13 +27,13 @@ The toggle will add or remove a class or attribute from the item. By default, it
 You can also toggle multiple items at the same time. Just add the `target: SELECTOR` option to the `uk-toggle` attribute and use a selector that applies to all items.
 
 ```html
-<button uk-toggle="target: .my-class"></button>
+<button type="button" uk-toggle="target: .my-class"></button>
 <p class="my-class"></p>
 <p class="my-class"></p>
 ```
 
 ```example
-<button class="uk-button uk-button-default" uk-toggle="target: .toggle">Toggle</button>
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: .toggle">Toggle</button>
 <p class="toggle">Hello!</p>
 <p class="toggle" hidden>Bazinga!</p>
 ```
@@ -47,12 +47,12 @@ You can also toggle multiple items at the same time. Just add the `target: SELEC
 If you don't want to toggle the `hidden` attribute, you can also toggle a custom class. Just add the `cls: CLASS` option to the `uk-toggle` attribute. In this example we used the `.uk-card-primary` class to switch between different card styles.
 
 ```html
-<button uk-toggle="target: #my-id; cls: uk-card-primary"></button>
+<button type="button" uk-toggle="target: #my-id; cls: uk-card-primary"></button>
 <p id="my-id" class="uk-card uk-card-default"></p>
 ```
 
 ```example
-<button class="uk-button uk-button-default" uk-toggle="target: #toggle-custom; cls: uk-card-primary">Toggle</button>
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-custom; cls: uk-card-primary">Toggle</button>
 <div id="toggle-custom" class="uk-card uk-card-default uk-card-body uk-margin-small">Custom class</div>
 ```
 
@@ -63,12 +63,12 @@ If you don't want to toggle the `hidden` attribute, you can also toggle a custom
 The Toggle component allows you to add animations to items when toggling between them. Just add one of the `.uk-animation-*` classes from the [Animation component](animation.md) to the animation parameter. The class will be applied to the in as well as the out animation. If you prefer a different out animation, just add another class.
 
 ```html
-<button uk-toggle="target: #my-id; animation: uk-animation-fade"></button>
+<button type="button" uk-toggle="target: #my-id; animation: uk-animation-fade"></button>
 <p id="my-id"></p>
 ```
 
 ```example
-<button href="#toggle-animation" class="uk-button uk-button-default" uk-toggle="target: #toggle-animation; animation: uk-animation-fade">Toggle</button>
+<button href="#toggle-animation" class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-animation; animation: uk-animation-fade">Toggle</button>
 <div id="toggle-animation" class="uk-card uk-card-default uk-card-body uk-margin-small">Animation</div>
 ```
 
@@ -79,12 +79,12 @@ The Toggle component allows you to add animations to items when toggling between
 You can also apply multiple animations from the [Animation component](animation). That way you can add different in and out animations.
 
 ```html
-<button uk-toggle="target: #my-id; animation: uk-animation-slide-left, uk-animation-slide-bottom"></button>
+<button type="button" uk-toggle="target: #my-id; animation: uk-animation-slide-left, uk-animation-slide-bottom"></button>
 <p id="my-id"></p>
 ```
 
 ```example
-<button href="#toggle-animation-multiple" class="uk-button uk-button-default" uk-toggle="target: #toggle-animation-multiple; animation:  uk-animation-slide-left, uk-animation-slide-bottom">Toggle</button>
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-animation-multiple; animation:  uk-animation-slide-left, uk-animation-slide-bottom">Toggle</button>
 <div id="toggle-animation-multiple" class="uk-card uk-card-default uk-card-body uk-margin-small">Animation</div>
 ```
 
@@ -95,13 +95,13 @@ You can also apply multiple animations from the [Animation component](animation)
 When toggling multiple items with an animation, you might want to wait until the first animation has run through before animating the second item in. To do so, just add the `queued: true` option to the `uk-toggle` attribute.
 
 ```html
-<button uk-toggle="target: .my-class; animation: uk-animation-fade; queued: true"></button>
+<button type="button" uk-toggle="target: .my-class; animation: uk-animation-fade; queued: true"></button>
 <p class="my-class"></p>
 <p class="my-class"></p>
 ```
 
 ```example
-<button class="uk-button uk-button-default" uk-toggle="target: .toggle-animation-queued; animation: uk-animation-fade; queued: true; duration: 300">Toggle</button>
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: .toggle-animation-queued; animation: uk-animation-fade; queued: true; duration: 300">Toggle</button>
 <p class="toggle-animation-queued uk-card uk-card-default uk-card-body uk-margin-small">Animation</p>
 <p class="toggle-animation-queued uk-card uk-card-primary uk-card-body uk-margin-small" hidden>Animation</p>
 ```
@@ -120,13 +120,13 @@ A toggle can be triggered in different ways. Just add the `mode` option to the `
 
 
 ```html
-<button uk-toggle="target: #my-id; mode: hover"></button>
+<button type="button" uk-toggle="target: #my-id; mode: hover"></button>
 <p id="my-id"></p>
 ```
 
 ```example
 <div>
-    <button class="uk-button uk-button-default" uk-toggle="target: #toggle-hover; mode: hover">hover</button>
+    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-hover; mode: hover">hover</button>
     <p id="toggle-hover">What's up?</p>
 </div>
 ```

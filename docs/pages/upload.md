@@ -15,7 +15,7 @@ In this example we are using a simple button which opens up the file select wind
 ```example
 <div class="test-upload" uk-form-custom>
     <input type="file" multiple>
-    <button class="uk-button uk-button-default" tabindex="-1">Select</button>
+    <button class="uk-button uk-button-default" type="button" tabindex="-1">Select</button>
 </div>
 ```
 

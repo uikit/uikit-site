@@ -278,7 +278,7 @@ Add the `.uk-dropdown-nav` class to place a nav inside a default dropdown from t
 ```
 
 ```example
-<button class="uk-button uk-button-default">Hover</button>
+<button class="uk-button uk-button-default" type="button">Hover</button>
 <div uk-dropdown>
     <ul class="uk-nav uk-dropdown-nav">
         <li class="uk-active"><a href="#">Active</a></li>

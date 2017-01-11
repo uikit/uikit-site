@@ -8,13 +8,13 @@ To apply this component, add the `uk-close` attribute to an `<a>` or `<button>` 
 
 
 ```html
-<button uk-close></button>
+<button type="button" uk-close></button>
 
 <a href="" uk-close></a>
 ```
 
 ```example
-<button uk-close></button>
+<button type="button" uk-close></button>
 ```
 
 ***
@@ -25,11 +25,11 @@ Add the `.uk-close-large` class for a larger close button.
 
 
 ```html
-<button class="uk-close-large" uk-close></button>
+<button class="uk-close-large" type="button" uk-close></button>
 ```
 
 ```example
-<button class="uk-close-large" uk-close></button>
+<button class="uk-close-large" type="button" uk-close></button>
 ```
 
 ***
@@ -47,7 +47,7 @@ This is an example of how this component is used with an alert box from the [Ale
 ```example
 <div uk-alert>
     <a href="#" class="uk-alert-close" uk-close></a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 </div>
 ```
 

@@ -366,7 +366,7 @@ Use a button or text as a file input.
     <div class="uk-margin">
         <div uk-form-custom>
             <input type="file">
-            <button class="uk-button uk-button-default" tabindex="-1">Button</button>
+            <button class="uk-button uk-button-default" type="button" tabindex="-1">Button</button>
         </div>
     </div>
 

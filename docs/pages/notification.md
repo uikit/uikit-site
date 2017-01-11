@@ -23,7 +23,7 @@ UIkit.notification('My message', { /* options */ });
 ```
 
 ```example
-<button class="demo uk-button uk-button-default" data-message="Notification message">Click me</button>
+<button class="demo uk-button uk-button-default" type="button" data-message="Notification message">Click me</button>
 ```
 
 ***
@@ -37,7 +37,7 @@ UIkit.notification("<span uk-icon='icon: check'></span> Message");
 ```
 
 ```example
-<button class="uk-button demo uk-button-default" data-message="<span uk-icon='icon: check'></span> Message with an icon">With icon</button>
+<button class="uk-button demo uk-button-default" type="button" data-message="<span uk-icon='icon: check'></span> Message with an icon">With icon</button>
 ```
 
 ***
@@ -53,12 +53,12 @@ UIkit.notification("...", {pos: 'top-right'})
 
 | Position | Code | Example |
 | --- | --- | --- |
-| `top-left` | `UIkit.notification("...", {pos: 'top-left'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" data-message="Top Left..." data-pos="top-left">Top Left</button> |
-| `top-center` | `UIkit.notification("...", {pos: 'top-center'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" data-message="Top Center..." data-pos="top-center">Top Center</button> |
-| `top-right` | `UIkit.notification("...", {pos: 'top-right'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" data-message="Bottom Right..." data-pos="top-right">Top Right</button> |
-| `bottom-left` | `UIkit.notification("...", {pos: 'bottom-left'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" data-message="Bottom Left..." data-pos="bottom-left">Bottom Left</button> |
-| `bottom-center` | `UIkit.notification("...", {pos: 'bottom-center'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" data-message="Bottom Center..." data-pos="bottom-center">Bottom Center</button> |
-| `bottom-right` | `UIkit.notification("...", {pos: 'bottom-right'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" data-message="Bottom Right..." data-pos="bottom-right">Bottom Right</button> |
+| `top-left` | `UIkit.notification("...", {pos: 'top-left'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Top Left..." data-pos="top-left">Top Left</button> |
+| `top-center` | `UIkit.notification("...", {pos: 'top-center'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Top Center..." data-pos="top-center">Top Center</button> |
+| `top-right` | `UIkit.notification("...", {pos: 'top-right'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Bottom Right..." data-pos="top-right">Top Right</button> |
+| `bottom-left` | `UIkit.notification("...", {pos: 'bottom-left'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Bottom Left..." data-pos="bottom-left">Bottom Left</button> |
+| `bottom-center` | `UIkit.notification("...", {pos: 'bottom-center'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Bottom Center..." data-pos="bottom-center">Bottom Center</button> |
+| `bottom-right` | `UIkit.notification("...", {pos: 'bottom-right'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Bottom Right..." data-pos="bottom-right">Bottom Right</button> |
 
 
 ***
@@ -73,10 +73,10 @@ UIkit.notification("...", {status: 'primary'})
 
 | Status | Code | Example |
 | --- | --- | --- |
-| `primary` | `UIkit.notification("...", {status:'primary'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" data-message="Primary message..." data-status="primary">Primary</button> |
-| `success` | `UIkit.notification("...", {status:'success'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" data-message="Success message..." data-status="success">Success</button> |
-| `warning` | `UIkit.notification("...", {status:'warning'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" data-message="Warning message..." data-status="warning">Warning</button> |
-| `danger` | `UIkit.notification("...", {status:'danger'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" data-message="Danger message..." data-status="danger">Danger</button> |
+| `primary` | `UIkit.notification("...", {status:'primary'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Primary message..." data-status="primary">Primary</button> |
+| `success` | `UIkit.notification("...", {status:'success'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Success message..." data-status="success">Success</button> |
+| `warning` | `UIkit.notification("...", {status:'warning'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Warning message..." data-status="warning">Warning</button> |
+| `danger` | `UIkit.notification("...", {status:'danger'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Danger message..." data-status="danger">Danger</button> |
 
 ***
 

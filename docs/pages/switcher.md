@@ -278,8 +278,8 @@ The switcher can also be applied to buttons or button groups from the [Button co
 ```html
 <!-- This is a switcher using a number of buttons -->
 <div uk-switcher>
-    <button class="uk-button uk-button-default"></button>
-    <button class="uk-button uk-button-default"></button>
+    <button class="uk-button uk-button-default" type="button"></button>
+    <button class="uk-button uk-button-default" type="button"></button>
 </div>
 
 <ul class="uk-switcher">...</ul>
@@ -288,8 +288,8 @@ The switcher can also be applied to buttons or button groups from the [Button co
 ```example
 <div uk-switcher="animation: uk-animation-fade">
     <a class="uk-button uk-button-default" href="#">Link</a>
-    <button class="uk-button uk-button-default">Button</button>
-    <button class="uk-button uk-button-default">Button</button>
+    <button class="uk-button uk-button-default" type="button">Button</button>
+    <button class="uk-button uk-button-default" type="button">Button</button>
 </div>
 
 <ul class="uk-switcher uk-margin">

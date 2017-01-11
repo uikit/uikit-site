@@ -10,7 +10,7 @@ You can use any element to toggle an off-canvas sidebar. To enable the necessary
 
 ```html
 <!-- This is a button toggling the off-canvas -->
-<button uk-toggle="target: #my-id"></button>
+<button uk-toggle="target: #my-id" type="button"></button>
 
 <!-- This is an anchor toggling the off-canvas -->
 <a href="#my-id" uk-toggle></a>
@@ -22,7 +22,7 @@ You can use any element to toggle an off-canvas sidebar. To enable the necessary
 ```
 
 ```example
-<button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #offcanvas">Open</button>
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas">Open</button>
 
 <a href="#offcanvas" uk-toggle>Open</a>
 
@@ -33,7 +33,7 @@ You can use any element to toggle an off-canvas sidebar. To enable the necessary
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin">Close</button>
+        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin" type="button">Close</button>
 
     </div>
 </div>
@@ -50,7 +50,7 @@ To add an overlay, blanking out the page, add the `overlay: true` parameter to t
 ```
 
 ```example
-<button class="uk-button uk-button-default" uk-toggle="target: #offcanvas-overlay">Open</button>
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay">Open</button>
 
 <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar">
@@ -59,7 +59,7 @@ To add an overlay, blanking out the page, add the `overlay: true` parameter to t
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin">Close</button>
+        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin" type="button">Close</button>
 
     </div>
 </div>
@@ -76,7 +76,7 @@ Add the `flip: true` parameter to the `uk-offcanvas` attribute to adjust its ali
 ```
 
 ```example
-<button class="uk-button uk-button-default" uk-toggle="target: #offcanvas-flip">Open</button>
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip">Open</button>
 
 <div id="offcanvas-flip" uk-offcanvas="flip: true">
     <div class="uk-offcanvas-bar">
@@ -85,7 +85,7 @@ Add the `flip: true` parameter to the `uk-offcanvas` attribute to adjust its ali
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin">Close</button>
+        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin" type="button">Close</button>
 
     </div>
 </div>
@@ -110,13 +110,13 @@ By default, the off-canvas slides in. But you can actually choose between differ
 ```
 
 ```example
-<button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #offcanvas-slide">Slide</button>
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-slide">Slide</button>
 
-<button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #offcanvas-push">Push</button>
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push">Push</button>
 
-<button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #offcanvas-reveal">Reveal</button>
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-reveal">Reveal</button>
 
-<button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #offcanvas-none">None</button>
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-none">None</button>
 
 <div id="offcanvas-slide" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar">
@@ -125,7 +125,7 @@ By default, the off-canvas slides in. But you can actually choose between differ
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin">Close</button>
+        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin" type="button">Close</button>
 
     </div>
 </div>
@@ -137,7 +137,7 @@ By default, the off-canvas slides in. But you can actually choose between differ
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin">Close</button>
+        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin" type="button">Close</button>
 
     </div>
 </div>
@@ -149,7 +149,7 @@ By default, the off-canvas slides in. But you can actually choose between differ
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin">Close</button>
+        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin" type="button">Close</button>
 
     </div>
 </div>
@@ -161,7 +161,7 @@ By default, the off-canvas slides in. But you can actually choose between differ
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin">Close</button>
+        <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin" type="button">Close</button>
 
     </div>
 </div>
@@ -182,7 +182,7 @@ You can use the [Nav component](nav.md) inside an off-canvas to create a mobile 
 ```
 
 ```example
-<button class="uk-button uk-button-default" uk-toggle="target: #offcanvas-nav">Open</button>
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">Open</button>
 
 <div id="offcanvas-nav" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar">

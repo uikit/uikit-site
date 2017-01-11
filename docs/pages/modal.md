@@ -17,20 +17,20 @@ Add the `uk-modal` attribute to a `<div>` element to create the modal container 
 
 ```html
 <!-- This is a button toggling the modal -->
-<button uk-toggle="target: #my-id"></button>
+<button uk-toggle="target: #my-id" type="button"></button>
 
 <!-- This is the modal -->
 <div id="my-id" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
         <h2 class="uk-modal-title"></h2>
-        <button class="uk-modal-close"></button>
+        <button class="uk-modal-close" type="button"></button>
     </div>
 </div>
 ```
 
 ```example
 <!-- This is a button toggling the modal -->
-<button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #modal-example">Open</button>
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-example">Open</button>
 
 <!-- This is an anchor toggling the modal -->
 <a href="#modal-example" uk-toggle>Open</a>
@@ -59,37 +59,37 @@ Add the `uk-close` attribute from the [Close component](close.md), to apply a cl
 ```html
 <div id="my-id">
     <div class="uk-modal-dialog">
-        <button class="uk-modal-close-default" uk-close></button>
+        <button class="uk-modal-close-default" type="button" uk-close></button>
     </div>
 </div>
 
 <div id="my-id">
     <div class="uk-modal-dialog">
-        <button class="uk-modal-close-outside" uk-close></button>
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
     </div>
 </div>
 ```
 
 ```example
 <!-- This is a button toggling the modal with the default close button -->
-<button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #modal-close">Default</button>
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close">Default</button>
 
 <!-- This is the modal with the default close button -->
 <div id="modal-close" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-default" uk-close></button>
+        <button class="uk-modal-close-default" type="button" uk-close></button>
         <h2 class="uk-modal-title">Default</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 </div>
 
 <!-- This is a button toggling the modal with the outside close button -->
-<button class="uk-button uk-button-default uk-margin-small-right" uk-toggle="target: #modal-close">Outside</button>
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close">Outside</button>
 
 <!-- This is the modal with the outside close button -->
 <div id="modal-close" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-outside" uk-close></button>
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
         <h2 class="uk-modal-title">Outside</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
@@ -131,7 +131,7 @@ To divide the modal into different content sections, use the following classes.
 ```html
 <div id="my-id" uk-modal>
     <div class="uk-modal-dialog">
-        <button class="uk-modal-close-default" uk-close></button>
+        <button class="uk-modal-close-default" type="button" uk-close></button>
         <div class="uk-modal-header">
             <h2 class="uk-modal-title"></h2>
         </div>
@@ -222,7 +222,7 @@ To create a modal, that fills the entire page, add the `.uk-modal-full` class. I
 ```html
 <div id="my-id" class="uk-modal-full" uk-modal>
     <div class="uk-modal-dialog">
-        <button class="uk-modal-close-full" uk-close></button>
+        <button class="uk-modal-close-full" type="button" uk-close></button>
     </div>
 </div>
 ```
