@@ -180,17 +180,17 @@ You can also apply one or more custom classes to items when they are being dragg
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
-| Option           | Value  | Default                 | Description                                   |
-|------------------|--------|-------------------------|-----------------------------------------------|
-| `group`          | String | ''                      | The group                                     |
-| `animation`      | Number | 150                     | The animation duration.                       |
-| `threshold`      | Number | 10                      | Mouse move threshold before dragging starts.  |
-| `clsItem`        | String | uk-sortable-item        | The item class.                               |
-| `clsPlaceholder` | String | uk-sortable-placeholder | The placeholder class.                        |
-| `clsDrag`        | String | uk-sortable-drag        | The ghost class.                              |
-| `clsDragState`   | String | uk-sortable-dragging    | The body's dragging class.                    |
-| `clsBase`        | String | uk-sortable             | The list's class.                             |
-| `clsNoDrag`      | String | uk-sortable-nodrag      | Disable dragging on elements with this class. |
-| `clsEmpty`       | String | uk-sortable-empty       | The empty list class.                         |
-| `clsCustom`      | String | ''                      | The ghost's custom class.                     |
-| `handle`         | String | false                   | The handle selector.                          |
+| Option            | Value  | Default                 | Description                                   |
+|-------------------|--------|-------------------------|-----------------------------------------------|
+| `group`           | String | ''                      | The group                                     |
+| `animation`       | Number | 150                     | The animation duration.                       |
+| `threshold`       | Number | 10                      | Mouse move threshold before dragging starts.  |
+| `cls-item`        | String | uk-sortable-item        | The item class.                               |
+| `cls-placeholder` | String | uk-sortable-placeholder | The placeholder class.                        |
+| `cls-drag`        | String | uk-sortable-drag        | The ghost class.                              |
+| `clsDrag-state`   | String | uk-sortable-dragging    | The body's dragging class.                    |
+| `cls-base`        | String | uk-sortable             | The list's class.                             |
+| `clsNo-drag`      | String | uk-sortable-nodrag      | Disable dragging on elements with this class. |
+| `cls-empty`       | String | uk-sortable-empty       | The empty list class.                         |
+| `cls-custom`      | String | ''                      | The ghost's custom class.                     |
+| `handle`          | String | false                   | The handle selector.                          |

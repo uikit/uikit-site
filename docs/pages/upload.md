@@ -173,18 +173,18 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `allow` | String | false | File name filter. (eg. *.png) |
 | `mime` | String | false | File MIME type filter. (eg. images/*) |
 | `concurrent` | Number | 1 | Number of files that will be uploaded simultaneously. |
-| `dataType` | String | (xml, json, script, or html) | The expected response data type. |
+| `data-type` | String | (xml, json, script, or html) | The expected response data type. |
 | `msg-invalid-mime` | String | Invalid File Type: %s | Invalid MIME type message. |
 | `msg-invalid-name` | String | Invalid File Name: %s | Invalid name message. |
-| `clsDragover` | String | 'uk-dragover' | File name filter. |
+| `cls-dragover` | String | 'uk-dragover' | File name filter. |
 | `abort` | Function | null | The abort callback. |
-| `beforeAll` | Function | null | The beforeAll callback. |
-| `beforeSend` | Function | null | The beforeSend callback. |
+| `before-all` | Function | null | The beforeAll callback. |
+| `before-send` | Function | null | The beforeSend callback. |
 | `complete` | Function | null | The complete callback. |
-| `completeAll` | Function | null | The completeAll callback. |
+| `complete-all` | Function | null | The completeAll callback. |
 | `error` | Function | null | The error callback. |
 | `load` | Function | null | The load callback. |
-| `loadEnd` | Function | null | The loadEnd callback. |
-| `loadStart` | Function | null | The loadStart callback. |
+| `load-end` | Function | null | The loadEnd callback. |
+| `load-start` | Function | null | The loadStart callback. |
 | `progress` | Function | null | The progress callback. |
 | `fail` | Function | alert | The fail callback. If name or MIME type are invalid. |
