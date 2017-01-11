@@ -55,7 +55,7 @@ UIkit.notification("...", {pos: 'top-right'})
 | --- | --- | --- |
 | `top-left` | `UIkit.notification("...", {pos: 'top-left'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Top Left..." data-pos="top-left">Top Left</button> |
 | `top-center` | `UIkit.notification("...", {pos: 'top-center'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Top Center..." data-pos="top-center">Top Center</button> |
-| `top-right` | `UIkit.notification("...", {pos: 'top-right'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Bottom Right..." data-pos="top-right">Top Right</button> |
+| `top-right` | `UIkit.notification("...", {pos: 'top-right'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Top Right..." data-pos="top-right">Top Right</button> |
 | `bottom-left` | `UIkit.notification("...", {pos: 'bottom-left'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Bottom Left..." data-pos="bottom-left">Bottom Left</button> |
 | `bottom-center` | `UIkit.notification("...", {pos: 'bottom-center'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Bottom Center..." data-pos="bottom-center">Bottom Center</button> |
 | `bottom-right` | `UIkit.notification("...", {pos: 'bottom-right'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Bottom Right..." data-pos="bottom-right">Bottom Right</button> |
