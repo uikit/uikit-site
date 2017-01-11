@@ -23,7 +23,7 @@ export function parse(markdown, cb) {
 
             let id = uniqueid(4);
 
-            return `<div class="uk-position-relative">
+            return `<div class="uk-position-relative uk-margin-medium">
 
                         <ul uk-tab>
                             <li><a href="#">Preview</a></li>
