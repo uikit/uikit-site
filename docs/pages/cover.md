@@ -34,7 +34,7 @@ To create a video that covers its parent container, add the `uk-cover` attribute
 
 ```example
 <div class="uk-cover-container uk-height-medium">
-    <video uk-cover autoplay loop muted controls>
+    <video uk-cover autoplay loop muted>
         <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
         <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
     </video>
