@@ -30,16 +30,29 @@ To apply this component, add the `.uk-button` class and a modifier such as `.uk-
 
 There are several style modifiers available. Just add one of the following classes to apply a different look.
 
+| Class                 | Description                                    |
+| --------------------- | ---------------------------------------------- |
+|`.uk-button-default`   | Default button style.                          |
+|`.uk-button-primary`   | Indicates the primary action.                  |
+|`.uk-button-secondary` | Indicates an important action.                 |
+|`.uk-button-danger`    | Indicates a dangerous or negative action.      |
+|`.uk-button-text`      | Applies an alternative, typographic style.     |
+|`.uk-button-link`      | Makes a `<button>` look like an `<a>` element. |
 
-| Example | Class | Description |
-| --- | --- | --- |
-| <button class="uk-button uk-button-default">Default</button> | `.uk-button-default` | Default button style. |
-| <button class="uk-button uk-button-primary">Primary</button> | `.uk-button-primary` | Indicates the primary action. |
-| <button class="uk-button uk-button-secondary">Secondary</button> | `.uk-button-secondary` | Indicates an important action. |
-| <button class="uk-button uk-button-danger">Danger</button> | `.uk-button-danger` | Indicates a dangerous or negative action. |
-| <button class="uk-button uk-button-text">Text</button> | `.uk-button-text` | Applies an alternative, typographic style. |
-| <button class="uk-button uk-button-link">Link</button>| `.uk-button-link` | Makes a `<button>` look like an `<a>` element. |
+```html
+<button class="uk-button uk-button-primary"></button>
+```
 
+```example
+<p uk-margin>
+    <button class="uk-button uk-button-default">Default</button>
+    <button class="uk-button uk-button-primary">Primary</button>
+    <button class="uk-button uk-button-secondary">Secondary</button>
+    <button class="uk-button uk-button-danger">Danger</button>
+    <button class="uk-button uk-button-text">Text</button>
+    <button class="uk-button uk-button-link">Link</button>
+</p>
+```
 
 ***
 

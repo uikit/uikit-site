@@ -11,9 +11,7 @@ To create a label, just add the `.uk-label` class to a `<span>` element.
 ```
 
 ```example
-<span class="uk-label">Label</span>
-
-<p><span class="uk-label">Default</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<span class="uk-label">Default</span>
 ```
 
 ***
