@@ -6,12 +6,6 @@
 
 The Scrollspy component listens to page scrolling and triggers events based on the scroll position. For example, if you scroll down a page and an element appears in the viewport for the first time, you can trigger a smooth animation to fade in the element. Just add the `uk-scrollspy` attribute which takes the following options.
 
-| Option | Description |
-| -------------- | ----------- |
-| `cls:'MY-CLASS'` | Applies the class only the first time the element appears in the viewport. |
-| `repeat: true` | Applies the class every time the element appears in the viewport. |
-| `delay:600` | Adds a delay in milliseconds to the animation. |
-
 Typically, classes from the [Animation component](animation.md) are used together with the Scrollspy component.
 
 ```html
