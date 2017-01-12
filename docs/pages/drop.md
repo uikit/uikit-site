@@ -103,22 +103,22 @@ Add one of the following options to the `uk-drop` attribute to adjust the drop's
 </div>
 ```
 
-| Class                 | Description                                                                   |
-|-----------------------|-------------------------------------------------------------------------------|
-| `pos: bottom-left`    | Aligns the drop to the bottom left.                                           |
-| `pos: bottom-center`  | Aligns the drop to the bottom center.                                         |
-| `pos: bottom-right`   | Aligns the drop to the bottom right.                                          |
-| `pos: bottom-justify` | Aligns the drop to the bottom and justifies its width to the related element. |
-| `pos: top-left`       | Aligns the drop to the top left.                                              |
-| `pos: top-center`     | Aligns the drop to the top center.                                            |
-| `pos: top-right`      | Aligns the drop to the top right.                                             |
-| `pos: top-justify`    | Aligns the drop to the top and justifies its width to the related element.    |
-| `pos: left-top`       | Aligns the drop to the left top.                                              |
-| `pos: left-center`    | Aligns the drop to the left center.                                           |
-| `pos: left-bottom`    | Aligns the drop to the left bottom.                                           |
-| `pos: right-top`      | Aligns the drop to the right top.                                             |
-| `pos: right-center`   | Aligns the drop to the right center.                                          |
-| `pos: right-bottom`   | Aligns the drop to the right bottom.                                          |
+| Position         | Description                                                                   |
+|------------------|-------------------------------------------------------------------------------|
+| `bottom-left`    | Aligns the drop to the bottom left.                                           |
+| `bottom-center`  | Aligns the drop to the bottom center.                                         |
+| `bottom-right`   | Aligns the drop to the bottom right.                                          |
+| `bottom-justify` | Aligns the drop to the bottom and justifies its width to the related element. |
+| `top-left`       | Aligns the drop to the top left.                                              |
+| `top-center`     | Aligns the drop to the top center.                                            |
+| `top-right`      | Aligns the drop to the top right.                                             |
+| `top-justify`    | Aligns the drop to the top and justifies its width to the related element.    |
+| `left-top`       | Aligns the drop to the left top.                                              |
+| `left-center`    | Aligns the drop to the left center.                                           |
+| `left-bottom`    | Aligns the drop to the left bottom.                                           |
+| `right-top`      | Aligns the drop to the right top.                                             |
+| `right-center`   | Aligns the drop to the right center.                                          |
+| `right-bottom`   | Aligns the drop to the right bottom.                                          |
 
 ***
 
