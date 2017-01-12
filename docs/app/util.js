@@ -59,6 +59,10 @@ export function parse(markdown, cb) {
 // https://blog.codepen.io/documentation/api/prefill/
 export function openOnCodepen(code) {
 
+    code = code.replace(/<img[^>]+src="(.*?)"/g, function(match, src) {
+        return src.indexOf('../docs/') === 0 ? match.replace(src, `${location.href.split('/docs/')[0]}/docs/${src.replace('../docs/', '')}`) : match;
+    });
+
     let nc = Date.now() % 9999,
         data = {
         title: '',
