@@ -167,4 +167,4 @@ component.$destroy(true);
 
 ## Component initialization
 
-UIkit is listening for DOM manipulations and will automatically initialize, connect and disconnect components as they are inserted or removed from the DOM. That way it can easily be used with JavaScript Frameworks like React or Vue.js. Head over to [Github](https://github.com/uikit/uikit-site) to see a working example of how Vue.js and UIkit work together on this site.
+UIkit is listening for DOM manipulations and will automatically initialize, connect and disconnect components as they are inserted or removed from the DOM. That way it can easily be used with JavaScript Frameworks like Vue.js. Head over to [Github](https://github.com/uikit/uikit-site) to see a working example of how Vue.js and UIkit work together on this site.
