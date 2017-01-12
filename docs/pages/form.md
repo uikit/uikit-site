@@ -11,8 +11,8 @@ Add one of the following classes to form controls inside a `<form>` element to d
 | `.uk-input`   | Add this class to `<input>` elements.                         |
 | `.uk-select`   | Add this class to `<select>` elements.                        |
 | `.uk-textarea` | Add this class to `<textarea>` elements.                      |
-| `.uk-radio`    | Add this class to `<input>` elements to create radio buttons. |
-| `.uk-checkbox` | Add this class to `<input>` elements to create checkboxes.    |
+| `.uk-radio`    | Add this class to `<input type="radio">` elements to create radio buttons. |
+| `.uk-checkbox` | Add this class to `<input type="checkbox">` elements to create checkboxes.    |
 
 ```html
 <form>
@@ -21,8 +21,8 @@ Add one of the following classes to form controls inside a `<form>` element to d
         <option></option>
     </select>
     <textarea class="uk-textarea"></textarea>
-    <input class="uk-radio">
-    <input class="uk-checkbox">
+    <input class="uk-radio" type="radio">
+    <input class="uk-checkbox" type="checkbox">
 </form>
 ```
 
@@ -35,7 +35,7 @@ Add the `.uk-fieldset` class to a `<fieldset>` element and the `.uk-legend` clas
         <legend class="uk-legend">Legend</legend>
 
         <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Input ...">
+            <input class="uk-input" type="text" placeholder="Input">
         </div>
 
         <div class="uk-margin">
@@ -46,12 +46,12 @@ Add the `.uk-fieldset` class to a `<fieldset>` element and the `.uk-legend` clas
         </div>
 
         <div class="uk-margin">
-            <textarea class="uk-textarea" rows="5" placeholder="Textarea ..."></textarea>
+            <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
         </div>
 
         <div class="uk-margin uk-grid-small uk-child-width-auto" uk-grid>
-            <label><input class="uk-radio" type="radio" name="radio2"> A</label>
-            <label><input class="uk-radio" type="radio" name="radio2" checked> B</label>
+            <label><input class="uk-radio" type="radio" name="radio2" checked> A</label>
+            <label><input class="uk-radio" type="radio" name="radio2"> B</label>
         </div>
 
         <div class="uk-margin uk-grid-small uk-child-width-auto" uk-grid>
@@ -70,15 +70,15 @@ Add the `.uk-fieldset` class to a `<fieldset>` element and the `.uk-legend` clas
 Provide the user with basic information through feedback states on form controls. Add the `.uk-form-danger` or `.uk-form-success` class to a form control to notify the user, whether or not the value is validated. Add the `disabled` attribute to a form control and it will be appear muted.
 
 ```example
-<div class="uk-margin-small">
+<div class="uk-margin">
     <input class="uk-input uk-form-danger uk-form-width-medium" type="text" placeholder="form-danger" value="form-danger">
 </div>
 
-<div class="uk-margin-small">
+<div class="uk-margin">
     <input class="uk-input uk-form-success uk-form-width-medium" type="text" placeholder="form-success" value="form-success">
 </div>
 
-<div class="uk-margin-small">
+<div class="uk-margin">
     <input class="uk-input uk-form-width-medium" type="text" placeholder="disabled" value="disabled" disabled>
 </div>
 ```
@@ -92,15 +92,15 @@ Add the `.uk-form-large` or `.uk-form-small` class to an `<input>`, `<select>` o
 ```example
 <form>
 
-    <div class="uk-margin" uk-margin>
+    <div class="uk-margin">
         <input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large">
     </div>
 
-    <div class="uk-margin" uk-margin>
+    <div class="uk-margin">
         <input class="uk-input uk-form-width-medium" type="text" placeholder="Default">
     </div>
 
-    <div class="uk-margin" uk-margin>
+    <div class="uk-margin">
         <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Small">
     </div>
 
@@ -123,19 +123,19 @@ Add one of the following classes to an `<input>`, `<select>` or `<textarea>` ele
 ```example
 <form>
 
-    <div class="uk-margin" uk-margin>
+    <div class="uk-margin">
         <input class="uk-input uk-form-width-large" type="text" placeholder="Large">
     </div>
 
-    <div class="uk-margin" uk-margin>
+    <div class="uk-margin">
         <input class="uk-input uk-form-width-medium" type="text" placeholder="Medium">
     </div>
 
-    <div class="uk-margin" uk-margin>
+    <div class="uk-margin">
         <input class="uk-input uk-form-width-small" type="text" placeholder="Small">
     </div>
 
-    <div class="uk-margin" uk-margin>
+    <div class="uk-margin">
         <input class="uk-input uk-form-width-xsmall" type="text" placeholder="XSmall">
     </div>
 
@@ -166,7 +166,7 @@ Add the `.uk-form-blank` class to minimize the styling of form controls.
 
 ## Layout modifiers
 
-Define labels and controls and apply a stacked or horizontal layout to form elements. Layout modifiers can also be added to a `<fieldset>` element. This makes it possible to have different form layouts for each fieldset.
+Define labels and controls and apply a stacked or horizontal layout to form elements. Layout modifiers can be added to any parent element like the `<fieldset>` element. This makes it possible to have different form layouts for each fieldset.
 
 | Class                 | Description                                                 |
 |-----------------------|-------------------------------------------------------------|
@@ -177,13 +177,14 @@ Define labels and controls and apply a stacked or horizontal layout to form elem
 
 ```html
 <form class="uk-form-stacked">
-    <label class="uk-form-label"></label>
-    <div class="uk-form-controls">...</div>
-</form>
-
-<form class="uk-form-horizontal">
-    <label class="uk-form-label"></label>
-    <div class="uk-form-controls">...</div>
+    <div>
+        <label class="uk-form-label"></label>
+        <div class="uk-form-controls">...</div>
+    </div>
+    <div>
+        <div class="uk-form-label"></div>
+        <div class="uk-form-controls">...</div>
+    </div>
 </form>
 ```
 
@@ -191,41 +192,28 @@ Define labels and controls and apply a stacked or horizontal layout to form elem
 <form class="uk-form-stacked">
 
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-h-text">Text</label>
+        <label class="uk-form-label" for="form-stacked-text">Text</label>
         <div class="uk-form-controls">
-            <input class="uk-input" id="form-h-text" type="text" placeholder="Some text...">
+            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
         </div>
     </div>
 
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-h-select">Select</label>
+        <label class="uk-form-label" for="form-stacked-select">Select</label>
         <div class="uk-form-controls">
-            <select class="uk-select" id="form-h-select">
+            <select class="uk-select" id="form-stacked-select">
                 <option>Option 01</option>
                 <option>Option 02</option>
             </select>
         </div>
     </div>
 
-</form>
-
-<form class="uk-form-horizontal uk-margin-large">
-
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-h-text">Text</label>
+        <div class="uk-form-label">Radio</div>
         <div class="uk-form-controls">
-            <input class="uk-input" id="form-h-text" type="text" placeholder="Some text...">
-        </div>
-    </div>
-
-    <div class="uk-margin">
-        <label class="uk-form-label" for="form-h-select">Select</label>
-        <div class="uk-form-controls">
-            <select class="uk-select" id="form-h-select">
-                <option>Option 01</option>
-                <option>Option 02</option>
-            </select>
-        </div>
+            <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
+            <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+        </form>
     </div>
 
 </form>
@@ -233,18 +221,49 @@ Define labels and controls and apply a stacked or horizontal layout to form elem
 
 ***
 
-### Text
+### Horizontal form
 
 Use the `.uk-form-controls-text` class to better align checkboxes and radio buttons when using them with text in a horizontal layout.
+
+```html
+<form class="uk-form-horizontal">
+    <div>
+        <label class="uk-form-label"></label>
+        <div class="uk-form-controls">...</div>
+    </div>
+    <div>
+        <div class="uk-form-label"></div>
+        <div class="uk-form-controls .uk-form-controls-text">...</div>
+    </div>
+</form>
+```
 
 ```example
 <form class="uk-form-horizontal uk-margin-large">
 
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-h-text">Checkbox</label>
-        <div class="uk-form-controls uk-form-controls-text">
-            <input class="uk-checkbox" type="checkbox">
+        <label class="uk-form-label" for="form-horizontal-text">Text</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Some text...">
         </div>
+    </div>
+
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-horizontal-select">Select</label>
+        <div class="uk-form-controls">
+            <select class="uk-select" id="form-horizontal-select">
+                <option>Option 01</option>
+                <option>Option 02</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <div class="uk-form-label">Radio</div>
+        <div class="uk-form-controls uk-form-controls-text">
+            <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
+            <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+        </form>
     </div>
 
 </form>
@@ -254,17 +273,18 @@ Use the `.uk-form-controls-text` class to better align checkboxes and radio butt
 
 ## Form and icons
 
-To use an icon from the [Icon component](icon.md) with a form, add the `.uk-form-icon` class to a `<span>` element. By default, the icon will be placed on the left side of the form. To change the alignment, add the `.uk-form-icon-flip` class.
+To use an icon from the [Icon component](icon.md), add the `.uk-form-icon` class to a `<span>` element and group it with an `<input>` element by by adding the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around both. The icon has to be first in the markup. By default, the icon will be placed on the left side of the form. To change the alignment, add the `.uk-form-icon-flip` class.
 
 ```html
-<form>
+<div class="uk-inline">
     <span class="uk-form-icon" uk-icon="icon: user"></span>
     <input class="uk-input">
-</form>
+</div>
 ```
 
 ```example
 <form>
+
     <div class="uk-margin">
         <div class="uk-inline">
             <span class="uk-form-icon" uk-icon="icon: user"></span>
@@ -278,24 +298,26 @@ To use an icon from the [Icon component](icon.md) with a form, add the `.uk-form
             <input class="uk-input" type="text">
         </div>
     </div>
+
 </form>
 ```
 
 ***
 
-### Clickable
+### Clickable icons
 
 To enable an action, for example opening a modal to pick an image or link, use an `<a>` element to create the icon.
 
 ```html
-<form>
-    <a class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></a>
+<div class="uk-inline">
+    <a class="uk-form-icon uk-form-icon-flip" href="" uk-icon="icon: user"></a>
     <input class="uk-input">
-</form>
+</div>
 ```
 
 ```example
 <form>
+
     <div class="uk-margin">
         <div class="uk-inline">
             <a class="uk-form-icon" href="#" uk-icon="icon: pencil"></a>
@@ -309,12 +331,13 @@ To enable an action, for example opening a modal to pick an image or link, use a
             <input class="uk-input" type="text">
         </div>
     </div>
+
 </form>
 ```
 
 ***
 
-## Form and Grid
+## Form and grid
 
 You can also use the [Grid](grid.md) and [Width](width.md) components to define the layout of a form.
 
@@ -345,19 +368,17 @@ You can also use the [Grid](grid.md) and [Width](width.md) components to define 
 
 ## Custom controls
 
-To replace a default file inputs or and select forms with your own HTML content, like a button or text, add the `uk-form-custom` attribute to a container element.
+To replace a file inputs or select forms with your own HTML content, like a button or text, add the `uk-form-custom` attribute to a container element.
 
 ### File
 
 Use a button or text as a file input.
 
 ```html
-<form>
-    <div uk-form-custom>
-        <input type="file">
-        <button></button>
-    </div>
-</form>
+<div uk-form-custom>
+    <input type="file">
+    <button type="button"></button>
+</div>
 ```
 
 ```example
@@ -366,7 +387,7 @@ Use a button or text as a file input.
     <div class="uk-margin">
         <div uk-form-custom>
             <input type="file">
-            <button class="uk-button uk-button-default" type="button" tabindex="-1">Button</button>
+            <button class="uk-button uk-button-default" type="button" tabindex="-1">Select</button>
         </div>
     </div>
 
@@ -378,6 +399,14 @@ Use a button or text as a file input.
         </div>
     </div>
 
+    <div class="uk-margin" uk-margin>
+        <div uk-form-custom="target: true">
+            <input type="file">
+            <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" disabled>
+        </div>
+        <button class="uk-button uk-button-default">Submit</button>
+    </div>
+
 </form>
 ```
 
@@ -385,35 +414,20 @@ Use a button or text as a file input.
 
 ### Select
 
-Use a button, text or a link as a select form. Just add the `target: SELECTOR` option to the `uk-form-custom` attribute.
+Use a button, text or a link as a select form. Just add the `target: SELECTOR` option to the `uk-form-custom` attribute to select where the option value should be displayed. `target: true` will select the adjacent element in the markup.
 
 ```html
-<form>
-    <div uk-form-custom="target: my-selector">
-        <select>
-            <option></option>
-            <option></option>
-        </select>
-        <button></button>
-    </div>
-</form>
+<div uk-form-custom="target: true">
+    <select>
+        <option></option>
+        <option></option>
+    </select>
+    <button type="button"></button>
+</div>
 ```
 
 ```example
 <form>
-
-    <div class="uk-margin">
-        <div uk-form-custom="target: > .uk-button">
-            <select>
-                <option value="">Select...</option>
-                <option value="1">Option 01</option>
-                <option value="2">Option 02</option>
-                <option value="3">Option 03</option>
-                <option value="4">Option 04</option>
-            </select>
-            <button class="uk-button uk-button-default" type="button" tabindex="-1">Button</button>
-        </div>
-    </div>
 
     <div class="uk-margin">
         <div uk-form-custom="target: true">
@@ -428,14 +442,33 @@ Use a button, text or a link as a select form. Just add the `target: SELECTOR` o
     </div>
 
     <div class="uk-margin">
-        <div uk-form-custom="target: > .uk-link">
+        <div uk-form-custom="target: > * > span:last">
             <select>
                 <option value="1">Option 01</option>
                 <option value="2">Option 02</option>
                 <option value="3">Option 03</option>
                 <option value="4">Option 04</option>
             </select>
-            <span class="uk-link"></span>
+            <span class="uk-link">
+                <span uk-icon="icon: pencil"></span>
+                <span></span>
+            </span>
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <div uk-form-custom="target: > * > span:first">
+            <select>
+                <option value="">Please select...</option>
+                <option value="1">Option 01</option>
+                <option value="2">Option 02</option>
+                <option value="3">Option 03</option>
+                <option value="4">Option 04</option>
+            </select>
+            <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                <span></span>
+                <span uk-icon="icon: chevron-down"></span>
+            </button>
         </div>
     </div>
 

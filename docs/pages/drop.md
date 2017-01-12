@@ -11,7 +11,7 @@ Any content, like a button, can toggle the drop component. Just add the `uk-drop
 <div uk-drop></div>
 ```
 
-A dropdown can be enabled by either hovering or clicking the the toggle. Just add the `mode: click` option to the attribute. If you want to group the toggle and the dropdown, you can just add the `.uk-inline` class to a container element around both.
+A dropdown can be enabled by either hovering or clicking the the toggle. Just add the `mode: click` option to the attribute. If you want to group the toggle and the dropdown, you can just add the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around both.
 
 ```html
 <div class="uk-inline">
