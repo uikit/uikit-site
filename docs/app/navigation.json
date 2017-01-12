@@ -9,9 +9,8 @@
 
     "Developer": {
 
-        "Project Structure": "structure",
+        "Installation": "install",
         "Less files": "less",
-        "Create a theme": "theme",
         "JavaScript": "javascript"
 
     },
