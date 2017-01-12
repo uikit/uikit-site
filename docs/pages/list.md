@@ -78,7 +78,7 @@ Add zebra-striping to a list using the `.uk-list-striped` class.
 
 ***
 
-## Size modifier
+## Large modifier
 
 Add the `.uk-list-large` class to increase the spacing between list items. You can combine this with any of the other list modifiers.
 
