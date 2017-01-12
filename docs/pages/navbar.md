@@ -829,6 +829,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `dropbar-mode`   | slide, push         | slide   | The mode in which the dropbar appears.                                |
 | `duration`       | Number              | 200     | The dropbar transition duration.                                      |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

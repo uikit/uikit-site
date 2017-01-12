@@ -221,6 +221,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `flip`    | Boolean                   | `false`   | Flip off-canvas to the right side.                |
 | `overlay` | Boolean                   | `false`   | Display the off-canvas together with an overlay. |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

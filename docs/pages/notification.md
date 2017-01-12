@@ -115,6 +115,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `group`    | String  | null       | Useful, if you want to close all notifications in a specific group. |
 | `pos`      | String  | top-center | Display corner.                                                     |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

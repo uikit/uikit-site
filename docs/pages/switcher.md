@@ -356,6 +356,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `animation` | String       | false   | The space separated names of animations to use. Comma separate for animation out.                        |
 | `duration`  | Number       | 200     | The animation duration.                                                                                  |
 | `swiping`   | Boolean      | true    | Use swiping.                                                                                             |
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

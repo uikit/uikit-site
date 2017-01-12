@@ -191,6 +191,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `progress` | Function | null | The progress callback. |
 | `fail` | Function | alert | The fail callback. If name or MIME type are invalid. |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

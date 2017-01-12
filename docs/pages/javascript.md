@@ -17,6 +17,8 @@ Once you have the files, include them on your page by adding them to the `<head>
 <script src="js/uikit.min.js"></script>
 ```
 
+***
+
 ## Component Usage
 
 You can use UIkit components by adding `uk-*` attributes to your HTML elements without writing a single line of JavaScript. This is UIkit's best practice of using its components and should always be considered first.
@@ -32,6 +34,8 @@ var stickys = UIkit.sticky('#sticky', {
     offset: 50
 });
 ```
+
+***
 
 ## Component Configuration
 
@@ -99,6 +103,8 @@ UIkit.components.sticky.options.defaults.offset = 50;
 UIkit.components.sticky.options.defaults.top = 100;
 ```
 
+***
+
 ## Programmatic Use
 
 Programmatically components may be initialized with the `element, options` arguments format in JavaScript. The `element` argument may be any `Node`, `jQuery selector` or `jQuery object`. You'll receive an `array` of initialized components as return value. `Functional Components` (e.g. `Notification`) should omit the `element` parameter.
@@ -156,6 +162,8 @@ component.$destroy();
 // Also destroys the component, but also removes the element from the DOM.
 component.$destroy(true);
 ```
+
+***
 
 ## Component Initialization
 

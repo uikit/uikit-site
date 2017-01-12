@@ -83,6 +83,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `duration` | Number | `150` | Animation duration in milliseconds. |
 | `close` | CSS selector | `.uk-alert-close` | The close trigger element. |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

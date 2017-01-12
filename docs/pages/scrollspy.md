@@ -102,6 +102,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `repeat` | Boolean | `false` | Applies the `cls` class every time the element is in view. |
 | `delay` | Number | `0` | Delay time in ms. |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).
@@ -136,6 +138,10 @@ To automatically update the active menu item depending on the scroll position of
 
 For an example of the scrollspy nav, just check out the fixed nav on the right side of this page or take a look at the test. Any of the following options can be applied to the `uk-scrollspy-nav` attribute. Separate multiple options with a semicolon.
 
+***
+
+## Component Options
+
 Learn more about [component configuration](javascript.md#component-configuration).
 
 | Option | Value | Default | Description |
@@ -145,6 +151,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `scroll` | Boolean | `false` | Adds the [Scroll component](scroll.md) to its links. |
 | `overflow` | Boolean | `true` | If overflow is set to true, the first or last item will stay active if above or below the navigation. |
 | `offset` | Number | `0` | Pixel offset added to scroll top. |
+
+***
 
 ## Javascript
 

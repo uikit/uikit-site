@@ -374,6 +374,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `animation`   | String       | true         | The space separated names of animations to use. Comma separate for animation out. |
 | `duration`    | Number       | 200          | The animation duration in milliseconds.                                           |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

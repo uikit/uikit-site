@@ -166,6 +166,9 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `transition` | String | `ease` | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
 | `duration` | Number | `200` | Animation duration in milliseconds. |
 
+
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

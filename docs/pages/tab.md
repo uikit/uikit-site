@@ -177,6 +177,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `swiping`   | Boolean         | true    | Use swiping.                                                                                             |
 | `media`     | Integer, String | 960     | When to switch to horizontal mode — a width as integer (e.g. 640) or a CSS media query.                  |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

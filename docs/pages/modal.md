@@ -392,6 +392,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `bg-close` | Boolean | `true` | Close the modal when the background is clicked. |
 | `stack` | Boolean | `false` | Stack modals, when more than one is open. By default, the previous modal will be hidden. |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

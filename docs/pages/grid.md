@@ -312,6 +312,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `margin `      | String | uk-grid-margin  | This class is added to items that break into the next row, typically to create margin to the previous row. |
 | `first-column` | String | uk-first-column | This class is added to the first element in each row.                                                      |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

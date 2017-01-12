@@ -158,6 +158,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `media `        | Integer, String                       | false     | Condition for the active status with a width as integer (e.g. 640) or a css media query.                      |
 | `target `       | Boolean                               | false     | Initially make sure that the Sticky is not over a targeted element via location hash.                         |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

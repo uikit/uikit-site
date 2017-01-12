@@ -345,6 +345,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `offset`         | Number                 | `0`             | The offset of the dropdown's container.                                              |
 | `animation`      | String                 | `false`         | Space separated names of animations to apply. Comma separate for out animations. |
 | `duration`       | Number                 | `200`           | Animation duration in milliseconds.                                                          |
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

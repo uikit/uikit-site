@@ -197,6 +197,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `cls-custom`      | String | ''                      | The ghost's custom class.                     |
 | `handle`          | String | false                   | The handle selector.                          |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

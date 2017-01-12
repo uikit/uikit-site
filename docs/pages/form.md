@@ -454,6 +454,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 |----------|-----------------------|---------|-----------------------|
 | `target` | CSS selector, Boolean | false   | Value display target. |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

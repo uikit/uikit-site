@@ -52,6 +52,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `delay` | Number | 0 | The show delay. |
 | `cls` | String | uk-active | The active class. |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

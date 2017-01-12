@@ -365,6 +365,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `icon`  | String | ''      | The icon to display. |
 | `ratio` | Number | 1       | The icon size ratio. |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

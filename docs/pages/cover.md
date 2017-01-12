@@ -105,6 +105,8 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `width` | Number | undefined | The element's width. |
 | `height` | Number | undefined | The element's height. |
 
+***
+
 ## Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).
