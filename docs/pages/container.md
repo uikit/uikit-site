@@ -1,6 +1,6 @@
 # Container
 
-<p class="uk-text-lead">This component allows you to align and center your page and sections inside it.</p>
+<p class="uk-text-lead">This component allows you to align and center your page content.</p>
 
 ## Usage
 
@@ -27,7 +27,7 @@ Add one of the following classes to a block element to give it a max-width and w
 
 ***
 
-## Sections
+## Container in sections
 
 You can apply this component to modify the width of content inside sections from the [Section component](section.md).
 

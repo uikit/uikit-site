@@ -6,6 +6,8 @@
 
 To apply this component, add one of the `.uk-position-*` classes to a block element. Make sure the parent container has **relative** positioning, for example by adding the `.uk-inline` class from the [Utility component](utility.md#inline).
 
+**Note** Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to apply a light or dark color for better visibility.
+
 | Class                        | Description                                              |
 |------------------------------|----------------------------------------------------------|
 | `.uk-position-top`      | Positions the element at the top.                        |

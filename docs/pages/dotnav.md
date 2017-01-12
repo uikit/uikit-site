@@ -25,7 +25,7 @@ To create a navigation with dots, just add the `.uk-dotnav` class to an `<ul>` e
 
 ***
 
-## Vertical dotnav
+## Vertical alignment
 
 The dotnav can also be displayed vertically. Just add the `.uk-dotnav-vertical` modifier.
 
@@ -51,9 +51,11 @@ The dotnav can also be displayed vertically. Just add the `.uk-dotnav-vertical` 
 To position the dotnav on top of an element, add one of the `.uk-position-*` classes from the [Position component](position.md). For better visibility on images, for example when using the dotnav as a slideshow navigation, just put it inside a container with the `.uk-light` class from the [Inverse component](inverse.md).
 
 ```html
-<div class="uk-inline">
+<div class="uk-inline uk-light">
     <img src="" alt="">
-    <ul class="uk-dotnav uk-position-mediun uk-position-bottom-center">...</ul>
+    <div class="uk-position-bottom-center uk-position-medium">
+        <ul class="uk-dotnav">...</ul>
+    </div>
 </div>
 ```
 
@@ -62,7 +64,7 @@ To position the dotnav on top of an element, add one of the `.uk-position-*` cla
     <div>
         <div class="uk-position-relative uk-light">
             <img src="../docs/images/dark.jpg" alt="">
-            <div class="uk-position-medium uk-position-bottom-center">
+            <div class="uk-position-bottom-center uk-position-medium">
                 <ul class="uk-dotnav uk-flex-nowrap">
                     <li class="uk-active"><a href="#">Item 1</a></li>
                     <li><a href="#">Item 2</a></li>
@@ -76,7 +78,7 @@ To position the dotnav on top of an element, add one of the `.uk-position-*` cla
     <div>
         <div class="uk-position-relative">
             <img src="../docs/images/light.jpg" alt="">
-            <div class="uk-position-medium uk-position-center-right">
+            <div class="uk-position-center-right uk-position-medium">
                 <ul class="uk-dotnav uk-dotnav-vertical">
                     <li class="uk-active"><a href="#">Item 1</a></li>
                     <li><a href="#">Item 2</a></li>
@@ -97,7 +99,7 @@ To position the dotnav on top of an element, add one of the `.uk-position-*` cla
 The dotnav can also be centered vertically inside your viewport by adding the `.uk-position-center-right` and `.uk-position-fixed` classes from the [Position component](position.md). This is useful for typical onepage websites.
 
 ```html
-<div class="uk-position-medium uk-position-center-right uk-position-fixed">
+<div class="uk-position-center-right uk-position-medium uk-position-fixed">
     <ul class="uk-dotnav uk-dotnav-vertical">...</ul>
 </div>
 ```

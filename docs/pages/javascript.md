@@ -39,37 +39,37 @@ var stickys = UIkit.sticky('#sticky', {
 
 ## Component configuration
 
-Each component comes with a set of configuration options that let you customize their behaviour. 
+Each component comes with a set of configuration options that let you customize their behaviour.
 
 You can set the options on a per instance level or globally.
 
 ### Instance
 
 Options can be set:
- 
+
 with the `key: value;` format,
- 
+
 ```html
 <div uk-sticky="offset: 50; top: 100;"></div>
-``` 
+```
 
 in valid JSON format,
 
 ```html
 <div uk-sticky='{"offset": 50, "top": 100}'></div>
-``` 
+```
 
 or with single attributes.
 
 ```html
 <div uk-sticky offset="50" top="100"></div>
-``` 
+```
 
 If an option is marked as `Primary`, its key may be omitted, only if it is the only custom value. Please see the component's individual options table to the find the `Primary` option.
 
 ```html
 <span uk-icon="home"></span>
-``` 
+```
 
 Programmatically components can pass options to the components constructor method.
 
@@ -90,9 +90,9 @@ Options passed via the components attribute will have the highest precedence, fo
 
 ```html
 <div uk-sticky="offset: 50;" offset="100"></div>
-``` 
 
-The offset will be 50.
+<!-- The offset will be 50 -->
+```
 
 ### Globally
 

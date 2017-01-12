@@ -12,10 +12,10 @@ To have an image cover its parent element, add the `.uk-cover-container` class t
 </div>
 ```
 
-To position content on top of the covering element, use the [Position component](position.md).
+**Note** To position content on top of the covering element, use the [Position component](position.md). To adapt your content for better visibility, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md).
 
 ```example
-<div class="uk-cover-container uk-light uk-height-medium">
+<div class="uk-cover-container uk-height-medium">
     <img src="../docs/images/dark.jpg" alt="" uk-cover>
 </div>
 ```
@@ -33,7 +33,7 @@ To create a video that covers its parent container, add the `uk-cover` attribute
 ```
 
 ```example
-<div class="uk-cover-container uk-light uk-height-medium">
+<div class="uk-cover-container uk-height-medium">
     <video uk-cover autoplay loop muted controls>
         <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
         <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
@@ -54,7 +54,7 @@ To apply the Cover component to an iframe, you need to add the `uk-cover` attrib
 ```
 
 ```example
-<div class="uk-cover-container uk-light uk-height-medium">
+<div class="uk-cover-container uk-height-medium">
     <iframe src="//www.youtube.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>
 </div>
 ```
@@ -73,8 +73,8 @@ To add responsive behavior to your cover image, you need to create an invisible 
 ```
 
 ```example
-<div class="uk-cover-container uk-light uk-height-medium">
-    <canvas width="600" height="400"></canvas>
+<div class="uk-cover-container">
+    <canvas width="400" height="200"></canvas>
     <img uk-cover src="../docs/images/dark.jpg" alt="">
 </div>
 ```
