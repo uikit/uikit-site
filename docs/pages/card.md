@@ -6,7 +6,7 @@
 
 The Card component consists of the card itself, the card body and an optional card title. Typically, cards are arranged in grid columns from the [Grid component](grid.md).
 
-| Class          | Description                                                                |
+| Class            | Description                                                                |
 |------------------|----------------------------------------------------------------------------|
 | `.uk-card`       | Add this class to a `<div>` element to define the Card component.          |
 | `.uk-card-body`  | Add this class to the card to create padding between the card and its content. |

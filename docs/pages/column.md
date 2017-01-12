@@ -57,7 +57,7 @@ UIkit provides a number of responsive column classes. Basically they work just l
 
 ***
 
-## Column divider
+## Divider modifier
 
 To display a vertical line between columns, add the `.uk-column-divider` class.
 
@@ -88,7 +88,6 @@ To have an inline element span the whole width of the columns, add the `.uk-colu
     ...
 </div>
 ```
-
 
 ```example
 <div class="uk-column-1-2 uk-column-divider">

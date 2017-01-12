@@ -46,7 +46,7 @@ To apply a background color to an element, add one of the following classes. The
 
 ***
 
-## Size
+## Size modifiers
 
 This component features classes to specify the size of background images by keeping its intrinsic ratio.
 
@@ -78,7 +78,7 @@ This component features classes to specify the size of background images by keep
 
 ***
 
-## Position
+## Position modifiers
 
 To alter the background position of your image — which is in the top left hand corner of the area by default, add one of the following classes.
 

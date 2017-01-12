@@ -112,7 +112,7 @@ Create an unordered list using the `<ul>` element and the `<ol>` element for ord
 
 ***
 
-## Description List
+## Description list
 
 Create a description list using the `<dl>` element. Use `<dt>` to define the term and `<dd>` for the description. For additional styling options, take a look at the [Description List component](description-list.md).
 
@@ -129,7 +129,7 @@ Create a description list using the `<dl>` element. Use `<dt>` to define the ter
 
 ***
 
-## Horizontal Rule
+## Horizontal rule
 
 Create a horizontal rule by using the `<hr>` element. For additional styling options, take a look at the [Divider component](divider.md).
 

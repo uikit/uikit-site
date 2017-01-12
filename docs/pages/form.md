@@ -65,7 +65,7 @@ Add the `.uk-fieldset` class to a `<fieldset>` element and the `.uk-legend` clas
 
 ***
 
-## Control states
+## States modifiers
 
 Provide the user with basic information through feedback states on form controls. Add the `.uk-form-danger` or `.uk-form-success` class to a form control to notify the user, whether or not the value is validated. Add the `disabled` attribute to a form control and it will be appear muted.
 
@@ -152,7 +152,7 @@ You can also apply the `.uk-width-*` classes from the [Width component](width.md
 
 ***
 
-## Blank modifiers
+## Blank modifier
 
 Add the `.uk-form-blank` class to minimize the styling of form controls.
 
@@ -164,7 +164,7 @@ Add the `.uk-form-blank` class to minimize the styling of form controls.
 
 ***
 
-## Layout modifiers
+## Layout
 
 Define labels and controls and apply a stacked or horizontal layout to form elements. Layout modifiers can be added to any parent element like the `<fieldset>` element. This makes it possible to have different form layouts for each fieldset.
 

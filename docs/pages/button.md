@@ -83,7 +83,7 @@ Add the `.uk-button-small` or `.uk-button-large` class to a button to make it sm
 
 ***
 
-## Width modifier
+## Width modifiers
 
 Add the `.uk-width-1-1` class from the [Width component](width.md) and the button will take up full width.
 
@@ -97,7 +97,7 @@ Add the `.uk-width-1-1` class from the [Width component](width.md) and the butto
 
 ***
 
-## Button group
+## Group
 
 To create a button group, add the `.uk-button-group` class to a `<div>` element around the buttons. That's it! No further markup needed.
 

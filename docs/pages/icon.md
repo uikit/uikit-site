@@ -312,7 +312,7 @@ Add the `ratio: 2` parameter to the `uk-icon` attribute to double its size – o
 
 ***
 
-## Icon link
+## Link modifier
 
 To reset the default link styling to a more muted color when using an icon inside an anchor, add the `.uk-icon-link` class.
 
@@ -328,7 +328,7 @@ To reset the default link styling to a more muted color when using an icon insid
 
 ***
 
-## Icon button
+## Button modifier
 
 Use the modifier `.uk-icon-button` class on an `<a>` element to create an icon button, which can be used for social icons.
 
@@ -344,7 +344,7 @@ Use the modifier `.uk-icon-button` class on an `<a>` element to create an icon b
 
 ***
 
-## Icon image
+## Image modifier
 
 You can also make any background image scale to the size of an icon. Just add the `.uk-icon-image` class and a background image path.
 
