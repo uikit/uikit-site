@@ -15,7 +15,7 @@ A dropdown can be enabled by either hovering or clicking the the toggle. Just ad
 
 ```html
 <div class="uk-inline">
-    <button class="uk-button uk-button-default" type="button"></button>
+    <button type="button"></button>
     <div uk-dropdown="mode: click"></div>
 </div>
 ```
@@ -23,27 +23,23 @@ A dropdown can be enabled by either hovering or clicking the the toggle. Just ad
 ```example
 <div class="uk-inline">
     <button class="uk-button uk-button-default" type="button">Hover</button>
-    <div uk-dropdown>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-    </div>
+    <div uk-dropdown>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 </div>
 
 <div class="uk-inline">
     <button class="uk-button uk-button-default" type="button">Click</button>
-    <div uk-dropdown="mode: click">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-    </div>
+    <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 </div>
 ```
 
 ***
 
-### Nav in dropdown
+## Nav in dropdown
 
 A dropdown can contain a nav from the [Nav component](nav.md). Just add the `.uk-nav` class and the `.uk-dropdown-nav` modifier to a `<ul>` element.
 
 ```html
-<button class="uk-button uk-button-default" type="button"></button>
+<button type="button"></button>
 <div uk-dropdown>
     <ul class="uk-nav uk-dropdown-nav">...</ul>
 </div>
@@ -66,7 +62,7 @@ A dropdown can contain a nav from the [Nav component](nav.md). Just add the `.uk
 
 ***
 
-### Grid
+## Grid in dropdown
 
 You can place a grid from the [Grid component](grid.md) inside a dropdown, which can hold a navigation or any other content. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically, whenever the dropdown no longer fits its container, just add the `.uk-dropdown-grid` class.
 
@@ -115,7 +111,6 @@ Use one of the classes from the [Width component](width.md) to adjust the dropdo
 Add one of the following options to the `uk-dropdown` attribute to adjust the dropdown's alignment.
 
 ```html
-<button class="uk-button uk-button-default" type="button"></button>
 <div uk-dropdown="pos: top-left"></div>
 ```
 
@@ -191,15 +186,15 @@ By default, the dropdown flips automatically when it exceeds the viewport's edge
 
 ```html
 <div class="my-class">
-    <button></button>
+    <button type="button"></button>
     <div uk-dropdown="boundary: .my-class"></div>
 </div>
 ```
 
 ```example
-<div class="boundary uk-width-2-3@s uk-clearfix uk-padding-small" style="border: 1px dashed #e7e7e7;">
+<div class="boundary uk-panel uk-placeholder uk-width-2-3@s">
 
-    <button class="uk-button uk-button-default uk-align-left uk-margin-remove" type="button">Hover</button>
+    <button class="uk-button uk-button-default uk-float-left" type="button">Hover</button>
     <div uk-dropdown="boundary: .boundary">
         <ul class="uk-nav uk-dropdown-nav">
             <li class="uk-active"><a href="#">Active</a></li>
@@ -212,7 +207,7 @@ By default, the dropdown flips automatically when it exceeds the viewport's edge
         </ul>
     </div>
 
-    <button class="uk-button uk-button-default uk-align-right uk-margin-remove" type="button">Hover</button>
+    <button class="uk-button uk-button-default uk-float-right" type="button">Hover</button>
     <div uk-dropdown="boundary: .boundary">
         <ul class="uk-nav uk-dropdown-nav">
             <li class="uk-active"><a href="#">Active</a></li>
@@ -236,15 +231,15 @@ You can also align the dropdown to its boundary. To do so, add the `boundary-ali
 
 ```html
 <div class="my-class">
-    <button></button>
+    <button type="button"></button>
     <div uk-dropdown="boundary: .my-class; boundary-align: true"></div>
 </div>
 ```
 
 ```example
-<div class="boundary-align uk-clearfix uk-padding-small" style="border: 1px dashed #e7e7e7;">
+<div class="boundary-align uk-panel uk-placeholder">
 
-    <button class="uk-button uk-button-default uk-align-left uk-margin-remove" type="button">Justify</button>
+    <button class="uk-button uk-button-default uk-float-left" type="button">Justify</button>
     <div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
         <ul class="uk-nav uk-dropdown-nav">
             <li class="uk-active"><a href="#">Active</a></li>
@@ -257,7 +252,7 @@ You can also align the dropdown to its boundary. To do so, add the `boundary-ali
         </ul>
     </div>
 
-    <button class="uk-button uk-button-default uk-align-right uk-margin-remove" type="button">Center</button>
+    <button class="uk-button uk-button-default uk-float-right" type="button">Center</button>
     <div uk-dropdown="pos: bottom-center; boundary: .boundary-align; boundary-align: true">
         <ul class="uk-nav uk-dropdown-nav">
             <li class="uk-active"><a href="#">Active</a></li>

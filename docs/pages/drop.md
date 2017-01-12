@@ -15,12 +15,12 @@ A dropdown can be enabled by either hovering or clicking the the toggle. Just ad
 
 ```html
 <div class="uk-inline">
-    <button class="uk-button"></button>
+    <button type="button"></button>
     <div uk-drop="mode: click"></div>
 </div>
 ```
 
-**Note** The Drop component has no default styling. In this example, we've used a card from the [Card component](card.md) for visualization. If you want to group the toggle and the drop, you can just add the `.uk-inline` class to a container element around both.
+**Note** The Drop component has no default styling. In this example, we've used a card from the [Card component](card.md) for visualization.
 
 ```example
 <div class="uk-inline">
@@ -40,7 +40,7 @@ A dropdown can be enabled by either hovering or clicking the the toggle. Just ad
 
 ***
 
-### Grid
+## Grid in drop
 
 You can place a grid from the [Grid component](grid.md) inside a drop. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically, whenever the drop no longer fits its container, just add the `.uk-drop-grid` class.
 
@@ -75,7 +75,6 @@ Use one of the classes from the [Width component](width.md) to adjust the drop's
 Add one of the following options to the `uk-drop` attribute to adjust the drop's alignment.
 
 ```html
-<button></button>
 <div uk-drop="pos: top-left"></div>
 ```
 
@@ -127,13 +126,13 @@ By default, the drop flips automatically when it exceeds the viewport's edge. If
 
 ```html
 <div class="my-class">
-    <button></button>
+    <button type="button"></button>
     <div uk-drop="boundary: .my-class"></div>
 </div>
 ```
 
 ```example
-<div class="boundary uk-width-2-3@s uk-clearfix uk-padding-small" style="border: 1px dashed #e7e7e7;">
+<div class="boundary uk-panel uk-placeholder uk-width-2-3@s">
 
     <button class="uk-button uk-button-default uk-float-left" type="button">Hover</button>
     <div uk-drop="boundary: .boundary">
@@ -156,20 +155,20 @@ You can also align the drop to its boundary. To do so, add the `boundary-align: 
 
 ```html
 <div class="my-class">
-    <button></button>
+    <button type="button"></button>
     <div uk-drop="boundary: .my-class; boundary-align: true"></div>
 </div>
 ```
 
 ```example
-<div class="boundary-align uk-clearfix uk-padding-small" style="border: 1px dashed #e7e7e7;">
+<div class="boundary-align uk-panel uk-placeholder">
 
-    <button class="uk-button uk-button-default uk-align-left uk-margin-remove">Justify</button>
+    <button class="uk-button uk-button-default uk-float-left" type="button">Justify</button>
     <div uk-drop="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
         <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
 
-    <button class="uk-button uk-button-default uk-align-right uk-margin-remove">Center</button>
+    <button class="uk-button uk-button-default uk-float-right" type="button">Center</button>
     <div uk-drop="pos: bottom-center; boundary: .boundary-align; boundary-align: true">
         <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
