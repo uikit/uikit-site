@@ -4,7 +4,7 @@
 
 ## Usage
 
-The [Base component](base.md) already provides some styling for list elements. To apply this component, add the `.uk-list` class to an unordered or ordered list. The list will now display without any spacing or list-style.
+To apply this component, add the `.uk-list` class to an unordered or ordered list. The list will now display without any spacing or list-style.
 
 ```html
 <ul class="uk-list">
@@ -87,10 +87,10 @@ Add the `.uk-list-large` class to increase the spacing between list items. You c
 ```
 
 ```example
-<div uk-grid class="uk-child-width-1-4@s">
+<div class="uk-child-width-expand@s" uk-grid>
 
     <div>
-        <h4>Default</h4>  
+        <h4>Default</h4>
         <ul class="uk-list uk-list-large">
             <li>List item 1</li>
             <li>List item 2</li>
@@ -99,7 +99,7 @@ Add the `.uk-list-large` class to increase the spacing between list items. You c
     </div>
 
     <div>
-        <h4>Divider</h4>  
+        <h4>Divider</h4>
         <ul class="uk-list uk-list-large uk-list-divider">
             <li>List item 1</li>
             <li>List item 2</li>
@@ -108,7 +108,7 @@ Add the `.uk-list-large` class to increase the spacing between list items. You c
     </div>
 
     <div>
-        <h4>Striped</h4>  
+        <h4>Striped</h4>
         <ul class="uk-list uk-list-large uk-list-striped">
             <li>List item 1</li>
             <li>List item 2</li>
@@ -117,7 +117,7 @@ Add the `.uk-list-large` class to increase the spacing between list items. You c
     </div>
 
     <div>
-        <h4>Bullet</h4>  
+        <h4>Bullet</h4>
         <ul class="uk-list uk-list-large uk-list-bullet">
             <li>List item 1</li>
             <li>List item 2</li>

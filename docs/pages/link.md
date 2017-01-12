@@ -2,33 +2,25 @@
 
 <p class="uk-text-lead">Define different styles to integrate links into specific content.</p>
 
-## Link muted
+## Muted modifier
 
-The [Base component](base.md) determines the default link color. If you want the link to a apply a muted style instead, just add the `.uk-link-muted` class to the anchor element.
+The [Base component](base.md) determines the default link color. If you want the link to a apply a muted style instead, just add the `.uk-link-muted` class to the anchor element. You can also add the class to a parent element and it will be applied to all `<a>` elements inside it.
 
 ```html
 <a class="uk-link-muted" href=""></a>
 ```
 
-You can also add the class to a parent element and it will be applied to all `<a>` elements inside it.
-
 ```example
-<div class="uk-margin-small">
-    <a class="uk-link-muted" href="#">Link</a>
-</div>
+<a class="uk-link-muted" href="#">Link</a>
 
-<ul class="uk-link-muted">
-    <li><a href="#">Link</a></li>
-    <li><a href="#">Link</a></li>
-    <li><a href="#">Link</a></li>
-</ul>
+<p class="uk-link-muted">Lorem ipsum <a href="#">dolor sit</a> amet, consectetur adipiscing elit, sed do <a href="#">eiusmod</a> tempor incididunt ut <a href="#">labore et</a> dolore magna aliqua.</p>
 ```
 
 ***
 
-## Link reset
+## Reset modifier
 
-To reset a link's color, so that it inherits the color from its parent, add the `.uk-link-reset` class.
+To reset a link's color, so that it inherits the color from its parent, add the `.uk-link-reset` class. You can also add the class to a parent element and it will be applied to all `<a>` elements inside it.
 
 ```example
 <a class="uk-link-reset" href="#">Link</a>
