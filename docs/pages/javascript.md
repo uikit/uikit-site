@@ -19,7 +19,7 @@ Once you have the files, include them on your page by adding them to the `<head>
 
 ***
 
-## Component Usage
+## Component usage
 
 You can use UIkit components by adding `uk-*` attributes to your HTML elements without writing a single line of JavaScript. This is UIkit's best practice of using its components and should always be considered first.
 
@@ -37,7 +37,7 @@ var stickys = UIkit.sticky('#sticky', {
 
 ***
 
-## Component Configuration
+## Component configuration
 
 Each component comes with a set of configuration options that let you customize their behaviour. 
 
@@ -105,7 +105,7 @@ UIkit.components.sticky.options.defaults.top = 100;
 
 ***
 
-## Programmatic Use
+## Programmatic use
 
 Programmatically components may be initialized with the `element, options` arguments format in JavaScript. The `element` argument may be any `Node`, `jQuery selector` or `jQuery object`. You'll receive an `array` of initialized components as return value. `Functional Components` (e.g. `Notification`) should omit the `element` parameter.
 
@@ -165,6 +165,6 @@ component.$destroy(true);
 
 ***
 
-## Component Initialization
+## Component initialization
 
 UIkit is listening for DOM manipulations and will automatically initialize, connect and disconnect components as they are inserted or removed from the DOM. That way it can easily be used with JavaScript Frameworks like React or Vue.js. Head over to [Github](https://github.com/uikit/uikit-site) to see a working example of how Vue.js and UIkit work together on this site.

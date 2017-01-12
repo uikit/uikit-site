@@ -125,7 +125,7 @@ These events will be triggered on elements with this component attached.
 
 ***
 
-## Scrollspy Nav
+## Scrollspy nav
 
 To automatically update the active menu item depending on the scroll position of your site, add the `uk-scrollspy-nav` attribute to any navigation. Each menu item must link to the ID of its corresponding part of the site.
 
@@ -140,7 +140,7 @@ For an example of the scrollspy nav, just check out the fixed nav on the right s
 
 ***
 
-## Component Options
+## Component options
 
 Learn more about [component configuration](javascript.md#component-configuration).
 
