@@ -40,13 +40,13 @@ This is an example of how this component is used with an alert box from the [Ale
 
 ```html
 <div uk-alert>
-    <a href="" class="uk-alert-close" uk-close></a>
+    <button class="uk-alert-close" type="button" uk-close></button>
 </div>
 ```
 
 ```example
 <div uk-alert>
-    <a href="#" class="uk-alert-close" uk-close></a>
+    <button class="uk-alert-close" type="button" uk-close></button>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 </div>
 ```

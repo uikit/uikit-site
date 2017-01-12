@@ -16,7 +16,7 @@ To apply this component, use the following classes. To align a subnav, for examp
 <ul class="uk-subnav">
     <li class="uk-active"><a href="">...</a></li>
     <li><a href="">...</a></li>
-    <li class="uk-disabled"><a href="">...</a></li>
+    <li><span>...</span></li>
 </ul>
 ```
 
@@ -27,7 +27,7 @@ To apply this component, use the following classes. To align a subnav, for examp
     <li class="uk-active"><a href="#">Active</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
-    <li class="uk-disabled"><a href="#">Disabled</a></li>
+    <li><span>Disabled</span></li>
 </ul>
 ```
 

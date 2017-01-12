@@ -10,10 +10,10 @@ The Comment component consists of the comment itself, a comment header, includin
 | Class | Description |
 | --- | --- |
 | `.uk-comment` | Add this class to define the Comment component. |
-| `.uk-comment-body` | Add this class to a `<div>` element to create a comment body. |
+| `.uk-comment-body` | Add this class to create a comment body. |
 | `.uk-comment-header` | Add this class to create a comment header. |
 | `.uk-comment-title` | Add this class to a heading to create a comment title. |
-| `.uk-comment-meta` | Add this class to a `<p>` element or a [subnav](subnav.md) to create meta data about your comment. |
+| `.uk-comment-meta` | Add this class to create meta data about your comment, e.g. a [subnav](subnav.md). |
 | `.uk-comment-avatar` | Add this class to an `<img>` element to create an avatar for the comment author. |
 
 
@@ -22,7 +22,7 @@ The Comment component consists of the comment itself, a comment header, includin
     <header class="uk-comment-header">
         <img class="uk-comment-avatar" src="" alt="">
         <h4 class="uk-comment-title"></h4>
-        <ul class="uk-comment-meta uk-subnav">...</ul>
+        <ul class="uk-comment-meta uk-subnav"></ul>
     </header>
     <div class="uk-comment-body"></div>
 </article>
@@ -54,6 +54,10 @@ The Comment component consists of the comment itself, a comment header, includin
 ## Comment Primary
 
 To style a comment differently, for example to highlight it as the admin's comment, just add the `.uk-comment-primary` class.
+
+```html
+<article class="uk-comment uk-comment-primary">...</article>
+```
 
 ```example
 <article class="uk-comment uk-comment-primary">
