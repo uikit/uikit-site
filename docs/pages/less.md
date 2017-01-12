@@ -1,67 +1,50 @@
-# Less files
+# Less
 
-<p class="uk-text-lead">To build your own version of UIkit, including your custom styling, use the included Less files.</p>
+<p class="uk-text-lead">To build UIkit with your custom styling, use the included Less files.</p>
 
-Less is the language that the UIkit styles are written in. It needs to be compiled into CSS before it can be included on your page. This allows you to include any customizations in the build process, rather than manually overwriting a lot of CSS rules by hand.
-
-***
-
-## Install a package with Less sources
-
-There are several packages of UIkit available, just make sure to grab one that includes the Less files if you want to use them in your project. This is the case for exampüle when using the Bower package or in the official Github source files. Head to the [installation guide](install.md) to choose your favorite option.
+When you have [installed UIkit](install.md) with Less sources, you can compile it and add your own custom theme. Less is the language that the UIkit styles are written in. This allows you to include customizations in the build process, rather than manually overwriting a lot of CSS rules by hand.
 
 ***
 
-## Compile Github sources
+## Import Less into your own build process
 
-To automate the process of compiling Less files into CSS, we use Node scripts to watch the source directory you are working on. Whenever you save changes in the source files, Node compiles all files into one single CSS file.
-
-Go to the UIkit directory and install the Node dependencies. After that you can compile the Less files once or watch them while you are working on them.
-
-```html
-cd uikit
-npm install
-
-<!-- Run to compile once -->
-npm run compile
-
-<!-- Run to re-compile on every file change -->
-npm run watch
-```
-
-***
-
-## Compile from Bower package
-
-When you have installed UIkit through Bower, all Less sources are located in a subfolder. To include the Building of UIkit in your project's own build workflow, you need to import the central `uikit.less` file inside your project's own Less file. For example, just include UIkit and additional components at the top of your main Less file and start customizing by utilizing UIkit's hooks and override its variables. This main Less file then needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
+To include the building of UIkit in your project's own build workflow, you need to import the central `uikit.theme.less` file inside your project's own Less file. This main Less file then needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
 
 ```
-// Import UIkit core
-@import "bower_components/uikit/src/less/uikit.less";
+// Import UIkit default theme
+@import "bower_components/uikit/src/less/uikit.theme.less"; // or uikit.less without the theme
 
 // Your custom code goes here, e.g. mixins, variables
 ```
 
 ***
 
-## Build a UIkit theme
+## Use UIkit build process
 
-If you have chosen option 1 and installed the complete UIkit sources, you can use the included build files and add your own custom theme. You can start by copying the included example theme or by creating your own theme from scratch. If you have chosen option 2 and installed the Bower package, you can setup your own file structure because you are simply importing UIkit in your own project.
+Instead of setting up your own build process, you can use the scripts that are included when you get the full UIkit project. To prepare the project dependencies, make sure you have run the following before compiling your own theme.
 
-Inside the UIkit folder, create a `/custom` directory, which will contain all of your custom themes.
+```html
+cd uikit
+npm install
+
+<!-- Run to compile everything once -->
+npm run compile
+```
+
+To include your own Less theme in the build process, create a `/custom` directory, which will contain all of your custom themes.
 
 **Note** The `/custom` folder is listed in `.gitignore`, which prevents your custom files from being pushed into the UIkit repository. You might also have the `/custom` directory as your own Git repository. That way your theme files are under version control without interfering with the UIkit files.
 
 Create a file `my-theme.less` (or any other name) in the `/custom` folder and add the following import to include all Less components from the core framework. In this file, you will overwrite Less variables and add your own theme styles.
 
 ```less
-@import "../src/less/uikit.less";
+@import "../src/less/uikit.theme.less"; // or uikit.less without the default theme
 ```
 
-Run the script `build/less.js` which will compile all themes in the `/custom` folder.
+Run the npm task `compile-less` which will compile Less, including all themes in the `/custom` folder.
 
 ```sh
-node build/less
+npm run compile-less
 ```
 
 The newly created themes will now be available in the test files, just navigate your browser to the index of the `/test` directory and select your theme from the Dropdown menu. The generated CSS files will be located in the `/css` folder.
@@ -72,9 +55,9 @@ To get you started right away, we provide a default theme located in `/src/less/
 
 ***
 
-## Best practices
+## How to build a theme
 
-There are different approaches to change the UIkit style when working with Less. We recommend the following workflow. The included examples assume you are building a theme in the `/custom` directory of the full UIkit project. If you import the Less files into your own project, these examples are still valid, but you will need to adapt the file paths to your own setup.
+We recommend the following best practices when working with the Less sources. The examples assume you are building a theme in the `/custom` directory of the full UIkit project. If you import the Less files into your own project, these examples are still valid, but you will need to adapt the file paths to your own setup.
 
 ### Use variables
 

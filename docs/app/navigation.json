@@ -3,15 +3,10 @@
     "Getting started": {
 
         "Introduction": "introduction",
-        "Migration": "migration"
-
-    },
-
-    "Developer": {
-
         "Installation": "install",
-        "Less files": "less",
-        "JavaScript": "javascript"
+        "Less": "less",
+        "JavaScript": "javascript",
+        "Migration": "migration"
 
     },
 

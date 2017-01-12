@@ -10,18 +10,12 @@ You have the following options to get UIkit:
 - Install with [Bower](https://bower.io) to get the pre-built JavaScript, CSS and the Less source file. This is recommended when using UIkit for a typical web project: ```bower install uikit```
 - Clone the repo to get all source files including build scripts: `git clone git://github.com/uikit/uikit.git`
 - Install with [Npm](https://npmjs.com) to get all source files as they are available on Github: ```npm install uikit```
-- Directly include the compiled UIkit files from [CDNJS](https://cdnjs.com/libraries/uikit).
-
-***
-
-## CDN links
 
 All versions of UIkit are also hosted on the Cloudflare content delivery network via [cdnjs.com](https://cdnjs.com/libraries/uikit).
 
-### Example
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.xx.x/css/uikit.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.xx.x/js/uikit.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.2/css/uikit.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.2/js/uikit.min.js"></script>
 ```
 
 ***
@@ -35,6 +29,26 @@ UIkit is built on [Less](http://lesscss.org), a CSS preprocessor, which adds var
 | `/src`   | Contains all Less and JavaScript component files. |
 | `/dist`  | Contains the compiled CSS and concatenated JS files, updated on every release. |
 | `/tests` | Contains HTML test files of all components. |
+
+### File structure of the dist folder
+
+
+```html
+/dist/css
+
+    <!-- UIkit with default theme styling for all components -->
+    uikit.css
+    uikit.min.css
+
+/dist/images
+
+    <!--Includes images for icons, backgrounds and additional components -->
+
+/dist/js
+    <!-- JavaScript of UIkit core and ALL components -->
+    uikit.js
+    uikit.min.js
+```
 
 ***
 
@@ -51,13 +65,13 @@ In the ZIP file you will find all CSS, JavaScript and image files ready to use f
 ```html
 /css
 
-    <!-- UIkit with base styling for all components -->
+    <!-- UIkit default theme with all components included -->
     uikit.css
     uikit.min.css
 
-    <!-- Styling of the included sample theme. Can be used instead of uikit.css -->
-    uikit.theme.css
-    uikit.theme.min.css
+    <!-- UIkit default theme with with style for core components only -->
+    uikit-core.css
+    uikit-core.min.css
 
 /images
 
