@@ -12,7 +12,7 @@ There are several packages of UIkit available, just make sure to grab one that i
 
 ***
 
-## 1: Compile Github sources
+## Compile Github sources
 
 To automate the process of compiling Less files into CSS, we use Node scripts to watch the source directory you are working on. Whenever you save changes in the source files, Node compiles all files into one single CSS file.
 
@@ -31,7 +31,7 @@ npm run watch
 
 ***
 
-## 2: Compile from Bower package
+## Compile from Bower package
 
 When you have installed UIkit through Bower, all Less sources are located in a subfolder. To include the Building of UIkit in your project's own build workflow, you need to import the central `uikit.less` file inside your project's own Less file. For example, just include UIkit and additional components at the top of your main Less file and start customizing by utilizing UIkit's hooks and override its variables. This main Less file then needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
 
@@ -46,7 +46,7 @@ When you have installed UIkit through Bower, all Less sources are located in a s
 
 ## Build a UIkit theme
 
-If you have chosen option 1 and installed the complete UIkit sources, you can use the included build files and add your own custom theme. You can start by copying the included example theme or by creating your own theme from scratch. If you have chosen option 2, you can choose your own file structure because you are simply importing UIkit in your own project.
+If you have chosen option 1 and installed the complete UIkit sources, you can use the included build files and add your own custom theme. You can start by copying the included example theme or by creating your own theme from scratch. If you have chosen option 2 and installed the Bower package, you can setup your own file structure because you are simply importing UIkit in your own project.
 
 Inside the UIkit folder, create a `/custom` directory, which will contain all of your custom themes.
 
