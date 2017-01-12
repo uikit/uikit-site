@@ -814,7 +814,9 @@ By default, the dropbar overlays the site content. Add the `dropbarMode: push;` 
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
-| Class            | Value               | Default | Description                                                           |
+Learn more about [component configuration](javascript.md#component-configuration).
+
+| Option            | Value               | Default | Description                                                           |
 |------------------|---------------------|---------|-----------------------------------------------------------------------|
 | `align`          | left, right, center | left    | Dropdown alignment.                                                   |
 | `mode`           | hover, click        | hover   | Dropdown trigger behavior.                                            |
@@ -826,3 +828,24 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `dropbar `       | Boolean             | false   | Enable or disable dropbar behavior.                                   |
 | `dropbar-mode`   | slide, push         | slide   | The mode in which the dropbar appears.                                |
 | `duration`       | Number              | 200     | The dropbar transition duration.                                      |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.navbar(element, options);
+```
+
+### Events
+
+These events will be triggered on elements with this component attached.
+
+| Name | Description |
+| --- | --- |
+| `beforeShow` | Fires before an item is shown. Can prevent showing by returning `false`. |
+| `show` | Fires after an item is shown. |
+| `beforeHide` | Fires before an item is hidden. Can prevent showing by returning `false`. |
+| `hide` | Fires after an item is hidden. |

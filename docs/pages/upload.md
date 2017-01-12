@@ -163,6 +163,8 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option | Value | Default | Description |
 | --- | --- |
 | `url` | String | '' | The request url. |
@@ -188,3 +190,21 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `load-start` | Function | null | The loadStart callback. |
 | `progress` | Function | null | The progress callback. |
 | `fail` | Function | alert | The fail callback. If name or MIME type are invalid. |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.upload(element, options);
+```
+
+### Events
+
+These events will be triggered on elements with this component attached.
+
+| Name | Description |
+| --- | --- |
+| `upload` | Fires before files are being uploaded. |

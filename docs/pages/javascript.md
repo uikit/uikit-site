@@ -101,7 +101,7 @@ UIkit.components.sticky.options.defaults.top = 100;
 
 ## Programmatic Use
 
-Programmatically components may be initialized with the `selector, options` arguments format in JavaScript. The `selector` argument may be any `Node`, `jQuery selector` or `jQuery object`. You'll receive an `array` of initialized components as return value. `Functional Components` (e.g. `Notification`) should omit the `selector` parameter.
+Programmatically components may be initialized with the `element, options` arguments format in JavaScript. The `element` argument may be any `Node`, `jQuery selector` or `jQuery object`. You'll receive an `array` of initialized components as return value. `Functional Components` (e.g. `Notification`) should omit the `element` parameter.
 
 ```js
 // Passing a selector and an options object.
@@ -110,7 +110,7 @@ var stickys = UIkit.sticky('.sticky', {
     top: 100
 });
 
-// Functional components should omit the 'selector' argument.
+// Functional components should omit the 'element' argument.
 var notifications = UIkit.notification('MyMessage', 'danger');
 ```
 

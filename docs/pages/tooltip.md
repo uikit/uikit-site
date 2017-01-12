@@ -41,6 +41,8 @@ Add one of the following options to the `uk-tooltip` attribute to adjust the too
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option | Value | Default | Description |
 | --- | --- |
 | `pos` | String | 'bottom-left' | Tooltip position. |
@@ -49,3 +51,24 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `duration` | Number | 200 | The animation duration. |
 | `delay` | Number | 0 | The show delay. |
 | `cls` | String | uk-active | The active class. |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.tooltip(element, options);
+```
+
+### Events
+
+These events will be triggered on elements with this component attached.
+
+| Name | Description |
+| --- | --- |
+| `beforeShow` | Fires before an item is shown. Can prevent showing by returning `false`. |
+| `show` | Fires after an item is shown. |
+| `beforeHide` | Fires before an item is hidden. Can prevent showing by returning `false`. |
+| `hide` | Fires after an item is hidden. |

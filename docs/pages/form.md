@@ -448,6 +448,18 @@ Use a button, text or a link as a select form. Just add the `target: SELECTOR` o
 
 You can add this option to the `uk-form-custom` attribute.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option   | Value                 | Default | Description           |
 |----------|-----------------------|---------|-----------------------|
 | `target` | CSS selector, Boolean | false   | Value display target. |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.formCustom(element, options);
+```

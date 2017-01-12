@@ -218,6 +218,8 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option           | Value                  | Default       | Description                                                                      |
 |------------------|------------------------|---------------|----------------------------------------------------------------------------------|
 | `toggle`         | String, Boolean  | `true`          | CSS selector for the element to be used as the toggler. By default, the preceding element is used.  |
@@ -231,3 +233,25 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `offset`         | Number                 | `0`             | The offset of the drop's container.                                              |
 | `animation`      | String                 | `false`         | Space separated names of animations to apply. Comma separate for out animations. |
 | `duration`       | Number                 | `200`           | Animation duration in milliseconds.                                                          |
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.drop(element, options);
+```
+
+### Events
+
+These events will be triggered on elements with this component attached.
+
+| Name | Description |
+| --- | --- |
+| `toggle` | Fires before an item is toggled. |
+| `beforeShow` | Fires before an item is shown. Can prevent showing by returning `false`. |
+| `show` | Fires after an item is shown. |
+| `beforeHide` | Fires before an item is hidden. Can prevent showing by returning `false`. |
+| `hide` | Fires after an item is hidden. |
+| `stack` | Fires when the `drop-stack`class is applied. |

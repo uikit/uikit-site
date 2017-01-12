@@ -361,9 +361,11 @@ A nav can be used inside an off-canvas from the [Off-canvas component](offcanvas
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
-| Class         | Value        | Default      | Description                                                                       |
+Learn more about [component configuration](javascript.md#component-configuration).
+
+| Option        | Value        | Default      | Description                                                                       |
 |---------------|--------------|--------------|-----------------------------------------------------------------------------------|
-| `targets `    | CSS selector | > .uk-parent | The element(s) to toggle.                                                         |
+| `targets`     | CSS selector | > .uk-parent | The element(s) to toggle.                                                         |
 | `toggle `     | CSS selector | > a          | The toggle element(s).                                                            |
 | `content`     | CSS selector | > ul         | The content element(s).                                                           |
 | `collapsible` | Boolean      | true         | Allow all items to be closed.                                                     |
@@ -371,3 +373,13 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `transition`  | String       | ease         | The transition to use.                                                            |
 | `animation`   | String       | true         | The space separated names of animations to use. Comma separate for animation out. |
 | `duration`    | Number       | 200          | The animation duration in milliseconds.                                           |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.nav(element, options);
+```

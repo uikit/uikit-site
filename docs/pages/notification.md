@@ -105,6 +105,8 @@ jQuery('button.close').on('click', function() {
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option     | Value   | Default    | Description                                                         |
 |------------|---------|------------|---------------------------------------------------------------------|
 | `message ` | String  | false      | Notification message to show.                                       |
@@ -112,3 +114,24 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `timeout`  | Integer | 5000       | Visibility duration until a notification disappears.                |
 | `group`    | String  | null       | Useful, if you want to close all notifications in a specific group. |
 | `pos`      | String  | top-center | Display corner.                                                     |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+This is a `Functional Component` and may omit the element argument.
+
+```js
+UIkit.notification(options);
+UIkit.notification(message, status);
+```
+
+### Events
+
+These events will be triggered on elements with this component attached.
+
+| Name | Description |
+| --- | --- |
+| `close` | Fires after the notification has been closed. |

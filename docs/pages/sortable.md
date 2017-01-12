@@ -180,6 +180,8 @@ You can also apply one or more custom classes to items when they are being dragg
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option            | Value  | Default                 | Description                                   |
 |-------------------|--------|-------------------------|-----------------------------------------------|
 | `group`           | String | ''                      | The group                                     |
@@ -194,3 +196,23 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `cls-empty`       | String | uk-sortable-empty       | The empty list class.                         |
 | `cls-custom`      | String | ''                      | The ghost's custom class.                     |
 | `handle`          | String | false                   | The handle selector.                          |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.sortable(element, options);
+```
+
+### Events
+
+These events will be triggered on elements with this component attached.
+
+| Name | Description |
+| --- | --- |
+| `start` | Fires after dragging starts. |
+| `stop` | Fires after dragging stops. |
+| `change` | Fires after an element has been sorted. |

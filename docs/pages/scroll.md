@@ -48,12 +48,23 @@ jQuery(function ($) {
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `duration` | Number | `1000` | Animation duration in milliseconds. |
 | `transition` | String | `easeOutExpo` | Easing transition. Usable if you have the optional [easing plugin](http://gsgd.co.uk/sandbox/jquery/easing/) loaded on your page. |
 | `offset` | Number | `0` | Pixel offset added to scroll top. |
 
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.scroll(element, options);
+```
 
 <div style="height: 2000px;"></div>
 

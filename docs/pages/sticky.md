@@ -143,6 +143,8 @@ You also have the possibility of disabling the sticky behavior for different dev
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option          | Value                                 | Default   | Description                                                                                                   |
 |-----------------|---------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------|
 | `top`           | Number, viewport height, CSS selector | 0         | The top offset from where the element should be stick.                                                        |
@@ -155,3 +157,22 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `show-on-up`    | Boolean                               | false     | Only show sticky element when scrolling up.                                                                   |
 | `media `        | Integer, String                       | false     | Condition for the active status with a width as integer (e.g. 640) or a css media query.                      |
 | `target `       | Boolean                               | false     | Initially make sure that the Sticky is not over a targeted element via location hash.                         |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.sticky(element, options);
+```
+
+### Events
+
+These events will be triggered on elements with this component attached.
+
+| Name | Description |
+| --- | --- |
+| `active` | Fires after the element becomes sticky. |
+| `inactive` | Fires after the element is no longer sticky. |

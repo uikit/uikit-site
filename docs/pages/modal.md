@@ -383,9 +383,32 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `center` | Boolean | `false` | Center the modal. |
 | `esc-close` | Boolean | `true` | Close the modal when the _Esc_ key is pressed. |
 | `bg-close` | Boolean | `true` | Close the modal when the background is clicked. |
 | `stack` | Boolean | `false` | Stack modals, when more than one is open. By default, the previous modal will be hidden. |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.modal(element, options);
+```
+
+### Events
+
+These events will be triggered on elements with this component attached.
+
+| Name | Description |
+| --- | --- |
+| `beforeShow` | Fires before an item is shown. Can prevent showing by returning `false`. |
+| `show` | Fires after an item is shown. |
+| `beforeHide` | Fires before an item is hidden. Can prevent showing by returning `false`. |
+| `hide` | Fires after an item is hidden. |

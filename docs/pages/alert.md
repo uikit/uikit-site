@@ -75,8 +75,29 @@ There are several style modifiers available. Just add one of the following class
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `animation` | Boolean or String | `true` | Fade out or use the [Animation component](animation.md). |
 | `duration` | Number | `150` | Animation duration in milliseconds. |
 | `close` | CSS selector | `.uk-alert-close` | The close trigger element. |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.alert(element, options);
+```
+
+### Events
+
+These events will be triggered on elements with this component attached.
+
+| Name | Description |
+| --- | --- |
+| `beforeHide` | Fires before an item is hidden. Can prevent showing by returning `false`. |
+| `hide` | Fires after an item is hidden. |

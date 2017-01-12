@@ -97,8 +97,20 @@ Adding the `.uk-height-viewport` class from the [Utility component](utility.md) 
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `automute` | Boolean | true | Tries to automute the iframe's video. |
 | `width` | Number | undefined | The element's width. |
 | `height` | Number | undefined | The element's height. |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.cover(element, options);
+```

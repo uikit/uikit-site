@@ -270,11 +270,13 @@ UIkit provides a number of useful classes to alter a block element's height.
 
 Add the the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `offset-top`, `offset-bottom` or `expand` option to the attribute.
 
-| Option | Description |
-| ------ | ----------- |
-| `offset-top: true` | Subtracts the element's top offset from its height.  |
-| `offset-bottom: true` | Subtracts the height of the following element from the element's height.  |
-| `expand: true` | Expand the element's height to make a short page fill the viewport. |
+Learn more about [component configuration](javascript.md#component-configuration).
+
+| Option | Value | Default | Description |
+| --- | --- | --- | --- |
+| `offset-top` | Boolean | `false` | Subtracts the element's top offset from its height. |
+| `offset-bottom` | Boolean | `false` | Subtracts the height of the following element from the element's height. |
+| `expand` | Boolean | `true` | Expand the element's height to make a short page fill the viewport. |
 
 ```html
 <div uk-height-viewport></div>
@@ -361,10 +363,12 @@ If your grid wraps into multiple rows, only grid columns within the same row are
 
 The table below lists the available settings of the `uk-height-match` attribute.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option | Value | Default | Description |
 | --- | --- |
-| `target`| CSS selector | false | Elements that should match. By default, direct children will match. |
-| `row` | Boolean | true | If your targets wrap into multiple rows, only grid columns within the same row are matched. |
+| `target`| CSS selector | `false` | Elements that should match. By default, direct children will match. |
+| `row` | Boolean | `true` | If your targets wrap into multiple rows, only grid columns within the same row are matched. |
 
 ***
 

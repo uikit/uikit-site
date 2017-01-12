@@ -97,6 +97,8 @@ You can also group scrollspy elements, so you won't have to apply the attribute 
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `cls` | String | `uk-scrollspy-inview` | Class to add when the element is in view. If two, comma separated classes are provided those will be toggled. |
@@ -105,6 +107,25 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `offset-left` | Number | `0` | Left offset before triggering in view. |
 | `repeat` | Boolean | `false` | Applies the `cls` class every time the element is in view. |
 | `delay` | Number | `0` | Delay time in ms. |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.scrollspy(element, options);
+```
+
+### Events
+
+These events will be triggered on elements with this component attached.
+
+| Name | Description |
+| --- | --- |
+| `inview` | Fires after an item moves into the viewport. |
+| `outview` | Fires after an item moves into out of viewport. |
 
 ***
 
@@ -121,6 +142,8 @@ To automatically update the active menu item depending on the scroll position of
 
 For an example of the scrollspy nav, just check out the fixed nav on the right side of this page or take a look at the test. Any of the following options can be applied to the `uk-scrollspy-nav` attribute. Separate multiple options with a semicolon.
 
+Learn more about [component configuration](javascript.md#component-configuration).
+
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `cls` | String | `uk-active` | Class to add to the active links. |
@@ -128,3 +151,21 @@ For an example of the scrollspy nav, just check out the fixed nav on the right s
 | `scroll` | Boolean | `false` | Adds the [Scroll component](scroll.md) to its links. |
 | `overflow` | Boolean | `true` | If overflow is set to true, the first or last item will stay active if above or below the navigation. |
 | `offset` | Number | `0` | Pixel offset added to scroll top. |
+
+## Javascript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.scrollspyNav(element, options);
+```
+
+### Events
+
+These events will be triggered on elements with this component attached.
+
+| Name | Description |
+| --- | --- |
+| `active` | Fires after an item becomes active. |
