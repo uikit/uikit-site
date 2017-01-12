@@ -13,11 +13,15 @@ Once you have [installed UIkit](install.md), include the JavaScript files on you
 
 ## Component usage
 
-You can use UIkit components by adding `uk-*` attributes to your HTML elements without writing a single line of JavaScript. This is UIkit's best practice of using its components and should always be considered first.
+You can use UIkit components by adding `uk-*` or `data-uk-*` attributes to your HTML elements without writing a single line of JavaScript. This is UIkit's best practice of using its components and should always be considered first.
 
 ```html
-<div id="sticky" uk-sticky="offset: 50;"></div>
+<div uk-sticky="offset: 50;"></div>
+
+<div data-uk-sticky="offset: 50;"></div>
 ```
+
+**Note** [React](https://facebook.github.io/react/) will work with `data-uk-*` prefixes only.
 
 You can also initialize components via JavaScript and apply them to elements in your document.
 
@@ -159,4 +163,4 @@ component.$destroy(true);
 
 ## Component initialization
 
-UIkit is listening for DOM manipulations and will automatically initialize, connect and disconnect components as they are inserted or removed from the DOM. That way it can easily be used with JavaScript Frameworks like Vue.js. Head over to [Github](https://github.com/uikit/uikit-site) to see a working example of how Vue.js and UIkit work together on this site.
+UIkit is listening for DOM manipulations and will automatically initialize, connect and disconnect components as they are inserted or removed from the DOM. That way it can easily be used with JavaScript Frameworks like React and Vue.js. Head over to [Github](https://github.com/uikit/uikit-site) to see a working example of how Vue.js and UIkit work together on this site.
