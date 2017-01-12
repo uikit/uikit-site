@@ -33,7 +33,7 @@
         <div class="uk-section-small">
             <div class="uk-container uk-container-expand uk-text-center uk-position-relative">
 
-                <ul class="uk-subnav tm-subnav uk-flex-inline uk-margin-remove-bottom">
+                <ul class="uk-subnav tm-subnav uk-flex-inline uk-flex-center uk-margin-remove-bottom" uk-margin>
                     <li>
                         <span>Version <span uikit-version></span></span>
                     </li>
@@ -48,7 +48,7 @@
                     </li>
                 </ul>
 
-                <a class="uk-button uk-button-default tm-button-default uk-position-center-right uk-position-medium" href="./v2">UIkit 2 <span uk-icon="icon: arrow-right"></span></a>
+                <a class="uk-button uk-button-default tm-button-default uk-position-center-right uk-position-medium uk-visible@m" href="./v2">UIkit 2 <span uk-icon="icon: arrow-right"></span></a>
 
             </div>
         </div>

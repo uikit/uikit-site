@@ -299,8 +299,14 @@ html { overflow-y: scroll; }
  * Subnav
  */
 
-.tm-subnav { margin-left: -50px; }
-.tm-subnav > * { padding-left: 50px; }
+/* Tablet landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    .tm-subnav { margin-left: -50px; }
+    .tm-subnav > * { padding-left: 50px; }
+
+}
+
 .tm-subnav > * > :first-child { text-transform: capitalize; }
 
 /*
