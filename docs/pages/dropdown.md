@@ -72,8 +72,7 @@ You can place a grid from the [Grid component](grid.md) inside a dropdown, which
 
 ```html
 <div class="uk-width-large" uk-dropdown>
-    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
-    </div>
+    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>...</div>
 </div>
 ```
 

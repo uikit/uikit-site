@@ -38,10 +38,10 @@ To apply the sticky behavior with a delay, add the `top` attribute, which can be
 
 ```html
 <!-- Sticks after 100px of scrolling -->
-<div uk-sticky="top: 100">
+<div uk-sticky="top: 100"></div>
 
 <!-- Sticks after 100vh -->
-<div uk-sticky="top: 100vh">
+<div uk-sticky="top: 100vh"></div>
 
 <!-- Sticks to the top of the container -->
 <div id="my-id">

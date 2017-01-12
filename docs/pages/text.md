@@ -126,7 +126,7 @@ UIkit provides a number of responsive alignment classes. Basically, they work ju
 
 ***
 
-### Vertical Alignment
+### Vertical alignment
 
 Add one of these classes to vertically align text to an object.
 

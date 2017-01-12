@@ -290,7 +290,7 @@ You can view examples in the tests for [Height Viewport](../assets/uikit/tests/h
 
 ***
 
-## Match Height
+## Match height
 
 To expand all children of a container to the same height, regardless of their content – for example, inside a grid – add the `uk-height-match` attribute.
 
@@ -305,7 +305,7 @@ To expand all children of a container to the same height, regardless of their co
 
 ***
 
-### Match Cards
+### Match cards
 
 You can also target and match specific elements inside the container, like cards. Just add the `target: SELECTOR` option to the attribute.
 
@@ -332,7 +332,7 @@ You can also target and match specific elements inside the container, like cards
 
 ***
 
-### Match All
+### Match all
 
 If your grid wraps into multiple rows, only grid columns within the same row are matched. To match grid columns across all rows just add the `row: false` option to the attribute.
 
@@ -388,7 +388,7 @@ In UIkit `<img>`, `<canvas>`, `<aufio>` and `<video>` elements adapt to the widt
 
 ***
 
-## Border Radius
+## Border radius
 
 To modify the border radius of an element, like an image, add one of the following classes.
 
@@ -404,7 +404,7 @@ To modify the border radius of an element, like an image, add one of the followi
 
 ***
 
-## Box Shadow
+## Box shadow
 
 You can apply different box shadows to elements. Just add one of the following classes.
 
@@ -449,7 +449,7 @@ You can apply different box shadows to elements. Just add one of the following c
 
 ***
 
-## Drop Cap
+## Drop cap
 
 With the `.uk-dropcap` class you can achieve a drop cap within a text by adding it directly to the `<p>` element.
 
@@ -527,7 +527,7 @@ SVGs or Scaleable Vector Graphics are really handy, for example to display a log
 To start playing an animated Gif only when it comes into the viewport, add the `uk-gif` attribute. That way a user will see the animation right when he is supposed to.
 
 ```html
-<img src="" alt="" uk-gif
+<img src="" alt="" uk-gif>
 ```
 
 ```example
@@ -536,7 +536,7 @@ To start playing an animated Gif only when it comes into the viewport, add the `
 
 ***
 
-## Blend Modes
+## Blend modes
 
 Add one of the following classes to apply different blend modes to your backgrounds, for example when placing them on images. You can combine these with the [Overlay component](overlay.md). For a better understanding of how background blend modes work, take a look at this [CSS Tricks article](https://css-tricks.com/almanac/properties/b/background-blend-mode/).
 
@@ -723,7 +723,7 @@ Add one of the following classes to apply different blend modes to your backgrou
 
 ***
 
-## Transform Origin
+## Transform origin
 
 To modify the origin of an animation, like scaling, add one of the `uk-transform-origin-*` classes. This can be combined with the [Animation component](animation.md).
 
@@ -738,7 +738,7 @@ To modify the origin of an animation, like scaling, add one of the `uk-transform
 | `.uk-transform-origin-bottom-center` | The transition originates from the bottom.       |
 | `.uk-transform-origin-bottom-right`  | The transition originates from the bottom right. |
 
-```
+```html
 <div class="uk-transform-origin-bottom-right uk-animation-scale-up"></div>
 ```
 

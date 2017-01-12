@@ -115,7 +115,7 @@ To alter the background position of your image — which is in the top left hand
 
 ***
 
-### No Repeat
+### No repeat
 
 To keep smaller images from repeating to fill the background area, add the `.uk-background-no-repeat` class. This can be very useful in combination with the background position classes.
 
@@ -169,7 +169,7 @@ Resize your browser window to see the effect in the example below.
 
 ***
 
-## Blend Modes
+## Blend modes
 
 Add one of the following classes to apply different blend modes to your background image. You can combine these with the background color classes, as well. For a better understanding of how background blend modes work, take a look at this [CSS Tricks article](https://css-tricks.com/almanac/properties/b/background-blend-mode/).
 

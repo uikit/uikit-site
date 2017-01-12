@@ -46,8 +46,7 @@ You can place a grid from the [Grid component](grid.md) inside a drop. Just wrap
 
 ```html
 <div class="uk-width-large" uk-drop>
-    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
-    </div>
+    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>...</div>
 </div>
 ```
 

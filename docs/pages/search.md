@@ -90,7 +90,7 @@ To enable an action, use an `<a>` or `<button>` element to create the icon.
 To apply the default search styling, add the `.uk-search-default` to the `<form>` element with the `.uk-search` class.
 
 ```html
-<form class="uk-search uk-search-default"></form>
+<form class="uk-search uk-search-default">...</form>
 ```
 
 ```example
@@ -102,7 +102,7 @@ To apply the default search styling, add the `.uk-search-default` to the `<form>
 
 ***
 
-## Large Modifier
+## Large modifier
 
 To increase the size of the search, for example when creating an overlay search, add the `.uk-search-large` class.
 
@@ -119,7 +119,7 @@ To increase the size of the search, for example when creating an overlay search,
 
 ***
 
-## Navbar Modifier
+## Navbar modifier
 
 A search can be used inside a navbar from the [Navbar component](navbar.md). Just add the `.uk-search-navbar` class.
 
@@ -167,7 +167,7 @@ To apply a hover state to the search icon when using an `<a>` or `<button>` elem
 
 ***
 
-## Search in Navbar
+## Search in navbar
 
 The search icon can be used as a toggle to open the search inside a navbar – as an overlay, drop or dropdown – or outside in a modal. Just add the `.uk-navbar-toggle` class to the icon.
 

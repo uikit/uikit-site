@@ -232,7 +232,7 @@ To play animations at a faster speed, add the `.uk-animation-fast` class to the 
 
 By default, scaling animations originate from the center. To modify this behavior, add one of the `.uk-transform-origin-*` classes from the [Utility component](utility.md#transform-origin).
 
-```
+```html
 <div class="uk-animation-scale-up uk-transform-origin-bottom-right"></div>
 ```
 

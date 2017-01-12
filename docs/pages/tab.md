@@ -31,7 +31,7 @@ The tab component consists of clickable tabs, that are aligned side by side in a
 
 ***
 
-## Bottom Modifier
+## Bottom modifier
 
 Add the `.uk-tab-bottom` class to flip tab items to the bottom.
 
@@ -118,7 +118,7 @@ You can combine tabs with the [Flex component](flex.md) or the [Width component]
 
 ***
 
-## Tabs with dropdowns
+## Tabs and Dropdown
 
 Tabs can be used to trigger a dropdown menu from the [Dropdown component](dropdown.md).
 

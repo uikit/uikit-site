@@ -10,13 +10,14 @@ To apply this component, use the following classes. To align a subnav, for examp
 |-----------------|---------------------------------------------------------------------------------------------------------------------|
 | `.uk-subnav`    | Add this class to a `<ul>` element to define the Subnav component. Use `<a>` elements as nav items within the list. |
 | `.uk-active `   | Add this class to a list item to apply an active state.                                                             |
-| `.uk-disabled ` | Add this class to a list item to apply a disabled state.                                                            |
+
+To use use list items without a link, add a `<span>` element instead of an `<a>`. Alternatively, you can add the `.uk-disabled` class to apply a disabled state.
 
 ```html
 <ul class="uk-subnav">
-    <li class="uk-active"><a href="">...</a></li>
-    <li><a href="">...</a></li>
-    <li><span>...</span></li>
+    <li class="uk-active"><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><span></span></li>
 </ul>
 ```
 
@@ -35,7 +36,7 @@ To apply this component, use the following classes. To align a subnav, for examp
 
 ## Style modifiers
 
-### Subnav Divider
+### Subnav divider
 
 Add the `.uk-subnav-divider` class to separate menu items with lines.
 
@@ -53,7 +54,7 @@ Add the `.uk-subnav-divider` class to separate menu items with lines.
 
 ***
 
-### Subnav Pill
+### Subnav pill
 
 Add the `.uk-subnav-pill` class to highlight the active menu item with a background.
 
@@ -71,7 +72,7 @@ Add the `.uk-subnav-pill` class to highlight the active menu item with a backgro
 
 ***
 
-## Subnav with dropdowns
+## Subnav with Dropdown
 
 You can also use a dropdown from the [Dropdown component](dropdown.md) with a subnav.
 

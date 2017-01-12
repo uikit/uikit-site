@@ -48,7 +48,7 @@ In the ZIP file you will find all CSS, JavaScript and image files ready to use f
 
 ***
 
-## HTML Markup
+## HTML markup
 
 First off, make sure you have a solid code editor, for example Sublime Text. You need to add the compiled and preferably minified UIkit CSS and JavaScript to the header of your HTML5 document. jQuery is required as well. For your basic setup, that's it.
 
@@ -68,7 +68,7 @@ First off, make sure you have a solid code editor, for example Sublime Text. You
 
 Once you have finished implementing UIkit into your webpage, take a look at the UIkit components and get an overview of what UIkit is offering.
 
-## CDN Links
+## CDN links
 
 All versions of UIkit are hosted on the Cloudflare content delivery network via [cdnjs.com](https://cdnjs.com/libraries/uikit).
 

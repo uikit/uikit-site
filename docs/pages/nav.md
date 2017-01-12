@@ -27,7 +27,7 @@ To apply this component, add the `.uk-nav` class to a `<ul>` element. Use `<a>` 
 
 ***
 
-## Nested Navs
+## Nested navs
 
 Add the `.uk-parent` class to an item to turn it into a parent. Add the `.uk-nav-sub` class to a `<ul>` element inside the item to create the subnav.
 
@@ -148,7 +148,7 @@ When clicking on a parent item, an open one will close, allowing only one open n
 
 ***
 
-## Header & Divider
+## Header & divider
 
 Add one of the following classes to a list item to create a header or a divider between items.
 

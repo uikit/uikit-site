@@ -254,10 +254,9 @@ By default, the page will scroll with the modal, if its content exceeds the wind
 
 ```html
 <div id="my-id" uk-modal>
-    <div class="uk-modal-dialog" uk-overflow-auto>...</div>
+    <div class="uk-modal-dialog" uk-overflow-auto></div>
 </div>
 ```
-
 
 ```example
 <a class="uk-button uk-button-default" href="#modal-overflow" uk-toggle>Open</a>

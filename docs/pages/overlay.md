@@ -9,7 +9,7 @@ To create a position context, add the `.uk-overlay` class to an element followin
 ```html
 <div class="uk-inline">
     <img src="" alt="">
-    <div class="uk-overlay uk-overlay-default uk-position-bottom">...</div>
+    <div class="uk-overlay uk-overlay-default uk-position-bottom"></div>
 </div>
 ```
 

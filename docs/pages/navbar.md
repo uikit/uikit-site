@@ -144,7 +144,7 @@ A parent item inside the navbar can be enabled by either hovering or clicking th
 
 ***
 
-## Transparent Navbar
+## Transparent navbar
 
 When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just add the `.uk-navbar-transparent` class to the `<nav>` element. If necessary, add the `.uk-light` or `.uk-dark` class to invert the navbar's color.
 
@@ -184,7 +184,7 @@ When using an image or colored background for the hero section of your website, 
 
 ***
 
-## Navbar Subtitle
+## Navbar subtitle
 
 To define a subtitle, create a `<div>` element inside an item's `<a>` element. Add the `.uk-navbar-subtitle` class to another `<div>` element.
 
@@ -383,7 +383,7 @@ A navbar can contain a dropdown from the [Dropdown component](dropdown.md). Just
 
 ***
 
-### Multiple Columns
+### Multiple columns
 
 The [Dropdown component](dropdown.md) allows you arrange the dropdown content in columns. To accommodate up to five columns, you also need to add one of the `.uk-navbar-dropdown-width-*` classes. Columns will stack, if they no longer fit into the container.
 

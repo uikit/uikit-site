@@ -24,7 +24,7 @@ To apply this component, add one of the following classes to a block element.
 
 ***
 
-## Remove Padding
+## Remove padding
 
 In some cases you want to remove padding from an element, rather than adding it. To do so, apply one of the following classes.
 

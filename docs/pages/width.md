@@ -60,7 +60,7 @@ Add one of the `.uk-width-*` classes to a container element to determine its siz
 
 ***
 
-## Auto & Expand
+## Auto & expand
 
 The width component provides additional modifiers to give you more flexibility in the distribution of items.
 
@@ -89,7 +89,7 @@ The width component provides additional modifiers to give you more flexibility i
 
 ***
 
-## Equal Child Widths
+## Equal child widths
 
 To create a grid whose child elements' widths are evenly split, you don't have to apply the same class to each list item within the grid. Just add one of the `.uk-child-width-*` classes to the grid itself.
 
@@ -163,7 +163,7 @@ Items that use width classes with fractions will break into a new row, if they n
 
 ***
 
-## Fixed Width
+## Fixed width
 
 In addition to the calculated width classes, you can also add one of the following classes, which apply fixed widths.
 
@@ -189,7 +189,7 @@ In addition to the calculated width classes, you can also add one of the followi
 
 ***
 
-## Responsive Width
+## Responsive width
 
 UIkit provides a number of responsive widths classes. Basically they work just like the usual width classes, except that they have suffixes that represent the breakpoint from which they come to effect. These classes can be combined with the [Visibility component](visibility.md). This is great to adjust your layout and content for different device sizes.
 

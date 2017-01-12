@@ -198,7 +198,7 @@ To vertically center table content, just add the `.uk-table-middle` class. You c
 
 ***
 
-## Responsive Table
+## Responsive table
 
 If your table happens to be wider than its container element or would eventually get too big on a specific viewport width, just wrap it inside a `<div>` element and add the `.uk-overflow-auto` class. This creates a container that provides a horizontal scrollbar whenever the elements inside it are wider than the container itself.
 

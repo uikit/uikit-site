@@ -7,7 +7,7 @@
 To create a spinner, add the `uk-spinner` attribute to a block element.
 
 ```html
-<div uk-spinner>
+<div uk-spinner></div>
 ```
 
 ```example

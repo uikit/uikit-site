@@ -100,7 +100,7 @@ If you want a position element to cover its container, just add the `.uk-positio
 
 ***
 
-## Small Modifier
+## Small modifier
 
 To apply a small margin to position elements, add the `.uk-position-small` class.
 
@@ -147,7 +147,7 @@ To apply a small margin to position elements, add the `.uk-position-small` class
 
 ***
 
-## Medium Modifier
+## Medium modifier
 
 To apply a slightly larger margin to position elements, add the `.uk-position-medium` class.
 

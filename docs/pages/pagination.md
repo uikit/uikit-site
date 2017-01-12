@@ -14,9 +14,9 @@ The Pagination component consists of button-like styled links, that are aligned 
 
 ```html
 <ul class="uk-pagination">
-    <li><a href="">...</a></li>
-    <li class="uk-active"><span>...</span></li>
-    <li class="uk-disabled"><span>...</span></li>
+    <li><a href=""></a></li>
+    <li class="uk-active"><span></span></li>
+    <li class="uk-disabled"><span></span></li>
 </ul>
 ```
 
@@ -74,7 +74,7 @@ The pagination component utilizes flexbox, so navigations can easily be aligned 
 
 ***
 
-## Previous and Next
+## Previous and next
 
 To apply a previous and next button, add the `uk-pagination-previous` or `uk-pagination-next` attribute to a `<span>` element inside a pagination item.
 

@@ -154,7 +154,7 @@ To be able to sort items from one list to another, you can group them by adding 
 
 ***
 
-## Custom Class
+## Custom class
 
 You can also apply one or more custom classes to items when they are being dragged. To do so, add the `clsCustom: MY-CLASS` option to the attribute.
 

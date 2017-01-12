@@ -18,7 +18,7 @@ To create a navigation with previous and next buttons, just add the `uk-slidenav
 
 ***
 
-## Large Modifier
+## Large modifier
 
 To increase the size of the slidenav icons, add the `.uk-slidenav-large` class.
 
@@ -71,7 +71,7 @@ Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md)
 
 ***
 
-## Slidenav Container
+## Slidenav container
 
 To display a conjoint slidenav, wrap the slidenav items inside a `<div>` element and add the `.uk-slidenav-container` class, as well as one of the `.uk-position-*` classes.
 

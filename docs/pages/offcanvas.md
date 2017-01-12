@@ -106,7 +106,7 @@ By default, the off-canvas slides in. But you can actually choose between differ
 | `mode: none`   | The off-canvas appears and overlays the content without an animation.         |
 
 ```html
-<div id="#my-id" uk-offcanvas="mode: push"></div>
+<div id="#my-id" uk-offcanvas="mode: push">...</div>
 ```
 
 ```example
@@ -176,7 +176,7 @@ You can use the [Nav component](nav.md) inside an off-canvas to create a mobile 
 ```html
 <div id="my-id" uk-offcanvas>
     <div class="uk-offcanvas-bar">
-        <ul class="uk-nav uk-nav-default"></ul>
+        <ul class="uk-nav uk-nav-default">...</ul>
     </div>
 </div>
 ```

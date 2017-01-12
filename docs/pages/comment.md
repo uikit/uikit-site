@@ -50,7 +50,7 @@ The Comment component consists of the comment itself, a comment header, includin
 
 ***
 
-## Comment Primary
+## Comment primary
 
 To style a comment differently, for example to highlight it as the admin's comment, just add the `.uk-comment-primary` class.
 
@@ -80,7 +80,7 @@ To style a comment differently, for example to highlight it as the admin's comme
 
 ***
 
-## Comment Lists
+## Comment lists
 
 Add the `.uk-comment-list` class to a `<ul>` element to create a list of comments. You can nest any number of `<ul>` elements inside a comment list.
 

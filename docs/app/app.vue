@@ -61,25 +61,25 @@
                             <li v-if="component">
                                 <a :href="'../assets/uikit/tests/'+component+'.html'" target="_blank">
                                     <span class="uk-margin-small-right" uk-icon="icon: push"></span>
-                                    <span class="uk-text-middle">Open Test</span>
+                                    <span class="uk-text-middle">Open test</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/uikit/uikit/issues" target="_blank">
                                     <span class="uk-margin-small-right" uk-icon="icon: warning"></span>
-                                    <span class="uk-text-middle">Report Issue</span>
+                                    <span class="uk-text-middle">Report issue</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://gitter.im/uikit/uikit" target="_blank">
                                     <span class="uk-margin-small-right" uk-icon="icon: commenting"></span>
-                                    <span class="uk-text-middle">Get Help</span>
+                                    <span class="uk-text-middle">Get help</span>
                                 </a>
                             </li>
                             <li>
                                 <a :href="'https://github.com/uikit/uikit-site/tree/develop/docs/pages/'+page+'.md'" target="_blank">
                                     <span class="uk-margin-small-right" uk-icon="icon: pencil"></span>
-                                    <span class="uk-text-middle">Edit this Page</span>
+                                    <span class="uk-text-middle">Edit this page</span>
                                 </a>
                             </li>
                         </ul>

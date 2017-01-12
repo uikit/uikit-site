@@ -314,7 +314,7 @@ To enable an action, for example opening a modal to pick an image or link, use a
 
 ***
 
-## Form and grid
+## Form and Grid
 
 You can also use the [Grid](grid.md) and [Width](width.md) components to define the layout of a form.
 

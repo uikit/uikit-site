@@ -21,7 +21,7 @@ In this example we are using a simple button which opens up the file select wind
 
 ***
 
-## Drop Area
+## Drop area
 
 This example shows how to realize a drop area with the option to select the file from a file window.
 

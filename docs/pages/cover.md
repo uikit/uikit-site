@@ -61,7 +61,7 @@ To apply the Cover component to an iframe, you need to add the `uk-cover` attrib
 
 ***
 
-## Responsive Height
+## Responsive height
 
 To add responsive behavior to your cover image, you need to create an invisible `<canvas>` element and assign `width` and `height` values to it, according to the aspect ratio you want the covered area to have. That way it will adapt the responsive behavior of the image.
 
@@ -81,7 +81,7 @@ To add responsive behavior to your cover image, you need to create an invisible 
 
 ***
 
-## Viewport Height
+## Viewport height
 
 Adding the `.uk-height-viewport` class from the [Utility component](utility.md) will stretch the height of the parent element to fill the whole viewport.
 

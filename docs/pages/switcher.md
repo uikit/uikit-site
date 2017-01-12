@@ -156,7 +156,7 @@ You can also apply multiple animations from the [Animation component](animation)
 
 ***
 
-## Switcher with subnavs
+## Switcher and Subnav
 
 The switcher is easily applied to the [Subnav component](subnav).
 
@@ -185,7 +185,7 @@ The switcher is easily applied to the [Subnav component](subnav).
 
 ***
 
-## Switcher with tabs
+## Switcher and Tab
 
 As an exception to the rule, add the `uk-tab` attribute instead of `uk-switcher` to the tabbed navigation to combine the switcher with the [Tab component](tab).
 
@@ -271,7 +271,7 @@ Use the [Grid](grid) and [Width](width) components to display content correctly 
 
 ***
 
-## Switcher with buttons
+## Switcher and Button
 
 The switcher can also be applied to buttons or button groups from the [Button component](button). Just add the switcher attribute to a block around a group of buttons or to the element with the `.uk-button-group` class.
 
@@ -302,7 +302,7 @@ The switcher can also be applied to buttons or button groups from the [Button co
 
 ***
 
-## Switcher with navs
+## Switcher and Nav
 
 To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribute to the nav `<ul>` element. Use the [Grid](grid) and [Width](width) components to arrange nav and content in a grid layout.
 

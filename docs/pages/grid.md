@@ -34,7 +34,7 @@ To create the grid container, add the `uk-grid` attribute to a `<div>` element. 
 
 ***
 
-## Small Gutter
+## Small gutter
 
 To apply a smaller gutter between grid cells, add the `.uk-grid-small` class.
 
@@ -58,7 +58,7 @@ To apply a smaller gutter between grid cells, add the `.uk-grid-small` class.
 
 ***
 
-## Medium Gutter
+## Medium gutter
 
 To apply a medium gutter between grid cells, add the `.uk-grid-medium` class.
 
@@ -82,7 +82,7 @@ To apply a medium gutter between grid cells, add the `.uk-grid-medium` class.
 
 ***
 
-## Large Gutter
+## Large gutter
 
 To apply a large gutter between grid cells, add the `.uk-grid-large` class.
 
@@ -106,7 +106,7 @@ To apply a large gutter between grid cells, add the `.uk-grid-large` class.
 
 ***
 
-## Collapse Gutter
+## Collapse gutter
 
 To remove the grid gutter entirely, add the `.uk-grid-collapse` class.
 
@@ -154,7 +154,7 @@ Add the `.uk-grid-divider` class to separate grid cells with lines. This class c
 
 ***
 
-## Match Height
+## Match height
 
 To match the height of grid cells, add the `.uk-grid-match` class as a CSS only solution. This automatically selects the direct child of each cell.
 
@@ -239,7 +239,7 @@ The grid is mostly used in combination with the [Width component](width.md). Thi
 
 ***
 
-### Child Width
+### Child width
 
 If the grid columns are evenly split, you can add one of the `.uk-child-width-*` classes to the grid container, instead of adding a class to each of the items.
 

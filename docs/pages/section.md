@@ -132,7 +132,7 @@ To apply different background colors and paddings, add one of the following clas
 
 ***
 
-## Section Media
+## Section media
 
 When using a section with a background image, add the `.uk-section-media` class.
 
@@ -264,7 +264,7 @@ To further increase a section's padding, add the `.uk-section-xlarge` class.
 
 ***
 
-### Remove Padding
+### Remove padding
 
 To remove a section's padding, add the `.uk-padding-remove-vertical` class from the [Padding component](padding.md).
 
@@ -301,7 +301,7 @@ Some UIkit themes use richer styles, including textured backgrounds and borders.
 
 ***
 
-## Section and container
+## Section and Container
 
 You can place a container from the [Container component](container.md) to modify the width of content inside sections and add horizontal padding. Note that the padding of a nested container will be reset.
 

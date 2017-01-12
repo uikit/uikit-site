@@ -158,7 +158,7 @@ To quote multiple lines of content from another source within your document, use
 
 ***
 
-## Preformatted Text
+## Preformatted text
 
 For multiple lines of code, use the `<pre>` element. It creates a new text block that preserves spaces, tabs and line breaks. Nest a `<code>` element inside to define the code block.
 

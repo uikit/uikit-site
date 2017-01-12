@@ -26,7 +26,7 @@ To apply this component, add the `.uk-flex` class to a `<div>` element. This wil
 
 ***
 
-## Flex Inline
+## Flex inline
 
 By default, the flex container is displayed as a block element. To apply the behavior of an inline element while still laying out its content according to the flexbox model, use the `.uk-flex-inline` class instead of `.uk-flex`.
 
