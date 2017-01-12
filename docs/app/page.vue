@@ -51,7 +51,7 @@
 
                     $('pre code', this.$refs.container).each((i, block) => hljs.highlightBlock(block));
 
-                    this.$parent.ids = $('h1,h2', this.$refs.container).toArray().reduce((ids, el) => {
+                    this.$parent.ids = $('h1,h2', this.$refs.container).filter((i, el) => !$(el).parents('.uk-switcher').length).toArray().reduce((ids, el) => {
 
                         el = $(el);
 
