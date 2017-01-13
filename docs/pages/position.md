@@ -102,19 +102,6 @@ If you want a position element to cover its container, just add the `.uk-positio
 
 ***
 
-## Utility classes
-
-This component features a number of general position utility classes:
-
-| Class                   | Description                                   |
-|-------------------------|-----------------------------------------------|
-| `.uk-position-relative` | Add this class to apply relative positioning. |
-| `.uk-position-absolute` | Add this class to apply absolute positioning. |
-| `.uk-position-fixed`    | Add this class to apply fixed positioning.    |
-| `.uk-position-z-index`  | Add this class to apply a z-index of 1.       |
-
-***
-
 ## Small modifier
 
 To apply a small margin to position elements, add the `.uk-position-small` class.
@@ -206,3 +193,16 @@ To apply a slightly larger margin to position elements, add the `.uk-position-me
 
 </div>
 ```
+
+***
+
+## Utility classes
+
+This component features a number of general position utility classes:
+
+| Class                   | Description                                   |
+|-------------------------|-----------------------------------------------|
+| `.uk-position-relative` | Add this class to apply relative positioning. |
+| `.uk-position-absolute` | Add this class to apply absolute positioning. |
+| `.uk-position-fixed`    | Add this class to apply fixed positioning.    |
+| `.uk-position-z-index`  | Add this class to apply a z-index of 1.       |
