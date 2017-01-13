@@ -285,7 +285,7 @@ Use the `.uk-form-controls-text` class to better align checkboxes and radio butt
 
 ## Form and icons
 
-To use an icon from the [Icon component](icon.md), add the `.uk-form-icon` class to a `<span>` element and group it with an `<input>` element by by adding the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around both. The icon has to be first in the markup. By default, the icon will be placed on the left side of the form. To change the alignment, add the `.uk-form-icon-flip` class.
+You use an icon from the [Icon component](icon.md) inside a form. Add the `.uk-form-icon` class to a `<span>` element. Group it with an `<input>` element by adding the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around both. The icon has to come first in the markup. By default, the icon will be placed on the left side of the form. To change the alignment, add the `.uk-form-icon-flip` class.
 
 ```html
 <div class="uk-inline">
