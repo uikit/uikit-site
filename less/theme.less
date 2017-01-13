@@ -33,7 +33,7 @@
 // UIkit
 // ========================================================================
 
-@global-font-family:                            ProximaNova;
+@global-font-family:                            ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 @global-font-size:                              15px;
 
 @global-xxlarge-font-size:                      38px;
@@ -375,4 +375,32 @@ h2.tm-heading-fragment > a:before {
     width: 25px;
     float: left;
     color: @global-muted-color;
+}
+
+/* Reset container for docs
+ ========================================================================== */
+
+.tm-main .uk-container {
+    padding-left: @container-padding-horizontal;
+    padding-right: @container-padding-horizontal;
+}
+
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+
+    .tm-main .uk-container {
+        padding-left: @container-padding-horizontal-s;
+        padding-right: @container-padding-horizontal-s;
+    }
+
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    .tm-main .uk-container {
+        padding-left: @container-padding-horizontal-m;
+        padding-right: @container-padding-horizontal-m;
+    }
+
 }

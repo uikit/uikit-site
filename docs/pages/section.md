@@ -34,7 +34,17 @@ By default, a section is blank. That is why it is important to add a modifier cl
 </div>
 ```
 
-**Note** Because containers are nested on this documentation site the horizontal padding is removed which will not happen in real use.
+***
+
+## Section and Container
+
+You can place a container from the [Container component](container.md) to modify the width of content inside sections and add horizontal padding. Note that the padding of a nested container will be reset.
+
+```html
+<div class="uk-section uk-section-muted">
+    <div class="uk-container"></div>
+</div>
+```
 
 ***
 
@@ -48,6 +58,7 @@ To apply different background colors and paddings, add one of the following clas
 | `.uk-section-muted`     | Adds a muted background color.                               |
 | `.uk-section-primary`   | Adds a primary background color.                             |
 | `.uk-section-secondary` | Adds a secondary background color.                           |
+| `.uk-section-media`     | Use it if a section has a custom background image            |
 
 ```html
 <div class="uk-section uk-section-primary"></div>
@@ -133,59 +144,7 @@ To apply different background colors and paddings, add one of the following clas
 
     </div>
 </div>
-```
 
-***
-
-### Preserve color
-
-The `.uk-section-primary` and `.uk-section-secondary` classes are extending the inverse style from the [Inverse component](inverse.md) automatically. If you want to prevent this behavior, for example because you are using [cards](cards.md) in these sections, add the `.uk-preserve-color` class.
-
-```html
-<div class="uk-section uk-section-primary uk-preserve-color"></div>
-```
-
-```example
-<div class="uk-section uk-section-primary uk-preserve-color">
-    <div class="uk-container">
-
-        <div class="uk-panel uk-light uk-margin-medium">
-            <h3>Section Default</h3>
-        </div>
-
-        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-```
-
-***
-
-## Section media
-
-When using a section with a background image, add the `.uk-section-media` class.
-
-```html
-<div class="uk-section uk-section-media"></div>
-```
-
-```example
 <div class="uk-section uk-section-media uk-light uk-background-cover" style="background-image: url(../docs/images/dark.jpg)">
     <div class="uk-container">
 
@@ -208,7 +167,42 @@ When using a section with a background image, add the `.uk-section-media` class.
 
 ***
 
-## Padding
+### Preserve color
+
+The `.uk-section-primary` and `.uk-section-secondary` classes are extending the inverse style from the [Inverse component](inverse.md) automatically. If you want to prevent this behavior, for example because you are using [cards](cards.md) in these sections, add the `.uk-preserve-color` class.
+
+```html
+<div class="uk-section uk-section-primary uk-preserve-color"></div>
+```
+
+```example
+<div class="uk-section uk-section-primary uk-preserve-color">
+    <div class="uk-container">
+
+        <div class="uk-panel uk-light uk-margin-medium">
+            <h3>Section Primary with cards</h3>
+        </div>
+
+        <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+```
+
+***
+
+## Size modifier
 
 You can add different paddings to each section or remove it altogether.
 
@@ -336,22 +330,10 @@ To remove a section's padding, add the `.uk-padding-remove-vertical` class from 
 
 ***
 
-## Overlap
+## Overlap modifier
 
 Some UIkit themes use richer styles, including textured backgrounds and borders. In this case, you can add the `.uk-section-overlap` class, to apply a border image and a negative offset to the following section. Note that this only works in styles that implement the feature, if there are subsequent sections.
 
 ```html
 <div class="uk-section uk-section-overlap"></div>
-```
-
-***
-
-## Section and Container
-
-You can place a container from the [Container component](container.md) to modify the width of content inside sections and add horizontal padding. Note that the padding of a nested container will be reset.
-
-```html
-<div class="uk-section uk-section-muted">
-    <div class="uk-container"></div>
-</div>
 ```
