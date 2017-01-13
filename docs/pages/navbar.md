@@ -390,10 +390,10 @@ The [Dropdown component](dropdown.md) allows you arrange the dropdown content in
 
 | Class                         | Description                             |
 |-------------------------------|-----------------------------------------|
-| `.uk-navbar-dropdown-width-2` | Add this class to create two columns.   |
-| `.uk-navbar-dropdown-width-3` | Add this class to create three columns. |
-| `.uk-navbar-dropdown-width-4` | Add this class to create four columns.  |
-| `.uk-navbar-dropdown-width-5` | Add this class to create five columns.  |
+| `.uk-navbar-dropdown-width-2` | Add this class to double the dropdown's width.   |
+| `.uk-navbar-dropdown-width-3` | Add this class to triple the dropdown's width. |
+| `.uk-navbar-dropdown-width-4` | Add this class to multiply the dropdown's width by four.  |
+| `.uk-navbar-dropdown-width-5` | Add this class to multiply the dropdown's width by five.  |
 
 ```html
 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
