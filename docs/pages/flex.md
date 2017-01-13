@@ -8,12 +8,12 @@ The Flex component has an essential role in building layouts in UIkit. A lot of 
 
 ## Usage
 
-To apply this component, use one of the following classes. By default, all flex items are aligned to the left, as wide as their content and matched in height.
+To apply the flexbox layout model, use one of the following classes. By default, all flex items are aligned to the left, as wide as their content and matched in height.
 
 | Class             | Description                                                                                                  |
 |-------------------|--------------------------------------------------------------------------------------------------------------|
-| `.uk-flex`        | Add this class to a `div` element to create the flex container.                                              |
-| `.uk-flex-inline` | Applies the behavior of an inline element while still laying out its content according to the flexbox model. |
+| `.uk-flex`        | Create the flex container and behave like a block element.                                                   |
+| `.uk-flex-inline` | Create the flex container and behave like an inline element.                                                 |
 
 ```html
 <div class="uk-flex">

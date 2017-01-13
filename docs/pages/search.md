@@ -146,7 +146,7 @@ A search can be used inside a navbar from the [Navbar component](navbar.md). Jus
 
 ## Toggle
 
-To apply a hover state to the search icon when using an `<a>` or `<button>` element, add the `.uk-search-toggle` class. Mind that you still need to add the `uk-search-icon` attribute to create a search icon itself.
+To apply a hover state to the search icon when using an `<a>` or `<button>` element, add the `.uk-search-toggle` class. To create the search icon itself, add the `uk-search-icon` attribute.
 
 ```html
 <a class="uk-search-toggle" href="" uk-search-icon></a>
