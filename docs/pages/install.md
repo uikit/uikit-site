@@ -1,6 +1,6 @@
 # Installation
 
-<p class="uk-text-lead">Download the UIkit files and include them in your HTML pages.</p>
+<p class="uk-text-lead">Learn where to download and how to compile the UIkit sources.</p>
 
 ## Download
 
@@ -14,26 +14,25 @@ You have the following options to get UIkit:
 All versions of UIkit are also hosted on the Cloudflare content delivery network via [cdnjs.com](https://cdnjs.com/libraries/uikit).
 
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.2/css/uikit.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.2/js/uikit.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/css/uikit.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit.min.js"></script>
 ```
 
 ***
 
-## File structure of the Github project
+## File structure of the source
 
-UIkit is built on [Less](http://lesscss.org), a CSS preprocessor, which adds variables, mixins and much more to CSS. It compiles code written in Less into CSS. The main file structure of UIkit is as follows.
+The Github project contains all sources files which can be compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are concatenated and images are combined into SVG sprites.
 
 | Folder   | Description |
 | -------- | ----------- |
-| `/src`   | Contains all Less and JavaScript component files. |
-| `/dist`  | Contains the compiled CSS and concatenated JS files, updated on every release. |
+| `/src`   | Contains all Less, JavaScript and image sources. |
+| `/dist`  | Contains compiled CSS, concatenated JS and combined images, updated on every release. |
 | `/tests` | Contains HTML test files of all components. |
-
 
 ***
 
-## Compile UIkit from the Github source
+## Compile from Github source
 
 To compile UIkit yourself, you can use the included build scripts.
 
@@ -42,39 +41,43 @@ npm install
 npm run compile
 ```
 
-The compiled dist folder now contains additional files, which are not checked in by default. You will find `uikit-core.min.js` and `uikit-core.min.css` which contain only core components, plus the JavaScript sources of the single additional components. The build task will create even more additional files if you have added a [custom UIkit theme](theme.md).
+The compiled `dist` folder now contains additional files, which are not checked in by default. The build task will create even more additional files if you have added a [custom UIkit theme](theme.md).
 
 ```html
 /dist/css
 
-    <!-- UIkit default theme with all components included -->
+    <!-- UIkit's CSS -->
     uikit.css
     uikit.min.css
 
-    <!-- UIkit default theme with with style for core components only -->
+    <!-- UIkit's core styles, without the default theme -->
     uikit-core.css
     uikit-core.min.css
 
 /dist/images
 
-    <!--Includes images for icons, backgrounds and additional components -->
+    <!-- Contains all the images used within UIkit (e.g. icons). -->
 
 /dist/js
 
-    <!-- JavaScript of UIkit core and ALL components -->
+    <!-- UIkit's JavaScript -->
     uikit.js
     uikit.min.js
 
-    <!-- JavaScript of core functionality, without additional components -->
+    <!-- Stripped down JavaScript. Core functionality without additional components -->
     uikit-core.js
     uikit-core.min.js
 
-    <!-- Advanced components, only needed when including uikit-core.min.js -->
+    <!-- Additional components (e.g. Lightbox), only needed when including uikit-core.js -->
     /components
 ```
 
-***
+To use UIkit's CSS and JavaScript, [include the files](introduction.md#html-markup) in your own HTML and then create the markup of any of the components listed here in the docs.
 
-## Learn how to get started
-
-When you have installed UIkit, you need to [include the files](introduction.md#html-markup) in your own HTML and then you can use any of the components listed here in the docs.
+<script>
+$.get("https://getuikit.com/assets/uikit/package.json", {nocache: Math.random()}, data => {
+    $("pre").each(function(i) {
+        $(this).html($(this).html().replace(/\[uikit-version\]/g, data.version));
+    });
+}, 'json');
+</script>

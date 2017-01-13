@@ -1,4 +1,4 @@
-# Get started
+# Introduction
 
 <p class="uk-text-lead">Get familiar with the basic setup and overview of UIkit.</p>
 
@@ -14,15 +14,15 @@ The Zip file contains the compiled CSS and JavaScript files, which is everything
 
 | Folder    | Description |
 | --------- | --- |
-| `/css`    | Contains all UIkit CSS files and minified versions. |
-| `/images` | Contains all the images used within UIkit (e.g. icons) |
-| `/js`     | Contains all UIkit JavaScript files and minified versions. |
+| `/css`    | Contains the UIkit CSS and a minified version. |
+| `/images` | Contains all the images used within UIkit (e.g. icons). |
+| `/js`     | Contains the UIkit JavaScript and a minified version. |
 
 ***
 
 ## HTML markup
 
-First off, make sure you have a solid code editor, for example [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/). You need to add the compiled and preferably minified UIkit CSS and JavaScript to the header of your HTML5 document. [jQuery](http://jquery.com/download/) is required as well. For your basic setup, that's it.
+Add the compiled and preferably minified CSS and JavaScript to the header of your HTML5 document. [jQuery](http://jquery.com/download/) is required as well. For your basic setup, that's it.
 
 ```html
 <!DOCTYPE html>
@@ -38,12 +38,12 @@ First off, make sure you have a solid code editor, for example [Sublime Text](ht
 </html>
 ```
 
-Once you have finished implementing UIkit into your webpage, take a look at the UIkit components and get an overview of what UIkit is offering.
+Once you have finished implementing UIkit into your document, take a look at the UIkit components and get an overview of what UIkit is offering.
 
 ***
 
-## UIkit autocomplete for  your editor
+## UIkit autocomplete for your editor
 
-To work even more efficiently, we recommend that you install one of the autocomplete plugins for your favourite IDE or code editor. This saves loads of time, as you won't have to look up and type all UIkit classes and markup.
+Using UIkit works best if you have a solid code editor, for example [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/). To be even more efficient, we recommend that you install one of the autocomplete plugins for your favorite IDE or code editor. This saves a lot of time, as you won't have to look up and type all UIkit classes and markup.
 
-We'll update this section as soon as these plugins are available.
+We'll update this section as soon as these plugins are available for UIkit 3.

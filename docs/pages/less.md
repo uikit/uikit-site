@@ -1,6 +1,6 @@
 # Less
 
-<p class="uk-text-lead">To build UIkit with your custom styling, use the included Less files.</p>
+<p class="uk-text-lead">Learn how to modify the UIkit styling and create your own theme.</p>
 
 When you have [installed UIkit](install.md) with Less sources, you can compile it and add your own custom theme. Less is the language that the UIkit styles are written in. This allows you to include customizations in the build process, rather than manually overwriting a lot of CSS rules by hand.
 
@@ -8,81 +8,79 @@ When you have [installed UIkit](install.md) with Less sources, you can compile i
 
 ## Use your own build process
 
-To include the building of UIkit in your project's own build workflow, you need to import the central `uikit.theme.less` file inside your project's own Less file. This main Less file then needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
+To include UIkit in your project's build workflow, you need to import the core UIkit styles (`uikit.less`) or UIkit with its default theme (`uikit.theme.less`) into your project's own Less file. This main Less file then needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
 
-```
-// Import UIkit default theme
-@import "bower_components/uikit/src/less/uikit.theme.less"; // or uikit.less without the theme
+```less
+// Import UIkit default theme (or uikit.less with only core styles)
+@import "bower_components/uikit/src/less/uikit.theme.less";
 
-// Your custom code goes here, e.g. mixins, variables
+// Your custom code goes here, e.g. mixins, variables.
+// See "how to create a theme" below for more info.
 ```
 
 ***
 
 ## Use included build process
 
-Instead of setting up your own build process, you can use the scripts that are included when you get the full UIkit project. To prepare the project dependencies, make sure you have run the following before compiling your own theme.
-
-```html
-cd uikit
-npm install
-
-<!-- Run to compile everything once -->
-npm run compile
-```
+If you are want to change the styling of UIkit, you can use its build process to create a differently themed version of the CSS, that you can then include in your project. That way you do not need to set up your own build process.
 
 To include your own Less theme in the build process, create a `/custom` directory, which will contain all of your custom themes.
 
 **Note** The `/custom` folder is listed in `.gitignore`, which prevents your custom files from being pushed into the UIkit repository. You might also have the `/custom` directory as your own Git repository. That way your theme files are under version control without interfering with the UIkit files.
 
-Create a file `my-theme.less` (or any other name) in the `/custom` folder and add the following import to include all Less components from the core framework. In this file, you will overwrite Less variables and add your own theme styles.
+Create a file `/custom/my-theme.less` (or any other name) and import the core UIkit styles (`uikit.less`) or UIkit with its default theme (`uikit.theme.less`).
 
 ```less
-@import "../src/less/uikit.theme.less"; // or uikit.less without the default theme
+// Import UIkit default theme (or uikit.less with only core styles)
+@import "../src/less/uikit.theme.less";
+
+// Your custom code goes here, e.g. mixins, variables.
+// See "how to create a theme" below for more info.
 ```
 
-Run the npm task `compile-less` which will compile Less, including all themes in the `/custom` folder.
+To compile UIkit and your custom theme into CSS, run the npm task `compile` .
 
 ```sh
-npm run compile-less
+# Run once to install all dependencies
+npm install
+
+# Run every time you compile UIkit and your theme
+npm run compile
 ```
 
-The newly created themes will now be available in the test files, just navigate your browser to the index of the `/test` directory and select your theme from the Dropdown menu. The generated CSS files will be located in the `/css` folder.
-
-### Optional: Start with the default theme
-
-To get you started right away, we provide a default theme located in `/src/less/uikit.theme.less` which imports additional files from the `/src/less/theme` directory. This theme imports all default files and you will also find all theme files with their related hooks. So if you do not want to start empty, all you need to do is to duplicate this file and the `/src/less/theme` folder, move both into the `/custom` directory and rename them however you want.
+The generated CSS files will be located in the `/css` folder. The custom theme is also available in the test files, just navigate your browser to the index of the `/test` directory and select your theme from the Dropdown menu.
 
 ***
 
 ## Create a UIkit theme
 
-We recommend the following best practices when working with the Less sources. The examples assume you are building a theme in the `/custom` directory of the full UIkit project. If you import the Less files into your own project, these examples are still valid, but you will need to adapt the file paths to your own setup.
+When you have setup a file to put in your own Less code, you can get started to theme UIkit the way you want. If you have never used Less before, check out the [language features](http://lesscss.org/features/). When working with the UIkit Less sources, we have a few recommendations.
 
 ### Use variables
 
-The first thing to do is to customize the values of already declared variables. You can find all variables for each component inside their Less files of the core framework and override them in your theme. Many global values are defined in `src/less/variables.less`.
+A lot of customization is possible by simply overwriting the values of already declared variables. You can find all variables for each component inside their Less files of the framework and override them in your theme.
 
-
-`/src/less/components/variables.less`
+First, find a Less variable you want to change inside the UIkit source. For example, the global link color is defined in `/src/less/components/variables.less`:
 
 ```less
 // default value
 @global-link-color: #4091D2;
 ```
 
-`/custom/my-theme.less`
+Then, overwrite the default by setting a custom value inside your own file, i.e. in `/custom/my-theme.less`:
 
 ```less
 // new value
 @global-link-color: #DA7D02;
 ```
 
+The compiled CSS will then have your custom value. But not only has the global link color changed. Many components make use of the `@global-*` variables to infer their own colors, and just adapt them slightly. That way you can rapidly create a theme by just changing some global variables.
+
 ### Use hooks
 
 To prevent overhead selectors, we use Mixins from [Less](http://lesscss.org), which hook into predefined selectors from the UIkit source and apply additional properties. Selectors don't have to be repeated throughout all documents and global changes can be made much more easily.
 
-`/src/less/components/card.less`
+First, find a rule that you want to extend by looking through the component's Less file, for example `/src/less/components/card.less` for the Card component:
 
 ```less
 // CSS rule
@@ -95,8 +93,7 @@ To prevent overhead selectors, we use Mixins from [Less](http://lesscss.org), wh
 }
 ```
 
-
-`/custom/my-theme.less`
+Then, inject additional CSS by using the hook inside your own Less file, i.e. in `/custom/my-theme.less`:
 
 ```less
 // mixin to add new declaration
@@ -105,9 +102,7 @@ To prevent overhead selectors, we use Mixins from [Less](http://lesscss.org), wh
 
 ### Miscellaneous hooks
 
-Should there be neither a variable nor a hook available, you can of course create your own selector. To do so, use the _.hook-card-misc_ hook and write your selector inside. This will sort your new selector to the right place of the compiled CSS file.
-
-`/custom/my-theme.less`
+Should there be neither a variable nor a hook available, you can also create your own selector. To do so, use the _.hook-card-misc_ hook and write your selector inside. This will sort your new selector to the right place of the compiled CSS file. Just add the following lines to your own Less file, i.e. to `/custom/my-theme.less`:
 
 ```less
 // misc mixin
@@ -118,9 +113,11 @@ Should there be neither a variable nor a hook available, you can of course creat
 }
 ```
 
-### Multiple Less files
+## How to structure your theme
 
-In the above examples, we have added all custom rules directly inside `/custom/my-theme.less`. When you simple change a few variables but are happy with the rest, this is perfectly fine. However, for more custom themes and larger projects, we recommend to only use this file as an entry point for the less compiler, but sort all rules into the according component files inside of a subfolder. This is the same structure that you can find in the default theme `/src/less/uikit.theme.less`.
+In the examples above, we have added all custom rules directly to `/custom/my-theme.less`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Less compiler. You should better sort all rules into single files per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/less/uikit.theme.less`.
+
+**Note** The example assumes you are building a theme in the `/custom` directory of the full UIkit project. You can adapt these paths if you have set up your own build process.
 
 ```html
 custom/
@@ -140,7 +137,7 @@ custom/
         ...
 ```
 
-The entry point for the Less compiler, `/custom/my-theme.less`.
+The entry point for the Less compiler, `/custom/my-theme.less`:
 
 ```less
 // Core
@@ -150,7 +147,7 @@ The entry point for the Less compiler, `/custom/my-theme.less`.
 @import "my-theme/_import.less";
 ```
 
-Your theme folder has one file which imports all single component customizations, `custom/my-theme/_import.less`.
+Your theme folder has one file which imports all single component customizations, `custom/my-theme/_import.less`:
 
 ```
 @import "accordion.less";
