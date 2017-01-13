@@ -51,7 +51,7 @@ Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md)
 **Note** You can also apply the [Visibility component](visibility.md), so that the slidenav only appears on hover.
 
 ```example
-<div class="uk-child-width-1-2@m uk-grid-small" uk-grid>
+<div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
     <div>
         <div class="uk-inline uk-visible-toggle uk-light">
             <img src="../docs/images/dark.jpg" alt="">
@@ -86,30 +86,24 @@ To display a conjoint slidenav, wrap the slidenav items inside a `<div>` element
 ```
 
 ```example
-<div class="uk-child-width-1-2@m uk-grid-small" uk-grid>
-
+<div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
     <div>
         <div class="uk-inline uk-light">
             <img src="../docs/images/dark.jpg" alt="">
-
             <div class="uk-slidenav-container uk-position-top-left uk-position-small">
                 <a class="uk-slidenav-large" href="#" uk-slidenav="previous"></a>
                 <a class="uk-slidenav-large" href="#" uk-slidenav="next"></a>
             </div>
-
         </div>
     </div>
-
     <div>
         <div class="uk-inline">
             <img src="../docs/images/light.jpg" alt="">
-
-                <div class="uk-slidenav-container uk-position-bottom-right uk-position-small">
+            <div class="uk-slidenav-container uk-position-bottom-right uk-position-small">
                 <a class="uk-slidenav-large" href="#" uk-slidenav="previous"></a>
                 <a class="uk-slidenav-large" href="#" uk-slidenav="next"></a>
             </div>
         </div>
     </div>
-
 </div>
 ```

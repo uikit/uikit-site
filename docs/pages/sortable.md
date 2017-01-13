@@ -18,7 +18,7 @@ To apply this component, add the `uk-sortable` attribute to a container and crea
 ```
 
 ```example
-<ul class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center" uk-sortable="handle: .uk-card" uk-grid>
+<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s uk-text-center" uk-sortable="handle: .uk-card" uk-grid>
     <li>
         <div class="uk-card uk-card-default uk-card-body">Item 1</div>
     </li>
@@ -54,12 +54,15 @@ By default, the entire sortable element can be used for drag and drop sorting. T
 
 ```html
 <ul uk-sortable="handle: .uk-sortable-handle">
-    <li><div class="uk-sortable-handle"></div></li>
+    <li>
+        <div class="uk-sortable-handle"></div>
+        ...
+    </li>
 </ul>
 ```
 
 ```example
-<ul class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center" uk-sortable="handle: .uk-sortable-handle" uk-grid>
+<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s uk-text-center" uk-sortable="handle: .uk-sortable-handle" uk-grid>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
             <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 1
@@ -109,6 +112,16 @@ By default, the entire sortable element can be used for drag and drop sorting. T
 
 To be able to sort items from one list to another, you can group them by adding the `group: GROUP-NAME` option to the `uk-sortable` attribute on each list.
 
+```html
+<div uk-sortable="group: my-group">
+    <div></div>
+</div>
+
+<div uk-sortable="group: my-group">
+    <div></div>
+</div>
+```
+
 ```example
 <div class="uk-child-width-1-3@s" uk-grid>
     <div>
@@ -156,16 +169,16 @@ To be able to sort items from one list to another, you can group them by adding 
 
 ## Custom class
 
-You can also apply one or more custom classes to items when they are being dragged. To do so, add the `clsCustom: MY-CLASS` option to the attribute.
+You can also apply one or more custom classes to items when they are being dragged. To do so, add the `cls-custom: MY-CLASS` option to the attribute.
 
 ```html
-<ul uk-sortable="clsCustom: my-class">...</ul>
+<ul uk-sortable="cls-custom: my-class">...</ul>
 ```
 
-**Note** In this example, we are using a nav from the [Nav component](nav.md). When dragging an item it will change the text color.
+**Note** In this example, we are using a nav from the [Nav component](nav.md). When dragging an item it will get a box-shadow and background.
 
 ```example
-<ul class="uk-nav uk-nav-default uk-width-medium" uk-sortable="clsCustom: uk-text-warning">
+<ul class="uk-nav uk-nav-default uk-width-medium" uk-sortable="cls-custom: uk-box-shadow-small uk-flex uk-flex-middle uk-background">
     <li class="uk-active"><a href="#">Active</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
