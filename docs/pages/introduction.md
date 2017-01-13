@@ -18,6 +18,8 @@ The Zip file contains the compiled CSS and JavaScript files, which is everything
 | `/images` | Contains all the images used within UIkit (e.g. icons) |
 | `/js`     | Contains all UIkit JavaScript files and minified versions. |
 
+***
+
 ## HTML markup
 
 First off, make sure you have a solid code editor, for example [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/). You need to add the compiled and preferably minified UIkit CSS and JavaScript to the header of your HTML5 document. [jQuery](http://jquery.com/download/) is required as well. For your basic setup, that's it.

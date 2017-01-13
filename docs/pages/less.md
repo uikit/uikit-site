@@ -6,7 +6,7 @@ When you have [installed UIkit](install.md) with Less sources, you can compile i
 
 ***
 
-## Import Less into your own build process
+## Use your own build process
 
 To include the building of UIkit in your project's own build workflow, you need to import the central `uikit.theme.less` file inside your project's own Less file. This main Less file then needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
 
@@ -19,7 +19,7 @@ To include the building of UIkit in your project's own build workflow, you need 
 
 ***
 
-## Use UIkit build process
+## Use included build process
 
 Instead of setting up your own build process, you can use the scripts that are included when you get the full UIkit project. To prepare the project dependencies, make sure you have run the following before compiling your own theme.
 
@@ -55,7 +55,7 @@ To get you started right away, we provide a default theme located in `/src/less/
 
 ***
 
-## How to build a theme
+## Create a UIkit theme
 
 We recommend the following best practices when working with the Less sources. The examples assume you are building a theme in the `/custom` directory of the full UIkit project. If you import the Less files into your own project, these examples are still valid, but you will need to adapt the file paths to your own setup.
 
