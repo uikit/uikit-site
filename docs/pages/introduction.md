@@ -8,11 +8,19 @@ First of all you need to download UIkit. For other packages and links to a CDN, 
 
 ***
 
+## Package contents
+
+The Zip file contains the compiled CSS and JavaScript files, which is everything you need to get started. Later, you might want to [install and compile UIkit](install.md) yourself and also [create your own UIkit theme](theme.md).
+
+| Folder    | Description |
+| --------- | --- |
+| `/css`    | Contains all UIkit CSS files and minified versions. |
+| `/images` | Contains all the images used within UIkit (e.g. icons) |
+| `/js`     | Contains all UIkit JavaScript files and minified versions. |
+
 ## HTML markup
 
 First off, make sure you have a solid code editor, for example [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/). You need to add the compiled and preferably minified UIkit CSS and JavaScript to the header of your HTML5 document. [jQuery](http://jquery.com/download/) is required as well. For your basic setup, that's it.
-
-**Note** The default `uikit.min.js` and `uikit.min.css` contain all components. If you do not need the advanced components, you can alternatively include `uikit-core.min.js` and `uikit-core.min.css`. You can then include single components by additionally loading their Javascript from the `js/components/` folder.
 
 ```html
 <!DOCTYPE html>

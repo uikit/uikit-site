@@ -30,40 +30,22 @@ UIkit is built on [Less](http://lesscss.org), a CSS preprocessor, which adds var
 | `/dist`  | Contains the compiled CSS and concatenated JS files, updated on every release. |
 | `/tests` | Contains HTML test files of all components. |
 
-### File structure of the dist folder
-
-
-```html
-/dist/css
-
-    <!-- UIkit with default theme styling for all components -->
-    uikit.css
-    uikit.min.css
-
-/dist/images
-
-    <!--Includes images for icons, backgrounds and additional components -->
-
-/dist/js
-    <!-- JavaScript of UIkit core and ALL components -->
-    uikit.js
-    uikit.min.js
-```
 
 ***
 
-## File structure of the ZIP package
+## Compile UIkit from the Github source
 
-In the ZIP file you will find all CSS, JavaScript and image files ready to use for your project. The core framework of UIkit has almost no styling in order to keep it slim.
+To compile UIkit yourself, you can use the included build scripts.
 
-| Folder    | Description |
-| --------- | --- |
-| `/css`    | Contains all UIkit CSS files and minified versions. |
-| `/images` | Contains all the images used within UIkit ( e.g. icons ) |
-| `/js`     | Contains all UIkit JavaScript files and minified versions. |
+```sh
+npm install
+npm run compile
+```
+
+The compiled dist folder now contains additional files, which are not checked in by default. You will find `uikit-core.min.js` and `uikit-core.min.css` which contain only core components, plus the JavaScript sources of the single additional components. The build task will create even more additional files if you have added a [custom UIkit theme](theme.md).
 
 ```html
-/css
+/dist/css
 
     <!-- UIkit default theme with all components included -->
     uikit.css
@@ -73,11 +55,12 @@ In the ZIP file you will find all CSS, JavaScript and image files ready to use f
     uikit-core.css
     uikit-core.min.css
 
-/images
+/dist/images
 
     <!--Includes images for icons, backgrounds and additional components -->
 
-/js
+/dist/js
+
     <!-- JavaScript of UIkit core and ALL components -->
     uikit.js
     uikit.min.js
