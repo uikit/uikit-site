@@ -196,7 +196,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
         <div class="uk-navbar-item uk-width-1-1">
             <form class="uk-search uk-search-navbar uk-width-1-1">
-                <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                <input class="uk-search-input" type="search" placeholder="Search...">
             </form>
         </div>
 
@@ -225,7 +225,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
         <div>
             <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
-            <div uk-drop="mode: click; pos: left-center; offset: 0">
+            <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
                 <form class="uk-search uk-search-navbar uk-width-1-1">
                     <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
                 </form>
@@ -295,7 +295,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
     </div>
 </nav>
 
-<div id="modal-full" class="uk-modal-full" uk-modal>
+<div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
     <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
         <button class="uk-modal-close-full" type="button" uk-close></button>
         <form class="uk-search uk-search-large">
