@@ -18,7 +18,7 @@ By default, a section is blank. That is why it is important to add a modifier cl
 
         <h3>Section</h3>
 
-        <div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
@@ -29,9 +29,12 @@ By default, a section is blank. That is why it is important to add a modifier cl
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
         </div>
+
     </div>
 </div>
 ```
+
+**Note** Because containers are nested on this documentation site the horizontal padding is removed which will not happen in real use.
 
 ***
 
@@ -39,18 +42,16 @@ By default, a section is blank. That is why it is important to add a modifier cl
 
 To apply different background colors and paddings, add one of the following classes. If two consecutive blocks have the same background color, the padding will automatically be divided.
 
-| Class                 | Description                                                  |
-|-----------------------|--------------------------------------------------------------|
-| `.uk-section-default` | Adds the default background color, usually white or similar. |
-| `.uk-section-muted`   | Adds a light background color.                               |
-| `.uk-section-primary` | Adds a primary background color.                             |
-| `.uk-section-secondary` | Adds a another background color, usually a dark one.         |
+| Class                   | Description                                                  |
+|-------------------------|--------------------------------------------------------------|
+| `.uk-section-default`   | Adds the default background color of your site.              |
+| `.uk-section-muted`     | Adds a muted background color.                               |
+| `.uk-section-primary`   | Adds a primary background color.                             |
+| `.uk-section-secondary` | Adds a secondary background color.                           |
 
 ```html
 <div class="uk-section uk-section-primary"></div>
 ```
-
-**Note** This component automatically sets the `.uk-light` class from the [Inverse component](inverse.md) to properly display colors, borders and other elements on colored sections. If you want to prevent this behavior, for example using [cards](cards.md) in these sections, add the `.uk-preserve-color` class.
 
 ```example
 <div class="uk-section uk-section-default">
@@ -58,7 +59,7 @@ To apply different background colors and paddings, add one of the following clas
 
         <h3>Section Default</h3>
 
-        <div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
@@ -69,6 +70,7 @@ To apply different background colors and paddings, add one of the following clas
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -77,7 +79,7 @@ To apply different background colors and paddings, add one of the following clas
 
         <h3>Section Muted</h3>
 
-        <div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
@@ -88,6 +90,7 @@ To apply different background colors and paddings, add one of the following clas
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -96,7 +99,7 @@ To apply different background colors and paddings, add one of the following clas
 
         <h3>Section Primary</h3>
 
-        <div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
@@ -107,6 +110,7 @@ To apply different background colors and paddings, add one of the following clas
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -115,7 +119,7 @@ To apply different background colors and paddings, add one of the following clas
 
         <h3>Section Secondary</h3>
 
-        <div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
@@ -126,6 +130,47 @@ To apply different background colors and paddings, add one of the following clas
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
         </div>
+
+    </div>
+</div>
+```
+
+***
+
+### Preserve color
+
+The `.uk-section-primary` and `.uk-section-secondary` classes are extending the inverse style from the [Inverse component](inverse.md) automatically. If you want to prevent this behavior, for example because you are using [cards](cards.md) in these sections, add the `.uk-preserve-color` class.
+
+```html
+<div class="uk-section uk-section-primary uk-preserve-color"></div>
+```
+
+```example
+<div class="uk-section uk-section-primary uk-preserve-color">
+    <div class="uk-container">
+
+        <div class="uk-panel uk-light uk-margin-medium">
+            <h3>Section Default</h3>
+        </div>
+
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 ```
@@ -146,7 +191,7 @@ When using a section with a background image, add the `.uk-section-media` class.
 
         <h3>Section Media</h3>
 
-        <div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
@@ -193,7 +238,7 @@ To decrease a section's padding, add the `.uk-section-small` class.
 
         <h3>Section Small</h3>
 
-        <div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
@@ -220,7 +265,7 @@ To increase a section's padding, add the `.uk-section-large` class.
 
         <h3>Section Large</h3>
 
-        <div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
@@ -247,7 +292,7 @@ To further increase a section's padding, add the `.uk-section-xlarge` class.
 
         <h3>Section Large</h3>
 
-        <div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
@@ -274,7 +319,7 @@ To remove a section's padding, add the `.uk-padding-remove-vertical` class from 
 
         <h3>Remove Padding</h3>
 
-        <div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>

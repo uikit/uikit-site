@@ -306,7 +306,7 @@ To use an icon from the [Icon component](icon.md), add the `.uk-form-icon` class
 
 ### Clickable icons
 
-To enable an action, for example opening a modal to pick an image or link, use an `<a>` element to create the icon.
+To enable an action, for example opening a modal to pick an image or link, use an `<a>` or `<button>` element to create the icon.
 
 ```html
 <div class="uk-inline">

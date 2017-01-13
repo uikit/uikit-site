@@ -8,7 +8,7 @@ The Search component consists of a search form and the search input itself.
 
 | Class/Attribute      | Description                                                                 |
 |----------------------|-----------------------------------------------------------------------------|
-| `.uk-search`         | Add this class to a `<form>` element to define the Search component.        |
+| `.uk-search`         | Add this class to a container element to define the Search component.        |
 | `.uk-search-input`   | Add this class to an `<input>` element to create the search field.          |
 
 ```html
@@ -29,7 +29,7 @@ By default, the search has no additional styling. In this example we are using t
 
 ## Search icon
 
-To create a search icon, add the `uk-search-icon` attribute to a `<span>`, `<button>` or  `<a>` element. To change the alignment, add the `.uk-search-icon-flip` class.
+To create a search icon, add the `uk-search-icon` attribute to a `<span>` element. To change the alignment, add the `.uk-search-icon-flip` class.
 
 ```html
 <form class="uk-search uk-search-default">
@@ -87,7 +87,7 @@ To enable an action, use an `<a>` or `<button>` element to create the icon.
 
 ## Default modifier
 
-To apply the default search styling, add the `.uk-search-default` to the `<form>` element with the `.uk-search` class.
+To apply the default search styling, add the `.uk-search-default` class.
 
 ```html
 <form class="uk-search uk-search-default">...</form>
@@ -129,25 +129,16 @@ A search can be used inside a navbar from the [Navbar component](navbar.md). Jus
 
 ```example
 <nav class="uk-navbar-container" uk-navbar>
-
     <div class="uk-navbar-left">
 
-        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
-
-        <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-        </ul>
+        <div class="uk-navbar-item">
+            <form class="uk-search uk-search-navbar">
+                <span uk-search-icon></span>
+                <input class="uk-search-input" type="search" placeholder="Search...">
+            </form>
+        </div>
 
     </div>
-
-    <div class="uk-navbar-right">
-        <form class="uk-search uk-search-navbar">
-            <span uk-search-icon></span>
-            <input class="uk-search-input" type="search" placeholder="Search...">
-        </form>
-    </div>
-
 </nav>
 ```
 
