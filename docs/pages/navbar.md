@@ -29,7 +29,7 @@ The Navbar component consists of a navbar container, the navbar itself and one o
 ```
 
 ```example
-<nav class="uk-navbar-container uk-margin" uk-navbar>
+<nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
@@ -53,21 +53,21 @@ The Navbar component consists of a navbar container, the navbar itself and one o
 
 ***
 
-### Multiple navigations
+## Multiple navigations
 
 You can place more than one navigation inside a navbar container. That way you can have a left aligned, a centered and a right aligned navigation inside the same navbar.
 
 ```html
 <nav class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-left">.../div>
-    <div class="uk-navbar-center">.../div>
-    <div class="uk-navbar-right">.../div>
+    <div class="uk-navbar-left">...</div>
+    <div class="uk-navbar-center">...</div>
+    <div class="uk-navbar-right">...</div>
 </nav>
 ```
 
 ```example
-<nav class="uk-navbar-container uk-margin" uk-navbar>
-    <!-- left -->
+<nav class="uk-navbar-container" uk-navbar>
+
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
@@ -87,7 +87,6 @@ You can place more than one navigation inside a navbar container. That way you c
 
     </div>
 
-    <!-- right -->
     <div class="uk-navbar-right">
 
         <ul class="uk-navbar-nav">
@@ -106,12 +105,13 @@ You can place more than one navigation inside a navbar container. That way you c
         </ul>
 
     </div>
+
 </nav>
 ```
 
 ***
 
-### Click mode
+## Click mode
 
 A parent item inside the navbar can be enabled by either hovering or clicking the the toggle. Just add the `mode: click` option to the `uk-navbar` attribute.
 
@@ -144,9 +144,9 @@ A parent item inside the navbar can be enabled by either hovering or clicking th
 
 ***
 
-## Transparent navbar
+## Transparent modifier
 
-When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just add the `.uk-navbar-transparent` class to the `<nav>` element. If necessary, add the `.uk-light` or `.uk-dark` class to invert the navbar's color.
+When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just add the `.uk-navbar-transparent` class to the `<nav>` element. If necessary, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to adjust the navbar's color.
 
 ```html
 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>...</nav>
@@ -184,7 +184,7 @@ When using an image or colored background for the hero section of your website, 
 
 ***
 
-## Navbar subtitle
+## Subtitle
 
 To define a subtitle, create a `<div>` element inside an item's `<a>` element. Add the `.uk-navbar-subtitle` class to another `<div>` element.
 
@@ -200,7 +200,7 @@ To define a subtitle, create a `<div>` element inside an item's `<a>` element. A
 ```
 
 ```example
-<nav class="uk-navbar-container uk-margin" uk-navbar>
+<nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
@@ -243,7 +243,7 @@ To define a subtitle, create a `<div>` element inside an item's `<a>` element. A
 
 ***
 
-## Content
+## Content item
 
 You can also add custom content to the navbar, like text, icons, buttons or forms. Add the `.uk-navbar-item` class to a `<div>` element that serves as a container for your content
 
@@ -251,6 +251,7 @@ You can also add custom content to the navbar, like text, icons, buttons or form
 <div class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
         <a href="" class="uk-navbar-item uk-logo"></a>
+        <ul class="uk-navbar-nav">...</ul>
         <div class="uk-navbar-item">...</div>
     </div>
 </div>
@@ -290,7 +291,7 @@ Add the `.uk-logo` class from the [Utility component](utility.md) to an `<a>` or
 
 ***
 
-### Toggle
+## Toggle item
 
 Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to an `<a>` or `<div>` element to create an icon as a toggle. By default, there is no JavaScript attached to the toggle. As an example, you can add an off-canvas navigation from the [Off-canvas component](offcanvas.md) or a modal from the [Modal component](modal.md).
 
@@ -336,7 +337,7 @@ A navbar can contain a dropdown from the [Dropdown component](dropdown.md). Just
 ```
 
 ```example
-<nav class="uk-navbar-container uk-margin" uk-navbar>
+<nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
@@ -399,7 +400,7 @@ The [Dropdown component](dropdown.md) allows you arrange the dropdown content in
 ```
 
 ```example
-<nav class="uk-navbar-container uk-margin" uk-navbar>
+<nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
@@ -443,14 +444,14 @@ The [Dropdown component](dropdown.md) allows you arrange the dropdown content in
 
 ### Boundary alignment
 
-Dropdowns can be aligned to the navbar's boundary. Just append the `boundary-align: true` parameter to the `uk-navbar` attribute. Add the `align: left;`, `align: center;` or `align: right;` option to change the alignment. By default, dropdowns are aligned to the left.
+Dropdowns can be aligned to the navbar's boundary. Just append the `boundary-align: true` parameter to the `uk-navbar` attribute. Add the `align: left`, `align: center` or `align: right` option to change the alignment. By default, dropdowns are aligned to the left.
 
 ```html
 <nav class="uk-navbar-container" uk-navbar="boundary-align: true; align: center;">...</nav>
 ```
 
 ```example
-<nav class="uk-navbar-container uk-margin" uk-navbar="boundary-align: true; align: center;">
+<nav class="uk-navbar-container" uk-navbar="boundary-align: true; align: center;">
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
@@ -574,7 +575,7 @@ To justify a dropdown, use the [Drop component](drop.md) and its position featur
 ```
 
 ```example
-<nav class="uk-navbar-container uk-margin parent" uk-navbar>
+<nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
@@ -640,7 +641,9 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
 
 ```example
 <div class="uk-position-relative">
+
     <nav class="uk-navbar-container" uk-navbar="dropbar: true">
+
         <div class="uk-navbar-left">
 
             <ul class="uk-navbar-nav">
@@ -690,6 +693,7 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
             </ul>
 
         </div>
+
         <div class="uk-navbar-right">
 
             <ul class="uk-navbar-nav">
@@ -721,17 +725,18 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
 
 ### Push
 
-By default, the dropbar overlays the site content. Add the `dropbarMode: push;` option, to push the content down instead.
+By default, the dropbar overlays the site content. Add the `dropbar-mode: push;` option, to push the content down instead.
 
 ```html
-<nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbarMode: push">...</nav>
+<nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push">...</nav>
 <div class="uk-navbar-dropbar"></div>
 ```
 
 ```example
 <div class="uk-position-relative">
 
-    <nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbarMode: push">
+    <nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push">
+
         <div class="uk-navbar-left">
 
             <ul class="uk-navbar-nav">
@@ -781,6 +786,7 @@ By default, the dropbar overlays the site content. Add the `dropbarMode: push;` 
             </ul>
 
         </div>
+
         <div class="uk-navbar-right">
 
             <ul class="uk-navbar-nav">
@@ -801,6 +807,7 @@ By default, the dropbar overlays the site content. Add the `dropbarMode: push;` 
             </ul>
 
         </div>
+
     </nav>
 
     <div class="uk-navbar-dropbar"></div>

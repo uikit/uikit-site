@@ -204,7 +204,7 @@ Add the `.uk-modal-container` class to expand the modal dialog to the default [C
 ```example
 <a class="uk-button uk-button-default" href="#modal-container" uk-toggle>Open</a>
 
-<div id="modal-container" class="uk-modal-container" uk-modal="center: true">
+<div id="modal-container" class="uk-modal-container" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
         <button class="uk-modal-close-default" type="button" uk-close></button>
         <h2 class="uk-modal-title">Headline</h2>
@@ -250,7 +250,7 @@ Using the [grid](grid.md) and [width](width.md) classes, you can create a nice, 
 
 ## Overflow
 
-By default, the page will scroll with the modal, if its content exceeds the window height. To apply a scrollbar inside the modal, add the `uk-overflow-auto` attribute from the [Utility component](utility.md) to the modal dialog—or the modal body, if there is also a header and/or footer.
+By default, the page will scroll with the modal, if its content exceeds the window height. To apply a scrollbar inside the modal, add the `uk-overflow-auto` attribute from the [Utility component](utility.md) to the modal dialog — or the modal body, if there is also a header and/or footer.
 
 ```html
 <div id="my-id" uk-modal>

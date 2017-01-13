@@ -305,7 +305,7 @@ Add the `.uk-navbar-dropdown-nav` class to place the nav inside a navbar dropdow
 ```
 
 ```example
-<nav class="uk-navbar-container uk-margin" uk-navbar>
+<nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
