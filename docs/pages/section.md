@@ -50,7 +50,7 @@ You can place a container from the [Container component](container.md) to modify
 
 ## Style modifiers
 
-To apply different background colors and paddings, add one of the following classes. If two consecutive blocks have the same background color, the padding will automatically be divided.
+To apply different background colors and paddings, add one of the following classes.
 
 | Class                   | Description                                                  |
 |-------------------------|--------------------------------------------------------------|
