@@ -4,16 +4,16 @@
 
 ## Usage
 
-To apply this component, add one of the `.uk-position-*` classes to a block element. Make sure the parent container has **relative** positioning, for example by adding the `.uk-inline` class from the [Utility component](utility.md#inline).
+To apply this component, add one of the `.uk-position-*` classes to a block element. To create a position context, add the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around both.
 
 **Note** Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to apply a light or dark color for better visibility.
 
 | Class                        | Description                                              |
 |------------------------------|----------------------------------------------------------|
-| `.uk-position-top`      | Positions the element at the top.                        |
-| `.uk-position-left`      | Positions the element at the left.                        |
-| `.uk-position-right`      | Positions the element at the right.                        |
-| `.uk-position-bottom`   | Positions the element at the bottom.                |
+| `.uk-position-top`           | Positions the element at the top.                        |
+| `.uk-position-left`          | Positions the element at the left.                       |
+| `.uk-position-right`         | Positions the element at the right.                      |
+| `.uk-position-bottom`        | Positions the element at the bottom.                     |
 
 ```html
 <div class="uk-inline">
@@ -46,7 +46,7 @@ You can also apply more specific positions that won't spread over one side of th
 
 | Class                        | Description                                              |
 |------------------------------|----------------------------------------------------------|
-| `.uk-position-top-left`      | Positions the element at the top left.                        |
+| `.uk-position-top-left`      | Positions the element at the top left.                   |
 | `.uk-position-top-center`    | Positions the element at the top center.                 |
 | `.uk-position-top-right`     | Positions the element at the top right.                  |
 | `.uk-position-center`        | Positions the element vertically centered in the middle. |
@@ -62,7 +62,7 @@ You can also apply more specific positions that won't spread over one side of th
 ```
 
 ```example
-<div class="uk-inline uk-margin">
+<div class="uk-inline">
 
     <img src="../docs/images/photo.jpg" alt="">
 
@@ -196,7 +196,7 @@ To apply a slightly larger margin to position elements, add the `.uk-position-me
 
 ***
 
-## Utility
+## Utility classes
 
 This component also a number of general position utility classes:
 

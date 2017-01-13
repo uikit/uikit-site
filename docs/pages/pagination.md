@@ -86,8 +86,8 @@ To apply a previous and next button, add the `uk-pagination-previous` or `uk-pag
 ```
 
 ```example
-<ul class="uk-pagination uk-flex-between">
+<ul class="uk-pagination">
     <li><a href="#"><span class="uk-margin-small-right" uk-pagination-previous></span> Previous</a></li>
-    <li><a href="#">Next <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+    <li class="uk-margin-auto-left"><a href="#">Next <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
 </ul>
 ```

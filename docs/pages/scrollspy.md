@@ -140,7 +140,7 @@ For an example of the scrollspy nav, just check out the fixed nav on the right s
 
 ***
 
-## Component options
+### Scrollspy nav options
 
 Learn more about [component configuration](javascript.md#component-configuration).
 
@@ -154,17 +154,17 @@ Learn more about [component configuration](javascript.md#component-configuration
 
 ***
 
-## Javascript
+### Scrollspy nav Javascript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).
 
-### Initialization
+### Scrollspy nav initialization
 
 ```js
 UIkit.scrollspyNav(element, options);
 ```
 
-### Events
+### Scrollspy nav events
 
 These events will be triggered on elements with this component attached.
 
