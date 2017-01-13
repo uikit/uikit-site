@@ -196,7 +196,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
         <div class="uk-navbar-item uk-width-1-1">
             <form class="uk-search uk-search-navbar uk-width-1-1">
-                <input class="uk-search-input" type="search" placeholder="Search...">
+                <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
             </form>
         </div>
 
