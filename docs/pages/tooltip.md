@@ -54,7 +54,7 @@ Learn more about [component configuration](javascript.md#component-configuration
 
 ***
 
-## Javascript
+## JavaScript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).
 

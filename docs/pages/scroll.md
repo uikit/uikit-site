@@ -56,7 +56,7 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `transition` | String | `easeOutExpo` | Easing transition. Usable if you have the optional [easing plugin](http://gsgd.co.uk/sandbox/jquery/easing/) loaded on your page. |
 | `offset` | Number | `0` | Pixel offset added to scroll top. |
 
-## Javascript
+## JavaScript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).
 

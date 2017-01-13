@@ -358,7 +358,7 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `swiping`   | Boolean      | true    | Use swiping.                                                                                             |
 ***
 
-## Javascript
+## JavaScript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).
 

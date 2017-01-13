@@ -341,7 +341,7 @@ Learn more about [component configuration](javascript.md#component-configuration
 | `duration`       | Number                 | `200`           | Animation duration in milliseconds.                                                          |
 ***
 
-## Javascript
+## JavaScript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).
 

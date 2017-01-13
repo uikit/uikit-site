@@ -104,7 +104,7 @@ Learn more about [component configuration](javascript.md#component-configuration
 
 ***
 
-## Javascript
+## JavaScript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).
 
@@ -154,7 +154,7 @@ Learn more about [component configuration](javascript.md#component-configuration
 
 ***
 
-### Scrollspy nav Javascript
+### Scrollspy nav JavaScript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).
 

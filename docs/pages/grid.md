@@ -147,7 +147,7 @@ Thanks to flexbox, the height of grid cells match automatically. To match the he
 </div>
 ```
 
-### Javascript
+### JavaScript
 
 For a more specific selection of which heights should be matched, add the `target: SELECTOR` option to the `uk-height-match` attribute from the [Utility component](utility.md).
 
@@ -281,7 +281,7 @@ Learn more about [component configuration](javascript.md#component-configuration
 
 ***
 
-## Javascript
+## JavaScript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).
 
