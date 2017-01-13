@@ -38,7 +38,7 @@ Add the compiled and preferably minified CSS and JavaScript to the header of you
 </html>
 ```
 
-Once you have finished implementing UIkit into your document, take a look at the UIkit components and get an overview of what UIkit is offering.
+Once you have included UIkit into your document, take a look at the available components and create your own markup inside the `<body>` tags of your page.
 
 ***
 

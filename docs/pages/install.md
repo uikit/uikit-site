@@ -7,11 +7,11 @@
 You have the following options to get UIkit:
 
 - Download the [latest release](https://github.com/uikit/uikit/releases/latest) with pre-built JavaScript and CSS.
-- Install with [Bower](https://bower.io) to get the pre-built JavaScript, CSS and the Less source file. This is recommended when using UIkit for a typical web project: ```bower install uikit```
+- Install with [Bower](https://bower.io) to get the pre-built JavaScript, CSS and the Less source files. This is recommended when using UIkit for a typical web project: ```bower install uikit```
 - Clone the repo to get all source files including build scripts: `git clone git://github.com/uikit/uikit.git`
 - Install with [Npm](https://npmjs.com) to get all source files as they are available on Github: ```npm install uikit```
 
-All versions of UIkit are also hosted on the Cloudflare content delivery network via [cdnjs.com](https://cdnjs.com/libraries/uikit).
+The compiled files of all UIkit versions are also hosted on the Cloudflare content delivery network via [cdnjs.com](https://cdnjs.com/libraries/uikit).
 
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/css/uikit.min.css" />
@@ -22,7 +22,7 @@ All versions of UIkit are also hosted on the Cloudflare content delivery network
 
 ## File structure of the source
 
-The Github project contains all sources files which can be compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are concatenated and images are combined into SVG sprites.
+The Github project contains all sources files which are compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are concatenated and images are combined into SVG sprites.
 
 | Folder   | Description |
 | -------- | ----------- |
