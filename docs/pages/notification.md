@@ -51,19 +51,31 @@ Add one of the following parameters to adjust the notification's position to dif
 UIkit.notification("...", {pos: 'top-right'})
 ```
 
-| Position | Code | Example |
-| --- | --- | --- |
-| `top-left` | `UIkit.notification("...", {pos: 'top-left'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Top Left..." data-pos="top-left">Top Left</button> |
-| `top-center` | `UIkit.notification("...", {pos: 'top-center'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Top Center..." data-pos="top-center">Top Center</button> |
-| `top-right` | `UIkit.notification("...", {pos: 'top-right'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Top Right..." data-pos="top-right">Top Right</button> |
-| `bottom-left` | `UIkit.notification("...", {pos: 'bottom-left'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Bottom Left..." data-pos="bottom-left">Bottom Left</button> |
-| `bottom-center` | `UIkit.notification("...", {pos: 'bottom-center'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Bottom Center..." data-pos="bottom-center">Bottom Center</button> |
-| `bottom-right` | `UIkit.notification("...", {pos: 'bottom-right'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Bottom Right..." data-pos="bottom-right">Bottom Right</button> |
+| Position        | Code |
+| --------------- | ---- |
+| `top-left`      | `UIkit.notification("...", {pos: 'top-left'})`      |
+| `top-center`    | `UIkit.notification("...", {pos: 'top-center'})`    |
+| `top-right`     | `UIkit.notification("...", {pos: 'top-right'})`     |
+| `bottom-left`   | `UIkit.notification("...", {pos: 'bottom-left'})`   |
+| `bottom-center` | `UIkit.notification("...", {pos: 'bottom-center'})` |
+| `bottom-right`  | `UIkit.notification("...", {pos: 'bottom-right'})`  |
+
+
+```example
+<p uk-margin>
+    <button class="uk-button uk-button-default demo" type="button" data-message="Top Left..." data-pos="top-left">Top Left</button>
+    <button class="uk-button uk-button-default demo" type="button" data-message="Top Center..." data-pos="top-center">Top Center</button>
+    <button class="uk-button uk-button-default demo" type="button" data-message="Top Right..." data-pos="top-right">Top Right</button>
+    <button class="uk-button uk-button-default demo" type="button" data-message="Bottom Left..." data-pos="bottom-left">Bottom Left</button>
+    <button class="uk-button uk-button-default demo" type="button" data-message="Bottom Center..." data-pos="bottom-center">Bottom Center</button>
+    <button class="uk-button uk-button-default demo" type="button" data-message="Bottom Right..." data-pos="bottom-right">Bottom Right</button>
+</p>
+```
 
 
 ***
 
-## Status
+## Style
 
 A notification can be styled by adding a status to the message to indicate a primary, success, warning or a danger status.
 
@@ -71,12 +83,21 @@ A notification can be styled by adding a status to the message to indicate a pri
 UIkit.notification("...", {status: 'primary'})
 ```
 
-| Status | Code | Example |
-| --- | --- | --- |
-| `primary` | `UIkit.notification("...", {status:'primary'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Primary message..." data-status="primary">Primary</button> |
-| `success` | `UIkit.notification("...", {status:'success'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Success message..." data-status="success">Success</button> |
-| `warning` | `UIkit.notification("...", {status:'warning'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Warning message..." data-status="warning">Warning</button> |
-| `danger` | `UIkit.notification("...", {status:'danger'})` | <button class="uk-button uk-button-default uk-button-small demo uk-width-1-1" type="button" data-message="Danger message..." data-status="danger">Danger</button> |
+| Style     | Code |
+| --------- | ---- |
+| `primary` | `UIkit.notification("...", {status:'primary'})` |
+| `success` | `UIkit.notification("...", {status:'success'})` |
+| `warning` | `UIkit.notification("...", {status:'warning'})` |
+| `danger`  | `UIkit.notification("...", {status:'danger'})`  |
+
+```example
+<p uk-margin>
+    <button class="uk-button uk-button-default demo" type="button" data-message="Primary message..." data-status="primary">Primary</button>
+    <button class="uk-button uk-button-default demo" type="button" data-message="Success message..." data-status="success">Success</button>
+    <button class="uk-button uk-button-default demo" type="button" data-message="Warning message..." data-status="warning">Warning</button>
+    <button class="uk-button uk-button-default demo" type="button" data-message="Danger message..." data-status="danger">Danger</button>
+</p>
+```
 
 ***
 
