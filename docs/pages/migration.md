@@ -8,7 +8,7 @@ Uikit 3 offers a migration tool that runs in your browser and lists all necessar
 
 The easiest way to use the migration tool is via a bookmark in your browser. You can then run the script on any page that you navigate to by simply clicking the bookmark. Just drag the following link into your browser's bookmark section.
 
-Drag into your bookmarks <span uk-icon="icon: arrow-right"></span> <a class="uk-button uk-button-primary" href="javascript: (function () { var script = document.createElement('script'); script.setAttribute('src', 'https://getuikit.com/migrate.min.js'); document.body.appendChild(script); }());">UIkit 3 Migration</a>
+Drag into your bookmark bar <span uk-icon="icon: arrow-right"></span> <a class="uk-button uk-button-primary" href="javascript: (function () { var script = document.createElement('script'); script.setAttribute('src', 'https://getuikit.com/migrate.min.js'); document.body.appendChild(script); }());">UIkit 3 Migration</a>
 
 Alternatively, you can manually create a bookmark with the following code as its URL.
 
@@ -20,9 +20,6 @@ javascript: (function () {
 }());
 ```
 
-<!-- ## Chrome extension
-
-For Google Chrome users, the migration tool is also available as a chrome extension. In Chrome, enable the developer mode checkbox in **Settings / Extensions**. Then, [download the extension](https://github.com/uikit/migration-chrome) which you can load via the _load unpacked extension_ by setting the path to the migration extensions folder. After that, you will see the small UIkit icon next to your other extensions at the top of your browser. By clicking on the icon, you can activate and deactivate it. If activated you will see a small red dot at the bottom of the icon which indicates, that the migration tool is running. -->
 
 ## HTML integration
 

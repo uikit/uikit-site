@@ -30,6 +30,18 @@ Add the `.uk-text-bold` class to create <span class="uk-text-bold">bold text</sp
 
 ***
 
+## Transform modifier
+
+The following classes will transform text into uppercased, capitalized or lowercased characters.
+
+| Class                 | Description                                                                                                           |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------|
+| `.uk-text-uppercase`  | <span class="uk-text-uppercase">Add this class to transform your text to uppercase.</span>                            |
+| `.uk-text-capitalize` | <span class="uk-text-capitalize">Add this class to transform your text to capitalize.</span>                          |
+| `.uk-text-lowercase`  | <span class="uk-text-lowercase">Add this class to transform your text to lowercase.</span>                            |
+
+***
+
 ## Color modifiers
 
 Use one of these classes to apply a different color to text elements.
@@ -57,7 +69,7 @@ Add one of these useful classes to align your text.
 
 ```example
 <div class="uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-small" uk-grid>
-    <div>   
+    <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-left uk-card-body">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.uk-text-left</code>
@@ -65,7 +77,7 @@ Add one of these useful classes to align your text.
         </div>
     </div>
 
-    <div>   
+    <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-right uk-card-body">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.uk-text-right</code>
@@ -73,7 +85,7 @@ Add one of these useful classes to align your text.
         </div>
     </div>
 
-    <div>   
+    <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-center uk-card-body">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.uk-text-center</code>
@@ -87,7 +99,7 @@ Add one of these useful classes to align your text.
 
 ### Responsive
 
-UIkit provides a number of responsive alignment classes. Basically, they work just like the usual alignment classes, except that they have suffixes that represent the breakpoint from which they come to effect. 
+UIkit provides a number of responsive alignment classes. Basically, they work just like the usual alignment classes, except that they have suffixes that represent the breakpoint from which they come to effect.
 
 | Class                                                               | Description                                 |
 |---------------------------------------------------------------------|---------------------------------------------|
@@ -98,7 +110,7 @@ UIkit provides a number of responsive alignment classes. Basically, they work ju
 
 ```example
 <div class="uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-small" uk-grid>
-    <div>   
+    <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-center@s uk-card-body">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.uk-text-center@s</code>
@@ -106,7 +118,7 @@ UIkit provides a number of responsive alignment classes. Basically, they work ju
         </div>
     </div>
 
-    <div>   
+    <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-right@l uk-card-body">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.uk-text-right@l</code>
@@ -114,7 +126,7 @@ UIkit provides a number of responsive alignment classes. Basically, they work ju
         </div>
     </div>
 
-    <div>   
+    <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-center@m uk-card-body">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr. <code>.uk-text-center@m</code>
