@@ -8,7 +8,7 @@ The Grid system of UIkit allows you to arrange block elements in columns and wor
 
 ## Usage
 
-To create the grid container, add the `uk-grid` attribute to a `<div>` element. There's no need to add a class. Add child `<div>` elements to create the cells. By default, all grid cells are stacked. To place them side by side, add one of the classes from the [Width component](width.md). Using `uk-child-width-expand` will automatically layout any number of items with equal width.
+To create the grid container, add the `uk-grid` attribute to a `<div>` element. There's no need to add a class. Add child `<div>` elements to create the cells. By default, all grid cells are stacked. To place them side by side, add one of the classes from the [Width component](width.md). Using `uk-child-width-expand` will automatically apply equal width to items, regardless of how many there are.
 
 ```html
 <div uk-grid>
@@ -36,14 +36,14 @@ To create the grid container, add the `uk-grid` attribute to a `<div>` element. 
 
 ## Gutter modifiers
 
-To apply a smaller gutter between grid cells, add the `.uk-grid-small` class.
+The Grid component comes with a default gutter, that is decreased automatically from a certain breakpoint, usually on a smaller desktop viewport width. To a apply a different gutter or breakpoint, add one of the following classes.
 
 | Class         | Description                                                   |
 |---------------|---------------------------------------------------------------|
-| `.uk-grid-small`    | A small gutter                       |
-| `.uk-grid-medium`   | A medium gutter like the default one but without breakpoint                        |
-| `.uk-grid-large`    | A large gutter with breakpoints                      |
-| `.uk-grid-collapse` | Remove the grid gutter entirely |
+| `.uk-grid-small`    | Add this class to apply a small gutter.                       |
+| `.uk-grid-medium`   | Add this class to apply a medium gutter like the default one, but without a breakpoint.                        |
+| `.uk-grid-large`    | Add this class to apply a large gutter with breakpoints.                      |
+| `.uk-grid-collapse` | Add this class to apply remove the grid gutter entirely. |
 
 ```html
 <div class="uk-grid-small" uk-grid>...</div>
@@ -127,7 +127,7 @@ Add the `.uk-grid-divider` class to separate grid cells with lines. This class c
 
 ## Match height
 
-Thanks to flexbox, the height of grid cells match automatically. To match the height of the direct child of each cell, add the `.uk-grid-match` class as a CSS only solution. For example this is needed to match the height of cards from the [Card component](card.md).
+Thanks to flexbox, the height of grid cells match automatically. To match the height of the direct child of each cell, add the `.uk-grid-match` class as a CSS only solution. This is needed to match the height of cards from the [Card component](card.md), for example.
 
 ```html
 <div class="uk-grid-match" uk-grid>....</div>
@@ -149,7 +149,7 @@ Thanks to flexbox, the height of grid cells match automatically. To match the he
 
 ### JavaScript
 
-For a more specific selection of which heights should be matched, add the `target: SELECTOR` option to the `uk-height-match` attribute from the [Utility component](utility.md).
+For a more specific selection of the elements whose heights should be matched, add the `target: SELECTOR` option to the `uk-height-match` attribute from the [Utility component](utility.md).
 
 ```html
 <div uk-grid uk-height-match="target: > div > .uk-card">

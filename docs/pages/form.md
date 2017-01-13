@@ -67,7 +67,14 @@ Add the `.uk-fieldset` class to a `<fieldset>` element and the `.uk-legend` clas
 
 ## States modifiers
 
-Provide the user with basic information through feedback states on form controls. Add the `.uk-form-danger` or `.uk-form-success` class to a form control to notify the user, whether or not the value is validated. Add the `disabled` attribute to a form control and it will be appear muted.
+Provide the user with basic information through feedback states on form controls by using one of the following classes.
+
+| Class              | Description                                                        |
+|--------------------|--------------------------------------------------------------------|
+| `.uk-form-danger`  | Add this class to notify the user that the value is not validated. |
+| `.uk-form-success` | Add this class to notify the user that the value is validated.     |
+
+Add the `disabled` attribute to a form control and it will be appear muted.
 
 ```example
 <div class="uk-margin">
@@ -87,7 +94,12 @@ Provide the user with basic information through feedback states on form controls
 
 ## Size modifiers
 
-Add the `.uk-form-large` or `.uk-form-small` class to an `<input>`, `<select>` or `<textarea>` element to make it smaller or larger.
+Add one of the classes to an `<input>`, `<select>` or `<textarea>` element to modify its size.
+
+| Class            | Description                                 |
+|------------------|---------------------------------------------|
+| `.uk-form-large` | Add this class to make the element larger.  |
+| `.uk-form-small` | Add this class to make the element smaller. |
 
 ```example
 <form>

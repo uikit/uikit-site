@@ -4,9 +4,9 @@
 
 ## Usage
 
-To apply this component, add one of the `.uk-position-*` classes to a block element. To create a position context, add the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around both.
+To apply this component, add one of the `.uk-position-*` classes to a block element. When using this component to place content on top of an image, add the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around the image and the element to create a position context.
 
-**Note** Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to apply a light or dark color for better visibility.
+**Note** This is often used to position an overlay from the [Overlay component](overlay.md). Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to apply a light or dark color for better visibility.
 
 | Class                        | Description                                              |
 |------------------------------|----------------------------------------------------------|
@@ -102,6 +102,19 @@ If you want a position element to cover its container, just add the `.uk-positio
 
 ***
 
+## Utility classes
+
+This component features a number of general position utility classes:
+
+| Class                   | Description                                   |
+|-------------------------|-----------------------------------------------|
+| `.uk-position-relative` | Add this class to apply relative positioning. |
+| `.uk-position-absolute` | Add this class to apply absolute positioning. |
+| `.uk-position-fixed`    | Add this class to apply fixed positioning.    |
+| `.uk-position-z-index`  | Add this class to apply a z-index of 1.       |
+
+***
+
 ## Small modifier
 
 To apply a small margin to position elements, add the `.uk-position-small` class.
@@ -193,16 +206,3 @@ To apply a slightly larger margin to position elements, add the `.uk-position-me
 
 </div>
 ```
-
-***
-
-## Utility classes
-
-This component also a number of general position utility classes:
-
-| Class                   | Description                                   |
-|-------------------------|-----------------------------------------------|
-| `.uk-position-relative` | Add this class to apply relative positioning. |
-| `.uk-position-absolute` | Add this class to apply absolute positioning. |
-| `.uk-position-fixed`    | Add this class to apply fixed positioning.    |
-| `.uk-position-z-index`  | Add this class to apply a z-index of 1.       |

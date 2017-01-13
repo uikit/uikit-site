@@ -4,13 +4,15 @@
 
 ## Usage
 
-To apply this component, just add the `.uk-section` class to a container element.
+Sections are used to separate the content of a page into differently styled blocks. To apply this component, just add the `.uk-section` class to a container element. You can place a container from the [Container component](container.md) to modify the width of the content inside sections and add horizontal padding. Note that the padding of a nested container will be reset.
 
 ```html
-<div class="uk-section"></div>
+<div class="uk-section">
+    <div class="uk-container"></div>
+</div>
 ```
 
-By default, a section is blank. That is why it is important to add a modifier class for styling. In our example we are using the `.uk-section-muted` class.
+By default, a section is blank. That is why it is important to add a modifier class for styling. In our example we are using the `.uk-section-muted` class. Normally, the section is the outermost element of a page, so this example doesn't quite reflect the realistic usage of this component.
 
 ```example
 <div class="uk-section uk-section-muted">
@@ -31,18 +33,6 @@ By default, a section is blank. That is why it is important to add a modifier cl
         </div>
 
     </div>
-</div>
-```
-
-***
-
-## Section and Container
-
-You can place a container from the [Container component](container.md) to modify the width of content inside sections and add horizontal padding. Note that the padding of a nested container will be reset.
-
-```html
-<div class="uk-section uk-section-muted">
-    <div class="uk-container"></div>
 </div>
 ```
 
@@ -206,112 +196,20 @@ The `.uk-section-primary` and `.uk-section-secondary` classes are extending the 
 
 You can add different paddings to each section or remove it altogether.
 
-### X-Small
-
-To decrease a section's padding to a minimum, add the `.uk-section-xsmall` class.
-
-```example
-<div class="uk-section uk-section-xsmall uk-section-muted">
-    <div class="uk-container">
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-
-    </div>
-</div>
-```
-
-***
-
-### Small
-
-To decrease a section's padding, add the `.uk-section-small` class.
-
-```example
-<div class="uk-section uk-section-small uk-section-muted">
-    <div class="uk-container">
-
-        <h3>Section Small</h3>
-
-        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-        </div>
-    </div>
-</div>
-```
-
-***
-
-### Large
-
-To increase a section's padding, add the `.uk-section-large` class.
+| Class                         | Description                                                                            |
+|-------------------------------|----------------------------------------------------------------------------------------|
+| `.uk-section-xsmall`          | Add this class to decrease a section's padding to a minimum.                           |
+| `.uk-section-small`           | Add this class to decrease a section's padding.                                        |
+| `.uk-section-large`           | Add this class to increase a section's padding.                                        |
+| `.uk-section-xlarge`          | Add this class to further increase a section's padding.                                |
+| `.uk-padding-remove-vertical` | Add this class from the [Padding component](padding.md) to remove a section's padding. |
+>>>>>>> Stashed changes
 
 ```example
 <div class="uk-section uk-section-large uk-section-muted">
     <div class="uk-container">
 
         <h3>Section Large</h3>
-
-        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-        </div>
-    </div>
-</div>
-```
-
-***
-
-### X-Large
-
-To further increase a section's padding, add the `.uk-section-xlarge` class.
-
-```example
-<div class="uk-section uk-section-xlarge uk-section-muted">
-    <div class="uk-container">
-
-        <h3>Section Large</h3>
-
-        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-        </div>
-    </div>
-</div>
-```
-
-***
-
-### Remove padding
-
-To remove a section's padding, add the `.uk-padding-remove-vertical` class from the [Padding component](padding.md).
-
-```example
-<div class="uk-section uk-section-muted uk-padding-remove-vertical">
-    <div class="uk-container">
-
-        <h3>Remove Padding</h3>
 
         <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
             <div>

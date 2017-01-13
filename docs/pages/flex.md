@@ -8,7 +8,12 @@ The Flex component has an essential role in building layouts in UIkit. A lot of 
 
 ## Usage
 
-To apply this component, add the `.uk-flex` class to a `<div>` element. This will create the flex container. By default, all flex items are aligned to the left, as wide as their content and matched in height.
+To apply this component, use one of the following classes. By default, all flex items are aligned to the left, as wide as their content and matched in height.
+
+| Class             | Description                                                                                                  |
+|-------------------|--------------------------------------------------------------------------------------------------------------|
+| `.uk-flex`        | Add this class to a `div` element to create the flex container.                                              |
+| `.uk-flex-inline` | Applies the behavior of an inline element while still laying out its content according to the flexbox model. |
 
 ```html
 <div class="uk-flex">
@@ -23,12 +28,6 @@ To apply this component, add the `.uk-flex` class to a `<div>` element. This wil
     <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3</div>
 </div>
 ```
-
-***
-
-## Flex inline
-
-By default, the flex container is displayed as a block element. To apply the behavior of an inline element while still laying out its content according to the flexbox model, use the `.uk-flex-inline` class instead of `.uk-flex`.
 
 ***
 
