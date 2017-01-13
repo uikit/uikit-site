@@ -4,7 +4,7 @@
     "compile": "npm run compile-js && npm run compile-less && npm run compile-uikit",
     "compile-uikit": "cd ./assets/uikit && npm run compile",
     "compile-js": "./node_modules/.bin/webpack -p",
-    "compile-less": "mkdir css && ./node_modules/.bin/lessc less/theme.less > css/theme.css --relative-urls --rootpath=../less/ -x"
+    "compile-less": "mkdir -p css && ./node_modules/.bin/lessc less/theme.less > css/theme.css --relative-urls --rootpath=../less/ -x"
   },
   "devDependencies": {
     "buble": "^0.15.1",
