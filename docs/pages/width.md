@@ -1,6 +1,6 @@
 # Width
 
-<p class="uk-text-lead">Use responsive width classes to determine the proportions of elements.</p>
+<p class="uk-text-lead">Define the width of elements for for different viewports.</p>
 
 UIkit's width component is often used in combination with [grids](grid.md) to split content into responsive columns. You can apply fractions, automatic width or expand units to fill the remaining space and combine these modes.
 
@@ -8,7 +8,7 @@ UIkit's width component is often used in combination with [grids](grid.md) to sp
 
 ## Usage
 
-Add one of the `.uk-width-*` classes to a container element to determine its size. Typically, you would use a grid from the [Grid component](grid.md) and its child elements to create the units.
+Add one of the `.uk-width-*` classes to an element to determine its size. Typically, you would use a grid from the [Grid component](grid.md) and its child elements to create the units.
 
 | Class                              | Description                        |
 |------------------------------------|------------------------------------|
@@ -49,11 +49,11 @@ Add one of the `.uk-width-*` classes to a container element to determine its siz
 </div>
 
 <div class="uk-text-center" uk-grid>
-    <div class="uk-width-1-5">
-        <div class="uk-card uk-card-default uk-card-body">1-5</div>
+    <div class="uk-width-1-4">
+        <div class="uk-card uk-card-default uk-card-body">1-4</div>
     </div>
-    <div class="uk-width-4-5">
-        <div class="uk-card uk-card-default uk-card-body">4-5</div>
+    <div class="uk-width-3-4">
+        <div class="uk-card uk-card-default uk-card-body">3-4</div>
     </div>
 </div>
 ```
@@ -66,8 +66,8 @@ The width component provides additional modifiers to give you more flexibility i
 
 | Class              | Description                                                                                     |
 |--------------------|-------------------------------------------------------------------------------------------------|
-| `.uk-width-auto`   | Add this class to an item, so it will only expand to the width of its own content.              |
-| `.uk-width-expand` | Add this class, so that the column expands to fill up the remaining space inside the container. |
+| `.uk-width-auto`   | Let the item only expand to the width of its own content.                                       |
+| `.uk-width-expand` | Let the item expand to fill up the remaining space of the grid container.                       |
 
 ```html
 <div uk-grid>

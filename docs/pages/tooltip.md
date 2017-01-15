@@ -11,7 +11,7 @@ To apply this component, add the `uk-tooltip` attribute to an element. You also 
 ```
 
 ```example
-<button class="uk-button uk-button-default" title="Hello World" uk-tooltip>Hover Me</button>
+<button class="uk-button uk-button-default" title="Hello World" uk-tooltip>Hover</button>
 ```
 
 ***
@@ -24,16 +24,29 @@ Add one of the following options to the `uk-tooltip` attribute to adjust the too
 <button title="" uk-tooltip="pos: top-left"></button>
 ```
 
-| Example | Attribute | Description |
-| --- | --- | --- |
-| <button class="uk-button uk-button-default" title="Hello World" uk-tooltip>Top</button> | `pos: top` | Aligns the tooltip to the top. |
-| <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: top-left">Top Left</button> | `pos: top-left` | Aligns the tooltip to the top left. |
-| <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: top-right">Top Right</button> | `pos: top-right` | Aligns the tooltip to the top right. |
-| <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: bottom">Bottom</button> | `pos: bottom` | Aligns the tooltip to the bottom. |
-| <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: bottom-left">Bottom Left</button> | `pos: bottom-left` | Aligns the tooltip to the bottom left. |
-| <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: bottom-right">Bottom Right</button> | `pos: bottom-right` | Aligns the tooltip to the bottom right. |
-| <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: left">Left</button> | `pos: left` | Aligns the tooltip to the left. |
-| <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: right">Right</button> | `pos: right` | Aligns the tooltip to the right. |
+| Attribute | Description |
+| --------- | ----------- |
+| `pos: top`          | Aligns the tooltip to the top.          |
+| `pos: top-left`     | Aligns the tooltip to the top left.     |
+| `pos: top-right`    | Aligns the tooltip to the top right.    |
+| `pos: bottom`       | Aligns the tooltip to the bottom.       |
+| `pos: bottom-left`  | Aligns the tooltip to the bottom left.  |
+| `pos: bottom-right` | Aligns the tooltip to the bottom right. |
+| `pos: left`         | Aligns the tooltip to the left.         |
+| `pos: right`        | Aligns the tooltip to the right.        |
+
+```example
+<p uk-margin>
+    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip>Top</button>
+    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: top-left">Top Left</button>
+    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: top-right">Top Right</button>
+    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: bottom">Bottom</button>
+    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: bottom-left">Bottom Left</button>
+    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: bottom-right">Bottom Right</button>
+    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: left">Left</button>
+    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: right">Right</button>
+</p>
+```
 
 ***
 

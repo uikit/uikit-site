@@ -39,11 +39,10 @@ Add one of the `.uk-hidden-*` classes to hide the element from screens larger th
 <div class="uk-hidden@m"></div>
 ```
 
-
 **Note** In this example the green elements are hidden on screens that are larger than the defined breakpoint. Resize your browser window to see the effect.
 
 ```example
-<div class="uk-grid-small uk-child-width-1-4@m uk-text-center" uk-grid>
+<div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s uk-text-center" uk-grid>
     <div>
         <div class="uk-visible@s uk-card uk-card-default uk-card-body uk-card-small">Small</div>
         <div class="uk-hidden@s uk-card uk-card-default uk-card-body uk-card-small uk-text-success">✔ Small</div>
@@ -84,7 +83,7 @@ Use `.uk-visible-*` classes to show the element for screens larger then the spec
 **Note** In this example the green elements are displayed on screens that are larger than the defined breakpoint. Resize your browser window to see the effect.
 
 ```example
-<div class="uk-grid-small uk-child-width-1-4@m uk-text-center" uk-grid>
+<div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s uk-text-center" uk-grid>
     <div>
         <div class="uk-hidden@s uk-card uk-card-default uk-card-body uk-card-small">Small</div>
         <div class="uk-visible@s uk-card uk-card-default uk-card-body uk-card-small uk-text-success">✔ Small</div>
@@ -106,7 +105,7 @@ Use `.uk-visible-*` classes to show the element for screens larger then the spec
 
 ***
 
-## Hover
+## Show on hover
 
 Use one of the following classes to display elements only when they are being hovered.
 
@@ -123,33 +122,38 @@ Use one of the following classes to display elements only when they are being ho
 ```
 
 ```example
-<div class="uk-width-1-2@s">
+<div class="uk-child-width-1-2@s" uk-grid>
+    <div class="uk-visible-toggle">
 
-    <h4>Hidden hover</h4>
+        <h4>Hidden when not hovered</h4>
 
-    <div class="uk-visible-toggle" uk-grid>
-        <div class="uk-width-expand">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <div class="uk-width-auto">
-            <ul class="uk-hidden-hover uk-iconnav">
-                <li><a href="#" uk-icon="icon: pencil"></a></li>
-                <li><a href="#" uk-icon="icon: copy"></a></li>
-                <li><a href="#" uk-icon="icon: trash"></a></li>
-            </ul>
+        <div uk-grid>
+            <div class="uk-width-expand">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="uk-width-auto">
+                <ul class="uk-hidden-hover uk-iconnav">
+                    <li><a href="#" uk-icon="icon: pencil"></a></li>
+                    <li><a href="#" uk-icon="icon: copy"></a></li>
+                    <li><a href="#" uk-icon="icon: trash"></a></li>
+                </ul>
+            </div>
         </div>
+
     </div>
+    <div class="uk-visible-toggle">
 
-    <h4>Invisible hover</h4>
+        <h4>Invisible when not hovered</h4>
 
-    <div class="uk-visible-toggle" uk-grid>
-        <div class="uk-width-expand">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <div class="uk-width-auto">
-            <ul class="uk-invisible-hover uk-iconnav">
-                <li><a href="#" uk-icon="icon: pencil"></a></li>
-                <li><a href="#" uk-icon="icon: copy"></a></li>
-                <li><a href="#" uk-icon="icon: trash"></a></li>
-            </ul>
+        <div uk-grid>
+            <div class="uk-width-expand">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="uk-width-auto">
+                <ul class="uk-invisible-hover uk-iconnav">
+                    <li><a href="#" uk-icon="icon: pencil"></a></li>
+                    <li><a href="#" uk-icon="icon: copy"></a></li>
+                    <li><a href="#" uk-icon="icon: trash"></a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
+    </div>
 </div>
 ```
