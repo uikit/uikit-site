@@ -6,7 +6,7 @@
 
 The switcher component consists of a number of toggles and their related content items. Add the `uk-switcher` attribute to the element which contains the toggles. Add the `.uk-switcher` class to the element containing the content items.
 
-Typically, the switcher is combined with other components, some of which will be shown here.
+Typically, the switcher toggles are styled through other components, some of which will be shown here.
 
 ```html
 <!-- This is the nav containing the toggling elements -->
@@ -38,7 +38,7 @@ In this example we are using the [Subnav component](subnav.md).
 
 ***
 
-## Link between items
+## Navigation controls
 
 In some cases you want to switch to another content section from within the active content. This is possible using the `uk-switcher-item` attribute. To target the items, you need to set the attribute to the number of the respective content item.
 
@@ -60,9 +60,9 @@ Setting the attribute to `next` and `previous` will switch to the adjacent items
     <li><a href="#">Item</a></li>
 </ul>
 <ul class="uk-switcher uk-margin">
-    <li>Hello! <a href="#" uk-switcher-item="2">Switch to tab 3</a></li>
-    <li>Hello again! <a href="#" uk-switcher-item="next">Next tab</a></li>
-    <li>Bazinga! <a href="#" uk-switcher-item="previous">Previous tab</a></li>
+    <li>Hello! <a href="#" uk-switcher-item="2">Switch to item 3</a></li>
+    <li>Hello again! <a href="#" uk-switcher-item="next">Next item</a></li>
+    <li>Bazinga! <a href="#" uk-switcher-item="previous">Previous item</a></li>
 </ul>
 ```
 
@@ -156,7 +156,7 @@ You can also apply multiple animations from the [Animation component](animation)
 
 ***
 
-## Switcher and Subnav
+## Switcher and subnav
 
 The switcher is easily applied to the [Subnav component](subnav).
 
@@ -178,14 +178,14 @@ The switcher is easily applied to the [Subnav component](subnav).
 <ul class="uk-switcher uk-margin">
     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
     <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
 </ul>
 ```
 
 
 ***
 
-## Switcher and Tab
+## Switcher and tab
 
 As an exception to the rule, add the `uk-tab` attribute instead of `uk-switcher` to the tabbed navigation to combine the switcher with the [Tab component](tab).
 
@@ -207,7 +207,7 @@ As an exception to the rule, add the `uk-tab` attribute instead of `uk-switcher`
 <ul class="uk-switcher uk-margin">
     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
     <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
 </ul>
 ```
 
@@ -243,7 +243,7 @@ Use the [Grid](grid) and [Width](width) components to display content correctly 
                 <ul id="component-tab-left" class="uk-switcher">
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                     <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
                 </ul>
             </div>
         </div>
@@ -261,7 +261,7 @@ Use the [Grid](grid) and [Width](width) components to display content correctly 
                 <ul id="component-tab-right" class="uk-switcher">
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                     <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
                 </ul>
             </div>
         </div>
@@ -271,7 +271,7 @@ Use the [Grid](grid) and [Width](width) components to display content correctly 
 
 ***
 
-## Switcher and Button
+## Switcher and button
 
 The switcher can also be applied to buttons or button groups from the [Button component](button). Just add the switcher attribute to a block around a group of buttons or to the element with the `.uk-button-group` class.
 
@@ -287,22 +287,22 @@ The switcher can also be applied to buttons or button groups from the [Button co
 
 ```example
 <div uk-switcher="animation: uk-animation-fade">
-    <a class="uk-button uk-button-default" href="#">Link</a>
-    <button class="uk-button uk-button-default" type="button">Button</button>
-    <button class="uk-button uk-button-default" type="button">Button</button>
+    <button class="uk-button uk-button-default" type="button">Item</button>
+    <button class="uk-button uk-button-default" type="button">Item</button>
+    <button class="uk-button uk-button-default" type="button">Item</button>
 </div>
 
 <ul class="uk-switcher uk-margin">
     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
     <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
 </ul>
 ```
 
 
 ***
 
-## Switcher and Nav
+## Switcher and nav
 
 To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribute to the nav `<ul>` element. Use the [Grid](grid) and [Width](width) components to arrange nav and content in a grid layout.
 
@@ -333,7 +333,7 @@ To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribu
         <ul id="component-nav" class="uk-switcher">
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
             <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+            <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
         </ul>
 
     </div>

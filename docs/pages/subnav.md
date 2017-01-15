@@ -11,7 +11,7 @@ To apply this component, use the following classes. To align a subnav, for examp
 | `.uk-subnav`    | Add this class to a `<ul>` element to define the Subnav component. Use `<a>` elements as nav items within the list. |
 | `.uk-active `   | Add this class to a list item to apply an active state.                                                             |
 
-To use use list items without a link, add a `<span>` element instead of an `<a>`. Alternatively, you can add the `.uk-disabled` class to apply a disabled state.
+To use list items without a link, add a `<span>` element instead of an `<a>`. Alternatively, you can add the `.uk-disabled` class to apply a disabled state.
 
 ```html
 <ul class="uk-subnav">
@@ -21,7 +21,7 @@ To use use list items without a link, add a `<span>` element instead of an `<a>`
 </ul>
 ```
 
-**Note** For a better layout, if items should wrap into the next row, ad the `uk-margin` attribute from the [Margin component](margin.md).
+**Note** For a better layout, if items should wrap into the next row, add the `uk-margin` attribute from the [Margin component](margin.md).
 
 ```example
 <ul class="uk-subnav" uk-margin>
@@ -34,9 +34,7 @@ To use use list items without a link, add a `<span>` element instead of an `<a>`
 
 ***
 
-## Style modifiers
-
-### Subnav divider
+## Divider modifier
 
 Add the `.uk-subnav-divider` class to separate menu items with lines.
 
@@ -54,7 +52,7 @@ Add the `.uk-subnav-divider` class to separate menu items with lines.
 
 ***
 
-### Subnav pill
+## Pill modifier
 
 Add the `.uk-subnav-pill` class to highlight the active menu item with a background.
 

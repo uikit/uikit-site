@@ -4,7 +4,7 @@
 
 ## Usage
 
-The tab component consists of clickable tabs, that are aligned side by side in a list. Its functionality is coupled to the [Switcher component](switcher.md), which is necessary to dynamically transition through different contents using the tabbed navigation.
+The tab component consists of clickable tabs, that are aligned side by side in a list. Its functionality is often coupled to the [Switcher component](switcher.md), which is necessary to dynamically transition through different contents using the tabbed navigation.
 
 | Class/Attribute | Description                                                                                                          |
 |-----------------|----------------------------------------------------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ Add the `.uk-tab-bottom` class to flip tab items to the bottom.
 
 ***
 
-## Vertical modifiers
+## Left/Right modifiers
 
 Add the `.uk-tab-left` or `.uk-tab-right` class to align tabs vertically to the left or right side.
 

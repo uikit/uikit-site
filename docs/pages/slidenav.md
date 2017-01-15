@@ -36,7 +36,7 @@ To increase the size of the slidenav icons, add the `.uk-slidenav-large` class.
 
 ## Position on image
 
-To position the slidenav over any content, like a slideshow or an image, just add one of the `.uk-position-*` classes from the [Position component](position.md). Wrap the nav and content inside a container element and add the `.uk-inline` class from the [Utility component](utility.md#inline).
+To position the slidenav over an image or any other inline element, just add one of the `.uk-position-*` classes from the [Position component](position.md). To create a container of the same size with position context, just wrap the nav and content inside a container element and add the `.uk-inline` class from the [Utility component](utility.md#inline).
 
 Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to apply a light or dark color for better visibility.
 

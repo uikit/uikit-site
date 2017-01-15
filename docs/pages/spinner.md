@@ -1,6 +1,6 @@
 # Spinner
 
-<p class="uk-text-lead">This component allows you to create an animated loading spinner.</p>
+<p class="uk-text-lead">Create an animated loading spinner.</p>
 
 ## Usage
 

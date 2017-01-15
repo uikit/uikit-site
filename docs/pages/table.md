@@ -61,11 +61,7 @@ To apply this component, add the `.uk-table` class to a `<table>` element.
 
 ***
 
-## Style modifiers
-
-To display the table in a different style, just add a modifier to the `.uk-table` class.
-
-### Hover
+## Hover modifier
 
 Add the `.uk-table-hover` class to display a hover state on table rows.
 
@@ -104,7 +100,7 @@ Add the `.uk-table-hover` class to display a hover state on table rows.
 
 ***
 
-### Striped
+## Striped modifier
 
 Add zebra-striping to a table by adding the `.uk-table-striped` class.
 
@@ -188,10 +184,26 @@ Add the `.uk-table-small` class to make table cells more compact.
 To vertically center table content, just add the `.uk-table-middle` class. You can also apply the class to `<tr>` or `<td>` elements for a more specific selection.
 
 ```html
+<table class="uk-table uk-table-middle">...</table>
+```
+
+```example
 <table class="uk-table uk-table-middle">
-    <thead>...</thead>
+    <thead>
+        <tr>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+        </tr>
+    </thead>
     <tbody>
-        <tr>...</tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+            <td><button class="uk-button uk-button-default" type="button">Button</button></td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+            <td><button class="uk-button uk-button-default" type="button">Button</button></td>
+        </tr>
     </tbody>
 </table>
 ```
@@ -200,7 +212,7 @@ To vertically center table content, just add the `.uk-table-middle` class. You c
 
 ## Responsive table
 
-If your table happens to be wider than its container element or would eventually get too big on a specific viewport width, just wrap it inside a `<div>` element and add the `.uk-overflow-auto` class. This creates a container that provides a horizontal scrollbar whenever the elements inside it are wider than the container itself.
+If your table happens to be wider than its container element or would eventually get too big on a specific viewport width, just wrap it inside a `<div>` element and add the `.uk-overflow-auto` class from the [Utility component](utility.md#overflow). This creates a container that provides a horizontal scrollbar whenever the elements inside it are wider than the container itself.
 
 ```html
 <div class="uk-overflow-auto">
@@ -279,7 +291,7 @@ If your table happens to be wider than its container element or would eventually
 
 ## Column width modifier
 
-To modify the column width or content, you can use one of the following classes. Add one of the classes from the [Text component](text.md) the style the table's content.
+To modify the column width or content, you can use one of the following classes. You just need to add this class to one of the column cells. It's recommended on the header cell.
 
 | Class               | Description                                                                                      |
 |---------------------|--------------------------------------------------------------------------------------------------|
@@ -289,10 +301,6 @@ To modify the column width or content, you can use one of the following classes.
 
 ```html
 <th class="uk-table-shrink"></th>
-
-<th class="uk-table-expand"></th>
-
-<td class="uk-width-medium uk-text-right"></td>
 ```
 
 ```example
@@ -301,19 +309,19 @@ To modify the column width or content, you can use one of the following classes.
         <tr>
             <th class="uk-table-shrink">Shrink</th>
             <th class="uk-table-expand">Expand</th>
-            <th class="uk-width-medium uk-text-right">Table Heading</th>
+            <th class="uk-width-small">Width Small</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Table Data</td>
             <td>Table Data</td>
-            <td class="uk-text-right">Table Data</td>
+            <td>Table Data</td>
         </tr>
         <tr>
             <td>Table Data</td>
             <td>Table Data</td>
-            <td class="uk-text-right">Table Data</td>
+            <td>Table Data</td>
         </tr>
     </tbody>
 </table>
@@ -327,8 +335,8 @@ To optimize the display of table cells and their specific content, you can add o
 
 | Class                 | Description                                                                                                                                                                                                                           |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `.uk-table-link`      | Add this class to a `<th>`or `<td>` element and insert an `<a>`element to give the link the table cell and apply padding. Add the `.uk-link-reset`class from the [Link component](link.md) to reset the default link styling.         |
-| `.uk-preserve-width ` | Using an image inside a table cell with the `.uk-table-shrink` class would reduce the image width to a pixel. To prevent this behavior, add the `.uk-preserve-width` class from the [Base component](base.md) to the `<img>` element. |
+| `.uk-table-link`      | Allows you to create a cell which is fully linked. Add this class to a `<th>`or `<td>` element and insert an `<a>`element. Add the `.uk-link-reset`class from the [Link component](link.md) to reset the default link styling.         |
+| `.uk-preserve-width ` | Since images are responsive by default in UIkit, using an image inside a table cell with the `.uk-table-shrink` class would reduce the image width to zero pixel. To prevent this behavior, add the `.uk-preserve-width` class from the [Base component](base.md) to the `<img>` element. |
 | `.uk-text-truncate`   | When applying a fixed width to a table cell, you might want to add this class from the [Text component](text.md) to the `<td>` element to truncate the text.                                                                          |
 | `.uk-text-nowrap`     | Add this class from the [Text component](text.md) to keep text from wrapping, for example when using the `.uk-table-shrink` class.                                                                                                    |
 
@@ -347,9 +355,7 @@ To optimize the display of table cells and their specific content, you can add o
 <td class="uk-text-truncate"></td>
 
 <!-- Text nowrap -->
-<th class="uk-table-shrink uk-text-nowrap"></th>
-
-<td class="uk-table-shrink uk-text-nowrap"></td>
+<td class="uk-text-nowrap"></td>
 ```
 
 ```example
@@ -357,7 +363,7 @@ To optimize the display of table cells and their specific content, you can add o
     <table class="uk-table uk-table-hover uk-table-middle">
         <thead>
             <tr>
-                <th class="uk-table-shrink">Shrink</th>
+                <th class="uk-table-shrink"></th>
                 <th class="uk-table-shrink">Preserve</th>
                 <th class="uk-table-expand">Expand + Link</th>
                 <th class="uk-width-small">Truncate</th>
@@ -372,7 +378,7 @@ To optimize the display of table cells and their specific content, you can add o
                     <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
                 </td>
                 <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
-                <td class="uk-table-shrink uk-text-nowrap">Lorem ipsum dolor</td>
+                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
             </tr>
             <tr>
                 <td><input class="uk-checkbox" type="checkbox"></td>
@@ -381,7 +387,7 @@ To optimize the display of table cells and their specific content, you can add o
                     <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
                 </td>
                 <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
-                <td class="uk-table-shrink uk-text-nowrap">Lorem ipsum dolor</td>
+                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
             </tr>
             <tr>
                 <td><input class="uk-checkbox" type="checkbox"></td>
@@ -390,7 +396,7 @@ To optimize the display of table cells and their specific content, you can add o
                     <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
                 </td>
                 <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
-                <td class="uk-table-shrink uk-text-nowrap">Lorem ipsum dolor</td>
+                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
             </tr>
             <tr>
                 <td><input class="uk-checkbox" type="checkbox"></td>
@@ -399,7 +405,7 @@ To optimize the display of table cells and their specific content, you can add o
                     <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
                 </td>
                 <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
-                <td class="uk-table-shrink uk-text-nowrap">Lorem ipsum dolor</td>
+                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
             </tr>
         </tbody>
     </table>
