@@ -4,9 +4,9 @@
 
 ## Panel
 
-UIkit uses panels to outline certain sections of your content. These can be arranged in grid columns from the [Grid component](grid.md) component, for example. 
+UIkit uses panels to outline certain sections of your content. These can be arranged in grid columns from the [Grid component](grid.md) component, for example.
 
-Add the `.uk-panel` class to a `<div>` element to create a position context, set box-sizing to border-box, apply a clearfix and to remove the bottom margin of its last child element. 
+Add the `.uk-panel` class to a `<div>` element to create a position context, set box-sizing to border-box, apply a clearfix and to remove the bottom margin of its last child element.
 
 ```example
 <div class="uk-child-width-1-3@s" uk-grid>
@@ -82,7 +82,7 @@ Floating elements are taken from the document flow and aligned to the left or ri
 
 ## Overflow
 
-This component provides different classes to modify an element's overflow behavior. 
+This component provides different classes to modify an element's overflow behavior.
 
 | Class                 | Description                                                                                                                                                                               |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -147,7 +147,7 @@ This component provides different classes to modify an element's overflow behavi
 
 ## Resize
 
-This component provides different classes for resizing block elements. 
+This component provides different classes for resizing block elements.
 
 | Class                 | Description                                                         |
 |-----------------------|---------------------------------------------------------------------|
@@ -374,7 +374,7 @@ Learn more about [component configuration](javascript.md#component-configuration
 
 ## Responsive objects
 
-In UIkit `<img>`, `<canvas>`, `<aufio>` and `<video>` elements adapt to the width of their parent container by default. To apply responsive behavior to iframes, add the `uk-responsive` attribute . For other element or to apply a different behavior, just add one of the following classes.
+In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the width of their parent container by default. To apply responsive behavior to iframes, add the `uk-responsive` attribute . For other element or to apply a different behavior, just add one of the following classes.
 
 | Class	| Description |
 | --- | --- |
