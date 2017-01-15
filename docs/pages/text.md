@@ -13,7 +13,7 @@ UIkit offers various text utilities to style your text.
 
 ***
 
-## Size modifiers
+## Font size
 
 The following classes will modify the font size of your text.
 
@@ -24,13 +24,13 @@ The following classes will modify the font size of your text.
 
 ***
 
-## Weight modifier
+## Font weight
 
 Add the `.uk-text-bold` class to create <span class="uk-text-bold">bold text</span>.
 
 ***
 
-## Transform modifier
+## Text transform
 
 The following classes will transform text into uppercased, capitalized or lowercased characters.
 
@@ -42,7 +42,7 @@ The following classes will transform text into uppercased, capitalized or lowerc
 
 ***
 
-## Color modifiers
+## Text color
 
 Use one of these classes to apply a different color to text elements.
 
@@ -56,7 +56,7 @@ Use one of these classes to apply a different color to text elements.
 
 ***
 
-## Alignment modifiers
+## Text alignment
 
 Add one of these useful classes to align your text.
 
@@ -68,7 +68,7 @@ Add one of these useful classes to align your text.
 | `.uk-text-justify` | Justifies text.            |
 
 ```example
-<div class="uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-small" uk-grid>
+<div class="uk-child-width-1-3@s uk-grid-small" uk-grid>
     <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-left uk-card-body">
@@ -76,7 +76,6 @@ Add one of these useful classes to align your text.
             </div>
         </div>
     </div>
-
     <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-right uk-card-body">
@@ -84,7 +83,6 @@ Add one of these useful classes to align your text.
             </div>
         </div>
     </div>
-
     <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-center uk-card-body">
@@ -109,7 +107,7 @@ UIkit provides a number of responsive alignment classes. Basically, they work ju
 | `.uk-text-left@xl`<br> `.uk-text-center@xl`<br> `.uk-text-right@xl` | Affects device widths of _1600px_ and larger. |
 
 ```example
-<div class="uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-small" uk-grid>
+<div class="uk-child-width-1-3@s uk-grid-small" uk-grid>
     <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-center@s uk-card-body">
@@ -117,7 +115,6 @@ UIkit provides a number of responsive alignment classes. Basically, they work ju
             </div>
         </div>
     </div>
-
     <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-right@l uk-card-body">
@@ -125,7 +122,6 @@ UIkit provides a number of responsive alignment classes. Basically, they work ju
             </div>
         </div>
     </div>
-
     <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-center@m uk-card-body">
@@ -168,7 +164,7 @@ Add one of these classes to vertically align text to an object.
 
 ***
 
-## Wrap modifiers
+## Text wrapping
 
 Add one of these useful classes to wrap your text.
 
@@ -179,15 +175,12 @@ Add one of these useful classes to wrap your text.
 | `.uk-text-nowrap`   | Prevents text from wrapping into multiple lines.                        |
 
 ```example
-<div class="uk-child-width-1-3@m" uk-grid>
+<div class="uk-child-width-1-2@s" uk-grid>
     <div>
-        <div class="uk-panel uk-panel-box uk-width-1-1 uk-text-truncate">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetetur sadipscing elit <code>.uk-text-truncate</code></div>
+        <div class="uk-panel uk-panel-box uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
     </div>
     <div>
-        <div class="uk-panel uk-panel-box uk-text-break">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetetur sadipscing elit <code>.uk-text-break</code></div>
-    </div>
-    <div>
-        <div class="uk-panel uk-panel-box"><p class="uk-margin-remove uk-text-nowrap">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac.</p> <code>.uk-text-nowrap</code></div>
+        <div class="uk-panel uk-panel-box uk-text-break">Loremipsumdolorsitamet,consecteturadipiscingelit,seddoeiusmodtemporincididuntutlaboreetdoloremagnaaliqua.</div>
     </div>
 </div>
 ```

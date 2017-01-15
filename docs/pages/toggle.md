@@ -6,7 +6,7 @@
 
 To apply this component, just add the `uk-toggle="target: #ID"` attribute to a `<button>` or `<a>` element. You can use any selector with the toggle attribute.
 
-The toggle will add or remove a class or attribute from the item. By default, it adds the `hidden` attribute to hide the element.
+The toggle can be used to add or remove a class or attribute from the item. By default, it adds the `hidden` attribute to hide the element.
 
 ```html
 <button uk-toggle="target: #my-id" type="button"></button>
@@ -125,10 +125,8 @@ A toggle can be triggered in different ways. Just add the `mode` option to the `
 ```
 
 ```example
-<div>
-    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-hover; mode: hover">hover</button>
-    <p id="toggle-hover">What's up?</p>
-</div>
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-hover; mode: hover">hover</button>
+<p id="toggle-hover">What's up?</p>
 ```
 
 ***
