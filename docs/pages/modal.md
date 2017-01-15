@@ -11,7 +11,7 @@ Add the `uk-modal` attribute to a `<div>` element to create the modal container 
 | Class              | Description                                                                                                                                                                     |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `.uk-modal-dialog` | Add this class to a child `<div>` element to create the dialog box.                                                                                                             |
-| `.uk-modal-body`   | Add this class to create padding between the the modal and its content.                                                                                                         |
+| `.uk-modal-body`   | Add this class to create padding between the modal and its content.                                                                                                         |
 | `.uk-modal-title`  | Add this class to a heading element to create the modal title.                                                                                                                  |
 | `.uk-modal-close`  | Add this class to an `<a>` or `<button>` element to create a close button and enable its functionality.                                                                         |
 

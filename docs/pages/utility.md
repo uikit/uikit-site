@@ -268,7 +268,7 @@ UIkit provides a number of useful classes to alter a block element's height.
 
 ### Viewport height
 
-Add the the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `offset-top`, `offset-bottom` or `expand` option to the attribute.
+Add the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `offset-top`, `offset-bottom` or `expand` option to the attribute.
 
 Learn more about [component configuration](javascript.md#component-configuration).
 

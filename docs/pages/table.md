@@ -63,7 +63,7 @@ To apply this component, add the `.uk-table` class to a `<table>` element.
 
 ## Style modifiers
 
-To display the table in a different style, just add a modifier to the the `.uk-table` class.
+To display the table in a different style, just add a modifier to the `.uk-table` class.
 
 ### Hover
 

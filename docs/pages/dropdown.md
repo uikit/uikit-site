@@ -11,7 +11,7 @@ Basically, a dropdown is a specific case of the [drop](drop.md) that provides it
 <div uk-dropdown></div>
 ```
 
-A dropdown can be enabled by either hovering or clicking the the toggle. Just add the `mode: click` option to the attribute. If you want to group the toggle and the dropdown, you can just add the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around both.
+A dropdown can be enabled by either hovering or clicking the toggle. Just add the `mode: click` option to the attribute. If you want to group the toggle and the dropdown, you can just add the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around both.
 
 ```html
 <div class="uk-inline">
@@ -182,7 +182,7 @@ Add one of the following options to the `uk-dropdown` attribute to adjust the dr
 
 ## Boundary
 
-By default, the dropdown flips automatically when it exceeds the viewport's edge. If you want to flip it according to a container's boundary, just add the the `boundary: .my-class` option to the `uk-dropdown` attribute, using a selector for the container. That way you can determine any parent element as the drop's boundary.
+By default, the dropdown flips automatically when it exceeds the viewport's edge. If you want to flip it according to a container's boundary, just add the `boundary: .my-class` option to the `uk-dropdown` attribute, using a selector for the container. That way you can determine any parent element as the drop's boundary.
 
 ```html
 <div class="my-class">

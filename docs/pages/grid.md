@@ -36,7 +36,7 @@ To create the grid container, add the `uk-grid` attribute to a `<div>` element. 
 
 ## Gutter modifiers
 
-The Grid component comes with a default gutter, that is decreased automatically from a certain breakpoint, usually on a smaller desktop viewport width. To a apply a different gutter or breakpoint, add one of the following classes.
+The Grid component comes with a default gutter, that is decreased automatically from a certain breakpoint, usually on a smaller desktop viewport width. To apply a different gutter, add one of the following classes.
 
 | Class         | Description                                                   |
 |---------------|---------------------------------------------------------------|

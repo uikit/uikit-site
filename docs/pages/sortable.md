@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create sortable grids and lists to rearrange the order of its elements.</p>
 
-Drag and drop an element to a new location within the the sortable grid, while the other items adjust to fit. This is great, if you want to sort items like gallery or menu items, for example.
+Drag and drop an element to a new location within the sortable grid, while the other items adjust to fit. This is great, if you want to sort items like gallery or menu items, for example.
 
 ***
 

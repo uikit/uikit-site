@@ -113,7 +113,7 @@ You can place more than one navigation inside a navbar container. That way you c
 
 ## Click mode
 
-A parent item inside the navbar can be enabled by either hovering or clicking the the toggle. Just add the `mode: click` option to the `uk-navbar` attribute.
+A parent item inside the navbar can be enabled by either hovering or clicking the toggle. Just add the `mode: click` option to the `uk-navbar` attribute.
 
 ```html
 <nav class="uk-navbar-container" uk-navbar="mode: click">...</nav>
