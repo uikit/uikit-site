@@ -26,7 +26,7 @@ Add the `.uk-panel` class to a `<div>` element to create a position context, set
 
 ### Scrollable panel
 
-Add the `.uk-panel-scrollable` class to give the panel a fixed height and make it scrollable, if its content exceeds the height. You can also add one of the `.uk-height-*` [classes](#height) from this component to apply a different height.
+Add the `.uk-panel-scrollable` class to give the panel a fixed height and make it scrollable, if its content exceeds the height. You can also add one of the `.uk-height-*` [classes](#height) to apply a different height.
 
 ```example
 <div class="uk-panel uk-panel-scrollable">
@@ -82,7 +82,7 @@ Floating elements are taken from the document flow and aligned to the left or ri
 
 ## Overflow
 
-This component provides different classes to modify an element's overflow behavior.
+These utilities provide different classes to modify an element's overflow behavior.
 
 | Class                 | Description                                                                                                                                      |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -148,7 +148,7 @@ This component provides different classes to modify an element's overflow behavi
 
 ## Resize
 
-This component provides different classes for resizing elements.
+These utilities provide different classes for resizing elements.
 
 | Class                 | Description                                                         |
 |-----------------------|---------------------------------------------------------------------|
@@ -210,12 +210,12 @@ Add one of these classes to change the display properties of an element.
 
 ## Inline
 
-These classes are often used to create a position context for the [Position component](position.md) on containers with an image as child. The container keeps the same size as the image and also the responsiveness of the image.
+These classes are often used to create a position context on containers with an image as a child. The container keeps the same size as the image as well as the responsive behavior. That way content that is placed on top of the image with the [Position component](position.md) will not flow out of the image dimensions.
 
 | Class             | Description                                                                                                           |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
-| `.uk-inline`      | Add this class to add inline-block behavior to an element, prevent content overflow and to create a position context. |
-| `.uk-inline-clip` | Same like `.uk-inline` but also clips overflowing child elements.                                                     |
+| `.uk-inline`      | Add this class to apply inline-block behavior to an element, add a max-width of 100% and to create a position context. |
+| `.uk-inline-clip` | Same as `.uk-inline`, it but also clips overflowing child elements.                                                     |
 
 ```html
 <div class="uk-inline">
@@ -374,7 +374,7 @@ In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the widt
 | ----------------------- | ------------------------------------------------------------------------------------------------ |
 | `.uk-responsive-width`  | Adjusts the object's width according to its parent's width, keeping the original aspect ratio.   |
 | `.uk-responsive-height` | Adjusts the object's height according to its parent's height, keeping the original aspect ratio. |
-| `.uk-preserve-width`    | Add this class to avoid the responsive behavior and preserve the original image dimensions.      |
+| `.uk-preserve-width`    | Add this class to an element or its container to avoid the responsive behavior and preserve the original image dimensions. This is ideal for using images in Google Maps without them being distorted.      |
 
 ```html
 <img class="uk-responsive-height" src="" alt="">
@@ -471,7 +471,7 @@ Add the `.uk-light` class from the [Inverse component](inverse.md) when displayi
 
 ### Logo image
 
-You can use text or an `<img>` element, for example an SVG, as a logo.
+You can use text or an `<img>` element, for example an SVG, as a logo. 
 
 ```html
 <a class="uk-logo" href="">
@@ -479,10 +479,36 @@ You can use text or an `<img>` element, for example an SVG, as a logo.
 </a>
 ```
 
+You can even automatically display alternative logos for light and dark backgrounds by using the [Inverse component](inverse.md). Just add the `.uk-logo-inverse` class to a second logo image. Depending on the color mode, the inverted logo will be displayed when the `.uk-light` or `.uk-dark` class is applied to the parent element.
+
+```html
+<div class="uk-light">
+    <a class="uk-logo" href="">
+        <img src="" alt="">
+        <img class="uk-logo-inverse" src="" alt="">
+    </a>
+</div>
+```
+
 ```example
-<a class="uk-logo" href="#">
-    <img src="../docs/images/logo-placeholder.svg" alt="">
-</a>
+<div class="uk-child-width-expand@s" uk-grid>
+    <div>
+        <div class="uk-panel uk-padding uk-background-muted">
+            <a class="uk-logo" href="#">
+                <img src="../docs/images/logo-placeholder.svg" alt="">
+                <img class="uk-logo-inverse" src="../docs/images/logo-placeholder-light.svg" alt="">
+            </a>
+        </div>
+    </div>
+    <div>
+        <div class="uk-panel uk-padding uk-background-secondary uk-light">
+            <a class="uk-logo" href="#">
+                <img src="../docs/images/logo-placeholder.svg" alt="">
+                <img class="uk-logo-inverse" src="../docs/images/logo-placeholder-light.svg" alt="">
+            </a>
+        </div>
+    </div>
+</div>
 ```
 
 ***
@@ -495,11 +521,13 @@ SVGs or Scaleable Vector Graphics are really handy, for example to display a log
 <img src="" uk-svg>
 ```
 
+Using inline SVGs also allows you to display different symbols within the same SVG file. Just append its ID to the image path as you would in any fragmented URL. This can be compared to sprites that were previously used to apply hover effects to images by changing the background position.
+
 ```example
-<!-- Targeting the SVG image -->
+<!-- Targets the SVG image -->
 <img src="../assets/uikit/src/images/symbols/cloud-download.svg" width="40" height="40" uk-svg>
 
-<!-- Targeting a symbol inside a SVG image -->
+<!-- Targets a symbol inside the SVG image -->
 <img src="../assets/uikit/dist/images/icons.svg#cloud-upload" width="40" height="40" uk-svg>
 ```
 

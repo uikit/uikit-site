@@ -191,7 +191,7 @@ In addition to the calculated width classes, you can also add one of the followi
 
 ## Mixing widths
 
-Different classes from this component can be mixed. That way it is possible, for example, to create a grid with one item that has a specific width and all other items expanding to fill the remaining space.
+You can also combine `.uk-child-width-*` classes with `.uk-width-*` classes for individual items. That way it is possible, for example, to create a grid with one item that has a specific width and all other items expanding to fill the remaining space.
 
 ```html
 <div class="uk-child-width-expand" uk-grid>
