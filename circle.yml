@@ -15,4 +15,6 @@ deployment:
   production:
     branch: master
     commands:
+      - sed "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" index.html > index.html
+      - sed "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/index.html > docs/index.html
       - rsync -avz --delete --exclude "migrate.min.js" --exclude ".git*" --exclude "node_modules" --exclude "v2" --exclude "fonts" . $UIKIT_SERVER
