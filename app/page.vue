@@ -62,7 +62,7 @@
                 immediate: true
             },
 
-            page(page) {
+            page() {
 
                 this.$nextTick(() => {
 
@@ -72,7 +72,7 @@
                         }
                     });
 
-                    $(page).find('script').appendTo(this.$refs.container);
+                    $(this.$refs.container).find('script').remove().appendTo(this.$refs.container);
 
                 });
 
