@@ -22,12 +22,12 @@ The compiled files of all UIkit versions are also hosted on the Cloudflare conte
 
 ## File structure of the source
 
-The Github project contains all sources files which are compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are concatenated and images are combined into SVG sprites.
+The Github project contains all sources files which are compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are concatenated and SVG images are combined into fewer SVG using symbols.
 
 | Folder   | Description |
 | -------- | ----------- |
 | `/src`   | Contains all Less, JavaScript and image sources. |
-| `/dist`  | Contains compiled CSS, concatenated JS and combined images, updated on every release. |
+| `/dist`  | Contains compiled CSS, JS and images, updated on every release. |
 | `/tests` | Contains HTML test files of all components. |
 
 ***

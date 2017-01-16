@@ -48,7 +48,9 @@ npm install
 npm run compile
 ```
 
-The generated CSS files will be located in the `/css` folder. The custom theme is also available in the test files, just navigate your browser to the index of the `/test` directory and select your theme from the Dropdown menu.
+The generated CSS files will be located in the `/dist/css` folder.
+
+**Note** The custom theme is also available in the test files, just navigate your browser to the index of the `/test` directory and select your theme from the Dropdown menu.
 
 ***
 
