@@ -10,7 +10,7 @@ First of all you need to download UIkit. For other packages and links to a CDN, 
 
 ## Package contents
 
-The Zip file contains the compiled CSS and JavaScript files, which is everything you need to get started. Later, you might want to [install and compile UIkit](installation.md) yourself and also [create your own UIkit theme](theme.md).
+The Zip file contains the compiled CSS and JavaScript files, which is everything you need to get started. Later, you might want to [install and compile UIkit](installation.md) yourself and also [create your own UIkit theme](less.md).
 
 | Folder    | Description |
 | --------- | --- |
