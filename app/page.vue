@@ -14,7 +14,6 @@
     export default {
 
         data: () => ({
-            loading: false,
             page: null,
             error: null,
             cache: {},
@@ -31,16 +30,13 @@
 
                     scrollTo(0, 0);
 
-                    this.loading = true;
                     this.error = null;
 
                     this.$parent.page = page;
 
                     var defer = $.Deferred();
 
-                    defer
-                        .then(page => this.setPage(page), () => this.error = 'Failed loading page')
-                        .always(() => this.loading = false);
+                    defer.then(page => this.setPage(page), () => this.error = 'Failed loading page');
 
                     if (this.cache[page]) {
                         defer.resolve(this.cache[page]);
@@ -76,7 +72,7 @@
                         }
                     });
 
-                    $('<div>').append(page).find('script').appendTo(this.$refs.container)
+                    $(page).find('script').appendTo(this.$refs.container);
 
                 });
 

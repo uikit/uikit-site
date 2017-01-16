@@ -28,7 +28,6 @@ new Vue({
         navigation,
         ids: {},
         component: false,
-        loading: false,
         page: false
     }),
 

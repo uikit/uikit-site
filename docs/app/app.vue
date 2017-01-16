@@ -38,7 +38,7 @@
 
             <h3>Documentation</h3>
 
-            <ul class="uk-nav uk-nav-default tm-nav" v-bind:class="{ 'uk-margin-top': index }" v-for="(pages, category, index) in navigation">
+            <ul class="uk-nav uk-nav-default tm-nav" :class="{ 'uk-margin-top': index }" v-for="(pages, category, index) in navigation">
                 <li class="uk-nav-header">{{category}}</li>
                 <router-link tag="li" :to="p" v-for="(p, label) in pages" exact><a>{{label}}</a></router-link>
             </ul>
