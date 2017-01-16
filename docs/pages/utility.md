@@ -368,13 +368,13 @@ The table below lists the available settings of the `uk-height-match` attribute.
 
 ## Responsive objects
 
-In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the width of their parent container by default. To apply responsive behavior to iframes, add the `uk-responsive` attribute . For other element or to apply a different behavior, just add one of the following classes.
+In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the width of their parent container by default. To apply responsive behavior to iframes, add the `uk-responsive` attribute . For other elements or to apply a different behavior, just add one of the following classes.
 
 | Class	| Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------ |
 | `.uk-responsive-width`  | Add this class to apply the same responsive behavior to any other element. It adjusts the object's width according to its parent's width, keeping the original aspect ratio.   |
 | `.uk-responsive-height` | Add this class to adjust the object's height (instead of its width) according to its parent's height, keeping the original aspect ratio. |
-| `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all the elements mentioned above inside it. If you have Google Maps embedded into your site, you may need this to fix its images.      |
+| `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all relevant elements inside it. If you are embedding Google Maps into your site, you may need this to fix the map's images.      |
 
 ```html
 <img class="uk-responsive-height" src="" alt="">
@@ -521,7 +521,7 @@ SVGs or Scaleable Vector Graphics are really handy, for example to display a log
 <img src="" uk-svg>
 ```
 
-Using inline SVGs also allows you to display different symbols within the same SVG file. Just append its ID to the image path as you would in any fragmented URL. This can be compared to sprites that were previously used to apply hover effects to images by changing the background position.
+Using the `uk-svg` attribute also allows you to inject a symbol from the SVG file. Just append the symbol's ID to the image path as you would in any fragmented URL.
 
 ```example
 <!-- Targets the SVG image -->
