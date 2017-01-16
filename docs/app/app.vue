@@ -53,9 +53,9 @@
                 <div class="tm-sidebar-right uk-visible@l">
                     <div v-if="!loading" uk-sticky="offset: 160">
 
-                        <ul class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon" v-scrollspynav>
+                        <ul class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
                             <li v-for="(id, subject) in ids">
-                                <a v-scroll :href="'#'+id">{{ subject }}</a>
+                                <a :href="'#'+id">{{ subject }}</a>
                             </li>
                             <li class="uk-nav-divider"></li>
                             <li v-if="component">
