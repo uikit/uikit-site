@@ -303,7 +303,32 @@ By default, the page will scroll with the modal, if its content exceeds the wind
 
 ***
 
-## Modal dialogs
+## Component options
+
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
+Learn more about [component configuration](javascript.md#component-configuration).
+
+| Option | Value | Default | Description |
+| --- | --- | --- | --- |
+| `center` | Boolean | `false` | Center the modal. |
+| `esc-close` | Boolean | `true` | Close the modal when the _Esc_ key is pressed. |
+| `bg-close` | Boolean | `true` | Close the modal when the background is clicked. |
+| `stack` | Boolean | `false` | Stack modals, when more than one is open. By default, the previous modal will be hidden. |
+
+***
+
+## JavaScript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.modal(element, options);
+```
+
+### Modal dialogs
 
 The component comes with a number of prepared modal dialogs that you can use for user interaction. You can call the dialog directly from JavaScript and use callback functions to process the user input.
 
@@ -374,33 +399,6 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
     </script>
 
 </p>
-```
-
-***
-
-## Component options
-
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
-
-Learn more about [component configuration](javascript.md#component-configuration).
-
-| Option | Value | Default | Description |
-| --- | --- | --- | --- |
-| `center` | Boolean | `false` | Center the modal. |
-| `esc-close` | Boolean | `true` | Close the modal when the _Esc_ key is pressed. |
-| `bg-close` | Boolean | `true` | Close the modal when the background is clicked. |
-| `stack` | Boolean | `false` | Stack modals, when more than one is open. By default, the previous modal will be hidden. |
-
-***
-
-## JavaScript
-
-Learn more about [JavaScript components](javascript.md#programmatic-use).
-
-### Initialization
-
-```js
-UIkit.modal(element, options);
 ```
 
 ### Events
