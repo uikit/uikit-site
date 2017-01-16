@@ -1,6 +1,6 @@
 # Cover
 
-<p class="uk-text-lead">Expand images, videos or iframs to cover their entire container and place your own content on top.</p>
+<p class="uk-text-lead">Expand images, videos or iframes to cover their entire container and place your own content on top.</p>
 
 ## Usage
 
