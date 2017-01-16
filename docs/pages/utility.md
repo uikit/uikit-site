@@ -268,9 +268,7 @@ UIkit provides a number of useful classes to alter a block element's height.
 
 ### Viewport height
 
-Add the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `offset-top`, `offset-bottom` or `expand` option to the attribute.
-
-Learn more about [component configuration](javascript.md#component-configuration).
+Add the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `offset-top`, `offset-bottom` or `expand` option to the attribute. [Learn more](javascript.md#component-configuration)
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
@@ -361,9 +359,7 @@ If your grid wraps into multiple rows, only grid columns within the same row are
 
 ### Component options
 
-The table below lists the available settings of the `uk-height-match` attribute.
-
-Learn more about [component configuration](javascript.md#component-configuration).
+The table below lists the available settings of the `uk-height-match` attribute. [Learn more](javascript.md#component-configuration)
 
 | Option | Value | Default | Description |
 | --- | --- |

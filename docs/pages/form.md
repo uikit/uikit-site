@@ -491,9 +491,7 @@ Use a button, text or a link as a select form. Just add the `target: SELECTOR` o
 
 ## Component option
 
-You can add this option to the `uk-form-custom` attribute.
-
-Learn more about [component configuration](javascript.md#component-configuration).
+You can add this option to the `uk-form-custom` attribute. [Learn more](javascript.md#component-configuration)
 
 | Option   | Value                 | Default | Description           |
 |----------|-----------------------|---------|-----------------------|

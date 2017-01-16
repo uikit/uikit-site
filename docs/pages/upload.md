@@ -161,9 +161,7 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
 
 ## Component options
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
-
-Learn more about [component configuration](javascript.md#component-configuration).
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option | Value | Default | Description |
 | --- | --- |

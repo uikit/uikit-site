@@ -322,9 +322,7 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 
 ## Component options
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
-
-Learn more about [component configuration](javascript.md#component-configuration).
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option           | Value                  | Default       | Description                                                                      |
 |------------------|------------------------|---------------|----------------------------------------------------------------------------------|

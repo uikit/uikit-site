@@ -89,9 +89,7 @@ You can also group scrollspy elements, so you won't have to apply the attribute 
 
 ## Component options
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
-
-Learn more about [component configuration](javascript.md#component-configuration).
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
@@ -142,7 +140,7 @@ For an example of the scrollspy nav, just check out the fixed nav on the right s
 
 ### Scrollspy nav options
 
-Learn more about [component configuration](javascript.md#component-configuration).
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
