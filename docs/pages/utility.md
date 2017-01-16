@@ -372,9 +372,9 @@ In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the widt
 
 | Class	| Description |
 | ----------------------- | ------------------------------------------------------------------------------------------------ |
-| `.uk-responsive-width`  | Adjusts the object's width according to its parent's width, keeping the original aspect ratio.   |
-| `.uk-responsive-height` | Adjusts the object's height according to its parent's height, keeping the original aspect ratio. |
-| `.uk-preserve-width`    | Add this class to an element or its container to avoid the responsive behavior and preserve the original image dimensions. This is ideal for using images in Google Maps without them being distorted.      |
+| `.uk-responsive-width`  | Add this class to apply the same responsive behavior to any other element. It adjusts the object's width according to its parent's width, keeping the original aspect ratio.   |
+| `.uk-responsive-height` | Add this class to adjust the object's height (instead of its width) according to its parent's height, keeping the original aspect ratio. |
+| `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all the elements mentioned above inside it. If you have Google Maps embedded into your site, you may need this to fix its images.      |
 
 ```html
 <img class="uk-responsive-height" src="" alt="">
@@ -471,7 +471,7 @@ Add the `.uk-light` class from the [Inverse component](inverse.md) when displayi
 
 ### Logo image
 
-You can use text or an `<img>` element, for example an SVG, as a logo. 
+You can also use an `<img>` element, for example an SVG, as a logo.
 
 ```html
 <a class="uk-logo" href="">
