@@ -167,3 +167,28 @@ To add spacing to stacking elements, for example inline elements that wrap on sm
     <button class="uk-button uk-button-default">Button</button>
 </div>
 ```
+
+***
+
+## Component options
+
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon.
+
+Learn more about [component configuration](javascript.md#component-configuration).
+
+| Option          | Value  | Default         | Description                                                                                                |
+|----------------|--------|-----------------|------------------------------------------------------------------------------------------------------------|
+| `margin `      | String | uk-margin-small-top  | This class is added to items that break into the next row, typically to create margin to the previous row. |
+| `first-column` | String | uk-first-column | This class is added to the first element in each row.                                                      |
+
+***
+
+## JavaScript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.margin(element, options);
+```
