@@ -111,9 +111,9 @@ Use one of the following classes to display elements only when they are being ho
 
 | Class	| Description |
 | --- | --- |
-| `uk-visible-toggle` | Add this class to the element's parent to enable the toggling on hover. |
-| `uk-hidden-hover` | Hides content and removes it from the document flow. |
-| `uk-invisible-hover` | Hides content without removing it from the document flow. |
+| `.uk-visible-toggle` | Add this class to the element's parent to enable the toggling on hover. |
+| `.uk-hidden-hover` | Hides content and removes it from the document flow. |
+| `.uk-invisible-hover` | Hides content without removing it from the document flow. |
 
 ```html
 <div class="uk-visible-toggle">

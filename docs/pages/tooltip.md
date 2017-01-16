@@ -16,6 +16,20 @@ To apply this component, add the `uk-tooltip` attribute to an element. You also 
 
 ***
 
+### Delay
+
+If you the tooltip to appear with a little delay, just add the `delay` option to the `uk-tooltip` attribute with your value in milliseconds.
+
+```html
+<div title="" uk-tooltip="delay: 500"></div>
+```
+
+```example
+<button class="uk-button uk-button-default" title="Hello World" uk-tooltip="delay: 500">Hover</button>
+```
+
+***
+
 ## Alignment
 
 Add one of the following options to the `uk-tooltip` attribute to adjust the tooltip's alignment.

@@ -4,7 +4,12 @@
 
 ## Usage
 
-To apply this component, add the `.uk-nav` class to a `<ul>` element. Use `<a>` elements as menu items within the list. To apply an active state to a menu item, just add the `.uk-active` class.
+To apply this component, use the following classes.
+
+| Class           | Description                                                                                                         |
+|-----------------|---------------------------------------------------------------------------------------------------------------------|
+| `.uk-nav`    | Add this class to a `<ul>` element to define the Nav component. Use `<a>` elements as nav items within the list. |
+| `.uk-active `   | Add this class to a list item to apply an active state to a menu item.                                                             |
 
 ```html
 <ul class="uk-nav">

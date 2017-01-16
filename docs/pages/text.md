@@ -170,7 +170,7 @@ Add one of these useful classes to wrap your text.
 
 | Class               | Description                                                             |
 |---------------------|-------------------------------------------------------------------------|
-| `.uk-text-truncate` | Prevents text from wrapping into multiple lines, truncating it instead. |
+| `.uk-text-truncate` | Prevents text from wrapping into multiple lines, truncating it and displaying an ellipsis instead. |
 | `.uk-text-break`    | Breaks strings, if their length exceeds the width of their container.    |
 | `.uk-text-nowrap`   | Prevents text from wrapping into multiple lines.                        |
 

@@ -1,6 +1,6 @@
 # Width
 
-<p class="uk-text-lead">Define the width of elements for for different viewports.</p>
+<p class="uk-text-lead">Define the width of elements for different viewport sizes.</p>
 
 UIkit's width component is often used in combination with [grids](grid.md) to split content into responsive columns. You can apply fractions, automatic width or expand units to fill the remaining space and combine these modes.
 
@@ -10,14 +10,14 @@ UIkit's width component is often used in combination with [grids](grid.md) to sp
 
 Add one of the `.uk-width-*` classes to an element to determine its size. Typically, you would use a grid from the [Grid component](grid.md) and its child elements to create the units.
 
-| Class                              | Description                        |
-|------------------------------------|------------------------------------|
+| Class                              | Description                          |
+|------------------------------------|----------------------------------------------------------------|
 | `.uk-width-1-1`                    | Fills 100% of the available width. |
-| `.uk-width-1-2`                    | Divides the grid into halves.      |
-| `.uk-width-1-3` to `.uk-width-2-3` | Divides the grid into thirds.      |
-| `.uk-width-1-4` to `.uk-width-3-4` | Divides the grid into fourths.     |
-| `.uk-width-1-5` to `.uk-width-4-5` | Divides the grid into fifths.      |
-| `.uk-width-1-6` to `.uk-width-5-6` | Divides the grid into sixths.      |
+| `.uk-width-1-2`                    | The element takes up halves of its parent container.      |
+| `.uk-width-1-3` to `.uk-width-2-3` | The element takes up thirds of its parent container.      |
+| `.uk-width-1-4` to `.uk-width-3-4` | The element takes up fourths of its parent container.     |
+| `.uk-width-1-5` to `.uk-width-4-5` | The element takes up fifths of its parent container.      |
+| `.uk-width-1-6` to `.uk-width-5-6` | The element takes up sixths of its parent container.      |
 
 ```html
 <div uk-grid>
@@ -64,10 +64,10 @@ Add one of the `.uk-width-*` classes to an element to determine its size. Typica
 
 The width component provides additional modifiers to give you more flexibility in the distribution of items.
 
-| Class              | Description                                                                                     |
-|--------------------|-------------------------------------------------------------------------------------------------|
-| `.uk-width-auto`   | Let the item only expand to the width of its own content.                                       |
-| `.uk-width-expand` | Let the item expand to fill up the remaining space of the grid container.                       |
+| Class              | Description                                                                                            |
+|--------------------|--------------------------------------------------------------------------------------------------------|
+| `.uk-width-auto`   | The item expands only to the width of its own content.                                       |
+| `.uk-width-expand` |The item expands to fill up the remaining space of the grid container.                                |
 
 ```html
 <div uk-grid>
@@ -93,15 +93,15 @@ The width component provides additional modifiers to give you more flexibility i
 
 To create a grid whose child elements' widths are evenly split, you don't have to apply the same class to each list item within the grid. Just add one of the `.uk-child-width-*` classes to the grid itself.
 
-| Class                    | Description                    |
-|--------------------------|--------------------------------|
-| `.uk-child-width-1-2`    | Divides the grid into halves.  |
-| `.uk-child-width-1-3`    | Divides the grid into thirds.  |
-| `.uk-child-width-1-4`    | Divides the grid into fourths. |
-| `.uk-child-width-1-5`    | Divides the grid into fifths.  |
-| `.uk-child-width-1-6`    | Divides the grid into sixths.  |
-| `.uk-child-width-auto`   | Divides the grid into equal units depending on the content size. |
-| `.uk-child-width-expand` | Divides the grid into equal units depending on the available space. |
+| Class                    | Description                                                                  |
+|--------------------------|------------------------------------------------------------------------------|
+| `.uk-child-width-1-2`    | All elements take up half of their parent container.             |
+| `.uk-child-width-1-3`    | All elements take up a third of their parent container.             |
+| `.uk-child-width-1-4`    | All elements take up a fourth of their parent container.             |
+| `.uk-child-width-1-5`    | All elements take up a fifth of their parent container.             |
+| `.uk-child-width-1-6`    | All elements take up a sixth of their parent container.             |
+| `.uk-child-width-auto`   | Divides the grid into equal units depending on the content size.      |
+| `.uk-child-width-expand` | Divides the grid into equal units depending on the available space.   |
 
 ```html
 <div class="uk-child-width-1-4" uk-grid>
@@ -185,6 +185,38 @@ In addition to the calculated width classes, you can also add one of the followi
 <div class="uk-width-large uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">Large</div></div>
 <div class="uk-width-xlarge uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">X Large</div></div>
 <div class="uk-width-xxlarge uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">XX Large</div></div>
+```
+
+***
+
+## Mixing widths
+
+Different classes from this component can be mixed. That way it is possible, for example, to create a grid with one item that has a specific width and all other items expanding to fill the remaining space.
+
+```html
+<div class="uk-child-width-expand" uk-grid>
+    <div></div>
+    <div class="uk-width-1-3"></div>
+    <div></div>
+    ...
+</div>
+```
+
+```example
+<div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Expand</div>
+    </div>
+    <div class="uk-width-1-3">
+        <div class="uk-card uk-card-default uk-card-body">1-3</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Expand</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Expand</div>
+    </div>
+</div>
 ```
 
 ***

@@ -6,6 +6,8 @@
 
 The switcher component consists of a number of toggles and their related content items. Add the `uk-switcher` attribute to the element which contains the toggles. Add the `.uk-switcher` class to the element containing the content items.
 
+By default, the element with the `.uk-switcher` class has to succeed the toggle directly in order for the switcher to function. If you need it to be nested in another element, for example when using a grid, add the `connect: SELECTOR` option to the `uk-switcher` attribute and select the element containing the items for switching.
+
 Typically, the switcher toggles are styled through other components, some of which will be shown here.
 
 ```html
@@ -70,7 +72,7 @@ Setting the attribute to `next` and `previous` will switch to the adjacent items
 
 ## Connect multiple containers
 
-It is also possible to connect multiple content containers. Just add the `connect` parameter to the `uk-switcher` attribute and target their selectors.
+It is also possible to connect multiple content containers. Just add the `connect` parameter to the `uk-switcher` attribute and use a selector that applies to all items.
 
 ```html
 <!-- This is the nav containing the toggling elements -->
