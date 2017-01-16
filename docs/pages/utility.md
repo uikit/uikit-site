@@ -10,14 +10,14 @@ Add the `.uk-panel` class to a `<div>` element to create a position context, set
 
 ```example
 <div class="uk-child-width-1-3@s" uk-grid>
-    <div class="uk-panel">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <div>
+        <div class="uk-panel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
     </div>
-    <div class="uk-panel">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <div>
+        <div class="uk-panel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
     </div>
-    <div class="uk-panel">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <div>
+        <div class="uk-panel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
     </div>
 </div>
 ```
@@ -26,7 +26,7 @@ Add the `.uk-panel` class to a `<div>` element to create a position context, set
 
 ### Scrollable panel
 
-Add the `.uk-panel-scrollable` class to give the panel _170px_ height and make it scrollable, if its content exceeds the height. You can also add one of the `.uk-height-*` [classes](#height) from this component to apply a different height.
+Add the `.uk-panel-scrollable` class to give the panel a fixed height and make it scrollable, if its content exceeds the height. You can also add one of the `.uk-height-*` [classes](#height) from this component to apply a different height.
 
 ```example
 <div class="uk-panel uk-panel-scrollable">
@@ -64,7 +64,7 @@ Floating elements are taken from the document flow and aligned to the left or ri
 | --- | --- |
 | `.uk-float-left` | Add this class to float the element to the left. |
 | `.uk-float-right` |  Add this class to float the element to the right. |
-| `.uk-clearfix` | Add this class to a parent container to clear floats. Alternatively, you can create a new block format context by adding the `.uk-overflow-hidden` class. |
+| `.uk-clearfix` | Add this class to a parent container to clear floats. Alternatively, you can create a new block format context, e.g. by adding the `.uk-overflow-hidden` class. |
 
 
 ```example
@@ -84,75 +84,76 @@ Floating elements are taken from the document flow and aligned to the left or ri
 
 This component provides different classes to modify an element's overflow behavior.
 
-| Class                 | Description                                                                                                                                                                               |
-|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `.uk-overflow-hidden` | Add this class to clip content that exceeds the dimensions of its container and to create a new block format context.                                                                     |
-| `.uk-overflow-auto`   | Add this class to a `<div>` element to create a container that provides a horizontal or vertical scrollbar whenever the elements inside it are wider or higher than the container itself. |
+| Class                 | Description                                                                                                                                      |
+|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| `.uk-overflow-hidden` | Add this class to clip content that exceeds the dimensions of its container.                                                                     |
+| `.uk-overflow-auto`   | Add this class to create a container that provides a horizontal or vertical scrollbar whenever the elements inside it are wider or higher than the container itself. |
 
 **Note** The `.uk-overflow-auto` class is useful when having to handle tables on a responsive website, which at some point would just get too big. It also works great on `<pre>` elements.
 
 ```example
-<div class="uk-overflow-auto uk-height-small uk-margin-large-bottom">
-<table class="uk-table uk-table-striped uk-table-condensed uk-text-nowrap">
-    <thead>
-        <tr>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-        </tr>
-    </thead>
-    <tfoot>
-        <tr>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-        </tr>
-    </tfoot>
-    <tbody>
-        <tr>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-        </tr>
-        <tr>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-        </tr>
-    </tbody>
-</table>
+<div class="uk-overflow-auto uk-height-small">
+    <table class="uk-table uk-table-striped uk-table-condensed uk-text-nowrap">
+        <thead>
+            <tr>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 ```
 
 ***
 
 ## Resize
 
-This component provides different classes for resizing block elements.
+This component provides different classes for resizing elements.
 
 | Class                 | Description                                                         |
 |-----------------------|---------------------------------------------------------------------|
-| `.uk-resize-vertical` | Add this class to enable vertical resizing of block elements.                |
-| `.uk-resize`          | Add this class to enable horizontal and vertical resizing of block elements. |
+| `.uk-resize`          | Add this class to enable horizontal and vertical resizing.          |
+| `.uk-resize-vertical` | Add this class to enable only vertical resizing.                    |
 
 <p>Grab and drag the bottom right corner of each box below to resize it</p>
 
@@ -195,26 +196,26 @@ This component provides different classes for resizing block elements.
 
 ***
 
-## Display utilities
+## Display
 
 Add one of these classes to change the display properties of an element.
 
-| Class    | Description |
-| --- | --- |
-| `.uk-display-block` | Forces the element to behave like a block element.|
-| `.uk-display-inline` | Forces the element to behave like an inline element.|
-| `.uk-display-inline-block` | Forces the element to behave like an inline-block element.|
+| Class                      | Description                                                |
+| -------------------------- | ---------------------------------------------------------- |
+| `.uk-display-block`        | Forces the element to behave like a block element.         |
+| `.uk-display-inline`       | Forces the element to behave like an inline element.       |
+| `.uk-display-inline-block` | Forces the element to behave like an inline-block element. |
 
 ***
 
 ## Inline
 
-These classes work great together with the [Position component](position.md). For example, when you are using an overlay on an image that is smaller than its parent block element, the overlay will not exceed the image dimensions.
+These classes are often used to create a position context for the [Position component](position.md) on containers with an image as child. The container keeps the same size as the image and also the responsiveness of the image.
 
-| Class             | Description                                                                                                                                                  |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Class             | Description                                                                                                           |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------|
 | `.uk-inline`      | Add this class to add inline-block behavior to an element, prevent content overflow and to create a position context. |
-| `.uk-inline-clip` | Add this class to clip overflowing child elements.                                                                                                           |
+| `.uk-inline-clip` | Same like `.uk-inline` but also clips overflowing child elements.                                                     |
 
 ```html
 <div class="uk-inline">
@@ -225,11 +226,8 @@ These classes work great together with the [Position component](position.md). Fo
 
 ```example
 <div class="uk-inline">
-
     <img src="../docs/images/photo.jpg" width="300" alt="">
-
     <div class="uk-position-medium uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">Overlay</div>
-
 </div>
 ```
 
@@ -239,27 +237,27 @@ These classes work great together with the [Position component](position.md). Fo
 
 UIkit provides a number of useful classes to alter a block element's height.
 
-| Class                                          | Description                                                                       |
-|------------------------------------------------|-----------------------------------------------------------------------------------|
-| `.uk-height-1-1`                               | This class applies a height of 100%. This only works, if the parent element has a set height.                                              |
-| `.uk-height-small `<br> `.uk-max-height-small `   | These classes apply a height or max-height of _150px_.                              |
-| `.uk-height-medium `<br> `.uk-max-height-medium ` | These classes apply a height or max-height of _300px_.                              |
-| `.uk-height-large `<br> `.uk-max-height-large `   | These classes apply a height or max-height of _450px_.                              |
+| Class                                             | Description                                                                                   |
+|---------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| `.uk-height-1-1`                                  | This class applies a height of 100%. This only works, if the parent element has a set height. |
+| `.uk-height-small `<br> `.uk-max-height-small `   | These classes apply a height or max-height of _150px_.                                        |
+| `.uk-height-medium `<br> `.uk-max-height-medium ` | These classes apply a height or max-height of _300px_.                                        |
+| `.uk-height-large `<br> `.uk-max-height-large `   | These classes apply a height or max-height of _450px_.                                        |
 
 ```html
 <div class="uk-height-small"></div>
 ```
 
 ```example
-<div class="uk-child-width-1-3@s uk-grid-small" uk-grid>
+<div class="uk-child-width-1-3@s" uk-grid>
     <div>
-        <div class="uk-height-small uk-card uk-card-default uk-card-body uk-flex uk-flex-middle"><code>.uk-height-small</code></div>
+        <div class="uk-height-small uk-card uk-card-default uk-card-body uk-flex uk-flex-center uk-flex-middle">Small</div>
     </div>
     <div>
-        <div class="uk-height-medium uk-card uk-card-default uk-card-body uk-flex uk-flex-middle"><code>.uk-height-medium</code></div>
+        <div class="uk-height-medium uk-card uk-card-default uk-card-body uk-flex uk-flex-center uk-flex-middle">Medium</div>
     </div>
     <div>
-        <div class="uk-height-large uk-card uk-card-default uk-card-body uk-flex uk-flex-middle"><code>.uk-height-large</code></div>
+        <div class="uk-height-large uk-card uk-card-default uk-card-body uk-flex uk-flex-center uk-flex-middle">Large</div>
     </div>
 </div>
 ```
@@ -270,11 +268,11 @@ UIkit provides a number of useful classes to alter a block element's height.
 
 Add the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `offset-top`, `offset-bottom` or `expand` option to the attribute. [Learn more](javascript.md#component-configuration)
 
-| Option | Value | Default | Description |
-| --- | --- | --- | --- |
-| `offset-top` | Boolean | `false` | Subtracts the element's top offset from its height. |
+| Option          | Value   | Default | Description                                                              |
+| --------------- | ------- | ------- | ------------------------------------------------------------------------ |
+| `offset-top`    | Boolean | `false` | Subtracts the element's top offset from its height.                      |
 | `offset-bottom` | Boolean | `false` | Subtracts the height of the following element from the element's height. |
-| `expand` | Boolean | `true` | Expand the element's height to make a short page fill the viewport. |
+| `expand`        | Boolean | `true`  | Expand the element's height to make a short page fill the viewport.      |
 
 ```html
 <div uk-height-viewport></div>
@@ -292,7 +290,7 @@ You can view examples in the tests for [Height Viewport](../assets/uikit/tests/h
 
 To expand all children of a container to the same height, regardless of their content – for example, inside a grid – add the `uk-height-match` attribute.
 
-**Note** Once grid columns extend to a width of 100%, their heights will no longer be matched. This makes sense, for example, if they stack vertically in narrower viewports.
+**Note** Only items in the same row will be matched. For example, once grid columns extend to a width of 100%, their heights will no longer be matched. This makes sense, for example, if they stack vertically in narrower viewports.
 
 ```html
 <div uk-height-match>
@@ -361,10 +359,10 @@ If your grid wraps into multiple rows, only grid columns within the same row are
 
 The table below lists the available settings of the `uk-height-match` attribute. [Learn more](javascript.md#component-configuration)
 
-| Option | Value | Default | Description |
-| --- | --- |
-| `target`| CSS selector | `false` | Elements that should match. By default, direct children will match. |
-| `row` | Boolean | `true` | If your targets wrap into multiple rows, only grid columns within the same row are matched. |
+| Option  | Value        | Default | Description                                                                                 |
+| ------- | ------------ | ----------------------------------------------------------------------------------------------------- |
+| `target`| CSS selector | `false` | Elements that should match. By default, direct children will match.                         |
+| `row`   | Boolean      | `true`  | If your targets wrap into multiple rows, only grid columns within the same row are matched. |
 
 ***
 
@@ -373,13 +371,15 @@ The table below lists the available settings of the `uk-height-match` attribute.
 In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the width of their parent container by default. To apply responsive behavior to iframes, add the `uk-responsive` attribute . For other element or to apply a different behavior, just add one of the following classes.
 
 | Class	| Description |
-| --- | --- |
-| `.uk-responsive-width` | Adjusts the object's width according to its parent's width, keeping the original aspect ratio. |
+| ----------------------- | ------------------------------------------------------------------------------------------------ |
+| `.uk-responsive-width`  | Adjusts the object's width according to its parent's width, keeping the original aspect ratio.   |
 | `.uk-responsive-height` | Adjusts the object's height according to its parent's height, keeping the original aspect ratio. |
-| `.uk-preserve-width` | Add this class to avoid the responsive behavior and preserve the original image dimensions. |
+| `.uk-preserve-width`    | Add this class to avoid the responsive behavior and preserve the original image dimensions.      |
 
 ```html
-<img class="uk-responsive-width" src="" alt="">
+<img class="uk-responsive-height" src="" alt="">
+
+<iframe src="" width="" height="" frameborder="0" uk-responsive></iframe>
 ```
 
 ***
@@ -390,7 +390,7 @@ To modify the border radius of an element, like an image, add one of the followi
 
 | Class                | Description                                            |
 |----------------------|--------------------------------------------------------|
-| `.uk-border-rounded` | Add this class to apply rounded corners. |
+| `.uk-border-rounded` | Add this class to apply rounded corners.               |
 | `.uk-border-circle`  | Add this class to a apply a circled shape.             |
 
 ```example
@@ -418,27 +418,19 @@ You can apply different box shadows to elements. Just add one of the following c
 ```example
 <div class="uk-child-width-1-2@s uk-text-center" uk-grid>
     <div>
-        <div class="uk-box-shadow-small uk-padding">
-            <p class="uk-h4 uk-margin-remove">Small</p>
-        </div>
+        <div class="uk-box-shadow-small uk-padding">Small</div>
     </div>
 
     <div>
-        <div class="uk-box-shadow-medium uk-padding">
-            <p class="uk-h4 uk-margin-remove">Medium</p>
-        </div>
+        <div class="uk-box-shadow-medium uk-padding">Medium</div>
     </div>
 
     <div>
-        <div class="uk-box-shadow-large uk-padding">
-            <p class="uk-h4 uk-margin-remove">Large</p>
-        </div>
+        <div class="uk-box-shadow-large uk-padding">Large</div>
     </div>
 
     <div>
-        <div class="uk-box-shadow-xlarge uk-padding">
-            <p class="uk-h4 uk-margin-remove">X-Large</p>
-        </div>
+        <div class="uk-box-shadow-xlarge uk-padding">X-Large</div>
     </div>
 </div>
 ```
@@ -457,36 +449,27 @@ With the `.uk-dropcap` class you can achieve a drop cap within a text by adding 
 
 ## Logo
 
-With the new `.uk-logo` class you can easily define your logo, for example within your navbar. Add the `.uk-light` class from the [Inverse component](inverse.md) when displaying the image on dark backgrounds, so that its color will automatically be inverted for better visibility.
+With the new `.uk-logo` class you can easily define your logo, for example within your navbar.
 
 ```html
 <a class="uk-logo" href=""></a>
 ```
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid>
-    <div>
-        <div class="uk-position-relative">
-            <img src="../docs/images/light.jpg" alt="">
-            <div class="uk-position-medium uk-position-center">
-                <a class="uk-logo" href="#">
-                    Logo
-                </a>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="uk-position-relative">
-            <img src="../docs/images/dark.jpg" alt="">
-            <div class="uk-position-medium uk-position-center uk-light">
-                <a class="uk-logo" href="#">
-                    Logo
-                </a>
-            </div>
-        </div>
-    </div>
+<a class="uk-logo" href="#">Logo</a>
+```
+
+Add the `.uk-light` class from the [Inverse component](inverse.md) when displaying the image on dark backgrounds, so that its color will automatically be inverted for better visibility.
+
+```example
+<div class="uk-panel uk-padding uk-background-secondary uk-light">
+    <a class="uk-logo" href="#">Logo</a>
 </div>
 ```
+
+***
+
+### Logo image
 
 You can use text or an `<img>` element, for example an SVG, as a logo.
 
@@ -506,14 +489,18 @@ You can use text or an `<img>` element, for example an SVG, as a logo.
 
 ## Inline SVG
 
-SVGs or Scaleable Vector Graphics are really handy, for example to display a logo that remains crisp when scaling or that is animated. To be able to control your SVG via CSS, just add the `uk-svg` attribute to the image tag. This will turn your image into an inline SVG including all attributes, like IDs, classes, width and height, which you can now easily target using CSS.
+SVGs or Scaleable Vector Graphics are really handy, for example to display a logo that remains crisp when scaling or that is animated. To be able to control your SVG via CSS, just add the `uk-svg` attribute to the image element. This will inject your image into the markup as inline SVG including all attributes, like IDs, classes, width and height, which you can now easily target using CSS.
 
 ```html
 <img src="" uk-svg>
 ```
 
 ```example
-<img src="../assets/uikit/src/images/symbols/cloud-download.svg" uk-svg>
+<!-- Targeting the SVG image -->
+<img src="../assets/uikit/src/images/symbols/cloud-download.svg" width="40" height="40" uk-svg>
+
+<!-- Targeting a symbol inside a SVG image -->
+<img src="../assets/uikit/dist/images/icons.svg#cloud-upload" width="40" height="40" uk-svg>
 ```
 
 ***
@@ -563,157 +550,127 @@ Add one of the following classes to apply different blend modes to your backgrou
 ```
 
 ```example
-<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-light" uk-grid>
+<div class="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-small uk-light" uk-grid>
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-multiply uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Multiply">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-multiply" src="images/dark.jpg" alt="Blend Multiply">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Multiply</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-screen uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Screen">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-screen" src="images/dark.jpg" alt="Blend Screen">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Screen</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-overlay uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Overlay">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-overlay" src="images/dark.jpg" alt="Blend Overlay">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Overlay</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-darken uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Darken">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-darken" src="images/dark.jpg" alt="Blend Darken">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Darken</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-lighten uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Lighten">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-lighten" src="images/dark.jpg" alt="Blend Lighten">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Lighten</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-color-dodge uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Color Dodge">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-color-dodge" src="images/dark.jpg" alt="Blend Color Dodge">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Color Dodge</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-color-burn uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Color Burn">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-color-burn" src="images/dark.jpg" alt="Blend Color Burn">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Color Burn</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-hard-light uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Hard Light">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-hard-light" src="images/dark.jpg" alt="Blend Hard Light">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Hard Light</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-        <div class="uk-blend-soft-light uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Soft Light">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-soft-light" src="images/dark.jpg" alt="Blend Soft Light">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Soft Light</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-difference uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Difference">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-difference" src="images/dark.jpg" alt="Blend Difference">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Difference</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-exclusion uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Exclusion">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-exclusion" src="images/dark.jpg" alt="Blend Exclusion">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Exclusion</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-hue uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Hue">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-hue" src="images/dark.jpg" alt="Blend Hue">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Hue</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-saturation uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Saturation">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-saturation" src="images/dark.jpg" alt="Blend Saturation">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Saturation</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-color uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Color">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-color" src="images/dark.jpg" alt="Blend Color">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Color</p>
             </div>
         </div>
     </div>
-
     <div>
-        <div class="uk-inline">
-            <div class="uk-blend-luminosity uk-overlay uk-background-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center"></div>
-            <img src="images/dark.jpg" alt="Blend Luminosity">
+        <div class="uk-inline uk-background-primary">
+            <img class="uk-blend-luminosity" src="images/dark.jpg" alt="Blend Luminosity">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Luminosity</p>
             </div>
         </div>
     </div>
-
 </div>
 ```
 
@@ -762,10 +719,10 @@ To modify the origin of an animation, like scaling, add one of the `uk-transform
 
 ## Disabled
 
-To disable the click behavior of an element, like a button from the [Button component](button.md) add the `.uk-disabled` class.
+To disable the click behavior of any element, like a `<a>`, `<button>` or `<iframe>` element, add the `.uk-disabled` class.
 
 ```example
-<button class="uk-disabled uk-button uk-button-default">Disabled</button>
+<a class="uk-disabled uk-button uk-button-default" href="#">Disabled</a>
 ```
 
 ***
