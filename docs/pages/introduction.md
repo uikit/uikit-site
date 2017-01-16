@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Get familiar with the basic setup and overview of UIkit.</p>
 
-First of all you need to download UIkit. For other packages and links to a CDN, head to the [installation guide](install.md) to learn more.
+First of all you need to download UIkit. For other packages and links to a CDN, head to the [installation guide](installation.md) to learn more.
 
 <a class="uk-button uk-button-primary" href="https://getuikit.com/download">Download UIkit</a>
 
@@ -10,7 +10,7 @@ First of all you need to download UIkit. For other packages and links to a CDN, 
 
 ## Package contents
 
-The Zip file contains the compiled CSS and JavaScript files, which is everything you need to get started. Later, you might want to [install and compile UIkit](install.md) yourself and also [create your own UIkit theme](theme.md).
+The Zip file contains the compiled CSS and JavaScript files, which is everything you need to get started. Later, you might want to [install and compile UIkit](installation.md) yourself and also [create your own UIkit theme](theme.md).
 
 | Folder    | Description |
 | --------- | --- |
@@ -30,7 +30,7 @@ Add the compiled and preferably minified CSS and JavaScript to the header of you
     <head>
         <title></title>
         <link rel="stylesheet" href="css/uikit.min.css" />
-        <script src="js/jquery.js"></script> <!-- download from jquery.com -->
+        <script src="js/jquery.js"></script>
         <script src="js/uikit.min.js"></script>
     </head>
     <body>
@@ -38,7 +38,7 @@ Add the compiled and preferably minified CSS and JavaScript to the header of you
 </html>
 ```
 
-Once you have included UIkit into your document, take a look at the available components and create your own markup inside the `<body>` tags of your page.
+Once you have included UIkit into your document, take a look at the available components and create your own markup inside the `<body>` element of your page.
 
 ***
 

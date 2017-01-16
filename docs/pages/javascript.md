@@ -1,6 +1,6 @@
 # JavaScript
 
-Once you have [installed UIkit](install.md), include the JavaScript files on your page by adding them to the `<head>` section. You can also choose to use the `defer` attribute to delay script execution.
+Once you have [installed UIkit](installation.md), include the JavaScript files on your page by adding them to the `<head>` section. You can also choose to use the `defer` attribute to delay script execution.
 
 ```html
 <script src="js/jquery.min.js"></script>

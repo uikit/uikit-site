@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Learn how to modify the UIkit styling and create your own theme.</p>
 
-When you have [installed UIkit](install.md) with Less sources, you can compile it and add your own custom theme. Less is the language that the UIkit styles are written in. This allows you to include customizations in the build process, rather than manually overwriting a lot of CSS rules by hand.
+When you have [installed UIkit](installation.md) with Less sources, you can compile it and add your own custom theme. [Less](http://lesscss.org/) is the language that the UIkit styles are written in. This allows you to include customizations in the build process, rather than manually overwriting a lot of CSS rules by hand.
 
 ***
 
