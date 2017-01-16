@@ -8,12 +8,12 @@ The Modal component consists of an overlay, a dialog and an optional close butto
 
 Add the `uk-modal` attribute to a `<div>` element to create the modal container and an overlay that blanks out the page. It is important to add an `id` to indicate the element for toggling. Use the following classes to define the modal's sections.
 
-| Class              | Description                                                                                                                                                                     |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `.uk-modal-dialog` | Add this class to a child `<div>` element to create the dialog box.                                                                                                             |
-| `.uk-modal-body`   | Add this class to create padding between the modal and its content.                                                                                                         |
-| `.uk-modal-title`  | Add this class to a heading element to create the modal title.                                                                                                                  |
-| `.uk-modal-close`  | Add this class to an `<a>` or `<button>` element to create a close button and enable its functionality.                                                                         |
+| Class              | Description                                                                                              |
+|--------------------|----------------------------------------------------------------------------------------------------------|
+| `.uk-modal-dialog` | Add this class to a child `<div>` element to create the dialog                                           |
+| `.uk-modal-body`   | Add this class to create padding between the modal and its                                               |
+| `.uk-modal-title`  | Add this class to a heading element to create the modal title.                                           |
+| `.uk-modal-close`  | Add this class to an `<a>` or `<button>` element to create a close button and enable its functionality.  |
 
 ```html
 <!-- This is a button toggling the modal -->
@@ -326,6 +326,8 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 UIkit.modal(element, options);
 ```
 
+***
+
 ### Modal dialogs
 
 The component comes with a number of prepared modal dialogs that you can use for user interaction. You can call the dialog directly from JavaScript and use callback functions to process the user input.
@@ -398,6 +400,8 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 
 </p>
 ```
+
+***
 
 ### Events
 

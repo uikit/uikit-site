@@ -8,8 +8,8 @@ To apply this component, use the following classes.
 
 | Class           | Description                                                                                                         |
 |-----------------|---------------------------------------------------------------------------------------------------------------------|
-| `.uk-nav`    | Add this class to a `<ul>` element to define the Nav component. Use `<a>` elements as nav items within the list. |
-| `.uk-active `   | Add this class to a list item to apply an active state to a menu item.                                                             |
+| `.uk-nav`       | Add this class to a `<ul>` element to define the Nav component. Use `<a>` elements as nav items within the list.    |
+| `.uk-active `   | Add this class to a list item to apply an active state to a menu item.                                              |
 
 ```html
 <ul class="uk-nav">

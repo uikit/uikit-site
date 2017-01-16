@@ -4,7 +4,7 @@
 
 ## Usage
 
-The Dotnav component is perfect to create a typical slideshow navigation. To create a navigation with dots, use the following classes. This component is built with Flexbox. So to align a dotnav, you can use [Flex component](flex.md).
+To create a navigation with dots, use the following classes. This component is built with Flexbox. So to align a dotnav, you can use [Flex component](flex.md).
 
 | Class           | Description                                                                                                         |
 |-----------------|---------------------------------------------------------------------------------------------------------------------|
