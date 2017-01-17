@@ -582,7 +582,7 @@ To justify a dropdown, use the [Drop component](drop.md) and its position featur
 ```
 
 ```example
-<nav class="uk-navbar-container" uk-navbar>
+<nav class="uk-navbar-container parent" uk-navbar>
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
