@@ -111,8 +111,6 @@
 
                 this.$parent.component = components.indexOf(this.$route.params.page) != -1 ? this.$route.params.page : false;
 
-                $('pre code', this.$refs.container).each((i, block) => hljs.highlightBlock(block));
-
                 this.$parent.ids = $('h1,h2', this.$refs.container).filter((i, el) => !$(el).parents('.uk-switcher').length).toArray().reduce((ids, el) => {
 
                     el = $(el);
@@ -135,7 +133,13 @@
                     scrollTo(0, 0);
                 }
 
-                UIkit.scroll($(this.$refs.container).find('a[href^="#"]:not([href="#"])'), {offset: 100});
+                UIkit.util.requestAnimationFrame(() => {
+
+                    $('pre code', this.$refs.container).each((i, block) => hljs.highlightBlock(block));
+
+                    UIkit.scroll($(this.$refs.container).find('a[href^="#"]:not([href="#"])'), {offset: 100});
+
+                });
 
             }
 
