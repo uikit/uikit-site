@@ -582,13 +582,13 @@ To justify a dropdown, use the [Drop component](drop.md) and its position featur
 ```
 
 ```example
-<nav class="uk-navbar-container parent" uk-navbar>
+<nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
             <li>
                 <a href="#">Item</a>
-                <div class="uk-navbar-dropdown" uk-drop="boundary: .parent; boundary-align: true; pos: bottom-justify;">
+                <div class="uk-navbar-dropdown" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                         <li class="uk-active"><a href="#">Active</a></li>
                         <li><a href="#">Item</a></li>
@@ -602,7 +602,7 @@ To justify a dropdown, use the [Drop component](drop.md) and its position featur
             </li>
            <li>
                <a href="#">Item</a>
-               <div class="uk-navbar-dropdown" uk-drop="boundary: .parent; boundary-align: true; pos: bottom-justify;">
+               <div class="uk-navbar-dropdown" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
                        <div>
                            <ul class="uk-nav uk-navbar-dropdown-nav">

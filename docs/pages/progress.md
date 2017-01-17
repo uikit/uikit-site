@@ -19,9 +19,9 @@ To apply this component, add the `.uk-progress` class to a `<progress>` element.
 
         var animate = setInterval(function () {
 
-            progressbar.value += 10;
+            window.progressbar && (progressbar.value += 10);
 
-            if (progressbar.value >= progressbar.max) {
+            if (!window.progressbar || progressbar.value >= progressbar.max) {
                 clearInterval(animate);
             }
 
