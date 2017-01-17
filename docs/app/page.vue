@@ -107,7 +107,7 @@
 
             setPage(page) {
 
-                $(page).appendTo($(this.$refs.container).empty());
+                $(this.$refs.container).html(page);
 
                 this.$parent.component = components.indexOf(this.$route.params.page) != -1 ? this.$route.params.page : false;
 
@@ -135,7 +135,7 @@
                     scrollTo(0, 0);
                 }
 
-                UIkit.scroll($(this.$refs.container).find('a[href^="#"]'), {offset: 100});
+                UIkit.scroll($(this.$refs.container).find('a[href^="#"]:not([href="#"])'), {offset: 100});
 
             }
 
