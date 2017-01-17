@@ -133,7 +133,7 @@
                     scrollTo(0, 0);
                 }
 
-                UIkit.util.requestAnimationFrame.call(this, () => {
+                setTimeout(() => {
 
                     $('pre code', this.$refs.container).each((i, block) => hljs.highlightBlock(block));
 
