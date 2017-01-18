@@ -1,7 +1,7 @@
 {
   "name": "uikit-site",
   "dependencies": {
-    "uikit": "0abf666a6cbc4109bb5a4ef7a7268357bdb49204",
+    "uikit": "fcb1336e37f713c26d3a048b75fe53f24b3c6acc",
     "highlightjs": "^9.4.0"
   },
   "private": true
