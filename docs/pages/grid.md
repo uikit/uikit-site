@@ -109,7 +109,7 @@ The Grid component comes with a default gutter, that is decreased automatically 
 
 ## Divider modifier
 
-Add the `.uk-grid-divider` class to separate grid cells with lines. This class can be combined with the gutter modifiers.
+Add the `.uk-grid-divider` class to separate grid cells with lines. This class can be combined with the gutter modifiers. As soon as the grid stacks, the divider lines will become horizontal.
 
 ```html
 <div class="uk-grid-divider" uk-grid>...</div>
