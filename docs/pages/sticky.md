@@ -73,7 +73,7 @@ Add an animation from the [Animation component](animation.md) in order to have t
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="top: 100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">Animation Slide Top</div>
+<div class="uk-card uk-card-default uk-card-body" style="margin-bottom: 200px; z-index: 980;" uk-sticky="top: 100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">Animation Slide Top</div>
 ```
 
 ***

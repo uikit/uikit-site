@@ -192,7 +192,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
     </div>
 
-    <div class="uk-navbar-left uk-flex-1 nav-overlay" hidden>
+    <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
 
         <div class="uk-navbar-item uk-width-1-1">
             <form class="uk-search uk-search-navbar uk-width-1-1">
