@@ -191,7 +191,7 @@ UIkit.tab(element, options);
 
 ### Events
 
-These events will be triggered on elements with this component attached.
+These events will be triggered on the connected items of the elements with this component attached.
 
 | Name | Description |
 | --- | --- |
