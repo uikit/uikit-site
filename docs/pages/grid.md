@@ -107,6 +107,30 @@ The Grid component comes with a default gutter, that is decreased automatically 
 
 ***
 
+## Nested grid
+
+You can easily extend your grid layout with nested grids.
+
+```example
+<div class="uk-child-width-1-2 uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">.uk-width-1-2</div>
+	</div>
+	<div>
+		<div class="uk-child-width-1-2 uk-text-center" uk-grid>
+			<div>
+				<div class="uk-card uk-card-primary uk-card-body">.uk-width-1-2</div>
+			</div>
+			<div>
+				<div class="uk-card uk-card-primary uk-card-body">.uk-width-1-2</div>
+			</div>
+		</div>
+	</div>
+</div>
+```
+
+***
+
 ## Divider modifier
 
 Add the `.uk-grid-divider` class to separate grid cells with lines. This class can be combined with the gutter modifiers. As soon as the grid stacks, the divider lines will become horizontal.
