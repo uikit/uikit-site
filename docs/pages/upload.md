@@ -134,7 +134,7 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
 
         },
 
-        loadEnd(e) {
+        loadEnd: function (e) {
             console.log('loadEnd', arguments);
 
             bar.max =  e.total;
