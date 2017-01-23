@@ -297,7 +297,7 @@ To define a custom offset between the dropdown container and the toggle, add the
 
 ## Animation
 
-Apply one or more animations to the dropdown by adding the `animation: uk-animation-*` option with one of the classes from the [Animation component](animaton.md). You can also determine the animation's duration. Just add the `duration` option with your value.
+Apply one or more animations to the dropdown by adding the `animation: uk-animation-*` option with one of the classes from the [Animation component](animation.md). You can also determine the animation's duration. Just add the `duration` option with your value.
 
 ```html
 <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000"></div>
