@@ -18,7 +18,7 @@ const routes = [
 
 const navigation = require('./navigation.json');
 
-new Vue({
+window.DocsApp = new Vue({
 
     el: '#app',
 

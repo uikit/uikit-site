@@ -49,6 +49,11 @@
             $(document).on('click', 'a[href^="#"]:not([href="#"])', function() {
                 history.pushState({}, '', this.href);
             });
+            
+            $(this.$refs.container).on('click', 'a:not([href^="http"]):not([href^="#"]):not([href^="/"]):not([href^="../"])', function(e) {
+                e.preventDefault();
+                DocsApp.$router.replace(this.pathname+this.hash);
+            });
 
         },
 
