@@ -46,6 +46,10 @@
 
                 .on('click', '[href="#"]', e => e.preventDefault());
 
+            $(document).on('click', 'a[href^="#"]:not([href="#"])', function() {
+                history.pushState({}, '', this.href);
+            });
+
         },
 
         watch: {
@@ -136,9 +140,8 @@
                 setTimeout(() => {
 
                     $('pre code', this.$refs.container).each((i, block) => hljs.highlightBlock(block));
-
-                    UIkit.scroll($(this.$refs.container).find('a[href^="#"]:not([href="#"])'), {offset: 100});
-
+                    
+                    UIkit.scroll($('a[href^="#"]:not([href="#"])', this.$refs.container), {offset: 100});
                 });
 
             }
