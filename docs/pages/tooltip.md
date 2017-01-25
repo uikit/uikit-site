@@ -71,6 +71,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option | Value | Default | Description |
 | --- | --- |
 | `pos` | String | 'top' | Tooltip position. |
+| `offset` | Number | false | The offset of the Tooltip. |
 | `animation` | String | 'uk-animation-scale-up' | The space separated names of animations to use. Comma separate for animation out. |
 | `duration` | Number | 100 | The animation duration. |
 | `delay` | Number | 0 | The show delay. |
