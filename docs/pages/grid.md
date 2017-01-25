@@ -111,6 +111,22 @@ The Grid component comes with a default gutter, that is decreased automatically 
 
 You can easily extend your grid layout with nested grids.
 
+```html
+<div uk-grid>
+    <div>
+        <div uk-grid>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div>
+        <div uk-grid>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
 ```example
 <div class="uk-child-width-1-2 uk-text-center" uk-grid>
     <div>
