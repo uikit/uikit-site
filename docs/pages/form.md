@@ -245,7 +245,7 @@ Use the `.uk-form-controls-text` class to better align checkboxes and radio butt
     </div>
     <div>
         <div class="uk-form-label"></div>
-        <div class="uk-form-controls .uk-form-controls-text">...</div>
+        <div class="uk-form-controls uk-form-controls-text">...</div>
     </div>
 </form>
 ```
