@@ -70,11 +70,11 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option | Value | Default | Description |
 | --- | --- |
-| `pos` | String | top | Tooltip position. |
-| `animation` | String | uk-animation-scale-up | The space separated names of animations to use. Comma separate for animation out. |
+| `pos` | String | 'top' | Tooltip position. |
+| `animation` | String | 'uk-animation-scale-up' | The space separated names of animations to use. Comma separate for animation out. |
 | `duration` | Number | 100 | The animation duration. |
 | `delay` | Number | 0 | The show delay. |
-| `cls` | String | uk-active | The active class. |
+| `cls` | String | 'uk-active' | The active class. |
 
 ***
 
