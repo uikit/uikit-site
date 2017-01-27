@@ -244,7 +244,9 @@ UIkit provides a number of responsive widths classes. Basically they work just l
     <div class="uk-width-1-4@m">
         <div class="uk-card uk-card-default uk-card-body">1-4@m</div>
     </div>
-    <div class="uk-width-1-5@m uk-hidden@l"><div class="uk-card uk-card-secondary uk-card-body">1-5@m<br>hidden@l</div></div>
+    <div class="uk-width-1-5@m uk-hidden@l">
+        <div class="uk-card uk-card-secondary uk-card-body">1-5@m<br>hidden@l</div>
+    </div>
     <div class="uk-width-1-5@m uk-width-1-3@l">
         <div class="uk-card uk-card-default uk-card-body">1-5@m<br>1-3@l</div>
     </div>
@@ -254,7 +256,9 @@ UIkit provides a number of responsive widths classes. Basically they work just l
 </div>
 
 <div class="uk-grid-match uk-grid-small uk-text-center" uk-grid>
-    <div class="uk-width-auto@m uk-visible@l"><div class="uk-card uk-card-primary uk-card-body">auto@m<br>visible@l</div></div>
+    <div class="uk-width-auto@m uk-visible@l">
+        <div class="uk-card uk-card-primary uk-card-body">auto@m<br>visible@l</div>
+    </div>
     <div class="uk-width-1-3@m">
         <div class="uk-card uk-card-default uk-card-body">1-3@m</div>
     </div>
