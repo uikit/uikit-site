@@ -271,8 +271,7 @@ Add the `uk-height-viewport` attribute to create a container that fills the heig
 | Option          | Value   | Default | Description                                                              |
 | --------------- | ------- | ------- | ------------------------------------------------------------------------ |
 | `offset-top`    | Boolean | `false` | Subtracts the element's top offset from its height.                      |
-| `offset-bottom` | Boolean | `false` | Subtracts the height of the following element from the element's height. |
-| `height`        | Number | 100  | The element's height in percent relative to its calculated height.      |
+| `offset-bottom` | Boolean, Number, Pixel | `false` | Subtracts the element's immediately following sibling's height (true), the given percentage (Number) or Pixel (px) value from its own height. |
 | `expand`        | Boolean | `true`  | Expand the element's height to make a short page fill the viewport.      |
 
 ```html
