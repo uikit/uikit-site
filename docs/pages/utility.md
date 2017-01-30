@@ -435,6 +435,39 @@ You can apply different box shadows to elements. Just add one of the following c
 </div>
 ```
 
+To apply the shadow on hover add one of the following classes. This can also be used to change the shadow size on hover, to do so just combine them with on of the classes above.
+
+| Class                         | Description                                               |
+|-------------------------------|-----------------------------------------------------------|
+| `.uk-box-shadow-hover-small`  | Add this class to apply a small box shadow on hover.      |
+| `.uk-box-shadow-hover-medium` | Add this class to apply a medium box shadow on hover.     |
+| `.uk-box-shadow-hover-large`  | Add this class to apply a large box shadow on hover.      |
+| `.uk-box-shadow-hover-xlarge` | Add this class to apply a very large box shadow on hover. |
+
+```html
+<div class="uk-box-shadow-hover-small"></div>
+```
+
+```example
+<div class="uk-child-width-1-2@s uk-text-center" uk-grid>
+    <div>
+        <div class="uk-box-shadow-hover-small uk-padding">Hover Small</div>
+    </div>
+
+    <div>
+        <div class="uk-box-shadow-hover-xlarge uk-padding">Hover X-Large</div>
+    </div>
+
+    <div>
+        <div class="uk-box-shadow-small uk-box-shadow-hover-large uk-padding">Small + Hover Large</div>
+    </div>
+
+    <div>
+        <div class="uk-box-shadow-xlarge uk-box-shadow-hover-medium uk-padding">X-Large + Hover Medium</div>
+    </div>
+</div>
+```
+
 ***
 
 ## Drop cap
