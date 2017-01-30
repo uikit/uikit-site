@@ -49,7 +49,7 @@
             $(document).on('click', 'a[href^="#"]:not([href="#"])', function() {
                 history.pushState({}, '', this.href);
             });
-            
+
             $(this.$refs.container).on('click', 'a:not([href^="http"]):not([href^="#"]):not([href^="/"]):not([href^="../"])', function(e) {
                 e.preventDefault();
                 DocsApp.$router.replace(this.pathname+this.hash);
@@ -120,18 +120,10 @@
 
                 this.$parent.component = components.indexOf(this.$route.params.page) != -1 ? this.$route.params.page : false;
 
-                this.$parent.ids = $('h1,h2', this.$refs.container).filter((i, el) => !$(el).parents('.uk-switcher').length).toArray().reduce((ids, el) => {
+                this.$parent.ids = $('> h2 a[href^="#"]', this.$refs.container).toArray().reduce((ids, el) => {
 
                     el = $(el);
-
-                    let text = el.text().replace('#', ''), id = sluggify(text);
-
-                    el.attr('id', id);
-
-                    if (el.is('h2')) {
-                        ids[text] = id;
-                    }
-
+                    ids[el.text()] = el.attr('href').substr(1);
                     return ids;
 
                 }, {});
@@ -143,9 +135,7 @@
                 }
 
                 setTimeout(() => {
-
                     $('pre code', this.$refs.container).each((i, block) => hljs.highlightBlock(block));
-                    
                     UIkit.scroll($('a[href^="#"]:not([href="#"])', this.$refs.container), {offset: 100});
                 });
 
