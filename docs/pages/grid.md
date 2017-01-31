@@ -126,6 +126,7 @@ You can easily extend your grid layout with nested grids.
         </div>
     </div>
 </div>
+```
 
 ```example
 <div class="uk-child-width-1-2 uk-text-center" uk-grid>
