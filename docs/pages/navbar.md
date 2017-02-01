@@ -53,38 +53,6 @@ The Navbar component consists of a navbar container, the navbar itself and one o
 
 ***
 
-## Alignment
-
-The alignment classes for the navbar make it easy to align the content of the navbar to your needs. This way you can align different parts of the navbar in different ways ( see [mutliple navigations](#multiple-navigations)) and also have some advanced possibilities with the classes `uk-navbar-center-left` and `uk-navbar-center-right`. This will keep your logo centered and align the menu on the left and right.
-
-```example
-<nav class="uk-navbar-container uk-margin" uk-navbar>
-    <div class="uk-navbar-center">
-
-        <div class="uk-navbar-center-left">
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">Active</a></li>
-                <li>
-                    <a href="#">Content</a>
-                    <div class="uk-navbar-dropdown">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                </li>
-            </ul>
-        </div>
-        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
-        <div class="uk-navbar-center-right">
-            <ul class="uk-navbar-nav">
-                <li><a href="#">Item</a></li>
-                <li>
-                    <a href="#">Content</a>
-                    <div class="uk-navbar-dropdown">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-</nav>
-```
-
 ## Multiple navigations
 
 You can place more than one navigation inside a navbar container. That way you can have a left aligned, a centered and a right aligned navigation inside the same navbar.
@@ -320,6 +288,53 @@ Add the `.uk-logo` class from the [Utility component](utility.md) to an `<a>` or
     </div>
 </nav>
 ```
+
+***
+
+## Centered logo
+
+To create a splitted navbar menu with a centered logo use the `uk-navbar-center-left` and `uk-navbar-center-right` classes. This will keep your logo centered and align the menus to the left and right.
+
+```html
+<div class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-center">
+        <div class="uk-navbar-center-left">...</div>
+        <a href="" class="uk-navbar-item uk-logo"></a>
+        <div class="uk-navbar-center-right">...</div>
+    </div>
+</div>
+```
+
+```example
+<nav class="uk-navbar-container uk-margin" uk-navbar>
+    <div class="uk-navbar-center">
+
+        <div class="uk-navbar-center-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li>
+                    <a href="#">Parent</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+        <div class="uk-navbar-center-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+```
+
 
 ***
 
