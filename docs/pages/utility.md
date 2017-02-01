@@ -439,7 +439,7 @@ You can apply different box shadows to elements. Just add one of the following c
 
 ### Hover
 
-To apply the shadow on hover add one of the following classes. This can also be used to change the shadow size on hover, to do so just combine them with on of the classes above.
+To apply a box shadow on hover add one of the following classes. This can also be used to change the shadow size on hover, to do so just combine them with on of the classes above.
 
 | Class                         | Description                                               |
 |-------------------------------|-----------------------------------------------------------|
