@@ -15,7 +15,6 @@ The Navbar component consists of a navbar container, the navbar itself and one o
 | `.uk-parent`                                               | Add this class to indicate a parent menu item.                                                                   |
 | `.uk-active`                                               | Add this class to indicate an active menu item.                                                                  |
 
-
 ```html
 <nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
@@ -293,7 +292,7 @@ Add the `.uk-logo` class from the [Utility component](utility.md) to an `<a>` or
 
 ## Centered logo
 
-To create a splitted navbar menu with a centered logo use the `uk-navbar-center-left` and `uk-navbar-center-right` classes. This will keep your logo centered and align the menus to the left and right.
+You can create a split menu with a centered logo. Just add the `uk-navbar-center-left` class to one navbar and the `uk-navbar-center-right` class to another within the same navbar container. This will keep your logo centered and align the menus to the left and right.
 
 ```html
 <div class="uk-navbar-container" uk-navbar>
