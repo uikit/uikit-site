@@ -131,15 +131,15 @@ You can easily extend your grid layout with nested grids.
 ```example
 <div class="uk-child-width-1-2 uk-text-center" uk-grid>
     <div>
-        <div class="uk-card uk-card-default uk-card-body">.uk-width-1-2</div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
 	</div>
 	<div>
 		<div class="uk-child-width-1-2 uk-text-center" uk-grid>
 			<div>
-				<div class="uk-card uk-card-primary uk-card-body">.uk-width-1-2</div>
+				<div class="uk-card uk-card-primary uk-card-body">Item</div>
 			</div>
 			<div>
-				<div class="uk-card uk-card-primary uk-card-body">.uk-width-1-2</div>
+				<div class="uk-card uk-card-primary uk-card-body">Item</div>
 			</div>
 		</div>
 	</div>
