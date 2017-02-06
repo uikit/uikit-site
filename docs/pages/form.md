@@ -225,7 +225,7 @@ Define labels and controls and apply a stacked or horizontal layout to form elem
         <div class="uk-form-controls">
             <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
             <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
-        </form>
+        </div>
     </div>
 
 </form>
