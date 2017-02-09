@@ -279,6 +279,8 @@ Add the `uk-height-viewport` attribute to create a container that fills the heig
 
 <div uk-height-viewport="offset-top: true"></div>
 
+<div uk-height-viewport="offset-bottom: 20"></div>
+
 <div uk-height-viewport="expand: true"></div>
 ```
 
@@ -568,6 +570,20 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 <img src="../assets/uikit/dist/images/icons.svg#cloud-upload" width="40" height="40" uk-svg>
 ```
 
+SVGs will adapt the current color for their stroke and fill color. To prevent this you can add the class `uk-preserve` to the whole SVG or even within the SVG itself to certain elements.
+```example
+<!-- Targets the SVG image -->
+<p class="uk-text-danger">
+    Same color
+    <img src="../assets/uikit/src/images/symbols/cloud-download.svg" width="40" height="40" uk-svg>
+</p>
+
+<!-- Targets a symbol inside the SVG image -->
+<p class="uk-text-danger">
+    Preserve
+    <img src="../assets/uikit/src/images/symbols/cloud-download.svg" class="uk-preserve" width="40" height="40" uk-svg>
+</p>
+```
 ***
 
 ## Gif
