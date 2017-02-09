@@ -4,7 +4,7 @@
 
         <router-view></router-view>
 
-        <div id="offcanvas" uk-offcanvas="mode: push">
+        <div id="offcanvas" uk-offcanvas="mode: push; overlay: true">
             <div class="uk-offcanvas-bar">
                 <div class="uk-panel">
 

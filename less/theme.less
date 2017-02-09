@@ -365,17 +365,23 @@ html { overflow-y: scroll; }
     text-decoration: none;
 }
 
-h2.tm-heading-fragment > a {
-    display: block;
-    margin-left: -25px;
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+
+    h2.tm-heading-fragment > a {
+        display: block;
+        margin-left: -25px;
+    }
+
+    h2.tm-heading-fragment > a:before {
+        content: "#";
+        width: 25px;
+        float: left;
+        color: @global-muted-color;
+    }
+
 }
 
-h2.tm-heading-fragment > a:before {
-    content: "#";
-    width: 25px;
-    float: left;
-    color: @global-muted-color;
-}
 
 /* Reset container for docs
  ========================================================================== */
