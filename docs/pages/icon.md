@@ -26,7 +26,7 @@ To apply this component, add the `uk-icon` attribute to a `<span>` or `<a>` elem
 
 ## Library
 
-Here is an overview of all currently available icons. Over the time, we will keep adding new icons to the list.
+Here is an overview of all currently available icons. Over time, we will keep adding new icons to the list.
 
 <h4 class="uk-heading-line"><span>App</span></h4>
 
