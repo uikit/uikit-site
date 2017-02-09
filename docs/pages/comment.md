@@ -1,4 +1,3 @@
-
 # Comment
 
 <p class="uk-text-lead">Includes styles for comments, for example for a blog section on your site.</p>
