@@ -6,7 +6,7 @@
         "Installation": "installation",
         "Less": "less",
         "JavaScript": "javascript",
-        "Avoiding conflicts": "no-conflict",
+        "Avoiding conflicts": "avoiding-conflicts",
         "RTL support": "rtl",
         "Migration": "migration"
 
