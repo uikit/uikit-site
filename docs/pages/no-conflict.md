@@ -1,6 +1,6 @@
-# Compatibility
+# Avoiding conflicts
 
-<p class="uk-text-lead">Out of the box, UIkit is compatible with third party CSS and JS. Additionally, it includes a no-conflict mode and the possibility to use a custom prefix.</p>
+<p class="uk-text-lead">Use a custom prefix and the no-conflict mode to make UIkit work in any environment.</p>
 
 By default, all classes and attributes in UIkit start with the `uk-` prefix. This avoids name collisions when introducing UIkit to existing projects or when combining it with other frameworks. Uikit allows to change that prefix. This even allows to use multiple versions of UIkit alongside each other. In addition, the no-conflict mode allows to limit the UIkit styles to only affect certain parts on your pages.
 
@@ -15,6 +15,8 @@ When you recompile UIkit with a custom prefix, for example `xyz`, all attributes
 3. Run the command `npm run prefix -- -p xyz` where _XYZ_ is your custom prefix.
 
 You will find the generated CSS and JS files in the `/dist` folder.
+
+***
 
 ## No-conflict mode
 

@@ -4,6 +4,8 @@
 
 Uikit 3 offers a migration tool that runs in your browser and lists all necessary changes from an existing Uikit 2 site. Two options are available to run the tool: Via a bookmark or by including a single JavaScript file. The necessary migration changes are then listed in your browser's console.
 
+***
+
 ## Browser bookmark
 
 The easiest way to use the migration tool is via a bookmark in your browser. You can then run the script on any page that you navigate to by simply clicking the bookmark. Just drag the following link into your browser's bookmark section.
@@ -20,6 +22,7 @@ javascript: (function () {
 }());
 ```
 
+***
 
 ## HTML integration
 
