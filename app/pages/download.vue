@@ -9,7 +9,7 @@
                 <div class="uk-container">
 
                     <p class="uk-margin-large-bottom">
-                        <img uk-svg :src="'./images/download.svg'">
+                        <img :src="'./images/download.svg'">
                     </p>
 
                     <h1>Thanks for giving UIkit a try.</h1>
