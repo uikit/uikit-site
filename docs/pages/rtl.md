@@ -27,3 +27,9 @@ You can also compile the RTL version of UIkit yourself, which will include any U
 4. Run the command `npm run compile-rtl` to build the RTL version.
 
 The resulting files are now located in the `dist/` folder and end with `*.rtl.css`. The JavaScript files stay the same as with the default LTR version.
+
+***
+
+## Difference between RTL and LTR version
+
+The RTL version switches the orientation of UIkit design elements, including properties such as floats, text-align, position coordinates, direction of background shadows and more. However, all classes that are explicitly named `*-left` or `*-right` stay the same in the RTL version.
