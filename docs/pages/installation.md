@@ -54,6 +54,10 @@ The compiled `dist` folder now contains additional files, which are not checked 
     uikit-core.css
     uikit-core.min.css
 
+    <!-- UIkit's CSS in a right-to-left version -->
+    uikit.rtl.css
+    uikit.rtl.min.css
+
 /dist/images
 
     <!-- Contains all the images used within UIkit (e.g. icons). -->

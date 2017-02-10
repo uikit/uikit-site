@@ -2,40 +2,53 @@
 
 <p class="uk-text-lead">Use a custom prefix and the no-conflict mode to make UIkit work in any environment.</p>
 
-By default, all classes and attributes in UIkit start with the `uk-` prefix. This avoids name collisions when introducing UIkit to existing projects or when combining it with other frameworks. Uikit allows to change that prefix. This even allows to use multiple versions of UIkit alongside each other. In addition, the no-conflict mode allows to limit the UIkit styles to only affect certain parts on your pages.
+By default, all classes and attributes in UIkit start with the `uk-` prefix. This avoids name collisions when introducing UIkit to existing projects or when combining it with other frameworks. UIkit allows to change that prefix. This even allows to use multiple versions of UIkit alongside each other. In addition, the no-conflict mode allows to limit the UIkit styles to only affect certain parts on your pages.
 
 ***
 
 ## Custom prefix
 
-When you recompile UIkit with a custom prefix, for example `xyz`, all attributes and classes will now start with that prefix, for example `xyz-grid` instead of `uk-grid`. The global JavaScript object `UIkit` will also be renamed to `xyzUIkit`.
+Using a custom prefix allows using multiple versions of UIkit on the same page. This might be needed when you are building something like a CMS plugin. In such cases, you do not know what other versions of UIkit might be loaded, so it is a good idea to use a custom prefix.
 
-1. Grab the full UIkit source code from [Github](https://github.com/uikit/uikit).
-2. Follow the [setup steps](https://github.com/uikit/uikit#developers).
-3. Run the command `npm run prefix -- -p xyz` where _XYZ_ is your custom prefix.
+When you have [setup UIkit from Github source](setup.md#compile-from-github-source), you can compile it with a custom prefix. If you choose a custom prefix, for example `xyz`, all attributes and classes will now start with that prefix, for example `xyz-grid` instead of `uk-grid`. The global JavaScript object `UIkit` will also be renamed to `xyzUIkit`.
 
-You will find the generated CSS and JS files in the `/dist` folder.
+
+```sh
+npm run prefix -- -p xyz # replace xyz with your custom prefix.
+```
+
+The script will go through all CSS files in the `/dist` folder and replace them with your custom prefix version.
+
+**Note** The Base component will still include styles that affect some base HTML elements. To avoid this, either create a [custom build](less.md) without including the Base component, or use the no-conflict mode.
 
 ***
 
 ## No-conflict mode
 
-You can also recompile UIkit as a no-conflict version. This will change all the CSS rules so that the class `.uk-noconflict` is needed on a parent container.
+Using a no-conflict version of UIkit allows you to limit styles to only apply to a certain part of your document. This might be needed in environments of admin interfaces, such as the backend of WordPress or Joomla. When you have [setup UIkit from Github source](setup.md#compile-from-github-source), you can recompile UIkit as a no-conflict version.
 
-```html
-<!-- will stay unstyled in no-conflict mode -->
-<button uk-button></button>
-
-<!-- will be styled because of the surrounding .uk-noconflict container -->
-<div class="uk-noconflict">
-    <button uk-button></button>
-</div>
+```sh
+npm run no-conflict
 ```
 
-To create the no-conflict version of UIkit, follow these steps:
+You will find the generated CSS and JS files in the `/dist` folder. To use the no-conflict version, wrap the document section with your UIkit markup in an element with the `.uk-conflict` class.
 
-1. Grab the full UIkit source code from [Github](https://github.com/uikit/uikit).
-2. Follow the [setup steps](https://github.com/uikit/uikit#developers).
-3. Run the command `npm run no-conflict`.
 
-You will find the generated CSS and JS files in the `/dist` folder.
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        ...
+    </head>
+    <body>
+
+        <!-- non UIkit markup -->
+        ...
+
+        <div class="uk-noconflict">
+            <!-- your UIkit markup -->
+            ...
+        </div>
+    </body>
+</html>
+```

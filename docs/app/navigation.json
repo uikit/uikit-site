@@ -6,9 +6,9 @@
         "Installation": "installation",
         "Less": "less",
         "JavaScript": "javascript",
-        "Migration": "migration",
-        "No conflict": "no-conflict",
-        "RTL support": "rtl"
+        "Avoiding conflicts": "no-conflict",
+        "RTL support": "rtl",
+        "Migration": "migration"
 
     },
 
