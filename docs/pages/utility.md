@@ -271,7 +271,7 @@ Add the `uk-height-viewport` attribute to create a container that fills the heig
 | Option          | Value   | Default | Description                                                              |
 | --------------- | ------- | ------- | ------------------------------------------------------------------------ |
 | `offset-top`    | Boolean | `false` | Subtracts the element's top offset from its height.                      |
-| `offset-bottom` | Boolean, Number, Pixel | `false` | Subtracts the element's immediately following sibling's height (true), the given percentage (Number) or Pixel (px) value from its own height. |
+| `offset-bottom` | Boolean, Number, Pixel | `false` | Subtracts the element's immediately following sibling's height from its own height. |
 | `expand`        | Boolean | `true`  | Expand the element's height to make a short page fill the viewport.      |
 
 ```html
@@ -570,7 +570,8 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 <img src="../assets/uikit/dist/images/icons.svg#cloud-upload" width="40" height="40" uk-svg>
 ```
 
-SVGs will adapt the current color for their stroke and fill color. To prevent this you can add the class `uk-preserve` to the whole SVG or even within the SVG itself to certain elements.
+SVGs will adapt the current color for their stroke and fill color. To prevent this behavior,  you can add the `uk-preserve` class to the SVG itself or to elements inside the SVG.
+
 ```example
 <!-- Targets the SVG image -->
 <p class="uk-text-danger">
