@@ -572,19 +572,6 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 
 SVGs will adapt the current color for their stroke and fill color. To prevent this behavior,  you can add the `uk-preserve` class to the SVG itself or to elements inside the SVG.
 
-```example
-<!-- Targets the SVG image -->
-<p class="uk-text-danger">
-    Same color
-    <img src="../assets/uikit/src/images/symbols/cloud-download.svg" width="40" height="40" uk-svg>
-</p>
-
-<!-- Targets a symbol inside the SVG image -->
-<p class="uk-text-danger">
-    Preserve
-    <img src="../assets/uikit/src/images/symbols/cloud-download.svg" class="uk-preserve" width="40" height="40" uk-svg>
-</p>
-```
 ***
 
 ## Gif
