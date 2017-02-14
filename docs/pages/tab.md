@@ -195,7 +195,7 @@ These events will be triggered on the connected items of the elements with this 
 
 | Name | Description |
 | --- | --- |
-| `beforeShow` | Fires before an item is shown. Can prevent showing by returning `false`. |
+| `beforeshow` | Fires before an item is shown. Can prevent showing by returning `false`. |
 | `show` | Fires after an item is shown. |
-| `beforeHide` | Fires before an item is hidden. Can prevent showing by returning `false`. |
+| `beforehide` | Fires before an item is hidden. Can prevent showing by returning `false`. |
 | `hide` | Fires after an item is hidden. |

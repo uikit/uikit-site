@@ -248,8 +248,8 @@ These events will be triggered on elements with this component attached.
 | Name | Description |
 | --- | --- |
 | `toggle` | Fires before an item is toggled. |
-| `beforeShow` | Fires before an item is shown. Can prevent showing by returning `false`. |
+| `beforeshow` | Fires before an item is shown. Can prevent showing by returning `false`. |
 | `show` | Fires after an item is shown. |
-| `beforeHide` | Fires before an item is hidden. Can prevent showing by returning `false`. |
+| `beforehide` | Fires before an item is hidden. Can prevent showing by returning `false`. |
 | `hide` | Fires after an item is hidden. |
 | `stack` | Fires when the `drop-stack`class is applied. |
