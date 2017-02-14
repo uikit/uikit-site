@@ -37,8 +37,14 @@ The Github project contains all sources files which are compiled into the `dist`
 To compile UIkit yourself, you can use the included build scripts.
 
 ```sh
+# Run once to install all dependencies
 npm install
+
+# Compile all source files
 npm run compile
+
+# Watch files and compile automatically everytime a file changes
+npm run watch
 ```
 
 The compiled `dist` folder now contains additional files, which are not checked in by default. The build task will create even more additional files if you have added a [custom UIkit theme](theme.md).
@@ -77,6 +83,12 @@ The compiled `dist` folder now contains additional files, which are not checked 
 ```
 
 To use UIkit's CSS and JavaScript, [include the files](introduction.md#html-markup) in your own HTML and then create the markup of any of the components listed here in the docs.
+
+To compile UIkit automatically everytime you change the LESS or JavaScript, you can use the included build scripts.
+
+```sh
+npm run watch
+```
 
 <script>
 $.get("https://getuikit.com/assets/uikit/package.json", {nocache: Math.random()}, data => {

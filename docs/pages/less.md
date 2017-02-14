@@ -44,8 +44,11 @@ To compile UIkit and your custom theme into CSS, run the npm task `compile` .
 # Run once to install all dependencies
 npm install
 
-# Run every time you compile UIkit and your theme
+# Compile all source files including your theme
 npm run compile
+
+# Watch files and compile automatically everytime a file changes
+npm run watch
 ```
 
 The generated CSS files will be located in the `/dist/css` folder.
