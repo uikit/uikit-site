@@ -16,6 +16,20 @@ To emphasize a heading with an alternative styling, for example a larger font si
 
 ***
 
+## Heading hero
+
+You can further enlarge or highlight a heading, for example when using it inside a hero section. Just add the `.uk-heading-hero` class.
+
+```html
+<h1 class="uk-heading-hero"></h1>
+```
+
+```example
+<h1 class="uk-heading-hero">Heading Hero</h1>
+```
+
+***
+
 ## Heading divider
 
 To apply a divider to a heading, add the `.uk-heading-divider` class. You can combine this with one of the heading classes from the [Base component](base.md#headings).
