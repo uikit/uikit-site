@@ -107,7 +107,7 @@ UIkit.components.sticky.options.defaults.top = 100;
 
 ## Programmatic use
 
-Programmatically, components may be initialized with the `element, options` arguments format in JavaScript. The `element` argument may be any `Node`, `jQuery selector` or `jQuery object`. You'll receive an `array` of initialized components as return value. `Functional Components` (e.g. `Notification`) should omit the `element` parameter.
+Programmatically, components may be initialized with the `element, options` arguments format in JavaScript. The `element` argument may be any `Node`, `jQuery selector` or `jQuery object`. You'll receive the initialized component as return value. `Functional Components` (e.g. `Notification`) should omit the `element` parameter.
 
 ```js
 // Passing a selector and an options object.
@@ -123,7 +123,7 @@ var notifications = UIkit.notification('MyMessage', 'danger');
 Initializing your components programmatically gives you the possibility to invoke their functions directly.
 
 ```js
-UIkit.offcanvas('#offcanvas')[0].toggle();
+UIkit.offcanvas('#offcanvas').toggle();
 ```
 
 Any component functions and variables prefixed with an underscore are considered as part of the internal API, which may change at any given time.
