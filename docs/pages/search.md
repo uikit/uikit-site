@@ -13,7 +13,7 @@ The Search component consists of a search form and the search input itself.
 
 ```html
 <form class="uk-search">
-    <input class="uk-search-input" type="search" placeholder="">
+	<input class="uk-search-input" type="search" placeholder="">
 </form>
 ```
 
@@ -21,7 +21,7 @@ By default, the search has no additional styling. In this example we are using t
 
 ```example
 <form class="uk-search uk-search-default">
-    <input class="uk-search-input" type="search" placeholder="Search...">
+	<input class="uk-search-input" type="search" placeholder="Search...">
 </form>
 ```
 
@@ -33,24 +33,24 @@ To create a search icon, add the `uk-search-icon` attribute to a `<span>` elemen
 
 ```html
 <form class="uk-search uk-search-default">
-    <span uk-search-icon></span>
-    <input class="uk-search-input" type="search" placeholder="">
+	<span uk-search-icon></span>
+	<input class="uk-search-input" type="search" placeholder="">
 </form>
 ```
 
 ```example
 <div class="uk-margin">
-    <form class="uk-search uk-search-default">
-        <span uk-search-icon></span>
-        <input class="uk-search-input" type="search" placeholder="Search...">
-    </form>
+	<form class="uk-search uk-search-default">
+		<span uk-search-icon></span>
+		<input class="uk-search-input" type="search" placeholder="Search...">
+	</form>
 </div>
 
 <div class="uk-margin">
-    <form class="uk-search uk-search-default">
-        <span class="uk-search-icon-flip" uk-search-icon></span>
-        <input class="uk-search-input" type="search" placeholder="Search...">
-    </form>
+	<form class="uk-search uk-search-default">
+		<span class="uk-search-icon-flip" uk-search-icon></span>
+		<input class="uk-search-input" type="search" placeholder="Search...">
+	</form>
 </div>
 ```
 
@@ -62,24 +62,24 @@ To enable an action, use an `<a>` or `<button>` element to create the icon.
 
 ```html
 <form class="uk-search uk-search-default">
-    <a href="" uk-search-icon></a>
-    <input class="uk-search-input" type="search" placeholder="">
+	<a href="" uk-search-icon></a>
+	<input class="uk-search-input" type="search" placeholder="">
 </form>
 ```
 
 ```example
 <div class="uk-margin">
-    <form class="uk-search uk-search-default">
-        <a href="" uk-search-icon></a>
-        <input class="uk-search-input" type="search" placeholder="Search...">
-    </form>
+	<form class="uk-search uk-search-default">
+		<a href="" uk-search-icon></a>
+		<input class="uk-search-input" type="search" placeholder="Search...">
+	</form>
 </div>
 
 <div class="uk-margin">
-    <form class="uk-search uk-search-default">
-        <a href="" class="uk-search-icon-flip" uk-search-icon></a>
-        <input class="uk-search-input" type="search" placeholder="Search...">
-    </form>
+	<form class="uk-search uk-search-default">
+		<a href="" class="uk-search-icon-flip" uk-search-icon></a>
+		<input class="uk-search-input" type="search" placeholder="Search...">
+	</form>
 </div>
 ```
 
@@ -95,8 +95,8 @@ To apply the default search styling, add the `.uk-search-default` class.
 
 ```example
 <form class="uk-search uk-search-default">
-    <span uk-search-icon></span>
-    <input class="uk-search-input" type="search" placeholder="Search...">
+	<span uk-search-icon></span>
+	<input class="uk-search-input" type="search" placeholder="Search...">
 </form>
 ```
 
@@ -112,8 +112,8 @@ To increase the size of the search, for example when creating an overlay search,
 
 ```example
 <form class="uk-search uk-search-large">
-    <span uk-search-icon></span>
-    <input class="uk-search-input" type="search" placeholder="Search...">
+	<span uk-search-icon></span>
+	<input class="uk-search-input" type="search" placeholder="Search...">
 </form>
 ```
 
@@ -129,16 +129,16 @@ A search can be used inside a navbar from the [Navbar component](navbar.md). Jus
 
 ```example
 <nav class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-left">
+	<div class="uk-navbar-left">
 
-        <div class="uk-navbar-item">
-            <form class="uk-search uk-search-navbar">
-                <span uk-search-icon></span>
-                <input class="uk-search-input" type="search" placeholder="Search...">
-            </form>
-        </div>
+		<div class="uk-navbar-item">
+			<form class="uk-search uk-search-navbar">
+				<span uk-search-icon></span>
+				<input class="uk-search-input" type="search" placeholder="Search...">
+			</form>
+		</div>
 
-    </div>
+	</div>
 </nav>
 ```
 
@@ -164,9 +164,9 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
 ```html
 <div class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-left">
-        <a class="uk-navbar-toggle" uk-search-icon uk-toggle href=""></a>
-    </div>
+	<div class="uk-navbar-left">
+		<a class="uk-navbar-toggle" uk-search-icon uk-toggle href=""></a>
+	</div>
 </div>
 ```
 
@@ -175,35 +175,37 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 ```example
 <nav class="uk-navbar-container uk-margin" uk-navbar>
 
-    <div class="nav-overlay uk-navbar-left">
+	<div class="nav-overlay uk-navbar-left">
 
-        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+		<a class="uk-navbar-item uk-logo" href="#">Logo</a>
 
-        <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-        </ul>
+		<ul class="uk-navbar-nav">
+			<li class="uk-active"><a href="#">Active</a></li>
+			<li><a href="#">Item</a></li>
+		</ul>
 
-    </div>
+	</div>
 
-    <div class="nav-overlay uk-navbar-right">
+	<div class="nav-overlay uk-navbar-right">
 
-        <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+		<a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
 
-    </div>
+	</div>
 
-    <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+	<div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
 
-        <div class="uk-navbar-item uk-width-1-1">
-            <form class="uk-search uk-search-navbar uk-width-1-1">
-                <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
-            </form>
+		<div class="uk-navbar-item uk-width-expand">
+			<form class="uk-search uk-search-navbar uk-width-1-1">
+				<input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+			</form>
 
+		</div>
+
+		<div class="uk-navbar-item uk-width-auto">
 			<a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+		</div>
 
-        </div>
-
-    </div>
+	</div>
 
 </nav>
 ```
@@ -212,28 +214,28 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
 ```example
 <nav class="uk-navbar-container uk-margin" uk-navbar>
-    <div class="uk-navbar-left">
+	<div class="uk-navbar-left">
 
-        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+		<a class="uk-navbar-item uk-logo" href="#">Logo</a>
 
-        <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-        </ul>
+		<ul class="uk-navbar-nav">
+			<li class="uk-active"><a href="#">Active</a></li>
+			<li><a href="#">Item</a></li>
+		</ul>
 
-    </div>
-    <div class="uk-navbar-right">
+	</div>
+	<div class="uk-navbar-right">
 
-        <div>
-            <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
-            <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
-                <form class="uk-search uk-search-navbar uk-width-1-1">
-                    <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
-                </form>
-            </div>
-        </div>
+		<div>
+			<a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+			<div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+				<form class="uk-search uk-search-navbar uk-width-1-1">
+					<input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+				</form>
+			</div>
+		</div>
 
-    </div>
+	</div>
 </nav>
 ```
 
@@ -241,37 +243,37 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
 ```example
 <nav class="uk-navbar-container uk-margin" uk-navbar>
-    <div class="uk-navbar-left">
+	<div class="uk-navbar-left">
 
-        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+		<a class="uk-navbar-item uk-logo" href="#">Logo</a>
 
-        <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-        </ul>
+		<ul class="uk-navbar-nav">
+			<li class="uk-active"><a href="#">Active</a></li>
+			<li><a href="#">Item</a></li>
+		</ul>
 
-    </div>
-    <div class="uk-navbar-right">
+	</div>
+	<div class="uk-navbar-right">
 
-        <div>
-            <a class="uk-navbar-toggle" href="#" uk-search-icon></a>
-            <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+		<div>
+			<a class="uk-navbar-toggle" href="#" uk-search-icon></a>
+			<div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
 
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <div class="uk-width-expand">
-                        <form class="uk-search uk-search-navbar uk-width-1-1">
-                            <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
-                        </form>
-                    </div>
-                    <div class="uk-width-auto">
-                        <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
-                    </div>
-                </div>
+				<div class="uk-grid-small uk-flex-middle" uk-grid>
+					<div class="uk-width-expand">
+						<form class="uk-search uk-search-navbar uk-width-1-1">
+							<input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+						</form>
+					</div>
+					<div class="uk-width-auto">
+						<a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+					</div>
+				</div>
 
-            </div>
-        </div>
+			</div>
+		</div>
 
-    </div>
+	</div>
 </nav>
 ```
 
@@ -279,29 +281,29 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
 ```example
 <nav class="uk-navbar uk-navbar-container uk-margin">
-    <div class="uk-navbar-left">
+	<div class="uk-navbar-left">
 
-        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+		<a class="uk-navbar-item uk-logo" href="#">Logo</a>
 
-        <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-        </ul>
+		<ul class="uk-navbar-nav">
+			<li class="uk-active"><a href="#">Active</a></li>
+			<li><a href="#">Item</a></li>
+		</ul>
 
-    </div>
-    <div class="uk-navbar-right">
+	</div>
+	<div class="uk-navbar-right">
 
-        <a class="uk-navbar-toggle" href="#modal-full" uk-search-icon uk-toggle></a>
+		<a class="uk-navbar-toggle" href="#modal-full" uk-search-icon uk-toggle></a>
 
-    </div>
+	</div>
 </nav>
 
 <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
-    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
-        <button class="uk-modal-close-full" type="button" uk-close></button>
-        <form class="uk-search uk-search-large">
-            <input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus>
-        </form>
-    </div>
+	<div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+		<button class="uk-modal-close-full" type="button" uk-close></button>
+		<form class="uk-search uk-search-large">
+			<input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus>
+		</form>
+	</div>
 </div>
 ```
