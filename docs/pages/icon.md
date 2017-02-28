@@ -4,15 +4,17 @@
 
 UIkit comes with its own SVG icon system and a comprehensive library, which comprises a growing number of elegant outline icons. This component injects SVGs into the site, so that they adopt color and can be styled with CSS.
 
-To use UIkit's Icon Library include its JavaScript file on your page by adding it to the `<head>` section. You can also choose to use the `defer` attribute to delay script execution.
+***
+
+## Usage
+
+Include the JavaScript file for UIkit's Icon Library to the `<head>` section of your page.
 
 ```html
 <script src="js/uikit-icons.min.js"></script>
 ```
 
-***
-
-## Usage
+**Note** You can choose to use the `defer` attribute to delay script execution.
 
 To apply this component, add the `uk-icon` attribute to a `<span>` or `<a>` element. To display the actual icon, you need to append the `icon: NAME` parameter to the attribute. Et voilà, you have a vector icon, which inherits color just like your text does.
 

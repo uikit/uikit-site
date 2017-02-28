@@ -6,7 +6,7 @@ Once you have [installed UIkit](installation.md), include the JavaScript files o
 <script src="js/jquery.min.js"></script>
 <script src="js/uikit.min.js"></script>
 
-// Optionally include UIkit's Icon Library
+<!-- Optionally include UIkit's Icon Library -->
 <script src="js/uikit-icons.min.js"></script>
 ```
 
