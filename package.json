@@ -25,6 +25,7 @@
     "webpack": "2.2.0-rc.3",
 
     "concat": "^3.0.0",
+    "html-loader": "^0.4.5",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "rtlcss": "^2.1.2",
