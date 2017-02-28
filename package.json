@@ -29,6 +29,7 @@
     "mkdirp": "^0.5.1",
     "rtlcss": "^2.1.2",
     "rollup-plugin-import-alias": "^1.0.3",
-    "rollup-plugin-json": "^2.1.0"
+    "rollup-plugin-json": "^2.1.0",
+    "rollup-plugin-html": "^0.2.1"
   }
 }
