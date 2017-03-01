@@ -14,15 +14,14 @@ The Zip file contains the compiled CSS and JavaScript files, which is everything
 
 | Folder    | Description |
 | --------- | --- |
-| `/css`    | Contains the UIkit CSS and a minified version. |
-| `/images` | Contains all the images used within UIkit (e.g. icons). |
-| `/js`     | Contains the UIkit JavaScript and a minified version. |
+| `/css`    | Contains the UIkit CSS and a right-to-left version. |
+| `/js`     | Contains the UIkit JavaScript and the Icon Library JavaScript. |
 
 ***
 
 ## HTML markup
 
-Add the compiled and preferably minified CSS and JavaScript to the header of your HTML5 document. [jQuery](http://jquery.com/download/) is required as well. For your basic setup, that's it.
+Add the compiled and minified CSS and JavaScript to the header of your HTML5 document. [jQuery](http://jquery.com/download/) is required as well. For your basic setup, that's it.
 
 ```html
 <!DOCTYPE html>
