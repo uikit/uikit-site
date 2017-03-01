@@ -10,8 +10,6 @@ If you want to use the UIkit icons, make sure to include the JavaScript file for
 
 Look at the [Icon component](icon.md) for an overview of the available icons.
 
-<!--**Note** You can choose to use the `defer` attribute to delay script execution.-->
-
 ***
 
 ## Add and overwrite icons
@@ -26,8 +24,7 @@ The build process will check two places for additional icon files:
 Compile UIkit to include the additional icons:
 
 ```sh
-npm run icons  # only re-compile icons
-npm run compile  # complete re-compilation of UIkit, including icons
+npm run compile
 ```
 
 Your additional icon will now be added to the icon library, in one of these two places:
