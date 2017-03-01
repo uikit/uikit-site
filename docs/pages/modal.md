@@ -362,8 +362,8 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
     <a id="modal-prompt" class="uk-button uk-button-default" href="#">Prompt</a>
 
     <script>
-    (function () {
-
+        (function ($) {
+    
             $('#modal-dialog').on('click', function (e) {
                 e.preventDefault();
                 $(this).blur();
@@ -396,7 +396,8 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
                 });
             });
 
-        })();
+        })(jQuery);
+        
     </script>
 
 </p>
