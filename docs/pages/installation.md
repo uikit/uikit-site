@@ -27,7 +27,7 @@ The Github project contains all sources files which are compiled into the `dist`
 | Folder   | Description |
 | -------- | ----------- |
 | `/src`   | Contains all Less, JavaScript and image sources. |
-| `/dist`  | Contains compiled CSS, JS and images, updated on every release. |
+| `/dist`  | Contains compiled CSS and JS, updated on every release. |
 | `/tests` | Contains HTML test files of all components. |
 
 ***
@@ -47,7 +47,7 @@ npm run compile
 npm run watch
 ```
 
-The compiled `dist` folder now contains additional files, which are not checked in by default. The build task will create even more additional files if you have added a [custom UIkit theme](theme.md).
+The compiled `dist` folder now contains additional files which are not checked in by default. The build task will create even more additional files if you have added a [custom UIkit theme](theme.md).
 
 ```html
 /dist/css
@@ -64,9 +64,6 @@ The compiled `dist` folder now contains additional files, which are not checked 
     uikit.rtl.css
     uikit.rtl.min.css
 
-/dist/images
-
-    <!-- Contains all the images used within UIkit (e.g. icons). -->
 
 /dist/js
 
@@ -77,6 +74,10 @@ The compiled `dist` folder now contains additional files, which are not checked 
     <!-- Stripped down JavaScript. Core functionality without additional components -->
     uikit-core.js
     uikit-core.min.js
+
+    <!-- Icon Library. Include when you want to use the Icon component. -->
+    uikit-icons.js
+    uikit-icons.min.js
 
     <!-- Additional components (e.g. Lightbox), only needed when including uikit-core.js -->
     /components
