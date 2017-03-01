@@ -24,10 +24,10 @@ npm install --save uikit jquery
 npm install --save-dev webpack
 ```
 
-As an entry file for the projects JavaScript, create a file `app/main.js` with the following content.
+As an entry file for the projects JavaScript, create a file `app/index.js` with the following content.
 
 ```js
-import UIkit from 'uikit/src/js/uikit';
+import UIkit from 'uikit';
 import $ from 'jquery';
 ```
 
@@ -56,7 +56,7 @@ This way you have references to UIkit and jQuery available without having to inc
 
 **Note** For simplicity reasons, we have included the pre-built CSS. In a real project, you probably want to build the [Less](less.md) files and included the compiled CSS instead.
 
-To configure Webpack to compile `app/main.js` into `dist/bundle.js`, create the file `webpack.config.js` with the following content.
+To configure Webpack to compile `app/index.js` into `dist/bundle.js`, create the file `webpack.config.js` with the following content.
 
 ```js
 module.exports = {
@@ -76,35 +76,3 @@ webpack # If you installed webpack globally
 ```
 
 This should complete the basic setup of your project. Navigate to `index.html` in your browser and confirm that the basic UIkit styling is applied to your page.
-
-***
-
-## Use additional components
-
-The basic `main.js` as described above only includes UIkit's core components. If you want to use additional components, for example the Tooltip, you need to include and initialize it in `main.js`.
-
-```js
-import UIkit from 'uikit/src/js/uikit';
-import $ from 'jquery';
-
-// 1. import any additional component
-import Tooltip from 'uikit/src/js/components/tooltip';  
-
-// 2. Register and initialize the component
-UIkit.use(Tooltip);
-```
-
-Add an element that uses the Tooltip component to your page.
-
-```html
-<!-- ... -->
-<button class="uk-button uk-button-default" title="Hello World" uk-tooltip>Hover</button>
-```
-
-Recompile the bundle:
-
-```sh
-webpack
-```
-
-Now check your browser to confirm that the tooltip is working when you hover the button we have added.
