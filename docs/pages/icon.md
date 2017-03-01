@@ -8,6 +8,14 @@ UIkit comes with its own SVG icon system and a comprehensive library, which comp
 
 ## Usage
 
+Include the JavaScript file for UIkit's Icon Library to the `<head>` section of your page.
+
+```html
+<script src="js/uikit-icons.min.js"></script>
+```
+
+**Note** You can choose to use the `defer` attribute to delay script execution.
+
 To apply this component, add the `uk-icon` attribute to a `<span>` or `<a>` element. To display the actual icon, you need to append the `icon: NAME` parameter to the attribute. Et voilà, you have a vector icon, which inherits color just like your text does.
 
 ```html
