@@ -34,11 +34,11 @@ $('#scroll-trigger').on('scrolled', function () {
 <a id="scroll-trigger" class="uk-button uk-button-primary" href="#target" uk-scroll>Down with callback</a>
 
 <script>
-jQuery(function ($) {
-    $('#scroll-trigger').on('scrolled', function () {
-        alert('Done.');
+    jQuery(function ($) {
+        $('#scroll-trigger').on('scrolled', function () {
+            alert('Done.');
+        });
     });
-});
 </script>
 ```
 

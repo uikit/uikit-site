@@ -59,11 +59,16 @@ export function parse(markdown, cb) {
 // https://blog.codepen.io/documentation/api/prefill/
 export function openOnCodepen(code) {
 
-    code = code.replace(/<img[^>]+src="(.*?)"/g, function(match, src) {
-        return src.indexOf('../docs/') === 0 ? match.replace(src, `${location.href.split('/docs/')[0]}/docs/${src.replace('../docs/', '')}`) : match;
-    }).replace(/url\((.*?)\)/g, function(match, src) {
-        return src.indexOf('../docs/') === 0 != -1 ? match.replace(src, `${location.href.split('/docs/')[0]}/docs/${src.replace('../docs/', '')}`) : match;
-    });
+    var regexp = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
+    var scripts = (code.match(regexp) || []).join('\n').replace(/<\/?script>/g, '');
+
+    code = code
+        .replace(regexp, '')
+        .replace(/<img[^>]+src="(.*?)"/g, function(match, src) {
+            return src.indexOf('../docs/') === 0 ? match.replace(src, `${location.href.split('/docs/')[0]}/docs/${src.replace('../docs/', '')}`) : match;
+        }).replace(/url\((.*?)\)/g, function(match, src) {
+            return src.indexOf('../docs/') === 0 != -1 ? match.replace(src, `${location.href.split('/docs/')[0]}/docs/${src.replace('../docs/', '')}`) : match;
+        });
 
     let nc = Date.now() % 9999,
         data = {
@@ -75,7 +80,7 @@ export function openOnCodepen(code) {
         css_pre_processor: 'none',
         css_starter: 'neither',
         css_prefix_free: false,
-        js: '',
+        js: scripts || '',
         js_pre_processor: 'none',
         js_modernizr: false,
         js_library: 'jquery',

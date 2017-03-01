@@ -30,4 +30,5 @@ To apply this component, add the `.uk-progress` class to a `<progress>` element.
     });
 
 </script>
+
 ```
