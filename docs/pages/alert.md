@@ -99,5 +99,5 @@ These events will be triggered on elements with this component attached.
 
 | Name | Description |
 | --- | --- |
-| `beforeHide` | Fires before an item is hidden. Can prevent showing by returning `false`. |
+| `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
 | `hide` | Fires after an item is hidden. |
