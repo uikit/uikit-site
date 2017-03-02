@@ -21,7 +21,7 @@ The Zip file contains the compiled CSS and JavaScript files, which is everything
 
 ## HTML markup
 
-Add the compiled and minified CSS and JavaScript to the header of your HTML5 document. [jQuery](http://jquery.com/download/) is required as well. For your basic setup, that's it.
+Add the compiled and minified CSS and JavaScript to the header of your HTML5 document. [jQuery](http://jquery.com/download/) is required as well. Also include the UIkit icon library. For your basic setup, that's it.
 
 ```html
 <!DOCTYPE html>
@@ -31,6 +31,7 @@ Add the compiled and minified CSS and JavaScript to the header of your HTML5 doc
         <link rel="stylesheet" href="css/uikit.min.css" />
         <script src="js/jquery.js"></script>
         <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
     </head>
     <body>
     </body>
@@ -45,7 +46,8 @@ Once you have included UIkit into your document, take a look at the available co
 
 Using UIkit works best if you have a solid code editor, for example [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/). To be even more efficient, we recommend that you install one of the autocomplete plugins for your favorite IDE or code editor. This saves a lot of time, as you won't have to look up and type all UIkit classes and markup.
 
-We'll update this section as soon as these plugins are available for UIkit 3.
+- [Autocomplete plugin for Sublime Text 3](https://github.com/uikit/uikit-sublime)
+- [Autocomplete plugin for Atom](https://atom.io/packages/uikit-atom)
 
 ***
 

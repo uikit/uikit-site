@@ -2,13 +2,7 @@
 
 <p class="uk-text-lead">UIkit's icon library can be extended and customized with your own icon files.</p>
 
-If you want to use the UIkit icons, make sure to include the JavaScript file for UIkit's Icon Library to the `<head>` section of your page.  This file includes all icons, no additional SVG files are needed.
-
-```html
-<script src="js/uikit-icons.min.js"></script>
-```
-
-Look at the [Icon component](icon.md) for an overview of the available icons.
+UIkit's icon library contains a number of SVG icons bundled in a single JavaScript file `uikit-icons.min.js`. This file includes all icons, no additional SVG files are needed. In this document, we will describe how you can add your own icons to this library or overwrite existing ones. Look at the [Icon component](icon.md) for an overview of the default icons.
 
 ***
 

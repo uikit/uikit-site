@@ -6,7 +6,8 @@
         "Installation": "installation",
         "Less": "less",
         "JavaScript": "javascript",
-        "Icons": "icons",
+        "Webpack": "webpack",
+        "Custom icons": "custom-icons",
         "Avoiding conflicts": "avoiding-conflicts",
         "RTL support": "rtl",
         "Migration": "migration"
