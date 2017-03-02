@@ -10,7 +10,7 @@ For the basic project setup, we will create the following files:
 
 ```html
 app/
-    main.js
+    index.js
 index.html
 package.json
 ```
@@ -29,6 +29,9 @@ As an entry file for the projects JavaScript, create a file `app/index.js` with 
 ```js
 import UIkit from 'uikit';
 import $ from 'jquery';
+
+// components can be called from the imported UIkit reference
+UIkit.notification('Hello world.');
 ```
 
 This way you have references to UIkit and jQuery available without having to include their JavaScript files in your HTML. Instead, we can include the full bundle that will be created by Webpack. Create the main HTML file `index.html` with the following content.
@@ -46,6 +49,8 @@ This way you have references to UIkit and jQuery available without having to inc
         <div class="uk-container">
             <div class="uk-card uk-card-body uk-card-primary">
                 <h3 class="uk-card-title">Example headline</h3>
+
+                <button class="uk-button uk-button-default" title="Hello World" uk-tooltip>Hover</button>
             </div>
         </div>
 
@@ -75,4 +80,4 @@ Now, run Webpack in your project's main directory.
 webpack # If you installed webpack globally
 ```
 
-This should complete the basic setup of your project. Navigate to `index.html` in your browser and confirm that the basic UIkit styling is applied to your page.
+This completes the basic setup of your project. Navigate to `index.html` in your browser and confirm that the basic UIkit styling is applied to your page. If the bundling was successful, a notification should pop up at the top of your page and the button should display a message on hover.
