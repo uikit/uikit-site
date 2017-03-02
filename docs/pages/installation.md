@@ -7,7 +7,7 @@
 You have the following options to get UIkit:
 
 - Download the [latest release](https://github.com/uikit/uikit/releases/latest) with pre-built JavaScript and CSS.
-- Install with [Bower](https://bower.io) to get the pre-built JavaScript, CSS and the Less source files. This is recommended when using UIkit for a typical web project: ```bower install uikit```
+- Install with [Bower](https://bower.io) to get the pre-built JavaScript, CSS and the Less source files. This is recommended when using UIkit for a typical web project: ```bower install uikit#^3.0.0```
 - Clone the repo to get all source files including build scripts: `git clone git://github.com/uikit/uikit.git`
 - Install with [Npm](https://npmjs.com) to get all source files as they are available on Github: ```npm install uikit```
 
@@ -16,13 +16,14 @@ The compiled files of all UIkit versions are also hosted on the Cloudflare conte
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/css/uikit.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit-icons.min.js"></script>
 ```
 
 ***
 
 ## File structure of the source
 
-The Github project contains all sources files which are compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are concatenated and SVG images are combined into fewer SVG using symbols.
+The Github project contains all sources files which are compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are concatenated and icons are bundled into the icon library.
 
 | Folder   | Description |
 | -------- | ----------- |
@@ -75,7 +76,7 @@ The compiled `dist` folder now contains additional files which are not checked i
     uikit-core.js
     uikit-core.min.js
 
-    <!-- Icon Library. Include when you want to use the Icon component. -->
+    <!-- Icon Library -->
     uikit-icons.js
     uikit-icons.min.js
 

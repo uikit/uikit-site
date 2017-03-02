@@ -7,7 +7,7 @@
         "Less": "less",
         "JavaScript": "javascript",
         "Webpack": "webpack",
-        "Icons": "icons",
+        "Custom icons": "custom-icons",
         "Avoiding conflicts": "avoiding-conflicts",
         "RTL support": "rtl",
         "Migration": "migration"

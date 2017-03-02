@@ -28,13 +28,12 @@ As an entry file for the projects JavaScript, create a file `app/index.js` with 
 
 ```js
 import UIkit from 'uikit';
-import $ from 'jquery';
 
 // components can be called from the imported UIkit reference
 UIkit.notification('Hello world.');
 ```
 
-This way you have references to UIkit and jQuery available without having to include their JavaScript files in your HTML. Instead, we can include the full bundle that will be created by Webpack. Create the main HTML file `index.html` with the following content.
+This way you have the reference to UIkit available without having to include its JavaScript files in your HTML. Instead, we can include the full bundle that will be created by Webpack. Create the main HTML file `index.html` with the following content.
 
 ```html
 <!DOCTYPE html>
