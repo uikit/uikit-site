@@ -21,7 +21,7 @@ The Zip file contains the compiled CSS and JavaScript files, which is everything
 
 ## HTML markup
 
-Add the compiled and minified CSS and JavaScript to the header of your HTML5 document. [jQuery](http://jquery.com/download/) is required as well. For your basic setup, that's it.
+Add the compiled and minified CSS and JavaScript to the header of your HTML5 document. [jQuery](http://jquery.com/download/) is required as well. If you want to use the UIkit icons, also include the icon library file. For your basic setup, that's it.
 
 ```html
 <!DOCTYPE html>
@@ -31,6 +31,7 @@ Add the compiled and minified CSS and JavaScript to the header of your HTML5 doc
         <link rel="stylesheet" href="css/uikit.min.css" />
         <script src="js/jquery.js"></script>
         <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
     </head>
     <body>
     </body>
