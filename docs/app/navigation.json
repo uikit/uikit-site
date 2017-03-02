@@ -6,6 +6,7 @@
         "Installation": "installation",
         "Less": "less",
         "JavaScript": "javascript",
+        "Webpack": "webpack",
         "Icons": "icons",
         "Avoiding conflicts": "avoiding-conflicts",
         "RTL support": "rtl",

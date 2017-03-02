@@ -4,7 +4,7 @@ You can use Webpack to include and bundle UIkit's JavaScript in your project.
 
 ***
 
-## Project setup
+## File structure
 
 For the basic project setup, we will create the following files:
 
@@ -41,7 +41,7 @@ This way you have references to UIkit and jQuery available without having to inc
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Demo</title>
         <link rel="stylesheet" href="node_modules/uikit/dist/css/uikit.min.css">
     </head>
     <body>
@@ -60,6 +60,8 @@ This way you have references to UIkit and jQuery available without having to inc
 ```
 
 **Note** For simplicity reasons, we have included the pre-built CSS. In a real project, you probably want to build the [Less](less.md) files and included the compiled CSS instead.
+
+## Webpack config
 
 To configure Webpack to compile `app/index.js` into `dist/bundle.js`, create the file `webpack.config.js` with the following content.
 
