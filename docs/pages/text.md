@@ -56,6 +56,16 @@ Use one of these classes to apply a different color to text elements.
 
 ***
 
+## Text background
+
+To apply a gradient or background image to text, add the `.uk-text-background` class to a `<span>` element inside the text element. Styles that don't define a `background-image`, will apply the primary color.
+
+```html
+<h1><span class="uk-text-background"></span></h1>
+```
+
+***
+
 ## Text alignment
 
 Add one of these useful classes to align your text.
