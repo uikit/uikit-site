@@ -9,7 +9,6 @@
   "devDependencies": {
     "buble": "^0.15.1",
     "buble-loader": "^0.4.0",
-    "clean-css": "^3.4.23",
     "glob": "^7.0.3",
     "he": "^1.1.0",
     "json-loader": "^0.5.4",
@@ -23,6 +22,7 @@
     "vue-template-compiler": "^2.1.8",
     "webpack": "2.2.0-rc.3",
 
+    "clean-css": "^4.0.8",
     "concat": "^3.0.0",
     "html-loader": "^0.4.5",
     "minimist": "^1.2.0",
