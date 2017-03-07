@@ -8,7 +8,7 @@ To apply a background color to an element, add one of the following classes. The
 
 | Class                      | Description                                              |
 |----------------------------|----------------------------------------------------------|
-| `.uk-background`           | Applies the default background color.    |
+| `.uk-background-default`   | Applies the default background color.    |
 | `.uk-background-muted`     | Applies a muted background color.        |
 | `.uk-background-primary`   | Applies the primary background color.    |
 | `.uk-background-secondary` | Applies a secondary background color. |
@@ -22,7 +22,7 @@ To apply a background color to an element, add one of the following classes. The
 ```example
 <div class="uk-child-width-1-2@s uk-text-center" uk-grid>
     <div>
-        <div class="uk-background uk-padding uk-panel">
+        <div class="uk-background-default uk-padding uk-panel">
             <p class="uk-h4">Default</p>
         </div>
     </div>

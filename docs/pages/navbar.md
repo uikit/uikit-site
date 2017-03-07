@@ -294,12 +294,14 @@ Add the `.uk-logo` class from the [Utility component](utility.md) to an `<a>` or
 
 You can create a split menu with a centered logo. Just add the `uk-navbar-center-left` class to one navbar and the `uk-navbar-center-right` class to another within the same navbar container. This will keep your logo centered and align the menus to the left and right.
 
+**Note** An extra `div` element is required to support IE 11.
+
 ```html
 <div class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-center">
-        <div class="uk-navbar-center-left">...</div>
+        <div class="uk-navbar-center-left"><div>...</div></div>
         <a href="" class="uk-navbar-item uk-logo"></a>
-        <div class="uk-navbar-center-right">...</div>
+        <div class="uk-navbar-center-right"><div>...</div></div>
     </div>
 </div>
 ```
@@ -308,7 +310,7 @@ You can create a split menu with a centered logo. Just add the `uk-navbar-center
 <nav class="uk-navbar-container uk-margin" uk-navbar>
     <div class="uk-navbar-center">
 
-        <div class="uk-navbar-center-left">
+        <div class="uk-navbar-center-left"><div>
             <ul class="uk-navbar-nav">
                 <li class="uk-active"><a href="#">Active</a></li>
                 <li>
@@ -322,13 +324,13 @@ You can create a split menu with a centered logo. Just add the `uk-navbar-center
                     </div>
                 </li>
             </ul>
-        </div>
+        </div></div>
         <a class="uk-navbar-item uk-logo" href="#">Logo</a>
-        <div class="uk-navbar-center-right">
+        <div class="uk-navbar-center-right"><div>
             <ul class="uk-navbar-nav">
                 <li><a href="#">Item</a></li>
             </ul>
-        </div>
+        </div></div>
 
     </div>
 </nav>
