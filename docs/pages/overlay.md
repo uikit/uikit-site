@@ -35,10 +35,27 @@ By default, the overlay has padding, but no additional styling. Add one of these
 For a simple background color, add the `.uk-overlay-default` class.
 
 ```example
-<div class="uk-inline">
-    <img src="../docs/images/photo.jpg" alt="">
-    <div class="uk-overlay uk-overlay-default uk-position-bottom">
-        <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<div class="uk-child-width-1-2@m" uk-grid>
+    <div>
+
+        <div class="uk-inline">
+            <img src="../docs/images/photo.jpg" alt="">
+            <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+    </div>
+    <div>
+
+        <div class="uk-inline">
+            <img src="../docs/images/photo.jpg" alt="">
+            <div class="uk-overlay-default uk-position-cover"></div>
+            <div class="uk-overlay uk-position-bottom uk-dark">
+                <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
     </div>
 </div>
 ```
@@ -50,10 +67,27 @@ For a simple background color, add the `.uk-overlay-default` class.
 For a prominent background color, add the `.uk-overlay-primary` class.
 
 ```example
-<div class="uk-inline">
-    <img src="../docs/images/photo.jpg" alt="">
-    <div class="uk-overlay uk-overlay-primary uk-position-bottom">
-        <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<div class="uk-child-width-1-2@m" uk-grid>
+    <div>
+
+        <div class="uk-inline">
+            <img src="../docs/images/photo.jpg" alt="">
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+    </div>
+    <div>
+
+        <div class="uk-inline">
+            <img src="../docs/images/photo.jpg" alt="">
+            <div class="uk-overlay-primary uk-position-cover"></div>
+            <div class="uk-overlay uk-position-bottom uk-dark">
+                <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
     </div>
 </div>
 ```
@@ -71,10 +105,28 @@ To display an overlay icon, add the `uk-overlay-icon` attribute to a `<span>` el
 ```
 
 ```example
-<div class="uk-inline uk-light">
-    <img src="../docs/images/dark.jpg" alt="">
-    <div class="uk-position-center">
-        <span uk-overlay-icon></span>
+<div class="uk-child-width-1-2@m" uk-grid>
+    <div>
+
+        <div class="uk-inline uk-light">
+            <img src="../docs/images/dark.jpg" alt="">
+            <div class="uk-position-center">
+                <span uk-overlay-icon></span>
+            </div>
+        </div>
+
+    </div>
+    <div>
+
+        <div class="uk-inline uk-dark">
+            <img src="images/photo.jpg" alt="">
+            <div class="uk-overlay-default uk-position-cover">
+                <div class="uk-position-center">
+                    <span uk-overlay-icon></span>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 ```
