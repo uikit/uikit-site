@@ -28,6 +28,10 @@ As an entry file for the projects JavaScript, create a file `app/index.js` with 
 
 ```js
 import UIkit from 'uikit';
+import Icons from 'uikit/dist/js/uikit-icons';
+
+// loads the Icon plugin
+UIkit.use(Icons);
 
 // components can be called from the imported UIkit reference
 UIkit.notification('Hello world.');
