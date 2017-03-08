@@ -2,4 +2,4 @@
 
 UIkit 3 website
 
-Run ```npm install && npm run setup``` after cloning
+Run ```npm run setup``` after cloning
