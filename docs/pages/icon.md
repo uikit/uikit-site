@@ -360,8 +360,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option  | Value  | Default | Description          |
 |---------|--------|---------|----------------------|
-| `icon`  | String | ''      | The icon to display. |
-| `ratio` | Number | 1       | The icon size ratio. |
+| `icon`  | String | `''`      | The icon to display. |
+| `ratio` | Number | `1`       | The icon size ratio. |
 
 ***
 

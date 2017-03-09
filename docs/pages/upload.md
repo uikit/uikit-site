@@ -165,29 +165,29 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option | Value | Default | Description |
 | --- | --- |
-| `url` | String | '' | The request url. |
-| `multiple` | Boolean | false | Allow multiple files to be uploaded. |
-| `name` | String | 'files[]' | The name parameter. |
-| `type` | String | POST | The request type. |
-| `params` | Object | {} | Additional parameters. |
-| `allow` | String | false | File name filter. (eg. *.png) |
-| `mime` | String | false | File MIME type filter. (eg. images/*) |
-| `concurrent` | Number | 1 | Number of files that will be uploaded simultaneously. |
-| `data-type` | String | (xml, json, script, or html) | The expected response data type. |
-| `msg-invalid-mime` | String | Invalid File Type: %s | Invalid MIME type message. |
-| `msg-invalid-name` | String | Invalid File Name: %s | Invalid name message. |
-| `cls-dragover` | String | 'uk-dragover' | File name filter. |
-| `abort` | Function | null | The abort callback. |
-| `before-all` | Function | null | The beforeAll callback. |
-| `before-send` | Function | null | The beforeSend callback. |
-| `complete` | Function | null | The complete callback. |
-| `complete-all` | Function | null | The completeAll callback. |
-| `error` | Function | null | The error callback. |
-| `load` | Function | null | The load callback. |
-| `load-end` | Function | null | The loadEnd callback. |
-| `load-start` | Function | null | The loadStart callback. |
-| `progress` | Function | null | The progress callback. |
-| `fail` | Function | alert | The fail callback. If name or MIME type are invalid. |
+| `url` | String | `''` | The request url. |
+| `multiple` | Boolean | `false` | Allow multiple files to be uploaded. |
+| `name` | String | `files[]` | The name parameter. |
+| `type` | String | `POST` | The request type. |
+| `params` | Object | `{}` | Additional parameters. |
+| `allow` | String | `false` | File name filter. (eg. *.png) |
+| `mime` | String | `false` | File MIME type filter. (eg. images/*) |
+| `concurrent` | Number | `1` | Number of files that will be uploaded simultaneously. |
+| `data-type` | String | `''' | The expected response data type: xml, json, script, or html |
+| `msg-invalid-mime` | String | `Invalid File Type: %s` | Invalid MIME type message. |
+| `msg-invalid-name` | String | `Invalid File Name: %s` | Invalid name message. |
+| `cls-dragover` | String | `uk-dragover` | File name filter. |
+| `abort` | Function | `null` | The abort callback. |
+| `before-all` | Function | `null` | The beforeAll callback. |
+| `before-send` | Function | `null` | The beforeSend callback. |
+| `complete` | Function | `null` | The complete callback. |
+| `complete-all` | Function | `null` | The completeAll callback. |
+| `error` | Function | `null` | The error callback. |
+| `load` | Function | `null` | The load callback. |
+| `load-end` | Function | `null` | The loadEnd callback. |
+| `load-start` | Function | `null` | The loadStart callback. |
+| `progress` | Function | `null` | The progress callback. |
+| `fail` | Function | `alert` | The fail callback. If name or MIME type are invalid. |
 
 ***
 

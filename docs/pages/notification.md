@@ -152,11 +152,11 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option     | Value   | Default    | Description                                                         |
 |------------|---------|------------|---------------------------------------------------------------------|
-| `message ` | String  | false      | Notification message to show.                                       |
-| `status`   | String  | null       | Notification status color.                                          |
-| `timeout`  | Integer | 5000       | Visibility duration until a notification disappears.                |
-| `group`    | String  | null       | Useful, if you want to close all notifications in a specific group. |
-| `pos`      | String  | top-center | Display corner.                                                     |
+| `message ` | String  | `false`      | Notification message to show.                                       |
+| `status`   | String  | `null`       | Notification status color.                                          |
+| `timeout`  | Integer | `5000`       | Visibility duration until a notification disappears.                |
+| `group`    | String  | `null`       | Useful, if you want to close all notifications in a specific group. |
+| `pos`      | String  | `top-center` | Display corner.                                                     |
 
 ***
 

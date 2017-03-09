@@ -11,7 +11,7 @@ Any content, like a button, can toggle the drop component. Just add the `uk-drop
 <div uk-drop></div>
 ```
 
-A dropdown can be enabled by either hovering or clicking the toggle. Just add the `mode: click` option to the attribute. If you want to group the toggle and the dropdown, you can just add the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around both.
+A dropdown can be enabled by hovering and clicking the toggle. Just add the `mode: click` option to the attribute to force `click` mode only. If you want to group the toggle and the dropdown, you can just add the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around both.
 
 ```html
 <div class="uk-inline">
@@ -220,7 +220,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 |------------------|------------------------|---------------|----------------------------------------------------------------------------------|
 | `toggle`         | String, Boolean  | `true`          | CSS selector for the element to be used as the toggler. By default, the preceding element is used.  |
 | `pos`            | String                 | `bottom-left` | The position of the drop.                                                               |
-| `mode`           | String           | `hover`         | The drop trigger, either `hover` or `click` behavior.                                                       |
+| `mode`           | String           | `click, hover`         | Comma separated list of drop trigger behaviour modes: `hover`, `click`                                                       |
 | `delay-show`     | Number                 | `0`             | Delay time in milliseconds before a drop is displayed in hover mode.                       |
 | `delay-hide`     | Number                 | `800`           | Delay time in milliseconds before a drop is hidden in hover mode.                          |
 | `boundary`       | String           | `window`        | CSS selector of the element to maintain the drop's visibility.                            |
