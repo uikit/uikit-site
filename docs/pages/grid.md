@@ -170,8 +170,6 @@ Add the `.uk-grid-divider` class to separate grid cells with lines. This class c
 
 To match the height of the direct child of each cell, add the `.uk-grid-match` class. This is needed to match the height of cards from the [Card component](card.md).
 
-You can also match the height of the grid cells themselves. Just add the `.uk-grid-item-match` class instead.
-
 ```html
 <div class="uk-grid-match" uk-grid>....</div>
 ```
@@ -189,6 +187,41 @@ You can also match the height of the grid cells themselves. Just add the `.uk-gr
     </div>
 </div>
 ```
+
+***
+
+### Match only one cell
+
+You can also match the height of the grid cells themselves. Just add the `.uk-grid-item-match` class to the grid item that you want to match.
+
+
+```html
+<div uk-grid>
+    <div class="uk-grid-item-match"></div>
+    <div></div>
+</div>
+```
+
+```example
+<div class="uk-child-width-expand@s" uk-grid>
+    <div class="uk-grid-item-match">
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3>Heading</h3>
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+     </div>
+    <div>
+        <h3>Heading</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </p>
+    </div>
+</div>
+```
+
+***
 
 ### JavaScript
 
