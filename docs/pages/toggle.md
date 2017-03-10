@@ -116,6 +116,7 @@ A toggle can be triggered in different ways. Just add the `mode` option to the `
 |----------|----------------------------------------------------------------------------------------|
 | `hover`  | The toggle will be triggered on hover.                                                 |
 | `click ` | The toggle will be triggered on click. This is the default value.                      |
+| `click, hover` | The toggle will be triggered on click and hover.                                 |
 | `media`  | The toggling behavior depends on the viewport width. More information [below](#media). |
 
 
@@ -156,7 +157,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `target` | String | `false` | CSS selector of the element(s) to toggle. |
-| `mode` | String | `click` | Trigger behavior, either `hover` or `click` |
+| `mode` | String | `click` | Comma separated list of trigger behaviour modes. (`hover`, `click`, `media`) |
 | `cls` | String | `false` | The class that is being toggled. Defaults to the `hidden` attribute. |
 | `animation` | String | `false` | Space separated names of [animations](animation.md) to use, comma separated for out animation. |
 | `duration` | Number | `200` | Animation duration in milliseconds. |

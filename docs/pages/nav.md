@@ -368,14 +368,14 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option        | Value        | Default      | Description                                                                       |
 |---------------|--------------|--------------|-----------------------------------------------------------------------------------|
-| `targets`     | CSS selector | > .uk-parent | The element(s) to toggle.                                                         |
-| `toggle `     | CSS selector | > a          | The toggle element(s).                                                            |
-| `content`     | CSS selector | > ul         | The content element(s).                                                           |
-| `collapsible` | Boolean      | true         | Allow all items to be closed.                                                     |
-| `multiple`    | Boolean      | false        | Allow multiple open items.                                                        |
-| `transition`  | String       | ease         | The transition to use.                                                            |
-| `animation`   | String       | true         | The space separated names of animations to use. Comma separate for animation out. |
-| `duration`    | Number       | 200          | The animation duration in milliseconds.                                           |
+| `targets`     | CSS selector | `> .uk-parent` | The element(s) to toggle.                                                         |
+| `toggle `     | CSS selector | `> a`          | The toggle element(s).                                                            |
+| `content`     | CSS selector | `> ul`         | The content element(s).                                                           |
+| `collapsible` | Boolean      | `true`         | Allow all items to be closed.                                                     |
+| `multiple`    | Boolean      | `false`        | Allow multiple open items.                                                        |
+| `transition`  | String       | `ease`         | The transition to use.                                                            |
+| `animation`   | String       | `true`         | The space separated names of animations to use. Comma separate for animation out. |
+| `duration`    | Number       | `200`          | The animation duration in milliseconds.                                           |
 
 ***
 

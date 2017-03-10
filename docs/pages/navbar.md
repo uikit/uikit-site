@@ -877,17 +877,17 @@ By default, the dropbar overlays the site content. Add the `dropbar-mode: push;`
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option            | Value               | Default | Description                                                           |
-|------------------|---------------------|---------|-----------------------------------------------------------------------|
-| `align`          | left, right, center | left    | Dropdown alignment.                                                   |
-| `mode`           | hover, click        | hover   | Dropdown trigger behavior.                                            |
-| `delay-show`     | Number              | 0       | Delay time in hover mode before a dropdown is shown in milliseconds.  |
-| `delay-hide`     | Number              | 800     | Delay time in hover mode before a dropdown is hidden in milliseconds. |
-| `boundary`       | CSS selector        | window  | Referenced element to keep the dropdown's visibility.                 |
-| `boundary-align` | Boolean             | false   | Align the dropdown to the boundary.                                   |
-| `offset`         | Number              | 0       | The offset of the dropdown container.                                 |
-| `dropbar `       | Boolean             | false   | Enable or disable dropbar behavior.                                   |
-| `dropbar-mode`   | slide, push         | slide   | The mode in which the dropbar appears.                                |
-| `duration`       | Number              | 200     | The dropbar transition duration.                                      |
+|-------------------|---------------------|---------|-----------------------------------------------------------------------|
+| `align`          | String               | `left`    | Dropdown alignment: `left`, `right`, `center`                                                   |
+| `mode`           | String        | `click, hover`   | Comma separated list of dropdown trigger behavior modes: `click`, `hover`                                           |
+| `delay-show`     | Number              | `0`       | Delay time in hover mode before a dropdown is shown in milliseconds.  |
+| `delay-hide`     | Number              | `800`     | Delay time in hover mode before a dropdown is hidden in milliseconds. |
+| `boundary`       | CSS selector        | `window`  | Referenced element to keep the dropdown's visibility.                 |
+| `boundary-align` | Boolean             | `false`   | Align the dropdown to the boundary.                                   |
+| `offset`         | Number              | `0`       | The offset of the dropdown container.                                 |
+| `dropbar `       | Boolean             | `false`   | Enable or disable dropbar behavior.                                   |
+| `dropbar-mode`   | String         | `slide`   | The mode in which the dropbar appears: `slide`, `push`                                |
+| `duration`       | Number              | `200`     | The dropbar transition duration.                                      |
 
 ***
 

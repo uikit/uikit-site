@@ -168,7 +168,9 @@ Add the `.uk-grid-divider` class to separate grid cells with lines. This class c
 
 ## Match height
 
-Thanks to flexbox, the height of grid cells match automatically. To match the height of the direct child of each cell, add the `.uk-grid-match` class as a CSS only solution. This is needed to match the height of cards from the [Card component](card.md), for example.
+To match the height of the direct child of each cell, add the `.uk-grid-match` class. This is needed to match the height of cards from the [Card component](card.md).
+
+You can also match the height of the grid cells themselves. Just add the `.uk-grid-item-match` class instead.
 
 ```html
 <div class="uk-grid-match" uk-grid>....</div>
