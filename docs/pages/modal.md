@@ -310,8 +310,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `center` | Boolean | `false` | Center the modal. |
-| `esc-close` | Boolean | `true` | Close the modal when the _Esc_ key is pressed. |
-| `bg-close` | Boolean | `true` | Close the modal when the background is clicked. |
+| `escClose` | Boolean | `true` | Close the modal when the _Esc_ key is pressed. |
+| `bgClose` | Boolean | `true` | Close the modal when the background is clicked. |
 | `stack` | Boolean | `false` | Stack modals, when more than one is open. By default, the previous modal will be hidden. |
 | `container` | String | `True` | Define a target container via a selector to specify where the modal should be appended in the DOM. |
 
