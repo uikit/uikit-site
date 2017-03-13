@@ -192,8 +192,7 @@ To match the height of the direct child of each cell, add the `.uk-grid-match` c
 
 ### Match only one cell
 
-You can also match the height of the grid cells themselves. Just add the `.uk-grid-item-match` class to the grid item that you want to match.
-
+You can also match the height of the direct child of just one cell. Just add the `.uk-grid-item-match` class to the grid item which child do you want to match.
 
 ```html
 <div uk-grid>
@@ -215,7 +214,7 @@ You can also match the height of the grid cells themselves. Just add the `.uk-gr
     <div>
         <h3>Heading</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
     </div>
 </div>
