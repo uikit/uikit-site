@@ -8,7 +8,7 @@ UIkit's icon library contains a number of SVG icons bundled in a single JavaScri
 
 ## Add and overwrite icons
 
-Your can overwrite any of the default icons from UIkit and create additional ones. To prepare, please [setup UIkit from Github source](setup.md#compile-from-github-source). You can now add your own SVG icons and include them in UIkit's build process.
+Your can overwrite any of the default icons from UIkit and create additional ones. To prepare, please [setup UIkit from Github source](installation.md#compile-from-github-source). You can now add your own SVG icons and include them in UIkit's build process.
 
 The build process will check two places for additional icon files:
 
