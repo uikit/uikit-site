@@ -222,7 +222,7 @@ To create a modal, that fills the entire page, add the `.uk-modal-full` class. I
 ```html
 <div id="my-id" class="uk-modal-full" uk-modal>
     <div class="uk-modal-dialog">
-        <button class="uk-modal-close-full" type="button" uk-close></button>
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
     </div>
 </div>
 ```
@@ -234,7 +234,7 @@ Using the [grid](grid.md) and [width](width.md) classes, you can create a nice, 
 
 <div id="modal-full" class="uk-modal-full" uk-modal>
     <div class="uk-modal-dialog">
-        <button class="uk-modal-close-full" type="button" uk-close></button>
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
             <div class="uk-background-cover" style="background-image: url('../docs/images/photo.jpg');" uk-height-viewport></div>
             <div class="uk-padding-large">
@@ -363,7 +363,7 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 
     <script>
         (function ($) {
-    
+
             $('#modal-dialog').on('click', function (e) {
                 e.preventDefault();
                 $(this).blur();
@@ -397,7 +397,7 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
             });
 
         })(jQuery);
-        
+
     </script>
 
 </p>
