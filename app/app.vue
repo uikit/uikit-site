@@ -1,6 +1,6 @@
 <template>
 
-    <div>
+    <div class="uk-offcanvas-content">
 
         <router-view></router-view>
 
