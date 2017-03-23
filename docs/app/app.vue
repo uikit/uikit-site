@@ -1,6 +1,6 @@
 <template>
 
-    <div class="uk-offcanvas-content">
+    <div>
 
         <div class="uk-navbar-container tm-navbar-container" uk-sticky="media: 960">
             <div class="uk-container uk-container-expand">

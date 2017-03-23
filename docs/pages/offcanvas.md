@@ -9,41 +9,33 @@ To apply this component, add the `uk-offcanvas` attribute to a parent `<div>` el
 You can use any element to toggle an off-canvas sidebar. To enable the necessary JavaScript, add the `uk-toggle` attribute. An `<a>` element needs to be linked to the id of the off-canvas container. If you are using another element, like a button, just add the `uk-toggle="target: #ID"` attribute to target the id of the off-canvas container.
 
 ```html
-<div class="uk-offcanvas-content">
+<!-- This is a button toggling the off-canvas -->
+<button uk-toggle="target: #my-id" type="button"></button>
 
-    <!-- This is a button toggling the off-canvas -->
-    <button uk-toggle="target: #my-id" type="button"></button>
-    
-    <!-- This is an anchor toggling the off-canvas -->
-    <a href="#my-id" uk-toggle></a>
-    
-    <!-- This is the off-canvas -->
-    <div id="my-id" uk-offcanvas>
-        <div class="uk-offcanvas-bar"></div>
-    </div>
-    
+<!-- This is an anchor toggling the off-canvas -->
+<a href="#my-id" uk-toggle></a>
+
+<!-- This is the off-canvas -->
+<div id="my-id" uk-offcanvas>
+    <div class="uk-offcanvas-bar"></div>
 </div>
 ```
 
 ```example
-<div class="uk-offcanvas-content">
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas">Open</button>
 
-    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-usage">Open</button>
-    
-    <a href="#offcanvas-usage" uk-toggle>Open</a>
+<a href="#offcanvas" uk-toggle>Open</a>
 
-    <div id="offcanvas-usage" uk-offcanvas>
-        <div class="uk-offcanvas-bar">
-    
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-    
-            <h3>Title</h3>
-    
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div id="offcanvas" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
 
-        </div>
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <h3>Title</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
     </div>
-    
 </div>
 ```
 
@@ -58,23 +50,18 @@ To add an overlay, blanking out the page, add the `overlay: true` parameter to t
 ```
 
 ```example
-<div class="uk-offcanvas-content">
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay">Open</button>
 
-    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay">Open</button>
+<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
 
-    <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar">
-    
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-    
-            <h3>Title</h3>
-    
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h3>Title</h3>
 
-        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
     </div>
-    
 </div>
 ```
 
@@ -89,22 +76,18 @@ Add the `flip: true` parameter to the `uk-offcanvas` attribute to adjust its ali
 ```
 
 ```example
-<div class="uk-offcanvas-content">
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip">Open</button>
 
-    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip">Open</button>
+<div id="offcanvas-flip" uk-offcanvas="flip: true">
+    <div class="uk-offcanvas-bar">
 
-    <div id="offcanvas-flip" uk-offcanvas="flip: true">
-        <div class="uk-offcanvas-bar">
-    
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-    
-            <h3>Title</h3>
-    
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-        </div>
+        <h3>Title</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
     </div>
-    
 </div>
 ```
 
@@ -123,68 +106,64 @@ By default, the off-canvas slides in. But you can actually choose between differ
 | `mode: none`   | The off-canvas appears and overlays the content without an animation.         |
 
 ```html
-<div id="my-id" uk-offcanvas="mode: push">...</div>
+<div id="#my-id" uk-offcanvas="mode: push">...</div>
 ```
 
 ```example
-<div class="uk-offcanvas-content">
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-slide">Slide</button>
 
-    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-slide">Slide</button>
-    
-    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push">Push</button>
-    
-    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-reveal">Reveal</button>
-    
-    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-none">None</button>
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push">Push</button>
 
-    <div id="offcanvas-slide" uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar">
-    
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-       
-            <h3>Title</h3>
-    
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    
-        </div>
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-reveal">Reveal</button>
+
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-none">None</button>
+
+<div id="offcanvas-slide" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <h3>Title</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
     </div>
-    
-    <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
-        <div class="uk-offcanvas-bar">
-        
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-    
-            <h3>Title</h3>
-    
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
-        </div>
-    </div>
-    
-    <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
-        <div class="uk-offcanvas-bar">
-    
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-    
-            <h3>Title</h3>
-    
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+    <div class="uk-offcanvas-bar">
 
-        </div>
-    </div>
-    
-    <div id="offcanvas-none" uk-offcanvas="mode: none; overlay: true">
-        <div class="uk-offcanvas-bar">
-    
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-    
-            <h3>Title</h3>
-    
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-        </div>
+        <h3>Title</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
     </div>
-    
+</div>
+
+<div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <h3>Title</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    </div>
+</div>
+
+<div id="offcanvas-none" uk-offcanvas="mode: none; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <h3>Title</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    </div>
 </div>
 ```
 
@@ -203,32 +182,28 @@ You can use the [Nav component](nav.md) inside an off-canvas to create a mobile 
 ```
 
 ```example
-<div class="uk-offcanvas-content">
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">Open</button>
 
-    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">Open</button>
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
 
-    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar">
-    
-            <ul class="uk-nav uk-nav-default">
-                <li class="uk-active"><a href="#">Active</a></li>
-                <li class="uk-parent">
-                    <a href="#">Parent</a>
-                    <ul class="uk-nav-sub">
-                        <li><a href="#">Sub item</a></li>
-                        <li><a href="#">Sub item</a></li>
-                    </ul>
-                </li>
-                <li class="uk-nav-header">Header</li>
-                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
-            </ul>
-    
-        </div>
+        <ul class="uk-nav uk-nav-default">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li class="uk-parent">
+                <a href="#">Parent</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="#">Sub item</a></li>
+                    <li><a href="#">Sub item</a></li>
+                </ul>
+            </li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+        </ul>
+
     </div>
-    
 </div>
 ```
 
