@@ -26,7 +26,11 @@ $section-primary-background: #AD3456;
 
 **Note** The example uses the styling of the included default theme. Alternatively, you can import `variables.scss` and `uikit.scss` to only include the core styling.
 
-(When using the default theme, you have to take a look into the mixins which will be overwritten within the default theme again. Sass doesn't allow overloading mixins. Changes done to a mixin which is overwritten in the default theme, will have no impact on the computed CSS file.) TODO: this will be changed for the release
+<!-- TODO: this will be changed for the release
+When using the default theme, you have to take a look into the mixins which will be overwritten within the default theme again. Sass doesn't allow overloading mixins. Changes done to a mixin which is overwritten in the default theme, will have no impact on the computed CSS file.  
+-->
+
+***
 
 ## Create a UIkit theme
 
@@ -88,6 +92,8 @@ Should there be neither a variable nor a hook available, you can also create you
     .uk-card a { color: #f00; }
 }
 ```
+
+***
 
 ## How to structure your theme
 
