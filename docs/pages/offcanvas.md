@@ -4,45 +4,31 @@
 
 ## Usage
 
-To apply this component, add the `uk-offcanvas` attribute to a parent `<div>` element and use the following classes.
+To apply this component, you first need to wrap your page's content inside a `<div>` element and add the `uk-offcanvas-content` class.
 
-| Class              | Description                                                                                              |
-|--------------------|----------------------------------------------------------------------------------------------------------|
-| `.uk-offcanvas-bar` |  Add this class to a child `<div>` element.                                           |
-| `.uk-offcanvas-content`   | Wrap your page's content inside a `<div>` element and add this class.                                               |
-| `.uk-offcanvas-close`  | Add this class and the `uk-close` attribute to an `<a>` or `<button>` element to create a close button and enable its functionality.                                           |
+Add the `uk-offcanvas` attribute to a parent `<div>` element to create the Off-canvas itself. Then add the `.uk-offcanvas-bar` class to a child `<div>` element.
 
 You can use any element to toggle an off-canvas sidebar. To enable the necessary JavaScript, add the `uk-toggle` attribute. An `<a>` element needs to be linked to the id of the off-canvas container. If you are using another element, like a button, just add the `uk-toggle="target: #ID"` attribute to target the id of the off-canvas container.
 
 ```html
-<body>
-    <div class="uk-offcanvas-content">
+<div class="uk-offcanvas-content">
 
-        <!-- The whole page content goes here -->
-
-        <!-- This is a button toggling the off-canvas -->
-        <button uk-toggle="target: #my-id" type="button"></button>
-        
-        <!-- This is an anchor toggling the off-canvas -->
-        <a href="#my-id" uk-toggle></a>
-        
-        <!-- This is the off-canvas -->
-        <div id="my-id" uk-offcanvas>
-            <div class="uk-offcanvas-bar">
-                
-                <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-            </div>
-        </div>
-        
+    <!-- This is a button toggling the off-canvas -->
+    <button uk-toggle="target: #my-id" type="button"></button>
+    
+    <!-- This is an anchor toggling the off-canvas -->
+    <a href="#my-id" uk-toggle></a>
+    
+    <!-- This is the off-canvas -->
+    <div id="my-id" uk-offcanvas>
+        <div class="uk-offcanvas-bar"></div>
     </div>
-</body>
+    
+</div>
 ```
 
 ```example
 <div class="uk-offcanvas-content">
-
-    <!-- The whole page content goes here -->
 
     <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-usage">Open</button>
     
@@ -109,7 +95,7 @@ Add the `flip: true` parameter to the `uk-offcanvas` attribute to adjust its ali
 
     <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip">Open</button>
 
-    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+    <div id="offcanvas-flip" uk-offcanvas="flip: true">
         <div class="uk-offcanvas-bar">
     
             <button class="uk-offcanvas-close" type="button" uk-close></button>
@@ -221,31 +207,7 @@ You can use the [Nav component](nav.md) inside an off-canvas to create a mobile 
 ```example
 <div class="uk-offcanvas-content">
 
-    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary">Primary Nav</button>
-
-    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">Default Nav</button>
-
-    <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-    
-            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                <li class="uk-active"><a href="#">Active</a></li>
-                <li class="uk-parent">
-                    <a href="#">Parent</a>
-                    <ul class="uk-nav-sub">
-                        <li><a href="#">Sub item</a></li>
-                        <li><a href="#">Sub item</a></li>
-                    </ul>
-                </li>
-                <li class="uk-nav-header">Header</li>
-                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
-            </ul>
-    
-        </div>
-    </div>
+    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">Open</button>
 
     <div id="offcanvas-nav" uk-offcanvas="overlay: true">
         <div class="uk-offcanvas-bar">
