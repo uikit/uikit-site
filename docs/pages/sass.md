@@ -15,7 +15,7 @@ To include UIkit in your project's build workflow, you need to import three SCSS
 ```scss
 // Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
-@import "uikit/src/scss/mixins.scss";
+@import "uikit/src/scss/mixins-theme.scss";
 
 // Your custom code. Set variables and overwrite mixins.
 $section-primary-background: #AD3456;
@@ -24,11 +24,7 @@ $section-primary-background: #AD3456;
 @import "uikit/src/scss/uikit-theme.scss";
 ```
 
-**Note** The example uses the styling of the included default theme. Alternatively, you can import `variables.scss` and `uikit.scss` to only include the core styling.
-
-<!-- TODO: this will be changed for the release
-When using the default theme, you have to take a look into the mixins which will be overwritten within the default theme again. Sass doesn't allow overloading mixins. Changes done to a mixin which is overwritten in the default theme, will have no impact on the computed CSS file.  
--->
+**Note** The example uses the styling of the included default theme. Alternatively, you can import `variables.scss`, `mixins.scss` and `uikit.scss` to only include the core styling.
 
 ***
 
@@ -54,7 +50,7 @@ Then, overwrite the default by setting a custom value inside your own file, i.e.
 $global-link-color: #DA7D02;
 ```
 
-The compiled CSS will then have your custom value. But not only has the global link color changed. Many components make use of the `@global-*` variables to infer their own colors, and just adapt them slightly. That way you can rapidly create a theme by just changing some global variables.
+The compiled CSS will then have your custom value.
 
 ### Use hooks
 
