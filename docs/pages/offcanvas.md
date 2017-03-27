@@ -4,7 +4,9 @@
 
 ## Usage
 
-To apply this component, add the `uk-offcanvas` attribute to a parent `<div>` element. Add the `.uk-offcanvas-bar` class to a child `<div>` element.
+To apply this component, you first need to wrap your page's content inside a `<div>` element and add the `uk-offcanvas-content` class.
+
+Add the `uk-offcanvas` attribute to a parent `<div>` element to create the Off-canvas itself. Then add the `.uk-offcanvas-bar` class to a child `<div>` element.
 
 You can use any element to toggle an off-canvas sidebar. To enable the necessary JavaScript, add the `uk-toggle` attribute. An `<a>` element needs to be linked to the id of the off-canvas container. If you are using another element, like a button, just add the `uk-toggle="target: #ID"` attribute to target the id of the off-canvas container.
 
