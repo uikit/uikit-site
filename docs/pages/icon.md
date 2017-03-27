@@ -276,7 +276,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="icon: pagekit"></span> pagekit</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: pinterest"></span> pinterest</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: soundcloud"></span> soundcloud</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: trip-advisor"></span> trip-advisor</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: tripadvisor"></span> tripadvisor</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: tumblr"></span> tumblr</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: twitter"></span> twitter</li>
         </ul>
