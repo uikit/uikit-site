@@ -140,7 +140,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="icon: tablet-landscape"></span> tablet-landscape</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: phone-landscape"></span> phone landscape</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: phone-landscape"></span> phone-landscape</li>
         </ul>
 
     </div>
