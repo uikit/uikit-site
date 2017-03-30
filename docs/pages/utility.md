@@ -486,6 +486,23 @@ With the `.uk-dropcap` class you can achieve a drop cap within a text by adding 
 
 ***
 
+## Leader
+
+To visually connect horizontal items add the `uk-leader` attribute to the element on the left. A line of characters, for example dots, will then fill the remaining space between the item and its adjacent element. This can be useful, if you want to create a pricing list.
+
+```html
+<div uk-leader></div>
+```
+
+```example
+<div class="uk-grid-small" uk-grid>
+    <div class="uk-width-expand" uk-leader>Lorem ipsum dolor sit amet</div>
+    <div>$20.90</div>
+</div>
+```
+
+***
+
 ## Logo
 
 With the new `.uk-logo` class you can easily define your logo, for example within your navbar.
