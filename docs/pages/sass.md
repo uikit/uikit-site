@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Learn how to modify the UIkit styling and create your own theme with Sass.</p>
 
-When you have [installed UIkit](installation.md) with you will find the Sass sources within the _/src/scss_ folder. This allows you to include customizations in the build process, rather than manually overwriting a lot of CSS rules by hand.
+When you have [installed UIkit](installation.md) with sources you will find the UIkit Sass version within the _/src/scss_ folder. The Sass version allows you to include customizations in the build process, rather than manually overwriting a lot of CSS rules by hand.
 
 **Note** Sass allows two different syntax version: Sass and SCSS. UIkit makes use of the SCSS syntax.
 
@@ -10,20 +10,20 @@ When you have [installed UIkit](installation.md) with you will find the Sass sou
 
 ## How to build
 
-To include UIkit in your project's build workflow, you need to import three SCSS files from UIkit in the correct order into in your own SCSS code. Then, compile your file, e.g. running `sass site.scss > site.css` or any other [Sass compiler](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#using_sass).
+To include UIkit in your project's build workflow, you need to import three SCSS files from UIkit in the correct order into in your own SCSS code. Then, compile your file, e.g. running `sass site.scss > site.css` or any other [Sass compiler](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#using_sass). Be careful to keep the correct order as described in the following example.
 
 ```scss
-// Your custom variables + variable overwrites.
+// 1. Your custom variables and variable overwrites.
 $global-link-color: #DA7D02;
 
-// Import default variables and available mixins.
+// 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";
 
-// Your custom mixin overwrites.
+// 3. Your custom mixin overwrites.
 @mixin hook-card() { color: #000; }
 
-// Import UIkit which will use the final variable values and mixins.
+// 4. Import UIkit.
 @import "uikit/src/scss/uikit-theme.scss";
 ```
 
