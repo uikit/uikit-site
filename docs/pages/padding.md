@@ -33,5 +33,7 @@ In some cases you want to remove padding from an element, rather than adding it.
 | `.uk-padding-remove`            | Removes all padding from an element.            |
 | `.uk-padding-remove-top`        | Removes top padding from an element.            |
 | `.uk-padding-remove-bottom`     | Removes bottom padding from an element.         |
+| `.uk-padding-remove-left`       | Removes left padding from an element.           |
+| `.uk-padding-remove-right`      | Removes right padding from an element.          |
 | `.uk-padding-remove-vertical`   | Removes top and bottom padding from an element. |
 | `.uk-padding-remove-horizontal` | Removes left and right padding from an element. |

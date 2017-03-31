@@ -128,6 +128,8 @@ Add one of the following classes to set auto margin. This can be useful to cente
 | Class                         | Description                                                                           |
 |-------------------------------|---------------------------------------------------------------------------------------|
 | `.uk-margin-auto`             | Sets left and right margin to auto, horizontally centering block and flex elements.   |
+| `.uk-margin-auto-top`         | Sets top margin to auto, pushing block and flex elements to the bottom.               |
+| `.uk-margin-auto-bottom`      | Sets bottom margin to auto, pushing block and flex elements to the top.               |
 | `.uk-margin-auto-left`        | Sets left margin to auto, pushing block and flex elements to the right.               |
 | `.uk-margin-auto-right`       | Sets right margin to auto, pushing block and flex elements to the left                |
 | `.uk-margin-auto-vertical`    | Sets top and bottom margin to auto, vertically centering only flex elements.          |
