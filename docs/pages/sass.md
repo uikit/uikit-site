@@ -79,6 +79,18 @@ Then, inject additional CSS by using the hook inside your own SCSS file, i.e. to
 @mixin hook-card() { color: #000; }
 ```
 
+### Inverse hooks
+
+Inverse hooks allow you to customize how a component is styled when used in combination with the `.uk-light` or `.uk-dark` modifiers (check out the [Inverse component](inverse.md) for details). These hooks are handled a little differently in the Sass version compared to the Less version. In the Sass version, every component has its own inverse hooks. You can see all available ones when going through the file `src/scss/mixins.scss`.
+
+For example, you can make a default button appear with a futuristic green background whenever it is used as an inverse version.
+
+```scss
+@mixin hook-inverse-button-default(){
+    background: lime;
+}
+```
+
 ### Miscellaneous hooks
 
 Should there be neither a variable nor a hook available, you can also create your own selector. To do so, e.g. use the _hook-card-misc()_ mixin of the Card component and write a selector inside. This will sort your new selector to the right place of the compiled CSS file. Just add the following lines to your own SCSS file, i.e. to `site.scss` as described above:
