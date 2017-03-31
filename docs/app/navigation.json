@@ -5,6 +5,7 @@
         "Introduction": "introduction",
         "Installation": "installation",
         "Less": "less",
+        "Sass": "sass",
         "JavaScript": "javascript",
         "Webpack": "webpack",
         "Custom icons": "custom-icons",

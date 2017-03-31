@@ -486,6 +486,23 @@ With the `.uk-dropcap` class you can achieve a drop cap within a text by adding 
 
 ***
 
+## Leader
+
+To visually connect horizontal items add the `uk-leader` attribute to the element on the left. A line of characters, for example dots, will then fill the remaining space between the item and its adjacent element. This can be useful when creating elements like a pricing list or a table of contents.
+
+```html
+<div uk-leader></div>
+```
+
+```example
+<div class="uk-grid-small" uk-grid>
+    <div class="uk-width-expand" uk-leader>Lorem ipsum dolor sit amet</div>
+    <div>$20.90</div>
+</div>
+```
+
+***
+
 ## Logo
 
 With the new `.uk-logo` class you can easily define your logo, for example within your navbar.
@@ -564,10 +581,10 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 
 ```example
 <!-- Targets the SVG image -->
-<img src="../assets/uikit/src/images/symbols/cloud-download.svg" width="40" height="40" uk-svg>
+<img src="../assets/uikit/src/images/icons/cloud-download.svg" width="40" height="40" uk-svg>
 
 <!-- Targets a symbol inside the SVG image -->
-<img src="../assets/uikit/dist/images/icons.svg#cloud-upload" width="40" height="40" uk-svg>
+<img src="../assets/uikit/tests/images/icons.svg#cloud-upload" width="40" height="40" uk-svg>
 ```
 
 SVGs will adapt the current color for their stroke and fill color. To prevent this behavior,  you can add the `uk-preserve` class to the SVG itself or to elements inside the SVG.
