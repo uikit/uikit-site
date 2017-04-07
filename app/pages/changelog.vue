@@ -1,6 +1,6 @@
 <template>
 
-    <div class="uk-section-primary tm-section uk-preserve-color">
+    <div class="uk-section-primary tm-section-texture uk-preserve-color">
 
         <navbar class="uk-navbar-transparent uk-light"></navbar>
 
