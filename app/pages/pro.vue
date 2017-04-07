@@ -43,26 +43,26 @@
             <div class="uk-child-width-expand@m uk-child-width-1-2@s" uk-grid>
                 <div>
 
-                    <h3>Elements</h3>
-                    <p>Build pages with ready to use UIkit elements like buttons, cards, accordion and many more.</p>
-
-                </div>
-                <div>
-
-                    <h3>Header Layouts</h3>
-                    <p>Modify your sticky navbar to dropdown or configure where items inside the header should be displayed.</p>
+                    <h3>What is Pro?</h3>
+                    <p>YOOtheme Pro provides a smooth website creating experience in an all-in-one interface that produces perfect UIkit markup.</p>
 
                 </div>
                 <div>
 
                     <h3>Page Builder</h3>
-                    <p>Create your UIkit pages in next to no time. Our innovative page builder makes it possible to arrange sections.</p>
+                    <p>The drag and drop page builder allows you to create websites in next to no time. No need to write any UIkit markup yourself.</p>
 
                 </div>
                 <div>
 
-                    <h3>Real-Time Preview</h3>
-                    <p>Implement your ideas and see immediately how they look like. Our real-time-preview makes it</p>
+                    <h3>Live Preview</h3>
+                    <p>Form your ideas and immediately see what they look like in YOOtheme Pro. The real-time preview assures a smooth workflow.</p>
+
+                </div>
+                <div>
+
+                    <h3>Elements</h3>
+                    <p>Build pages with ready-to-use elements made from UIkit components, like buttons, cards, accordions and much more.</p>
 
                 </div>
             </div>
@@ -79,20 +79,24 @@
                     <div class="uk-inline uk-width-xlarge">
                         <h1 class="uk-h6 tm-h6 uk-margin-remove">Style Customizer</h1>
                         <h2 class="uk-h1 uk-margin-top">Style Customizer</h2>
-                        <p class="uk-text-large tm-text-large">Arrange visual appearance of your site, including colors, fonts, margins and other style related properties with a full style customizer for our UIkit CSS framework.</p>
+                        <p class="uk-text-large tm-text-large">Modify the visual appearance of your site – including colors, fonts, margins and other style related properties – with a sophisticated style customizer for UIkit.</p>
                     </div>
 
                 </div>
                 <div class="uk-width-2-3@m">
 
-                    <img src="images/pro/style-customizer.gif">
+                    <img src="images/pro/style-customizer.gif" class="uk-box-shadow-xlarge">
 
                 </div>
             </div>
 
-            <h2 class="uk-text-center uk-margin-xlarge-top uk-margin-large-bottom">Pre-built Styles</h2>
 
-            <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+            <div class="uk-width-xlarge uk-margin-auto uk-text-center uk-margin-large-bottom">
+                <h2 class="uk-text-center uk-margin-xlarge-top uk-margin-large-bottom">Pre-built Styles</h2>
+                <p class="uk-text-large tm-text-large">Try out any UIkit theme with one click. You can switch between styles from the library and your content adapts automatically.</p>
+            </div>
+
+            <div class="uk-child-width-1-4@m uk-child-width-1-2@s" uk-grid>
                 <div>
 
                     <a class="uk-display-inline-block uk-box-shadow-large uk-box-shadow-hover-xlarge" href="https://demo.yootheme.com/wordpress/copper-hill">
@@ -148,10 +152,10 @@
             <div class="uk-width-xlarge uk-margin-auto uk-text-center uk-margin-large-bottom">
                 <h1 class="uk-h6 tm-h6 uk-margin-remove">The Layout Library</h1>
                 <h2 class="uk-h1 uk-margin-top">Incredible Layouts</h2>
-                <p class="uk-text-large tm-text-large">Building a layout has never been easier. Anything you can think of can be built. Just imagine and create with YOOtheme Pro.</p>
+                <p class="uk-text-large tm-text-large">Load existing layouts or create your own and save it to the library. Anything you can think of can be built with YOOtheme Pro.</p>
             </div>
 
-            <div class="uk-child-width-1-4@m uk-child-width-1-3@s uk-child-width-1-2" uk-grid>
+            <div class="uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2" uk-grid>
                 <div>
 
                     <a class="uk-display-inline-block uk-box-shadow-large uk-box-shadow-hover-xlarge" href="https://demo.yootheme.com/wordpress/copper-hill">
@@ -209,7 +213,7 @@
         <div class="uk-container uk-text-center">
 
             <h2 class="uk-h1">Get YOOtheme Pro</h2>
-            <p class="uk-text-large tm-text-large uk-margin-medium-bottom">dsafadsf asdfasdf asdf asdf asdf asf</p>
+            <p class="uk-text-large tm-text-large uk-margin-medium-bottom">The all-in-one websitebuilder and theme.</p>
 
             <div class="uk-grid-small uk-child-width-auto uk-flex-inline" uk-grid>
                 <div>
