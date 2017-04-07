@@ -240,9 +240,9 @@ UIkit provides a number of useful classes to alter a block element's height.
 | Class                                             | Description                                                                                   |
 |---------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | `.uk-height-1-1`                                  | This class applies a height of 100%. This only works, if the parent element has a set height. |
-| `.uk-height-small `<br> `.uk-max-height-small `   | These classes apply a height or max-height of _150px_.                                        |
-| `.uk-height-medium `<br> `.uk-max-height-medium ` | These classes apply a height or max-height of _300px_.                                        |
-| `.uk-height-large `<br> `.uk-max-height-large `   | These classes apply a height or max-height of _450px_.                                        |
+| `.uk-height-small `<br> `.uk-height-max-small `   | These classes apply a height or max-height of _150px_.                                        |
+| `.uk-height-medium `<br> `.uk-height-max-medium ` | These classes apply a height or max-height of _300px_.                                        |
+| `.uk-height-large `<br> `.uk-height-max-large `   | These classes apply a height or max-height of _450px_.                                        |
 
 ```html
 <div class="uk-height-small"></div>
