@@ -3,7 +3,7 @@
 
     <div class="uk-section-primary tm-section-intro">
 
-        <navbar class="uk-navbar-transparent uk-light"></navbar>
+        <navbar class="uk-light" uk-sticky="media: 960;show-on-up: true;animation: uk-animation-slide-top;cls-inactive: uk-navbar-transparent"></navbar>
 
         <div class="uk-section uk-padding-remove-bottom">
             <div class="uk-container">
