@@ -271,6 +271,24 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
+                        <img src="images/pro/layout-horizon-overview.jpg">
+
+                        <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
+
+                        <div class="uk-position-center">
+                            <div class="uk-overlay uk-transition-fade uk-light">
+                                <h3 class="uk-h4">View</h3>
+                            </div>
+                        </div>
+
+                        <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/horizon"></a>
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
                         <img src="images/pro/layout-sonic.jpg">
 
                         <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
@@ -282,24 +300,6 @@
                         </div>
 
                         <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/sonic"></a>
-                    </div>
-
-                </div>
-
-                <div>
-
-                    <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-fjord.jpg">
-
-                        <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
-
-                        <div class="uk-position-center">
-                            <div class="uk-overlay uk-transition-fade uk-light">
-                                <h3 class="uk-h4">View</h3>
-                            </div>
-                        </div>
-
-                        <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/fjord"></a>
                     </div>
 
                 </div>
@@ -325,6 +325,24 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
+                        <img src="images/pro/layout-sonic-location.jpg">
+
+                        <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
+
+                        <div class="uk-position-center">
+                            <div class="uk-overlay uk-transition-fade uk-light">
+                                <h3 class="uk-h4">View</h3>
+                            </div>
+                        </div>
+
+                        <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/sonic"></a>
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
                         <img src="images/pro/layout-max.jpg">
 
                         <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
@@ -343,7 +361,130 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
+                        <img src="images/pro/layout-joline-spots-case-study.jpg">
+
+                        <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
+
+                        <div class="uk-position-center">
+                            <div class="uk-overlay uk-transition-fade uk-light">
+                                <h3 class="uk-h4">View</h3>
+                            </div>
+                        </div>
+
+                        <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/joline"></a>
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
+                        <img src="images/pro/layout-fjord.jpg">
+
+                        <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
+
+                        <div class="uk-position-center">
+                            <div class="uk-overlay uk-transition-fade uk-light">
+                                <h3 class="uk-h4">View</h3>
+                            </div>
+                        </div>
+
+                        <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/fjord"></a>
+                    </div>
+
+                </div>
+                <div>
+
+                    <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
                         <img src="images/pro/layout-horizon.jpg">
+
+                        <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
+
+                        <div class="uk-position-center">
+                            <div class="uk-overlay uk-transition-fade uk-light">
+                                <h3 class="uk-h4">View</h3>
+                            </div>
+                        </div>
+
+                        <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/horizon"></a>
+                    </div>
+
+                </div>
+                <div>
+
+                    <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
+                        <img src="images/pro/layout-fuse.jpg">
+
+                        <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
+
+                        <div class="uk-position-center">
+                            <div class="uk-overlay uk-transition-fade uk-light">
+                                <h3 class="uk-h4">View</h3>
+                            </div>
+                        </div>
+
+                        <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/fuse"></a>
+                    </div>
+
+                </div>
+                <div>
+
+                    <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
+                        <img src="images/pro/layout-fjord-resources.jpg">
+
+                        <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
+
+                        <div class="uk-position-center">
+                            <div class="uk-overlay uk-transition-fade uk-light">
+                                <h3 class="uk-h4">View</h3>
+                            </div>
+                        </div>
+
+                        <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/fjord"></a>
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
+                        <img src="images/pro/layout-copper-hill-lunch.jpg">
+
+                        <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
+
+                        <div class="uk-position-center">
+                            <div class="uk-overlay uk-transition-fade uk-light">
+                                <h3 class="uk-h4">View</h3>
+                            </div>
+                        </div>
+
+                        <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/copper-hill"></a>
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
+                        <img src="images/pro/layout-sonic-speakers.jpg">
+
+                        <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
+
+                        <div class="uk-position-center">
+                            <div class="uk-overlay uk-transition-fade uk-light">
+                                <h3 class="uk-h4">View</h3>
+                            </div>
+                        </div>
+
+                        <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/sonic"></a>
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
+                        <img src="images/pro/layout-horizon-products.jpg">
 
                         <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
 
@@ -361,7 +502,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-fuse.jpg">
+                        <img src="images/pro/layout-joline-about.jpg">
 
                         <div class="uk-overlay-primary tm-overlay-primary uk-position-cover uk-transition-fade"></div>
 
@@ -371,7 +512,7 @@
                             </div>
                         </div>
 
-                        <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/fuse"></a>
+                        <a class="uk-position-cover" href="https://demo.yootheme.com/wordpress/joline"></a>
                     </div>
 
                 </div>
