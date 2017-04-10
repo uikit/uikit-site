@@ -44,19 +44,19 @@
                 <div>
 
                     <h3>The Perfect Fit</h3>
-                    <p>Got a WordPress or Joomla website? YOOtheme Pro integrates UIkit for everything - from menus and widgets to pages and posts.</p>
+                    <p>Got a WordPress or Joomla website? YOOtheme Pro integrates UIkit for everything — from menus and widgets to pages and posts.</p>
 
                 </div>
                 <div>
 
                     <h3>Page Builder</h3>
-                    <p>Create websites on the fly with the drag and drop page builder - Perfect UIkit markup, taloired for your needs.</p>
+                    <p>Create websites on the fly with the drag and drop page builder — perfect UIkit markup, tailored for your needs.</p>
 
                 </div>
                 <div>
 
                     <h3>Live Preview</h3>
-                    <p>Customize every aspect of UIkit visually and arrange your content all in one intuitive interface.</p>
+                    <p>Customize every aspect of UIkit visually and arrange your content, all in one intuitive interface.</p>
 
                 </div>
                 <div>
