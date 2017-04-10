@@ -13,8 +13,8 @@
 
                         <div class="tm-intro-text uk-inline uk-width-xlarge">
                             <h1 class="uk-h6 tm-h6 uk-margin-remove">YOOtheme Pro</h1>
-                            <h2 class="uk-h1 uk-margin-top uk-margin-medium-bottom">The website builder for WordPress &amp; Joomla from the UIkit creators</h2>
-                            <a class="uk-button uk-button-default tm-button-primary" href="https://yootheme.com/pro">Get It Now</a>
+                            <h2 class="uk-h1 uk-margin-top uk-margin-medium-bottom">A theme and page builder for WordPress &amp; Joomla from the UIkit creators</h2>
+                            <a class="uk-button uk-button-default tm-button-primary" href="https://yootheme.com/pro">Get Pro</a>
                         </div>
 
                     </div>
@@ -43,8 +43,10 @@
             <div class="uk-child-width-expand@m uk-child-width-1-2@s" uk-grid>
                 <div>
 
-                    <h3>What is Pro?</h3>
-                    <p>YOOtheme Pro provides a smooth website creating experience in an all-in-one interface that produces perfect UIkit markup.</p>
+                    <h3>Got a Jooml</h3>
+                    <p>YOOtheme Pro will get you started in no-time. It comes with a page builder and style customizer for UIkit.
+
+                    YOOtheme Pro provides a smooth website creating experience in an all-in-one interface that produces perfect UIkit markup.</p>
 
                 </div>
                 <div>
@@ -214,19 +216,7 @@
 
             <h2 class="uk-h1">Get YOOtheme Pro</h2>
             <p class="uk-text-large tm-text-large uk-margin-medium-bottom">The all-in-one websitebuilder and theme.</p>
-
-            <div class="uk-grid-small uk-child-width-auto uk-flex-inline" uk-grid>
-                <div>
-
-                    <a class="uk-button uk-button-primary tm-button-primary" href="#">Buy Now</a>
-
-                </div>
-                <div>
-
-                    <a class="uk-button uk-button-default tm-button-default" href="#">Browse Themes</a>
-
-                </div>
-            </div>
+            <a class="uk-button uk-button-primary tm-button-primary" href="https://yootheme.com/pro">Get Pro</a>
 
             <hr class="uk-margin-remove-bottom uk-margin-xlarge-top">
 
