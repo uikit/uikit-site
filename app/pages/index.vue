@@ -19,10 +19,12 @@
 
                     <div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-flex-center" uk-grid>
                         <div>
-                            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large" href="./docs">Get Started</a>
+                            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="./docs">Get Started</a>
+                            <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="./docs">Get Started</a>
                         </div>
                         <div>
-                            <a class="uk-button uk-button-default tm-button-default uk-button-large tm-button-large" href="https://github.com/uikit/uikit">Github</a>
+                            <a class="uk-button uk-button-default tm-button-default uk-button-large tm-button-large uk-visible@s" href="https://github.com/uikit/uikit">Github</a>
+                            <a class="uk-button uk-button-default tm-button-default uk-hidden@s" href="https://github.com/uikit/uikit">Github</a>
                         </div>
                     </div>
 

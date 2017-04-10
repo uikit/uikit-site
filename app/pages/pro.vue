@@ -14,7 +14,8 @@
                         <div class="tm-intro-text uk-inline uk-width-xlarge">
                             <h1 class="uk-h6 tm-h6 uk-margin-remove">YOOtheme Pro</h1>
                             <h2 class="uk-h1 uk-margin-top uk-margin-medium-bottom">A theme and page builder for WordPress &amp; Joomla from the UIkit creators</h2>
-                            <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large" href="https://yootheme.com/pro">Get Pro<span class="uk-margin-small-left" uk-icon="icon: arrow-right" width="20" height="20"></span></a>
+                            <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/pro">Get Pro<span class="uk-margin-small-left" uk-icon="icon: arrow-right" width="20" height="20"></span></a>
+                            <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/pro">Get Pro</a>
                         </div>
 
                     </div>
@@ -544,44 +545,43 @@
             <hr class="uk-margin-remove-bottom uk-margin-xlarge-top">
 
             <div class="uk-margin-top uk-margin-bottom">
-                <div class="uk-child-width-auto uk-flex-between uk-flex-middle" uk-grid>
-                    <div>
+                <div class="uk-flex-middle uk-grid-margin uk-grid uk-grid-stack" uk-grid>
 
-                        <div class="uk-logo">
-                            <canvas class="uk-margin-small-right" width="28" height="34" uk-svg :src="'./images/uikit-logo.svg'"></canvas> UIkit
+                    <div class="uk-width-expand@m uk-first-column">
+                        <div class="uk-margin uk-text-left@m uk-text-center">
+                            <a class="uk-link-reset" href="./index">
+                                <div class="uk-logo">
+                                    <canvas class="uk-margin-small-right" width="28" height="34" uk-svg :src="'./images/uikit-logo.svg'"></canvas> UIkit
+                                </div>
+                             </a>
                         </div>
+                    </div>
+
+                    <div class="uk-width-xlarge@m uk-grid-margin">
+
+                            <ul class="uk-subnav uk-flex-center uk-text-center" uk-margin>
+                                <li><a href="./index">Home</a></li>
+                                <li><a href="./docs">Documentation</a></li>
+                                <li><a href="./pro">Pro</a></li>
+                                <li><a href="./changelog">Changelog</a></li>
+                                <li><a href="./download">Download</a></li>
+                            </ul>
 
                     </div>
-                    <div>
 
-                        <ul class="uk-subnav" uk-margin>
-                            <li><a href="./index">Home</a></li>
-                            <li><a href="./docs">Documentation</a></li>
-                            <li><a href="./pro">Pro</a></li>
-                            <li><a href="./changelog">Changelog</a></li>
-                            <li><a href="./download">Download</a></li>
-                        </ul>
-
-                    </div>
-                    <div>
-
-                        <div class="uk-grid-small" uk-grid>
-                            <div>
-                                <a href="https://github.com/uikit/uikit" class="uk-icon-link" uk-icon="icon: github"></a>
-                            </div>
-                            <div>
-                                <a href="https://gitter.im/uikit/uikit" class="uk-icon-link" uk-icon="icon: comment"></a>
-                            </div>
-                            <div>
-                                <a href="https://twitter.com/getuikit" class="uk-icon-link" uk-icon="icon: twitter"></a>
-                            </div>
-                            <div>
-                                <a href="https://www.facebook.com/getuikit" class="uk-icon-link" uk-icon="icon: facebook"></a>
+                    <div class="uk-width-expand@m uk-grid-margin">
+                        <div class="uk-margin uk-text-right@m uk-text-center">
+                            <div class="uk-child-width-auto uk-grid-small uk-flex-right@m uk-flex-center uk-grid" uk-grid>
+                                <div><a href="https://github.com/uikit/uikit" class="uk-icon-link" uk-icon="icon: github"></a></div>
+                                <div><a href="https://gitter.im/uikit/uikit" class="uk-icon-link" uk-icon="icon: comment"></a></div>
+                                <div><a href="https://twitter.com/getuikit" class="uk-icon-link" uk-icon="icon: twitter"></a></div>
+                                <div><a href="https://www.facebook.com/getuikit" class="uk-icon-link" uk-icon="icon: facebook"></a></div>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
+
             </div>
 
         </div>
