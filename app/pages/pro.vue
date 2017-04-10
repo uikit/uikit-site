@@ -105,7 +105,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/style-copper-hill.jpg">
+                        <img src="images/pro/style-copper-hill.jpg" alt="Copper Hill Style">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/copper-hill" target="_blank"></a>
 
                     </div>
@@ -115,7 +115,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/style-sonic.jpg">
+                        <img src="images/pro/style-sonic.jpg" alt="Sonic Style">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/sonic" target="_blank"></a>
                     </div>
 
@@ -124,7 +124,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/style-fjord.jpg">
+                        <img src="images/pro/style-fjord.jpg" alt="Fjord Style">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/fjord" target="_blank"></a>
                     </div>
 
@@ -133,7 +133,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/style-joline.jpg">
+                        <img src="images/pro/style-joline.jpg" alt="Joline Style">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/joline" target="_blank"></a>
                     </div>
 
@@ -142,7 +142,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/style-max.jpg">
+                        <img src="images/pro/style-max.jpg" alt="Max Style">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/max" target="_blank"></a>
                     </div>
 
@@ -151,7 +151,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/style-horizon.jpg">
+                        <img src="images/pro/style-horizon.jpg" alt="Horizon Style">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/horizon" target="_blank"></a>
                     </div>
 
@@ -160,7 +160,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/style-fuse.jpg">
+                        <img src="images/pro/style-fuse.jpg" alt="Fuse Style">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/fuse" target="_blank"></a>
                     </div>
 
@@ -189,7 +189,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-copper-hill.jpg">
+                        <img src="images/pro/layout-copper-hill.jpg" alt="Copper Hill Frontpage Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/copper-hill" target="_blank"></a>
                     </div>
 
@@ -198,7 +198,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-horizon-overview.jpg">
+                        <img src="images/pro/layout-horizon-overview.jpg" alt="Horizon Overview Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/horizon" target="_blank"></a>
                     </div>
 
@@ -207,7 +207,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-sonic.jpg">
+                        <img src="images/pro/layout-sonic.jpg" alt="Sonic Frontpage Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/sonic" target="_blank"></a>
                     </div>
 
@@ -216,7 +216,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-joline.jpg">
+                        <img src="images/pro/layout-joline.jpg" alt="Joline Frontpage Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/joline" target="_blank"></a>
                     </div>
 
@@ -225,7 +225,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-sonic-location.jpg">
+                        <img src="images/pro/layout-sonic-location.jpg" alt="Sonic Location Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/sonic" target="_blank"></a>
                     </div>
 
@@ -234,7 +234,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-max.jpg">
+                        <img src="images/pro/layout-max.jpg" alt="Max Frontpage Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/max" target="_blank"></a>
                     </div>
 
@@ -243,7 +243,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-joline-spots-case-study.jpg">
+                        <img src="images/pro/layout-joline-spots-case-study.jpg" alt="Joline Case Study Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/joline" target="_blank"></a>
                     </div>
 
@@ -252,7 +252,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-fjord.jpg">
+                        <img src="images/pro/layout-fjord.jpg" alt="Fjord Frontpage Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/fjord" target="_blank"></a>
                     </div>
 
@@ -260,7 +260,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-horizon.jpg">
+                        <img src="images/pro/layout-horizon.jpg" alt="Horizon Frontpage Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/horizon" target="_blank"></a>
                     </div>
 
@@ -268,7 +268,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-fuse.jpg">
+                        <img src="images/pro/layout-fuse.jpg" alt="Fuse Frontpage Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/fuse" target="_blank"></a>
                     </div>
 
@@ -276,7 +276,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-fjord-resources.jpg">
+                        <img src="images/pro/layout-fjord-resources.jpg" alt="Fjord Resources Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/fjord" target="_blank"></a>
                     </div>
 
@@ -285,7 +285,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-copper-hill-lunch.jpg">
+                        <img src="images/pro/layout-copper-hill-lunch.jpg" alt="Copper Hill Lunch Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/copper-hill" target="_blank"></a>
                     </div>
 
@@ -294,7 +294,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-sonic-speakers.jpg">
+                        <img src="images/pro/layout-sonic-speakers.jpg" alt="Sonic Speakers Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/sonic" target="_blank"></a>
                     </div>
 
@@ -303,7 +303,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-horizon-products.jpg">
+                        <img src="images/pro/layout-horizon-products.jpg" alt="Horizon Products Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/horizon" target="_blank"></a>
                     </div>
 
@@ -312,7 +312,7 @@
                 <div>
 
                     <div class="uk-inline uk-box-shadow-small uk-box-shadow-hover-medium uk-transition-toggle">
-                        <img src="images/pro/layout-joline-about.jpg">
+                        <img src="images/pro/layout-joline-about.jpg" alt="Joline About Layout">
                         <a class="uk-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/joline" target="_blank"></a>
                     </div>
 
