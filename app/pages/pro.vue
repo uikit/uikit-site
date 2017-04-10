@@ -38,7 +38,7 @@
 
     </div>
 
-    <div class="uk-section uk-section-default uk-section-large uk-padding-remove-top">
+    <div class="uk-section uk-section-default uk-padding-remove-top">
         <div class="uk-container">
 
             <div class="uk-child-width-expand@m uk-child-width-1-2@s" uk-grid>
@@ -68,24 +68,23 @@
                 </div>
             </div>
 
-
         </div>
     </div>
 
     <div class="uk-container">
-        <hr class="uk-margin-xlarge">
+        <hr>
     </div>
 
     <div class="uk-section uk-section-default uk-section-large">
         <div class="uk-container">
 
-            <div class="uk-grid-small uk-child-width-expand@l uk-flex-middle uk-text-center uk-text-left@l uk-margin-xlarge-bottom" uk-grid>
+            <div class="uk-grid-large uk-flex-middle uk-text-center uk-text-left@l" uk-grid>
                 <div class="uk-width-1-3@l uk-flex-last@l">
 
                     <div class="uk-inline uk-width-xlarge">
                         <h1 class="uk-h6 tm-h6 uk-margin-remove">Style Customizer</h1>
                         <h2 class="uk-h1 uk-margin-top">Create your style</h2>
-                        <p class="uk-text-large tm-text-large uk-margin-medium-top">Modify the visual appearance of your site –<br class="uk-visible@l"> including colors, fonts, margins and other style related properties – with a sophisticated style customizer for UIkit.</p>
+                        <p class="uk-text-large tm-text-large">Modify the visual appearance of your site – including colors, fonts, margins and other style related properties – with a sophisticated style customizer for UIkit.</p>
                     </div>
 
                 </div>
@@ -236,7 +235,7 @@
     </div>
 
     <div class="uk-container">
-        <hr class="uk-margin-xlarge">
+        <hr>
     </div>
 
     <div class="uk-section uk-section-default uk-section-large">
@@ -528,45 +527,44 @@
             <h2 class="uk-h1">Get YOOtheme Pro</h2>
             <p class="uk-text-large tm-text-large uk-margin-medium-bottom">The all-in-one theme and page builder for WordPress &amp; Joomla</p>
 
-            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large" href="https://yootheme.com/pro">Get Pro</a>
+            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="https://yootheme.com/pro">Get Pro</a>
+            <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/pro">Get Pro</a>
 
             <hr class="uk-margin-remove-bottom uk-margin-xlarge-top">
 
             <div class="uk-margin-top uk-margin-bottom">
-                <div class="uk-flex-middle uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+                <div class="uk-child-width-auto@m uk-flex-middle" uk-grid>
+                    <div>
 
-                    <div class="uk-width-expand@m uk-first-column">
-                        <div class="uk-margin uk-text-left@m uk-text-center">
-                            <a class="uk-link-reset" href="./index">
-                                <div class="uk-logo">
-                                    <canvas class="uk-margin-small-right" width="28" height="34" uk-svg :src="'./images/uikit-logo.svg'"></canvas> UIkit
-                                </div>
+                        <div class="uk-text-left@m uk-text-center">
+                            <a class="uk-logo" href="./index">
+                                <canvas class="uk-margin-small-right" width="28" height="34" uk-svg :src="'./images/uikit-logo.svg'"></canvas> UIkit
                              </a>
                         </div>
-                    </div>
-
-                    <div class="uk-width-xlarge@m uk-grid-margin">
-
-                            <ul class="uk-subnav uk-flex-center uk-text-center" uk-margin>
-                                <li><a href="./docs">Documentation</a></li>
-                                <li><a href="./pro">Pro</a></li>
-                                <li><a href="./changelog">Changelog</a></li>
-                                <li><a href="./download">Download</a></li>
-                            </ul>
 
                     </div>
+                    <div class="uk-margin-auto">
 
-                    <div class="uk-width-expand@m uk-grid-margin">
-                        <div class="uk-margin uk-text-right@m uk-text-center">
-                            <div class="uk-child-width-auto uk-grid-small uk-flex-right@m uk-flex-center uk-grid" uk-grid>
+                        <ul class="uk-subnav uk-flex-center" uk-margin>
+                            <li><a href="./docs">Documentation</a></li>
+                            <li><a href="./pro">Pro</a></li>
+                            <li><a href="./changelog">Changelog</a></li>
+                            <li><a href="./download">Download</a></li>
+                        </ul>
+
+                    </div>
+                    <div>
+
+                        <div class="uk-text-right@m uk-text-center">
+                            <div class="uk-child-width-auto uk-grid-small uk-flex-center" uk-grid>
                                 <div><a href="https://github.com/uikit/uikit" class="uk-icon-link" uk-icon="icon: github"></a></div>
                                 <div><a href="https://gitter.im/uikit/uikit" class="uk-icon-link" uk-icon="icon: comment"></a></div>
                                 <div><a href="https://twitter.com/getuikit" class="uk-icon-link" uk-icon="icon: twitter"></a></div>
                                 <div><a href="https://www.facebook.com/getuikit" class="uk-icon-link" uk-icon="icon: facebook"></a></div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
 
             </div>
