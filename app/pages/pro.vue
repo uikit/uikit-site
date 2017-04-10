@@ -43,27 +43,25 @@
             <div class="uk-child-width-expand@m uk-child-width-1-2@s" uk-grid>
                 <div>
 
-                    <h3>Got a Jooml</h3>
-                    <p>YOOtheme Pro will get you started in no-time. It comes with a page builder and style customizer for UIkit.
-
-                    YOOtheme Pro provides a smooth website creating experience in an all-in-one interface that produces perfect UIkit markup.</p>
+                    <h3>The Perfect Fit</h3>
+                    <p>Got a WordPress or Joomla website? YOOtheme Pro integrates UIkit for everything - from menus and widgets to pages and posts.</p>
 
                 </div>
                 <div>
 
                     <h3>Page Builder</h3>
-                    <p>The drag and drop page builder allows you to create websites in next to no time. No need to write any UIkit markup yourself.</p>
+                    <p>Create websites on the fly with the drag and drop page builder - Perfect UIkit markup, taloired for your needs.</p>
 
                 </div>
                 <div>
 
                     <h3>Live Preview</h3>
-                    <p>Form your ideas and immediately see what they look like in YOOtheme Pro. The real-time preview assures a smooth workflow.</p>
+                    <p>Customize every aspect of UIkit visually and arrange your content all in one intuitive interface.</p>
 
                 </div>
                 <div>
 
-                    <h3>Elements</h3>
+                    <h3>Element Library</h3>
                     <p>Build pages with ready-to-use elements made from UIkit components, like buttons, cards, accordions and much more.</p>
 
                 </div>
@@ -80,7 +78,7 @@
 
                     <div class="uk-inline uk-width-xlarge">
                         <h1 class="uk-h6 tm-h6 uk-margin-remove">Style Customizer</h1>
-                        <h2 class="uk-h1 uk-margin-top">Style Customizer</h2>
+                        <h2 class="uk-h1 uk-margin-top">Create your Style</h2>
                         <p class="uk-text-large tm-text-large">Modify the visual appearance of your site – including colors, fonts, margins and other style related properties – with a sophisticated style customizer for UIkit.</p>
                     </div>
 
@@ -94,7 +92,7 @@
 
 
             <div class="uk-width-xlarge uk-margin-auto uk-text-center uk-margin-large-bottom">
-                <h2 class="uk-text-center uk-margin-xlarge-top uk-margin-large-bottom">Pre-built Styles</h2>
+                <h2 class="uk-text-center uk-margin-xlarge-top">Pre-built Styles</h2>
                 <p class="uk-text-large tm-text-large">Try out any UIkit theme with one click. You can switch between styles from the library and your content adapts automatically.</p>
             </div>
 
@@ -215,7 +213,7 @@
         <div class="uk-container uk-text-center">
 
             <h2 class="uk-h1">Get YOOtheme Pro</h2>
-            <p class="uk-text-large tm-text-large uk-margin-medium-bottom">The all-in-one websitebuilder and theme.</p>
+            <p class="uk-text-large tm-text-large uk-margin-medium-bottom">The all-in-one theme and page builder for WordPress &amp; Joomla</p>
             <a class="uk-button uk-button-primary tm-button-primary" href="https://yootheme.com/pro">Get Pro</a>
 
             <hr class="uk-margin-remove-bottom uk-margin-xlarge-top">
