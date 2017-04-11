@@ -395,6 +395,54 @@ html { overflow-y: scroll; }
 
 .tm-text-large { font-size: 18px; }
 
+/*
+ * Box shadow
+ */
+
+.tm-box-shadow-medium {
+    box-shadow: 2px 12px 35px rgba(0,0,0,0.1),
+                0 1px 6px rgba(0,0,0,0.05);
+}
+
+.tm-box-shadow-large {
+    box-shadow: -40px 40px 160px 0 rgba(0,0,0,0.08),
+                -8px 8px 15px 0 rgba(120,120,120,0.04),
+                3px 3px 30px 0 rgba(0,0,0,0.04);
+}
+
+/*
+ * Overlay
+ */
+
+.tm-overlay-default { background: fade(@global-background, 50%); }
+
+/*
+ * Modal
+ */
+
+.tm-modal-dialog { background: @global-muted-background; }
+
+.tm-modal-header { padding: 10px 10px 20px 10px; }
+.tm-modal-body { padding: 0; }
+
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+
+    .tm-modal-header { padding: 50px 50px 25px 50px; }
+    .tm-modal-body { padding: 0 50px 25px 50px; }
+
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    .tm-modal-header { padding: 100px 100px 50px 100px; }
+    .tm-modal-body { padding: 0 100px 50px 100px; }
+
+}
+
+.tm-modal-close-full { background: transparent; }
+
 
 /* Utilities
  ========================================================================== */
@@ -424,27 +472,6 @@ html { overflow-y: scroll; }
     }
 
 }
-
-/*
- * Box shadow
- */
-
-.tm-box-shadow-medium {
-    box-shadow: 2px 12px 35px rgba(0,0,0,0.1),
-                0 1px 6px rgba(0,0,0,0.05);
-}
-
-.tm-box-shadow-large {
-    box-shadow: -40px 40px 160px 0 rgba(0,0,0,0.08),
-                -8px 8px 15px 0 rgba(120,120,120,0.04),
-                3px 3px 30px 0 rgba(0,0,0,0.04);
-}
-
-/*
- * Overlay
- */
-
-.tm-overlay-default { background: fade(@global-background, 50%); }
 
 
 /* Reset container for docs
