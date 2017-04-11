@@ -14,8 +14,8 @@
                         <div class="tm-intro-text uk-inline uk-width-xlarge">
                             <h1 class="uk-h6 tm-h6 uk-margin-remove">YOOtheme Pro</h1>
                             <h2 class="uk-h1 uk-margin-top uk-margin-medium-bottom">A theme and page builder for WordPress &amp; Joomla from the UIkit creators</h2>
-                            <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/pro?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Button+Top">Get Pro<span class="uk-margin-small-left" uk-icon="icon: arrow-right" width="20" height="20"></span></a>
-                            <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/pro?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Button+Top">Get Pro</a>
+                            <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/pro/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Button+Top">Get Pro<span class="uk-margin-small-left" uk-icon="icon: arrow-right" width="20" height="20"></span></a>
+                            <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/pro/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Button+Top">Get Pro</a>
                         </div>
 
                     </div>
@@ -329,8 +329,8 @@
             <h2 class="uk-h1">Get YOOtheme Pro</h2>
             <p class="uk-text-large tm-text-large uk-margin-medium-bottom">The all-in-one theme and page builder for WordPress &amp; Joomla</p>
 
-            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="https://yootheme.com/pro?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Button+Bottom">Get Pro</a>
-            <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/pro?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Button+Bottom">Get Pro</a>
+            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="https://yootheme.com/pro/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Button+Bottom">Get Pro</a>
+            <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/pro/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Button+Bottom">Get Pro</a>
 
             <hr class="uk-margin-remove-bottom uk-margin-xlarge-top">
 
