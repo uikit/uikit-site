@@ -15,10 +15,10 @@
                             <h1 class="uk-h6 tm-h6 uk-margin-remove">YOOtheme Pro</h1>
                             <h2 class="uk-h1 uk-margin-top uk-margin-medium-bottom">A theme and page builder for WordPress &amp; Joomla from the UIkit creators</h2>
 
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-grid-medium uk-flex-middle" uk-grid>
                                 <div>
 
-                                    <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now<span class="uk-margin-small-left" uk-icon="icon: arrow-right" width="20" height="20"></span></a>
+                                    <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
 
                                     <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
 
@@ -52,7 +52,7 @@
 
     </div>
 
-    <div class="uk-section uk-section-default uk-padding-remove-top">
+    <div class="uk-section uk-section-large uk-section-default uk-padding-remove-top">
         <div class="uk-container">
 
             <div class="uk-child-width-expand@m uk-child-width-1-2@s" uk-grid>
@@ -342,10 +342,10 @@
             <h2 class="uk-h1">Get YOOtheme Pro</h2>
             <p class="uk-text-large tm-text-large uk-margin-medium-bottom">The all-in-one theme and page builder for WordPress &amp; Joomla</p>
 
-            <div class="uk-grid-small uk-flex-middle uk-flex-center" uk-grid>
+            <div class="uk-grid-medium uk-flex-middle uk-flex-center" uk-grid>
                 <div>
 
-                    <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now<span class="uk-margin-small-left" uk-icon="icon: arrow-right" width="20" height="20"></span></a>
+                    <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
 
                     <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Bottom">Buy Now</a>
 
@@ -404,12 +404,12 @@
             <button class="uk-modal-close-full tm-modal-close-full uk-close-large" type="button" uk-close></button>
             <div class="tm-modal-header">
 
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
                     <div>
 
-                        <a class="uk-button uk-button-primary uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Modal">Buy Now<span class="uk-margin-small-left" uk-icon="icon: arrow-right" width="20" height="20"></span></a>
+                        <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Modal">Buy YOOtheme Pro</a>
 
-                        <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Modal">Buy Now</a>
+                        <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Modal">Buy</a>
 
                     </div>
                     <div>
@@ -421,7 +421,7 @@
 
             </div>
             <div class="tm-modal-body uk-flex-1">
-                <iframe class="uk-width-1-1 uk-height-1-1" src="https://demo.yootheme.com/themes/wordpress/2017/copper-hill/" ></iframe>
+                <iframe class="uk-width-1-1 uk-height-1-1 tm-box-shadow-modal" src="https://demo.yootheme.com/themes/wordpress/2017/fjord/" ></iframe>
             </div>
         </div>
     </div>

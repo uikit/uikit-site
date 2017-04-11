@@ -410,6 +410,8 @@ html { overflow-y: scroll; }
                 3px 3px 30px 0 rgba(0,0,0,0.04);
 }
 
+.tm-box-shadow-modal { box-shadow: 3px 3px 40px 0 rgba(0,0,0,0.06); }
+
 /*
  * Overlay
  */
@@ -422,27 +424,38 @@ html { overflow-y: scroll; }
 
 .tm-modal-dialog { background: @global-muted-background; }
 
-.tm-modal-header { padding: 10px 10px 20px 10px; }
-.tm-modal-body { padding: 0; }
+
+
+.tm-modal-header { padding: 20px 30px; }
+.tm-modal-body { padding: 0 30px; }
 
 /* Phone landscape and bigger */
 @media (min-width: @breakpoint-small) {
 
-    .tm-modal-header { padding: 50px 50px 25px 50px; }
-    .tm-modal-body { padding: 0 50px 25px 50px; }
+    .tm-modal-header { padding: 25px 50px; }
+    .tm-modal-body { padding: 0 50px; }
 
 }
 
-/* Tablet landscape and bigger */
-@media (min-width: @breakpoint-medium) {
+/* Desktop and bigger */
+@media (min-width: @breakpoint-xlarge) {
 
-    .tm-modal-header { padding: 100px 100px 50px 100px; }
-    .tm-modal-body { padding: 0 100px 50px 100px; }
+    .tm-modal-header { padding: 50px 120px; }
+    .tm-modal-body { padding: 0 120px; }
 
 }
 
-.tm-modal-close-full { background: transparent; }
+.tm-modal-close-full {
+    background: transparent;
+    padding: 30px;
+}
 
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+
+    .tm-modal-close-full { padding: @global-medium-margin; }
+
+}
 
 /* Utilities
  ========================================================================== */
