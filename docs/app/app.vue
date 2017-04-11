@@ -17,6 +17,7 @@
                     <div class="uk-navbar-right">
 
                         <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="../pro">Pro</a></li>
                             <li class="uk-active"><a href="../docs/">Documentation</a></li>
                             <li><a href="../changelog">Changelog</a></li>
                         </ul>
@@ -97,6 +98,7 @@
                     <ul class="uk-nav uk-nav-default tm-nav">
                         <li class="uk-nav-header">General</li>
                         <li><a href="../index">Home</a></li>
+                        <li><a href="../pro">Pro</a></li>
                         <li><a href="../changelog">Changelog</a></li>
                         <li><a href="../download">Download</a></li>
                     </ul>

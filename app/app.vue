@@ -11,6 +11,7 @@
                     <ul class="uk-nav uk-nav-default tm-nav">
                         <li class="uk-nav-header">General</li>
                         <li><a href="./index">Home</a></li>
+                        <li><a href="./pro">Pro</a></li>
                         <li><a href="./changelog">Changelog</a></li>
                         <li><a href="./download">Download</a></li>
                     </ul>

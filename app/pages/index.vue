@@ -1,6 +1,6 @@
 <template>
 
-    <div class="uk-section-primary tm-section">
+    <div class="uk-section-primary tm-section-texture">
 
         <navbar class="uk-navbar-transparent"></navbar>
 
@@ -19,10 +19,12 @@
 
                     <div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-flex-center" uk-grid>
                         <div>
-                            <a class="uk-button uk-button-primary tm-button-primary" href="./docs">Get Started</a>
+                            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="./docs">Get Started</a>
+                            <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="./docs">Get Started</a>
                         </div>
                         <div>
-                            <a class="uk-button uk-button-default tm-button-default" href="https://github.com/uikit/uikit">Github</a>
+                            <a class="uk-button uk-button-default tm-button-default uk-button-large tm-button-large uk-visible@s" href="https://github.com/uikit/uikit">Github</a>
+                            <a class="uk-button uk-button-default tm-button-default uk-hidden@s" href="https://github.com/uikit/uikit">Github</a>
                         </div>
                     </div>
 
@@ -44,7 +46,7 @@
                         <a class="uk-text-lowercase" href="https://twitter.com/getuikit"><span class="uk-margin-small-right" uk-icon="icon: twitter"></span>@getuikit</a>
                     </li>
                     <li>
-                        <a href="https://gitter.im/uikit/uikit"><span class="uk-margin-small-right" uk-icon="icon: commenting"></span>Community</a>
+                        <a href="https://gitter.im/uikit/uikit"><span class="uk-margin-small-right" uk-icon="icon: gitter"></span>Community</a>
                     </li>
                 </ul>
 

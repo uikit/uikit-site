@@ -15,6 +15,7 @@
                 <div class="uk-navbar-right">
 
                     <ul class="uk-navbar-nav uk-visible@m">
+                        <router-link to="/pro" tag="li"><a>Pro</a></router-link>
                         <li><a href="./docs/introduction">Documentation</a></li>
                         <router-link to="/changelog" tag="li"><a>Changelog</a></router-link>
                     </ul>

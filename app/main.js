@@ -4,6 +4,7 @@ import Navbar from './navbar.vue';
 
 // Pages
 import IndexPage from './pages/index.vue';
+import ProPage from './pages/pro.vue';
 import ChangelogPage from './pages/changelog.vue';
 import DownloadPage from './pages/download.vue';
 import ErrorPage from './pages/404.vue';
@@ -12,6 +13,7 @@ const routes = [
 
     {path: '/', component: IndexPage },
     {path: '/index', component: IndexPage },
+    {path: '/pro', component: ProPage },
     {path: '/changelog', component: ChangelogPage },
     {path: '/download', component: DownloadPage },
     {path: '/*', component: ErrorPage }
