@@ -395,6 +395,65 @@ html { overflow-y: scroll; }
 
 .tm-text-large { font-size: 18px; }
 
+/*
+ * Box shadow
+ */
+
+.tm-box-shadow-medium {
+    box-shadow: 2px 12px 35px rgba(0,0,0,0.1),
+                0 1px 6px rgba(0,0,0,0.05);
+}
+
+.tm-box-shadow-large {
+    box-shadow: -40px 40px 160px 0 rgba(0,0,0,0.08),
+                -8px 8px 15px 0 rgba(120,120,120,0.04),
+                3px 3px 30px 0 rgba(0,0,0,0.04);
+}
+
+.tm-box-shadow-modal { box-shadow: 3px 3px 40px 0 rgba(0,0,0,0.06); }
+
+/*
+ * Overlay
+ */
+
+.tm-overlay-default { background: fade(@global-background, 50%); }
+
+/*
+ * Modal
+ */
+
+.tm-modal-dialog { background: @global-muted-background; }
+
+.tm-modal-header { padding: 20px 30px; }
+.tm-modal-body { padding: 0; }
+
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+
+    .tm-modal-header { padding: 25px 50px; }
+    .tm-modal-body { padding: 0 50px; }
+
+}
+
+/* Desktop and bigger */
+@media (min-width: @breakpoint-xlarge) {
+
+    .tm-modal-header { padding: 50px 120px; }
+    .tm-modal-body { padding: 0 120px; }
+
+}
+
+.tm-modal-close-full {
+    background: transparent;
+    padding: 30px;
+}
+
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+
+    .tm-modal-close-full { padding: @global-medium-margin; }
+
+}
 
 /* Utilities
  ========================================================================== */
@@ -424,27 +483,6 @@ html { overflow-y: scroll; }
     }
 
 }
-
-/*
- * Box shadow
- */
-
-.tm-box-shadow-medium {
-    box-shadow: 2px 12px 35px rgba(0,0,0,0.1),
-                0 1px 6px rgba(0,0,0,0.05);
-}
-
-.tm-box-shadow-large {
-    box-shadow: -40px 40px 160px 0 rgba(0,0,0,0.08),
-                -8px 8px 15px 0 rgba(120,120,120,0.04),
-                3px 3px 30px 0 rgba(0,0,0,0.04);
-}
-
-/*
- * Overlay
- */
-
-.tm-overlay-default { background: fade(@global-background, 50%); }
 
 
 /* Reset container for docs
