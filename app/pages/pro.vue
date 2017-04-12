@@ -447,6 +447,7 @@
 
                 e.preventDefault();
 
+                iframe.src = '';
                 modal.show();
 
                 requestAnimationFrame(() => {
