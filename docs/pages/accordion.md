@@ -185,5 +185,7 @@ These events will be triggered on elements with this component attached.
 | --- | --- |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by returning `false`. |
 | `show` | Fires after an item is shown. |
+| `shown` | Fires after the item's show animation has completed. |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
-| `hide` | Fires after an item is hidden. |
+| `hide` | Fires after an item's hide animation has started. |
+| `hidden` | Fires after an item is hidden. |
