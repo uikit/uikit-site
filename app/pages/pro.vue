@@ -274,7 +274,7 @@
 
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
                         <img src="images/pro/layout-horizon.jpg" alt="Horizon Frontpage Layout">
-                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/horizon/" data-modal></a>
+                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/horizon/" data-modal></a>
                     </div>
 
                 </div>
