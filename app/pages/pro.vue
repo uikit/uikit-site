@@ -436,38 +436,23 @@
 
     import $ from 'jquery';
 
-
-    var demos = {
-
-    }
-
-
     export default {
 
         mounted() {
 
             var modal = UIkit.modal(this.$refs.modal);
             var iframe = this.$refs.iframe;
-            var src;
 
             $(this.$el).on('click', '[data-modal]', function(e) {
 
                 e.preventDefault();
 
-                iframe.src = "";
-                src = this.href;
-
                 modal.show();
 
-                setTimeout(() => {
-                    iframe.src = src
-                }, 150);
-
-                //alert(this.href);
-
+                requestAnimationFrame(() => {
+                    iframe.src = this.href;
+                });
             });
-
-
         }
     }
 
