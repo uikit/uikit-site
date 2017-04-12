@@ -203,7 +203,7 @@
 
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
                         <img src="images/pro/layout-copper-hill.jpg" alt="Copper Hill Frontpage Layout">
-                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="#modal-copper-hill" data-modal></a>
+                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/copper-hill/" data-modal></a>
                     </div>
 
                 </div>
@@ -221,7 +221,7 @@
 
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
                         <img src="images/pro/layout-sonic.jpg" alt="Sonic Frontpage Layout">
-                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="#modal-sonic" data-modal></a>
+                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/sonic/" data-modal></a>
                     </div>
 
                 </div>
@@ -230,7 +230,7 @@
 
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
                         <img src="images/pro/layout-joline.jpg" alt="Joline Frontpage Layout">
-                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="#modal-joline" data-modal></a>
+                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/joline/" data-modal></a>
                     </div>
 
                 </div>
@@ -248,7 +248,7 @@
 
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
                         <img src="images/pro/layout-max.jpg" alt="Max Frontpage Layout">
-                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="#modal-max" data-modal></a>
+                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/max/" data-modal></a>
                     </div>
 
                 </div>
@@ -266,7 +266,7 @@
 
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
                         <img src="images/pro/layout-fjord.jpg" alt="Fjord Frontpage Layout">
-                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="#modal-fjord" data-modal></a>
+                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/fjord/" data-modal></a>
                     </div>
 
                 </div>
@@ -274,7 +274,7 @@
 
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
                         <img src="images/pro/layout-horizon.jpg" alt="Horizon Frontpage Layout">
-                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="#modal-horizon" data-modal></a>
+                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/horizon/" data-modal></a>
                     </div>
 
                 </div>
@@ -282,7 +282,7 @@
 
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
                         <img src="images/pro/layout-fuse.jpg" alt="Fuse Frontpage Layout">
-                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="#modal-fuse" data-modal></a>
+                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/fuse/" data-modal></a>
                     </div>
 
                 </div>
@@ -442,10 +442,16 @@
 
             var modal = UIkit.modal(this.$refs.modal);
             var iframe = this.$refs.iframe;
+            var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream;
 
             $(this.$el).on('click', '[data-modal]', function(e) {
 
                 e.preventDefault();
+
+                if (iOS) {
+                    window.open(this.href);
+                    return;
+                }
 
                 iframe.src = '';
                 modal.show();
