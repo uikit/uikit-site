@@ -254,3 +254,4 @@ These events will be triggered on elements with this component attached.
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
 | `hide` | Fires after an item's hide animation has started. |
 | `hidden` | Fires after an item is hidden. |
+| `stack` | Fires when the `drop-stack`class is applied. |
