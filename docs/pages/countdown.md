@@ -29,7 +29,6 @@ To create a countdown, add the `uk-countdown="endtime: yyyy-mm-dd"` attribute to
     <span class="uk-countdown-number">
         <span class="uk-countdown-days"></span><small>d</small>
     </span>
-
 </div>
 ```
 
