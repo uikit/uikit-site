@@ -4,7 +4,7 @@
 
 ## Usage
 
-To create a countdown, add the `uk-countdown="endtime: yyyy-mm-dd"` attribute to a `<div>` element and use the date when the countdown should expire. You can apply the [Grid component](grid.md) or `<span>` elements to create the countdown's layout. Add the following classes to child elements to apply the necessary functionality and styling.
+To create a countdown, add the `uk-countdown` attribute to a `<div>` element. To define a date when the countdown should expire, add `endtime: YYYY-MM-DDThh:mm:ssTZD` option to the attribute, using the [ISO 8601 format](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#ECMAScript_5_ISO-8601_format_support). You can apply the [Grid component](grid.md) or `<span>` elements to create the countdown's layout. Add the following classes to child elements to apply the necessary functionality and styling.
 
 | Class                   | Description                                    |
 | ----------------------- | ---------------------------------------------- |
@@ -15,7 +15,7 @@ To create a countdown, add the `uk-countdown="endtime: yyyy-mm-dd"` attribute to
 
 ```html
 <!-- This is a countdown using a grid -->
-<div uk-countdown="endtime: yyyy-mm-dd" uk-grid>
+<div uk-countdown="endtime: 2017-07-01T22:00:00+00:00" uk-grid>
     <div>
         <div class="uk-countdown-number uk-countdown-days"></div>
         <div class="uk-countdown-label">...</div>
@@ -25,7 +25,7 @@ To create a countdown, add the `uk-countdown="endtime: yyyy-mm-dd"` attribute to
 </div>
 
 <!-- This is a countdown using spans -->
-<div uk-countdown="endtime: 2017-05-04">
+<div uk-countdown="endtime: 2017-07-01T22:00:00+00:00">
     <span class="uk-countdown-number">
         <span class="uk-countdown-days"></span><small>d</small>
     </span>
@@ -35,7 +35,7 @@ To create a countdown, add the `uk-countdown="endtime: yyyy-mm-dd"` attribute to
 ```example
 <p class="uk-text-meta">Countdown using a grid</p>
 
-<div class="uk-grid-small" uk-grid uk-countdown="endtime: 2017-09-31">
+<div class="uk-grid-small" uk-grid uk-countdown="endtime: 2017-07-01T22:00:00+00:00">
     <div>
         <div class="uk-countdown-number uk-countdown-days"></div>
         <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
@@ -59,7 +59,7 @@ To create a countdown, add the `uk-countdown="endtime: yyyy-mm-dd"` attribute to
 
 <p class="uk-text-meta uk-margin-medium-top">Countdown using <code>&lt;span&gt;</code> elements</p>
 
-<div uk-countdown="endtime: 2017-09-31">
+<div uk-countdown="endtime: 2017-07-01T22:00:00+00:00">
     <span class="uk-countdown-number">
         <span class="uk-countdown-days"></span><small>d</small>
     </span>
