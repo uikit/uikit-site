@@ -32,6 +32,7 @@
         "Column": "column",
         "Comment": "comment",
         "Container": "container",
+        "Countdown": "countdown",
         "Cover": "cover",
         "Description List": "description-list",
         "Divider": "divider",
