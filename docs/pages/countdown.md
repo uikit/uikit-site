@@ -1,41 +1,100 @@
 # Countdown
 
-<p class="uk-text-lead">A collection of useful utility classes to style your content.</p>
+<p class="uk-text-lead">Create a simple countdown timer.</p>
 
 ## Usage
 
-To create a countdown, add the `uk-countdown` attribute to a `<div>` element. To define a date when the countdown should expire, add `endtime: YYYY-MM-DDThh:mm:ssTZD` option to the attribute, using the [ISO 8601 format](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#ECMAScript_5_ISO-8601_format_support). You can apply the [Grid component](grid.md) or `<span>` elements to create the countdown's layout. Add the following classes to child elements to apply the necessary functionality and styling.
+To apply this component, add the `uk-countdown` attribute to a container element and define a date when the countdown should expire. Just add `endtime: YYYY-MM-DDThh:mm:ssTZD` option to the attribute, using the [ISO 8601 format](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#ECMAScript_5_ISO-8601_format_support), e.g. `2017-12-04T22:00:00+00:00` (UTC time).
 
-| Class                   | Description                                    |
-| ----------------------- | ---------------------------------------------- |
-|`.uk-countdown-number`   | This class defines each child element as a countdown number, i.e. days, hours, minutes and seconds.                         |
-|`.uk-countdown-days`<br> `.uk-countdown-hours`<br> `.uk-countdown-minutes`<br> `.uk-countdown-seconds`    | Add one of these classes to the same element(s) to indicate the days, hours, minutes or seconds to be counted down.                  |
-|`.uk-countdown-label` | This class creates a label for each countdown number.                 |
-|`uk-countdown-separator`    | This class creates a separator between countdown numbers.      |
+Add the following classes to child elements to apply the necessary functionality and styling.
+
+| Class                   | Description                                                               |
+| ----------------------- | ------------------------------------------------------------------------- |
+|`.uk-countdown-days`     | Add this class to create the days to be counted down.                     |
+|`.uk-countdown-hours`    | Add this class to create the hours to be counted down.                    |
+|`.uk-countdown-minutes`  | Add this class to create the minutes to be counted down.                  |
+|`.uk-countdown-seconds`  | Add this class to create the seconds to be counted down.                  |
+|`.uk-countdown-number`   | This class adds the neccessary style to a countdown number.               |
 
 ```html
-<!-- This is a countdown using a grid -->
-<div uk-countdown="endtime: 2017-07-01T22:00:00+00:00" uk-grid>
-    <div>
-        <div class="uk-countdown-number uk-countdown-days"></div>
-        <div class="uk-countdown-label">...</div>
-    </div>
-    <div class="uk-countdown-separator">:</div>
-    ...
-</div>
-
-<!-- This is a countdown using spans -->
-<div uk-countdown="endtime: 2017-07-01T22:00:00+00:00">
-    <span class="uk-countdown-number">
-        <span class="uk-countdown-days"></span><small>d</small>
-    </span>
+<div uk-countdown="endtime: 2017-12-04T22:00:00+01:00">
+    <span class="uk-countdown-number uk-countdown-days"></span>
+    <span class="uk-countdown-number uk-countdown-hours"></span>
+    <span class="uk-countdown-number uk-countdown-minutes"></span>
+    <span class="uk-countdown-number uk-countdown-seconds"></span>
 </div>
 ```
 
 ```example
-<p class="uk-text-meta">Countdown using a grid</p>
+<div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="endtime: 2017-12-04T22:00:00+01:00">
+    <div>
+        <div class="uk-countdown-number uk-countdown-days"></div>
+    </div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-hours"></div>
+    </div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-minutes"></div>
+    </div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-seconds"></div>
+    </div>
+</div>
+```
 
-<div class="uk-grid-small" uk-grid uk-countdown="endtime: 2017-07-01T22:00:00+00:00">
+***
+
+## Separator
+
+To add a separator between each number, use the `.uk-countdown-separator` class.
+
+```html
+<div uk-countdown="endtime: 2017-12-04T22:00:00+01:00">
+    <span class="uk-countdown-number uk-countdown-days"></span>
+    <span class="uk-countdown-separator">:</span>
+    <span class="uk-countdown-number uk-countdown-hours"></span>
+    <span class="uk-countdown-separator">:</span>
+    <span class="uk-countdown-number uk-countdown-minutes"></span>
+    <span class="uk-countdown-separator">:</span>
+    <span class="uk-countdown-number uk-countdown-seconds"></span>
+</div>
+```
+
+```example
+<div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="endtime: 2017-12-04T22:00:00+01:00">
+    <div>
+        <div class="uk-countdown-number uk-countdown-days"></div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-hours"></div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-minutes"></div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-seconds"></div>
+    </div>
+</div>
+```
+
+***
+
+## Label
+
+To add a label to each number, use the `.uk-countdown-label` class.
+
+```html
+<div class="uk-countdown-label">Days</div>
+<div class="uk-countdown-label">Hours</div>
+<div class="uk-countdown-label">Minutes</div>
+<div class="uk-countdown-label">Seconds</div>
+```
+
+```example
+<div class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="endtime: 2017-12-04T22:00:00+01:00">
     <div>
         <div class="uk-countdown-number uk-countdown-days"></div>
         <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
@@ -56,21 +115,28 @@ To create a countdown, add the `uk-countdown` attribute to a `<div>` element. To
         <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
     </div>
 </div>
-
-<p class="uk-text-meta uk-margin-medium-top">Countdown using <code>&lt;span&gt;</code> elements</p>
-
-<div uk-countdown="endtime: 2017-07-01T22:00:00+00:00">
-    <span class="uk-countdown-number">
-        <span class="uk-countdown-days"></span><small>d</small>
-    </span>
-    <span class="uk-countdown-number">
-        <span class="uk-countdown-hours"></span><small>h</small>
-    </span>
-    <span class="uk-countdown-number">
-        <span class="uk-countdown-minutes"></span><small>m</small>
-    </span>
-    <span class="uk-countdown-number">
-        <span class="uk-countdown-seconds"></span><small>s</small>
-    </span>
-</div>
 ```
+
+***
+
+## Component options
+
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+
+| Option | Value | Default | Description |
+| --- | --- | --- | --- |
+| `endtime` | String | `false` | Any string parsable by ```Date.parse```. See [Reference](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse). |
+
+***
+
+## JavaScript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+?
+
+### Events
+
+?
