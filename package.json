@@ -10,7 +10,6 @@
     "buble": "^0.15.1",
     "buble-loader": "^0.4.0",
     "glob": "^7.0.3",
-    "he": "^1.1.0",
     "html-loader": "^0.4.5",
     "json-loader": "^0.5.4",
     "less": "^2.7.2",

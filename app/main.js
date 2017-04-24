@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './app.vue';
 import Navbar from './navbar.vue';
+import analytics from './analytics.js';
 import navigation from '../docs/app/navigation.json';
 
 // Pages
@@ -60,3 +61,5 @@ new Vue({
     })
 
 });
+
+analytics();
