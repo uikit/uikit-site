@@ -4,7 +4,7 @@
 
 ## Usage
 
-To apply this component, add the `uk-countdown` attribute to a container element and define a date when the countdown should expire. Just add `endtime: YYYY-MM-DDThh:mm:ssTZD` option to the attribute, using the [ISO 8601 format](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#ECMAScript_5_ISO-8601_format_support), e.g. `2017-12-04T22:00:00+00:00` (UTC time).
+To apply this component, add the `uk-countdown` attribute to a container element and define a date when the countdown should expire. Just add `date: YYYY-MM-DDThh:mm:ssTZD` option to the attribute, using the [ISO 8601 format](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#ECMAScript_5_ISO-8601_format_support), e.g. `2017-12-04T22:00:00+00:00` (UTC time).
 
 Add the following classes to child elements to apply the necessary functionality and styling.
 
@@ -17,7 +17,7 @@ Add the following classes to child elements to apply the necessary functionality
 |`.uk-countdown-number`   | This class adds the neccessary style to a countdown number.               |
 
 ```html
-<div uk-countdown="endtime: 2017-12-04T22:00:00+01:00">
+<div uk-countdown="date: {%isodate%}">
     <span class="uk-countdown-number uk-countdown-days"></span>
     <span class="uk-countdown-number uk-countdown-hours"></span>
     <span class="uk-countdown-number uk-countdown-minutes"></span>
@@ -26,7 +26,7 @@ Add the following classes to child elements to apply the necessary functionality
 ```
 
 ```example
-<div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="endtime: 2017-12-04T22:00:00+01:00">
+<div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="date: {%isodate%}">
     <div>
         <div class="uk-countdown-number uk-countdown-days"></div>
     </div>
@@ -49,7 +49,7 @@ Add the following classes to child elements to apply the necessary functionality
 To insert a separator between each number, use the `.uk-countdown-separator` class.
 
 ```html
-<div uk-countdown="endtime: 2017-12-04T22:00:00+01:00">
+<div uk-countdown="date: {%isodate%}">
     <span class="uk-countdown-number uk-countdown-days"></span>
     <span class="uk-countdown-separator">:</span>
     <span class="uk-countdown-number uk-countdown-hours"></span>
@@ -61,7 +61,7 @@ To insert a separator between each number, use the `.uk-countdown-separator` cla
 ```
 
 ```example
-<div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="endtime: 2017-12-04T22:00:00+01:00">
+<div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="date: {%isodate%}">
     <div>
         <div class="uk-countdown-number uk-countdown-days"></div>
     </div>
@@ -94,7 +94,7 @@ To add a label to each number, use the `.uk-countdown-label` class.
 ```
 
 ```example
-<div class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="endtime: 2017-12-04T22:00:00+01:00">
+<div class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: {%isodate%}">
     <div>
         <div class="uk-countdown-number uk-countdown-days"></div>
         <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
@@ -125,7 +125,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
-| `endtime` | String | `false` | Any string parsable by ```Date.parse```. See [Reference](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse). |
+| `date` | String | `false` | Any string parsable by ```Date.parse```. See [Reference](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse). |
 
 ***
 
@@ -135,8 +135,6 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 
 ### Initialization
 
-?
-
-### Events
-
-?
+```js
+UIkit.countdown(element, options);
+```

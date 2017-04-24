@@ -53,7 +53,16 @@ export function parse(markdown, cb) {
     renderer.table = (header, body) => `<div class="uk-overflow-auto"><table class="uk-table uk-table-divider"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
     renderer.heading = (text, level) => `<h${level} id="${sluggify(text)}" class="uk-h${level > 1 ? level + 1 : level} tm-heading-fragment"><a href="#${sluggify(text)}">${text}</a></h${level}>`;
 
-    return marked(markdown, {renderer}, cb);
+    return marked(markdown, {renderer}, (err, content) => {
+
+        if (content.indexOf('{%isodate%}') != -1) {
+            content = content.replace(/{%isodate%}/g, (new Date(Date.now() + 864e5 * 7)).toISOString().replace(/\.(\d+)Z/, '+00:00'));
+        }
+
+        if (cb) {
+            cb.apply(this, [err, content]);
+        }
+    });
 }
 
 // https://blog.codepen.io/documentation/api/prefill/
