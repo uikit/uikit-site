@@ -439,6 +439,24 @@ You can apply different box shadows to elements. Just add one of the following c
 
 ***
 
+## Box shadow bottom
+
+To apply a box shadow at the bottom of an element so that appears to be hovering, add the `.uk-box-shadow-bottom` class. This can also be combined with one of the other `.uk-box-shadow-*` modifiers.
+
+```html
+<div class="uk-box-shadow-bottom"></div>
+```
+
+```example
+<div class="uk-box-shadow-bottom uk-box-shadow-small uk-width-1-2@s uk-text-center">
+    <div class="uk-background-default uk-padding-large">
+        Box shadow bottom
+    </div>
+</div>
+```
+
+***
+
 ### Hover
 
 To apply a box shadow on hover, add one of the following classes. This can also be used to modify the shadow size on hover. To do so, just combine them with one of the classes above.

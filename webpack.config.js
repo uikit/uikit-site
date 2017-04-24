@@ -1,9 +1,10 @@
 
 const externals = {
-    vue: 'Vue',
-    uikit: 'UIkit',
-    jquery: 'jQuery',
-    he: 'he'
+    'vue': 'Vue',
+    'vue-router': 'VueRouter',
+    'uikit': 'UIkit',
+    'jquery': 'jQuery',
+    'he': 'he'
 };
 
 const loaders = [

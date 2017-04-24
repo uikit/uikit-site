@@ -1,6 +1,9 @@
 import Vue from 'vue';
+import VueRouter from 'vue-router';
 import App from './app.vue';
 import Navbar from './navbar.vue';
+import analytics from './analytics.js';
+import navigation from '../docs/app/navigation.json';
 
 // Pages
 import IndexPage from './pages/index.vue';
@@ -9,27 +12,43 @@ import ChangelogPage from './pages/changelog.vue';
 import DownloadPage from './pages/download.vue';
 import ErrorPage from './pages/404.vue';
 
-const routes = [
-
-    {path: '/', component: IndexPage },
-    {path: '/index', component: IndexPage },
-    {path: '/pro', component: ProPage },
-    {path: '/changelog', component: ChangelogPage },
-    {path: '/download', component: DownloadPage },
-    {path: '/*', component: ErrorPage }
-];
-
-let base = '/';
+var base = '/';
 
 if (location.pathname && location.pathname != '/') {
     base = location.pathname.split('/').slice(0, -1).join('/');
 }
 
+const routes = [
+    {path: '/', component: IndexPage},
+    {path: '/index', component: IndexPage},
+    {path: '/pro', component: ProPage},
+    {path: '/changelog', component: ChangelogPage},
+    {path: '/download', component: DownloadPage},
+    {path: '/*', component: ErrorPage}
+];
+
+const router = new VueRouter({
+    base,
+    routes,
+    mode: 'history',
+    history: true,
+    linkActiveClass: 'uk-active'
+});
+
+router.afterEach(({path}) => {
+
+    if (typeof ga == 'function') {
+        ga('set', 'page', path);
+        ga('send', 'pageview');
+    }
+
+});
+
 Vue.component('navbar', Navbar);
 
-const navigation = require('../docs/app/navigation.json');
-
 new Vue({
+
+    router,
 
     el: '#app',
 
@@ -37,16 +56,10 @@ new Vue({
 
     data: () => ({
         navigation,
-        loading: false,
-        page: false
-    }),
-
-    router: new VueRouter({
-        base,
-        routes,
-        mode: 'history',
-        history: true,
-        linkActiveClass: 'uk-active'
+        page: false,
+        loading: false
     })
 
 });
+
+analytics();

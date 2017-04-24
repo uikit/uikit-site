@@ -61,16 +61,16 @@ To apply this component, add the `.uk-table` class to a `<table>` element.
 
 ***
 
-## Hover modifier
+## Divider modifier
 
-Add the `.uk-table-hover` class to display a hover state on table rows.
+Add the `.uk-table-divider` class to display a divider between table rows.
 
 ```html
-<table class="uk-table uk-table-hover">...</table>
+<table class="uk-table uk-table-divider">...</table>
 ```
 
 ```example
-<table class="uk-table uk-table-hover">
+<table class="uk-table uk-table-divider">
     <thead>
         <tr>
             <th>Table Heading</th>
@@ -139,16 +139,16 @@ Add zebra-striping to a table by adding the `.uk-table-striped` class.
 
 ***
 
-## Small modifier
+## Hover modifier
 
-Add the `.uk-table-small` class to make table cells more compact.
+Add the `.uk-table-hover` class to display a hover state on table rows.
 
 ```html
-<table class="uk-table uk-table-small">...</table>
+<table class="uk-table uk-table-hover">...</table>
 ```
 
 ```example
-<table class="uk-table uk-table-small">
+<table class="uk-table uk-table-hover uk-table-divider">
     <thead>
         <tr>
             <th>Table Heading</th>
@@ -171,6 +171,79 @@ Add the `.uk-table-small` class to make table cells more compact.
             <td>Table Data</td>
             <td>Table Data</td>
             <td>Table Data</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+***
+
+## Small modifier
+
+Add the `.uk-table-small` class to make table cells more compact.
+
+```html
+<table class="uk-table uk-table-small">...</table>
+```
+
+```example
+<table class="uk-table uk-table-small uk-table-divider">
+    <thead>
+        <tr>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+***
+
+## Justify modifier
+
+To remove the outer padding of the first and last column so that they are flush with the table, add the `.uk-table-justify` class.
+
+```html
+<table class="uk-table uk-table-justify">...</table>
+```
+
+```example
+<table class="uk-table uk-table-justify uk-table-divider">
+    <thead>
+        <tr>
+            <th class="uk-width-small">Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Table Data</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+            <td><button class="uk-button uk-button-default" type="button">Button</button></td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+            <td><button class="uk-button uk-button-default" type="button">Button</button></td>
         </tr>
     </tbody>
 </table>
@@ -188,20 +261,23 @@ To vertically center table content, just add the `.uk-table-middle` class. You c
 ```
 
 ```example
-<table class="uk-table uk-table-middle">
+<table class="uk-table uk-table-middle uk-table-divider">
     <thead>
         <tr>
+            <th class="uk-width-small">Table Heading</th>
             <th>Table Heading</th>
             <th>Table Heading</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+            <td>Table Data</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
             <td><button class="uk-button uk-button-default" type="button">Button</button></td>
         </tr>
         <tr>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+            <td>Table Data</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
             <td><button class="uk-button uk-button-default" type="button">Button</button></td>
         </tr>
     </tbody>
@@ -212,7 +288,7 @@ To vertically center table content, just add the `.uk-table-middle` class. You c
 
 ## Responsive table
 
-If your table happens to be wider than its container element or would eventually get too big on a specific viewport width, just wrap it inside a `<div>` element and add the `.uk-overflow-auto` class from the [Utility component](utility.md#overflow). This creates a container that provides a horizontal scrollbar whenever the elements inside it are wider than the container itself.
+If your table happens to be wider than its container element or would eventually get too big on a specific viewport width, just  wrap it inside a `<div>` element and add the `.uk-overflow-auto` class from the [Utility component](utility.md#overflow). This creates a container that provides a horizontal scrollbar whenever the elements inside it are wider than the container itself.
 
 ```html
 <div class="uk-overflow-auto">
@@ -222,7 +298,7 @@ If your table happens to be wider than its container element or would eventually
 
 ```example
 <div class="uk-overflow-auto">
-    <table class="uk-table uk-table-small">
+    <table class="uk-table uk-table-small uk-table-divider">
         <thead>
             <tr>
                 <th>Table Heading</th>
@@ -289,6 +365,47 @@ If your table happens to be wider than its container element or would eventually
 
 ***
 
+### Stack on small viewports
+
+If you want table columns to stack on small screens, add the `.uk-table-responsive` class.
+
+```html
+<table class="uk-table uk-table-responsive">...</table>
+```
+
+```example
+<table class="uk-table uk-table-responsive uk-table-divider">
+    <thead>
+        <tr>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+**Note** Resize the browser window to see the columns stack.
+
+***
+
 ## Column width modifier
 
 To modify the column width or content, you can use one of the following classes. You just need to add this class to one of the column cells. It's recommended on the header cell.
@@ -304,7 +421,7 @@ To modify the column width or content, you can use one of the following classes.
 ```
 
 ```example
-<table class="uk-table">
+<table class="uk-table uk-table-divider">
     <thead>
         <tr>
             <th class="uk-table-shrink">Shrink</th>
@@ -360,7 +477,7 @@ To optimize the display of table cells and their specific content, you can add o
 
 ```example
 <div class="uk-overflow-auto">
-    <table class="uk-table uk-table-hover uk-table-middle">
+    <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
         <thead>
             <tr>
                 <th class="uk-table-shrink"></th>
