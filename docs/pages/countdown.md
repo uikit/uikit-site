@@ -10,10 +10,10 @@ Add the following classes to child elements to apply the necessary functionality
 
 | Class                   | Description                                                               |
 | ----------------------- | ------------------------------------------------------------------------- |
-|`.uk-countdown-days`     | Add this class to create the days to be counted down.                     |
-|`.uk-countdown-hours`    | Add this class to create the hours to be counted down.                    |
-|`.uk-countdown-minutes`  | Add this class to create the minutes to be counted down.                  |
-|`.uk-countdown-seconds`  | Add this class to create the seconds to be counted down.                  |
+|`.uk-countdown-days`     | Add this class to indicate the days to be counted down.                     |
+|`.uk-countdown-hours`    | Add this class to indicate the hours to be counted down.                    |
+|`.uk-countdown-minutes`  | Add this class to indicate the minutes to be counted down.                  |
+|`.uk-countdown-seconds`  | Add this class to indicate the seconds to be counted down.                  |
 |`.uk-countdown-number`   | This class adds the neccessary style to a countdown number.               |
 
 ```html
@@ -46,7 +46,7 @@ Add the following classes to child elements to apply the necessary functionality
 
 ## Separator
 
-To add a separator between each number, use the `.uk-countdown-separator` class.
+To insert a separator between each number, use the `.uk-countdown-separator` class.
 
 ```html
 <div uk-countdown="endtime: 2017-12-04T22:00:00+01:00">
@@ -121,7 +121,7 @@ To add a label to each number, use the `.uk-countdown-label` class.
 
 ## Component options
 
-Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. For more information, take a look at the chapter on [component configuration](javascript.md#component-configuration).
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |

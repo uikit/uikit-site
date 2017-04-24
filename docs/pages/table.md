@@ -290,17 +290,15 @@ To vertically center table content, just add the `.uk-table-middle` class. You c
 
 If your table happens to be wider than its container element or would eventually get too big on a specific viewport width, just  wrap it inside a `<div>` element and add the `.uk-overflow-auto` class from the [Utility component](utility.md#overflow). This creates a container that provides a horizontal scrollbar whenever the elements inside it are wider than the container itself.
 
-If you want table columns to stack on small screens, add the `.uk-table-responsive` class.
-
 ```html
 <div class="uk-overflow-auto">
-    <table class="uk-table uk-table-responsive">...</table>
+    <table class="uk-table">...</table>
 </div>
 ```
 
 ```example
 <div class="uk-overflow-auto">
-    <table class="uk-table uk-table-responsive uk-table-small uk-table-divider">
+    <table class="uk-table uk-table-small uk-table-divider">
         <thead>
             <tr>
                 <th>Table Heading</th>
@@ -364,6 +362,47 @@ If you want table columns to stack on small screens, add the `.uk-table-responsi
     </table>
 </div>
 ```
+
+***
+
+### Stack on small viewports
+
+If you want table columns to stack on small screens, add the `.uk-table-responsive` class.
+
+```html
+<table class="uk-table uk-table-responsive">...</table>
+```
+
+```example
+<table class="uk-table uk-table-responsive uk-table-divider">
+    <thead>
+        <tr>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+            <th>Table Heading</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+**Note** Resize the browser window to see the columns stack.
 
 ***
 
