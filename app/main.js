@@ -35,15 +35,6 @@ const router = new VueRouter({
     linkActiveClass: 'uk-active'
 });
 
-router.afterEach(({path}) => {
-
-    if (typeof ga == 'function') {
-        ga('set', 'page', path);
-        ga('send', 'pageview');
-    }
-
-});
-
 Vue.component('navbar', Navbar);
 
 new Vue({
