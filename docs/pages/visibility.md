@@ -157,3 +157,24 @@ Use one of the following classes to display elements only when they are being ho
     </div>
 </div>
 ```
+
+***
+
+## Touch
+
+Add the `.uk-hidden-touch` class to hide elements in touch devices and the `.uk-hidden-notouch` to hide elements on devices without a touch screen.
+
+```html
+<!-- Hidden on touch devices -->
+<div class="uk-hidden-touch"></div>
+
+<!-- Hidden on no-touch devices -->
+<div class="uk-hidden-notouch"></div>
+```
+
+```example
+    <div>
+        <div class="uk-hidden-touch uk-card uk-card-default uk-card-body uk-card-small uk-text-success">Hidden touch</div>
+        <div class="uk-hidden-notouch uk-card uk-card-default uk-card-body uk-card-small uk-text-warning">Hidden no touch</div>
+    </div>
+```
