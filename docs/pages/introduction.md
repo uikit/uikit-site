@@ -4,7 +4,18 @@
 
 First of all you need to download UIkit. For other packages and links to a CDN, head to the [installation guide](installation.md) to learn more.
 
-<a class="uk-button uk-button-primary" href="https://getuikit.com/download">Download UIkit</a>
+<a class="uk-button uk-button-primary" href="https://getuikit.com/download">Download UIkit</a> or you can use Cloudflare CDN to serve UIKit CSS and JS files.
+
+Optional Code if you prefere to serve files via free Cloudflare CDN
+```html
+<!-- CSS files -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
+
+<!-- JS Files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>
+```
 
 ***
 
