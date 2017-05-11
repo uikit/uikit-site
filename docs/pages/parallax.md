@@ -6,17 +6,17 @@
 
 To apply this component, add the `uk-parallax` attribute to a container element. Add an option with the desired animation target value for each CSS property you want to animate.
 
+You can use explicit CSS property names (e.g. `width` or `scale`) and a number of shorthands and special properties (e.g. `bg` for `background-position`). See the full table at the bottom of this page.
+
 ```html
-<div data-uk-parallax="bg: -200">...</div>
+<div uk-parallax="bg: -200">...</div>
 ```
 
 ```example
-<div class="uk-text-center uk-flex uk-flex-center uk-flex-middle uk-light" data-uk-parallax="bg: -200" style="height: 350px; background-image: url('images/dark.jpg');">
+<div uk-parallax="bg: -200" class="uk-flex uk-flex-center uk-flex-middle uk-light uk-height-large uk-background-cover" style="background-image: url('images/dark.jpg');">
 
     <div class="uk-width-1-2@m uk-text-center">
-
         <p class="uk-h2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
     </div>
 
 </div>
@@ -26,17 +26,9 @@ To apply this component, add the `uk-parallax` attribute to a container element.
 
 ## Start and end values
 
-Properties are always animated from the current value to the target value which you set in the option. However, you can also define a start value yourself. This is done by passing a string to the option which contains two values separated by comma.
+Properties are always animated from the current value to the target value you set in the option. However, you can also define a start value yourself. This is done by passing two values separated by comma.
 
-**Note** Some properties, like colors, require a start and a stop value!
-
-
-```html
-<div uk-parallax="{x: '-100,100', 'background-color': '#EBF7FD,#FFF1F0'}">...</div>
-```
-
-
-By default, the specified properties transition to the target value you pass in. You can also specify a start value when you use a comma as the separator.
+**Note** Some properties, like colors, always require a start and a stop value.
 
 ```html
 <div uk-parallax="opacity: 0,1">...</div>
@@ -55,7 +47,7 @@ By default, the specified properties transition to the target value you pass in.
 
 ## Viewport position
 
-Using the <code>viewport</code> option, the animation duration can be adjusted. With the value <code>1</code> or <code>false</code> the animation lasts as long as the element is in the viewport. Setting it to <code>0.5</code>, for example, animates the property only in the first half of the viewport.
+Using the <code>viewport</code> option you can adjust the animation duration. The value defines how far inside the viewport the element is scrolled until the animation is completed. With the value <code>1</code> or <code>false</code>, the animation lasts as long as the element is in the viewport (default behavior). Setting it to <code>0.5</code>, for example, animates the property only in the first half of the viewport.
 
 ```html
 <div uk-parallax="viewport: 0.5">...</div>
@@ -142,14 +134,14 @@ To adjust the easing of the animation, add the `velocity` option. Lower values w
 
 ## Colors
 
-You can also transition from one color to another, for example for borders, backgrounds or text colors. You may define colors using rgb() definitions, color keywords or hex values.
+You can also transition from one color to another, for example for borders, backgrounds or text colors. You may define colors using `rgb()` definitions, color keywords or hex values.
 
 ```html
 <div uk-parallax="borderColor: #00f,#f00;">...</div>
 ```
 
 ```example
-<div id="test-color" class="test-color uk-height-large uk-margin uk-overflow-hidden uk-flex" uk-parallax="backgroundColor: yellow,white; borderColor: #00f,#f00; viewport: 0.5" style="border: 5px solid #000;">
+<div id="test-color" class="test-color uk-height-large uk-margin uk-overflow-hidden uk-flex" uk-parallax="backgroundColor: yellow,white; borderColor: #00f,#f00; viewport: 0.6" style="border: 5px solid #000;">
     <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
 
         <p class="uk-h2" uk-parallax="target: #test-color; color: #0f0; viewport: 0.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -162,10 +154,10 @@ You can also transition from one color to another, for example for borders, back
 
 ## Filters
 
-CSS filters are an easy way to add graphical effects to any element on your page. While they are still an experimental feature for [some browsers](https://caniuse.com/filter), you can safely use them as long as your usability does not suffer in case they are not displayed. Using the Parallax component, you can dynamically change the amount of a filter on your element.
+CSS filters are an easy way to add graphical effects to any element on your page. While they are still an experimental feature for [some browsers](https://caniuse.com/filter), you can safely use them as long as your usability does not suffer. Using the Parallax component, you can dynamically change the amount of a filter on your element.
 
 ```html
-<div uk-parallax="blur: 20,0">...</div>
+<div uk-parallax="blur: 10; sepia: 100;">...</div>
 ```
 
 ```example
@@ -226,8 +218,6 @@ UIkit provides a number of options that you can add to the `uk-parallax` attribu
 ## Animated Properties
 
 UIkit provides a number of properties that you can animate by just adding them to the `uk-parallax` attribute.
-
-**Note** You can basically animate any CSS property that has a single value, like `width` and `height`, by adding it to the attribute.
 
 <div class="uk-overflow-auto">
     <table class="uk-table uk-table-striped">
@@ -305,3 +295,5 @@ UIkit provides a number of properties that you can animate by just adding them t
         </tbody>
     </table>
 </div>
+
+**Note** You can basically animate any CSS property that has a single value, like `width` and `height`, by adding it to the attribute.
