@@ -104,8 +104,120 @@ Should there be neither a variable nor a hook available, you can also create you
 }
 ```
 
+
+### Disable inverse component
+
+The Inverse component includes additional styles to implement the flexible inverse behaviour. If your project does not make use of these styles, you can leave them out when compiling Less. This allows smaller file sizes of the compiled CSS. To do so, search for Less variables containing `color-mode` (e.g. `@card-primary-color-mode`), and set them to `none`.
+
+To disable the inverse styles completely, set:
+
+```less
+$inverse-global-color-mode: none;
+```
+
+You can also disable the inverse mode for specific components:
+
+```less
+// Card
+$card-primary-color-mode: none;
+$card-secondary-color-mode: none;
+
+// Navbar
+$navbar-color-mode: none;
+
+// Off-canvas
+$offcanvas-bar-color-mode: none;
+
+// Overlay
+$overlay-primary-color-mode: none;
+
+// Section
+$section-primary-color-mode: none;
+$section-secondary-color-mode: none;
+
+// Tile
+$tile-primary-color-mode: none;
+$tile-secondary-color-mode: none;
+```
+
 ***
 
 ## How to structure your theme
 
-In the examples above, we have added all custom rules directly to `site.scss`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Sass compiler. You should better sort all rules into single files per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/scss/theme`. For more examples you can take a look into the [Less](less.md#how-to-structure-your-theme) documentation and adapt it for your SCSS files.
+In the examples above, we have added all custom rules directly to `site.scss`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Sass compiler. You should better sort all rules into single files per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/scss/theme`.
+
+
+```html
+<!-- uikit sources, might be in a subfolder when using npm or bower -->
+uikit/
+
+    src/
+
+        scss/
+
+            components/
+                _import.less
+                accordion.scss
+                alert.scss
+                ...
+
+            theme/
+                _import.less
+                accordion.scss
+                alert.scss
+                ...
+
+            ...
+            uikit-theme.scss
+            uikit.scss
+            ...
+
+<!-- in here, we now put all your customizations, divided by component -->
+theme/
+
+    <!-- create 2 files for each component you customize -->
+    accordion.scss <!-- overwrite variables in here -->
+    accordion-mixins.scss <!-- use hooks in here -->
+
+    alert.scss
+    alert-mixins.scss
+
+    align.scss
+    align-mixins.scss
+
+    <!-- etc for all components you customize -->
+    ...
+
+<!-- this is your entry point to compile scss -->
+site.scss
+
+```
+
+The entry point for the Sass compiler, `site.scss`:
+
+```scss
+// site.scss
+
+// 1. Your custom variables and variable overwrites.
+@import "theme/accordion.scss";
+@import "theme/alert.scss";
+@import "theme/align.scss";
+// ... import all
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@import "theme/accordion-mixins.scss";
+@import "theme/alert-mixins.scss";
+@import "theme/align-mixins.scss";
+// ... import all
+
+// 4. Import UIkit
+@import "uikit/src/scss/uikit-theme.scss";
+```
+
+Now you can compile `site.scss` and the resulting CSS will include all your customizations.
+
+**Note** You can further extend this setup by replacing part "4." with single import statements from the UIkit source. You can then omit some components you do not use to produce smaller CSS. Just copy from `src/scss/components/_import.scss` and make sure to preserve the correct import order.
