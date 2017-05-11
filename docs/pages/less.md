@@ -196,3 +196,6 @@ Your theme folder has one file which imports all single component customizations
 @import "alert.less";
 // ...
 ```
+
+
+**Note** With this setup you can remove the import statements of components you do not use. This will produce smaller CSS. Just make sure to preserve the correct import order as listet in [src/less/components/\_import.less](https://github.com/uikit/uikit/blob/develop/src/less/components/_import.less).

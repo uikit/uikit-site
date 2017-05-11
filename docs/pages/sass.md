@@ -149,28 +149,22 @@ In the examples above, we have added all custom rules directly to `site.scss`. W
 
 ```html
 <!-- uikit sources, might be in a subfolder when using npm or bower -->
-uikit/
+uikit/src/scss/
 
-    src/
+    components/
+        _import.less
+        accordion.scss
+        alert.scss
+        ...
 
-        scss/
+    theme/
+        _import.less
+        accordion.scss
+        alert.scss
+        ...
 
-            components/
-                _import.less
-                accordion.scss
-                alert.scss
-                ...
-
-            theme/
-                _import.less
-                accordion.scss
-                alert.scss
-                ...
-
-            ...
-            uikit-theme.scss
-            uikit.scss
-            ...
+    <!-- other uikit files, some of which we will import below -->
+    ...
 
 <!-- in here, we now put all your customizations, divided by component -->
 theme/
@@ -193,7 +187,7 @@ site.scss
 
 ```
 
-The entry point for the Sass compiler, `site.scss`:
+The entry point for the Sass compiler is `site.scss`. Here you compile all source files in the following order:
 
 ```scss
 // site.scss
@@ -220,4 +214,4 @@ The entry point for the Sass compiler, `site.scss`:
 
 Now you can compile `site.scss` and the resulting CSS will include all your customizations.
 
-**Note** You can further extend this setup by replacing part "4." with single import statements from the UIkit source. You can then omit some components you do not use to produce smaller CSS. Just copy from `src/scss/components/_import.scss` and make sure to preserve the correct import order.
+**Note** You can further extend this setup by replacing part "4." with single import statements from the UIkit source. You can then omit some components you do not use to produce smaller CSS. Just copy from [src/scss/components/\_import.scss](https://github.com/uikit/uikit/blob/develop/src/scss/components/_import.scss) and make sure to preserve the correct import order.
