@@ -110,21 +110,22 @@ Usually, the animation lasts as long as the element itself is in the viewport. T
 
 ***
 
-## Velocity
+## Easing
 
-To adjust the easing of the animation, add the `velocity` option. Lower values will cause a faster transition in the beginning, higher values will cause a faster transition in the end of the animation.
+To adjust the easing of the animation, add the `easing` option. Lower values will cause a faster transition in the beginning, higher values will cause a faster transition in the end of the animation.
 
-**Note** The velocity will change the easing from start to end value. If you want to reduce or increase the overall movement, you need to change the start and end values instead.
+**Note** The option will change the easing from start to end value. If you want to reduce or increase the overall movement, you need to change the start and end values instead.
+
 ```example
-<div id="test-velocity" class="uk-height-large uk-background-cover uk-margin uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
+<div id="test-easing" class="uk-height-large uk-background-cover uk-margin uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
      <div class="uk-grid uk-margin-auto uk-margin-auto-vertical uk-flex-inline">
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-velocity; y: 200; velocity: 0">0</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-velocity; y: 200; velocity: 0.5">0.5</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-velocity; y: 200; velocity: 0.6">0.6</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-velocity; y: 200; velocity: 0.8">0.8</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-velocity; y: 200; velocity: 1">1</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-velocity; y: 200; velocity: 2">2</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-velocity; y: 200; velocity: 4;">4</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 0">0</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 0.5">0.5</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 0.6">0.6</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 0.8">0.8</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 1">1</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 2">2</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 4;">4</div></div>
     </div>
 </div>
 
@@ -186,10 +187,10 @@ UIkit provides a number of options that you can add to the `uk-parallax` attribu
         </thead>
         <tbody>
             <tr>
-                <td><code>velocity</code></td>
+                <td><code>easing</code></td>
                 <td>Number</td>
                 <td>1</td>
-                <td>Animation velocity during scrolling</td>
+                <td>Animation easing during scrolling</td>
             </tr>
             <tr>
                 <td><code>target</code></td>
