@@ -51,7 +51,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `duration` | Number | `1000` | Animation duration in milliseconds. |
-| `transition` | String | `easeOutExpo` | Easing transition. Usable if you have the optional [easing plugin](http://gsgd.co.uk/sandbox/jquery/easing/) loaded on your page. |
+| `easing` | String | `easeOutExpo` | Easing function for the transition. Usable if you have the optional [easing plugin](http://gsgd.co.uk/sandbox/jquery/easing/) loaded on your page. |
 | `offset` | Number | `0` | Pixel offset added to scroll top. |
 
 ## JavaScript
