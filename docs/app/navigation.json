@@ -42,6 +42,7 @@
         "Flex": "flex",
         "Form": "form",
         "Grid": "grid",
+        "Grid Parallax": "grid-parallax",
         "Heading": "heading",
         "Icon": "icon",
         "Iconnav": "iconnav",
