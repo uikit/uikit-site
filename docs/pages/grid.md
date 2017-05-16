@@ -43,7 +43,7 @@ The Grid component comes with a default gutter, that is decreased automatically 
 | `.uk-grid-small`    | Add this class to apply a small gutter.                       |
 | `.uk-grid-medium`   | Add this class to apply a medium gutter like the default one, but without a breakpoint.                        |
 | `.uk-grid-large`    | Add this class to apply a large gutter with breakpoints.                      |
-| `.uk-grid-collapse` | Add this class to apply remove the grid gutter entirely. |
+| `.uk-grid-collapse` | Add this class to remove the grid gutter entirely. |
 
 ```html
 <div class="uk-grid-small" uk-grid>...</div>
