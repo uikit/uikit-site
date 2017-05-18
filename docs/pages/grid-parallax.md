@@ -76,5 +76,17 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option      | Value  | Default | Descriptio                                 |
 |-------------|--------|---------|--------------------------------------------|
-| `target`    | String | `false` | Selector string for elements to translate. |
-| `translate` | Number | `150`   | Translate value.                           |
+| `target`    | String | `false` | Selector string for child elements to translate. Defaults to element's children. |
+| `translate` | Number | `150`   | Translate value. The value must be a positive integer.                           |
+
+***
+
+## JavaScript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.gridParallax(element, options);
+```

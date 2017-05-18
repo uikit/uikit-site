@@ -70,7 +70,7 @@ Properties are always animated from their current value to the target value you 
 
 ## Viewport position
 
-Using the <code>viewport</code> option you can adjust the animation duration. The value defines how far inside the viewport the element is scrolled until the animation is completed. With the value <code>1</code> or <code>false</code>, the animation lasts as long as the element is in the viewport (default behavior). Setting it to <code>0.5</code>, for example, animates the property until it reaches the middle of the viewport.
+Using the <code>viewport</code> option you can adjust the animation duration. The value defines how far inside the viewport the target element is scrolled until the animation is completed. With the value <code>1</code> or <code>false</code>, the animation lasts as long as the element is in the viewport (default behavior). Setting it to <code>0.5</code>, for example, animates the property until the scroll position reaches the middle of the target element.
 
 ```html
 <div uk-parallax="viewport: 0.5">...</div>
@@ -148,7 +148,7 @@ To adjust the easing of the animation, add the `easing` option. Lower values wil
 
 ## Colors
 
-You can also transition from one color to another, for example for borders, backgrounds or text colors. You may define colors using `rgb()` definitions, color keywords or hex values.
+You can also transition from one color to another, for example for borders, backgrounds or text colors. Define colors using `rgb()` definitions, color keywords or hex values.
 
 ```html
 <div uk-parallax="borderColor: #00f,#f00">...</div>
@@ -182,9 +182,9 @@ CSS filters are an easy way to add graphical effects to any element on your page
 
 ***
 
-## Options
+## Component options
 
-UIkit provides a number of options that you can add to the `uk-parallax` attribute:
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
@@ -192,3 +192,15 @@ UIkit provides a number of options that you can add to the `uk-parallax` attribu
 | `target` | String | `false` | Element dimension reference for animation duration. |
 | `viewport` | Number | `1` | Animation range depending on the viewport. |
 | `media` | Mixed | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl). |
+
+***
+
+## JavaScript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.parallax(element, options);
+```
