@@ -20,14 +20,14 @@ There are two types of markup to apply this effect. The following example uses 3
         <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
     </div>
     <div>
-        <div class="uk-card uk-card-primary uk-card-body uk-grid-margin">Item</div>
-        <div class="uk-card uk-card-primary uk-card-body uk-grid-margin">Item</div>
-        <div class="uk-card uk-card-primary uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
     </div>
     <div>
-        <div class="uk-card uk-card-secondary uk-card-body uk-grid-margin">Item</div>
-        <div class="uk-card uk-card-secondary uk-card-body uk-grid-margin">Item</div>
-        <div class="uk-card uk-card-secondary uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
     </div>
 </div>
 ```
@@ -37,33 +37,42 @@ There are two types of markup to apply this effect. The following example uses 3
 The parallax effect is also applied, if grid columns wrap into the next line which is shown in this example. With the `translate` option you can adjust the speed of the scrolling, by default it has the value 150.
 
 ```example
-<div class="uk-child-width-1-2@m uk-child-width-1-3@l uk-text-center" uk-grid-parallax="translate:200">
+<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid-parallax="translate:200">
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-primary uk-card-body">Item</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-secondary uk-card-body">Item</div>
     </div>
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
     <div>
-        <div class="uk-card uk-card-primary uk-card-body">Item</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
     <div>
-        <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
     <div>
-        <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
 </div>
 ```
