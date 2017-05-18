@@ -180,7 +180,7 @@ UIkit provides a number of options that you can add to the `uk-parallax` attribu
 | `easing` | Number | `1` | Animation easing during scrolling |
 | `target` | String | `false` | Element dimension reference for animation duration. |
 | `viewport` | Number | `1` | Animation range depending on the viewport. |
-| `media` | Mixed | `false` | Condition for the active status with a width as integer (e.g. 640) or a css media query |
+| `media` | Mixed | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl). |
 
 ***
 
