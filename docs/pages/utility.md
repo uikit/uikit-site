@@ -780,6 +780,19 @@ Add one of the following classes to apply different blend modes to your backgrou
 
 ***
 
+## Transform center
+
+To center an element to itself, add the `uk-transform-center` class. This is particularly useful for absolute positioning.
+
+```example
+<div class="uk-inline">
+    <img src="images/light.jpg" alt="">
+    <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%" href="#" uk-marker></a>
+</div>
+```
+
+***
+
 ## Transform origin
 
 To modify the origin of an animation, like scaling, add one of the `uk-transform-origin-*` classes. This can be combined with the [Animation component](animation.md).

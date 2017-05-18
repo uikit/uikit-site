@@ -83,7 +83,7 @@ Then, inject additional CSS by using the hook inside your own SCSS file, i.e. to
 
 Inverse hooks allow you to customize how a component is styled when used in combination with the `.uk-light` or `.uk-dark` modifiers (check out the [Inverse component](inverse.md) for details). These hooks are handled a little differently in the Sass version compared to the Less version. In the Sass version, every component has its own inverse hooks. You can see all available ones when going through the file `src/scss/mixins.scss`.
 
-For example, you can make a default button appear with a futuristic green background whenever it is used as an inverse version.
+For example, you can make a default button appear with a custom background whenever it is used as an inverse version.
 
 ```scss
 @mixin hook-inverse-button-default(){
@@ -104,8 +104,114 @@ Should there be neither a variable nor a hook available, you can also create you
 }
 ```
 
+
+### Disable inverse component
+
+The Inverse component includes additional styles to implement the flexible inverse behaviour. If your project does not make use of these styles, you can leave them out when compiling Sass. This allows smaller file sizes of the compiled CSS. To do so, search for Sass variables containing `color-mode` (e.g. `$inverse-global-color-mode`), and set them to `none`.
+
+To disable the inverse styles completely, set:
+
+```scss
+$inverse-global-color-mode: none;
+```
+
+You can also disable the inverse mode for specific components:
+
+```scss
+// Card
+$card-primary-color-mode: none;
+$card-secondary-color-mode: none;
+
+// Navbar
+$navbar-color-mode: none;
+
+// Off-canvas
+$offcanvas-bar-color-mode: none;
+
+// Overlay
+$overlay-primary-color-mode: none;
+
+// Section
+$section-primary-color-mode: none;
+$section-secondary-color-mode: none;
+
+// Tile
+$tile-primary-color-mode: none;
+$tile-secondary-color-mode: none;
+```
+
 ***
 
 ## How to structure your theme
 
-In the examples above, we have added all custom rules directly to `site.scss`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Sass compiler. You should better sort all rules into single files per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/scss/theme`. For more examples you can take a look into the [Less](less.md#how-to-structure-your-theme) documentation and adapt it for your SCSS files.
+In the examples above, we have added all custom rules directly to `site.scss`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Sass compiler. You should better sort all rules into single files per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/scss/theme`.
+
+
+```html
+<!-- uikit sources, might be in a subfolder when using npm or bower -->
+uikit/src/scss/
+
+    components/
+        _import.scss
+        accordion.scss
+        alert.scss
+        ...
+
+    theme/
+        _import.scss
+        accordion.scss
+        alert.scss
+        ...
+
+    <!-- other uikit files, some of which we will import below -->
+    ...
+
+<!-- in here, we now put all your customizations, divided by component -->
+theme/
+
+    <!-- create 2 files for each component you customize -->
+    accordion.scss <!-- overwrite variables in here -->
+    accordion-mixins.scss <!-- use hooks in here -->
+
+    alert.scss
+    alert-mixins.scss
+
+    align.scss
+    align-mixins.scss
+
+    <!-- etc for all components you customize -->
+    ...
+
+<!-- this is your entry point to compile scss -->
+site.scss
+
+```
+
+The entry point for the Sass compiler is `site.scss`. Here you compile all source files in the following order:
+
+```scss
+// site.scss
+
+// 1. Your custom variables and variable overwrites.
+@import "theme/accordion.scss";
+@import "theme/alert.scss";
+@import "theme/align.scss";
+// ... import all
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables.scss";
+@import "uikit/src/scss/mixins.scss";
+
+// 3. Your custom mixin overwrites.
+@import "theme/accordion-mixins.scss";
+@import "theme/alert-mixins.scss";
+@import "theme/align-mixins.scss";
+// ... import all
+
+// 4. Import UIkit
+@import "uikit/src/scss/uikit.scss";
+```
+
+Now you can compile `site.scss` and the resulting CSS will include all your customizations.
+
+**Note** You can further extend this setup by replacing part "4." with single import statements from the UIkit source. You can then omit some components you do not use to produce smaller CSS. Just copy from [src/scss/components/\_import.scss](https://github.com/uikit/uikit/blob/develop/src/scss/components/_import.scss) and make sure to preserve the correct import order.

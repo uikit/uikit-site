@@ -1,12 +1,16 @@
 # Less
 
-<p class="uk-text-lead">Learn how to modify the UIkit styling and create your own theme.</p>
+<p class="uk-text-lead">Learn how to modify the UIkit styling and create your own theme with Less.</p>
 
 When you have [installed UIkit](installation.md) with Less sources, you can compile it and add your own custom theme. [Less](http://lesscss.org/) is the language that the UIkit styles are written in. This allows you to include customizations in the build process, rather than manually overwriting a lot of CSS rules by hand.
 
 ***
 
-## Use your own build process
+## How to build
+
+The Less source files allow you to customize UIkit. To use the customized version on your website, you need to compile the Less sources into CSS. There are basically two approaches available to you: Setup your own build process or use the build scripts included in UIkit.
+
+### Use your own build process
 
 To include UIkit in your project's build workflow, you need to import the core UIkit styles (`uikit.less`) or UIkit with its default theme (`uikit.theme.less`) into your project's own Less file. This main Less file then needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
 
@@ -18,9 +22,7 @@ To include UIkit in your project's build workflow, you need to import the core U
 // See "how to create a theme" below for more info.
 ```
 
-***
-
-## Use included build process
+### Use included build process
 
 If you are want to change the styling of UIkit, you can use its build process to create a differently themed version of the CSS, that you can then include in your project. That way you do not need to set up your own build process.
 
@@ -118,6 +120,41 @@ Should there be neither a variable nor a hook available, you can also create you
 }
 ```
 
+### Disable inverse component
+
+The Inverse component includes additional styles to implement the flexible inverse behaviour. If your project does not make use of these styles, you can leave them out when compiling Less. This allows smaller file sizes of the compiled CSS. To do so, search for Less variables containing `color-mode` (e.g. `@card-primary-color-mode`), and set them to `none`.
+
+To disable the inverse styles completely, set:
+
+```less
+@inverse-global-color-mode: none;
+```
+
+You can also disable the inverse mode for specific components:
+
+```less
+// Card
+@card-primary-color-mode: none;
+@card-secondary-color-mode: none;
+
+// Navbar
+@navbar-color-mode: none;
+
+// Off-canvas
+@offcanvas-bar-color-mode: none;
+
+// Overlay
+@overlay-primary-color-mode: none;
+
+// Section
+@section-primary-color-mode: none;
+@section-secondary-color-mode: none;
+
+// Tile
+@tile-primary-color-mode: none;
+@tile-secondary-color-mode: none;
+```
+
 ## How to structure your theme
 
 In the examples above, we have added all custom rules directly to `/custom/my-theme.less`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Less compiler. You should better sort all rules into single files per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/less/uikit.theme.less`.
@@ -159,3 +196,6 @@ Your theme folder has one file which imports all single component customizations
 @import "alert.less";
 // ...
 ```
+
+
+**Note** With this setup you can remove the import statements of components you do not use. This will produce smaller CSS. Just make sure to preserve the correct import order as listet in [src/less/components/\_import.less](https://github.com/uikit/uikit/blob/develop/src/less/components/_import.less).

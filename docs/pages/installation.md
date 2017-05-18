@@ -14,7 +14,13 @@ You have the following options to get UIkit:
 The compiled files of all UIkit versions are also hosted on the Cloudflare content delivery network via [cdnjs.com](https://cdnjs.com/libraries/uikit).
 
 ```html
+<!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/css/uikit.min.css" />
+
+<!-- jQuery is required -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- UIkit JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit-icons.min.js"></script>
 ```

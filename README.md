@@ -1,5 +1,7 @@
 # site-uikit
 
-UIkit 3 website
+This is the UIkit 3 website as found on [getuikit.com](https://getuikit.com). Use this repository to have an offline version of the documentation available. If you find errors in the docs, this is the place to report an issue or propose changes via pull-requests.
 
-Run ```npm run setup``` after cloning
+1. Clone the repository
+2. `npm install` to fetch all dependencies
+3. `npm run setup` to compile all resources

@@ -19,6 +19,8 @@ Add one of the `.uk-width-*` classes to an element to determine its size. Typica
 | `.uk-width-1-5` to `.uk-width-4-5` | The element takes up fifths of its parent container.      |
 | `.uk-width-1-6` to `.uk-width-5-6` | The element takes up sixths of its parent container.      |
 
+**Note** We remove redundancy into each set of unit classes, so that for instance instead of .uk-width-3-6 you should use .uk-width-1-2.
+
 ```html
 <div uk-grid>
     <div class="uk-width-1-2"></div>

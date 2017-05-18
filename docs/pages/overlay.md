@@ -83,7 +83,7 @@ For a prominent background color, add the `.uk-overlay-primary` class.
         <div class="uk-inline">
             <img src="../docs/images/photo.jpg" alt="">
             <div class="uk-overlay-primary uk-position-cover"></div>
-            <div class="uk-overlay uk-position-bottom uk-dark">
+            <div class="uk-overlay uk-position-bottom uk-light">
                 <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>

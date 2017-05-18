@@ -72,10 +72,10 @@ Add the `uk-close` attribute from the [Close component](close.md), to apply a cl
 
 ```example
 <!-- This is a button toggling the modal with the default close button -->
-<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close">Default</button>
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default">Default</button>
 
 <!-- This is the modal with the default close button -->
-<div id="modal-close" uk-modal>
+<div id="modal-close-default" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
         <button class="uk-modal-close-default" type="button" uk-close></button>
         <h2 class="uk-modal-title">Default</h2>
@@ -84,10 +84,10 @@ Add the `uk-close` attribute from the [Close component](close.md), to apply a cl
 </div>
 
 <!-- This is a button toggling the modal with the outside close button -->
-<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close">Outside</button>
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close-outside">Outside</button>
 
 <!-- This is the modal with the outside close button -->
-<div id="modal-close" uk-modal>
+<div id="modal-close-outside" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
         <h2 class="uk-modal-title">Outside</h2>
@@ -250,7 +250,7 @@ Using the [grid](grid.md) and [width](width.md) classes, you can create a nice, 
 
 ## Overflow
 
-By default, the page will scroll with the modal, if its content exceeds the window height. To apply a scrollbar inside the modal, add the `uk-overflow-auto` attribute from the [Utility component](utility.md#overflow) to the modal dialog — or the modal body, if there is also a header and/or footer.
+By default, the page will scroll with the modal, if its content exceeds the window height. To apply a scrollbar inside the modal, add the `uk-overflow-auto` attribute from the [Utility component](utility.md#overflow) to the modal body.
 
 ```html
 <div id="my-id" uk-modal>

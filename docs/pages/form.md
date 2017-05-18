@@ -13,6 +13,7 @@ Add one of the following classes to form controls inside a `<form>` element to d
 | `.uk-textarea` | Add this class to `<textarea>` elements.                      |
 | `.uk-radio`    | Add this class to `<input type="radio">` elements to create radio buttons. |
 | `.uk-checkbox` | Add this class to `<input type="checkbox">` elements to create checkboxes.    |
+| `.uk-range` | Add this class to `<input type="range">` elements to create range forms.    |
 
 ```html
 <form>
@@ -23,6 +24,7 @@ Add one of the following classes to form controls inside a `<form>` element to d
     <textarea class="uk-textarea"></textarea>
     <input class="uk-radio" type="radio">
     <input class="uk-checkbox" type="checkbox">
+    <input class="uk-range" type="range">
 </form>
 ```
 
@@ -57,6 +59,10 @@ Add the `.uk-fieldset` class to a `<fieldset>` element and the `.uk-legend` clas
         <div class="uk-margin uk-grid-small uk-child-width-auto" uk-grid>
             <label><input class="uk-checkbox" type="checkbox" checked> A</label>
             <label><input class="uk-checkbox" type="checkbox"> B</label>
+        </div>
+
+        <div class="uk-margin">
+            <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
         </div>
 
     </fieldset>
