@@ -1,9 +1,8 @@
 # Grid Parallax
 
-<p class="uk-text-lead">Create an effect which scrolls the single columns of a grid with different speeds.</p>
+<p class="uk-text-lead">Create an effect to scroll the single columns of a grid at different speeds.</p>
 
-
-The grid parallax allows you to add a scrolling parallax effect to columns within a Grid from the [Grid component](grid.md). To do so you need to add the attribute `uk-grid-parallax` to the grid.
+The Grid Parallax allows you to add a scrolling parallax effect to columns within a Grid from the [Grid component](grid.md). To do so you need to add the attribute `uk-grid-parallax` to the grid.
 
 ```html
 <div uk-grid uk-grid-parallax>...</div>
@@ -128,6 +127,6 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option      | Value  | Default | Descriptio                                 |
 |-------------|--------|---------|--------------------------------------------|
-| `target`    | String | false   | Selector string for elements to translate. |
-| `translate` | Number | 150     | Translate value.                           |
-| `smooth`    | Number | 150     | Delayed translate duration.                |
+| `target`    | String | `false` | Selector string for elements to translate. |
+| `translate` | Number | `150`   | Translate value.                           |
+| `smooth`    | Number | `150`   | Delayed translate duration.                |
