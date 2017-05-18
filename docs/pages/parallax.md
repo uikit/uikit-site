@@ -13,7 +13,7 @@ To apply this component, add the `uk-parallax` attribute to any element. Add an 
 ```example
 <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
 
-    <h2 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">Headline</h2>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">Headline</h1>
 
 </div>
 ```
@@ -79,7 +79,7 @@ Using the <code>viewport</code> option you can adjust the animation duration. Th
 ```example
 <div class="uk-height-large uk-background-cover uk-light uk-flex" style="background-image: url('images/dark.jpg');">
 
-    <h2 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; viewport: 0.5">Headline</h2>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; viewport: 0.5">Headline</h1>
 
 </div>
 ```
@@ -99,7 +99,7 @@ Different parallax animations can easily be nested.
 ```example
 <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
 
-    <h2 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="x: 100,0; viewport: 0.5">Headline</h2>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="x: 100,0; viewport: 0.5">Headline</h1>
 
 </div>
 ```
@@ -119,7 +119,7 @@ Usually, the animation lasts as long as the element itself is in the viewport. T
 ```example
 <div id="test-target" class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
 
-    <h2 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; x: 100,0; viewport: 0.5">Headline</h2>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; x: 100,0; viewport: 0.5">Headline</h1>
 
 </div>
 ```
@@ -157,7 +157,7 @@ You can also transition from one color to another, for example for borders, back
 ```example
 <div id="test-color" class="test-color uk-height-large uk-overflow-hidden uk-flex" uk-parallax="backgroundColor: yellow,white; borderColor: #00f,#f00;" style="border: 5px solid #000;">
 
-    <h2 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; color: #0f0;">Headline</h2>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; color: #0f0;">Headline</h1>
 
 </div>
 ```
@@ -175,7 +175,7 @@ CSS filters are an easy way to add graphical effects to any element on your page
 ```example
 <div id="test-filter" class="uk-height-large uk-background-cover uk-overflow-hidden uk-flex" uk-parallax="sepia: 100;" style="background-image: url('images/light.jpg');">
 
-    <h2 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; blur: 0,10;">Headline</h2>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; blur: 0,10;">Headline</h1>
 
 </div>
 ```
