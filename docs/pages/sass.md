@@ -83,7 +83,7 @@ Then, inject additional CSS by using the hook inside your own SCSS file, i.e. to
 
 Inverse hooks allow you to customize how a component is styled when used in combination with the `.uk-light` or `.uk-dark` modifiers (check out the [Inverse component](inverse.md) for details). These hooks are handled a little differently in the Sass version compared to the Less version. In the Sass version, every component has its own inverse hooks. You can see all available ones when going through the file `src/scss/mixins.scss`.
 
-For example, you can make a default button appear with a futuristic green background whenever it is used as an inverse version.
+For example, you can make a default button appear with a custom background whenever it is used as an inverse version.
 
 ```scss
 @mixin hook-inverse-button-default(){
@@ -107,17 +107,17 @@ Should there be neither a variable nor a hook available, you can also create you
 
 ### Disable inverse component
 
-The Inverse component includes additional styles to implement the flexible inverse behaviour. If your project does not make use of these styles, you can leave them out when compiling Less. This allows smaller file sizes of the compiled CSS. To do so, search for Less variables containing `color-mode` (e.g. `@card-primary-color-mode`), and set them to `none`.
+The Inverse component includes additional styles to implement the flexible inverse behaviour. If your project does not make use of these styles, you can leave them out when compiling Sass. This allows smaller file sizes of the compiled CSS. To do so, search for Sass variables containing `color-mode` (e.g. `$inverse-global-color-mode`), and set them to `none`.
 
 To disable the inverse styles completely, set:
 
-```less
+```scss
 $inverse-global-color-mode: none;
 ```
 
 You can also disable the inverse mode for specific components:
 
-```less
+```scss
 // Card
 $card-primary-color-mode: none;
 $card-secondary-color-mode: none;
@@ -152,13 +152,13 @@ In the examples above, we have added all custom rules directly to `site.scss`. W
 uikit/src/scss/
 
     components/
-        _import.less
+        _import.scss
         accordion.scss
         alert.scss
         ...
 
     theme/
-        _import.less
+        _import.scss
         accordion.scss
         alert.scss
         ...
@@ -199,8 +199,8 @@ The entry point for the Sass compiler is `site.scss`. Here you compile all sourc
 // ... import all
 
 // 2. Import default variables and available mixins.
-@import "uikit/src/scss/variables-theme.scss";
-@import "uikit/src/scss/mixins-theme.scss";
+@import "uikit/src/scss/variables.scss";
+@import "uikit/src/scss/mixins.scss";
 
 // 3. Your custom mixin overwrites.
 @import "theme/accordion-mixins.scss";
@@ -209,7 +209,7 @@ The entry point for the Sass compiler is `site.scss`. Here you compile all sourc
 // ... import all
 
 // 4. Import UIkit
-@import "uikit/src/scss/uikit-theme.scss";
+@import "uikit/src/scss/uikit.scss";
 ```
 
 Now you can compile `site.scss` and the resulting CSS will include all your customizations.
