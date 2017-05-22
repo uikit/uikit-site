@@ -118,7 +118,7 @@
 
                 $(this.$refs.container).html(page);
 
-                this.$parent.component = components.indexOf(this.$route.params.page) != -1 ? this.$route.params.page : false;
+                this.$parent.component = ~components.indexOf(this.$route.params.page) ? this.$route.params.page : false;
 
                 this.$parent.ids = $('> h2 a[href^="#"]', this.$refs.container).toArray().reduce((ids, el) => {
 
@@ -136,7 +136,7 @@
 
                 setTimeout(() => {
                     $('pre code', this.$refs.container).each((i, block) => hljs.highlightBlock(block));
-                    UIkit.scroll($('a[href^="#"]:not([href="#"])', this.$refs.container), {offset: 100});
+                    // UIkit.scroll($('a[href^="#"]:not([href="#"])', this.$refs.container), {offset: 100});
                 });
 
             }
