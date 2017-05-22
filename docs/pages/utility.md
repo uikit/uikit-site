@@ -362,7 +362,7 @@ If your grid wraps into multiple rows, only grid columns within the same row are
 The table below lists the available settings of the `uk-height-match` attribute. [Learn more](javascript.md#component-configuration)
 
 | Option  | Value        | Default | Description                                                                                 |
-| ------- | ------------ | ----------------------------------------------------------------------------------------------------- |
+| ------- | ------------ | ------- | ------------------------------------------------------------------------------------------- |
 | `target`| CSS selector | `false` | Elements that should match. By default, direct children will match.                         |
 | `row`   | Boolean      | `true`  | If your targets wrap into multiple rows, only grid columns within the same row are matched. |
 
@@ -518,6 +518,17 @@ To visually connect horizontal items add the `uk-leader` attribute to the elemen
     <div>$20.90</div>
 </div>
 ```
+
+***
+
+### Component options
+
+The table below lists the available settings of the `uk-leader` attribute. [Learn more](javascript.md#component-configuration)
+
+| Option  | Value        | Default     | Description                                                                                            |
+| ------- | ------------ | ----------- | ------------------------------------------------------------------------------------------------------ |
+| `fill`  | String       | `undefined` | Optional fill character.                                                                               |
+| `media` | String       | `false`     | Condition for the space filling - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl).|
 
 ***
 
