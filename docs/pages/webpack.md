@@ -69,11 +69,13 @@ This way you have the reference to UIkit available without having to include its
 To configure Webpack to compile `app/index.js` into `dist/bundle.js`, create the file `webpack.config.js` with the following content.
 
 ```js
+var path = require('path');
+
 module.exports = {
     entry: './app/index.js',
     output: {
         filename: 'bundle.js',
-        path: './dist'
+        path: path.resolve(__dirname, 'dist')
     }
 };
 ```
@@ -82,6 +84,7 @@ Now, run Webpack in your project's main directory.
 
 ```sh
 ./node_modules/.bin/webpack # Run webpack from local project installation
+.\node_modules\.bin\webpack # Run webpack on Windows
 webpack # If you installed webpack globally
 ```
 
