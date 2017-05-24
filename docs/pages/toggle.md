@@ -1,6 +1,6 @@
 # Toggle
 
-<p class="uk-text-lead">Hide, switch or change the appearence of different contents through a toggle.</p>
+<p class="uk-text-lead">Hide, switch or change the appearance of different contents through a toggle.</p>
 
 ## Usage
 
