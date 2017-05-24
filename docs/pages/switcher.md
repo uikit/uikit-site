@@ -268,7 +268,7 @@ Use the [Grid](grid) and [Width](width) components to display content correctly 
             </div>
         </div>
     </div>
-<div>
+</div>
 ```
 
 ***
