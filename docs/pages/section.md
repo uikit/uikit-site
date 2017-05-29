@@ -203,7 +203,6 @@ You can add different paddings to each section or remove it altogether.
 | `.uk-section-large`           | Add this class to increase a section's padding.                                        |
 | `.uk-section-xlarge`          | Add this class to further increase a section's padding.                                |
 | `.uk-padding-remove-vertical` | Add this class from the [Padding component](padding.md) to remove a section's padding. |
->>>>>>> Stashed changes
 
 ```example
 <div class="uk-section uk-section-large uk-section-muted">
