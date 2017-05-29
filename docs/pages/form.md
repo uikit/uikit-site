@@ -51,12 +51,12 @@ Add the `.uk-fieldset` class to a `<fieldset>` element and the `.uk-legend` clas
             <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
         </div>
 
-        <div class="uk-margin uk-grid-small uk-child-width-auto" uk-grid>
+        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
             <label><input class="uk-radio" type="radio" name="radio2" checked> A</label>
             <label><input class="uk-radio" type="radio" name="radio2"> B</label>
         </div>
 
-        <div class="uk-margin uk-grid-small uk-child-width-auto" uk-grid>
+        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
             <label><input class="uk-checkbox" type="checkbox" checked> A</label>
             <label><input class="uk-checkbox" type="checkbox"> B</label>
         </div>
