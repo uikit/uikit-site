@@ -54,7 +54,7 @@ npm run compile
 npm run watch
 ```
 
-The compiled `dist` folder now contains additional files which are not checked in by default. The build task will create even more additional files if you have added a [custom UIkit theme](theme.md).
+The compiled `dist` folder now contains additional files which are not checked in by default. The build task will create even more additional files if you have added a [custom UIkit theme](less.md#use-included-build-process).
 
 ```html
 /dist/css
