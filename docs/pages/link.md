@@ -18,9 +18,27 @@ The [Base component](base.md) determines the default link color. If you want the
 
 ***
 
+## Link text
+
+If you want a link to appear like text and only apply a hover effect, just add the `.uk-link-text` class to the anchor element. You can also add the class to a parent element and it will be applied to all `<a>` elements inside it. This is usefull for link lists in the page footer.
+
+```html
+<a class="uk-link-text" href=""></a>
+```
+
+```example
+<ul class="uk-list uk-link-text">
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+</ul>
+```
+
+***
+
 ## Link reset
 
-To reset a link's color, so that it inherits the color from its parent, add the `.uk-link-reset` class. You can also add the class to a parent element and it will be applied to all `<a>` elements inside it.
+To reset a link's color, so that it inherits the color from its parent, add the `.uk-link-reset` class. There won't be any hover effect at all. You can also add the class to a parent element and it will be applied to all `<a>` elements inside it.
 
 ```example
 <a class="uk-link-reset" href="#">Link</a>
