@@ -103,7 +103,7 @@ export function openOnCodepen(code) {
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&apos;");
 
-    $(`<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+    $(`<form action="https://codepen.io/pen/define" method="POST" target="_blank">
             <input type="hidden" name="data" value='${data}'>
         </form>`).appendTo('body').submit().remove();
 
