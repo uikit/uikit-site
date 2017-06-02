@@ -86,7 +86,7 @@ To add responsive behavior to your cover image, you need to create an invisible 
 Adding the `uk-height-viewport` attribute from the [Utility component](utility.md) will stretch the height of the parent element to fill the whole viewport.
 
 ```html
-<div class="uk-cover-container" uk-height-viewport>
+<div class="uk-cover-container uk-height-viewport">
     <img src="" alt="" uk-cover>
 </div>
 ```
