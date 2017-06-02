@@ -222,7 +222,7 @@ To determine how much space a flex item should take up, add one of the following
 The Flex component can be combined with a grid from the [Grid component](grid.md).
 
 ```example
-<div class="uk-flex-middle" uk-grid>
+<div class="uk-flex uk-flex-middle" uk-grid>
     <div class="uk-width-2-3@m">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     </div>
