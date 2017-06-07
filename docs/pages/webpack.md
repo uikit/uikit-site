@@ -30,6 +30,8 @@ As an entry file for the projects JavaScript, create a file `app/index.js` with 
 import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
 
+window.UIkit = UIkit;
+
 // loads the Icon plugin
 UIkit.use(Icons);
 
