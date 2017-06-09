@@ -267,7 +267,7 @@ Add the `.uk-logo` class from the [Utility component](utility.md) to an `<a>` or
         <ul class="uk-navbar-nav">
             <li>
                 <a href="#">
-                    <span class="uk-icon uk-margin-small-right" href="#" uk-icon="icon: star"></span>
+                    <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
                     Features
                 </a>
             </li>

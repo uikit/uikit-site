@@ -179,6 +179,15 @@
 
                 </div>
 
+                <div>
+
+                    <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <img src="images/pro/style-juno.jpg" alt="Juno Style">
+                        <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/juno/" data-modal></a>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
