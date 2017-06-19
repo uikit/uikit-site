@@ -76,7 +76,7 @@ It is also possible to connect multiple content containers. Just add the `connec
 
 ```html
 <!-- This is the nav containing the toggling elements -->
-<ul uk-switcher="connect: my-class">...</ul>
+<ul uk-switcher="connect: .my-class">...</ul>
 
 <!-- These are the containers of the content items -->
 <ul class="uk-switcher my-class">...</ul>
