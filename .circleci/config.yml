@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:7.9.0
+      - image: node:8.1
     working_directory: ~/uikit-site
     branches:
         only:
@@ -17,7 +17,7 @@ jobs:
           command: |
             yarn
             yarn global add bower
-            bower update
+            bower --allow-root update
       - run:
           name: Compile
           command: |
