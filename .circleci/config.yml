@@ -13,7 +13,7 @@ jobs:
           command: apt-get update && apt-get -y install rsync
       - checkout
       - restore_cache:
-          key: node-modules-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+          key: node-modules-{{ checksum "package.json" }}
       - restore_cache:
           key: bower-{{ checksum "bower.json" }}-{{ checksum ".bowerrc" }}
       - run:
@@ -23,7 +23,7 @@ jobs:
             yarn global add bower
             bower --allow-root update
       - save_cache:
-          key: node-modules-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+          key: node-modules-{{ checksum "package.json" }}
           paths:
             - ./node-modules
       - save_cache:
