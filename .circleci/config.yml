@@ -10,7 +10,7 @@ jobs:
     steps:
       - run:
           name: Update Environment
-          command: apt-get update && apt-get -y install rsync openssh-client
+          command: apt-get update && apt-get -y install rsync
       - checkout
       - run:
           name: Dependencys
