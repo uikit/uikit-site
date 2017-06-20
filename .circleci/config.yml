@@ -1,0 +1,32 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:7.9.0
+    working_directory: ~/uikit-site
+    branches:
+        only:
+          - master
+    steps:
+      - run:
+          name: Update Environment
+          command: apt-get update && apt-get -y install rsync openssh-client
+      - checkout
+      - run:
+          name: Dependencys
+          command: |
+            bower update
+            yarn
+      - run:
+          name: Compile
+          command: |
+            mkdir css
+            yarn run compile
+      - run:
+          name: Replace Build Number
+          command: |
+            sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" index.html
+            sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/index.html
+      - run:
+          name: Transfer Files
+          command: rsync -avze "ssh -o StrictHostKeyChecking=no" --delete --exclude "migrate.min.js" --exclude "node_modules" --exclude "v2" --exclude "fonts" --exclude ".git*" --exclude ".circleci" . $UIKIT_SERVER
