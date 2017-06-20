@@ -15,8 +15,9 @@ jobs:
       - run:
           name: Dependencys
           command: |
-            bower update
             yarn
+            yarn install -g bower
+            bower update
       - run:
           name: Compile
           command: |
