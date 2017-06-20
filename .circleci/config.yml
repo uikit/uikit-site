@@ -16,7 +16,7 @@ jobs:
           name: Dependencys
           command: |
             yarn
-            yarn install -g bower
+            yarn global add bower
             bower update
       - run:
           name: Compile
