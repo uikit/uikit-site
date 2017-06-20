@@ -12,12 +12,24 @@ jobs:
           name: Update Environment
           command: apt-get update && apt-get -y install rsync
       - checkout
+      - restore_cache:
+          key: node-modules-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+      - restore_cache:
+          key: bower-{{ checksum "bower.json" }}-{{ checksum ".bowerrc" }}
       - run:
-          name: Dependencys
+          name: Dependencies
           command: |
             yarn
             yarn global add bower
             bower --allow-root update
+      - save_cache:
+          key: node-modules-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node-modules
+      - save_cache:
+          key: bower-{{ checksum "bower.json" }}-{{ checksum ".bowerrc" }}
+          paths:
+            - ./assets
       - run:
           name: Compile
           command: |
@@ -30,4 +42,4 @@ jobs:
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/index.html
       - run:
           name: Transfer Files
-          command: rsync -avze "ssh -o StrictHostKeyChecking=no" --delete --exclude "migrate.min.js" --exclude "node_modules" --exclude "v2" --exclude "fonts" --exclude ".git*" --exclude ".circleci" . $UIKIT_SERVER
+          command: rsync -avze "ssh -o StrictHostKeyChecking=no" --delete --exclude "yarn.lock" --exclude "migrate.min.js" --exclude "node_modules" --exclude "v2" --exclude "fonts" --exclude ".git*" --exclude ".circleci" . $UIKIT_SERVER
