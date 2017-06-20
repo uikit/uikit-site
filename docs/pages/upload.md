@@ -171,7 +171,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `type` | String | `POST` | The request type. |
 | `params` | Object | `{}` | Additional parameters. |
 | `allow` | String | `false` | File name filter. (eg. *.png) |
-| `mime` | String | `false` | File MIME type filter. (eg. images/*) |
+| `mime` | String | `false` | File MIME type filter. (eg. image/*) |
 | `concurrent` | Number | `1` | Number of files that will be uploaded simultaneously. |
 | `data-type` | String | `''' | The expected response data type: xml, json, script, or html |
 | `msg-invalid-mime` | String | `Invalid File Type: %s` | Invalid MIME type message. |
