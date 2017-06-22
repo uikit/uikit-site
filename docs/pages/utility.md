@@ -886,14 +886,14 @@ To automatically mute or play videos add the `uk-video` attribute to the element
 
     <div>
 
-        <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +video">Toggle Video</button>
+        <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +video">Toggle HTML5 Video</button>
         <video class="uk-responsive-width" src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" width="640" height="360" controls uk-video="automute: true"></video>
 
     </div>
 
     <div>
 
-        <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +iframe">Toggle Video</button>
+        <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +iframe">Toggle Youtube Video</button>
         <iframe src="http://www.youtube.com/embed/YE7VzlLtp-4?autoplay=0&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="640" height="360" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
 
     </div>
@@ -901,13 +901,11 @@ To automatically mute or play videos add the `uk-video` attribute to the element
 </div>
 ```
 
-***
-
 ### Component options
 
 The table below lists the available settings of the `uk-video` attribute. [Learn more](javascript.md#component-configuration)
 
-| Option  | Value        | Default     | Description                                                                                            |
-| ------- | ------------ | ----------- | ------------------------------------------------------------------------------------------------------ |
-| `autoplay`  | Boolean       | `true` | Automatically start the video. Pauses the video if it is not visible.                                                                               |
-| `automute` | Boolean       | `false`     | Automatically mute the video.|
+| Option     | Value     | Default | Description                                                           |
+| ---------- | --------- | ------- | --------------------------------------------------------------------- |
+| `autoplay` | Boolean   | `true`  | Automatically start the video. Pauses the video if it is not visible. |
+| `automute` | Boolean   | `false` | Automatically mute the video.                                         |

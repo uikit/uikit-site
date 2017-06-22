@@ -100,19 +100,24 @@ Add the `uk-close` attribute from the [Close component](close.md), to apply a cl
 
 ## Center modal
 
-To center the modal dialog, add the `center: true` parameter to the `uk-modal` attribute.
+To center the modal dialog vertically, you can use the `.uk-margin-auto-vertical` class from the [Margin](margin.md) component.
 
 ```html
-<div id="my-id" uk-modal="center: true"></div>
+<div id="my-id" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical"></div>
+</div>
 ```
 
 ```example
 <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Open</a>
 
-<div id="modal-center" uk-modal="center: true">
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <img src="../docs/images/size1.jpg" alt="">
+    <div id="modal-center" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
     </div>
 </div>
 ```
@@ -161,35 +166,6 @@ To divide the modal into different content sections, use the following classes.
 </div>
 ```
 
-***
-
-## Caption
-
-You can also create a caption that will be placed outside the modal. Just add the `.uk-modal-caption` class to a `<div>` element inside the modal dialog.
-
-```html
-<div uk-modal>
-    <div class="uk-modal-dialog">
-        <div class="uk-modal-body"></div>
-        <div class="uk-modal-caption"></div>
-    </div>
-</div>
-```
-
-```example
-<a class="uk-button uk-button-default" href="#modal-caption" uk-toggle>Open</a>
-
-<div id="modal-caption" uk-modal="center: true">
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-body">
-            <h2 class="uk-modal-title">Modal Title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="uk-modal-caption">Caption</div>
-    </div>
-</div>
-```
 
 ***
 
@@ -303,13 +279,71 @@ By default, the page will scroll with the modal, if its content exceeds the wind
 
 ***
 
+## Groups
+
+You can group multiple modals by linking from one to the other and back. Use this to create multistep wizards inside your modals.
+
+```html
+<div id="modal-group-1" uk-modal>
+    <div class="uk-modal-dialog">
+        <a href="#modal-group-2" uk-toggle>Next</a>
+    </div>
+</div>
+
+<div id="modal-group-1" uk-modal>
+    <div class="uk-modal-dialog">
+        <a href="#modal-group-1" uk-toggle>Previous</a>
+    </div>
+</div>
+```
+
+```example
+<p uk-margin>
+    <a class="uk-button uk-button-default" href="#modal-group-1" uk-toggle>Modal 1</a>
+    <a class="uk-button uk-button-default" href="#modal-group-2" uk-toggle>Modal 2</a>
+</p>
+
+<div id="modal-group-1" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Headline 1</h2>
+        </div>
+        <div class="uk-modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <a href="#modal-group-2" class="uk-button uk-button-primary" uk-toggle>Next</a>
+        </div>
+    </div>
+</div>
+
+<div id="modal-group-2" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Headline 2</h2>
+        </div>
+        <div class="uk-modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <a href="#modal-group-1" class="uk-button uk-button-primary" uk-toggle>Previous</a>
+        </div>
+    </div>
+</div>
+```
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
-| `center` | Boolean | `false` | Center the modal. |
 | `esc-close` | Boolean | `true` | Close the modal when the _Esc_ key is pressed. |
 | `bg-close` | Boolean | `true` | Close the modal when the background is clicked. |
 | `stack` | Boolean | `false` | Stack modals, when more than one is open. By default, the previous modal will be hidden. |
