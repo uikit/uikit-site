@@ -1,10 +1,137 @@
 # Lightbox
 
+<p class="uk-text-lead">Create a lightbox gallery for images and videos utilizing the [Modal](modal.md) component.</p>
 
 
 ## Usage
 
+To apply this component, add the `uk-lightbox` attribute to a container to turn all anchors inside that container into lightbox links. If a `caption` attribute exists it will be displayed as a caption for the lightbox.
 
+```html
+<div uk-lightbox>
+    <a href="image.jpg"></a>
+</div>
+```
+
+```example
+<div uk-lightbox>
+    <a class="uk-button uk-button-default" href="../docs/images/photo.jpg">Open Lightbox</a>
+</div>
+```
+
+***
+
+## Caption
+
+Set the `caption` attribute on an anchor to display a caption at the bottom of the lightbox.
+
+```html
+<div uk-lightbox>
+    <a href="image.jpg" caption="Caption"></a>
+</div>
+```
+
+```example
+<div uk-lightbox>
+    <a class="uk-button uk-button-default" href="../docs/images/photo.jpg" caption="Caption">Open Lightbox</a>
+</div>
+```
+
+***
+
+## Animations
+
+By default, the Lightbox gallery uses a slide animation. You can set the `animation` property to use a different animation. Possible values are `slide`, `fade` and `scale`.
+
+```html
+<div uk-lightbox="animation: fade">
+    <a href="image.jpg"></a>
+</div>
+```
+
+```example
+<div class="uk-h3">Slide</div>
+<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
+    <div>
+        <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="../docs/images/photo.jpg" caption="Caption 1">
+            <img src="../docs/images/photo.jpg" width="400" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="../docs/images/dark.jpg" caption="Caption 2">
+            <img src="../docs/images/dark.jpg" width="400" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="../docs/images/light.jpg" caption="Caption 3">
+            <img src="../docs/images/light.jpg" width="400" alt="">
+        </a>
+    </div>
+</div>
+
+<div class="uk-h3">Fade</div>
+<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: fade">
+    <div>
+        <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="../docs/images/photo.jpg" caption="Caption 1">
+            <img src="../docs/images/photo.jpg" width="400" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="../docs/images/dark.jpg" caption="Caption 2">
+            <img src="../docs/images/dark.jpg" width="400" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="../docs/images/light.jpg" caption="Caption 3">
+            <img src="../docs/images/light.jpg" width="400" alt="">
+        </a>
+    </div>
+</div>
+
+<div class="uk-h3">Scale</div>
+<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: scale">
+    <div>
+        <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="../docs/images/photo.jpg" caption="Caption 1">
+            <img src="../docs/images/photo.jpg" width="400" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="../docs/images/dark.jpg" caption="Caption 2">
+            <img src="../docs/images/dark.jpg" width="400" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="../docs/images/light.jpg" caption="Caption 3">
+            <img src="../docs/images/light.jpg" width="400" alt="">
+        </a>
+    </div>
+</div>
+```
+
+***
+
+## Content Sources
+
+A lightbox is not restricted to images. Other media, like videos, can be displayed inside a lightbox and it will automatically generate the correct output by evaluating your path.
+
+```html
+<div uk-lightbox>
+    <a class="uk-button" href="https://www.youtube.com/watch?v=YE7VzlLtp-4"></a>
+</div>
+```
+
+```example
+<div uk-lightbox>
+    <a class="uk-button uk-button-default" href="../docs/images/photo.jpg" caption="Image">Image</a>
+    <a class="uk-button uk-button-default" href="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" caption="Video">Video</a>
+    <a class="uk-button uk-button-default" href="https://www.youtube.com/watch?v=YE7VzlLtp-4" caption="YouTube">YouTube</a>
+    <a class="uk-button uk-button-default" href="http://vimeo.com/1084537" caption="Vimeo">Vimeo</a>
+</div>
+```
+
+###  Manual content type
+
+The Lightbox uses the `href` attribute to figure out the type of the linked content. If no filename extension is defined in the image path, just add the `type="image"` attribute to the `<a>` tag. You can also set `type="video"` when linking to a video. Otherwise, the Lightbox will show an iframe by default.
 
 ***
 
@@ -28,7 +155,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `index`     | Number | `0`   | The initial item to show. (zero based) |
 | `preload`   | Number | `1`   | The number of items to preload. (left and right of the currently active item) |
 | `items`     | Array  | `[]`   | An array of items to display_ (\[{source: 'images/size1.jpg', title: '900x600'}]) |
-| `template`     | String  | ``   | The template string. |
+| `template`     | String  | Default markup   | The template string. |
 | `delay-controls`     | Number  | `300`   | Delay time before controls fade out in ms. |
 
 ***
