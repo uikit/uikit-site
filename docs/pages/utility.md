@@ -903,7 +903,7 @@ To automatically mute or play videos, add the `uk-video` attribute to the elemen
 
 ***
 
-### Video options
+### Component options
 
 The table below lists the available settings of the `uk-video` attribute. [Learn more](javascript.md#component-configuration)
 
