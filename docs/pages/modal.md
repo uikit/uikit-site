@@ -279,6 +279,62 @@ By default, the page will scroll with the modal, if its content exceeds the wind
 
 ***
 
+## Media
+
+If you want to display media, you should first check if the [Lightbox](lightbox.md) already does everything you need. However, you can also use the modal to have more control over the markup to wrap your media in.
+
+**Note** Use the `uk-video` attribute from the [Utility](utility.md) component to make sure videos are stopped when the modal is closed.
+
+```html
+<div uk-modal>
+    <div class="uk-modal-dialog uk-width-auto">
+        <iframe src="http://www.youtube.com/embed/YE7VzlLtp-4" uk-video></iframe>
+    </div>
+</div>
+```
+
+```example
+ <p uk-margin>
+    <a class="uk-button uk-button-default" href="#modal-media-image" uk-toggle>Image</a>
+    <a class="uk-button uk-button-default" href="#modal-media-video" uk-toggle>Video</a>
+    <a class="uk-button uk-button-default" href="#modal-media-youtube" uk-toggle>Youtube</a>
+    <a class="uk-button uk-button-default" href="#modal-media-vimeo" uk-toggle>Vimeo</a>
+</p>
+
+<div id="modal-media-image" uk-modal>
+    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <img src="images/photo.jpg" alt="">
+    </div>
+</div>
+
+<div id="modal-media-video" uk-modal>
+    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <video controls uk-video>
+            <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
+            <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
+        </video>
+    </div>
+</div>
+
+<div id="modal-media-youtube" uk-modal>
+    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <iframe src="http://www.youtube.com/embed/YE7VzlLtp-4" width="560" height="315" frameborder="0" uk-video></iframe>
+    </div>
+</div>
+
+<div id="modal-media-vimeo" uk-modal>
+    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <iframe src="http://player.vimeo.com/video/1084537" width="500" height="281" frameborder="0" uk-video></iframe>
+    </div>
+</div>
+```
+
+***
+
 ## Groups
 
 You can group multiple modals by linking from one to the other and back. Use this to create multistep wizards inside your modals.
