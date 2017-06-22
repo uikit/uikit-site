@@ -1,6 +1,6 @@
 # Lightbox
 
-<p class="uk-text-lead">Create a lightbox gallery for images and videos utilizing the [Modal](modal.md) component.</p>
+<p class="uk-text-lead">Create a lightbox gallery for images and videos utilizing the [Modal component](modal.md).</p>
 
 
 ## Usage
@@ -41,7 +41,7 @@ Set the `caption` attribute on an anchor to display a caption at the bottom of t
 
 ## Animations
 
-By default, the Lightbox gallery uses a slide animation. You can set the `animation` property to use a different animation. Possible values are `slide`, `fade` and `scale`.
+By default, the Lightbox gallery uses a slide animation. You can set the `animation` property to use a different one. Possible values are `slide`, `fade` and `scale`.
 
 ```html
 <div uk-lightbox="animation: fade">
@@ -112,7 +112,7 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 
 ## Content Sources
 
-A lightbox is not restricted to images. Other media, like videos, can be displayed inside a lightbox and it will automatically generate the correct output by evaluating your path.
+A lightbox is not restricted to images. Other media, like videos, can be displayed as well.
 
 ```html
 <div uk-lightbox>
@@ -129,9 +129,11 @@ A lightbox is not restricted to images. Other media, like videos, can be display
 </div>
 ```
 
+***
+
 ###  Manual content type
 
-The Lightbox uses the `href` attribute to figure out the type of the linked content. If no filename extension is defined in the image path, just add the `type="image"` attribute to the `<a>` tag. You can also set `type="video"` when linking to a video. Otherwise, the Lightbox will show an iframe by default.
+The Lightbox uses the `href` attribute to figure out the type of the linked content. If no filename extension is defined in the image path, just add the `type="image"` attribute to the `<a>` tag. You can also set `type="video"` when linking to a video. Otherwise, the lightbox will show an iframe by default.
 
 ***
 
@@ -141,22 +143,10 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ### Lightbox
 
-| Option    | Value                     | Default | Description                                      |
-|-----------|---------------------------|---------|--------------------------------------------------|
-| `animation`    | String | `slide`   | Lightbox animation mode: `slide`, `fade` or `scale`.  |
-| `toggle`    | CSS selector | `a`   | Toggle selector - triggers the lightbox.                |
-
-### Lightbox Panel
-
-| Option    | Value                     | Default | Description                                      |
-|-----------|---------------------------|---------|--------------------------------------------------|
-| `animation` | String | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`.  |
-| `duration`  | Number | `400`   | The animation duration. |
-| `index`     | Number | `0`   | The initial item to show. (zero based) |
-| `preload`   | Number | `1`   | The number of items to preload. (left and right of the currently active item) |
-| `items`     | Array  | `[]`   | An array of items to display_ (\[{source: 'images/size1.jpg', title: '900x600'}]) |
-| `template`     | String  | Default markup   | The template string. |
-| `delay-controls`     | Number  | `300`   | Delay time before controls fade out in ms. |
+| Option      | Value        | Default | Description                                          |
+|-------------|--------------|---------|------------------------------------------------------|
+| `animation` | String       | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`. |
+| `toggle`    | CSS selector | `a`     | Toggle selector - triggers the lightbox.             |
 
 ***
 
@@ -170,9 +160,23 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 // To apply lightbox to a group of links
 UIkit.lightbox(element, options);
 
-// To dynamically initialize the lightbox
-UIkit.lightboxPanel(options);
+// To dynamically initialize the lightbox panel
+UIkit.lightboxPanel(panelOptions);
 ```
+
+### Lightbox Panel Options
+
+When you only want to use the lightbox panel directly through the JS API, you can set the following options.
+
+| Option    | Value                     | Default | Description                                      |
+|-----------|---------------------------|---------|--------------------------------------------------|
+| `animation` | String | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`.  |
+| `duration`  | Number | `400`   | The animation duration. |
+| `index`     | Number | `0`   | The initial item to show. (zero based) |
+| `preload`   | Number | `1`   | The number of items to preload. (left and right of the currently active item) |
+| `items`     | Array  | `[]`   | An array of items to display, e.g. `[{source: 'images/size1.jpg', title: '900x600'}]` |
+| `template`     | String  | Default markup   | The template string. |
+| `delay-controls`     | Number  | `300`   | Delay time before controls fade out in ms. |
 
 ### Events
 
