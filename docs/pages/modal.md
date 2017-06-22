@@ -100,19 +100,19 @@ Add the `uk-close` attribute from the [Close component](close.md), to apply a cl
 
 ## Center modal
 
-To center the modal dialog vertically, you can use the `.uk-margin-auto-vertical` class from the [Margin](margin.md) component.
+To vertically center the modal dialog, you can use the `.uk-margin-auto-vertical` class from the [Margin component](margin.md).
 
 ```html
 <div id="my-id" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical"></div>
+    <div class="uk-modal-dialog uk-margin-auto-vertical"></div>
 </div>
 ```
 
 ```example
 <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Open</a>
 
-    <div id="modal-center" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+<div id="modal-center" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
 
         <button class="uk-modal-close-default" type="button" uk-close></button>
 
@@ -149,7 +149,7 @@ To divide the modal into different content sections, use the following classes.
 ```example
 <a class="uk-button uk-button-default" href="#modal-sections" uk-toggle>Open</a>
 
-<div id="modal-sections" uk-modal="center: true">
+<div id="modal-sections" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-default" type="button" uk-close></button>
         <div class="uk-modal-header">
@@ -281,14 +281,14 @@ By default, the page will scroll with the modal, if its content exceeds the wind
 
 ## Media
 
-If you want to display media, you should first check if the [Lightbox](lightbox.md) already does everything you need. However, you can also use the modal to have more control over the markup to wrap your media in.
+If you want to display media, you should first check, if the [Lightbox component](lightbox.md) doesn't already offer everything you need. However, you can also use the modal to have more control over the markup to wrap your media in.
 
-**Note** Use the `uk-video` attribute from the [Utility](utility.md) component to make sure videos are stopped when the modal is closed.
+**Note** Use the `uk-video` attribute from the [Utility component](utility.md) to make sure videos are stopped when the modal is closed.
 
 ```html
 <div uk-modal>
     <div class="uk-modal-dialog uk-width-auto">
-        <iframe src="http://www.youtube.com/embed/YE7VzlLtp-4" uk-video></iframe>
+        <iframe src="" uk-video></iframe>
     </div>
 </div>
 ```

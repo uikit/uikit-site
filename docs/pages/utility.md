@@ -875,7 +875,7 @@ To create a box shadow on an [upload area](upload.md) when dragging a file over 
 
 ## Video
 
-To automatically mute or play videos add the `uk-video` attribute to the element on the left. The video will pause whenever its element is not visible and resume once it becomes visible again.
+To automatically mute or play videos, add the `uk-video` attribute to the element on the left. The video will pause whenever its element is not visible and resume once it becomes visible again.
 
 ```html
 <video uk-video></div>
@@ -901,7 +901,9 @@ To automatically mute or play videos add the `uk-video` attribute to the element
 </div>
 ```
 
-### Component options
+***
+
+### Video options
 
 The table below lists the available settings of the `uk-video` attribute. [Learn more](javascript.md#component-configuration)
 
