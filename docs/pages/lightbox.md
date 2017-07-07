@@ -5,7 +5,7 @@
 
 ## Usage
 
-To apply this component, add the `uk-lightbox` attribute to a container to turn all anchors inside that container into lightbox links. If a `caption` attribute exists it will be displayed as a caption for the lightbox.
+To apply this component, add the `uk-lightbox` attribute to a container to turn all anchors inside that container into lightbox links.
 
 ```html
 <div uk-lightbox>
@@ -23,7 +23,7 @@ To apply this component, add the `uk-lightbox` attribute to a container to turn 
 
 ## Caption
 
-Set the `caption` attribute on an anchor to display a caption at the bottom of the lightbox.
+To display a caption at the bottom of the lightbox, set the `caption` attribute on an anchor.
 
 ```html
 <div uk-lightbox>
@@ -166,7 +166,7 @@ UIkit.lightboxPanel(panelOptions);
 
 ### Lightbox Panel Options
 
-When you only want to use the lightbox panel directly through the JS API, you can set the following options.
+If you only want to use the lightbox panel directly through the JS API, you can set the following options.
 
 | Option    | Value                     | Default | Description                                      |
 |-----------|---------------------------|---------|--------------------------------------------------|
