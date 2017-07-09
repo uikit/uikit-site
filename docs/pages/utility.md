@@ -636,7 +636,7 @@ To start playing an animated Gif only when it comes into the viewport, add the `
 
 ## Video
 
-To automatically mute or play videos, add the `uk-video` attribute to the element on the left. The video will pause whenever its element is not visible and resume once it becomes visible again.
+To automatically mute or play videos, add the `uk-video` attribute. The video will pause whenever its element is not visible and resume once it becomes visible again.
 
 ```html
 <video uk-video></div>
@@ -644,21 +644,18 @@ To automatically mute or play videos, add the `uk-video` attribute to the elemen
 
 ```example
 <div class="uk-grid uk-child-width-1-2@s">
-
     <div>
 
-        <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +video">Toggle HTML5 Video</button>
-        <video class="uk-responsive-width" src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" width="640" height="360" controls uk-video="automute: true"></video>
+        <button class="uk-button uk-button-default uk-margin" type="button" uk-toggle="target: +video">Toggle HTML5 Video</button>
+        <video src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" width="640" height="360" controls uk-video="automute: true"></video>
 
     </div>
-
     <div>
 
         <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +iframe">Toggle Youtube Video</button>
-        <iframe src="http://www.youtube.com/embed/YE7VzlLtp-4?autoplay=0&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="640" height="360" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+        <iframe src="http://www.youtube.com/embed/YE7VzlLtp-4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1" width="640" height="360" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
 
     </div>
-
 </div>
 ```
 
