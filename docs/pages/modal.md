@@ -417,6 +417,14 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 UIkit.modal(element, options);
 ```
 
+### JavaScript options
+
+| Name | Default | Description |
+| --- | --- | --- |
+| `clsPage` | `'uk-modal-page'` | Class to add to `<body>` when modal is active |
+| `clsPanel` | `'uk-modal-dialog'` | Class of the element to be considered the panel of the modal |
+| `selClose` | <a href="https://github.com/uikit/uikit/blob/develop/src/js/core/modal.js#L13" class="uk-icon-link" uk-icon="icon: link">See source</a> | CSS selector for all elements that should trigger the closing of the modal |
+
 ***
 
 ### Modal dialogs
