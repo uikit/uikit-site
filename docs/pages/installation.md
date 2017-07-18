@@ -7,9 +7,8 @@
 You have the following options to get UIkit:
 
 - Download the [latest release](https://github.com/uikit/uikit/releases/latest) with pre-built JavaScript and CSS.
-- Install with [Bower](https://bower.io) to get the pre-built JavaScript, CSS and the Less source files. This is recommended when using UIkit for a typical web project: ```bower install uikit#^3.0.0```
+- Install with [Npm](https://www.npmjs.com/package/uikit) to get the pre-built JavaScript, CSS and the Less source files. This is recommended when using UIkit for a typical web project: ```npm install uikit```
 - Clone the repo to get all source files including build scripts: `git clone git://github.com/uikit/uikit.git`
-- Install with [Npm](https://npmjs.com) to get all source files as they are available on Github: ```npm install uikit```
 
 The compiled files of all UIkit versions are also hosted on the Cloudflare content delivery network via [cdnjs.com](https://cdnjs.com/libraries/uikit).
 
