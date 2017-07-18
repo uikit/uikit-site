@@ -16,7 +16,7 @@ To include UIkit in your project's build workflow, you need to import the core U
 
 ```less
 // Import UIkit default theme (or uikit.less with only core styles)
-@import "bower_components/uikit/src/less/uikit.theme.less";
+@import "node_modules/uikit/src/less/uikit.theme.less";
 
 // Your custom code goes here, e.g. mixins, variables.
 // See "how to create a theme" below for more info.

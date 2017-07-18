@@ -148,7 +148,7 @@ In the examples above, we have added all custom rules directly to `site.scss`. W
 
 
 ```html
-<!-- uikit sources, might be in a subfolder when using npm or bower -->
+<!-- uikit sources, might be in a subfolder when using npm -->
 uikit/src/scss/
 
     components/
