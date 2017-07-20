@@ -21,7 +21,6 @@ jobs:
       - run:
           name: Compile
           command: |
-            mkdir css
             yarn run compile
       - run:
           name: Replace Build Number
