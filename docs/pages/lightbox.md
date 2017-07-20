@@ -118,7 +118,7 @@ A lightbox is not restricted to images. Other media, like videos, can be display
 <div uk-lightbox>
     <a class="uk-button" href="video.mp4"></a>
     <a class="uk-button" href="https://www.youtube.com/watch?v=YE7VzlLtp-4"></a>
-    <a class="uk-button" href="http://vimeo.com/1084537"></a>
+    <a class="uk-button" href="https://vimeo.com/1084537"></a>
 </div>
 ```
 
