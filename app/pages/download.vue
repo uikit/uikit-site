@@ -47,7 +47,7 @@
 
         mounted() {
 
-            $.get("assets/uikit/package.json", {nocache: Math.random()}, data => {
+            $.get("https://github.com/uikit/uikit/blob/master/CHANGELOG.md", {nocache: Math.random()}, data => {
                 setTimeout(() => {
                     location.href = `https://github.com/uikit/uikit/releases/download/v${data.version}/uikit-${data.version}.zip`;
                 }, 100);
