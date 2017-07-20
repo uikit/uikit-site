@@ -16,8 +16,6 @@ jobs:
           name: Dependencies
           command: |
             yarn
-            yarn global add bower
-            bower --allow-root update
       - run:
           name: Compile
           command: |
