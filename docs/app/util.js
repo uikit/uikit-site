@@ -79,7 +79,8 @@ export function openOnCodepen(code) {
             return src.indexOf('../docs/') === 0 != -1 ? match.replace(src, `${location.href.split('/docs/')[0]}/docs/${src.replace('../docs/', '')}`) : match;
         });
 
-    let data = {
+    let nc = Date.now() % 9999,
+        data = {
         title: '',
         description: '',
         html: code,
@@ -92,8 +93,8 @@ export function openOnCodepen(code) {
         js_pre_processor: 'none',
         js_modernizr: false,
         html_classes: '',
-        css_external: `https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.27/css/uikit.min.css`,
-        js_external: `https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js;https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.27/js/uikit.min.js;https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.27/js/uikit-icons.min.js`
+        css_external: `https://getuikit.com/assets/uikit/dist/css/uikit.css?nc=${nc}`,
+        js_external: `https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js;https://getuikit.com/assets/uikit/dist/js/uikit.js?nc=${nc};https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=${nc}`
     };
 
     data = JSON.stringify(data)

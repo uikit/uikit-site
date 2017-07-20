@@ -16,9 +16,12 @@ jobs:
           name: Dependencies
           command: |
             yarn
+            yarn global add bower
+            bower --allow-root update
       - run:
           name: Compile
           command: |
+            mkdir css
             yarn run compile
       - run:
           name: Replace Build Number
@@ -27,4 +30,4 @@ jobs:
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/index.html
       - run:
           name: Transfer Files
-          command: rsync -avze "ssh -o StrictHostKeyChecking=no" --delete --include="node_modules" --include "node_modules/uikit" --exclude "yarn.lock" --exclude "migrate.min.js" --exclude "node_modules/*" --exclude "v2" --exclude "fonts" --exclude ".git*" --exclude ".circleci" . $UIKIT_SERVER
+          command: rsync -avze "ssh -o StrictHostKeyChecking=no" --delete --exclude "yarn.lock" --exclude "migrate.min.js" --exclude "node_modules" --exclude "v2" --exclude "fonts" --exclude ".git*" --exclude ".circleci" . $UIKIT_SERVER

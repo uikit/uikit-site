@@ -98,7 +98,7 @@ npm run watch
 ```
 
 <script>
-$.get("node_modules/uikit/package.json", {nocache: Math.random()}, data => {
+$.get("https://getuikit.com/assets/uikit/package.json", {nocache: Math.random()}, data => {
     $("pre").each(function(i) {
         $(this).html($(this).html().replace(/\[uikit-version\]/g, data.version));
     });
