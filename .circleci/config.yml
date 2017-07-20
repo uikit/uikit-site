@@ -27,4 +27,4 @@ jobs:
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/index.html
       - run:
           name: Transfer Files
-          command: rsync -avze "ssh -o StrictHostKeyChecking=no" --delete --include "node_modules/uikit" --exclude "yarn.lock" --exclude "migrate.min.js" --exclude "node_modules" --exclude "v2" --exclude "fonts" --exclude ".git*" --exclude ".circleci" . $UIKIT_SERVER
+          command: rsync -avze "ssh -o StrictHostKeyChecking=no" --delete --include="node_modules" --include "node_modules/uikit" --exclude "yarn.lock" --exclude "migrate.min.js" --exclude "node_modules/*" --exclude "v2" --exclude "fonts" --exclude ".git*" --exclude ".circleci" . $UIKIT_SERVER
