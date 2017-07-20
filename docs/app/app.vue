@@ -60,7 +60,7 @@
                             </li>
                             <li class="uk-nav-divider"></li>
                             <li v-if="component">
-                                <a :href="'../assets/uikit/tests/'+component+'.html'" target="_blank">
+                                <a :href="'../node_modules/uikit/tests/'+component+'.html'" target="_blank">
                                     <span class="uk-margin-small-right" uk-icon="icon: push"></span>
                                     <span class="uk-text-middle">Open test</span>
                                 </a>

@@ -30,7 +30,7 @@
 
         mounted() {
 
-            $.get('assets/uikit/CHANGELOG.md', {nc: Math.random()}, body => {
+            $.get('node_modules/uikit/CHANGELOG.md', {nc: Math.random()}, body => {
                 this.$refs.changelog.innerHTML = this.parse(body);
             });
         },

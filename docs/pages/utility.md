@@ -284,7 +284,7 @@ Add the `uk-height-viewport` attribute to create a container that fills the heig
 <div uk-height-viewport="expand: true"></div>
 ```
 
-You can view examples in the tests for [Height Viewport](../assets/uikit/tests/height-viewport.html) and [Height Expand](../assets/uikit/tests/height-expand.html).
+You can view examples in the tests for [Height Viewport](../node_modules/uikit/tests/height-viewport.html) and [Height Expand](../node_modules/uikit/tests/height-expand.html).
 
 ***
 
@@ -610,10 +610,10 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 
 ```example
 <!-- Targets the SVG image -->
-<img src="../assets/uikit/src/images/icons/cloud-download.svg" width="40" height="40" uk-svg>
+<img src="../node_modules/uikit/src/images/icons/cloud-download.svg" width="40" height="40" uk-svg>
 
 <!-- Targets a symbol inside the SVG image -->
-<img src="../assets/uikit/tests/images/icons.svg#cloud-upload" width="40" height="40" uk-svg>
+<img src="../node_modules/uikit/tests/images/icons.svg#cloud-upload" width="40" height="40" uk-svg>
 ```
 
 SVGs will adapt the current color for their stroke and fill color. To prevent this behavior,  you can add the `uk-preserve` class to the SVG itself or to elements inside the SVG.

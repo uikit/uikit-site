@@ -84,7 +84,7 @@
                 }
             });
 
-            $.get("assets/uikit/package.json", {nocache: Math.random()}, data => {
+            $.get("node_modules/uikit/package.json", {nocache: Math.random()}, data => {
                 $("[uikit-version]").text(data.version);
             }, 'json');
 
