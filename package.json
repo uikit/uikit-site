@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "setup": "npm install && bower update && npm run compile",
+    "setup": "npm install && npm run compile",
     "compile": "npm run compile-js && npm run compile-less",
     "compile-js": "./node_modules/.bin/webpack -p",
     "compile-less": "mkdir -p css && ./node_modules/.bin/lessc less/theme.less > css/theme.css --relative-urls --rootpath=../less/ -x"
