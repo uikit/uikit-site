@@ -634,6 +634,45 @@ To start playing an animated Gif only when it comes into the viewport, add the `
 
 ***
 
+## Video
+
+To automatically mute or play videos, add the `uk-video` attribute. The video will pause whenever its element is not visible and resume once it becomes visible again.
+
+```html
+<video uk-video></div>
+```
+
+```example
+<div class="uk-grid uk-child-width-1-2@s">
+    <div>
+
+        <button class="uk-button uk-button-default uk-margin" type="button" uk-toggle="target: +video">Toggle HTML5 Video</button>
+        <video src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" width="640" height="360" controls uk-video="automute: true"></video>
+
+    </div>
+    <div>
+
+        <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +iframe">Toggle Youtube Video</button>
+        <iframe src="http://www.youtube.com/embed/YE7VzlLtp-4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1" width="640" height="360" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+
+    </div>
+</div>
+```
+
+***
+
+### Component options
+
+The table below lists the available settings of the `uk-video` attribute. [Learn more](javascript.md#component-configuration)
+
+| Option     | Value     | Default | Description                                                           |
+| ---------- | --------- | ------- | --------------------------------------------------------------------- |
+| `autoplay` | Boolean   | `true`  | Automatically start the video. Pauses the video if it is not visible. |
+| `automute` | Boolean   | `false` | Automatically mute the video.                                         |
+
+
+***
+
 ## Blend modes
 
 Add one of the following classes to apply different blend modes to your backgrounds, for example when placing them on images. You can combine these with the [Overlay component](overlay.md). For a better understanding of how background blend modes work, take a look at this [CSS Tricks article](https://css-tricks.com/almanac/properties/b/background-blend-mode/).

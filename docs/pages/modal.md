@@ -100,19 +100,24 @@ Add the `uk-close` attribute from the [Close component](close.md), to apply a cl
 
 ## Center modal
 
-To center the modal dialog, add the `center: true` parameter to the `uk-modal` attribute.
+To vertically center the modal dialog, you can use the `.uk-margin-auto-vertical` class from the [Margin component](margin.md).
 
 ```html
-<div id="my-id" uk-modal="center: true"></div>
+<div id="my-id" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical"></div>
+</div>
 ```
 
 ```example
 <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Open</a>
 
-<div id="modal-center" uk-modal="center: true">
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <img src="../docs/images/size1.jpg" alt="">
+<div id="modal-center" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
     </div>
 </div>
 ```
@@ -144,7 +149,7 @@ To divide the modal into different content sections, use the following classes.
 ```example
 <a class="uk-button uk-button-default" href="#modal-sections" uk-toggle>Open</a>
 
-<div id="modal-sections" uk-modal="center: true">
+<div id="modal-sections" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-default" type="button" uk-close></button>
         <div class="uk-modal-header">
@@ -161,35 +166,6 @@ To divide the modal into different content sections, use the following classes.
 </div>
 ```
 
-***
-
-## Caption
-
-You can also create a caption that will be placed outside the modal. Just add the `.uk-modal-caption` class to a `<div>` element inside the modal dialog.
-
-```html
-<div uk-modal>
-    <div class="uk-modal-dialog">
-        <div class="uk-modal-body"></div>
-        <div class="uk-modal-caption"></div>
-    </div>
-</div>
-```
-
-```example
-<a class="uk-button uk-button-default" href="#modal-caption" uk-toggle>Open</a>
-
-<div id="modal-caption" uk-modal="center: true">
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-body">
-            <h2 class="uk-modal-title">Modal Title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="uk-modal-caption">Caption</div>
-    </div>
-</div>
-```
 
 ***
 
@@ -303,13 +279,127 @@ By default, the page will scroll with the modal, if its content exceeds the wind
 
 ***
 
+## Media
+
+If you want to display media, you should first check, if the [Lightbox component](lightbox.md) doesn't already offer everything you need. However, you can also use the modal to have more control over the markup to wrap your media in.
+
+**Note** Use the `uk-video` attribute from the [Utility component](utility.md) to make sure videos are stopped when the modal is closed.
+
+```html
+<div uk-modal>
+    <div class="uk-modal-dialog uk-width-auto">
+        <iframe src="" uk-video></iframe>
+    </div>
+</div>
+```
+
+```example
+ <p uk-margin>
+    <a class="uk-button uk-button-default" href="#modal-media-image" uk-toggle>Image</a>
+    <a class="uk-button uk-button-default" href="#modal-media-video" uk-toggle>Video</a>
+    <a class="uk-button uk-button-default" href="#modal-media-youtube" uk-toggle>Youtube</a>
+    <a class="uk-button uk-button-default" href="#modal-media-vimeo" uk-toggle>Vimeo</a>
+</p>
+
+<div id="modal-media-image" uk-modal>
+    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <img src="images/photo.jpg" alt="">
+    </div>
+</div>
+
+<div id="modal-media-video" uk-modal>
+    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <video controls uk-video>
+            <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
+            <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
+        </video>
+    </div>
+</div>
+
+<div id="modal-media-youtube" uk-modal>
+    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <iframe src="http://www.youtube.com/embed/YE7VzlLtp-4" width="560" height="315" frameborder="0" uk-video></iframe>
+    </div>
+</div>
+
+<div id="modal-media-vimeo" uk-modal>
+    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <iframe src="http://player.vimeo.com/video/1084537" width="500" height="281" frameborder="0" uk-video></iframe>
+    </div>
+</div>
+```
+
+***
+
+## Groups
+
+You can group multiple modals by linking from one to the other and back. Use this to create multistep wizards inside your modals.
+
+```html
+<div id="modal-group-1" uk-modal>
+    <div class="uk-modal-dialog">
+        <a href="#modal-group-2" uk-toggle>Next</a>
+    </div>
+</div>
+
+<div id="modal-group-1" uk-modal>
+    <div class="uk-modal-dialog">
+        <a href="#modal-group-1" uk-toggle>Previous</a>
+    </div>
+</div>
+```
+
+```example
+<p uk-margin>
+    <a class="uk-button uk-button-default" href="#modal-group-1" uk-toggle>Modal 1</a>
+    <a class="uk-button uk-button-default" href="#modal-group-2" uk-toggle>Modal 2</a>
+</p>
+
+<div id="modal-group-1" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Headline 1</h2>
+        </div>
+        <div class="uk-modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <a href="#modal-group-2" class="uk-button uk-button-primary" uk-toggle>Next</a>
+        </div>
+    </div>
+</div>
+
+<div id="modal-group-2" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Headline 2</h2>
+        </div>
+        <div class="uk-modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <a href="#modal-group-1" class="uk-button uk-button-primary" uk-toggle>Previous</a>
+        </div>
+    </div>
+</div>
+```
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
-| `center` | Boolean | `false` | Center the modal. |
 | `esc-close` | Boolean | `true` | Close the modal when the _Esc_ key is pressed. |
 | `bg-close` | Boolean | `true` | Close the modal when the background is clicked. |
 | `stack` | Boolean | `false` | Stack modals, when more than one is open. By default, the previous modal will be hidden. |
@@ -326,6 +416,14 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ```js
 UIkit.modal(element, options);
 ```
+
+### JavaScript options
+
+| Name | Default | Description |
+| --- | --- | --- |
+| `clsPage` | `'uk-modal-page'` | Class to add to `<body>` when modal is active |
+| `clsPanel` | `'uk-modal-dialog'` | Class of the element to be considered the panel of the modal |
+| `selClose` | <a href="https://github.com/uikit/uikit/blob/develop/src/js/core/modal.js#L13" class="uk-icon-link" uk-icon="icon: link">See source</a> | CSS selector for all elements that should trigger the closing of the modal |
 
 ***
 
