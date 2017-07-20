@@ -1,9 +1,6 @@
 /node_modules
-/assets/*
-!/assets/google
 /css
 /fonts
-main.min.js
-js/*.min.js
+**/app/*.min.js
 .DS_Store
 .idea
