@@ -346,7 +346,7 @@ You can group multiple modals by linking from one to the other and back. Use thi
     </div>
 </div>
 
-<div id="modal-group-1" uk-modal>
+<div id="modal-group-2" uk-modal>
     <div class="uk-modal-dialog">
         <a href="#modal-group-1" uk-toggle>Previous</a>
     </div>
