@@ -103,7 +103,7 @@ Add the `uk-close` attribute from the [Close component](close.md), to apply a cl
 To vertically center the modal dialog, you can use the `.uk-margin-auto-vertical` class from the [Margin component](margin.md).
 
 ```html
-<div id="my-id" uk-modal>
+<div id="my-id" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical"></div>
 </div>
 ```
@@ -111,7 +111,7 @@ To vertically center the modal dialog, you can use the `.uk-margin-auto-vertical
 ```example
 <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Open</a>
 
-<div id="modal-center" uk-modal>
+<div id="modal-center" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
 
         <button class="uk-modal-close-default" type="button" uk-close></button>
@@ -121,6 +121,8 @@ To vertically center the modal dialog, you can use the `.uk-margin-auto-vertical
     </div>
 </div>
 ```
+
+*Note* `.uk-flex-top` on the modal container is needed to support IE 11.
 
 ***
 
@@ -301,14 +303,14 @@ If you want to display media, you should first check, if the [Lightbox component
     <a class="uk-button uk-button-default" href="#modal-media-vimeo" uk-toggle>Vimeo</a>
 </p>
 
-<div id="modal-media-image" uk-modal>
+<div id="modal-media-image" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
         <img src="images/photo.jpg" alt="">
     </div>
 </div>
 
-<div id="modal-media-video" uk-modal>
+<div id="modal-media-video" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
         <video controls uk-video>
@@ -318,14 +320,14 @@ If you want to display media, you should first check, if the [Lightbox component
     </div>
 </div>
 
-<div id="modal-media-youtube" uk-modal>
+<div id="modal-media-youtube" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
         <iframe src="http://www.youtube.com/embed/YE7VzlLtp-4" width="560" height="315" frameborder="0" uk-video></iframe>
     </div>
 </div>
 
-<div id="modal-media-vimeo" uk-modal>
+<div id="modal-media-vimeo" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
         <iframe src="http://player.vimeo.com/video/1084537" width="500" height="281" frameborder="0" uk-video></iframe>

@@ -58,7 +58,7 @@ Properties are always animated from their current value to the target value you 
 ```
 
 ```example
-<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
+<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('images/dark.jpg');">
     <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
         <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">Headline</h1>
         <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -77,7 +77,7 @@ Using the <code>viewport</code> option you can adjust the animation duration. Th
 ```
 
 ```example
-<div class="uk-height-large uk-background-cover uk-light uk-flex" style="background-image: url('images/dark.jpg');">
+<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" style="background-image: url('images/dark.jpg');">
 
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">Headline</h1>
 
@@ -97,7 +97,7 @@ Different parallax animations can easily be nested.
 ```
 
 ```example
-<div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
+<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
 
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="y: 100,0">Headline</h1>
 
@@ -117,7 +117,7 @@ Usually, the animation lasts as long as the element itself is in the viewport. T
 ```
 
 ```example
-<div id="test-target" class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
+<div id="test-target" class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
 
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; y: 100,0">Headline</h1>
 
@@ -155,7 +155,7 @@ You can also transition from one color to another, for example for borders, back
 ```
 
 ```example
-<div id="test-color" class="test-color uk-height-large uk-overflow-hidden uk-flex" uk-parallax="backgroundColor: yellow,white; borderColor: #00f,#f00; viewport: 0.5" style="border: 10px solid #000;">
+<div id="test-color" class="test-color uk-height-large uk-overflow-hidden uk-flex uk-flex-top" uk-parallax="backgroundColor: yellow,white; borderColor: #00f,#f00; viewport: 0.5" style="border: 10px solid #000;">
 
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; color: #0f0; viewport: 0.5">Headline</h1>
 
@@ -173,7 +173,7 @@ CSS filters are an easy way to add graphical effects to any element on your page
 ```
 
 ```example
-<div id="test-filter" class="uk-height-large uk-background-cover uk-overflow-hidden uk-flex" uk-parallax="sepia: 100;" style="background-image: url('images/light.jpg');">
+<div id="test-filter" class="uk-height-large uk-background-cover uk-overflow-hidden uk-flex uk-flex-top" uk-parallax="sepia: 100;" style="background-image: url('images/light.jpg');">
 
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; blur: 0,10;">Headline</h1>
 
