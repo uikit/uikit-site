@@ -380,3 +380,19 @@ These events will be triggered on the connected items of the elements with this 
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
 | `hide` | Fires after an item's hide animation has started. |
 | `hidden` | Fires after an item is hidden. |
+
+### Methods
+
+These methods are available on the component.
+
+#### Show
+
+```js
+UIkit.switcher(element).show(index);
+```
+
+Shows the Switcher item with given index.
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `index` | String, Integer, Node | 0 | Switcher item to show. 0 based index.|

@@ -255,3 +255,23 @@ These events will be triggered on elements with this component attached.
 | `hide` | Fires after an item's hide animation has started. |
 | `hidden` | Fires after an item is hidden. |
 | `stack` | Fires when the `drop-stack`class is applied. |
+
+### Methods
+
+These methods are available on the component.
+
+#### Show
+
+```js
+UIkit.drop(element).show();
+```
+
+Shows the Drop.
+
+#### Hide
+
+```js
+UIkit.drop(element).hide();
+```
+
+Hides the Drop.

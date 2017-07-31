@@ -101,3 +101,23 @@ These events will be triggered on elements with this component attached.
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
 | `hide` | Fires after an item's hide animation has started. |
 | `hidden` | Fires after an item is hidden. |
+
+### Methods
+
+These methods are available on the component.
+
+#### Show
+
+```js
+UIkit.tooltip(element).show();
+```
+
+Shows the Tooltip.
+
+#### Hide
+
+```js
+UIkit.tooltip(element).hide();
+```
+
+Hides the Tooltip.

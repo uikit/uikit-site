@@ -363,3 +363,23 @@ These events will be triggered on elements with this component attached.
 | `hide` | Fires after an item's hide animation has started. |
 | `hidden` | Fires after an item is hidden. |
 | `stack` | Fires when the `drop-stack`class is applied. |
+
+### Methods
+
+These methods are available on the component.
+
+#### Show
+
+```js
+UIkit.dropdown(element).show();
+```
+
+Shows the Dropdown.
+
+#### Hide
+
+```js
+UIkit.dropdown(element).hide();
+```
+
+Hides the Dropdown.

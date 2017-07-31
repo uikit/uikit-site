@@ -189,3 +189,20 @@ These events will be triggered on elements with this component attached.
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
 | `hide` | Fires after an item's hide animation has started. |
 | `hidden` | Fires after an item is hidden. |
+
+### Methods
+
+These methods are available on the component.
+
+#### Toggle
+
+```js
+UIkit.accordion(element).toggle(index, animate);
+```
+
+Toggles the content pane.
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `index` | String, Integer, Node | 0 | Accordion pane to toggle. 0 based index.|
+| `animate` | Boolean | true | Suppress opening animation by passing false. |

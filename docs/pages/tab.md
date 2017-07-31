@@ -201,3 +201,19 @@ These events will be triggered on the connected items of the elements with this 
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
 | `hide` | Fires after an item's hide animation has started. |
 | `hidden` | Fires after an item is hidden. |
+
+### Methods
+
+These methods are available on the component.
+
+#### Show
+
+```js
+UIkit.tab(element).show(index);
+```
+
+Shows the Tab item with given index.
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `index` | String, Integer, Node | 0 | Tab item to show. 0 based index.|

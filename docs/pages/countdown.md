@@ -138,3 +138,23 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ```js
 UIkit.countdown(element, options);
 ```
+
+### Methods
+
+These methods are available on the component.
+
+#### Start
+
+```js
+UIkit.countdown(element).start();
+```
+
+Starts the countdown.
+
+#### Stop
+
+```js
+UIkit.countdown(element).stop();
+```
+
+Stops the countdown.

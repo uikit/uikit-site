@@ -67,3 +67,19 @@ UIkit.scroll(element, options);
 <div style="height: 2000px;"></div>
 
 <a id="target" class="uk-button uk-button-primary" href="#top" uk-scroll>Scroll up</a>
+
+### Methods
+
+These methods are available on the component.
+
+#### ScrollTo
+
+```js
+UIkit.scroll(element).scrollTo(el);
+```
+
+Scroll to the given element.
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `el` | Node, Selector | undefined | The element to scroll to.|

@@ -79,7 +79,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | --- | --- | --- | --- |
 | `animation` | Boolean, String | `true` | Fade out or use the [Animation component](animation.md). |
 | `duration` | Number | `150` | Animation duration in milliseconds. |
-| `close` | CSS selector | `.uk-alert-close` | The close trigger element. |
+| `selClose` | CSS selector | `.uk-alert-close` | The close trigger element. |
 
 ***
 
@@ -101,3 +101,15 @@ These events will be triggered on elements with this component attached.
 | --- | --- |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
 | `hide` | Fires after an item is hidden. |
+
+### Methods
+
+These methods are available on the component.
+
+#### Close
+
+```js
+UIkit.alert(element).close();
+```
+
+Closes and removes the Alert.

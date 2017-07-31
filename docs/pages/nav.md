@@ -388,3 +388,20 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ```js
 UIkit.nav(element, options);
 ```
+
+### Methods
+
+These methods are available on the component.
+
+#### Toggle
+
+```js
+UIkit.nav(element).toggle(index, animate);
+```
+
+Toggles the content pane.
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `index` | String, Integer, Node | 0 | Nav pane to toggle. 0 based index.|
+| `animate` | Boolean | true | Suppress opening animation by passing false. |

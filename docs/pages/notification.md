@@ -180,3 +180,19 @@ These events will be triggered on elements with this component attached.
 | Name | Description |
 | --- | --- |
 | `close` | Fires after the notification has been closed. |
+
+### Methods
+
+These methods are available on the component.
+
+#### Close
+
+```js
+UIkit.notification(element).close(immediate);
+```
+
+Closes the notification.
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `immediate` | Boolean | true | Transition the notification out.|

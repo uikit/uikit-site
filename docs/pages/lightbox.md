@@ -166,6 +166,30 @@ UIkit.lightbox(element, options);
 UIkit.lightboxPanel(panelOptions);
 ```
 
+### Methods
+
+These methods are available on the component.
+
+#### Show
+
+```js
+UIkit.lightbox(element).show(index);
+```
+
+Shows the Lightbox's Panel and item.
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `index` | String, Integer | 0 | Lightbox item to show. 0 based index.|
+
+#### Hide
+
+```js
+UIkit.lightbox(element).hide();
+```
+
+Hides the Lightbox's Panel.
+
 ### Lightbox Panel Options
 
 If you only want to use the lightbox panel directly through the JS API, you can set the following options.
@@ -197,3 +221,27 @@ These events will be triggered on elements with this component attached.
 | `itemshown` | Fires after an item is shown. |
 | `itemhide` | Fires before an item is hidden. |
 | `itemhidden` | Fires after an item is hidden. |
+
+### Methods
+
+These methods are available on the component.
+
+#### Show
+
+```js
+UIkit.lightboxPanel(element).show(index);
+```
+
+Shows the Lightbox Panel's item.
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `index` | String, Integer | 0 | Lightbox item to show. 0 based index.|
+
+#### Hide
+
+```js
+UIkit.lightbox(element).hide();
+```
+
+Hides the Lightbox Panel.
