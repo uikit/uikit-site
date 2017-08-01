@@ -872,6 +872,76 @@ By default, the dropbar overlays the site content. Add the `dropbar-mode: push;`
 
 ***
 
+## Sticky Navbar
+
+*Note* You can view more examples in the tests for the [Sticky Navbar](../assets/uikit/tests/sticky-navbar.html).
+
+```html
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container" uk-navbar>...</nav>
+</div>
+```
+
+```example
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+        <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li>
+                    <a href="#">Parent</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Item</a></li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
+```
+
+Dropbar
+
+```html
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container" uk-navbar="dropbar: true;">...</nav>
+</div>
+```
+
+```example
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container" uk-navbar="dropbar: true;" style="position: relative; z-index: 980;">
+        <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li>
+                    <a href="#">Parent</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Item</a></li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
+```
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)

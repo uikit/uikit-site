@@ -162,9 +162,15 @@
 
 /*
  * Force vertical scrollbar
+ * 1. `overflow-x` has to be on the `body` element for Safari to prevent horizontal scrolling on touch
+      This causes a random bug showing a vertical scrollbar in combination with some fonts like `Poppins`
+      This is why `overflow-y` must also be set to `hidden`
  */
 
 html { overflow-y: scroll; }
+
+/* 1 */
+body { overflow: hidden; }
 
 
 /* Documentation Sidebars
