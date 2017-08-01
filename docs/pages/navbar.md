@@ -874,11 +874,12 @@ By default, the dropbar overlays the site content. Add the `dropbar-mode: push;`
 
 ## Sticky Navbar
 
-You can create a sticky navbar that stays at the top of your viewport by using the [Sticky component](sticky.md). The following examples show use cases of sticky navbars on typical websites, but plenty of more variations are possible.
+
+For a basic sticky navbar, wrap the navbar inside a container with the `uk-sticky` attribute from the [Sticky component](sticky.md).
+
+The navbar itself has a modifier class `uk-navbar-sticky` that ensures an optimized styling for the sticky state (for example an additional box shadow). To let the sticky component dynamically add and remove that class, set `cls-active: uk-navbar-sticky`. To ensure that the class is added to the navbar container, set `sel-target: .uk-navbar-container`.
 
 **Note** You can view more examples in the tests for the [Sticky Navbar](../assets/uikit/tests/sticky-navbar.html).
-
-For a basic sticky navbar, wrap the navbar inside a container with the `uk-sticky` attribute. The `sel-target` parameter tells the sticky component to apply to the navbar container. The `cls-active` parameter ensures that the navbar receives an optimized styling when it is in the sticky state (for example an additional box shadow or border styles).
 
 ```html
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
@@ -948,7 +949,9 @@ Instead of using a Dropdown, you can show a Dropbar, which means that the subnav
 
 ### Transparent Sticky Navbar
 
-When you use the navbar with a transparent background, you may often need want to remove that transparent styling when the navbar is sticky. Use the `cls-inactive` parameter to define which classes should be added and removed dynamically. In the example we also set an `animation` class and set a pixel value of `top: 200`, so that the navbar slides in with an animation when the user has scrolled 200px past the navbar.
+When you use a [transparent navbar](navbar.md#transparent-modifier), your markup contains the `.uk-navbar-transparent` class together with `.uk-light` or `.uk-dark`. When the navbar is sticky, it is usually required to remove these classes and add them when the navbar returns to the non-sticky state. To do that, set `cls-inactive: uk-navbar-transparent uk-light`.
+
+By default, the immediate toggling of classes does not look ideal. Instead, we can set `top: 200` to let the navbar disappear and then re-appear when the user has scrolled 200px past the navbar. In that case we can also define to have the navbar slide in with an animation, just set `animation: uk-animation-slide-top`.
 
 ```html
 <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
