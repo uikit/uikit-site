@@ -874,7 +874,11 @@ By default, the dropbar overlays the site content. Add the `dropbar-mode: push;`
 
 ## Sticky Navbar
 
+You can create a sticky navbar that stays at the top of your viewport by using the [Sticky component](sticky.md). Plenty of variations are possible and the following examples show use cases of sticky navbars on typical websites.
+
 *Note* You can view more examples in the tests for the [Sticky Navbar](../assets/uikit/tests/sticky-navbar.html).
+
+In its simplest setup, you wrap the navbar inside a container with the `uk-sticky` attribute. The `sel-target` parameter tells the sticky component to apply to the navbar container. The `cls-active` parameter ensures that the navbar receives an optimized styling when it is in the sticky state (for example an additional box shadow or border styles).
 
 ```html
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
@@ -907,7 +911,7 @@ By default, the dropbar overlays the site content. Add the `dropbar-mode: push;`
 </div>
 ```
 
-Dropbar
+Instead of using a Dropdown, you can show a Dropbar, which means that the subnavigation is displayed in full width below the navbar. Simply set `dropbar: true` inside the `uk-navbar` attribute.
 
 ```html
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
@@ -943,6 +947,8 @@ Dropbar
 ***
 
 ### Transparent Sticky Navbar
+
+When you use the navbar with a transparent background, you may often need want to remove that transparent styling when the navbar is sticky. Use the `cls-inactive` parameter to define which classes should be added and removed dynamically. In the example we also set an `animation` class and set a pixel value of `top: 200`, so that the navbar slides in with an animation when the user has scrolled 200px past the navbar.
 
 ```html
 <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
