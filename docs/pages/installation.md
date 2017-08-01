@@ -14,14 +14,14 @@ The compiled files of all UIkit versions are also hosted on the Cloudflare conte
 
 ```html
 <!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/css/uikit.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" integrity="sha384-BgxuFqla78uYRNJ03Zkdfrobba0p7p4GBOnNTIRwClxKflHN4e9X7aqnKtw9gHVY" crossorigin="anonymous">
 
 <!-- jQuery is required -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
 
 <!-- UIkit JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit-icons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js" integrity="sha384-Qo1gElgDqcVHwwHHE3MuWdD8lzJC24E/tU7Yj4MyIawGdfDFbYmPNCbkDDVM6Yge" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js" integrity="sha384-P1a/8ZD4bYlEKgVwf3XXFfbtw5LPCo48CVvcEqg4VWxqaSocg2Xhcyp/nTr8/iBa" crossorigin="anonymous"></script>
 ```
 
 ***
