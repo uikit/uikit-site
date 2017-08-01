@@ -874,11 +874,11 @@ By default, the dropbar overlays the site content. Add the `dropbar-mode: push;`
 
 ## Sticky Navbar
 
-You can create a sticky navbar that stays at the top of your viewport by using the [Sticky component](sticky.md). Plenty of variations are possible and the following examples show use cases of sticky navbars on typical websites.
+You can create a sticky navbar that stays at the top of your viewport by using the [Sticky component](sticky.md). The following examples show use cases of sticky navbars on typical websites, but plenty of more variations are possible.
 
-*Note* You can view more examples in the tests for the [Sticky Navbar](../assets/uikit/tests/sticky-navbar.html).
+**Note** You can view more examples in the tests for the [Sticky Navbar](../assets/uikit/tests/sticky-navbar.html).
 
-In its simplest setup, you wrap the navbar inside a container with the `uk-sticky` attribute. The `sel-target` parameter tells the sticky component to apply to the navbar container. The `cls-active` parameter ensures that the navbar receives an optimized styling when it is in the sticky state (for example an additional box shadow or border styles).
+For a basic sticky navbar, wrap the navbar inside a container with the `uk-sticky` attribute. The `sel-target` parameter tells the sticky component to apply to the navbar container. The `cls-active` parameter ensures that the navbar receives an optimized styling when it is in the sticky state (for example an additional box shadow or border styles).
 
 ```html
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
