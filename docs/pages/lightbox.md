@@ -202,7 +202,7 @@ If you only want to use the lightbox panel directly through the JS API, you can 
 | `preload`   | Number | `1`   | The number of items to preload. (left and right of the currently active item) |
 | `items`     | Array  | `[]`   | An array of items to display, e.g. `[{source: 'images/size1.jpg', title: '900x600'}]` |
 | `template`     | String  | Default markup   | The template string. |
-| `delay-controls`     | Number  | `300`   | Delay time before controls fade out in ms. |
+| `delay-controls`     | Number  | `3000`   | Delay time before controls fade out in ms. |
 
 ### Events
 
