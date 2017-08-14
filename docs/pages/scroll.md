@@ -68,6 +68,16 @@ UIkit.scroll(element, options);
 
 <a id="target" class="uk-button uk-button-primary" href="#top" uk-scroll>Scroll up</a>
 
+### Events
+
+These events will be triggered on elements with this component attached.
+
+| Name | Description |
+| --- | --- |
+| `beforescroll` | Fires before scroll begins. Can prevent scrolling by returning `false`. |
+| `scrolled` | Fires after scrolling is finished. |
+
+
 ### Methods
 
 These methods are available on the component.
