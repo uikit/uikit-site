@@ -382,3 +382,10 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ```js
 UIkit.icon(element, options);
 ```
+### Properties
+
+Native svg icons are loaded into the UIkit icon container via a javascript promise, which is accessible though the `svg` property of the component. If you need to access the loaded svg, you can do so once the promise has been fulfulled, using `.then`. For example, to change the fill colour of parts of a dynamically generated icon
+
+```example
+UIkit.icon(element).svg.then(function() {$('svg path',element).css('fill', 'red')})
+```
