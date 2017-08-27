@@ -44,10 +44,11 @@ Once you have included UIkit into your document, take a look at the available co
 
 ## UIkit autocomplete for your editor
 
-Using UIkit works best if you have a solid code editor, for example [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/). To be even more efficient, we recommend that you install one of the autocomplete plugins for your favorite IDE or code editor. This saves a lot of time, as you won't have to look up and type all UIkit classes and markup.
+Using UIkit works best if you have a solid code editor, for example [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/) or [VS Code](https://code.visualstudio.com/). To be even more efficient, we recommend that you install one of the autocomplete plugins for your favorite IDE or code editor. This saves a lot of time, as you won't have to look up and type all UIkit classes and markup.
 
 - [Autocomplete plugin for Sublime Text 3](https://github.com/uikit/uikit-sublime)
 - [Autocomplete plugin for Atom](https://atom.io/packages/uikit-atom)
+- [UIKit 3.0 Snippets for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Keno.uikit-3-snippets)
 
 ***
 
