@@ -117,7 +117,7 @@ To alter the background position of your image — which is in the top left hand
 
 ### No repeat
 
-To keep smaller images from repeating to fill the background area, add the `.uk-background-no-repeat` class. This can be very useful in combination with the background position classes.
+To keep smaller images from repeating to fill the background area, add the `.uk-background-norepeat` class. This can be very useful in combination with the background position classes.
 
 ```html
 <div class="uk-background-norepeat"></div>
