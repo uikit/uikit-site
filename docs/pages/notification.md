@@ -23,10 +23,10 @@ UIkit.notification('My message', { /* options */ });
 ```
 
 ```example
-<button id="demo-javascript" class="demo uk-button uk-button-default" type="button" data-message="Notification message">Click me</button>
+<button id="js-demo-javascript" class="demo uk-button uk-button-default" type="button" data-message="Notification message">Click me</button>
 
 <script>
-    jQuery('#demo-javascript').on('click', function() {
+    jQuery('#js-demo-javascript').on('click', function() {
         UIkit.notification($(this).data());
     });
 </script>
@@ -44,10 +44,10 @@ UIkit.notification("<span uk-icon='icon: check'></span> Message");
 ```
 
 ```example
-<button id="demo-message" class="uk-button demo uk-button-default" type="button" data-message="<span uk-icon='icon: check'></span> Message with an icon">With icon</button>
+<button id="js-demo-message" class="uk-button demo uk-button-default" type="button" data-message="<span uk-icon='icon: check'></span> Message with an icon">With icon</button>
 
 <script>
-    jQuery('#demo-message').on('click', function() {
+    jQuery('#js-demo-message').on('click', function() {
         UIkit.notification($(this).data());
     });
 </script>
@@ -76,7 +76,7 @@ UIkit.notification("...", {pos: 'top-right'})
 
 
 ```example
-<p id="demo-position" uk-margin>
+<p id="js-demo-position" uk-margin>
     <button class="uk-button uk-button-default demo" type="button" data-message="Top Left..." data-pos="top-left">Top Left</button>
     <button class="uk-button uk-button-default demo" type="button" data-message="Top Center..." data-pos="top-center">Top Center</button>
     <button class="uk-button uk-button-default demo" type="button" data-message="Top Right..." data-pos="top-right">Top Right</button>
@@ -86,7 +86,7 @@ UIkit.notification("...", {pos: 'top-right'})
 </p>
 
 <script>
-    jQuery('#demo-position button.demo').on('click', function() {
+    jQuery('#js-demo-position button.demo').on('click', function() {
         UIkit.notification($(this).data());
     });
 </script>
@@ -112,7 +112,7 @@ UIkit.notification("...", {status: 'primary'})
 | `danger`  | `UIkit.notification("...", {status:'danger'})`  |
 
 ```example
-<p id="demo-style" uk-margin>
+<p id="js-demo-style" uk-margin>
     <button class="uk-button uk-button-default demo" type="button" data-message="Primary message..." data-status="primary">Primary</button>
     <button class="uk-button uk-button-default demo" type="button" data-message="Success message..." data-status="success">Success</button>
     <button class="uk-button uk-button-default demo" type="button" data-message="Warning message..." data-status="warning">Warning</button>
@@ -120,7 +120,7 @@ UIkit.notification("...", {status: 'primary'})
 </p>
 
 <script>
-    jQuery('#demo-style button.demo').on('click', function() {
+    jQuery('#js-demo-style button.demo').on('click', function() {
         UIkit.notification($(this).data());
     });
 </script>

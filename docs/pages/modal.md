@@ -453,24 +453,24 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 ```example
 <p uk-margin>
 
-    <a id="modal-dialog" class="uk-button uk-button-default" href="#">Dialog</a>
+    <a id="js-modal-dialog" class="uk-button uk-button-default" href="#">Dialog</a>
 
-    <a id="modal-alert" class="uk-button uk-button-default" href="#">Alert</a>
+    <a id="js-modal-alert" class="uk-button uk-button-default" href="#">Alert</a>
 
-    <a id="modal-confirm" class="uk-button uk-button-default" href="#">Confirm</a>
+    <a id="js-modal-confirm" class="uk-button uk-button-default" href="#">Confirm</a>
 
-    <a id="modal-prompt" class="uk-button uk-button-default" href="#">Prompt</a>
+    <a id="js-modal-prompt" class="uk-button uk-button-default" href="#">Prompt</a>
 
     <script>
         (function ($) {
 
-            $('#modal-dialog').on('click', function (e) {
+            $('#js-modal-dialog').on('click', function (e) {
                 e.preventDefault();
                 $(this).blur();
                 UIkit.modal.dialog('<p class="uk-modal-body">UIkit dialog!</p>');
             });
 
-            $('#modal-alert').on('click', function (e) {
+            $('#js-modal-alert').on('click', function (e) {
                 e.preventDefault();
                 $(this).blur();
                 UIkit.modal.alert('UIkit alert!').then(function() {
@@ -478,7 +478,7 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
                 });
             });
 
-            $('#modal-confirm').on('click', function (e) {
+            $('#js-modal-confirm').on('click', function (e) {
                 e.preventDefault();
                 $(this).blur();
                 UIkit.modal.confirm('UIkit confirm!').then(function() {
@@ -488,7 +488,7 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
                 });
             });
 
-            $('#modal-prompt').on('click', function (e) {
+            $('#js-modal-prompt').on('click', function (e) {
                 e.preventDefault();
                 $(this).blur();
                 UIkit.modal.prompt('Name:', 'Your name').then(function(name) {

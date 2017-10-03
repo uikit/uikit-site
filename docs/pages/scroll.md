@@ -21,21 +21,21 @@ Simply add the `uk-scroll` attribute to any page-internal link that contains a U
 To receive a callback when scrolling has completed, you can listen to the `scrolled` event on the link element that triggered the scrolling.
 
 ```html
-<a id="scroll-trigger" href="#my-id" uk-scroll></a>
+<a id="js-scroll-trigger" href="#my-id" uk-scroll></a>
 ```
 
 ```js
-$('#scroll-trigger').on('scrolled', function () {
+$('#js-scroll-trigger').on('scrolled', function () {
     alert('Done.');
 });
 ```
 
 ```example
-<a id="scroll-trigger" class="uk-button uk-button-primary" href="#target" uk-scroll>Down with callback</a>
+<a id="js-scroll-trigger" class="uk-button uk-button-primary" href="#target" uk-scroll>Down with callback</a>
 
 <script>
     jQuery(function ($) {
-        $('#scroll-trigger').on('scrolled', function () {
+        $('#js-scroll-trigger').on('scrolled', function () {
             alert('Done.');
         });
     });

@@ -13,7 +13,7 @@ This JavaScript component utilizes the latest XMLHttpRequest Level 2 specificati
 In this example we are using a simple button which opens up the file select window.
 
 ```example
-<div class="test-upload" uk-form-custom>
+<div class="js-upload" uk-form-custom>
     <input type="file" multiple>
     <button class="uk-button uk-button-default" type="button" tabindex="-1">Select</button>
 </div>
@@ -26,7 +26,7 @@ In this example we are using a simple button which opens up the file select wind
 This example shows how to realize a drop area with the option to select the file from a file window.
 
 ```example
-<div class="test-upload uk-placeholder uk-text-center">
+<div class="js-upload uk-placeholder uk-text-center">
     <span uk-icon="icon: cloud-upload"></span>
     <span class="uk-text-middle">Attach binaries by dropping them here or</span>
     <div uk-form-custom>
@@ -35,59 +35,59 @@ This example shows how to realize a drop area with the option to select the file
     </div>
 </div>
 
-<progress id="progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+<progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
 
 <script>
 
     (function ($) {
-    
-        var bar = $("#progressbar")[0];
-    
-        UIkit.upload('.test-upload', {
-    
+
+        var bar = $("#js-progressbar")[0];
+
+        UIkit.upload('.js-upload', {
+
             url: '',
             multiple: true,
-    
+
             beforeSend: function() { console.log('beforeSend', arguments); },
             beforeAll: function() { console.log('beforeAll', arguments); },
             load: function() { console.log('load', arguments); },
             error: function() { console.log('error', arguments); },
             complete: function() { console.log('complete', arguments); },
-    
+
             loadStart: function (e) {
                 console.log('loadStart', arguments);
-    
+
                 bar.removeAttribute('hidden');
                 bar.max =  e.total;
                 bar.value =  e.loaded;
             },
-    
+
             progress: function (e) {
                 console.log('progress', arguments);
-    
+
                 bar.max =  e.total;
                 bar.value =  e.loaded;
-    
+
             },
-    
+
             loadEnd: function (e) {
                 console.log('loadEnd', arguments);
-    
+
                 bar.max =  e.total;
                 bar.value =  e.loaded;
             },
-    
+
             completeAll: function () {
                 console.log('completeAll', arguments);
-    
+
                 setTimeout(function () {
                     bar.setAttribute('hidden', 'hidden');
                 }, 1000);
-    
+
                 alert('Upload Completed');
             }
         });
-    
+
     })(jQuery);
 
 </script>
@@ -105,9 +105,9 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
 
 (function ($) {
 
-    var bar = $("#progressbar")[0];
+    var bar = $("#js-progressbar")[0];
 
-    UIkit.upload('.test-upload', {
+    UIkit.upload('.js-upload', {
 
         url: '',
         multiple: true,
