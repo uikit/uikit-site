@@ -34,7 +34,7 @@ To create a video that covers its parent container, add the `uk-cover` attribute
 
 ```example
 <div class="uk-cover-container uk-height-medium">
-    <video uk-cover autoplay loop muted>
+    <video autoplay loop muted playsinline uk-cover>
         <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
         <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
     </video>
@@ -68,14 +68,14 @@ To add responsive behavior to your cover image, you need to create an invisible 
 ```html
 <div class="uk-cover-container">
     <canvas width="" height=""></canvas>
-    <video uk-cover></video>
+    <img src="" alt="" uk-cover>
 </div>
 ```
 
 ```example
 <div class="uk-cover-container">
     <canvas width="400" height="200"></canvas>
-    <img uk-cover src="../docs/images/dark.jpg" alt="">
+    <img src="../docs/images/dark.jpg" alt="" uk-cover>
 </div>
 ```
 

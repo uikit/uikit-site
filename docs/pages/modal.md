@@ -313,7 +313,7 @@ If you want to display media, you should first check, if the [Lightbox component
 <div id="modal-media-video" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <video controls uk-video>
+        <video controls playsinline uk-video>
             <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
             <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
         </video>
