@@ -181,6 +181,8 @@ Shows the Lightbox's Panel and item.
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `index` | String, Integer | 0 | Lightbox item to show. 0 based index.|
+| `autoplay` | Number | 0 | Lightbox autoplays. (Delay in milliseconds)|
+| `video-autoplay` | Boolean | false | Lightbox videos autoplay.|
 
 #### Hide
 
@@ -197,6 +199,8 @@ If you only want to use the lightbox panel directly through the JS API, you can 
 | Option    | Value                     | Default | Description                                      |
 |-----------|---------------------------|---------|--------------------------------------------------|
 | `animation` | String | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`.  |
+| `autoplay` | Number | 0 | Lightbox autoplays. (Delay in milliseconds)|
+| `video-autoplay` | Boolean | false | Lightbox videos autoplay.|
 | `duration`  | Number | `400`   | The animation duration. |
 | `index`     | Number | `0`   | The initial item to show. (zero based) |
 | `preload`   | Number | `1`   | The number of items to preload. (left and right of the currently active item) |
