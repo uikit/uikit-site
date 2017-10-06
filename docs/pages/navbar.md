@@ -613,7 +613,7 @@ Dropdowns can be aligned to the navbar's boundary. Just append the `boundary-ali
                     </ul>
                 </div>
             </li>
-        </li>
+        </ul>
     </div>
 
 </nav>
