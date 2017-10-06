@@ -27,9 +27,8 @@ Add the compiled and minified CSS and JavaScript to the header of your HTML5 doc
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- required meta tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/uikit.min.css" />
         <script src="js/jquery.js"></script>
         <script src="js/uikit.min.js"></script>
