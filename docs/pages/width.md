@@ -233,7 +233,7 @@ UIkit provides a number of responsive widths classes. Basically they work just l
 | `.uk-width-*@s`<br> `.uk-child-width-*@s`   | Affects device widths of _640px_ and larger. Grid columns will stack on smaller sizes.  |
 | `.uk-width-*@m`<br> `.uk-child-width-*@m` | Affects device widths of _960px_ and larger. Grid columns will stack on smaller sizes.  |
 | `.uk-width-*@l`<br> `.uk-child-width-*@l`   | Affects device widths of _1200px_ and larger. Grid columns will stack on smaller sizes. |
-| `.uk-width-@xl`<br> `.uk-child-width-*@xl`   | Affects device widths of _1600px_ and larger. Grid columns will stack on smaller sizes. |
+| `.uk-width-*@xl`<br> `.uk-child-width-*@xl`   | Affects device widths of _1600px_ and larger. Grid columns will stack on smaller sizes. |
 
 ```example
 <div class="uk-grid-match uk-grid-small uk-text-center" uk-grid>
