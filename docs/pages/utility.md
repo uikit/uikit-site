@@ -647,7 +647,7 @@ To automatically mute or play videos, add the `uk-video` attribute. The video wi
     <div>
 
         <button class="uk-button uk-button-default uk-margin" type="button" uk-toggle="target: +video">Toggle HTML5 Video</button>
-        <video src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" width="640" height="360" controls uk-video="automute: true"></video>
+        <video src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" width="640" height="360" controls playsinline uk-video="automute: true"></video>
 
     </div>
     <div>

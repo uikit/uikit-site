@@ -11,7 +11,7 @@ Add the `uk-modal` attribute to a `<div>` element to create the modal container 
 | Class              | Description                                                                                              |
 |--------------------|----------------------------------------------------------------------------------------------------------|
 | `.uk-modal-dialog` | Add this class to a child `<div>` element to create the dialog                                           |
-| `.uk-modal-body`   | Add this class to create padding between the modal and its                                               |
+| `.uk-modal-body`   | Add this class to create padding between the modal and its content.                                      |
 | `.uk-modal-title`  | Add this class to a heading element to create the modal title.                                           |
 | `.uk-modal-close`  | Add this class to an `<a>` or `<button>` element to create a close button and enable its functionality.  |
 
@@ -313,7 +313,7 @@ If you want to display media, you should first check, if the [Lightbox component
 <div id="modal-media-video" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <video controls uk-video>
+        <video controls playsinline uk-video>
             <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
             <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
         </video>
@@ -348,7 +348,7 @@ You can group multiple modals by linking from one to the other and back. Use thi
     </div>
 </div>
 
-<div id="modal-group-1" uk-modal>
+<div id="modal-group-2" uk-modal>
     <div class="uk-modal-dialog">
         <a href="#modal-group-1" uk-toggle>Previous</a>
     </div>
@@ -453,24 +453,24 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 ```example
 <p uk-margin>
 
-    <a id="modal-dialog" class="uk-button uk-button-default" href="#">Dialog</a>
+    <a id="js-modal-dialog" class="uk-button uk-button-default" href="#">Dialog</a>
 
-    <a id="modal-alert" class="uk-button uk-button-default" href="#">Alert</a>
+    <a id="js-modal-alert" class="uk-button uk-button-default" href="#">Alert</a>
 
-    <a id="modal-confirm" class="uk-button uk-button-default" href="#">Confirm</a>
+    <a id="js-modal-confirm" class="uk-button uk-button-default" href="#">Confirm</a>
 
-    <a id="modal-prompt" class="uk-button uk-button-default" href="#">Prompt</a>
+    <a id="js-modal-prompt" class="uk-button uk-button-default" href="#">Prompt</a>
 
     <script>
         (function ($) {
 
-            $('#modal-dialog').on('click', function (e) {
+            $('#js-modal-dialog').on('click', function (e) {
                 e.preventDefault();
                 $(this).blur();
                 UIkit.modal.dialog('<p class="uk-modal-body">UIkit dialog!</p>');
             });
 
-            $('#modal-alert').on('click', function (e) {
+            $('#js-modal-alert').on('click', function (e) {
                 e.preventDefault();
                 $(this).blur();
                 UIkit.modal.alert('UIkit alert!').then(function() {
@@ -478,7 +478,7 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
                 });
             });
 
-            $('#modal-confirm').on('click', function (e) {
+            $('#js-modal-confirm').on('click', function (e) {
                 e.preventDefault();
                 $(this).blur();
                 UIkit.modal.confirm('UIkit confirm!').then(function() {
@@ -488,7 +488,7 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
                 });
             });
 
-            $('#modal-prompt').on('click', function (e) {
+            $('#js-modal-prompt').on('click', function (e) {
                 e.preventDefault();
                 $(this).blur();
                 UIkit.modal.prompt('Name:', 'Your name').then(function(name) {

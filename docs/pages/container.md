@@ -4,7 +4,7 @@
 
 ## Usage
 
-Add the`.uk-container` class to a block element to give it a max-width and wrap the main content of your website. The element will be centered and have padding on the sides, that adapts automatically for large screens.
+Add the `.uk-container` class to a block element to give it a max-width and wrap the main content of your website. The element will be centered and have padding on the sides, that adapts automatically for large screens.
 
 **Note** The padding of nested containers will be removed to avoid unnecessary spacing.
 

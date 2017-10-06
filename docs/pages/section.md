@@ -48,7 +48,6 @@ To apply different background colors and paddings, add one of the following clas
 | `.uk-section-muted`     | Adds a muted background color.                               |
 | `.uk-section-primary`   | Adds a primary background color.                             |
 | `.uk-section-secondary` | Adds a secondary background color.                           |
-| `.uk-section-media`     | Use it if a section has a custom background image            |
 
 ```html
 <div class="uk-section uk-section-primary"></div>
@@ -135,21 +134,24 @@ To apply different background colors and paddings, add one of the following clas
     </div>
 </div>
 
-<div class="uk-section uk-section-media uk-light uk-background-cover" style="background-image: url(../docs/images/dark.jpg)">
-    <div class="uk-container">
+<div class="uk-section-default">
+    <div class="uk-section uk-light uk-background-cover" style="background-image: url(../docs/images/dark.jpg)">
+        <div class="uk-container">
 
-        <h3>Section Media</h3>
+            <h3>Section with Images</h3>
 
-        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
             </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
+
         </div>
     </div>
 </div>
