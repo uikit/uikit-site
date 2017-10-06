@@ -24,24 +24,23 @@
 
 <script>
 
-    import $ from 'jquery';
+    var {ajax} = UIkit.util;
 
     export default {
 
         mounted() {
 
-            $.get('assets/uikit/CHANGELOG.md', {nc: Math.random()}, body => {
-                this.$refs.changelog.innerHTML = this.parse(body);
-            });
+            ajax(`assets/uikit/CHANGELOG.md?nc=${Math.random()}`).then(({response}) => this.$refs.changelog.innerHTML = this.parse(response));
+
         },
 
         methods: {
 
-            parse(markdown)  {
+            parse(markdown) {
 
                 var renderer = new marked.Renderer(), section;
 
-                renderer.list = text => '<ul class="uk-list">' + text + '</ul>';
+                renderer.list = text => `<ul class="uk-list">${text}</ul>`;
 
                 renderer.listitem = function (text) {
 
@@ -63,25 +62,25 @@
                             label = 'uk-label-danger';
                     }
 
-                    return '<li><span class="uk-label ' + label + ' uk-margin-right uk-text-center uk-width-small tm-width-small">' + section + '</span> ' + text + '</li>';
+                    return `<li><span class="uk-label ${label} uk-margin-right uk-text-center uk-width-small tm-width-small">${section}</span> ${text}</li>`;
                 };
 
                 renderer.heading = (text, level) => {
 
                     text = text.replace(/(\(.*?\))/, '<span class="uk-text-muted">$1</span>');
 
-                    if (level == 2) {
+                    if (level === 2) {
                         return '<h' + level + ' class="uk-h3">' + text + '</h' + level + '>';
                     }
 
-                    if (level == 3) {
+                    if (level === 3) {
                         section = text;
                     }
 
                     return '';
                 };
 
-                return marked(markdown, {renderer: renderer});
+                return marked(markdown, {renderer});
             }
         }
     }

@@ -25,7 +25,7 @@ To receive a callback when scrolling has completed, you can listen to the `scrol
 ```
 
 ```js
-$('#js-scroll-trigger').on('scrolled', function () {
+UIkit.util.on('#scroll-trigger', 'scrolled', function () {
     alert('Done.');
 });
 ```
@@ -34,10 +34,8 @@ $('#js-scroll-trigger').on('scrolled', function () {
 <a id="js-scroll-trigger" class="uk-button uk-button-primary" href="#target" uk-scroll>Down with callback</a>
 
 <script>
-    jQuery(function ($) {
-        $('#js-scroll-trigger').on('scrolled', function () {
-            alert('Done.');
-        });
+    UIkit.util.on('#scroll-trigger', 'scrolled', function () {
+        alert('Done.');
     });
 </script>
 ```
@@ -51,7 +49,6 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option | Value | Default | Description |
 | --- | --- | --- | --- |
 | `duration` | Number | `1000` | Animation duration in milliseconds. |
-| `easing` | String | `easeOutExpo` | Easing function for the transition. Usable if you have the optional [easing plugin](http://gsgd.co.uk/sandbox/jquery/easing/) loaded on your page. |
 | `offset` | Number | `0` | Pixel offset added to scroll top. |
 
 ## JavaScript

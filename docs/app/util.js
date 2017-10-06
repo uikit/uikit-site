@@ -1,6 +1,7 @@
 import uniqueid from 'unique-id';
-import $ from 'jquery';
 import { escape } from 'he';
+
+var {append, remove} = UIkit.util;
 
 export function sluggify(text) {
     return text.toLowerCase().trim().replace(/(&amp;| & )/g, '-and-').replace(/&(.+?);/g, '').replace(/[\s\W-]+/g, '-');
@@ -44,11 +45,11 @@ export function parse(markdown, cb) {
                     </div>`;
         };
 
-    renderer.strong = text => text=='Note' ? `<span class="uk-label">${text}</span>`:`<strong>${text}</strong>`;
+    renderer.strong = text => text === 'Note' ? `<span class="uk-label">${text}</span>` : `<strong>${text}</strong>`;
     renderer.list = text => `<ul class="uk-list uk-list-bullet">${text}</ul>`;
     renderer.image = (href, title, text) => href.match(/modal$/) ? modal(href, text) : base.image(href, title, text);
     renderer.link = (href, title, text) => href.match(/\.md/) ? base.link(href.replace(/.md(.*)/, '$1'), title, text) : base.link(href, title, text);
-    renderer.code = (code, lang, escaped) => lang == 'example' ? example(code) : '<div class="uk-margin-medium">' + base.code(code, lang, escaped) + '</div>';
+    renderer.code = (code, lang, escaped) => lang === 'example' ? example(code) : '<div class="uk-margin-medium">' + base.code(code, lang, escaped) + '</div>';
     renderer.hr = () => `<hr class="uk-margin-large">`;
     renderer.table = (header, body) => `<div class="uk-overflow-auto"><table class="uk-table uk-table-divider"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
     renderer.heading = (text, level) => `<h${level} id="${sluggify(text)}" class="uk-h${level > 1 ? level + 1 : level} tm-heading-fragment"><a href="#${sluggify(text)}">${text}</a></h${level}>`;
@@ -73,37 +74,38 @@ export function openOnCodepen(code) {
 
     code = code
         .replace(regexp, '')
-        .replace(/<img[^>]+src="(.*?)"/g, function(match, src) {
+        .replace(/<img[^>]+src="(.*?)|url\((.*?)\)"/g, function (match, src) {
             return src.indexOf('../docs/') === 0 ? match.replace(src, `${location.href.split('/docs/')[0]}/docs/${src.replace('../docs/', '')}`) : match;
-        }).replace(/url\((.*?)\)/g, function(match, src) {
-            return src.indexOf('../docs/') === 0 != -1 ? match.replace(src, `${location.href.split('/docs/')[0]}/docs/${src.replace('../docs/', '')}`) : match;
         });
 
     let nc = Date.now() % 9999,
         data = {
-        title: '',
-        description: '',
-        html: code,
-        html_pre_processor: 'none',
-        css: '',
-        css_pre_processor: 'none',
-        css_starter: 'neither',
-        css_prefix_free: false,
-        js: scripts || '',
-        js_pre_processor: 'none',
-        js_modernizr: false,
-        html_classes: '',
-        css_external: `https://getuikit.com/assets/uikit/dist/css/uikit.css?nc=${nc}`,
-        js_external: `https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js;https://getuikit.com/assets/uikit/dist/js/uikit.js?nc=${nc};https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=${nc}`
-    };
+            title: '',
+            description: '',
+            html: code,
+            html_pre_processor: 'none',
+            css: '',
+            css_pre_processor: 'none',
+            css_starter: 'neither',
+            css_prefix_free: false,
+            js: scripts || '',
+            js_pre_processor: 'none',
+            js_modernizr: false,
+            html_classes: '',
+            css_external: `https://getuikit.com/assets/uikit/dist/css/uikit.css?nc=${nc}`,
+            js_external: `https://getuikit.com/assets/uikit/dist/js/uikit.js?nc=${nc};https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=${nc}`
+        };
 
     data = JSON.stringify(data)
     // Quotes will screw up the JSON
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&apos;");
 
-    $(`<form action="https://codepen.io/pen/define" method="POST" target="_blank">
+    var form = append(document.body, `<form action="https://codepen.io/pen/define" method="POST" target="_blank">
             <input type="hidden" name="data" value='${data}'>
-        </form>`).appendTo('body').submit().remove();
+        </form>`)[0];
+
+    form.submit();
+    remove(form);
 
 }

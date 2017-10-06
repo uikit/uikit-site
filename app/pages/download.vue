@@ -41,17 +41,15 @@
 
 <script>
 
-    import $ from 'jquery';
+    var {ajax} = UIkit.util;
 
     export default {
 
         mounted() {
 
-            $.get("assets/uikit/package.json", {nocache: Math.random()}, data => {
-                setTimeout(() => {
-                    location.href = `https://github.com/uikit/uikit/releases/download/v${data.version}/uikit-${data.version}.zip`;
-                }, 100);
-            }, 'json');
+            ajax(`assets/uikit/package.json?nc=${Math.random()}`, {responseType: 'json'}).then(({response}) =>
+                setTimeout(() => location.href = `https://github.com/uikit/uikit/releases/download/v${response.version}/uikit-${response.version}.zip`, 100)
+            );
 
         }
     }

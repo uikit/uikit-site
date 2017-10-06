@@ -3,7 +3,6 @@
 Once you have [installed UIkit](installation.md), include the JavaScript files on your page by adding them to the `<head>` section. You can also choose to use the `defer` attribute to delay script execution.
 
 ```html
-<script src="js/jquery.min.js"></script>
 <script src="js/uikit.min.js"></script>
 <script src="js/uikit-icons.min.js"></script>
 ```
@@ -108,7 +107,7 @@ UIkit.components.sticky.options.defaults.top = 100;
 
 ## Programmatic use
 
-Programmatically, components may be initialized with the `element, options` arguments format in JavaScript. The `element` argument may be any `Node`, `jQuery selector` or `jQuery object`. You'll receive the initialized component as return value. `Functional Components` (e.g. `Notification`) should omit the `element` parameter.
+Programmatically, components may be initialized with the `element, options` arguments format in JavaScript. The `element` argument may be any `Node`, `selector` or `jQuery object`. You'll receive the initialized component as return value. `Functional Components` (e.g. `Notification`) should omit the `element` parameter.
 
 ```js
 // Passing a selector and an options object.
@@ -132,7 +131,7 @@ Any component functions and variables prefixed with an underscore are considered
 Each component triggers DOM events that you can react to. For example when an Modal is shown or a Scrollspy element becomes visible.
 
 ```js
-$('#offcanvas').on('show', function () {
+UIkit.util.on('#offcanvas', 'show', function () {
     // do something
 });
 ```

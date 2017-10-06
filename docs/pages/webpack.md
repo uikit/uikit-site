@@ -15,12 +15,12 @@ index.html
 package.json
 ```
 
-The following commands will create and fill the file `package.json`. It contains the dependencies for Npm. We include UIkit, jQuery and Webpack.
+The following commands will create and fill the file `package.json`. It contains the dependencies for Npm. We include UIkit and Webpack.
 
 ```sh
 mkdir uikit-webpack && cd uikit-webpack
 npm init -y
-npm install --save uikit jquery
+npm install --save uikit
 npm install --save-dev webpack
 ```
 

@@ -3,7 +3,6 @@ const externals = {
     'vue': 'Vue',
     'vue-router': 'VueRouter',
     'uikit': 'UIkit',
-    'jquery': 'jQuery',
     'he': 'he'
 };
 

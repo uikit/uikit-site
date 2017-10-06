@@ -16,7 +16,6 @@ To use UIkit in RTL mode, use `uikit.rtl.min.css` which is included in the `dist
     <head>
         <title></title>
         <link rel="stylesheet" href="css/uikit.rtl.min.css" />
-        <script src="js/jquery.js"></script>
         <script src="js/uikit.min.js"></script>
     </head>
     <body>

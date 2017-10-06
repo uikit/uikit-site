@@ -61,32 +61,21 @@
 
 <script>
 
-    import $ from 'jquery';
+    var {$, ajax} = UIkit.util;
 
     export default {
 
         mounted() {
 
-            $.ajax({
-                dataType : "jsonp",
-                url      : "https://api.github.com/repos/uikit/uikit?callback=ukghapi&nocache="+Math.random(),
-                success  : data => {
+            ajax('https://api.github.com/repos/uikit/uikit?nc=' + Math.random(), {responseType: 'json'}).then(({response}) => {
 
-                    if (!data) return;
-
-                    if (data.data.watchers){
-                        $("[uikit-stargazers]").html(data.data.watchers);
-                    }
-
-                    if (data.data.forks){
-                        $("[uikit-forks]").html(data.data.forks);
-                    }
+                if (response && response.watchers) {
+                    $('[uikit-stargazers]').innerText = response.watchers;
                 }
+
             });
 
-            $.get("assets/uikit/package.json", {nocache: Math.random()}, data => {
-                $("[uikit-version]").text(data.version);
-            }, 'json');
+            ajax(`assets/uikit/package.json?nc=${Math.random()}`, {responseType: 'json'}).then(({response}) => $('[uikit-version]').innerText = response.version);
 
         }
     }

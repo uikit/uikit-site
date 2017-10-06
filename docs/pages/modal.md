@@ -462,42 +462,39 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
     <a id="js-modal-prompt" class="uk-button uk-button-default" href="#">Prompt</a>
 
     <script>
-        (function ($) {
+    
+       UIkit.util.on('#js-modal-dialog', 'click', function (e) {
+           e.preventDefault();
+           e.target.blur();
+           UIkit.modal.dialog('<p class="uk-modal-body">UIkit dialog!</p>');
+       });
 
-            $('#js-modal-dialog').on('click', function (e) {
-                e.preventDefault();
-                $(this).blur();
-                UIkit.modal.dialog('<p class="uk-modal-body">UIkit dialog!</p>');
-            });
+       UIkit.util.on('#js-modal-alert', 'click', function (e) {
+           e.preventDefault();
+           e.target.blur();
+           UIkit.modal.alert('UIkit alert!').then(function () {
+               console.log('Alert closed.')
+           });
+       });
 
-            $('#js-modal-alert').on('click', function (e) {
-                e.preventDefault();
-                $(this).blur();
-                UIkit.modal.alert('UIkit alert!').then(function() {
-                    console.log('Alert closed.')
-                });
-            });
+       UIkit.util.on('#js-modal-confirm', 'click', function (e) {
+           e.preventDefault();
+           e.target.blur();
+           UIkit.modal.confirm('UIkit confirm!').then(function () {
+               console.log('Confirmed.')
+           }, function () {
+               console.log('Rejected.')
+           });
+       });
 
-            $('#js-modal-confirm').on('click', function (e) {
-                e.preventDefault();
-                $(this).blur();
-                UIkit.modal.confirm('UIkit confirm!').then(function() {
-                    console.log('Confirmed.')
-                }, function () {
-                    console.log('Rejected.')
-                });
-            });
-
-            $('#js-modal-prompt').on('click', function (e) {
-                e.preventDefault();
-                $(this).blur();
-                UIkit.modal.prompt('Name:', 'Your name').then(function(name) {
-                    console.log('Prompted:', name)
-                });
-            });
-
-        })(jQuery);
-
+       UIkit.util.on('#js-modal-prompt', 'click', function (e) {
+           e.preventDefault();
+           e.target.blur();
+           UIkit.modal.prompt('Name:', 'Your name').then(function (name) {
+               console.log('Prompted:', name)
+           });
+       });
+       
     </script>
 
 </p>

@@ -11,17 +11,19 @@ To apply this component, add the `.uk-progress` class to a `<progress>` element.
 ```
 
 ```example
-<progress id="progressbar" class="uk-progress" value="10" max="100"></progress>
+<progress id="js-progressbar" class="uk-progress" value="10" max="100"></progress>
 
 <script>
-
-    jQuery(function () {
+    
+    UIkit.util.ready(function () {
+        
+        var bar = document.getElementById('js-progressbar');
 
         var animate = setInterval(function () {
 
-            window.progressbar && (progressbar.value += 10);
+            bar.value += 10;
 
-            if (!window.progressbar || progressbar.value >= progressbar.max) {
+            if (bar.value >= bar.max) {
                 clearInterval(animate);
             }
 

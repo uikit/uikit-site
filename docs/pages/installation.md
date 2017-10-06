@@ -16,9 +16,6 @@ The compiled files of all UIkit versions are also hosted on the Cloudflare conte
 <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/css/uikit.min.css" />
 
-<!-- jQuery is required -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 <!-- UIkit JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit-icons.min.js"></script>
@@ -98,9 +95,9 @@ npm run watch
 ```
 
 <script>
-$.get("https://getuikit.com/assets/uikit/package.json", {nocache: Math.random()}, data => {
-    $("pre").each(function(i) {
-        $(this).html($(this).html().replace(/\[uikit-version\]/g, data.version));
-    });
-}, 'json');
+    UIkit.util.ajax('https://getuikit.com/assets/uikit/package.json?nc=' + Math.random(), {responseType: 'json'}).then(function (xhr) {
+            UIkit.util.$$('pre').forEach(function (pre) {
+                pre.innerHTML = pre.innerHTML.replace(/\[uikit-version]/g, xhr.response.version);
+            });
+        });
 </script>

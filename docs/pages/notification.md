@@ -23,13 +23,7 @@ UIkit.notification('My message', { /* options */ });
 ```
 
 ```example
-<button id="js-demo-javascript" class="demo uk-button uk-button-default" type="button" data-message="Notification message">Click me</button>
-
-<script>
-    jQuery('#js-demo-javascript').on('click', function() {
-        UIkit.notification($(this).data());
-    });
-</script>
+<button class="demo uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Notification message'})">Click me</button>
 
 ```
 
@@ -44,13 +38,7 @@ UIkit.notification("<span uk-icon='icon: check'></span> Message");
 ```
 
 ```example
-<button id="js-demo-message" class="uk-button demo uk-button-default" type="button" data-message="<span uk-icon='icon: check'></span> Message with an icon">With icon</button>
-
-<script>
-    jQuery('#js-demo-message').on('click', function() {
-        UIkit.notification($(this).data());
-    });
-</script>
+<button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Message with an icon'})">With icon</button>
 
 ```
 
@@ -76,21 +64,14 @@ UIkit.notification("...", {pos: 'top-right'})
 
 
 ```example
-<p id="js-demo-position" uk-margin>
-    <button class="uk-button uk-button-default demo" type="button" data-message="Top Left..." data-pos="top-left">Top Left</button>
-    <button class="uk-button uk-button-default demo" type="button" data-message="Top Center..." data-pos="top-center">Top Center</button>
-    <button class="uk-button uk-button-default demo" type="button" data-message="Top Right..." data-pos="top-right">Top Right</button>
-    <button class="uk-button uk-button-default demo" type="button" data-message="Bottom Left..." data-pos="bottom-left">Bottom Left</button>
-    <button class="uk-button uk-button-default demo" type="button" data-message="Bottom Center..." data-pos="bottom-center">Bottom Center</button>
-    <button class="uk-button uk-button-default demo" type="button" data-message="Bottom Right..." data-pos="bottom-right">Bottom Right</button>
+<p uk-margin>
+    <button class="uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Top Left...', pos: 'top-left'})">Top Left</button>
+    <button class="uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Top Center...', pos: 'top-center'})">Top Center</button>
+    <button class="uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Top Right...', pos: 'top-right'})">Top Right</button>
+    <button class="uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Bottom Left...', pos: 'bottom-left'})">Bottom Left</button>
+    <button class="uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Bottom Center...', pos: 'bottom-center'})">Bottom Center</button>
+    <button class="uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'Bottom Right...', pos: 'bottom-right'})">Bottom Right</button>
 </p>
-
-<script>
-    jQuery('#js-demo-position button.demo').on('click', function() {
-        UIkit.notification($(this).data());
-    });
-</script>
-
 ```
 
 
@@ -112,19 +93,12 @@ UIkit.notification("...", {status: 'primary'})
 | `danger`  | `UIkit.notification("...", {status:'danger'})`  |
 
 ```example
-<p id="js-demo-style" uk-margin>
-    <button class="uk-button uk-button-default demo" type="button" data-message="Primary message..." data-status="primary">Primary</button>
-    <button class="uk-button uk-button-default demo" type="button" data-message="Success message..." data-status="success">Success</button>
-    <button class="uk-button uk-button-default demo" type="button" data-message="Warning message..." data-status="warning">Warning</button>
-    <button class="uk-button uk-button-default demo" type="button" data-message="Danger message..." data-status="danger">Danger</button>
+<p uk-margin>
+    <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: 'Primary message...', status: 'primary'})">Primary</button>
+    <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: 'Success message...', status: 'success'})">Success</button>
+    <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: 'Warning message...', status: 'warning'})">Warning</button>
+    <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: 'Danger message...', status: 'danger'})">Danger</button>
 </p>
-
-<script>
-    jQuery('#js-demo-style button.demo').on('click', function() {
-        UIkit.notification($(this).data());
-    });
-</script>
-
 ```
 
 ***
@@ -134,13 +108,7 @@ UIkit.notification("...", {status: 'primary'})
 You can close all open notifications by calling `UIkit.notification.closeAll()`.
 
 ```example
-<button class="uk-button uk-button-default close">Close all</button>
-
-<script>
-    jQuery('button.close').on('click', function() {
-        UIkit.notification.closeAll();
-    });
-</script>
+<button class="uk-button uk-button-default close" onclick="UIkit.notification.closeAll()">Close All</button>
 
 ```
 
