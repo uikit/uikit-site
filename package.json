@@ -28,7 +28,7 @@
     "rollup-plugin-import-alias": "^1.0.4",
     "rollup-plugin-json": "^2.3.0",
     "rollup-plugin-replace": "^1.2.1",
-    "rtlcss": "^2.2.8",
+    "rtlcss": "^2.2.0",
     "shortid": "^2.2.8",
     "uglify-js": "^3.1.3"
   }
