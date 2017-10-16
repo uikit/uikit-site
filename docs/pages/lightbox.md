@@ -148,6 +148,11 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option      | Value        | Default | Description                                          |
 |-------------|--------------|---------|------------------------------------------------------|
 | `animation` | String       | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`. |
+| `autoplay` | Number | `0` | Lightbox autoplays. (Delay in milliseconds)|
+| `autoplay-interval`  | Number | `0`   | The delay between switching slides in autoplay mode. |
+| `pause-on-hover` | Boolean | false | Pause autoplay mode on hover.|
+| `video-autoplay` | Boolean | false | Lightbox videos autoplay.|
+| `index` | String, Integer | 0 | Lightbox item to show. 0 based index.|
 | `toggle`    | CSS selector | `a`     | Toggle selector - triggers the lightbox.             |
 
 ***
@@ -178,12 +183,6 @@ UIkit.lightbox(element).show(index);
 
 Shows the Lightbox's Panel and item.
 
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `index` | String, Integer | 0 | Lightbox item to show. 0 based index.|
-| `autoplay` | Number | 0 | Lightbox autoplays. (Delay in milliseconds)|
-| `video-autoplay` | Boolean | false | Lightbox videos autoplay.|
-
 #### Hide
 
 ```js
@@ -199,10 +198,12 @@ If you only want to use the lightbox panel directly through the JS API, you can 
 | Option    | Value                     | Default | Description                                      |
 |-----------|---------------------------|---------|--------------------------------------------------|
 | `animation` | String | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`.  |
-| `autoplay` | Number | 0 | Lightbox autoplays. (Delay in milliseconds)|
+| `autoplay` | Number | `0` | Lightbox autoplays. (Delay in milliseconds)|
+| `autoplay-interval`  | Number | `0`   | The delay between switching slides in autoplay mode. |
+| `pause-on-hover` | Boolean | false | Pause autoplay mode on hover.|
 | `video-autoplay` | Boolean | false | Lightbox videos autoplay.|
-| `duration`  | Number | `400`   | The animation duration. |
 | `index`     | Number | `0`   | The initial item to show. (zero based) |
+| `velocity`  | Number | `2`   | The animation velocity (pixel/ms). |
 | `preload`   | Number | `1`   | The number of items to preload. (left and right of the currently active item) |
 | `items`     | Array  | `[]`   | An array of items to display, e.g. `[{source: 'images/size1.jpg', title: '900x600'}]` |
 | `template`     | String  | Default markup   | The template string. |
@@ -215,16 +216,18 @@ These events will be triggered on elements with this component attached.
 | Name | Description |
 | --- | --- |
 | `beforeshow` | Fires before the Lightbox is shown. |
+| `beforehide` | Fires before the Lightbox is hidden. |
 | `show` | Fires after the Lightbox is shown. |
 | `shown` | Fires after the Lightbox's show animation has completed. |
-| `beforehide` | Fires before the Lightbox is hidden. |
 | `hide` | Fires after the Lightbox's hide animation has started. |
 | `hidden` | Fires after the Lightbox is hidden. |
 | `itemload` | Fires when an item loads. |
-| `itemshow` | Fires before an item is shown. |
-| `itemshown` | Fires after an item is shown. |
-| `itemhide` | Fires before an item is hidden. |
-| `itemhidden` | Fires after an item is hidden. |
+| `beforeitemshow` | Fires before an item is shown. |
+| `itemshow` | Fires after an item is shown. |
+| `itemshown` | Fires after an item's show animation has completed. |
+| `beforeitemhide` | Fires before an item is hidden. |
+| `itemhide` | Fires after an item's hide animation has started. |
+| `itemhidden` | Fires after an item's hide animation has completed. |
 
 ### Methods
 
@@ -236,7 +239,7 @@ These methods are available on the component.
 UIkit.lightboxPanel(element).show(index);
 ```
 
-Shows the Lightbox Panel's item.
+Shows the Lightbox Panel and item.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -245,7 +248,7 @@ Shows the Lightbox Panel's item.
 #### Hide
 
 ```js
-UIkit.lightbox(element).hide();
+UIkit.lightboxPanel(element).hide();
 ```
 
 Hides the Lightbox Panel.
