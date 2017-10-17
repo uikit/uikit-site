@@ -70,7 +70,7 @@ Properties are always animated from their current value to the target value you 
 
 ## Viewport position
 
-Using the <code>viewport</code> option you can adjust the animation duration. The value defines how far inside the viewport the target element is scrolled until the animation is completed. With the value <code>1</code> or <code>false</code>, the animation lasts as long as the element is in the viewport (default behavior). Setting it to <code>0.5</code>, for example, animates the property until the scroll position reaches the middle of the target element.
+Using the `viewport` option you can adjust the animation duration. The value defines how far inside the viewport the target element is scrolled until the animation is completed. With the value `1` or `false`, the animation lasts as long as the element is in the viewport (default behavior). Setting it to `0.5`, for example, animates the property until the scroll position reaches the middle of the target element.
 
 ```html
 <div uk-parallax="viewport: 0.5">...</div>
