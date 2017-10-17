@@ -41,7 +41,7 @@ To display a caption at the bottom of the lightbox, set the `data-caption` attri
 
 ## Animations
 
-By default, the Lightbox gallery uses a slide animation. You can set the `animation` property to use a different one. Possible values are `slide`, `fade` and `scale`.
+By default, the Lightbox gallery uses a slide animation. You can set the `animation` option to use a different one. Possible values are `slide`, `fade` and `scale`.
 
 ```html
 <div uk-lightbox="animation: fade">
