@@ -636,7 +636,7 @@ To start playing an animated Gif only when it comes into the viewport, add the `
 
 ## Video
 
-To automatically mute or play videos, add the `uk-video` attribute. The video will pause whenever its element is not visible and resume once it becomes visible again.
+To automatically mute or play videos, add the `uk-video` attribute. The video will pause whenever it's not visible and resume once it becomes visible again.
 
 ```html
 <video uk-video></div>

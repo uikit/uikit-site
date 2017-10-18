@@ -2,6 +2,7 @@
 
 <p class="uk-text-lead">Create a responsive lightbox gallery with images and videos.</p>
 
+The lightbox component is fully responsive and supports touch and swipe navigation, as well as mouse drag for desktops. When swiping between slides the animation literally sticks at your fingertip or mouse cursor. Clicking fast on the previous and next navigation, will make animations even accelerate to keep up with your pace. All animations are hardware accelerated for a smoother performance.
 
 ## Usage
 
@@ -112,13 +113,14 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 
 ## Content Sources
 
-A lightbox is not restricted to images. Other media, like videos, can be displayed as well.
+A lightbox is not restricted to images. Other media, like videos, can be displayed as well. The video will pause whenever it's not visible and resume once it becomes visible again.
 
 ```html
 <div uk-lightbox>
     <a class="uk-button" href="video.mp4"></a>
     <a class="uk-button" href="https://www.youtube.com/watch?v=YE7VzlLtp-4"></a>
     <a class="uk-button" href="https://vimeo.com/1084537"></a>
+    <a class="uk-button" href="https://www.google.com/maps"></a>
 </div>
 ```
 
@@ -128,6 +130,7 @@ A lightbox is not restricted to images. Other media, like videos, can be display
     <a class="uk-button uk-button-default" href="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" caption="Video">Video</a>
     <a class="uk-button uk-button-default" href="//www.youtube.com/watch?v=YE7VzlLtp-4" caption="YouTube">YouTube</a>
     <a class="uk-button uk-button-default" href="//vimeo.com/1084537" caption="Vimeo">Vimeo</a>
+    <a class="uk-button uk-button-default" href="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4740.819266853735!2d9.99008871708242!3d53.550454675412404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f9d24afe84a0263!2sRathaus!5e0!3m2!1sde!2sde!4v1499675200938" caption="Google Maps" type="iframe">Google Maps</a>
 </div>
 ```
 
@@ -135,7 +138,15 @@ A lightbox is not restricted to images. Other media, like videos, can be display
 
 ###  Manual content type
 
-The Lightbox uses the `href` attribute to figure out the type of the linked content. If no filename extension is defined in the image path, just add the `data-type="image"` attribute to the `<a>` tag. You can also set `data-type="video"` when linking to a video. Otherwise, the lightbox will show an iframe by default.
+The Lightbox uses the `href` attribute to figure out the type of the linked content. If no filename extension is defined in the path, just add the `data-type` attribute to the `<a>` tag.
+
+TODO You can also set `data-type="video"` when linking to a video. Otherwise, the lightbox will show an iframe by default.
+
+| Option               | Description                            |
+|:---------------------|:---------------------------------------|
+| `data-type="image"`  | The content type is an image.          |
+| `data-type="video"`  | The content type is a video.           |
+| `data-type="iframe"` | The content type is a regular website. |
 
 ***
 
@@ -145,15 +156,15 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ### Lightbox
 
-| Option      | Value        | Default | Description                                          |
-|-------------|--------------|---------|------------------------------------------------------|
-| `animation` | String       | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`. |
-| `autoplay` | Number | `0` | Lightbox autoplays. (Delay in milliseconds)|
-| `autoplay-interval`  | Number | `0`   | The delay between switching slides in autoplay mode. |
-| `pause-on-hover` | Boolean | false | Pause autoplay mode on hover.|
-| `video-autoplay` | Boolean | false | Lightbox videos autoplay.|
-| `index` | String, Integer | 0 | Lightbox item to show. 0 based index.|
-| `toggle`    | CSS selector | `a`     | Toggle selector - triggers the lightbox.             |
+| Option              | Value           | Default | Description                                          |
+|:--------------------|:----------------|:--------|:-----------------------------------------------------|
+| `animation`         | String          | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`. |
+| `autoplay`          | Number          | `0`     | Lightbox autoplays. (Delay in milliseconds)          |
+| `autoplay-interval` | Number          | `0`     | The delay between switching slides in autoplay mode. |
+| `pause-on-hover`    | Boolean         | false   | Pause autoplay mode on hover.                        |
+| `video-autoplay`    | Boolean         | false   | Lightbox videos autoplay.                            |
+| `index`             | String, Integer | 0       | Lightbox item to show. 0 based index.                |
+| `toggle`            | CSS selector    | `a`     | Toggle selector - triggers the lightbox.             |
 
 ***
 
@@ -195,39 +206,39 @@ Hides the Lightbox's Panel.
 
 If you only want to use the lightbox panel directly through the JS API, you can set the following options.
 
-| Option    | Value                     | Default | Description                                      |
-|-----------|---------------------------|---------|--------------------------------------------------|
-| `animation` | String | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`.  |
-| `autoplay` | Number | `0` | Lightbox autoplays. (Delay in milliseconds)|
-| `autoplay-interval`  | Number | `0`   | The delay between switching slides in autoplay mode. |
-| `pause-on-hover` | Boolean | false | Pause autoplay mode on hover.|
-| `video-autoplay` | Boolean | false | Lightbox videos autoplay.|
-| `index`     | Number | `0`   | The initial item to show. (zero based) |
-| `velocity`  | Number | `2`   | The animation velocity (pixel/ms). |
-| `preload`   | Number | `1`   | The number of items to preload. (left and right of the currently active item) |
-| `items`     | Array  | `[]`   | An array of items to display, e.g. `[{source: 'images/size1.jpg', title: '900x600'}]` |
-| `template`     | String  | Default markup   | The template string. |
-| `delay-controls`     | Number  | `3000`   | Delay time before controls fade out in ms. |
+| Option              | Value   | Default        | Description                                                                           |
+|:--------------------|:--------|:---------------|:--------------------------------------------------------------------------------------|
+| `animation`         | String  | `slide`        | Lightbox animation mode: `slide`, `fade` or `scale`.                                  |
+| `autoplay`          | Number  | `0`            | Lightbox autoplays. (Delay in milliseconds)                                           |
+| `autoplay-interval` | Number  | `0`            | The delay between switching slides in autoplay mode.                                  |
+| `pause-on-hover`    | Boolean | false          | Pause autoplay mode on hover.                                                         |
+| `video-autoplay`    | Boolean | false          | Lightbox videos autoplay.                                                             |
+| `index`             | Number  | `0`            | The initial item to show. (zero based)                                                |
+| `velocity`          | Number  | `2`            | The animation velocity (pixel/ms).                                                    |
+| `preload`           | Number  | `1`            | The number of items to preload. (left and right of the currently active item)         |
+| `items`             | Array   | `[]`           | An array of items to display, e.g. `[{source: 'images/size1.jpg', title: '900x600'}]` |
+| `template`          | String  | Default markup | The template string.                                                                  |
+| `delay-controls`    | Number  | `3000`         | Delay time before controls fade out in ms.                                            |
 
 ### Events
 
 These events will be triggered on elements with this component attached.
 
-| Name | Description |
-| --- | --- |
-| `beforeshow` | Fires before the Lightbox is shown. |
-| `beforehide` | Fires before the Lightbox is hidden. |
-| `show` | Fires after the Lightbox is shown. |
-| `shown` | Fires after the Lightbox's show animation has completed. |
-| `hide` | Fires after the Lightbox's hide animation has started. |
-| `hidden` | Fires after the Lightbox is hidden. |
-| `itemload` | Fires when an item loads. |
-| `beforeitemshow` | Fires before an item is shown. |
-| `itemshow` | Fires after an item is shown. |
-| `itemshown` | Fires after an item's show animation has completed. |
-| `beforeitemhide` | Fires before an item is hidden. |
-| `itemhide` | Fires after an item's hide animation has started. |
-| `itemhidden` | Fires after an item's hide animation has completed. |
+| Name             | Description                                              |
+|:-----------------|:---------------------------------------------------------|
+| `beforeshow`     | Fires before the Lightbox is shown.                      |
+| `beforehide`     | Fires before the Lightbox is hidden.                     |
+| `show`           | Fires after the Lightbox is shown.                       |
+| `shown`          | Fires after the Lightbox's show animation has completed. |
+| `hide`           | Fires after the Lightbox's hide animation has started.   |
+| `hidden`         | Fires after the Lightbox is hidden.                      |
+| `itemload`       | Fires when an item loads.                                |
+| `beforeitemshow` | Fires before an item is shown.                           |
+| `itemshow`       | Fires after an item is shown.                            |
+| `itemshown`      | Fires after an item's show animation has completed.      |
+| `beforeitemhide` | Fires before an item is hidden.                          |
+| `itemhide`       | Fires after an item's hide animation has started.        |
+| `itemhidden`     | Fires after an item's hide animation has completed.      |
 
 ### Methods
 
@@ -241,9 +252,9 @@ UIkit.lightboxPanel(element).show(index);
 
 Shows the Lightbox Panel and item.
 
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `index` | String, Integer | 0 | Lightbox item to show. 0 based index.|
+| Name    | Type            | Default | Description                           |
+|:--------|:----------------|:--------|:--------------------------------------|
+| `index` | String, Integer | 0       | Lightbox item to show. 0 based index. |
 
 #### Hide
 

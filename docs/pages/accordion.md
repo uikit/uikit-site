@@ -6,10 +6,10 @@
 
 The Accordion component consists of a parent container with the `uk-accordion` attribute, and a title and content part for each accordion item.
 
-| Class | Description |
-| ----- | ----------- |
-| `.uk-accordion-title` | Defines and styles the toggle for each accordion item. Typically used on a heading. |
-| `.uk-accordion-content` | Defines the content part for each accordion item. |
+| Class                   | Description                                                                         |
+|:------------------------|:------------------------------------------------------------------------------------|
+| `.uk-accordion-title`   | Defines and styles the toggle for each accordion item. Typically used on a heading. |
+| `.uk-accordion-content` | Defines the content part for each accordion item.                                   |
 
 ```html
 <ul uk-accordion>
@@ -155,7 +155,7 @@ To specify which items should be opened initially, add the `.uk-open` class to t
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option | Value | Default | Description |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `targets` | String | `> *` | CSS selector of the element(s) to toggle. |
 | `active` | Number | `false` | Index of the element to open initially. |
 | `collapsible` | Boolean | `true` | Allow all items to be closed. |
