@@ -502,22 +502,22 @@ Any content inside the slides can be animated together with the slideshow animat
         <li>
             <img src="../docs/images/photo.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
-                <h2 uk-slideshow-parallax="opacity: 0,1; scale: 4,1">Heading</h2>
-                <p uk-slideshow-parallax="opacity: 0,1; scale: 4,1">Lorem ipsum dolor sit amet.</p>
+                <h2 uk-slideshow-parallax-in="x: 100,0" uk-slideshow-parallax-out="x: -100">Heading</h2>
+                <p uk-slideshow-parallax-in="x: 200,0" uk-slideshow-parallax-out="x: -200">Lorem ipsum dolor sit amet.</p>
             </div>
         </li>
         <li>
             <img src="../docs/images/dark.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
-                <h2 uk-slideshow-parallax="x: 100,0">Heading</h2>
-                <p uk-slideshow-parallax="x: 200,0">Lorem ipsum dolor sit amet.</p>
+                <h2 uk-slideshow-parallax-in="x: 100,0" uk-slideshow-parallax-out="x: -100">Heading</h2>
+                <p uk-slideshow-parallax-in="x: 200,0" uk-slideshow-parallax-out="x: -200">Lorem ipsum dolor sit amet.</p>
             </div>
         </li>
         <li>
             <img src="../docs/images/light.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
-                <h2 uk-slideshow-parallax="y: -50,0">Heading</h2>
-                <p uk-slideshow-parallax="y: 50,0">Lorem ipsum dolor sit amet.</p>
+                <h2 uk-slideshow-parallax-in="y: -50,0" uk-slideshow-parallax-out="opacity: 1,0">Heading</h2>
+                <p uk-slideshow-parallax-in="y: 50,0" uk-slideshow-parallax-out="opacity: 1,0">Lorem ipsum dolor sit amet.</p>
             </div>
         </li>
     </ul>
@@ -528,18 +528,20 @@ Any content inside the slides can be animated together with the slideshow animat
 </div>
 ```
 
+***
+
 ### Advanced effects
 
-The parallax attributes can be used to add more advanced effects to the slideshow. In the following example the `push` animation is extended by dimming out and scaling down the image when it's sliding out.
+The parallax attribute can be used to add additional effects to the slideshow animations. In the following example the `push` animation is extended by dimming out and scaling down the image when it's sliding out.
 
 ```html
 <div uk-slideshow>
     <ul class="uk-slideshow-items">
         <li>
-            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.5,1">
+            <div class="uk-position-cover" uk-slideshow-parallax-out="scale: 1.1,1">
                 <img src="../docs/images/photo.jpg" alt="" uk-cover>
             </div>
-            <div class="uk-position-cover" uk-slideshow-parallax="backgroundColor: rgba(0,0,0,0), rgba(0,0,0,0.2)"></div>
+            <div class="uk-position-cover" uk-slideshow-parallax-out="opacity: 0,0.2; backgroundColor: #000,#000"></div>
         </li>
     </ul>
 </div>
@@ -550,22 +552,22 @@ The parallax attributes can be used to add more advanced effects to the slidesho
 
     <ul class="uk-slideshow-items">
         <li>
-            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.5,1">
+            <div class="uk-position-cover" uk-slideshow-parallax-out="scale: 1.1,1">
                 <img src="../docs/images/photo.jpg" alt="" uk-cover>
             </div>
-            <div class="uk-position-cover" uk-slideshow-parallax="backgroundColor: rgba(0,0,0,0), rgba(0,0,0,0.2)"></div>
+            <div class="uk-position-cover" uk-slideshow-parallax-out="opacity: 0,0.2; backgroundColor: #000,#000"></div>
         </li>
         <li>
-            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.5,1">
+            <div class="uk-position-cover" uk-slideshow-parallax-out="scale: 1.1,1">
                 <img src="../docs/images/dark.jpg" alt="" uk-cover>
             </div>
-            <div class="uk-position-cover" uk-slideshow-parallax="backgroundColor: rgba(0,0,0,0), rgba(0,0,0,0.2)"></div>
+            <div class="uk-position-cover" uk-slideshow-parallax-out="opacity: 0,0.2; backgroundColor: #000,#000"></div>
         </li>
         <li>
-            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.5,1">
+            <div class="uk-position-cover" uk-slideshow-parallax-out="scale: 1.1,1">
                 <img src="../docs/images/light.jpg" alt="" uk-cover>
             </div>
-            <div class="uk-position-cover" uk-slideshow-parallax="backgroundColor: rgba(0,0,0,0), rgba(0,0,0,0.2)"></div>
+            <div class="uk-position-cover" uk-slideshow-parallax-out="opacity: 0,0.2; backgroundColor: #000,#000"></div>
         </li>
     </ul>
 
