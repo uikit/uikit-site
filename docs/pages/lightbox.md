@@ -111,13 +111,13 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 
 ***
 
-## Content Sources
+## Content sources
 
-A lightbox is not restricted to images. Other media, like videos, can be displayed as well. The video will pause whenever it's not visible and resume once it becomes visible again.
+A lightbox is not restricted to images. Other media, like videos, can be displayed as well. The video will pause whenever it's not visible and resume once it becomes visible again. To display a poster image for a video, set the `data-poster` attribute.
 
 ```html
 <div uk-lightbox>
-    <a class="uk-button" href="video.mp4"></a>
+    <a class="uk-button" href="video.mp4" data-poster="image.jpg"></a>
     <a class="uk-button" href="https://www.youtube.com/watch?v=YE7VzlLtp-4"></a>
     <a class="uk-button" href="https://vimeo.com/1084537"></a>
     <a class="uk-button" href="https://www.google.com/maps"></a>
