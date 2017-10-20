@@ -48,7 +48,7 @@
 
             on(this.$refs.container, 'click', 'a:not([href^="http"]):not([href^="#"]):not([href^="/"]):not([href^="../"])', e => {
                 e.preventDefault();
-                DocsApp.$router.replace(e.target.pathname + this.hash);
+                DocsApp.$router.replace(e.target.pathname + e.target.hash);
             });
 
             on(document, 'click', 'a[href^="#"]:not([href="#"])', e => history.pushState({}, '', e.target.href));
