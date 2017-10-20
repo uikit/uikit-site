@@ -351,7 +351,7 @@ UIkit.dropdown(element, options);
 
 ### Events
 
-These events will be triggered on elements with this component attached.
+The following events will be triggered on elements with this component attached:
 
 | Name | Description |
 | --- | --- |
@@ -366,7 +366,7 @@ These events will be triggered on elements with this component attached.
 
 ### Methods
 
-These methods are available on the component.
+The following methods are available for the component:
 
 #### Show
 

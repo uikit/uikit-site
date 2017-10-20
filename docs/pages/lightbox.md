@@ -184,7 +184,7 @@ UIkit.lightboxPanel(panelOptions);
 
 ### Methods
 
-These methods are available on the component.
+The following methods are available for the component:
 
 #### Show
 
@@ -222,7 +222,7 @@ If you only want to use the lightbox panel directly through the JS API, you can 
 
 ### Events
 
-These events will be triggered on elements with this component attached.
+The following events will be triggered on elements with this component attached:
 
 | Name             | Description                                              |
 |:-----------------|:---------------------------------------------------------|
@@ -242,7 +242,7 @@ These events will be triggered on elements with this component attached.
 
 ### Methods
 
-These methods are available on the component.
+The following methods are available for the component:
 
 #### Show
 

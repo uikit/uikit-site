@@ -114,7 +114,7 @@ UIkit.scrollspy(element, options);
 
 ### Events
 
-These events will be triggered on elements with this component attached.
+The following events will be triggered on elements with this component attached:
 
 | Name | Description |
 | --- | --- |
@@ -164,7 +164,7 @@ UIkit.scrollspyNav(element, options);
 
 ### Scrollspy nav events
 
-These events will be triggered on elements with this component attached.
+The following events will be triggered on elements with this component attached:
 
 | Name | Description |
 | --- | --- |

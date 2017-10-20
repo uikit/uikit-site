@@ -700,12 +700,6 @@ The following events will be triggered on elements with this component attached:
 
 | Name             | Description                                               |
 |:-----------------|:----------------------------------------------------------|
-| `beforeshow`     | Fires before the Slideshow is shown.                      |
-| `beforehide`     | Fires before the Slideshow is hidden.                     |
-| `show`           | Fires after the Slideshow is shown.                       |
-| `shown`          | Fires after the Slideshow's show animation has completed. |
-| `hide`           | Fires after the Slideshow's hide animation has started.   |
-| `hidden`         | Fires after the Slideshow is hidden.                      |
 | `beforeitemshow` | Fires before an item is shown.                            |
 | `itemshow`       | Fires after an item is shown.                             |
 | `itemshown`      | Fires after an item's show animation has completed.       |

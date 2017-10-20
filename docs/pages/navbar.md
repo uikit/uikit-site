@@ -1036,7 +1036,7 @@ UIkit.navbar(element, options);
 
 ### Events
 
-These events will be triggered on elements with this component attached.
+The following events will be triggered on elements with this component attached:
 
 | Name | Description |
 | --- | --- |

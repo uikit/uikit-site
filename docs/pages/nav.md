@@ -391,7 +391,7 @@ UIkit.nav(element, options);
 
 ### Methods
 
-These methods are available on the component.
+The following methods are available for the component:
 
 #### Toggle
 
