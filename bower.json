@@ -1,7 +1,7 @@
 {
   "name": "uikit-site",
   "dependencies": {
-    "uikit": "develop"
+    "uikit": "^3.0.0"
   },
   "private": true
 }
