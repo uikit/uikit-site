@@ -469,12 +469,9 @@ Add content overlays using the [Position component](position.md). It allows you 
 
 ## Content parallax
 
-Any content inside the slides can be animated together with the slideshow animation. This functionality is inherited from the [Parallax component](parallax.md) and allows to animate CSS properties depending on the scroll position of the slideshow animation. Just add one of the following attributes to the content element you want to animate. Take also a look at the possible [animated properties](parallax.md#animated-properties).
+Add the `uk-slideshow-parallax` attribute to any element inside the slides to animate it together with the slideshow animation. Add an option with the desired animation values for each CSS property you want to animate. Define at least a start and end value. This is done by passing two values separated by comma.
 
-| Option                      | Description                                     |
-|:----------------------------|:------------------------------------------------|
-| `uk-slideshow-parallax-in`  | Defines the animation when the slides comes in. |
-| `uk-slideshow-parallax-out` | Defines the animation when the slides goes out. |
+This functionality is inherited from the [Parallax component](parallax.md) and allows to animate CSS properties depending on the scroll position of the slideshow animation. Take a look at the [possible properties](parallax.md#animated-properties) which can be animated.
 
 ```html
 <div uk-slideshow>
@@ -483,7 +480,7 @@ Any content inside the slides can be animated together with the slideshow animat
             <img src="../docs/images/photo.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small">
 
-                <div uk-slideshow-parallax-in="x: -100,0">
+                <div uk-slideshow-parallax="x: 100,-100">
 
                     <!-- The content goes here -->
 
@@ -495,6 +492,18 @@ Any content inside the slides can be animated together with the slideshow animat
 </div>
 ```
 
+In the example above, the content will start at `100` and animate halve the way in to `0` while the slide moves in. When the slide starts again to move out, the content will continue to animate to `-100`. This works because the start and end values have the same distance. If you have different distances you need three values: _Start_ (Slide animates in), _Middle_ (Slide is centered), _End_ (Slide animates out).
+
+```html
+<div uk-slideshow-parallax="x: 300,0,-100">...</div>
+```
+
+The next example defines different in and out animations. The content slides in by moving from `100` to `0` and fades out from `1` to `0`.
+
+```html
+<div uk-slideshow-parallax="x: 100,0,0; opacity: 1,1,0">...</div>
+```
+
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
 
@@ -502,22 +511,22 @@ Any content inside the slides can be animated together with the slideshow animat
         <li>
             <img src="../docs/images/photo.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
-                <h2 uk-slideshow-parallax-in="x: 100,0" uk-slideshow-parallax-out="x: -100">Heading</h2>
-                <p uk-slideshow-parallax-in="x: 200,0" uk-slideshow-parallax-out="x: -200">Lorem ipsum dolor sit amet.</p>
+                <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
             </div>
         </li>
         <li>
             <img src="../docs/images/dark.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
-                <h2 uk-slideshow-parallax-in="x: 100,0" uk-slideshow-parallax-out="x: -100">Heading</h2>
-                <p uk-slideshow-parallax-in="x: 200,0" uk-slideshow-parallax-out="x: -200">Lorem ipsum dolor sit amet.</p>
+                <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
             </div>
         </li>
         <li>
             <img src="../docs/images/light.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
-                <h2 uk-slideshow-parallax-in="y: -50,0" uk-slideshow-parallax-out="opacity: 1,0">Heading</h2>
-                <p uk-slideshow-parallax-in="y: 50,0" uk-slideshow-parallax-out="opacity: 1,0">Lorem ipsum dolor sit amet.</p>
+                <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
+                <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
             </div>
         </li>
     </ul>
@@ -535,13 +544,13 @@ Any content inside the slides can be animated together with the slideshow animat
 The parallax attribute can be used to add additional effects to the slideshow animations. In the following example the `push` animation is extended by dimming out and scaling down the image when it's sliding out.
 
 ```html
-<div uk-slideshow>
+<div uk-slideshow="animation: push">
     <ul class="uk-slideshow-items">
         <li>
-            <div class="uk-position-cover" uk-slideshow-parallax-out="scale: 1.1,1">
+            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
                 <img src="../docs/images/photo.jpg" alt="" uk-cover>
             </div>
-            <div class="uk-position-cover" uk-slideshow-parallax-out="opacity: 0,0.2; backgroundColor: #000,#000"></div>
+            <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
         </li>
     </ul>
 </div>
@@ -552,22 +561,40 @@ The parallax attribute can be used to add additional effects to the slideshow an
 
     <ul class="uk-slideshow-items">
         <li>
-            <div class="uk-position-cover" uk-slideshow-parallax-out="scale: 1.1,1">
+            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
                 <img src="../docs/images/photo.jpg" alt="" uk-cover>
             </div>
-            <div class="uk-position-cover" uk-slideshow-parallax-out="opacity: 0,0.2; backgroundColor: #000,#000"></div>
+            <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+            <div class="uk-position-center uk-position-medium uk-text-center">
+                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                    <h2 uk-slideshow-parallax="x: 200,0,0">Heading</h2>
+                    <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
         </li>
         <li>
-            <div class="uk-position-cover" uk-slideshow-parallax-out="scale: 1.1,1">
+            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
                 <img src="../docs/images/dark.jpg" alt="" uk-cover>
             </div>
-            <div class="uk-position-cover" uk-slideshow-parallax-out="opacity: 0,0.2; backgroundColor: #000,#000"></div>
+            <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+            <div class="uk-position-center uk-position-medium uk-text-center">
+                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                    <h2 uk-slideshow-parallax="x: 200,0,0">Heading</h2>
+                    <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
         </li>
         <li>
-            <div class="uk-position-cover" uk-slideshow-parallax-out="scale: 1.1,1">
+            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
                 <img src="../docs/images/light.jpg" alt="" uk-cover>
             </div>
-            <div class="uk-position-cover" uk-slideshow-parallax-out="opacity: 0,0.2; backgroundColor: #000,#000"></div>
+            <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+            <div class="uk-position-center uk-position-medium uk-text-center">
+                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                    <h2 uk-slideshow-parallax="x: 200,0,0">Heading</h2>
+                    <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
         </li>
     </ul>
 
