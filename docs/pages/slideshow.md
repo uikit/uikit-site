@@ -21,7 +21,8 @@ Add an image in the background of each slide using the `uk-cover` attribute from
 ```
 
 ```example
-<div uk-slideshow="autoplay: true">
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+
     <ul class="uk-slideshow-items">
         <li>
             <img src="../docs/images/photo.jpg" alt="" uk-cover>
@@ -33,6 +34,10 @@ Add an image in the background of each slide using the `uk-cover` attribute from
             <img src="../docs/images/light.jpg" alt="" uk-cover>
         </li>
     </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
 </div>
 ```
 
