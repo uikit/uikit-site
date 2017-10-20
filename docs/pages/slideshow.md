@@ -2,11 +2,11 @@
 
 <p class="uk-text-lead">Create a responsive slideshow with images and videos.</p>
 
-The slideshow component is fully responsive and supports touch and swipe navigation, as well as mouse drag for desktops. When swiping between slides the animation literally sticks at your fingertip or mouse cursor. Clicking fast on the previous and next navigation, will make animations even accelerate to keep up with your pace. All animations are hardware accelerated for a smoother performance.
+The slideshow component is fully responsive and supports touch and swipe navigation as well as mouse drag for desktops. When swiping between slides, the animation literally sticks at your fingertips or mouse cursor. It even accelerates to keep up with your pace when you click through previous and next navigation. All animations are hardware accelerated for a smoother performance.
 
 ## Usage
 
-To apply this component, add the `uk-slideshow` attribute to a container element and create a list of slides with the class `uk-slideshow-items` inside.
+To apply this component, add the `uk-slideshow` attribute to a container element and create a list of slides with the class `uk-slideshow-items`.
 
 Add an image in the background of each slide using the `uk-cover` attribute from the [Cover component](cover.md).
 
@@ -42,7 +42,7 @@ Add an image in the background of each slide using the `uk-cover` attribute from
 
 ## Animations
 
-By default, the slideshow uses a `slide` animation. You can set the `animation` option to use a different one. Possible values are as follows.
+By default, the slideshow uses a `slide` animation. You can set the `animation` option to use a different animation. Possible values are as follows:
 
 | Animation | Description                        |
 |:----------|:-----------------------------------|
@@ -186,7 +186,7 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
 ## Ratio
 
-The slideshow always takes up the full width of its parent container. The height adapts according to the defined ratio. To change the default ratio of 16:9, just add the `ratio` option to the attribute. It's recommended to use the same ratio like the background images. For example, just use their width and height, like `1600:1200`.
+The slideshow always takes up the full width of its parent container. The height adapts according to the defined ratio. To change the default ratio of 16:9, just add the `ratio` option to the attribute. It's recommended to use the same ratio as the background images. For example, just use their width and height, like `1600:1200`.
 
 ```html
 <div uk-slideshow="ratio: 7:3">...</div>
@@ -215,7 +215,7 @@ The slideshow always takes up the full width of its parent container. The height
 
 ## Min/Max height
 
-By default, the slideshow height adopts according to the defined ratio. A minimum or maximum height can be set using the `minHeight` and `maxHeight` options.
+By default, the slideshow height adopts to the defined ratio. A minimum or maximum height can be set using the `minHeight` and `maxHeight` options.
 
 ```html
 <div uk-slideshow="minHeight: 300; max-height: 600">...</div>
@@ -258,7 +258,7 @@ Adding the `uk-height-viewport` attribute from the [Utility component](utility.m
 
 ## Videos
 
-The slideshow is not restricted to images. Other media, like videos, can be positioned in the background of each slide using the `uk-cover` attribute from the [Cover component](cover.md). Videos are muted and play automatically. The video will pause whenever it's not visible and resume once it becomes visible again.
+The slideshow is not restricted to images. Other media, like videos, can be positioned in the background of each slide using the `uk-cover` attribute from the [Cover component](cover.md). Videos are muted, and play automatically. The video will pause whenever it's not visible, and resume once it becomes visible again.
 
 ```html
 <div uk-slideshow>
@@ -301,7 +301,7 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
 
 ## Navigation
 
-To navigate through your slides, just use the `uk-slideshow-item` attribute. To target the slides, you need to set the attribute of every nav item to the number of the respective slideshow item. The elements with the `uk-slideshow-item` attribute need to be inside the `uk-slideshow` container. Setting the attribute to `next` and `previous` will switch to the adjacent slides.
+To navigate through your slides, just use the `uk-slideshow-item` attribute. To target the slides, set the attribute of every nav item to the number of the respective slideshow item. The elements with the `uk-slideshow-item` attribute need to be inside the `uk-slideshow` container. Setting the attribute to `next` and `previous` will switch to the adjacent slides.
 
 ```html
 <div uk-slideshow>
@@ -320,7 +320,7 @@ To navigate through your slides, just use the `uk-slideshow-item` attribute. To 
 </div>
 ```
 
-The flexibility of the Slideshow component enables you to use any of the other UIkit components to navigate through items. For example the [Slidenav component](slidenav.md) and [Dotnav component](dotnav.md) can be used to style the slideshow navigations as you can see below.
+The flexibility of the Slideshow component allows you to use any of the other UIkit components to navigate through items. For example the [Slidenav component](slidenav.md) and [Dotnav component](dotnav.md) can be used to style the slideshow navigations as shown below.
 
 **Note** For better visibility of overlaying navigations, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md).
 
@@ -469,9 +469,9 @@ Add content overlays using the [Position component](position.md). It allows you 
 
 ## Content parallax
 
-Add the `uk-slideshow-parallax` attribute to any element inside the slides to animate it together with the slideshow animation. Add an option with the desired animation values for each CSS property you want to animate. Define at least a start and end value. This is done by passing two values separated by comma.
+Add the `uk-slideshow-parallax` attribute to any element inside the slides to animate it together with the slideshow animation. Add an option with the desired animation values for each CSS property you want to animate. Define at least one start and end value. It can be done by passing two values separated by a comma.
 
-This functionality is inherited from the [Parallax component](parallax.md) and allows to animate CSS properties depending on the scroll position of the slideshow animation. Take a look at the [possible properties](parallax.md#animated-properties) which can be animated.
+This functionality is inherited from the [Parallax component](parallax.md), and it allows to animate CSS properties depending on the scroll position of the slideshow animation. Take a look at the [possible properties](parallax.md#animated-properties) that can be animated.
 
 ```html
 <div uk-slideshow>
@@ -492,7 +492,7 @@ This functionality is inherited from the [Parallax component](parallax.md) and a
 </div>
 ```
 
-In the example above, the content will start at `100` and animate halve the way in to `0` while the slide moves in. When the slide starts again to move out, the content will continue to animate to `-100`. This works because the start and end values have the same distance. If you have different distances you need three values: _Start_ (Slide animates in), _Middle_ (Slide is centered), _End_ (Slide animates out).
+In the example above, the content will start at `100` and animate half way to `0` while the slide moves in. When the slide starts again to move out, the content will continue to animate to `-100`. This works because the start and end values have the same distance. For different distances, three values are needed: _Start_ (Slide animates in), _Middle_ (Slide is centered), _End_ (Slide animates out).
 
 ```html
 <div uk-slideshow-parallax="x: 300,0,-100">...</div>
@@ -606,7 +606,7 @@ The parallax attribute can be used to add additional effects to the slideshow an
 
 ## Content transitions
 
-Transition classes from the [Transition component](transition.md) are triggered automatically inside slides. In opposite to the parallax effect, transitions are not attached to the slideshow animation and starts playing independently after the slideshow animation.
+Transition classes from the [Transition component](transition.md) are triggered automatically inside slides. Contrary to the parallax effect, transitions are not attached to the slideshow animation and start playing independently after the slideshow animation.
 
 ```html
 <div uk-slideshow>
@@ -627,7 +627,7 @@ Transition classes from the [Transition component](transition.md) are triggered 
 </div>
 ```
 
-Together with the [Overlay component](overlay.md), content transitions allow to build a classic caption for the slideshow.
+Together with the [Overlay component](overlay.md), content transitions are used to build a classic caption for the slideshow.
 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: fade">
@@ -696,7 +696,7 @@ UIkit.slideshow(element, options);
 
 ### Events
 
-These events will be triggered on elements with this component attached.
+The following events will be triggered on elements with this component attached:
 
 | Name             | Description                                               |
 |:-----------------|:----------------------------------------------------------|
@@ -715,7 +715,7 @@ These events will be triggered on elements with this component attached.
 
 ### Methods
 
-These methods are available on the component.
+The following methods are available for the component:
 
 #### Show
 
@@ -723,7 +723,7 @@ These methods are available on the component.
 UIkit.slideshow(element).show(index);
 ```
 
-Shows the Slideshow's item.
+Shows the Slideshow item.
 
 #### startAutoplay
 
@@ -731,7 +731,7 @@ Shows the Slideshow's item.
 UIkit.slideshow(element).startAutoplay();
 ```
 
-Starts the Slideshow's autoplay.
+Starts the Slideshow autoplay.
 
 #### stopAutoplay
 
@@ -739,4 +739,4 @@ Starts the Slideshow's autoplay.
 UIkit.slideshow(element).stopAutoplay();
 ```
 
-Stops the Slideshow's autoplay.
+Stops the Slideshow autoplay.
