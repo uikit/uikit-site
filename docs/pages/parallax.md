@@ -51,7 +51,7 @@ You can use explicit CSS property names (e.g. `width` or `scale`) and a number o
 
 Properties are always animated from their current value to the target value you set in the option. However, you can also define a start value yourself. This is done by passing two values separated by comma.
 
-**Note** Some properties, like [colors](#colors), always require a start and a stop value.
+**Note** Properties that do not have a matching CSS property, like CSS filters and transforms, always require a start and a stop value.
 
 ```html
 <div uk-parallax="opacity: 0,1">...</div>
@@ -62,6 +62,23 @@ Properties are always animated from their current value to the target value you 
     <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
         <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">Headline</h1>
         <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+</div>
+```
+
+### Multiple steps
+
+You can define multiple steps for a property by using a comma separated list of values.
+
+```html
+<div uk-parallax="x: 0,50,150">...</div>
+```
+
+```example
+<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('images/dark.jpg');">
+    <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+        <h1 uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; viewport: 0.5;">Headline</h1>
+        <p uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
 </div>
 ```
