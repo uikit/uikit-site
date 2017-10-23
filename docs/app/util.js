@@ -74,9 +74,7 @@ export function openOnCodepen(code) {
 
     code = code
         .replace(regexp, '')
-        .replace(/<img[^>]+src="(.*?)|url\((.*?)\)"/g, function (match, src) {
-            return src.indexOf('../docs/') === 0 ? match.replace(src, `${location.href.split('/docs/')[0]}/docs/${src.replace('../docs/', '')}`) : match;
-        });
+        .replace(/<img[^>]+src="(.*?)"|url\((.*?)\)"/g, (match, src) => src.indexOf('../docs/') === 0 ? match.replace(src, `${location.href.split('/docs/')[0]}/docs/${src.replace('../docs/', '')}`) : match);
 
     let nc = Date.now() % 9999,
         data = {
