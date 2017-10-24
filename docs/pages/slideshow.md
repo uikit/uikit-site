@@ -205,7 +205,7 @@ The slideshow always takes up the full width of its parent container. The height
             <img src="../docs/images/photo.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="" uk-cover>https://github.com/uikit/uikit/issues/2948
+            <img src="../docs/images/dark.jpg" alt="" uk-cover>
         </li>
         <li>
             <img src="../docs/images/light.jpg" alt="" uk-cover>
