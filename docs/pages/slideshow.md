@@ -205,7 +205,7 @@ The slideshow always takes up the full width of its parent container. The height
             <img src="../docs/images/photo.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+            <img src="../docs/images/dark.jpg" alt="" uk-cover>https://github.com/uikit/uikit/issues/2948
         </li>
         <li>
             <img src="../docs/images/light.jpg" alt="" uk-cover>
@@ -255,7 +255,7 @@ Adding the `uk-height-viewport` attribute from the [Utility component](utility.m
 
 ```html
 <div uk-slideshow>
-    <ul class="uk-slideshow-items" uk-viewport-height>...</ul>
+    <ul class="uk-slideshow-items" uk-height-viewport>...</ul>
 </div>
 ```
 
