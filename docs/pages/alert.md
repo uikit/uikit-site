@@ -79,7 +79,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | --- | --- | --- | --- |
 | `animation` | Boolean, String | `true` | Fade out or use the [Animation component](animation.md). |
 | `duration` | Number | `150` | Animation duration in milliseconds. |
-| `selClose` | CSS selector | `.uk-alert-close` | The close trigger element. |
+| `sel-close` | CSS selector | `.uk-alert-close` | The close trigger element. |
 
 ***
 
