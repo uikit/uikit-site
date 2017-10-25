@@ -117,6 +117,8 @@
 
             setPage(page) {
 
+                document.title = `${this.$parent.page.split('-').map(UIkit.util.ucfirst).join(' ')} - UIkit`;
+
                 this.$refs.container.innerHTML = '';
                 this.$refs.container.appendChild(document.createRange().createContextualFragment(page));
 
