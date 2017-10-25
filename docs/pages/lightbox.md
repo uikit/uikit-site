@@ -209,10 +209,10 @@ If you only want to use the lightbox panel directly through the JS API, you can 
 | Option              | Value   | Default        | Description                                                                           |
 |:--------------------|:--------|:---------------|:--------------------------------------------------------------------------------------|
 | `animation`         | String  | `slide`        | Lightbox animation mode: `slide`, `fade` or `scale`.                                  |
-| `autoplay`          | Number  | `0`            | Lightbox autoplays. (Delay in milliseconds)                                           |
-| `autoplay-interval` | Number  | `0`            | The delay between switching slides in autoplay mode.                                  |
-| `pause-on-hover`    | Boolean | false          | Pause autoplay mode on hover.                                                         |
-| `video-autoplay`    | Boolean | false          | Lightbox videos autoplay.                                                             |
+| `autoplay`          | Boolean  | `false`       | Lightbox autoplays.                                          |
+| `autoplay-interval` | Number  | `7000`            | The delay between switching slides in autoplay mode.                                  |
+| `pause-on-hover`    | Boolean | `false`          | Pause autoplay mode on hover.                                                         |
+| `video-autoplay`    | Boolean | `false`          | Lightbox videos autoplay.                                                             |
 | `index`             | Number  | `0`            | The initial item to show. (zero based)                                                |
 | `velocity`          | Number  | `2`            | The animation velocity (pixel/ms).                                                    |
 | `preload`           | Number  | `1`            | The number of items to preload. (left and right of the currently active item)         |
