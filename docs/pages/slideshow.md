@@ -255,7 +255,7 @@ Adding the `uk-height-viewport` attribute from the [Utility component](utility.m
 
 ```html
 <div uk-slideshow>
-    <ul class="uk-slideshow-items" uk-viewport-height="min-height: 300">...</ul>
+    <ul class="uk-slideshow-items" uk-height-viewport="min-height: 300">...</ul>
 </div>
 ```
 
