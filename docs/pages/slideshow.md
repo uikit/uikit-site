@@ -220,14 +220,14 @@ The slideshow always takes up the full width of its parent container. The height
 
 ## Min/Max height
 
-By default, the slideshow height adopts to the defined ratio. A minimum or maximum height can be set using the `minHeight` and `maxHeight` options.
+By default, the slideshow height adopts to the defined ratio. A minimum or maximum height can be set using the `min-height` and `max-height` options.
 
 ```html
-<div uk-slideshow="minHeight: 300; max-height: 600">...</div>
+<div uk-slideshow="min-height: 300; max-height: 600">...</div>
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="minHeight: 300; max-height: 600; animation: push">
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="min-height: 300; max-height: 600; animation: push">
 
     <ul class="uk-slideshow-items">
         <li>
@@ -251,11 +251,11 @@ By default, the slideshow height adopts to the defined ratio. A minimum or maxim
 
 ## Viewport height
 
-Adding the `uk-height-viewport` attribute from the [Utility component](utility.md) to the list of slideshow items will stretch the height to fill the whole viewport.
+Adding the `uk-height-viewport` attribute from the [Utility component](utility.md) to the list of slideshow items will stretch the height to fill the whole viewport. You can set the `min-height` option to define a minimum width.
 
 ```html
 <div uk-slideshow>
-    <ul class="uk-slideshow-items" uk-viewport-height>...</ul>
+    <ul class="uk-slideshow-items" uk-height-viewport="min-height: 300">...</ul>
 </div>
 ```
 
@@ -678,14 +678,14 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option              | Value           | Default | Description                                           |
 |:--------------------|:----------------|:--------|:------------------------------------------------------|
 | `animation`         | String          | `slide` | Slideshow animation mode: `slide`, `fade` or `scale`. |
-| `autoplay`          | Number          | `0`     | Slideshow autoplays. (Delay in milliseconds)          |
-| `autoplay-interval` | Number          | `0`     | The delay between switching slides in autoplay mode.  |
-| `pause-on-hover`    | Boolean         | false   | Pause autoplay mode on hover.                         |
-| `velocity`          | Number          | 1       | The animation velocity (pixel/ms).                    |
+| `autoplay`          | Boolean         | `false` | Slideshow autoplays.          |
+| `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.  |
+| `pause-on-hover`    | Boolean         | `false`   | Pause autoplay mode on hover.                         |
+| `velocity`          | Number          | `1`       | The animation velocity (pixel/ms).                    |
 | `ratio`             | Boolean, String | 16:9    | The ratio. (`false` prevents height adjustment)       |
-| `minHeight`         | Boolean, Number | `false` | The minimum height.                                   |
-| `maxHeight`         | Boolean, Number | `false` | The maximum height.                                   |
-| `index`             | String, Integer | 0       | Slideshow item to show. 0 based index.                |
+| `min-height`        | Boolean, Number | `false` | The minimum height.                                   |
+| `max-height`        | Boolean, Number | `false` | The maximum height.                                   |
+| `index`             | String, Integer | `0`       | Slideshow item to show. 0 based index.                |
 
 ***
 

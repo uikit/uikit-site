@@ -33,8 +33,8 @@ You can use explicit CSS property names (e.g. `width` or `scale`) and a number o
 | `rotate` | Animate rotation clockwise in degree. |
 | `scale` | Animate scaling. |
 | `color` | Animate color (needs start and stop value). |
-| `backgroundColor` | Animate background-color (needs start and stop value). |
-| `borderColor` | Animate border color (needs start and stop value). |
+| `background-color` | Animate background-color (needs start and stop value). |
+| `border-color` | Animate border color (needs start and stop value). |
 | `opacity` | Animate the opacity. |
 | `blur` | Animate the blur filter. |
 | `hue` | Animate the hue rotation filter. |
@@ -168,11 +168,11 @@ To adjust the easing of the animation, add the `easing` option. Lower values wil
 You can also transition from one color to another, for example for borders, backgrounds or text colors. Define colors using `rgb()` definitions, color keywords or hex values.
 
 ```html
-<div uk-parallax="borderColor: #00f,#f00">...</div>
+<div uk-parallax="border-color: #00f,#f00">...</div>
 ```
 
 ```example
-<div id="test-color" class="test-color uk-height-large uk-overflow-hidden uk-flex uk-flex-top" uk-parallax="backgroundColor: yellow,white; borderColor: #00f,#f00; viewport: 0.5" style="border: 10px solid #000;">
+<div id="test-color" class="test-color uk-height-large uk-overflow-hidden uk-flex uk-flex-top" uk-parallax="background-color: yellow,white; borderColor: #00f,#f00; viewport: 0.5" style="border: 10px solid #000;">
 
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; color: #0f0; viewport: 0.5">Headline</h1>
 
