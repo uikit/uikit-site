@@ -51,49 +51,47 @@ The dotnav can also be displayed vertically. Just add the `.uk-dotnav-vertical` 
 
 ***
 
-## Dotnav and images
+## Position as overlay
 
-To position the dotnav on top of an element, add one of the `.uk-position-*` classes from the [Position component](position.md) to a `div` element wrapping the dotnav. For better visibility on images, for example when using the dotnav as a slideshow navigation, just put it inside a container with the `.uk-light` class from the [Inverse component](inverse.md).
+To position the dotnav on top of an element or the [Slideshow component](slideshow.md) for example, add one of the `.uk-position-*` classes from the [Position component](position.md) to a `div` element wrapping the dotnav. To create a position context on the container, add the `.uk-position-relative` class.
+
+Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to apply a light or dark color for better visibility.
 
 ```html
-<div class="uk-inline uk-light">
-    <img src="" alt="">
-    <div class="uk-position-bottom-center uk-position-medium">
+<div class="uk-position-relative uk-light">
+
+    <!-- The element which is wrapped goes here -->
+
+    <div class="uk-position-bottom-center uk-position-small">
         <ul class="uk-dotnav">...</ul>
     </div>
+
 </div>
 ```
 
 ```example
-<div class="uk-child-width-1-2@m uk-grid-small" uk-grid>
-    <div>
-        <div class="uk-position-relative uk-light">
-            <img src="../docs/images/dark.jpg" alt="">
-            <div class="uk-position-bottom-center uk-position-medium">
-                <ul class="uk-dotnav uk-flex-nowrap">
-                    <li class="uk-active"><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4</a></li>
-                    <li><a href="#">Item 5</a></li>
-                </ul>
-            </div>
-        </div>
+<div class="uk-position-relative uk-light" uk-slideshow>
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="../docs/images/size1.jpg" alt="" uk-cover>
+        </li>
+    </ul>
+
+    <div class="uk-position-bottom-center uk-position-small">
+        <ul class="uk-dotnav">
+            <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+            <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+            <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+        </ul>
     </div>
-    <div>
-        <div class="uk-position-relative">
-            <img src="../docs/images/light.jpg" alt="">
-            <div class="uk-position-center-right uk-position-medium">
-                <ul class="uk-dotnav uk-dotnav-vertical">
-                    <li class="uk-active"><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4</a></li>
-                    <li><a href="#">Item 5</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
 </div>
 ```
 
