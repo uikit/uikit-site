@@ -646,7 +646,7 @@ To automatically mute or play videos, add the `uk-video` attribute. The video wi
 <div class="uk-grid uk-child-width-1-2@s">
     <div>
 
-        <button class="uk-button uk-button-default uk-margin" type="button" uk-toggle="target: +video">Toggle HTML5 Video</button>
+        <button class="uk-button uk-button-default uk-margin" type="button" uk-toggle="target: & video">Toggle HTML5 Video</button>
         <video controls playsinline uk-video="automute: true">
             <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
             <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
@@ -655,7 +655,7 @@ To automatically mute or play videos, add the `uk-video` attribute. The video wi
     </div>
     <div>
 
-        <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +iframe">Toggle Youtube Video</button>
+        <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: & iframe">Toggle Youtube Video</button>
         <iframe src="http://www.youtube.com/embed/YE7VzlLtp-4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="560" height="315" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
 
     </div>
