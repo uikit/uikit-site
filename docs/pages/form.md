@@ -460,7 +460,7 @@ Use a button, text or a link as a select form. Just add the `target: SELECTOR` o
     </div>
 
     <div class="uk-margin">
-        <div uk-form-custom="target: > * > span:last">
+        <div uk-form-custom="target: > span">
             <select>
                 <option value="1">Option 01</option>
                 <option value="2">Option 02</option>
@@ -475,7 +475,7 @@ Use a button, text or a link as a select form. Just add the `target: SELECTOR` o
     </div>
 
     <div class="uk-margin">
-        <div uk-form-custom="target: > * > span:first">
+        <div uk-form-custom="target: > * > span">
             <select>
                 <option value="">Please select...</option>
                 <option value="1">Option 01</option>
