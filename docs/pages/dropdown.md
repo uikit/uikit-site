@@ -360,7 +360,7 @@ The following events will be triggered on elements with this component attached:
 | `show` | Fires after an item is shown. |
 | `shown` | Fires after the item's show animation has completed. |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
-| `hide` | Fires after an item's hide animation has started. |
+| `hide` | Fires after an item is hidden. |
 | `hidden` | Fires after an item is hidden. |
 | `stack` | Fires when the `drop-stack`class is applied. |
 
