@@ -11,7 +11,6 @@ To apply this component, add one of the following classes to a block element.
 | `.uk-padding`        | Adds default padding to the element. |
 | `.uk-padding-small`  | Adds small padding to the element.   |
 | `.uk-padding-large`  | Adds large padding to the element.   |
-| `.uk-padding-xlarge` | Adds xlarge padding to the element.  |
 
 ```html
 <div class="uk-padding"></div>

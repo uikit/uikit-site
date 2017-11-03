@@ -34,76 +34,62 @@ To increase the size of the slidenav icons, add the `.uk-slidenav-large` class.
 
 ***
 
-## Position on image
-
-To position the slidenav over an image or any other inline element, just add one of the `.uk-position-*` classes from the [Position component](position.md). To create a container of the same size with position context, just wrap the nav and content inside a container element and add the `.uk-inline` class from the [Utility component](utility.md#inline).
-
-Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to apply a light or dark color for better visibility.
-
-```html
-<div class="uk-inline uk-light">
-    <img src="" alt="">
-    <a class="uk-position-center-left" href="" uk-slidenav-previous></a>
-    <a class="uk-position-center-right" href="" uk-slidenav-next></a>
-</div>
-```
-
-**Note** You can also apply the [Visibility component](visibility.md), so that the slidenav only appears on hover.
-
-```example
-<div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
-    <div>
-        <div class="uk-inline uk-visible-toggle uk-light">
-            <img src="../docs/images/dark.jpg" alt="">
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav-previous></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav-next></a>
-        </div>
-    </div>
-    <div>
-        <div class="uk-inline uk-visible-toggle">
-            <img src="../docs/images/light.jpg" alt="">
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav-previous></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav-next></a>
-        </div>
-    </div>
-</div>
-```
-
-***
-
 ## Slidenav container
 
 To display a conjoint slidenav, wrap the slidenav items inside a `<div>` element and add the `.uk-slidenav-container` class, as well as one of the `.uk-position-*` classes.
 
 ```html
-<div class="uk-inline">
-    <img src="" alt="">
-    <div class="uk-slidenav-container uk-position-bottom-right">
-        <a href="" uk-slidenav-previous></a>
-        <a href="" uk-slidenav-next></a>
-    </div>
+<div class="uk-slidenav-container">
+    <a href="" uk-slidenav-previous></a>
+    <a href="" uk-slidenav-next></a>
 </div>
 ```
 
 ```example
-<div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
-    <div>
-        <div class="uk-inline uk-light">
-            <img src="../docs/images/dark.jpg" alt="">
-            <div class="uk-slidenav-container uk-position-top-left uk-position-small">
-                <a class="uk-slidenav-large" href="#" uk-slidenav-previous></a>
-                <a class="uk-slidenav-large" href="#" uk-slidenav-next></a>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="uk-inline">
-            <img src="../docs/images/light.jpg" alt="">
-            <div class="uk-slidenav-container uk-position-bottom-right uk-position-small">
-                <a class="uk-slidenav-large" href="#" uk-slidenav-previous></a>
-                <a class="uk-slidenav-large" href="#" uk-slidenav-next></a>
-            </div>
-        </div>
-    </div>
+<div class="uk-slidenav-container">
+    <a href="" uk-slidenav-previous></a>
+    <a href="" uk-slidenav-next></a>
+</div>
+```
+
+***
+
+## Position as overlay
+
+To position the slidenav on top of an element or the [Slideshow component](slideshow.md) for example, just add one of the `.uk-position-*` classes from the [Position component](position.md). To create a position context on the container, add the `.uk-position-relative` class.
+
+Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to apply a light or dark color for better visibility.
+
+```html
+<div class="uk-position-relative uk-light">
+
+    <!-- The element which is wrapped goes here -->
+
+    <a class="uk-position-center-left" href="" uk-slidenav-previous></a>
+    <a class="uk-position-center-right" href="" uk-slidenav-next></a>
+
+</div>
+```
+
+**Note** You can also apply the [Visibility component](visibility.md#show-on-hover), so that the slidenav only appears on hover.
+
+```example
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="../docs/images/light.jpg" alt="" uk-cover>
+        </li>
+    </ul>
+
+    <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
 </div>
 ```

@@ -227,7 +227,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `boundary-align` | Boolean                | `false`         | Align the drop to its boundary.                                                  |
 | `flip`           | Boolean, String | `true`          | Automatically flip the drop. Possible values are `false`, `true`, `x` or `y`.                                                     |
 | `offset`         | Number                 | `0`             | The offset of the drop's container.                                              |
-| `animation`      | String                 | `false`         | Space separated names of animations to apply. Comma separate for out animations. |
+| `animation`      | String                 | `false`         | Space separated names of animations to apply. |
 | `duration`       | Number                 | `200`           | Animation duration in milliseconds.                                                          |
 ***
 
@@ -252,7 +252,7 @@ The following events will be triggered on elements with this component attached:
 | `show` | Fires after an item is shown. |
 | `shown` | Fires after the item's show animation has completed. |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
-| `hide` | Fires after an item's hide animation has started. |
+| `hide` | Fires after an item is hidden. |
 | `hidden` | Fires after an item is hidden. |
 | `stack` | Fires when the `drop-stack`class is applied. |
 

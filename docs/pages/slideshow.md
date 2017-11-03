@@ -325,7 +325,7 @@ To navigate through your slides, just use the `uk-slideshow-item` attribute. To 
 </div>
 ```
 
-The flexibility of the Slideshow component allows you to use any of the other UIkit components to navigate through items. For example the [Slidenav component](slidenav.md) and [Dotnav component](dotnav.md) can be used to style the slideshow navigations as shown below.
+The flexibility of the Slideshow component allows you to use any of the other UIkit components to navigate through items. For example the [Slidenav](slidenav.md), [Dotnav](dotnav.md) and [Thumbnav](thumbnav.md) components can be used to style the slideshow navigations as shown below.
 
 **Note** For better visibility of overlaying navigations, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md).
 

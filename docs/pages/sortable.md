@@ -228,4 +228,6 @@ The following events will be triggered on elements with this component attached:
 | --- | --- |
 | `start` | Fires after dragging starts. |
 | `stop` | Fires after dragging stops. |
-| `change` | Fires after an element has been sorted. |
+| `moved` | Fires after an element has been moved. |
+| `added` | Fires after an element has been added. |
+| `removed` | Fires after an element has been removed. |
