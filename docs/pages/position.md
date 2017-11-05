@@ -198,7 +198,7 @@ To apply a medium margin to positioned elements, add the `.uk-position-medium` c
 
 ## Large modifier
 
-To apply a large margin to positioned elements, add the `.uk-position-medium` class.
+To apply a large margin to positioned elements, add the `.uk-position-large` class.
 
 ```html
 <div class="uk-position-large uk-position-center"></div>
