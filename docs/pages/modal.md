@@ -122,7 +122,7 @@ To vertically center the modal dialog, you can use the `.uk-margin-auto-vertical
 </div>
 ```
 
-*Note* `.uk-flex-top` on the modal container is needed to support IE 11.
+**Note** `.uk-flex-top` on the modal container is needed to support IE 11.
 
 ***
 
@@ -462,7 +462,7 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
     <a id="js-modal-prompt" class="uk-button uk-button-default" href="#">Prompt</a>
 
     <script>
-    
+
        UIkit.util.on('#js-modal-dialog', 'click', function (e) {
            e.preventDefault();
            e.target.blur();
@@ -494,7 +494,7 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
                console.log('Prompted:', name)
            });
        });
-       
+
     </script>
 
 </p>
