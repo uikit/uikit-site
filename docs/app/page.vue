@@ -53,6 +53,14 @@
 
             on(document, 'click', 'a[href^="#"]:not([href="#"])', e => history.pushState({}, '', e.target.href));
 
+            on(window, 'popstate', () => {
+                setTimeout(() => {
+                    if (location.hash && $(location.hash)) {
+                        scrollTo(0, offset($(location.hash)).top - 100);
+                    }
+                })
+            });
+
         },
 
         watch: {
@@ -137,10 +145,7 @@
                     scrollTo(0, 0);
                 }
 
-                setTimeout(() => {
-                    $$('pre code', this.$refs.container).forEach(block => hljs.highlightBlock(block));
-                    // UIkit.scroll($('a[href^="#"]:not([href="#"])', this.$refs.container), {offset: 100});
-                });
+                setTimeout(() => $$('pre code', this.$refs.container).forEach(block => hljs.highlightBlock(block)));
 
             }
 
