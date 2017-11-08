@@ -290,9 +290,12 @@ You can view examples in the tests for [Height Viewport](../assets/uikit/tests/h
 
 ## Match height
 
-To expand all children of a container to the same height, regardless of their content – for example, inside a grid – add the `uk-height-match` attribute.
+To expand all children of a container to the same height, regardless of their content – for example, inside a grid – add the `uk-height-match` attribute. You can change the height matching behavior by setting the `target` or `row` option to the attribute. [Learn more](javascript.md#component-configuration)
 
-**Note** Only items in the same row will be matched. For example, once grid columns extend to a width of 100%, their heights will no longer be matched. This makes sense, for example, if they stack vertically in narrower viewports.
+| Option          | Value   | Default | Description                                                              |
+| --------------- | ------- | ------- | ------------------------------------------------------------------------ |
+| `target`    | String | `> *` | Elements that should match.  |
+| `row` | Boolean | `true` | By default only items in the same row will be matched. For example, once grid columns extend to a width of 100%, their heights will no longer be matched. This makes sense, for example, if they stack vertically in narrower viewports. |
 
 ```html
 <div uk-height-match>
