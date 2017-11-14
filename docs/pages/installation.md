@@ -21,6 +21,8 @@ The compiled files of all UIkit versions are also hosted on the Cloudflare conte
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit-icons.min.js"></script>
 ```
 
+**Note** The latest [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) hashes can be obtained through [CDNJS](https://cdnjs.com/libraries/uikit/).
+
 ***
 
 ## File structure of the source
