@@ -259,7 +259,7 @@ Shows the Lightbox Panel and item.
 #### Hide
 
 ```js
-UIkit.lightboxPanel(element).hide();
+UIkit.lightboxPanel(panelOptions).hide();
 ```
 
 Hides the Lightbox Panel.
