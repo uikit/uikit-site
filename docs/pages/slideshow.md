@@ -251,7 +251,7 @@ By default, the slideshow height adopts to the defined ratio. A minimum or maxim
 
 ## Viewport height
 
-Adding the `uk-height-viewport` attribute from the [Utility component](utility.md) to the list of slideshow items will stretch the height to fill the whole viewport. You can set the `min-height` option to define a minimum width.
+Adding the `uk-height-viewport` attribute from the [Utility component](utility.md) to the list of slideshow items will stretch the height to fill the whole viewport. You can set the `min-height` option to define a minimum height.
 
 ```html
 <div uk-slideshow>
