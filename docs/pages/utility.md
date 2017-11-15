@@ -673,7 +673,7 @@ The table below lists the available settings of the `uk-video` attribute. [Learn
 
 | Option     | Value     | Default | Description                                                           |
 | ---------- | --------- | ------- | --------------------------------------------------------------------- |
-| `autoplay` | Boolean   | `true`  | Automatically start the video. Pauses the video if it is not visible. |
+| `autoplay` | Boolean, String   | `true`  | Automatically start the video. Pauses the video if it is not visible. A value of `inview` will play/pause the video as it enters/leaves the viewport. |
 | `automute` | Boolean   | `false` | Automatically mute the video.                                         |
 
 
