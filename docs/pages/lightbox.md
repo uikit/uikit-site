@@ -267,7 +267,7 @@ Hides the Lightbox Panel.
 #### startAutoplay
 
 ```js
-UIkit.slideshow(element).startAutoplay();
+UIkit.lightboxPanel(element).startAutoplay();
 ```
 
 Starts the Lightbox's autoplay.
@@ -275,7 +275,7 @@ Starts the Lightbox's autoplay.
 #### stopAutoplay
 
 ```js
-UIkit.slideshow(element).stopAutoplay();
+UIkit.lightboxPanel(element).stopAutoplay();
 ```
 
 Stops the Lightbox's autoplay.
