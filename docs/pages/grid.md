@@ -8,7 +8,9 @@ The Grid system of UIkit allows you to arrange block elements in columns and wor
 
 ## Usage
 
-To create the grid container, add the `uk-grid` attribute to a `<div>` element. There's no need to add a `uk-grid` class, as it will get added via JavaScript. However, if the JavaScript of UIkit is placed right before the `</body>` tag, the class should be added to prevent stacking while loading `<div class="uk-grid">`. You can add child `<div>` elements to create the cells. By default, all grid cells are stacked. To place them side by side, add one of the classes from the [Width component](width.md). Using `uk-child-width-expand` will automatically apply equal width to items, regardless of how many there are.
+To create the grid container, add the `uk-grid` attribute to a `<div>` element. You can add child `<div>` elements to create the cells. By default, all grid cells are stacked. To place them side by side, add one of the classes from the [Width component](width.md). Using `uk-child-width-expand` will automatically apply equal width to items, regardless of how many there are.
+
+**note** There's no need to add a `uk-grid` class, as it will get added via JavaScript. However, if UIkit's JavaScript is [deferred](https://developer.mozilla.org/de/docs/Web/HTML/Element/script#attr-defer), the class should be added to prevent stacking while loading.
 
 ```html
 <div uk-grid>
