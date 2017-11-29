@@ -57,7 +57,7 @@ To do so, set the following parameter to UIkit:
 
 ```javascript
 //simply pass the selector
-UIkit.container = '.uk-scope' 
+UIkit.container = '.uk-scope';
 ...
 //or you can set an element directly, for example
 UIkit.container = document.getElementById('#id-of-scope-element-or-element-inside-your-scope');
