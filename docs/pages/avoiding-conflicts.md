@@ -52,7 +52,7 @@ You will find the generated CSS and JS files in the `/dist` folder. To use the s
 </html>
 ```
 
-Now you need to tell ```uk-modal```, ```uk-tooltip``` and ```uk-lightbox``` where to append themselves into the DOM when they do not have the container option set, e.g. the default container for said components.
+Now you need to tell ```uk-modal```, ```uk-tooltip``` and ```uk-lightbox``` where to append themselves into the DOM when they do not have the ```container``` option set, e.g. the default container for said components.
 To do so, set the following parameter:
 
 ```javascript
