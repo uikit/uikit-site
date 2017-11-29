@@ -51,3 +51,14 @@ You will find the generated CSS and JS files in the `/dist` folder. To use the s
     </body>
 </html>
 ```
+
+Now you need to tell modals, tooltips and the likes where to append themselves into the dom when they want to show.
+To do so, set the following parameter to UIkit:
+
+```javascript
+//simply pass the selector
+UIkit.container = '.uk-scope' 
+...
+//or you can set an element directly, for example
+UIkit.container = document.getElementById('#id-of-scope-element-or-element-inside-your-scope');
+```
