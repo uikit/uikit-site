@@ -111,7 +111,7 @@ Programmatically, components may be initialized with the `element, options` argu
 
 ```js
 // Passing a selector and an options object.
-var stickys = UIkit.sticky('.sticky', {
+var sticky = UIkit.sticky('.sticky', {
     offset: 50,
     top: 100
 });
@@ -119,6 +119,18 @@ var stickys = UIkit.sticky('.sticky', {
 // Functional components should omit the 'element' argument.
 var notifications = UIkit.notification('MyMessage', 'danger');
 ```
+
+After initialisation you can get your component by calling the same initialisation function, ommiting the options parameter.
+
+```javscript
+// Sticky is now the prior initialised components
+var sticky = UIkit.sticky('.sticky');
+```
+
+**Note**
+Using `UIkit[componentName]('selector')` with css selectors will always return the the first occurance only!
+If you need access to multiple instances of your components use the `UIkit.util.$` and `UIkit.util.$$` helper functions (or your prefered method of retireving DOM elements) to find the specific elements first, and then get your components by using that element as the first parameter in the component function, e.g. `UIKit.modal(myElementWithAModal);`
+
 
 Initializing your components programmatically gives you the possibility to invoke their functions directly.
 
