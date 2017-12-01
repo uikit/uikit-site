@@ -16,7 +16,7 @@ When you have [setup UIkit from Github source](installation.md#compile-from-gith
 ```sh
 npm run prefix -- -p xyz # replace xyz with your custom prefix.
 ```
-**Note** Type `npm run prefix -- -h` to get more options. `npm run prefix` will prompt for the desired prefix.
+**Note** `npm run prefix` will prompt for a prefix.
 
 The script will go through all CSS files in the `/dist` folder and replace them with your custom prefix version.
 
