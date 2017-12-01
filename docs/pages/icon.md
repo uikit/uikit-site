@@ -388,6 +388,6 @@ UIkit.icon(element, options);
 
 A JavaScript Promise that will resolve with the added SVG Node.
 
-```example
+```js
 UIkit.icon(element).svg.then(function(svg) { svg.querySelector('path').style.stroke = 'red'; })
 ```
