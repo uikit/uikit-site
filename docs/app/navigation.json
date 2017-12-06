@@ -7,6 +7,7 @@
         "Less": "less",
         "Sass": "sass",
         "JavaScript": "javascript",
+        "JavaScript Utils": "javascript-utilities",
         "Webpack": "webpack",
         "Custom icons": "custom-icons",
         "Avoiding conflicts": "avoiding-conflicts",
