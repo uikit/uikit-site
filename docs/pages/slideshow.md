@@ -675,17 +675,17 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ### Slideshow
 
-| Option              | Value           | Default | Description                                           |
-|:--------------------|:----------------|:--------|:------------------------------------------------------|
+| Option              | Value           | Default | Description                                                           |
+|:--------------------|:----------------|:--------|:----------------------------------------------------------------------|
 | `animation`         | String          | `slide` | Slideshow animation mode: `slide`, `fade`, `scale`, `pull` or `push`. |
-| `autoplay`          | Boolean         | `false` | Slideshow autoplays.          |
-| `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.  |
-| `pause-on-hover`    | Boolean         | `false`   | Pause autoplay mode on hover.                         |
-| `velocity`          | Number          | `1`       | The animation velocity (pixel/ms).                    |
-| `ratio`             | Boolean, String | 16:9    | The ratio. (`false` prevents height adjustment)       |
-| `min-height`        | Boolean, Number | `false` | The minimum height.                                   |
-| `max-height`        | Boolean, Number | `false` | The maximum height.                                   |
-| `index`             | String, Integer | `0`       | Slideshow item to show. 0 based index.                |
+| `autoplay`          | Boolean         | `false` | Slideshow autoplays.                                                  |
+| `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.                  |
+| `pause-on-hover`    | Boolean         | `false` | Pause autoplay mode on hover.                                         |
+| `velocity`          | Number          | `1`     | The animation velocity (pixel/ms).                                    |
+| `ratio`             | Boolean, String | 16:9    | The ratio. (`false` prevents height adjustment)                       |
+| `min-height`        | Boolean, Number | `false` | The minimum height.                                                   |
+| `max-height`        | Boolean, Number | `false` | The maximum height.                                                   |
+| `index`             | String, Integer | `0`     | Slideshow item to show. 0 based index.                                |
 
 ***
 
