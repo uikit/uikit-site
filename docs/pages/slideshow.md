@@ -673,11 +673,11 @@ Together with the [Overlay component](overlay.md), content transitions are used 
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-### Lightbox
+### Slideshow
 
 | Option              | Value           | Default | Description                                           |
 |:--------------------|:----------------|:--------|:------------------------------------------------------|
-| `animation`         | String          | `slide` | Slideshow animation mode: `slide`, `fade` or `scale`. |
+| `animation`         | String          | `slide` | Slideshow animation mode: `slide`, `fade`, `scale`, `pull` and `push`. |
 | `autoplay`          | Boolean         | `false` | Slideshow autoplays.          |
 | `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.  |
 | `pause-on-hover`    | Boolean         | `false`   | Pause autoplay mode on hover.                         |
