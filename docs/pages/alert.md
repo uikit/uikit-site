@@ -40,12 +40,12 @@ To create a close button and enable its functionality, add the `.uk-alert-close`
 
 There are several style modifiers available. Just add one of the following classes to apply a different look.
 
-| Class               | Description                                                |
-|---------------------|------------------------------------------------------------|
-| `.uk-alert-primary` | Give the message a prominent styling. |
-| `.uk-alert-success` | Indicates success or a positive message. |
+| Class               | Description                               |
+|:--------------------|:------------------------------------------|
+| `.uk-alert-primary` | Give the message a prominent styling.     |
+| `.uk-alert-success` | Indicates success or a positive message.  |
 | `.uk-alert-warning` | Indicates a message containing a warning. |
-| `.uk-alert-danger`  | Indicates an important or error message. |
+| `.uk-alert-danger`  | Indicates an important or error message.  |
 
 ```example
 <div class="uk-alert-primary" uk-alert>
@@ -75,11 +75,11 @@ There are several style modifiers available. Just add one of the following class
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option | Value | Default | Description |
-| --- | --- | --- | --- |
-| `animation` | Boolean, String | `true` | Fade out or use the [Animation component](animation.md). |
-| `duration` | Number | `150` | Animation duration in milliseconds. |
-| `sel-close` | CSS selector | `.uk-alert-close` | The close trigger element. |
+| Option      | Value           | Default           | Description                                              |
+|:------------|:----------------|:------------------|:---------------------------------------------------------|
+| `animation` | Boolean, String | `true`            | Fade out or use the [Animation component](animation.md). |
+| `duration`  | Number          | `150`             | Animation duration in milliseconds.                      |
+| `sel-close` | CSS selector    | `.uk-alert-close` | The close trigger element.                               |
 
 ***
 
@@ -97,10 +97,10 @@ UIkit.alert(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name | Description |
-| --- | --- |
+| Name         | Description                                                              |
+|:-------------|:-------------------------------------------------------------------------|
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
-| `hide` | Fires after an item is hidden. |
+| `hide`       | Fires after an item is hidden.                                           |
 
 ### Methods
 

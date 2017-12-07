@@ -6,10 +6,10 @@
 
 To apply this component, use the following classes. To align a subnav, for example to horizontally center it, you can use the [Flex component](flex.md).
 
-| Class           | Description                                                                                                         |
-|-----------------|---------------------------------------------------------------------------------------------------------------------|
-| `.uk-subnav`    | Add this class to a `<ul>` element to define the Subnav component. Use `<a>` elements as nav items within the list. |
-| `.uk-active `   | Add this class to a list item to apply an active state.                                                             |
+| Class         | Description                                                                                                         |
+|:--------------|:--------------------------------------------------------------------------------------------------------------------|
+| `.uk-subnav`  | Add this class to a `<ul>` element to define the Subnav component. Use `<a>` elements as nav items within the list. |
+| `.uk-active ` | Add this class to a list item to apply an active state.                                                             |
 
 To use list items without a link, add a `<span>` element instead of an `<a>`. Alternatively, you can add the `.uk-disabled` class to apply a disabled state.
 

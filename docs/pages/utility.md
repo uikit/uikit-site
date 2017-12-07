@@ -60,11 +60,11 @@ Add the `.uk-panel-scrollable` class to give the panel a fixed height and make i
 
 Floating elements are taken from the document flow and aligned to the left or right side of their container. It is important to clear floats or in the worst case, you might end up with a scrambled site. The following classes will help you to set up basic layouts.
 
-| Class | Description |
-| --- | --- |
-| `.uk-float-left` | Add this class to float the element to the left. |
-| `.uk-float-right` |  Add this class to float the element to the right. |
-| `.uk-clearfix` | Add this class to a parent container to clear floats. Alternatively, you can create a new block format context, e.g. by adding the `.uk-overflow-hidden` class. |
+| Class             | Description                                       |
+|:------------------|:--------------------------------------------------|
+| `.uk-float-left`  | Add this class to float the element to the left.  |
+| `.uk-float-right` | Add this class to float the element to the right. |
+| `.uk-clearfix`    | Add this class to a parent container to clear floats. Alternatively, you can create a new block format context, e.g. by adding the `.uk-overflow-hidden` class. |
 
 
 ```example
@@ -84,9 +84,9 @@ Floating elements are taken from the document flow and aligned to the left or ri
 
 These utilities provide different classes to modify an element's overflow behavior.
 
-| Class                 | Description                                                                                                                                      |
-|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `.uk-overflow-hidden` | Add this class to clip content that exceeds the dimensions of its container.                                                                     |
+| Class                 | Description                               |
+|-----------------------|-------------------------------------------|
+| `.uk-overflow-hidden` | Add this class to clip content that exceeds the dimensions of its container. |
 | `.uk-overflow-auto`   | Add this class to create a container that provides a horizontal or vertical scrollbar whenever the elements inside it are wider or higher than the container itself. |
 
 **Note** The `.uk-overflow-auto` class is useful when having to handle tables on a responsive website, which at some point would just get too big. It also works great on `<pre>` elements.
@@ -150,10 +150,10 @@ These utilities provide different classes to modify an element's overflow behavi
 
 These utilities provide different classes for resizing elements.
 
-| Class                 | Description                                                         |
-|-----------------------|---------------------------------------------------------------------|
-| `.uk-resize`          | Add this class to enable horizontal and vertical resizing.          |
-| `.uk-resize-vertical` | Add this class to enable only vertical resizing.                    |
+| Class                 | Description                                                |
+|:----------------------|:-----------------------------------------------------------|
+| `.uk-resize`          | Add this class to enable horizontal and vertical resizing. |
+| `.uk-resize-vertical` | Add this class to enable only vertical resizing.           |
 
 <p>Grab and drag the bottom right corner of each box below to resize it</p>
 
@@ -212,10 +212,10 @@ Add one of these classes to change the display properties of an element.
 
 These classes are often used to create a position context on containers with an image as a child. The container keeps the same size as the image as well as the responsive behavior. That way content that is placed on top of the image with the [Position component](position.md) will not flow out of the image dimensions.
 
-| Class             | Description                                                                                                           |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------|
+| Class             | Description                                                                                                            |
+|:------------------|:-----------------------------------------------------------------------------------------------------------------------|
 | `.uk-inline`      | Add this class to apply inline-block behavior to an element, add a max-width of 100% and to create a position context. |
-| `.uk-inline-clip` | Same as `.uk-inline`, it but also clips overflowing child elements.                                                     |
+| `.uk-inline-clip` | Same as `.uk-inline`, it but also clips overflowing child elements.                                                    |
 
 ```html
 <div class="uk-inline">
@@ -238,7 +238,7 @@ These classes are often used to create a position context on containers with an 
 UIkit provides a number of useful classes to alter a block element's height.
 
 | Class                                             | Description                                                                                   |
-|---------------------------------------------------|-----------------------------------------------------------------------------------------------|
+|:--------------------------------------------------|:----------------------------------------------------------------------------------------------|
 | `.uk-height-1-1`                                  | This class applies a height of 100%. This only works, if the parent element has a set height. |
 | `.uk-height-small `<br> `.uk-height-max-small `   | These classes apply a height or max-height of _150px_.                                        |
 | `.uk-height-medium `<br> `.uk-height-max-medium ` | These classes apply a height or max-height of _300px_.                                        |
@@ -268,11 +268,11 @@ UIkit provides a number of useful classes to alter a block element's height.
 
 Add the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `offset-top`, `offset-bottom` or `expand` option to the attribute. [Learn more](javascript.md#component-configuration)
 
-| Option          | Value   | Default | Description                                                              |
-| --------------- | ------- | ------- | ------------------------------------------------------------------------ |
-| `offset-top`    | Boolean | `false` | Subtracts the element's top offset from its height.                      |
+| Option          | Value                  | Default | Description                                                                         |
+|:----------------|:-----------------------|:--------|:------------------------------------------------------------------------------------|
+| `offset-top`    | Boolean                | `false` | Subtracts the element's top offset from its height.                                 |
 | `offset-bottom` | Boolean, Number, Pixel | `false` | Subtracts the element's immediately following sibling's height from its own height. |
-| `expand`        | Boolean | `true`  | Expand the element's height to make a short page fill the viewport.      |
+| `expand`        | Boolean                | `true`  | Expand the element's height to make a short page fill the viewport.                 |
 
 ```html
 <div uk-height-viewport></div>
@@ -292,10 +292,10 @@ You can view examples in the tests for [Height Viewport](../assets/uikit/tests/h
 
 To expand all children of a container to the same height, regardless of their content – for example, inside a grid – add the `uk-height-match` attribute. You can change the height matching behavior by setting the `target` or `row` option to the attribute. [Learn more](javascript.md#component-configuration)
 
-| Option          | Value   | Default | Description                                                              |
-| --------------- | ------- | ------- | ------------------------------------------------------------------------ |
-| `target`    | String | `> *` | Elements that should match.  |
-| `row` | Boolean | `true` | By default only items in the same row will be matched. For example, once grid columns extend to a width of 100%, their heights will no longer be matched. This makes sense, for example, if they stack vertically in narrower viewports. |
+| Option   | Value   | Default | Description                 |
+|:---------|:--------|:--------|:----------------------------|
+| `target` | String  | `> *`   | Elements that should match. |
+| `row`    | Boolean | `true`  | By default only items in the same row will be matched. For example, once grid columns extend to a width of 100%, their heights will no longer be matched. This makes sense, for example, if they stack vertically in narrower viewports. |
 
 ```html
 <div uk-height-match>
@@ -364,10 +364,10 @@ If your grid wraps into multiple rows, only grid columns within the same row are
 
 The table below lists the available settings of the `uk-height-match` attribute. [Learn more](javascript.md#component-configuration)
 
-| Option  | Value        | Default | Description                                                                                 |
-| ------- | ------------ | ------- | ------------------------------------------------------------------------------------------- |
-| `target`| CSS selector | `false` | Elements that should match. By default, direct children will match.                         |
-| `row`   | Boolean      | `true`  | If your targets wrap into multiple rows, only grid columns within the same row are matched. |
+| Option   | Value        | Default | Description                                                                                 |
+|:---------|:-------------|:--------|:--------------------------------------------------------------------------------------------|
+| `target` | CSS selector | `false` | Elements that should match. By default, direct children will match.                         |
+| `row`    | Boolean      | `true`  | If your targets wrap into multiple rows, only grid columns within the same row are matched. |
 
 ***
 
@@ -375,8 +375,8 @@ The table below lists the available settings of the `uk-height-match` attribute.
 
 In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the width of their parent container by default. To apply responsive behavior to iframes, add the `uk-responsive` attribute . For other elements or to apply a different behavior, just add one of the following classes.
 
-| Class	| Description |
-| ----------------------- | ------------------------------------------------------------------------------------------------ |
+| Class                   | Description |
+|:------------------------|:------------|
 | `.uk-responsive-width`  | Add this class to apply the same responsive behavior to any other element. It adjusts the object's width according to its parent's width, keeping the original aspect ratio.   |
 | `.uk-responsive-height` | Add this class to adjust the object's height (instead of its width) according to its parent's height, keeping the original aspect ratio. |
 | `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all relevant elements inside it. If you are embedding Google Maps into your site, you may need this to fix the map's images.      |
@@ -393,10 +393,10 @@ In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the widt
 
 To modify the border radius of an element, like an image, add one of the following classes.
 
-| Class                | Description                                            |
-|----------------------|--------------------------------------------------------|
-| `.uk-border-rounded` | Add this class to apply rounded corners.               |
-| `.uk-border-circle`  | Add this class to a apply a circled shape.             |
+| Class                | Description                                |
+|:---------------------|:-------------------------------------------|
+| `.uk-border-rounded` | Add this class to apply rounded corners.   |
+| `.uk-border-circle`  | Add this class to a apply a circled shape. |
 
 ```example
 <img class="uk-border-rounded" src="images/avatar.jpg" width="200" height="200" alt="Border rounded">
@@ -410,7 +410,7 @@ To modify the border radius of an element, like an image, add one of the followi
 You can apply different box shadows to elements. Just add one of the following classes.
 
 | Class                   | Description                                      |
-|-------------------------|--------------------------------------------------|
+|:------------------------|:-------------------------------------------------|
 | `.uk-box-shadow-small`  | Add this class to apply a small box shadow.      |
 | `.uk-box-shadow-medium` | Add this class to apply a medium box shadow.     |
 | `.uk-box-shadow-large`  | Add this class to apply a large box shadow.      |
@@ -465,7 +465,7 @@ To apply a box shadow at the bottom of an element so that appears to be hovering
 To apply a box shadow on hover, add one of the following classes. This can also be used to modify the shadow size on hover. To do so, just combine them with one of the classes above.
 
 | Class                         | Description                                               |
-|-------------------------------|-----------------------------------------------------------|
+|:------------------------------|:----------------------------------------------------------|
 | `.uk-box-shadow-hover-small`  | Add this class to apply a small box shadow on hover.      |
 | `.uk-box-shadow-hover-medium` | Add this class to apply a medium box shadow on hover.     |
 | `.uk-box-shadow-hover-large`  | Add this class to apply a large box shadow on hover.      |
@@ -528,10 +528,10 @@ To visually connect horizontal items add the `uk-leader` attribute to the elemen
 
 The table below lists the available settings of the `uk-leader` attribute. [Learn more](javascript.md#component-configuration)
 
-| Option  | Value        | Default     | Description                                                                                            |
-| ------- | ------------ | ----------- | ------------------------------------------------------------------------------------------------------ |
-| `fill`  | String       | `undefined` | Optional fill character.                                                                               |
-| `media` | String       | `false`     | Condition for the space filling - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl).|
+| Option  | Value  | Default     | Description                                                                                             |
+|:--------|:-------|:------------|:--------------------------------------------------------------------------------------------------------|
+| `fill`  | String | `undefined` | Optional fill character.                                                                                |
+| `media` | String | `false`     | Condition for the space filling - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl). |
 
 ***
 
@@ -671,10 +671,10 @@ To automatically mute or play videos, add the `uk-video` attribute. The video wi
 
 The table below lists the available settings of the `uk-video` attribute. [Learn more](javascript.md#component-configuration)
 
-| Option     | Value     | Default | Description                                                           |
-| ---------- | --------- | ------- | --------------------------------------------------------------------- |
-| `autoplay` | Boolean, String   | `true`  | Automatically start the video. Pauses the video if it is not visible. A value of `inview` will play/pause the video as it enters/leaves the viewport. |
-| `automute` | Boolean   | `false` | Automatically mute the video.                                         |
+| Option     | Value           | Default | Description                      |
+|:-----------|:----------------|:--------|:---------------------------------|
+| `autoplay` | Boolean, String | `true`  | Automatically start the video. Pauses the video if it is not visible. A value of `inview` will play/pause the video as it enters/leaves the viewport. |
+| `automute` | Boolean         | `false` | Automatically mute the video.    |
 
 
 ***
@@ -684,8 +684,8 @@ The table below lists the available settings of the `uk-video` attribute. [Learn
 Add one of the following classes to apply different blend modes to your backgrounds, for example when placing them on images. You can combine these with the [Overlay component](overlay.md). For a better understanding of how background blend modes work, take a look at this [CSS Tricks article](https://css-tricks.com/almanac/properties/b/background-blend-mode/).
 
 
-| Class                              | Description                                               |
-|------------------------------------|-----------------------------------------------------------|
+| Class                   | Description                                    |
+|:------------------------|:-----------------------------------------------|
 | `.uk-blend-multiply`    | This class sets the blend mode to multiply.    |
 | `.uk-blend-screen`      | This class sets the blend mode to screen.      |
 | `.uk-blend-overlay`     | This class sets the blend mode to overlay.     |
@@ -854,7 +854,7 @@ To center an element to itself, add the `uk-transform-center` class. This is par
 To modify the origin of an animation, like scaling, add one of the `uk-transform-origin-*` classes. This can be combined with the [Animation component](animation.md).
 
 | Class                                | Description                                      |
-|--------------------------------------|--------------------------------------------------|
+|:-------------------------------------|:-------------------------------------------------|
 | `.uk-transform-origin-top-left`      | The transition originates from the top left.     |
 | `.uk-transform-origin-top-center`    | The transition originates from the top.          |
 | `.uk-transform-origin-top-right`     | The transition originates from the top right.    |

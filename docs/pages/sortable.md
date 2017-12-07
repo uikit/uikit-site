@@ -193,17 +193,17 @@ You can also apply one or more custom classes to items when they are being dragg
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option            | Value  | Default                 | Description                                   |
-|-------------------|--------|-------------------------|-----------------------------------------------|
+| Option            | Value  | Default                   | Description                                   |
+|:------------------|:-------|:--------------------------|:----------------------------------------------|
 | `group`           | String | `''`                      | The group                                     |
 | `animation`       | Number | `150`                     | The animation duration.                       |
 | `threshold`       | Number | `10`                      | Mouse move threshold before dragging starts.  |
 | `cls-item`        | String | `uk-sortable-item`        | The item class.                               |
 | `cls-placeholder` | String | `uk-sortable-placeholder` | The placeholder class.                        |
 | `cls-drag`        | String | `uk-sortable-drag`        | The ghost class.                              |
-| `cls-drag-state`   | String | `uk-sortable-dragging`    | The body's dragging class.                    |
+| `cls-drag-state`  | String | `uk-sortable-dragging`    | The body's dragging class.                    |
 | `cls-base`        | String | `uk-sortable`             | The list's class.                             |
-| `cls-no-drag`      | String | `uk-sortable-nodrag`      | Disable dragging on elements with this class. |
+| `cls-no-drag`     | String | `uk-sortable-nodrag`      | Disable dragging on elements with this class. |
 | `cls-empty`       | String | `uk-sortable-empty`       | The empty list class.                         |
 | `cls-custom`      | String | `''`                      | The ghost's custom class.                     |
 | `handle`          | String | `false`                   | The handle selector.                          |
@@ -224,10 +224,10 @@ UIkit.sortable(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name | Description |
-| --- | --- |
-| `start` | Fires after dragging starts. |
-| `stop` | Fires after dragging stops. |
-| `moved` | Fires after an element has been moved. |
-| `added` | Fires after an element has been added. |
+| Name      | Description                              |
+|:----------|:-----------------------------------------|
+| `start`   | Fires after dragging starts.             |
+| `stop`    | Fires after dragging stops.              |
+| `moved`   | Fires after an element has been moved.   |
+| `added`   | Fires after an element has been added.   |
 | `removed` | Fires after an element has been removed. |

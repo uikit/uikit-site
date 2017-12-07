@@ -6,14 +6,14 @@
 
 The Comment component consists of the comment itself, a comment header, including an avatar, a title and meta data, and a comment body.
 
-| Class | Description |
-| --- | --- |
-| `.uk-comment` | Add this class to define the Comment component. |
-| `.uk-comment-body` | Add this class to create a comment body. |
-| `.uk-comment-header` | Add this class to create a comment header. |
-| `.uk-comment-title` | Add this class to a heading to create a comment title. |
-| `.uk-comment-meta` | Add this class to create meta data about your comment, e.g. a [subnav](subnav.md). |
-| `.uk-comment-avatar` | Add this class to an `<img>` element to create an avatar for the comment author. |
+| Class                | Description                                                                        |
+|:---------------------|:-----------------------------------------------------------------------------------|
+| `.uk-comment`        | Add this class to define the Comment component.                                    |
+| `.uk-comment-body`   | Add this class to create a comment body.                                           |
+| `.uk-comment-header` | Add this class to create a comment header.                                         |
+| `.uk-comment-title`  | Add this class to a heading to create a comment title.                             |
+| `.uk-comment-meta`   | Add this class to create meta data about your comment, e.g. a [subnav](subnav.md). |
+| `.uk-comment-avatar` | Add this class to an `<img>` element to create an avatar for the comment author.   |
 
 
 ```html

@@ -40,12 +40,12 @@ To create the grid container, add the `uk-grid` attribute to a `<div>` element. 
 
 The Grid component comes with a default gutter, that is decreased automatically from a certain breakpoint, usually on a smaller desktop viewport width. To apply a different gutter, add one of the following classes.
 
-| Class         | Description                                                   |
-|---------------|---------------------------------------------------------------|
-| `.uk-grid-small`    | Add this class to apply a small gutter.                       |
-| `.uk-grid-medium`   | Add this class to apply a medium gutter like the default one, but without a breakpoint.                        |
-| `.uk-grid-large`    | Add this class to apply a large gutter with breakpoints.                      |
-| `.uk-grid-collapse` | Add this class to remove the grid gutter entirely. |
+| Class               | Description                                                                             |
+|:--------------------|:----------------------------------------------------------------------------------------|
+| `.uk-grid-small`    | Add this class to apply a small gutter.                                                 |
+| `.uk-grid-medium`   | Add this class to apply a medium gutter like the default one, but without a breakpoint. |
+| `.uk-grid-large`    | Add this class to apply a large gutter with breakpoints.                                |
+| `.uk-grid-collapse` | Add this class to remove the grid gutter entirely.                                      |
 
 ```html
 <div class="uk-grid-small" uk-grid>...</div>
@@ -349,8 +349,8 @@ You can easily combine the grid with the [Flex component](flex.md). That way you
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option          | Value  | Default         | Description                                                                                                |
-|----------------|--------|-----------------|------------------------------------------------------------------------------------------------------------|
+| Option         | Value  | Default         | Description                                                                                                |
+|:---------------|:-------|:----------------|:-----------------------------------------------------------------------------------------------------------|
 | `margin `      | String | uk-grid-margin  | This class is added to items that break into the next row, typically to create margin to the previous row. |
 | `first-column` | String | uk-first-column | This class is added to the first element in each row.                                                      |
 

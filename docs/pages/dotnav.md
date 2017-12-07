@@ -6,10 +6,10 @@
 
 To create a navigation with dots, use the following classes. This component is built with Flexbox. So to align a dotnav, you can use [Flex component](flex.md).
 
-| Class           | Description                                                                                                         |
-|-----------------|---------------------------------------------------------------------------------------------------------------------|
-| `.uk-dotnav`    | Add this class to a `<ul>` element to define the Dotnav component. Use `<a>` elements as nav items within the list. |
-| `.uk-active `   | Add this class to a list item to apply an active state.                                                             |
+| Class         | Description                                                                                                         |
+|:--------------|:--------------------------------------------------------------------------------------------------------------------|
+| `.uk-dotnav`  | Add this class to a `<ul>` element to define the Dotnav component. Use `<a>` elements as nav items within the list. |
+| `.uk-active ` | Add this class to a list item to apply an active state.                                                             |                                                         |
 
 ```html
 <ul class="uk-dotnav">

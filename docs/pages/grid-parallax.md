@@ -83,8 +83,8 @@ The parallax effect is also applied, if grid columns wrap into the next line whi
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option      | Value  | Default | Descriptio                                 |
-|-------------|--------|---------|--------------------------------------------|
+| Option      | Value  | Default | Descriptio                                                                       |
+|:------------|:-------|:--------|:---------------------------------------------------------------------------------|
 | `target`    | String | `false` | Selector string for child elements to translate. Defaults to element's children. |
 | `translate` | Number | `150`   | Translate value. The value must be a positive integer.                           |
 

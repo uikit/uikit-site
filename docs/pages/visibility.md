@@ -6,10 +6,10 @@
 
 Add one of these classes to hide an element.
 
-| Class	| Description |
-| --- | --- |
-| `.uk-hidden`	| Hides the element on any device. This is more of a legacy class. The recommended way to do this, is to use the `hidden` attribute. |
-| `.uk-invisible`	| Hides the element without removing it from the document flow. |
+| Class           | Description                                                                                                                        |
+|:----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| `.uk-hidden`    | Hides the element on any device. This is more of a legacy class. The recommended way to do this, is to use the `hidden` attribute. |
+| `.uk-invisible` | Hides the element without removing it from the document flow.                                                                      |
 
 ```html
 <div hidden></div>
@@ -27,12 +27,12 @@ This component provides responsive classes to hide or display elements on differ
 
 Add one of the `.uk-hidden-*` classes to hide the element from screens larger than a specified width.
 
-| Class	| Description |
-| --- | --- |
-| `uk-hidden@s` | Only affects device widths of _640px_ and larger. |
-| `uk-hidden@m` | Only affects device widths of _960px_ and larger. |
-| `uk-hidden@l` | Only affects device widths of _1200px_ and larger. |
-| `uk-hidden@xl` | Only affects device widths of _1600px_ and larger. |
+| Class          | Description                                        |
+|:---------------|:---------------------------------------------------|
+| `uk-hidden@s`  | Only affects device widths of _640px_ and larger.  |
+| `uk-hidden@m`  | Only affects device widths of _960px_ and larger.  |
+| `uk-hidden@l`  | Only affects device widths of _1200px_ and larger. |
+| `uk-hidden@xl` | Only affects device widths of _1600px_ and larger. |
 
 ```html
 <!-- Hidden on tablets and larger -->
@@ -76,12 +76,12 @@ Add one of the `.uk-hidden-*` classes to hide the element from screens larger th
 
 Use `.uk-visible-*` classes to show the element for screens larger then the specified width.
 
-| Class	| Description |
-| --- | --- |
-| `uk-visible@s` |  Only affects device widths of _640px_ and larger. |
-| `uk-visible@m` | Only affects device widths of _960px_ and larger. |
-| `uk-visible@l` | Only affects device widths of _1200px_ and larger. |
-| `uk-visible@xl` | Only affects device widths of _1600px_ and larger. |
+| Class           | Description                                        |
+|:----------------|:---------------------------------------------------|
+| `uk-visible@s`  | Only affects device widths of _640px_ and larger.  |
+| `uk-visible@m`  | Only affects device widths of _960px_ and larger.  |
+| `uk-visible@l`  | Only affects device widths of _1200px_ and larger. |
+| `uk-visible@xl` | Only affects device widths of _1600px_ and larger. |
 
 ```html
 <!-- Visible on tablets and larger -->
@@ -125,11 +125,11 @@ Use `.uk-visible-*` classes to show the element for screens larger then the spec
 
 Use one of the following classes to display elements only when they are being hovered.
 
-| Class             	| Description                                                              |
-| --------------------- | ------------------------------------------------------------------------ |
-| `.uk-visible-toggle`  | Add this class to any parent element of the element to hide. This enables the toggling on hover.                       |
-| `.uk-hidden-hover`    | Add this class to the child element to hide the content and remove it from the document flow.                      |
-| `.uk-invisible-hover` | Add this class to the child element to hide the content without removing it from the document flow.                |
+| Class                 | Description                                                                                         |
+|:----------------------|:----------------------------------------------------------------------------------------------------|
+| `.uk-visible-toggle`  | Add this class to any parent element of the element to hide. This enables the toggling on hover.    |
+| `.uk-hidden-hover`    | Add this class to the child element to hide the content and remove it from the document flow.       |
+| `.uk-invisible-hover` | Add this class to the child element to hide the content without removing it from the document flow. |
 
 ```html
 <div class="uk-visible-toggle">

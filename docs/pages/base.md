@@ -20,8 +20,8 @@ Turn text into hypertext using the `<a>` element. You can also add the `.uk-link
 
 The following list gives you a short overview of the most commonly used text-level semantics and how to utilize them.
 
-| Element  | Description                                                                                                 |
-|----------|-------------------------------------------------------------------------------------------------------------|
+| Element    | Description                                                                                               |
+|:-----------|:----------------------------------------------------------------------------------------------------------|
 | `<abbr>`   | Define an abbreviation using the <abbr title="Title Text">abbr element with a title</abbr>.               |
 | `<b>`      | Create bold text with the <b>b element</b>.                                                               |
 | `<cite>`   | Define the title of a work with the <cite>cite element</cite>.                                            |

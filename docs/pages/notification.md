@@ -53,8 +53,8 @@ Add one of the following parameters to adjust the notification's position to dif
 UIkit.notification("...", {pos: 'top-right'})
 ```
 
-| Position        | Code |
-| --------------- | ---- |
+| Position        | Code                                                |
+|:----------------|:----------------------------------------------------|
 | `top-left`      | `UIkit.notification("...", {pos: 'top-left'})`      |
 | `top-center`    | `UIkit.notification("...", {pos: 'top-center'})`    |
 | `top-right`     | `UIkit.notification("...", {pos: 'top-right'})`     |
@@ -85,8 +85,8 @@ A notification can be styled by adding a status to the message to indicate a pri
 UIkit.notification("...", {status: 'primary'})
 ```
 
-| Style     | Code |
-| --------- | ---- |
+| Style     | Code                                            |
+|:----------|:------------------------------------------------|
 | `primary` | `UIkit.notification("...", {status:'primary'})` |
 | `success` | `UIkit.notification("...", {status:'success'})` |
 | `warning` | `UIkit.notification("...", {status:'warning'})` |
@@ -118,8 +118,8 @@ You can close all open notifications by calling `UIkit.notification.closeAll()`.
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option     | Value   | Default    | Description                                                         |
-|------------|---------|------------|---------------------------------------------------------------------|
+| Option     | Value   | Default      | Description                                                         |
+|:-----------|:--------|:-------------|:--------------------------------------------------------------------|
 | `message ` | String  | `false`      | Notification message to show.                                       |
 | `status`   | String  | `null`       | Notification status color.                                          |
 | `timeout`  | Integer | `5000`       | Visibility duration until a notification disappears.                |
@@ -161,6 +161,6 @@ UIkit.notification(element).close(immediate);
 
 Closes the notification.
 
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `immediate` | Boolean | true | Transition the notification out.|
+| Name        | Type    | Default | Description                      |
+|:------------|:--------|:--------|:---------------------------------|
+| `immediate` | Boolean | true    | Transition the notification out. |

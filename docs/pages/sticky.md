@@ -143,8 +143,8 @@ You also have the possibility of disabling the sticky behavior for different dev
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option          | Value                                 | Default   | Description                                                                                                   |
-|-----------------|---------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------|
+| Option          | Value                                 | Default     | Description                                                                                                   |
+|:----------------|:--------------------------------------|:------------|:--------------------------------------------------------------------------------------------------------------|
 | `top`           | Number, viewport height, CSS selector | `0`         | The top offset from where the element should be stick.                                                        |
 | `bottom `       | Boolean, CSS selector                 | `false`     | The bottom offset until the element should stick. (true: parent element, prefixed with '!' a parent selector) |
 | `offset `       | Number                                | `0`         | The offset the Sticky should be fixed to.                                                                     |
@@ -153,7 +153,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `cls-inactive`  | String                                | `''`        | The inactive class.                                                                                           |
 | `width-element` | CSS selector                          | `false`     | The element the Sticky should get its width from in active mode.                                              |
 | `show-on-up`    | Boolean                               | `false`     | Only show sticky element when scrolling up.                                                                   |
-| `media `        | Integer, String                       | `false`     | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl).                      |
+| `media `        | Integer, String                       | `false`     | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl).       |
 | `target `       | Boolean                               | `false`     | Initially make sure that the Sticky is not over a targeted element via location hash.                         |
 
 ***
@@ -172,7 +172,7 @@ UIkit.sticky(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name | Description |
-| --- | --- |
-| `active` | Fires after the element becomes sticky. |
+| Name       | Description                                  |
+|:-----------|:---------------------------------------------|
+| `active`   | Fires after the element becomes sticky.      |
 | `inactive` | Fires after the element is no longer sticky. |

@@ -6,14 +6,14 @@
 
 Add one of the following classes to form controls inside a `<form>` element to define them.
 
-| Class         | Description                                                   |
-|---------------|---------------------------------------------------------------|
-| `.uk-input`   | Add this class to `<input>` elements.                         |
-| `.uk-select`   | Add this class to `<select>` elements.                        |
-| `.uk-textarea` | Add this class to `<textarea>` elements.                      |
+| Class          | Description                                                                |
+|:---------------|:---------------------------------------------------------------------------|
+| `.uk-input`    | Add this class to `<input>` elements.                                      |
+| `.uk-select`   | Add this class to `<select>` elements.                                     |
+| `.uk-textarea` | Add this class to `<textarea>` elements.                                   |
 | `.uk-radio`    | Add this class to `<input type="radio">` elements to create radio buttons. |
-| `.uk-checkbox` | Add this class to `<input type="checkbox">` elements to create checkboxes.    |
-| `.uk-range` | Add this class to `<input type="range">` elements to create range forms.    |
+| `.uk-checkbox` | Add this class to `<input type="checkbox">` elements to create checkboxes. |
+| `.uk-range`    | Add this class to `<input type="range">` elements to create range forms.   |
 
 ```html
 <form>
@@ -76,7 +76,7 @@ Add the `.uk-fieldset` class to a `<fieldset>` element and the `.uk-legend` clas
 Provide the user with basic information through feedback states on form controls by using one of the following classes.
 
 | Class              | Description                                                        |
-|--------------------|--------------------------------------------------------------------|
+|:-------------------|:-------------------------------------------------------------------|
 | `.uk-form-danger`  | Add this class to notify the user that the value is not validated. |
 | `.uk-form-success` | Add this class to notify the user that the value is validated.     |
 
@@ -103,7 +103,7 @@ Add the `disabled` attribute to a form control and it will be appear muted.
 Add one of the classes to an `<input>`, `<select>` or `<textarea>` element to modify its size.
 
 | Class            | Description                                 |
-|------------------|---------------------------------------------|
+|:-----------------|:--------------------------------------------|
 | `.uk-form-large` | Add this class to make the element larger.  |
 | `.uk-form-small` | Add this class to make the element smaller. |
 
@@ -131,8 +131,8 @@ Add one of the classes to an `<input>`, `<select>` or `<textarea>` element to mo
 
 Add one of the following classes to an `<input>`, `<select>` or `<textarea>` element to adjust its width.
 
-| Class                   | Description               |
-|-------------------------|---------------------------|
+| Class                   | Description                 |
+|:------------------------|:----------------------------|
 | `.uk-form-width-large`  | Applies a width of _500px_. |
 | `.uk-form-width-medium` | Applies a width of _200px_. |
 | `.uk-form-width-small`  | Applies a width of _130px_. |
@@ -187,11 +187,11 @@ Add the `.uk-form-blank` class to minimize the styling of form controls.
 Define labels and controls and apply a stacked or horizontal layout to form elements. Layout modifiers can be added to any parent element like the `<fieldset>` element. This makes it possible to have different form layouts for each fieldset.
 
 | Class                 | Description                                                 |
-|-----------------------|-------------------------------------------------------------|
+|:----------------------|:------------------------------------------------------------|
 | `.uk-form-stacked`    | Add this class to display labels on top of controls.        |
 | `.uk-form-horizontal` | Add this class to display labels and controls side by side. |
-| `.uk-form-label`    | Add this class to define form labels.        |
-| `.uk-form-controls`    | Add this class to define form controls.        |
+| `.uk-form-label`      | Add this class to define form labels.                       |
+| `.uk-form-controls`   | Add this class to define form controls.                     |
 
 ```html
 <form class="uk-form-stacked">
@@ -500,7 +500,7 @@ Use a button, text or a link as a select form. Just add the `target: SELECTOR` o
 You can add this option to the `uk-form-custom` attribute. [Learn more](javascript.md#component-configuration)
 
 | Option   | Value                 | Default | Description           |
-|----------|-----------------------|---------|-----------------------|
+|:---------|:----------------------|:--------|:----------------------|
 | `target` | CSS selector, Boolean | false   | Value display target. |
 
 ***

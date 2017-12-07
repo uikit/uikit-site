@@ -6,11 +6,11 @@
 
 To apply this component, add the `.uk-tile` class to a `<div>` element. By default, a tile is blank. That is why it is important to add one of the following modifier classes for styling.
 
-| Class                      | Description                                              |
-|----------------------------|----------------------------------------------------------|
-| `.uk-tile-default`   | Applies the default tile background.    |
-| `.uk-tile-muted`     | Applies a muted tile background.        |
-| `.uk-tile-primary`   | Applies the primary tile background.    |
+| Class                | Description                          |
+|:---------------------|:-------------------------------------|
+| `.uk-tile-default`   | Applies the default tile background. |
+| `.uk-tile-muted`     | Applies a muted tile background.     |
+| `.uk-tile-primary`   | Applies the primary tile background. |
 | `.uk-tile-secondary` | Applies a secondary tile background. |
 
 ```html

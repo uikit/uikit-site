@@ -46,10 +46,10 @@ UIkit.util.on('#scroll-trigger', 'scrolled', function () {
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option | Value | Default | Description |
-| --- | --- | --- | --- |
-| `duration` | Number | `1000` | Animation duration in milliseconds. |
-| `offset` | Number | `0` | Pixel offset added to scroll top. |
+| Option     | Value  | Default | Description                         |
+|:-----------|:-------|:--------|:------------------------------------|
+| `duration` | Number | `1000`  | Animation duration in milliseconds. |
+| `offset`   | Number | `0`     | Pixel offset added to scroll top.   |
 
 ## JavaScript
 
@@ -69,10 +69,10 @@ UIkit.scroll(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name | Description |
-| --- | --- |
+| Name           | Description                                                             |
+|:---------------|:------------------------------------------------------------------------|
 | `beforescroll` | Fires before scroll begins. Can prevent scrolling by returning `false`. |
-| `scrolled` | Fires after scrolling is finished. |
+| `scrolled`     | Fires after scrolling is finished.                                      |
 
 
 ### Methods
@@ -87,6 +87,6 @@ UIkit.scroll(element).scrollTo(el);
 
 Scroll to the given element.
 
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `el` | Node, Selector | undefined | The element to scroll to.|
+| Name | Type           | Default   | Description               |
+|:-----|:---------------|:----------|:--------------------------|
+| `el` | Node, Selector | undefined | The element to scroll to. |

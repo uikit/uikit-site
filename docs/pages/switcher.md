@@ -349,13 +349,13 @@ To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribu
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option      | Value        | Default | Description                                                                                              |
-|-------------|--------------|---------|----------------------------------------------------------------------------------------------------------|
-| `connect`   | CSS selector | `false`   | Related item's container. By default, this is the next element with the 'uk-switcher' class.             |
-| `toggle `   | CSS selector | `> *`     | The toggle selector, which triggers content switching on click.                                          |
-| `active `   | Number       | `0`       | Active index on init. Providing a negative number indicates a position starting from the end of the set. |
-| `animation` | String       | `false`   | The space separated names of animations to use. Comma separate for animation out.                        |
-| `duration`  | Number       | `200`     | The animation duration.                                                                                  |
-| `swiping`   | Boolean      | `true`    | Use swiping.                                                                                             |
+|:------------|:-------------|:--------|:---------------------------------------------------------------------------------------------------------|
+| `connect`   | CSS selector | `false` | Related item's container. By default, this is the next element with the 'uk-switcher' class.             |
+| `toggle `   | CSS selector | `> *`   | The toggle selector, which triggers content switching on click.                                          |
+| `active `   | Number       | `0`     | Active index on init. Providing a negative number indicates a position starting from the end of the set. |
+| `animation` | String       | `false` | The space separated names of animations to use. Comma separate for animation out.                        |
+| `duration`  | Number       | `200`   | The animation duration.                                                                                  |
+| `swiping`   | Boolean      | `true`  | Use swiping.                                                                                             |
 ***
 
 ## JavaScript
@@ -372,14 +372,14 @@ UIkit.switcher(element, options);
 
 The following events will be triggered on the connected items of the elements with this component attached:
 
-| Name | Description |
-| --- | --- |
+| Name         | Description                                                              |
+|:-------------|:-------------------------------------------------------------------------|
 | `beforeshow` | Fires before an item is shown. Can prevent showing by returning `false`. |
-| `show` | Fires after an item is shown. |
-| `shown` | Fires after the item's show animation has completed. |
+| `show`       | Fires after an item is shown.                                            |
+| `shown`      | Fires after the item's show animation has completed.                     |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
-| `hide` | Fires after an item's hide animation has started. |
-| `hidden` | Fires after an item is hidden. |
+| `hide`       | Fires after an item's hide animation has started.                        |
+| `hidden`     | Fires after an item is hidden.                                           |
 
 ### Methods
 
@@ -393,6 +393,6 @@ UIkit.switcher(element).show(index);
 
 Shows the Switcher item with given index.
 
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `index` | String, Integer, Node | 0 | Switcher item to show. 0 based index.|
+| Name    | Type                  | Default | Description                           |
+|:--------|:----------------------|:--------|:--------------------------------------|
+| `index` | String, Integer, Node | 0       | Switcher item to show. 0 based index. |

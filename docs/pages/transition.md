@@ -16,10 +16,10 @@ This component is mostly used in combination with the [Overlay component](overla
 </div>
 ```
 
-| Class | Description |
-| --- | --- |
-| `.uk-transition-fade` | Lets the element fade in |
-| `.uk-transition-scale-up`<br> `.uk-transition-scale-down` | The element scales up or down. |
+| Class                 | Description              |
+|:----------------------|:-------------------------|
+| `.uk-transition-fade` | Lets the element fade in |
+| `.uk-transition-scale-up`<br> `.uk-transition-scale-down` | The element scales up or down. |
 | `.uk-transition-slide-top`<br> `.uk-transition-slide-bottom`<br> `.uk-transition-slide-left`<br> `.uk-transition-slide-right` | Lets the element slide in from the top |
 | `.uk-transition-slide-top-small`<br> `.uk-transition-slide-bottom-small`<br>  `.uk-transition-slide-left-small`<br> `.uk-transition-slide-right-small` | The element slides in from the top, bottom, left or right with a smaller distance. |
 | `.uk-transition-slide-top-medium`<br> `.uk-transition-slide-bottom-medium`<br>  `.uk-transition-slide-left-medium`<br> `.uk-transition-slide-right-medium`   | The element slides in from the top, bottom, left or right with a medium distance. |

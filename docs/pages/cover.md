@@ -99,11 +99,11 @@ Adding the `uk-height-viewport` attribute from the [Utility component](utility.m
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option | Value | Default | Description |
-| --- | --- | --- | --- |
-| `automute` | Boolean | true | Tries to automute the iframe's video. |
-| `width` | Number | undefined | The element's width. |
-| `height` | Number | undefined | The element's height. |
+| Option     | Value   | Default   | Description                           |
+|:-----------|:--------|:----------|:--------------------------------------|
+| `automute` | Boolean | true      | Tries to automute the iframe's video. |
+| `width`    | Number  | undefined | The element's width.                  |
+| `height`   | Number  | undefined | The element's height.                 |
 
 ***
 

@@ -10,10 +10,10 @@ The Flex component has an essential role in building layouts in UIkit. A lot of 
 
 To apply the flexbox layout model, use one of the following classes. By default, all flex items are aligned to the left, as wide as their content and matched in height.
 
-| Class             | Description                                                                                                  |
-|-------------------|--------------------------------------------------------------------------------------------------------------|
-| `.uk-flex`        | Create the flex container and behave like a block element.                                                   |
-| `.uk-flex-inline` | Create the flex container and behave like an inline element.                                                 |
+| Class             | Description                                                  |
+|:------------------|:-------------------------------------------------------------|
+| `.uk-flex`        | Create the flex container and behave like a block element.   |
+| `.uk-flex-inline` | Create the flex container and behave like an inline element. |
 
 ```html
 <div class="uk-flex">
@@ -35,13 +35,13 @@ To apply the flexbox layout model, use one of the following classes. By default,
 
 These classes define the horizontal alignment of flex items and distribute the space between them. Add one or more of them to the flex container in order to configure the alignments of the flex items. By default, flex items are aligned to the left as does the `.uk-flex-left` class.
 
-| Class              | Description                                                                                                                |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `.uk-flex-left`    | Add this class to align flex items to the left.                                                                            |
-| `.uk-flex-center`  | Add this class to center flex items along the main axis.                                                                          |
-| `.uk-flex-right`   | Add this class to align flex items to the right.                                                                           |
+| Class              | Description                                                                                        |
+|:-------------------|:---------------------------------------------------------------------------------------------------|
+| `.uk-flex-left`    | Add this class to align flex items to the left.                                                    |
+| `.uk-flex-center`  | Add this class to center flex items along the main axis.                                           |
+| `.uk-flex-right`   | Add this class to align flex items to the right.                                                   |
 | `.uk-flex-between` | Add this class to distribute items evenly, with equal space between the items along the main axis. |
-| `.uk-flex-around`  | Add this class to distribute items evenly with equal space on both sides of each item.                                     |
+| `.uk-flex-around`  | Add this class to distribute items evenly with equal space on both sides of each item.             |
 
 ```html
 <div class="uk-flex uk-flex-center">
@@ -64,11 +64,11 @@ These classes define the horizontal alignment of flex items and distribute the s
 UIkit provides a number of responsive flex classes for horizontal alignment. Basically, they work just like the usual flex alignment classes, except that they have suffixes that represent the breakpoint from which they come to effect.
 
 | Class | Description |
-| --- | --- |
-| `.uk-flex-left@s`<br> `.uk-flex-center@s`<br> `.uk-flex-right@s`<br> `.uk-flex-between@s`<br> `.uk-flex-around@s`  | Only affects device widths of _640px_ and higher. |
+|:------|:------------|
+| `.uk-flex-left@s`<br> `.uk-flex-center@s`<br> `.uk-flex-right@s`<br> `.uk-flex-between@s`<br> `.uk-flex-around@s` | Only affects device widths of _640px_ and higher. |
 | `.uk-flex-left@m`<br> `.uk-flex-center@m`<br> `.uk-flex-right@m`<br> `.uk-flex-between@m`<br> `.uk-flex-around@m` | Only affects device widths of _960px_ and higher. |
-| `.uk-flex-left@l`<br> `.uk-flex-center@l`<br> `.uk-flex-right@l`<br> `.uk-flex-between@l`<br> `.uk-flex-around@l`  | Only affects device widths of _1200px_ and higher. |
-| `.uk-flex-left@xl`<br> `.uk-flex-center@xl`<br> `.uk-flex-right@xl`<br> `.uk-flex-between@xl`<br> `.uk-flex-around@xl`  | Only affects device widths of _1600px_ and higher. |
+| `.uk-flex-left@l`<br> `.uk-flex-center@l`<br> `.uk-flex-right@l`<br> `.uk-flex-between@l`<br> `.uk-flex-around@l` | Only affects device widths of _1200px_ and higher. |
+| `.uk-flex-left@xl`<br> `.uk-flex-center@xl`<br> `.uk-flex-right@xl`<br> `.uk-flex-between@xl`<br> `.uk-flex-around@xl` | Only affects device widths of _1600px_ and higher. |
 
 ```html
 <div class="uk-flex uk-flex-center@m uk-flex-right@l">
@@ -91,12 +91,12 @@ UIkit provides a number of responsive flex classes for horizontal alignment. Bas
 These classes define the vertical alignment of flex items. By default, flex items fill the height of their container as does the `.uk-flex-stretch` class.
 
 
-| Class              | Description                                                                                                                |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `.uk-flex-stretch` | Add this class to expand flex items to fill the height of their parent.                                                    |
-| `.uk-flex-top`     | Add this class to align flex items to the top.                                                                             |
-| `.uk-flex-middle`  | Add this class to center flex items along the cross axis.                                                                            |
-| `.uk-flex-bottom`  | Add this class to align flex items to the bottom.                                                                          |
+| Class              | Description                                                             |
+|:-------------------|:------------------------------------------------------------------------|
+| `.uk-flex-stretch` | Add this class to expand flex items to fill the height of their parent. |
+| `.uk-flex-top`     | Add this class to align flex items to the top.                          |
+| `.uk-flex-middle`  | Add this class to center flex items along the cross axis.               |
+| `.uk-flex-bottom`  | Add this class to align flex items to the bottom.                       |
 
 ```html
 <div class="uk-flex uk-flex-middle"></div>
@@ -117,7 +117,7 @@ These classes define the vertical alignment of flex items. By default, flex item
 These classes define the axis that flex items are placed on and their direction. By default, items run horizontally from left to right as does the `.uk-flex-row` class.
 
 | Class                     | Description                                               |
-|---------------------------|-----------------------------------------------------------|
+|:--------------------------|:----------------------------------------------------------|
 | `.uk-flex-row`            | Add this class to lay out flex items as horizontal rows.  |
 | `.uk-flex-row-reverse`    | Add this class to lay out flex items from right to left.  |
 | `.uk-flex-column`         | Add this class to lay out flex items as vertical columns. |
@@ -142,7 +142,7 @@ These classes define the axis that flex items are placed on and their direction.
 By default, flex items are fit into one line and run from left to right. Add one of these classes to modify the behavior of wrapping flex items.
 
 | Class                   | Description                                                                                       |
-|-------------------------|---------------------------------------------------------------------------------------------------|
+|:------------------------|:--------------------------------------------------------------------------------------------------|
 | `.uk-flex-wrap`         | Add this class to make flex items wrap into another line when they no longer fit their container. |
 | `.uk-flex-wrap-reverse` | Add this class to change the items' direction so that they run from right to left.                |
 | `.uk-flex-nowrap`       | Add this class to force the flex items into one line. This is the default behavior.               |
@@ -150,7 +150,7 @@ By default, flex items are fit into one line and run from left to right. Add one
 The following classes modify the alignment of wrapping flex items.
 
 | Class                   | Description                                                                                                                |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------|
+|:------------------------|:---------------------------------------------------------------------------------------------------------------------------|
 | `.uk-flex-wrap-stretch` | Add this class, so that item lines stretch to take up the remaining space                                                  |
 | `.uk-flex-wrap-between` | Add this class to distribute item lines evenly, with the first row at the top and last row at the bottom of the container. |
 | `.uk-flex-wrap-around`  | Add this class to distribute lines evenly with equal space at the top and bottom of each row.                              |
@@ -179,10 +179,10 @@ The following classes modify the alignment of wrapping flex items.
 
 By default, flex items are laid out according to the source order. To display a certain item as the first or last one, just add one of these classes.
 
-| Class                                   | Description                                   |
-|-----------------------------------------|-----------------------------------------------|
-| `.uk-flex-first`                        | Displays the item as the first one.           |
-| `.uk-flex-last`                         | Displays the item as the last one.            |
+| Class                                      | Description                                   |
+|:-------------------------------------------|:----------------------------------------------|
+| `.uk-flex-first`                           | Displays the item as the first one.           |
+| `.uk-flex-last`                            | Displays the item as the last one.            |
 | `.uk-flex-first@s`<br> `.uk-flex-last@s`   | Affects device widths of _640px_ and higher.  |
 | `.uk-flex-first@m`<br> `.uk-flex-last@m`   | Affects device widths of _960px_ and higher.  |
 | `.uk-flex-first@l`<br> `.uk-flex-last@l`   | Affects device widths of _1200px_ and higher. |
@@ -210,7 +210,7 @@ By default, flex items are laid out according to the source order. To display a 
 To determine how much space a flex item should take up, add one of the following classes to the item. By default, items determine their size by their content, but are allowed to shrink.
 
 | Class           | Description                                            |
-|-----------------|--------------------------------------------------------|
+|:----------------|:-------------------------------------------------------|
 | `.uk-flex-none` | The box's size is determined by its content.           |
 | `.uk-flex-auto` | The space is allocated considering the item's content. |
 | `.uk-flex-1`    | The space is allocated solely based on flex.           |

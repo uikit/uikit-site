@@ -91,14 +91,14 @@ You can also group scrollspy elements, so you won't have to apply the attribute 
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option | Value | Default | Description |
-| --- | --- | --- | --- |
-| `cls` | String | `uk-scrollspy-inview` | Class to add when the element is in view. If two, comma separated classes are provided those will be toggled. |
-| `hidden` | Boolean | `true` | Hides the element while out of view. |
-| `offset-top` | Number | `0` | Top offset before triggering in view. |
-| `offset-left` | Number | `0` | Left offset before triggering in view. |
-| `repeat` | Boolean | `false` | Applies the `cls` class every time the element is in view. |
-| `delay` | Number | `0` | Delay time in ms. |
+| Option        | Value   | Default               | Description                                                                                                   |
+|:--------------|:--------|:----------------------|:--------------------------------------------------------------------------------------------------------------|
+| `cls`         | String  | `uk-scrollspy-inview` | Class to add when the element is in view. If two, comma separated classes are provided those will be toggled. |
+| `hidden`      | Boolean | `true`                | Hides the element while out of view.                                                                          |
+| `offset-top`  | Number  | `0`                   | Top offset before triggering in view.                                                                         |
+| `offset-left` | Number  | `0`                   | Left offset before triggering in view.                                                                        |
+| `repeat`      | Boolean | `false`               | Applies the `cls` class every time the element is in view.                                                    |
+| `delay`       | Number  | `0`                   | Delay time in ms.                                                                                             |
 
 ***
 
@@ -116,9 +116,9 @@ UIkit.scrollspy(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name | Description |
-| --- | --- |
-| `inview` | Fires after an item moves into the viewport. |
+| Name      | Description                                     |
+|:----------|:------------------------------------------------|
+| `inview`  | Fires after an item moves into the viewport.    |
 | `outview` | Fires after an item moves into out of viewport. |
 
 ***
@@ -142,13 +142,13 @@ For an example of the scrollspy nav, just check out the fixed nav on the right s
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option | Value | Default | Description |
-| --- | --- | --- | --- |
-| `cls` | String | `uk-active` | Class to add to the active links. |
-| `closest` | String | `uk-scrollspy-init-inview` | Target to apply the class to. |
-| `scroll` | Boolean | `false` | Adds the [Scroll component](scroll.md) to its links. |
-| `overflow` | Boolean | `true` | If overflow is set to true, the first or last item will stay active if above or below the navigation. |
-| `offset` | Number | `0` | Pixel offset added to scroll top. |
+| Option     | Value   | Default                    | Description                                                                                           |
+|:-----------|:--------|:---------------------------|:------------------------------------------------------------------------------------------------------|
+| `cls`      | String  | `uk-active`                | Class to add to the active links.                                                                     |
+| `closest`  | String  | `uk-scrollspy-init-inview` | Target to apply the class to.                                                                         |
+| `scroll`   | Boolean | `false`                    | Adds the [Scroll component](scroll.md) to its links.                                                  |
+| `overflow` | Boolean | `true`                     | If overflow is set to true, the first or last item will stay active if above or below the navigation. |
+| `offset`   | Number  | `0`                        | Pixel offset added to scroll top.                                                                     |
 
 ***
 
@@ -166,6 +166,6 @@ UIkit.scrollspyNav(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name | Description |
-| --- | --- |
+| Name     | Description                         |
+|:---------|:------------------------------------|
 | `active` | Fires after an item becomes active. |

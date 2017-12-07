@@ -29,11 +29,11 @@ The compiled files of all UIkit versions are also hosted on the Cloudflare conte
 
 The Github project contains all sources files which are compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are concatenated and icons are bundled into the icon library.
 
-| Folder   | Description |
-| -------- | ----------- |
-| `/src`   | Contains all Less, JavaScript and image sources. |
+| Folder   | Description                                             |
+|:---------|:--------------------------------------------------------|
+| `/src`   | Contains all Less, JavaScript and image sources.        |
 | `/dist`  | Contains compiled CSS and JS, updated on every release. |
-| `/tests` | Contains HTML test files of all components. |
+| `/tests` | Contains HTML test files of all components.             |
 
 ***
 
