@@ -283,6 +283,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `mode`    | String  | `slide` | Off-canvas animation mode: `slide`, `reveal`, `push` or `none`. |
 | `flip`    | Boolean | `false` | Flip off-canvas to the right side.                              |
 | `overlay` | Boolean | `false` | Display the off-canvas together with an overlay.                |
+| `container` | String | `true` | Define a target container via a selector to specify where the off-canvas should be appended in the DOM. Setting it to `false` will prevent this behavior. |
 
 ***
 

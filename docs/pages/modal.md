@@ -405,7 +405,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `esc-close` | Boolean | `true`  | Close the modal when the _Esc_ key is pressed.                                                     |
 | `bg-close`  | Boolean | `true`  | Close the modal when the background is clicked.                                                    |
 | `stack`     | Boolean | `false` | Stack modals, when more than one is open. By default, the previous modal will be hidden.           |
-| `container` | String  | `True`  | Define a target container via a selector to specify where the modal should be appended in the DOM. |
+| `container` | String  | `true`  | Define a target container via a selector to specify where the modal should be appended in the DOM. Setting it to `false` will prevent this behavior. |
 
 ***
 
@@ -425,7 +425,7 @@ UIkit.modal(element, options);
 |:------------|:--------------------|:-------------------------------------------------------------|
 | `cls-page`  | `'uk-modal-page'`   | Class to add to `<body>` when modal is active                |
 | `cls-panel` | `'uk-modal-dialog'` | Class of the element to be considered the panel of the modal |
-| `sel-close` | <a href="https://github.com/uikit/uikit/blob/develop/src/js/core/modal.js#L13" class="uk-icon-link" uk-icon="icon: link">See source</a> | CSS selector for all elements that should trigger the closing of the modal |
+| `sel-close` | `'.uk-modal-close, .uk-modal-close-default, .uk-modal-close-outside, .uk-modal-close-full'` | CSS selector for all elements that should trigger the closing of the modal |
 
 ***
 
