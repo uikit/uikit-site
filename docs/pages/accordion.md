@@ -161,6 +161,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `collapsible` | Boolean | `true` | Allow all items to be closed. |
 | `multiple` | Boolean | `false` | Allow multiple open items. |
 | `animation` | Boolean | `true` | Reveal item directly or with a transition. |
+| `toggle` | String | `> .uk-accordion-title` | The toggle selector, which toggles accordion items. |
+| `content` | String | `> .uk-accordion-content` | The content selector, which selects the accordion content elements. |
 | `transition` | String | `ease` | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
 | `duration` | Number | `200` | Animation duration in milliseconds. |
 
