@@ -136,7 +136,7 @@ Add one of the following classes to an `<input>`, `<select>` or `<textarea>` ele
 | `.uk-form-width-large`  | Applies a width of _500px_. |
 | `.uk-form-width-medium` | Applies a width of _200px_. |
 | `.uk-form-width-small`  | Applies a width of _130px_. |
-| `uk-form-width-xsmall`  | Applies a width of _40px_.  |
+| `.uk-form-width-xsmall` | Applies a width of _40px_.  |
 
 ```example
 <form>
