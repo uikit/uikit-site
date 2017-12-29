@@ -373,7 +373,7 @@ This function is used to toggle classes. The following parameters may be passed 
 |:----------|:-----------------|:--------|:------------------------------------------------------|
 | `element` | String           | `null`  | The HTML element                                      |
 | `...args` | Arguments object | `null`  | An array like object, accepting multiple data entries |
-| `force`   | Boolean          | `null`  | **Optional:** Turns the toggle into a one way-only operation. If set to false, the class(es) will only be removed but not added again and vice versa. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) |
+| `force`   | Boolean          | `null`  | Turns the toggle into a one way-only operation. If set to false, the class(es) will only be removed but not added again and vice versa. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) |
 
 HTML
 
@@ -400,7 +400,311 @@ Result
 
 ***
 
-## DOM
+## DOM (Document Object Model)
+
+The following functions are to work with the DOM. They either are used for conditional statements,
+DOM manipulation, event triggers or setting/retrieving values.
+
+***
+
+### isReady
+
+This constant contains either true or false, whether the base direction of text is set to RTL (right to left).
+
+HTML
+
+```html
+<html dir="rtl"></html>
+```
+
+JavaScript
+
+```javascript
+// Check if base direction of text is set to RTL
+if (UIkit.util.isRtl) {
+    console.log('Direction is set to RTL!');
+} else {
+    console.log('Direction is set to LTR!');
+}
+```
+
+Result
+
+```log
+Direction is set to RTL!
+```
+
+***
+
+### ready
+
+This function triggers as soon as the page's Document Object Model (DOM) becomes safe to manipulate.
+
+JavaScript
+
+```javascript
+// Run callback once DOM is ready
+UIkit.util.ready(function() {
+    console.log('DOM is now safely manipulable.');
+});
+```
+
+Result
+
+```log
+DOM is now safely manipulable.
+```
+
+***
+
+### transition
+
+This function is used for transitioning a CSS value. The following parameters may be passed to the function.
+
+| Parameter    | Type   | Default   | Description                                                                                        |
+|:-------------|:-------|:----------|:---------------------------------------------------------------------------------------------------|
+| `element`    | String | `null`    | The HTML element                                                                                   |
+| `props`      | Object | `null`    | The CSS properties to be changed                                                                   |
+| `duration`   | Number | `400`     | The transition's duration (in milliseconds)                                                        |
+| `transition` | String | `linear`  | Timing functions: `ease`, `linear`, `ease-in`, `ease-out`, `ease-in-out`, `step-start`, `step-end` |
+
+HTML
+
+```html
+<div id="example" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+// Transition a CSS property to a certain value
+UIkit.util.transition(element, { 'opacity': 0 }).then(console.log('Transition finished!'));
+```
+
+Result
+
+```log
+Transition finished!
+```
+
+**Note** Before starting a transition, a value for the CSS property to be transitioned has to be present!
+
+***
+
+### Transition
+
+The Transition object makes four handy functions accessible, which are the following.
+
+| Method       | Description                                                                |
+|:-------------|:---------------------------------------------------------------------------|
+| `start`      | Is an alias of the above mentioned `transition` function                   |
+| `stop`       | Stops the transition                                                       |
+| `cancel`     | Cancels the transition                                                     |
+| `inProgress` | Either returns true or false, whether the transition is in progress or not |
+
+HTML
+
+```html
+<div id="example" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+var Transition = UIkit.util.Transition;
+
+// Start the transition
+Transition.start(element, { 'background': '#000', 'color': '#fff' }, 500, 'ease');
+
+// Check whether transition is in progress
+console.log(Transition.inProgress(element) ? 'Transition in progress!' : 'No transition running!');
+
+// Stop the transition
+Transition.stop(element);
+
+// Cancel the transition
+Transition.cancel(element);
+
+// Check whether transition is in progress
+console.log(Transition.inProgress(element) ? 'Transition in progress!' : 'No transition running!');
+```
+
+Result
+
+```log
+Transition in progress!
+No transition running!
+```
+
+***
+
+### animate
+
+This function is used for animating an element. The following parameters may be passed to the function.
+
+| Parameter   | Type    | Default | Description                                                                                                    |
+|:------------|:--------|:--------|:---------------------------------------------------------------------------------------------------------------|
+| `element`   | String  | `null`  | The HTML element                                                                                               |
+| `animation` | String  | `null`  | The animation name, list of [available animations](animation.md#usage)                                         |
+| `duration`  | Number  | `200`   | The animation's duration (in milliseconds)                                                                     |
+| `origin`    | String  | `null`  | Origin modifier (works only with scaling animations), list of [available origins](utility.md#transform-origin) |
+| `out`       | Boolean | `null`  | Reverse modifier to change whether the animation is incoming or not                                            |
+
+HTML
+
+```html
+<div id="example" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+// Animate an element
+UIkit.util.animate(element, 'uk-animation-scale-up', 200, 'bottom-right', false).then(console.log('Animation finished!'));
+```
+
+Result
+
+```log
+Animation finished!
+```
+
+***
+
+### Animation
+
+The Animation object makes four handy functions accessible, which are the following.
+
+| Method       | Description                                                                    |
+|:-------------|:-------------------------------------------------------------------------------|
+| `in`         | Is an alias of the above mentioned `animate` function, but always animates in  |
+| `out`        | Is an alias of the above mentioned `animate` function, but always animates out |
+| `inProgress` | Either returns true or false, whether the animation is in progress or not      |
+| `cancel`     | Cancels the animation                                                          |
+
+HTML
+
+```html
+<div id="example" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+var Animation = UIkit.util.Animation;
+
+// Animate in
+Animation.in(element, 'uk-animation-fade', 400, 'ease-in');
+
+// Check whether animation is in progress
+console.log(Animation.inProgress(element) ? 'Animation in progress!' : 'No animation running!');
+
+// Animate out
+Animation.out(element, 'uk-animation-fade', 400, 'ease-out');
+
+// Cancel the transition
+Animation.cancel(element);
+
+// Check whether animation is in progress
+console.log(Animation.inProgress(element) ? 'Animation in progress!' : 'No animation running!');
+```
+
+Result
+
+```log
+Animation in progress!
+No animation running!
+```
+
+***
+
+### isInView
+
+***
+
+### scrolledOver
+
+***
+
+### getIndex
+
+***
+
+### isVoidElement
+
+***
+
+### Dimensions
+
+***
+
+### preventClick
+
+***
+
+### isVisible
+
+***
+
+### selInput
+
+***
+
+### isInput
+
+***
+
+### empty
+
+***
+
+### html
+
+***
+
+### prepend
+
+***
+
+### append
+
+***
+
+### before
+
+***
+
+### after
+
+***
+
+### remove
+
+***
+
+### wrapAll
+
+***
+
+### wrapInner
+
+***
+
+### unwrap
+
+***
+
+### fragment
+
+***
+
+### index
 
 ***
 
