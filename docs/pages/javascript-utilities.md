@@ -330,7 +330,7 @@ Result
 
 ### hasClass
 
-This function is used to remove a range of classes, based on a pattern.
+This function is used to check if an element contains a specific class.
 The following parameters may be passed to the function.
 
 | Parameter | Type   | Default | Description             |
@@ -369,10 +369,10 @@ Class was found!
 
 This function is used to toggle classes. The following parameters may be passed to the function.
 
-| Parameter | Type             | Default | Description                                           |
-|:----------|:-----------------|:--------|:------------------------------------------------------|
-| `element` | String           | `null`  | The HTML element                                      |
-| `...args` | Arguments object | `null`  | An array like object, accepting multiple data entries |
+| Parameter | Type             | Default | Description                                                                                                                                                                                                              |
+|:----------|:-----------------|:--------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `element` | String           | `null`  | The HTML element                                                                                                                                                                                                         |
+| `...args` | Arguments object | `null`  | An array like object, accepting multiple data entries                                                                                                                                                                    |
 | `force`   | Boolean          | `null`  | Turns the toggle into a one way-only operation. If set to false, the class(es) will only be removed but not added again and vice versa. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) |
 
 HTML
@@ -626,17 +626,158 @@ No animation running!
 
 ### isInView
 
+This function is used to check if an element is currently visible inside the viewport.
+The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description          |
+|:----------|:-------|:--------|:---------------------|
+| `element` | String | `null`  | The HTML element     |
+| `top`     | Number | `0`     | Offset from the top  |
+| `left`    | Number | `0`     | Offset from the left |
+
+HTML
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body"></div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+// Check if element comes into view, when scrolling
+window.addEventListener('scroll', function() {
+  if (UIkit.util.isInView(element)) {
+    console.log('Element is visible!');
+  } else {
+    console.log('Element is not yet visible!');
+  }
+});
+```
+
+Result
+
+```log
+'Element is visible!'
+```
+
 ***
 
 ### scrolledOver
+
+This function is used to return the percentage value of how an element is currently positioned compared to the viewport.
+Example: If the element is at the very top of your current viewport, this function will return a value of `0`.
+As soon as the element leaves the viewport, the function now returns a value of `1`. If the element is "scrolled over"
+exactly half of its height, the function returns the value of `0.5`.
+The following parameter may be passed to the function.
+
+| Parameter | Type   | Default | Description      |
+|:----------|:-------|:--------|:-----------------|
+| `element` | String | `null`  | The HTML element |
+
+HTML
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body"></div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+// Check if you scrolled past an element
+window.addEventListener('scroll', function() {
+  if (UIkit.util.scrolledOver(element) < 1) {
+    console.log('The element has not been "scrolled over" yet.');
+  } else {
+    console.log('You have scrolled past the element.');
+  }
+});
+```
+
+Result
+
+```log
+'The element has not been "scrolled over" yet.'
+```
 
 ***
 
 ### getIndex
 
+This function is used to find the index of an element inside a group of other elements.
+The following parameters may be passed to the function.
+
+| Parameter  | Type           | Default | Description                           |
+|:-----------|:---------------|:--------|:--------------------------------------|
+| `i`        | Number, String | `null`  | The HTML element to be indexed        |
+| `elements` | String         | `null`  | The list of HTML elements to count in |
+| `current`  | Number         | `0`     | Start value for counting the index    |
+
+HTML
+
+```html
+<div class="uk-position-relative" uk-slideshow>
+    <ul id="example" class="uk-slideshow-items">
+        <li><img src="..." alt="" uk-cover></li>
+        <li><img src="..." alt="" uk-cover></li>
+        <li><img src="..." alt="" uk-cover></li>
+    </ul>
+</div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+// Get index for a specific element
+console.log('Index is ' + UIkit.util.getIndex(element.children[1], element.children));
+```
+
+Result
+
+```log
+'Index is 1'
+```
+
 ***
 
 ### isVoidElement
+
+This function is used to detect if an element is a self-closing HTML tag.
+The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description      |
+|:----------|:-------|:--------|:-----------------|
+| `element` | String | `null`  | The HTML element |
+
+HTML
+
+```html
+<input id="example" type="text">
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+// Check if element is a void element (self-closing)
+if (UIkit.util.isVoidElement(element)) {
+  console.log('This is a void element!');
+} else {
+  console.log('This is not a self-closing HTML tag.');
+}
+```
+
+Result
+
+```log
+'This is a void element!'
+```
 
 ***
 
