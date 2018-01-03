@@ -58,16 +58,17 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="icon: cart"></span> cart</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: credit-card"></span> credit-card</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: mail"></span> mail</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: receiver"></span> receiver</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: search"></span> search</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: location"></span> location</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: bookmark"></span> bookmark</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: code"></span> code</li>
         </ul>
 
     </div>
     <div>
 
         <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="icon: code"></span> code</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: paint-bucket"></span> paint-bucket</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: camera"></span> camera</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: bell"></span> bell</li>
@@ -261,6 +262,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
     <div>
 
         <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="icon: 500px"></span> 500px</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: behance"></span> behance</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: dribbble"></span> dribbble</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: facebook"></span> facebook</li>
@@ -268,14 +270,15 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="icon: foursquare"></span> foursquare</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: github"></span> github</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: github-alt"></span> github-alt</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: google"></span> google</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: google-plus"></span> google-plus</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: gitter"></span> gitter</li>
         </ul>
 
     </div>
     <div>
 
         <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="icon: google"></span> google</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: google-plus"></span> google-plus</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: instagram"></span> instagram</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: joomla"></span> joomla</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: linkedin"></span> linkedin</li>
@@ -283,14 +286,14 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="icon: pinterest"></span> pinterest</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: soundcloud"></span> soundcloud</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: tripadvisor"></span> tripadvisor</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: tumblr"></span> tumblr</li>
-            <li><span class="uk-margin-small-right" uk-icon="icon: twitter"></span> twitter</li>
         </ul>
 
     </div>
     <div>
 
         <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="icon: tumblr"></span> tumblr</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: twitter"></span> twitter</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: uikit"></span> uikit</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: vimeo"></span> vimeo</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: whatsapp"></span> whatsapp</li>
