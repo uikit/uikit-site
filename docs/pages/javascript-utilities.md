@@ -720,9 +720,9 @@ HTML
 
 ```html
 <div class="uk-position-relative" uk-slideshow>
-    <ul id="example" class="uk-slideshow-items">
+    <ul class="uk-slideshow-items">
         <li><img src="..." alt="" uk-cover></li>
-        <li><img src="..." alt="" uk-cover></li>
+        <li id="example"><img src="..." alt="" uk-cover></li>
         <li><img src="..." alt="" uk-cover></li>
     </ul>
 </div>
@@ -757,7 +757,7 @@ The following parameters may be passed to the function.
 HTML
 
 ```html
-<input id="example" type="text">
+<input id="example" type="text" class="uk-input">
 ```
 
 JavaScript
@@ -783,69 +783,670 @@ Result
 
 ### Dimensions
 
+The Dimensions object makes three handy functions accessible, which are the following.
+
+***
+
+#### ratio
+
+This function returns the aspect ratio of an elements dimensions compared to a certain value.
+The following parameters may be passed to the function.
+
+| Parameter    | Type   | Default | Description                                                 |
+|:-------------|:-------|:--------|:------------------------------------------------------------|
+| `dimensions` | Object | `null`  | The `width` and `height` of some element                    |
+| `prop`       | String | `null`  | The property to compare against, either `width` or `height` |
+| `value`      | Number | `null`  | The value to compare against                                |
+
+HTML
+
+```html
+<div class="uk-inline">
+    <img id="example" width="480" height="360" src="..." alt="Example image">
+</div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+var Dimensions = UIkit.util.Dimensions;
+
+var dimensions = {
+  width: element.width,
+  height: element.height
+};
+
+// Get ratio for 100px width
+console.log(Dimensions.ratio(dimensions, 'width', 100));
+```
+
+Result
+
+```log
+{height: 75, width: 100}
+```
+
+***
+
+#### contain
+
+This function returns a dimension, which is contained inside a certain maximum dimension.
+The following parameters may be passed to the function.
+
+| Parameter       | Type   | Default | Description                                           |
+|:----------------|:-------|:--------|:------------------------------------------------------|
+| `dimensions`    | Object | `null`  | The `width` and `height` of some element              |
+| `maxDimensions` | Object | `null`  | The maximum `width` and `height` to be compliant with |
+
+HTML
+
+```html
+<div class="uk-inline">
+    <img id="example" width="480" height="360" src="..." alt="Example image">
+</div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+var Dimensions = UIkit.util.Dimensions;
+
+var dimensions = {
+  width: element.width,
+  height: element.height
+};
+
+var maxDimensions = {
+  width: 360,
+  height: 240
+};
+
+// Get the contained dimension
+console.log(Dimensions.contain(dimensions, maxDimensions));
+```
+
+Result
+
+```log
+{width: 320, height: 240}
+```
+
+***
+
+#### cover
+
+This function returns a dimension, which covers a certain maximum dimension.
+The following parameters may be passed to the function.
+
+| Parameter       | Type   | Default | Description                                           |
+|:----------------|:-------|:--------|:------------------------------------------------------|
+| `dimensions`    | Object | `null`  | The `width` and `height` of some element              |
+| `maxDimensions` | Object | `null`  | The maximum `width` and `height` to be compliant with |
+
+HTML
+
+```html
+<div class="uk-inline">
+    <img id="example" width="480" height="360" src="..." alt="Example image">
+</div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+var Dimensions = UIkit.util.Dimensions;
+
+var dimensions = {
+  width: element.width,
+  height: element.height
+};
+
+var maxDimensions = {
+  width: 360,
+  height: 240
+};
+
+// Get the covering dimension
+console.log(Dimensions.cover(dimensions, maxDimensions));
+```
+
+Result
+
+```log
+{height: 270, width: 360}
+```
+
 ***
 
 ### preventClick
+
+???
 
 ***
 
 ### isVisible
 
-***
+This function is used to detect, whether an element is visible or not.
+The following parameter may be passed to the function.
 
-### selInput
+| Parameter | Type   | Default | Description      |
+|:----------|:-------|:--------|:-----------------|
+| `element` | String | `null`  | The HTML element |
+
+HTML
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body"></div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+// Is the element visible?
+if (UIkit.util.isVisible(element)) {
+  console.log('The element is visible!');
+} else {
+  console.log('The element is hidden!');
+}
+```
+
+Result
+
+```log
+'The element is visible!'
+```
 
 ***
 
 ### isInput
 
+This function is used to detect, whether an element is visible or not.
+The following parameter may be passed to the function.
+
+| Parameter | Type   | Default | Description      |
+|:----------|:-------|:--------|:-----------------|
+| `element` | String | `null`  | The HTML element |
+
+HTML
+
+```html
+<input class="example uk-input" type="text" placeholder="Input">
+
+<select class="example uk-select">
+    <option>Option 01</option>
+    <option>Option 02</option>
+</select>
+
+<textarea class="example uk-textarea" rows="5" placeholder="Textarea"></textarea>
+
+<div class="example uk-card uk-card-default uk-card-body">Card</div>
+```
+
+JavaScript
+
+```javascript
+var elements = document.getElementsByClassName('example');
+
+for (var i=0; i < elements.length; i++) {
+  if (UIkit.util.isInput(elements[i])) {
+    console.log('A ' + elements[i].tagName.toLowerCase() + ' is an input type element!');
+  } else {
+    console.log('A ' + elements[i].tagName.toLowerCase() + ' is NOT an input type element!');
+  }
+}
+```
+
+Result
+
+```log
+'A input is an input type element!'
+'A select is an input type element!'
+'A textarea is an input type element!'
+'A div is NOT an input type element!'
+```
+
 ***
 
 ### empty
+
+This function is used to empty an element. The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description      |
+|:----------|:-------|:--------|:-----------------|
+| `element` | String | `null`  | The HTML element |
+
+HTML
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body">
+    This card is not empty!
+</div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+UIkit.util.empty(element);
+```
+
+Result
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body"></div>
+```
 
 ***
 
 ### html
 
+This function is used to fill an element with some content. The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description      |
+|:----------|:-------|:--------|:-----------------|
+| `parent`  | String | `null`  | The HTML element |
+| `html` | String | `null`  | The HTML content |
+
+HTML
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body"></div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+var content = '<p>This was injected by JavaScript!</p>';
+
+UIkit.util.html(element, content);
+```
+
+Result
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body">
+    <p>This was injected by JavaScript!</p>
+</div>
+```
+
 ***
 
 ### prepend
+
+This function is used to insert some content before any other child nodes inside another element.
+The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description      |
+|:----------|:-------|:--------|:-----------------|
+| `parent`  | String | `null`  | The HTML element |
+| `element` | String | `null`  | The HTML content |
+
+HTML
+
+```html
+<select id="example" class="uk-select">
+    <option>Option 01</option>
+    <option>Option 02</option>
+</select>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+var content = '<option>Injected by Javascript</option>';
+
+UIkit.util.prepend(element, content);
+```
+
+Result
+
+```html
+<select id="example" class="uk-select">
+    <option>Injected by Javascript</option>
+    <option>Option 01</option>
+    <option>Option 02</option>
+</select>
+```
 
 ***
 
 ### append
 
+This function is used to insert some content after any other child nodes inside another element.
+The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description      |
+|:----------|:-------|:--------|:-----------------|
+| `parent`  | String | `null`  | The HTML element |
+| `element` | String | `null`  | The HTML content |
+
+HTML
+
+```html
+<select id="example" class="uk-select">
+    <option>Option 01</option>
+    <option>Option 02</option>
+</select>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+var content = '<option>Injected by Javascript</option>';
+
+UIkit.util.prepend(element, content);
+```
+
+Result
+
+```html
+<select id="example" class="uk-select">
+    <option>Option 01</option>
+    <option>Option 02</option>
+    <option>Injected by Javascript</option>
+</select>
+```
+
 ***
 
 ### before
+
+This function is used to insert some content before another element.
+The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description      |
+|:----------|:-------|:--------|:-----------------|
+| `ref`     | String | `null`  | The HTML element |
+| `element` | String | `null`  | The HTML content |
+
+HTML
+
+```html
+<select class="uk-select">
+    <option>Option 01</option>
+    <option id="example">Option 02</option>
+</select>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+var content = '<option>Injected by Javascript</option>';
+
+UIkit.util.before(element, content);
+```
+
+Result
+
+```html
+<select class="uk-select">
+    <option>Option 01</option>
+    <option>Injected by Javascript</option>
+    <option id="example">Option 02</option>
+</select>
+```
 
 ***
 
 ### after
 
+This function is used to insert some content after another element.
+The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description      |
+|:----------|:-------|:--------|:-----------------|
+| `ref`     | String | `null`  | The HTML element |
+| `element` | String | `null`  | The HTML content |
+
+HTML
+
+```html
+<select class="uk-select">
+    <option id="example">Option 01</option>
+    <option>Option 02</option>
+</select>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+var content = '<option>Injected by Javascript</option>';
+
+UIkit.util.after(element, content);
+```
+
+Result
+
+```html
+<select class="uk-select">
+    <option id="example">Option 01</option>
+    <option>Injected by Javascript</option>
+    <option>Option 02</option>
+</select>
+```
+
 ***
 
 ### remove
+
+This function is used to remove a certain element from the DOM.
+The following parameter may be passed to the function.
+
+| Parameter | Type   | Default | Description      |
+|:----------|:-------|:--------|:-----------------|
+| `element` | String | `null`  | The HTML element |
+
+HTML
+
+```html
+<select class="uk-select">
+    <option id="example">Option 01</option>
+    <option>Option 02</option>
+</select>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+UIkit.util.remove(element);
+```
+
+Result
+
+```html
+<select class="uk-select">
+    <option>Option 02</option>
+</select>
+```
 
 ***
 
 ### wrapAll
 
+This function is used to wrap some element inside a HTML structure.
+The following parameters may be passed to the function.
+
+| Parameter   | Type   | Default | Description        |
+|:------------|:-------|:--------|:-------------------|
+| `element`   | String | `null`  | The HTML element   |
+| `structure` | String | `null`  | The HTML structure |
+
+HTML
+
+```html
+<p id="example">This is a paragraph!</p>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+UIkit.util.wrapAll(element, '<div class="uk-card uk-card-primary uk-card-body">');
+```
+
+Result
+
+```html
+<div class="uk-card uk-card-primary uk-card-body">
+    <p id="example">This is a paragraph!</p>
+</div>
+```
+
 ***
 
 ### wrapInner
+
+This function is used to wrap the content of some element with a HTML structure.
+The following parameters may be passed to the function.
+
+| Parameter   | Type   | Default | Description        |
+|:------------|:-------|:--------|:-------------------|
+| `element`   | String | `null`  | The HTML element   |
+| `structure` | String | `null`  | The HTML structure |
+
+HTML
+
+```html
+<p id="example">This is a paragraph!</p>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+UIkit.util.wrapInner(element, '<span class="uk-text-danger">');
+```
+
+Result
+
+```html
+<p id="example"><span class="uk-text-danger">This is a paragraph!</span></p>
+```
 
 ***
 
 ### unwrap
 
+This function is used to unwrap some element, basically remove its direct parent.
+The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description      |
+|:----------|:-------|:--------|:-----------------|
+| `element` | String | `null`  | The HTML element |
+
+HTML
+
+```html
+<div class="uk-card uk-card-primary uk-card-body">
+    <p id="example">This is a paragraph!</p>
+</div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+UIkit.util.unwrap(element);
+```
+
+Result
+
+```html
+<p id="example">This is a paragraph!</p>
+```
+
 ***
 
 ### fragment
 
+This function is used to transform HTML fragments into whole HTML elements.
+The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description       |
+|:----------|:-------|:--------|:------------------|
+| `html`    | String | `null`  | The HTML fragment |
+
+JavaScript
+
+```javascript
+console.log(UIkit.util.fragment('<div><p class="uk-text-danger">Some incomplete HTML!'));
+```
+
+Result
+
+```html
+<div><p class="uk-text-danger">Some incomplete HTML!</p></div>
+```
+
 ***
 
 ### index
+
+This function is used to find the index of an element inside a group of other elements.
+The following parameters may be passed to the function.
+
+| Parameter  | Type   | Default | Description                                          |
+|:-----------|:-------|:--------|:-----------------------------------------------------|
+| `element`  | String | `null`  | The HTML element to be indexed or a list of elements |
+| `ref`      | String | `null`  | The element to index inside the element list         |
+
+HTML
+
+```html
+<div id="grid" class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-secondary uk-card-body">Item 2</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item 3</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item 4</div>
+    </div>
+    <div id="grid-item">
+        <div class="uk-card uk-card-primary uk-card-body">Item 5</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item 6</div>
+    </div>
+</div>
+```
+
+JavaScript
+
+```javascript
+var grid = document.getElementById('grid');
+var gridItem = document.getElementById('grid-item')
+
+console.log(UIkit.util.index(gridItem));
+console.log(UIkit.util.index(grid.children, gridItem));
+```
+
+Result
+
+```log
+4
+4
+```
 
 ***
 
