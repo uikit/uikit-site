@@ -48,6 +48,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="icon: lock"></span> lock</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: unlock"></span> unlock</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: settings"></span> settings</li>
+            <li><span class="uk-margin-small-right" uk-icon="icon: receiver"></span> receiver</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: cog"></span> cog</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: nut"></span> nut</li>
             <li><span class="uk-margin-small-right" uk-icon="icon: comment"></span> comment</li>
