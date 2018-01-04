@@ -1450,15 +1450,230 @@ Result
 
 ***
 
-## Environment ?
+## Events
+
+The following functions are to work with DOM events.
+They either are used for triggering, creating events or reacting on them.
 
 ***
 
-## Events
+### on
+
+This function is used to react on a event, whenever it occurs. The following parameters may be passed to the function.
+
+| Parameter    | Type     | Default | Description                                                                                                                                                 |
+|:-------------|:---------|:--------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `target`     | String   | `null`  | The HTML element                                                                                                                                            |
+| `type`       | String   | `null`  | The event type, e.g. `click`, `scroll` etc.                                                                                                                 |
+| `selector`   | String   | `null`  | Used for dynamically added HTML elements                                                                                                                    |
+| `listener`   | Function | `null`  | The callback function to run some code                                                                                                                      |
+| `useCapture` | Boolean  | `false` | Indicating that events of this type will be dispatched to the registered `listener` before being dispatched to any `EventTarget` beneath it in the DOM tree |
+
+HTML
+
+```html
+<div id="example">
+    <a class="uk-button uk-button-default" href="https://getuikit.com/docs/images/photo.jpg">Open Lightbox</a>
+</div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+var lightbox = UIkit.lightbox(element);
+
+// React on event
+UIkit.util.on('a', 'click', function() {
+  lightbox.show(0);
+});
+
+// React on event, which is attached to a dynamically created HTML element
+UIkit.util.on(document, 'shown', '.uk-lightbox.uk-open', function() {
+  console.log('Lightbox is displayed!');
+});
+```
+
+Result
+
+```log
+'Lightbox is displayed!'
+```
+
+***
+
+### off
+
+This function is used to remove a previously registered event listener.
+The following parameters may be passed to the function.
+
+| Parameter    | Type     | Default | Description                                                                                      |
+|:-------------|:---------|:--------|:-------------------------------------------------------------------------------------------------|
+| `target`     | String   | `null`  | The HTML element                                                                                 |
+| `type`       | String   | `null`  | The event type, e.g. `click`, `scroll` etc.                                                      |
+| `listener`   | Function | `null`  | The callback function to run some code                                                           |
+| `useCapture` | Boolean  | `false` | Specifies whether the `EventListener` to be removed is registered as a capturing listener or not |
+
+HTML
+
+```html
+<button id="trigger" class="uk-button uk-button-primary">Trigger</button>
+<button id="bind" class="uk-button uk-button-default">Bind</button>
+<button id="unbind" class="uk-button uk-button-default">Unbind</button>
+```
+
+JavaScript
+
+```javascript
+var trigger = document.getElementById('trigger');
+var bind = document.getElementById('bind');
+var unbind = document.getElementById('unbind');
+
+// Dummy function
+function showNotification() {
+  UIkit.notification('Some message...');
+}
+
+// Binds the event listener to the example button
+UIkit.util.on(bind, 'click', function() {
+  UIkit.util.on(trigger, 'click', showNotification);
+});
+
+// Unbinds the event listener from the example button
+UIkit.util.on(unbind, 'click', function() {
+  UIkit.util.off(trigger, 'click', showNotification);
+});
+```
+
+Result
+
+By default the `Trigger` button does nothing.
+After clicking the `Bind` button, another click on the `Trigger` button shows a notification.
+If the `Unbind` button is clicked, the `Trigger` button no longer shows a notification.
+
+***
+
+### once
+
+This function is used to react on a event only once. The following parameters may be passed to the function.
+
+| Parameter    | Type     | Default | Description                                                                                                                                                 |
+|:-------------|:---------|:--------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `element`    | String   | `null`  | The HTML element                                                                                                                                            |
+| `type`       | String   | `null`  | The event type, e.g. `click`, `scroll` etc.                                                                                                                 |
+| `selector`   | String   | `null`  | Used for dynamically added HTML elements                                                                                                                    |
+| `listener`   | Function | `null`  | The callback function to run some code                                                                                                                      |
+| `useCapture` | Boolean  | `false` | Indicating that events of this type will be dispatched to the registered `listener` before being dispatched to any `EventTarget` beneath it in the DOM tree |
+| `condition`  | Boolean  | `false` | As soon the condition becomes false, the `EventListener` will be attached and is therefore ready to fire                                                    |
+
+HTML
+
+```html
+<button id="trigger" class="uk-button uk-button-primary">Show message</button>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+// Show a message, but only once
+UIkit.util.once(element, 'click', function() {
+  UIkit.notification('Some message...');
+});
+```
+
+Result
+
+By clicking the `Show message` button a notification is displayed.
+Any further clicks on the same button won't fire another notification.
+
+***
+
+### trigger
+
+This function is used to manually triggering an event on an element.
+The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description                                 |
+|:----------|:-------|:--------|:--------------------------------------------|
+| `target`  | String | `null`  | The HTML element to attach the event on     |
+| `event`   | String | `null`  | The event type, e.g. `click`, `scroll` etc. |
+| `detail`  | Any    | `null`  | The data passed when triggering the event   |
+
+HTML
+
+```html
+<div id="example"></div>
+```
+
+JavaScript
+
+```javascript
+var element = document.getElementById('example');
+
+// React on custom event
+UIkit.util.on(element, 'MyEvent', function(e) {
+  console.log(e.type, e.detail.data);
+});
+
+// Trigger a custom event
+UIkit.util.trigger(element, 'MyEvent', { data: 'was triggered!' });
+```
+
+Result
+
+```log
+'MyEvent was triggered!'
+```
+
+***
+
+### createEvent
+
+This function is used to create a custom event. The following parameters may be passed to the function.
+
+| Parameter    | Type    | Default | Description                                                    |
+|:-------------|:--------|:--------|:---------------------------------------------------------------|
+| `e`          | String  | `null`  | The name of the event                                          |
+| `bubbles`    | Boolean | `true`  | Indicating whether the event bubbles up through the DOM or not |
+| `cancelable` | Boolean | `false` | Indicating whether the event is cancelable or not              |
+| `detail`     | Any     | `null`  | The data passed when initializing the event                    |
+
+JavaScript
+
+```javascript
+// Create a custom event
+var customEvent = UIkit.util.createEvent('MyEvent', true, true, { data: 'was created!' });
+
+console.log(customEvent.type, customEvent.detail.data);
+```
+
+Result
+
+```log
+'MyEvent was created!'
+```
+
+***
+
+## Language
+
+***
+
+## Mouse
+
+***
+
+## Player
 
 ***
 
 ## Position
+
+***
+
+## Promise
 
 ***
 
