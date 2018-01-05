@@ -921,12 +921,6 @@ Result
 
 ***
 
-### preventClick
-
-???
-
-***
-
 ### isVisible
 
 This function is used to detect, whether an element is visible or not.
@@ -1658,6 +1652,435 @@ Result
 ***
 
 ## Language
+
+The following functions might be helpful when working with JavaScript based transformations, requests, etc.
+Hence the reason this chapter is called language.
+
+***
+
+### hasOwn
+
+This function is used to check if a JavaScript object has some key.
+The following parameters may be passed to the function.
+
+| Parameter | Type    | Default | Description                        |
+|:----------|:--------|:--------|:-----------------------------------|
+| `obj`     | Object  | `null`  | The JavaScript object to search in |
+| `key`     | String  | `null`  | The key name to look for           |
+
+JavaScript
+
+```javascript
+var object = {
+  data: 'sample'
+};
+
+// Check if object has some key
+console.log(UIkit.util.hasOwn(object, 'data'));
+```
+
+Result
+
+```log
+true
+```
+
+***
+
+### classify
+
+This function is used to format a string to a correct JavaScript class name.
+The following parameter may be passed to the function.
+
+| Parameter | Type   | Default | Description                          |
+|:----------|:-------|:--------|:-------------------------------------|
+| `str`     | String | `null`  | The string to be formatted correctly |
+
+JavaScript
+
+```javascript
+var string = 'my-javascript-class';
+
+// Format to the correct class format
+console.log(UIkit.util.classify(string));
+```
+
+Result
+
+```log
+'MyJavascriptClass'
+```
+
+***
+
+### hyphenate
+
+This function is used to hyphenate a string. The following parameter may be passed to the function.
+
+| Parameter | Type   | Default | Description                          |
+|:----------|:-------|:--------|:-------------------------------------|
+| `str`     | String | `null`  | The string to be formatted correctly |
+
+JavaScript
+
+```javascript
+var string = 'someCamelcasedString';
+
+// Hyphenate the string
+console.log(UIkit.util.hyphenate(string));
+```
+
+Result
+
+```log
+'some-camelcase-string'
+```
+
+***
+
+### camelize
+
+This function is used to camelcase a string. The following parameter may be passed to the function.
+
+| Parameter | Type   | Default | Description                          |
+|:----------|:-------|:--------|:-------------------------------------|
+| `str`     | String | `null`  | The string to be formatted correctly |
+
+JavaScript
+
+```javascript
+var string = 'some-hyphenated-string';
+
+// Camelcase the string
+console.log(UIkit.util.camelize(string));
+```
+
+Result
+
+```log
+'someHyphenatedString'
+```
+
+***
+
+### ucfirst
+
+This function is used to uppercase the first letter of a string. The following parameter may be passed to the function.
+
+| Parameter | Type   | Default | Description                          |
+|:----------|:-------|:--------|:-------------------------------------|
+| `str`     | String | `null`  | The string to be formatted correctly |
+
+JavaScript
+
+```javascript
+var string = 'uppercase';
+
+// Uppercase the first letter
+console.log(UIkit.util.ucfirst(string));
+```
+
+Result
+
+```log
+'Uppercase'
+```
+
+***
+
+### startsWith
+
+This function is used to check if a string starts with some value. The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description             |
+|:----------|:-------|:--------|:------------------------|
+| `str`     | String | `null`  | The string to search in |
+| `search`  | String | `null`  | The string to look for  |
+
+JavaScript
+
+```javascript
+var string = 'This is a string!';
+
+console.log(UIkit.util.startsWith(string, 'This'));
+```
+
+Result
+
+```log
+true
+```
+
+
+***
+
+### endsWith
+
+This function is used to check if a string ends with some value. The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description             |
+|:----------|:-------|:--------|:------------------------|
+| `str`     | String | `null`  | The string to search in |
+| `search`  | String | `null`  | The string to look for  |
+
+JavaScript
+
+```javascript
+var string = 'This is a string!';
+
+console.log(UIkit.util.endsWith(string, 'string!'));
+```
+
+Result
+
+```log
+true
+```
+
+***
+
+### includes
+
+This function is used to check if either a string or an array contains some value.
+The following parameters may be passed to the function.
+
+| Parameter | Type          | Default | Description                      |
+|:----------|:--------------|:--------|:---------------------------------|
+| `obj`     | String, Array | `null`  | The string or array to search in |
+| `search`  | String        | `null`  | The string to look for           |
+
+JavaScript
+
+```javascript
+var string = 'This is a string!';
+var array = ['This', 'is', 'an', 'array', '!'];
+
+console.log(UIkit.util.includes(string, 'string'));
+console.log(UIkit.util.includes(array, 'array'));
+```
+
+Result
+
+```log
+true
+true
+```
+
+***
+
+### isFunction
+
+This function is used to check whether an object is a function or not.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                         |
+|:----------|:-----|:--------|:------------------------------------|
+| `obj`     | Any  | `null`  | The object to run the query against |
+
+JavaScript
+
+```javascript
+function example() {}
+
+// Is this a function?
+console.log(UIkit.util.isFunction(example));
+```
+
+Result
+
+```log
+true
+```
+
+***
+
+### isObject
+
+This function is used to check whether a variable is a JavaScript Object or not.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                         |
+|:----------|:-----|:--------|:------------------------------------|
+| `obj`     | Any  | `null`  | The object to run the query against |
+
+JavaScript
+
+```javascript
+var image = new Image();
+
+// Is this a JavaScript object?
+console.log(UIkit.util.isObject(image));
+```
+
+Result
+
+```log
+true
+```
+
+***
+
+### isPlainObject
+
+This function is used to check whether a variable was created by the Object constructor.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                         |
+|:----------|:-----|:--------|:------------------------------------|
+| `obj`     | Any  | `null`  | The object to run the query against |
+
+JavaScript
+
+```javascript
+var object = {};
+
+// Is this a plain Object?
+console.log(UIkit.util.isPlainObject(object));
+```
+
+Result
+
+```log
+true
+```
+
+***
+
+### isWindow
+
+This function is used to check whether a variable is a Window Object.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                         |
+|:----------|:-----|:--------|:------------------------------------|
+| `obj`     | Any  | `null`  | The object to run the query against |
+
+JavaScript
+
+```javascript
+var win = window;
+
+// Is this a Window Object?
+console.log(UIkit.util.isWindow(win));
+```
+
+Result
+
+```log
+true
+```
+
+**Note** This function does not detect, if the operating system `Microsoft Windows` is used.
+
+***
+
+### isDocument
+
+This function is used to check whether a variable is a Document Object.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                         |
+|:----------|:-----|:--------|:------------------------------------|
+| `obj`     | Any  | `null`  | The object to run the query against |
+
+JavaScript
+
+```javascript
+var doc = document || window.document;
+
+// Is this a Document Object?
+console.log(UIkit.util.isDocument(doc));
+```
+
+Result
+
+```log
+true
+```
+
+***
+
+### isBoolean
+
+***
+
+### isString
+
+***
+
+### isNumber
+
+***
+
+### isNumeric
+
+***
+
+### isUndefined
+
+***
+
+### toBoolean
+
+***
+
+### toNumber
+
+***
+
+### toFloat
+
+***
+
+### toList
+
+***
+
+### toMedia
+
+***
+
+### coerce
+
+***
+
+### toMs
+
+***
+
+### swap
+
+***
+
+### assign
+
+***
+
+### each
+
+***
+
+### clamp
+
+***
+
+### noop
+
+This function does not accept any arguments. You can use this empty function when you wish to pass around a function that will
+do nothing. This is useful for plugin authors who offer optional callbacks; in the case that no callback is given,
+something like `UIkit.util.noop` could execute.
+
+***
+
+### intersectRect
+
+***
+
+### pointInRect
+
+***
+
+### ajax
 
 ***
 
