@@ -12,7 +12,7 @@ An active state is automatically applied to the last `<li>` element. Use a `<spa
 <ul class="uk-breadcrumb">
     <li><a href=""></a></li>
     <li><a href=""></a></li>
-    <li><span href=""></span></li>
+    <li><span></span></li>
 </ul>
 ```
 
@@ -23,6 +23,6 @@ An active state is automatically applied to the last `<li>` element. Use a `<spa
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
     <li class="uk-disabled"><a href="#">Disabled</a></li>
-    <li><span href="#">Active</span></li>
+    <li><span>Active</span></li>
 </ul>
 ```
