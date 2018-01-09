@@ -306,7 +306,7 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
 
 ## Navigation
 
-To navigate through your slides, just use the `uk-slideshow-item` attribute. To target the slides, set the attribute of every nav item to the number of the respective slideshow item. The elements with the `uk-slideshow-item` attribute need to be inside the `uk-slideshow` container. Setting the attribute to `next` and `previous` will switch to the adjacent slides.
+To navigate through your slides, just use the `uk-slideshow-item` attribute. To target the slides, set the attribute of every nav item to the index number of the respective slideshow item. The elements with the `uk-slideshow-item` attribute need to be inside the `uk-slideshow` container. Setting the attribute to `next` and `previous` will switch to the adjacent slides.
 
 ```html
 <div uk-slideshow>
@@ -356,6 +356,18 @@ The flexibility of the Slideshow component allows you to use any of the other UI
         <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
         <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
     </ul>
+
+</div>
+```
+
+If there is no item specific content in the navigation items, add the `.uk-slideshow-nav` class to the navigation to generate its items automatically using `<li><a href="#"></a></li>` as markup. This is a useful shortcut when using the [Dotnav](dotnav.md).
+
+```html
+<div uk-slideshow>
+
+    <ul class="uk-slideshow-items">...</ul>
+
+    <ul class="uk-slideshow-nav uk-dotnav"></ul>
 
 </div>
 ```
