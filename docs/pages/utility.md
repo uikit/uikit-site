@@ -273,6 +273,7 @@ Add the `uk-height-viewport` attribute to create a container that fills the heig
 | `offset-top`    | Boolean                | `false` | Subtracts the element's top offset from its height.                                 |
 | `offset-bottom` | Boolean, Number, Pixel | `false` | Subtracts the element's immediately following sibling's height from its own height. |
 | `expand`        | Boolean                | `true`  | Expand the element's height to make a short page fill the viewport.                 |
+| `min-height`    | Number                 | `0`     | Sets a minimum height. Useful if the all children are positioned absolute.          |
 
 ```html
 <div uk-height-viewport></div>
@@ -282,6 +283,8 @@ Add the `uk-height-viewport` attribute to create a container that fills the heig
 <div uk-height-viewport="offset-bottom: 20"></div>
 
 <div uk-height-viewport="expand: true"></div>
+
+<div uk-height-viewport="min-height: 300"></div>
 ```
 
 You can view examples in the tests for [Height Viewport](../assets/uikit/tests/height-viewport.html) and [Height Expand](../assets/uikit/tests/height-expand.html).
