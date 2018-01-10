@@ -44,27 +44,25 @@ If no width class is applied, the width of your content will define the width of
 
 ## Center
 
-By default, elements of the slider always align to the left edge of the slider. To center the list items set the attribute `center` to `"true"`.
+By default, elements of the slider always align to the left edge of the slider. To center the list items set the attribute `center` to `"1"`.
 
 ***
 
 ## Infinite Scrolling
 
-By default, infinite scrolling is enabled. To disable infinite scrolling, set the attribute `finite` to `"false"`.
+By default, infinite scrolling is enabled. To disable infinite scrolling, set the attribute `finite` to `"0"`.
 
 ***
 
 ## Slide Sets
 
-
-
-
+To loop through a set of slides instead of single items, set the attribute `set` to `"1"` after the class `uk-slider`. 
 
 ***
 
 ## Navigation
 
-To navigate through your slides, just use the `uk-slideshow-item` attribute. To target the slides, set the attribute of every nav item to the number of the respective slideshow item. The elements with the `uk-slideshow-item` attribute need to be inside the `uk-slideshow`. Setting the attribute to `next` and `previous` will switch to the adjacent slides.
+To navigate through your slides, just use the `uk-slider-item` attribute. To target the slides, set the attribute of every nav item to the number of the respective slider item. The elements with the `uk-slider-item` attribute need to be inside the `uk-slider`. Setting the attribute to `next` and `previous` will switch to the adjacent slides.
 
 ```html
 <div uk-slider>
@@ -79,19 +77,28 @@ To navigate through your slides, just use the `uk-slideshow-item` attribute. To 
 </div>
 ```
 
-The flexibility of the Slideshow component allows you to use any of the other UIkit components to navigate through items. For example the [Slidenav](slidenav.md), [Dotnav](dotnav.md) and [Thumbnav](thumbnav.md) components can be used to style the slideshow navigations as shown below.
-
-**Note** For better visibility of overlaying navigations, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md).
 
 ```example
 
+```
+
+If there is no item specific content in the navigation items, add the `.uk-slider-nav` class to the navigation to generate its items automatically using `<li><a href="#"></a></li>` as markup. This is a useful shortcut when using the [Dotnav](dotnav.md).
+
+```html
+<div uk-slider>
+
+    <ul class="uk-slider-items">...</ul>
+
+    <ul class="uk-slider-nav uk-dotnav"></ul>
+
+</div>
 ```
 
 ***
 
 ## Viewport height
 
-Adding the `uk-height-viewport` attribute from the [Utility component](utility.md) to the list of slideshow items will stretch the height to fill the whole viewport. You can set the `min-height` option to define a minimum height.
+Adding the `uk-height-viewport` attribute from the [Utility component](utility.md) to the list of slider items will stretch the height to fill the whole viewport. 
 
 ```html
 <div uk-slider>
