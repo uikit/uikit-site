@@ -6,7 +6,7 @@ The slideshow component is fully responsive and supports touch and swipe navigat
 
 ## Usage
 
-To apply this component, add the `uk-slideshow` attribute to a container element and create a list of slides with the class `uk-slideshow-items`.
+To apply this component, add the `uk-slideshow` attribute to a container element and create a list of slides with the `.uk-slideshow-items` class.
 
 Add an image in the background of each slide using the `uk-cover` attribute from the [Cover component](cover.md).
 
@@ -41,7 +41,7 @@ Add an image in the background of each slide using the `uk-cover` attribute from
 </div>
 ```
 
-**Note** To activate autoplay, just add `autoplay: true` to the attribute.
+**Note** To activate autoplay, just add the `autoplay: true` option to the attribute.
 
 ***
 

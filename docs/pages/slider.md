@@ -6,8 +6,8 @@ The slider is a fully customizable and responsive component that supports touch 
 
 ## Usage
 
-To apply this component, add the `uk-slider` attribute and create a list of slides with the class `uk-slider-items`. 
-<
+To apply this component, add the `uk-slider` attribute and create a list of slides with the `.uk-slider-items` class. 
+
 ```html
 <div uk-slider>
     <ul class="uk-slider-items">
@@ -22,17 +22,17 @@ To apply this component, add the `uk-slider` attribute and create a list of slid
 
 ```
 
-**Note** To activate autoplay, just add `autoplay: true` to the attribute.
+**Note** To activate autoplay, just add the `autoplay: 1` option to the attribute.
 
 ***
 
 ## Widths and Gutter
 
-To set the widths of the slider items, use width classes from the UIkit grid. Either apply the `uk-child-width-*` classes for the slider to define width of all items of the slider or apply individual widths for each list item using `the uk-width-*` classes. 
+To define the widths of the slider items, use the [Width component](width.md). Either apply the `uk-child-width-*` classes to define the width of all slider items or apply individual widths for each list item using the `uk-width-*` classes. 
 
-If you want some spacing between your elements, add the `.uk-grid` class to the slider. The elements will then be spaced according to the grid gutter.
+To apply some spacing between your elements, add the `.uk-grid` class to the slider. The elements will then be spaced according to the grid gutter.
 
-**Note** You can use the modifiers `uk-grid-medium` and `uk-grid-small` to change the gutter.
+**Note** You can use the modifiers `.uk-grid-medium` and `.uk-grid-small` to change the gutter.
 
 ***
 
@@ -44,25 +44,25 @@ If no width class is applied, the width of your content will define the width of
 
 ## Center
 
-By default, elements of the slider always align to the left edge of the slider. To center the list items set the attribute `center` to `"1"`.
+By default, elements of the slider always align to the left edge of the slider. To center the list items add the attribute `center="1"`.
 
 ***
 
 ## Infinite Scrolling
 
-By default, infinite scrolling is enabled. To disable infinite scrolling, set the attribute `finite` to `"0"`.
+By default, infinite scrolling is enabled. To disable infinite scrolling, add the attribute `finite="1"`.
 
 ***
 
 ## Slide Sets
 
-To loop through a set of slides instead of single items, set the attribute `set` to `"1"` after the class `uk-slider`. 
+To loop through a set of slides instead of single items, add the attribute `set="1"` after the `uk-slider` attribute. 
 
 ***
 
 ## Navigation
 
-To navigate through your slides, just use the `uk-slider-item` attribute. To target the slides, set the attribute of every nav item to the number of the respective slider item. The elements with the `uk-slider-item` attribute need to be inside the `uk-slider`. Setting the attribute to `next` and `previous` will switch to the adjacent slides.
+To navigate through your slides, just use the `.uk-slider-item` class. To target the slides, set the attribute of every nav item to the number of the respective slider item. The elements with the `.uk-slider-item` class need to be inside the `uk-slider` container. Setting the attribute to `next` and `previous` will switch to the adjacent slides.
 
 ```html
 <div uk-slider>
@@ -86,7 +86,7 @@ The flexibility of the slider component allows you to use any of the other UIkit
 ```
 
 
-If there is no item specific content in the navigation items, add the `.uk-slider-nav` class to the navigation to generate its items automatically using `<li><a href="#"></a></li>` as markup. This is a useful shortcut when using the [Dotnav](dotnav.md).
+If there is no item specific content in the navigation items, add the `.uk-slider-nav` class to the navigation to generate its items automatically using `<li><a href=""></a></li>` as markup. This is a useful shortcut when using the [Dotnav](dotnav.md).
 
 ```html
 <div uk-slider>
@@ -120,12 +120,11 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option              | Value           | Default | Description                                                           |
 |:--------------------|:----------------|:--------|:----------------------------------------------------------------------|
-
-| `autoplay`          | Boolean         | `false` | Slider autoplays.                                                  |
+| `autoplay`          | Boolean         | `0` | Slider autoplays.                                                  |
 | `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.                  |
-| `center`            | Boolean         | `false` | Center the active slide.                                              |
-| `finite`            | Boolean         | `false` | Disable infinite sliding.                                             |
-| `pause-on-hover`    | Boolean         | `false` | Pause autoplay mode on hover.                                         |
+| `center`            | Boolean         | `0` | Center the active slide.                                              |
+| `finite`            | Boolean         | `0` | Disable infinite sliding.                                             |
+| `pause-on-hover`    | Boolean         | `0` | Pause autoplay mode on hover.                                         |
 | `velocity`          | Number          | `1`     | The animation velocity (pixel/ms).                                    |
 | `index`             | String, Integer | `0`     | Slider item to show. 0 based index.                                |
 
