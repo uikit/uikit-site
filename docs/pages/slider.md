@@ -44,21 +44,19 @@ If no width class is applied, the width of your content will define the width of
 
 ## Center
 
-By default, elements of the slider always align to the left edge of the slider. To center the list items set the attribute `center` to `"true"`.
+By default, elements of the slider always align to the left edge of the slider. To center the list items set the attribute `center` to `"1"`.
 
 ***
 
 ## Infinite Scrolling
 
-By default, infinite scrolling is enabled. To disable infinite scrolling, set the attribute `finite` to `"false"`.
+By default, infinite scrolling is enabled. To disable infinite scrolling, set the attribute `finite` to `"0"`.
 
 ***
 
 ## Slide Sets
 
-
-
-
+To loop through a set of slides instead of single items, set the attribute `set` to `"1"` after the class `uk-slider`. 
 
 ***
 
@@ -87,11 +85,24 @@ The flexibility of the slider component allows you to use any of the other UIkit
 
 ```
 
+
+If there is no item specific content in the navigation items, add the `.uk-slider-nav` class to the navigation to generate its items automatically using `<li><a href="#"></a></li>` as markup. This is a useful shortcut when using the [Dotnav](dotnav.md).
+
+```html
+<div uk-slider>
+
+    <ul class="uk-slider-items">...</ul>
+
+    <ul class="uk-slider-nav uk-dotnav"></ul>
+
+</div>
+```
+
 ***
 
 ## Viewport height
 
-Adding the `uk-height-viewport` attribute from the [Utility component](utility.md) to the list of slider items will stretch the height to fill the whole viewport. You can set the `min-height` option to define a minimum height.
+Adding the `uk-height-viewport` attribute from the [Utility component](utility.md) to the list of slider items will stretch the height to fill the whole viewport. 
 
 ```html
 <div uk-slider>
