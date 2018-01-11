@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create a responsive slideshow with images and videos.</p>
 
-The slideshow component is fully responsive and supports touch and swipe navigation as well as mouse drag for desktops. When swiping between slides, the animation literally sticks at your fingertips or mouse cursor. It even accelerates to keep up with your pace when you click through previous and next navigation. All animations are hardware accelerated for a smoother performance.
+The Slideshow component is fully responsive and supports touch and swipe navigation as well as mouse drag for desktops. When swiping between slides, the animation literally sticks at your fingertips or mouse cursor. It even accelerates to keep up with your pace when you click through previous and next navigation. All animations are hardware accelerated for a smoother performance.
 
 ## Usage
 
@@ -261,6 +261,72 @@ Adding the `uk-height-viewport` attribute from the [Utility component](utility.m
 
 ***
 
+## Navigation
+
+To navigate through your slides, just use the `uk-slideshow-item` attribute. To target the slides, set the attribute of every nav item to the index number of the respective slideshow item. The elements with the `uk-slideshow-item` attribute need to be inside the `uk-slideshow` container. Setting the attribute to `next` and `previous` will switch to the adjacent slides.
+
+```html
+<div uk-slideshow>
+
+    <ul class="uk-slideshow-items">...</ul>
+
+    <a href="#" uk-slideshow-item="previous">...</a>
+    <a href="#" uk-slideshow-item="next">...</a>
+
+    <ul>
+        <li uk-slideshow-item="0"><a href="#">...</a></li>
+        <li uk-slideshow-item="1"><a href="#">...</a></li>
+        <li uk-slideshow-item="2"><a href="#">...</a></li>
+    </ul>
+
+</div>
+```
+
+The flexibility of the Slideshow component allows you to use any of the other UIkit components to navigate through items. For example the [Slidenav](slidenav.md), [Dotnav](dotnav.md) and [Thumbnav](thumbnav.md) components can be used to style the slideshow navigations.
+
+If there is no item specific content in the navigation items, you can also add the `.uk-slideshow-nav` class instead of adding navigation items manually. It will generate its items automatically using `<li><a href="#"></a></li>` as markup. This is a useful shortcut when using the [Dotnav](dotnav.md).
+
+```html
+<div uk-slideshow>
+
+    <ul class="uk-slideshow-items">...</ul>
+
+    <ul class="uk-slideshow-nav uk-dotnav"></ul>
+
+</div>
+```
+
+```example
+<div uk-slideshow="animation: push">
+
+    <div class="uk-position-relative uk-visible-toggle uk-light">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="../docs/images/dark.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="../docs/images/light.jpg" alt="" uk-cover>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+```
+
+**Note** For better visibility of overlaying navigations, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md).
+
+***
+
 ## Videos
 
 The slideshow is not restricted to images. Other media, like videos, can be positioned in the background of each slide using the `uk-cover` attribute from the [Cover component](cover.md). Videos are muted, and play automatically. The video will pause whenever it's not visible, and resume once it becomes visible again.
@@ -298,76 +364,6 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-
-</div>
-```
-
-***
-
-## Navigation
-
-To navigate through your slides, just use the `uk-slideshow-item` attribute. To target the slides, set the attribute of every nav item to the index number of the respective slideshow item. The elements with the `uk-slideshow-item` attribute need to be inside the `uk-slideshow` container. Setting the attribute to `next` and `previous` will switch to the adjacent slides.
-
-```html
-<div uk-slideshow>
-
-    <ul class="uk-slideshow-items">...</ul>
-
-    <a href="#" uk-slideshow-item="previous">...</a>
-    <a href="#" uk-slideshow-item="next">...</a>
-
-    <ul>
-        <li uk-slideshow-item="0"><a href="#">...</a></li>
-        <li uk-slideshow-item="1"><a href="#">...</a></li>
-        <li uk-slideshow-item="2"><a href="#">...</a></li>
-    </ul>
-
-</div>
-```
-
-The flexibility of the Slideshow component allows you to use any of the other UIkit components to navigate through items. For example the [Slidenav](slidenav.md), [Dotnav](dotnav.md) and [Thumbnav](thumbnav.md) components can be used to style the slideshow navigations as shown below.
-
-**Note** For better visibility of overlaying navigations, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md).
-
-```example
-<div uk-slideshow="animation: push">
-
-    <div class="uk-position-relative uk-visible-toggle uk-light">
-
-        <ul class="uk-slideshow-items">
-            <li>
-                <img src="../docs/images/photo.jpg" alt="" uk-cover>
-            </li>
-            <li>
-                <img src="../docs/images/dark.jpg" alt="" uk-cover>
-            </li>
-            <li>
-                <img src="../docs/images/light.jpg" alt="" uk-cover>
-            </li>
-        </ul>
-
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-
-    </div>
-
-    <ul class="uk-dotnav uk-flex-center uk-margin">
-        <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
-        <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
-        <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
-    </ul>
-
-</div>
-```
-
-If there is no item specific content in the navigation items, add the `.uk-slideshow-nav` class to the navigation to generate its items automatically using `<li><a href="#"></a></li>` as markup. This is a useful shortcut when using the [Dotnav](dotnav.md).
-
-```html
-<div uk-slideshow>
-
-    <ul class="uk-slideshow-items">...</ul>
-
-    <ul class="uk-slideshow-nav uk-dotnav"></ul>
 
 </div>
 ```
@@ -735,7 +731,7 @@ The following methods are available for the component:
 UIkit.slideshow(element).show(index);
 ```
 
-Shows the Slideshow item.
+Shows the slideshow item.
 
 #### startAutoplay
 
@@ -743,7 +739,7 @@ Shows the Slideshow item.
 UIkit.slideshow(element).startAutoplay();
 ```
 
-Starts the Slideshow autoplay.
+Starts the slideshow autoplay.
 
 #### stopAutoplay
 
@@ -751,4 +747,4 @@ Starts the Slideshow autoplay.
 UIkit.slideshow(element).stopAutoplay();
 ```
 
-Stops the Slideshow autoplay.
+Stops the slideshow autoplay.
