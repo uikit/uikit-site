@@ -2002,37 +2002,231 @@ true
 
 ### isBoolean
 
+This function is used to check whether a value is a boolean type or not.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                        |
+|:----------|:-----|:--------|:-----------------------------------|
+| `value`   | Any  | `null`  | The value to run the query against |
+
+JavaScript
+
+```javascript
+var example = false;
+
+// Is this a boolean?
+console.log(UIkit.util.isBoolean(example));
+```
+
+Result
+
+```log
+true
+```
+
 ***
 
 ### isString
+
+This function is used to check whether a value is a string type or not.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                        |
+|:----------|:-----|:--------|:-----------------------------------|
+| `value`   | Any  | `null`  | The value to run the query against |
+
+JavaScript
+
+```javascript
+var example = 'This is a string!';
+
+// Is this a string?
+console.log(UIkit.util.isString(example));
+```
+
+Result
+
+```log
+true
+```
 
 ***
 
 ### isNumber
 
+This function is used to check whether a value is a number type or not.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                        |
+|:----------|:-----|:--------|:-----------------------------------|
+| `value`   | Any  | `null`  | The value to run the query against |
+
+JavaScript
+
+```javascript
+var example = 12;
+
+// Is this a number?
+console.log(UIkit.util.isNumber(example));
+```
+
+Result
+
+```log
+true
+```
+
 ***
 
 ### isNumeric
+
+This function is used to check whether a value is numeric or not.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                        |
+|:----------|:-----|:--------|:-----------------------------------|
+| `value`   | Any  | `null`  | The value to run the query against |
+
+JavaScript
+
+```javascript
+var example = '12';
+
+// Is this value numeric?
+console.log(UIkit.util.isNumeric(example));
+```
+
+Result
+
+```log
+true
+```
 
 ***
 
 ### isUndefined
 
+This function is used to check whether a value is undefined or not.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                        |
+|:----------|:-----|:--------|:-----------------------------------|
+| `value`   | Any  | `null`  | The value to run the query against |
+
+JavaScript
+
+```javascript
+var example;
+
+// Is this value undefined?
+console.log(UIkit.util.isUndefined(example));
+```
+
+Result
+
+```log
+true
+```
+
 ***
 
 ### toBoolean
+
+This function is used to turn a value, if possible into a boolean value.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                 |
+|:----------|:-----|:--------|:----------------------------|
+| `value`   | Any  | `null`  | The value to be transformed |
+
+JavaScript
+
+```javascript
+var example = UIkit.util.toBoolean('1');
+
+console.log(example);
+```
+
+Result
+
+```log
+true
+```
 
 ***
 
 ### toNumber
 
+This function is used to turn a value, if possible into a number.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                 |
+|:----------|:-----|:--------|:----------------------------|
+| `value`   | Any  | `null`  | The value to be transformed |
+
+JavaScript
+
+```javascript
+var example = UIkit.util.toNumber('12.75');
+
+console.log(example);
+```
+
+Result
+
+```log
+12.75
+```
+
 ***
 
 ### toFloat
 
+This function is used to turn a value, if possible into a float number.
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                 |
+|:----------|:-----|:--------|:----------------------------|
+| `value`   | Any  | `null`  | The value to be transformed |
+
+JavaScript
+
+```javascript
+var example = UIkit.util.toNumber('12.75');
+
+console.log(example);
+```
+
+Result
+
+```log
+12.75
+```
+
 ***
 
 ### toList
+
+This function is used to turn a value, if possible into an array. 
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                 |
+|:----------|:-----|:--------|:----------------------------|
+| `value`   | Any  | `null`  | The value to be transformed |
+
+JavaScript
+
+```javascript
+var example = UIkit.util.toList('array, list, 12, true');
+
+console.log(example);
+```
+
+Result
+
+```log
+(4) ['array', 'list', 12, true]
+```
 
 ***
 
