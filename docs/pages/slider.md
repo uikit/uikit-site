@@ -495,16 +495,16 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ### Slider
 
-| Option              | Value           | Default | Description                                          |
-|:--------------------|:----------------|:--------|:-----------------------------------------------------|
-| `autoplay`          | Boolean         | `false` | Slider autoplays.                                    |
-| `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode. |
-| `center`            | Boolean         | `false` | Center the active slide.                             |
-| `finite`            | Boolean         | `false` | Disable infinite sliding.                            |
-| `pause-on-hover`    | Boolean         | `false` | Pause autoplay mode on hover.                        |
-| `sets`              | Boolean         | `false` | Slide in sets.                                       |
-| `velocity`          | Number          | `1`     | The animation velocity (pixel/ms).                   |
-| `index`             | String, Integer | `0`     | Slider item to show. 0 based index.                  |
+| Option              | Value   | Default | Description                                          |
+|:--------------------|:--------|:--------|:-----------------------------------------------------|
+| `autoplay`          | Boolean | `false` | Slider autoplays.                                    |
+| `autoplay-interval` | Number  | `7000`  | The delay between switching slides in autoplay mode. |
+| `center`            | Boolean | `false` | Center the active slide.                             |
+| `finite`            | Boolean | `false` | Disable infinite sliding.                            |
+| `index`             | Number  | `0`     | Slider item to show. 0 based index.                  |
+| `pause-on-hover`    | Boolean | `false` | Pause autoplay mode on hover.                        |
+| `sets`              | Boolean | `false` | Slide in sets.                                       |
+| `velocity`          | Number  | `1`     | The animation velocity (pixel/ms).                   |
 
 ***
 
