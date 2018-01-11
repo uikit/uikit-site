@@ -28,7 +28,7 @@ To apply this component, add the `uk-slider` attribute and create a list of slid
 
 ## Widths and Gutter
 
-To define the widths of the slider items, use the [Width component](width.md). Either apply the `uk-child-width-*` classes to define the width of all slider items or apply individual widths for each list item using the `uk-width-*` classes. 
+To define the widths of the slider items, use the [Width component](width.md). Either apply the `.uk-child-width-*` classes to define the width of all slider items or apply individual widths for each list item using the `.uk-width-*` classes. 
 
 To apply some spacing between your elements, add the `.uk-grid` class to the slider. The elements will then be spaced according to the grid gutter.
 
@@ -44,19 +44,19 @@ If no width class is applied, the width of your content will define the width of
 
 ## Center
 
-By default, elements of the slider always align to the left edge of the slider. To center the list items add the attribute `center="1"`.
+By default, elements of the slider always are aligned to the left. To center the list items, add the attribute `center="1"`.
 
 ***
 
 ## Infinite Scrolling
 
-By default, infinite scrolling is enabled. To disable infinite scrolling, add the attribute `finite="1"`.
+By default, infinite scrolling is enabled. To disable this behavior, add the attribute `finite="1"`.
 
 ***
 
 ## Slide Sets
 
-To loop through a set of slides instead of single items, add the attribute `set="1"` after the `uk-slider` attribute. 
+To loop through a set of slides instead of single items, add the attribute `set="1"`. 
 
 ***
 
@@ -86,7 +86,7 @@ The flexibility of the slider component allows you to use any of the other UIkit
 ```
 
 
-If there is no item specific content in the navigation items, add the `.uk-slider-nav` class to the navigation to generate its items automatically using `<li><a href=""></a></li>` as markup. This is a useful shortcut when using the [Dotnav](dotnav.md).
+If there is no item specific content in the navigation items, add the `.uk-slider-nav` class to the navigation to generate its items automatically using `<li><a href="#"></a></li>` as markup. This is a useful shortcut when using the [Dotnav](dotnav.md).
 
 ```html
 <div uk-slider>
