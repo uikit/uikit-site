@@ -22,7 +22,7 @@ To apply this component, add the `uk-slider` attribute and create a list of slid
 
 ```
 
-**Note** To activate autoplay, just add the `autoplay: 1` option to the attribute.
+**Note** To activate autoplay, just add the `autoplay: true` option to the attribute.
 
 ***
 
@@ -44,19 +44,19 @@ If no width class is applied, the width of your content will define the width of
 
 ## Center
 
-By default, elements of the slider always are aligned to the left. To center the list items, add the attribute `center="1"`.
+By default, elements of the slider always are aligned to the left. To center the list items, add the attribute `center="true"`.
 
 ***
 
 ## Infinite Scrolling
 
-By default, infinite scrolling is enabled. To disable this behavior, add the attribute `finite="1"`.
+By default, infinite scrolling is enabled. To disable this behavior, add the attribute `finite="true"`.
 
 ***
 
 ## Slide Sets
 
-To loop through a set of slides instead of single items, add the attribute `set="1"`. 
+To loop through a set of slides instead of single items, add the attribute `set="true"`. 
 
 ***
 
@@ -120,11 +120,11 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option              | Value           | Default | Description                                                           |
 |:--------------------|:----------------|:--------|:----------------------------------------------------------------------|
-| `autoplay`          | Boolean         | `0` | Slider autoplays.                                                  |
+| `autoplay`          | Boolean         | `false` | Slider autoplays.                                                  |
 | `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.                  |
-| `center`            | Boolean         | `0` | Center the active slide.                                              |
-| `finite`            | Boolean         | `0` | Disable infinite sliding.                                             |
-| `pause-on-hover`    | Boolean         | `0` | Pause autoplay mode on hover.                                         |
+| `center`            | Boolean         | `false` | Center the active slide.                                              |
+| `finite`            | Boolean         | `false` | Disable infinite sliding.                                             |
+| `pause-on-hover`    | Boolean         | `false` | Pause autoplay mode on hover.                                         |
 | `velocity`          | Number          | `1`     | The animation velocity (pixel/ms).                                    |
 | `index`             | String, Integer | `0`     | Slider item to show. 0 based index.                                |
 
