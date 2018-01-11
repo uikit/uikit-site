@@ -156,13 +156,15 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option        | Value   | Default | Description                                |
 |:--------------|:--------|:--------|:-------------------------------------------|
-| `targets`     | String  | `> *`   | CSS selector of the element(s) to toggle.  |
 | `active`      | Number  | `false` | Index of the element to open initially.    |
-| `collapsible` | Boolean | `true`  | Allow all items to be closed.              |
-| `multiple`    | Boolean | `false` | Allow multiple open items.                 |
 | `animation`   | Boolean | `true`  | Reveal item directly or with a transition. |
-| `transition`  | String  | `ease`  | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
+| `collapsible` | Boolean | `true`  | Allow all items to be closed.              |
+| `content`     | String  | `> .uk-accordion-content` | The content selector, which selects the accordion content elements. |
 | `duration`    | Number  | `200`   | Animation duration in milliseconds.        |
+| `multiple`    | Boolean | `false` | Allow multiple open items.                 |
+| `targets`     | String  | `> *`   | CSS selector of the element(s) to toggle.  |
+| `toggle`      | String  | `> .uk-accordion-title` | The toggle selector, which toggles accordion items. |
+| `transition`  | String  | `ease`  | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
 
 ***
 
