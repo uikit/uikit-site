@@ -238,14 +238,14 @@ By default, infinite scrolling is enabled. To disable this behavior, just add `f
 
 ## Slide Sets
 
-To loop through a set of slides instead of single items, just add `set: true` to the attribute.
+To loop through a set of slides instead of single items, just add `sets: true` to the attribute.
 
 ```html
-<div uk-slider="set: true">...</div>
+<div uk-slider="sets: true">...</div>
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="set: true">
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="sets: true">
 
     <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m">
         <li>
