@@ -119,7 +119,7 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
         beforeSend: function (environment) {
             console.log('beforeSend', arguments);
             
-            // The environment object can still be modified here. e.g. setting custom headers.
+            // The environment object can still be modified here. 
             // var {data, method, headers, xhr, responseType} = environment;
             
         },
