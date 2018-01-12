@@ -4,6 +4,9 @@ UIkit comes with its own, rather small but yet powerful JavaScript Framework, of
 The provided JavaScript utilities allow you to write simplified Vanilla JS and replace the most common functions of jQuery.
 Once UIkit is [installed correctly](installation.md) they are accessible under the `UIkit.util` namespace.
 
+**Pro Tip** You can import all functions, e.g. `var { $, addClass } = UIkit.util` and then use them like so `addClass($('#my-id'), 'example');`.
+This approach makes your code much smaller and clean.
+
 ***
 
 ## Attributes
@@ -2232,29 +2235,218 @@ Result
 
 ### toMedia
 
+This function is used to turn a value, if possible into an array. 
+The following parameter may be passed to the function.
+
+| Parameter | Type | Default | Description                 |
+|:----------|:-----|:--------|:----------------------------|
+| `value`   | Any  | `null`  | The value to be transformed |
+
+JavaScript
+
+```javascript
+var example = UIkit.util.toMedia('200');
+
+console.log(example);
+```
+
+Result
+
+```log
+'(min-width: 200px)'
+```
+
 ***
 
 ### coerce
+
+This function is used to coerce a value into some type of data. 
+The following parameters may be passed to the function.
+
+| Parameter | Type     | Default | Description                                                       |
+|:----------|:---------|:--------|:------------------------------------------------------------------|
+| `type`    | String   | `null`  | The data type, e.g. `Boolean`, `Number`, `query`, `list`, `media` |
+| `value`   | Any      | `null`  | The value to be transformed                                       |
+| `context` | Selector | `null`  | If the type is `query`, you can define a context selector         |
+
+HTML
+
+```html
+<div id="example"></div>
+```
+
+JavaScript
+
+```javascript
+var types = [Boolean, Number, 'query', 'list', 'media'];
+var values = ['1', '12.5', '#example', 'Hello, world, !', 640];
+
+for (i = 0; i < types.length; i++) {
+    console.log(UIkit.util.coerce(types[i], values[i]));
+}
+```
+
+Result
+
+```log
+true
+12.5
+<div id=​"example">​</div>​
+(3) ['Hello', 'world', '!']
+'(min-width: 640px)'
+```
+
 
 ***
 
 ### toMs
 
+This function is used to turn a value, if possible into milliseconds. 
+The following parameter may be passed to the function.
+
+| Parameter | Type           | Default | Description                |
+|:----------|:---------------|:--------|:---------------------------|
+| `time`    | String, Number | `null`  | The time to be transformed |
+
+JavaScript
+
+```javascript
+var example = UIkit.util.toMs('10s');
+
+console.log(example);
+```
+
+Result
+
+```log
+10000
+```
+
 ***
 
 ### swap
+
+This function is used to swap a substring with another value. 
+The following parameter may be passed to the function.
+
+| Parameter | Type   | Default | Description                       |
+|:----------|:-------|:--------|:----------------------------------|
+| `value`   | String | `null`  | The string to perform the swap on |
+| `a`       | String | `null`  | The value to be exchanged         |
+| `b`       | String | `null`  | The value to be pasted in         |
+
+JavaScript
+
+```javascript
+var example = UIkit.util.swap('uk-position-left', 'left', 'right');
+
+console.log(example);
+```
+
+Result
+
+```log
+'uk-position-right'
+```
 
 ***
 
 ### assign
 
+This function is used to assign all values of one or multiple objects to another object. 
+The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description                       |
+|:----------|:-------|:--------|:----------------------------------|
+| `value`   | String | `null`  | The string to perform the swap on |
+| `a`       | String | `null`  | The value to be exchanged         |
+
+JavaScript
+
+```javascript
+var target = {
+  firstName: 'Jane',
+  lastName: 'Doe',
+  married: false
+};
+var source = {
+  lastName: 'Smith',
+  married: true
+};
+
+var example = UIkit.util.assign(target, source);
+
+console.log(example);
+```
+
+Result
+
+```log
+{firstName: 'Jane', lastName: 'Smith', married: true}
+```
+
 ***
 
 ### each
 
+This function is used to loop through either an array or object. 
+The following parameters may be passed to the function.
+
+| Parameter | Type          | Default | Description                                        |
+|:----------|:--------------|:--------|:---------------------------------------------------|
+| `obj`     | Array, Object | `null`  | The object to loop through                         |
+| `cb`      | Function      | `null`  | The callback function to access the object's items |
+
+JavaScript
+
+```javascript
+var array = ['Apple', 'Banana', 'Kiwi', 'Mango'];
+
+UIkit.util.each(array, function(item) {
+  console.log(item);
+});
+```
+
+Result
+
+```log
+'Apple'
+'Banana'
+'Kiwi'
+'Mango'
+```
+
 ***
 
 ### clamp
+
+This function is used to return a number, which is guaranteed to be in a predefined range. 
+The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description                               |
+|:----------|:-------|:--------|:------------------------------------------|
+| `number`  | Number | `null`  | The default number passed to the function |
+| `min`     | Number | `0`     | Minimum value to be returned              |
+| `max`     | Number | `1`     | Maximum value to be returned              |
+
+JavaScript
+
+```javascript
+var array = ['Apple', 'Banana', 'Kiwi', 'Mango'];
+
+UIkit.util.each(array, function(item) {
+  console.log(item);
+});
+```
+
+Result
+
+```log
+'Apple'
+'Banana'
+'Kiwi'
+'Mango'
+```
 
 ***
 
