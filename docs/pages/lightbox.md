@@ -164,7 +164,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `pause-on-hover`    | Boolean         | false   | Pause autoplay mode on hover.                        |
 | `video-autoplay`    | Boolean         | false   | Lightbox videos autoplay.                            |
 | `index`             | String, Integer | 0       | Lightbox item to show. 0 based index.                |
-| `toggle`            | CSS selector    | `a`     | Toggle selector - triggers the lightbox.             |
+| `toggle`            | CSS selector    | `a`     | Toggle selector - opens the Lightbox Panel upon click. |
 
 ***
 

@@ -27,7 +27,7 @@ The compiled files of all UIkit versions are also hosted on the Cloudflare conte
 
 ## File structure of the source
 
-The Github project contains all sources files which are compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are concatenated and icons are bundled into the icon library.
+The Github project contains all source files which are compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are bundled and transpiled into ECMAScript 5 and icons are bundled into the icon library.
 
 | Folder   | Description                                             |
 |:---------|:--------------------------------------------------------|
@@ -51,6 +51,8 @@ npm run compile
 # Watch files and compile automatically everytime a file changes
 npm run watch
 ```
+
+**Note** Use Node.js version 8.2.0 or higher.
 
 The compiled `dist` folder now contains additional files which are not checked in by default. The build task will create even more additional files if you have added a [custom UIkit theme](less.md#use-included-build-process).
 
