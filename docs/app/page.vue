@@ -9,7 +9,7 @@
 
 <script>
 
-    import { parse, openOnCodepen, sluggify } from './util';
+    import { parse, openOnCodepen } from './util';
 
     var {$, $$, ajax, attr, offset, on, Promise, startsWith} = UIkit.util;
 
@@ -127,8 +127,7 @@
 
                 document.title = `${this.$parent.page.split('-').map(UIkit.util.ucfirst).join(' ')} - UIkit`;
 
-                this.$refs.container.innerHTML = '';
-                this.$refs.container.appendChild(document.createRange().createContextualFragment(page));
+                html(this.$refs.container, page);
 
                 this.$parent.component = ~components.indexOf(this.$route.params.page) ? this.$route.params.page : false;
 
@@ -151,6 +150,13 @@
 
         }
 
+    }
+
+    function html(el, html) {
+        el.innerHTML = '';
+        var range = document.createRange();
+        range.selectNode(el);
+        el.appendChild(range.createContextualFragment(html));
     }
 
 </script>
