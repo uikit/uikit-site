@@ -175,7 +175,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `animation` | String          | `false` | The space separated names of animations to use. Comma separate for animation out.                         |
 | `duration`  | Number          | `200`   | The animation duration.                                                                                   |
 | `swiping`   | Boolean         | `true`  | Use swiping.                                                                                              |
-| `media`     | Integer, String | `960`   | When to switch to horizontal mode - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl). |
+| `media`     | Integer, String | `960`   | When to switch to horizontal mode - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
 ***
 

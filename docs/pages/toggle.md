@@ -134,7 +134,7 @@ A toggle can be triggered in different ways. Just add the `mode` option to the `
 
 ### Media
 
-When using the `media` mode, you also need to add the `media` option and apply a viewport value from `@s` to `@xl` to it. Without the `target` option, the toggle applies the toggled state to itself. So it will switch between the different states that are defined in the `cls` option depending on the viewport width that it is displayed on.
+When using the `media` mode, you also need to add the `media` option and apply a [valid value](toggle.md#component-options) like a viewport value from `@s` to `@xl`. Without the `target` option, the toggle applies the toggled state to itself. So it will switch between the different states that are defined in the `cls` option depending on the viewport width that it is displayed on.
 
 ```html
 <!-- The primary modifier will only be applied on large screens -->
@@ -148,6 +148,8 @@ When using the `media` mode, you also need to add the `media` option and apply a
 </div>
 ```
 
+**Note** The initial toggle state depends on the `cls` option. It is either the first given class in the space separated list or if set to `false`, the `hidden` attribute. If more than one class is given, the other classes are simply being toggled on state change.
+
 ***
 
 ## Component options
@@ -159,6 +161,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `target`    | String  | `false` | CSS selector of the element(s) to toggle.                                                      |
 | `mode`      | String  | `click` | Comma separated list of trigger behaviour modes. (`hover`, `click`, `media`)                   |
 | `cls`       | String  | `false` | The class that is being toggled. Defaults to the `hidden` attribute.                           |
+| `media`     | Integer, String  | `false` | In media mode, the breakpoint that triggers the toggle - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)).                   |
 | `animation` | String  | `false` | Space separated names of [animations](animation.md) to use, comma separated for out animation. |
 | `duration`  | Number  | `200`   | Animation duration in milliseconds.                                                            |
 | `queued`    | Boolean | `true`  | Toggle the targets successively.                                                               |

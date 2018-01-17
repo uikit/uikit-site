@@ -208,7 +208,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `easing`   | Number | `1`     | Animation easing during scrolling                                                                       |
 | `target`   | String | `false` | Element dimension reference for animation duration.                                                     |
 | `viewport` | Number | `1`     | Animation range depending on the viewport.                                                              |
-| `media`    | Mixed  | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl). |
+| `media`    | Integer, String  | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
 ***
 
