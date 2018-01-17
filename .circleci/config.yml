@@ -10,13 +10,11 @@ jobs:
           command: apt-get update && apt-get -y install rsync
       - checkout
       - restore_cache:
-        key: yarn-{{ checksum "yarn.lock" }}
+          key: yarn-{{ checksum "yarn.lock" }}
       - run:
           name: Dependencies
           command: |
             yarn install --pure-lockfile --cache-folder ~/.yarn
-            yarn global add bower
-            bower --allow-root update
       - save_cache:
           key: yarn-{{ checksum "yarn.lock" }}
           paths:
