@@ -2,22 +2,26 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:8.1
+      - image: node:9
     working_directory: ~/uikit-site
-    branches:
-        only:
-          - master
     steps:
       - run:
           name: Update Environment
           command: apt-get update && apt-get -y install rsync
       - checkout
+      - restore_cache:
+        key: yarn-{{ checksum "yarn.lock" }}
       - run:
           name: Dependencies
           command: |
-            yarn
+            yarn install --pure-lockfile --cache-folder ~/.yarn
             yarn global add bower
             bower --allow-root update
+      - save_cache:
+          key: yarn-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.yarn
+            - ./node_modules
       - run:
           name: Compile
           command: |
@@ -30,4 +34,9 @@ jobs:
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/index.html
       - run:
           name: Transfer Files
-          command: rsync -avze "ssh -o StrictHostKeyChecking=no" --delete --exclude "yarn.lock" --exclude "migrate.min.js" --exclude "node_modules" --exclude "v2" --exclude "fonts" --exclude ".git*" --exclude ".circleci" . $UIKIT_SERVER
+          command: |
+            if [ "${CIRCLE_BRANCH}" = "master" ];then
+              rsync -avze "ssh -o StrictHostKeyChecking=no" --delete --exclude "yarn.lock" --exclude "migrate.min.js" --exclude "node_modules" --exclude "v2" --exclude "fonts" --exclude ".git*" --exclude ".circleci" . $UIKIT_SERVER
+            else
+              echo "Skipping deploy on branch ${CIRCLE_BRANCH}";
+            fi
