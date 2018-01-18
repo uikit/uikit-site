@@ -4,7 +4,7 @@ UIkit comes with its own, rather small but yet powerful JavaScript Framework, of
 The provided JavaScript utilities allow you to write simplified Vanilla JS and replace the most common functions of jQuery.
 Once UIkit is [installed correctly](installation.md) they are accessible under the `UIkit.util` namespace.
 
-**Pro Tip** You can import all functions, e.g. `var { $, addClass } = UIkit.util` and then use them like so `addClass($('#my-id'), 'example');`.
+**Note** You can import all functions, e.g. `var { $, addClass } = UIkit.util` and then use them like so `addClass($('#my-id'), 'example');`.
 This approach makes your code much smaller and clean.
 
 ***
@@ -50,7 +50,7 @@ Result
 <a href="#" id="example" title="example"></a>
 ```
 
-**Note** If the attribute doesn't already exist, it gets created simultaneously.
+**Note** If the attribute does not already exist, it gets created simultaneously.
 
 ***
 
@@ -2460,13 +2460,80 @@ something like `UIkit.util.noop` could execute.
 
 ### intersectRect
 
+Wait on [pull request](https://github.com/uikit/uikit/pull/3129).
+
 ***
 
 ### pointInRect
 
+This function is used to detect wheter a point lies inside of a rectangle or not. 
+The following parameters may be passed to the function.
+
+| Parameter | Type    | Default | Description                                            |
+|:----------|:--------|:--------|:-------------------------------------------------------|
+| `point`   | Object  | `null`  | A object with `x` and `y` properties                   |
+| `rect`    | DOMRect | `null`  | This object contains dimensional info about an element |
+
+HTML
+
+```html
+<div id="example" class="uk-card uk-card-primary uk-card-body">Primary card</div>
+```
+
+JavaScript
+
+```javascript
+var example = document.getElementById('example').getBoundingClientRect();
+
+document.addEventListener('click', function(e) {
+  console.log(UIkit.util.pointInRect({ x: e.pageX, y: e.pageY }, example));
+});
+```
+
+Result
+
+```log
+If you click onto the card this function returns true, otherwise false.
+```
+
 ***
 
 ### ajax
+
+This function is used to make easy ajax calls to a specific url. 
+The following parameters may be passed to the function.
+
+| Parameter | Type   | Default | Description                                |
+|:----------|:-------|:--------|:-------------------------------------------|
+| `url`     | String | `null`  | The URL to call                            |
+| `options` | Object | `null`  | Additional options passed to the ajax call |
+
+The options consist of the following default values. Those values can be manipulated, like mentioned above.
+
+| Option         | Type     | Default                | Description                                                           |
+|:---------------|:---------|:-----------------------|:----------------------------------------------------------------------|
+| `data`         | Object   | `null`                 | Additional data passed to the request                                 |
+| `method`       | String   | `GET`                  | Method to call the URL                                                |
+| `headers`      | Object   | `{}`                   | Request headers                                                       |
+| `xhr`          | Object   | `new XMLHttpRequest()` | The request object to perform the request with                        |
+| `beforeSend`   | Function | `noop`                 | The callback function, which gets called before sending the data      |
+| `responseType` | String   | `''`                   | Response type, e.g. `arraybuffer`, `blob`, `document`, `json`, `text` |
+
+JavaScript
+
+```javascript
+UIkit.util.ajax('/api/users', {
+  responseType: 'json'
+}).then(function(xhr) {
+  console.log(xhr.response);
+});
+```
+
+Result
+
+```log
+{parsed: 'json-object', with: 'some', example: 'data'}
+```
 
 ***
 
