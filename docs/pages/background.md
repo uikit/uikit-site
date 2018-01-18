@@ -101,12 +101,12 @@ To alter the background position of your image — which is in the top left hand
 ```example
 <div class="uk-child-width-1-2@s uk-light" uk-grid>
     <div>
-        <div class="uk-background-top-right uk-height-medium uk-panel uk-flex uk-flex-middle uk-flex-center" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-top-right uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-middle uk-flex-center" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Top Right</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-top-left uk-height-medium uk-panel uk-flex uk-flex-middle uk-flex-center" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-top-left uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-middle uk-flex-center" style="background-image: url(../docs/images/dark.jpg);">
             <p class="uk-h4">Top Left</p>
         </div>
     </div>
@@ -115,21 +115,17 @@ To alter the background position of your image — which is in the top left hand
 
 ***
 
-### No repeat
+## No repeat
 
-To keep smaller images from repeating to fill the background area, add the `.uk-background-norepeat` class. This can be very useful in combination with the background position classes.
+To keep smaller images from repeating to fill the background area, add the `.uk-background-norepeat` class.
 
 ```html
 <div class="uk-background-norepeat"></div>
 ```
 
-```example
-<div class="uk-background-norepeat uk-background-center-center uk-height-medium uk-width-large" style="background-image: url(../docs/images/dark.jpg);"></div>
-```
-
 ***
 
-### Attachment
+## Attachment
 
 You can also apply a fixed background attachment, so that the image remains in its position while scrolling the site.
 
@@ -199,77 +195,77 @@ Add one of the following classes to apply different blend modes to your backgrou
 ```example
 <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-small uk-light" uk-grid>
     <div>
-        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Multiply</p>
        </div>
     </div>
     <div>
-        <div class="uk-background-blend-screen uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-screen uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Screen</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-overlay uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-overlay uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Overlay</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-darken uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-darken uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Darken</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-lighten uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-lighten uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Lighten</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-color-dodge uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-color-dodge uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Color Dodge</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-color-burn uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-color-burn uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Color Burn</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-hard-light uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Hard Light</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-soft-light uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-soft-light uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Soft Light</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-difference uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-difference uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Difference</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-exclusion uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-exclusion uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Exclusion</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-hue uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-hue uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Hue</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-saturation uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-saturation uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Saturation</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-color uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-color uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Color</p>
         </div>
     </div>
     <div>
-        <div class="uk-background-blend-luminosity uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/dark.jpg);">
+        <div class="uk-background-blend-luminosity uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(../docs/images/photo.jpg);">
             <p class="uk-h4">Luminosity</p>
         </div>
     </div>
