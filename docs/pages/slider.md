@@ -76,7 +76,7 @@ To define the widths of the slider items, use the [Width component](width.md). E
 
 ## Container
 
-The `uk-slider-container` class is responsible for the clipping of the slider items. By default, the `uk-slider` attribute applies this class to the same element, but it won't if you add this class manually to any element within the slider. This is useful to control which container clips the slider items.
+The `.uk-slider-container` class is responsible for the clipping of the slider items. By default, the `uk-slider` attribute applies this class to the same element. Alternatively, you can add this class manually to any element within the slider. That way, you can control which container clips the slider items.
 
 ```html
 <div uk-slider>
@@ -232,13 +232,13 @@ By default, items of the slider always are aligned to the left. To center the li
 </div>
 ```
 
-**Note** This example adds `.uk-width-3-4` for each item which makes the slider look very similar to a slideshow.
+**Note** In this example, we add the `.uk-width-3-4` class to each item, which makes the slider look very similar to a slideshow.
 
 ***
 
 ## Autoplay
 
-To activate autoplay, just add the `autoplay: true` option to the attribute. You can also set the interval between switching slides in milliseconds using `autoplay-interval: 6000`. To pause autoplay when the slider is hovered use `pause-on-hover: true`.
+To activate autoplay, just add the `autoplay: true` option to the attribute. You can also set the interval in milliseconds between switching slides using `autoplay-interval: 6000`. To pause autoplay when hovering the slider, use `pause-on-hover: true`.
 
 ```html
 <div uk-slider="autoplay: true">...</div>
@@ -248,7 +248,7 @@ To activate autoplay, just add the `autoplay: true` option to the attribute. You
 
 ## Infinite Scrolling
 
-By default, infinite scrolling is enabled. To disable this behavior, just add `finite: true` option to the attribute.
+By default, infinite scrolling is enabled. To disable this behavior, just add the `finite: true` option to the attribute.
 
 ```html
 <div uk-slider="finite: true">...</div>
@@ -413,9 +413,11 @@ If there is no item specific content in the navigation items, you can also add t
 
 **Note** For better visibility of overlaying navigations, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md).
 
+***
+
 ## Navigation outside
 
-To place a navigation outside of a slider you have to make sure, the `uk-slider-container` class, which is responsible for the clipping of the slider items, doesn't clip the naviation too.
+To place a navigation outside of a slider, add the `.uk-position-center-left-out` and the `.uk-position-center-right-out` class from the [Position component](position.md) to the `previous` and `next` navigation. Make sure the `.uk-slider-container` class, which is responsible for the clipping of the slider items, doesn't clip the navigation, too.
 
 ```html
 <div uk-slider>
@@ -507,9 +509,9 @@ To place a navigation outside of a slider you have to make sure, the `uk-slider-
 
 ## Viewport height
 
-Adding the `uk-height-viewport` attribute from the [Utility component](utility.md#viewport-height) to the list of slider items will stretch the height of the `ul` and `li` to fill the whole viewport. Since the width and height are now not defined by the item's content, you have to use absolute positioning for the content.
+Adding the `uk-height-viewport` attribute from the [Utility component](utility.md#viewport-height) to the list of slider items will stretch the height of the `<ul>` and `<li>` elements to fill the whole viewport height. Since the width and height now aren't defined by the item's content anymore, you have to use absolute positioning for the content.
 
-Use the [Cover component](cover.md) to make an image cover the whole item area and being clipped. The `uk-grid-match` class from the [Grid component](grid.md#match-height) matches the height of the direct child of each item. This is useful in this example since the child element has now the same width and height like the list item.
+Use the [Cover component](cover.md) so that images cover the whole item area and are clipped. The `.uk-grid-match` class from the [Grid component](grid.md#match-height) matches the height of the direct child of each item. This is useful in this example, since the child element now applies the same width and height as the list item.
 
 ```html
 <div uk-slider>
