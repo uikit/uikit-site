@@ -189,7 +189,7 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
 ## Autoplay
 
-To activate autoplay, just add the `autoplay: true` option to the attribute. You can also set the interval between switching slides in milliseconds using `autoplay-interval: 6000`. To pause autoplay when the slideshow is hovered use `pause-on-hover: true`.
+To activate autoplay, just add the `autoplay: true` option to the attribute. You can also set the interval in milliseconds between switching slides using `autoplay-interval: 6000`. To pause autoplay when hovering the slideshow, use `pause-on-hover: true`.
 
 ```html
 <div uk-slideshow="autoplay: true">...</div>
@@ -199,7 +199,7 @@ To activate autoplay, just add the `autoplay: true` option to the attribute. You
 
 ## Infinite Scrolling
 
-By default, infinite scrolling is enabled. To disable this behavior, just add `finite: true` option to the attribute.
+By default, infinite scrolling is enabled. To disable this behavior, just add the `finite: true` option to the attribute.
 
 ```html
 <div uk-slideshow="finite: true">...</div>
