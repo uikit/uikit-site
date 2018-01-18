@@ -113,44 +113,64 @@ To apply a gutter to the slider items, use the [Grid component](grid.md) and add
 
     <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
         <li>
-            <img src="../docs/images/slider1.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/slider1.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            </div>
         </li>
         <li>
-            <img src="../docs/images/slider2.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/slider2.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            </div>
         </li>
         <li>
-            <img src="../docs/images/slider3.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/slider3.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            </div>
         </li>
         <li>
-            <img src="../docs/images/slider4.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/slider4.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            </div>
         </li>
         <li>
-            <img src="../docs/images/slider5.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>5</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/slider5.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>5</h1></div>
+            </div>
         </li>
         <li>
-            <img src="../docs/images/slider1.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>6</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/slider1.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>6</h1></div>
+            </div>
         </li>
         <li>
-            <img src="../docs/images/slider2.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>7</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/slider2.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>7</h1></div>
+            </div>
         </li>
         <li>
-            <img src="../docs/images/slider3.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>8</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/slider3.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>8</h1></div>
+            </div>
         </li>
         <li>
-            <img src="../docs/images/slider4.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>9</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/slider4.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>9</h1></div>
+            </div>
         </li>
         <li>
-            <img src="../docs/images/slider5.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>10</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/slider5.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>10</h1></div>
+            </div>
         </li>
     </ul>
 
@@ -175,24 +195,34 @@ By default, items of the slider always are aligned to the left. To center the li
 
     <ul class="uk-slider-items uk-grid">
         <li class="uk-width-3-4">
-            <img src="../docs/images/photo.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/photo.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            </div>
         </li>
         <li class="uk-width-3-4">
-            <img src="../docs/images/dark.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/dark.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            </div>
         </li>
         <li class="uk-width-3-4">
-            <img src="../docs/images/light.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/light.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            </div>
         </li>
         <li class="uk-width-3-4">
-            <img src="../docs/images/photo2.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/photo2.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            </div>
         </li>
         <li class="uk-width-3-4">
-            <img src="../docs/images/photo3.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>5</h1></div>
+            <div class="uk-panel">
+                <img src="../docs/images/photo3.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>5</h1></div>
+            </div>
         </li>
     </ul>
 
