@@ -23,7 +23,7 @@ To define the widths of the slider items, use the [Width component](width.md). E
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
 
-    <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@m">
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
         <li>
             <img src="../docs/images/slider1.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>1</h1></div>
@@ -111,7 +111,7 @@ To apply a gutter to the slider items, use the [Grid component](grid.md) and add
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
 
-    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
         <li>
             <div class="uk-panel">
                 <img src="../docs/images/slider1.jpg" alt="">
@@ -267,7 +267,7 @@ To loop through a set of slides instead of single items, just add `sets: true` t
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="sets: true">
 
-    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m">
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m">
         <li>
             <img src="../docs/images/slider1.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>1</h1></div>
@@ -358,7 +358,7 @@ If there is no item specific content in the navigation items, you can also add t
 
     <div class="uk-position-relative uk-visible-toggle uk-light">
 
-        <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@m">
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
             <li>
                 <img src="../docs/images/slider1.jpg" alt="">
                 <div class="uk-position-center uk-panel"><h1>1</h1></div>
@@ -444,7 +444,7 @@ To place a navigation outside of a slider, add the `.uk-position-center-left-out
     <div class="uk-position-relative">
 
         <div class="uk-slider-container uk-light">
-            <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@m">
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
                 <li>
                     <img src="../docs/images/slider1.jpg" alt="">
                     <div class="uk-position-center uk-panel"><h1>1</h1></div>
@@ -488,12 +488,12 @@ To place a navigation outside of a slider, add the `.uk-position-center-left-out
             </ul>
         </div>
 
-        <div class="uk-hidden@xl uk-light">
+        <div class="uk-hidden@s uk-light">
             <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
             <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
         </div>
 
-        <div class="uk-visible@xl">
+        <div class="uk-visible@s">
             <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
             <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
         </div>
