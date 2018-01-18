@@ -2539,6 +2539,56 @@ Result
 
 ## Mouse
 
+The following functions might be helpful when working with mouse movements based on some elements position.
+
+### MouseTracker
+
+The MouseTracker object makes three handy functions accessible, which are the following.
+
+| Method    | Description                                                                        |
+|:----------|:-----------------------------------------------------------------------------------|
+| `init`    | Initializes the mouse movement tracker                                             |
+| `cancel`  | Unbinds the mouse movement tracker                                                 |
+| `movesTo` | Either returns true or false, whether the mouse is moved towards an element or not |
+
+HTML
+
+```html
+<div id="example" class="uk-position-relative">
+    <img src="images/photo.jpg" alt="">
+    <div id="target" class="uk-overlay uk-overlay-default uk-position-center"></div>
+</div>
+```
+
+JavaScript
+
+```javascript
+var tracker = new UIkit.util.MouseTracker();
+var example = document.getElementById('example');
+var target = document.getElementById('target');
+
+// Initialize the mouse tracker
+example.addEventListener('mouseenter', function() {
+  tracker.init();
+});
+
+// Unbind the mouse tracker
+example.addEventListener('mouseleave', function() {
+  tracker.cancel();
+});
+
+// Detect mouse movement
+example.addEventListener('mousemove', function() {
+  console.log(tracker.movesTo(target));
+});
+```
+
+Result
+
+```log
+If the mouse moves towards the target this returns true otherwise false.
+```
+
 ***
 
 ## Player
