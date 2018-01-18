@@ -40,7 +40,7 @@ To apply this component, add one of the `.uk-position-*` classes to a block elem
 
 ***
 
-### More positions
+### X and Y directions
 
 You can also apply more specific positions that won't spread over one side of the parent container by adding one of the following classes.
 
@@ -58,7 +58,7 @@ You can also apply more specific positions that won't spread over one side of th
 
 
 ```html
-<div class="uk-top-right"></div>
+<div class="uk-position-top-right"></div>
 ```
 
 ```example
@@ -91,11 +91,39 @@ If you want a position element to cover its container, just add the `.uk-positio
 ```
 
 ```example
-<div class="uk-inline uk-margin">
+<div class="uk-inline">
 
     <img src="../docs/images/photo.jpg" alt="">
 
     <div class="uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">Cover</div>
+
+</div>
+```
+
+***
+
+### Outside
+
+There are two classes to center elements outside on the left and right of the parent container. This is useful to position the [Slidenav component](slidenav.md) outside of an [Slideshow](slideshow.md) or [Slider](slider.md) component.
+
+| Class                           | Description                                                     |
+|:--------------------------------|:----------------------------------------------------------------|
+| `.uk-position-center-left-out`  | Positions the element vertically centered outside on the left.  |
+| `.uk-position-center-right-out` | Positions the element vertically centered outside on the right. |
+
+**Note** Once the outside positioned element sticks out of the viewport to the right, it will cause a horizontal scrollbar. Use the [Visibility component](visibility.md) to hide the outside positioned element on a smaller viewports and show an inside positioned element instead.
+
+```html
+<div class="uk-position-center-left-out"></div>
+```
+
+```example
+<div class="uk-inline">
+
+    <img src="../docs/images/photo.jpg" alt="">
+
+    <div class="uk-position-center-left-out uk-overlay uk-overlay-primary uk-visible@s">Out</div>
+    <div class="uk-position-center-right-out uk-overlay uk-overlay-primary uk-visible@s">Out</div>
 
 </div>
 ```
@@ -145,6 +173,17 @@ To apply a small margin to positioned elements, add the `.uk-position-small` cla
     <div class="uk-position-small uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">Cover</div>
 
 </div>
+
+<div class="uk-margin uk-text-center">
+    <div class="uk-inline-block uk-width-large">
+
+        <img src="../docs/images/photo.jpg" alt="">
+
+        <div class="uk-position-small uk-position-center-left-out uk-overlay uk-overlay-primary uk-visible@s">Out</div>
+        <div class="uk-position-small uk-position-center-right-out uk-overlay uk-overlay-primary uk-visible@s">Out</div>
+
+    </div>
+</div>
 ```
 
 ***
@@ -192,6 +231,17 @@ To apply a medium margin to positioned elements, add the `.uk-position-medium` c
     <div class="uk-position-medium uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">Cover</div>
 
 </div>
+
+<div class="uk-margin uk-text-center">
+    <div class="uk-inline-block uk-width-large">
+
+        <img src="../docs/images/photo.jpg" alt="">
+
+        <div class="uk-position-medium uk-position-center-left-out uk-overlay uk-overlay-primary uk-visible@s">Out</div>
+        <div class="uk-position-medium uk-position-center-right-out uk-overlay uk-overlay-primary uk-visible@s">Out</div>
+
+    </div>
+</div>
 ```
 
 ***
@@ -238,6 +288,17 @@ To apply a large margin to positioned elements, add the `.uk-position-large` cla
 
     <div class="uk-position-large uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">Cover</div>
 
+</div>
+
+<div class="uk-margin uk-text-center">
+    <div class="uk-inline-block uk-width-large">
+
+        <img src="../docs/images/photo.jpg" alt="">
+
+        <div class="uk-position-large uk-position-center-left-out uk-overlay uk-overlay-primary uk-visible@s">Out</div>
+        <div class="uk-position-large uk-position-center-right-out uk-overlay uk-overlay-primary uk-visible@s">Out</div>
+
+    </div>
 </div>
 ```
 
