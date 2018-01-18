@@ -6,11 +6,13 @@ The Slider component is fully responsive and supports touch and swipe navigation
 
 ## Usage
 
-To apply this component, add the `uk-slider` attribute to a container element and create a list of slides with the `.uk-slider-items` class. Add an image or any other content to each item. If no specific width is set, each item's width depends on the dimensions of the content itself.
+To apply this component, add the `uk-slider` attribute to a container element and create a list of slides with the `.uk-slider-items` class. Add an image or any other content to each item.
+
+To define the widths of the slider items, use the [Width component](width.md). Either apply the `.uk-child-width-*` classes to define the width of all slider items or apply individual widths for each list item using the `.uk-width-*` classes. If no specific width is set, each item's width depends on the dimensions of the content itself.
 
 ```html
 <div uk-slider>
-    <ul class="uk-slider-items">
+    <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@">
         <li>
             <img src="" alt="">
         </li>
@@ -21,38 +23,46 @@ To apply this component, add the `uk-slider` attribute to a container element an
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
 
-    <ul class="uk-slider-items">
+    <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@m">
         <li>
-            <img src="../docs/images/photo.jpg" width="300" height="200" alt="">
+            <img src="../docs/images/slider1.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>1</h1></div>
         </li>
         <li>
-            <img src="../docs/images/avatar.jpg" width="200" height="200" alt="">
+            <img src="../docs/images/slider2.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>2</h1></div>
         </li>
         <li>
-            <img src="../docs/images/size-v.jpg" width="50" height="200" alt="">
+            <img src="../docs/images/slider3.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>3</h1></div>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" width="300" height="200" alt="">
+            <img src="../docs/images/slider4.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>4</h1></div>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" width="300" height="200" alt="">
+            <img src="../docs/images/slider5.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>5</h1></div>
         </li>
         <li>
-            <img src="../docs/images/size-h.jpg" width="800" height="200" alt="">
+            <img src="../docs/images/slider1.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>6</h1></div>
         </li>
         <li>
-            <img src="../docs/images/size1.jpg" width="300" height="200" alt="">
+            <img src="../docs/images/slider2.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>7</h1></div>
         </li>
         <li>
-            <img src="../docs/images/size2.jpg" width="280" height="200" alt="">
+            <img src="../docs/images/slider3.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>8</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider4.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>9</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider5.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>10</h1></div>
         </li>
     </ul>
 
@@ -61,72 +71,28 @@ To apply this component, add the `uk-slider` attribute to a container element an
 
 </div>
 ```
-
-**Note** To activate autoplay, just add the `autoplay: true` option to the attribute.
 
 ***
 
-## Item Widths
+## Container
 
-To define the widths of the slider items, use the [Width component](width.md). Either apply the `.uk-child-width-*` classes to define the width of all slider items or apply individual widths for each list item using the `.uk-width-*` classes.
+The `uk-slider-container` class is responsible for the clipping of the slider items. By default, the `uk-slider` attribute applies this class to the same element, but it won't if you add this class manually to any element within the slider. This is useful to control which container clips the slider items.
 
 ```html
 <div uk-slider>
-    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m">
-        <li>
-            <img src="" alt="">
-        </li>
-    </ul>
-</div>
-```
 
-```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
-
-    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m">
-        <li>
-            <img src="../docs/images/photo.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        <li>
-            <img src="../docs/images/dark.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>2</h1></div>
-        </li>
-        <li>
-            <img src="../docs/images/light.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>3</h1></div>
-        </li>
-        <li>
-            <img src="../docs/images/photo.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>4</h1></div>
-        </li>
-        <li>
-            <img src="../docs/images/dark.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>5</h1></div>
-        </li>
-        <li>
-            <img src="../docs/images/light.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>6</h1></div>
-        </li>
-        <li>
-            <img src="../docs/images/photo.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>7</h1></div>
-        </li>
-        <li>
-            <img src="../docs/images/dark.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>8</h1></div>
-        </li>
-        <li>
-            <img src="../docs/images/light.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>9</h1></div>
-        </li>
-    </ul>
-
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    <div class="uk-slider-container">
+        <ul class="uk-slider-items uk-child-width-1-4">
+            <li>
+                <img src="" alt="">
+            </li>
+        </ul>
+    </div>
 
 </div>
 ```
+
+***
 
 ## Gutter
 
@@ -134,7 +100,7 @@ To apply a gutter to the slider items, use the [Grid component](grid.md) and add
 
 ```html
 <div uk-slider>
-    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
+    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
         <li>
             <img src="" alt="">
         </li>
@@ -145,42 +111,46 @@ To apply a gutter to the slider items, use the [Grid component](grid.md) and add
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
 
-    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
+    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
         <li>
-            <img src="../docs/images/photo.jpg" alt="">
+            <img src="../docs/images/slider1.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>1</h1></div>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="">
+            <img src="../docs/images/slider2.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>2</h1></div>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="">
+            <img src="../docs/images/slider3.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>3</h1></div>
         </li>
         <li>
-            <img src="../docs/images/photo.jpg" alt="">
+            <img src="../docs/images/slider4.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>4</h1></div>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="">
+            <img src="../docs/images/slider5.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>5</h1></div>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="">
+            <img src="../docs/images/slider1.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>6</h1></div>
         </li>
         <li>
-            <img src="../docs/images/photo.jpg" alt="">
+            <img src="../docs/images/slider2.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>7</h1></div>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="">
+            <img src="../docs/images/slider3.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>8</h1></div>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="">
+            <img src="../docs/images/slider4.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>9</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider5.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>10</h1></div>
         </li>
     </ul>
 
@@ -204,17 +174,25 @@ By default, items of the slider always are aligned to the left. To center the li
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="center: true">
 
     <ul class="uk-slider-items uk-grid">
-        <li class="uk-width-4-5">
+        <li class="uk-width-3-4">
             <img src="../docs/images/photo.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>1</h1></div>
         </li>
-        <li class="uk-width-4-5">
+        <li class="uk-width-3-4">
             <img src="../docs/images/dark.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>2</h1></div>
         </li>
-        <li class="uk-width-4-5">
+        <li class="uk-width-3-4">
             <img src="../docs/images/light.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>3</h1></div>
+        </li>
+        <li class="uk-width-3-4">
+            <img src="../docs/images/photo2.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>4</h1></div>
+        </li>
+        <li class="uk-width-3-4">
+            <img src="../docs/images/photo3.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>5</h1></div>
         </li>
     </ul>
 
@@ -224,11 +202,23 @@ By default, items of the slider always are aligned to the left. To center the li
 </div>
 ```
 
+**Note** This example adds `.uk-width-3-4` for each item which makes the slider look very similar to a slideshow.
+
+***
+
+## Autoplay
+
+To activate autoplay, just add the `autoplay: true` option to the attribute. You can also set the interval between switching slides in milliseconds using `autoplay-interval: 6000`. To pause autoplay when the slider is hovered use `pause-on-hover: true`.
+
+```html
+<div uk-slider="autoplay: true">...</div>
+```
+
 ***
 
 ## Infinite Scrolling
 
-By default, infinite scrolling is enabled. To disable this behavior, just add `finite: true` to the attribute.
+By default, infinite scrolling is enabled. To disable this behavior, just add `finite: true` option to the attribute.
 
 ```html
 <div uk-slider="finite: true">...</div>
@@ -247,42 +237,46 @@ To loop through a set of slides instead of single items, just add `sets: true` t
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="sets: true">
 
-    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m">
+    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m">
         <li>
-            <img src="../docs/images/photo.jpg" alt="">
+            <img src="../docs/images/slider1.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>1</h1></div>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="">
+            <img src="../docs/images/slider2.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>2</h1></div>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="">
+            <img src="../docs/images/slider3.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>3</h1></div>
         </li>
         <li>
-            <img src="../docs/images/photo.jpg" alt="">
+            <img src="../docs/images/slider4.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>4</h1></div>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="">
+            <img src="../docs/images/slider5.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>5</h1></div>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="">
+            <img src="../docs/images/slider1.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>6</h1></div>
         </li>
         <li>
-            <img src="../docs/images/photo.jpg" alt="">
+            <img src="../docs/images/slider2.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>7</h1></div>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="">
+            <img src="../docs/images/slider3.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>8</h1></div>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="">
+            <img src="../docs/images/slider4.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>9</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider5.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>10</h1></div>
         </li>
     </ul>
 
@@ -334,42 +328,46 @@ If there is no item specific content in the navigation items, you can also add t
 
     <div class="uk-position-relative uk-visible-toggle uk-light">
 
-        <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m">
+        <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@m">
             <li>
-                <img src="../docs/images/photo.jpg" alt="">
+                <img src="../docs/images/slider1.jpg" alt="">
                 <div class="uk-position-center uk-panel"><h1>1</h1></div>
             </li>
             <li>
-                <img src="../docs/images/dark.jpg" alt="">
+                <img src="../docs/images/slider2.jpg" alt="">
                 <div class="uk-position-center uk-panel"><h1>2</h1></div>
             </li>
             <li>
-                <img src="../docs/images/light.jpg" alt="">
+                <img src="../docs/images/slider3.jpg" alt="">
                 <div class="uk-position-center uk-panel"><h1>3</h1></div>
             </li>
             <li>
-                <img src="../docs/images/photo.jpg" alt="">
+                <img src="../docs/images/slider4.jpg" alt="">
                 <div class="uk-position-center uk-panel"><h1>4</h1></div>
             </li>
             <li>
-                <img src="../docs/images/dark.jpg" alt="">
+                <img src="../docs/images/slider5.jpg" alt="">
                 <div class="uk-position-center uk-panel"><h1>5</h1></div>
             </li>
             <li>
-                <img src="../docs/images/light.jpg" alt="">
+                <img src="../docs/images/slider1.jpg" alt="">
                 <div class="uk-position-center uk-panel"><h1>6</h1></div>
             </li>
             <li>
-                <img src="../docs/images/photo.jpg" alt="">
+                <img src="../docs/images/slider2.jpg" alt="">
                 <div class="uk-position-center uk-panel"><h1>7</h1></div>
             </li>
             <li>
-                <img src="../docs/images/dark.jpg" alt="">
+                <img src="../docs/images/slider3.jpg" alt="">
                 <div class="uk-position-center uk-panel"><h1>8</h1></div>
             </li>
             <li>
-                <img src="../docs/images/light.jpg" alt="">
+                <img src="../docs/images/slider4.jpg" alt="">
                 <div class="uk-position-center uk-panel"><h1>9</h1></div>
+            </li>
+            <li>
+                <img src="../docs/images/slider5.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>10</h1></div>
             </li>
         </ul>
 
@@ -385,17 +383,159 @@ If there is no item specific content in the navigation items, you can also add t
 
 **Note** For better visibility of overlaying navigations, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md).
 
+## Navigation outside
+
+To place a navigation outside of a slider you have to make sure, the `uk-slider-container` class, which is responsible for the clipping of the slider items, doesn't clip the naviation too.
+
+```html
+<div uk-slider>
+
+    <div class="uk-position-relative">
+
+        <div class="uk-slider-container">
+            <ul class="uk-slider-items">...</ul>
+        </div>
+
+        <a class="uk-position-center-left-out" href="#" uk-slider-item="previous">...</a>
+        <a class="uk-position-center-left-out" href="#" uk-slider-item="next">...</a>
+
+    </div>
+
+    <ul class="uk-slider-nav uk-dotnav"></ul>
+
+</div>
+```
+
+```example
+<div uk-slider>
+
+    <div class="uk-position-relative">
+
+        <div class="uk-slider-container uk-light">
+            <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@m">
+                <li>
+                    <img src="../docs/images/slider1.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>1</h1></div>
+                </li>
+                <li>
+                    <img src="../docs/images/slider2.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>2</h1></div>
+                </li>
+                <li>
+                    <img src="../docs/images/slider3.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>3</h1></div>
+                </li>
+                <li>
+                    <img src="../docs/images/slider4.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>4</h1></div>
+                </li>
+                <li>
+                    <img src="../docs/images/slider5.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>5</h1></div>
+                </li>
+                <li>
+                    <img src="../docs/images/slider1.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>6</h1></div>
+                </li>
+                <li>
+                    <img src="../docs/images/slider2.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>7</h1></div>
+                </li>
+                <li>
+                    <img src="../docs/images/slider3.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>8</h1></div>
+                </li>
+                <li>
+                    <img src="../docs/images/slider4.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>9</h1></div>
+                </li>
+                <li>
+                    <img src="../docs/images/slider5.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>10</h1></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-hidden@xl uk-light">
+            <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+
+        <div class="uk-visible@xl">
+            <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+
+    </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+```
+
 ***
 
 ## Viewport height
 
-Adding the `uk-height-viewport` attribute from the [Utility component](utility.md) to the list of slider items will stretch the height to fill the whole viewport.
+Adding the `uk-height-viewport` attribute from the [Utility component](utility.md#viewport-height) to the list of slider items will stretch the height of the `ul` and `li` to fill the whole viewport. Since the width and height are now not defined by the item's content, you have to use absolute positioning for the content.
+
+Use the [Cover component](cover.md) to make an image cover the whole item area and being clipped. The `uk-grid-match` class from the [Grid component](grid.md#match-height) matches the height of the direct child of each item. This is useful in this example since the child element has now the same width and height like the list item.
 
 ```html
 <div uk-slider>
-    <ul class="uk-slider-items" uk-height-viewport="min-height: 300">...</ul>
+    <ul class="uk-slider-items uk-child-width-1-3@m uk-grid-match" uk-height-viewport="min-height: 300">
+        <li>
+            <div class="uk-cover-container">
+                <img src="" alt="" uk-cover>
+            </div>
+        </li>
+    </ul>
 </div>
 ```
+
+```example
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="center: true">
+
+    <ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 30">
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="../docs/images/photo.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="../docs/images/dark.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="../docs/images/light.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="../docs/images/photo2.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="../docs/images/photo3.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>5</h1></div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+```
+
+**Note** This example is set to 70% of the viewport height.
 
 ***
 
@@ -404,7 +544,7 @@ Adding the `uk-height-viewport` attribute from the [Utility component](utility.m
 The slider is not restricted to images. Any content can be used like text, videos, images with text overlays or ken burns effect. Here is an example using the [Card component](card.md).
 
 ```example
-<div uk-slider>
+<div uk-slider="center: true">
 
     <div class="uk-position-relative uk-visible-toggle uk-light">
 
@@ -445,7 +585,7 @@ The slider is not restricted to images. Any content can be used like text, video
             <li>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="../docs/images/photo.jpg" alt="">
+                        <img src="../docs/images/photo2.jpg" alt="">
                     </div>
                     <div class="uk-card-body">
                         <h3 class="uk-card-title">Headline</h3>
@@ -456,18 +596,7 @@ The slider is not restricted to images. Any content can be used like text, video
             <li>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="../docs/images/dark.jpg" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="../docs/images/light.jpg" alt="">
+                        <img src="../docs/images/photo3.jpg" alt="">
                     </div>
                     <div class="uk-card-body">
                         <h3 class="uk-card-title">Headline</h3>
@@ -486,6 +615,8 @@ The slider is not restricted to images. Any content can be used like text, video
 
 </div>
 ```
+
+**Note** Since the slider effect needs a clipping container, box shadows of content items are also clipped. To get the best visual result, it's recommended to use the `uk-slider="center: true"` mode if your content items have a box shadow.
 
 ***
 
