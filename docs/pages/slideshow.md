@@ -41,8 +41,6 @@ Add an image in the background of each slide using the `uk-cover` attribute from
 </div>
 ```
 
-**Note** To activate autoplay, just add the `autoplay: true` option to the attribute.
-
 ***
 
 ## Animations
@@ -189,6 +187,26 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
 ***
 
+## Autoplay
+
+To activate autoplay, just add the `autoplay: true` option to the attribute. You can also set the interval between switching slides in milliseconds using `autoplay-interval: 6000`. To pause autoplay when the slideshow is hovered use `pause-on-hover: true`.
+
+```html
+<div uk-slideshow="autoplay: true">...</div>
+```
+
+***
+
+## Infinite Scrolling
+
+By default, infinite scrolling is enabled. To disable this behavior, just add `finite: true` option to the attribute.
+
+```html
+<div uk-slideshow="finite: true">...</div>
+```
+
+***
+
 ## Ratio
 
 The slideshow always takes up the full width of its parent container. The height adapts according to the defined ratio. To change the default ratio of 16:9, just add the `ratio` option to the attribute. It's recommended to use the same ratio as the background images. For example, just use their width and height, like `1600:1200`.
@@ -217,6 +235,8 @@ The slideshow always takes up the full width of its parent container. The height
 
 </div>
 ```
+
+***
 
 ## Min/Max height
 
@@ -258,6 +278,29 @@ Adding the `uk-height-viewport` attribute from the [Utility component](utility.m
     <ul class="uk-slideshow-items" uk-height-viewport="min-height: 300">...</ul>
 </div>
 ```
+
+```example
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+
+    <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 30">
+        <li>
+            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="../docs/images/light.jpg" alt="" uk-cover>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+```
+
+**Note** This example is set to 70% of the viewport height.
 
 ***
 
