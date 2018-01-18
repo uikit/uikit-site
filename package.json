@@ -12,7 +12,7 @@
     "less": "^2.7.2",
     "mkdirp": "^0.5.1",
     "symlink-dir": "^1.1.2",
-    "uikit": "latest",
+    "uikit": "github:uikit/uikit#27b73337417e5ce6ac24ffbd4e57f8143d53ace8",
     "unique-id": "0.0.1",
     "vue-loader": "^11.3.4",
     "vue-template-compiler": "^2.1.8",
