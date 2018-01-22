@@ -31,11 +31,6 @@ jobs:
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" index.html
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/index.html
       - run:
-          name: Replace base tag
-          command: |
-            sed -i -- 's/<base href="">/<base href="https:\/\/getuikit.com\/">/' index.html
-            sed -i -- 's/<base href="">/<base href="https:\/\/getuikit.com\/docs\/">/' docs/index.html
-      - run:
           name: Transfer Files
           command: |
             if [ "${CIRCLE_BRANCH}" = "master" ];then
