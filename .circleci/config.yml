@@ -31,13 +31,6 @@ jobs:
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" index.html
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/index.html
       - run:
-          name: Replace relative paths
-          command: |
-            sed -i -- 's/href="[^http]/href="https:\/\/getuikit.com\//g' index.html
-            sed -i -- 's/href="[^http]/href="https:\/\/getuikit.com\/docs\//g' docs/index.html
-            sed -i -- 's/src="[^http]/src="https:\/\/getuikit.com\//g' index.html
-            sed -i -- 's/src="[^http]/src="https:\/\/getuikit.com\/docs\//g' docs/index.html
-      - run:
           name: Transfer Files
           command: |
             if [ "${CIRCLE_BRANCH}" = "master" ];then
