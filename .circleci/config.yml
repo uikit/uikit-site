@@ -30,8 +30,6 @@ jobs:
           command: |
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" index.html
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/index.html
-            sed -i -- 's/="[^http]/="https:\/\/getuikit.com\//g' index.html
-            sed -i -- 's/="[^http]/="https:\/\/getuikit.com\/docs\//g' docs/index.html
       - run:
           name: Transfer Files
           command: |
