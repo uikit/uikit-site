@@ -33,10 +33,10 @@ jobs:
       - run:
           name: Replace relative paths
           command: |
-            sed -i -- 's/href="([^h\/]\)/href="https:\/\/getuikit.com\/\1/g' index.html
-            sed -i -- 's/href="([^h\/]\)/href="https:\/\/getuikit.com\/docs\/\1/g' docs/index.html
-            sed -i -- 's/src="([^h\/]\)/src="https:\/\/getuikit.com\/\1/g' index.html
-            sed -i -- 's/src="([^h\/]\)/src="https:\/\/getuikit.com\/docs\/\1/g' docs/index.html
+            sed -i -- 's/href="\([^h\/]\)/href="https:\/\/getuikit.com\/\1/g' index.html
+            sed -i -- 's/href="\([^h\/]\)/href="https:\/\/getuikit.com\/docs\/\1/g' docs/index.html
+            sed -i -- 's/src="\([^h\/]\)/src="https:\/\/getuikit.com\/\1/g' index.html
+            sed -i -- 's/src="\([^h\/]\)/src="https:\/\/getuikit.com\/docs\/\1/g' docs/index.html
       - run:
           name: Transfer Files
           command: |
