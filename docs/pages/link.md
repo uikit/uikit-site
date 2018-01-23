@@ -36,10 +36,26 @@ To make a link appear like body text and apply a hover effect, add the `.uk-link
 
 ***
 
+## Link heading
+
+To style a link inside a heading element, add the `.uk-link-heading` class to the anchor element.
+
+```html
+<h3><a class="uk-link-heading" href=""></a></h3>
+```
+
+```example
+<h3><a class="uk-link-heading" href="">Heading</a></h3>
+```
+
+***
+
 ## Link reset
 
-To reset a link's color, so that it inherits the color from its parent, add the `.uk-link-reset` class. There won't be any hover effect at all. You can also add the class to a parent element and it will be applied to all `<a>` elements inside it.
+To reset a link's color, so that it inherits the color from its parent, add the `.uk-link-reset` class. There won't be any hover effect at all. This is useful for links inside heading elements. You can also add the class to a parent element and it will be applied to all `<a>` elements inside it.
 
 ```example
 <a class="uk-link-reset" href="#">Link</a>
+
+<h3><a class="uk-link-reset" href="">Heading</a></h3>
 ```
