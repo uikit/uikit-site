@@ -665,7 +665,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `center`            | Boolean | `false` | Center the active slide.                             |
 | `finite`            | Boolean | `false` | Disable infinite sliding.                            |
 | `index`             | Number  | `0`     | Slider item to show. 0 based index.                  |
-| `pause-on-hover`    | Boolean | `false` | Pause autoplay mode on hover.                        |
+| `pause-on-hover`    | Boolean | `true` | Pause autoplay mode on hover.                        |
 | `sets`              | Boolean | `false` | Slide in sets.                                       |
 | `velocity`          | Number  | `1`     | The animation velocity (pixel/ms).                   |
 
