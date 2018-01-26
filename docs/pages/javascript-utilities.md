@@ -2492,9 +2492,7 @@ document.addEventListener('click', function(e) {
 
 Result
 
-```log
-If you click onto the card this function returns true, otherwise false.
-```
+If you click onto the card this function returns `true` otherwise `false`.
 
 ***
 
@@ -2585,9 +2583,7 @@ example.addEventListener('mousemove', function() {
 
 Result
 
-```log
-If the mouse moves towards the target this returns true otherwise false.
-```
+If the mouse moves towards the target this returns `true`, otherwise `false`.
 
 ***
 
@@ -2608,5 +2604,3 @@ If the mouse moves towards the target this returns true otherwise false.
 ***
 
 ## Styles
-
-
