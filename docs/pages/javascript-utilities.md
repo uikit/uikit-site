@@ -7,6 +7,8 @@ Once UIkit is [installed correctly](installation.md) they are accessible under t
 **Note** You can import all functions, e.g. `var { $, addClass } = UIkit.util` and then use them like so `addClass($('#my-id'), 'example');`.
 This approach makes your code much smaller and clean.
 
+**Note** The parameter types make use of a couple of [Pseudo Types](#pseudo-types).
+
 ***
 
 ## Attributes
@@ -16,41 +18,46 @@ DOM manipulation or setting/retrieving values.
 
 ***
 
-### attr
+## attr
 
-This function is used for setting or retrieving an attribute value. The following parameters may be passed to the function.
+Get or set an element's attribute value.
 
-| Parameter | Type   | Default | Description           |
+```javascript
+    attr(element, name [, value]);
+```
+
+| Parameter | Type   | Description           |
 |:----------|:-------|:--------|:----------------------|
-| `element` | String | `null`  | The HTML element      |
-| `name`    | String | `null`  | The attribute's name  |
-| `value`   | String | `null`  | The attribute's value |
+| `element` | [Nodes](#pseudo-types) | The HTML element      |
+| `name`    | String | The attribute's name  |
+| `value`   | [mixed](#pseudo-types) | The attribute's value |
 
-HTML
+
+The return value is the value of the attribute or `undefined` if used as setter with the `value` parameter.
+
+If used as setter and the attribute does not already exist, it gets created simultaneously.
+
+### Usage
 
 ```html
 <a href="#" id="example"></a>
 ```
 
-JavaScript
-
 ```javascript
 var element = document.getElementById('example');
 
 // Get attribute value
-var attrValue = UIkit.util.attr(element, 'id');
+var attrValue = attr(element, 'id');
 
 // Set attribute value
-UIkit.util.attr(element, 'title', attrValue);
+attr(element, 'title', attrValue);
 ```
 
-Result
+#### Result
 
 ```html
 <a href="#" id="example" title="example"></a>
 ```
-
-**Note** If the attribute does not already exist, it gets created simultaneously.
 
 ***
 
@@ -2492,7 +2499,9 @@ document.addEventListener('click', function(e) {
 
 Result
 
-If you click onto the card this function returns `true` otherwise `false`.
+```log
+If you click onto the card this function returns true, otherwise false.
+```
 
 ***
 
@@ -2583,7 +2592,9 @@ example.addEventListener('mousemove', function() {
 
 Result
 
-If the mouse moves towards the target this returns `true`, otherwise `false`.
+```log
+If the mouse moves towards the target this returns true otherwise false.
+```
 
 ***
 
@@ -2604,3 +2615,20 @@ If the mouse moves towards the target this returns `true`, otherwise `false`.
 ***
 
 ## Styles
+
+
+## Pseudo-types
+
+Pseudo-types are keywords used in this documentation to specify the types or values an argument can have.
+
+### mixed
+
+_mixed_ indicates that a parameter may accept multiple (but not necessarily all) types.
+
+### Nodes
+
+_Nodes_ maybe a DOM Node, a NodeList, an Array of Nodes or a jQuery object. It will be filtered
+
+### Node
+
+_Nodes_ maybe a DOM Node or the first node of a NodeList, an Array of Nodes or a jQuery object.
