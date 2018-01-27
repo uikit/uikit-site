@@ -1,7 +1,7 @@
 {
 
     "Getting started": {
-
+        
         "Introduction": "introduction",
         "Installation": "installation",
         "Less": "less",
@@ -12,84 +12,104 @@
         "Avoiding conflicts": "avoiding-conflicts",
         "RTL support": "rtl",
         "Migration": "migration"
-
+        
     },
-
-    "Components": {
-
-        "Accordion": "accordion",
-        "Alert": "alert",
-        "Align": "align",
-        "Animation": "animation",
-        "Article": "article",
-        "Background": "background",
-        "Badge": "badge",
-        "Base": "base",
-        "Breadcrumb": "breadcrumb",
-        "Button": "button",
-        "Card": "card",
-        "Close": "close",
-        "Column": "column",
-        "Comment": "comment",
+    
+    "Layout": {
+        
         "Container": "container",
-        "Countdown": "countdown",
-        "Cover": "cover",
-        "Description List": "description-list",
-        "Divider": "divider",
-        "Dotnav": "dotnav",
-        "Drop": "drop",
-        "Dropdown": "dropdown",
         "Flex": "flex",
-        "Form": "form",
         "Grid": "grid",
         "Grid Parallax": "grid-parallax",
-        "Heading": "heading",
-        "Icon": "icon",
+        "Section": "section",
+        "Tab": "tab"
+        
+    },
+    
+    "Navigation": {
+        
+        "Breadcrumb": "breadcrumb",
+        "Dotnav": "dotnav",
         "Iconnav": "iconnav",
-        "Inverse": "inverse",
-        "Label": "label",
-        "Lightbox": "lightbox",
-        "Link": "link",
-        "List": "list",
-        "Margin": "margin",
-        "Marker": "marker",
-        "Modal": "modal",
         "Nav": "nav",
         "Navbar": "navbar",
-        "Notification": "notification",
-        "Off-canvas": "offcanvas",
-        "Overlay": "overlay",
-        "Padding": "padding",
         "Pagination": "pagination",
-        "Parallax": "parallax",
-        "Placeholder": "placeholder",
-        "Position": "position",
-        "Print": "print",
-        "Progress": "progress",
-        "Scroll": "scroll",
-        "Scrollspy": "scrollspy",
-        "Search": "search",
-        "Section": "section",
         "Slidenav": "slidenav",
+        "Subnav": "subnav",
+        "Thumbnav": "thumbnav",
+        "Totop": "totop"
+        
+    },
+    
+    "Containers": {
+        
+        "Accordion": "accordion",
+        "Article": "article",
+        "Card": "card",
+        "Column": "column",
+        "Description List": "description-list",
+        "Form": "form",
+        "Lightbox": "lightbox",
+        "List": "list",
+        "Modal": "modal",
+        "Off-canvas": "offcanvas",
+        "Sortable": "sortable",
+        "Switcher": "switcher",
         "Slider": "slider",
         "Slideshow": "slideshow",
-        "Sortable": "sortable",
-        "Spinner": "spinner",
-        "Sticky": "sticky",
-        "Subnav": "subnav",
-        "Switcher": "switcher",
-        "Tab": "tab",
         "Table": "table",
-        "Text": "text",
-        "Thumbnav": "thumbnav",
-        "Tile": "tile",
+        "Tile": "tile"
+        
+    },
+    
+    "Elements": {
+        
+        "Alert": "alert",
+        "Badge": "badge",
+        "Button": "button",
+        "Close": "close",
+        "Comment": "comment",
+        "Countdown": "countdown",
+        "Divider": "divider",
+        "Drop": "drop",
+        "Dropdown": "dropdown",
+        "Heading": "heading",
+        "Icon": "icon",
+        "Label": "label",
+        "Link": "link",
+        "Marker": "marker",
+        "Notification": "notification",
+        "Overlay": "overlay",
+        "Placeholder": "placeholder",
+        "Progress": "progress",
+        "Search": "search",
+        "Spinner": "spinner",
         "Toggle": "toggle",
         "Tooltip": "tooltip",
-        "Totop": "totop",
+        "Upload": "upload"
+        
+    },
+    
+    "Style": {
+        
+        "Align": "align",
+        "Animation": "animation",
+        "Background": "background",
+        "Base": "base",
+        "Cover": "cover",
+        "Inverse": "inverse",
+        "Margin": "margin",
+        "Padding": "padding",
+        "Parallax": "parallax",
+        "Position": "position",
+        "Print": "print",
+        "Sticky": "sticky",
+        "Text": "text",
         "Transition": "transition",
-        "Upload": "upload",
         "Utility": "utility",
         "Visibility": "visibility",
+        "Scroll": "scroll",
+        "Scrollspy": "scrollspy",
         "Width": "width"
 
     }
