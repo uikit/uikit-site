@@ -10,7 +10,7 @@ The tab component consists of clickable tabs, that are aligned side by side in a
 |:----------------|:---------------------------------------------------------------------------------------------------------------------|
 | `uk-tab`        | Add this attribute to a `<ul>` element to define the Tab component. Use `<a>` elements as tab items within the list. |
 | `.uk-active `   | Add this class to a list item to apply an active state.                                                              |
-| `.uk-disabled ` | Add this class to a list item to apply a disabled state. Also remove the `href` attribute from the anchor to make it inaccessible for the keyboard. |
+| `.uk-disabled ` | Add this class to a list item to apply a disabled state. Also remove the `href` attribute from the anchor to make it inaccessible through keyboard navigation. |
 
 ```html
 <ul uk-tab>
