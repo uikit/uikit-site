@@ -466,7 +466,7 @@ Add content overlays using the [Position component](position.md). It allows you 
 <div uk-slideshow>
     <ul class="uk-slideshow-items">
         <li>
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            <img src="" alt="" uk-cover>
             <div class="uk-position-center uk-position-small">
 
                 <!-- The content goes here -->
@@ -477,7 +477,7 @@ Add content overlays using the [Position component](position.md). It allows you 
 </div>
 ```
 
-**Note** To adapt your content for better visibility on each image, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) or use the [Overlay](overlay.md) or [Card](card.md) to add any style to the overlay box.
+**Note** To adapt your content for better visibility on each image, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) or use the [Overlay](overlay.md) to add any style to the overlay box.
 
 ```example
 <div class="uk-position-relative uk-visible-toggle" uk-slideshow="animation: push">
@@ -533,7 +533,7 @@ This functionality is inherited from the [Parallax component](parallax.md), and 
 <div uk-slideshow>
     <ul class="uk-slideshow-items">
         <li>
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            <img src="" alt="" uk-cover>
             <div class="uk-position-center uk-position-small">
 
                 <div uk-slideshow-parallax="x: 100,-100">
@@ -604,7 +604,7 @@ The parallax attribute can be used to add additional effects to the slideshow an
     <ul class="uk-slideshow-items">
         <li>
             <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
-                <img src="../docs/images/photo.jpg" alt="" uk-cover>
+                <img src="" alt="" uk-cover>
             </div>
             <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
         </li>
@@ -668,7 +668,7 @@ Transition classes from the [Transition component](transition.md) are triggered 
 <div uk-slideshow>
     <ul class="uk-slideshow-items">
         <li>
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            <img src="" alt="" uk-cover>
             <div class="uk-position-bottom uk-position-small">
 
                 <div class="uk-transition-slide-bottom">
