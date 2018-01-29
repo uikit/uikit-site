@@ -571,7 +571,7 @@ Use the [Cover component](cover.md) so that images cover the whole item area and
 
 ***
 
-## Item Content
+## Content
 
 The slider is not restricted to images. Any content can be used like text, videos, images with text overlays or ken burns effect. Here is an example using the [Card component](card.md).
 
@@ -649,6 +649,338 @@ The slider is not restricted to images. Any content can be used like text, video
 ```
 
 **Note** Since the slider effect needs a clipping container, box shadows of content items are also clipped. To get the best visual result, it's recommended to use the `uk-slider="center: true"` mode if your content items have a box shadow.
+
+***
+
+## Content overlays
+
+Add content overlays using the [Position component](position.md). It allows you to place the content anywhere inside the slide.
+
+```html
+<div uk-slider>
+    <ul class="uk-slider-items">
+        <li>
+            <img src="" alt="">
+            <div class="uk-position-center">
+
+                <!-- The content goes here -->
+
+            </div>
+        </li>
+    </ul>
+</div>
+```
+
+**Note** To adapt your content for better visibility on each image, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) or use the [Overlay](overlay.md) to add any style to the overlay box.
+
+```example
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+        <li>
+            <img src="../docs/images/slider1.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider2.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>2</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider3.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>3</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider4.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>4</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider5.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>5</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider1.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>6</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider2.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>7</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider3.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>8</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider4.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>9</h1></div>
+        </li>
+        <li>
+            <img src="../docs/images/slider5.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>10</h1></div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+```
+
+***
+
+## Content parallax
+
+Add the `uk-slider-parallax` attribute to any element inside the slides to animate it together with the slider animation. Add an option with the desired animation values for each CSS property you want to animate. Define at least one start and end value. It can be done by passing two values separated by a comma.
+
+This functionality is inherited from the [Parallax component](parallax.md), and it allows to animate CSS properties depending on the scroll position of the slider animation. Take a look at the [possible properties](parallax.md#animated-properties) that can be animated.
+
+```html
+<div uk-slider>
+    <ul class="uk-slider-items">
+        <li>
+            <img src="" alt="">
+            <div class="uk-position-center">
+
+                <div uk-slider-parallax="x: 100,-100">
+
+                    <!-- The content goes here -->
+
+                </div>
+
+            </div>
+        </li>
+    </ul>
+</div>
+```
+
+In the example above, the content will start at `100` and animate half way to `0` while the slide moves in. When the slide starts again to move out, the content will continue to animate to `-100`. This works because the start and end values have the same distance. For different distances, three values are needed: _Start_ (Slide animates in), _Middle_ (Slide is centered), _End_ (Slide animates out).
+
+```html
+<div uk-slider-parallax="x: 300,0,-100">...</div>
+```
+
+The next example defines different in and out animations. The content slides in by moving from `100` to `0` and fades out from `1` to `0`.
+
+```html
+<div uk-slider-parallax="x: 100,0,0; opacity: 1,1,0">...</div>
+```
+
+```example
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
+
+    <ul class="uk-slider-items uk-grid">
+        <li class="uk-width-4-5">
+            <div class="uk-panel">
+                <img src="../docs/images/photo.jpg" alt="">
+                <div class="uk-position-center uk-text-center">
+                    <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-4-5">
+            <div class="uk-panel">
+                <img src="../docs/images/dark.jpg" alt="">
+                <div class="uk-position-center uk-text-center">
+                    <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-4-5">
+            <div class="uk-panel">
+                <img src="../docs/images/light.jpg" alt="">
+                <div class="uk-position-center uk-text-center">
+                    <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-4-5">
+            <div class="uk-panel">
+                <img src="../docs/images/photo2.jpg" alt="">
+                <div class="uk-position-center uk-text-center">
+                    <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-4-5">
+            <div class="uk-panel">
+                <img src="../docs/images/photo3.jpg" alt="">
+                <div class="uk-position-center uk-text-center">
+                    <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+```
+
+***
+
+## Content transitions
+
+Add `clsActivated: uk-transition-active` to the attribute to trigger transition classes from the [Transition component](transition.md) automatically inside slides. Contrary to the parallax effect, transitions are not attached to the slider animation and start playing independently after the slider animation.
+
+
+```html
+<div uk-slider="clsActivated: uk-transition-active">
+    <ul class="uk-slider-items">
+        <li>
+            <img src="" alt="">
+            <div class="uk-position-bottom">
+
+                <div class="uk-transition-slide-bottom">
+
+                    <!-- The content goes here -->
+
+                </div>
+
+            </div>
+        </li>
+    </ul>
+</div>
+```
+
+Together with the [Overlay component](overlay.md), content transitions are used to build a classic caption for the slider.
+
+```example
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="clsActivated: uk-transition-active; center: true">
+
+    <ul class="uk-slider-items uk-grid">
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="../docs/images/photo.jpg" alt="">
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                    <h3 class="uk-margin-remove">Bottom</h3>
+                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="../docs/images/dark.jpg" alt="">
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                    <h3 class="uk-margin-remove">Bottom</h3>
+                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="../docs/images/light.jpg" alt="">
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                    <h3 class="uk-margin-remove">Bottom</h3>
+                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="../docs/images/photo2.jpg" alt="">
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                    <h3 class="uk-margin-remove">Bottom</h3>
+                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-panel">
+                <img src="../docs/images/photo3.jpg" alt="">
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                    <h3 class="uk-margin-remove">Bottom</h3>
+                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+```
+
+***
+
+### Toggle on hover
+
+To toggle transitions on hover, use the `.uk-transition-toggle` class from the [Transition component](transition.md). This will trigger the transition when the element is hovered. Also add `tabindex="0"` to make the transition accessable through keyboard navigation.
+
+```html
+<div uk-slider>
+    <ul class="uk-slider-items">
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="" alt="">
+            <div class="uk-position-bottom">
+
+                <div class="uk-transition-slide-bottom">
+
+                    <!-- The content goes here -->
+
+                </div>
+
+            </div>
+        </li>
+    </ul>
+</div>
+```
+
+```example
+<div uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="../docs/images/slider1.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="../docs/images/slider2.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>2</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="../docs/images/slider3.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>3</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="../docs/images/slider4.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>4</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="../docs/images/slider5.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>5</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="../docs/images/slider1.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>6</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="../docs/images/slider2.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>7</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="../docs/images/slider3.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>8</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="../docs/images/slider4.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>9</h1></div>
+        </li>
+        <li class="uk-transition-toggle" tabindex="0">
+            <img src="../docs/images/slider5.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>10</h1></div>
+        </li>
+    </ul>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+```
 
 ***
 
