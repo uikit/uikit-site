@@ -910,12 +910,12 @@ Together with the [Overlay component](overlay.md), content transitions are used 
 
 ### Toggle on hover
 
-To toggle transitions on hover, use the `.uk-transition-toggle` class from the [Transition component](transition.md). This will trigger the transition when the element is hovered. Also add `tabindex="0"` to make the transition accessable through keyboard navigation.
+To toggle transitions on hover, use the `.uk-transition-toggle` class from the [Transition component](transition.md). This will trigger the transition when the element is hovered.
 
 ```html
 <div uk-slider>
     <ul class="uk-slider-items">
-        <li class="uk-transition-toggle" tabindex="0">
+        <li class="uk-transition-toggle">
             <img src="" alt="">
             <div class="uk-position-bottom">
 
@@ -935,43 +935,43 @@ To toggle transitions on hover, use the `.uk-transition-toggle` class from the [
 <div uk-slider>
 
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
-        <li class="uk-transition-toggle" tabindex="0">
+        <li class="uk-transition-toggle">
             <img src="../docs/images/slider1.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>1</h1></div>
         </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        <li class="uk-transition-toggle">
             <img src="../docs/images/slider2.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>2</h1></div>
         </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        <li class="uk-transition-toggle">
             <img src="../docs/images/slider3.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>3</h1></div>
         </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        <li class="uk-transition-toggle">
             <img src="../docs/images/slider4.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>4</h1></div>
         </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        <li class="uk-transition-toggle">
             <img src="../docs/images/slider5.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>5</h1></div>
         </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        <li class="uk-transition-toggle">
             <img src="../docs/images/slider1.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>6</h1></div>
         </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        <li class="uk-transition-toggle">
             <img src="../docs/images/slider2.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>7</h1></div>
         </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        <li class="uk-transition-toggle">
             <img src="../docs/images/slider3.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>8</h1></div>
         </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        <li class="uk-transition-toggle">
             <img src="../docs/images/slider4.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>9</h1></div>
         </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        <li class="uk-transition-toggle">
             <img src="../docs/images/slider5.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>10</h1></div>
         </li>
