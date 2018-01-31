@@ -91,7 +91,7 @@ UIkit.tooltip(element, options);
 
 ### Events
 
-The following events will be triggered on elements with this component attached:
+The following events will be triggered on elements, which are injected by this component:
 
 | Name         | Description                                                              |
 |:-------------|:-------------------------------------------------------------------------|
@@ -101,6 +101,17 @@ The following events will be triggered on elements with this component attached:
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
 | `hide`       | Fires after an item's hide animation has started.                        |
 | `hidden`     | Fires after an item is hidden.                                           |
+
+#### Example
+
+```javascript
+var util = UIkit.util;
+var tooltipElement = util.$('.uk-tooltip.uk-active');
+
+util.on(document, 'show', tooltipElement, function() {
+  // do something
+});
+```
 
 ### Methods
 
