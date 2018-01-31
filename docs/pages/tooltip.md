@@ -7,11 +7,11 @@
 To apply this component, add the `uk-tooltip` attribute to an element. You also need to add a _title_ attribute, whose value will represent your tooltip's text.
 
 ```html
-<div title="" uk-tooltip></div>
+<div uk-tooltip="title: Hello World"></div>
 ```
 
 ```example
-<button class="uk-button uk-button-default" title="Hello World" uk-tooltip>Hover</button>
+<button class="uk-button uk-button-default" uk-tooltip="title: Hello World">Hover</button>
 ```
 
 ***
@@ -21,7 +21,7 @@ To apply this component, add the `uk-tooltip` attribute to an element. You also 
 Add one of the following options to the `uk-tooltip` attribute to adjust the tooltip's alignment.
 
 ```html
-<button title="" uk-tooltip="pos: top-left"></button>
+<button uk-tooltip="title: Hello World; pos: top-left"></button>
 ```
 
 | Attribute           | Description                             |
@@ -37,14 +37,14 @@ Add one of the following options to the `uk-tooltip` attribute to adjust the too
 
 ```example
 <p uk-margin>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip>Top</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: top-left">Top Left</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: top-right">Top Right</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: bottom">Bottom</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: bottom-left">Bottom Left</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: bottom-right">Bottom Right</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: left">Left</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: right">Right</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World">Top</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: top-left">Top Left</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: top-right">Top Right</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom">Bottom</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom-left">Bottom Left</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom-right">Bottom Right</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: left">Left</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: right">Right</button>
 </p>
 ```
 
@@ -55,11 +55,11 @@ Add one of the following options to the `uk-tooltip` attribute to adjust the too
 If you want the tooltip to appear with a little delay, just add the `delay` option to the `uk-tooltip` attribute with your value in milliseconds.
 
 ```html
-<div title="" uk-tooltip="delay: 500"></div>
+<div uk-tooltip="title: Hello World; delay: 500"></div>
 ```
 
 ```example
-<button class="uk-button uk-button-default" title="Hello World" uk-tooltip="delay: 500">Hover</button>
+<button class="uk-button uk-button-default" uk-tooltip="title: Hello World; delay: 500">Hover</button>
 ```
 
 ***

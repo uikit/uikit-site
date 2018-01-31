@@ -53,7 +53,7 @@ This way you have the reference to UIkit available without having to include its
             <div class="uk-card uk-card-body uk-card-primary">
                 <h3 class="uk-card-title">Example headline</h3>
 
-                <button class="uk-button uk-button-default" title="Hello World" uk-tooltip>Hover</button>
+                <button class="uk-button uk-button-default" uk-tooltip="title: Hello World">Hover</button>
             </div>
         </div>
 
