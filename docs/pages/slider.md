@@ -937,43 +937,43 @@ To toggle transitions on hover, use the `.uk-transition-toggle` class from the [
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
         <li class="uk-transition-toggle">
             <img src="../docs/images/slider1.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">1</h1></div>
         </li>
         <li class="uk-transition-toggle">
             <img src="../docs/images/slider2.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">2</h1></div>
         </li>
         <li class="uk-transition-toggle">
             <img src="../docs/images/slider3.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">3</h1></div>
         </li>
         <li class="uk-transition-toggle">
             <img src="../docs/images/slider4.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">4</h1></div>
         </li>
         <li class="uk-transition-toggle">
             <img src="../docs/images/slider5.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>5</h1></div>
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">5</h1></div>
         </li>
         <li class="uk-transition-toggle">
             <img src="../docs/images/slider1.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>6</h1></div>
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">6</h1></div>
         </li>
         <li class="uk-transition-toggle">
             <img src="../docs/images/slider2.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>7</h1></div>
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">7</h1></div>
         </li>
         <li class="uk-transition-toggle">
             <img src="../docs/images/slider3.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>8</h1></div>
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">8</h1></div>
         </li>
         <li class="uk-transition-toggle">
             <img src="../docs/images/slider4.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>9</h1></div>
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">9</h1></div>
         </li>
         <li class="uk-transition-toggle">
             <img src="../docs/images/slider5.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>10</h1></div>
+            <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">10</h1></div>
         </li>
     </ul>
 
