@@ -105,10 +105,7 @@ The following events will be triggered on elements, which are injected by this c
 #### Example
 
 ```javascript
-var util = UIkit.util;
-var tooltipElement = util.$('.uk-tooltip.uk-active');
-
-util.on(document, 'show', tooltipElement, function() {
+UIkit.util.on(document, 'show', '.uk-tooltip.uk-active', function() {
   // do something
 });
 ```
