@@ -65,7 +65,7 @@ or with single attributes.
 <div uk-sticky offset="50" top="100"></div>
 ```
 
-If an option is marked as `Primary`, its key may be omitted, only if it is the only custom value. Please see the component's individual options table to the find the `Primary` option.
+For _Primary_ options, its key may be omitted, if it's the only option in the attribute value. Please take a look at the specific component documentation to find which option is the _Primary_ option.
 
 ```html
 <span uk-icon="home"></span>

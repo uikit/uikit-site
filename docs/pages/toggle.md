@@ -161,10 +161,16 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `target`    | String  | `false` | CSS selector of the element(s) to toggle.                                                      |
 | `mode`      | String  | `click` | Comma separated list of trigger behaviour modes. (`hover`, `click`, `media`)                   |
 | `cls`       | String  | `false` | The class that is being toggled. Defaults to the `hidden` attribute.                           |
-| `media`     | Integer, String  | `false` | In media mode, the breakpoint that triggers the toggle - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)).                   |
+| `media`     | Integer, String  | `false` | In media mode, the breakpoint that triggers the toggle - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 | `animation` | String  | `false` | Space separated names of [animations](animation.md) to use, comma separated for out animation. |
 | `duration`  | Number  | `200`   | Animation duration in milliseconds.                                                            |
 | `queued`    | Boolean | `true`  | Toggle the targets successively.                                                               |
+
+`target` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+
+```html
+<span uk-toggle=".my-class"></span>
+```
 
 ***
 

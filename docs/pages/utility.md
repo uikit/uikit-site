@@ -307,6 +307,12 @@ To expand all children of a container to the same height, regardless of their co
 </div>
 ```
 
+`target` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+
+```html
+<span uk-height-match=".my-class"></span>
+```
+
 ***
 
 ### Match cards

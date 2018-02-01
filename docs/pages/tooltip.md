@@ -4,14 +4,20 @@
 
 ## Usage
 
-To apply this component, add the `uk-tooltip` attribute to an element. You also need to add a _title_ attribute, whose value will represent your tooltip's text.
+To apply this component, add the `uk-tooltip` attribute to an element. You also need to add the `title: TEXT` parameter to the attribute, whose value will represent your tooltip's text.
 
 ```html
 <div uk-tooltip="title: Hello World"></div>
 ```
 
+If `title` is the only option in the attribute value, you can also use `uk-tooltip="TEXT"`
+
+```html
+<div uk-tooltip="Hello World"></div>
+```
+
 ```example
-<button class="uk-button uk-button-default" uk-tooltip="title: Hello World">Hover</button>
+<button class="uk-button uk-button-default" uk-tooltip="Hello World">Hover</button>
 ```
 
 ***
@@ -37,7 +43,7 @@ Add one of the following options to the `uk-tooltip` attribute to adjust the too
 
 ```example
 <p uk-margin>
-    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World">Top</button>
+    <button class="uk-button uk-button-default" uk-tooltip="Hello World">Top</button>
     <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: top-left">Top Left</button>
     <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: top-right">Top Right</button>
     <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom">Bottom</button>
@@ -76,6 +82,12 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `duration`  | Number | `100`                   | The animation duration.                                                           |
 | `delay`     | Number | `0`                     | The show delay.                                                                   |
 | `cls`       | String | `uk-active`             | The active class.                                                                 |
+
+`title` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+
+```html
+<span uk-tooltip="Hello World"></span>
+```
 
 ***
 

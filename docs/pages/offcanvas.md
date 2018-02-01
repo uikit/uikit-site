@@ -287,6 +287,12 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `bg-close`  | Boolean | `true`| Close the off-canvas when the background is clicked.            |
 | `container` | String | `true` | Define a target container via a selector to specify where the off-canvas should be appended in the DOM. Setting it to `false` will prevent this behavior. |
 
+`mode` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+
+```html
+<span uk-offcanvas="push"></span>
+```
+
 ***
 
 ## JavaScript

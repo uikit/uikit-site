@@ -228,7 +228,13 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `flip`           | Boolean, String | `true`         | Automatically flip the drop. Possible values are `false`, `true`, `x` or `y`.                      |
 | `offset`         | Number          | `0`            | The offset of the drop's container.                                                                |
 | `animation`      | String          | `false`        | Space separated names of animations to apply.                                                      |
-| `duration`       | Number          | `200`          | Animation duration in milliseconds.                                                                |                 |
+| `duration`       | Number          | `200`          | Animation duration in milliseconds.                                                                |
+
+`pos` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+
+```html
+<span uk-drop="top-left"></span>
+```
 
 ***
 

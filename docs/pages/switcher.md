@@ -356,6 +356,13 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `animation` | String       | `false` | The space separated names of animations to use. Comma separate for animation out.                        |
 | `duration`  | Number       | `200`   | The animation duration.                                                                                  |
 | `swiping`   | Boolean      | `true`  | Use swiping.                                                                                             |
+
+`connect` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+
+```html
+<span uk-switcher=".switcher-container"></span>
+```
+
 ***
 
 ## JavaScript

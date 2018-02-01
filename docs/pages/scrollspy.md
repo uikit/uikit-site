@@ -100,6 +100,12 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `repeat`      | Boolean | `false`               | Applies the `cls` class every time the element is in view.                                                    |
 | `delay`       | Number  | `0`                   | Delay time in ms.                                                                                             |
 
+`cls` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+
+```html
+<span uk-scrollspy="my-class"></span>
+```
+
 ***
 
 ## JavaScript
