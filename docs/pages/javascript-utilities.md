@@ -1,11 +1,8 @@
 # JavaScript Utilities
 
 UIkit comes with its own, rather small but yet powerful JavaScript Framework, of which you can make use as well.
-The provided JavaScript utilities allow you to write simplified Vanilla JS and replace the most common functions of jQuery.
+The provided JavaScript utilities allow you to write simplified Vanilla JavaScript and replace the most common functions of jQuery.
 Once UIkit is [installed correctly](installation.md) they are accessible under the `UIkit.util` namespace.
-
-**Note** You can import all functions, e.g. `var { $, addClass } = UIkit.util` and then use them like so `addClass($('#my-id'), 'example');`.
-This approach makes your code much smaller and clean.
 
 **Note** The parameter types make use of a couple of [Pseudo Types](#pseudo-types).
 
@@ -14,7 +11,7 @@ This approach makes your code much smaller and clean.
 ## Attributes
 
 The following functions are to work with HTML attributes. They either are used for conditional statements,
-DOM manipulation or setting/retrieving values.
+DOM manipulation or retrieving/setting values.
 
 ***
 
@@ -26,12 +23,11 @@ Get or set an element's attribute value.
     attr(element, name [, value]);
 ```
 
-| Parameter | Type   | Description           |
-|:----------|:-------|:--------|:----------------------|
+| Parameter | Type                   | Description           |
+|:----------|:-----------------------|:----------------------|
 | `element` | [Nodes](#pseudo-types) | The HTML element      |
-| `name`    | String | The attribute's name  |
+| `name`    | String                 | The attribute's name  |
 | `value`   | [mixed](#pseudo-types) | The attribute's value |
-
 
 The return value is the value of the attribute or `undefined` if used as setter with the `value` parameter.
 
@@ -61,23 +57,24 @@ attr(element, 'title', attrValue);
 
 ***
 
-### hasAttr
+## hasAttr
 
-This function is used for testing if an element has a specific attribute or not.
-The following parameters may be passed to the function.
+Check if an element has an attribute.
 
-| Parameter | Type   | Default | Description          |
-|:----------|:-------|:--------|:---------------------|
-| `element` | String | `null`  | The HTML element     |
-| `name`    | String | `null`  | The attribute's name |
+```javascript
+    hasAttr(element, name);
+```
 
-HTML
+| Parameter | Type                   | Description          |
+|:----------|:-----------------------|:---------------------|
+| `element` | [Nodes](#pseudo-types) | The HTML element     |
+| `name`    | String                 | The attribute's name |
+
+### Usage
 
 ```html
 <div id="example" uk-grid></div>
 ```
-
-JavaScript
 
 ```javascript
 var element = document.getElementById('example');
@@ -90,7 +87,7 @@ if (UIkit.util.hasAttr(element, 'uk-grid')) {
 }
 ```
 
-Result
+#### Result
 
 ```log
 This is a grid!
@@ -2627,8 +2624,8 @@ _mixed_ indicates that a parameter may accept multiple (but not necessarily all)
 
 ### Nodes
 
-_Nodes_ maybe a DOM Node, a NodeList, an Array of Nodes or a jQuery object. It will be filtered
+_Nodes_ may be a DOM Node, a NodeList, an Array of Nodes or a jQuery object. It will be filtered
 
 ### Node
 
-_Nodes_ maybe a DOM Node or the first node of a NodeList, an Array of Nodes or a jQuery object.
+_Nodes_ may be a DOM Node or the first node of a NodeList, an Array of Nodes or a jQuery object.
