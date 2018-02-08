@@ -8,7 +8,7 @@ The Breadcrumb component consists of links, which are aligned side by side and s
 
 To add list items without a link, use a `<span>` element instead of an `<a>`. Alternatively, disable an `<a>` element by adding the `.uk-disabled` class to the `<li>` element and remove the `href` attribute from the anchor to make it inaccessible through keyboard navigation.
 
-```
+```html
 <ul class="uk-breadcrumb">
     <li><a href=""></a></li>
     <li><a href=""></a></li>
