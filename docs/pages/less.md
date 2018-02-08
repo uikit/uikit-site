@@ -191,7 +191,7 @@ The entry point for the Less compiler, `/custom/my-theme.less`:
 
 Your theme folder has one file which imports all single component customizations, `custom/my-theme/_import.less`:
 
-```
+```less
 @import "accordion.less";
 @import "alert.less";
 // ...
