@@ -123,7 +123,7 @@ var notifications = UIkit.notification('MyMessage', 'danger');
 **Note**
 The options names must be in their camel cased representation, e.g. `show-on-up` becomes `showOnUp`.
 
-After initialisation you can get your component by calling the same initialisation function, ommiting the options parameter.
+After initialisation you can get your component by calling the same initialisation function, omitting the options parameter.
 
 ```javscript
 // Sticky is now the prior initialised components
@@ -131,8 +131,8 @@ var sticky = UIkit.sticky('.sticky');
 ```
 
 **Note**
-Using `UIkit[componentName]('selector')` with css selectors will always return the the first occurance only!
-If you need access to multiple instances of your components use the `UIkit.util.$` and `UIkit.util.$$` helper functions (or your prefered method of retireving DOM elements) to find the specific elements first, and then get your components by using that element as the first parameter in the component function, e.g. `UIKit.modal(myElementWithAModal);`
+Using `UIkit[componentName](selector)` with css selectors will always return the first occurrence only!
+If you need to access all instances do [query](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) the elements first. Then apply the getter to each element separately - `UIkit[componentName](element)`.
 
 
 Initializing your components programmatically gives you the possibility to invoke their functions directly.
