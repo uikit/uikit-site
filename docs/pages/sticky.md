@@ -23,7 +23,7 @@ To create an element that remains at the top of the viewport when scrolling down
 You can position the element below the viewport edge. Add the `offset` attribute and the distance in pixels.
 
 ```html
-<div uk-sticky="offset: 100"
+<div uk-sticky="offset: 100"></div>
 ```
 
 ```example
