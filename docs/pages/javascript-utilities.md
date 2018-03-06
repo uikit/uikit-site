@@ -1,10 +1,282 @@
 # JavaScript Utilities
 
 UIkit comes with its own, rather small but yet powerful JavaScript Framework, of which you can make use as well.
-The provided JavaScript utilities allow you to write simplified Vanilla JavaScript and replace the most common functions of jQuery.
-Once UIkit is [installed correctly](installation.md) they are accessible under the `UIkit.util` namespace.
+The provided JavaScript utilities allow you to write simplified Vanilla JavaScript and replace the most common
+functions of jQuery. Once UIkit is [installed correctly](installation.md) they are accessible under the
+`UIkit.util` namespace.
 
 **Note** The parameter types make use of a couple of [Pseudo Types](#pseudo-types).
+
+***
+
+## Ajax
+
+The following functions are to work with asynchronous tasks. They are used for executing code asynchronously.
+
+***
+
+## ajax
+
+Make asynchronous calls to a specific URL and pass it some data.
+
+```javascript
+ajax(url [, options]);
+```
+
+| Parameter | Type   | Description                                |
+|:----------|:-------|:-------------------------------------------|
+| `url`     | String | The URL to call                            |
+| `options` | Object | Additional options passed to the ajax call |
+
+The options object consists of the following key value pairs. Those values may be adapted to your needs.
+
+| Option         | Type     | Description                                                           |
+|:---------------|:---------|:----------------------------------------------------------------------|
+| `data`         | Object   | Additional data passed to the request                                 |
+| `method`       | String   | Method to call the URL, e.g. `GET`, `POST`, `PUT`, `DELETE`           |
+| `headers`      | Object   | Request headers, e.g. `{'X-Requested-With': 'XMLHttpRequest'}`        |
+| `xhr`          | Object   | The request object to perform the request with                        |
+| `beforeSend`   | Function | The callback function, which is executed before sending the data      |
+| `responseType` | String   | Response type, e.g. `arraybuffer`, `blob`, `document`, `json`, `text` |
+
+### Usage
+
+```javascript
+util.ajax('/api/users', { responseType: 'json' })
+  .then(function(xhr) {
+    console.log(xhr.response);
+  });
+```
+
+#### Result
+
+```log
+{parsed: 'json-object', with: 'some', example: 'data'}
+```
+
+***
+
+## getImage
+
+Load an image asynchronously.
+
+```javascript
+getImage(src);
+```
+
+| Parameter | Type   | Description                                |
+|:----------|:-------|:-------------------------------------------|
+| `src`     | String | Source path of the image to be loaded      |
+
+### Usage
+
+```javascript
+util.getImage('/path/to/image.jpeg')
+  .then(function(img) {
+    console.log(img);
+  });
+```
+
+#### Result
+
+```log
+<img src="/path/to/image.jpeg">
+```
+
+***
+
+## Animation
+
+The following functions are to animate elements. They are either used to transition some CSS properties or 
+animate whole elements, using UIkit's CSS animations.
+
+***
+
+## transition
+
+Transition a CSS value.
+
+```javascript
+transition(element, props [, duration, timing]);
+```
+
+| Parameter  | Type                  | Description                                                                   |
+|:-----------|:----------------------|:------------------------------------------------------------------------------|
+| `element`  | [Node](#pseudo-types) | The HTML element                                                              |
+| `props`    | Object                | The CSS properties to be changed                                              |
+| `duration` | Number                | The transition's duration (in milliseconds)                                   |
+| `timing`   | String                | Timing functions, e.g. `linear`, `ease`, `ease-in`, `ease-out`, `ease-in-out` |
+
+### Usage
+
+```html
+<div id="example" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
+```
+
+```javascript
+var element = util.$('#example');
+
+// Transition a CSS property to a certain value
+util.transition(element, { 'opacity': 0 })
+  .then(console.log('Card was faded out!'));
+```
+
+#### Result
+
+```log
+Card was faded out!
+```
+
+**Note** Before starting a transition, a value for the CSS property to be transitioned has to be present!
+
+***
+
+## Transition
+
+The Transition object makes four handy functions accessible.
+
+| Method       | Description                                                                    |
+|:-------------|:-------------------------------------------------------------------------------|
+| `start`      | Is an alias of the above mentioned `transition` function                       |
+| `stop`       | Stops the transition                                                           |
+| `cancel`     | Cancels the transition                                                         |
+| `inProgress` | Either returns `true` or `false`, whether the transition is in progress or not |
+
+### Usage
+
+```html
+<div id="example" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
+```
+
+```javascript
+var element = util.$('#example');
+
+// Start the transition
+util.Transition.start(element, {
+  'background': '#000',
+  'color': '#fff'
+}, 500, 'ease');
+
+// Check whether transition is in progress
+console.log(
+  util.Transition.inProgress(element)
+  ? 'Transition in progress!'
+  : 'No transition running!'
+);
+
+// Stop the transition
+util.Transition.stop(element);
+
+// Cancel the transition
+util.Transition.cancel(element);
+
+// Check whether transition is in progress
+console.log(
+  util.Transition.inProgress(element)
+  ? 'Transition in progress!'
+  : 'No transition running!'
+);
+```
+
+#### Result
+
+```log
+Transition in progress!
+No transition running!
+```
+
+***
+
+## animate
+
+Animate an element.
+
+```javascript
+animate(element, animation [, duration, origin, out]);
+```
+
+| Parameter   | Type                  | Description                                                               |
+|:------------|:----------------------|:--------------------------------------------------------------------------|
+| `element`   | [Node](#pseudo-types) | The HTML element                                                          |
+| `animation` | String                | The animation name, list of [available animations](animation.md#usage)    |
+| `duration`  | Number                | The animation's duration (in milliseconds)                                |
+| `origin`    | String                | Origin modifier, list of [available origins](utility.md#transform-origin) |
+| `out`       | Boolean               | Reverse modifier to change whether the animation is incoming or not       |
+
+**Note** The origin modifiers work only with scaling animations.
+
+### Usage
+
+```html
+<div id="example" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
+``
+
+```javascript
+var element = util.$('#example');
+
+// Animate an element
+util.animate(element, 'uk-animation-scale-up', 200, 'bottom-right', false)
+  .then(console.log('Card was scaled up!'));
+```
+
+#### Result
+
+```log
+Card was scaled up!
+```
+
+***
+
+## Animation
+
+The Animation object makes four handy functions accessible.
+
+| Method       | Description                                                                    |
+|:-------------|:-------------------------------------------------------------------------------|
+| `in`         | Is an alias of the above mentioned `animate` function, but always animates in  |
+| `out`        | Is an alias of the above mentioned `animate` function, but always animates out |
+| `inProgress` | Either returns true or false, whether the animation is in progress or not      |
+| `cancel`     | Cancels the animation                                                          |
+
+### Usage
+
+```html
+<div id="example" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
+```
+
+```javascript
+var element = util.$('example');
+
+// Animate in
+util.Animation.in(element, 'uk-animation-fade', 400, 'ease-in');
+
+// Check whether animation is in progress
+console.log(
+  util.Animation.inProgress(element)
+  ? 'Animation in progress!'
+  : 'No animation running!'
+);
+
+// Animate out
+util.Animation.out(element, 'uk-animation-fade', 400, 'ease-out');
+
+// Cancel the transition
+util.Animation.cancel(element);
+
+// Check whether animation is in progress
+console.log(
+  util.Animation.inProgress(element)
+  ? 'Animation in progress!'
+  : 'No animation running!'
+);
+```
+
+#### Result
+
+```log
+Animation in progress!
+No animation running!
+```
 
 ***
 
@@ -20,7 +292,7 @@ DOM manipulation or retrieving/setting values.
 Get or set an element's attribute value.
 
 ```javascript
-    attr(element, name [, value]);
+attr(element, name [, value]);
 ```
 
 | Parameter | Type                   | Description           |
@@ -40,13 +312,13 @@ If used as setter and the attribute does not already exist, it gets created simu
 ```
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Get attribute value
-var attrValue = attr(element, 'id');
+var attrValue = util.attr(element, 'id');
 
 // Set attribute value
-attr(element, 'title', attrValue);
+util.attr(element, 'title', attrValue);
 ```
 
 #### Result
@@ -62,7 +334,7 @@ attr(element, 'title', attrValue);
 Check if an element has an attribute.
 
 ```javascript
-    hasAttr(element, name);
+hasAttr(element, name);
 ```
 
 | Parameter | Type                   | Description          |
@@ -77,10 +349,10 @@ Check if an element has an attribute.
 ```
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Check if some element has some attribute
-if (UIkit.util.hasAttr(element, 'uk-grid')) {
+if (util.hasAttr(element, 'uk-grid')) {
     console.log('This is a grid!');
 } else {
     console.log('This is NOT a grid!');
@@ -460,173 +732,6 @@ Result
 
 ```log
 DOM is now safely manipulable.
-```
-
-***
-
-### transition
-
-This function is used for transitioning a CSS value. The following parameters may be passed to the function.
-
-| Parameter    | Type   | Default   | Description                                                                                        |
-|:-------------|:-------|:----------|:---------------------------------------------------------------------------------------------------|
-| `element`    | String | `null`    | The HTML element                                                                                   |
-| `props`      | Object | `null`    | The CSS properties to be changed                                                                   |
-| `duration`   | Number | `400`     | The transition's duration (in milliseconds)                                                        |
-| `transition` | String | `linear`  | Timing functions: `ease`, `linear`, `ease-in`, `ease-out`, `ease-in-out`, `step-start`, `step-end` |
-
-HTML
-
-```html
-<div id="example" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
-```
-
-JavaScript
-
-```javascript
-var element = document.getElementById('example');
-
-// Transition a CSS property to a certain value
-UIkit.util.transition(element, { 'opacity': 0 }).then(console.log('Transition finished!'));
-```
-
-Result
-
-```log
-Transition finished!
-```
-
-**Note** Before starting a transition, a value for the CSS property to be transitioned has to be present!
-
-***
-
-### Transition
-
-The Transition object makes four handy functions accessible, which are the following.
-
-| Method       | Description                                                                |
-|:-------------|:---------------------------------------------------------------------------|
-| `start`      | Is an alias of the above mentioned `transition` function                   |
-| `stop`       | Stops the transition                                                       |
-| `cancel`     | Cancels the transition                                                     |
-| `inProgress` | Either returns true or false, whether the transition is in progress or not |
-
-HTML
-
-```html
-<div id="example" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
-```
-
-JavaScript
-
-```javascript
-var element = document.getElementById('example');
-var Transition = UIkit.util.Transition;
-
-// Start the transition
-Transition.start(element, { 'background': '#000', 'color': '#fff' }, 500, 'ease');
-
-// Check whether transition is in progress
-console.log(Transition.inProgress(element) ? 'Transition in progress!' : 'No transition running!');
-
-// Stop the transition
-Transition.stop(element);
-
-// Cancel the transition
-Transition.cancel(element);
-
-// Check whether transition is in progress
-console.log(Transition.inProgress(element) ? 'Transition in progress!' : 'No transition running!');
-```
-
-Result
-
-```log
-Transition in progress!
-No transition running!
-```
-
-***
-
-### animate
-
-This function is used for animating an element. The following parameters may be passed to the function.
-
-| Parameter   | Type    | Default | Description                                                                                                    |
-|:------------|:--------|:--------|:---------------------------------------------------------------------------------------------------------------|
-| `element`   | String  | `null`  | The HTML element                                                                                               |
-| `animation` | String  | `null`  | The animation name, list of [available animations](animation.md#usage)                                         |
-| `duration`  | Number  | `200`   | The animation's duration (in milliseconds)                                                                     |
-| `origin`    | String  | `null`  | Origin modifier (works only with scaling animations), list of [available origins](utility.md#transform-origin) |
-| `out`       | Boolean | `null`  | Reverse modifier to change whether the animation is incoming or not                                            |
-
-HTML
-
-```html
-<div id="example" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
-```
-
-JavaScript
-
-```javascript
-var element = document.getElementById('example');
-
-// Animate an element
-UIkit.util.animate(element, 'uk-animation-scale-up', 200, 'bottom-right', false).then(console.log('Animation finished!'));
-```
-
-Result
-
-```log
-Animation finished!
-```
-
-***
-
-### Animation
-
-The Animation object makes four handy functions accessible, which are the following.
-
-| Method       | Description                                                                    |
-|:-------------|:-------------------------------------------------------------------------------|
-| `in`         | Is an alias of the above mentioned `animate` function, but always animates in  |
-| `out`        | Is an alias of the above mentioned `animate` function, but always animates out |
-| `inProgress` | Either returns true or false, whether the animation is in progress or not      |
-| `cancel`     | Cancels the animation                                                          |
-
-HTML
-
-```html
-<div id="example" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
-```
-
-JavaScript
-
-```javascript
-var element = document.getElementById('example');
-var Animation = UIkit.util.Animation;
-
-// Animate in
-Animation.in(element, 'uk-animation-fade', 400, 'ease-in');
-
-// Check whether animation is in progress
-console.log(Animation.inProgress(element) ? 'Animation in progress!' : 'No animation running!');
-
-// Animate out
-Animation.out(element, 'uk-animation-fade', 400, 'ease-out');
-
-// Cancel the transition
-Animation.cancel(element);
-
-// Check whether animation is in progress
-console.log(Animation.inProgress(element) ? 'Animation in progress!' : 'No animation running!');
-```
-
-Result
-
-```log
-Animation in progress!
-No animation running!
 ```
 
 ***
@@ -2498,45 +2603,6 @@ Result
 
 ```log
 If you click onto the card this function returns true, otherwise false.
-```
-
-***
-
-### ajax
-
-This function is used to make easy ajax calls to a specific url. 
-The following parameters may be passed to the function.
-
-| Parameter | Type   | Default | Description                                |
-|:----------|:-------|:--------|:-------------------------------------------|
-| `url`     | String | `null`  | The URL to call                            |
-| `options` | Object | `null`  | Additional options passed to the ajax call |
-
-The options consist of the following default values. Those values can be manipulated, like mentioned above.
-
-| Option         | Type     | Default                | Description                                                           |
-|:---------------|:---------|:-----------------------|:----------------------------------------------------------------------|
-| `data`         | Object   | `null`                 | Additional data passed to the request                                 |
-| `method`       | String   | `GET`                  | Method to call the URL                                                |
-| `headers`      | Object   | `{}`                   | Request headers                                                       |
-| `xhr`          | Object   | `new XMLHttpRequest()` | The request object to perform the request with                        |
-| `beforeSend`   | Function | `noop`                 | The callback function, which gets called before sending the data      |
-| `responseType` | String   | `''`                   | Response type, e.g. `arraybuffer`, `blob`, `document`, `json`, `text` |
-
-JavaScript
-
-```javascript
-UIkit.util.ajax('/api/users', {
-  responseType: 'json'
-}).then(function(xhr) {
-  console.log(xhr.response);
-});
-```
-
-Result
-
-```log
-{parsed: 'json-object', with: 'some', example: 'data'}
 ```
 
 ***
