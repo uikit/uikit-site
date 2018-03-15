@@ -21,7 +21,7 @@ The Zip file contains the compiled CSS and JavaScript files, which is everything
 
 ## HTML markup
 
-Add the compiled and minified CSS and JavaScript to the header of your HTML5 document. Also include the UIkit icon library. For your basic setup, that's it.
+Add the compiled and minified CSS and JavaScript to the head of your HTML5 document. Also include the UIkit icon library. For your basic setup, that's it.
 
 ```html
 <!DOCTYPE html>
