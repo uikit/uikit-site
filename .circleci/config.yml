@@ -34,7 +34,7 @@ jobs:
           name: Transfer Files
           command: |
             if [ "${CIRCLE_BRANCH}" = "master" ];then
-              rsync -avze "ssh -o StrictHostKeyChecking=no" --exclude-from ".circleci/exclude.txt" --copy-links --delete . $UIKIT_SERVER
+              rsync -avze "ssh -o StrictHostKeyChecking=no" --exclude-from ".circleci/exclude.txt" --copy-links --checksum --delete . $UIKIT_SERVER
             else
               echo "Skipping deploy on branch ${CIRCLE_BRANCH}";
             fi
