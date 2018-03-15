@@ -429,7 +429,7 @@ To place a navigation outside of a slider, add the `.uk-position-center-left-out
         </div>
 
         <a class="uk-position-center-left-out" href="#" uk-slider-item="previous">...</a>
-        <a class="uk-position-center-left-out" href="#" uk-slider-item="next">...</a>
+        <a class="uk-position-center-right-out" href="#" uk-slider-item="next">...</a>
 
     </div>
 
