@@ -74,7 +74,7 @@ Add one of the `.uk-hidden-*` classes to hide the element from screens larger th
 
 ### Visible
 
-Use `.uk-visible-*` classes to show the element for screens larger then the specified width.
+Use `.uk-visible-*` classes to show the element for screens larger than the specified width.
 
 | Class           | Description                                        |
 |:----------------|:---------------------------------------------------|
