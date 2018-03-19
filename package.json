@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "install": "npm install --prefix ./node_modules/uikit && symlink-dir ./node_modules/uikit ./assets/uikit",
+    "install": "cd ./node_modules/uikit && npm i && symlink-dir ./node_modules/uikit ./assets/uikit",
     "setup": "npm install && npm run compile",
     "compile": "npm run compile-js && npm run compile-less && npm run compile-uikit",
     "compile-uikit": "cd ./assets/uikit && npm run compile && npm run compile-rtl",
