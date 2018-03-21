@@ -9,7 +9,7 @@
                 <div class="uk-container">
 
                     <p class="uk-margin-large-bottom">
-                        <img :src="'./images/download.svg'">
+                        <canvas style="color: #fff" width="142" height="117" uk-svg src="./images/download.svg"></canvas>
                     </p>
 
                     <h1>Thanks for giving UIkit a try.</h1>

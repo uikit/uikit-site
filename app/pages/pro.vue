@@ -374,7 +374,7 @@
 
                             <div class="uk-text-left@m uk-text-center">
                                 <a class="uk-logo" href="./index">
-                                    <canvas class="uk-margin-small-right" width="28" height="34" uk-svg :src="'./images/uikit-logo.svg'"></canvas>
+                                    <canvas class="uk-margin-small-right" width="28" height="34" uk-svg src="./images/uikit-logo.svg"></canvas>
                                     UIkit
                                 </a>
                             </div>

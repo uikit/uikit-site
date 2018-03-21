@@ -9,7 +9,7 @@
                 <div class="uk-container">
 
                     <p>
-                        <img :src="'./images/uikit-logo-large.svg'">
+                        <canvas style="color: #fff" width="168" height="155" uk-svg src="./images/uikit-logo-large.svg"></canvas>
                     </p>
 
                     <p class="uk-margin-medium uk-text-lead">
