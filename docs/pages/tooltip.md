@@ -4,7 +4,7 @@
 
 ## Usage
 
-To apply this component, add the `uk-tooltip` attribute to an element. You also need to add the `title: TEXT` parameter to the attribute, whose value will represent your tooltip's text.
+To apply this component, add the `uk-tooltip` attribute to an element. You also need to add the `title: TEXT` option to the attribute, whose value will represent your tooltip's text.
 
 ```html
 <div uk-tooltip="title: Hello World"></div>
@@ -76,8 +76,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option      | Value  | Default                 | Description                                                                       |
 |:------------|:-------|:------------------------|:----------------------------------------------------------------------------------|
+| `title`     | String | ``                      | Tooltip text.                                                                 |
 | `pos`       | String | `top`                   | Tooltip position.                                                                 |
-| `offset`    | Number | `false`                 | The offset of the Tooltip.                                                        |
+| `offset`    | Number | `false`                 | Tooltip offset.                                                        |
 | `animation` | String | `uk-animation-scale-up` | The space separated names of animations to use. Comma separate for animation out. |
 | `duration`  | Number | `100`                   | The animation duration.                                                           |
 | `delay`     | Number | `0`                     | The show delay.                                                                   |
