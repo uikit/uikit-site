@@ -67,15 +67,15 @@
 
         mounted() {
 
-            ajax('https://api.github.com/repos/uikit/uikit?nc=' + Math.random(), {responseType: 'json'}).then(({response}) => {
+            ajax('https://api.github.com/repos/uikit/uikit', {responseType: 'json'}).then(({response}) => {
 
-                if (response && response.watchers) {
-                    $('[uikit-stargazers]').innerText = response.watchers;
+                if (response && response.stargazers_count) {
+                    $('[uikit-stargazers]').innerText = response.stargazers_count;
                 }
 
             });
 
-            ajax(`assets/uikit/package.json?nc=${Math.random()}`, {responseType: 'json'}).then(({response}) => $('[uikit-version]').innerText = response.version);
+            ajax(`assets/uikit/package.json`, {responseType: 'json'}).then(({response}) => $('[uikit-version]').innerText = response.version);
 
         }
     }

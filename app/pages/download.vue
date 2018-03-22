@@ -47,7 +47,7 @@
 
         mounted() {
 
-            ajax(`assets/uikit/package.json?nc=${Math.random()}`, {responseType: 'json'}).then(({response}) =>
+            ajax(`assets/uikit/package.json`, {responseType: 'json'}).then(({response}) =>
                 setTimeout(() => location.href = `https://github.com/uikit/uikit/releases/download/v${response.version}/uikit-${response.version}.zip`, 100)
             );
 

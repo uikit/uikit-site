@@ -17,26 +17,25 @@
 <IfModule mod_expires.c>
 
     ExpiresActive on
-    ExpiresDefault                                      "access plus 1 week"
+
+  # Plain Text
+
+    ExpiresByType text/plain                            "access plus 1 year"
 
   # CSS
 
-    ExpiresByType text/css                              "access plus 1 week"
+    ExpiresByType text/css                              "access plus 1 year"
 
   # Favicon (cannot be renamed!) and cursor images
 
     ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
     ExpiresByType image/x-icon                          "access plus 1 week"
 
-  # HTML
-
-    ExpiresByType text/html                             "access plus 0 seconds"
-
   # JavaScript
 
-    ExpiresByType application/javascript                "access plus 1 week"
-    ExpiresByType application/x-javascript              "access plus 1 week"
-    ExpiresByType text/javascript                       "access plus 1 week"
+    ExpiresByType application/javascript                "access plus 1 year"
+    ExpiresByType application/x-javascript              "access plus 1 year"
+    ExpiresByType text/javascript                       "access plus 1 year"
 
   # Media files
 
@@ -72,3 +71,11 @@
     ExpiresByType application/font-woff2                "access plus 1 month"
 
 </IfModule>
+
+<FilesMatch "package\.json$">
+    Header set Cache-Control "public, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "\.html$">
+    Header set Cache-Control "public, must-revalidate"
+</FilesMatch>

@@ -30,7 +30,7 @@
 
         mounted() {
 
-            ajax(`assets/uikit/CHANGELOG.md?nc=${Math.random()}`).then(({response}) => this.$refs.changelog.innerHTML = this.parse(response));
+            ajax(`assets/uikit/CHANGELOG.md?{{Build}}`).then(({response}) => this.$refs.changelog.innerHTML = this.parse(response));
 
         },
 

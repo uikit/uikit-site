@@ -99,7 +99,7 @@ npm run watch
 ```
 
 <script>
-    UIkit.util.ajax('https://getuikit.com/assets/uikit/package.json?nc=' + Math.random(), {responseType: 'json'}).then(function (xhr) {
+    UIkit.util.ajax('https://getuikit.com/assets/uikit/package.json', {responseType: 'json'}).then(function (xhr) {
             UIkit.util.$$('pre').forEach(function (pre) {
                 pre.innerHTML = pre.innerHTML.replace(/\[uikit-version]/g, xhr.response.version);
             });
