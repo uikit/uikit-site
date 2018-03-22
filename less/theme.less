@@ -7,27 +7,47 @@
 // Fonts
 @font-face {
     font-family: 'ProximaNova';
-    src: url('../fonts/ProximaNova-Light-webfont.eot');
-    src: url('../fonts/ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ProximaNova-Light-webfont.woff') format('woff'),
-         url('../fonts/ProximaNova-Light-webfont.ttf') format('truetype'),
-         url('../fonts/ProximaNova-Light-webfont.svg#ProximaNovaLight') format('svg');
+    src: url('../fonts/ProximaNova-Light-webfont.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Light-webfont.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('../fonts/ProximaNova-Reg-webfont.eot');
-    src: url('../fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'),
-         url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype'),
-         url('../fonts/ProximaNova-Reg-webfont.svg#ProximaNovaRegular') format('svg');
+    font-family: 'ProximaNova';
+    src: url('../fonts/ProximaNova-Reg-webfont.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Reg-webfont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
-@import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono';
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/ProximaNova-Sbold-webfont.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Sbold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-600.woff2') format('woff2'),
+         url('../fonts/montserrat-600.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../fonts/roboto-mono-regular.woff2') format('woff2'),
+         url('../fonts/roboto-mono-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 // UIkit
@@ -376,6 +396,7 @@ body { overflow: hidden; }
 .tm-h5,
 .tm-h6 {
     font-family: Montserrat;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: @global-muted-color;
