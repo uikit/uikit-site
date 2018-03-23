@@ -37,7 +37,8 @@
 
                             <div class="tm-intro-image">
                                 <div class="uk-inline">
-                                    <img src="images/pro/device-laptop.png" width="960" height="720" alt="Laptop Device">
+                                    <canvas width="960" height="670" v-show="!imgLoaded"></canvas>
+                                    <img src="images/pro/device-laptop.png" width="960" height="670" alt="Laptop Device" v-show="imgLoaded" @load="imgLoaded = true">
                                     <div style="position: absolute; top: 5%; left: 12%; right: 12%;">
                                         <img src="images/pro/page-builder.gif" width="730" height="456" alt="Animated Gif YOOtheme Pro Page Builder" uk-gif>
                                     </div>
@@ -447,6 +448,10 @@
     var {on} = UIkit.util;
 
     export default {
+
+        data: () => ({
+            imgLoaded: false
+        }),
 
         mounted() {
 
