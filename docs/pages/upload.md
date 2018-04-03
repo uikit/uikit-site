@@ -189,7 +189,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `allow`            | String   | `false`                 | File name filter. (eg. *.png)                               |
 | `mime`             | String   | `false`                 | File MIME type filter. (eg. image/*)                        |
 | `concurrent`       | Number   | `1`                     | Number of files that will be uploaded simultaneously.       |
-| `data-type`        | String   | `'''                    | The expected response data type: xml, json, script, or html |
+| `type`             | String   | ``                      | The expected [response type](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseType) |
+| `method`           | String   | `POST`                  | The request method |
 | `msg-invalid-mime` | String   | `Invalid File Type: %s` | Invalid MIME type message.                                  |
 | `msg-invalid-name` | String   | `Invalid File Name: %s` | Invalid name message.                                       |
 | `cls-dragover`     | String   | `uk-dragover`           | File name filter.                                           |
