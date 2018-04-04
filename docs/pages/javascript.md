@@ -158,8 +158,8 @@ Sometimes, components like Grid or Tab are hidden in the markup. This may happen
 UIkit offers several ways of updating a component. Omitting the `event` parameter will trigger an `update` event.
 
 ```js
-// Calls the update hook on element's parents and children or on all instances if element is omitted.
-UIkit.update(element, event = 'update');
+// Calls the update hook on components registered on the element itself, it's parents and children.
+UIkit.update(element = document.body, event = 'update');
 
 // Updates the component itself.
 component.$emit(event = 'update');
