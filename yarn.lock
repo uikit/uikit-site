@@ -2803,9 +2803,9 @@ uid-number@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/uid-number/-/uid-number-0.0.6.tgz#0ea10e8035e8eb5b8e4449f06da1c730663baa81"
 
-uikit@latest:
-  version "3.0.0-beta.41"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.0.0-beta.41.tgz#00d4a9b1a73ff2bc16a75e4f1a9f901285060185"
+uikit@^3.0.0-beta.42:
+  version "3.0.0-beta.42"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.0.0-beta.42.tgz#f00a3504cfff33bcbef692fbfac6c6f0f3d5be08"
 
 union-value@^1.0.0:
   version "1.0.0"
