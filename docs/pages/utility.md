@@ -271,9 +271,9 @@ Add the `uk-height-viewport` attribute to create a container that fills the heig
 | Option          | Value                  | Default | Description                                                                         |
 |:----------------|:-----------------------|:--------|:------------------------------------------------------------------------------------|
 | `offset-top`    | Boolean                | `false` | Subtracts the element's top offset from its height.                                 |
-| `offset-bottom` | Boolean, Number, Pixel | `false` | Subtracts the element's immediately following sibling's height from its own height. |
+| `offset-bottom` | Boolean, Number, Pixel | `false` | Subtracts the element's immediately following sibling's height (true), the given percentage (Number), Pixel (px) value from its own height or the given element's height. |
 | `expand`        | Boolean                | `true`  | Expand the element's height to make a short page fill the viewport.                 |
-| `min-height`    | Number                 | `0`     | Sets a minimum height. Useful if the all children are positioned absolute.          |
+| `min-height`    | Number                 | `0`     | Sets a minimum height. Useful if all children are positioned absolute.          |
 
 ```html
 <div uk-height-viewport></div>
