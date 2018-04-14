@@ -495,15 +495,11 @@ body { overflow: hidden; }
 /* Phone landscape and bigger */
 @media (min-width: @breakpoint-small) {
 
-    h2.tm-heading-fragment > a {
-        display: block;
-        margin-left: -25px;
-    }
-
     h2.tm-heading-fragment > a:before {
         content: "#";
+        position: absolute;
         width: 25px;
-        float: left;
+        margin-left: -25px;
         color: @global-muted-color;
     }
 
