@@ -1000,6 +1000,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `pause-on-hover`    | Boolean | `true` | Pause autoplay mode on hover.                        |
 | `sets`              | Boolean | `false` | Slide in sets.                                       |
 | `velocity`          | Number  | `1`     | The animation velocity (pixel/ms).                   |
+| `easing`            | String  | `ease`     | The animation easing (CSS timing functions or cubic-bezier).                   |
 
 ***
 
