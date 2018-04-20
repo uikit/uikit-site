@@ -62,7 +62,10 @@
                             label = 'uk-label-danger';
                     }
 
-                    return `<li><span class="uk-label ${label} uk-margin-right uk-text-center uk-width-small tm-width-small">${section}</span> ${text}</li>`;
+                    return `<li class="uk-flex uk-flex-top">
+                                <span class="uk-label ${label} uk-margin-right uk-text-center uk-width-small tm-label-changelog uk-flex-none">${section}</span>
+                                <div>${text}</div>
+                            </li>`;
                 };
 
                 renderer.heading = (text, level) => {
