@@ -22,6 +22,24 @@ To apply this component, add the `uk-lightbox` attribute to a container to turn 
 
 ***
 
+## Alt Attribute
+
+To add an `alt` attribute to the image in the lightbox, set the `data-alt` attribute on an anchor.
+
+```html
+<div uk-lightbox>
+    <a href="image.jpg" data-alt="Image"></a>
+</div>
+```
+
+```example
+<div uk-lightbox>
+    <a class="uk-button uk-button-default" href="../docs/images/photo.jpg" data-alt="Image">Open Lightbox</a>
+</div>
+```
+
+***
+
 ## Caption
 
 To display a caption at the bottom of the lightbox, set the `data-caption` attribute on an anchor.
