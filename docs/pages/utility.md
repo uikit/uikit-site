@@ -648,7 +648,10 @@ To start playing an animated Gif only when it comes into the viewport, add the `
 
 ## Video
 
-To automatically mute or play videos, add the `uk-video` attribute. The video will pause whenever it's not visible and resume once it becomes visible again.
+The `uk-video` component offers two advanced functionalities for videos. First, it allows to pause a video whenever it's hidden with CSS and resume once it becomes visible again. In addition the video can also pause when it's not in the vieport and start playing when entering the viewport again. Second, it allows to mute YouTube and Vimeo videos which is often needed if they are used as a background of a section. For example the [Slideshow](slideshow.md#videos), [Lightbox](lightbox.md#content-sources) and [Cover](cover.md#video) components inherit and make use of both functionalities.
+
+To apply this component, add the `uk-video` attribute with its options.
+
 
 ```html
 <video uk-video></div>
@@ -682,8 +685,8 @@ The table below lists the available settings of the `uk-video` attribute. [Learn
 
 | Option     | Value           | Default | Description                      |
 |:-----------|:----------------|:--------|:---------------------------------|
-| `autoplay` | Boolean, String | `true`  | Automatically start the video. Pauses the video if it is not visible. A value of `inview` will delay loading the video and play/pause the video as it enters/leaves the viewport. |
-| `automute` | Boolean         | `false` | Automatically mute the video.    |
+| `autoplay` | Boolean, String | `true`  | The video automatically plays/pauses as it's visible/hidden on the page. A value of `inview` play/pause the video as it enters/leaves the viewport. |
+| `automute` | Boolean         | `false` | Automatically mute YouTube or Vimeo videos.    |
 
 `autoplay` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
