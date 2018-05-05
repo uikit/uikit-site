@@ -490,7 +490,7 @@ To optimize the display of table cells and their specific content, you can add o
         <tbody>
             <tr>
                 <td><input class="uk-checkbox" type="checkbox"></td>
-                <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt=""></td>
+                <td><img class="uk-preserve-width uk-border-circle" src="../docs/images/avatar.jpg" width="40" alt=""></td>
                 <td class="uk-table-link">
                     <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
                 </td>
@@ -499,7 +499,7 @@ To optimize the display of table cells and their specific content, you can add o
             </tr>
             <tr>
                 <td><input class="uk-checkbox" type="checkbox"></td>
-                <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt=""></td>
+                <td><img class="uk-preserve-width uk-border-circle" src="../docs/images/avatar.jpg" width="40" alt=""></td>
                 <td class="uk-table-link">
                     <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
                 </td>
@@ -508,7 +508,7 @@ To optimize the display of table cells and their specific content, you can add o
             </tr>
             <tr>
                 <td><input class="uk-checkbox" type="checkbox"></td>
-                <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt=""></td>
+                <td><img class="uk-preserve-width uk-border-circle" src="../docs/images/avatar.jpg" width="40" alt=""></td>
                 <td class="uk-table-link">
                     <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
                 </td>
@@ -517,7 +517,7 @@ To optimize the display of table cells and their specific content, you can add o
             </tr>
             <tr>
                 <td><input class="uk-checkbox" type="checkbox"></td>
-                <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt=""></td>
+                <td><img class="uk-preserve-width uk-border-circle" src="../docs/images/avatar.jpg" width="40" alt=""></td>
                 <td class="uk-table-link">
                     <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
                 </td>

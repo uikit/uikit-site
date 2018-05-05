@@ -306,7 +306,7 @@ If you want to display media, you should first check, if the [Lightbox component
 <div id="modal-media-image" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <img src="images/photo.jpg" alt="">
+        <img src="../docs/images/photo.jpg" alt="">
     </div>
 </div>
 

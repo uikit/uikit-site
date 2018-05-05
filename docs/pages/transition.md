@@ -55,8 +55,8 @@ This component is mostly used in combination with the [Overlay component](overla
     </div>
     <div class="uk-text-center">
         <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-            <img src="images/dark.jpg" alt="">
-            <img class="uk-transition-scale-up uk-position-cover" src="images/light.jpg" alt="">
+            <img src="../docs/images/dark.jpg" alt="">
+            <img class="uk-transition-scale-up uk-position-cover" src="../docs/images/light.jpg" alt="">
         </div>
         <p class="uk-margin-small-top">2 Images</p>
     </div>

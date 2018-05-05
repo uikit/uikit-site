@@ -119,7 +119,7 @@ To display an overlay icon, add the `uk-overlay-icon` attribute to a `<span>` el
     <div>
 
         <div class="uk-inline uk-dark">
-            <img src="images/photo.jpg" alt="">
+            <img src="../docs/images/photo.jpg" alt="">
             <div class="uk-overlay-default uk-position-cover">
                 <div class="uk-position-center">
                     <span uk-overlay-icon></span>

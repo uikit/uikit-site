@@ -54,7 +54,7 @@ Resize the browser window to see the responsive behavior of the image.
 
 ```example
 <div class="uk-width-large">
-    <img src="images/photo.jpg" alt="Image">
+    <img src="../docs/images/photo.jpg" alt="Image">
 </div>
 ```
 
