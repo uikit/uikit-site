@@ -345,6 +345,131 @@ You can easily combine the grid with the [Flex component](flex.md). That way you
 
 ***
 
+## Masonry
+
+If grid cells have different heights, a layout free of gaps can be created by adding `masonry: true` to the attribute.
+
+```html
+<div uk-grid="masonry: true">...</div>
+```
+
+```example
+<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 100px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 130px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 150px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 160px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 120px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 180px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item</div>
+    </div>
+</div>
+```
+
+***
+
+## Filter and order
+
+Grid items can also be filtered and ordered by category, date or other meta data. Take a look at the [Filter component](filter.md).
+
+***
+
+## Parallax
+
+To move single columns of a grid at different speeds while scrolling, just add `parallax: 150` to the attribute. The number sets the parallax translation in pixels.
+
+```html
+<div uk-grid="parallax: 150">...</div>
+```
+
+There are two types of markup to apply this effect. The following example uses 3 defined columns.
+
+```example
+<div class="uk-child-width-expand@s uk-text-center" uk-grid="parallax: 150">
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+    </div>
+</div>
+```
+
+***
+
+The parallax effect is also applied, if grid columns wrap into the next line which is shown in the next example.
+
+```example
+<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="parallax: 150">
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+</div>
+```
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
