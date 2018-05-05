@@ -1,8 +1,8 @@
 # Filter
 
-<p class="uk-text-lead">Filter or order items in multi-column and masonry grids or any given layout by category, date or other meta data.</p>
+<p class="uk-text-lead">Filter or sort items in multi-column and masonry grids or any given layout by category, date or other meta data.</p>
 
-The Filter component is often used together with the [Grid component](grid.md), especially the masonry grid, but it's not bound to it. Any layout can be filtered or sorted not matter how the items are positioned. Items fade and move with smooth transitions between the different filter and order states.
+The Filter component is often used together with the [Grid component](grid.md), especially the masonry grid, but it's not bound to it. Any layout can be filtered or sorted not matter how the items are positioned. Items fade and move with smooth transitions between the different filtering and sorting states.
 
 ***
 
@@ -255,3 +255,58 @@ To reset the filter and target all items use the `uk-filter-control` without any
 
 </div>
 ```
+
+## Multiple Filters
+
+Define different types of meta data and add any number of controls to filter them. The filter controls are exclusive, meaning just one criteria is filtered at a time.
+
+```html
+<div uk-filter="target: .js-filter">
+
+    <ul>
+        <li uk-filter-control="[data-color='red']"><a href="#"></a></li>
+    </ul>
+
+    <ul>
+        <li uk-filter-control="[data-size='small']"><a href="#"></a></li>
+    </ul>
+
+    <ul class="js-filter">
+        <li data-color="red" data-size="small"></li>
+    </ul>
+
+</div>
+```
+
+## Groups
+
+To filter items by multiple criterias at the same time, the filter controls need to be grouped. Just add the `group: NAME` option to the `uk-filter-control` attribute and define group names for the meta data.
+
+```html
+<div uk-filter="target: .js-filter">
+
+    <ul>
+        <li uk-filter-control="[data-color='red']; group: color"><a href="#"></a></li>
+        <li uk-filter-control="[data-color='blue']; group: color"><a href="#"></a></li>
+    </ul>
+
+    <ul>
+        <li uk-filter-control="[data-size='small']; group: size"><a href="#"></a></li>
+        <li uk-filter-control="[data-size='large']; group: size"><a href="#"></a></li>
+    </ul>
+
+    <ul class="js-filter">
+        <li data-color="red" data-size="small"></li>
+    </ul>
+
+</div>
+```
+
+## Sorting
+
+### Order
+
+
+
+## Masonry Grid
+

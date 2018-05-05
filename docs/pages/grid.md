@@ -389,7 +389,7 @@ If grid cells have different heights, a layout free of gaps can be created by ad
 
 ## Filter and order
 
-Grid items can also be filtered and ordered by category, date or other meta data. Take a look at the [Filter component](filter.md).
+Grid items can also be filtered and sorted by category, date or other meta data. Take a look at the [Filter component](filter.md).
 
 ***
 
