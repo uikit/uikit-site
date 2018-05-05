@@ -46,6 +46,7 @@
         "Heading": "heading",
         "Icon": "icon",
         "Iconnav": "iconnav",
+        "Image": "image",
         "Inverse": "inverse",
         "Label": "label",
         "Lightbox": "lightbox",
