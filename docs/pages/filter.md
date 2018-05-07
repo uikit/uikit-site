@@ -697,3 +697,35 @@ Here is comprehensive example with a masonry grid.
 
 </div>
 ```
+
+***
+
+## Component options
+
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+
+| Option         | Value  | Default         | Description                                                                                                |
+|:---------------|:-------|:----------------|:-----------------------------------------------------------------------------------------------------------|
+| `target`      | String | ''  | The targeted list on which to apply the filter to. |
+| `selActive` | String, Boolean | false     | A selector for the initially active filter controls.
+
+***
+
+## JavaScript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.filter(element, options);
+```
+
+### Events
+
+The following events will be triggered on elements with this component attached:
+
+| Name         | Description                                                              |
+|:-------------|:-------------------------------------------------------------------------|
+| `beforeFilter`     | Fires before the filter is applied.                                |
+| `afterFilter` | Fires after the filter has been applied.                                |

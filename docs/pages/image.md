@@ -67,3 +67,33 @@ The Image component allows to use `srcset` for background images. Just add the `
      data-sizes="(min-width: 900px) 900px"
      uk-img>Headline</div>
 ```
+
+***
+
+## Component options
+
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+
+| Option         | Value  | Default         | Description                                                                                                |
+|:---------------|:-------|:----------------|:-----------------------------------------------------------------------------------------------------------|
+| `dataSrc`    | String | ''  | The image's `src` attribute. |
+| `dataSrcset` | String | false     | The image's `srcset` attribute. |
+| `dataSizes` | String | false     | The image's `sizes` attribute. |
+| `width` | String | false     | The image's `width` attribute. It will be used to determine the placeholder's width. |
+| `height` | String | false     | The image's `height` attribute. It will be used to determine the placeholder's height. |
+| `dataWidth` | String | false     | The image's `width` attribute. It will be used to determine the placeholder's width. Use this option, if you do not want an actual `width` attribute on your image. |
+| `dataHeight` | String | false     | The image's `height` attribute. It will be used to determine the placeholder's height. Use this option, if you do not want an actual `height` attribute on your image. |
+| `offsetTop` | String | '100vh'     | The offset increases the viewport's bounding box vertically, before computing an intersection with the image. |
+| `offsetLeft` | String | 0     | The offset increases the viewport's bounding box horizontally, before computing an intersection with the image. |
+
+***
+
+## JavaScript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.img(element, options);
+```
