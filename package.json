@@ -1,16 +1,16 @@
 {
   "scripts": {
     "install": "cd ./node_modules/uikit && npm i && cd ../../ && symlink-dir ./node_modules/uikit ./assets/uikit",
-    "setup": "npm install && npm run compile",
-    "compile": "npm run compile-js && npm run compile-less && npm run compile-uikit",
-    "compile-uikit": "cd ./assets/uikit && npm run compile && npm run compile-rtl",
+    "setup": "yarn install && yarn compile",
+    "compile": "yarn compile-js && yarn compile-less && yarn compile-uikit",
+    "compile-uikit": "cd ./assets/uikit && yarn compile && yarn compile-rtl",
     "compile-js": "./node_modules/.bin/webpack -p",
-    "compile-less": "mkdirp css && lessc less/theme.less > css/theme.css --relative-urls --rootpath=../less/ -x"
+    "compile-less": "make-dir css && lessc less/theme.less > css/theme.css --relative-urls --rootpath=../less/ -x"
   },
   "devDependencies": {
     "buble-loader": "^0.4.1",
     "less": "^2.7.2",
-    "mkdirp": "^0.5.1",
+    "make-dir-cli": "^1.0.0",
     "symlink-dir": "^1.1.2",
     "uikit": "^3.0.0-beta.42",
     "unique-id": "0.0.1",
