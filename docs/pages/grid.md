@@ -478,6 +478,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 |:---------------|:-------|:----------------|:-----------------------------------------------------------------------------------------------------------|
 | `margin `      | String | uk-grid-margin  | This class is added to items that break into the next row, typically to create margin to the previous row. |
 | `first-column` | String | uk-first-column | This class is added to the first element in each row.                                                      |
+| `masonry` | Boolean | false | Enables masonry layout for this grid.                                                      |
+| `parallax` | Number | 0 | Parallax translation value. The value must be a positive integer. Falsy disables the parallax effect (default).                                                      |
 
 ***
 
