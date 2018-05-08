@@ -78,11 +78,12 @@ Any of these options can be applied to the component attribute. Separate multipl
 |:---------------|:-------|:----------------|:-----------------------------------------------------------------------------------------------------------|
 | `dataSrc`    | String | ''  | The image's `src` attribute. |
 | `dataSrcset` | String | false     | The image's `srcset` attribute. |
-| `dataSizes` | String | false     | The image's `sizes` attribute. |
+| `sizes` | String | false     | The image's `sizes` attribute. |
+| `dataSizes` | String | false     | See `sizes` option. |
 | `width` | String | false     | The image's `width` attribute. It will be used to determine the placeholder's width and the images position in the document. |
+| `dataWidth` | String | false     | See `width` option. Use this option, if you do not want an actual `width` attribute on your image. |
 | `height` | String | false     | The image's `height` attribute. It will be used to determine the placeholder's height and the images position in the document. |
-| `dataWidth` | String | false     | The image's `width` attribute. It will be used to determine the placeholder's width and the images position in the document. Use this option, if you do not want an actual `width` attribute on your image. |
-| `dataHeight` | String | false     | The image's `height` attribute. It will be used to determine the placeholder's height and the images position in the document. Use this option, if you do not want an actual `height` attribute on your image. |
+| `dataHeight` | String | false     | See `height` option. Use this option, if you do not want an actual `height` attribute on your image. |
 | `offsetTop` | String | '100vh'     | The offset increases the viewport's bounding box vertically, before computing an intersection with the image. |
 | `offsetLeft` | String | 0     | The offset increases the viewport's bounding box horizontally, before computing an intersection with the image. |
 
