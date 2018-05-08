@@ -704,10 +704,10 @@ Here is comprehensive example with a masonry grid.
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option         | Value  | Default         | Description                                                                                                |
-|:---------------|:-------|:----------------|:-----------------------------------------------------------------------------------------------------------|
-| `target`      | String | ''  | The targeted list on which to apply the filter to. |
-| `selActive` | String, Boolean | false     | A selector for the initially active filter controls.
+| Option      | Value           | Default | Description                                          |
+|:------------|:----------------|:--------|:-----------------------------------------------------|
+| `target`    | String          | ''      | The targeted list on which to apply the filter to.   |
+| `selActive` | String, Boolean | false   | A selector for the initially active filter controls. |
 
 ***
 
@@ -725,7 +725,7 @@ UIkit.filter(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name         | Description                                                              |
-|:-------------|:-------------------------------------------------------------------------|
-| `beforeFilter`     | Fires before the filter is applied.                                |
-| `afterFilter` | Fires after the filter has been applied.                                |
+| Name           | Description                              |
+|:---------------|:-----------------------------------------|
+| `beforeFilter` | Fires before the filter is applied.      |
+| `afterFilter`  | Fires after the filter has been applied. |
