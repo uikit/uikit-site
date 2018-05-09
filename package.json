@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "install": "cd ./node_modules/uikit && npm i && cd ../../ && symlink-dir ./node_modules/uikit ./assets/uikit",
-    "setup": "yarn install && yarn compile",
+    "install": "cd ./node_modules/uikit && yarn && cd ../../ && symlink-dir ./node_modules/uikit ./assets/uikit",
+    "setup": "yarn && yarn compile",
     "compile": "yarn compile-js && yarn compile-less && yarn compile-uikit",
     "compile-uikit": "cd ./assets/uikit && yarn compile && yarn compile-rtl",
     "compile-js": "./node_modules/.bin/webpack -p",
