@@ -3,7 +3,7 @@
     "install": "cd ./node_modules/uikit && yarn && cd ../../ && symlink-dir ./node_modules/uikit ./assets/uikit",
     "setup": "yarn && yarn compile",
     "compile": "yarn compile-js && yarn compile-less && yarn compile-uikit",
-    "compile-uikit": "cd ./assets/uikit && yarn compile && yarn compile-rtl",
+    "compile-uikit": "cd ./assets/uikit && yarn compile-less && yarn compile-rtl && npm run compile-js -- uikit",
     "compile-js": "./node_modules/.bin/webpack -p",
     "compile-less": "make-dir css && lessc less/theme.less > css/theme.css --relative-urls --rootpath=../less/ -x"
   },
