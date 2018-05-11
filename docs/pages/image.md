@@ -15,11 +15,13 @@ It supports the `img` element and the CSS `background-image` property. The `srcs
 
 ## Usage
 
-To apply this component, add the `uk-img` attribute to an `<img>` element and prefix the `src` attribute as `data-src`. A `width` and `height` attribute (optionally prefixed with `data-`) are required too, so an empty placeholder can be generated in the exact same size as the image.
+To apply this component, add the `uk-img` attribute to an `<img>` element and prefix the `src` attribute as `data-src`.
 
 ```html
 <img data-src="" width="" height="" alt="" uk-img>
 ```
+
+A `width` and `height` attribute are required too, so an empty placeholder can be generated in the exact same size as the image. Alternatively, use `data-width` and `data-height`, if you don't want to set the explicit attributes.
 
 ```example
 <img data-src="../docs/images/light.jpg" width="1800" height="1200" alt="" uk-img>
