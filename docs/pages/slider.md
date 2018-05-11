@@ -509,7 +509,7 @@ To place a navigation outside of a slider, add the `.uk-position-center-left-out
 
 ## Viewport height
 
-Adding the `uk-height-viewport` attribute from the [Utility component](utility.md#viewport-height) to the list of slider items will stretch the height of the `<ul>` and `<li>` elements to fill the whole viewport height. Since the width and height now aren't defined by the item's content anymore, you have to use absolute positioning for the content.
+Adding the `uk-height-viewport` attribute from the [Height component](height.md#viewport-height) to the list of slider items will stretch the height of the `<ul>` and `<li>` elements to fill the whole viewport height. Since the width and height now aren't defined by the item's content anymore, you have to use absolute positioning for the content.
 
 Use the [Cover component](cover.md) so that images cover the whole item area and are clipped. The `.uk-grid-match` class from the [Grid component](grid.md#match-height) matches the height of the direct child of each item. This is useful in this example, since the child element now applies the same width and height as the list item.
 

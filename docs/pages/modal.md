@@ -285,7 +285,7 @@ By default, the page will scroll with the modal, if its content exceeds the wind
 
 If you want to display media, you should first check, if the [Lightbox component](lightbox.md) doesn't already offer everything you need. However, you can also use the modal to have more control over the markup to wrap your media in.
 
-**Note** Use the `uk-video` attribute from the [Utility component](utility.md) to make sure videos are stopped when the modal is closed.
+**Note** Use the `uk-video` attribute from the [Video component](video.md) to make sure videos are stopped when the modal is closed.
 
 ```html
 <div uk-modal>

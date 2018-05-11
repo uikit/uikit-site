@@ -226,7 +226,7 @@ You can also match the height of the direct child of just one cell. To do so, ad
 
 ### JavaScript
 
-For a more specific selection of the elements whose heights should be matched, add the `target: SELECTOR` option to the `uk-height-match` attribute from the [Utility component](utility.md).
+For a more specific selection of the elements whose heights should be matched, add the `target: SELECTOR` option to the `uk-height-match` attribute from the [Height component](height.md#match-height).
 
 ```html
 <div uk-grid uk-height-match="target: > div > .uk-card">
