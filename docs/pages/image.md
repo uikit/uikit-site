@@ -61,6 +61,10 @@ To use this component with the CSS `background-image` property, add it to a `<di
 </div>
 ```
 
+***
+
+### Background image with Srcset
+
 The Image component allows to use `srcset` for background images. Just add the `data-srcset` attribute. If you need the `sizes` attribute, prefix it as well as `data-sizes`.
 
 ```html
