@@ -11,6 +11,8 @@ The Image component improves page speed significantly by following methods:
 
 It supports the `img` element and the CSS `background-image` property. The `srcset` attribute for images is supported as well to serve the optimal image for different device widths and high resolution (retina) displays. The Image component even makes it possible to use `srcset` for the CSS `background-image` property.
 
+***
+
 ## Usage
 
 To apply this component, add the `uk-img` attribute to an `<img>` element and prefix the `src` attribute as `data-src`. A `width` and `height` attribute (optionally prefixed with `data-`) are required too, so an empty placeholder can be generated in the exact same size as the image.
@@ -23,6 +25,8 @@ To apply this component, add the `uk-img` attribute to an `<img>` element and pr
 <img data-src="../docs/images/light.jpg" width="1800" height="1200" alt="" uk-img>
 ```
 
+***
+
 ## Srcset
 
 To use the `srcset` attribute, just prefix it as `data-srcset`.
@@ -32,13 +36,14 @@ To use the `srcset` attribute, just prefix it as `data-srcset`.
 ```
 
 ```example
-<img data-src="../docs/images/light-900w.jpg"
-     data-srcset="../docs/images/light-450w.jpg 450w,
-                  ../docs/images/light-900w.jpg 900w,
-                  ../docs/images/light-1800w.jpg 1800w"
-     sizes="(min-width: 900px) 900px"
-     width="900" height="600" alt="" uk-img>
+<img data-src="https://images.unsplash.com/photo-1522201949034-507737bce479?fit=crop&w=650&h=433&q=80"
+     data-srcset="https://images.unsplash.com/photo-1522201949034-507737bce479?fit=crop&w=650&h=433&q=80 650,
+                  https://images.unsplash.com/photo-1522201949034-507737bce479?fit=crop&w=1300&h=866&q=80 1300"
+     sizes="(min-width: 650px) 650px, 100vw" width="650" height="433" alt="" uk-img>
+
 ```
+
+***
 
 ## Background image
 
@@ -49,7 +54,9 @@ To use this component with the CSS `background-image` property, add it to a `<di
 ```
 
 ```example
-<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover" data-src="../docs/images/light.jpg" uk-img>Headline</div>
+<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="../docs/images/photo.jpg" uk-img>
+  <h1>Background Image</h1>
+</div>
 ```
 
 The Image component allows to use `srcset` for background images. Just add the `data-srcset` attribute. If you need the `sizes` attribute, prefix it as well as `data-sizes`.
@@ -59,13 +66,23 @@ The Image component allows to use `srcset` for background images. Just add the `
 ```
 
 ```example
-<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover"
-     data-src="../docs/images/light-900w.jpg"
-     data-srcset="../docs/images/light-450w.jpg 450w,
-                  ../docs/images/light-900w.jpg 900w,
-                  ../docs/images/light-1800w.jpg 1800w"
-     data-sizes="(min-width: 900px) 900px"
-     uk-img>Headline</div>
+<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+     data-src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80"
+     data-srcset="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80 650w,
+                  https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=1300&h=866&q=80 1300w"
+     data-sizes="(min-width: 650px) 650px, 100vw" uk-img>
+    <h1>Background Image</h1>
+</div>
+```
+
+***
+
+## Custom placeholder
+
+By default, the placeholder image is transparent. Use the `img[data-src][src*='data:image']` selector to add a custom background or preload animation.
+
+```css
+img[data-src][src*='data:image'] { background: rgba(0,0,0,0.1); }
 ```
 
 ***
