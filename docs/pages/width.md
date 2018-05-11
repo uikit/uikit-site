@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Define the width of elements for different viewport sizes.</p>
 
-UIkit's width component is often used in combination with [grids](grid.md) to split content into responsive columns. You can apply fractions, automatic width or expand units to fill the remaining space and combine these modes.
+UIkit's Width component is often used in combination with [grids](grid.md) to split content into responsive columns. You can apply fractions, automatic width or expand units to fill the remaining space and combine these modes.
 
 ***
 
@@ -64,7 +64,7 @@ Add one of the `.uk-width-*` classes to an element to determine its size. Typica
 
 ## Auto & expand
 
-The width component provides additional modifiers to give you more flexibility in the distribution of items.
+The Width component provides additional modifiers to give you more flexibility in the distribution of items.
 
 | Class              | Description                                                            |
 |:-------------------|:-----------------------------------------------------------------------|

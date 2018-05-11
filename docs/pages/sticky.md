@@ -131,7 +131,7 @@ Bind the sticky behavior to a specific element, so that it disappears after scro
 
 ## Responsive
 
-You also have the possibility of disabling the sticky behavior for different devices by applying the `media` option to the `uk-sticky` attribute and adding the appropriate viewport width. The element will be sticky from the specified viewport width and upwards, but not below.
+It's possible to disable the sticky behavior for different devices widths by applying the `media` option to the attribute and adding the appropriate viewport width. Add a number in pixel, for example `media: 640`, or a breakpoint, for example `media: @m`. The element will be sticky from the specified viewport width and upwards, but not below.
 
 ```html
 <div uk-sticky="media: 640"></div>

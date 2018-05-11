@@ -199,6 +199,16 @@ CSS filters are an easy way to add graphical effects to any element on your page
 
 ***
 
+## Responsive
+
+It's possible to disable the parallax for different device widths by applying the `media` option to the attribute and adding the appropriate viewport width. Add a number in pixel, for example `media: 640`, or a breakpoint, for example `media: @m`. The parallax will be shown from the specified viewport width and upwards, but not below.
+
+```html
+<div uk-parallax="media: @m"></div>
+```
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)

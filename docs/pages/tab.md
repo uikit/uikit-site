@@ -51,7 +51,7 @@ Add the `.uk-tab-bottom` class to flip tab items to the bottom.
 
 ## Left/Right modifiers
 
-Add the `.uk-tab-left` or `.uk-tab-right` class to align tabs vertically to the left or right side. To save space, the alignment automatically switches back to horizontal when the viewport width goes below 960px. Add the `media` option with your own value to the `uk-tab` attribute to modify this behavior.
+Add the `.uk-tab-left` or `.uk-tab-right` class to align tabs vertically to the left or right side. To save space, the alignment automatically switches back to horizontal when the viewport width goes below 960px.
 
 When using the vertical alignment, you will usually create a grid to apply the layout as seen in the [Switcher example](switcher.md#vertical-tabs).
 
@@ -79,6 +79,16 @@ When using the vertical alignment, you will usually create a grid to apply the l
         </ul>
     </div>
 </div>
+```
+
+***
+
+### Responsive
+
+To change the default breakpoint between the vertical and horizontal alignment, just apply the `media` option to the attribute with the appropriate viewport width. Add a number in pixel, for example `media: 640`, or a breakpoint, for example `media: @m`.
+
+```html
+<ul class="uk-tab-left" uk-tab="media: @s">...</ul>
 ```
 
 ***

@@ -397,7 +397,7 @@ Grid items can also be filtered and sorted by category, date or other meta data.
 
 ## Parallax
 
-To move single columns of a grid at different speeds while scrolling, just add `parallax: 150` to the attribute. The number sets the parallax translation in pixels.
+To move single columns of a grid at different speeds while scrolling, just add `parallax: NUMBER` to the attribute. The number sets the parallax translation in pixels.
 
 ```html
 <div uk-grid="parallax: 150">...</div>
