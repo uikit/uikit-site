@@ -4,6 +4,8 @@
 
 UIkit's Height component offers three options to set heights: by simple utility classes, depending on the viewport or by matching different element heights.
 
+***
+
 ## Usage
 
 UIkit provides a number of useful classes to alter an element's height.
@@ -35,7 +37,7 @@ UIkit provides a number of useful classes to alter an element's height.
 
 ***
 
-### Viewport height
+## Viewport height
 
 Add the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `offset-top`, `offset-bottom` or `expand` option to the attribute. [Learn more](javascript.md#component-configuration)
 
