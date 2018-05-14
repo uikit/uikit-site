@@ -72,6 +72,8 @@ To define the widths of the slider items, use the [Width component](width.md). E
 </div>
 ```
 
+**Note** To lazy load images in the slides, take a look at the [Image component](image.md#target).
+
 ***
 
 ## Container

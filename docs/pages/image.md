@@ -83,6 +83,90 @@ The Image component allows to use `srcset` for background images. Just add the `
 
 ***
 
+## Target
+
+Usually, the image starts loading when it enters the viewport. To start loading based on the viewport visibility of another element, use the `target` option. This is very useful to lazy load images in the [Slideshow](slideshow.md) and [Slider](slider.md) components.
+
+```html
+<img data-src="" width="" height="" alt="" uk-img="target: .my-class">
+```
+
+The following example loads all images in the slides as soon as the whole slideshow enters the viewport. It uses `!.uk-slideshow-items` as target selector. The `!` looks up the DOM to find the next element with the `.uk-slideshow-item` class.
+
+```example
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img data-src="../docs/images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+        </li>
+        <li>
+            <img data-src="../docs/images/dark.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+        </li>
+        <li>
+            <img data-src="../docs/images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+```
+
+***
+
+### Load previous and next
+
+It's also possible to load only the image of the active slide and lazy load the images on the other slides. Just target the previous and next slide for each image by using the `target: !* -*, !* +*` option. There are two expeptions where you have to select the first and last slides.
+
+| Selector                              | Description                                                                           |
+|:--------------------------------------|:--------------------------------------------------------------------------------------|
+| `!* -*`                               | Looks one element up (`!*`) and selects the preceding element (`-*`).                 |
+| `!* +* `                              | Looks one element up (`!*`) and selects the succeeding element (`+*`).                |
+| `!.uk-slideshow-items > :last-child`  | Looks up till the next element with `.uk-slideshow-item` and selects the last child.  |
+| `!.uk-slideshow-items > :first-child` | Looks up till the next element with `.uk-slideshow-item` and selects the first child. |
+
+```html
+<ul class="uk-slideshow-items">
+    <li>
+        <img data-src="" width="" height="" alt="" uk-img="target: !.uk-slideshow-items > :last-child, !* +*">
+    </li>
+    <li>
+        <img data-src="" width="" height="" alt="" uk-img="target: !* -*, !* +*">
+    </li>
+    <li>
+        <img data-src="" width="" height="" alt="" uk-img="target: !* -*, !* +*">
+    </li>
+    <li>
+        <img data-src="" width="" height="" alt="" uk-img="target: !* -*, !.uk-slideshow-items > :first-child">
+    </li>
+</ul>
+```
+
+```example
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img data-src="../docs/images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items > :last-child, !* +*">
+        </li>
+        <li>
+            <img data-src="../docs/images/dark.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !* +*">
+        </li>
+        <li>
+            <img data-src="../docs/images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !.uk-slideshow-items > :first-child">
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+```
+
+***
+
 ## Custom placeholder
 
 By default, the placeholder image is transparent. Use the `img[data-src][src*='data:image']` selector to add a custom background or preload animation.
