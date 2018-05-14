@@ -218,7 +218,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option           | Value           | Default        | Description                                                                                        |
 |:-----------------|:----------------|:---------------|:---------------------------------------------------------------------------------------------------|
-| `toggle`         | String, Boolean | `true`         | CSS selector for the element to be used as the toggler. By default, the preceding element is used. |
+| `toggle`         | String, Boolean | `- *`          | CSS selector for the element to be used as toggle. By default, the preceding element is used. |
 | `pos`            | String          | `bottom-left`  | The position of the drop.                                                                          |
 | `mode`           | String          | `click, hover` | Comma separated list of drop trigger behaviour modes: `hover`, `click`                             |
 | `delay-show`     | Number          | `0`            | Delay time in milliseconds before a drop is displayed in hover mode.                               |
