@@ -2,15 +2,15 @@
 
 <p class="uk-text-lead">Create a fully responsive, fluid and nestable grid layout.</p>
 
-The Grid system of UIkit allows you to arrange block elements in columns and works closely together with the [Width component](width.md) to determine how much space of the container each item will take up. It can also be combined with the [Flex component](flex.md) to align and order grid items.
+The Grid system of UIkit allows you to arrange block elements in columns. It works closely together with the [Width component](width.md) to determine how much space of the container each item will take up, and it can also be combined with the [Flex component](flex.md) to align and order grid items.
 
 ***
 
 ## Usage
 
-To create the grid container, add the `uk-grid` attribute to a `<div>` element. Add child `<div>` elements to create the cells. By default, all grid cells are stacked. To place them side by side, add one of the classes from the [Width component](width.md). Using `uk-child-width-expand` will automatically apply equal width to items, regardless of how many there are.
+To create the grid container, add the `uk-grid` attribute to a `<div>` element. Add child `<div>` elements to create the cells. By default, all grid cells are stacked. To place them side by side, add one of the classes from the [Width component](width.md). Using `.uk-child-width-expand` will automatically apply equal width to items, regardless of how many there are.
 
-**Note** There's no need to add a `uk-grid` class, as it will get added via JavaScript. However, if UIkit's JavaScript is [deferred](https://developer.mozilla.org/de/docs/Web/HTML/Element/script#attr-defer), the class should be added to prevent stacking while loading.
+**Note** There's no need to add a `.uk-grid` class, as it will be added via JavaScript. However, if UIkit's JavaScript is [deferred](https://developer.mozilla.org/docs/Web/HTML/Element/script#attr-defer), the class should be added to prevent stacking while loading.
 
 ```html
 <div uk-grid>
@@ -18,7 +18,7 @@ To create the grid container, add the `uk-grid` attribute to a `<div>` element. 
     <div></div>
 </div>
 ```
-**Note** Often cards from the [Card component](card.md) are used inside a grid. In the following examples too for visualization.
+**Note** Often cards from the [Card component](card.md) are used inside a grid. This also goes for the following examples, for visualization.
 
 ```example
 <div class="uk-child-width-expand@s uk-text-center" uk-grid>
