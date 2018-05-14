@@ -299,7 +299,7 @@ If you want to display media, you should first check, if the [Lightbox component
  <p uk-margin>
     <a class="uk-button uk-button-default" href="#modal-media-image" uk-toggle>Image</a>
     <a class="uk-button uk-button-default" href="#modal-media-video" uk-toggle>Video</a>
-    <a class="uk-button uk-button-default" href="#modal-media-youtube" uk-toggle>Youtube</a>
+    <a class="uk-button uk-button-default" href="#modal-media-youtube" uk-toggle>YouTube</a>
     <a class="uk-button uk-button-default" href="#modal-media-vimeo" uk-toggle>Vimeo</a>
 </p>
 

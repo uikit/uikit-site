@@ -158,7 +158,7 @@ A lightbox is not restricted to images. Other media, like videos, can be display
 
 The Lightbox uses the `href` attribute to figure out the type of the linked content. If no filename extension is defined in the path, just add the `data-type` attribute to the `<a>` tag.
 
-TODO You can also set `data-type="video"` when linking to a video. Otherwise, the lightbox will show an iframe by default.
+**Hint** YouTube and Vimeo Urls will be handled automatically.
 
 | Option               | Description                            |
 |:---------------------|:---------------------------------------|

@@ -55,7 +55,7 @@ To mute YouTube or Vimeo videos by default, add the `uk-video="automute: true"` 
 ```
 
 ```example
-<button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +">Toggle Youtube Video</button>
+<button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +">Toggle YouTube Video</button>
 
 <iframe src="//www.youtube.com/embed/YE7VzlLtp-4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="560" height="315" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
 ```

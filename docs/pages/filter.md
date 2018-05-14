@@ -2,13 +2,13 @@
 
 <p class="uk-text-lead">Filter or sort items in multi-column and masonry grids or any given layout by category, date or other meta data.</p>
 
-The Filter component is often used together with the [Grid component](grid.md), especially the masonry grid, but it's not bound to it. Any layout can be filtered or sorted not matter how the items are positioned. Items fade and move with smooth transitions between the different filtering and sorting states.
+The Filter component is often used together with the [Grid component](grid.md), especially the masonry grid, but it's not bound to it. Any layout can be filtered or sorted no matter how the items are positioned. Items fade and move with smooth transitions between the different filtering and sorting states.
 
 ***
 
 ## Usage
 
-To apply this component, add the `uk-filter="target: SELECTOR"` attribute to a container element which contains the filter controls and the targeted layout items. Use the `target: SELECTOR` option to select the element containing the layout items. Create also a list of filter controls.
+To apply this component, add the `uk-filter="target: SELECTOR"` attribute to a container element which contains the filter controls and the targeted layout items. Use the `target: SELECTOR` option to select the element containing the layout items. Also create a list of filter controls.
 
 ```html
 <div uk-filter="target: .js-filter">
