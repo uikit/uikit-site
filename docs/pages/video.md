@@ -62,7 +62,7 @@ To mute YouTube or Vimeo videos by default, add the `uk-video="automute: true"` 
 
 ***
 
-### Component options
+## Component options
 
 The table below lists the available settings of the `uk-video` attribute. [Learn more](javascript.md#component-configuration)
 
@@ -82,5 +82,5 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ### Initialization
 
 ```js
-
+UIkit.video(element, options);
 ```

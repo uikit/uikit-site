@@ -70,5 +70,5 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ### Initialization
 
 ```js
-
+UIkit.leader(element, options);
 ```

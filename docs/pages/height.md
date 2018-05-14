@@ -142,7 +142,7 @@ If your grid wraps into multiple rows, only grid columns within the same row are
 
 ***
 
-### Component options
+## Component options
 
 The table below lists the available settings of the `uk-height-match` attribute. [Learn more](javascript.md#component-configuration)
 
@@ -150,3 +150,13 @@ The table below lists the available settings of the `uk-height-match` attribute.
 |:---------|:-------------|:--------|:--------------------------------------------------------------------------------------------|
 | `target` | CSS selector | `false` | Elements that should match. By default, direct children will match.                         |
 | `row`    | Boolean      | `true`  | If your targets wrap into multiple rows, only grid columns within the same row are matched. |
+
+## JavaScript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.heightMatch(element, options);
+```

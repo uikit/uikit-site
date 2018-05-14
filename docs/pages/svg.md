@@ -30,6 +30,13 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 
 ## Component options
 
+The table below lists the available settings of the `uk-height-match` attribute. [Learn more](javascript.md#component-configuration)
+
+| Option  | Value  | Default | Description          |
+|:--------|:-------|:--------|:---------------------|
+| `src`   | String | `''`    | The SVG source url. If a location hash is present, only the `<symbol>` of the SVG with the given ID is shown. |
+| `ratio` | Number | `1`     | The svg size ratio. |
+
 ***
 
 ## JavaScript
@@ -39,5 +46,5 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ### Initialization
 
 ```js
-
+UIkit.svg(element, options);
 ```
