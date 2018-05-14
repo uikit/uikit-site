@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Inject inline SVG images into the page markup and style them with CSS.</p>
 
-SVGs or Scaleable Vector Graphics are really handy, for example to display a logo that remains crisp when scaling or that is animated. The SVG component provides more control to style and animate the image and its vector parts. It injects the image into the markup as inline SVG including all attributes, like IDs, classes, width and height, which can now easily be targeted using CSS.
+SVGs or Scalable Vector Graphics are really handy, for example to display a logo that remains crisp when scaling or that is animated. The SVG component provides more control to style and animate the image and its vector parts. It injects the image into the markup as inline SVG including all attributes, like IDs, classes, width and height, which can now easily be targeted using CSS.
 
 ***
 
@@ -35,7 +35,6 @@ The table below lists the available settings of the `uk-height-match` attribute.
 | Option  | Value  | Default | Description          |
 |:--------|:-------|:--------|:---------------------|
 | `src`   | String | `''`    | The SVG source url. If a location hash is present, only the `<symbol>` of the SVG with the given ID is shown. |
-| `ratio` | Number | `1`     | The svg size ratio. |
 
 ***
 
