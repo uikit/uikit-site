@@ -8,7 +8,7 @@ A leader, also known as a dot leader or a tab leader, is a repeating pattern use
 
 ## Usage
 
-To apply this component, add the `uk-leader` attribute to the left element. A line of characters, by default dots, will then fill the remaining space between the item and its adjacent element.
+To apply this component, add the `uk-leader` attribute to the element on the left. A line of characters, by default dots, will then fill the remaining space between the item and its adjacent element.
 
 ```html
 <div uk-leader></div>
@@ -28,17 +28,17 @@ To apply this component, add the `uk-leader` attribute to the left element. A li
 To change the dot to any custom character, just add the `fill: STRING` option to the attribute.
 
 ```html
-<div uk-leader="fill: _"></div>
+<div uk-leader="fill: -"></div>
 ```
 
 ```example
 <div class="uk-grid-small" uk-grid>
-    <div class="uk-width-expand" uk-leader="fill: _">Lorem ipsum dolor sit amet</div>
+    <div class="uk-width-expand" uk-leader="fill: -">Lorem ipsum dolor sit amet</div>
     <div>$20.90</div>
 </div>
 ```
 
-**Note** The default Fill character can be set through a CSS variable or through a LESS variable.
+**Note** The default fill character can be set through a CSS or LESS variable.
 
 ```css
 .var-leader-fill:before { content: '.'; }
