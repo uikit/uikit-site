@@ -82,7 +82,7 @@
                             return;
                         }
 
-                        ajax(`pages/${page}.md?{{Build}}`).then(({response}) => {
+                        ajax(`pages/${page}.md?{{BUILD}}`).then(({response}) => {
 
                             if (startsWith(response.trim(), '<!DOCTYPE html>')) {
                                 response = `<div class="uk-text-center">

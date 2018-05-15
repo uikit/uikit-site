@@ -23,8 +23,7 @@ jobs:
       - run:
           name: Compile
           command: |
-            mkdir css
-            yarn run compile
+            yarn compile
       - run:
           name: Replace Build Number
           command: |
