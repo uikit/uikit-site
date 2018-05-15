@@ -28,8 +28,8 @@ jobs:
       - run:
           name: Replace Build Number
           command: |
-            sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" app/pages/changelog.vue
-            sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/app/page.vue
+            sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" app/main.min.js
+            sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/app/main.min.js
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/index.html
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" index.html
       - run:
