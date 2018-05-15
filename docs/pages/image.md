@@ -52,7 +52,7 @@ To use the `srcset` attribute, just prefix it as `data-srcset`.
 To use this component with the CSS `background-image` property, add it to a `<div>` or any other element.
 
 ```html
-<div data-src="" uk-img></div>
+<div data-src="" uk-img>...</div>
 ```
 
 ```example
@@ -68,7 +68,7 @@ To use this component with the CSS `background-image` property, add it to a `<di
 The Image component allows to use `srcset` for background images. Just add the `data-srcset` attribute. If you need the `sizes` attribute, prefix it as well as `data-sizes`.
 
 ```html
-<div data-src="" data-srcset="" data-sizes="" uk-img>
+<div data-src="" data-srcset="" data-sizes="" uk-img>...</div>
 ```
 
 ```example
