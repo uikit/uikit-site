@@ -8,7 +8,7 @@ The Filter component is often used together with the [Grid component](grid.md), 
 
 ## Usage
 
-To apply this component, add the `uk-filter="target: SELECTOR"` attribute to a container element which contains the filter controls and the targeted layout items. Use the `target: SELECTOR` option to select the element containing the layout items. Also create a list of filter controls.
+To apply this component, you need a `<ul>` element to create the filter controls as well as the layout items you want to filter. Wrap both inside a container element and add the `uk-filter="target: SELECTOR"` attribute. Use the `target: SELECTOR` option to select the element containing the layout items.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -28,7 +28,7 @@ To apply this component, add the `uk-filter="target: SELECTOR"` attribute to a c
 
 Next, we need to define the meta data for each layout item, for example which category the item belongs to. Use any HTML class or attribute to do so.
 
-To apply a filter control, add the `uk-filter-control` attribute and to define the meta data which should be filtered use the `filter: SELECTOR` option. The selector can be any CSS selector like a HTML class or attribute you define for the layout items.
+To apply a filter control, add the `uk-filter-control` attribute. To define the meta data that should be filtered, use the `filter: SELECTOR` option. The selector can be any CSS selector like a HTML class or attribute you define for the layout items.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -43,7 +43,7 @@ To apply a filter control, add the `uk-filter-control` attribute and to define t
 
 </div>
 ```
-If `filter` is the only option in the attribute value, you can also use `uk-filter-control="SELECTOR"`. Here is an example using HTML classes.
+If `filter` is the only option in the attribute value, you can also use `uk-filter-control="SELECTOR"`. Here is an example that uses HTML classes.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -110,13 +110,13 @@ If `filter` is the only option in the attribute value, you can also use `uk-filt
 </div>
 ```
 
-The Filter component comes without any styles, which allows you to use any of the other UIkit component to create the filter controls and layout items. For example the [Nav](nav.md), [Subnav](subnav.md) and [Tab](tab.md) components can be used to style the filter controls. And the [Grid component](grid.md) is used to create the item layout.
+The Filter component comes unstyled, which allows you to use any of the other UIkit components to create the filter controls and layout items. For example, the [Nav](nav.md), [Subnav](subnav.md) and [Tab](tab.md) components can be used to style the filter controls. Usually, the [Grid component](grid.md) is used to create the item layout.
 
 ***
 
 ## Active state
 
-Add the `uk-active` class to filter control and the filter will be applied initially.
+Add the `.uk-active` class to filter control and the filter will be applied initially.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -187,7 +187,7 @@ Add the `uk-active` class to filter control and the filter will be applied initi
 
 ## Reset filter
 
-To reset the filter and target all items use the `uk-filter-control` without any specified selector.
+To reset the filter and target all items, use the `uk-filter-control` attribute without any specified selector.
 
 ```html
 <div uk-filter="target: .js-filter">
