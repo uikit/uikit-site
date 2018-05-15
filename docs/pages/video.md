@@ -2,11 +2,11 @@
 
 <p class="uk-text-lead">Start playing videos as they are shown or enter the viewport.</p>
 
-The Video component offers two advanced functions for videos. First, it allows to pause a video whenever it's hidden with CSS and resume playing once it becomes visible again. In addition the video can also pause when it's not in the viewport and start playing when entering the viewport.
+The Video component offers two advanced functions for videos. First, it allows to pause a video whenever it's hidden with CSS and resume playing once it becomes visible again. In addition, the video can pause when it's outside the viewport and start playing when entering it.
 
-Second, it allows to mute YouTube and Vimeo videos which is often needed if they are used as a background of a section.
+Secondly, it allows to mute YouTube and Vimeo videos, which is often needed if they are used as the background of a section.
 
-For example the [Slideshow](slideshow.md#videos), [Lightbox](lightbox.md#content-sources) and [Cover](cover.md#video) components inherit and make use of both functions.
+For example, the [Slideshow](slideshow.md#videos), [Lightbox](lightbox.md#content-sources) and [Cover](cover.md#video) components inherit and make use of both functions.
 
 ***
 
