@@ -1,8 +1,8 @@
 # Height
 
-<p class="uk-text-lead">Define the height of elements depending on the viewport or by matching their heights.</p>
+<p class="uk-text-lead">Define the height of elements depending on the viewport or match the heights of different elements.</p>
 
-UIkit's Height component offers three options to set heights: by simple utility classes, depending on the viewport or by matching different element heights.
+UIkit's Height component offers three options to set heights: using simple fixed height classes, depending on the viewport or by matching the heights of different elements.
 
 ***
 
@@ -45,7 +45,7 @@ Add the `uk-height-viewport` attribute to create a container that fills the heig
 |:----------------|:-----------------------|:--------|:------------------------------------------------------------------------------------|
 | `offset-top`    | Boolean                | `false` | Subtracts the element's top offset from its height.                                 |
 | `offset-bottom` | Boolean, Number, Pixel | `false` | Subtracts the element's immediately following sibling's height (true), the given percentage (Number), Pixel (px) value from its own height or the given element's height. |
-| `expand`        | Boolean                | `true`  | Expand the element's height to make a short page fill the viewport.                 |
+| `expand`        | Boolean                | `true`  | Expands the element's height to make a short page fill the viewport.                |
 | `min-height`    | Number                 | `0`     | Sets a minimum height. Useful if all children are positioned absolute.          |
 
 ```html
