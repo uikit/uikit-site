@@ -116,7 +116,7 @@ The Filter component comes unstyled, which allows you to use any of the other UI
 
 ## Active state
 
-Add the `.uk-active` class to filter control and the filter will be applied initially.
+Add the `.uk-active` class to filter control, and the filter will be applied initially.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -350,7 +350,7 @@ Define different types of meta data and add any number of controls to filter the
 
 ## Groups
 
-To filter items by multiple criterias at the same time, the filter controls need to be grouped. Just add the `group: NAME` option to the `uk-filter-control` attribute and define group names for the meta data.
+To filter items by multiple criteria at the same time, the filter controls need to be grouped. Just add the `group: NAME` option to the `uk-filter-control` attribute and define group names for the meta data.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -443,7 +443,7 @@ To filter items by multiple criterias at the same time, the filter controls need
 
 ## Sorting
 
-To sort items alphabetically, just add the `sort: ATTRIBUTE` option to the `uk-filter-control` attribute and define by which meta data attribute the items shoud be sorted. By default, items are sorted ascending. Add the `order: desc` to sort items descending.
+To sort items alphabetically, just add the `sort: ATTRIBUTE` option to the `uk-filter-control` attribute and define by which meta data attribute the items should be sorted. By default, items are sorted ascending. Add the `order: desc` to sort items descending.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -516,7 +516,7 @@ To sort items alphabetically, just add the `sort: ATTRIBUTE` option to the `uk-f
 
 A filter is often applied to a [Masonry](grid.md#masonry) grid. The filter transitions works perfect with any kind of layout. No matter how they are positioned. It works even with the [Parallax](grid.md#parallax) option from the grid.
 
-Here is comprehensive example with a masonry grid.
+Here is a comprehensive example with a masonry grid.
 
 ```example
 <div uk-filter="target: .js-filter">
