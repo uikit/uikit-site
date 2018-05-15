@@ -8,7 +8,7 @@ The Filter component is often used together with the [Grid component](grid.md), 
 
 ## Usage
 
-To apply this component, you need a `<ul>` element to create the filter controls as well as the layout items you want to filter. Wrap both inside a container element and add the `uk-filter="target: SELECTOR"` attribute. Use the `target: SELECTOR` option to select the element containing the layout items.
+To apply this component, you need a container element with the `uk-filter="target: SELECTOR"` attribute. Inside this container create a list of filter controls as well as the layout items you want to filter. Use the `target: SELECTOR` option to select the element containing the layout items.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -116,7 +116,7 @@ The Filter component comes unstyled, which allows you to use any of the other UI
 
 ## Active state
 
-Add the `.uk-active` class to filter control, and the filter will be applied initially.
+Add the `.uk-active` class to a filter control, and the filter will be applied initially.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -443,7 +443,7 @@ To filter items by multiple criteria at the same time, the filter controls need 
 
 ## Sorting
 
-To sort items alphabetically, just add the `sort: ATTRIBUTE` option to the `uk-filter-control` attribute and define by which meta data attribute the items should be sorted. By default, items are sorted ascending. Add the `order: desc` to sort items descending.
+To sort items alphanumerically, just add the `sort: ATTRIBUTE` option to the `uk-filter-control` attribute and define the meta data attribute by which the items should be sorted. By default, items are sorted in ascending order. Add the `order: desc` to sort items in descending order.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -514,7 +514,7 @@ To sort items alphabetically, just add the `sort: ATTRIBUTE` option to the `uk-f
 
 ## Masonry Grid
 
-A filter is often applied to a [Masonry](grid.md#masonry) grid. The filter transitions works perfect with any kind of layout. No matter how they are positioned. It works even with the [Parallax](grid.md#parallax) option from the grid.
+A filter is often applied to a [Masonry](grid.md#masonry) grid. The filter transition works perfectly with any kind of layout. No matter how the items are positioned. It even works with the [Parallax](grid.md#parallax) option from the grid.
 
 Here is a comprehensive example with a masonry grid.
 
