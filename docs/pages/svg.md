@@ -24,7 +24,7 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 <img src="../assets/uikit/tests/images/icons.svg#cloud-upload" width="40" height="40" uk-svg>
 ```
 
-**Note** SVGs will adapt the current color for their stroke and fill color. To prevent this behavior, you can add the `uk-preserve` class to the SVG itself or to elements inside the SVG.
+**Note** SVGs will adapt the current color for their stroke and fill color. To prevent this behavior, you can add the `.uk-preserve` class to the SVG itself or to elements inside the SVG.
 
 ***
 
@@ -49,7 +49,7 @@ The table below lists the available settings of the `uk-height-match` attribute.
 
 | Option  | Value  | Default | Description          |
 |:--------|:-------|:--------|:---------------------|
-| `src`   | String | `''`    | The SVG source url. If a location hash is present, only the `<symbol>` of the SVG with the given ID is shown. |
+| `src`   | String | `''`    | The SVG source URL. If a location hash is present, only the `<symbol>` of the SVG with the given ID is shown. |
 
 ***
 
