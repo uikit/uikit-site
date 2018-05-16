@@ -28,21 +28,6 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 
 ***
 
-## Ratio
-
-Add the `ratio: 2` attribute to the SVG to double its size – or any other number, depending on how big you want the image to be.
-
-```html
-<img src="" ratio="2" uk-svg>
-```
-
-```example
-<img src="../assets/uikit/src/images/icons/cloud-download.svg" width="40" height="40" ratio="2" uk-svg>
-```
-
-
-***
-
 ## Component options
 
 The table below lists the available settings of the `uk-height-match` attribute. [Learn more](javascript.md#component-configuration)
