@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Speed up page loading times and decrease traffic by only loading images as they enter the viewport.</p>
 
-The Image component improves page speed significantly by following methods:
+The Image component improves page speed significantly by following these methods:
 
 - Only images which are initially in the viewport are loaded.
 - Other images are lazy loaded as they enter the viewport when scrolling.
@@ -15,13 +15,13 @@ It supports the `img` element and the CSS `background-image` property. The `srcs
 
 ## Usage
 
-To apply this component, add the `uk-img` attribute to an `<img>` element and prefix the `src` attribute as `data-src`.
+To apply this component, add the `uk-img` attribute to an `<img>` element and add the `data-` prefix to the `src` attribute so that it reads `data-src`.
 
 ```html
 <img data-src="" width="" height="" alt="" uk-img>
 ```
 
-A `width` and `height` attribute are required too, so an empty placeholder can be generated in the exact same size as the image. Alternatively, use `data-width` and `data-height`, if you don't want to set the explicit attributes.
+The `width` and `height` attributes are required too, so an empty placeholder can be generated in the exact same size as the image. Alternatively, use `data-width` and `data-height`, if you don't want to set the explicit attributes.
 
 ```example
 <img data-src="../docs/images/light.jpg" width="1800" height="1200" alt="" uk-img>
@@ -91,7 +91,7 @@ Usually, the image starts loading when it enters the viewport. To start loading 
 <img data-src="" width="" height="" alt="" uk-img="target: .my-class">
 ```
 
-The following example loads all images in the slides as soon as the whole slideshow enters the viewport. It uses `!.uk-slideshow-items` as target selector. The `!` looks up the DOM to find the next element with the `.uk-slideshow-item` class.
+The following example loads all images in the slides as soon as the whole slideshow enters the viewport. It uses `!.uk-slideshow-items` as a target selector. The `!` looks up the DOM to find the next element with the `.uk-slideshow-item` class.
 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
@@ -118,7 +118,7 @@ The following example loads all images in the slides as soon as the whole slides
 
 ### Load previous and next
 
-It's also possible to load only the image of the active slide and lazy load the images on the other slides. Just target the previous and next slide for each image by using the `target: !* -*, !* +*` option. There are two expeptions where you have to select the first and last slides.
+It's also possible to load only the image of the active slide and lazy load the images of the other slides. Just target the previous and next slide for each image by using the `target: !* -*, !* +*` option. There are two exceptions where you have to select the first and last slides.
 
 | Selector                              | Description                                                                           |
 |:--------------------------------------|:--------------------------------------------------------------------------------------|
