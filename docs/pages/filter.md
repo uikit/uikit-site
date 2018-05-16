@@ -298,8 +298,6 @@ Items can have different meta data for filtering. You just need to define the HT
 </div>
 ```
 
-
-
 ***
 
 ## Multiple Filters
