@@ -28,7 +28,7 @@ To apply this component, you need a container element with the `uk-filter="targe
 
 Next, we need to define the meta data for each layout item, for example which category the item belongs to. Use any HTML class or attribute to do so.
 
-To apply a filter control, add the `uk-filter-control` attribute. To define the meta data that should be filtered, use the `filter: SELECTOR` option. The selector can be any CSS selector like a HTML class or attribute you define for the layout items.
+To apply a filter control, add the `uk-filter-control` attribute. To define the meta data that should be filtered, use the `filter: SELECTOR` option. The selector can be any CSS selector like an HTML class or an attribute you define for the layout items.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -43,7 +43,7 @@ To apply a filter control, add the `uk-filter-control` attribute. To define the 
 
 </div>
 ```
-If `filter` is the only option in the attribute value, you can also use `uk-filter-control="SELECTOR"`. Here is an example that uses HTML classes.
+If `filter` is the only option in the attribute value, you can also use `uk-filter-control="SELECTOR"`. Here is an example that uses HTML classes:
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -514,9 +514,9 @@ To sort items alphanumerically, just add the `sort: ATTRIBUTE` option to the `uk
 
 ## Masonry Grid
 
-A filter is often applied to a [Masonry](grid.md#masonry) grid. The filter transition works perfectly with any kind of layout. No matter how the items are positioned. It even works with the [Parallax](grid.md#parallax) option from the grid.
+A filter is often applied to a [Masonry](grid.md#masonry) grid. The filter transition works perfectly with any kind of layout no matter how the items are positioned. It even works with the [Parallax](grid.md#parallax) option from the grid.
 
-Here is a comprehensive example with a masonry grid.
+Here is a comprehensive example with a masonry grid:
 
 ```example
 <div uk-filter="target: .js-filter">
