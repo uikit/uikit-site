@@ -2,9 +2,9 @@
 
 <p class="uk-text-lead">Start playing videos as they are shown or enter the viewport.</p>
 
-The Video component offers two advanced functions for videos. First, it allows to pause a video whenever it's hidden with CSS and resume playing once it becomes visible again. In addition, the video can pause when it's outside the viewport and start playing when entering it.
+The Video component offers two advanced functions for videos. First, it allows you to pause a video whenever it's hidden with CSS and resume playing once it becomes visible again. In addition, the video can pause when it's outside the viewport and start playing when entering it.
 
-Secondly, it allows to mute YouTube and Vimeo videos, which is often needed if they are used as the background of a section.
+Secondly, it allows you to mute YouTube and Vimeo videos, which is often needed if they are used as the background of a section.
 
 For example, the [Slideshow](slideshow.md#videos), [Lightbox](lightbox.md#content-sources) and [Cover](cover.md#video) components inherit and make use of both functions.
 
@@ -68,10 +68,10 @@ The table below lists the available settings of the `uk-video` attribute. [Learn
 
 | Option     | Value           | Default | Description                      |
 |:-----------|:----------------|:--------|:---------------------------------|
-| `autoplay` | Boolean, String | `true`  | The video automatically plays/pauses as it's visible/hidden on the page. A value of `inview` play/pause the video as it enters/leaves the viewport. |
+| `autoplay` | Boolean, String | `true`  | The video automatically plays/pauses as it's visible/hidden on the page. A value of `inview` plays/pauses the video as it enters/leaves the viewport. |
 | `automute` | Boolean         | `false` | Automatically mute YouTube or Vimeo videos.    |
 
-`autoplay` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+`autoplay` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
 ***
 
