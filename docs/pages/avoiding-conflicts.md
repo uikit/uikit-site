@@ -14,9 +14,9 @@ When you have [setup UIkit from Github source](installation.md#compile-from-gith
 
 
 ```sh
-npm run prefix -- -p xyz # replace xyz with your custom prefix.
+yarn prefix -- -p xyz # replace xyz with your custom prefix.
 ```
-**Note** `npm run prefix` will prompt for a prefix.
+**Note** `yarn prefix` will prompt for a prefix.
 
 The script will go through all CSS files in the `/dist` folder and replace them with your custom prefix version.
 
@@ -29,10 +29,10 @@ The script will go through all CSS files in the `/dist` folder and replace them 
 Using a scoped version of UIkit allows you to limit styles to only apply to a certain part of your document. This might be needed in environments of admin interfaces, such as the backend of WordPress or Joomla. When you have [setup UIkit from Github source](installation.md#compile-from-github-source), you can recompile UIkit as a scoped version.
 
 ```sh
-npm run scope
+yarn scope
 ```
 
-**Note** Type ```npm run scope -- -h``` to get more options.
+**Note** Type ```yarn scope -- -h``` to get more options.
 
 You will find the generated CSS and JS files in the `/dist` folder. To use the scoped version, wrap the document section with your UIkit markup in an element with the `.uk-scope` class.
 
