@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create dot leaders for pricing menus or tables of contents.</p>
 
-A leader, also known as a dot leader or a tab leader, is a repeating pattern used to visually connect content across horizontal spaces. They are most commonly used for restaurant menus, between the meals and prices, and for tables of contents, between titles and page numbers.
+A leader, also known as a dot leader or a tab leader, is a repeating pattern used to visually connect content across horizontal spaces. It is most commonly used for restaurant menus, between the meals and prices, and for tables of contents, between titles and page numbers.
 
 ***
 
@@ -52,7 +52,7 @@ To change the dot to any custom character, just add the `fill: STRING` option to
 
 ## Responsive
 
-It's possible to disable the leader for different device widths by applying the `media` option to the attribute and adding the appropriate viewport width. Add a number in pixel, for example `media: 640`, or a breakpoint, for example `media: @m`. The leader will be shown from the specified viewport width and upwards, but not below.
+It's possible to disable the leader for different device widths by applying the `media` option to the attribute and adding the appropriate viewport width. Add a number in pixels, for example `media: 640`, or a breakpoint, for example `media: @m`. The leader will be shown from the specified viewport width and upwards, but not below.
 
 ```html
 <div uk-leader="media: @m"></div>
