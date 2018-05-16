@@ -304,42 +304,78 @@ Define different types of meta data and add any number of controls to filter the
         </div>
     </div>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true">
         <li data-color="white" data-size="large">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <canvas width="600" height="800"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="blue" data-size="small">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <canvas width="600" height="400"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="white" data-size="medium">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <canvas width="600" height="600"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="white" data-size="small">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <canvas width="600" height="400"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="black" data-size="medium">
-            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <canvas width="600" height="600"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="black" data-size="small">
-            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <canvas width="600" height="400"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="blue" data-size="medium">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <canvas width="600" height="600"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="black" data-size="large">
-            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <canvas width="600" height="800"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="blue" data-size="large">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <canvas width="600" height="800"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="white" data-size="large">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <canvas width="600" height="800"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="blue" data-size="medium">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <canvas width="600" height="600"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="black" data-size="small">
-            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <canvas width="600" height="400"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
     </ul>
 
@@ -397,42 +433,78 @@ To filter items by multiple criteria at the same time, the filter controls need 
         </div>
     </div>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true">
         <li data-color="white" data-size="large">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <canvas width="600" height="800"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="blue" data-size="small">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <canvas width="600" height="400"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="white" data-size="medium">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <canvas width="600" height="600"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="white" data-size="small">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <canvas width="600" height="400"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="black" data-size="medium">
-            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <canvas width="600" height="600"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="black" data-size="small">
-            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <canvas width="600" height="400"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="blue" data-size="medium">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <canvas width="600" height="600"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="black" data-size="large">
-            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <canvas width="600" height="800"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="blue" data-size="large">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <canvas width="600" height="800"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="white" data-size="large">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <canvas width="600" height="800"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="blue" data-size="medium">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <canvas width="600" height="600"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
         <li data-color="black" data-size="small">
-            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <canvas width="600" height="400"></canvas>
+                <div class="uk-position-center">Item</div>
+            </div>
         </li>
     </ul>
 
@@ -565,37 +637,37 @@ Here is a comprehensive example with a masonry grid:
         </li>
         <li data-color="blue" data-size="small" data-date="2016-12-13">
             <div class="uk-card uk-card-primary uk-card-body">
-                <canvas width="600" height="500"></canvas>
+                <canvas width="600" height="400"></canvas>
                 <div class="uk-position-center">Item</div>
             </div>
         </li>
         <li data-color="white" data-size="medium" data-date="2017-05-20">
             <div class="uk-card uk-card-default uk-card-body">
-                <canvas width="600" height="700"></canvas>
+                <canvas width="600" height="600"></canvas>
                 <div class="uk-position-center">Item</div>
             </div>
         </li>
         <li data-color="white" data-size="small" data-date="2017-09-17">
             <div class="uk-card uk-card-default uk-card-body">
-                <canvas width="600" height="500"></canvas>
+                <canvas width="600" height="400"></canvas>
                 <div class="uk-position-center">Item</div>
             </div>
         </li>
         <li data-color="black" data-size="medium" data-date="2017-11-03">
             <div class="uk-card uk-card-secondary uk-card-body">
-                <canvas width="600" height="700"></canvas>
+                <canvas width="600" height="600"></canvas>
                 <div class="uk-position-center">Item</div>
             </div>
         </li>
         <li data-color="black" data-size="small" data-date="2017-12-25">
             <div class="uk-card uk-card-secondary uk-card-body">
-                <canvas width="600" height="500"></canvas>
+                <canvas width="600" height="400"></canvas>
                 <div class="uk-position-center">Item</div>
             </div>
         </li>
         <li data-color="blue" data-size="medium" data-date="2018-01-30">
             <div class="uk-card uk-card-primary uk-card-body">
-                <canvas width="600" height="700"></canvas>
+                <canvas width="600" height="600"></canvas>
                 <div class="uk-position-center">Item</div>
             </div>
         </li>
@@ -619,13 +691,13 @@ Here is a comprehensive example with a masonry grid:
         </li>
         <li data-color="blue" data-size="medium" data-date="2018-10-27">
             <div class="uk-card uk-card-primary uk-card-body">
-                <canvas width="600" height="700"></canvas>
+                <canvas width="600" height="600"></canvas>
                 <div class="uk-position-center">Item</div>
             </div>
         </li>
         <li data-color="black" data-size="small" data-date="2018-12-02">
             <div class="uk-card uk-card-secondary uk-card-body">
-                <canvas width="600" height="500"></canvas>
+                <canvas width="600" height="400"></canvas>
                 <div class="uk-position-center">Item</div>
             </div>
         </li>
