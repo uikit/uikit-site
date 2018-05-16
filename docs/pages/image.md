@@ -9,7 +9,7 @@ The Image component improves page speed significantly by following these methods
 - An empty placeholder image is generated instantly to prevent content jumping while images are being loaded or not yet in the viewport.
 - Optionally, the placeholder image can have any kind of background or preload animation.
 
-It supports the `img` element and the CSS `background-image` property. The `srcset` attribute for images is supported as well to serve the optimal image for different device widths and high resolution (retina) displays. The Image component even makes it possible to use `srcset` for the CSS `background-image` property.
+The Image components supports the `img` element and the CSS `background-image` property. The `srcset` attribute for images is supported as well creating the optimal images for different device widths and high resolution (retina) displays. The Image component even makes it possible to use `srcset` for the CSS `background-image` property.
 
 ***
 
@@ -21,7 +21,7 @@ To apply this component, add the `uk-img` attribute to an `<img>` element and ad
 <img data-src="" width="" height="" alt="" uk-img>
 ```
 
-The `width` and `height` attributes are required too, so an empty placeholder can be generated in the exact same size as the image. Alternatively, use `data-width` and `data-height`, if you don't want to set the explicit attributes.
+The `width` and `height` attributes are required so an empty placeholder can be generated in the exact same size as the image. Alternatively, use `data-width` and `data-height` if you don't want to set the explicit attributes.
 
 ```example
 <img data-src="../docs/images/light.jpg" width="1800" height="1200" alt="" uk-img>
@@ -65,7 +65,7 @@ To use this component with the CSS `background-image` property, add it to a `<di
 
 ### Background image with Srcset
 
-The Image component allows to use `srcset` for background images. Just add the `data-srcset` attribute. If you need the `sizes` attribute, prefix it as well as `data-sizes`.
+The Image component allows you to use `srcset` for background images. Just add the `data-srcset` attribute. If you need the `sizes` attribute, prefix it as `data-sizes`.
 
 ```html
 <div data-src="" data-srcset="" data-sizes="" uk-img>...</div>
@@ -85,13 +85,13 @@ The Image component allows to use `srcset` for background images. Just add the `
 
 ## Target
 
-Usually, the image starts loading when it enters the viewport. To start loading based on the viewport visibility of another element, use the `target` option. This is very useful to lazy load images in the [Slideshow](slideshow.md) and [Slider](slider.md) components.
+Usually, the image starts loading when it enters the viewport. To start loading images based on the viewport visibility of another element, use the `target` option. This is very useful to lazy load images in the [Slideshow](slideshow.md) and [Slider](slider.md) components.
 
 ```html
 <img data-src="" width="" height="" alt="" uk-img="target: .my-class">
 ```
 
-The following example loads all images in the slides as soon as the whole slideshow enters the viewport. It uses `!.uk-slideshow-items` as a target selector. The `!` looks up the DOM to find the next element with the `.uk-slideshow-item` class.
+The following example loads all images in the slides as soon as the slideshow enters the viewport. It uses `!.uk-slideshow-items` as a target selector. The `!` looks up the DOM to find the next element with the `.uk-slideshow-item` class.
 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
@@ -118,7 +118,7 @@ The following example loads all images in the slides as soon as the whole slides
 
 ### Load previous and next
 
-It's also possible to load only the image of the active slide and lazy load the images of the other slides. Just target the previous and next slide for each image by using the `target: !* -*, !* +*` option. There are two exceptions where you have to select the first and last slides.
+It's also possible to load only the image of the active slide and lazy load the images of the other slides. Just target the previous and next slides for each image by using the `target: !* -*, !* +*` option. There are two exceptions where you have to select the first and the last slides.
 
 | Selector                              | Description                                                                           |
 |:--------------------------------------|:--------------------------------------------------------------------------------------|
@@ -187,13 +187,13 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `dataSrcset` | String | false   | The image's `srcset` attribute.                                                                                                |
 | `sizes`      | String | false   | The image's `sizes` attribute.                                                                                                 |
 | `dataSizes`  | String | false   | See `sizes` option.                                                                                                            |
-| `width`      | String | false   | The image's `width` attribute. It will be used to determine the placeholder's width and the images position in the document.   |
-| `dataWidth`  | String | false   | See `width` option. Use this option, if you do not want an actual `width` attribute on your image.                             |
-| `height`     | String | false   | The image's `height` attribute. It will be used to determine the placeholder's height and the images position in the document. |
-| `dataHeight` | String | false   | See `height` option. Use this option, if you do not want an actual `height` attribute on your image.                           |
-| `offsetTop`  | String | '50vh'  | The offset increases the viewport's bounding box vertically, before computing an intersection with the image.                   |
-| `offsetLeft` | String | 0       | The offset increases the viewport's bounding box horizontally, before computing an intersection with the image.                |
-| `target`     | String | false   | A list of targets who's bounding boxes will be used to compute an intersection with the image. (Defaults to the image itself)                |
+| `width`      | String | false   | The image's `width` attribute. It will be used to determine the placeholder's width and the position of the image in the document.   |
+| `dataWidth`  | String | false   | See `width` option. Use this option if you do not want an actual `width` attribute on your image.                             |
+| `height`     | String | false   | The image's `height` attribute. It will be used to determine the placeholder's height and the position of the image in the document. |
+| `dataHeight` | String | false   | See `height` option. Use this option if you do not want an actual `height` attribute on your image.                           |
+| `offsetTop`  | String | '50vh'  | The offset increases the viewport's bounding box vertically before computing an intersection with the image.                   |
+| `offsetLeft` | String | 0       | The offset increases the viewport's bounding box horizontally before computing an intersection with the image.                |
+| `target`     | String | false   | A list of targets who's bounding boxes will be used to compute an intersection with the image (defaults to the image itself).                |
 
 ***
 
