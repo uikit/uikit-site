@@ -12,7 +12,7 @@ UIkit provides a number of useful classes to alter an element's height.
 
 | Class                                             | Description                                                                                   |
 |:--------------------------------------------------|:----------------------------------------------------------------------------------------------|
-| `.uk-height-1-1`                                  | This class applies a height of 100%. This only works, if the parent element has a set height. |
+| `.uk-height-1-1`                                  | This class applies a height of 100%. This only works if the parent element has a set height. |
 | `.uk-height-small `<br> `.uk-height-max-small `   | These classes apply a height or max-height of _150px_.                                        |
 | `.uk-height-medium `<br> `.uk-height-max-medium ` | These classes apply a height or max-height of _300px_.                                        |
 | `.uk-height-large `<br> `.uk-height-max-large `   | These classes apply a height or max-height of _450px_.                                        |
@@ -44,7 +44,7 @@ Add the `uk-height-viewport` attribute to create a container that fills the heig
 | Option          | Value                  | Default | Description                                                                         |
 |:----------------|:-----------------------|:--------|:------------------------------------------------------------------------------------|
 | `offset-top`    | Boolean                | `false` | Subtracts the element's top offset from its height.                                 |
-| `offset-bottom` | Boolean, Number, Pixel | `false` | Subtracts the element's immediately following sibling's height (true), the given percentage (Number), Pixel (px) value from its own height or the given element's height. |
+| `offset-bottom` | Boolean, Number, Pixel | `false` | Subtracts the height (true) of the sibling that immediately follows the element, the given percentage (Number), Pixel (px) value from element's own height or the given element's height. |
 | `expand`        | Boolean                | `true`  | Expands the element's height to make a short page fill the viewport.                |
 | `min-height`    | Number                 | `0`     | Sets a minimum height. Useful if all children are positioned absolute.          |
 
@@ -66,7 +66,7 @@ You can view examples in the tests for [Height Viewport](../assets/uikit/tests/h
 
 ## Match height
 
-To expand all children of a container to the same height, regardless of their content – for example, inside a grid – add the `uk-height-match` attribute. You can change the height matching behavior by setting the `target` or `row` option to the attribute. [Learn more](javascript.md#component-configuration)
+To expand all children of a container to the same height regardless of their content, for example inside a grid, add the `uk-height-match` attribute. You can change the height matching behavior by setting the `target` or `row` option to the attribute. [Learn more](javascript.md#component-configuration)
 
 | Option   | Value   | Default | Description                 |
 |:---------|:--------|:--------|:----------------------------|
@@ -80,7 +80,7 @@ To expand all children of a container to the same height, regardless of their co
 </div>
 ```
 
-`target` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+`target` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
 ```html
 <span uk-height-match=".my-class"></span>
@@ -117,7 +117,7 @@ You can also target and match specific elements inside the container, like cards
 
 ### Match all
 
-If your grid wraps into multiple rows, only grid columns within the same row are matched. To match grid columns across all rows just add the `row: false` option to the attribute.
+If your grid wraps into multiple rows, only grid columns within the same row are matched. To match grid columns across all rows, just add the `row: false` option to the attribute.
 
 ```html
 <div uk-grid uk-height-match="row: false">...</div>
