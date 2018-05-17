@@ -18,7 +18,7 @@ The build process will check two places for additional icon files:
 Compile UIkit to include the additional icons:
 
 ```sh
-npm run compile
+yarn compile
 ```
 
 Your additional icon will now be added to the icon library, in one of these two places:

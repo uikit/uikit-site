@@ -28,81 +28,72 @@ To apply this component, you need a container element with the `uk-filter="targe
 
 Next, we need to define the meta data for each layout item, for example which category the item belongs to. Use any HTML class or attribute to do so.
 
-To apply a filter control, add the `uk-filter-control` attribute. To define the meta data that should be filtered, use the `filter: SELECTOR` option. The selector can be any CSS selector like an HTML class or an attribute you define for the layout items.
+To apply a filter control, add the `uk-filter-control` attribute. To define the meta data that should be filtered, use the `filter: SELECTOR` option. The selector can be any CSS selector like a HTML class or an attribute you define for the layout items.
 
 ```html
 <div uk-filter="target: .js-filter">
 
     <ul>
-        <li uk-filter-control="filter: [data-color='blue']"><a href="#"></a></li>
+        <li uk-filter-control="filter: .tag-blue"><a href="#"></a></li>
     </ul>
 
     <ul class="js-filter">
-        <li data-color="blue"></li>
+        <li class="tag-blue"></li>
     </ul>
 
 </div>
 ```
-If `filter` is the only option in the attribute value, you can also use `uk-filter-control="SELECTOR"`. Here is an example that uses HTML classes:
+
+If `filter` is the only option in the attribute value, you can also use `uk-filter-control="SELECTOR"`.
 
 ```html
-<div uk-filter="target: .js-filter">
-
-    <ul>
-        <li uk-filter-control=".filter-blue"><a href="#"></a></li>
-    </ul>
-
-    <ul class="js-filter">
-        <li class="filter-blue"></li>
-    </ul>
-
-</div>
+<li uk-filter-control=".tag-blue">...</li>
 ```
 
 ```example
 <div uk-filter="target: .js-filter">
 
     <ul class="uk-subnav uk-subnav-pill">
-        <li uk-filter-control="[data-color='white']"><a href="#">White</a></li>
-        <li uk-filter-control="[data-color='blue']"><a href="#">Blue</a></li>
-        <li uk-filter-control="[data-color='black']"><a href="#">Black</a></li>
+        <li uk-filter-control=".tag-white"><a href="#">White</a></li>
+        <li uk-filter-control=".tag-blue"><a href="#">Blue</a></li>
+        <li uk-filter-control=".tag-black"><a href="#">Black</a></li>
     </ul>
 
     <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
-        <li data-color="white">
+        <li class="tag-white">
             <div class="uk-card uk-card-default uk-card-body">Item</div>
         </li>
-        <li data-color="blue">
+        <li class="tag-blue">
             <div class="uk-card uk-card-primary uk-card-body">Item</div>
         </li>
-        <li data-color="white">
+        <li class="tag-white">
             <div class="uk-card uk-card-default uk-card-body">Item</div>
         </li>
-        <li data-color="white">
+        <li class="tag-white">
             <div class="uk-card uk-card-default uk-card-body">Item</div>
         </li>
-        <li data-color="black">
+        <li class="tag-black">
             <div class="uk-card uk-card-secondary uk-card-body">Item</div>
         </li>
-        <li data-color="black">
+        <li class="tag-black">
             <div class="uk-card uk-card-secondary uk-card-body">Item</div>
         </li>
-        <li data-color="blue">
+        <li class="tag-blue">
             <div class="uk-card uk-card-primary uk-card-body">Item</div>
         </li>
-        <li data-color="black">
+        <li class="tag-black">
             <div class="uk-card uk-card-secondary uk-card-body">Item</div>
         </li>
-        <li data-color="blue">
+        <li class="tag-blue">
             <div class="uk-card uk-card-primary uk-card-body">Item</div>
         </li>
-        <li data-color="white">
+        <li class="tag-white">
             <div class="uk-card uk-card-default uk-card-body">Item</div>
         </li>
-        <li data-color="blue">
+        <li class="tag-blue">
             <div class="uk-card uk-card-primary uk-card-body">Item</div>
         </li>
-        <li data-color="black">
+        <li class="tag-black">
             <div class="uk-card uk-card-secondary uk-card-body">Item</div>
         </li>
     </ul>
@@ -119,17 +110,7 @@ The Filter component comes unstyled, which allows you to use any of the other UI
 Add the `.uk-active` class to a filter control, and the filter will be applied initially.
 
 ```html
-<div uk-filter="target: .js-filter">
-
-    <ul>
-        <li class="uk-active" uk-filter-control="[data-color='blue']"><a href="#"></a></li>
-    </ul>
-
-    <ul class="js-filter">
-        <li data-color="blue"></li>
-    </ul>
-
-</div>
+<li class="uk-active" uk-filter-control="[data-color='blue']">...</li>
 ```
 
 ```example
@@ -190,17 +171,7 @@ Add the `.uk-active` class to a filter control, and the filter will be applied i
 To reset the filter and target all items, use the `uk-filter-control` attribute without any specified selector.
 
 ```html
-<div uk-filter="target: .js-filter">
-
-    <ul>
-        <li uk-filter-control><a href="#"></a></li>
-    </ul>
-
-    <ul class="js-filter">
-        <li data-color="blue"></li>
-    </ul>
-
-</div>
+<li uk-filter-control>...</li>
 ```
 
 ```example
@@ -248,6 +219,78 @@ To reset the filter and target all items, use the `uk-filter-control` attribute 
             <div class="uk-card uk-card-primary uk-card-body">Item</div>
         </li>
         <li data-color="black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+    </ul>
+
+</div>
+```
+
+***
+
+## Meta Data
+
+Items can have different meta data for filtering. You just need to define the HTML classes or `data` attributes and create the corresponding CSS selectors for the filter controls. This example uses `data` attributes for the filter instead of HTML classes.
+
+```html
+<div uk-filter="target: .js-filter">
+
+    <ul>
+        <li uk-filter-control="[data-tags*='blue']"><a href="#"></a></li>
+    </ul>
+
+    <ul class="js-filter">
+        <li data-tags="blue dark"></li>
+    </ul>
+
+</div>
+```
+
+```example
+<div uk-filter="target: .js-filter">
+
+    <ul class="uk-subnav uk-subnav-pill">
+        <li uk-filter-control="[data-tags*='white']"><a href="#">White</a></li>
+        <li uk-filter-control="[data-tags*='blue']"><a href="#">Blue</a></li>
+        <li uk-filter-control="[data-tags*='black']"><a href="#">Black</a></li>
+        <li uk-filter-control="[data-tags*='dark']"><a href="#">Dark Colors</a></li>
+    </ul>
+
+    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+        <li data-tags="white">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </li>
+        <li data-tags="blue dark">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </li>
+        <li data-tags="white">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </li>
+        <li data-tags="white">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </li>
+        <li data-tags="black dark">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+        <li data-tags="black dark">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+        <li data-tags="blue dark">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </li>
+        <li data-tags="black dark">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+        <li data-tags="blue dark">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </li>
+        <li data-tags="white">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </li>
+        <li data-tags="blue dark">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </li>
+        <li data-tags="black dark">
             <div class="uk-card uk-card-secondary uk-card-body">Item</div>
         </li>
     </ul>

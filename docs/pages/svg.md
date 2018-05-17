@@ -47,3 +47,13 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ```js
 UIkit.svg(element, options);
 ```
+
+### Properties
+
+#### svg
+
+A JavaScript Promise that will resolve with the added SVG Node.
+
+```js
+UIkit.svg(element).svg.then(function(svg) { svg.querySelector('path').style.stroke = 'red'; })
+```

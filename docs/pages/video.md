@@ -15,7 +15,7 @@ For example, the [Slideshow](slideshow.md#videos), [Lightbox](lightbox.md#conten
 To apply this component, add the `uk-video` attribute to a `<video>` element. The video will be paused whenever it's hidden with CSS and resume once it becomes visible again.
 
 ```html
-<video uk-video></div>
+<video uk-video></video>
 ```
 
 ```example

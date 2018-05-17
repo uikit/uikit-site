@@ -15,13 +15,13 @@ index.html
 package.json
 ```
 
-The following commands will create and fill the file `package.json`. It contains the dependencies for Npm. We include UIkit and Webpack.
+The following commands will create and fill the file `package.json`. It contains the dependencies for Yarn. We include UIkit and Webpack.
 
 ```sh
 mkdir uikit-webpack && cd uikit-webpack
-npm init -y
-npm install --save uikit
-npm install --save-dev webpack
+yarn init -y
+yarn add uikit
+yarn add --dev webpack
 ```
 
 As an entry file for the projects JavaScript, create a file `app/index.js` with the following content.

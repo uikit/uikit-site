@@ -403,7 +403,7 @@ To move single columns of a grid at different speeds while scrolling, just add `
 <div uk-grid="parallax: 150">...</div>
 ```
 
-There are two types of markup to apply this effect. The following example uses 3 defined columns.
+This effect can be applied to two types of markup. The following example uses three defined columns with three items each.
 
 ```example
 <div class="uk-child-width-expand@s uk-text-center" uk-grid="parallax: 150">
@@ -425,7 +425,7 @@ There are two types of markup to apply this effect. The following example uses 3
 </div>
 ```
 
-The parallax effect is also applied if grid columns wrap into the next line, which is shown in the next example.
+The parallax effect is also applied if grid columns wrap into the next row, as shown in the next example.
 
 ```example
 <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="parallax: 150">
@@ -468,7 +468,7 @@ The parallax effect is also applied if grid columns wrap into the next line, whi
 </div>
 ```
 
-**Note** You can view more examples in the tests for the [Grid Parallax](../assets/uikit/tests/grid-parallax.html).
+**Note** You can view more examples in the [Grid Parallax](../assets/uikit/tests/grid-parallax.html) tests.
 
 ***
 

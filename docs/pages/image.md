@@ -91,7 +91,7 @@ Usually, the image starts loading when it enters the viewport. To start loading 
 <img data-src="" width="" height="" alt="" uk-img="target: .my-class">
 ```
 
-The following example loads all images in the slides as soon as the slideshow enters the viewport. It uses `!.uk-slideshow-items` as a target selector. The `!` looks up the DOM to find the next element with the `.uk-slideshow-item` class.
+The following example loads all images in the slides as soon as the slideshow enters the viewport. It uses `!.uk-slideshow-items` as a target selector. The `!` looks up the DOM to find the next parent element with the `.uk-slideshow-item` class.
 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
@@ -120,12 +120,12 @@ The following example loads all images in the slides as soon as the slideshow en
 
 It's also possible to load only the image of the active slide and lazy load the images of the other slides. Just target the previous and next slides for each image by using the `target: !* -*, !* +*` option. There are two exceptions where you have to select the first and the last slides.
 
-| Selector                              | Description                                                                           |
-|:--------------------------------------|:--------------------------------------------------------------------------------------|
-| `!* -*`                               | Looks one element up (`!*`) and selects the preceding element (`-*`).                 |
-| `!* +* `                              | Looks one element up (`!*`) and selects the succeeding element (`+*`).                |
-| `!.uk-slideshow-items > :last-child`  | Looks up till the next element with `.uk-slideshow-item` and selects the last child.  |
-| `!.uk-slideshow-items > :first-child` | Looks up till the next element with `.uk-slideshow-item` and selects the first child. |
+| Selector                              | Description                                                                                        |
+|:--------------------------------------|:---------------------------------------------------------------------------------------------------|
+| `!* -*`                               | Looks for the direct parent (`!*`) and selects the preceding element (`-*`).                       |
+| `!* +* `                              | Looks for the direct parent (`!*`) and selects the succeeding element (`+*`).                      |
+| `!.uk-slideshow-items > :last-child`  | Looks for the next parent element with the `.uk-slideshow-item` class and selects the last child.  |
+| `!.uk-slideshow-items > :first-child` | Looks for the next parent element with the `.uk-slideshow-item` class and selects the first child. |
 
 ```html
 <ul class="uk-slideshow-items">
