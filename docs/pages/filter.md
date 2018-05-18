@@ -44,10 +44,20 @@ To apply a filter control, add the `uk-filter-control` attribute. To define the 
 </div>
 ```
 
-If `filter` is the only option in the attribute value, you can also use `uk-filter-control="SELECTOR"`.
+If `target` is the only option in the `uk-filter` attribute value, you can also use `uk-filter="SELECTOR"`. The same applies to the filter control. If `filter` is the only option in the `uk-filter-control` attribute value, you can also use `uk-filter-control="SELECTOR"`.
 
 ```html
-<li uk-filter-control=".tag-blue">...</li>
+<div uk-filter=".js-filter">
+
+    <ul>
+        <li uk-filter-control=".tag-blue"><a href="#"></a></li>
+    </ul>
+
+    <ul class="js-filter">
+        <li class="tag-blue"></li>
+    </ul>
+
+</div>
 ```
 
 ```example
