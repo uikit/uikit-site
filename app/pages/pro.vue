@@ -18,14 +18,14 @@
                                 <div class="uk-grid-medium uk-flex-middle uk-flex-inline" uk-grid>
                                     <div>
 
-                                        <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
+                                        <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/signup/themes?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
 
-                                        <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
+                                        <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/signup/themes?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
 
                                     </div>
                                     <div>
 
-                                        <a class="uk-button uk-button-text" href="https://yootheme.com/pro/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Learn+Top">Learn More</a>
+                                        <a class="uk-button uk-button-text" href="https://yootheme.com/pro?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Learn+Top">Learn More</a>
 
                                     </div>
                                 </div>
@@ -355,14 +355,14 @@
                 <div class="uk-grid-medium uk-flex-middle uk-flex-center" uk-grid>
                     <div>
 
-                        <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
+                        <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/signup/themes?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
 
-                        <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Bottom">Buy Now</a>
+                        <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/signup/themes?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Bottom">Buy Now</a>
 
                     </div>
                     <div>
 
-                        <a class="uk-button uk-button-text" href="https://yootheme.com/pro/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Learn+Bottom">Learn More</a>
+                        <a class="uk-button uk-button-text" href="https://yootheme.com/pro?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Learn+Bottom">Learn More</a>
 
                     </div>
                 </div>
@@ -420,14 +420,14 @@
                     <div class="uk-grid-medium uk-flex-middle" uk-grid>
                         <div>
 
-                            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Modal">Buy YOOtheme Pro</a>
+                            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="https://yootheme.com/signup/themes?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Modal">Buy YOOtheme Pro</a>
 
-                            <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Modal">Buy</a>
+                            <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="https://yootheme.com/signup/themes?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Modal">Buy</a>
 
                         </div>
                         <div>
 
-                            <a class="uk-button uk-button-text" href="https://yootheme.com/pro/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Learn+Modal">Learn More</a>
+                            <a class="uk-button uk-button-text" href="https://yootheme.com/pro?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Learn+Modal">Learn More</a>
 
                         </div>
                     </div>
