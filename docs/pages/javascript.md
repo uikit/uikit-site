@@ -96,11 +96,11 @@ Options passed via the component attribute will have the highest precedence, fol
 
 ### Globally
 
-Component options can be changed globally by setting the component's `defaults` property.
+Component options can be changed globally by setting the component's `data` property.
 
 ```js
-UIkit.components.sticky.options.defaults.offset = 50;
-UIkit.components.sticky.options.defaults.top = 100;
+UIkit.components.sticky.options.data.offset = 50;
+UIkit.components.sticky.options.data.top = 100;
 ```
 
 ***

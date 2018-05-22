@@ -193,7 +193,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `dataHeight` | String | false   | See `height` option. Use this option if you do not want an actual `height` attribute on your image.                           |
 | `offsetTop`  | String | '50vh'  | The offset increases the viewport's bounding box vertically before computing an intersection with the image.                   |
 | `offsetLeft` | String | 0       | The offset increases the viewport's bounding box horizontally before computing an intersection with the image.                |
-| `target`     | String | false   | A list of targets who's bounding boxes will be used to compute an intersection with the image (defaults to the image itself).                |
+| `target`     | String | false   | A list of targets who's bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.                |
 
 ***
 
