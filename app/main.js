@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './app.vue';
 import Navbar from './navbar.vue';
-import analytics from './analytics.js';
+import analytics from './analytics';
 import navigation from '../docs/app/navigation.json';
 
 // Pages
@@ -53,4 +53,4 @@ new Vue({
 
 });
 
-analytics();
+analytics('UA-42150424-1', {anonymize_ip: true});

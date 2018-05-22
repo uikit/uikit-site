@@ -1,11 +1,23 @@
-export default function() {
+/* global window, document */
 
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    window.addEventListener('load', () => getScript('//www.google-analytics.com/analytics.js'));
+export default function (id, config = {}) {
 
-    ga('create', 'UA-42150424-1', 'getuikit.com');
-    ga('send', 'pageview');
+    gtag('js', new Date());
+    gtag('config', id, config);
 
+    // https://developers.google.com/analytics/devguides/collection/gtagjs/
+    getScript(`https://www.googletagmanager.com/gtag/js?id=${id}`);
+}
+
+export function gtag() {
+
+    let {dataLayer} = window;
+
+    if (!dataLayer) {
+        dataLayer = window.dataLayer = [];
+    }
+
+    dataLayer.push(arguments);
 }
 
 export function getScript(src) {
@@ -16,5 +28,4 @@ export function getScript(src) {
     script.async = true;
 
     document.head.appendChild(script);
-
 }
