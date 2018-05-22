@@ -37,8 +37,8 @@ The Cover component inherits all properties from the [Video component](video.md)
 ```example
 <div class="uk-cover-container uk-height-medium">
     <video autoplay loop muted playsinline uk-cover>
-        <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-        <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
+        <source src="https://quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+        <source src="https://quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
     </video>
 </div>
 ```
@@ -57,7 +57,7 @@ To apply the Cover component to an iframe, you need to add the `uk-cover` attrib
 
 ```example
 <div class="uk-cover-container uk-height-medium">
-    <iframe src="//www.youtube.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>
+    <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>
 </div>
 ```
 

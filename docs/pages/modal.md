@@ -314,8 +314,8 @@ If you want to display media, you should first check, if the [Lightbox component
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
         <video controls playsinline uk-video>
-            <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-            <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
+            <source src="https://quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+            <source src="https://quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
         </video>
     </div>
 </div>
@@ -323,14 +323,14 @@ If you want to display media, you should first check, if the [Lightbox component
 <div id="modal-media-youtube" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <iframe src="//www.youtube.com/embed/YE7VzlLtp-4" width="560" height="315" frameborder="0" uk-video></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4" width="560" height="315" frameborder="0" uk-video></iframe>
     </div>
 </div>
 
 <div id="modal-media-vimeo" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <iframe src="//player.vimeo.com/video/1084537" width="500" height="281" frameborder="0" uk-video></iframe>
+        <iframe src="https://player.vimeo.com/video/1084537" width="500" height="281" frameborder="0" uk-video></iframe>
     </div>
 </div>
 ```
