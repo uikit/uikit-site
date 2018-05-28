@@ -99,8 +99,8 @@ Options passed via the component attribute will have the highest precedence, fol
 Component options can be changed globally by setting the component's `data` property.
 
 ```js
-UIkit.components.sticky.options.data.offset = 50;
-UIkit.components.sticky.options.data.top = 100;
+UIkit.component('sticky').options.data.offset = 50;
+UIkit.component('sticky').options.data.top = 100;
 ```
 
 ***
