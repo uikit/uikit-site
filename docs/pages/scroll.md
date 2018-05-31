@@ -34,7 +34,7 @@ UIkit.util.on('#scroll-trigger', 'scrolled', function () {
 <a id="js-scroll-trigger" class="uk-button uk-button-primary" href="#target" uk-scroll>Down with callback</a>
 
 <script>
-    UIkit.util.on('#scroll-trigger', 'scrolled', function () {
+    UIkit.util.on('#js-scroll-trigger', 'scrolled', function () {
         alert('Done.');
     });
 </script>
