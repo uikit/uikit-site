@@ -350,7 +350,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option      | Value        | Default | Description                                                                                              |
 |:------------|:-------------|:--------|:---------------------------------------------------------------------------------------------------------|
-| `connect`   | CSS selector | `false` | Related item's container. By default, this is the next element with the 'uk-switcher' class.             |
+| `connect`   | CSS selector | `+.uk-switcher` | Related item's container. By default, this is the next element with the 'uk-switcher' class.             |
 | `toggle `   | CSS selector | `> *`   | The toggle selector, which triggers content switching on click.                                          |
 | `active `   | Number       | `0`     | Active index on init. Providing a negative number indicates a position starting from the end of the set. |
 | `animation` | String       | `false` | The space separated names of animations to use. Comma separate for animation out.                        |
