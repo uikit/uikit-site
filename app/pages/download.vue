@@ -16,7 +16,7 @@
 
                     <p class="uk-margin-medium-bottom uk-text-large">Please support our open source project and share the love on<br class="uk-visible@s"> Twitter or Facebook. It would really mean a lot to us.</p>
 
-                    <div class="uk-grid-medium uk-child-width-auto uk-flex-inline" uk-grid>
+                    <div class="uk-grid-medium uk-child-width-auto uk-flex-inline uk-flex-center" uk-grid>
                         <div>
                             <a class="uk-button uk-button-primary tm-button-primary uk-button-large" href="https://twitter.com/intent/tweet?text=I'm+excited+to+try+@getuikit,+a+modern+front-end+framework.+Check+it+out+at+https%3a%2f%2fgetuikit.com" target="_blank">
                                 <span class="uk-margin-small-right" uk-icon="icon: twitter"></span>
