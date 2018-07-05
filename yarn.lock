@@ -3136,8 +3136,8 @@ uglifyjs-webpack-plugin@^1.2.4:
     worker-farm "^1.5.2"
 
 uikit@^3.0.0-rc.7:
-  version "3.0.0-rc.7"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.0.0-rc.7.tgz#266aff758354c6a1c44026618fcc95624a9b6f24"
+  version "3.0.0-rc.8"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.0.0-rc.8.tgz#333a7e35e9c8a943176e6c61b466faef050ac6ce"
 
 union-value@^1.0.0:
   version "1.0.0"
