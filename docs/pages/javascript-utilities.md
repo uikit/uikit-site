@@ -303,7 +303,7 @@ attr(element, name [, value]);
 
 The return value is the value of the attribute or `undefined` if used as setter with the `value` parameter.
 
-If used as setter and the attribute does not already exist, it gets created simultaneously.
+**Note** If used as setter and the attribute doesn't yet exist, it is created simultaneously.
 
 ### Usage
 
@@ -367,31 +367,33 @@ This is a grid!
 
 ***
 
-### removeAttr
+## removeAttr
 
-This function is used for removing an attribute. The following parameters may be passed to the function.
+Remove an attribute from an element.
 
-| Parameter | Type   | Default | Description          |
-|:----------|:-------|:--------|:---------------------|
-| `element` | String | `null`  | The HTML element     |
-| `name`    | String | `null`  | The attribute's name |
+```javascript
+removeAttr(element, name);
+```
 
-HTML
+| Parameter | Type   | Description          |
+|:----------|:-------|:---------------------|
+| `element` | String | The HTML element     |
+| `name`    | String | The attribute's name |
+
+### Usage
 
 ```html
 <div id="example" invalid="non-sense"></div>
 ```
 
-JavaScript
-
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Remove attribute
-UIkit.util.removeAttr(element, 'invalid');
+util.removeAttr(element, 'invalid');
 ```
 
-Result
+#### Result
 
 ```html
 <div id="example"></div>
@@ -399,34 +401,36 @@ Result
 
 ***
 
-### filterAttr
+## filterAttr
 
-This function is used for filtering an attribute's value. The following parameters may be passed to the function.
+Search an replace functionality for an attribute's value.
 
-| Parameter     | Type   | Default | Description             |
-|:--------------|:-------|:--------|:------------------------|
-| `element`     | String | `null`  | The HTML element        |
-| `attribute`   | String | `null`  | The attribute's name    |
-| `pattern`     | String | `null`  | The replacement pattern |
-| `replacement` | String | `null`  | The replacement's value |
+```javascript
+filterAttr(element, attribute, pattern, replacement);
+```
 
-HTML
+| Parameter     | Type   | Description             |
+|:--------------|:-------|:------------------------|
+| `element`     | String | The HTML element        |
+| `attribute`   | String | The attribute's name    |
+| `pattern`     | String | The search pattern      |
+| `replacement` | String | The replacement value   |
+
+### Usage
 
 ```html
 <div id="example" class="uk-position-top uk-overlay uk-overlay-default"></div>
 ```
 
-JavaScript
-
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Filter an attribute's value
 var pattern = new RegExp('(^|\\s)uk-position-top(?!\\S)', 'g');
-UIkit.util.filterAttr(element, 'class', pattern, 'uk-position-bottom');
+util.filterAttr(element, 'class', pattern, 'uk-position-bottom');
 ```
 
-Result
+#### Result
 
 ```html
 <div id="example" class="uk-position-bottom uk-overlay uk-overlay-default"></div>
@@ -436,31 +440,32 @@ Result
 
 ### data
 
-This function is an alias of the function `attr`. The only difference is its `data-` prefix, which makes things
-a bit more convenient when working with the HTML5 `data-*` attributes. The following parameters may be passed to the function.
+Retrieve the value of a `data-*` prefixed attribute.
 
-| Parameter     | Type   | Default | Description               |
-|:--------------|:-------|:--------|:--------------------------|
-| `element`     | String | `null`  | The HTML element          |
-| `attribute`   | String | `null`  | The data-attribute's name |
+```javascript
+data(element, attribute);
+```
 
-HTML
+| Parameter     | Type   | Description               |
+|:--------------|:-------|:--------------------------|
+| `element`     | String | The HTML element          |
+| `attribute`   | String | The data-attribute's name |
+
+### Usage
 
 ```html
 <div id="example" data-columns="3"></div>
 ```
 
-JavaScript
-
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
-// Get value of data-attribute
-var columns = UIkit.util.data(element, 'columns');
+// Get value of the data-attribute
+var columns = util.data(element, 'columns');
 console.log('Column count: ' + columns);
 ```
 
-Result
+#### Result
 
 ```log
 Column count: 3
@@ -475,65 +480,69 @@ DOM manipulation or setting/retrieving values.
 
 ***
 
-### addClass
+## addClass
 
-This function is used to add a class to an element. The following parameters may be passed to the function.
+Add one or multiple classes to an element.
 
-| Parameter | Type             | Default | Description                                           |
-|:----------|:-----------------|:--------|:------------------------------------------------------|
-| `element` | String           | `null`  | The HTML element                                      |
-| `...args` | Arguments object | `null`  | An array like object, accepting multiple data entries |
+```javascript
+addClass(element, ...args);
+```
 
-HTML
+| Parameter | Type             | Description                                                  |
+|:----------|:-----------------|:-------------------------------------------------------------|
+| `element` | String           | The HTML element                                             |
+| `...args` | Arguments object | An array like object, accepting one or multiple data entries |
+
+### Usage
 
 ```html
 <div id="example"></div>
 ```
 
-JavaScript
-
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Add class(es)
-UIkit.util.addClass(element, 'uk-section', 'uk-section-primary');
+util.addClass(element, 'uk-section', 'uk-section-primary');
 ```
 
-Result
+#### Result
 
 ```html
 <div id="example" class="uk-section uk-section-primary"></div>
 ```
 
-**Note** If the class attribute doesn't already exist, it gets created simultaneously.
+**Note** If the class attribute doesn't yet exist, it is created simultaneously.
 
 ***
 
-### removeClass
+## removeClass
 
-This function is used to remove a class from an element. The following parameters may be passed to the function.
+Remove one or multiple classes from an element.
 
-| Parameter | Type             | Default | Description                                           |
-|:----------|:-----------------|:--------|:------------------------------------------------------|
-| `element` | String           | `null`  | The HTML element                                      |
-| `...args` | Arguments object | `null`  | An array like object, accepting multiple data entries |
+```javascript
+removeClass(element, ...args);
+```
 
-HTML
+| Parameter | Type             | Description                                                  |
+|:----------|:-----------------|:-------------------------------------------------------------|
+| `element` | String           | The HTML element                                             |
+| `...args` | Arguments object | An array like object, accepting one or multiple data entries |
+
+### Usage
 
 ```html
 <div id="example" class="uk-section uk-section-primary uk-section-small"></div>
 ```
 
-JavaScript
-
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Remove class(es)
-UIkit.util.removeClass(element, 'uk-section-primary', 'uk-section-small');
+util.removeClass(element, 'uk-section-primary', 'uk-section-small');
 ```
 
-Result
+#### Result
 
 ```html
 <div id="example" class="uk-section"></div>
@@ -541,33 +550,34 @@ Result
 
 ***
 
-### removeClasses
+## removeClasses
 
-This function is used to remove a range of classes, based on a pattern.
-The following parameters may be passed to the function.
+Remove a range of classes, based on a pattern.
 
-| Parameter | Type   | Default | Description                 |
-|:----------|:-------|:--------|:----------------------------|
-| `element` | String | `null`  | The HTML element            |
-| `cls`     | String | `null`  | The class(es) to be removed |
+```javascript
+removeClasses(element, cls);
+```
 
-HTML
+| Parameter | Type   | Description                 |
+|:----------|:-------|:----------------------------|
+| `element` | String | The HTML element            |
+| `cls`     | String | The class(es) to be removed |
+
+### Usage
 
 ```html
 <div id="example" class="uk-position-top uk-overlay uk-overlay-default"></div>
 ```
 
-JavaScript
-
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Remove classes based on a pattern
 var cls = 'uk-position-(top|bottom|left|right)(-[a-z]+)?';
-UIkit.util.removeClass(element, cls);
+util.removeClasses(element, cls);
 ```
 
-Result
+#### Result
 
 ```html
 <div id="example" class=" uk-overlay uk-overlay-default"></div>
@@ -575,31 +585,33 @@ Result
 
 ***
 
-### replaceClass
+## replaceClass
 
-This function is used to replace a classes. The following parameters may be passed to the function.
+Replace a class.
 
-| Parameter | Type             | Default | Description                                           |
-|:----------|:-----------------|:--------|:------------------------------------------------------|
-| `element` | String           | `null`  | The HTML element                                      |
-| `...args` | Arguments object | `null`  | An array like object, accepting multiple data entries |
+```javascript
+removeClasses(element, ...args);
+```
 
-HTML
+| Parameter | Type             | Description                                                  |
+|:----------|:-----------------|:-------------------------------------------------------------|
+| `element` | String           | The HTML element                                             |
+| `...args` | Arguments object | An array like object, accepting one or multiple data entries |
+
+### Usage
 
 ```html
 <div id="example" class="uk-card uk-card-default"></div>
 ```
 
-JavaScript
-
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Replace class
-UIkit.util.replaceClass(element, 'uk-card-default', 'uk-card-primary');
+util.replaceClass(element, 'uk-card-default', 'uk-card-primary');
 ```
 
-Result
+#### Result
 
 ```html
 <div id="example" class="uk-card uk-card-primary"></div>
@@ -609,34 +621,35 @@ Result
 
 ### hasClass
 
-This function is used to check if an element contains a specific class.
-The following parameters may be passed to the function.
+Check if an element has a specific class.
 
-| Parameter | Type   | Default | Description             |
-|:----------|:-------|:--------|:------------------------|
-| `element` | String | `null`  | The HTML element        |
-| `cls`     | String | `null`  | The class to be checked |
+```javascript
+hasClass(element, cls);
+```
 
-HTML
+| Parameter | Type   | Description             |
+|:----------|:-------|:------------------------|
+| `element` | String | The HTML element        |
+| `cls`     | String | The class to be checked |
+
+### Usage
 
 ```html
 <div id="example" class="uk-position-relative"></div>
 ```
 
-JavaScript
-
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Check if some element has some class
-if (UIkit.util.hasClass(element, 'uk-position-relative')) {
+if (util.hasClass(element, 'uk-position-relative')) {
     console.log('Class was found!');
 } else {
     console.log('Class was NOT found!');
 }
 ```
 
-Result
+#### Result
 
 ```log
 Class was found!
@@ -644,37 +657,145 @@ Class was found!
 
 ***
 
-### toggleClass
+## toggleClass
 
-This function is used to toggle classes. The following parameters may be passed to the function.
+Toggle a class.
 
-| Parameter | Type             | Default | Description                                                                                                                                                                                                              |
-|:----------|:-----------------|:--------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `element` | String           | `null`  | The HTML element                                                                                                                                                                                                         |
-| `...args` | Arguments object | `null`  | An array like object, accepting multiple data entries                                                                                                                                                                    |
-| `force`   | Boolean          | `null`  | Turns the toggle into a one way-only operation. If set to false, the class(es) will only be removed but not added again and vice versa. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) |
+```javascript
+toggleClass(element, ...args);
+```
 
-HTML
+| Parameter | Type             | Description                                                  |
+|:----------|:-----------------|:-------------------------------------------------------------|
+| `element` | String           | The HTML element                                             |
+| `...args` | Arguments object | An array like object, accepting one or multiple data entries |
+
+### Usage
 
 ```html
 <div id="example" class="uk-card uk-card-default"></div>
 ```
 
-JavaScript
-
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Toggle a class
-for (i = 0; i < 3; i++) { 
-  UIkit.util.toggleClass(element, 'uk-card-default');
+for (var i = 0; i < 3; i++) { 
+  util.toggleClass(element, 'uk-card-default');
 }
 ```
 
-Result
+#### Result
 
 ```html
 <div id="example" class="uk-card"></div>
+```
+
+***
+
+## Core
+
+The following function are used very often, hence the reason they are categorized as core functionality.
+They are used to easily select HTML elements, mimicking the `$()` function of jQuery.
+
+***
+
+## $
+
+Select a single HTML element.
+
+```javascript
+$(selector [, context]);
+```
+
+| Parameter  | Type                  | Description                          |
+|:-----------|:----------------------|:-------------------------------------|
+| `selector` | String                | A valid CSS selector for an element  |
+| `context`  | [Node](#pseudo-types) | A HTML element to be searched within |
+
+### Usage
+
+```javascript
+// Select a single HTML element
+var element = util.$('#example');
+
+console.log(element);
+```
+
+#### Result
+
+```log
+<div id="example"></div>
+```
+
+***
+
+## $$
+
+Select multiple HTML elements.
+
+```javascript
+$$(selector [, context]);
+```
+
+| Parameter  | Type                  | Description                          |
+|:-----------|:----------------------|:-------------------------------------|
+| `selector` | String                | A valid CSS selector for an element  |
+| `context`  | [Node](#pseudo-types) | A HTML element to be searched within |
+
+### Usage
+
+```javascript
+// Select multiple HTML elements
+var elements = util.$$('.example');
+
+console.log(elements);
+```
+
+#### Result
+
+```log
+(3) [div.example, div.example, div.example]
+```
+
+***
+
+## Dimensions
+
+The following function are to work with dimensions of elements. They either are used for conditional statements
+or setting/retrieving values.
+
+***
+
+## positionAt
+
+TODO
+
+```javascript
+positionAt(element, target, elAttach, targetAttach, elOffset, targetOffset, flip, boundary)
+```
+
+| Parameter      | Type   | Description                 |
+|:---------------|:-------|:----------------------------|
+| `element`      | ...    | ...                         |
+| `target`       | ...    | ...                         |
+| `elAttach`     | ...    | ...                         |
+| `targetAttach` | ...    | ...                         |
+| `elOffset`     | ...    | ...                         |
+| `targetOffset` | ...    | ...                         |
+| `flip`         | ...    | ...                         |
+| `boundary`     | ...    | ...                         |
+
+### Usage
+
+```javascript
+TODO
+```
+
+#### Result
+
+```log
+TODO
 ```
 
 ***
@@ -700,14 +821,14 @@ JavaScript
 
 ```javascript
 // Check if base direction of text is set to RTL
-if (UIkit.util.isRtl) {
+if (util.isRtl) {
     console.log('Direction is set to RTL!');
 } else {
     console.log('Direction is set to LTR!');
 }
 ```
 
-Result
+#### Result
 
 ```log
 Direction is set to RTL!
@@ -723,12 +844,12 @@ JavaScript
 
 ```javascript
 // Run callback once DOM is ready
-UIkit.util.ready(function() {
+util.ready(function() {
     console.log('DOM is now safely manipulable.');
 });
 ```
 
-Result
+#### Result
 
 ```log
 DOM is now safely manipulable.
@@ -738,8 +859,7 @@ DOM is now safely manipulable.
 
 ### isInView
 
-This function is used to check if an element is currently visible inside the viewport.
-The following parameters may be passed to the function.
+TODO: to check if an element is currently visible inside the viewport.
 
 | Parameter | Type   | Default | Description          |
 |:----------|:-------|:--------|:---------------------|
@@ -756,11 +876,11 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Check if element comes into view, when scrolling
 window.addEventListener('scroll', function() {
-  if (UIkit.util.isInView(element)) {
+  if (util.isInView(element)) {
     console.log('Element is visible!');
   } else {
     console.log('Element is not yet visible!');
@@ -768,7 +888,7 @@ window.addEventListener('scroll', function() {
 });
 ```
 
-Result
+#### Result
 
 ```log
 'Element is visible!'
@@ -778,7 +898,7 @@ Result
 
 ### scrolledOver
 
-This function is used to return the percentage value of how an element is currently positioned compared to the viewport.
+TODO: to return the percentage value of how an element is currently positioned compared to the viewport.
 Example: If the element is at the very top of your current viewport, this function will return a value of `0`.
 As soon as the element leaves the viewport, the function now returns a value of `1`. If the element is "scrolled over"
 exactly half of its height, the function returns the value of `0.5`.
@@ -797,11 +917,11 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Check if you scrolled past an element
 window.addEventListener('scroll', function() {
-  if (UIkit.util.scrolledOver(element) < 1) {
+  if (util.scrolledOver(element) < 1) {
     console.log('The element has not been "scrolled over" yet.');
   } else {
     console.log('You have scrolled past the element.');
@@ -809,7 +929,7 @@ window.addEventListener('scroll', function() {
 });
 ```
 
-Result
+#### Result
 
 ```log
 'The element has not been "scrolled over" yet.'
@@ -819,8 +939,7 @@ Result
 
 ### getIndex
 
-This function is used to find the index of an element inside a group of other elements.
-The following parameters may be passed to the function.
+TODO: to find the index of an element inside a group of other elements.
 
 | Parameter  | Type           | Default | Description                           |
 |:-----------|:---------------|:--------|:--------------------------------------|
@@ -843,13 +962,13 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Get index for a specific element
-console.log('Index is ' + UIkit.util.getIndex(element.children[1], element.children));
+console.log('Index is ' + util.getIndex(element.children[1], element.children));
 ```
 
-Result
+#### Result
 
 ```log
 'Index is 1'
@@ -859,8 +978,7 @@ Result
 
 ### isVoidElement
 
-This function is used to detect if an element is a self-closing HTML tag.
-The following parameters may be passed to the function.
+TODO: to detect if an element is a self-closing HTML tag.
 
 | Parameter | Type   | Default | Description      |
 |:----------|:-------|:--------|:-----------------|
@@ -875,17 +993,17 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Check if element is a void element (self-closing)
-if (UIkit.util.isVoidElement(element)) {
+if (util.isVoidElement(element)) {
   console.log('This is a void element!');
 } else {
   console.log('This is not a self-closing HTML tag.');
 }
 ```
 
-Result
+#### Result
 
 ```log
 'This is a void element!'
@@ -902,7 +1020,6 @@ The Dimensions object makes three handy functions accessible, which are the foll
 #### ratio
 
 This function returns the aspect ratio of an elements dimensions compared to a certain value.
-The following parameters may be passed to the function.
 
 | Parameter    | Type   | Default | Description                                                 |
 |:-------------|:-------|:--------|:------------------------------------------------------------|
@@ -921,8 +1038,8 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
-var Dimensions = UIkit.util.Dimensions;
+var element = util.$('#example');
+var Dimensions = util.Dimensions;
 
 var dimensions = {
   width: element.width,
@@ -933,7 +1050,7 @@ var dimensions = {
 console.log(Dimensions.ratio(dimensions, 'width', 100));
 ```
 
-Result
+#### Result
 
 ```log
 {height: 75, width: 100}
@@ -944,7 +1061,6 @@ Result
 #### contain
 
 This function returns a dimension, which is contained inside a certain maximum dimension.
-The following parameters may be passed to the function.
 
 | Parameter       | Type   | Default | Description                                           |
 |:----------------|:-------|:--------|:------------------------------------------------------|
@@ -962,8 +1078,8 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
-var Dimensions = UIkit.util.Dimensions;
+var element = util.$('#example');
+var Dimensions = util.Dimensions;
 
 var dimensions = {
   width: element.width,
@@ -979,7 +1095,7 @@ var maxDimensions = {
 console.log(Dimensions.contain(dimensions, maxDimensions));
 ```
 
-Result
+#### Result
 
 ```log
 {width: 320, height: 240}
@@ -990,7 +1106,6 @@ Result
 #### cover
 
 This function returns a dimension, which covers a certain maximum dimension.
-The following parameters may be passed to the function.
 
 | Parameter       | Type   | Default | Description                                           |
 |:----------------|:-------|:--------|:------------------------------------------------------|
@@ -1008,8 +1123,8 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
-var Dimensions = UIkit.util.Dimensions;
+var element = util.$('#example');
+var Dimensions = util.Dimensions;
 
 var dimensions = {
   width: element.width,
@@ -1025,7 +1140,7 @@ var maxDimensions = {
 console.log(Dimensions.cover(dimensions, maxDimensions));
 ```
 
-Result
+#### Result
 
 ```log
 {height: 270, width: 360}
@@ -1035,7 +1150,7 @@ Result
 
 ### isVisible
 
-This function is used to detect, whether an element is visible or not.
+TODO: to detect, whether an element is visible or not.
 The following parameter may be passed to the function.
 
 | Parameter | Type   | Default | Description      |
@@ -1051,17 +1166,17 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Is the element visible?
-if (UIkit.util.isVisible(element)) {
+if (util.isVisible(element)) {
   console.log('The element is visible!');
 } else {
   console.log('The element is hidden!');
 }
 ```
 
-Result
+#### Result
 
 ```log
 'The element is visible!'
@@ -1071,7 +1186,7 @@ Result
 
 ### isInput
 
-This function is used to detect, whether an element is visible or not.
+TODO: to detect, whether an element is visible or not.
 The following parameter may be passed to the function.
 
 | Parameter | Type   | Default | Description      |
@@ -1099,7 +1214,7 @@ JavaScript
 var elements = document.getElementsByClassName('example');
 
 for (var i=0; i < elements.length; i++) {
-  if (UIkit.util.isInput(elements[i])) {
+  if (util.isInput(elements[i])) {
     console.log('A ' + elements[i].tagName.toLowerCase() + ' is an input type element!');
   } else {
     console.log('A ' + elements[i].tagName.toLowerCase() + ' is NOT an input type element!');
@@ -1107,7 +1222,7 @@ for (var i=0; i < elements.length; i++) {
 }
 ```
 
-Result
+#### Result
 
 ```log
 'A input is an input type element!'
@@ -1120,7 +1235,7 @@ Result
 
 ### empty
 
-This function is used to empty an element. The following parameters may be passed to the function.
+TODO: to empty an element.
 
 | Parameter | Type   | Default | Description      |
 |:----------|:-------|:--------|:-----------------|
@@ -1137,12 +1252,12 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
-UIkit.util.empty(element);
+util.empty(element);
 ```
 
-Result
+#### Result
 
 ```html
 <div id="example" class="uk-card uk-card-default uk-card-body"></div>
@@ -1152,7 +1267,7 @@ Result
 
 ### html
 
-This function is used to fill an element with some content. The following parameters may be passed to the function.
+TODO: to fill an element with some content.
 
 | Parameter | Type   | Default | Description      |
 |:----------|:-------|:--------|:-----------------|
@@ -1168,13 +1283,13 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 var content = '<p>This was injected by JavaScript!</p>';
 
-UIkit.util.html(element, content);
+util.html(element, content);
 ```
 
-Result
+#### Result
 
 ```html
 <div id="example" class="uk-card uk-card-default uk-card-body">
@@ -1186,8 +1301,7 @@ Result
 
 ### prepend
 
-This function is used to insert some content before any other child nodes inside another element.
-The following parameters may be passed to the function.
+TODO: to insert some content before any other child nodes inside another element.
 
 | Parameter | Type   | Default | Description      |
 |:----------|:-------|:--------|:-----------------|
@@ -1206,13 +1320,13 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 var content = '<option>Injected by Javascript</option>';
 
-UIkit.util.prepend(element, content);
+util.prepend(element, content);
 ```
 
-Result
+#### Result
 
 ```html
 <select id="example" class="uk-select">
@@ -1226,8 +1340,7 @@ Result
 
 ### append
 
-This function is used to insert some content after any other child nodes inside another element.
-The following parameters may be passed to the function.
+TODO: to insert some content after any other child nodes inside another element.
 
 | Parameter | Type   | Default | Description      |
 |:----------|:-------|:--------|:-----------------|
@@ -1246,13 +1359,13 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 var content = '<option>Injected by Javascript</option>';
 
-UIkit.util.prepend(element, content);
+util.prepend(element, content);
 ```
 
-Result
+#### Result
 
 ```html
 <select id="example" class="uk-select">
@@ -1266,8 +1379,7 @@ Result
 
 ### before
 
-This function is used to insert some content before another element.
-The following parameters may be passed to the function.
+TODO: to insert some content before another element.
 
 | Parameter | Type   | Default | Description      |
 |:----------|:-------|:--------|:-----------------|
@@ -1286,13 +1398,13 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 var content = '<option>Injected by Javascript</option>';
 
-UIkit.util.before(element, content);
+util.before(element, content);
 ```
 
-Result
+#### Result
 
 ```html
 <select class="uk-select">
@@ -1306,8 +1418,7 @@ Result
 
 ### after
 
-This function is used to insert some content after another element.
-The following parameters may be passed to the function.
+TODO: to insert some content after another element.
 
 | Parameter | Type   | Default | Description      |
 |:----------|:-------|:--------|:-----------------|
@@ -1326,13 +1437,13 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 var content = '<option>Injected by Javascript</option>';
 
-UIkit.util.after(element, content);
+util.after(element, content);
 ```
 
-Result
+#### Result
 
 ```html
 <select class="uk-select">
@@ -1346,7 +1457,7 @@ Result
 
 ### remove
 
-This function is used to remove a certain element from the DOM.
+TODO: to remove a certain element from the DOM.
 The following parameter may be passed to the function.
 
 | Parameter | Type   | Default | Description      |
@@ -1365,12 +1476,12 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
-UIkit.util.remove(element);
+util.remove(element);
 ```
 
-Result
+#### Result
 
 ```html
 <select class="uk-select">
@@ -1382,8 +1493,7 @@ Result
 
 ### wrapAll
 
-This function is used to wrap some element inside a HTML structure.
-The following parameters may be passed to the function.
+TODO: to wrap some element inside a HTML structure.
 
 | Parameter   | Type   | Default | Description        |
 |:------------|:-------|:--------|:-------------------|
@@ -1399,12 +1509,12 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
-UIkit.util.wrapAll(element, '<div class="uk-card uk-card-primary uk-card-body">');
+util.wrapAll(element, '<div class="uk-card uk-card-primary uk-card-body">');
 ```
 
-Result
+#### Result
 
 ```html
 <div class="uk-card uk-card-primary uk-card-body">
@@ -1416,8 +1526,7 @@ Result
 
 ### wrapInner
 
-This function is used to wrap the content of some element with a HTML structure.
-The following parameters may be passed to the function.
+TODO: to wrap the content of some element with a HTML structure.
 
 | Parameter   | Type   | Default | Description        |
 |:------------|:-------|:--------|:-------------------|
@@ -1433,12 +1542,12 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
-UIkit.util.wrapInner(element, '<span class="uk-text-danger">');
+util.wrapInner(element, '<span class="uk-text-danger">');
 ```
 
-Result
+#### Result
 
 ```html
 <p id="example"><span class="uk-text-danger">This is a paragraph!</span></p>
@@ -1448,8 +1557,7 @@ Result
 
 ### unwrap
 
-This function is used to unwrap some element, basically remove its direct parent.
-The following parameters may be passed to the function.
+TODO: to unwrap some element, basically remove its direct parent.
 
 | Parameter | Type   | Default | Description      |
 |:----------|:-------|:--------|:-----------------|
@@ -1466,12 +1574,12 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
-UIkit.util.unwrap(element);
+util.unwrap(element);
 ```
 
-Result
+#### Result
 
 ```html
 <p id="example">This is a paragraph!</p>
@@ -1481,8 +1589,7 @@ Result
 
 ### fragment
 
-This function is used to transform HTML fragments into whole HTML elements.
-The following parameters may be passed to the function.
+TODO: to transform HTML fragments into whole HTML elements.
 
 | Parameter | Type   | Default | Description       |
 |:----------|:-------|:--------|:------------------|
@@ -1491,10 +1598,10 @@ The following parameters may be passed to the function.
 JavaScript
 
 ```javascript
-console.log(UIkit.util.fragment('<div><p class="uk-text-danger">Some incomplete HTML!'));
+console.log(util.fragment('<div><p class="uk-text-danger">Some incomplete HTML!'));
 ```
 
-Result
+#### Result
 
 ```html
 <div><p class="uk-text-danger">Some incomplete HTML!</p></div>
@@ -1504,8 +1611,7 @@ Result
 
 ### index
 
-This function is used to find the index of an element inside a group of other elements.
-The following parameters may be passed to the function.
+TODO: to find the index of an element inside a group of other elements.
 
 | Parameter  | Type   | Default | Description                                          |
 |:-----------|:-------|:--------|:-----------------------------------------------------|
@@ -1543,11 +1649,11 @@ JavaScript
 var grid = document.getElementById('grid');
 var gridItem = document.getElementById('grid-item')
 
-console.log(UIkit.util.index(gridItem));
-console.log(UIkit.util.index(grid.children, gridItem));
+console.log(util.index(gridItem));
+console.log(util.index(grid.children, gridItem));
 ```
 
-Result
+#### Result
 
 ```log
 4
@@ -1565,7 +1671,7 @@ They either are used for triggering, creating events or reacting on them.
 
 ### on
 
-This function is used to react on a event, whenever it occurs. The following parameters may be passed to the function.
+TODO: to react on a event, whenever it occurs.
 
 | Parameter    | Type     | Default | Description                                                                                                                                                 |
 |:-------------|:---------|:--------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1586,21 +1692,21 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 var lightbox = UIkit.lightbox(element);
 
 // React on event
-UIkit.util.on('a', 'click', function() {
+util.on('a', 'click', function() {
   lightbox.show(0);
 });
 
 // React on event, which is attached to a dynamically created HTML element
-UIkit.util.on(document, 'shown', '.uk-lightbox.uk-open', function() {
+util.on(document, 'shown', '.uk-lightbox.uk-open', function() {
   console.log('Lightbox is displayed!');
 });
 ```
 
-Result
+#### Result
 
 ```log
 'Lightbox is displayed!'
@@ -1610,8 +1716,7 @@ Result
 
 ### off
 
-This function is used to remove a previously registered event listener.
-The following parameters may be passed to the function.
+TODO: to remove a previously registered event listener.
 
 | Parameter    | Type     | Default | Description                                                                                      |
 |:-------------|:---------|:--------|:-------------------------------------------------------------------------------------------------|
@@ -1641,17 +1746,17 @@ function showNotification() {
 }
 
 // Binds the event listener to the example button
-UIkit.util.on(bind, 'click', function() {
-  UIkit.util.on(trigger, 'click', showNotification);
+util.on(bind, 'click', function() {
+  util.on(trigger, 'click', showNotification);
 });
 
 // Unbinds the event listener from the example button
-UIkit.util.on(unbind, 'click', function() {
-  UIkit.util.off(trigger, 'click', showNotification);
+util.on(unbind, 'click', function() {
+  util.off(trigger, 'click', showNotification);
 });
 ```
 
-Result
+#### Result
 
 By default the `Trigger` button does nothing.
 After clicking the `Bind` button, another click on the `Trigger` button shows a notification.
@@ -1661,7 +1766,7 @@ If the `Unbind` button is clicked, the `Trigger` button no longer shows a notifi
 
 ### once
 
-This function is used to react on a event only once. The following parameters may be passed to the function.
+TODO: to react on a event only once.
 
 | Parameter    | Type     | Default | Description                                                                                                                                                 |
 |:-------------|:---------|:--------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1681,15 +1786,15 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // Show a message, but only once
-UIkit.util.once(element, 'click', function() {
+util.once(element, 'click', function() {
   UIkit.notification('Some message...');
 });
 ```
 
-Result
+#### Result
 
 By clicking the `Show message` button a notification is displayed.
 Any further clicks on the same button won't fire another notification.
@@ -1698,8 +1803,7 @@ Any further clicks on the same button won't fire another notification.
 
 ### trigger
 
-This function is used to manually triggering an event on an element.
-The following parameters may be passed to the function.
+TODO: to manually triggering an event on an element.
 
 | Parameter | Type   | Default | Description                                 |
 |:----------|:-------|:--------|:--------------------------------------------|
@@ -1716,18 +1820,18 @@ HTML
 JavaScript
 
 ```javascript
-var element = document.getElementById('example');
+var element = util.$('#example');
 
 // React on custom event
-UIkit.util.on(element, 'MyEvent', function(e) {
+util.on(element, 'MyEvent', function(e) {
   console.log(e.type, e.detail.data);
 });
 
 // Trigger a custom event
-UIkit.util.trigger(element, 'MyEvent', { data: 'was triggered!' });
+util.trigger(element, 'MyEvent', { data: 'was triggered!' });
 ```
 
-Result
+#### Result
 
 ```log
 'MyEvent was triggered!'
@@ -1737,7 +1841,7 @@ Result
 
 ### createEvent
 
-This function is used to create a custom event. The following parameters may be passed to the function.
+TODO: to create a custom event.
 
 | Parameter    | Type    | Default | Description                                                    |
 |:-------------|:--------|:--------|:---------------------------------------------------------------|
@@ -1750,12 +1854,12 @@ JavaScript
 
 ```javascript
 // Create a custom event
-var customEvent = UIkit.util.createEvent('MyEvent', true, true, { data: 'was created!' });
+var customEvent = util.createEvent('MyEvent', true, true, { data: 'was created!' });
 
 console.log(customEvent.type, customEvent.detail.data);
 ```
 
-Result
+#### Result
 
 ```log
 'MyEvent was created!'
@@ -1772,8 +1876,7 @@ Hence the reason this chapter is called language.
 
 ### hasOwn
 
-This function is used to check if a JavaScript object has some key.
-The following parameters may be passed to the function.
+TODO: to check if a JavaScript object has some key.
 
 | Parameter | Type    | Default | Description                        |
 |:----------|:--------|:--------|:-----------------------------------|
@@ -1788,10 +1891,10 @@ var object = {
 };
 
 // Check if object has some key
-console.log(UIkit.util.hasOwn(object, 'data'));
+console.log(util.hasOwn(object, 'data'));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -1801,7 +1904,7 @@ true
 
 ### classify
 
-This function is used to format a string to a correct JavaScript class name.
+TODO: to format a string to a correct JavaScript class name.
 The following parameter may be passed to the function.
 
 | Parameter | Type   | Default | Description                          |
@@ -1814,10 +1917,10 @@ JavaScript
 var string = 'my-javascript-class';
 
 // Format to the correct class format
-console.log(UIkit.util.classify(string));
+console.log(util.classify(string));
 ```
 
-Result
+#### Result
 
 ```log
 'MyJavascriptClass'
@@ -1827,7 +1930,7 @@ Result
 
 ### hyphenate
 
-This function is used to hyphenate a string. The following parameter may be passed to the function.
+TODO: to hyphenate a string. The following parameter may be passed to the function.
 
 | Parameter | Type   | Default | Description                          |
 |:----------|:-------|:--------|:-------------------------------------|
@@ -1839,10 +1942,10 @@ JavaScript
 var string = 'someCamelcasedString';
 
 // Hyphenate the string
-console.log(UIkit.util.hyphenate(string));
+console.log(util.hyphenate(string));
 ```
 
-Result
+#### Result
 
 ```log
 'some-camelcase-string'
@@ -1852,7 +1955,7 @@ Result
 
 ### camelize
 
-This function is used to camelcase a string. The following parameter may be passed to the function.
+TODO: to camelcase a string. The following parameter may be passed to the function.
 
 | Parameter | Type   | Default | Description                          |
 |:----------|:-------|:--------|:-------------------------------------|
@@ -1864,10 +1967,10 @@ JavaScript
 var string = 'some-hyphenated-string';
 
 // Camelcase the string
-console.log(UIkit.util.camelize(string));
+console.log(util.camelize(string));
 ```
 
-Result
+#### Result
 
 ```log
 'someHyphenatedString'
@@ -1877,7 +1980,7 @@ Result
 
 ### ucfirst
 
-This function is used to uppercase the first letter of a string. The following parameter may be passed to the function.
+TODO: to uppercase the first letter of a string. The following parameter may be passed to the function.
 
 | Parameter | Type   | Default | Description                          |
 |:----------|:-------|:--------|:-------------------------------------|
@@ -1889,10 +1992,10 @@ JavaScript
 var string = 'uppercase';
 
 // Uppercase the first letter
-console.log(UIkit.util.ucfirst(string));
+console.log(util.ucfirst(string));
 ```
 
-Result
+#### Result
 
 ```log
 'Uppercase'
@@ -1902,7 +2005,7 @@ Result
 
 ### startsWith
 
-This function is used to check if a string starts with some value. The following parameters may be passed to the function.
+TODO: to check if a string starts with some value.
 
 | Parameter | Type   | Default | Description             |
 |:----------|:-------|:--------|:------------------------|
@@ -1914,10 +2017,10 @@ JavaScript
 ```javascript
 var string = 'This is a string!';
 
-console.log(UIkit.util.startsWith(string, 'This'));
+console.log(util.startsWith(string, 'This'));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -1928,7 +2031,7 @@ true
 
 ### endsWith
 
-This function is used to check if a string ends with some value. The following parameters may be passed to the function.
+TODO: to check if a string ends with some value.
 
 | Parameter | Type   | Default | Description             |
 |:----------|:-------|:--------|:------------------------|
@@ -1940,10 +2043,10 @@ JavaScript
 ```javascript
 var string = 'This is a string!';
 
-console.log(UIkit.util.endsWith(string, 'string!'));
+console.log(util.endsWith(string, 'string!'));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -1953,8 +2056,7 @@ true
 
 ### includes
 
-This function is used to check if either a string or an array contains some value.
-The following parameters may be passed to the function.
+TODO: to check if either a string or an array contains some value.
 
 | Parameter | Type          | Default | Description                      |
 |:----------|:--------------|:--------|:---------------------------------|
@@ -1967,11 +2069,11 @@ JavaScript
 var string = 'This is a string!';
 var array = ['This', 'is', 'an', 'array', '!'];
 
-console.log(UIkit.util.includes(string, 'string'));
-console.log(UIkit.util.includes(array, 'array'));
+console.log(util.includes(string, 'string'));
+console.log(util.includes(array, 'array'));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -1982,7 +2084,7 @@ true
 
 ### isFunction
 
-This function is used to check whether an object is a function or not.
+TODO: to check whether an object is a function or not.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                         |
@@ -1995,10 +2097,10 @@ JavaScript
 function example() {}
 
 // Is this a function?
-console.log(UIkit.util.isFunction(example));
+console.log(util.isFunction(example));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -2008,7 +2110,7 @@ true
 
 ### isObject
 
-This function is used to check whether a variable is a JavaScript Object or not.
+TODO: to check whether a variable is a JavaScript Object or not.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                         |
@@ -2021,10 +2123,10 @@ JavaScript
 var image = new Image();
 
 // Is this a JavaScript object?
-console.log(UIkit.util.isObject(image));
+console.log(util.isObject(image));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -2034,7 +2136,7 @@ true
 
 ### isPlainObject
 
-This function is used to check whether a variable was created by the Object constructor.
+TODO: to check whether a variable was created by the Object constructor.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                         |
@@ -2047,10 +2149,10 @@ JavaScript
 var object = {};
 
 // Is this a plain Object?
-console.log(UIkit.util.isPlainObject(object));
+console.log(util.isPlainObject(object));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -2060,7 +2162,7 @@ true
 
 ### isWindow
 
-This function is used to check whether a variable is a Window Object.
+TODO: to check whether a variable is a Window Object.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                         |
@@ -2073,10 +2175,10 @@ JavaScript
 var win = window;
 
 // Is this a Window Object?
-console.log(UIkit.util.isWindow(win));
+console.log(util.isWindow(win));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -2088,7 +2190,7 @@ true
 
 ### isDocument
 
-This function is used to check whether a variable is a Document Object.
+TODO: to check whether a variable is a Document Object.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                         |
@@ -2101,10 +2203,10 @@ JavaScript
 var doc = document || window.document;
 
 // Is this a Document Object?
-console.log(UIkit.util.isDocument(doc));
+console.log(util.isDocument(doc));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -2114,7 +2216,7 @@ true
 
 ### isBoolean
 
-This function is used to check whether a value is a boolean type or not.
+TODO: to check whether a value is a boolean type or not.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                        |
@@ -2127,10 +2229,10 @@ JavaScript
 var example = false;
 
 // Is this a boolean?
-console.log(UIkit.util.isBoolean(example));
+console.log(util.isBoolean(example));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -2140,7 +2242,7 @@ true
 
 ### isString
 
-This function is used to check whether a value is a string type or not.
+TODO: to check whether a value is a string type or not.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                        |
@@ -2153,10 +2255,10 @@ JavaScript
 var example = 'This is a string!';
 
 // Is this a string?
-console.log(UIkit.util.isString(example));
+console.log(util.isString(example));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -2166,7 +2268,7 @@ true
 
 ### isNumber
 
-This function is used to check whether a value is a number type or not.
+TODO: to check whether a value is a number type or not.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                        |
@@ -2179,10 +2281,10 @@ JavaScript
 var example = 12;
 
 // Is this a number?
-console.log(UIkit.util.isNumber(example));
+console.log(util.isNumber(example));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -2192,7 +2294,7 @@ true
 
 ### isNumeric
 
-This function is used to check whether a value is numeric or not.
+TODO: to check whether a value is numeric or not.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                        |
@@ -2205,10 +2307,10 @@ JavaScript
 var example = '12';
 
 // Is this value numeric?
-console.log(UIkit.util.isNumeric(example));
+console.log(util.isNumeric(example));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -2218,7 +2320,7 @@ true
 
 ### isUndefined
 
-This function is used to check whether a value is undefined or not.
+TODO: to check whether a value is undefined or not.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                        |
@@ -2231,10 +2333,10 @@ JavaScript
 var example;
 
 // Is this value undefined?
-console.log(UIkit.util.isUndefined(example));
+console.log(util.isUndefined(example));
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -2244,7 +2346,7 @@ true
 
 ### toBoolean
 
-This function is used to turn a value, if possible into a boolean value.
+TODO: to turn a value, if possible into a boolean value.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                 |
@@ -2254,12 +2356,12 @@ The following parameter may be passed to the function.
 JavaScript
 
 ```javascript
-var example = UIkit.util.toBoolean('1');
+var example = util.toBoolean('1');
 
 console.log(example);
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -2269,7 +2371,7 @@ true
 
 ### toNumber
 
-This function is used to turn a value, if possible into a number.
+TODO: to turn a value, if possible into a number.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                 |
@@ -2279,12 +2381,12 @@ The following parameter may be passed to the function.
 JavaScript
 
 ```javascript
-var example = UIkit.util.toNumber('12.75');
+var example = util.toNumber('12.75');
 
 console.log(example);
 ```
 
-Result
+#### Result
 
 ```log
 12.75
@@ -2294,7 +2396,7 @@ Result
 
 ### toFloat
 
-This function is used to turn a value, if possible into a float number.
+TODO: to turn a value, if possible into a float number.
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                 |
@@ -2304,12 +2406,12 @@ The following parameter may be passed to the function.
 JavaScript
 
 ```javascript
-var example = UIkit.util.toNumber('12.75');
+var example = util.toNumber('12.75');
 
 console.log(example);
 ```
 
-Result
+#### Result
 
 ```log
 12.75
@@ -2319,7 +2421,7 @@ Result
 
 ### toList
 
-This function is used to turn a value, if possible into an array. 
+TODO: to turn a value, if possible into an array. 
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                 |
@@ -2329,12 +2431,12 @@ The following parameter may be passed to the function.
 JavaScript
 
 ```javascript
-var example = UIkit.util.toList('array, list, 12, true');
+var example = util.toList('array, list, 12, true');
 
 console.log(example);
 ```
 
-Result
+#### Result
 
 ```log
 (4) ['array', 'list', 12, true]
@@ -2344,7 +2446,7 @@ Result
 
 ### toMedia
 
-This function is used to turn a value, if possible into an array. 
+TODO: to turn a value, if possible into an array. 
 The following parameter may be passed to the function.
 
 | Parameter | Type | Default | Description                 |
@@ -2354,12 +2456,12 @@ The following parameter may be passed to the function.
 JavaScript
 
 ```javascript
-var example = UIkit.util.toMedia('200');
+var example = util.toMedia('200');
 
 console.log(example);
 ```
 
-Result
+#### Result
 
 ```log
 '(min-width: 200px)'
@@ -2369,8 +2471,7 @@ Result
 
 ### coerce
 
-This function is used to coerce a value into some type of data. 
-The following parameters may be passed to the function.
+TODO: to coerce a value into some type of data. 
 
 | Parameter | Type     | Default | Description                                                       |
 |:----------|:---------|:--------|:------------------------------------------------------------------|
@@ -2391,11 +2492,11 @@ var types = [Boolean, Number, 'query', 'list', 'media'];
 var values = ['1', '12.5', '#example', 'Hello, world, !', 640];
 
 for (i = 0; i < types.length; i++) {
-    console.log(UIkit.util.coerce(types[i], values[i]));
+    console.log(util.coerce(types[i], values[i]));
 }
 ```
 
-Result
+#### Result
 
 ```log
 true
@@ -2410,7 +2511,7 @@ true
 
 ### toMs
 
-This function is used to turn a value, if possible into milliseconds. 
+TODO: to turn a value, if possible into milliseconds. 
 The following parameter may be passed to the function.
 
 | Parameter | Type           | Default | Description                |
@@ -2420,12 +2521,12 @@ The following parameter may be passed to the function.
 JavaScript
 
 ```javascript
-var example = UIkit.util.toMs('10s');
+var example = util.toMs('10s');
 
 console.log(example);
 ```
 
-Result
+#### Result
 
 ```log
 10000
@@ -2435,7 +2536,7 @@ Result
 
 ### swap
 
-This function is used to swap a substring with another value. 
+TODO: to swap a substring with another value. 
 The following parameter may be passed to the function.
 
 | Parameter | Type   | Default | Description                       |
@@ -2447,12 +2548,12 @@ The following parameter may be passed to the function.
 JavaScript
 
 ```javascript
-var example = UIkit.util.swap('uk-position-left', 'left', 'right');
+var example = util.swap('uk-position-left', 'left', 'right');
 
 console.log(example);
 ```
 
-Result
+#### Result
 
 ```log
 'uk-position-right'
@@ -2462,8 +2563,7 @@ Result
 
 ### assign
 
-This function is used to assign all values of one or multiple objects to another object. 
-The following parameters may be passed to the function.
+TODO: to assign all values of one or multiple objects to another object. 
 
 | Parameter | Type   | Default | Description                       |
 |:----------|:-------|:--------|:----------------------------------|
@@ -2483,12 +2583,12 @@ var source = {
   married: true
 };
 
-var example = UIkit.util.assign(target, source);
+var example = util.assign(target, source);
 
 console.log(example);
 ```
 
-Result
+#### Result
 
 ```log
 {firstName: 'Jane', lastName: 'Smith', married: true}
@@ -2498,8 +2598,7 @@ Result
 
 ### each
 
-This function is used to loop through either an array or object. 
-The following parameters may be passed to the function.
+TODO: to loop through either an array or object. 
 
 | Parameter | Type          | Default | Description                                        |
 |:----------|:--------------|:--------|:---------------------------------------------------|
@@ -2511,12 +2610,12 @@ JavaScript
 ```javascript
 var array = ['Apple', 'Banana', 'Kiwi', 'Mango'];
 
-UIkit.util.each(array, function(item) {
+util.each(array, function(item) {
   console.log(item);
 });
 ```
 
-Result
+#### Result
 
 ```log
 'Apple'
@@ -2529,8 +2628,7 @@ Result
 
 ### clamp
 
-This function is used to return a number, which is guaranteed to be in a predefined range. 
-The following parameters may be passed to the function.
+TODO: to return a number, which is guaranteed to be in a predefined range. 
 
 | Parameter | Type   | Default | Description                               |
 |:----------|:-------|:--------|:------------------------------------------|
@@ -2543,12 +2641,12 @@ JavaScript
 ```javascript
 var array = ['Apple', 'Banana', 'Kiwi', 'Mango'];
 
-UIkit.util.each(array, function(item) {
+util.each(array, function(item) {
   console.log(item);
 });
 ```
 
-Result
+#### Result
 
 ```log
 'Apple'
@@ -2563,7 +2661,7 @@ Result
 
 This function does not accept any arguments. You can use this empty function when you wish to pass around a function that will
 do nothing. This is useful for plugin authors who offer optional callbacks; in the case that no callback is given,
-something like `UIkit.util.noop` could execute.
+something like `util.noop` could execute.
 
 ***
 
@@ -2575,8 +2673,7 @@ Wait on [pull request](https://github.com/uikit/uikit/pull/3129).
 
 ### pointInRect
 
-This function is used to detect wheter a point lies inside of a rectangle or not. 
-The following parameters may be passed to the function.
+TODO: to detect wheter a point lies inside of a rectangle or not. 
 
 | Parameter | Type    | Default | Description                                            |
 |:----------|:--------|:--------|:-------------------------------------------------------|
@@ -2592,14 +2689,14 @@ HTML
 JavaScript
 
 ```javascript
-var example = document.getElementById('example').getBoundingClientRect();
+var example = util.$('#example').getBoundingClientRect();
 
 document.addEventListener('click', function(e) {
-  console.log(UIkit.util.pointInRect({ x: e.pageX, y: e.pageY }, example));
+  console.log(util.pointInRect({ x: e.pageX, y: e.pageY }, example));
 });
 ```
 
-Result
+#### Result
 
 ```log
 If you click onto the card this function returns true, otherwise false.
@@ -2633,8 +2730,8 @@ HTML
 JavaScript
 
 ```javascript
-var tracker = new UIkit.util.MouseTracker();
-var example = document.getElementById('example');
+var tracker = new util.MouseTracker();
+var example = util.$('#example');
 var target = document.getElementById('target');
 
 // Initialize the mouse tracker
@@ -2653,7 +2750,7 @@ example.addEventListener('mousemove', function() {
 });
 ```
 
-Result
+#### Result
 
 ```log
 If the mouse moves towards the target this returns true otherwise false.
@@ -2665,11 +2762,7 @@ If the mouse moves towards the target this returns true otherwise false.
 
 ***
 
-## Position
-
-***
-
-## Promise
+## Promises
 
 ***
 
@@ -2679,6 +2772,11 @@ If the mouse moves towards the target this returns true otherwise false.
 
 ## Styles
 
+***
+
+## Touch
+
+***
 
 ## Pseudo-types
 
@@ -2690,8 +2788,8 @@ _mixed_ indicates that a parameter may accept multiple (but not necessarily all)
 
 ### Nodes
 
-_Nodes_ may be a DOM Node, a NodeList, an Array of Nodes or a jQuery object. It will be filtered
+_Nodes_ may be a DOM Node, a NodeList, an Array of Nodes or a jQuery object. It will be filtered.
 
 ### Node
 
-_Nodes_ may be a DOM Node or the first node of a NodeList, an Array of Nodes or a jQuery object.
+_Node_ may be a DOM Node or the first node of a NodeList, an Array of Nodes or a jQuery object.
