@@ -94,3 +94,11 @@ The following table lists the versions that UIkit is tested on. "Latest" means t
         <p>Latest</p>
     </div>
 </div>
+
+***
+
+## Tests
+
+UIkit provides test files for every component. Each of these pages contains test cases of its component and gives you an overview of all the possibilities that are supported out of the box.
+
+<a class="uk-button uk-button-primary" href="https://getuikit.com/assets/uikit/tests/index.html">Go to tests</a>
