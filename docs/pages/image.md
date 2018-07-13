@@ -130,7 +130,7 @@ It's also possible to load only the image of the active slide and lazy load the 
 ```html
 <ul class="uk-slideshow-items">
     <li>
-        <img data-src="" width="" height="" alt="" uk-img="target: !.uk-slideshow-items > :last-child, !* +*">
+        <img data-src="" width="" height="" alt="" uk-img="target: !ul > :last-child, !* +*">
     </li>
     <li>
         <img data-src="" width="" height="" alt="" uk-img="target: !* -*, !* +*">
@@ -139,7 +139,7 @@ It's also possible to load only the image of the active slide and lazy load the 
         <img data-src="" width="" height="" alt="" uk-img="target: !* -*, !* +*">
     </li>
     <li>
-        <img data-src="" width="" height="" alt="" uk-img="target: !* -*, !.uk-slideshow-items > :first-child">
+        <img data-src="" width="" height="" alt="" uk-img="target: !* -*, !ul > :first-child">
     </li>
 </ul>
 ```
@@ -149,13 +149,13 @@ It's also possible to load only the image of the active slide and lazy load the 
 
     <ul class="uk-slideshow-items">
         <li>
-            <img data-src="../docs/images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items > :last-child, !* +*">
+            <img data-src="../docs/images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !ul > :last-child, !* +*">
         </li>
         <li>
             <img data-src="../docs/images/dark.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !* +*">
         </li>
         <li>
-            <img data-src="../docs/images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !.uk-slideshow-items > :first-child">
+            <img data-src="../docs/images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !ul > :first-child">
         </li>
     </ul>
 
