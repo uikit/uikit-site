@@ -1,7 +1,6 @@
 import uniqueid from 'unique-id';
 import { escape } from 'he';
-
-var {append, remove} = UIkit.util;
+import {append, includes, remove} from 'uikit-util';
 
 export function sluggify(text) {
     return text.toLowerCase().trim().replace(/(&amp;| & )/g, '-and-').replace(/&(.+?);/g, '').replace(/[\s\W-]+/g, '-');
@@ -9,9 +8,9 @@ export function sluggify(text) {
 
 export function parse(markdown, cb) {
 
-    var renderer = new marked.Renderer({langPrefix: 'lang-'}),
-        base = new marked.Renderer({langPrefix: 'lang-'}),
-        modal = (href, text) => {
+    const renderer = new marked.Renderer({langPrefix: 'lang-'});
+    const base = new marked.Renderer({langPrefix: 'lang-'});
+    const modal = (href, text) => {
             var slug = 'modal-' + sluggify(text);
             return `<a href="#${slug}" uk-toggle><p class="uk-margin-large-bottom"><img src="${href}" alt="${text}"></p></a>
                     <div id="${slug}" class="uk-modal-full" uk-modal>
@@ -19,8 +18,8 @@ export function parse(markdown, cb) {
                     <button class="uk-modal-close-full" type="button" uk-close></button>
                     <img src="${href}" alt="${text}">
                     </div></div>`;
-        },
-        example = code => {
+        };
+    const example = code => {
 
             let id = uniqueid(4);
 
@@ -56,7 +55,7 @@ export function parse(markdown, cb) {
 
     return marked(markdown, {renderer}, (err, content) => {
 
-        if (content.indexOf('{%isodate%}') != -1) {
+        if (includes(content, '{%isodate%}')) {
             content = content.replace(/{%isodate%}/g, (new Date(Date.now() + 864e5 * 7)).toISOString().replace(/\.(\d+)Z/, '+00:00'));
         }
 
@@ -69,12 +68,13 @@ export function parse(markdown, cb) {
 // https://blog.codepen.io/documentation/api/prefill/
 export function openOnCodepen(code) {
 
-    var regexp = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
-    var scripts = (code.match(regexp) || []).join('\n').replace(/<\/?script>/g, '');
+    const regexp = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
+    const scripts = (code.match(regexp) || []).join('\n').replace(/<\/?script>/g, '');
+    const base = location.href.substring(0, location.href.lastIndexOf('/'));
 
     code = code
         .replace(regexp, '')
-        .replace(/<img[^>]+src="(.*?)"|url\((.*?)\)"/g, (match, src) => src.indexOf('../docs/') === 0 ? match.replace(src, `${location.href.split('/docs/')[0]}/docs/${src.replace('../docs/', '')}`) : match);
+        .replace(/<img[^>]+src="(?!\/|#|[a-z0-9\-.]+:)(.*?)"|url\((?!\/|#|[a-z0-9\-.]+:)(.*?)\)/g, (match, src, url) => match.replace(src || url, `${base}/${src || url}`));
 
     let nc = Date.now() % 9999,
         data = {
@@ -95,15 +95,22 @@ export function openOnCodepen(code) {
         };
 
     data = JSON.stringify(data)
-    // Quotes will screw up the JSON
+        // Quotes will screw up the JSON
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&apos;");
 
-    var form = append(document.body, `<form action="https://codepen.io/pen/define" method="POST" target="_blank">
+    const form = append(document.body, `<form action="https://codepen.io/pen/define" method="POST" target="_blank">
             <input type="hidden" name="data" value='${data}'>
         </form>`)[0];
 
     form.submit();
     remove(form);
 
+}
+
+export function html(el, html) {
+    el.innerHTML = '';
+    const range = document.createRange();
+    range.selectNode(el);
+    el.appendChild(range.createContextualFragment(html));
 }

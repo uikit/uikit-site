@@ -16,7 +16,7 @@ To apply this component, add the `uk-lightbox` attribute to a container to turn 
 
 ```example
 <div uk-lightbox>
-    <a class="uk-button uk-button-default" href="../docs/images/photo.jpg">Open Lightbox</a>
+    <a class="uk-button uk-button-default" href="images/photo.jpg">Open Lightbox</a>
 </div>
 ```
 
@@ -34,7 +34,7 @@ To add an `alt` attribute to the image in the lightbox, set the `data-alt` attri
 
 ```example
 <div uk-lightbox>
-    <a class="uk-button uk-button-default" href="../docs/images/photo.jpg" data-alt="Image">Open Lightbox</a>
+    <a class="uk-button uk-button-default" href="images/photo.jpg" data-alt="Image">Open Lightbox</a>
 </div>
 ```
 
@@ -52,7 +52,7 @@ To display a caption at the bottom of the lightbox, set the `data-caption` attri
 
 ```example
 <div uk-lightbox>
-    <a class="uk-button uk-button-default" href="../docs/images/photo.jpg" data-caption="Caption">Open Lightbox</a>
+    <a class="uk-button uk-button-default" href="images/photo.jpg" data-caption="Caption">Open Lightbox</a>
 </div>
 ```
 
@@ -72,18 +72,18 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 <div class="uk-h3">Slide</div>
 <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
     <div>
-        <a class="uk-inline" href="../docs/images/photo.jpg" data-caption="Caption 1">
-            <img src="../docs/images/photo.jpg" alt="">
+        <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+            <img src="images/photo.jpg" alt="">
         </a>
     </div>
     <div>
-        <a class="uk-inline" href="../docs/images/dark.jpg" data-caption="Caption 2">
-            <img src="../docs/images/dark.jpg" alt="">
+        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
+            <img src="images/dark.jpg" alt="">
         </a>
     </div>
     <div>
-        <a class="uk-inline" href="../docs/images/light.jpg" data-caption="Caption 3">
-            <img src="../docs/images/light.jpg" alt="">
+        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
+            <img src="images/light.jpg" alt="">
         </a>
     </div>
 </div>
@@ -91,18 +91,18 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 <div class="uk-h3">Fade</div>
 <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: fade">
     <div>
-        <a class="uk-inline" href="../docs/images/photo.jpg" data-caption="Caption 1">
-            <img src="../docs/images/photo.jpg" alt="">
+        <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+            <img src="images/photo.jpg" alt="">
         </a>
     </div>
     <div>
-        <a class="uk-inline" href="../docs/images/dark.jpg" data-caption="Caption 2">
-            <img src="../docs/images/dark.jpg" alt="">
+        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
+            <img src="images/dark.jpg" alt="">
         </a>
     </div>
     <div>
-        <a class="uk-inline" href="../docs/images/light.jpg" data-caption="Caption 3">
-            <img src="../docs/images/light.jpg" alt="">
+        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
+            <img src="images/light.jpg" alt="">
         </a>
     </div>
 </div>
@@ -110,18 +110,18 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 <div class="uk-h3">Scale</div>
 <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: scale">
     <div>
-        <a class="uk-inline" href="../docs/images/photo.jpg" data-caption="Caption 1">
-            <img src="../docs/images/photo.jpg" alt="">
+        <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+            <img src="images/photo.jpg" alt="">
         </a>
     </div>
     <div>
-        <a class="uk-inline" href="../docs/images/dark.jpg" data-caption="Caption 2">
-            <img src="../docs/images/dark.jpg" alt="">
+        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
+            <img src="images/dark.jpg" alt="">
         </a>
     </div>
     <div>
-        <a class="uk-inline" href="../docs/images/light.jpg" data-caption="Caption 3">
-            <img src="../docs/images/light.jpg" alt="">
+        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
+            <img src="images/light.jpg" alt="">
         </a>
     </div>
 </div>
@@ -144,7 +144,7 @@ A lightbox is not restricted to images. Other media, like videos, can be display
 
 ```example
 <div uk-lightbox>
-    <a class="uk-button uk-button-default" href="../docs/images/photo.jpg" data-caption="Image">Image</a>
+    <a class="uk-button uk-button-default" href="images/photo.jpg" data-caption="Image">Image</a>
     <a class="uk-button uk-button-default" href="https://quirksmode.org/html5/videos/big_buck_bunny.mp4" data-caption="Video">Video</a>
     <a class="uk-button uk-button-default" href="https://www.youtube.com/watch?v=YE7VzlLtp-4" data-caption="YouTube">YouTube</a>
     <a class="uk-button uk-button-default" href="https://vimeo.com/1084537" data-caption="Vimeo">Vimeo</a>

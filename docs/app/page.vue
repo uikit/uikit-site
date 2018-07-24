@@ -9,13 +9,11 @@
 
 <script>
 
-    import { parse, openOnCodepen } from './util';
+    import {html, parse, openOnCodepen} from './util';
+    import {$, $$, ajax, attr, offset, on, Promise, startsWith} from 'uikit-util';
+    import navigation from './navigation.json';
 
-    var {$, $$, ajax, attr, offset, on, Promise, startsWith} = UIkit.util;
-
-    const navigation = require('./navigation.json');
-
-    var components = Object.keys(navigation['Components']).map(label => navigation['Components'][label]);
+    const components = Object.keys(navigation['Components']).map(label => navigation['Components'][label]);
 
     export default {
 
@@ -28,10 +26,10 @@
 
             new Clipboard('a.js-copy', {text: trigger => $(attr(trigger, 'rel')).innerText})
 
-                .on('success', _ => {
+                .on('success', () => {
                     UIkit.notification({message: 'Copied!', pos: 'bottom-right'});
                 })
-                .on('error', _ => {
+                .on('error', () => {
                     UIkit.notification({message: 'Copy failed!', status: 'danger', pos: 'bottom-right'});
                 });
 
@@ -69,7 +67,7 @@
 
                 handler() {
 
-                    var page = this.$route.params.page;
+                    const page = this.$route.params.page;
 
                     this.error = null;
 
@@ -150,13 +148,6 @@
 
         }
 
-    }
-
-    function html(el, html) {
-        el.innerHTML = '';
-        var range = document.createRange();
-        range.selectNode(el);
-        el.appendChild(range.createContextualFragment(html));
     }
 
 </script>

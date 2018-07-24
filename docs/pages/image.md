@@ -24,7 +24,7 @@ To apply this component, add the `uk-img` attribute to an `<img>` element and ad
 The `width` and `height` attributes are required so an empty placeholder can be generated in the exact same size as the image. Alternatively, use `data-width` and `data-height` if you don't want to set the explicit attributes.
 
 ```example
-<img data-src="../docs/images/light.jpg" width="1800" height="1200" alt="" uk-img>
+<img data-src="images/light.jpg" width="1800" height="1200" alt="" uk-img>
 ```
 
 ***
@@ -56,7 +56,7 @@ To use this component with the CSS `background-image` property, add it to a `<di
 ```
 
 ```example
-<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="../docs/images/photo.jpg" uk-img>
+<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="images/photo.jpg" uk-img>
   <h1>Background Image</h1>
 </div>
 ```
@@ -98,13 +98,13 @@ The following example loads all images in the slides as soon as the slideshow en
 
     <ul class="uk-slideshow-items">
         <li>
-            <img data-src="../docs/images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+            <img data-src="images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
         </li>
         <li>
-            <img data-src="../docs/images/dark.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+            <img data-src="images/dark.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
         </li>
         <li>
-            <img data-src="../docs/images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+            <img data-src="images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
         </li>
     </ul>
 
@@ -149,13 +149,13 @@ It's also possible to load only the image of the active slide and lazy load the 
 
     <ul class="uk-slideshow-items">
         <li>
-            <img data-src="../docs/images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !ul > :last-child, !* +*">
+            <img data-src="images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !ul > :last-child, !* +*">
         </li>
         <li>
-            <img data-src="../docs/images/dark.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !* +*">
+            <img data-src="images/dark.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !* +*">
         </li>
         <li>
-            <img data-src="../docs/images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !ul > :first-child">
+            <img data-src="images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !ul > :first-child">
         </li>
     </ul>
 

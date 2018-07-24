@@ -25,13 +25,13 @@ Add an image in the background of each slide using the `uk-cover` attribute from
 
     <ul class="uk-slideshow-items">
         <li>
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            <img src="images/photo.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+            <img src="images/dark.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="" uk-cover>
+            <img src="images/light.jpg" alt="" uk-cover>
         </li>
     </ul>
 
@@ -72,13 +72,13 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
             <ul class="uk-slideshow-items">
                 <li>
-                    <img src="../docs/images/photo.jpg" alt="" uk-cover>
+                    <img src="images/photo.jpg" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="../docs/images/dark.jpg" alt="" uk-cover>
+                    <img src="images/dark.jpg" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="../docs/images/light.jpg" alt="" uk-cover>
+                    <img src="images/light.jpg" alt="" uk-cover>
                 </li>
             </ul>
 
@@ -96,13 +96,13 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
             <ul class="uk-slideshow-items">
                 <li>
-                    <img src="../docs/images/photo.jpg" alt="" uk-cover>
+                    <img src="images/photo.jpg" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="../docs/images/dark.jpg" alt="" uk-cover>
+                    <img src="images/dark.jpg" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="../docs/images/light.jpg" alt="" uk-cover>
+                    <img src="images/light.jpg" alt="" uk-cover>
                 </li>
             </ul>
 
@@ -120,13 +120,13 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
             <ul class="uk-slideshow-items">
                 <li>
-                    <img src="../docs/images/photo.jpg" alt="" uk-cover>
+                    <img src="images/photo.jpg" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="../docs/images/dark.jpg" alt="" uk-cover>
+                    <img src="images/dark.jpg" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="../docs/images/light.jpg" alt="" uk-cover>
+                    <img src="images/light.jpg" alt="" uk-cover>
                 </li>
             </ul>
 
@@ -144,13 +144,13 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
             <ul class="uk-slideshow-items">
                 <li>
-                    <img src="../docs/images/photo.jpg" alt="" uk-cover>
+                    <img src="images/photo.jpg" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="../docs/images/dark.jpg" alt="" uk-cover>
+                    <img src="images/dark.jpg" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="../docs/images/light.jpg" alt="" uk-cover>
+                    <img src="images/light.jpg" alt="" uk-cover>
                 </li>
             </ul>
 
@@ -168,13 +168,13 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
             <ul class="uk-slideshow-items">
                 <li>
-                    <img src="../docs/images/photo.jpg" alt="" uk-cover>
+                    <img src="images/photo.jpg" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="../docs/images/dark.jpg" alt="" uk-cover>
+                    <img src="images/dark.jpg" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="../docs/images/light.jpg" alt="" uk-cover>
+                    <img src="images/light.jpg" alt="" uk-cover>
                 </li>
             </ul>
 
@@ -222,13 +222,13 @@ The slideshow always takes up the full width of its parent container. The height
 
     <ul class="uk-slideshow-items">
         <li>
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            <img src="images/photo.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+            <img src="images/dark.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="" uk-cover>
+            <img src="images/light.jpg" alt="" uk-cover>
         </li>
     </ul>
 
@@ -253,13 +253,13 @@ By default, the slideshow height adopts to the defined ratio. A minimum or maxim
 
     <ul class="uk-slideshow-items">
         <li>
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            <img src="images/photo.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+            <img src="images/dark.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="" uk-cover>
+            <img src="images/light.jpg" alt="" uk-cover>
         </li>
     </ul>
 
@@ -286,13 +286,13 @@ Adding the `uk-height-viewport` attribute from the [Height component](height.md#
 
     <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 30">
         <li>
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            <img src="images/photo.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+            <img src="images/dark.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="" uk-cover>
+            <img src="images/light.jpg" alt="" uk-cover>
         </li>
     </ul>
 
@@ -348,13 +348,13 @@ If there is no item specific content in the navigation items, you can also add t
 
         <ul class="uk-slideshow-items">
             <li>
-                <img src="../docs/images/photo.jpg" alt="" uk-cover>
+                <img src="images/photo.jpg" alt="" uk-cover>
             </li>
             <li>
-                <img src="../docs/images/dark.jpg" alt="" uk-cover>
+                <img src="images/dark.jpg" alt="" uk-cover>
             </li>
             <li>
-                <img src="../docs/images/light.jpg" alt="" uk-cover>
+                <img src="images/light.jpg" alt="" uk-cover>
             </li>
         </ul>
 
@@ -394,7 +394,7 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
 
     <ul class="uk-slideshow-items">
         <li>
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            <img src="images/photo.jpg" alt="" uk-cover>
         </li>
         <li>
             <video autoplay loop muted playslinline uk-cover>
@@ -437,17 +437,17 @@ To add a simple Ken Burns effect, wrap the image with a `div` and add the `.uk-p
     <ul class="uk-slideshow-items">
         <li>
             <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                <img src="../docs/images/photo.jpg" alt="" uk-cover>
+                <img src="images/photo.jpg" alt="" uk-cover>
             </div>
         </li>
         <li>
             <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
-                <img src="../docs/images/dark.jpg" alt="" uk-cover>
+                <img src="images/dark.jpg" alt="" uk-cover>
             </div>
         </li>
         <li>
             <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
-                <img src="../docs/images/light.jpg" alt="" uk-cover>
+                <img src="images/light.jpg" alt="" uk-cover>
             </div>
         </li>
     </ul>
@@ -486,28 +486,28 @@ Add content overlays using the [Position component](position.md). It allows you 
 
     <ul class="uk-slideshow-items">
         <li>
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            <img src="images/photo.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center uk-light">
                 <h2 class="uk-margin-remove">Center</h2>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+            <img src="images/dark.jpg" alt="" uk-cover>
             <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
                 <h3 class="uk-margin-remove">Bottom</h3>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="" uk-cover>
+            <img src="images/light.jpg" alt="" uk-cover>
             <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
                 <h3 class="uk-margin-remove">Overlay Bottom</h3>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+            <img src="images/dark.jpg" alt="" uk-cover>
             <div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
                 <h3 class="uk-margin-remove">Overlay Bottom Right</h3>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
@@ -567,21 +567,21 @@ The next example defines different in and out animations. The content slides in 
 
     <ul class="uk-slideshow-items">
         <li>
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            <img src="images/photo.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
                 <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
                 <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
             </div>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+            <img src="images/dark.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
                 <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
                 <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
             </div>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="" uk-cover>
+            <img src="images/light.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
                 <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
                 <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
@@ -620,7 +620,7 @@ The parallax attribute can be used to add additional effects to the slideshow an
     <ul class="uk-slideshow-items">
         <li>
             <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
-                <img src="../docs/images/photo.jpg" alt="" uk-cover>
+                <img src="images/photo.jpg" alt="" uk-cover>
             </div>
             <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
             <div class="uk-position-center uk-position-medium uk-text-center">
@@ -632,7 +632,7 @@ The parallax attribute can be used to add additional effects to the slideshow an
         </li>
         <li>
             <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
-                <img src="../docs/images/dark.jpg" alt="" uk-cover>
+                <img src="images/dark.jpg" alt="" uk-cover>
             </div>
             <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
             <div class="uk-position-center uk-position-medium uk-text-center">
@@ -644,7 +644,7 @@ The parallax attribute can be used to add additional effects to the slideshow an
         </li>
         <li>
             <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
-                <img src="../docs/images/light.jpg" alt="" uk-cover>
+                <img src="images/light.jpg" alt="" uk-cover>
             </div>
             <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
             <div class="uk-position-center uk-position-medium uk-text-center">
@@ -692,21 +692,21 @@ Together with the [Overlay component](overlay.md), content transitions are used 
 
     <ul class="uk-slideshow-items">
         <li>
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            <img src="images/photo.jpg" alt="" uk-cover>
             <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                 <h3 class="uk-margin-remove">Bottom</h3>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+            <img src="images/dark.jpg" alt="" uk-cover>
             <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                 <h3 class="uk-margin-remove">Bottom</h3>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="" uk-cover>
+            <img src="images/light.jpg" alt="" uk-cover>
             <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right uk-width-medium">
                 <h3 class="uk-margin-remove">Left</h3>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

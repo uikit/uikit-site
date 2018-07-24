@@ -158,15 +158,15 @@ Add one of these classes to vertically align text to an object.
 ```example
 <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
     <div>
-        <img src="../docs/images/avatar.jpg" width="50" height="50">
+        <img src="images/avatar.jpg" width="50" height="50">
         <span class="uk-text-top">Lorem ipsum.</span>
     </div>
     <div>
-        <img src="../docs/images/avatar.jpg" width="50" height="50">
+        <img src="images/avatar.jpg" width="50" height="50">
         <span class="uk-text-middle">Lorem ipsum.</span>
     </div>
     <div>
-        <img src="../docs/images/avatar.jpg" width="50" height="50">
+        <img src="images/avatar.jpg" width="50" height="50">
         <span class="uk-text-bottom">Lorem ipsum.</span>
     </div>
 </div>

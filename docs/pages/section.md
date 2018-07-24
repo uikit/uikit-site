@@ -135,7 +135,7 @@ To apply different background colors and paddings, add one of the following clas
 </div>
 
 <div class="uk-section-default">
-    <div class="uk-section uk-light uk-background-cover" style="background-image: url(../docs/images/dark.jpg)">
+    <div class="uk-section uk-light uk-background-cover" style="background-image: url(images/dark.jpg)">
         <div class="uk-container">
 
             <h3>Section with Images</h3>
