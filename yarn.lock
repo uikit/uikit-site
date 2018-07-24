@@ -3152,15 +3152,15 @@ uniq@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/uniq/-/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
 
+uniqid@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/uniqid/-/uniqid-5.0.3.tgz#917968310edc868d50df6c44f783f32c7d80fac1"
+
 unique-filename@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/unique-filename/-/unique-filename-1.1.0.tgz#d05f2fe4032560871f30e93cbe735eea201514f3"
   dependencies:
     unique-slug "^2.0.0"
-
-unique-id@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/unique-id/-/unique-id-0.0.1.tgz#be94e4d16ffc40dcc81a1a85f4be1e9ae43f4cd5"
 
 unique-slug@^2.0.0:
   version "2.0.0"

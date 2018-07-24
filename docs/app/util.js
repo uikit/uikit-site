@@ -1,5 +1,5 @@
-import uniqueid from 'unique-id';
-import { escape } from 'he';
+import uniqid from 'uniqid';
+import {escape} from 'he';
 import {append, includes, remove} from 'uikit-util';
 
 export function sluggify(text) {
@@ -11,38 +11,39 @@ export function parse(markdown, cb) {
     const renderer = new marked.Renderer({langPrefix: 'lang-'});
     const base = new marked.Renderer({langPrefix: 'lang-'});
     const modal = (href, text) => {
-            var slug = 'modal-' + sluggify(text);
-            return `<a href="#${slug}" uk-toggle><p class="uk-margin-large-bottom"><img src="${href}" alt="${text}"></p></a>
-                    <div id="${slug}" class="uk-modal-full" uk-modal>
+        const slug = `modal-${sluggify(text)}`;
+        return `<a href="#${slug}" uk-toggle><p class="uk-margin-large-bottom"><img src="${href}" alt="${text}"></p></a>
+                <div id="${slug}" class="uk-modal-full" uk-modal>
                     <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle uk-height-viewport">
-                    <button class="uk-modal-close-full" type="button" uk-close></button>
-                    <img src="${href}" alt="${text}">
-                    </div></div>`;
-        };
+                        <button class="uk-modal-close-full" type="button" uk-close></button>
+                        <img src="${href}" alt="${text}">
+                    </div>
+                </div>`;
+    };
     const example = code => {
 
-            let id = uniqueid(4);
+        let id = uniqid('code-');
 
-            return `<div class="uk-position-relative uk-margin-medium">
+        return `<div class="uk-position-relative uk-margin-medium">
 
-                        <ul uk-tab>
-                            <li><a href="#">Preview</a></li>
-                            <li><a href="#">Markup</a></li>
+                    <ul uk-tab>
+                        <li><a href="#">Preview</a></li>
+                        <li><a href="#">Markup</a></li>
+                    </ul>
+
+                    <ul class="uk-switcher uk-margin">
+                        <li>${code}</li>
+                        <li><pre><code id="${id}" class="lang-html">${escape(code)}</code></pre></li>
+                    </ul>
+
+                    <div class="uk-position-top-right uk-margin-small-top">
+                        <ul class="uk-iconnav">
+                            <li><a class="js-copy" uk-tooltip="Copy to Clipboard" rel="#${id}"><img class="uk-icon" src="../images/icon-clipboard.svg" uk-svg></a></li>
+                            <li><a class="js-codepen" uk-tooltip="Edit on Codepen" rel="#${id}"><img class="uk-icon" src="../images/icon-flask.svg" uk-svg></a></li>
                         </ul>
-
-                        <ul class="uk-switcher uk-margin">
-                            <li>${code}</li>
-                            <li><pre><code id="${id}" class="lang-html">${escape(code)}</code></pre></li>
-                        </ul>
-
-                        <div class="uk-position-top-right uk-margin-small-top">
-                            <ul class="uk-iconnav">
-                                <li><a class="js-copy" uk-tooltip="Copy to Clipboard" rel="#${id}"><img class="uk-icon" src="../images/icon-clipboard.svg" uk-svg></a></li>
-                                <li><a class="js-codepen" uk-tooltip="Edit on Codepen" rel="#${id}"><img class="uk-icon" src="../images/icon-flask.svg" uk-svg></a></li>
-                            </ul>
-                        </div>
-                    </div>`;
-        };
+                    </div>
+                </div>`;
+    };
 
     renderer.strong = text => text === 'Note' ? `<span class="uk-label">${text}</span>` : `<strong>${text}</strong>`;
     renderer.list = text => `<ul class="uk-list uk-list-bullet">${text}</ul>`;
