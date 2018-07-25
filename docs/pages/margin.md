@@ -82,7 +82,7 @@ Add one of the following classes to add large spacing to block elements.
 
 ***
 
-## X-Large margin
+## XLarge margin
 
 Add one of the following classes to add very large spacing to block elements.
 
