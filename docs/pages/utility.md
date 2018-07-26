@@ -26,7 +26,7 @@ Add the `.uk-panel` class to a `<div>` element to create a position context, set
 
 ### Scrollable panel
 
-Add the `.uk-panel-scrollable` class to give the panel a fixed height and make it scrollable, if its content exceeds the height. You can also add one of the `.uk-height-*` [classes](#height) to apply a different height.
+Add the `.uk-panel-scrollable` class to give the panel a fixed height and make it scrollable, if its content exceeds the height. You can also add one of the `.uk-height-*` [classes](height.md) to apply a different height.
 
 ```example
 <div class="uk-panel uk-panel-scrollable">
