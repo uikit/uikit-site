@@ -75,7 +75,7 @@ export function openOnCodepen(code) {
 
     code = code
         .replace(regexp, '')
-        .replace(/<img[^>]+src="(?!\/|#|[a-z0-9\-.]+:)(.*?)"|url\((?!\/|#|[a-z0-9\-.]+:)(.*?)\)/g, (match, src, url) => match.replace(src || url, `${base}/${src || url}`));
+        .replace(/<(?:img|a)[^>]+(?:src|href)="(?!\/|#|[a-z0-9\-.]+:)(.+?)"|url\((?!\/|#|[a-z0-9\-.]+:)(.+?)\)/g, (match, src, url) => match.replace(src || url, `${base}/${src || url}`));
 
     let nc = Date.now() % 9999,
         data = {

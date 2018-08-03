@@ -44,7 +44,7 @@
 
             on(this.$refs.container, 'click', '[href="#"]', e => e.preventDefault());
 
-            on(this.$refs.container, 'click', 'a:not([href^="http"]):not([href^="#"]):not([href^="/"]):not([href^="../"])', e => {
+            on(this.$refs.container, 'click', 'a:not([href^="http"]):not([href^="#"]):not([href^="/"]):not([href^="../"]):not([href^="images/"])', e => {
                 e.preventDefault();
                 DocsApp.$router.replace(e.target.pathname + e.target.hash);
             });
