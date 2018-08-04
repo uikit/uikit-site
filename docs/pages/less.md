@@ -24,7 +24,7 @@ To include UIkit in your project's build workflow, you need to import the core U
 
 ### Use included build process
 
-If you are want to change the styling of UIkit, you can use its build process to create a differently themed version of the CSS, that you can then include in your project. That way you do not need to set up your own build process.
+If you want to change the styling of UIkit, you can use its build process to create a differently themed version of the CSS, that you can then include in your project. That way you do not need to set up your own build process.
 
 To include your own Less theme in the build process, create a `/custom` directory, which will contain all of your custom themes.
 
