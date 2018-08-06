@@ -1186,7 +1186,7 @@ if (util.isVisible(element)) {
 
 ### isInput
 
-TODO: to detect, whether an element is visible or not.
+TODO: to detect, whether an element is an input type or not.
 The following parameter may be passed to the function.
 
 | Parameter | Type   | Default | Description      |
