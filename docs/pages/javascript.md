@@ -102,15 +102,15 @@ Options passed via the component attribute will have the highest precedence, fol
 
 ### Globally
 
-Component options can be changed globally by re-registering the component.
+Component options can be changed globally by extending a component.
 
 ```js
-UIkit.component('sticky', UIkit.component('sticky').extend({
+UIkit.mixin({
     data: {
         offset: 50,
         top: 100
     }
-}));
+}, 'sticky');
 ```
 
 ***
