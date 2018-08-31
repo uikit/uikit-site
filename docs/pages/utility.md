@@ -258,11 +258,13 @@ To modify the border radius of an element, like an image, add one of the followi
 | Class                | Description                                |
 |:---------------------|:-------------------------------------------|
 | `.uk-border-rounded` | Add this class to apply rounded corners.   |
-| `.uk-border-circle`  | Add this class to a apply a circled shape. |
+| `.uk-border-circle`  | Add this class to apply a circled shape.   |
+| `.uk-border-pill`    | Add this class to apply a pill shape.      |
 
 ```example
 <img class="uk-border-rounded" src="images/avatar.jpg" width="200" height="200" alt="Border rounded">
 <img class="uk-border-circle" src="images/avatar.jpg" width="200" height="200" alt="Border circle">
+<img class="uk-border-pill" src="images/avatar.jpg" width="200" height="200" alt="Border pill">
 ```
 
 ***
