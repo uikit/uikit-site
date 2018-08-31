@@ -30,7 +30,7 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 
 ## Component options
 
-The table below lists the available settings of the `uk-height-match` attribute. [Learn more](javascript.md#component-configuration)
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option  | Value  | Default | Description          |
 |:--------|:-------|:--------|:---------------------|
