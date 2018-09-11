@@ -228,7 +228,7 @@ Using the [grid](grid.md) and [width](width.md) classes, you can create a nice, 
 
 ## Overflow
 
-By default, the page will scroll with the modal, if its content exceeds the window height. To apply a scrollbar inside the modal, add the `uk-overflow-auto` attribute from the [Utility component](utility.md#overflow) to the modal body.
+By default, the page will scroll with the modal, if its content exceeds the window height. To apply a scrollbar inside the modal, add the `uk-overflow-auto` attribute from the [Utility component](utility.md#overflow-auto) to the modal body.
 
 ```html
 <div id="my-id" uk-modal>
