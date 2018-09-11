@@ -68,8 +68,8 @@ The table below lists the available settings of the `uk-video` attribute. [Learn
 
 | Option     | Value           | Default | Description                      |
 |:-----------|:----------------|:--------|:---------------------------------|
-| `autoplay` | Boolean, String | `true`  | The video automatically plays/pauses as it's visible/hidden on the page. A value of `inview` plays/pauses the video as it enters/leaves the viewport. |
-| `automute` | Boolean         | `false` | Automatically mute YouTube or Vimeo videos.    |
+| `autoplay` | Boolean, String | `true`  | The video automatically plays/pauses as it's visible/hidden on the page. A value of `inview` will delay loading the video and play/pause the video as it enters/leaves the viewport. |
+| `automute` | Boolean         | `false` | Automatically mute YouTube or Vimeo videos. |
 
 `autoplay` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
