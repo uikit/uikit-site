@@ -85,7 +85,7 @@ util.getImage('/path/to/image.jpeg')
 
 ***
 
-## Animation
+## Animations
 
 The following functions are to animate elements. They are either used to transition some CSS properties or 
 animate whole elements, using UIkit's CSS animations.
@@ -375,10 +375,10 @@ Remove an attribute from an element.
 removeAttr(element, name);
 ```
 
-| Parameter | Type   | Description          |
-|:----------|:-------|:---------------------|
-| `element` | String | The HTML element     |
-| `name`    | String | The attribute's name |
+| Parameter | Type                  | Description          |
+|:----------|:----------------------|:---------------------|
+| `element` | [Node](#pseudo-types) | The HTML element     |
+| `name`    | String                | The attribute's name |
 
 ### Usage
 
@@ -409,12 +409,12 @@ Search an replace functionality for an attribute's value.
 filterAttr(element, attribute, pattern, replacement);
 ```
 
-| Parameter     | Type   | Description             |
-|:--------------|:-------|:------------------------|
-| `element`     | String | The HTML element        |
-| `attribute`   | String | The attribute's name    |
-| `pattern`     | String | The search pattern      |
-| `replacement` | String | The replacement value   |
+| Parameter     | Type                  | Description             |
+|:--------------|:----------------------|:------------------------|
+| `element`     | [Node](#pseudo-types) | The HTML element        |
+| `attribute`   | String                | The attribute's name    |
+| `pattern`     | String                | The search pattern      |
+| `replacement` | String                | The replacement value   |
 
 ### Usage
 
@@ -446,10 +446,10 @@ Retrieve the value of a `data-*` prefixed attribute.
 data(element, attribute);
 ```
 
-| Parameter     | Type   | Description               |
-|:--------------|:-------|:--------------------------|
-| `element`     | String | The HTML element          |
-| `attribute`   | String | The data-attribute's name |
+| Parameter     | Type                  | Description               |
+|:--------------|:----------------------|:--------------------------|
+| `element`     | [Node](#pseudo-types) | The HTML element          |
+| `attribute`   | String                | The data-attribute's name |
 
 ### Usage
 
@@ -488,10 +488,10 @@ Add one or multiple classes to an element.
 addClass(element, ...args);
 ```
 
-| Parameter | Type             | Description                                                  |
-|:----------|:-----------------|:-------------------------------------------------------------|
-| `element` | String           | The HTML element                                             |
-| `...args` | Arguments object | An array like object, accepting one or multiple data entries |
+| Parameter | Type                  | Description                                                  |
+|:----------|:----------------------|:-------------------------------------------------------------|
+| `element` | [Node](#pseudo-types) | The HTML element                                             |
+| `...args` | Arguments object      | An array like object, accepting one or multiple data entries |
 
 ### Usage
 
@@ -524,10 +524,10 @@ Remove one or multiple classes from an element.
 removeClass(element, ...args);
 ```
 
-| Parameter | Type             | Description                                                  |
-|:----------|:-----------------|:-------------------------------------------------------------|
-| `element` | String           | The HTML element                                             |
-| `...args` | Arguments object | An array like object, accepting one or multiple data entries |
+| Parameter | Type                  | Description                                                  |
+|:----------|:----------------------|:-------------------------------------------------------------|
+| `element` | [Node](#pseudo-types) | The HTML element                                             |
+| `...args` | Arguments object      | An array like object, accepting one or multiple data entries |
 
 ### Usage
 
@@ -558,10 +558,10 @@ Remove a range of classes, based on a pattern.
 removeClasses(element, cls);
 ```
 
-| Parameter | Type   | Description                 |
-|:----------|:-------|:----------------------------|
-| `element` | String | The HTML element            |
-| `cls`     | String | The class(es) to be removed |
+| Parameter | Type                  | Description                 |
+|:----------|:----------------------|:----------------------------|
+| `element` | [Node](#pseudo-types) | The HTML element            |
+| `cls`     | String                | The class(es) to be removed |
 
 ### Usage
 
@@ -593,10 +593,10 @@ Replace a class.
 removeClasses(element, ...args);
 ```
 
-| Parameter | Type             | Description                                                  |
-|:----------|:-----------------|:-------------------------------------------------------------|
-| `element` | String           | The HTML element                                             |
-| `...args` | Arguments object | An array like object, accepting one or multiple data entries |
+| Parameter | Type                  | Description                                                  |
+|:----------|:----------------------|:-------------------------------------------------------------|
+| `element` | [Node](#pseudo-types) | The HTML element                                             |
+| `...args` | Arguments object      | An array like object, accepting one or multiple data entries |
 
 ### Usage
 
@@ -627,10 +627,10 @@ Check if an element has a specific class.
 hasClass(element, cls);
 ```
 
-| Parameter | Type   | Description             |
-|:----------|:-------|:------------------------|
-| `element` | String | The HTML element        |
-| `cls`     | String | The class to be checked |
+| Parameter | Type                  | Description             |
+|:----------|:----------------------|:------------------------|
+| `element` | [Node](#pseudo-types) | The HTML element        |
+| `cls`     | String                | The class to be checked |
 
 ### Usage
 
@@ -665,10 +665,10 @@ Toggle a class.
 toggleClass(element, ...args);
 ```
 
-| Parameter | Type             | Description                                                  |
-|:----------|:-----------------|:-------------------------------------------------------------|
-| `element` | String           | The HTML element                                             |
-| `...args` | Arguments object | An array like object, accepting one or multiple data entries |
+| Parameter | Type                  | Description                                                  |
+|:----------|:----------------------|:-------------------------------------------------------------|
+| `element` | [Node](#pseudo-types) | The HTML element                                             |
+| `...args` | Arguments object      | An array like object, accepting one or multiple data entries |
 
 ### Usage
 
@@ -693,10 +693,323 @@ for (var i = 0; i < 3; i++) {
 
 ***
 
-## Core
+## Dimensions
 
-The following function are used very often, hence the reason they are categorized as core functionality.
-They are used to easily select HTML elements, mimicking the `$()` function of jQuery.
+The following function are to work with dimensions of elements. They either are used for conditional statements
+or setting/retrieving values.
+
+***
+
+## positionAt
+
+TODO
+
+```javascript
+positionAt(element, target [, elAttach, targetAttach, elOffset, targetOffset, flip, boundary])
+```
+
+| Parameter      | Type                  | Description                 |
+|:---------------|:----------------------|:----------------------------|
+| `element`      | [Node](#pseudo-types) | ...                         |
+| `target`       | [Node](#pseudo-types) | ...                         |
+| `elAttach`     | ...                   | ...                         |
+| `targetAttach` | ...                   | ...                         |
+| `elOffset`     | ...                   | ...                         |
+| `targetOffset` | ...                   | ...                         |
+| `flip`         | ...                   | ...                         |
+| `boundary`     | ...                   | ...                         |
+
+### Usage
+
+```javascript
+TODO
+```
+
+#### Result
+
+```log
+TODO
+```
+
+***
+
+## offset
+
+Either retrieve an element's dimensions or set new `top` and/or `left` values.
+
+```javascript
+offset(element [, coordinates])
+```
+
+| Parameter     | Type                  | Description                                     |
+|:--------------|:----------------------|:------------------------------------------------|
+| `element`     | [Node](#pseudo-types) | The HTML Element                                |
+| `coordinates` | Object                | An object containing `top` and/or `left` values |
+
+### Usage
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body uk-width-medium">Offset Card</div>
+```
+
+```javascript
+var element = util.$('#example');
+
+// Read dimensions before and after setting new coordinates
+var before = util.offset(element);
+
+offset(element, {
+  top: 100,
+  left: 100
+});
+
+var after = util.offset(element);
+
+console.log(before, after);
+```
+
+#### Result
+
+```log
+{height: 104, width: 300, top: 0, left: 0, bottom: 104, right: 300}
+{height: 104, width: 300, top: 100, left: 100, bottom: 204, rigth: 400}
+```
+
+***
+
+## position
+
+Read the current `top` and `left` coordinates of an element.
+
+```javascript
+position(element)
+```
+
+| Parameter | Type                  | Description      |
+|:----------|:----------------------|:-----------------|
+| `element` | [Node](#pseudo-types) | The HTML Element |
+
+### Usage
+
+```html
+<div id="example" class="uk-card uk-card-default"></div>
+```
+
+```javascript
+var element = util.$('#example');
+
+// Retrieve current position
+var pos = util.position(element);
+
+console.log(pos);
+```
+
+#### Result
+
+```log
+{top: 0, left: 0}
+```
+
+***
+
+## height
+
+Get or set the inner height of an element.
+
+```javascript
+height(element [, value])
+```
+
+| Parameter | Type                  | Description                     |
+|:----------|:----------------------|:--------------------------------|
+| `element` | [Node](#pseudo-types) | The HTML Element                |
+| `value`   | Number                | New inner height of the element |
+
+### Usage
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body uk-height-medium">Example Card</div>
+```
+
+```javascript
+var element = util.$('#example');
+
+// Retrieve current position
+var before = util.height(element);
+util.height(element, 100);
+var after = util.height(element);
+
+console.log(before, after);
+```
+
+#### Result
+
+```log
+220 100
+```
+
+***
+
+## width
+
+Get or set the inner width of an element.
+
+```javascript
+width(element [, value])
+```
+
+| Parameter | Type                  | Description                     |
+|:----------|:----------------------|:--------------------------------|
+| `element` | [Node](#pseudo-types) | The HTML Element                |
+| `value`   | Number                | New inner width of the element |
+
+### Usage
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body uk-width-medium">Example Card</div>
+```
+
+```javascript
+var element = util.$('#example');
+
+// Retrieve current position
+var before = util.width(element);
+util.width(element, 100);
+var after = util.width(element);
+
+console.log(before, after);
+```
+
+#### Result
+
+```log
+220 100
+```
+
+***
+
+## boxModelAdjust
+
+Calculate the box model of an element vertically or horizontally.
+
+```javascript
+boxModelAdjust(prop, element [, sizing])
+```
+
+| Parameter | Type                  | Description                                        |
+|:----------|:----------------------|:---------------------------------------------------|
+| `prop`    | String                | Either `width` or `height`                         |
+| `element` | [Node](#pseudo-types) | The HTML Element                                   |
+| `sizing`  | String                | CSS box sizing values, e.g. `border-box` (default) |
+
+### Usage
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body">Box Model Adjust</div>
+```
+
+```javascript
+var element = util.$('#example');
+
+// Calculate the vertical box model size
+var boxModel = util.boxModelAdjust('height', element);
+
+console.log(boxModel);
+```
+
+#### Result
+
+```log
+80
+```
+
+***
+
+## flipPosition
+
+Get the opposite position property.
+
+```javascript
+flipPosition(pos)
+```
+
+| Parameter | Type                  | Description                                             |
+|:----------|:----------------------|:--------------------------------------------------------|
+| `pos`     | String                | The initial position property, e.g. `top`, `left`, etc. |
+
+
+### Usage
+
+```javascript
+// Get the opposite position property
+var flipTop = util.flipPosition('top');
+var flipLeft = util.flipPosition('left');
+
+console.log(flipTop, flipLeft);
+```
+
+#### Result
+
+```log
+bottom right
+```
+
+***
+
+## DOM (Document Object Model)
+
+The following functions are to work with the DOM. They either are used for conditional statements,
+DOM manipulation, event triggers or setting/retrieving values.
+
+***
+
+### isReady
+
+This constant contains either true or false, whether the base direction of text is set to RTL (right to left).
+
+HTML
+
+```html
+<html dir="rtl"></html>
+```
+
+JavaScript
+
+```javascript
+// Check if base direction of text is set to RTL
+if (util.isRtl) {
+    console.log('Direction is set to RTL!');
+} else {
+    console.log('Direction is set to LTR!');
+}
+```
+
+#### Result
+
+```log
+Direction is set to RTL!
+```
+
+***
+
+### ready
+
+This function triggers as soon as the page's Document Object Model (DOM) becomes safe to manipulate.
+
+JavaScript
+
+```javascript
+// Run callback once DOM is ready
+util.ready(function() {
+    console.log('DOM is now safely manipulable.');
+});
+```
+
+#### Result
+
+```log
+DOM is now safely manipulable.
+```
 
 ***
 
@@ -756,103 +1069,6 @@ console.log(elements);
 
 ```log
 (3) [div.example, div.example, div.example]
-```
-
-***
-
-## Dimensions
-
-The following function are to work with dimensions of elements. They either are used for conditional statements
-or setting/retrieving values.
-
-***
-
-## positionAt
-
-TODO
-
-```javascript
-positionAt(element, target, elAttach, targetAttach, elOffset, targetOffset, flip, boundary)
-```
-
-| Parameter      | Type   | Description                 |
-|:---------------|:-------|:----------------------------|
-| `element`      | ...    | ...                         |
-| `target`       | ...    | ...                         |
-| `elAttach`     | ...    | ...                         |
-| `targetAttach` | ...    | ...                         |
-| `elOffset`     | ...    | ...                         |
-| `targetOffset` | ...    | ...                         |
-| `flip`         | ...    | ...                         |
-| `boundary`     | ...    | ...                         |
-
-### Usage
-
-```javascript
-TODO
-```
-
-#### Result
-
-```log
-TODO
-```
-
-***
-
-## DOM (Document Object Model)
-
-The following functions are to work with the DOM. They either are used for conditional statements,
-DOM manipulation, event triggers or setting/retrieving values.
-
-***
-
-### isReady
-
-This constant contains either true or false, whether the base direction of text is set to RTL (right to left).
-
-HTML
-
-```html
-<html dir="rtl"></html>
-```
-
-JavaScript
-
-```javascript
-// Check if base direction of text is set to RTL
-if (util.isRtl) {
-    console.log('Direction is set to RTL!');
-} else {
-    console.log('Direction is set to LTR!');
-}
-```
-
-#### Result
-
-```log
-Direction is set to RTL!
-```
-
-***
-
-### ready
-
-This function triggers as soon as the page's Document Object Model (DOM) becomes safe to manipulate.
-
-JavaScript
-
-```javascript
-// Run callback once DOM is ready
-util.ready(function() {
-    console.log('DOM is now safely manipulable.');
-});
-```
-
-#### Result
-
-```log
-DOM is now safely manipulable.
 ```
 
 ***
