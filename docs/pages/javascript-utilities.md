@@ -933,10 +933,9 @@ Get the opposite position property.
 flipPosition(pos)
 ```
 
-| Parameter | Type                  | Description                                             |
-|:----------|:----------------------|:--------------------------------------------------------|
-| `pos`     | String                | The initial position property, e.g. `top`, `left`, etc. |
-
+| Parameter | Type   | Description                                             |
+|:----------|:-------|:--------------------------------------------------------|
+| `pos`     | String | The initial position property, e.g. `top`, `left`, etc. |
 
 ### Usage
 
@@ -952,6 +951,91 @@ console.log(flipTop, flipLeft);
 
 ```log
 bottom right
+```
+
+***
+
+## inInView
+
+Check if an element is inside the viewport.
+
+```javascript
+inInView(element [, topOffset, leftOffset, relativeToViewport])
+```
+
+| Parameter            | Type                  | Description                                      |
+|:---------------------|:----------------------|:-------------------------------------------------|
+| `element`            | [Node](#pseudo-types) | The HTML Element                                 |
+| `topOffset`          | Number                | Offset from top                                  |
+| `leftOffset`         | Number                | Offset from left                                 |
+| `relativeToViewport` | Boolean               | Whether the check is relative to viewport or not |
+
+### Usage
+
+```html
+<div id="example" class="uk-card uk-card-primary uk-card-body"></div>
+```
+
+```javascript
+var element = util.$('#example');
+
+console.log(util.isInView(element));
+```
+
+#### Result
+
+```log
+true
+```
+
+***
+
+## scrolledOver
+
+Check how much an element has been scrolled over.
+
+```javascript
+scrolledOver(element [, heightOffset])
+```
+
+| Parameter      | Type                  | Description            |
+|:---------------|:----------------------|:-----------------------|
+| `element`      | [Node](#pseudo-types) | The HTML Element       |
+| `heightOffset` | Number                | Height offset from top |
+
+### Usage
+
+```html
+<div class="uk-height-viewport"></div>
+<div id="example" class="uk-card uk-card-primary uk-card-body"></div>
+<div id="scrollHere" class="uk-height-viewport"></div>
+```
+
+```javascript
+var element = util.$('#example');
+
+UIkit.scroll(element).scrollTo(util.$('#scrollHere'));
+
+function checkScrolledOver() {
+  console.log(util.scrolledOver(element));
+}
+
+checkScrolledOver();
+util.on(window, 'scroll', function () {
+  checkScrolledOver();
+});
+```
+
+#### Result
+
+```log
+0
+0.002544529262086514
+0.0063613231552162855
+...
+0.9974554707379134
+0.9987277353689566
+1
 ```
 
 ***
