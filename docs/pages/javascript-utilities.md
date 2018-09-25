@@ -1021,7 +1021,7 @@ function checkScrolledOver() {
 }
 
 checkScrolledOver();
-util.on(window, 'scroll', function () {
+util.on(window, 'scroll', function() {
   checkScrolledOver();
 });
 ```
@@ -1042,50 +1042,55 @@ util.on(window, 'scroll', function () {
 
 ## DOM (Document Object Model)
 
-The following functions are to work with the DOM. They either are used for conditional statements,
-DOM manipulation, event triggers or setting/retrieving values.
+The following functions are to work with the DOM. Check its state, manipulate elements or get information from them.
 
 ***
 
-### isReady
+## isReady
 
-This constant contains either true or false, whether the base direction of text is set to RTL (right to left).
-
-HTML
-
-```html
-<html dir="rtl"></html>
-```
-
-JavaScript
+Check if the DOM is loaded and ready to be safely manipulated or not.
 
 ```javascript
-// Check if base direction of text is set to RTL
-if (util.isRtl) {
-    console.log('Direction is set to RTL!');
-} else {
-    console.log('Direction is set to LTR!');
-}
+isReady()
+```
+
+### Usage
+
+```javascript
+console.log(util.isReady());
+
+util.on(document, 'DOMContentLoaded', function () {
+  console.log(isReady());
+});
 ```
 
 #### Result
 
 ```log
-Direction is set to RTL!
+false
+true
 ```
 
 ***
 
-### ready
+## ready
 
-This function triggers as soon as the page's Document Object Model (DOM) becomes safe to manipulate.
-
-JavaScript
+Triggers a callback function as soon as `isReady()` condition is true.
 
 ```javascript
-// Run callback once DOM is ready
-util.ready(function() {
-    console.log('DOM is now safely manipulable.');
+ready(fn)
+```
+
+| Parameter | Type     | Description                                         |
+|:----------|:---------|:----------------------------------------------------|
+| `fn`      | Function | The callback function to be executed on `isReady()` |
+
+### Usage
+
+```javascript
+// Run callback function once DOM is ready
+util.ready(function () {
+  console.log('DOM is now safely manipulable.');
 });
 ```
 
@@ -1093,6 +1098,187 @@ util.ready(function() {
 
 ```log
 DOM is now safely manipulable.
+```
+
+***
+
+## index
+
+Get the index of an element inside of a element list.
+
+```javascript
+index(element [, ref])
+```
+
+| Parameter | Type                     | Description                                                |
+|:----------|:-------------------------|:-----------------------------------------------------------|
+| `element` | [Node(s)](#pseudo-types) | The HTML element to get the index of or a list of elements |
+| `ref`     | [Node](#pseudo-types)    | The HTML element to get the index of inside the list       |
+
+### Usage
+
+```html
+<div class="uk-child-width-expand uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-secondary uk-card-body">Item 2</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item 3</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item 4</div>
+    </div>
+    <div id="grid-item">
+        <div class="uk-card uk-card-primary uk-card-body">Item 5</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item 6</div>
+    </div>
+</div>
+```
+
+```javascript
+var list = util.$$('div[uk-grid] > div');
+var element = util.$('#grid-item');
+
+console.log(util.index(element));
+console.log(util.index(list, element));
+```
+
+#### Result
+
+```log
+4
+4
+```
+
+***
+
+## getIndex
+
+Get the index of an item inside of a list.
+
+```javascript
+getIndex(i, elements [, current, finite])
+```
+
+| Parameter  | Type                           | Description                           |
+|:-----------|:-------------------------------|:--------------------------------------|
+| `i`        | [Node](#pseudo-types) / String | An HTML element, `next` or `previous` |
+| `elements` | [Nodes](#pseudo-types)         | A list of HTML elements               |
+| `current`  | Number                         | Start value to count from             |
+| `finite`   | Boolean                        | Whether the list is finite or not     |
+
+### Usage
+
+```html
+<div class="uk-child-width-expand uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-secondary uk-card-body">Item 2</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item 3</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item 4</div>
+    </div>
+    <div id="grid-item">
+        <div class="uk-card uk-card-primary uk-card-body">Item 5</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item 6</div>
+    </div>
+</div>
+```
+
+```javascript
+var list = util.$$('div[uk-grid] > div');
+
+console.log(getIndex('next', list, 6));
+console.log(getIndex('next', list, 6, true));
+```
+
+#### Result
+
+```log
+1
+5
+```
+
+***
+
+## empty
+
+Empty the content of a HTML element.
+
+```javascript
+empty(element)
+```
+
+| Parameter | Type                  | Description                           |
+|:----------|:----------------------|:--------------------------------------|
+| `element` | [Node](#pseudo-types) | The HTML element to empty its content |
+
+### Usage
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body">
+    This card is not empty!
+</div>
+```
+
+```javascript
+var element = util.$('#example');
+
+util.empty(element);
+```
+
+#### Result
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body"></div>
+```
+
+***
+
+## html
+
+Get the content of a HTML element or add new content to it.
+
+```javascript
+html(element [, html])
+```
+
+| Parameter | Type                   | Description                            |
+|:----------|:-----------------------|:---------------------------------------|
+| `element` | [Node](#pseudo-types)  | The HTML element                       |
+| `element` | [mixed](#pseudo-types) | New HTML content to add to the element |
+
+### Usage
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body"></div>
+```
+
+```javascript
+var element = util.$('#example');
+var content = '<p>This was injected by JavaScript!</p>';
+
+util.html(element, content);
+```
+
+#### Result
+
+```html
+<div id="example" class="uk-card uk-card-default uk-card-body">
+    <p>This was injected by JavaScript!</p>
+</div>
 ```
 
 ***
@@ -1179,7 +1365,7 @@ JavaScript
 var element = util.$('#example');
 
 // Check if element comes into view, when scrolling
-window.addEventListener('scroll', function() {
+util.on(window, 'scroll', function () {
   if (util.isInView(element)) {
     console.log('Element is visible!');
   } else {
@@ -1220,7 +1406,7 @@ JavaScript
 var element = util.$('#example');
 
 // Check if you scrolled past an element
-window.addEventListener('scroll', function() {
+util.on(window, 'scroll', function () {
   if (util.scrolledOver(element) < 1) {
     console.log('The element has not been "scrolled over" yet.');
   } else {
@@ -1233,45 +1419,6 @@ window.addEventListener('scroll', function() {
 
 ```log
 'The element has not been "scrolled over" yet.'
-```
-
-***
-
-### getIndex
-
-TODO: to find the index of an element inside a group of other elements.
-
-| Parameter  | Type           | Default | Description                           |
-|:-----------|:---------------|:--------|:--------------------------------------|
-| `i`        | Number, String | `null`  | The HTML element to be indexed        |
-| `elements` | String         | `null`  | The list of HTML elements to count in |
-| `current`  | Number         | `0`     | Start value for counting the index    |
-
-HTML
-
-```html
-<div class="uk-position-relative" uk-slideshow>
-    <ul class="uk-slideshow-items">
-        <li><img src="..." alt="" uk-cover></li>
-        <li id="example"><img src="..." alt="" uk-cover></li>
-        <li><img src="..." alt="" uk-cover></li>
-    </ul>
-</div>
-```
-
-JavaScript
-
-```javascript
-var element = util.$('#example');
-
-// Get index for a specific element
-console.log('Index is ' + util.getIndex(element.children[1], element.children));
-```
-
-#### Result
-
-```log
-'Index is 1'
 ```
 
 ***
@@ -1529,72 +1676,6 @@ for (var i=0; i < elements.length; i++) {
 'A select is an input type element!'
 'A textarea is an input type element!'
 'A div is NOT an input type element!'
-```
-
-***
-
-### empty
-
-TODO: to empty an element.
-
-| Parameter | Type   | Default | Description      |
-|:----------|:-------|:--------|:-----------------|
-| `element` | String | `null`  | The HTML element |
-
-HTML
-
-```html
-<div id="example" class="uk-card uk-card-default uk-card-body">
-    This card is not empty!
-</div>
-```
-
-JavaScript
-
-```javascript
-var element = util.$('#example');
-
-util.empty(element);
-```
-
-#### Result
-
-```html
-<div id="example" class="uk-card uk-card-default uk-card-body"></div>
-```
-
-***
-
-### html
-
-TODO: to fill an element with some content.
-
-| Parameter | Type   | Default | Description      |
-|:----------|:-------|:--------|:-----------------|
-| `parent`  | String | `null`  | The HTML element |
-| `html` | String | `null`  | The HTML content |
-
-HTML
-
-```html
-<div id="example" class="uk-card uk-card-default uk-card-body"></div>
-```
-
-JavaScript
-
-```javascript
-var element = util.$('#example');
-var content = '<p>This was injected by JavaScript!</p>';
-
-util.html(element, content);
-```
-
-#### Result
-
-```html
-<div id="example" class="uk-card uk-card-default uk-card-body">
-    <p>This was injected by JavaScript!</p>
-</div>
 ```
 
 ***
@@ -1909,59 +1990,6 @@ console.log(util.fragment('<div><p class="uk-text-danger">Some incomplete HTML!'
 
 ***
 
-### index
-
-TODO: to find the index of an element inside a group of other elements.
-
-| Parameter  | Type   | Default | Description                                          |
-|:-----------|:-------|:--------|:-----------------------------------------------------|
-| `element`  | String | `null`  | The HTML element to be indexed or a list of elements |
-| `ref`      | String | `null`  | The element to index inside the element list         |
-
-HTML
-
-```html
-<div id="grid" class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center" uk-grid>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">Item 1</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-secondary uk-card-body">Item 2</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">Item 3</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">Item 4</div>
-    </div>
-    <div id="grid-item">
-        <div class="uk-card uk-card-primary uk-card-body">Item 5</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">Item 6</div>
-    </div>
-</div>
-```
-
-JavaScript
-
-```javascript
-var grid = document.getElementById('grid');
-var gridItem = document.getElementById('grid-item')
-
-console.log(util.index(gridItem));
-console.log(util.index(grid.children, gridItem));
-```
-
-#### Result
-
-```log
-4
-4
-```
-
-***
-
 ## Events
 
 The following functions are to work with DOM events.
@@ -1996,12 +2024,12 @@ var element = util.$('#example');
 var lightbox = UIkit.lightbox(element);
 
 // React on event
-util.on('a', 'click', function() {
+util.on('a', 'click', function () {
   lightbox.show(0);
 });
 
 // React on event, which is attached to a dynamically created HTML element
-util.on(document, 'shown', '.uk-lightbox.uk-open', function() {
+util.on(document, 'shown', '.uk-lightbox.uk-open', function () {
   console.log('Lightbox is displayed!');
 });
 ```
@@ -2046,12 +2074,12 @@ function showNotification() {
 }
 
 // Binds the event listener to the example button
-util.on(bind, 'click', function() {
+util.on(bind, 'click', function () {
   util.on(trigger, 'click', showNotification);
 });
 
 // Unbinds the event listener from the example button
-util.on(unbind, 'click', function() {
+util.on(unbind, 'click', function () {
   util.off(trigger, 'click', showNotification);
 });
 ```
@@ -2089,7 +2117,7 @@ JavaScript
 var element = util.$('#example');
 
 // Show a message, but only once
-util.once(element, 'click', function() {
+util.once(element, 'click', function () {
   UIkit.notification('Some message...');
 });
 ```
@@ -2123,7 +2151,7 @@ JavaScript
 var element = util.$('#example');
 
 // React on custom event
-util.on(element, 'MyEvent', function(e) {
+util.on(element, 'MyEvent', function (e) {
   console.log(e.type, e.detail.data);
 });
 
@@ -2910,7 +2938,7 @@ JavaScript
 ```javascript
 var array = ['Apple', 'Banana', 'Kiwi', 'Mango'];
 
-util.each(array, function(item) {
+util.each(array, function (item) {
   console.log(item);
 });
 ```
@@ -2941,7 +2969,7 @@ JavaScript
 ```javascript
 var array = ['Apple', 'Banana', 'Kiwi', 'Mango'];
 
-util.each(array, function(item) {
+util.each(array, function (item) {
   console.log(item);
 });
 ```
@@ -2991,7 +3019,7 @@ JavaScript
 ```javascript
 var example = util.$('#example').getBoundingClientRect();
 
-document.addEventListener('click', function(e) {
+util.on(document, 'click', function (e) {
   console.log(util.pointInRect({ x: e.pageX, y: e.pageY }, example));
 });
 ```
@@ -3032,20 +3060,20 @@ JavaScript
 ```javascript
 var tracker = new util.MouseTracker();
 var example = util.$('#example');
-var target = document.getElementById('target');
+var target = util.$('#target');
 
 // Initialize the mouse tracker
-example.addEventListener('mouseenter', function() {
+util.on(example, 'mouseenter', function () {
   tracker.init();
 });
 
 // Unbind the mouse tracker
-example.addEventListener('mouseleave', function() {
+util.on(example, 'mouseleave', function () {
   tracker.cancel();
 });
 
 // Detect mouse movement
-example.addEventListener('mousemove', function() {
+util.on(example, 'mousemove', function () {
   console.log(tracker.movesTo(target));
 });
 ```
