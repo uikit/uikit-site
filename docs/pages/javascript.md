@@ -156,7 +156,7 @@ Any component functions and variables prefixed with an underscore are considered
 Each component triggers DOM events that you can react to. For example when an Modal is shown or a Scrollspy element becomes visible.
 
 ```js
-UIkit.util.on('#offcanvas', 'show', function () {
+UIkit.util.on(document, 'show', '#offcanvas', function () {
     // do something
 });
 ```
