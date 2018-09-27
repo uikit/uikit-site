@@ -782,6 +782,8 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
 
 By default, the dropbar overlays the site content. Add the `dropbar-mode: push;` option, to push the content down instead.
 
+**Note** The push mode does not work well if the navbar is contained within a sticky component.
+
 ```html
 <nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push">...</nav>
 <div class="uk-navbar-dropbar"></div>
