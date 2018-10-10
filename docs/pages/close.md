@@ -79,7 +79,7 @@ This is an example of how this component is used with the [Drop component](drop.
 
 ## Close in modals
 
-This is an example of how this component is used with the [Modal component](alert.md).
+This is an example of how this component is used with the [Modal component](modal.md).
 
 ```html
 <div id="modal" uk-modal>
