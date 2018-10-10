@@ -53,9 +53,33 @@ This is an example of how this component is used with an alert box from the [Ale
 
 ***
 
+## Close in drops
+
+This is an example of how this component is used with the [Drop component](drop.md).
+
+```html
+<div uk-drop>
+    <button class="uk-drop-close" type="button" uk-close></button>
+</div>
+```
+
+```example
+<div class="uk-inline">
+    <button class="uk-button uk-button-default" type="button">Click</button>
+    <div uk-drop="mode: click">
+        <div class="uk-card uk-card-body uk-card-default">
+            <button class="uk-drop-close" type="button" uk-close></button>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+    </div>
+</div>
+```
+
+***
+
 ## Close in modals
 
-This is an example of how this component is used with the [Modal component](alert.md).
+This is an example of how this component is used with the [Modal component](modal.md).
 
 ```html
 <div id="modal" uk-modal>
