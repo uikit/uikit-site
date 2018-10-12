@@ -46,13 +46,14 @@ The following classes will transform text into uppercased, capitalized or lowerc
 
 Use one of these classes to apply a different color to text elements.
 
-| Class              | Description                                                                                   |
-|:-------------------|:----------------------------------------------------------------------------------------------|
-| `.uk-text-muted`   | <span class="uk-text-muted">Add this class to mute your text.</span>                          |
-| `.uk-text-primary` | <span class="uk-text-primary">Add this class to emphasize additional text information.</span> |
-| `.uk-text-success` | <span class="uk-text-success">Add this class to indicate success.</span>                      |
-| `.uk-text-warning` | <span class="uk-text-warning">Add this class to indicate a warning.</span>                    |
-| `.uk-text-danger`  | <span class="uk-text-danger">Add this class to indicate danger.</span>                        |
+| Class               | Description                                                                                   |
+|:--------------------|:----------------------------------------------------------------------------------------------|
+| `.uk-text-muted`    | <span class="uk-text-muted">Add this class to mute your text.</span>                          |
+| `.uk-text-emphasis` | <span class="uk-text-emphasis">Add this class to emphasis your text.</span>                   |
+| `.uk-text-primary`  | <span class="uk-text-primary">Add this class to emphasize additional text information.</span> |
+| `.uk-text-success`  | <span class="uk-text-success">Add this class to indicate success.</span>                      |
+| `.uk-text-warning`  | <span class="uk-text-warning">Add this class to indicate a warning.</span>                    |
+| `.uk-text-danger`   | <span class="uk-text-danger">Add this class to indicate danger.</span>                        |
 
 ***
 
