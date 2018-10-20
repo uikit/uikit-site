@@ -91,7 +91,7 @@ Usually, the image starts loading when it enters the viewport. To start loading 
 <img data-src="" width="" height="" alt="" uk-img="target: .my-class">
 ```
 
-The following example loads all images in the slides as soon as the slideshow enters the viewport. It uses `!.uk-slideshow-items` as a target selector. The `!` looks up the DOM to find the next parent element with the `.uk-slideshow-item` class.
+The following example loads all images in the slides as soon as the slideshow enters the viewport. It uses `!.uk-slideshow-items` as a target selector. The `!` looks up the DOM to find the next parent element with the `.uk-slideshow-items` class.
 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
