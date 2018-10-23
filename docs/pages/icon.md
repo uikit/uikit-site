@@ -65,6 +65,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="credit-card"></span> credit-card</li>
             <li><span class="uk-margin-small-right" uk-icon="mail"></span> mail</li>
             <li><span class="uk-margin-small-right" uk-icon="receiver"></span> receiver</li>
+            <li><span class="uk-margin-small-right" uk-icon="print"></span> print</li>
             <li><span class="uk-margin-small-right" uk-icon="search"></span> search</li>
             <li><span class="uk-margin-small-right" uk-icon="location"></span> location</li>
             <li><span class="uk-margin-small-right" uk-icon="bookmark"></span> bookmark</li>
@@ -77,7 +78,9 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="code"></span> code</li>
             <li><span class="uk-margin-small-right" uk-icon="paint-bucket"></span> paint-bucket</li>
             <li><span class="uk-margin-small-right" uk-icon="camera"></span> camera</li>
+            <li><span class="uk-margin-small-right" uk-icon="video-camera"></span> video-camera</li>
             <li><span class="uk-margin-small-right" uk-icon="bell"></span> bell</li>
+            <li><span class="uk-margin-small-right" uk-icon="microphone"></span> microphone</li>
             <li><span class="uk-margin-small-right" uk-icon="bolt"></span> bolt</li>
             <li><span class="uk-margin-small-right" uk-icon="star"></span> star</li>
             <li><span class="uk-margin-small-right" uk-icon="heart"></span> heart</li>
@@ -95,14 +98,13 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="pencil"></span> pencil</li>
             <li><span class="uk-margin-small-right" uk-icon="trash"></span> trash</li>
             <li><span class="uk-margin-small-right" uk-icon="move"></span> move</li>
-            <li><span class="uk-margin-small-right" uk-icon="link"></span> link</li>
-
         </ul>
 
     </div>
     <div>
 
         <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="link"></span> link</li>
             <li><span class="uk-margin-small-right" uk-icon="question"></span> question</li>
             <li><span class="uk-margin-small-right" uk-icon="info"></span> info</li>
             <li><span class="uk-margin-small-right" uk-icon="warning"></span> warning</li>
@@ -166,26 +168,28 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="file"></span> file</li>
+            <li><span class="uk-margin-small-right" uk-icon="file-text"></span> file-text</li>
+            <li><span class="uk-margin-small-right" uk-icon="file-pdf"></span> file-pdf</li>
             <li><span class="uk-margin-small-right" uk-icon="copy"></span> copy</li>
             <li><span class="uk-margin-small-right" uk-icon="file-edit"></span> file-edit</li>
-            <li><span class="uk-margin-small-right" uk-icon="folder"></span> folder</li>
-            <li><span class="uk-margin-small-right" uk-icon="album"></span> album</li>
         </ul>
 
     </div>
     <div>
 
         <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="folder"></span> folder</li>
+            <li><span class="uk-margin-small-right" uk-icon="album"></span> album</li>
             <li><span class="uk-margin-small-right" uk-icon="push"></span> push</li>
             <li><span class="uk-margin-small-right" uk-icon="pull"></span> pull</li>
             <li><span class="uk-margin-small-right" uk-icon="server"></span> server</li>
-            <li><span class="uk-margin-small-right" uk-icon="database"></span> database</li>
         </ul>
 
     </div>
     <div>
 
         <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="database"></span> database</li>
             <li><span class="uk-margin-small-right" uk-icon="cloud-upload"></span> cloud-upload</li>
             <li><span class="uk-margin-small-right" uk-icon="cloud-download"></span> cloud-download</li>
             <li><span class="uk-margin-small-right" uk-icon="download"></span> download</li>
@@ -218,13 +222,15 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="chevron-up"></span> chevron-up</li>
             <li><span class="uk-margin-small-right" uk-icon="chevron-down"></span> chevron-down</li>
             <li><span class="uk-margin-small-right" uk-icon="chevron-left"></span> chevron-left</li>
+            <li><span class="uk-margin-small-right" uk-icon="chevron-right"></span> chevron-right</li>
         </ul>
 
     </div>
     <div>
 
         <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="chevron-right"></span> chevron-right</li>
+            <li><span class="uk-margin-small-right" uk-icon="chevron-double-left"></span> chevron-double-left</li>
+            <li><span class="uk-margin-small-right" uk-icon="chevron-double-right"></span> chevron-double-right</li>
             <li><span class="uk-margin-small-right" uk-icon="triangle-up"></span> triangle-up</li>
             <li><span class="uk-margin-small-right" uk-icon="triangle-down"></span> triangle-down</li>
             <li><span class="uk-margin-small-right" uk-icon="triangle-left"></span> triangle-left</li>
@@ -249,7 +255,6 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="strikethrough"></span> strikethrough</li>
-            <li><span class="uk-margin-small-right" uk-icon="video-camera"></span> video-camera</li>
         </ul>
 
     </div>
@@ -277,19 +282,20 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="github"></span> github</li>
             <li><span class="uk-margin-small-right" uk-icon="github-alt"></span> github-alt</li>
             <li><span class="uk-margin-small-right" uk-icon="gitter"></span> gitter</li>
+            <li><span class="uk-margin-small-right" uk-icon="google"></span> google</li>
         </ul>
 
     </div>
     <div>
 
         <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="google"></span> google</li>
             <li><span class="uk-margin-small-right" uk-icon="google-plus"></span> google-plus</li>
             <li><span class="uk-margin-small-right" uk-icon="instagram"></span> instagram</li>
             <li><span class="uk-margin-small-right" uk-icon="joomla"></span> joomla</li>
             <li><span class="uk-margin-small-right" uk-icon="linkedin"></span> linkedin</li>
             <li><span class="uk-margin-small-right" uk-icon="pagekit"></span> pagekit</li>
             <li><span class="uk-margin-small-right" uk-icon="pinterest"></span> pinterest</li>
+            <li><span class="uk-margin-small-right" uk-icon="reddit"></span> reddit</li>
             <li><span class="uk-margin-small-right" uk-icon="soundcloud"></span> soundcloud</li>
             <li><span class="uk-margin-small-right" uk-icon="tripadvisor"></span> tripadvisor</li>
         </ul>
