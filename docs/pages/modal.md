@@ -425,7 +425,7 @@ UIkit.modal(element, options);
 |:------------|:--------------------|:-------------------------------------------------------------|
 | `cls-page`  | `'uk-modal-page'`   | Class to add to `<body>` when modal is active                |
 | `cls-panel` | `'uk-modal-dialog'` | Class of the element to be considered the panel of the modal |
-| `sel-close` | `'.uk-modal-close, .uk-modal-close-default, .uk-modal-close-outside, .uk-modal-close-full'` | CSS selector for all elements that should trigger the closing of the modal |
+| `sel-close` | `'.uk-modal-close,` `.uk-modal-close-default,` `.uk-modal-close-outside,` `.uk-modal-close-full'` | CSS selector for all elements that should trigger the closing of the modal |
 
 ***
 
