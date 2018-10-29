@@ -769,6 +769,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 |:------------|:----------------|:--------|:-----------------------------------------------------|
 | `target`    | String          | ''      | The targeted list on which to apply the filter to.   |
 | `selActive` | String, Boolean | false   | A selector for the initially active filter controls. |
+| `animation` | Number          | 250     | Animation duration in milliseconds.                  |
 
 `target` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
