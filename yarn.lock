@@ -3642,9 +3642,9 @@ uglifyjs-webpack-plugin@^1.2.4:
     worker-farm "^1.5.2"
 
 uikit@^3.0.0-rc.12:
-  version "3.0.0-rc.23"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.0.0-rc.23.tgz#8a55172d6f4f2c970b76f00592653a0c61bb42dc"
-  integrity sha512-HK3dNTa7Sm6bqis5y3wGEZokR37GJq/uohE9rpV2iITcnhpyu3krsqmN7nnxTf1eUOoa0nIBcgMv3VBBzP9GFw==
+  version "3.0.0-rc.24"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.0.0-rc.24.tgz#df4e749958a31a0a336feb23db6f3e887050bee6"
+  integrity sha512-iNo4bcSIAUm2nEPQrY5NVHaZhV8BkMo2SnVqPPq5gO8Ki11l5S4ndFZLfv3bTfl9fifXDdtejTBuZwPyEuLpZg==
 
 union-value@^1.0.0:
   version "1.0.0"
