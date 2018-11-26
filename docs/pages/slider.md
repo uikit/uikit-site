@@ -997,9 +997,10 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `autoplay`          | Boolean | `false` | Slider autoplays.                                    |
 | `autoplay-interval` | Number  | `7000`  | The delay between switching slides in autoplay mode. |
 | `center`            | Boolean | `false` | Center the active slide.                             |
+| `draggable`         | Boolean | `true ` | Enable pointer dragging.                             |
 | `finite`            | Boolean | `false` | Disable infinite sliding.                            |
 | `index`             | Number  | `0`     | Slider item to show. 0 based index.                  |
-| `pause-on-hover`    | Boolean | `true` | Pause autoplay mode on hover.                        |
+| `pause-on-hover`    | Boolean | `true`  | Pause autoplay mode on hover.                        |
 | `sets`              | Boolean | `false` | Slide in sets.                                       |
 | `velocity`          | Number  | `1`     | The animation velocity (pixel/ms).                   |
 
