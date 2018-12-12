@@ -406,6 +406,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `bg-close`  | Boolean | `true`  | Close the modal when the background is clicked.                                                    |
 | `stack`     | Boolean | `false` | Stack modals, when more than one is open. By default, the previous modal will be hidden.           |
 | `container` | String  | `true`  | Define a target container via a selector to specify where the modal should be appended in the DOM. Setting it to `false` will prevent this behavior. |
+| `cls-page`  | String  | `'uk-modal-page'`   | Class to add to `<body>` when modal is active                |
+| `cls-panel` | String  | `'uk-modal-dialog'` | Class of the element to be considered the panel of the modal |
+| `sel-close` | String  | `'.uk-modal-close,` `.uk-modal-close-default,` `.uk-modal-close-outside,` `.uk-modal-close-full'` | CSS selector for all elements that should trigger the closing of the modal |
 
 ***
 
@@ -419,17 +422,42 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 UIkit.modal(element, options);
 ```
 
-### JavaScript options
+### Events
 
-| Name        | Default             | Description                                                  |
-|:------------|:--------------------|:-------------------------------------------------------------|
-| `cls-page`  | `'uk-modal-page'`   | Class to add to `<body>` when modal is active                |
-| `cls-panel` | `'uk-modal-dialog'` | Class of the element to be considered the panel of the modal |
-| `sel-close` | `'.uk-modal-close,` `.uk-modal-close-default,` `.uk-modal-close-outside,` `.uk-modal-close-full'` | CSS selector for all elements that should trigger the closing of the modal |
+The following events will be triggered on elements with this component attached:
+
+| Name         | Description                                          |
+|:-------------|:-----------------------------------------------------|
+| `beforeshow` | Fires before an item is shown.                       |
+| `show`       | Fires after an item is shown.                        |
+| `shown`      | Fires after the item's show animation has completed. |
+| `beforehide` | Fires before an item is hidden.                      |
+| `hide`       | Fires after an item's hide animation has started.    |
+| `hidden`     | Fires after an item is hidden.                       |
+
+### Methods
+
+The following methods are available for the component:
+
+#### Show
+
+```js
+UIkit.modal(element).show();
+```
+
+Shows the Modal.
+
+#### Hide
+
+```js
+UIkit.modal(element).hide();
+```
+
+Hides the Modal.
 
 ***
 
-### Modal dialogs
+## Modal dialogs
 
 The component comes with a number of prepared modal dialogs that you can use for user interaction. You can call the dialog directly from JavaScript and use callback functions to process the user input.
 
@@ -499,38 +527,3 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 
 </p>
 ```
-
-***
-
-### Events
-
-The following events will be triggered on elements with this component attached:
-
-| Name         | Description                                          |
-|:-------------|:-----------------------------------------------------|
-| `beforeshow` | Fires before an item is shown.                       |
-| `show`       | Fires after an item is shown.                        |
-| `shown`      | Fires after the item's show animation has completed. |
-| `beforehide` | Fires before an item is hidden.                      |
-| `hide`       | Fires after an item's hide animation has started.    |
-| `hidden`     | Fires after an item is hidden.                       |
-
-### Methods
-
-The following methods are available for the component:
-
-#### Show
-
-```js
-UIkit.modal(element).show();
-```
-
-Shows the Modal.
-
-#### Hide
-
-```js
-UIkit.modal(element).hide();
-```
-
-Hides the Modal.
