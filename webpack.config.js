@@ -38,7 +38,8 @@ module.exports = [
         ...config,
         entry: './app/main',
         output: {
-            filename: './app/main.min.js'
+            path: __dirname,
+            filename: './[name].min.js'
         }
     },
 
@@ -46,7 +47,8 @@ module.exports = [
         ...config,
         entry: './docs/app/main',
         output: {
-            filename: './docs/app/main.min.js'
+            path: __dirname,
+            filename: './[name].min.js'
         }
     }
 
