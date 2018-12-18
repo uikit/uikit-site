@@ -1,39 +1,52 @@
+const {VueLoaderPlugin} = require('vue-loader');
 
-const externals = {
-    'vue': 'Vue',
-    'vue-router': 'VueRouter',
-    'uikit': 'UIkit',
-    'uikit-util': 'UIkit.util',
-    'he': 'he'
+const config = {
+
+    mode: 'production',
+
+    externals: {
+        'vue': 'Vue',
+        'vue-router': 'VueRouter',
+        'uikit': 'UIkit',
+        'uikit-util': 'UIkit.util',
+        'he': 'he'
+    },
+
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use: 'buble-loader',
+                exclude: /node_modules/
+            },
+            {
+                test: /\.vue$/,
+                use: 'vue-loader'
+            }
+        ]
+    },
+
+    plugins: [
+        new VueLoaderPlugin()
+    ]
+
 };
-
-const loaders = [
-    {loader: 'vue-loader', test: /\.vue$/},
-    {loader: 'buble-loader', test: /\.js$/, exclude: /node_modules/},
-    {loader: 'json-loader', test: /\.json/}
-];
 
 module.exports = [
 
     {
+        ...config,
         entry: './app/main',
         output: {
             filename: './app/main.min.js'
-        },
-        externals,
-        module: {
-            loaders
         }
     },
 
     {
+        ...config,
         entry: './docs/app/main',
         output: {
             filename: './docs/app/main.min.js'
-        },
-        externals,
-        module: {
-            loaders
         }
     }
 
