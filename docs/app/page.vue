@@ -49,7 +49,7 @@
                 DocsApp.$router.replace(e.target.pathname + e.target.hash);
             });
 
-            on(document, 'click', 'a[href^="#"]:not([href="#"])', e => history.pushState({}, '', e.target.href));
+            on(window, 'click', 'a[href^="#"]:not([href="#"])', e => !e.defaultPrevented && history.pushState({}, '', e.target.href));
 
             on(window, 'popstate', () => {
                 setTimeout(() => {
