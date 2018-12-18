@@ -1,6 +1,6 @@
 const {VueLoaderPlugin} = require('vue-loader');
 
-const config = {
+module.exports = {
 
     mode: 'production',
 
@@ -10,6 +10,16 @@ const config = {
         'uikit': 'UIkit',
         'uikit-util': 'UIkit.util',
         'he': 'he'
+    },
+
+    entry: {
+        'app/main': './app/main',
+        'docs/app/main': './docs/app/main'
+    },
+
+    output: {
+        path: __dirname,
+        filename: './[name].min.js'
     },
 
     module: {
@@ -31,25 +41,3 @@ const config = {
     ]
 
 };
-
-module.exports = [
-
-    {
-        ...config,
-        entry: './app/main',
-        output: {
-            path: __dirname,
-            filename: './[name].min.js'
-        }
-    },
-
-    {
-        ...config,
-        entry: './docs/app/main',
-        output: {
-            path: __dirname,
-            filename: './[name].min.js'
-        }
-    }
-
-];
