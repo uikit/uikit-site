@@ -72,7 +72,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://gitter.im/uikit/uikit" target="_blank">
+                                <a href="https://discordapp.com/invite/NEt4Pv7" target="_blank">
                                     <span class="uk-margin-small-right" uk-icon="icon: commenting"></span>
                                     <span class="uk-text-middle">Get help</span>
                                 </a>

@@ -396,7 +396,7 @@
                             <div class="uk-text-right@m uk-text-center">
                                 <div class="uk-child-width-auto uk-grid-small uk-flex-center" uk-grid>
                                     <div><a href="https://github.com/uikit/uikit" class="uk-icon-link" uk-icon="icon: github"></a></div>
-                                    <div><a href="https://gitter.im/uikit/uikit" class="uk-icon-link" uk-icon="icon: gitter"></a></div>
+                                    <div><a href="https://discordapp.com/invite/NEt4Pv7" class="uk-icon-link" uk-icon="icon: commenting"></a></div>
                                     <div><a href="https://twitter.com/getuikit" class="uk-icon-link" uk-icon="icon: twitter"></a></div>
                                     <div><a href="https://www.facebook.com/getuikit" class="uk-icon-link" uk-icon="icon: facebook"></a></div>
                                 </div>
