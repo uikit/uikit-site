@@ -94,7 +94,7 @@ Usually, the image starts loading when it enters the viewport. To start loading 
 The following example loads all images in the slides as soon as the slideshow enters the viewport. It uses `!.uk-slideshow-items` as a target selector. The `!` looks up the DOM to find the next parent element with the `.uk-slideshow-items` class.
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
     <ul class="uk-slideshow-items">
         <li>
@@ -145,7 +145,7 @@ It's also possible to load only the image of the active slide and lazy load the 
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
     <ul class="uk-slideshow-items">
         <li>

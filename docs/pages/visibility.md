@@ -121,25 +121,28 @@ Use `.uk-visible-*` classes to show the element for screens larger than the spec
 
 ***
 
-## Show on hover
+## Toggle
 
-Use one of the following classes to display elements only when they are being hovered.
+To display elements on hover or focus only, add the `.uk-visible-toggle` class to a parent element and one of the following classes to any child elements which should be hidden.
 
-| Class                 | Description                                                                                         |
-|:----------------------|:----------------------------------------------------------------------------------------------------|
-| `.uk-visible-toggle`  | Add this class to any parent element of the element to hide. This enables the toggling on hover.    |
-| `.uk-hidden-hover`    | Add this class to the child element to hide the content and remove it from the document flow.       |
-| `.uk-invisible-hover` | Add this class to the child element to hide the content without removing it from the document flow. |
+| Class                 | Description                                                    |
+|:----------------------|:---------------------------------------------------------------|
+| `.uk-hidden-hover`    | The element is removed from the document flow when hidden.     |
+| `.uk-invisible-hover` | The element is not removed from the document flow when hidden. |
+
+The child elements will be displayed when the parent element is hovered or focused. Add `tabindex="0"` to the parent element to allow it to receive focus through keyboard navigation and on touch devices.
+
+If there are `a` or `button` elements within the hidden child element, they are already focusable through keyboard navigation and will make the child element appear. Therefore, add `tabindex="-1"` so the parent element is still focusable on touch devices.
 
 ```html
-<div class="uk-visible-toggle">
+<div class="uk-visible-toggle" tabindex="0">
     <div class="uk-hidden-hover"></div>
 </div>
 ```
 
 ```example
 <div class="uk-child-width-1-2@s" uk-grid>
-    <div class="uk-visible-toggle">
+    <div class="uk-visible-toggle" tabindex="-1">
 
         <h4>Hidden when not hovered</h4>
 
@@ -155,7 +158,7 @@ Use one of the following classes to display elements only when they are being ho
         </div>
 
     </div>
-    <div class="uk-visible-toggle">
+    <div class="uk-visible-toggle" tabindex="-1">
 
         <h4>Invisible when not hovered</h4>
 

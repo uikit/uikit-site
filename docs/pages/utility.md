@@ -715,17 +715,17 @@ To modify the origin of an animation, like scaling, add one of the `uk-transform
 
 ```example
 <div class="uk-child-width-1-3@m" uk-grid>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-transform-origin-bottom-right uk-card uk-card-default uk-card-body uk-animation-scale-up">
             <p class="uk-text-center">Bottom Right</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-transform-origin-top-center uk-card uk-card-default uk-card-body uk-animation-scale-up">
             <p class="uk-text-center">Top Center</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-transform-origin-bottom-center uk-card uk-card-default uk-card-body uk-animation-scale-up">
             <p class="uk-text-center">Bottom Center</p>
         </div>

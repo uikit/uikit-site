@@ -16,99 +16,98 @@ Add one of the `.uk-animation-*` classes to any element. The animation is shown 
 | `.uk-animation-kenburns`                                | The element scales very slowly up without fading in. |
 | `.uk-animation-shake`                                   | The element shakes.                                  |
 
+To toggle an animation on hover or focus, add the `.uk-animation-toggle` class to a parent element. Also add `tabindex="0"` to make the animation focusable through keyboard navigation and on touch devices.
 
 ```html
-<div class="uk-animation-toggle">
+<div class="uk-animation-toggle" tabindex="0">
     <div class="uk-animation-fade"></div>
 </div>
 ```
 
 ```example
 <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match" uk-grid>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-fade">
             <p class="uk-text-center">Fade</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up">
             <p class="uk-text-center">Scale Up</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down">
             <p class="uk-text-center">Scale Down</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-shake">
             <p class="uk-text-center">Shake</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left">
             <p class="uk-text-center">Left</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top">
             <p class="uk-text-center">Top</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom">
             <p class="uk-text-center">Bottom</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right">
             <p class="uk-text-center">Right</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-small">
             <p class="uk-text-center">Left Small</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-small">
             <p class="uk-text-center">Top Small</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-small">
             <p class="uk-text-center">Bottom Small</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-small">
             <p class="uk-text-center">Right Small</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-medium">
             <p class="uk-text-center">Left Medium</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-medium">
             <p class="uk-text-center">Top Medium</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-medium">
             <p class="uk-text-center">Bottom Medium</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-medium">
             <p class="uk-text-center">Right Medium</p>
         </div>
     </div>
 </div>
 ```
-
-To apply the hover effect, add the `.uk-animation-toggle` class on a parent element. This will trigger the animation when the element is hovered.
 
 ***
 
@@ -122,82 +121,82 @@ By default, all animations are incoming. To reverse any animation, add the `.uk-
 
 ```example
 <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match" uk-grid>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-fade uk-animation-reverse">
             <p class="uk-text-center">Fade</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-animation-reverse">
             <p class="uk-text-center">Scale Up</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-scale-down uk-animation-reverse">
             <p class="uk-text-center">Scale Down</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-shake uk-animation-reverse">
             <p class="uk-text-center">Shake</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left uk-animation-reverse">
             <p class="uk-text-center">Left</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top uk-animation-reverse">
             <p class="uk-text-center">Top</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom uk-animation-reverse">
             <p class="uk-text-center">Bottom</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right uk-animation-reverse">
             <p class="uk-text-center">Right</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-small uk-animation-reverse">
             <p class="uk-text-center">Left Small</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-small uk-animation-reverse">
             <p class="uk-text-center">Top Small</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-small uk-animation-reverse">
             <p class="uk-text-center">Bottom Small</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-small uk-animation-reverse">
             <p class="uk-text-center">Right Small</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-medium uk-animation-reverse">
             <p class="uk-text-center">Left Medium</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-medium uk-animation-reverse">
             <p class="uk-text-center">Top Medium</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-medium uk-animation-reverse">
             <p class="uk-text-center">Bottom Medium</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-medium uk-animation-reverse">
             <p class="uk-text-center">Right Medium</p>
         </div>
@@ -218,7 +217,7 @@ To play animations at a faster speed, add the `.uk-animation-fast` class to the 
 
 ```example
 <div class="uk-width-1-3@s">
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-fast uk-animation-fade">
             <p class="uk-text-center">Fade</p>
         </div>
@@ -238,17 +237,17 @@ By default, scaling animations originate from the center. To modify this behavio
 
 ```example
 <div class="uk-child-width-1-3@s" uk-grid>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-bottom-right">
             <p class="uk-text-center">Bottom Right</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-top-center">
             <p class="uk-text-center">Top Center</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-bottom-center">
             <p class="uk-text-center">Bottom Center</p>
         </div>

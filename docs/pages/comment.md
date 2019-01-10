@@ -99,7 +99,7 @@ Add the `.uk-comment-list` class to a `<ul>` element to create a list of comment
 ```example
 <ul class="uk-comment-list">
     <li>
-        <article class="uk-comment uk-visible-toggle">
+        <article class="uk-comment uk-visible-toggle" tabindex="-1">
             <header class="uk-comment-header uk-position-relative">
                 <div class="uk-grid-medium uk-flex-middle" uk-grid>
                     <div class="uk-width-auto">
@@ -118,7 +118,7 @@ Add the `.uk-comment-list` class to a `<ul>` element to create a list of comment
         </article>
         <ul>
             <li>
-                <article class="uk-comment uk-comment-primary uk-visible-toggle">
+                <article class="uk-comment uk-comment-primary uk-visible-toggle" tabindex="-1">
                     <header class="uk-comment-header uk-position-relative">
                         <div class="uk-grid-medium uk-flex-middle" uk-grid>
                             <div class="uk-width-auto">
@@ -137,7 +137,7 @@ Add the `.uk-comment-list` class to a `<ul>` element to create a list of comment
                 </article>
             </li>
             <li>
-                <article class="uk-comment uk-visible-toggle">
+                <article class="uk-comment uk-visible-toggle" tabindex="-1">
                     <header class="uk-comment-header uk-position-relative">
                         <div class="uk-grid-medium uk-flex-middle" uk-grid>
                             <div class="uk-width-auto">

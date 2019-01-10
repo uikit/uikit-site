@@ -21,7 +21,7 @@ Add an image in the background of each slide using the `uk-cover` attribute from
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
     <ul class="uk-slideshow-items">
         <li>
@@ -68,7 +68,7 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
         <div class="uk-h3">Slide</div>
 
-        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
             <ul class="uk-slideshow-items">
                 <li>
@@ -92,7 +92,7 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
         <div class="uk-h3">Fade</div>
 
-        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: fade">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
 
             <ul class="uk-slideshow-items">
                 <li>
@@ -116,7 +116,7 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
         <div class="uk-h3">Scale</div>
 
-        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: scale">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale">
 
             <ul class="uk-slideshow-items">
                 <li>
@@ -140,7 +140,7 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
         <div class="uk-h3">Pull</div>
 
-        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: pull">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: pull">
 
             <ul class="uk-slideshow-items">
                 <li>
@@ -164,7 +164,7 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
         <div class="uk-h3">Push</div>
 
-        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
             <ul class="uk-slideshow-items">
                 <li>
@@ -218,7 +218,7 @@ The slideshow always takes up the full width of its parent container. The height
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="ratio: 7:3; animation: push">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push">
 
     <ul class="uk-slideshow-items">
         <li>
@@ -249,7 +249,7 @@ By default, the slideshow height adopts to the defined ratio. A minimum or maxim
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="min-height: 300; max-height: 600; animation: push">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="min-height: 300; max-height: 600; animation: push">
 
     <ul class="uk-slideshow-items">
         <li>
@@ -282,7 +282,7 @@ Adding the `uk-height-viewport` attribute from the [Height component](height.md#
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
     <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 30">
         <li>
@@ -344,7 +344,7 @@ If there is no item specific content in the navigation items, you can also add t
 ```example
 <div uk-slideshow="animation: push">
 
-    <div class="uk-position-relative uk-visible-toggle uk-light">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
         <ul class="uk-slideshow-items">
             <li>
@@ -390,7 +390,7 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
     <ul class="uk-slideshow-items">
         <li>
@@ -432,7 +432,7 @@ To add a simple Ken Burns effect, wrap the image with a `div` and add the `.uk-p
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
     <ul class="uk-slideshow-items">
         <li>
@@ -482,7 +482,7 @@ Add content overlays using the [Position component](position.md). It allows you 
 **Note** To adapt your content for better visibility on each image, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) or use the [Overlay](overlay.md) to add any style to the overlay box.
 
 ```example
-<div class="uk-position-relative uk-visible-toggle" uk-slideshow="animation: push">
+<div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
 
     <ul class="uk-slideshow-items">
         <li>
@@ -563,7 +563,7 @@ The next example defines different in and out animations. The content slides in 
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
     <ul class="uk-slideshow-items">
         <li>
@@ -615,7 +615,7 @@ The parallax attribute can be used to add additional effects to the slideshow an
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: push">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
     <ul class="uk-slideshow-items">
         <li>
@@ -688,7 +688,7 @@ Transition classes from the [Transition component](transition.md) are triggered 
 Together with the [Overlay component](overlay.md), content transitions are used to build a classic caption for the slideshow.
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="animation: fade">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
 
     <ul class="uk-slideshow-items">
         <li>

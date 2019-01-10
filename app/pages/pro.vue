@@ -119,7 +119,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-copper-hill.jpg" alt="Copper Hill Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/copper-hill/" data-modal></a>
                         </div>
@@ -128,7 +128,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-sonic.jpg" alt="Sonic Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/sonic/" data-modal></a>
                         </div>
@@ -137,7 +137,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-fjord.jpg" alt="Fjord Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/fjord/" data-modal></a>
                         </div>
@@ -146,7 +146,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-joline.jpg" alt="Joline Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/joline/" data-modal></a>
                         </div>
@@ -155,7 +155,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-max.jpg" alt="Max Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/max/" data-modal></a>
                         </div>
@@ -164,7 +164,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-horizon.jpg" alt="Horizon Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/horizon/" data-modal></a>
                         </div>
@@ -173,7 +173,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-fuse.jpg" alt="Fuse Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/fuse/" data-modal></a>
                         </div>
@@ -182,7 +182,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-juno.jpg" alt="Juno Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/juno/" data-modal></a>
                         </div>
@@ -211,7 +211,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-copper-hill.jpg" alt="Copper Hill Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/copper-hill/" data-modal></a>
                         </div>
@@ -220,7 +220,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-horizon-overview.jpg" alt="Horizon Overview Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/horizon/?page_id=19" data-modal></a>
                         </div>
@@ -229,7 +229,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-sonic.jpg" alt="Sonic Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/sonic/" data-modal></a>
                         </div>
@@ -238,7 +238,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-joline.jpg" alt="Joline Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/joline/" data-modal></a>
                         </div>
@@ -247,7 +247,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-sonic-location.jpg" alt="Sonic Location Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/sonic/?page_id=22" data-modal></a>
                         </div>
@@ -256,7 +256,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-max.jpg" alt="Max Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/max/" data-modal></a>
                         </div>
@@ -265,7 +265,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-joline-spots-case-study.jpg" alt="Joline Case Study Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/joline/?page_id=24" data-modal></a>
                         </div>
@@ -274,7 +274,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-fjord.jpg" alt="Fjord Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/fjord/" data-modal></a>
                         </div>
@@ -282,7 +282,7 @@
                     </div>
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-horizon.jpg" alt="Horizon Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/horizon/" data-modal></a>
                         </div>
@@ -290,7 +290,7 @@
                     </div>
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-fuse.jpg" alt="Fuse Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/fuse/" data-modal></a>
                         </div>
@@ -298,7 +298,7 @@
                     </div>
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-fjord-resources.jpg" alt="Fjord Resources Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=21" data-modal></a>
                         </div>
@@ -307,7 +307,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-copper-hill-lunch.jpg" alt="Copper Hill Lunch Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/copper-hill/?page_id=28" data-modal></a>
                         </div>
@@ -316,7 +316,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-sonic-speakers.jpg" alt="Sonic Speakers Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/sonic/?page_id=20" data-modal></a>
                         </div>
@@ -325,7 +325,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-horizon-products.jpg" alt="Horizon Products Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/horizon/?page_id=13" data-modal></a>
                         </div>
@@ -334,7 +334,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-joline-about.jpg" alt="Joline About Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/joline/?page_id=20" data-modal></a>
                         </div>

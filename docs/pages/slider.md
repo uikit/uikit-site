@@ -21,7 +21,7 @@ To define the widths of the slider items, use the [Width component](width.md). E
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
         <li>
@@ -111,7 +111,7 @@ To apply a gutter to the slider items, use the [Grid component](grid.md) and add
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
         <li>
@@ -193,7 +193,7 @@ By default, items of the slider always are aligned to the left. To center the li
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="center: true">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
 
     <ul class="uk-slider-items uk-grid">
         <li class="uk-width-3-4">
@@ -267,7 +267,7 @@ To loop through a set of slides instead of single items, just add `sets: true` t
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="sets: true">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
 
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m">
         <li>
@@ -358,7 +358,7 @@ If there is no item specific content in the navigation items, you can also add t
 ```example
 <div uk-slider>
 
-    <div class="uk-position-relative uk-visible-toggle uk-light">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
         <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
             <li>
@@ -528,7 +528,7 @@ Use the [Cover component](cover.md) so that images cover the whole item area and
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="center: true">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
 
     <ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 30">
         <li class="uk-width-3-4">
@@ -580,7 +580,7 @@ The slider is not restricted to images. Any content can be used like text, video
 ```example
 <div uk-slider="center: true">
 
-    <div class="uk-position-relative uk-visible-toggle uk-light">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
         <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
             <li>
@@ -676,7 +676,7 @@ Add content overlays using the [Position component](position.md). It allows you 
 **Note** To adapt your content for better visibility on each image, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) or use the [Overlay](overlay.md) to add any style to the overlay box.
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
         <li>
@@ -767,7 +767,7 @@ The next example defines different in and out animations. The content slides in 
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
     <ul class="uk-slider-items uk-grid">
         <li class="uk-width-4-5">
@@ -852,7 +852,7 @@ Add `clsActivated: uk-transition-active` to the attribute to trigger transition 
 Together with the [Overlay component](overlay.md), content transitions are used to build a classic caption for the slider.
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="clsActivated: uk-transition-active; center: true">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
 
     <ul class="uk-slider-items uk-grid">
         <li class="uk-width-3-4">
@@ -912,12 +912,12 @@ Together with the [Overlay component](overlay.md), content transitions are used 
 
 ### Toggle on hover
 
-To toggle transitions on hover, use the `.uk-transition-toggle` class from the [Transition component](transition.md). This will trigger the transition when the element is hovered.
+To toggle transitions on hover, use the `.uk-transition-toggle` class from the [Transition component](transition.md) and `tabindex="0"`. This will trigger the transition when the element is hovered or focused.
 
 ```html
 <div uk-slider>
     <ul class="uk-slider-items">
-        <li class="uk-transition-toggle">
+        <li class="uk-transition-toggle" tabindex="0">
             <img src="" alt="">
             <div class="uk-position-bottom">
 
@@ -937,43 +937,43 @@ To toggle transitions on hover, use the `.uk-transition-toggle` class from the [
 <div uk-slider>
 
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
-        <li class="uk-transition-toggle">
+        <li class="uk-transition-toggle" tabindex="0">
             <img src="images/slider1.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">1</h1></div>
         </li>
-        <li class="uk-transition-toggle">
+        <li class="uk-transition-toggle" tabindex="0">
             <img src="images/slider2.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">2</h1></div>
         </li>
-        <li class="uk-transition-toggle">
+        <li class="uk-transition-toggle" tabindex="0">
             <img src="images/slider3.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">3</h1></div>
         </li>
-        <li class="uk-transition-toggle">
+        <li class="uk-transition-toggle" tabindex="0">
             <img src="images/slider4.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">4</h1></div>
         </li>
-        <li class="uk-transition-toggle">
+        <li class="uk-transition-toggle" tabindex="0">
             <img src="images/slider5.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">5</h1></div>
         </li>
-        <li class="uk-transition-toggle">
+        <li class="uk-transition-toggle" tabindex="0">
             <img src="images/slider1.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">6</h1></div>
         </li>
-        <li class="uk-transition-toggle">
+        <li class="uk-transition-toggle" tabindex="0">
             <img src="images/slider2.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">7</h1></div>
         </li>
-        <li class="uk-transition-toggle">
+        <li class="uk-transition-toggle" tabindex="0">
             <img src="images/slider3.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">8</h1></div>
         </li>
-        <li class="uk-transition-toggle">
+        <li class="uk-transition-toggle" tabindex="0">
             <img src="images/slider4.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">9</h1></div>
         </li>
-        <li class="uk-transition-toggle">
+        <li class="uk-transition-toggle" tabindex="0">
             <img src="images/slider5.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">10</h1></div>
         </li>
