@@ -40,7 +40,7 @@
                         <span>Version <span uikit-version></span></span>
                     </li>
                     <li>
-                        <a href="https://github.com/uikit/uikit/stargazers"><span class="uk-margin-small-right" uk-icon="icon: star"></span><span uikit-stargazers>11410</span> Stargazers</a>
+                        <a href="https://github.com/uikit/uikit/stargazers"><span class="uk-margin-small-right" uk-icon="icon: star"></span><span uikit-stargazers>13728</span> Stargazers</a>
                     </li>
                     <li>
                         <a class="uk-text-lowercase" href="https://twitter.com/getuikit"><span class="uk-margin-small-right" uk-icon="icon: twitter"></span>@getuikit</a>
@@ -61,7 +61,7 @@
 
 <script>
 
-    var {$, ajax} = UIkit.util;
+    var {$, ajax, noop} = UIkit.util;
 
     export default {
 
@@ -73,7 +73,7 @@
                     $('[uikit-stargazers]').innerText = response.stargazers_count;
                 }
 
-            });
+            }, noop);
 
             ajax(`assets/uikit/package.json`, {responseType: 'json'}).then(({response}) => $('[uikit-version]').innerText = response.version);
 
