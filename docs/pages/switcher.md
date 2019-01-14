@@ -4,7 +4,7 @@
 
 ## Usage
 
-The Switcher component consists of a number of toggles and their related content items. Add the `uk-switcher` attribute to the element which contains the toggles. Add the `.uk-switcher` class to the element containing the content items.
+The Switcher component consists of a number of toggles and their related content items. Add the `uk-switcher` attribute to a list element which contains the toggles. Add the `.uk-switcher` class to the element containing the content items.
 
 By default, the element with the `.uk-switcher` class has to succeed the toggle directly in order for the switcher to function. If you need it to be nested in another element, for example when using a grid, add the `connect: SELECTOR` option to the `uk-switcher` attribute and select the element containing the items for switching.
 
@@ -279,7 +279,7 @@ The switcher can also be applied to buttons or button groups from the [Button co
 
 ```html
 <!-- This is a switcher using a number of buttons -->
-<div uk-switcher>
+<div uk-switcher="toggle: > *">
     <button class="uk-button uk-button-default" type="button"></button>
     <button class="uk-button uk-button-default" type="button"></button>
 </div>
@@ -288,7 +288,7 @@ The switcher can also be applied to buttons or button groups from the [Button co
 ```
 
 ```example
-<div uk-switcher="animation: uk-animation-fade">
+<div uk-switcher="animation: uk-animation-fade; toggle: > *">
     <button class="uk-button uk-button-default" type="button">Item</button>
     <button class="uk-button uk-button-default" type="button">Item</button>
     <button class="uk-button uk-button-default" type="button">Item</button>
@@ -301,6 +301,7 @@ The switcher can also be applied to buttons or button groups from the [Button co
 </ul>
 ```
 
+**Note** Since this example does not wrap the buttons into list items the clickable elements which trigger the content switching has to be changed by using the `toggle` option.
 
 ***
 
@@ -323,7 +324,7 @@ To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribu
 <div uk-grid>
     <div class="uk-width-small@m">
 
-        <ul class="uk-nav uk-nav-default" uk-switcher="connect: #component-nav; animation: uk-animation-fade; toggle: > :not(.uk-nav-header)">
+        <ul class="uk-nav uk-nav-default" uk-switcher="connect: #component-nav; animation: uk-animation-fade">
             <li><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
             <li><a href="#">Item</a></li>
@@ -351,7 +352,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option      | Value        | Default | Description                                                                                              |
 |:------------|:-------------|:--------|:---------------------------------------------------------------------------------------------------------|
 | `connect`   | CSS selector | `~.uk-switcher` | Related items container. By default succeeding elements with class 'uk-switcher'.             |
-| `toggle `   | CSS selector | `> *`   | The toggle selector, which triggers content switching on click.                                          |
+| `toggle `   | CSS selector | `> * > :first-child`   | Select the clickable elements which trigger content switching.                                          |
 | `active `   | Number       | `0`     | Active index on init. Providing a negative number indicates a position starting from the end of the set. |
 | `animation` | String       | `false` | The space separated names of animations to use. Comma separate for animation out.                        |
 | `duration`  | Number       | `200`   | The animation duration.                                                                                  |
