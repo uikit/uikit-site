@@ -165,14 +165,14 @@ The component's documentation page lists its events.
 
 Sometimes, components like Grid or Tab are hidden in the markup. This may happen when used in combination with the Switcher, Modal or Dropdown. Once they become visible, they need to adjust or fix their height and other dimensions.
 
-UIkit offers several ways of updating a component. Omitting the `event` parameter will trigger an `update` event.
+UIkit offers several ways of updating a component. Omitting the `type` parameter will trigger an `update` event.
 
 ```js
 // Calls the update hook on components registered on the element itself, it's parents and children.
-UIkit.update(element = document.body, event = 'update');
+UIkit.update(element = document.body, type = 'update');
 
 // Updates the component itself.
-component.$emit(event = 'update');
+component.$emit(type = 'update');
 
 ```
 
