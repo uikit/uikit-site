@@ -27,6 +27,14 @@ The `width` and `height` attributes are required so an empty placeholder can be 
 <img data-src="images/light.jpg" width="1800" height="1200" alt="" uk-img>
 ```
 
+### Inline SVG
+
+To lazy load SVG images which are injected as inline SVG using the [SVG component](svg.md), make sure to apply the `src` option in the component attribute and not as data attribute.
+
+```html
+<img width="" height="" alt="" uk-img="src:" uk-svg>
+```
+
 ***
 
 ## Srcset
