@@ -84,6 +84,106 @@ You can also group scrollspy elements, so you won't have to apply the attribute 
     </div>
 </div>
 ```
+***
+
+## SVG Strokes
+
+Since the [animation of SVG strokes](animation.md#svg-strokes) is applied by using the [SVG component](svg.md), they have to be activated differently. Add the `uk-animation-active` class to the parent element of each SVG image and use the the `uk-active` class to trigger the animation. Also set `hidden: false` to prevent initial hiding of the element.
+
+```html
+<div uk-scrollspy="target: .uk-animation-active; cls:uk-active; hidden: false">
+    <div class="uk-animation-active">
+        <img src="" uk-svg="stroke-animation: true">
+    </div>
+    <div class="uk-animation-active">
+        <img src="" uk-svg="stroke-animation: true">
+    </div>
+</div>
+```
+
+```example
+<div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-active; target: .uk-animation-active; hidden: false; delay: 500; repeat: true">
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-animation-active">
+            <h3 class="uk-card-title">Stroke</h3>
+            <img width="40" height="40" src="../assets/uikit/tests/images/icons.svg#cloud-upload" uk-svg="stroke-animation: true">
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-animation-active">
+            <h3 class="uk-card-title">Stroke</h3>
+            <img width="40" height="40" src="../assets/uikit/tests/images/icons.svg#cloud-upload" uk-svg="stroke-animation: true">
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-animation-active">
+            <h3 class="uk-card-title">Stroke</h3>
+            <img width="40" height="40" src="../assets/uikit/tests/images/icons.svg#cloud-upload" uk-svg="stroke-animation: true">
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-animation-active">
+            <h3 class="uk-card-title">Stroke</h3>
+            <img width="40" height="40" src="../assets/uikit/tests/images/icons.svg#cloud-upload" uk-svg="stroke-animation: true">
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-animation-active">
+            <h3 class="uk-card-title">Stroke</h3>
+            <img width="40" height="40" src="../assets/uikit/tests/images/icons.svg#cloud-upload" uk-svg="stroke-animation: true">
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-animation-active">
+            <h3 class="uk-card-title">Stroke</h3>
+            <img width="40" height="40" src="../assets/uikit/tests/images/icons.svg#cloud-upload" uk-svg="stroke-animation: true">
+        </div>
+    </div>
+</div>
+```
+
+It can also be mixed with other animations. In this example the cards also fade in.
+
+```example
+<div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade uk-active; target: .uk-animation-active; delay: 300; repeat: true">
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-animation-active">
+            <h3 class="uk-card-title">Stroke</h3>
+            <img width="40" height="40" src="../assets/uikit/tests/images/icons.svg#cloud-upload" uk-svg="stroke-animation: true">
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-animation-active">
+            <h3 class="uk-card-title">Stroke</h3>
+            <img width="40" height="40" src="../assets/uikit/tests/images/icons.svg#cloud-upload" uk-svg="stroke-animation: true">
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-animation-active">
+            <h3 class="uk-card-title">Stroke</h3>
+            <img width="40" height="40" src="../assets/uikit/tests/images/icons.svg#cloud-upload" uk-svg="stroke-animation: true">
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-animation-active">
+            <h3 class="uk-card-title">Stroke</h3>
+            <img width="40" height="40" src="../assets/uikit/tests/images/icons.svg#cloud-upload" uk-svg="stroke-animation: true">
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-animation-active">
+            <h3 class="uk-card-title">Stroke</h3>
+            <img width="40" height="40" src="../assets/uikit/tests/images/icons.svg#cloud-upload" uk-svg="stroke-animation: true">
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-animation-active">
+            <h3 class="uk-card-title">Stroke</h3>
+            <img width="40" height="40" src="../assets/uikit/tests/images/icons.svg#cloud-upload" uk-svg="stroke-animation: true">
+        </div>
+    </div>
+</div>
+```
 
 ***
 
