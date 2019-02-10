@@ -24,25 +24,25 @@ To apply this component, add the `uk-parallax` attribute to any element. Add an 
 
 You can use the following options to animate a number of CSS property.
 
-| Option             | Description                      | Default&nbsp;Unit | Default Start |
-| :----------------- | :------------------------------- | ----------------- | :------------ |
-| `x`                | Animate translateX.              | `px`              | `0`           |
-| `y`                | Animate translateY.              | `px`              | `0`           |
-| `bgy`              | Animate background Y position.   | `px`              | *Current*     |
-| `bgx`              | Animate background X position.   | `px`              | *Current*     |
-| `rotate`           | Animate rotation clockwise.      | `deg`             | `0`           |
-| `scale`            | Animate scaling.                 |                   | `1`           |
-| `color`            | Animate color                    |                   | *Current*     |
-| `background-color` | Animate background-color         |                   | *Current*     |
-| `border-color`     | Animate border color             |                   | *Current*     |
-| `opacity`          | Animate the opacity.             |                   | *Current*     |
-| `blur`             | Animate the blur filter.         | `px`              | `0`           |
-| `hue`              | Animate the hue rotation filter. | `deg`             | `0`           |
-| `grayscale`        | Animate the grayscale filter.    | `%`               | `0`           |
-| `invert`           | Animate the invert filter.       | `%`               | `0`           |
-| `saturate`         | Animate the saturate filter.     | `%`               | `0`           |
-| `sepia`            | Animate the sepia filter.        | `%`               | `0`           |
-| `stroke`           | Animate a path within a SVG.     |                   | `0`           |
+| Option             | Description                        | Default&nbsp;Unit | Default Start |
+| :----------------- | :--------------------------------- | ----------------- | :------------ |
+| `x`                | Animate translateX.                | `px`              | `0`           |
+| `y`                | Animate translateY.                | `px`              | `0`           |
+| `bgy`              | Animate background Y position.     | `px`              | *Current*     |
+| `bgx`              | Animate background X position.     | `px`              | *Current*     |
+| `rotate`           | Animate rotation clockwise.        | `deg`             | `0`           |
+| `scale`            | Animate scaling.                   |                   | `1`           |
+| `color`            | Animate color                      |                   | *Current*     |
+| `background-color` | Animate background-color           |                   | *Current*     |
+| `border-color`     | Animate border color               |                   | *Current*     |
+| `opacity`          | Animate the opacity.               |                   | *Current*     |
+| `blur`             | Animate the blur filter.           | `px`              | `0`           |
+| `hue`              | Animate the hue rotation filter.   | `deg`             | `0`           |
+| `grayscale`        | Animate the grayscale filter.      | `%`               | `0`           |
+| `invert`           | Animate the invert filter.         | `%`               | `0`           |
+| `saturate`         | Animate the saturate filter.       | `%`               | `0`           |
+| `sepia`            | Animate the sepia filter.          | `%`               | `0`           |
+| `stroke`           | Animate strokes within SVG images. |                   | `0`           |
 
 The value can define any allowed unit type, e.g. `x: 20vw`. For some options, the unit of a value can be left out. It will be mapped to the default unit. For example, `x: 200` is the same like `x: 200px`.
 
@@ -194,6 +194,38 @@ CSS filters are an easy way to add graphical effects to any element on your page
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; blur: 0,10;">Headline</h1>
 
 </div>
+```
+
+***
+
+## SVG Strokes
+
+The Parallax component can be used to animate SVG strokes. The effect looks like the SVG strokes are drawn before your very eyes. The SVG image has to be injected into the markup as an inline SVG. This can be done manually or by using the [SVG component](svg.md). Since the SVG component injects the SVG after the image element, the `uk-parallax` attribute has to be added to a parent element.
+
+```html
+<div uk-parallax="stroke: 45,0">
+    <img src="" alt="" uk-svg>
+</div>
+```
+
+```example
+<div class="uk-text-center" uk-parallax="stroke: 100%,0; viewport: 0.7">
+    <img src="images/strokes.svg" alt="" uk-svg>
+</div>
+```
+
+**Note** It's recommended to use percent unit `%`, so you don't have to know the exact length of the strokes.
+
+***
+
+## SVG Images
+
+The Parallax component can be applied to the elements of inline SVG images, like `rect`, `circle` and `path`. 
+
+```html
+<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="10" height="10" uk-parallax="rotate: 360"/>
+</svg>
 ```
 
 ***

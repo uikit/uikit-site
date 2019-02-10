@@ -15,6 +15,7 @@ Add one of the `.uk-animation-*` classes to any element. The animation is shown 
 | `.uk-animation-slide-top-medium`<br> `.uk-animation-slide-bottom-medium`  `.uk-animation-slide-left-medium`<br> `.uk-animation-slide-right-medium` | The element fades and slides in from the top, bottom, left or right with a medium distance which is specified by a fixed pixel value. |
 | `.uk-animation-kenburns`                                | The element scales very slowly up without fading in. |
 | `.uk-animation-shake`                                   | The element shakes.                                  |
+| `.uk-animation-stroke`                                  | The SVG element strokes are drawn.                   |
 
 To toggle an animation on hover or focus, add the `.uk-animation-toggle` class to a parent element. Also add `tabindex="0"` to make the animation focusable through keyboard navigation and on touch devices.
 
@@ -278,6 +279,43 @@ By default the animation starts on page load. In this example we used the [Scrol
         <div class="uk-overflow-hidden">
             <img src="images/dark.jpg" alt="Example image" class="uk-animation-reverse uk-transform-origin-top-right" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
         </div>
+    </div>
+</div>
+```
+
+***
+
+## SVG Strokes
+
+The Animation component can be used to animate SVG strokes. The effect looks like the SVG strokes are drawn before your very eyes. The SVG image has to be injected into the markup as an inline SVG. This can be done manually or usingh the [SVG component](svg.md).
+
+The following example explains how to add the inline SVG and the stroke animation manually. Since you have to know the excact length of the stroke, the keyframe animations can't be generalize and have to be created manually for each stroke animation. In this example the stroke length is `46`.
+
+```html
+<svg class="uk-animation-stroke" style="animation-name: uk-my-stroke; stroke-dasharray: 46;" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        @keyframes uk-my-stroke {
+            0% { stroke-dashoffset: 46; }
+            100% { stroke-dashoffset: 0; }
+        }
+    </style>
+    <path fill="none" stroke="#000" stroke-width="1" d=""/>
+</svg>
+```
+
+An much easier way, is to use the [SVG component](svg.md) by adding `uk-svg="animation-stroke: true"` to an image element. It will add the `uk-animation-stroke` class, calculate the stroke length and create the keyframe animation automatically.
+
+```html
+<img src="" uk-svg="animation-stroke: true">
+```
+
+```example
+<div class="uk-child-width-1-2@m uk-text-center" uk-grid>
+    <div class="uk-animation-toggle" tabindex="0">
+        <img width="400" height="400" src="images/strokes.svg" alt="" uk-svg="stroke-animation: true">
+    </div>
+    <div class="uk-animation-toggle" tabindex="0">
+        <img class="uk-animation-reverse" width="400" height="400" src="images/strokes.svg" alt="" uk-svg="stroke-animation: true">
     </div>
 </div>
 ```
