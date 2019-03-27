@@ -224,7 +224,7 @@ You can also match the height of the direct child of just one cell. To do so, ad
 
 ***
 
-### JavaScript
+### Targets
 
 For a more specific selection of the elements whose heights should be matched, add the `target: SELECTOR` option to the `uk-height-match` attribute from the [Height component](height.md#match-height).
 
