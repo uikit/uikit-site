@@ -2,37 +2,35 @@
 
 <p class="uk-text-lead">Define different styles for headings.</p>
 
-## Heading primary
+## Size modifiers
 
-To emphasize a heading with an alternative styling, for example a larger font size or a different color, add the `.uk-heading-primary` class. Usually, you would use this class on a `<h1>` element.
+Add one of the following classes to modify the size and style of headings. Usually, you would use these classes on heading elements but they work also with any other element like a `div` element. Note that this classes extend the heading classes from the [Base component](base.md#headings) upward and the smallest modifier picks up the size after `h1` element.
+
+| Class                 | Description                                      |
+| :-------------------- | :----------------------------------------------- |
+| `.uk-heading-small`   | Add this class to apply a small sized heading.   |
+| `.uk-heading-medium`  | Add this class to apply a medium sized heading.  |
+| `.uk-heading-large`   | Add this class to apply a large sized heading.   |
+| `.uk-heading-xlarge`  | Add this class to apply a xlarge sized heading.  |
+| `.uk-heading-2xlarge` | Add this class to apply a 2xlarge sized heading. |
 
 ```html
-<h1 class="uk-heading-primary"></h1>
+<h1 class="uk-heading-medium"></h1>
 ```
 
 ```example
-<h1 class="uk-heading-primary">Heading Primary</h1>
+<h1 class="uk-heading-small">Small</h1>
+<h1 class="uk-heading-medium">Medium</h1>
+<h1 class="uk-heading-large">Large</h1>
+<h1 class="uk-heading-xlarge">XLarge</h1>
+<h1 class="uk-heading-2xlarge">2XLarge</h1>
 ```
 
 ***
 
-## Heading hero
+## Divider modifier
 
-You can further enlarge or highlight a heading, for example when using it inside a hero section. Just add the `.uk-heading-hero` class.
-
-```html
-<h1 class="uk-heading-hero"></h1>
-```
-
-```example
-<h1 class="uk-heading-hero">Heading Hero</h1>
-```
-
-***
-
-## Heading divider
-
-To apply a divider to a heading, add the `.uk-heading-divider` class. You can combine this with one of the heading classes from the [Base component](base.md#headings).
+To apply a divider to a heading, add the `.uk-heading-divider` class. You can combine it with any size modifier.
 
 ```html
 <h1 class="uk-heading-divider"></h1>
@@ -44,9 +42,9 @@ To apply a divider to a heading, add the `.uk-heading-divider` class. You can co
 
 ***
 
-## Heading bullet
+## Bullet modifier
 
-To apply a bullet to a heading, add the `.uk-heading-bullet` class. You can combine this with one of the heading classes from the [Base component](base.md#headings). This modifier also works well with text alignment.
+To apply a bullet to a heading, add the `.uk-heading-bullet` class. You can combine it with any size modifier and it works well with text alignment.
 
 ```html
 <h1 class="uk-heading-bullet"></h1>
@@ -58,9 +56,9 @@ To apply a bullet to a heading, add the `.uk-heading-bullet` class. You can comb
 
 ***
 
-## Heading line
+## Line modifier
 
-To apply a vertically centered line to a heading, add the `.uk-heading-line` class and place a `<span>` element inside the heading element. You can combine this with one of the heading classes from the [Base component](base.md#headings). This modifier also works well with text alignment.
+To apply a vertically centered line to a heading, add the `.uk-heading-line` class and place a `<span>` element inside the heading element. You can combine it with any size modifier and it works well with text alignment.
 
 ```html
 <h1 class="uk-heading-line"><span></span></h1>
@@ -73,4 +71,3 @@ To apply a vertically centered line to a heading, add the `.uk-heading-line` cla
 
 <h1 class="uk-heading-line uk-text-right"><span>Heading Line</span></h1>
 ```
-

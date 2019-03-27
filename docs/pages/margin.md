@@ -7,7 +7,7 @@
 Add one or more of the following classes to any element to create the same vertical and/or horizontal margin that a paragraph usually has.
 
 | Class               | Description                                                                      |
-|:--------------------|:---------------------------------------------------------------------------------|
+| :------------------ | :------------------------------------------------------------------------------- |
 | `.uk-margin`        | Adds top margin, if it is preceded by another element, and always bottom margin. |
 | `.uk-margin-top`    | Adds top margin.                                                                 |
 | `.uk-margin-bottom` | Adds bottom margin.                                                              |
@@ -30,7 +30,7 @@ Add one or more of the following classes to any element to create the same verti
 Add one of the following classes to add small spacing to block elements.
 
 | Class                     | Description                                                                            |
-|:--------------------------|:---------------------------------------------------------------------------------------|
+| :------------------------ | :------------------------------------------------------------------------------------- |
 | `.uk-margin-small`        | Adds small top margin, if it is preceded by another element, and always bottom margin. |
 | `.uk-margin-small-top`    | Adds small top margin.                                                                 |
 | `.uk-margin-small-bottom` | Adds small bottom margin.                                                              |
@@ -49,7 +49,7 @@ Add one of the following classes to add small spacing to block elements.
 Add one of the following classes to add medium spacing to block elements.
 
 | Class                      | Description                                                                             |
-|:---------------------------|:----------------------------------------------------------------------------------------|
+| :------------------------- | :-------------------------------------------------------------------------------------- |
 | `.uk-margin-medium`        | Adds medium top margin, if it is preceded by another element, and always bottom margin. |
 | `.uk-margin-medium-top`    | Adds medium top margin.                                                                 |
 | `.uk-margin-medium-bottom` | Adds medium bottom margin.                                                              |
@@ -68,7 +68,7 @@ Add one of the following classes to add medium spacing to block elements.
 Add one of the following classes to add large spacing to block elements.
 
 | Class                     | Description                                                                        |
-|:--------------------------|:-----------------------------------------------------------------------------------|
+| :------------------------ | :--------------------------------------------------------------------------------- |
 | `.uk-margin-large`        | Adds large margin, if it is preceded by another element, and always bottom margin. |
 | `.uk-margin-large-top`    | Adds large top margin.                                                             |
 | `.uk-margin-large-bottom` | Adds large bottom margin.                                                          |
@@ -87,7 +87,7 @@ Add one of the following classes to add large spacing to block elements.
 Add one of the following classes to add very large spacing to block elements.
 
 | Class                      | Description                                                                         |
-|:---------------------------|:------------------------------------------------------------------------------------|
+| :------------------------- | :---------------------------------------------------------------------------------- |
 | `.uk-margin-xlarge`        | Adds larger margin, if it is preceded by another element, and always bottom margin. |
 | `.uk-margin-xlarge-top`    | Adds larger top margin.                                                             |
 | `.uk-margin-xlarge-bottom` | Adds larger bottom margin.                                                          |
@@ -105,15 +105,17 @@ Add one of the following classes to add very large spacing to block elements.
 
 Add one of the following classes to remove margin from block elements.
 
-| Class                        | Description                                                |
-|:-----------------------------|:-----------------------------------------------------------|
-| `.uk-margin-remove`          | Removes all margins.                                       |
-| `.uk-margin-remove-top`      | Removes top margin.                                        |
-| `.uk-margin-remove-bottom`   | Removes bottom margin.                                     |
-| `.uk-margin-remove-left`     | Removes left margin.                                       |
-| `.uk-margin-remove-right`    | Removes right margin.                                      |
-| `.uk-margin-remove-vertical` | Removes all vertical margins.                              |
-| `.uk-margin-remove-adjacent` | Removes the top margin of the directly succeeding element. |
+| Class                           | Description                                                |
+| :------------------------------ | :--------------------------------------------------------- |
+| `.uk-margin-remove`             | Removes all margins.                                       |
+| `.uk-margin-remove-top`         | Removes top margin.                                        |
+| `.uk-margin-remove-bottom`      | Removes bottom margin.                                     |
+| `.uk-margin-remove-left`        | Removes left margin.                                       |
+| `.uk-margin-remove-right`       | Removes right margin.                                      |
+| `.uk-margin-remove-vertical`    | Removes all vertical margins.                              |
+| `.uk-margin-remove-adjacent`    | Removes the top margin of the directly succeeding element. |
+| `.uk-margin-remove-first-child` | Removes the top margin of the first child element.         |
+
 
 ```html
 <h1 class="uk-margin-remove"></h1>
@@ -126,7 +128,7 @@ Add one of the following classes to remove margin from block elements.
 Add one of the following classes to set auto margin. This can be useful to center or otherwise align block elements with a fixed width as well as flex elements.
 
 | Class                      | Description                                                                         |
-|:---------------------------|:------------------------------------------------------------------------------------|
+| :------------------------- | :---------------------------------------------------------------------------------- |
 | `.uk-margin-auto`          | Sets left and right margin to auto, horizontally centering block and flex elements. |
 | `.uk-margin-auto-top`      | Sets top margin to auto, pushing block and flex elements to the bottom.             |
 | `.uk-margin-auto-bottom`   | Sets bottom margin to auto, pushing block and flex elements to the top.             |
@@ -176,10 +178,10 @@ To add spacing to stacking elements, for example inline elements that wrap on sm
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option          | Value  | Default         | Description                                                                                                |
-|----------------|--------|-----------------|------------------------------------------------------------------------------------------------------------|
-| `margin `      | String | uk-margin-small-top  | This class is added to items that break into the next row, typically to create margin to the previous row. |
-| `first-column` | String | uk-first-column | This class is added to the first element in each row.                                                      |
+| Option         | Value  | Default             | Description                                                                                                |
+| -------------- | ------ | ------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `margin `      | String | uk-margin-small-top | This class is added to items that break into the next row, typically to create margin to the previous row. |
+| `first-column` | String | uk-first-column     | This class is added to the first element in each row.                                                      |
 
 ***
 
