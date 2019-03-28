@@ -29,10 +29,10 @@ The `width` and `height` attributes are required so an empty placeholder can be 
 
 ### Inline SVG
 
-To lazy load SVG images which are injected as inline SVG using the [SVG component](svg.md), make sure to apply the `src` option in the component attribute and not as data attribute.
+To lazy load SVG images which are injected as inline SVG using the [SVG component](svg.md), make sure to apply the `data-src` option in the component attribute and not as data attribute.
 
 ```html
-<img width="" height="" alt="" uk-img="src:" uk-svg>
+<img width="" height="" alt="" uk-img="data-src:" uk-svg>
 ```
 
 ***
