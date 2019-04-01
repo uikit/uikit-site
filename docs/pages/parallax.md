@@ -145,18 +145,18 @@ Usually, the animation lasts as long as the element itself is in the viewport. T
 
 ## Easing
 
-To adjust the easing of the animation, add the `easing` option. Lower values will cause a faster transition in the beginning, higher values will cause a faster transition in the end of the animation.
+To adjust the easing of the animation, add the `easing` option. `0` transitions at an even speed. A positive value starts off quickly slowing down until complete while a negative value starts off slowly increasing the speed until complete.
 
 ```example
 <div id="test-easing" class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
      <div class="uk-grid uk-margin-auto uk-margin-auto-vertical uk-flex-inline">
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 0">0</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 0.5">0.5</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 0.6">0.6</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 0.8">0.8</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 1">1</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 2">2</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; y: 200; easing: 4;">4</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: -2">-2</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: -1">-1</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: -0.5">-0.5</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: 0">0</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: 0.5">0.5</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: 1">1</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: 2">2</div></div>
     </div>
 </div>
 ```
