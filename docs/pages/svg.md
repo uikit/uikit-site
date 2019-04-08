@@ -32,7 +32,7 @@ Inline SVG images can also be loaded lazy using the the [Image component](image.
 
 ## Stroke Animation
 
-There are two ways to animate SVG strokes. First by using the [Animation component](animation.md#svg-strokes) and `uk-svg="stroke-animation: true"` and second by using the [Parallax component](parallax.md#svg-strokes).
+There are two ways to animate SVG strokes. First by using the [Animation component](animation.md#svg-strokes) and `uk-svg="stroke-animation: true"`, and second by using the [Parallax component](parallax.md#svg-strokes).
 
 ***
 

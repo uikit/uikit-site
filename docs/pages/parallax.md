@@ -200,7 +200,7 @@ CSS filters are an easy way to add graphical effects to any element on your page
 
 ## SVG Strokes
 
-The Parallax component can be used to animate SVG strokes. The effect looks like the SVG strokes are drawn before your very eyes. The SVG image has to be injected into the markup as an inline SVG. This can be done manually or by using the [SVG component](svg.md). Since the SVG component injects the SVG after the image element, the `uk-parallax` attribute has to be added to a parent element.
+The Parallax component can be used to animate SVG strokes. The effect looks like the SVG strokes are drawn before your eyes. The SVG image has to be injected into the markup as an inline SVG. This can be done manually or by using the [SVG component](svg.md). Since the SVG component injects the SVG after the image element, the `uk-parallax` attribute has to be added to a parent element.
 
 ```html
 <div uk-parallax="stroke: 45">

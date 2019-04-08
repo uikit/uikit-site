@@ -287,9 +287,9 @@ By default the animation starts on page load. In this example we used the [Scrol
 
 ## SVG Strokes
 
-The Animation component can be used to animate SVG strokes. The effect looks like the SVG strokes are drawn before your very eyes. The SVG image has to be injected into the markup as an inline SVG. This can be done manually or usingh the [SVG component](svg.md).
+The Animation component can be used to animate SVG strokes. The effect looks like the SVG strokes are drawn before your eyes. The SVG image has to be injected into the markup as an inline SVG. This can be done manually or using the [SVG component](svg.md).
 
-The following example shows how to add the inline SVG manually. Since you have to know the excact length of the stroke, UIkit requires to set the length in the custom property `--uk-animation-stroke`. In this example the stroke length is `46`.
+The following example shows how to add the inline SVG manually. Since you have to know the exact length of the stroke, UIkit requires you to set the length in the custom property `--uk-animation-stroke`. In this example the stroke length is `46`.
 
 ```html
 <svg class="uk-animation-stroke" style="--uk-animation-stroke: 46;" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -297,7 +297,7 @@ The following example shows how to add the inline SVG manually. Since you have t
 </svg>
 ```
 
-An much easier way, is to use the [SVG component](svg.md) by adding `uk-svg="animation-stroke: true"` to the image element. It will calculate the stroke length and add the `--uk-animation-stroke` custom property automatically.
+A much easier way is to use the [SVG component](svg.md) by adding `uk-svg="animation-stroke: true"` to the image element. It will calculate the stroke length and add the `--uk-animation-stroke` custom property automatically.
 
 ```html
 <img src="" uk-svg="animation-stroke: true">
