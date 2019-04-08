@@ -44,13 +44,13 @@ You can use the following options to animate a number of CSS property.
 | `sepia`            | Animate the sepia filter.          | `%`               | `0`           |
 | `stroke`           | Animate strokes within SVG images. |                   | `0`           |
 
-The value can define any allowed unit type, e.g. `x: 20vw`. For some options, the unit of a value can be left out. It will be mapped to the default unit. For example, `x: 200` is the same like `x: 200px`.
+The value can define any allowed unit type, e.g. `x: 20vw`. For some options, the unit of a value can be left out. It will be mapped to the default unit. For example, `x: 200` is the same as `x: 200px`.
 
 ***
 
 ## Start and end values
 
-Options are always animated from their default start value to the target value you set in the option. However, you can also define a start value yourself. This is done by passing two values separated by comma.
+Options are always animated from their default start value to the target value set in the option. However, you can also define a start value yourself. This is done by passing two values separated by comma.
 
 ```html
 <div uk-parallax="opacity: 0,1">...</div>
@@ -67,7 +67,7 @@ Options are always animated from their default start value to the target value y
 
 ### Multiple steps
 
-You can define multiple steps for a property by using a comma separated list of values.
+Define multiple steps for a property by using a comma separated list of values.
 
 ```html
 <div uk-parallax="x: 0,50,150">...</div>
@@ -164,7 +164,7 @@ To adjust the easing of the animation, add the `easing` option. `0` transitions 
 
 ## Colors
 
-You can also transition from one color to another, for example for borders, backgrounds or text colors. Define colors using `rgb()` definitions, color keywords or hex values.
+Transition from one color to another, for example for borders, backgrounds or text colors. Define colors using `rgb()` definitions, color keywords or hex values.
 
 ```html
 <div uk-parallax="border-color: #00f,#f00">...</div>
