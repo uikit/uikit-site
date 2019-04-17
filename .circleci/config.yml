@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:9
+      - image: node:10
     working_directory: ~/uikit-site
     steps:
       - run:
