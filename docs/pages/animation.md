@@ -15,6 +15,7 @@ Add one of the `.uk-animation-*` classes to any element. The animation is shown 
 | `.uk-animation-slide-top-medium`<br> `.uk-animation-slide-bottom-medium`  `.uk-animation-slide-left-medium`<br> `.uk-animation-slide-right-medium` | The element fades and slides in from the top, bottom, left or right with a medium distance which is specified by a fixed pixel value. |
 | `.uk-animation-kenburns`                                | The element scales very slowly up without fading in. |
 | `.uk-animation-shake`                                   | The element shakes.                                  |
+| `.uk-animation-stroke`                                  | The SVG element strokes are drawn.                   |
 
 To toggle an animation on hover or focus, add the `.uk-animation-toggle` class to a parent element. Also add `tabindex="0"` to make the animation focusable through keyboard navigation and on touch devices.
 
@@ -278,6 +279,37 @@ By default the animation starts on page load. In this example we used the [Scrol
         <div class="uk-overflow-hidden">
             <img src="images/dark.jpg" alt="Example image" class="uk-animation-reverse uk-transform-origin-top-right" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
         </div>
+    </div>
+</div>
+```
+
+***
+
+## SVG Strokes
+
+The Animation component can be used to animate SVG strokes. The effect looks like the SVG strokes are drawn before your eyes. The SVG image has to be injected into the markup as an inline SVG. This can be done manually or using the [SVG component](svg.md).
+
+The following example shows how to add the inline SVG manually. Since you have to know the exact length of the stroke, UIkit requires you to set the length in the custom property `--uk-animation-stroke`. In this example the stroke length is `46`.
+
+```html
+<svg class="uk-animation-stroke" style="--uk-animation-stroke: 46;" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path fill="none" stroke="#000" stroke-width="1" d=""/>
+</svg>
+```
+
+A much easier way is to use the [SVG component](svg.md) by adding `uk-svg="animation-stroke: true"` to the image element. It will calculate the stroke length and add the `--uk-animation-stroke` custom property automatically.
+
+```html
+<img src="" uk-svg="animation-stroke: true">
+```
+
+```example
+<div class="uk-child-width-1-2@m uk-text-center" uk-grid>
+    <div class="uk-animation-toggle" tabindex="0">
+        <img class="uk-animation-stroke" width="400" height="400" src="images/strokes.svg" alt="" uk-svg="stroke-animation: true">
+    </div>
+    <div class="uk-animation-toggle" tabindex="0">
+        <img class="uk-animation-stroke uk-animation-reverse" width="400" height="400" src="images/strokes.svg" alt="" uk-svg="stroke-animation: true">
     </div>
 </div>
 ```

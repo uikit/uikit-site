@@ -24,7 +24,15 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 <img src="../assets/uikit/tests/images/icons.svg#cloud-upload" width="40" height="40" uk-svg>
 ```
 
-**Note** SVGs will adapt the current color for their stroke and fill color. To prevent this behavior, you can add the `.uk-preserve` class to the SVG itself or to elements inside the SVG.
+**Note** SVGs will adapt the current color for their stroke and fill color. To prevent this behavior, add the `.uk-preserve` class to the SVG itself or the elements inside the SVG.
+
+Inline SVG images can also be lazy loaded using the the [Image component](image.md#inline-svg).
+
+***
+
+## Stroke Animation
+
+There are two ways to animate SVG strokes. First by using the [Animation component](animation.md#svg-strokes) and `uk-svg="stroke-animation: true"`, and second by using the [Parallax component](parallax.md#svg-strokes).
 
 ***
 
@@ -32,9 +40,10 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option  | Value  | Default | Description          |
-|:--------|:-------|:--------|:---------------------|
-| `src`   | String | `''`    | The SVG source URL. If a location hash is present, only the `<symbol>` of the SVG with the given ID is shown. |
+| Option             | Value   | Default | Description                                                                                                   |
+| :----------------- | :------ | :------ | :------------------------------------------------------------------------------------------------------------ |
+| `src`              | String  | `''`    | The SVG source URL. If a location hash is present, only the `<symbol>` of the SVG with the given ID is shown. |
+| `stroke-animation` | Boolean | `false` | Animate all elements with the `stroke` attribute in the SVG.                                                  |
 
 ***
 

@@ -4,7 +4,7 @@
 
 ## Usage
 
-The Scrollspy component listens to page scrolling and triggers events based on the scroll position. For example, if you scroll down a page and an element appears in the viewport for the first time, you can trigger a smooth animation to fade in the element. Just add the `uk-scrollspy` attribute which takes the following options.
+The Scrollspy component listens to page scrolling and trigger events based on the scroll position. For example, if you scroll down a page, and an element appears in the viewport for the first time, you can trigger a smooth animation to fade in the element. Just add the `uk-scrollspy` attribute which takes the following options.
 
 Typically, classes from the [Animation component](animation.md) are used together with the Scrollspy component.
 
@@ -35,17 +35,17 @@ This example uses the `repeat: true` option. Scroll up and down to see the trigg
 
 ## Groups
 
-You can also group scrollspy elements, so you won't have to apply the attribute to each of them. Just add the `uk-scrollspy="target:MY-CLASS"` attribute to a container element, targeting the selector of the items you want to animate inside the container. When using a delay, it will be applied cumulatively to the items within the row that scrolls into view. The delay will be reseted for the next row within the group when it scrolls into view.
+You can also group scrollspy elements, so you won't have to apply the attribute to each of them. Just add the `uk-scrollspy="target: SELECTOR"` attribute to a container element, targeting the selector of the items you want to animate inside the container. When using a delay, it will be applied cumulatively to the items that scroll into view.
 
 ```html
-<div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500">
+<div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
     <div></div>
     <div></div>
 </div>
 ```
 
 ```example
-<div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
+<div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
     <div>
         <div class="uk-card uk-card-default uk-card-body">
             <h3 class="uk-card-title">Fade</h3>
@@ -87,18 +87,54 @@ You can also group scrollspy elements, so you won't have to apply the attribute 
 
 ***
 
+## Set `cls` option per target
+
+You can also give each target a separate `cls` option. Just add the `uk-scrollspy-class="CLASS"` attribute to a target element. It will override the `cls` option set on the component.
+
+```html
+<div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+    <div uk-scrollspy-class="uk-animation-slide-top"></div>
+    <div uk-scrollspy-class="uk-animation-slide-bottom"></div>
+</div>
+```
+
+```example
+<div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Bottom</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body" uk-scrollspy-class="uk-animation-slide-top">
+            <h3 class="uk-card-title">Top</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Bottom</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</div>
+```
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option        | Value   | Default               | Description                                                                                                   |
 |:--------------|:--------|:----------------------|:--------------------------------------------------------------------------------------------------------------|
-| `cls`         | String  | `uk-scrollspy-inview` | Class to add when the element is in view. If two, comma separated classes are provided those will be toggled. |
-| `hidden`      | Boolean | `true`                | Hides the element while out of view.                                                                          |
-| `offset-top`  | Number  | `0`                   | Top offset before triggering in view.                                                                         |
-| `offset-left` | Number  | `0`                   | Left offset before triggering in view.                                                                        |
-| `repeat`      | Boolean | `false`               | Applies the `cls` class every time the element is in view.                                                    |
-| `delay`       | Number  | `0`                   | Delay time in ms.                                                                                             |
+| `cls`         | String  | ``                    | Class to toggle when the element enters/leaves viewport.   |
+| `hidden`      | Boolean | `true`                | Hides the element while out of view.                       |
+| `offset-top`  | Number  | `0`                   | Top offset before triggering in view.                      |
+| `offset-left` | Number  | `0`                   | Left offset before triggering in view.                     |
+| `repeat`      | Boolean | `false`               | Applies the `cls` class every time the element is in view. |
+| `delay`       | Number  | `0`                   | Delay time in ms.                                          |
 
 `cls` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 

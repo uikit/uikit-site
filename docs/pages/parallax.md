@@ -22,36 +22,35 @@ To apply this component, add the `uk-parallax` attribute to any element. Add an 
 
 ## Animated properties
 
-You can use explicit CSS property names (e.g. `width` or `scale`) and a number of shorthands and special properties (e.g. `bgy` for `background-position-y`).
+You can use the following options to animate a number of CSS property.
 
-| Option             | Description                                            |
-|:-------------------|:-------------------------------------------------------|
-| `x`                | Animate translateX in pixels or percent.               |
-| `y`                | Animate translateY in pixels or percent.               |
-| `bgy`              | Animate a background image (y-axis).                   |
-| `bgx`              | Animate a background image (x-axis).                   |
-| `rotate`           | Animate rotation clockwise in degree.                  |
-| `scale`            | Animate scaling.                                       |
-| `color`            | Animate color (needs start and stop value).            |
-| `background-color` | Animate background-color (needs start and stop value). |
-| `border-color`     | Animate border color (needs start and stop value).     |
-| `opacity`          | Animate the opacity.                                   |
-| `blur`             | Animate the blur filter.                               |
-| `hue`              | Animate the hue rotation filter.                       |
-| `grayscale`        | Animate the grayscale filter.                          |
-| `invert`           | Animate the invert filter.                             |
-| `saturate`         | Animate the saturate filter.                           |
-| `sepia`            | Animate the sepia filter.                              |
+| Option             | Description                        | Default&nbsp;Unit | Default Start |
+| :----------------- | :--------------------------------- | ----------------- | :------------ |
+| `x`                | Animate translateX.                | `px`              | `0`           |
+| `y`                | Animate translateY.                | `px`              | `0`           |
+| `bgy`              | Animate background Y position.     | `px`              | *Current*     |
+| `bgx`              | Animate background X position.     | `px`              | *Current*     |
+| `rotate`           | Animate rotation clockwise.        | `deg`             | `0`           |
+| `scale`            | Animate scaling.                   |                   | `1`           |
+| `color`            | Animate color                      |                   | *Current*     |
+| `background-color` | Animate background-color           |                   | *Current*     |
+| `border-color`     | Animate border color               |                   | *Current*     |
+| `opacity`          | Animate the opacity.               |                   | *Current*     |
+| `blur`             | Animate the blur filter.           | `px`              | `0`           |
+| `hue`              | Animate the hue rotation filter.   | `deg`             | `0`           |
+| `grayscale`        | Animate the grayscale filter.      | `%`               | `0`           |
+| `invert`           | Animate the invert filter.         | `%`               | `0`           |
+| `saturate`         | Animate the saturate filter.       | `%`               | `0`           |
+| `sepia`            | Animate the sepia filter.          | `%`               | `0`           |
+| `stroke`           | Animate strokes within SVG images. |                   | `0`           |
 
-**Note** You can basically animate any CSS property that has a single value, like `width` and `height`, by adding it to the attribute.
+The value can define any allowed unit type, e.g. `x: 20vw`. For some options, the unit of a value can be left out. It will be mapped to the default unit. For example, `x: 200` is the same as `x: 200px`.
 
 ***
 
 ## Start and end values
 
-Properties are always animated from their current value to the target value you set in the option. However, you can also define a start value yourself. This is done by passing two values separated by comma.
-
-**Note** Properties that do not have a matching CSS property, like CSS filters and transforms, always require a start and a stop value.
+Options are always animated from their default start value to the target value set in the option. However, you can also define a start value yourself. This is done by passing two values separated by comma.
 
 ```html
 <div uk-parallax="opacity: 0,1">...</div>
@@ -68,7 +67,7 @@ Properties are always animated from their current value to the target value you 
 
 ### Multiple steps
 
-You can define multiple steps for a property by using a comma separated list of values.
+Define multiple steps for a property by using a comma separated list of values.
 
 ```html
 <div uk-parallax="x: 0,50,150">...</div>
@@ -165,7 +164,7 @@ To adjust the easing of the animation, add the `easing` option. `0` transitions 
 
 ## Colors
 
-You can also transition from one color to another, for example for borders, backgrounds or text colors. Define colors using `rgb()` definitions, color keywords or hex values.
+Transition from one color to another, for example for borders, backgrounds or text colors. Define colors using `rgb()` definitions, color keywords or hex values.
 
 ```html
 <div uk-parallax="border-color: #00f,#f00">...</div>
@@ -199,9 +198,43 @@ CSS filters are an easy way to add graphical effects to any element on your page
 
 ***
 
+## SVG Strokes
+
+The Parallax component can be used to animate SVG strokes. The effect looks like the SVG strokes are drawn before your eyes. The SVG image has to be injected into the markup as an inline SVG. This can be done manually or by using the [SVG component](svg.md). Since the SVG component injects the SVG after the image element, the `uk-parallax` attribute has to be added to a parent element.
+
+```html
+<div uk-parallax="stroke: 45">
+    <img src="" alt="" uk-svg>
+</div>
+```
+
+```example
+<div class="uk-text-center" uk-parallax="stroke: 100%; viewport: 0.7">
+    <img src="images/strokes.svg" alt="" uk-svg>
+</div>
+```
+
+**Note** It's recommended to use percent unit `%`, so you don't have to know the exact length of the strokes.
+
+***
+
+## SVG Images
+
+The Parallax component can be applied to the elements of inline SVG images, like `rect`, `circle` and `path`. 
+
+```html
+<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="10" height="10" uk-parallax="rotate: 360"/>
+</svg>
+```
+
+***
+
 ## Responsive
 
-It's possible to disable the parallax for different device widths by applying the `media` option to the attribute and adding the appropriate viewport width. Add a number in pixel, for example `media: 640`, or a breakpoint, for example `media: @m`. The parallax will be shown from the specified viewport width and upwards, but not below.
+It's recommended to use `vw` or `vh` as length units instead of pixels. The parallax will adapt depending on the viewport.
+
+The parallax can also be applied to certain viewports only. Add the `media` option with one of possible values. For example, add a number in pixel, e.g. `640`, or a breakpoint, e.g. `@s`, `@m`, `@l` or `@xl`. The parallax will be shown for the specified viewport width and larger.
 
 ```html
 <div uk-parallax="media: @m"></div>
@@ -213,12 +246,12 @@ It's possible to disable the parallax for different device widths by applying th
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option     | Value  | Default | Description                                                                                             |
-|:-----------|:-------|:--------|:--------------------------------------------------------------------------------------------------------|
-| `easing`   | Number | `1`     | Animation easing during scrolling                                                                       |
-| `target`   | String | `false` | Element dimension reference for animation duration.                                                     |
-| `viewport` | Number | `1`     | Animation range depending on the viewport.                                                              |
-| `media`    | Integer, String  | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
+| Option     | Value           | Default | Description                                                                                                                                                |
+| :--------- | :-------------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `easing`   | Number          | `1`     | Animation easing during scrolling                                                                                                                          |
+| `target`   | String          | `false` | Element dimension reference for animation duration.                                                                                                        |
+| `viewport` | Number          | `1`     | Animation range depending on the viewport.                                                                                                                 |
+| `media`    | Integer, String | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
 ***
 
