@@ -1,14 +1,14 @@
 # Migration
 
-<p class="uk-text-lead">Migrate an existing UIkit 2 website to the new UIkit 3.</p>
+<p class="uk-text-lead">Migrate an existing UIkit website to the latest version.</p>
 
 ***
 
-## Migration from UIkit 3.0
+## Migration from UIkit 3.x
 
-UIkit 3.1 introduces a Less variable `@deprecated` to make the migration easier, when UIkit changes HTML class names with a new version. By default, it's set to `true`, which still compiles all deprecated classes into the CSS. his makes it possible to add new classes without removing the old ones right away. The CSS file size will slightly increase, but it will also guarantee that nothing breaks, and you can update the markup in your own pace.
+In UIkit 3.1 a Less variable `@deprecated` was added. By default, it is set to `true`. It compiles all deprecated classes into the CSS so they can be used along the new ones.
 
-Once you have updated your markup, just set the deprecated variable to `false` in your custom UIkit theme. The deprecated classes won't be compiled into the CSS.
+Once markup is updated, set the deprecated variable to `false` in your custom UIkit theme.
 
 ```
 @deprecated: false;
@@ -16,7 +16,7 @@ Once you have updated your markup, just set the deprecated variable to `false` i
 
 ### Heading Component
 
-In UIkit 3.1 the [Heading component](heading#size-modifiers) got refactored. Before it only had two size modifiers, now there are five: Small, Medium, Large, Xlarge and 2Xlarge. The old Primary and Hero classes are deprecated. To update your markup, just replace the following classes. 
+In UIkit 3.1 the Primary and Hero classes in the [Heading component](heading#size-modifiers) were deprecated. Update your markup by replacing the following classes.
 
 | Deprecated           | Replace with        |
 |----------------------|---------------------|
