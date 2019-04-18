@@ -24,7 +24,7 @@
 
         mounted() {
 
-            new Clipboard('a.js-copy', {text: trigger => $(attr(trigger, 'rel')).innerText})
+            new ClipboardJS('a.js-copy', {text: trigger => $(attr(trigger, 'rel')).innerText})
 
                 .on('success', () => {
                     UIkit.notification({message: 'Copied!', pos: 'bottom-right'});
