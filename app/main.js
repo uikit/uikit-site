@@ -12,9 +12,9 @@ import ChangelogPage from './pages/changelog.vue';
 import DownloadPage from './pages/download.vue';
 import ErrorPage from './pages/404.vue';
 
-var base = '/';
+let base = '/';
 
-if (location.pathname && location.pathname != '/') {
+if (location.pathname && location.pathname !== '/') {
     base = location.pathname.split('/').slice(0, -1).join('/');
 }
 

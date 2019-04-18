@@ -2,7 +2,7 @@
 
     <div>
 
-        <router-view></router-view>
+        <router-view/>
 
         <div id="offcanvas" uk-offcanvas="mode: push; overlay: true">
             <div class="uk-offcanvas-bar">
@@ -16,9 +16,9 @@
                         <li><a href="./download">Download</a></li>
                     </ul>
 
-                    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top" v-for="(pages, category, index) in navigation">
-                        <li class="uk-nav-header">{{category}}</li>
-                        <li v-for="(p, label) in pages" exact><a :href="'./docs/'+p">{{label}}</a></li>
+                    <ul v-for="(pages, category) in navigation" class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                        <li class="uk-nav-header">{{ category }}</li>
+                        <li v-for="(p, label) in pages" exact><a :href="'./docs/'+p">{{ label }}</a></li>
                     </ul>
                 </div>
             </div>

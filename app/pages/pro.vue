@@ -3,7 +3,7 @@
 
         <div class="uk-section-primary tm-section-intro">
 
-            <navbar class="uk-light" uk-sticky="media: 960;show-on-up: true;animation: uk-animation-slide-top;cls-inactive: uk-navbar-transparent;top: 400"></navbar>
+            <navbar class="uk-light" uk-sticky="media: 960;show-on-up: true;animation: uk-animation-slide-top;cls-inactive: uk-navbar-transparent;top: 400"/>
 
             <div class="uk-section uk-padding-remove-bottom">
                 <div class="uk-container">
@@ -37,8 +37,8 @@
 
                             <div class="tm-intro-image">
                                 <div class="uk-inline">
-                                    <canvas width="960" height="670" v-show="!imgLoaded"></canvas>
-                                    <img src="images/pro/device-laptop.png" width="960" height="670" alt="Laptop Device" v-show="imgLoaded" @load="imgLoaded = true">
+                                    <canvas v-show="!imgLoaded" width="960" height="670"></canvas>
+                                    <img v-show="imgLoaded" src="images/pro/device-laptop.png" width="960" height="670" alt="Laptop Device" @load="imgLoaded = true">
                                     <div style="position: absolute; top: 5%; left: 12%; right: 12%;">
                                         <img src="images/pro/page-builder.gif" width="730" height="456" alt="Animated Gif YOOtheme Pro Page Builder" uk-gif>
                                     </div>
@@ -412,7 +412,7 @@
 
         <!-- Modal -->
 
-        <div id="modal-demo" class="uk-modal-full" ref="modal" uk-modal>
+        <div id="modal-demo" ref="modal" class="uk-modal-full" uk-modal>
             <div class="uk-modal-dialog tm-modal-dialog uk-flex uk-flex-column" uk-height-viewport>
                 <button class="uk-modal-close-full tm-modal-close-full uk-close-large" type="button" uk-close></button>
                 <div class="tm-modal-header">
@@ -434,7 +434,7 @@
 
                 </div>
                 <div class="tm-modal-body uk-flex-1 uk-flex">
-                    <iframe class="uk-width-1-1 tm-box-shadow-modal" src="" ref="iframe"></iframe>
+                    <iframe ref="iframe" class="uk-width-1-1 tm-box-shadow-modal" src=""></iframe>
                 </div>
             </div>
         </div>
@@ -445,7 +445,8 @@
 
 <script>
 
-    var {on} = UIkit.util;
+    import {modal} from 'uikit';
+    import {on} from 'uikit-util';
 
     export default {
 
@@ -457,11 +458,11 @@
 
             on(this.$el, 'click', '[data-modal]', e => {
 
-                var {iframe, modal} = this.$refs;
+                const {iframe, modal: modalEl} = this.$refs;
 
                 e.preventDefault();
 
-                var el = e.target;
+                const el = e.target;
 
                 if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
                     window.open(el.href);
@@ -469,13 +470,13 @@
                 }
 
                 iframe.src = '';
-                UIkit.modal(modal).show();
+                modal(modalEl).show();
 
                 requestAnimationFrame(() => iframe.src = el.href);
 
             });
         }
 
-    }
+    };
 
 </script>

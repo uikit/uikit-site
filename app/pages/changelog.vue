@@ -2,7 +2,7 @@
 
     <div class="uk-section-primary tm-section-texture uk-preserve-color">
 
-        <navbar class="uk-light" uk-sticky="media: 960;show-on-up: true;animation: uk-animation-slide-top;cls-inactive: uk-navbar-transparent;top: 400"></navbar>
+        <navbar class="uk-light" uk-sticky="media: 960;show-on-up: true;animation: uk-animation-slide-top;cls-inactive: uk-navbar-transparent;top: 400"/>
 
         <div class="uk-section" uk-height-viewport="expand: true">
             <div class="uk-container uk-container-small">
@@ -24,13 +24,15 @@
 
 <script>
 
-    var {ajax} = UIkit.util;
+    /* global marked */
+
+    import {ajax} from 'uikit-util';
 
     export default {
 
         mounted() {
 
-            ajax(`assets/uikit/CHANGELOG.md?{{BUILD}}`).then(({response}) => this.$refs.changelog.innerHTML = this.parse(response));
+            ajax('assets/uikit/CHANGELOG.md?{{BUILD}}').then(({response}) => this.$refs.changelog.innerHTML = this.parse(response));
 
         },
 
@@ -38,13 +40,14 @@
 
             parse(markdown) {
 
-                var renderer = new marked.Renderer(), section;
+                let section;
+                const renderer = new marked.Renderer();
 
                 renderer.list = text => `<ul class="uk-list">${text}</ul>`;
 
                 renderer.listitem = function (text) {
 
-                    var label = '';
+                    let label = '';
 
                     switch (section) {
 
@@ -86,6 +89,6 @@
                 return marked(markdown, {renderer});
             }
         }
-    }
+    };
 
 </script>

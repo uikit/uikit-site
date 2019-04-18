@@ -1,7 +1,7 @@
 <template>
 
     <div>
-        <div class="uk-alert uk-alert-danger" v-if="error">{{ error }}</div>
+        <div v-if="error" class="uk-alert uk-alert-danger">{{ error }}</div>
         <div ref="container"></div>
     </div>
 
@@ -9,57 +9,23 @@
 
 <script>
 
+    /* global ClipboardJS, hljs */
+
+    import {notification} from 'uikit';
     import {html, parse, openOnCodepen} from './util';
-    import {$, $$, ajax, attr, offset, on, Promise, startsWith} from 'uikit-util';
+    import {$, $$, ajax, attr, offset, on, Promise, startsWith, ucfirst} from 'uikit-util';
     import navigation from './navigation.json';
 
     const components = Object.keys(navigation['Components']).map(label => navigation['Components'][label]);
 
     export default {
 
+        inject: ['router'],
+
         data: () => ({
             error: null,
             cache: {}
         }),
-
-        mounted() {
-
-            new ClipboardJS('a.js-copy', {text: trigger => $(attr(trigger, 'rel')).innerText})
-
-                .on('success', () => {
-                    UIkit.notification({message: 'Copied!', pos: 'bottom-right'});
-                })
-                .on('error', () => {
-                    UIkit.notification({message: 'Copy failed!', status: 'danger', pos: 'bottom-right'});
-                });
-
-            on(this.$refs.container, 'click', 'a.js-codepen', e => {
-
-                e.preventDefault();
-                e.stopImmediatePropagation();
-
-                openOnCodepen($(attr(e.current, 'rel')).innerText);
-
-            });
-
-            on(this.$refs.container, 'click', '[href="#"]', e => e.preventDefault());
-
-            on(this.$refs.container, 'click', 'a:not([href^="http"]):not([href^="#"]):not([href^="/"]):not([href^="../"]):not([href^="images/"])', e => {
-                e.preventDefault();
-                DocsApp.$router.replace(e.target.pathname + e.target.hash);
-            });
-
-            on(window, 'click', 'a[href^="#"]:not([href="#"])', e => !e.defaultPrevented && history.pushState({}, '', e.target.href));
-
-            on(window, 'popstate', () => {
-                setTimeout(() => {
-                    if (location.hash && $(location.hash)) {
-                        scrollTo(0, offset($(location.hash)).top - 100);
-                    }
-                })
-            });
-
-        },
 
         watch: {
 
@@ -67,7 +33,7 @@
 
                 handler() {
 
-                    const page = this.$route.params.page;
+                    const {page} = this.$route.params;
 
                     this.error = null;
 
@@ -86,7 +52,7 @@
                                 response = `<div class="uk-text-center">
                                                 <h1>404</h1>
                                                 <p class="uk-text-large">Page not found!</p>
-                                            </div>`
+                                            </div>`;
                             }
 
                             this.cache[page] = response;
@@ -119,11 +85,50 @@
 
         },
 
+        mounted() {
+
+            new ClipboardJS('a.js-copy', {text: trigger => $(attr(trigger, 'rel')).innerText})
+
+                .on('success', () => {
+                    notification({message: 'Copied!', pos: 'bottom-right'});
+                })
+                .on('error', () => {
+                    notification({message: 'Copy failed!', status: 'danger', pos: 'bottom-right'});
+                });
+
+            on(this.$refs.container, 'click', 'a.js-codepen', e => {
+
+                e.preventDefault();
+                e.stopImmediatePropagation();
+
+                openOnCodepen($(attr(e.current, 'rel')).innerText);
+
+            });
+
+            on(this.$refs.container, 'click', '[href="#"]', e => e.preventDefault());
+
+            on(this.$refs.container, 'click', 'a:not([href^="http"]):not([href^="#"]):not([href^="/"]):not([href^="../"]):not([href^="images/"])', e => {
+                e.preventDefault();
+                this.router.replace(e.target.pathname + e.target.hash);
+            });
+
+            on(window, 'click', 'a[href^="#"]:not([href="#"])', e => !e.defaultPrevented && history.pushState({}, '', e.target.href));
+
+            on(window, 'popstate', () => {
+                setTimeout(() => {
+                    if (location.hash && $(location.hash)) {
+                        scrollTo(0, offset($(location.hash)).top - 100);
+                    }
+                });
+            });
+
+        },
+
         methods: {
 
             setPage(page) {
 
-                document.title = `${this.$parent.page.split('-').map(UIkit.util.ucfirst).join(' ')} - UIkit`;
+                document.title = `${this.$parent.page.split('-').map(ucfirst).join(' ')} - UIkit`;
 
                 html(this.$refs.container, page);
 
@@ -148,6 +153,6 @@
 
         }
 
-    }
+    };
 
 </script>

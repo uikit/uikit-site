@@ -17,9 +17,11 @@ const router = new VueRouter({
     linkActiveClass: 'uk-active'
 });
 
-window.DocsApp = new Vue({
+new Vue({
 
     router,
+
+    provide: {router},
 
     el: '#app',
 

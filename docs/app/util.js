@@ -1,3 +1,5 @@
+/* global marked */
+
 import uniqid from 'uniqid';
 import {escape} from 'he';
 import {append, includes, remove} from 'uikit-util';
@@ -22,7 +24,7 @@ export function parse(markdown, cb) {
     };
     const example = code => {
 
-        let id = uniqid('code-');
+        const id = uniqid('code-');
 
         return `<div class="uk-position-relative uk-margin-medium">
 
@@ -50,7 +52,7 @@ export function parse(markdown, cb) {
     renderer.image = (href, title, text) => href.match(/modal$/) ? modal(href, text) : base.image(href, title, text);
     renderer.link = (href, title, text) => href.match(/\.md/) ? base.link(href.replace(/.md(.*)/, '$1'), title, text) : base.link(href, title, text);
     renderer.code = (code, lang, escaped) => lang === 'example' ? example(code) : '<div class="uk-margin-medium">' + base.code(code, lang, escaped) + '</div>';
-    renderer.hr = () => `<hr class="uk-margin-large">`;
+    renderer.hr = () => '<hr class="uk-margin-large">';
     renderer.table = (header, body) => `<div class="uk-overflow-auto"><table class="uk-table uk-table-divider"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
     renderer.heading = (text, level) => `<h${level} id="${sluggify(text)}" class="uk-h${level > 1 ? level + 1 : level} tm-heading-fragment"><a href="#${sluggify(text)}">${text}</a></h${level}>`;
 
@@ -77,32 +79,32 @@ export function openOnCodepen(code) {
         .replace(regexp, '')
         .replace(/<(?:img|a)[^>]+(?:src|href)="(?!\/|#|[a-z0-9\-.]+:)(.+?)"|url\((?!\/|#|[a-z0-9\-.]+:)(.+?)\)/g, (match, src, url) => match.replace(src || url, `${base}/${src || url}`));
 
-    let nc = Date.now() % 9999,
-        data = {
-            title: '',
-            description: '',
-            html: code,
-            html_pre_processor: 'none',
-            css: '',
-            css_pre_processor: 'none',
-            css_starter: 'neither',
-            css_prefix_free: false,
-            js: scripts || '',
-            js_pre_processor: 'none',
-            js_modernizr: false,
-            html_classes: '',
-            css_external: `https://getuikit.com/assets/uikit/dist/css/uikit.css?nc=${nc}`,
-            js_external: `https://getuikit.com/assets/uikit/dist/js/uikit.js?nc=${nc};https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=${nc}`
-        };
+    const nc = Date.now() % 9999;
+    let data = {
+        title: '',
+        description: '',
+        html: code,
+        html_pre_processor: 'none',
+        css: '',
+        css_pre_processor: 'none',
+        css_starter: 'neither',
+        css_prefix_free: false,
+        js: scripts || '',
+        js_pre_processor: 'none',
+        js_modernizr: false,
+        html_classes: '',
+        css_external: `https://getuikit.com/assets/uikit/dist/css/uikit.css?nc=${nc}`,
+        js_external: `https://getuikit.com/assets/uikit/dist/js/uikit.js?nc=${nc};https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=${nc}`
+    };
 
     data = JSON.stringify(data)
         // Quotes will screw up the JSON
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&apos;");
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
 
-    const form = append(document.body, `<form action="https://codepen.io/pen/define" method="POST" target="_blank">
+    const [form] = append(document.body, `<form action="https://codepen.io/pen/define" method="POST" target="_blank">
             <input type="hidden" name="data" value='${data}'>
-        </form>`)[0];
+        </form>`);
 
     form.submit();
     remove(form);

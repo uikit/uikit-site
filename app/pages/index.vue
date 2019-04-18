@@ -2,7 +2,7 @@
 
     <div class="uk-section-primary tm-section-texture">
 
-        <navbar class="uk-navbar-transparent"></navbar>
+        <navbar class="uk-navbar-transparent"/>
 
         <div class="uk-section uk-section-small uk-flex uk-flex-middle uk-text-center" uk-height-viewport="offset-top: true; offset-bottom: true">
             <div class="uk-width-1-1">
@@ -19,8 +19,8 @@
 
                     <div class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-flex-center" uk-grid>
                         <div>
-                            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="./docs/introduction">Get Started</a>
-                            <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="./docs/introduction">Get Started</a>
+                            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="./docs">Get Started</a>
+                            <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="./docs">Get Started</a>
                         </div>
                         <div>
                             <a class="uk-button uk-button-default tm-button-default uk-button-large tm-button-large uk-visible@s" href="https://github.com/uikit/uikit">Github</a>
@@ -61,7 +61,7 @@
 
 <script>
 
-    var {$, ajax, noop} = UIkit.util;
+    import {$, ajax, noop} from 'uikit-util';
 
     export default {
 
@@ -75,9 +75,9 @@
 
             }, noop);
 
-            ajax(`assets/uikit/package.json`, {responseType: 'json'}).then(({response}) => $('[uikit-version]').innerText = response.version);
+            ajax('assets/uikit/package.json', {responseType: 'json'}).then(({response}) => $('[uikit-version]').innerText = response.version);
 
         }
-    }
+    };
 
 </script>

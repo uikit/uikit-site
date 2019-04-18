@@ -2,7 +2,7 @@
 
     <div class="uk-section-primary tm-section-texture">
 
-        <navbar class="uk-navbar-transparent"></navbar>
+        <navbar class="uk-navbar-transparent"/>
 
         <div class="uk-section uk-flex uk-flex-middle uk-text-center" uk-height-viewport="offset-top: true">
             <div class="uk-width-1-1">
@@ -41,17 +41,17 @@
 
 <script>
 
-    var {ajax} = UIkit.util;
+    import {ajax} from 'uikit-util';
 
     export default {
 
         mounted() {
 
-            ajax(`assets/uikit/package.json`, {responseType: 'json'}).then(({response}) =>
+            ajax('assets/uikit/package.json', {responseType: 'json'}).then(({response}) =>
                 setTimeout(() => location.href = `https://github.com/uikit/uikit/releases/download/v${response.version}/uikit-${response.version}.zip`, 100)
             );
 
         }
-    }
+    };
 
 </script>
