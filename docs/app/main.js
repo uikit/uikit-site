@@ -6,7 +6,7 @@ import analytics from '../../app/analytics';
 import navigation from './navigation.json';
 
 const routes = [
-    {path: '*/docs/', redirect: '*/docs/introduction'},
+    {path: '*/docs/', redirect: ({path}) => `${path}introduction`},
     {path: '*/docs/:page', component: Page}
 ];
 
