@@ -1,4 +1,4 @@
-# Migrate to UIkit 3
+# Migration
 
 <p class="uk-text-lead">Migrate an existing UIkit 2 website to the new UIkit 3.</p>
 
