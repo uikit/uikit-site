@@ -26,7 +26,7 @@ export function parse(markdown, cb) {
 
         return `<div class="uk-position-relative uk-margin-medium">
 
-                    <ul uk-tab>
+                    <ul uk-tab="swiping: false">
                         <li><a href="#">Preview</a></li>
                         <li><a href="#">Markup</a></li>
                     </ul>

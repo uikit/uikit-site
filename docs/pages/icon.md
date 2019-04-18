@@ -44,7 +44,6 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 <div class="uk-child-width-1-3@s" uk-grid>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="home"></span> home</li>
             <li><span class="uk-margin-small-right" uk-icon="sign-in"></span> sign-in</li>
@@ -70,10 +69,8 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="location"></span> location</li>
             <li><span class="uk-margin-small-right" uk-icon="bookmark"></span> bookmark</li>
         </ul>
-
     </div>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="code"></span> code</li>
             <li><span class="uk-margin-small-right" uk-icon="paint-bucket"></span> paint-bucket</li>
@@ -99,10 +96,8 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="trash"></span> trash</li>
             <li><span class="uk-margin-small-right" uk-icon="move"></span> move</li>
         </ul>
-
     </div>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="link"></span> link</li>
             <li><span class="uk-margin-small-right" uk-icon="question"></span> question</li>
@@ -127,7 +122,6 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="play"></span> play</li>
             <li><span class="uk-margin-small-right" uk-icon="play-circle"></span> play-circle</li>
         </ul>
-
     </div>
 </div>
 
@@ -135,29 +129,23 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 <div class="uk-child-width-1-3@s" uk-grid>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="tv"></span> tv</li>
             <li><span class="uk-margin-small-right" uk-icon="desktop"></span> desktop</li>
             <li><span class="uk-margin-small-right" uk-icon="laptop"></span> laptop</li>
         </ul>
-
     </div>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="tablet"></span> tablet</li>
             <li><span class="uk-margin-small-right" uk-icon="phone"></span> phone</li>
         </ul>
-
     </div>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="tablet-landscape"></span> tablet-landscape</li>
             <li><span class="uk-margin-small-right" uk-icon="phone-landscape"></span> phone-landscape</li>
         </ul>
-
     </div>
 </div>
 
@@ -165,7 +153,6 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 <div class="uk-child-width-1-3@s" uk-grid>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="file"></span> file</li>
             <li><span class="uk-margin-small-right" uk-icon="file-text"></span> file-text</li>
@@ -173,10 +160,8 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="copy"></span> copy</li>
             <li><span class="uk-margin-small-right" uk-icon="file-edit"></span> file-edit</li>
         </ul>
-
     </div>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="folder"></span> folder</li>
             <li><span class="uk-margin-small-right" uk-icon="album"></span> album</li>
@@ -184,10 +169,8 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="pull"></span> pull</li>
             <li><span class="uk-margin-small-right" uk-icon="server"></span> server</li>
         </ul>
-
     </div>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="database"></span> database</li>
             <li><span class="uk-margin-small-right" uk-icon="cloud-upload"></span> cloud-upload</li>
@@ -195,7 +178,6 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="download"></span> download</li>
             <li><span class="uk-margin-small-right" uk-icon="upload"></span> upload</li>
         </ul>
-
     </div>
 </div>
 
@@ -203,7 +185,6 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 <div class="uk-child-width-1-3@s" uk-grid>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="reply"></span> reply</li>
             <li><span class="uk-margin-small-right" uk-icon="forward"></span> forward</li>
@@ -212,10 +193,8 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="arrow-up"></span> arrow-up</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-down"></span> arrow-down</li>
         </ul>
-
     </div>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="arrow-left"></span> arrow-left</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-right"></span> arrow-right</li>
@@ -224,10 +203,8 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="chevron-left"></span> chevron-left</li>
             <li><span class="uk-margin-small-right" uk-icon="chevron-right"></span> chevron-right</li>
         </ul>
-
     </div>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="chevron-double-left"></span> chevron-double-left</li>
             <li><span class="uk-margin-small-right" uk-icon="chevron-double-right"></span> chevron-double-right</li>
@@ -236,7 +213,6 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="triangle-left"></span> triangle-left</li>
             <li><span class="uk-margin-small-right" uk-icon="triangle-right"></span> triangle-right</li>
         </ul>
-
     </div>
 </div>
 
@@ -244,26 +220,20 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 <div class="uk-child-width-1-3@s" uk-grid>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="bold"></span> bold</li>
             <li><span class="uk-margin-small-right" uk-icon="italic"></span> italic</li>
         </ul>
-
     </div>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="strikethrough"></span> strikethrough</li>
         </ul>
-
     </div>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="quote-right"></span> quote-right</li>
         </ul>
-
     </div>
 </div>
 
@@ -271,7 +241,6 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 <div class="uk-child-width-1-3@s" uk-grid>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="500px"></span> 500px</li>
             <li><span class="uk-margin-small-right" uk-icon="behance"></span> behance</li>
@@ -284,10 +253,8 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="gitter"></span> gitter</li>
             <li><span class="uk-margin-small-right" uk-icon="google"></span> google</li>
         </ul>
-
     </div>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="google-plus"></span> google-plus</li>
             <li><span class="uk-margin-small-right" uk-icon="instagram"></span> instagram</li>
@@ -299,10 +266,8 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="soundcloud"></span> soundcloud</li>
             <li><span class="uk-margin-small-right" uk-icon="tripadvisor"></span> tripadvisor</li>
         </ul>
-
     </div>
     <div>
-
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="tumblr"></span> tumblr</li>
             <li><span class="uk-margin-small-right" uk-icon="twitter"></span> twitter</li>
@@ -314,7 +279,6 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="yelp"></span> yelp</li>
             <li><span class="uk-margin-small-right" uk-icon="youtube"></span> youtube</li>
         </ul>
-
     </div>
 </div>
 
