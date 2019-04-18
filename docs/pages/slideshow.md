@@ -380,7 +380,7 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
 <div uk-slideshow>
     <ul class="uk-slideshow-items">
         <li>
-            <video src="" autoplay loop muted playslinline uk-cover></video>
+            <video src="" autoplay loop muted playsinline uk-cover></video>
         </li>
         <li>
             <iframe src="" frameborder="0" uk-cover></iframe>
@@ -397,7 +397,7 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
             <img src="images/photo.jpg" alt="" uk-cover>
         </li>
         <li>
-            <video autoplay loop muted playslinline uk-cover>
+            <video autoplay loop muted playsinline uk-cover>
                 <source src="https://quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
                 <source src="https://quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
             </video>
