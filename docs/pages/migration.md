@@ -6,12 +6,12 @@
 
 ## Migration from UIkit 3.x
 
-In UIkit 3.1 a Less variable `@deprecated` was added. By default, it is set to `true`. It compiles all deprecated classes into the CSS so they can be used along the new ones.
+In UIkit 3.1 a Less variable `@deprecated` was added. By default, it is set to `false`, and deprecated classes are not compiled into the CSS. 
 
-Once markup is updated, set the deprecated variable to `false` in your custom UIkit theme.
+If you want to update your markup later and use the deprecated classes along the new ones, set the variable to `true` in your custom UIkit theme.
 
 ```
-@deprecated: false;
+@deprecated: true;
 ```
 
 ### Heading Component
