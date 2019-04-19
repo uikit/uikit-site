@@ -49,6 +49,7 @@ Using UIkit works best if you have a solid code editor, for example [Sublime Tex
 
 - [Autocomplete plugin for Sublime Text 3](https://github.com/uikit/uikit-sublime)
 - [Autocomplete plugin for Atom](https://atom.io/packages/uikit-atom)
+- [Snippets for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Keno.uikit-3-snippets)
 
 ***
 
