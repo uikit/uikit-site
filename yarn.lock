@@ -4003,9 +4003,9 @@ typedarray@^0.0.6:
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
 uikit@^3.1.0:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.1.3.tgz#a002f380e0dbabf01de00bbf06f83143c75edf6f"
-  integrity sha512-kfCQomJDT4qjYYb8qfq+0UxxxCy3fkxTlKpKKlmpF/24bhwQEGoyadsQ+mgq7z4MCVErUipKFbpD9HgwbBnvfA==
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.1.4.tgz#bb0939555c5038bd056ce3c2169715fb1103ce10"
+  integrity sha512-XGtlKlQXeNoQJi9wyff6DCkeX0P5/wdZw7LOenH7a5AOTRfUZDhTGX9uSCvRBroYBIKj6Eq2fe2efw2d1/rdHg==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
