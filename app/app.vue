@@ -18,7 +18,7 @@
 
                     <ul v-for="(pages, category) in navigation" class="uk-nav uk-nav-default tm-nav uk-margin-top">
                         <li class="uk-nav-header">{{ category }}</li>
-                        <li v-for="(p, label) in pages" exact><a :href="'./docs/'+p">{{ label }}</a></li>
+                        <li v-for="(p, label) in pages" exact><a :href="`./docs/${p}`">{{ label }}</a></li>
                     </ul>
                 </div>
             </div>
