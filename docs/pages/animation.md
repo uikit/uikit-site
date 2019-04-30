@@ -297,10 +297,10 @@ The following example shows how to add the inline SVG manually. Since you have t
 </svg>
 ```
 
-A much easier way is to use the [SVG component](svg.md) by adding `uk-svg="animation-stroke: true"` to the image element. It will calculate the stroke length and add the `--uk-animation-stroke` custom property automatically.
+A much easier way is to use the [SVG component](svg.md) by adding `uk-svg="stroke-animation: true"` to the image element. It will calculate the stroke length and add the `--uk-animation-stroke` custom property automatically.
 
 ```html
-<img src="" uk-svg="animation-stroke: true">
+<img src="" uk-svg="stroke-animation: true">
 ```
 
 ```example
