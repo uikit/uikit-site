@@ -146,6 +146,25 @@ Add one of the following classes to set auto margin. This can be useful to cente
 
 ***
 
+### Responsive
+
+UIkit provides a number of responsive margin auto classes. Basically, they work just like the usual margin auto classes, except that they have suffixes that represent the breakpoint from which they come to effect.
+
+| Class                                                                             | Description                                   |
+| :-------------------------------------------------------------------------------- | :-------------------------------------------- |
+| `.uk-margin-auto-left@s`<br> `uk-margin-auto-@s`<br> `.uk-margin-auto-right@s`    | Affects device widths of _640px_ and larger.  |
+| `.uk-margin-auto-left@m`<br> `uk-margin-auto-@m`<br>   `.uk-margin-auto-right@m`  | Affects device widths of _960px_ and larger.  |
+| `.uk-margin-auto-left@l`<br> `uk-margin-auto-@l`<br> `.uk-margin-auto-right@l`    | Affects device widths of _1200px_ and larger. |
+| `.uk-margin-auto-left@xl`<br> `uk-margin-auto-@xl`<br> `.uk-margin-auto-right@xl` | Affects device widths of _1600px_ and larger. |
+
+```example
+<div class="uk-margin uk-margin-auto-right uk-margin-auto@m uk-width-1-2@s uk-card uk-card-default uk-card-body uk-text-center">Block element</div>
+<div class="uk-margin uk-margin-auto uk-margin-auto-left@m uk-width-1-2@s uk-card uk-card-default uk-card-body uk-text-center">Block element</div>
+<div class="uk-margin uk-margin-auto-left uk-margin-auto-right@m uk-width-1-2@s uk-card uk-card-default uk-card-body uk-text-center">Block element</div>
+```
+
+***
+
 ## Dynamic wrapping
 
 To add spacing to stacking elements, for example inline elements that wrap on smaller viewports, just add the `uk-margin` attribute to their parent container. It will automatically add the `.uk-margin-small-top` class to the lower element.
