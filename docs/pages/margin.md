@@ -116,10 +116,22 @@ Add one of the following classes to remove margin from block elements.
 | `.uk-margin-remove-adjacent`    | Removes the top margin of the directly succeeding element. |
 | `.uk-margin-remove-first-child` | Removes the top margin of the first child element.         |
 
-
 ```html
 <h1 class="uk-margin-remove"></h1>
 ```
+
+***
+
+### Responsive
+
+UIkit provides a number of responsive classes to remove margin. Basically, they work just like the usual margin remove classes, except that they have suffixes that represent the breakpoint from which they come to effect.
+
+| Class                                                        | Description                                   |
+| :----------------------------------------------------------- | :-------------------------------------------- |
+| `.uk-margin-remove-left@s`<br> `.uk-margin-remove-right@s`   | Affects device widths of _640px_ and larger.  |
+| `.uk-margin-remove-left@m`<br> `.uk-margin-remove-right@m`   | Affects device widths of _960px_ and larger.  |
+| `.uk-margin-remove-left@l`<br> `.uk-margin-remove-right@l`   | Affects device widths of _1200px_ and larger. |
+| `.uk-margin-remove-left@xl`<br> `.uk-margin-remove-right@xl` | Affects device widths of _1600px_ and larger. |
 
 ***
 
