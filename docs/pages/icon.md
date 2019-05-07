@@ -245,17 +245,18 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="500px"></span> 500px</li>
             <li><span class="uk-margin-small-right" uk-icon="behance"></span> behance</li>
             <li><span class="uk-margin-small-right" uk-icon="dribbble"></span> dribbble</li>
+            <li><span class="uk-margin-small-right" uk-icon="etsy"></span> etsy</li>
             <li><span class="uk-margin-small-right" uk-icon="facebook"></span> facebook</li>
             <li><span class="uk-margin-small-right" uk-icon="flickr"></span> flickr</li>
             <li><span class="uk-margin-small-right" uk-icon="foursquare"></span> foursquare</li>
             <li><span class="uk-margin-small-right" uk-icon="github"></span> github</li>
             <li><span class="uk-margin-small-right" uk-icon="github-alt"></span> github-alt</li>
             <li><span class="uk-margin-small-right" uk-icon="gitter"></span> gitter</li>
-            <li><span class="uk-margin-small-right" uk-icon="google"></span> google</li>
         </ul>
     </div>
     <div>
         <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="google"></span> google</li>
             <li><span class="uk-margin-small-right" uk-icon="google-plus"></span> google-plus</li>
             <li><span class="uk-margin-small-right" uk-icon="instagram"></span> instagram</li>
             <li><span class="uk-margin-small-right" uk-icon="joomla"></span> joomla</li>
