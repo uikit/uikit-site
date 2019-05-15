@@ -734,6 +734,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `autoplay`          | Boolean         | `false` | Slideshow autoplays.                                                  |
 | `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.                  |
 | `draggable`         | Boolean         | `true ` | Enable pointer dragging.                             |
+| `easing`            | String  | `ease`     | The animation easing (CSS timing functions or cubic-bezier).                   |
 | `finite`            | Boolean         | `false` | Disable infinite sliding.                                             |
 | `pause-on-hover`    | Boolean         | `true` | Pause autoplay mode on hover.                                         |
 | `index`             | Number          | `0`     | Slideshow item to show. 0 based index.                                |
