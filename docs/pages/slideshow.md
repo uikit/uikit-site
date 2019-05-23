@@ -397,13 +397,10 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
             <img src="images/photo.jpg" alt="" uk-cover>
         </li>
         <li>
-            <video autoplay loop muted playsinline uk-cover>
-                <source src="https://quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-                <source src="https://quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
-            </video>
+            <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" autoplay loop muted playsinline uk-cover></video>
         </li>
         <li>
-            <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen uk-cover></iframe>
         </li>
     </ul>
 
