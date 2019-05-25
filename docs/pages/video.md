@@ -31,7 +31,7 @@ To apply this component, add the `uk-video` attribute to a `<video>` element. Th
 To play a video when it enters the viewport and pause it again when it leaves the viewport, just add the `uk-video="autoplay: inview"` attribute to a `<video>` element.
 
 ```html
-<video uk-video="autoplay: inview"></div>
+<video uk-video="autoplay: inview"></video>
 ```
 
 ```example
