@@ -115,6 +115,7 @@ Add one of the following classes to remove margin from block elements.
 | `.uk-margin-remove-vertical`    | Removes all vertical margins.                              |
 | `.uk-margin-remove-adjacent`    | Removes the top margin of the directly succeeding element. |
 | `.uk-margin-remove-first-child` | Removes the top margin of the first child element.         |
+| `.uk-margin-remove-last-child`  | Removes the bottom margin of the last child element.       |
 
 ```html
 <h1 class="uk-margin-remove"></h1>
