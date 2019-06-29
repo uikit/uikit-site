@@ -25,7 +25,7 @@ To receive a callback when scrolling has completed, you can listen to the `scrol
 ```
 
 ```js
-UIkit.util.on('#scroll-trigger', 'scrolled', function () {
+UIkit.util.on('#js-scroll-trigger', 'scrolled', function () {
     alert('Done.');
 });
 ```
