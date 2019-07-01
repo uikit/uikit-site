@@ -1,6 +1,10 @@
 # Text
 
-<p class="uk-text-lead">A collection of useful text utility classes to style your content.</p>
+<p class="uk-text-lead">A collection of utility classes to style text.</p>
+
+Combine this component with the [Font component](font.md) or the [Heading component](heading.md) to style your content.
+
+***
 
 ## Style modifiers
 
