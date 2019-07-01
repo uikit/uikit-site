@@ -10,7 +10,7 @@
 
                     <h1 class="uk-margin-medium uk-text-center">404</h1>
 
-                    <p class="uk-text-large">Page not found</p>
+                    <p class="uk-font-large">Page not found</p>
 
                 </div>
             </div>

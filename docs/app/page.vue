@@ -51,7 +51,7 @@
                             if (startsWith(response.trim(), '<!DOCTYPE html>')) {
                                 response = `<div class="uk-text-center">
                                                 <h1>404</h1>
-                                                <p class="uk-text-large">Page not found!</p>
+                                                <p class="uk-font-large">Page not found!</p>
                                             </div>`;
                             }
 

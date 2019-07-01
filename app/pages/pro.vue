@@ -99,7 +99,7 @@
                         <div class="uk-inline uk-width-xlarge">
                             <h1 class="uk-h6 tm-h6 uk-margin-remove">Style Customizer</h1>
                             <h2 class="uk-h1 uk-margin-top">Create your style</h2>
-                            <p class="uk-text-large tm-text-large">Modify the visual appearance of your site – including colors, fonts, margins and other style related properties – with a sophisticated style customizer for UIkit.</p>
+                            <p class="uk-font-large tm-text-large">Modify the visual appearance of your site – including colors, fonts, margins and other style related properties – with a sophisticated style customizer for UIkit.</p>
                         </div>
 
                     </div>
@@ -112,7 +112,7 @@
 
                 <div class="uk-width-xlarge uk-margin-auto uk-text-center uk-margin-large-bottom">
                     <h2 class="uk-text-center uk-margin-xlarge-top">Pre-built styles</h2>
-                    <p class="uk-text-large tm-text-large">Try out any UIkit theme with one click. You can switch between styles from the library and your content adapts automatically.</p>
+                    <p class="uk-font-large tm-text-large">Try out any UIkit theme with one click. You can switch between styles from the library and your content adapts automatically.</p>
                 </div>
 
                 <div class="uk-child-width-1-4@m uk-child-width-1-2@s" uk-grid>
@@ -204,7 +204,7 @@
                 <div class="uk-width-xlarge uk-margin-auto uk-text-center uk-margin-large-bottom">
                     <h1 class="uk-h6 tm-h6 uk-margin-remove">The Layout Library</h1>
                     <h2 class="uk-h1 uk-margin-top">Incredible layouts</h2>
-                    <p class="uk-text-large tm-text-large">Load existing layouts or create your own and save it to the library. Anything you can think of can be built with YOOtheme Pro.</p>
+                    <p class="uk-font-large tm-text-large">Load existing layouts or create your own and save it to the library. Anything you can think of can be built with YOOtheme Pro.</p>
                 </div>
 
                 <div class="uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2" uk-grid>
@@ -350,7 +350,7 @@
             <div class="uk-container uk-text-center">
 
                 <h2 class="uk-h1">Get YOOtheme Pro</h2>
-                <p class="uk-text-large tm-text-large uk-margin-medium-bottom">The all-in-one theme and page builder for WordPress &amp; Joomla</p>
+                <p class="uk-font-large tm-text-large uk-margin-medium-bottom">The all-in-one theme and page builder for WordPress &amp; Joomla</p>
 
                 <div class="uk-grid-medium uk-flex-middle uk-flex-center" uk-grid>
                     <div>

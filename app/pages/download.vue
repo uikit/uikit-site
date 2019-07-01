@@ -14,7 +14,7 @@
 
                     <h1>Thanks for giving UIkit a try.</h1>
 
-                    <p class="uk-margin-medium-bottom uk-text-large">Please support our open source project and share the love on<br class="uk-visible@s"> Twitter or Facebook. It would really mean a lot to us.</p>
+                    <p class="uk-margin-medium-bottom uk-font-large">Please support our open source project and share the love on<br class="uk-visible@s"> Twitter or Facebook. It would really mean a lot to us.</p>
 
                     <div class="uk-grid-medium uk-child-width-auto uk-flex-inline" uk-grid>
                         <div>
