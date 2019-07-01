@@ -15,7 +15,7 @@ Add one of the following classes to set the font family and style of your text.
 | `.uk-font-default`   | Add this class to apply the default font. Typically the font for the running text.              |
 | `.uk-font-primary`   | Add this class to apply the primary font. Typically the font for headings.                      |
 | `.uk-font-secondary` | Add this class to apply the secondary font. Typically an alternative font for smaller headings. |
-| `.uk-font-tertiary`  | Add this class to apply the tertiary font. Typically a fancy font for headings.                |
+| `.uk-font-tertiary`  | Add this class to apply the tertiary font. Typically a fancy font for headings.                 |
 
 **Note** You need to style these classes in your theme. By default, UIkit doesn't apply any style.
 
@@ -67,3 +67,21 @@ Add one of the following classes to modify the font size of your text.
 <div class="uk-font-6xlarge">6XLarge</div>
 <div class="uk-font-7xlarge">7XLarge</div>
 ```
+
+***
+
+## Font weight
+
+Add one of the following classes to modify the font weight of your text.
+
+| Class             | Description                                                                       |
+| :---------------- | :-------------------------------------------------------------------------------- |
+| `.uk-font-light`  | <span class="uk-font-light">Add this class to apply a light font weight.</span>   |
+| `.uk-font-normal` | <span class="uk-font-normal">Add this class to apply a normal font weight.</span> |
+| `.uk-font-bold`   | <span class="uk-font-bold">Add this class to apply a bold font weight.</span>     |
+
+***
+
+## Font style
+
+Add the `.uk-font-italic` class to create <span class="uk-font-italic">italic text</span>.

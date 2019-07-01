@@ -17,31 +17,14 @@ UIkit offers various text utilities to style your text.
 
 ***
 
-## Font size
-
-The following classes will modify the font size of your text.
-
-| Class            | Description                                                                  |
-| :--------------- | :--------------------------------------------------------------------------- |
-| `.uk-text-small` | <span class="uk-text-small">Add this class to decrease the font size.</span> |
-| `.uk-text-large` | <span class="uk-text-large">Add this class to increase the font size.</span> |
-
-***
-
-## Font weight
-
-Add the `.uk-text-bold` class to create <span class="uk-text-bold">bold text</span>.
-
-***
-
 ## Text transform
 
 The following classes will transform text into uppercased, capitalized or lowercased characters.
 
 | Class                 | Description                                                                                  |
 | :-------------------- | :------------------------------------------------------------------------------------------- |
-| `.uk-text-uppercase`  | <span class="uk-text-uppercase">Add this class to transform your text to uppercase.</span>   |
 | `.uk-text-capitalize` | <span class="uk-text-capitalize">Add this class to transform your text to capitalize.</span> |
+| `.uk-text-uppercase`  | <span class="uk-text-uppercase">Add this class to transform your text to uppercase.</span>   |
 | `.uk-text-lowercase`  | <span class="uk-text-lowercase">Add this class to transform your text to lowercase.</span>   |
 
 ***
