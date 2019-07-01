@@ -4,9 +4,41 @@
 
 ***
 
-## Migration from UIkit 3.x
+## Migration from UIkit 3.1 to 3.2
 
-In UIkit 3.1 a Less variable `@deprecated` was added. By default, it is set to `false`, and deprecated classes are not compiled into the CSS. 
+In UIkit 3.2 all Less variable which has `xxlarge` in their name got renamed that part to `2xlarge`. Just find and replace these Less variables if you are using a custom Less theme.
+
+### Heading Component
+
+The heading size classes in the [Heading component](heading) are deprecated and replaced by the new [Font component](font#size-modifiers). Update your markup by replacing the following classes.
+
+| Deprecated           | Replace with      |
+| -------------------- | ----------------- |
+| `uk-heading-small`   | `uk-font-3xlarge` |
+| `uk-heading-medium`  | `uk-font-4xlarge` |
+| `uk-heading-large`   | `uk-font-5xlarge` |
+| `uk-heading-xlarge`  | `uk-font-6xlarge` |
+| `uk-heading-2xlarge` | `uk-font-7xlarge` |
+
+### Text Component
+
+Some classes in the [Text component](text) are deprecated and replaced by the new [Font component](font#size-modifiers). Update your markup by replacing the following classes.
+
+| Deprecated      | Replace with     |
+| --------------- | ---------------- |
+| `uk-text-small` | `uk-font-xsmall` |
+| `uk-text-large` | `uk-font-large`  |
+| `uk-text-bold`  | `uk-font-bold`   |
+
+### Width Component
+
+The `uk-width-xxlarge` class in the [Width component](text) is renamed to `uk-width-2xlarge`.
+
+***
+
+## Migration from UIkit 3.0 to 3.1
+
+UIkit 3.1 adds the `@deprecated` Less variable. By default, it is set to `false`, and deprecated classes are not compiled into the CSS. 
 
 If you want to update your markup later and use the deprecated classes along the new ones, set the variable to `true` in your custom UIkit theme.
 
@@ -16,16 +48,16 @@ If you want to update your markup later and use the deprecated classes along the
 
 ### Heading Component
 
-In UIkit 3.1 the Primary and Hero classes in the [Heading component](heading#size-modifiers) were deprecated. Update your markup by replacing the following classes.
+The Primary and Hero classes in the [Heading component](heading) are deprecated. Update your markup by replacing the following classes.
 
 | Deprecated           | Replace with        |
-|----------------------|---------------------|
+| -------------------- | ------------------- |
 | `uk-heading-primary` | `uk-heading-medium` |
 | `uk-heading-hero`    | `uk-heading-xlarge` |
 
 ***
 
-## Migration from UIkit 2.x
+## Migration from UIkit 2 to 3
 
 Uikit 3 offers a migration tool that runs in your browser and lists all necessary changes from an existing Uikit 2 site. Two options are available to run the tool: Via a bookmark or by including a single JavaScript file. The necessary migration changes are then listed in your browser's console.
 
