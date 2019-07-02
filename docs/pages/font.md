@@ -76,11 +76,13 @@ Add one of the following classes to modify the font size of your text.
 
 Add one of the following classes to modify the font weight of your text.
 
-| Class             | Description                                                                       |
-| :---------------- | :-------------------------------------------------------------------------------- |
-| `.uk-font-light`  | <span class="uk-font-light">Add this class to apply a light font weight.</span>   |
-| `.uk-font-normal` | <span class="uk-font-normal">Add this class to apply a normal font weight.</span> |
-| `.uk-font-bold`   | <span class="uk-font-bold">Add this class to apply a bold font weight.</span>     |
+| Class              | Description                                                                         |
+| :----------------- | :---------------------------------------------------------------------------------- |
+| `.uk-font-light`   | <span class="uk-font-light">Add this class to apply a font weight of `300`.</span>  |
+| `.uk-font-normal`  | <span class="uk-font-normal">Add this class to apply a font weight of `400`.</span> |
+| `.uk-font-bold`    | <span class="uk-font-bold">Add this class to apply a font weight of `700`.</span>   |
+| `.uk-font-lighter` | <span class="uk-font-lighter">Add this class to apply a lighter font weight.</span> |
+| `.uk-font-bolder`  | <span class="uk-font-bolder">Add this class to apply a bolder font weight.</span>   |
 
 ***
 
