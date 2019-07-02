@@ -38,34 +38,36 @@ Add one of the following classes to modify the font size of your text.
 
 | Class              | Description                                                                                                     |
 | :----------------- | :-------------------------------------------------------------------------------------------------------------- |
-| `.uk-font-xsmall`  | Add this class to apply a small font size. By default, it's the font size of small text and the `h6` element.   |
+| `.uk-font-2xsmall` | Add this class to apply a 2x-small font size.                                                                   |
+| `.uk-font-xsmall`  | Add this class to apply a x-small font size. By default, it's the font size of small text and the `h6` element. |
 | `.uk-font-small`   | Add this class to apply a small font size. By default, it's the font size of running text and the `h5` element. |
 | `.uk-font-medium`  | Add this class to apply a medium font size. By default, it's the font size of the  `h4` element.                |
 | `.uk-font-large`   | Add this class to apply a large font size. By default, it's the font size of the  `h3` element.                 |
-| `.uk-font-xlarge`  | Add this class to apply a xlarge font size. By default, it's the font size of the  `h2` element.                |
-| `.uk-font-2xlarge` | Add this class to apply a 2xlarge font size. By default, it's the font size of the  `h1` element.               |
-| `.uk-font-3xlarge` | Add this class to apply a 3xlarge font size.                                                                    |
-| `.uk-font-4xlarge` | Add this class to apply a 4xlarge font size.                                                                    |
-| `.uk-font-5xlarge` | Add this class to apply a 5xlarge font size.                                                                    |
-| `.uk-font-6xlarge` | Add this class to apply a 6xlarge font size.                                                                    |
-| `.uk-font-7xlarge` | Add this class to apply a 7xlarge font size.                                                                    |
+| `.uk-font-xlarge`  | Add this class to apply a x-large font size. By default, it's the font size of the  `h2` element.               |
+| `.uk-font-2xlarge` | Add this class to apply a 2x-large font size. By default, it's the font size of the  `h1` element.              |
+| `.uk-font-3xlarge` | Add this class to apply a 3x-large font size.                                                                   |
+| `.uk-font-4xlarge` | Add this class to apply a 4x-large font size.                                                                   |
+| `.uk-font-5xlarge` | Add this class to apply a 5x-large font size.                                                                   |
+| `.uk-font-6xlarge` | Add this class to apply a 6x-large font size.                                                                   |
+| `.uk-font-7xlarge` | Add this class to apply a 7x-large font size.                                                                   |
 
 ```html
 <div class="uk-font-medium"></div>
 ```
 
 ```example
-<div class="uk-font-xsmall">XSmall</div>
+<div class="uk-font-2xsmall">2X-Small</div>
+<div class="uk-font-xsmall">X-Small</div>
 <div class="uk-font-small">Small</div>
 <div class="uk-font-medium">Medium</div>
 <div class="uk-font-large">Large</div>
-<div class="uk-font-xlarge">XLarge</div>
-<div class="uk-font-2xlarge">2XLarge</div>
-<div class="uk-font-3xlarge">3XLarge</div>
-<div class="uk-font-4xlarge">4XLarge</div>
-<div class="uk-font-5xlarge">5XLarge</div>
-<div class="uk-font-6xlarge">6XLarge</div>
-<div class="uk-font-7xlarge">7XLarge</div>
+<div class="uk-font-xlarge">X-Large</div>
+<div class="uk-font-2xlarge">2X-Large</div>
+<div class="uk-font-3xlarge">3X-Large</div>
+<div class="uk-font-4xlarge">4X-Large</div>
+<div class="uk-font-5xlarge">5X-Large</div>
+<div class="uk-font-6xlarge">6X-Large</div>
+<div class="uk-font-7xlarge">7X-Large</div>
 ```
 
 ***

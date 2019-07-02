@@ -20,6 +20,8 @@ The heading size classes in the [Heading component](heading) are deprecated and 
 | `uk-heading-xlarge`  | `uk-font-6xlarge` |
 | `uk-heading-2xlarge` | `uk-font-7xlarge` |
 
+If you are modifying the deprecated classes through Less variables or hooks, you need to update your UIkit theme accordingly and rename those variables and hooks.
+
 ### Text Component
 
 Some classes in the [Text component](text) are deprecated and replaced by the new [Font component](font#size-modifiers). Update your markup by replacing the following classes.

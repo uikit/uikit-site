@@ -154,7 +154,7 @@ Add one of the following classes to an `<input>`, `<select>` or `<textarea>` ele
     </div>
 
     <div class="uk-margin">
-        <input class="uk-input uk-form-width-xsmall" type="text" placeholder="XSmall">
+        <input class="uk-input uk-form-width-xsmall" type="text" placeholder="X-Small">
     </div>
 
 </form>

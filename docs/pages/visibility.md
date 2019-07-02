@@ -63,8 +63,8 @@ Add one of the `.uk-hidden-*` classes to hide the element from screens larger th
     </div>
     <div>
         <div class="uk-panel">
-            <div class="uk-alert uk-margin-remove uk-alert-success">✔ XLarge</div>
-            <div class="uk-alert uk-position-cover uk-margin-remove uk-hidden@xl">XLarge</div>
+            <div class="uk-alert uk-margin-remove uk-alert-success">✔ X-Large</div>
+            <div class="uk-alert uk-position-cover uk-margin-remove uk-hidden@xl">X-Large</div>
         </div>
     </div>
 </div>
@@ -112,8 +112,8 @@ Use `.uk-visible-*` classes to show the element for screens larger than the spec
     </div>
     <div>
         <div class="uk-panel">
-            <div class="uk-alert uk-margin-remove">XLarge</div>
-            <div class="uk-alert uk-alert-success uk-position-cover uk-margin-remove uk-visible@xl">✔ XLarge</div>
+            <div class="uk-alert uk-margin-remove">X-Large</div>
+            <div class="uk-alert uk-alert-success uk-position-cover uk-margin-remove uk-visible@xl">✔ X-Large</div>
         </div>
     </div>
 </div>
