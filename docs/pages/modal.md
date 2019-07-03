@@ -214,7 +214,7 @@ Using the [grid](grid.md) and [width](width.md) classes, you can create a nice, 
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-            <div class="uk-background-cover" style="background-image: url('../docs/images/photo.jpg');" uk-height-viewport></div>
+            <div class="uk-background-cover" style="background-image: url('images/photo.jpg');" uk-height-viewport></div>
             <div class="uk-padding-large">
                 <h1>Headline</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -228,7 +228,7 @@ Using the [grid](grid.md) and [width](width.md) classes, you can create a nice, 
 
 ## Overflow
 
-By default, the page will scroll with the modal, if its content exceeds the window height. To apply a scrollbar inside the modal, add the `uk-overflow-auto` attribute from the [Utility component](utility.md#overflow) to the modal body.
+By default, the page will scroll with the modal, if its content exceeds the window height. To apply a scrollbar inside the modal, add the `uk-overflow-auto` attribute from the [Utility component](utility.md#overflow-auto) to the modal body.
 
 ```html
 <div id="my-id" uk-modal>
@@ -285,7 +285,7 @@ By default, the page will scroll with the modal, if its content exceeds the wind
 
 If you want to display media, you should first check, if the [Lightbox component](lightbox.md) doesn't already offer everything you need. However, you can also use the modal to have more control over the markup to wrap your media in.
 
-**Note** Use the `uk-video` attribute from the [Utility component](utility.md) to make sure videos are stopped when the modal is closed.
+**Note** Use the `uk-video` attribute from the [Video component](video.md) to make sure videos are stopped when the modal is closed.
 
 ```html
 <div uk-modal>
@@ -299,7 +299,7 @@ If you want to display media, you should first check, if the [Lightbox component
  <p uk-margin>
     <a class="uk-button uk-button-default" href="#modal-media-image" uk-toggle>Image</a>
     <a class="uk-button uk-button-default" href="#modal-media-video" uk-toggle>Video</a>
-    <a class="uk-button uk-button-default" href="#modal-media-youtube" uk-toggle>Youtube</a>
+    <a class="uk-button uk-button-default" href="#modal-media-youtube" uk-toggle>YouTube</a>
     <a class="uk-button uk-button-default" href="#modal-media-vimeo" uk-toggle>Vimeo</a>
 </p>
 
@@ -313,24 +313,21 @@ If you want to display media, you should first check, if the [Lightbox component
 <div id="modal-media-video" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <video controls playsinline uk-video>
-            <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-            <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
-        </video>
+        <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" controls playsinline uk-video></video>
     </div>
 </div>
 
 <div id="modal-media-youtube" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <iframe src="//www.youtube.com/embed/YE7VzlLtp-4" width="560" height="315" frameborder="0" uk-video></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" frameborder="0" uk-video></iframe>
     </div>
 </div>
 
 <div id="modal-media-vimeo" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <iframe src="//player.vimeo.com/video/1084537" width="500" height="281" frameborder="0" uk-video></iframe>
+        <iframe src="https://player.vimeo.com/video/1084537" width="500" height="281" frameborder="0" uk-video></iframe>
     </div>
 </div>
 ```
@@ -406,6 +403,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `bg-close`  | Boolean | `true`  | Close the modal when the background is clicked.                                                    |
 | `stack`     | Boolean | `false` | Stack modals, when more than one is open. By default, the previous modal will be hidden.           |
 | `container` | String  | `true`  | Define a target container via a selector to specify where the modal should be appended in the DOM. Setting it to `false` will prevent this behavior. |
+| `cls-page`  | String  | `'uk-modal-page'`   | Class to add to `<body>` when modal is active                |
+| `cls-panel` | String  | `'uk-modal-dialog'` | Class of the element to be considered the panel of the modal |
+| `sel-close` | String  | `'.uk-modal-close,` `.uk-modal-close-default,` `.uk-modal-close-outside,` `.uk-modal-close-full'` | CSS selector for all elements that should trigger the closing of the modal |
 
 ***
 
@@ -419,17 +419,42 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 UIkit.modal(element, options);
 ```
 
-### JavaScript options
+### Events
 
-| Name        | Default             | Description                                                  |
-|:------------|:--------------------|:-------------------------------------------------------------|
-| `cls-page`  | `'uk-modal-page'`   | Class to add to `<body>` when modal is active                |
-| `cls-panel` | `'uk-modal-dialog'` | Class of the element to be considered the panel of the modal |
-| `sel-close` | `'.uk-modal-close, .uk-modal-close-default, .uk-modal-close-outside, .uk-modal-close-full'` | CSS selector for all elements that should trigger the closing of the modal |
+The following events will be triggered on elements with this component attached:
+
+| Name         | Description                                          |
+|:-------------|:-----------------------------------------------------|
+| `beforeshow` | Fires before an item is shown.                       |
+| `show`       | Fires after an item is shown.                        |
+| `shown`      | Fires after the item's show animation has completed. |
+| `beforehide` | Fires before an item is hidden.                      |
+| `hide`       | Fires after an item's hide animation has started.    |
+| `hidden`     | Fires after an item is hidden.                       |
+
+### Methods
+
+The following methods are available for the component:
+
+#### Show
+
+```js
+UIkit.modal(element).show();
+```
+
+Shows the Modal.
+
+#### Hide
+
+```js
+UIkit.modal(element).hide();
+```
+
+Hides the Modal.
 
 ***
 
-### Modal dialogs
+## Modal dialogs
 
 The component comes with a number of prepared modal dialogs that you can use for user interaction. You can call the dialog directly from JavaScript and use callback functions to process the user input.
 
@@ -499,38 +524,3 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 
 </p>
 ```
-
-***
-
-### Events
-
-The following events will be triggered on elements with this component attached:
-
-| Name         | Description                                          |
-|:-------------|:-----------------------------------------------------|
-| `beforeshow` | Fires before an item is shown.                       |
-| `show`       | Fires after an item is shown.                        |
-| `shown`      | Fires after the item's show animation has completed. |
-| `beforehide` | Fires before an item is hidden.                      |
-| `hide`       | Fires after an item's hide animation has started.    |
-| `hidden`     | Fires after an item is hidden.                       |
-
-### Methods
-
-The following methods are available for the component:
-
-#### Show
-
-```js
-UIkit.modal(element).show();
-```
-
-Shows the Modal.
-
-#### Hide
-
-```js
-UIkit.modal(element).hide();
-```
-
-Hides the Modal.

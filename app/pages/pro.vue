@@ -3,7 +3,7 @@
 
         <div class="uk-section-primary tm-section-intro">
 
-            <navbar class="uk-light" uk-sticky="media: 960;show-on-up: true;animation: uk-animation-slide-top;cls-inactive: uk-navbar-transparent;top: 400"></navbar>
+            <navbar class="uk-light" uk-sticky="media: 960;show-on-up: true;animation: uk-animation-slide-top;cls-inactive: uk-navbar-transparent;top: 400"/>
 
             <div class="uk-section uk-padding-remove-bottom">
                 <div class="uk-container">
@@ -18,14 +18,14 @@
                                 <div class="uk-grid-medium uk-flex-middle uk-flex-inline" uk-grid>
                                     <div>
 
-                                        <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
+                                        <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/signup/themes?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
 
-                                        <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
+                                        <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/signup/themes?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
 
                                     </div>
                                     <div>
 
-                                        <a class="uk-button uk-button-text" href="https://yootheme.com/pro/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Learn+Top">Learn More</a>
+                                        <a class="uk-button uk-button-text" href="https://yootheme.com/pro?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Learn+Top">Learn More</a>
 
                                     </div>
                                 </div>
@@ -37,7 +37,8 @@
 
                             <div class="tm-intro-image">
                                 <div class="uk-inline">
-                                    <img src="images/pro/device-laptop.png" width="960" height="720" alt="Laptop Device">
+                                    <canvas v-show="!imgLoaded" width="960" height="670"></canvas>
+                                    <img v-show="imgLoaded" src="images/pro/device-laptop.png" width="960" height="670" alt="Laptop Device" @load="imgLoaded = true">
                                     <div style="position: absolute; top: 5%; left: 12%; right: 12%;">
                                         <img src="images/pro/page-builder.gif" width="730" height="456" alt="Animated Gif YOOtheme Pro Page Builder" uk-gif>
                                     </div>
@@ -118,7 +119,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-copper-hill.jpg" alt="Copper Hill Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/copper-hill/" data-modal></a>
                         </div>
@@ -127,7 +128,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-sonic.jpg" alt="Sonic Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/sonic/" data-modal></a>
                         </div>
@@ -136,7 +137,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-fjord.jpg" alt="Fjord Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/fjord/" data-modal></a>
                         </div>
@@ -145,7 +146,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-joline.jpg" alt="Joline Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/joline/" data-modal></a>
                         </div>
@@ -154,7 +155,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-max.jpg" alt="Max Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/max/" data-modal></a>
                         </div>
@@ -163,7 +164,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-horizon.jpg" alt="Horizon Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/horizon/" data-modal></a>
                         </div>
@@ -172,7 +173,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-fuse.jpg" alt="Fuse Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/fuse/" data-modal></a>
                         </div>
@@ -181,7 +182,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/style-juno.jpg" alt="Juno Style">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/juno/" data-modal></a>
                         </div>
@@ -210,7 +211,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-copper-hill.jpg" alt="Copper Hill Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/copper-hill/" data-modal></a>
                         </div>
@@ -219,7 +220,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-horizon-overview.jpg" alt="Horizon Overview Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/horizon/?page_id=19" data-modal></a>
                         </div>
@@ -228,7 +229,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-sonic.jpg" alt="Sonic Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/sonic/" data-modal></a>
                         </div>
@@ -237,7 +238,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-joline.jpg" alt="Joline Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/joline/" data-modal></a>
                         </div>
@@ -246,7 +247,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-sonic-location.jpg" alt="Sonic Location Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/sonic/?page_id=22" data-modal></a>
                         </div>
@@ -255,7 +256,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-max.jpg" alt="Max Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/max/" data-modal></a>
                         </div>
@@ -264,7 +265,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-joline-spots-case-study.jpg" alt="Joline Case Study Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/joline/?page_id=24" data-modal></a>
                         </div>
@@ -273,7 +274,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-fjord.jpg" alt="Fjord Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/fjord/" data-modal></a>
                         </div>
@@ -281,7 +282,7 @@
                     </div>
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-horizon.jpg" alt="Horizon Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/horizon/" data-modal></a>
                         </div>
@@ -289,7 +290,7 @@
                     </div>
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-fuse.jpg" alt="Fuse Frontpage Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/fuse/" data-modal></a>
                         </div>
@@ -297,7 +298,7 @@
                     </div>
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-fjord-resources.jpg" alt="Fjord Resources Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/fjord/?page_id=21" data-modal></a>
                         </div>
@@ -306,7 +307,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-copper-hill-lunch.jpg" alt="Copper Hill Lunch Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/copper-hill/?page_id=28" data-modal></a>
                         </div>
@@ -315,7 +316,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-sonic-speakers.jpg" alt="Sonic Speakers Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/sonic/?page_id=20" data-modal></a>
                         </div>
@@ -324,7 +325,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-horizon-products.jpg" alt="Horizon Products Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/horizon/?page_id=13" data-modal></a>
                         </div>
@@ -333,7 +334,7 @@
 
                     <div>
 
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-joline-about.jpg" alt="Joline About Layout">
                             <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2017/joline/?page_id=20" data-modal></a>
                         </div>
@@ -354,14 +355,14 @@
                 <div class="uk-grid-medium uk-flex-middle uk-flex-center" uk-grid>
                     <div>
 
-                        <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
+                        <a class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s" href="https://yootheme.com/signup/themes?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Top">Buy Now</a>
 
-                        <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Bottom">Buy Now</a>
+                        <a class="uk-button uk-button-default tm-button-primary uk-hidden@s" href="https://yootheme.com/signup/themes?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Bottom">Buy Now</a>
 
                     </div>
                     <div>
 
-                        <a class="uk-button uk-button-text" href="https://yootheme.com/pro/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Learn+Bottom">Learn More</a>
+                        <a class="uk-button uk-button-text" href="https://yootheme.com/pro?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Learn+Bottom">Learn More</a>
 
                     </div>
                 </div>
@@ -374,7 +375,7 @@
 
                             <div class="uk-text-left@m uk-text-center">
                                 <a class="uk-logo" href="./index">
-                                    <canvas class="uk-margin-small-right" width="28" height="34" uk-svg :src="'./images/uikit-logo.svg'"></canvas>
+                                    <canvas class="uk-margin-small-right" width="28" height="34" uk-svg src="./images/uikit-logo.svg"></canvas>
                                     UIkit
                                 </a>
                             </div>
@@ -395,7 +396,7 @@
                             <div class="uk-text-right@m uk-text-center">
                                 <div class="uk-child-width-auto uk-grid-small uk-flex-center" uk-grid>
                                     <div><a href="https://github.com/uikit/uikit" class="uk-icon-link" uk-icon="icon: github"></a></div>
-                                    <div><a href="https://gitter.im/uikit/uikit" class="uk-icon-link" uk-icon="icon: gitter"></a></div>
+                                    <div><a href="https://discordapp.com/invite/NEt4Pv7" class="uk-icon-link" uk-icon="icon: commenting"></a></div>
                                     <div><a href="https://twitter.com/getuikit" class="uk-icon-link" uk-icon="icon: twitter"></a></div>
                                     <div><a href="https://www.facebook.com/getuikit" class="uk-icon-link" uk-icon="icon: facebook"></a></div>
                                 </div>
@@ -411,7 +412,7 @@
 
         <!-- Modal -->
 
-        <div id="modal-demo" class="uk-modal-full" ref="modal" uk-modal>
+        <div id="modal-demo" ref="modal" class="uk-modal-full" uk-modal>
             <div class="uk-modal-dialog tm-modal-dialog uk-flex uk-flex-column" uk-height-viewport>
                 <button class="uk-modal-close-full tm-modal-close-full uk-close-large" type="button" uk-close></button>
                 <div class="tm-modal-header">
@@ -419,21 +420,21 @@
                     <div class="uk-grid-medium uk-flex-middle" uk-grid>
                         <div>
 
-                            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Modal">Buy YOOtheme Pro</a>
+                            <a class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s" href="https://yootheme.com/signup/themes?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Modal">Buy YOOtheme Pro</a>
 
-                            <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="https://yootheme.com/themes/buy-now/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Modal">Buy</a>
+                            <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="https://yootheme.com/signup/themes?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Buy+Modal">Buy</a>
 
                         </div>
                         <div>
 
-                            <a class="uk-button uk-button-text" href="https://yootheme.com/pro/?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Learn+Modal">Learn More</a>
+                            <a class="uk-button uk-button-text" href="https://yootheme.com/pro?utm_campaign=YOOtheme+Pro&amp;utm_source=UIkit&amp;utm_medium=referral&amp;utm_content=Learn+Modal">Learn More</a>
 
                         </div>
                     </div>
 
                 </div>
                 <div class="tm-modal-body uk-flex-1 uk-flex">
-                    <iframe class="uk-width-1-1 tm-box-shadow-modal" src="" ref="iframe"></iframe>
+                    <iframe ref="iframe" class="uk-width-1-1 tm-box-shadow-modal" src=""></iframe>
                 </div>
             </div>
         </div>
@@ -444,19 +445,24 @@
 
 <script>
 
-    var {on} = UIkit.util;
+    import {modal} from 'uikit';
+    import {on} from 'uikit-util';
 
     export default {
+
+        data: () => ({
+            imgLoaded: false
+        }),
 
         mounted() {
 
             on(this.$el, 'click', '[data-modal]', e => {
 
-                var {iframe, modal} = this.$refs;
+                const {iframe, modal: modalEl} = this.$refs;
 
                 e.preventDefault();
 
-                var el = e.target;
+                const el = e.target;
 
                 if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
                     window.open(el.href);
@@ -464,13 +470,13 @@
                 }
 
                 iframe.src = '';
-                UIkit.modal(modal).show();
+                modal(modalEl).show();
 
                 requestAnimationFrame(() => iframe.src = el.href);
 
             });
         }
 
-    }
+    };
 
 </script>

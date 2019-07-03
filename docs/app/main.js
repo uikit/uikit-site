@@ -2,11 +2,11 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './app.vue';
 import Page from './page.vue';
-import analytics from '../../app/analytics.js';
+import analytics from '../../app/analytics';
 import navigation from './navigation.json';
 
 const routes = [
-    {path: '*/docs/', redirect: '*/docs/introduction'},
+    {path: '*/docs/', redirect: ({path}) => `${path}introduction`},
     {path: '*/docs/:page', component: Page}
 ];
 
@@ -17,9 +17,11 @@ const router = new VueRouter({
     linkActiveClass: 'uk-active'
 });
 
-window.DocsApp = new Vue({
+new Vue({
 
     router,
+
+    provide: {router},
 
     el: '#app',
 
@@ -34,4 +36,4 @@ window.DocsApp = new Vue({
 
 });
 
-analytics();
+analytics('UA-42150424-1', {anonymize_ip: true});

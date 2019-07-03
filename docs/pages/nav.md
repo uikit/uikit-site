@@ -221,7 +221,7 @@ Add the `.uk-nav-default` class to give the nav its default style. You can place
 
 ## Primary modifier
 
-Add the `.uk-nav-primary` class to give the nav a more distinct styling, for examle when placing it inside a modal.
+Add the `.uk-nav-primary` class to give the nav a more distinct styling, for example when placing it inside a modal.
 
 ```html
 <ul class="uk-nav uk-nav-primary">...</ul>

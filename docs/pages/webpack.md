@@ -15,13 +15,13 @@ index.html
 package.json
 ```
 
-The following commands will create and fill the file `package.json`. It contains the dependencies for Npm. We include UIkit and Webpack.
+The following commands will create and fill the file `package.json`. It contains the dependencies for Yarn. We include UIkit and Webpack.
 
 ```sh
 mkdir uikit-webpack && cd uikit-webpack
-npm init -y
-npm install --save uikit
-npm install --save-dev webpack
+yarn init -y
+yarn add uikit
+yarn add --dev webpack
 ```
 
 As an entry file for the projects JavaScript, create a file `app/index.js` with the following content.
@@ -53,7 +53,7 @@ This way you have the reference to UIkit available without having to include its
             <div class="uk-card uk-card-body uk-card-primary">
                 <h3 class="uk-card-title">Example headline</h3>
 
-                <button class="uk-button uk-button-default" title="Hello World" uk-tooltip>Hover</button>
+                <button class="uk-button uk-button-default" uk-tooltip="title: Hello World">Hover</button>
             </div>
         </div>
 

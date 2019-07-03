@@ -26,7 +26,7 @@ Add the `.uk-panel` class to a `<div>` element to create a position context, set
 
 ### Scrollable panel
 
-Add the `.uk-panel-scrollable` class to give the panel a fixed height and make it scrollable, if its content exceeds the height. You can also add one of the `.uk-height-*` [classes](#height) to apply a different height.
+Add the `.uk-panel-scrollable` class to give the panel a fixed height and make it scrollable, if its content exceeds the height. You can also add one of the `.uk-height-*` [classes](height.md) to apply a different height.
 
 ```example
 <div class="uk-panel uk-panel-scrollable">
@@ -87,7 +87,7 @@ These utilities provide different classes to modify an element's overflow behavi
 | Class                 | Description                               |
 |-----------------------|-------------------------------------------|
 | `.uk-overflow-hidden` | Add this class to clip content that exceeds the dimensions of its container. |
-| `.uk-overflow-auto`   | Add this class to create a container that provides a horizontal or vertical scrollbar whenever the elements inside it are wider or higher than the container itself. |
+| `.uk-overflow-auto`   | Add this class to create a container that provides a horizontal or vertical scrollbar whenever the elements content it are wider or higher than the container itself. |
 
 **Note** The `.uk-overflow-auto` class is useful when having to handle tables on a responsive website, which at some point would just get too big. It also works great on `<pre>` elements.
 
@@ -143,6 +143,91 @@ These utilities provide different classes to modify an element's overflow behavi
     </table>
 </div>
 ```
+
+***
+
+## Overflow Auto
+
+Add the `uk-overflow-auto` attribute to expand an element's height to make it fill the remaining height of a parent container. It provides a vertical scrollbar if its content is higher than the expanded height.
+
+```example
+<div class="uk-height-medium">
+    <div class="js-wrapper">
+
+        <p>Some content before the overflow auto container.</p>
+
+        <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
+            <div class="uk-grid-small" uk-grid>
+                <div class="uk-width-1-2"><img src="images/light.jpg" alt=""></div>
+                <div class="uk-width-1-2"><img src="images/dark.jpg" alt=""></div>
+                <div class="uk-width-1-2"><img src="images/photo.jpg" alt=""></div>
+                <div class="uk-width-1-2"><img src="images/photo2.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <p>Some content after the overflow auto container.</p>
+
+    </div>
+</div>
+```
+
+It's often used within the [Modal component](modal.md).
+
+```html
+<div id="my-id" uk-modal>
+    <div class="uk-modal-dialog" uk-overflow-auto></div>
+</div>
+```
+
+```example
+<a class="uk-button uk-button-default" href="#modal-overflow" uk-toggle>Open</a>
+
+<div id="modal-overflow" uk-modal>
+    <div class="uk-modal-dialog">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Headline</h2>
+        </div>
+
+        <div class="uk-modal-body" uk-overflow-auto>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
+
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button uk-button-primary" type="button">Save</button>
+        </div>
+
+    </div>
+</div>
+```
+
+You can change the target heights by adding the `selContainer` and `selContent` options to the attribute. [Learn more](javascript.md#component-configuration)
+
+| Option         | Value  | Default            | Description                                                                       |
+|:---------------|:-------|:-------------------|:----------------------------------------------------------------------------------|
+| `selContainer` | String | `.uk-modal`        | CSS selector for the container element which provides the height.                 |
+| `selContent`   | String | `.uk-modal-dialog` | CSS selector for the element which wraps the inner content to provide its height. |
 
 ***
 
@@ -226,151 +311,10 @@ These classes are often used to create a position context on containers with an 
 
 ```example
 <div class="uk-inline">
-    <img src="../docs/images/photo.jpg" width="300" alt="">
+    <img src="images/photo.jpg" width="300" alt="">
     <div class="uk-position-medium uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">Overlay</div>
 </div>
 ```
-
-***
-
-## Height
-
-UIkit provides a number of useful classes to alter a block element's height.
-
-| Class                                             | Description                                                                                   |
-|:--------------------------------------------------|:----------------------------------------------------------------------------------------------|
-| `.uk-height-1-1`                                  | This class applies a height of 100%. This only works, if the parent element has a set height. |
-| `.uk-height-small `<br> `.uk-height-max-small `   | These classes apply a height or max-height of _150px_.                                        |
-| `.uk-height-medium `<br> `.uk-height-max-medium ` | These classes apply a height or max-height of _300px_.                                        |
-| `.uk-height-large `<br> `.uk-height-max-large `   | These classes apply a height or max-height of _450px_.                                        |
-
-```html
-<div class="uk-height-small"></div>
-```
-
-```example
-<div class="uk-child-width-1-3@s" uk-grid>
-    <div>
-        <div class="uk-height-small uk-card uk-card-default uk-card-body uk-flex uk-flex-center uk-flex-middle">Small</div>
-    </div>
-    <div>
-        <div class="uk-height-medium uk-card uk-card-default uk-card-body uk-flex uk-flex-center uk-flex-middle">Medium</div>
-    </div>
-    <div>
-        <div class="uk-height-large uk-card uk-card-default uk-card-body uk-flex uk-flex-center uk-flex-middle">Large</div>
-    </div>
-</div>
-```
-
-***
-
-### Viewport height
-
-Add the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `offset-top`, `offset-bottom` or `expand` option to the attribute. [Learn more](javascript.md#component-configuration)
-
-| Option          | Value                  | Default | Description                                                                         |
-|:----------------|:-----------------------|:--------|:------------------------------------------------------------------------------------|
-| `offset-top`    | Boolean                | `false` | Subtracts the element's top offset from its height.                                 |
-| `offset-bottom` | Boolean, Number, Pixel | `false` | Subtracts the element's immediately following sibling's height from its own height. |
-| `expand`        | Boolean                | `true`  | Expand the element's height to make a short page fill the viewport.                 |
-| `min-height`    | Number                 | `0`     | Sets a minimum height. Useful if the all children are positioned absolute.          |
-
-```html
-<div uk-height-viewport></div>
-
-<div uk-height-viewport="offset-top: true"></div>
-
-<div uk-height-viewport="offset-bottom: 20"></div>
-
-<div uk-height-viewport="expand: true"></div>
-
-<div uk-height-viewport="min-height: 300"></div>
-```
-
-You can view examples in the tests for [Height Viewport](../assets/uikit/tests/height-viewport.html) and [Height Expand](../assets/uikit/tests/height-expand.html).
-
-***
-
-## Match height
-
-To expand all children of a container to the same height, regardless of their content – for example, inside a grid – add the `uk-height-match` attribute. You can change the height matching behavior by setting the `target` or `row` option to the attribute. [Learn more](javascript.md#component-configuration)
-
-| Option   | Value   | Default | Description                 |
-|:---------|:--------|:--------|:----------------------------|
-| `target` | String  | `> *`   | Elements that should match. |
-| `row`    | Boolean | `true`  | By default only items in the same row will be matched. For example, once grid columns extend to a width of 100%, their heights will no longer be matched. This makes sense, for example, if they stack vertically in narrower viewports. |
-
-```html
-<div uk-height-match>
-    <div></div>
-    <div></div>
-</div>
-```
-
-***
-
-### Match cards
-
-You can also target and match specific elements inside the container, like cards. Just add the `target: SELECTOR` option to the attribute.
-
-```html
-<div uk-grid uk-height-match="target: SELECTOR">...</div>
-```
-
-```example
-<div class="uk-child-width-1-2@s" uk-grid uk-height-match="target: > div > .uk-card">
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">Lorem Ipsum</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">Lorem Ipsum</div>
-    </div>
-</div>
-```
-
-***
-
-### Match all
-
-If your grid wraps into multiple rows, only grid columns within the same row are matched. To match grid columns across all rows just add the `row: false` option to the attribute.
-
-```html
-<div uk-grid uk-height-match="row: false">...</div>
-```
-
-```example
-<div class="uk-child-width-1-2@s" uk-grid uk-height-match="target: > div > .uk-card; row: false">
-    <div class="uk-first-column">
-        <div class="uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body">Lorem Ipsum</div>
-    </div>
-    <div class="uk-grid-margin uk-first-column">
-        <div class="uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-    </div>
-    <div class="uk-grid-margin">
-        <div class="uk-card uk-card-default uk-card-body">Lorem Ipsum</div>
-    </div>
-</div>
-```
-
-***
-
-### Component options
-
-The table below lists the available settings of the `uk-height-match` attribute. [Learn more](javascript.md#component-configuration)
-
-| Option   | Value        | Default | Description                                                                                 |
-|:---------|:-------------|:--------|:--------------------------------------------------------------------------------------------|
-| `target` | CSS selector | `false` | Elements that should match. By default, direct children will match.                         |
-| `row`    | Boolean      | `true`  | If your targets wrap into multiple rows, only grid columns within the same row are matched. |
 
 ***
 
@@ -382,7 +326,7 @@ In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the widt
 |:------------------------|:------------|
 | `.uk-responsive-width`  | Add this class to apply the same responsive behavior to any other element. It adjusts the object's width according to its parent's width, keeping the original aspect ratio.   |
 | `.uk-responsive-height` | Add this class to adjust the object's height (instead of its width) according to its parent's height, keeping the original aspect ratio. |
-| `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all relevant elements inside it. If you are embedding Google Maps into your site, you may need this to fix the map's images.      |
+| `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all relevant elements content it. If you are embedding Google Maps into your site, you may need this to fix the map's images.      |
 
 ```html
 <img class="uk-responsive-height" src="" alt="">
@@ -399,11 +343,13 @@ To modify the border radius of an element, like an image, add one of the followi
 | Class                | Description                                |
 |:---------------------|:-------------------------------------------|
 | `.uk-border-rounded` | Add this class to apply rounded corners.   |
-| `.uk-border-circle`  | Add this class to a apply a circled shape. |
+| `.uk-border-circle`  | Add this class to apply a circled shape.   |
+| `.uk-border-pill`    | Add this class to apply a pill shape.      |
 
 ```example
 <img class="uk-border-rounded" src="images/avatar.jpg" width="200" height="200" alt="Border rounded">
 <img class="uk-border-circle" src="images/avatar.jpg" width="200" height="200" alt="Border circle">
+<img class="uk-border-pill" src="images/avatar.jpg" width="200" height="200" alt="Border pill">
 ```
 
 ***
@@ -438,7 +384,7 @@ You can apply different box shadows to elements. Just add one of the following c
     </div>
 
     <div>
-        <div class="uk-box-shadow-xlarge uk-padding">X-Large</div>
+        <div class="uk-box-shadow-xlarge uk-padding">XLarge</div>
     </div>
 </div>
 ```
@@ -485,7 +431,7 @@ To apply a box shadow on hover, add one of the following classes. This can also 
     </div>
 
     <div>
-        <div class="uk-box-shadow-hover-xlarge uk-padding">Hover X-Large</div>
+        <div class="uk-box-shadow-hover-xlarge uk-padding">Hover XLarge</div>
     </div>
 
     <div>
@@ -493,7 +439,7 @@ To apply a box shadow on hover, add one of the following classes. This can also 
     </div>
 
     <div>
-        <div class="uk-box-shadow-xlarge uk-box-shadow-hover-medium uk-padding">X-Large + Hover Medium</div>
+        <div class="uk-box-shadow-xlarge uk-box-shadow-hover-medium uk-padding">XLarge + Hover Medium</div>
     </div>
 </div>
 ```
@@ -507,34 +453,6 @@ With the `.uk-dropcap` class you can achieve a drop cap within a text by adding 
 ```example
 <p class="uk-dropcap">Dorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 ```
-
-***
-
-## Leader
-
-To visually connect horizontal items add the `uk-leader` attribute to the element on the left. A line of characters, for example dots, will then fill the remaining space between the item and its adjacent element. This can be useful when creating elements like a pricing list or a table of contents.
-
-```html
-<div uk-leader></div>
-```
-
-```example
-<div class="uk-grid-small" uk-grid>
-    <div class="uk-width-expand" uk-leader>Lorem ipsum dolor sit amet</div>
-    <div>$20.90</div>
-</div>
-```
-
-***
-
-### Component options
-
-The table below lists the available settings of the `uk-leader` attribute. [Learn more](javascript.md#component-configuration)
-
-| Option  | Value  | Default     | Description                                                                                             |
-|:--------|:-------|:------------|:--------------------------------------------------------------------------------------------------------|
-| `fill`  | String | `undefined` | Optional fill character.                                                                                |
-| `media` | Integer, String | `false`     | Condition for the space filling - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
 ***
 
@@ -586,99 +504,23 @@ You can even automatically display alternative logos for light and dark backgrou
     <div>
         <div class="uk-panel uk-padding uk-background-muted">
             <a class="uk-logo" href="#">
-                <img src="../docs/images/logo-placeholder.svg" alt="">
-                <img class="uk-logo-inverse" src="../docs/images/logo-placeholder-light.svg" alt="">
+                <img src="images/logo-placeholder.svg" alt="">
+                <img class="uk-logo-inverse" src="images/logo-placeholder-light.svg" alt="">
             </a>
         </div>
     </div>
     <div>
         <div class="uk-panel uk-padding uk-background-secondary uk-light">
             <a class="uk-logo" href="#">
-                <img src="../docs/images/logo-placeholder.svg" alt="">
-                <img class="uk-logo-inverse" src="../docs/images/logo-placeholder-light.svg" alt="">
+                <img src="images/logo-placeholder.svg" alt="">
+                <img class="uk-logo-inverse" src="images/logo-placeholder-light.svg" alt="">
             </a>
         </div>
     </div>
 </div>
 ```
 
-***
-
-## Inline SVG
-
-SVGs or Scaleable Vector Graphics are really handy, for example to display a logo that remains crisp when scaling or that is animated. To be able to control your SVG via CSS, just add the `uk-svg` attribute to the image element. This will inject your image into the markup as inline SVG including all attributes, like IDs, classes, width and height, which you can now easily target using CSS.
-
-```html
-<img src="" uk-svg>
-```
-
-Using the `uk-svg` attribute also allows you to inject a symbol from the SVG file. Just append the symbol's ID to the image path as you would in any fragmented URL.
-
-```example
-<!-- Targets the SVG image -->
-<img src="../assets/uikit/src/images/icons/cloud-download.svg" width="40" height="40" uk-svg>
-
-<!-- Targets a symbol inside the SVG image -->
-<img src="../assets/uikit/tests/images/icons.svg#cloud-upload" width="40" height="40" uk-svg>
-```
-
-SVGs will adapt the current color for their stroke and fill color. To prevent this behavior,  you can add the `uk-preserve` class to the SVG itself or to elements inside the SVG.
-
-***
-
-## Gif
-
-To start playing an animated Gif only when it comes into the viewport, add the `uk-gif` attribute. That way a user will see the animation right when he is supposed to.
-
-```html
-<img src="" alt="" uk-gif>
-```
-
-```example
-<img src="../docs/images/animated.gif" alt="" uk-gif>
-```
-
-***
-
-## Video
-
-To automatically mute or play videos, add the `uk-video` attribute. The video will pause whenever it's not visible and resume once it becomes visible again.
-
-```html
-<video uk-video></div>
-```
-
-```example
-<div class="uk-grid uk-child-width-1-2@s">
-    <div>
-
-        <button class="uk-button uk-button-default uk-margin" type="button" uk-toggle="target: +">Toggle HTML5 Video</button>
-        <video controls playsinline uk-video="automute: true">
-            <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-            <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
-        </video>
-
-    </div>
-    <div>
-
-        <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +">Toggle Youtube Video</button>
-        <iframe src="//www.youtube.com/embed/YE7VzlLtp-4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="560" height="315" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
-
-    </div>
-</div>
-```
-
-***
-
-### Component options
-
-The table below lists the available settings of the `uk-video` attribute. [Learn more](javascript.md#component-configuration)
-
-| Option     | Value           | Default | Description                      |
-|:-----------|:----------------|:--------|:---------------------------------|
-| `autoplay` | Boolean, String | `true`  | Automatically start the video. Pauses the video if it is not visible. A value of `inview` will play/pause the video as it enters/leaves the viewport. |
-| `automute` | Boolean         | `false` | Automatically mute the video.    |
-
+**Note** To inject a SVG logo as inline SVG, use the [SVG component](svg.md).
 
 ***
 
@@ -873,17 +715,17 @@ To modify the origin of an animation, like scaling, add one of the `uk-transform
 
 ```example
 <div class="uk-child-width-1-3@m" uk-grid>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-transform-origin-bottom-right uk-card uk-card-default uk-card-body uk-animation-scale-up">
             <p class="uk-text-center">Bottom Right</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-transform-origin-top-center uk-card uk-card-default uk-card-body uk-animation-scale-up">
             <p class="uk-text-center">Top Center</p>
         </div>
     </div>
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-transform-origin-bottom-center uk-card uk-card-default uk-card-body uk-animation-scale-up">
             <p class="uk-text-center">Bottom Center</p>
         </div>

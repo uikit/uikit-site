@@ -4,17 +4,7 @@
 
 ## Usage
 
-To apply this component, add the `.uk-transition-toggle` class to a parent element. This will trigger the transition when the element is hovered. Also add `tabindex="0"` to make the transition accessable through keyboard navigation.
-
-Add one of the `.uk-transition-*` classes to the element itself to apply the actual effect.
-
-This component is mostly used in combination with the [Overlay component](overlay.md) as elements are transitioned from invisible to visible state. To place the overlay on top of another element, like an image, use the [Position component](position.md).
-
-```html
-<div class="uk-transition-toggle" tabindex="0">
-    <div class="uk-transition-fade"></div>
-</div>
-```
+To toggle a transition on hover or focus, add the `.uk-transition-toggle` class to a parent element. Also add `tabindex="0"` to make the animation focusable through keyboard navigation and on touch devices. Add one of the `.uk-transition-*` classes to any child element to apply the actual effect.
 
 | Class                 | Description              |
 |:----------------------|:-------------------------|
@@ -24,11 +14,19 @@ This component is mostly used in combination with the [Overlay component](overla
 | `.uk-transition-slide-top-small`<br> `.uk-transition-slide-bottom-small`<br>  `.uk-transition-slide-left-small`<br> `.uk-transition-slide-right-small` | The element slides in from the top, bottom, left or right with a smaller distance. |
 | `.uk-transition-slide-top-medium`<br> `.uk-transition-slide-bottom-medium`<br>  `.uk-transition-slide-left-medium`<br> `.uk-transition-slide-right-medium`   | The element slides in from the top, bottom, left or right with a medium distance. |
 
+This component is mostly used in combination with the [Overlay component](overlay.md) as elements are transitioned from invisible to visible state. To place the overlay on top of another element, like an image, use the [Position component](position.md).
+
+```html
+<div class="uk-transition-toggle" tabindex="0">
+    <div class="uk-transition-fade"></div>
+</div>
+```
+
 ```example
 <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-match uk-grid-small" uk-grid>
     <div class="uk-text-center">
         <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-            <img src="../docs/images/dark.jpg" alt="">
+            <img src="images/dark.jpg" alt="">
             <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
                 <p class="uk-h4 uk-margin-remove">Fade</p>
             </div>
@@ -37,7 +35,7 @@ This component is mostly used in combination with the [Overlay component](overla
     </div>
     <div class="uk-text-center">
         <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-            <img src="../docs/images/dark.jpg" alt="">
+            <img src="images/dark.jpg" alt="">
             <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                 <p class="uk-h4 uk-margin-remove">Bottom</p>
             </div>
@@ -46,7 +44,7 @@ This component is mostly used in combination with the [Overlay component](overla
     </div>
     <div class="uk-text-center">
         <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
-            <img src="../docs/images/dark.jpg" alt="">
+            <img src="images/dark.jpg" alt="">
             <div class="uk-position-center">
                 <span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>
             </div>
@@ -62,13 +60,13 @@ This component is mostly used in combination with the [Overlay component](overla
     </div>
     <div class="uk-text-center">
         <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-            <img class="uk-transition-scale-up uk-transition-opaque" src="../docs/images/dark.jpg" alt="">
+            <img class="uk-transition-scale-up uk-transition-opaque" src="images/dark.jpg" alt="">
         </div>
         <p class="uk-margin-small-top">Scale Up Image</p>
     </div>
     <div class="uk-text-center">
         <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
-            <img src="../docs/images/dark.jpg" alt="">
+            <img src="images/dark.jpg" alt="">
             <div class="uk-position-center">
                 <div class="uk-transition-slide-top-small"><h4 class="uk-margin-remove">Headline</h4></div>
                 <div class="uk-transition-slide-bottom-small"><h4 class="uk-margin-remove">Subheadline</h4></div>

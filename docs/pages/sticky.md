@@ -23,7 +23,7 @@ To create an element that remains at the top of the viewport when scrolling down
 You can position the element below the viewport edge. Add the `offset` attribute and the distance in pixels.
 
 ```html
-<div uk-sticky="offset: 100"
+<div uk-sticky="offset: 100"></div>
 ```
 
 ```example
@@ -131,7 +131,7 @@ Bind the sticky behavior to a specific element, so that it disappears after scro
 
 ## Responsive
 
-You also have the possibility of disabling the sticky behavior for different devices by applying the `media` option to the `uk-sticky` attribute and adding the appropriate viewport width. The element will be sticky from the specified viewport width and upwards, but not below.
+It's possible to disable the sticky behavior for different devices widths by applying the `media` option to the attribute and adding the appropriate viewport width. Add a number in pixel, for example `media: 640`, or a breakpoint, for example `media: @m`. The element will be sticky from the specified viewport width and upwards, but not below.
 
 ```html
 <div uk-sticky="media: 640"></div>
@@ -153,8 +153,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `cls-inactive`  | String                                | `''`        | The inactive class.                                                                                           |
 | `width-element` | CSS selector                          | `false`     | The element the Sticky should get its width from in active mode.                                              |
 | `show-on-up`    | Boolean                               | `false`     | Only show sticky element when scrolling up.                                                                   |
-| `media `        | Integer, String                       | `false`     | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)).       |
-| `target `       | Boolean                               | `false`     | Initially make sure that the Sticky is not over a targeted element via location hash.                         |
+| `media `        | Integer, String                       | `false`     | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
+| `target-offset `| Boolean, Number                       | `false`     | Initially make sure that the Sticky is not over a targeted element via location hash.                         |
 
 ***
 

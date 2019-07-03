@@ -178,9 +178,9 @@ Add the `.uk-table-hover` class to display a hover state on table rows.
 
 ***
 
-## Small modifier
+## Size modifiers
 
-Add the `.uk-table-small` class to make table cells more compact.
+Add the `.uk-table-small` or `.uk-table-large` class to a table to make it smaller or larger.
 
 ```html
 <table class="uk-table uk-table-small">...</table>

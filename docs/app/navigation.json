@@ -20,7 +20,6 @@
         "Container": "container",
         "Flex": "flex",
         "Grid": "grid",
-        "Grid Parallax": "grid-parallax",
         "Section": "section",
         "Tab": "tab"
         
@@ -73,9 +72,12 @@
         "Divider": "divider",
         "Drop": "drop",
         "Dropdown": "dropdown",
+        "Filter": "filter",
         "Heading": "heading",
         "Icon": "icon",
+        "Image": "image",
         "Label": "label",
+        "Leader": "leader",
         "Link": "link",
         "Marker": "marker",
         "Notification": "notification",
@@ -84,9 +86,11 @@
         "Progress": "progress",
         "Search": "search",
         "Spinner": "spinner",
+        "SVG": "svg",
         "Toggle": "toggle",
         "Tooltip": "tooltip",
-        "Upload": "upload"
+        "Upload": "upload",
+        "Video": "video"
         
     },
     
@@ -97,6 +101,7 @@
         "Background": "background",
         "Base": "base",
         "Cover": "cover",
+        "Height": "height",
         "Inverse": "inverse",
         "Margin": "margin",
         "Padding": "padding",

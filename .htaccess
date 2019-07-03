@@ -1,3 +1,6 @@
+AddType  font/woff  .woff
+AddType  font/woff2  .woff2
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
@@ -17,58 +20,63 @@
 <IfModule mod_expires.c>
 
     ExpiresActive on
-    ExpiresDefault                                      "access plus 1 week"
+
+  # Plain Text
+
+    ExpiresByType text/plain                            "access plus 1 year"
 
   # CSS
 
-    ExpiresByType text/css                              "access plus 1 week"
+    ExpiresByType text/css                              "access plus 1 year"
 
   # Favicon (cannot be renamed!) and cursor images
 
     ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
     ExpiresByType image/x-icon                          "access plus 1 week"
 
-  # HTML
-
-    ExpiresByType text/html                             "access plus 0 seconds"
-
   # JavaScript
 
-    ExpiresByType application/javascript                "access plus 1 week"
-    ExpiresByType application/x-javascript              "access plus 1 week"
-    ExpiresByType text/javascript                       "access plus 1 week"
+    ExpiresByType application/javascript                "access plus 1 year"
+    ExpiresByType application/x-javascript              "access plus 1 year"
+    ExpiresByType text/javascript                       "access plus 1 year"
 
   # Media files
 
-    ExpiresByType audio/ogg                             "access plus 1 month"
-    ExpiresByType image/bmp                             "access plus 1 month"
-    ExpiresByType image/gif                             "access plus 1 month"
-    ExpiresByType image/jpeg                            "access plus 1 month"
-    ExpiresByType image/png                             "access plus 1 month"
-    ExpiresByType image/svg+xml                         "access plus 1 month"
-    ExpiresByType image/webp                            "access plus 1 month"
-    ExpiresByType video/mp4                             "access plus 1 month"
-    ExpiresByType video/ogg                             "access plus 1 month"
-    ExpiresByType video/webm                            "access plus 1 month"
+    ExpiresByType audio/ogg                             "access plus 3 month"
+    ExpiresByType image/bmp                             "access plus 3 month"
+    ExpiresByType image/gif                             "access plus 3 month"
+    ExpiresByType image/jpeg                            "access plus 3 month"
+    ExpiresByType image/png                             "access plus 3 month"
+    ExpiresByType image/svg+xml                         "access plus 3 month"
+    ExpiresByType image/webp                            "access plus 3 month"
+    ExpiresByType video/mp4                             "access plus 3 month"
+    ExpiresByType video/ogg                             "access plus 3 month"
+    ExpiresByType video/webm                            "access plus 3 month"
 
   # Web fonts
 
     # Embedded OpenType (EOT)
-    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
-    ExpiresByType font/eot                              "access plus 1 month"
+    ExpiresByType application/vnd.ms-fontobject         "access plus 3 month"
+    ExpiresByType font/eot                              "access plus 3 month"
 
     # OpenType
-    ExpiresByType font/opentype                         "access plus 1 month"
+    ExpiresByType font/opentype                         "access plus 3 month"
 
     # TrueType
-    ExpiresByType application/x-font-ttf                "access plus 1 month"
+    ExpiresByType application/x-font-ttf                "access plus 3 month"
 
     # Web Open Font Format (WOFF) 1.0
-    ExpiresByType application/font-woff                 "access plus 1 month"
-    ExpiresByType application/x-font-woff               "access plus 1 month"
-    ExpiresByType font/woff                             "access plus 1 month"
+    ExpiresByType font/woff                             "access plus 3 month"
 
     # Web Open Font Format (WOFF) 2.0
-    ExpiresByType application/font-woff2                "access plus 1 month"
+    ExpiresByType font/woff2                            "access plus 3 month"
 
 </IfModule>
+
+<FilesMatch "package\.json$">
+    Header set Cache-Control "public, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "\.html$">
+    Header set Cache-Control "public, must-revalidate"
+</FilesMatch>

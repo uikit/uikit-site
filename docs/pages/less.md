@@ -24,7 +24,7 @@ To include UIkit in your project's build workflow, you need to import the core U
 
 ### Use included build process
 
-If you are want to change the styling of UIkit, you can use its build process to create a differently themed version of the CSS, that you can then include in your project. That way you do not need to set up your own build process.
+If you want to change the styling of UIkit, you can use its build process to create a differently themed version of the CSS, that you can then include in your project. That way you do not need to set up your own build process.
 
 To include your own Less theme in the build process, create a `/custom` directory, which will contain all of your custom themes.
 
@@ -40,17 +40,17 @@ Create a file `/custom/my-theme.less` (or any other name) and import the core UI
 // See "how to create a theme" below for more info.
 ```
 
-To compile UIkit and your custom theme into CSS, run the npm task `compile` .
+To compile UIkit and your custom theme into CSS, run the yarn task `compile` .
 
 ```sh
 # Run once to install all dependencies
-npm install
+yarn install
 
 # Compile all source files including your theme
-npm run compile
+yarn compile
 
 # Watch files and compile automatically everytime a file changes
-npm run watch
+yarn watch
 ```
 
 The generated CSS files will be located in the `/dist/css` folder.
@@ -191,11 +191,11 @@ The entry point for the Less compiler, `/custom/my-theme.less`:
 
 Your theme folder has one file which imports all single component customizations, `custom/my-theme/_import.less`:
 
-```
+```less
 @import "accordion.less";
 @import "alert.less";
 // ...
 ```
 
 
-**Note** With this setup you can remove the import statements of components you do not use. This will produce smaller CSS. Just make sure to preserve the correct import order as listet in [src/less/components/\_import.less](https://github.com/uikit/uikit/blob/develop/src/less/components/_import.less).
+**Note** With this setup you can remove the import statements of components you do not use. This will produce smaller CSS. Just make sure to preserve the correct import order as listed in [src/less/components/\_import.less](https://github.com/uikit/uikit/blob/develop/src/less/components/_import.less).

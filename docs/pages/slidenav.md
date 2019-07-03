@@ -74,17 +74,17 @@ Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md)
 **Note** You can also apply the [Visibility component](visibility.md#show-on-hover), so that the slidenav only appears on hover.
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
     <ul class="uk-slideshow-items">
         <li>
-            <img src="../docs/images/photo.jpg" alt="" uk-cover>
+            <img src="images/photo.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../docs/images/dark.jpg" alt="" uk-cover>
+            <img src="images/dark.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../docs/images/light.jpg" alt="" uk-cover>
+            <img src="images/light.jpg" alt="" uk-cover>
         </li>
     </ul>
 

@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:9
+      - image: node:10
     working_directory: ~/uikit-site
     steps:
       - run:
@@ -23,18 +23,19 @@ jobs:
       - run:
           name: Compile
           command: |
-            mkdir css
-            yarn run compile
+            yarn compile
       - run:
           name: Replace Build Number
           command: |
-            sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" index.html
+            sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" app/main.min.js
+            sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/app/main.min.js
             sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" docs/index.html
+            sed -i -- "s/{{BUILD}}/$CIRCLE_BUILD_NUM/g" index.html
       - run:
           name: Transfer Files
           command: |
             if [ "${CIRCLE_BRANCH}" = "master" ];then
-              rsync -avze "ssh -o StrictHostKeyChecking=no" --exclude-from ".circleci/exclude.txt" --copy-links --delete . $UIKIT_SERVER
+              rsync -avze "ssh -o StrictHostKeyChecking=no" --exclude-from ".circleci/exclude.txt" --copy-links --checksum --delete . $UIKIT_SERVER
             else
               echo "Skipping deploy on branch ${CIRCLE_BRANCH}";
             fi

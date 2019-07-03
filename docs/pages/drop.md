@@ -218,7 +218,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option           | Value           | Default        | Description                                                                                        |
 |:-----------------|:----------------|:---------------|:---------------------------------------------------------------------------------------------------|
-| `toggle`         | String, Boolean | `true`         | CSS selector for the element to be used as the toggler. By default, the preceding element is used. |
+| `toggle`         | String, Boolean | `- *`          | CSS selector for the element to be used as toggle. By default, the preceding element is used. |
 | `pos`            | String          | `bottom-left`  | The position of the drop.                                                                          |
 | `mode`           | String          | `click, hover` | Comma separated list of drop trigger behaviour modes: `hover`, `click`                             |
 | `delay-show`     | Number          | `0`            | Delay time in milliseconds before a drop is displayed in hover mode.                               |
@@ -228,7 +228,13 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `flip`           | Boolean, String | `true`         | Automatically flip the drop. Possible values are `false`, `true`, `x` or `y`.                      |
 | `offset`         | Number          | `0`            | The offset of the drop's container.                                                                |
 | `animation`      | String          | `false`        | Space separated names of animations to apply.                                                      |
-| `duration`       | Number          | `200`          | Animation duration in milliseconds.                                                                |                 |
+| `duration`       | Number          | `200`          | Animation duration in milliseconds.                                                                |
+
+`pos` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+
+```html
+<span uk-drop="top-left"></span>
+```
 
 ***
 

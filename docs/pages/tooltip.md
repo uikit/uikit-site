@@ -4,14 +4,20 @@
 
 ## Usage
 
-To apply this component, add the `uk-tooltip` attribute to an element. You also need to add a _title_ attribute, whose value will represent your tooltip's text.
+To apply this component, add the `uk-tooltip` attribute to an element. You also need to add the `title: TEXT` option to the attribute, whose value will represent your tooltip's text.
 
 ```html
-<div title="" uk-tooltip></div>
+<div uk-tooltip="title: Hello World"></div>
+```
+
+If `title` is the only option in the attribute value, you can also use `uk-tooltip="TEXT"`
+
+```html
+<div uk-tooltip="Hello World"></div>
 ```
 
 ```example
-<button class="uk-button uk-button-default" title="Hello World" uk-tooltip>Hover</button>
+<button class="uk-button uk-button-default" uk-tooltip="Hello World">Hover</button>
 ```
 
 ***
@@ -21,7 +27,7 @@ To apply this component, add the `uk-tooltip` attribute to an element. You also 
 Add one of the following options to the `uk-tooltip` attribute to adjust the tooltip's alignment.
 
 ```html
-<button title="" uk-tooltip="pos: top-left"></button>
+<button uk-tooltip="title: Hello World; pos: top-left"></button>
 ```
 
 | Attribute           | Description                             |
@@ -37,14 +43,14 @@ Add one of the following options to the `uk-tooltip` attribute to adjust the too
 
 ```example
 <p uk-margin>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip>Top</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: top-left">Top Left</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: top-right">Top Right</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: bottom">Bottom</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: bottom-left">Bottom Left</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: bottom-right">Bottom Right</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: left">Left</button>
-    <button class="uk-button uk-button-default" title="Hello World" uk-tooltip="pos: right">Right</button>
+    <button class="uk-button uk-button-default" uk-tooltip="Hello World">Top</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: top-left">Top Left</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: top-right">Top Right</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom">Bottom</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom-left">Bottom Left</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom-right">Bottom Right</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: left">Left</button>
+    <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: right">Right</button>
 </p>
 ```
 
@@ -55,11 +61,11 @@ Add one of the following options to the `uk-tooltip` attribute to adjust the too
 If you want the tooltip to appear with a little delay, just add the `delay` option to the `uk-tooltip` attribute with your value in milliseconds.
 
 ```html
-<div title="" uk-tooltip="delay: 500"></div>
+<div uk-tooltip="title: Hello World; delay: 500"></div>
 ```
 
 ```example
-<button class="uk-button uk-button-default" title="Hello World" uk-tooltip="delay: 500">Hover</button>
+<button class="uk-button uk-button-default" uk-tooltip="title: Hello World; delay: 500">Hover</button>
 ```
 
 ***
@@ -70,12 +76,19 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option      | Value  | Default                 | Description                                                                       |
 |:------------|:-------|:------------------------|:----------------------------------------------------------------------------------|
+| `title`     | String | ``                      | Tooltip text.                                                                 |
 | `pos`       | String | `top`                   | Tooltip position.                                                                 |
-| `offset`    | Number | `false`                 | The offset of the Tooltip.                                                        |
+| `offset`    | Number | `false`                 | Tooltip offset.                                                        |
 | `animation` | String | `uk-animation-scale-up` | The space separated names of animations to use. Comma separate for animation out. |
 | `duration`  | Number | `100`                   | The animation duration.                                                           |
 | `delay`     | Number | `0`                     | The show delay.                                                                   |
 | `cls`       | String | `uk-active`             | The active class.                                                                 |
+
+`title` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+
+```html
+<span uk-tooltip="Hello World"></span>
+```
 
 ***
 
@@ -91,7 +104,7 @@ UIkit.tooltip(element, options);
 
 ### Events
 
-The following events will be triggered on elements with this component attached:
+The following events will be triggered on elements, which are injected by this component:
 
 | Name         | Description                                                              |
 |:-------------|:-------------------------------------------------------------------------|
@@ -101,6 +114,14 @@ The following events will be triggered on elements with this component attached:
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
 | `hide`       | Fires after an item's hide animation has started.                        |
 | `hidden`     | Fires after an item is hidden.                                           |
+
+#### Example
+
+```javascript
+UIkit.util.on(document, 'show', '.uk-tooltip.uk-active', function() {
+  // do something
+});
+```
 
 ### Methods
 

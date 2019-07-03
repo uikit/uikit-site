@@ -81,6 +81,12 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `duration`  | Number          | `150`             | Animation duration in milliseconds.                      |
 | `sel-close` | CSS selector    | `.uk-alert-close` | The close trigger element.                               |
 
+`animation` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+
+```html
+<span uk-toggle=".my-class"></span>
+```
+
 ***
 
 ## JavaScript

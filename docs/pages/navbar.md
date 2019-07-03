@@ -153,7 +153,7 @@ When using an image or colored background for the hero section of your website, 
 
 ```example
 <div class="uk-position-relative">
-    <img src="../docs/images/light.jpg" alt="">
+    <img src="images/light.jpg" alt="">
     <div class="uk-position-top">
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
             <div class="uk-navbar-left">
@@ -781,6 +781,8 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
 ### Push
 
 By default, the dropbar overlays the site content. Add the `dropbar-mode: push;` option, to push the content down instead.
+
+**Note** The push mode does not work well if the navbar is contained within a sticky component.
 
 ```html
 <nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push">...</nav>

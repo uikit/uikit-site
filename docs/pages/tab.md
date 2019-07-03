@@ -10,13 +10,13 @@ The tab component consists of clickable tabs, that are aligned side by side in a
 |:----------------|:---------------------------------------------------------------------------------------------------------------------|
 | `uk-tab`        | Add this attribute to a `<ul>` element to define the Tab component. Use `<a>` elements as tab items within the list. |
 | `.uk-active `   | Add this class to a list item to apply an active state.                                                              |
-| `.uk-disabled ` | Add this class to a list item to apply a disabled state.                                                             |
+| `.uk-disabled ` | Add this class to a list item to apply a disabled state. Also remove the `href` attribute from the anchor to make it inaccessible through keyboard navigation. |
 
 ```html
 <ul uk-tab>
     <li class="uk-active"><a href=""></a></li>
     <li><a href=""></a></li>
-    <li class="uk-disabled"><a href=""></a></li>
+    <li class="uk-disabled"><a></a></li>
 </ul>
 ```
 
@@ -25,7 +25,7 @@ The tab component consists of clickable tabs, that are aligned side by side in a
     <li class="uk-active"><a href="#">Left</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
-    <li class="uk-disabled"><a href="#">Disabled</a></li>
+    <li class="uk-disabled"><a>Disabled</a></li>
 </ul>
 ```
 
@@ -51,7 +51,7 @@ Add the `.uk-tab-bottom` class to flip tab items to the bottom.
 
 ## Left/Right modifiers
 
-Add the `.uk-tab-left` or `.uk-tab-right` class to align tabs vertically to the left or right side. To save space, the alignment automatically switches back to horizontal when the viewport width goes below 960px. Add the `media` option with your own value to the `uk-tab` attribute to modify this behavior.
+Add the `.uk-tab-left` or `.uk-tab-right` class to align tabs vertically to the left or right side. To save space, the alignment automatically switches back to horizontal when the viewport width goes below 960px.
 
 When using the vertical alignment, you will usually create a grid to apply the layout as seen in the [Switcher example](switcher.md#vertical-tabs).
 
@@ -79,6 +79,16 @@ When using the vertical alignment, you will usually create a grid to apply the l
         </ul>
     </div>
 </div>
+```
+
+***
+
+### Responsive
+
+To change the default breakpoint between the vertical and horizontal alignment, just apply the `media` option to the attribute with the appropriate viewport width. Add a number in pixel, for example `media: 640`, or a breakpoint, for example `media: @m`.
+
+```html
+<ul class="uk-tab-left" uk-tab="media: @s">...</ul>
 ```
 
 ***

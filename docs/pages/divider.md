@@ -25,3 +25,13 @@ Add the `.uk-divider-small` class to a `<hr>` or `<div>` element to create a sma
 ```example
 <hr class="uk-divider-small">
 ```
+
+***
+
+## Divider vertical
+
+Add the `.uk-divider-vertical` class to a `<hr>` or `<div>` element to create a vertical divider.
+
+```example
+<hr class="uk-divider-vertical">
+```

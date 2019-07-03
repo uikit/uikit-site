@@ -2,14 +2,14 @@
 
     <div class="uk-section-primary tm-section-texture">
 
-        <navbar class="uk-navbar-transparent"></navbar>
+        <navbar class="uk-navbar-transparent"/>
 
         <div class="uk-section uk-flex uk-flex-middle uk-text-center" uk-height-viewport="offset-top: true">
             <div class="uk-width-1-1">
                 <div class="uk-container">
 
                     <p class="uk-margin-large-bottom">
-                        <img :src="'./images/download.svg'">
+                        <canvas style="color: #fff" width="142" height="117" uk-svg src="./images/download.svg"></canvas>
                     </p>
 
                     <h1>Thanks for giving UIkit a try.</h1>
@@ -41,17 +41,17 @@
 
 <script>
 
-    var {ajax} = UIkit.util;
+    import {ajax} from 'uikit-util';
 
     export default {
 
         mounted() {
 
-            ajax(`assets/uikit/package.json?nc=${Math.random()}`, {responseType: 'json'}).then(({response}) =>
+            ajax('assets/uikit/package.json', {responseType: 'json'}).then(({response}) =>
                 setTimeout(() => location.href = `https://github.com/uikit/uikit/releases/download/v${response.version}/uikit-${response.version}.zip`, 100)
             );
 
         }
-    }
+    };
 
 </script>

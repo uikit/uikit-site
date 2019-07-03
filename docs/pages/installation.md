@@ -7,7 +7,7 @@
 You have the following options to get UIkit:
 
 - Download the [latest release](https://github.com/uikit/uikit/releases/latest) with pre-built JavaScript and CSS.
-- Install with [Npm](https://www.npmjs.com/package/uikit) to get the pre-built JavaScript, CSS and the Less source files. This is recommended when using UIkit for a typical web project: ```npm install uikit```
+- Install with [Yarn](https://yarnpkg.com/en/package/uikit) to get the pre-built JavaScript, CSS and the Less source files. This is recommended when using UIkit for a typical web project: ```yarn add uikit```
 - Clone the repo to get all source files including build scripts: `git clone git://github.com/uikit/uikit.git`
 
 The compiled files of all UIkit versions are also hosted on the Cloudflare content delivery network via [cdnjs.com](https://cdnjs.com/libraries/uikit).
@@ -43,13 +43,13 @@ To compile UIkit yourself, you can use the included build scripts.
 
 ```sh
 # Run once to install all dependencies
-npm install
+yarn
 
 # Compile all source files
-npm run compile
+yarn compile
 
 # Watch files and compile automatically everytime a file changes
-npm run watch
+yarn watch
 ```
 
 **Note** Use Node.js version 8.2.0 or higher.
@@ -95,11 +95,11 @@ To use UIkit's CSS and JavaScript, [include the files](introduction.md#html-mark
 To compile UIkit automatically everytime you change the LESS or JavaScript, you can use the included build scripts.
 
 ```sh
-npm run watch
+yarn watch
 ```
 
 <script>
-    UIkit.util.ajax('https://getuikit.com/assets/uikit/package.json?nc=' + Math.random(), {responseType: 'json'}).then(function (xhr) {
+    UIkit.util.ajax('https://getuikit.com/assets/uikit/package.json', {responseType: 'json'}).then(function (xhr) {
             UIkit.util.$$('pre').forEach(function (pre) {
                 pre.innerHTML = pre.innerHTML.replace(/\[uikit-version]/g, xhr.response.version);
             });

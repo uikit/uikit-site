@@ -16,7 +16,7 @@ To have an image cover its parent element, add the `.uk-cover-container` class t
 
 ```example
 <div class="uk-cover-container uk-height-medium">
-    <img src="../docs/images/dark.jpg" alt="" uk-cover>
+    <img src="images/dark.jpg" alt="" uk-cover>
 </div>
 ```
 
@@ -26,7 +26,7 @@ To have an image cover its parent element, add the `.uk-cover-container` class t
 
 To create a video that covers its parent container, add the `uk-cover` attribute to a video. Wrap a container element around the video and add the `.uk-cover-container` class to clip the content.
 
-The Cover component inherits all properties from the [Video component](utility.md#video) which means videos are muted and play automatically. The video will pause whenever it's not visible and resume once it becomes visible again.
+The Cover component inherits all properties from the [Video component](video.md) which means videos are muted and play automatically. The video will pause whenever it's not visible and resume once it becomes visible again.
 
 ```html
 <div class="uk-cover-container">
@@ -36,10 +36,7 @@ The Cover component inherits all properties from the [Video component](utility.m
 
 ```example
 <div class="uk-cover-container uk-height-medium">
-    <video autoplay loop muted playsinline uk-cover>
-        <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-        <source src="//www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
-    </video>
+    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" autoplay loop muted playsinline uk-cover></video>
 </div>
 ```
 
@@ -57,7 +54,7 @@ To apply the Cover component to an iframe, you need to add the `uk-cover` attrib
 
 ```example
 <div class="uk-cover-container uk-height-medium">
-    <iframe src="//www.youtube.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="560" height="315" frameborder="0" allowfullscreen uk-cover></iframe>
+    <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="1920" height="1080" frameborder="0" allowfullscreen uk-cover></iframe>
 </div>
 ```
 
@@ -77,7 +74,7 @@ To add responsive behavior to your cover image, you need to create an invisible 
 ```example
 <div class="uk-cover-container">
     <canvas width="400" height="200"></canvas>
-    <img src="../docs/images/dark.jpg" alt="" uk-cover>
+    <img src="images/dark.jpg" alt="" uk-cover>
 </div>
 ```
 
@@ -85,7 +82,7 @@ To add responsive behavior to your cover image, you need to create an invisible 
 
 ## Viewport height
 
-Adding the `uk-height-viewport` attribute from the [Utility component](utility.md) will stretch the height of the parent element to fill the whole viewport.
+Adding the `uk-height-viewport` attribute from the [Height component](height.md#viewport-height) will stretch the height of the parent element to fill the whole viewport.
 
 ```html
 <div class="uk-cover-container" uk-height-viewport>

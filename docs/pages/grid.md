@@ -2,15 +2,15 @@
 
 <p class="uk-text-lead">Create a fully responsive, fluid and nestable grid layout.</p>
 
-The Grid system of UIkit allows you to arrange block elements in columns and works closely together with the [Width component](width.md) to determine how much space of the container each item will take up. It can also be combined with the [Flex component](flex.md) to align and order grid items.
+The Grid system of UIkit allows you to arrange block elements in columns. It works closely together with the [Width component](width.md) to determine how much space of the container each item will take up, and it can also be combined with the [Flex component](flex.md) to align and order grid items.
 
 ***
 
 ## Usage
 
-To create the grid container, add the `uk-grid` attribute to a `<div>` element. Add child `<div>` elements to create the cells. By default, all grid cells are stacked. To place them side by side, add one of the classes from the [Width component](width.md). Using `uk-child-width-expand` will automatically apply equal width to items, regardless of how many there are.
+To create the grid container, add the `uk-grid` attribute to a `<div>` element. Add child `<div>` elements to create the cells. By default, all grid cells are stacked. To place them side by side, add one of the classes from the [Width component](width.md). Using `.uk-child-width-expand` will automatically apply equal width to items, regardless of how many there are.
 
-**Note** There's no need to add a `uk-grid` class, as it will get added via JavaScript. However, if UIkit's JavaScript is [deferred](https://developer.mozilla.org/de/docs/Web/HTML/Element/script#attr-defer), the class should be added to prevent stacking while loading.
+**Note** There's no need to add a `.uk-grid` class as it will be added via JavaScript. However, if UIkit's JavaScript is [deferred](https://developer.mozilla.org/docs/Web/HTML/Element/script#attr-defer), the class should be added to prevent stacking while loading.
 
 ```html
 <div uk-grid>
@@ -18,7 +18,7 @@ To create the grid container, add the `uk-grid` attribute to a `<div>` element. 
     <div></div>
 </div>
 ```
-**Note** Often cards from the [Card component](card.md) are used inside a grid. In the following examples too for visualization.
+**Note** Often cards from the [Card component](card.md) are used inside a grid. This also goes for the following examples for visualization.
 
 ```example
 <div class="uk-child-width-expand@s uk-text-center" uk-grid>
@@ -38,7 +38,7 @@ To create the grid container, add the `uk-grid` attribute to a `<div>` element. 
 
 ## Gutter modifiers
 
-The Grid component comes with a default gutter, that is decreased automatically from a certain breakpoint, usually on a smaller desktop viewport width. To apply a different gutter, add one of the following classes.
+The Grid component comes with a default gutter that is decreased automatically from a certain breakpoint usually on a smaller desktop viewport width. To apply a different gutter, add one of the following classes.
 
 | Class               | Description                                                                             |
 |:--------------------|:----------------------------------------------------------------------------------------|
@@ -224,9 +224,9 @@ You can also match the height of the direct child of just one cell. To do so, ad
 
 ***
 
-### JavaScript
+### Targets
 
-For a more specific selection of the elements whose heights should be matched, add the `target: SELECTOR` option to the `uk-height-match` attribute from the [Utility component](utility.md).
+For a more specific selection of the elements whose heights should be matched, add the `target: SELECTOR` option to the `uk-height-match` attribute from the [Height component](height.md#match-height).
 
 ```html
 <div uk-grid uk-height-match="target: > div > .uk-card">
@@ -285,7 +285,7 @@ The grid is mostly used in combination with the [Width component](width.md). Thi
 
 ### Child width
 
-If the grid columns are evenly split, you can add one of the `.uk-child-width-*` classes to the grid container, instead of adding a class to each of the items.
+If the grid columns are evenly split, you can add one of the `.uk-child-width-*` classes to the grid container instead of adding a class to each of the items.
 
 ```html
 <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>...</div>
@@ -345,14 +345,143 @@ You can easily combine the grid with the [Flex component](flex.md). That way you
 
 ***
 
+## Masonry
+
+If grid cells have different heights, a layout free of gaps can be created by adding `masonry: true` to the attribute.
+
+```html
+<div uk-grid="masonry: true">...</div>
+```
+
+```example
+<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 100px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 130px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 150px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 160px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 120px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 180px">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item</div>
+    </div>
+</div>
+```
+
+**Note** You can view more examples in the tests for the [Grid Masonry](../assets/uikit/tests/grid-masonry.html).
+
+***
+
+## Filter and order
+
+Grid items can also be filtered and sorted by category, date or other meta data. Take a look at the [Filter component](filter.md).
+
+***
+
+## Parallax
+
+To move single columns of a grid at different speeds while scrolling, just add `parallax: NUMBER` to the attribute. The number sets the parallax translation in pixels.
+
+```html
+<div uk-grid="parallax: 150">...</div>
+```
+
+This effect can be applied to two types of markup. The following example uses three defined columns with three items each.
+
+```example
+<div class="uk-child-width-expand@s uk-text-center" uk-grid="parallax: 150">
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+    </div>
+</div>
+```
+
+The parallax effect is also applied if grid columns wrap into the next row, as shown in the next example.
+
+```example
+<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="parallax: 150">
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">Item</div>
+    </div>
+</div>
+```
+
+**Note** You can view more examples in the [Grid Parallax](../assets/uikit/tests/grid-parallax.html) tests.
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option         | Value  | Default         | Description                                                                                                |
-|:---------------|:-------|:----------------|:-----------------------------------------------------------------------------------------------------------|
-| `margin `      | String | uk-grid-margin  | This class is added to items that break into the next row, typically to create margin to the previous row. |
-| `first-column` | String | uk-first-column | This class is added to the first element in each row.                                                      |
+| Option         | Value   | Default         | Description                                                                                                     |
+|:---------------|:--------|:----------------|:----------------------------------------------------------------------------------------------------------------|
+| `margin `      | String  | uk-grid-margin  | This class is added to items that break into the next row, typically to create margin to the previous row.      |
+| `first-column` | String  | uk-first-column | This class is added to the first element in each row.                                                           |
+| `masonry`      | Boolean | false           | Enables masonry layout for this grid.                                                                           |
+| `parallax`     | Number  | 0               | Parallax translation value. The value must be a positive integer. Falsy disables the parallax effect (default). |
 
 ***
 

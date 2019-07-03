@@ -1,12 +1,35 @@
-# Migrate to UIkit 3
+# Migration
 
-<p class="uk-text-lead">Migrate an existing UIkit 2 website to the new UIkit 3.</p>
-
-Uikit 3 offers a migration tool that runs in your browser and lists all necessary changes from an existing Uikit 2 site. Two options are available to run the tool: Via a bookmark or by including a single JavaScript file. The necessary migration changes are then listed in your browser's console.
+<p class="uk-text-lead">Migrate an existing UIkit website to the latest version.</p>
 
 ***
 
-## Browser bookmark
+## Migration from UIkit 3.x
+
+In UIkit 3.1 a Less variable `@deprecated` was added. By default, it is set to `false`, and deprecated classes are not compiled into the CSS. 
+
+If you want to update your markup later and use the deprecated classes along the new ones, set the variable to `true` in your custom UIkit theme.
+
+```
+@deprecated: true;
+```
+
+### Heading Component
+
+In UIkit 3.1 the Primary and Hero classes in the [Heading component](heading#size-modifiers) were deprecated. Update your markup by replacing the following classes.
+
+| Deprecated           | Replace with        |
+|----------------------|---------------------|
+| `uk-heading-primary` | `uk-heading-medium` |
+| `uk-heading-hero`    | `uk-heading-xlarge` |
+
+***
+
+## Migration from UIkit 2.x
+
+Uikit 3 offers a migration tool that runs in your browser and lists all necessary changes from an existing Uikit 2 site. Two options are available to run the tool: Via a bookmark or by including a single JavaScript file. The necessary migration changes are then listed in your browser's console.
+
+### Browser bookmark
 
 The easiest way to use the migration tool is via a bookmark in your browser. You can then run the script on any page that you navigate to by simply clicking the bookmark. Just drag the following link into your browser's bookmark section.
 
@@ -22,9 +45,7 @@ javascript: (function () {
 }());
 ```
 
-***
-
-## HTML integration
+### HTML integration
 
 You can also run the migration tool by loading the needed JavaScript on your website. This way the migration script will always be loaded on your website. Remember to remove this when you have completed the migration. Add the following line just before the closing `</body>` tag.
 
@@ -32,13 +53,11 @@ You can also run the migration tool by loading the needed JavaScript on your web
 <script src="https://getuikit.com/migrate.min.js"></script>
 ```
 
-***
-
-## Usage
+### Usage
 
 To start the migration, replace the UIkit 2 files of your website with their UIkit 3 equivalents (both JS and CSS) and run the migration tool using one of the solutions listed above. To learn how to change your markup, open the developer console of your browser. Your see a list of warnings and notices that tell you what to change. You can click the arrows next to any message to see more details about the necessary changes.
 
-![Console output](../docs/images/migration-console.gif)
+![Console output](images/migration-console.gif)
 
 Every notice or warning message tells you what to change, including a list of all affected HTML elements. More complex changes are explained with examples that are easy to follow. The best way to migrate is to fix one component after another. That way you can see if the error messages are gone after a reload and also see the changes on your site.
 

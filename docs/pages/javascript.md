@@ -59,13 +59,19 @@ in valid JSON format,
 <div uk-sticky='{"offset": 50, "top": 100}'></div>
 ```
 
-or with single attributes.
+with single attributes,
 
 ```html
 <div uk-sticky offset="50" top="100"></div>
 ```
 
-If an option is marked as `Primary`, its key may be omitted, only if it is the only custom value. Please see the component's individual options table to the find the `Primary` option.
+or as single attributes prefixed with `data-`.
+
+```html
+<div uk-sticky data-offset="50" data-top="100"></div>
+```
+
+For _Primary_ options, its key may be omitted, if it's the only option in the attribute value. Please take a look at the specific component documentation to find which option is the _Primary_ option.
 
 ```html
 <span uk-icon="home"></span>
@@ -96,11 +102,15 @@ Options passed via the component attribute will have the highest precedence, fol
 
 ### Globally
 
-Component options can be changed globally by setting the component's `defaults` property.
+Component options can be changed globally by extending a component.
 
 ```js
-UIkit.components.sticky.options.defaults.offset = 50;
-UIkit.components.sticky.options.defaults.top = 100;
+UIkit.mixin({
+    data: {
+        offset: 50,
+        top: 100
+    }
+}, 'sticky');
 ```
 
 ***
@@ -123,7 +133,7 @@ var notifications = UIkit.notification('MyMessage', 'danger');
 **Note**
 The options names must be in their camel cased representation, e.g. `show-on-up` becomes `showOnUp`.
 
-After initialisation you can get your component by calling the same initialisation function, ommiting the options parameter.
+After initialisation you can get your component by calling the same initialisation function, omitting the options parameter.
 
 ```javscript
 // Sticky is now the prior initialised components
@@ -131,8 +141,8 @@ var sticky = UIkit.sticky('.sticky');
 ```
 
 **Note**
-Using `UIkit[componentName]('selector')` with css selectors will always return the the first occurance only!
-If you need access to multiple instances of your components use the `UIkit.util.$` and `UIkit.util.$$` helper functions (or your prefered method of retireving DOM elements) to find the specific elements first, and then get your components by using that element as the first parameter in the component function, e.g. `UIKit.modal(myElementWithAModal);`
+Using `UIkit[componentName](selector)` with css selectors will always return the first occurrence only!
+If you need to access all instances do [query](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) the elements first. Then apply the getter to each element separately - `UIkit[componentName](element)`.
 
 
 Initializing your components programmatically gives you the possibility to invoke their functions directly.
@@ -155,20 +165,15 @@ The component's documentation page lists its events.
 
 Sometimes, components like Grid or Tab are hidden in the markup. This may happen when used in combination with the Switcher, Modal or Dropdown. Once they become visible, they need to adjust or fix their height and other dimensions.
 
-UIkit offers several ways of updating a component. Omitting the `event` parameter will trigger an `update` event.
+UIkit offers several ways of updating a component. Omitting the `type` parameter will trigger an `update` event.
 
 ```js
-// Calls the update hook on all registered instances.
-UIkit.update(event = 'update');
+// Calls the update hook on components registered on the element itself, it's parents and children.
+UIkit.update(element = document.body, type = 'update');
 
 // Updates the component itself.
-component.$emit(event = 'update');
+component.$emit(type = 'update');
 
-// Updates the component itself and components nested beneath the component.
-component.$update(event = 'update');
-
-// Updates the component itself and components attached to the component's parents.
-component.$update(event = 'update', parents = true);
 ```
 
 If you need to make sure a component is properly destroyed, for example upon removal from the DOM, you can call its `$destroy` function.
