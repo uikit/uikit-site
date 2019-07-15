@@ -8,7 +8,19 @@
 
 In UIkit 3.2 all Less variable which has `xxlarge` in their name got renamed that part to `2xlarge`. Just find and replace these Less variables if you are using a custom Less theme.
 
-### Heading Component
+### Global Less Variables
+
+Some global font size and line height variables got renamed. Just find and replace following variables in this particular order in your custom UIkit theme.
+
+| Variable                    | Replace with                  |
+| --------------------------- | ----------------------------- |
+| `@global-small-font-size `  | `@global-xsmall-font-size`    |
+| `@global-font-size`         | `@global-small-font-size`     |
+| `@global-line-height`       | `@global-small-line-height`   |
+| `@global-2xlarge-font-size` | `@global-2xlarge-font-size-m` |
+| `@global-xlarge-font-size`  | `@global-xlarge-font-size-m`  |
+
+### Heading Component Markup
 
 The heading size classes in the [Heading component](heading) are deprecated and replaced by the new [Font component](font#size-modifiers). Update your markup by replacing the following classes.
 
@@ -22,7 +34,7 @@ The heading size classes in the [Heading component](heading) are deprecated and 
 
 If you are modifying the deprecated classes through Less variables or hooks, you need to update your UIkit theme accordingly and rename those variables and hooks.
 
-### Text Component
+### Text Component Markup
 
 Some classes in the [Text component](text) are deprecated and replaced by the new [Font component](font#size-modifiers). Update your markup by replacing the following classes.
 
@@ -32,7 +44,7 @@ Some classes in the [Text component](text) are deprecated and replaced by the ne
 | `uk-text-large` | `uk-font-large`  |
 | `uk-text-bold`  | `uk-font-bold`   |
 
-### Width Component
+### Width Component Markup
 
 The `uk-width-xxlarge` class in the [Width component](text) is renamed to `uk-width-2xlarge`.
 
