@@ -24,7 +24,7 @@ Some global font size and line height variables got renamed. Just find and repla
 
 The heading size classes in the [Heading component](heading) are deprecated and replaced by the new [Font component](font#size-modifiers). Update your markup by replacing the following classes.
 
-| Deprecated           | Replace with      |
+| Class                | Replace with      |
 | -------------------- | ----------------- |
 | `uk-heading-small`   | `uk-font-3xlarge` |
 | `uk-heading-medium`  | `uk-font-4xlarge` |
@@ -38,7 +38,7 @@ If you are modifying the deprecated classes through Less variables or hooks, you
 
 Some classes in the [Text component](text) are deprecated and replaced by the new [Font component](font#size-modifiers). Update your markup by replacing the following classes.
 
-| Deprecated      | Replace with     |
+| Class           | Replace with     |
 | --------------- | ---------------- |
 | `uk-text-small` | `uk-font-xsmall` |
 | `uk-text-large` | `uk-font-large`  |
