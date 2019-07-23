@@ -590,7 +590,7 @@ util.removeClasses(element, cls);
 Replace a class.
 
 ```javascript
-removeClasses(element, ...args);
+replaceClass(element, ...args);
 ```
 
 | Parameter | Type                  | Description                                                  |
@@ -955,12 +955,12 @@ bottom right
 
 ***
 
-## inInView
+## isInView
 
 Check if an element is inside the viewport.
 
 ```javascript
-inInView(element [, topOffset, leftOffset, relativeToViewport])
+isInView(element [, topOffset, leftOffset, relativeToViewport])
 ```
 
 | Parameter            | Type                  | Description                                      |
