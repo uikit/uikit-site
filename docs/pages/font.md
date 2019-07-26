@@ -10,12 +10,10 @@ Combine this component with the [Text component](text.md) or the [Heading compon
 
 Add one of the following classes to set the font family and style of your text.
 
-| Class                | Description                                                                                     |
-| :------------------- | :---------------------------------------------------------------------------------------------- |
-| `.uk-font-default`   | Add this class to apply the default font. Typically the font for the running text.              |
-| `.uk-font-primary`   | Add this class to apply the primary font. Typically the font for headings.                      |
-| `.uk-font-secondary` | Add this class to apply the secondary font. Typically an alternative font for smaller headings. |
-| `.uk-font-tertiary`  | Add this class to apply the tertiary font. Typically a fancy font for headings.                 |
+| Class                | Description                                                                 |
+| :------------------- | :-------------------------------------------------------------------------- |
+| `.uk-font-primary`   | Add this class to apply the primary font. Usually used for lead paragraphs. |
+| `.uk-font-secondary` | Add this class to apply the secondary font. Usually used for meta text.     |
 
 **Note** You need to style these classes in your theme. By default, UIkit doesn't apply any style.
 
@@ -24,10 +22,8 @@ Add one of the following classes to set the font family and style of your text.
 ```
 
 ```example
-<div class="uk-font-default">Font Default</div>
 <div class="uk-font-primary">Font Primary</div>
 <div class="uk-font-secondary">Font Secondary</div>
-<div class="uk-font-tertiary">Font Tertiary</div>
 ```
 
 ***

@@ -2,7 +2,29 @@
 
 <p class="uk-text-lead">Define different styles for headings.</p>
 
-Combine this component with the [Text component](text.md) or the [Font component](font.md) to style your headings.
+Combine this component with the [Font component](font.md) and the [Text component](text.md) and to style your headings.
+
+***
+
+## Style modifiers
+
+Add one of the following classes to apply a different font family and style to your headings.
+
+| Class                   | Description                                    |
+| :---------------------- | :--------------------------------------------- |
+| `.uk-heading-primary`   | Add this class to apply the primary heading.   |
+| `.uk-heading-secondary` | Add this class to apply the secondary heading. |
+
+**Note** You need to style these classes in your theme. By default, UIkit doesn't apply any style.
+
+```html
+<div class="uk-heading-primary"></div>
+```
+
+```example
+<div class="uk-heading-primary">Heading Primary</div>
+<div class="uk-heading-secondary">Heading Secondary</div>
+```
 
 ***
 
