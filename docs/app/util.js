@@ -47,7 +47,16 @@ export function parse(markdown, cb) {
                 </div>`;
     };
 
-    renderer.strong = text => text === 'Note' ? `<span class="uk-label">${text}</span>` : `<strong>${text}</strong>`;
+    renderer.strong = text => {
+        switch(text) {
+            case 'Note':
+                return `<span class="uk-label">${text}</span>`;
+            case 'Danger':
+                return `<span class="uk-label uk-label-danger">${text}</span>`;
+            default:
+                return `<strong>${text}</strong>`;
+        }
+    }
     renderer.list = text => `<ul class="uk-list uk-list-bullet">${text}</ul>`;
     renderer.image = (href, title, text) => href.match(/modal$/) ? modal(href, text) : base.image(href, title, text);
     renderer.link = (href, title, text) => href.match(/\.md/) ? base.link(href.replace(/.md(.*)/, '$1'), title, text) : base.link(href, title, text);
