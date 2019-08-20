@@ -2,6 +2,15 @@
 
 <p class="uk-text-lead">Migrate an existing UIkit website to the latest version.</p>
 
+
+***
+
+## Migration from UIkit 3.1 to 3.2
+
+### Text Component
+
+Since UIkit 3.2 adds a new `uk-text-bolder` class to the [Text component](text), the class `uk-text-bold` now applies literally a `bold` font weight instead of `bolder`. The `@text-bold-font-weight` variable, which was set to `bolder`, got removed.
+
 ***
 
 ## Migration from UIkit 3.0 to 3.1
