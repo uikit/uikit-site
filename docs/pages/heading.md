@@ -22,8 +22,8 @@ Add one of the following classes to modify the size and style of headings. Usual
 <h1 class="uk-heading-small">Small</h1>
 <h1 class="uk-heading-medium">Medium</h1>
 <h1 class="uk-heading-large">Large</h1>
-<h1 class="uk-heading-xlarge">XLarge</h1>
-<h1 class="uk-heading-2xlarge">2XLarge</h1>
+<h1 class="uk-heading-xlarge">X-Large</h1>
+<h1 class="uk-heading-2xlarge">2X-Large</h1>
 ```
 
 ***

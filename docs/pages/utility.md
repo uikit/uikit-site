@@ -384,7 +384,7 @@ You can apply different box shadows to elements. Just add one of the following c
     </div>
 
     <div>
-        <div class="uk-box-shadow-xlarge uk-padding">XLarge</div>
+        <div class="uk-box-shadow-xlarge uk-padding">X-Large</div>
     </div>
 </div>
 ```
@@ -431,7 +431,7 @@ To apply a box shadow on hover, add one of the following classes. This can also 
     </div>
 
     <div>
-        <div class="uk-box-shadow-hover-xlarge uk-padding">Hover XLarge</div>
+        <div class="uk-box-shadow-hover-xlarge uk-padding">Hover X-Large</div>
     </div>
 
     <div>
@@ -439,7 +439,7 @@ To apply a box shadow on hover, add one of the following classes. This can also 
     </div>
 
     <div>
-        <div class="uk-box-shadow-xlarge uk-box-shadow-hover-medium uk-padding">XLarge + Hover Medium</div>
+        <div class="uk-box-shadow-xlarge uk-box-shadow-hover-medium uk-padding">X-Large + Hover Medium</div>
     </div>
 </div>
 ```
