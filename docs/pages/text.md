@@ -44,8 +44,8 @@ The following classes will transform text into uppercased, capitalized or lowerc
 
 | Class                 | Description                                                                                  |
 | :-------------------- | :------------------------------------------------------------------------------------------- |
-| `.uk-text-uppercase`  | <span class="uk-text-uppercase">Add this class to transform your text to uppercase.</span>   |
 | `.uk-text-capitalize` | <span class="uk-text-capitalize">Add this class to transform your text to capitalize.</span> |
+| `.uk-text-uppercase`  | <span class="uk-text-uppercase">Add this class to transform your text to uppercase.</span>   |
 | `.uk-text-lowercase`  | <span class="uk-text-lowercase">Add this class to transform your text to lowercase.</span>   |
 
 ***
