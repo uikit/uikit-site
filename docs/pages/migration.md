@@ -18,8 +18,8 @@ If you want to update your markup later and use the deprecated classes along the
 
 In UIkit 3.1 the Primary and Hero classes in the [Heading component](heading#size-modifiers) were deprecated. Update your markup by replacing the following classes.
 
-| Deprecated           | Replace with        |
-|----------------------|---------------------|
+| Class                | Replace with        |
+| -------------------- | ------------------- |
 | `uk-heading-primary` | `uk-heading-medium` |
 | `uk-heading-hero`    | `uk-heading-xlarge` |
 
