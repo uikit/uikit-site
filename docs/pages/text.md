@@ -1,6 +1,8 @@
 # Text
 
-<p class="uk-text-lead">A collection of useful text utility classes to style your content.</p>
+<p class="uk-text-lead">A collection of utility classes to style text.</p>
+
+Combine this component with the [Heading component](heading.md) to style your content.
 
 ## Style modifiers
 
@@ -27,6 +29,12 @@ The following classes will modify the font size of your text.
 ## Font weight
 
 Add the `.uk-text-bold` class to create <span class="uk-text-bold">bold text</span>.
+
+***
+
+## Font style
+
+Add the `.uk-text-italic` class to create <span class="uk-text-italic">italic text</span>.
 
 ***
 
