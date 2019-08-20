@@ -28,7 +28,15 @@ The following classes will modify the font size of your text.
 
 ## Font weight
 
-Add the `.uk-text-bold` class to create <span class="uk-text-bold">bold text</span>.
+Add one of the following classes to modify the font weight of your text.
+
+| Class              | Description                                                                         |
+| :----------------- | :---------------------------------------------------------------------------------- |
+| `.uk-text-light`   | <span class="uk-text-light">Add this class to apply a font weight of `300`.</span>  |
+| `.uk-text-normal`  | <span class="uk-text-normal">Add this class to apply a font weight of `400`.</span> |
+| `.uk-text-bold`    | <span class="uk-text-bold">Add this class to apply a font weight of `700`.</span>   |
+| `.uk-text-lighter` | <span class="uk-text-lighter">Add this class to apply a lighter font weight.</span> |
+| `.uk-text-bolder`  | <span class="uk-text-bolder">Add this class to apply a bolder font weight.</span>   |
 
 ***
 
