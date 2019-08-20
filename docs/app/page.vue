@@ -49,10 +49,8 @@
                         ajax(`pages/${page}.md?{{BUILD}}`).then(({response}) => {
 
                             if (startsWith(response.trim(), '<!DOCTYPE html>')) {
-                                response = `<div class="uk-text-center">
-                                                <h1>404</h1>
-                                                <p class="uk-text-large">Page not found!</p>
-                                            </div>`;
+                                response = `<h1>Not Found</h1>
+                                            <p class="uk-text-lead">We Couldn't Find Your Page!</p>`;
                             }
 
                             this.cache[page] = response;
