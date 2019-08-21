@@ -4,6 +4,10 @@
 
 ***
 
+## Migration from UIkit 3.1 to 3.2: XXL to 2XL
+ 
+In UIkit 3.2 all Less variable which has `xxlarge` in their name got renamed that part to `2xlarge`. Just find and replace these Less variables if you are using a custom Less theme.
+
 ## Migration from UIkit 3.0 to 3.1
 
 UIkit 3.1 adds the `@deprecated` Less variable. By default, it is set to `false`, and deprecated classes are not compiled into the CSS. 
