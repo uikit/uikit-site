@@ -36,16 +36,16 @@ To create the grid container, add the `uk-grid` attribute to a `<div>` element. 
 
 ***
 
-## Gutter modifiers
+## Gap modifiers
 
-The Grid component comes with a default gutter that is decreased automatically from a certain breakpoint usually on a smaller desktop viewport width. To apply a different gutter, add one of the following classes.
+The Grid component comes with a default gap that is decreased automatically from a certain breakpoint usually on a smaller desktop viewport width. To apply a different gap, add one of the following classes.
 
 | Class               | Description                                                                             |
 | :------------------ | :-------------------------------------------------------------------------------------- |
-| `.uk-grid-small`    | Add this class to apply a small gutter.                                                 |
-| `.uk-grid-medium`   | Add this class to apply a medium gutter like the default one, but without a breakpoint. |
-| `.uk-grid-large`    | Add this class to apply a large gutter with breakpoints.                                |
-| `.uk-grid-collapse` | Add this class to remove the grid gutter entirely.                                      |
+| `.uk-grid-small`    | Add this class to apply a small gap.                                                 |
+| `.uk-grid-medium`   | Add this class to apply a medium gap like the default one, but without a breakpoint. |
+| `.uk-grid-large`    | Add this class to apply a large gap with breakpoints.                                |
+| `.uk-grid-collapse` | Add this class to remove the grid gap entirely.                                      |
 
 ```html
 <div class="uk-grid-small" uk-grid>...</div>
@@ -105,14 +105,14 @@ The Grid component comes with a default gutter that is decreased automatically f
 
 ### Column and Row
 
-To apply a different gutter to just the column or row, add one of the following classes.
+To apply a different gap to just the column or row, add one of the following classes.
 
 | Class                                                 | Description                                                                      |
 | :---------------------------------------------------- | :------------------------------------------------------------------------------- |
-| `.uk-grid-column-small`<br>`.uk-grid-row-small`       | Add one of this class to apply a small gutter to the column or row.              |
-| `.uk-grid-column-medium`<br>`.uk-grid-row-medium`     | Add one of this class to apply a medium gutter to the column or row.             |
-| `.uk-grid-column-large`<br>`.uk-grid-row-large`       | Add one of this class to apply a large gutter to the column or row.              |
-| `.uk-grid-column-collapse`<br>`.uk-grid-row-collapse` | Add one of this class to remove the grid gutter entirely from the column or row. |
+| `.uk-grid-column-small`<br>`.uk-grid-row-small`       | Add one of this class to apply a small gap to the column or row.              |
+| `.uk-grid-column-medium`<br>`.uk-grid-row-medium`     | Add one of this class to apply a medium gap to the column or row.             |
+| `.uk-grid-column-large`<br>`.uk-grid-row-large`       | Add one of this class to apply a large gap to the column or row.              |
+| `.uk-grid-column-collapse`<br>`.uk-grid-row-collapse` | Add one of this class to remove the grid gap entirely from the column or row. |
 
 ```html
 <div class="uk-grid-column-small uk-grid-row-large" uk-grid>...</div>
@@ -186,7 +186,7 @@ You can easily extend your grid layout with nested grids.
 
 ## Divider modifier
 
-Add the `.uk-grid-divider` class to separate grid cells with lines. This class can be combined with the gutter modifiers. As soon as the grid stacks, the divider lines will become horizontal.
+Add the `.uk-grid-divider` class to separate grid cells with lines. This class can be combined with the gap modifiers. As soon as the grid stacks, the divider lines will become horizontal.
 
 ```html
 <div class="uk-grid-divider" uk-grid>...</div>
@@ -345,7 +345,7 @@ For more detailed information, take a look at the [Width component](width.md).
 
 ## Grid and flex
 
-You can easily combine the grid with the [Flex component](flex.md). That way you can modify the items' alignment, ordering, direction and wrapping. This allows you, for example, to flip the cells' display order for wider viewports. All this works together with the gutter and divider modifiers.
+You can easily combine the grid with the [Flex component](flex.md). That way you can modify the items' alignment, ordering, direction and wrapping. This allows you, for example, to flip the cells' display order for wider viewports. All this works together with the gap and divider modifiers.
 
 ```html
 <div class="uk-flex-center" uk-grid>
