@@ -109,10 +109,10 @@ To apply a different gap to just the column or row, add one of the following cla
 
 | Class                                                 | Description                                                                      |
 | :---------------------------------------------------- | :------------------------------------------------------------------------------- |
-| `.uk-grid-column-small`<br>`.uk-grid-row-small`       | Add one of this class to apply a small gap to the column or row.              |
-| `.uk-grid-column-medium`<br>`.uk-grid-row-medium`     | Add one of this class to apply a medium gap to the column or row.             |
-| `.uk-grid-column-large`<br>`.uk-grid-row-large`       | Add one of this class to apply a large gap to the column or row.              |
-| `.uk-grid-column-collapse`<br>`.uk-grid-row-collapse` | Add one of this class to remove the grid gap entirely from the column or row. |
+| `.uk-grid-column-small`<br>`.uk-grid-row-small`       | Add one of these classes to apply a small gap to the column or row.              |
+| `.uk-grid-column-medium`<br>`.uk-grid-row-medium`     | Add one of these classes to apply a medium gap to the column or row.             |
+| `.uk-grid-column-large`<br>`.uk-grid-row-large`       | Add one of these classes to apply a large gap to the column or row.              |
+| `.uk-grid-column-collapse`<br>`.uk-grid-row-collapse` | Add one of these classes to remove the grid gap entirely from the column or row. |
 
 ```html
 <div class="uk-grid-column-small uk-grid-row-large" uk-grid>...</div>
