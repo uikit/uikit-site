@@ -117,7 +117,7 @@ UIkit.mixin({
 
 ## Programmatic use
 
-Programmatically, components may be initialized with the `element, options` arguments format in JavaScript. The `element` argument may be any `Node`, `selector` or `jQuery object`. You'll receive the initialized component as return value. `Functional Components` (e.g. `Notification`) should omit the `element` parameter.
+Programmatically, components may be initialized with the `element, options` arguments format in JavaScript. The `element` argument may be any `Node` or `selector`. You'll receive the initialized component as return value. `Functional Components` (e.g. `Notification`) should omit the `element` parameter.
 
 ```js
 // Passing a selector and an options object.
