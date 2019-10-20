@@ -133,10 +133,10 @@ var notifications = UIkit.notification('MyMessage', 'danger');
 **Note**
 The options names must be in their camel cased representation, e.g. `show-on-up` becomes `showOnUp`.
 
-After initialisation you can get your component by calling the same initialisation function, omitting the options parameter.
+After initialization you can get your component by calling the same initialization function, omitting the options parameter.
 
 ```javscript
-// Sticky is now the prior initialised components
+// Sticky is now the prior initialized components
 var sticky = UIkit.sticky('.sticky');
 ```
 
