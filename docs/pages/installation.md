@@ -10,15 +10,15 @@ You have the following options to get UIkit:
 - Install with [Yarn](https://yarnpkg.com/en/package/uikit) to get the pre-built JavaScript, CSS and the Less source files. This is recommended when using UIkit for a typical web project: ```yarn add uikit```
 - Clone the repo to get all source files including build scripts: `git clone git://github.com/uikit/uikit.git`
 
-The compiled files of all UIkit versions are also hosted on the Cloudflare content delivery network via [cdnjs.com](https://cdnjs.com/libraries/uikit).
+The compiled files of all UIkit versions are also hosted on the jsDelivr content delivery network via [jsdelivr.com](https://www.jsdelivr.com/package/npm/uikit).
 
 ```html
 <!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/css/uikit.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@[uikit-version]/dist/css/uikit.min.css" />
 
 <!-- UIkit JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/[uikit-version]/js/uikit-icons.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@[uikit-version]/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@[uikit-version]/dist/js/uikit-icons.min.js"></script>
 ```
 
 **Note** The latest [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) hashes can be obtained through [CDNJS](https://cdnjs.com/libraries/uikit/).
