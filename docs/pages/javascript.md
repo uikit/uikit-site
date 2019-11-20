@@ -7,6 +7,8 @@ Once you have [installed UIkit](installation.md), include the JavaScript files o
 <script src="js/uikit-icons.min.js"></script>
 ```
 
+UIkit has its own little JavaScript framework built in. See https://github.com/uikit/uikit-site/blob/feature/js-utils/docs/pages/javascript-utilities.md
+
 ***
 
 ## UIkit and reactive JavaScript frameworks
