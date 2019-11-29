@@ -165,10 +165,10 @@ UIkit provides a number of responsive margin auto classes. Basically, they work 
 
 | Class                                                                             | Description                                   |
 | :-------------------------------------------------------------------------------- | :-------------------------------------------- |
-| `.uk-margin-auto-left@s`<br> `.uk-margin-auto-@s`<br> `.uk-margin-auto-right@s`    | Affects device widths of _640px_ and larger.  |
-| `.uk-margin-auto-left@m`<br> `.uk-margin-auto-@m`<br>   `.uk-margin-auto-right@m`  | Affects device widths of _960px_ and larger.  |
-| `.uk-margin-auto-left@l`<br> `.uk-margin-auto-@l`<br> `.uk-margin-auto-right@l`    | Affects device widths of _1200px_ and larger. |
-| `.uk-margin-auto-left@xl`<br> `.uk-margin-auto-@xl`<br> `.uk-margin-auto-right@xl` | Affects device widths of _1600px_ and larger. |
+| `.uk-margin-auto-left@s`<br> `.uk-margin-auto@s`<br> `.uk-margin-auto-right@s`    | Affects device widths of _640px_ and larger.  |
+| `.uk-margin-auto-left@m`<br> `.uk-margin-auto@m`<br>   `.uk-margin-auto-right@m`  | Affects device widths of _960px_ and larger.  |
+| `.uk-margin-auto-left@l`<br> `.uk-margin-auto@l`<br> `.uk-margin-auto-right@l`    | Affects device widths of _1200px_ and larger. |
+| `.uk-margin-auto-left@xl`<br> `.uk-margin-auto@xl`<br> `.uk-margin-auto-right@xl` | Affects device widths of _1600px_ and larger. |
 
 ```example
 <div class="uk-margin uk-margin-auto-right uk-margin-auto@m uk-width-1-2@s uk-card uk-card-default uk-card-body uk-text-center">Block element</div>
