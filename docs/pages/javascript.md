@@ -168,7 +168,7 @@ Sometimes, components like Grid or Tab are hidden in the markup. This may happen
 UIkit offers several ways of updating a component. Omitting the `type` parameter will trigger an `update` event.
 
 ```js
-// Calls the update hook on components registered on the element itself, it's parents and children.
+// Calls the update hook on components registered on the element itself, its parents and children.
 UIkit.update(element = document.body, type = 'update');
 
 // Updates the component itself.
