@@ -21,7 +21,7 @@ The compiled files of all UIkit versions are also hosted on the jsDelivr content
 <script src="https://cdn.jsdelivr.net/npm/uikit@[uikit-version]/dist/js/uikit-icons.min.js"></script>
 ```
 
-**Note** The latest [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) hashes can be obtained through [CDNJS](https://cdnjs.com/libraries/uikit/).
+**Note** The latest [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) hashes can be obtained through [jsDelivr](https://www.jsdelivr.com/package/npm/uikit).
 
 ***
 
