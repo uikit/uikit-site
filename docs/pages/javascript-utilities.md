@@ -3103,14 +3103,13 @@ If the mouse moves towards the target this returns true otherwise false.
 Scroll smoothly to a desired section.
 
 ```javascript
-scrollIntoView(element [, duration, offset])
+scrollIntoView(element [, options])
 ```
 
-| Parameter  | Type                   | Description                                 |
-|:-----------|:-----------------------|:--------------------------------------------|
-| `element`  | [Nodes](#pseudo-types) | The HTML element                            |
-| `duration` | Number                 | The transition's duration (in milliseconds) |   
-| `offset`   | Number                 | Offset from top                             |
+| Parameter  | Type                   | Description                                                   |
+|:-----------|:-----------------------|:--------------------------------------------------------------|
+| `element`  | [Nodes](#pseudo-types) | The HTML element                                              |
+| `options`  | Object                 | Allows to configure the duration (in milliseconds) and offset |   
 
 
 ### Usage
@@ -3118,7 +3117,7 @@ scrollIntoView(element [, duration, offset])
 ```javascript
 var element = util.$('#example');
 
-scrollIntoView(element, { duration: 1000, offset: 0 })
+util.scrollIntoView(element, { duration: 1000, offset: 0 });
 ```
 
 ## Selectors
