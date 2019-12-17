@@ -71,7 +71,7 @@ The following events will be triggered on elements with this component attached:
 
 | Name           | Description                                                             |
 |:---------------|:------------------------------------------------------------------------|
-| `beforescroll` | Fires before scroll begins. Can prevent scrolling by returning `false`. |
+| `beforescroll` | Fires before scroll begins. Can prevent scrolling by calling `preventDefault()` on the event. |
 | `scrolled`     | Fires after scrolling is finished.                                      |
 
 
