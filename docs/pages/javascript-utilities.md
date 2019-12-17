@@ -3094,6 +3094,33 @@ If the mouse moves towards the target this returns true otherwise false.
 
 ***
 
+## Viewport
+
+***
+
+## scrollIntoView
+
+Scroll smoothly to a desired section.
+
+```javascript
+scrollIntoView(element [, duration, offset])
+```
+
+| Parameter  | Type                   | Description                                 |
+|:-----------|:-----------------------|:--------------------------------------------|
+| `element`  | [Nodes](#pseudo-types) | The HTML element                            |
+| `duration` | Number                 | The transition's duration (in milliseconds) |   
+| `offset`   | Number                 | Offset from top                             |
+
+
+### Usage
+
+```javascript
+var element = util.$('#example');
+
+scrollIntoView(element, { duration: 1000, offset: 0 })
+```
+
 ## Selectors
 
 ***
