@@ -2,15 +2,14 @@
 
 <p class="uk-text-lead">Migrate an existing UIkit website to the latest version.</p>
 
-
 ***
 
-## Migration from UIkit 3.2 to 3.3: Container Xlarge
+## Migration from UIkit 3.2 to 3.3
 
 UIkit 3.3 adds a new `uk-container-xlarge` class to the [Container component](container) with a width of `1600px` as default value. This is why the class `uk-container-large` changes its width from `1600px` to `1400px`. Update your markup by replacing the following classes.
 
-| Class                | Replace with        |
-| -------------------- | ------------------- |
+| Class                | Replace with          |
+| -------------------- | --------------------- |
 | `uk-container-large` | `uk-container-xlarge` |
 
 
