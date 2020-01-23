@@ -3956,10 +3956,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-uikit@3.2.7:
-  version "3.2.7"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.2.7.tgz#857837c818f3287733b1295d8572a67d848f2c55"
-  integrity sha512-/EGCJd7qGGwJsidyOxr+13DZwJtmkknbQhc+fk6LHOpNazG3nm0pPw++3/Bx3exL8gbwmFyS9alwLdKmoiourQ==
+uikit@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.3.0.tgz#1e458e95d0ad9f97cffadd74373a623f2865d344"
+  integrity sha512-NQ9fYX+ZCp6RC1ixEZWq59QFrs+PvmnquGia0p7wAb94FHE8baRkyLpURGQMQZsabWE4xgnL+tpKSG6DTAf35A==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
