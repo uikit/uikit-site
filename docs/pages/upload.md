@@ -121,7 +121,7 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
             
             // The environment object can still be modified here. 
             // var {data, method, headers, xhr, responseType} = environment;
-            
+            // Example: env.headers.push({ 'X-CSRFToken': csrftoken })
         },
         beforeAll: function () {
             console.log('beforeAll', arguments);
