@@ -21,7 +21,7 @@
     "less": "^2.7.2",
     "make-dir-cli": "^2.0.0",
     "symlink-dir": "^3.1.0",
-    "uikit": "3.3.0",
+    "uikit": "3.3.1",
     "uniqid": "^5.0.3",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.6.10",
