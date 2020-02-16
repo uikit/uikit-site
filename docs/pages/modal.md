@@ -465,6 +465,9 @@ The component comes with a number of prepared modal dialogs that you can use for
 | `UIkit.modal.prompt('Name:', 'Your name')`    | Show a dialog asking for a text input.                   |
 | `UIkit.modal.dialog('<p>UIkit dialog!</p>');` | Show dialog with any HTML content.                       |
 
+**Danger** Modal does not escape the message, making it **vulnerable to XSS**. Make sure you escape the message when appropriate, for example when displaying user-controlled content.
+The default input value in `UIkit.modal.prompt` is already escaped.
+
 To process the user input, the modal uses a promise based interface which provides a `then()` function to register your callback functions.
 
 ```js

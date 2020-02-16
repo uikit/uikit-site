@@ -37,6 +37,8 @@ You can use HTML inside your notification message, like an icon from the Icon co
 UIkit.notification("<span uk-icon='icon: check'></span> Message");
 ```
 
+**Danger** Because notification does not escape the message, it is **vulnerable to XSS**. Make sure you escape the message when appropriate, for example when displaying user-controlled content.
+
 ```example
 <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Message with an icon'})">With icon</button>
 
