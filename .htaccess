@@ -1,5 +1,6 @@
 AddType  font/woff  .woff
 AddType  font/woff2  .woff2
+AddType  text/html;charset=utf-8  .md
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
