@@ -465,7 +465,7 @@ The component comes with a number of prepared modal dialogs that you can use for
 | `UIkit.modal.prompt('Name:', 'Your name')`    | Show a dialog asking for a text input.                   |
 | `UIkit.modal.dialog('<p>UIkit dialog!</p>');` | Show dialog with any HTML content.                       |
 
-To process the user input, the modal uses a promise based interface which provides a `then()` function to register your callback functions.
+To process the user input, the modal uses a promise based interface which provides a `then()` function to register your callback functions. The `UIkit.modal.dialog` function however will return the modal itself.
 
 ```js
 UIkit.modal.confirm('UIkit confirm!').then(function() {
@@ -473,6 +473,13 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 }, function () {
     console.log('Rejected.')
 });
+```
+
+The returned promise has a property `dialog`, which holds a reference to the modal itself. This lets you manipulate e.g. the markup of the modal's element.
+
+```js
+const modal = UIkit.modal.confirm('UIkit confirm!').dialog; // The modal component
+const el = modal.$el; // The modal element
 ```
 
 ```example
