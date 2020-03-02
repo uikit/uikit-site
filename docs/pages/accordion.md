@@ -154,17 +154,19 @@ To specify which items should be opened initially, add the `.uk-open` class to t
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option        | Value   | Default | Description                                |
-|:--------------|:--------|:--------|:-------------------------------------------|
-| `active`      | Number  | `false` | Index of the element to open initially.    |
-| `animation`   | Boolean | `true`  | Reveal item directly or with a transition. |
-| `collapsible` | Boolean | `true`  | Allow all items to be closed.              |
-| `content`     | String  | `> .uk-accordion-content` | The content selector, which selects the accordion content elements. |
-| `duration`    | Number  | `200`   | Animation duration in milliseconds.        |
-| `multiple`    | Boolean | `false` | Allow multiple open items.                 |
-| `targets`     | String  | `> *`   | CSS selector of the element(s) to toggle.  |
-| `toggle`      | String  | `> .uk-accordion-title` | The toggle selector, which toggles accordion items. |
-| `transition`  | String  | `ease`  | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
+| Option             | Value   | Default | Description                                   |
+|:-------------------|:--------|:--------|:----------------------------------------------|
+| `active`           | Number  | `false` | Index of the element to open initially.       |
+| `animation`        | Boolean | `true`  | Reveal item directly or with a transition.    |
+| `collapsible`      | Boolean | `true`  | Allow all items to be closed.                 |
+| `content`          | String  | `> .uk-accordion-content` | The content selector, which selects the accordion content elements. |
+| `duration`         | Number  | `200`   | Animation duration in milliseconds.           |
+| `multiple`         | Boolean | `false` | Allow multiple open items.                    |
+| `targets`          | String  | `> *`   | CSS selector of the element(s) to toggle.     |
+| `toggle`           | String  | `> .uk-accordion-title` | The toggle selector, which toggles accordion items. |
+| `transition`       | String  | `ease`  | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
+| `scroll-duration`  | Number  | `1000`  | Animation of scroll duration in milliseconds. |
+| `offset`           | Number  | `0`     | Pixel offset added to scroll top.             |
 
 ***
 
