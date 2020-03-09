@@ -105,7 +105,7 @@
 
                     <ul v-for="(pages, category) in navigation" class="uk-nav uk-nav-default tm-nav uk-margin-top">
                         <li class="uk-nav-header">{{ category }}</li>
-                        <li v-for="(p, label) in pages" exact><a :href="`./${p}`">{{ label }}</a></li>
+                        <router-link v-for="(p, label) in pages" :key="p" tag="li" :to="p"><a>{{ label }}</a></router-link>
                     </ul>
                 </div>
             </div>
