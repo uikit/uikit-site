@@ -384,10 +384,10 @@
                         <div class="uk-margin-auto">
 
                             <ul class="uk-subnav uk-flex-center" uk-margin>
-                                <router-link tag="li" :to="'pro'"><a>Pro</a></router-link>
+                                <router-link tag="li" to="pro"><a>Pro</a></router-link>
                                 <li><a href="docs">Documentation</a></li>
-                                <router-link tag="li" :to="'changelog'"><a>Changelog</a></router-link>
-                                <router-link tag="li" :to="'download'"><a>Download</a></router-link>
+                                <router-link tag="li" to="changelog"><a>Changelog</a></router-link>
+                                <router-link tag="li" to="download"><a>Download</a></router-link>
                             </ul>
 
                         </div>

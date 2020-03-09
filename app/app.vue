@@ -10,10 +10,10 @@
 
                     <ul class="uk-nav uk-nav-default tm-nav">
                         <li class="uk-nav-header">General</li>
-                        <router-link tag="li" :to="'index'"><a>Home</a></router-link>
-                        <router-link tag="li" :to="'pro'"><a>Pro</a></router-link>
-                        <router-link tag="li" :to="'changelog'"><a>Changelog</a></router-link>
-                        <router-link tag="li" :to="'download'"><a>Download</a></router-link>
+                        <router-link tag="li" to="index"><a>Home</a></router-link>
+                        <router-link tag="li" to="pro"><a>Pro</a></router-link>
+                        <router-link tag="li" to="changelog"><a>Changelog</a></router-link>
+                        <router-link tag="li" to="download"><a>Download</a></router-link>
                     </ul>
 
                     <ul v-for="(pages, category) in navigation" class="uk-nav uk-nav-default tm-nav uk-margin-top">
