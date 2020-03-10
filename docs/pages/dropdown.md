@@ -379,7 +379,7 @@ Shows the Dropdown.
 #### Hide
 
 ```js
-UIkit.dropdown(element).hide();
+UIkit.dropdown(element).hide(delay = true);
 ```
 
-Hides the Dropdown.
+Hides the Dropdown. Setting `delay` to `false` will hide it immediately.
