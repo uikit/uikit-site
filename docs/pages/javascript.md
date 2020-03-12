@@ -32,10 +32,18 @@ You can use UIkit components by adding `uk-*` or `data-uk-*` attributes to your 
 You can also initialize components via JavaScript and apply them to elements in your document.
 
 ```js
-var stickys = UIkit.sticky('#sticky', {
+var sticky = UIkit.sticky('#sticky', {
     offset: 50
 });
 ```
+
+You can retrieve an already initialized component by passing a selector or an element as a first Argument to the component function.
+
+ ```js
+ var sticky = UIkit.sticky('#sticky');
+ ```
+
+Omitting the second parameter will not re-initialize the component but serve as a getter function.
 
 ***
 
