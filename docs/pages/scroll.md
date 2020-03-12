@@ -48,7 +48,6 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option     | Value  | Default | Description                         |
 |:-----------|:-------|:--------|:------------------------------------|
-| `duration` | Number | `1000`  | Animation duration in milliseconds. |
 | `offset`   | Number | `0`     | Pixel offset added to scroll top.   |
 
 ## JavaScript
