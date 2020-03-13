@@ -211,3 +211,5 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ```js
 UIkit.img(element, options);
 ```
+
+**Note** The Image component keeps records of already loaded images in the Session Storage. That's how it tries to determine if an image is already cached. A cached image is loaded immediately, without the lazy loading mechanism to prevent any rendering flashes. Prior to testing the Image component, make sure to clear these records from your browser's Session Storage.

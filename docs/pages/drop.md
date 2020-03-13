@@ -278,7 +278,11 @@ Shows the Drop.
 #### Hide
 
 ```js
-UIkit.drop(element).hide(delay = true);
+UIkit.drop(element).hide(delay);
 ```
 
-Hides the Drop. Setting `delay` to `false` will hide it immediately.
+Hides the Drop.
+
+| Name        | Type    | Default | Description                      |
+|:------------|:--------|:--------|:---------------------------------|
+| `delay`     | Boolean | true    | Delay hiding the Drop.           |
