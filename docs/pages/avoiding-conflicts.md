@@ -59,9 +59,9 @@ Now you need to tell ```uk-modal```, ```uk-tooltip``` and ```uk-lightbox``` wher
 To do so, set the following parameter:
 
 ```javascript
-//simply pass the selector
+// simply pass the selector
 UIkit.container = '.uk-scope';
 ...
-//or you can set an element directly, for example:
+// or you can set an element directly, for example:
 UIkit.container = document.getElementById('#id-of-scope-element');
 ```

@@ -83,6 +83,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `duration`  | Number | `100`                   | The animation duration.                                                           |
 | `delay`     | Number | `0`                     | The show delay.                                                                   |
 | `cls`       | String | `uk-active`             | The active class.                                                                 |
+| `container` | String | 'body'                  | Define a target container via a selector to specify where the tooltip should be appended in the DOM. |
 
 `title` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 

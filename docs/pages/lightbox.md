@@ -239,6 +239,7 @@ If you only want to use the lightbox panel directly through the JS API, you can 
 | `items`             | Array   | `[]`           | An array of items to display, e.g. `[{source: 'images/size1.jpg', caption: '900x600'}]` |
 | `template`          | String  | Default markup | The template string.                                                                  |
 | `delay-controls`    | Number  | `3000`         | Delay time before controls fade out in ms.                                            |
+| `container` | String | `body` | Define a target container via a selector to specify where the Lightbox should be appended in the DOM. |
 
 ### Events
 
