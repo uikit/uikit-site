@@ -327,7 +327,7 @@ If you want to display media, you should first check, if the [Lightbox component
 <div id="modal-media-vimeo" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <iframe src="https://player.vimeo.com/video/1084537" width="500" height="281" frameborder="0" uk-video uk-responsive></iframe>
+        <iframe src="https://player.vimeo.com/video/1084537" width="1280" height="720" frameborder="0" uk-video uk-responsive></iframe>
     </div>
 </div>
 ```
