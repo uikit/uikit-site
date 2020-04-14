@@ -146,7 +146,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option          | Value                                 | Default     | Description                                                                                                   |
 |:----------------|:--------------------------------------|:------------|:--------------------------------------------------------------------------------------------------------------|
 | `top`           | Number, viewport height, CSS selector | `0`         | The top offset from where the element should be stick.                                                        |
-| `bottom `       | Boolean, CSS selector                 | `false`     | The bottom offset until the element should stick. (true: parent element, prefixed with '!' a parent selector) |
+| `bottom `       | Boolean, CSS selector                 | `false`     | The bottom offset until the element should stick. If `bottom` is an element, its bottom offset will be used. (true: parent element, prefixed with '!' a parent selector) |
 | `offset `       | String                                | `0`         | The offset the Sticky should be fixed to.                                                                     |
 | `animation `    | String                                | `false`     | The animation to use when the element becomes sticky.                                                         |
 | `cls-active`    | String                                | `uk-active` | The active class.                                                                                             |
