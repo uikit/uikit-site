@@ -3020,7 +3020,7 @@ JavaScript
 var example = util.$('#example').getBoundingClientRect();
 
 util.on(document, 'click', function (e) {
-  console.log(util.pointInRect({ x: e.pageX, y: e.pageY }, example));
+  console.log(util.pointInRect({ x: e.clientX, y: e.clientY }, example));
 });
 ```
 
