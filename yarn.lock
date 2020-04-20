@@ -4074,10 +4074,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-uikit@3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.4.1.tgz#5e25fcf6aa54b3dd745bd4cc0148aaae6aec3af6"
-  integrity sha512-IXCJZ5mXTZwdpuhTwMbxaoHxfQdfpZHwlcAomLNTG8BrsBhUc7ExR9zvdzKC+3/kHV16Ros5+lmPeQf/YG/NPA==
+uikit@3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.4.2.tgz#2e3d05d2e206e63c9b42a347927674117678acee"
+  integrity sha512-z5NH1s8sTMHjVQ+Exr2IKgPn/bG9f5PSK4HcTZaBlw3mF6f5UgefWIA3xKVsOtOeJSOQ2T8lk++59syRF5NwOw==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
