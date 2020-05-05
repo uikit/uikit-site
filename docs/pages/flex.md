@@ -104,9 +104,9 @@ These classes define the vertical alignment of flex items. By default, flex item
 
 ```example
 <div class="uk-flex uk-flex-middle uk-text-center">
-  <div class="uk-card uk-card-default uk-card-body">Item 1</div>
-   <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 2<br>...</div>
-   <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3<br>...<br>...</div>
+    <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 2<br>...</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3<br>...<br>...</div>
 </div>
 ```
 
@@ -129,9 +129,9 @@ These classes define the axis that flex items are placed on and their direction.
 
 ```example
 <div class="uk-flex uk-flex-column uk-width-1-3">
-   <div class="uk-card uk-card-default uk-card-body">Item 1</div>
-   <div class="uk-card uk-card-default uk-card-body uk-margin-top">Item 2</div>
-   <div class="uk-card uk-card-default uk-card-body uk-margin-top">Item 3</div>
+    <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-top">Item 2</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-top">Item 3</div>
 </div>
 ```
 
@@ -197,9 +197,9 @@ By default, flex items are laid out according to the source order. To display a 
 
 ```example
 <div class="uk-flex">
-   <div class="uk-card uk-card-default uk-card-body uk-flex-last uk-margin-left">Item 1</div>
-   <div class="uk-card uk-card-default uk-card-body uk-flex-first">Item 2</div>
-   <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3</div>
+    <div class="uk-card uk-card-default uk-card-body uk-flex-last uk-margin-left">Item 1</div>
+    <div class="uk-card uk-card-default uk-card-body uk-flex-first">Item 2</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3</div>
 </div>
 ```
 

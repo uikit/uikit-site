@@ -170,6 +170,24 @@ The Lightbox uses the `href` attribute to figure out the type of the linked cont
 
 ***
 
+## Custom Attributes
+
+You can add custom attributes to lightbox content items by using the `data-attrs` attribute. The attributes are passed like the usual component options, e.g. `data-attrs="width: 1280; height: 720;"`
+
+```html
+<div uk-lightbox>
+    <a class="uk-button" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-attrs="width: 1280; height: 720;"></a>
+</div>
+```
+
+```example
+<div uk-lightbox>
+    <a class="uk-button uk-button-default" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube" data-attrs="width: 1280; height: 720;">YouTube</a>
+</div>
+```
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
@@ -239,6 +257,7 @@ If you only want to use the lightbox panel directly through the JS API, you can 
 | `items`             | Array   | `[]`           | An array of items to display, e.g. `[{source: 'images/size1.jpg', caption: '900x600'}]` |
 | `template`          | String  | Default markup | The template string.                                                                  |
 | `delay-controls`    | Number  | `3000`         | Delay time before controls fade out in ms.                                            |
+| `container` | String | `body` | Define a target container via a selector to specify where the Lightbox should be appended in the DOM. |
 
 ### Events
 

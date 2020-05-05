@@ -200,6 +200,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `offsetLeft` | String | 0       | The offset increases the viewport's bounding box horizontally before computing an intersection with the image.                |
 | `target`     | String | false   | A list of targets who's bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.                |
 
+`dataSrc` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+
 ***
 
 ## JavaScript
@@ -211,3 +213,5 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ```js
 UIkit.img(element, options);
 ```
+
+**Note** The Image component keeps records of already loaded images in the Session Storage. That's how it tries to determine if an image is already cached. A cached image is loaded immediately, without the lazy loading mechanism to prevent any rendering flashes. Prior to testing the Image component, make sure to clear these records from your browser's Session Storage.

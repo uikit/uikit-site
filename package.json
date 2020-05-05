@@ -14,18 +14,18 @@
     "*.json"
   ],
   "devDependencies": {
-    "buble": "^0.19.7",
+    "buble": "^0.20.0",
     "buble-loader": "^0.5.1",
-    "eslint": "5.16.0",
-    "eslint-plugin-vue": "^5.2.2",
+    "eslint": "6.8.0",
+    "eslint-plugin-vue": "^6.2.2",
     "less": "^2.7.2",
     "make-dir-cli": "^2.0.0",
-    "symlink-dir": "^3.1.0",
-    "uikit": "^3.1.0",
-    "uniqid": "^5.0.3",
-    "vue-loader": "^15.7.0",
-    "vue-template-compiler": "^2.6.10",
-    "webpack": "^4.34.0",
-    "webpack-cli": "^3.3.4"
+    "symlink-dir": "^3.1.2",
+    "uikit": "3.4.2",
+    "uniqid": "^5.2.0",
+    "vue-loader": "^15.9.1",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   }
 }

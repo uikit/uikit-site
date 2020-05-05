@@ -384,10 +384,10 @@
                         <div class="uk-margin-auto">
 
                             <ul class="uk-subnav uk-flex-center" uk-margin>
-                                <li><a href="./pro">Pro</a></li>
-                                <li><a href="./docs">Documentation</a></li>
-                                <li><a href="./changelog">Changelog</a></li>
-                                <li><a href="./download">Download</a></li>
+                                <router-link tag="li" to="pro"><a>Pro</a></router-link>
+                                <li><a href="docs">Documentation</a></li>
+                                <router-link tag="li" to="changelog"><a>Changelog</a></router-link>
+                                <router-link tag="li" to="download"><a>Download</a></router-link>
                             </ul>
 
                         </div>
@@ -395,10 +395,10 @@
 
                             <div class="uk-text-right@m uk-text-center">
                                 <div class="uk-child-width-auto uk-grid-small uk-flex-center" uk-grid>
-                                    <div><a href="https://github.com/uikit/uikit" class="uk-icon-link" uk-icon="icon: github"></a></div>
-                                    <div><a href="https://discordapp.com/invite/NEt4Pv7" class="uk-icon-link" uk-icon="icon: commenting"></a></div>
-                                    <div><a href="https://twitter.com/getuikit" class="uk-icon-link" uk-icon="icon: twitter"></a></div>
-                                    <div><a href="https://www.facebook.com/getuikit" class="uk-icon-link" uk-icon="icon: facebook"></a></div>
+                                    <div><a href="https://github.com/uikit/uikit" class="uk-icon-link" uk-icon="github"></a></div>
+                                    <div><a href="https://discordapp.com/invite/NEt4Pv7" class="uk-icon-link" uk-icon="commenting"></a></div>
+                                    <div><a href="https://twitter.com/getuikit" class="uk-icon-link" uk-icon="twitter"></a></div>
+                                    <div><a href="https://www.facebook.com/getuikit" class="uk-icon-link" uk-icon="facebook"></a></div>
                                 </div>
                             </div>
 

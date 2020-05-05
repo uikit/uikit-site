@@ -96,9 +96,9 @@ The `.uk-slider-container` class is responsible for the clipping of the slider i
 
 ***
 
-## Gutter
+## Gap
 
-To apply a gutter to the slider items, use the [Grid component](grid.md) and add the `.uk-grid` class to the slider. The elements will then be spaced according to the grid gutter. You can use the modifiers like `.uk-grid-small` to change the gutter.
+To apply a gap to the slider items, use the [Grid component](grid.md) and add the `.uk-grid` class to the slider. The elements will then be spaced according to the grid gap. You can use the modifiers like `.uk-grid-small` to change the gap.
 
 ```html
 <div uk-slider>

@@ -23,7 +23,7 @@
                         </ul>
 
                         <div class="uk-navbar-item uk-visible@m">
-                            <a class="uk-button uk-button-default tm-button-default uk-icon" href="../download">Download <canvas uk-icon="icon: download" width="20" height="20"></canvas>
+                            <a class="uk-button uk-button-default tm-button-default uk-icon" href="../download">Download <canvas uk-icon="download" width="20" height="20"></canvas>
                             </a>
                         </div>
 
@@ -61,25 +61,25 @@
                             <li class="uk-nav-divider"></li>
                             <li v-if="component">
                                 <a :href="`../assets/uikit/tests/${component}.html`" target="_blank">
-                                    <span class="uk-margin-small-right" uk-icon="icon: push"></span>
+                                    <span class="uk-margin-small-right" uk-icon="push"></span>
                                     <span class="uk-text-middle">Open test</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/uikit/uikit/issues" target="_blank">
-                                    <span class="uk-margin-small-right" uk-icon="icon: warning"></span>
+                                    <span class="uk-margin-small-right" uk-icon="warning"></span>
                                     <span class="uk-text-middle">Report issue</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://discordapp.com/invite/NEt4Pv7" target="_blank">
-                                    <span class="uk-margin-small-right" uk-icon="icon: commenting"></span>
+                                    <span class="uk-margin-small-right" uk-icon="commenting"></span>
                                     <span class="uk-text-middle">Get help</span>
                                 </a>
                             </li>
                             <li>
                                 <a :href="`https://github.com/uikit/uikit-site/tree/develop/docs/pages/${page}.md`" target="_blank">
-                                    <span class="uk-margin-small-right" uk-icon="icon: pencil"></span>
+                                    <span class="uk-margin-small-right" uk-icon="pencil"></span>
                                     <span class="uk-text-middle">Edit this page</span>
                                 </a>
                             </li>
@@ -105,7 +105,7 @@
 
                     <ul v-for="(pages, category) in navigation" class="uk-nav uk-nav-default tm-nav uk-margin-top">
                         <li class="uk-nav-header">{{ category }}</li>
-                        <li v-for="(p, label) in pages" exact><a :href="`./${p}`">{{ label }}</a></li>
+                        <router-link v-for="(p, label) in pages" :key="p" tag="li" :to="p"><a>{{ label }}</a></router-link>
                     </ul>
                 </div>
             </div>

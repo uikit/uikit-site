@@ -4,9 +4,29 @@
 
 ***
 
-## Migration from UIkit 3.1 to 3.2: XXL to 2XL
+## Migration from UIkit 3.4 to 3.5: XXL to 2XL
  
 In UIkit 3.2 all Less variable which has `xxlarge` in their name got renamed that part to `2xlarge`. Just find and replace these Less variables if you are using a custom Less theme.
+
+***
+
+## Migration from UIkit 3.2 to 3.3
+
+UIkit 3.3 adds a new `uk-container-xlarge` class to the [Container component](container) with a width of `1600px` as default value. This is why the class `uk-container-large` changes its width from `1600px` to `1400px`. Update your markup by replacing the following classes.
+
+| Class                | Replace with          |
+| -------------------- | --------------------- |
+| `uk-container-large` | `uk-container-xlarge` |
+
+***
+
+## Migration from UIkit 3.1 to 3.2
+
+### Text Component
+
+Since UIkit 3.2 adds a new `uk-text-bolder` class to the [Text component](text), the class `uk-text-bold` now applies literally a `bold` font weight instead of `bolder`. The `@text-bold-font-weight` variable, which was set to `bolder`, got removed.
+
+***
 
 ## Migration from UIkit 3.0 to 3.1
 

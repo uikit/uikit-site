@@ -19,13 +19,13 @@
                     <div class="uk-grid-medium uk-child-width-auto uk-flex-inline" uk-grid>
                         <div>
                             <a class="uk-button uk-button-primary tm-button-primary uk-button-large" href="https://twitter.com/intent/tweet?text=I'm+excited+to+try+@getuikit,+a+modern+front-end+framework.+Check+it+out+at+https%3a%2f%2fgetuikit.com" target="_blank">
-                                <span class="uk-margin-small-right" uk-icon="icon: twitter"></span>
+                                <span class="uk-margin-small-right" uk-icon="twitter"></span>
                                 <span class="uk-text-middle">Share on Twitter</span>
                             </a>
                         </div>
                         <div>
                             <a class="uk-button uk-button-primary tm-button-primary uk-button-large" href="https://www.facebook.com/sharer/sharer.php?u=https://getuikit.com" target="_blank">
-                                <span class="uk-margin-small-right" uk-icon="icon: facebook"></span>
+                                <span class="uk-margin-small-right" uk-icon="facebook"></span>
                                 <span class="uk-text-middle">Post on Facebook</span>
                             </a>
                         </div>

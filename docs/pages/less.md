@@ -55,7 +55,7 @@ yarn watch
 
 The generated CSS files will be located in the `/dist/css` folder.
 
-**Note** The custom theme is also available in the test files, just navigate your browser to the index of the `/test` directory and select your theme from the Dropdown menu.
+**Note** The custom theme is also available in the test files, just navigate your browser to the index of the `/tests` directory and select your theme from the Dropdown menu.
 
 ***
 

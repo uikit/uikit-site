@@ -19,10 +19,11 @@ Add the `.uk-container` class to a block element to give it a max-width and wrap
 Add one of the following classes to the container to apply a different max-width.
 
 | Class                  | Description                                                                                                    |
-|:-----------------------|:---------------------------------------------------------------------------------------------------------------|
+| :--------------------- | :------------------------------------------------------------------------------------------------------------- |
 | `.uk-container-xsmall` | Add this class for a xsmall container.                                                                         |
 | `.uk-container-small`  | Add this class for a small container.                                                                          |
 | `.uk-container-large`  | Add this class for a large container.                                                                          |
+| `.uk-container-xlarge` | Add this class for a xlarge container.                                                                         |
 | `.uk-container-expand` | Add this class, if you do not want to limit the container width but still want the dynamic horizontal padding. |
 
 ```html
@@ -31,6 +32,8 @@ Add one of the following classes to the container to apply a different max-width
 <div class="uk-container uk-container-small"></div>
 
 <div class="uk-container uk-container-large"></div>
+
+<div class="uk-container uk-container-xlarge"></div>
 
 <div class="uk-container uk-container-expand"></div>
 ```
