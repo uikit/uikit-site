@@ -4,7 +4,7 @@
 
 ***
 
-## Migration from UIkit 3.4 to 3.5
+## Migration from UIkit 3.4 to 3.5: List marker
 
 The list bullet class in the [List component](list) is deprecated. Update your markup by replacing the following classes.
 
