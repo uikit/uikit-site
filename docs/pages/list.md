@@ -154,6 +154,24 @@ Add one of the following classes to set the marker color.
 
 ***
 
+## Image bullet modifier
+
+Add the `.uk-list-bullet` class to set a custom image bullet as marker of a list item. Mind, that it can not be combined with color modifiers.
+
+```html
+<ul class="uk-list uk-list-bullet">...</ul>
+```
+
+```example
+<ul class="uk-list uk-list-bullet">
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+</ul>
+```
+
+***
+
 ## Divider modifier
 
 Add the `.uk-list-divider` class to separate list items with lines.

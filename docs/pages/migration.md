@@ -4,20 +4,6 @@
 
 ***
 
-## Migration from UIkit 3.4 to 3.5: List marker
-
-The list bullet class in the [List component](list) is deprecated. Update your markup by replacing the following classes.
-
-| Class            | Replace with   |
-| ---------------- | -------------- |
-| `uk-list-bullet` | `uk-list-disc` |
-
-If you have customized the list bullet class with a different image or with a color, try a different [marker modifier](list#style-type-modifiers) and use an optional [color modifier](list#color-modifiers).
-
-Mind, that the color modifiers don't work in Chrome and Edge because the `::marker` pseudo-element is not supported yet. Vote this [Chromium issue](https://bugs.chromium.org/p/chromium/issues/detail?id=457718) up, to give it more attention.
-
-***
-
 ## Migration from UIkit 3.2 to 3.3
 
 UIkit 3.3 adds a new `uk-container-xlarge` class to the [Container component](container) with a width of `1600px` as default value. This is why the class `uk-container-large` changes its width from `1600px` to `1400px`. Update your markup by replacing the following classes.
