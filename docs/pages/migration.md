@@ -6,7 +6,7 @@
 
 ## Migration from UIkit 3.4 to 3.5
  
-In UIkit 3.5 all Less variables and class names which have `xxlarge` in their name got renamed to `2xlarge` to have more consistency. Just find and replace these Less variables if you are using a custom Less theme and change the following class in your markup.
+In UIkit 3.5 all Less variables and class names which have `xxlarge` in their name got renamed to `2xlarge` for better consistency. Just find and replace these Less variables if you are using a custom Less theme. There is just one class in the [Width component](width) which has to be updated in your markup.
 
 | Class              | Replace with       |
 | ------------------ | ------------------ |
