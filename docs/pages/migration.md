@@ -12,6 +12,7 @@ UIkit 3.3 adds a new `uk-container-xlarge` class to the [Container component](co
 | -------------------- | --------------------- |
 | `uk-container-large` | `uk-container-xlarge` |
 
+***
 
 ## Migration from UIkit 3.1 to 3.2
 
