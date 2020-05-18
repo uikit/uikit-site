@@ -4,9 +4,14 @@
 
 ***
 
-## Migration from UIkit 3.4 to 3.5: XXL to 2XL
+## Migration from UIkit 3.4 to 3.5
  
-In UIkit 3.2 all Less variable which has `xxlarge` in their name got renamed that part to `2xlarge`. Just find and replace these Less variables if you are using a custom Less theme.
+In UIkit 3.5 all Less variables and class names which have `xxlarge` in their name got renamed to `2xlarge` to have more consistency. Just find and replace these Less variables if you are using a custom Less theme and change the following class in your markup.
+
+| Class              | Replace with       |
+| ------------------ | ------------------ |
+| `uk-width-xxlarge` | `uk-width-2xlarge` |
+
 
 ***
 
