@@ -123,7 +123,7 @@ Add one of the following classes to remove margin from block elements.
 
 ***
 
-### Responsive
+## Responsive
 
 UIkit provides a number of responsive classes to remove margin. Basically, they work just like the usual margin remove classes, except that they have suffixes that represent the breakpoint from which they come to effect.
 
