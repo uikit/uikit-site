@@ -1743,7 +1743,7 @@ JavaScript
 var element = util.$('#example');
 var content = '<option>Injected by Javascript</option>';
 
-util.prepend(element, content);
+util.append(element, content);
 ```
 
 #### Result
