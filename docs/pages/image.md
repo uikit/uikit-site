@@ -52,6 +52,8 @@ To use the `srcset` attribute, just prefix it as `data-srcset`.
      sizes="(min-width: 650px) 650px, 100vw" width="650" height="433" alt="" uk-img>
 
 ```
+More info on the concept of responsive images  
+[https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images]
 
 ***
 
