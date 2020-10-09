@@ -16,7 +16,7 @@ The Navbar component consists of a navbar container, the navbar itself and one o
 | `.uk-active`           | Add this class to indicate an active menu item.                                                                |
 
 ```html
-<nav class="uk-navbar-container" uk-navbar>
+<nav class="uk-navbar-container uk-navbar">
     <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
             <li class="uk-active"><a href=""></a></li>
