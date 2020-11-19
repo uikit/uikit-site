@@ -94,6 +94,8 @@ The `.uk-slider-container` class is responsible for the clipping of the slider i
 </div>
 ```
 
+Since the slider effect needs a clipping container, box shadows of content items are also clipped. To widen the container to prevent box-shadows from clipping, add the `.uk-slider-container-offset` class.
+
 ***
 
 ## Gap
@@ -578,7 +580,7 @@ Use the [Cover component](cover.md) so that images cover the whole item area and
 The slider is not restricted to images. Any content can be used like text, videos, images with text overlays or ken burns effect. Here is an example using the [Card component](card.md).
 
 ```example
-<div uk-slider="center: true">
+<div class="uk-slider-container-offset" uk-slider>
 
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
@@ -650,7 +652,7 @@ The slider is not restricted to images. Any content can be used like text, video
 </div>
 ```
 
-**Note** Since the slider effect needs a clipping container, box shadows of content items are also clipped. To get the best visual result, it's recommended to use the `uk-slider="center: true"` mode if your content items have a box shadow.
+**Note** Since the slider effect needs a clipping container, box shadows of content items are also clipped. To widen the container to prevent box-shadows from clipping, add the `.uk-slider-container-offset` class. Alternatively, use the `uk-slider="center: true"` mode if your content items have a box shadow.
 
 ***
 
