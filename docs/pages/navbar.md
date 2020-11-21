@@ -57,7 +57,7 @@ The Navbar component consists of a navbar container, the navbar itself and one o
 You can place more than one navigation inside a navbar container. That way you can have a left aligned, a centered and a right aligned navigation inside the same navbar.
 
 ```html
-<nav class="uk-navbar-container" uk-navbar>
+<nav class="uk-navbar-container uk-navbar" uk-navbar>
     <div class="uk-navbar-left">...</div>
     <div class="uk-navbar-center">...</div>
     <div class="uk-navbar-right">...</div>
@@ -65,7 +65,7 @@ You can place more than one navigation inside a navbar container. That way you c
 ```
 
 ```example
-<nav class="uk-navbar-container" uk-navbar>
+<nav class="uk-navbar-container uk-navbar" uk-navbar>
 
     <div class="uk-navbar-left">
 
