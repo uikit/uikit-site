@@ -52,8 +52,6 @@ yarn compile
 yarn watch
 ```
 
-**Note** Use Node.js version 8.2.0 or higher.
-
 The compiled `dist` folder now contains additional files which are not checked in by default. The build task will create even more additional files if you have added a [custom UIkit theme](less.md#use-included-build-process).
 
 ```html
