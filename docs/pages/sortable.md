@@ -18,30 +18,30 @@ To apply this component, add the `uk-sortable` attribute to a container and crea
 ```
 
 ```example
-<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s uk-text-center" uk-sortable="handle: .uk-card" uk-grid>
+<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 1</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 2</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 2</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 3</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 3</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 4</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 4</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 5</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 5</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 6</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 6</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 7</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 7</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 8</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 8</div>
     </li>
 </ul>
 ```
@@ -62,45 +62,45 @@ By default, the entire sortable element can be used for drag and drop sorting. T
 ```
 
 ```example
-<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s uk-text-center" uk-sortable="handle: .uk-sortable-handle" uk-grid>
+<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-sortable-handle" uk-grid>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 1
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 1
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 2
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 2
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 3
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 3
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 4
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 4
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 5
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 5
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 6
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 6
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 7
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 7
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 8
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 8
         </div>
     </li>
 </ul>
