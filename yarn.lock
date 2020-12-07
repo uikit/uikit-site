@@ -4026,10 +4026,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-uikit@3.5.11:
-  version "3.5.11"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.5.11.tgz#62559db69f469b62c8295fc0c9405bd837c9a6f5"
-  integrity sha512-1V027yEGSKOCbZ0x35PxxvTKBA/bY/BEHsCu2k1QCq/cWOC2fEI9Y3dujpZUad5bFahq8jnivh/CCTApWuuNaA==
+uikit@3.5.12:
+  version "3.5.12"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.5.12.tgz#2ab6a2d5fc2ebe06adf7f8eb49feeb19f3744f81"
+  integrity sha512-LaUU19hYKXjEpJOkUFVTjJNL3tFyP5ZJQguUZrZZV4EFj/EZEHSOxWaOlA1xco6HJuFMnIur81ewHZczdxNeTg==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
