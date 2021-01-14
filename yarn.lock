@@ -3751,10 +3751,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-uikit@3.6.10:
-  version "3.6.10"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.6.10.tgz#ce849f829948b28dbdf2b9a5251cca45706e23c6"
-  integrity sha512-xxj+Urf/7Y4I7g36AdgnoneeM1PYsegNzT/lcaJFqx/15Lod7LuGNhy/C1D/2M+kHlPH0JfmxQmhDw5A3MtKBQ==
+uikit@3.6.11:
+  version "3.6.11"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.6.11.tgz#8c1bd575b7897f2c3dee773539118b42a3af6599"
+  integrity sha512-KL0laSKAKCGT9YeYC1PVkkd+Oa9G7xRS6hD4fnpvh7JUs4P3kV774x2tBAcX34JOLnkMAoc9VrFox16XGokWjA==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
