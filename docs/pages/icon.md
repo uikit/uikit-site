@@ -279,6 +279,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="xing"></span> xing</li>
             <li><span class="uk-margin-small-right" uk-icon="yelp"></span> yelp</li>
             <li><span class="uk-margin-small-right" uk-icon="youtube"></span> youtube</li>
+            <li><span class="uk-margin-small-right" uk-icon="telegram"></span> telegram</li>
         </ul>
     </div>
 </div>
