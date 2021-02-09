@@ -144,7 +144,7 @@ $tile-secondary-color-mode: none;
 
 ## How to structure your theme
 
-In the examples above, we have added all custom rules directly to `site.scss`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Sass compiler. You should better sort all rules into single files per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/scss/theme`.
+In the examples above, we have added all custom rules directly to `site.scss`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Sass compiler. You should better sort all rules into a single file per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/scss/theme`.
 
 
 ```html

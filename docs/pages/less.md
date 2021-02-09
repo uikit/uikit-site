@@ -157,7 +157,7 @@ You can also disable the inverse mode for specific components:
 
 ## How to structure your theme
 
-In the examples above, we have added all custom rules directly to `/custom/my-theme.less`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Less compiler. You should better sort all rules into single files per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/less/uikit.theme.less`.
+In the examples above, we have added all custom rules directly to `/custom/my-theme.less`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Less compiler. You should better sort all rules into a single file per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/less/uikit.theme.less`.
 
 **Note** The example assumes you are building a theme in the `/custom` directory of the full UIkit project. You can adapt these paths if you have set up your own build process.
 
