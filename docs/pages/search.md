@@ -21,7 +21,7 @@ By default, the search has no additional styling. In this example we are using t
 
 ```example
 <form class="uk-search uk-search-default">
-    <input class="uk-search-input" type="search" placeholder="Search...">
+    <input class="uk-search-input" type="search" placeholder="Search">
 </form>
 ```
 
@@ -42,14 +42,14 @@ To create a search icon, add the `uk-search-icon` attribute to a `<span>` elemen
 <div class="uk-margin">
     <form class="uk-search uk-search-default">
         <span uk-search-icon></span>
-        <input class="uk-search-input" type="search" placeholder="Search...">
+        <input class="uk-search-input" type="search" placeholder="Search">
     </form>
 </div>
 
 <div class="uk-margin">
     <form class="uk-search uk-search-default">
         <span class="uk-search-icon-flip" uk-search-icon></span>
-        <input class="uk-search-input" type="search" placeholder="Search...">
+        <input class="uk-search-input" type="search" placeholder="Search">
     </form>
 </div>
 ```
@@ -71,14 +71,14 @@ To enable an action, use an `<a>` or `<button>` element to create the icon.
 <div class="uk-margin">
     <form class="uk-search uk-search-default">
         <a href="" uk-search-icon></a>
-        <input class="uk-search-input" type="search" placeholder="Search...">
+        <input class="uk-search-input" type="search" placeholder="Search">
     </form>
 </div>
 
 <div class="uk-margin">
     <form class="uk-search uk-search-default">
         <a href="" class="uk-search-icon-flip" uk-search-icon></a>
-        <input class="uk-search-input" type="search" placeholder="Search...">
+        <input class="uk-search-input" type="search" placeholder="Search">
     </form>
 </div>
 ```
@@ -96,7 +96,7 @@ To apply the default search styling, add the `.uk-search-default` class.
 ```example
 <form class="uk-search uk-search-default">
     <span uk-search-icon></span>
-    <input class="uk-search-input" type="search" placeholder="Search...">
+    <input class="uk-search-input" type="search" placeholder="Search">
 </form>
 ```
 
@@ -113,7 +113,7 @@ To increase the size of the search, for example when creating an overlay search,
 ```example
 <form class="uk-search uk-search-large">
     <span uk-search-icon></span>
-    <input class="uk-search-input" type="search" placeholder="Search...">
+    <input class="uk-search-input" type="search" placeholder="Search">
 </form>
 ```
 
@@ -134,7 +134,7 @@ A search can be used inside a navbar from the [Navbar component](navbar.md). Jus
         <div class="uk-navbar-item">
             <form class="uk-search uk-search-navbar">
                 <span uk-search-icon></span>
-                <input class="uk-search-input" type="search" placeholder="Search...">
+                <input class="uk-search-input" type="search" placeholder="Search">
             </form>
         </div>
 
@@ -196,7 +196,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
         <div class="uk-navbar-item uk-width-expand">
             <form class="uk-search uk-search-navbar uk-width-1-1">
-                <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                <input class="uk-search-input" type="search" placeholder="Search" autofocus>
             </form>
         </div>
 
@@ -227,7 +227,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
             <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
             <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
                 <form class="uk-search uk-search-navbar uk-width-1-1">
-                    <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                    <input class="uk-search-input" type="search" placeholder="Search" autofocus>
                 </form>
             </div>
         </div>
@@ -259,7 +259,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
                 <div class="uk-grid-small uk-flex-middle" uk-grid>
                     <div class="uk-width-expand">
                         <form class="uk-search uk-search-navbar uk-width-1-1">
-                            <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                            <input class="uk-search-input" type="search" placeholder="Search" autofocus>
                         </form>
                     </div>
                     <div class="uk-width-auto">
@@ -299,7 +299,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
     <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
         <button class="uk-modal-close-full" type="button" uk-close></button>
         <form class="uk-search uk-search-large">
-            <input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus>
+            <input class="uk-search-input uk-text-center" type="search" placeholder="Search" autofocus>
         </form>
     </div>
 </div>
