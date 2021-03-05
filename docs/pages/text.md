@@ -205,10 +205,10 @@ Add one of these useful classes to wrap your text.
 ```example
 <div class="uk-child-width-1-2@s" uk-grid>
     <div>
-        <div class="uk-panel uk-panel-box uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="uk-panel uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
     </div>
     <div>
-        <div class="uk-panel uk-panel-box uk-text-break">Loremipsumdolorsitamet,consecteturadipiscingelit,seddoeiusmodtemporincididuntutlaboreetdoloremagnaaliqua.</div>
+        <div class="uk-panel uk-text-break">Loremipsumdolorsitamet,consecteturadipiscingelit,seddoeiusmodtemporincididuntutlaboreetdoloremagnaaliqua.</div>
     </div>
 </div>
 ```
