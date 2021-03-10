@@ -258,7 +258,6 @@ Here is an overview of all currently available icons. Over time, we will keep ad
     <div>
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="google"></span> google</li>
-            <li><span class="uk-margin-small-right" uk-icon="google-plus"></span> google-plus</li>
             <li><span class="uk-margin-small-right" uk-icon="instagram"></span> instagram</li>
             <li><span class="uk-margin-small-right" uk-icon="joomla"></span> joomla</li>
             <li><span class="uk-margin-small-right" uk-icon="linkedin"></span> linkedin</li>
@@ -330,7 +329,7 @@ Use the modifier `.uk-icon-button` class on an `<a>` element to create an icon b
 ```example
 <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
 <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
-<a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+<a href="" class="uk-icon-button" uk-icon="youtube"></a>
 ```
 
 ***
