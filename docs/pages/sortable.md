@@ -196,12 +196,13 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option            | Value  | Default                   | Description                                   |
 |:------------------|:-------|:--------------------------|:----------------------------------------------|
 | `group`           | String | `''`                      | The group                                     |
-| `animation`       | Number | `150`                     | The animation duration.                       |
-| `threshold`       | Number | `5`                      | Mouse move threshold before dragging starts.  |
+| `animation`       | String, Boolean | 'slide'          | Animation mode: `slide`, `false`.             |
+| `duration`        | Number | 250                       | Animation duration in milliseconds.           |
+| `threshold`       | Number | `5`                       | Mouse move threshold before dragging starts.  |
 | `cls-item`        | String | `uk-sortable-item`        | The item class.                               |
 | `cls-placeholder` | String | `uk-sortable-placeholder` | The placeholder class.                        |
 | `cls-drag`        | String | `uk-sortable-drag`        | The ghost class.                              |
-| `cls-drag-state`  | String | `uk-drag`    | The body's dragging class.                    |
+| `cls-drag-state`  | String | `uk-drag`                 | The body's dragging class.                    |
 | `cls-base`        | String | `uk-sortable`             | The list's class.                             |
 | `cls-no-drag`     | String | `uk-sortable-nodrag`      | Disable dragging on elements with this class. |
 | `cls-empty`       | String | `uk-sortable-empty`       | The empty list class.                         |
