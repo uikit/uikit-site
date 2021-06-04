@@ -58,6 +58,12 @@ The following classes will transform text into uppercased, capitalized or lowerc
 
 ***
 
+## Text decoration
+
+Add the `.uk-text-decoration-none` class to remove any text decoration form a <a class="uk-text-decoration-none" href>link</a>.
+
+***
+
 ## Text color
 
 Use one of these classes to apply a different color to text elements.
