@@ -21,11 +21,11 @@ new Vue({
 
     router,
 
-    provide: {router},
-
     el: '#app',
 
     extends: App,
+
+    provide: {router},
 
     data: () => ({
         navigation,
