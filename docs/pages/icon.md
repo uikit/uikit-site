@@ -61,6 +61,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="hashtag"></span> hashtag</li>
             <li><span class="uk-margin-small-right" uk-icon="tag"></span> tag</li>
             <li><span class="uk-margin-small-right" uk-icon="cart"></span> cart</li>
+            <li><span class="uk-margin-small-right" uk-icon="bag"></span> bag</li>
             <li><span class="uk-margin-small-right" uk-icon="credit-card"></span> credit-card</li>
             <li><span class="uk-margin-small-right" uk-icon="mail"></span> mail</li>
             <li><span class="uk-margin-small-right" uk-icon="receiver"></span> receiver</li>
