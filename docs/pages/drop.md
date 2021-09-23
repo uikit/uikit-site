@@ -223,7 +223,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `mode`           | String          | `click, hover` | Comma separated list of drop trigger behaviour modes: `hover`, `click`                             |
 | `delay-show`     | Number          | `0`            | Delay time in milliseconds before a drop is displayed in hover mode.                               |
 | `delay-hide`     | Number          | `800`          | Delay time in milliseconds before a drop is hidden in hover mode.                                  |
-| `boundary`       | String          | `window`       | CSS selector of the element to maintain the drop's visibility.                                     |
+| `boundary`       | Boolean, String | `true`         | CSS selector of the element to maintain the drop's visibility. By default it's the window.                                   |
 | `boundary-align` | Boolean         | `false`        | Align the drop to its boundary.                                                                    |
 | `flip`           | Boolean, String | `true`         | Automatically flip the drop. Possible values are `false`, `true`, `x` or `y`.                      |
 | `offset`         | Number          | `0`            | The offset of the drop's container.                                                                |

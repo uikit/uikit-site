@@ -1017,7 +1017,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `mode`           | String       | `click, hover` | Comma separated list of dropdown trigger behavior modes: `click`, `hover` |
 | `delay-show`     | Number       | `0`            | Delay time in hover mode before a dropdown is shown in milliseconds.      |
 | `delay-hide`     | Number       | `800`          | Delay time in hover mode before a dropdown is hidden in milliseconds.     |
-| `boundary`       | CSS selector | `window`       | Referenced element to keep the dropdown's visibility.                     |
+| `boundary`       | Boolean, String | `true`      | CSS selector of referenced element to keep the dropdown's visibility. By default it's the navbar component's element.                    |
 | `boundary-align` | Boolean      | `false`        | Align the dropdown to the boundary.                                       |
 | `offset`         | Number       | `0`            | The offset of the dropdown container.                                     |
 | `dropbar `       | Boolean      | `false`        | Enable or disable dropbar behavior.                                       |
