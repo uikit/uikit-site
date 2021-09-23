@@ -353,6 +353,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 |:------------|:-------------|:--------|:---------------------------------------------------------------------------------------------------------|
 | `connect`   | CSS selector | `~.uk-switcher` | Related items container. By default succeeding elements with class 'uk-switcher'.             |
 | `toggle `   | CSS selector | `> * > :first-child`   | Select the clickable elements which trigger content switching.                                          |
+| `itemNav `  | CSS selector | `false` | Related nav container. By default, nav items are found in related items container only.                                          |
 | `active `   | Number       | `0`     | Active index on init. Providing a negative number indicates a position starting from the end of the set. |
 | `animation` | String       | `false` | The space separated names of animations to use. Comma separate for animation out.                        |
 | `duration`  | Number       | `200`   | The animation duration.                                                                                  |
