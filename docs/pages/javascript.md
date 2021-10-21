@@ -161,7 +161,7 @@ UIkit.offcanvas('#offcanvas').toggle();
 
 Any component functions and variables prefixed with an underscore are considered as part of the internal API, which may change at any given time.
 
-Each component triggers DOM events that you can react to. For example when an Modal is shown or a Scrollspy element becomes visible.
+Each component triggers DOM events that you can react to. For example when a Modal is shown or a Scrollspy element becomes visible.
 
 ```js
 UIkit.util.on('#offcanvas', 'show', function () {
@@ -170,6 +170,8 @@ UIkit.util.on('#offcanvas', 'show', function () {
 ```
 
 The component's documentation page lists its events.
+
+**Note** Components often trigger event with the same name (e.g. 'show'). Usually events [bubble through the DOM](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture). Check the event target, to ensure the event was triggered by the desired component.
 
 Sometimes, components like Grid or Tab are hidden in the markup. This may happen when used in combination with the Switcher, Modal or Dropdown. Once they become visible, they need to adjust or fix their height and other dimensions.
 
