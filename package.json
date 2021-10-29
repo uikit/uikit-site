@@ -5,7 +5,7 @@
     "compile": "yarn compile-js && yarn compile-less && yarn compile-uikit",
     "compile-uikit": "cd ./assets/uikit && yarn compile-less && yarn compile-rtl && yarn compile-js uikit && yarn compile-js tests",
     "compile-js": "./node_modules/.bin/webpack -p",
-    "compile-less": "make-dir css && lessc less/theme.less > css/theme.css --relative-urls --rootpath=../less/ -x",
+    "compile-less": "make-dir css && lessc less/theme.less > css/theme.css --relative-urls --rootpath=../less/ --clean-css",
     "eslint": "eslint '**/app/**/*.+(js|vue)'",
     "watch-js": "webpack -w --devtool=inline-source-map"
   },
@@ -19,6 +19,7 @@
     "eslint": "7.32.0",
     "eslint-plugin-vue": "^7.18.0",
     "less": "^2.7.2",
+    "less-plugin-clean-css": "^1.5.1",
     "make-dir-cli": "^3.0.0",
     "symlink-dir": "^5.0.1",
     "uikit": "3.8.0",
