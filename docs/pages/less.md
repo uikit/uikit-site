@@ -96,7 +96,7 @@ First, find a rule that you want to extend by looking through the component's Le
     box-sizing: border-box;
 
     // mixin to allow adding new declarations
-    .hook-card;
+    .hook-card();
 }
 ```
 
