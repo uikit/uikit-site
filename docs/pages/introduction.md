@@ -78,15 +78,9 @@ The following table lists the versions that UIkit is tested on. "Latest" means t
     </div>
     <div>
         <div class="uk-flex uk-flex-center uk-flex-middle">
-            <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11.svg?sanitize=true" width="50" alt="IE">
-        </div>
-        <p>11+</p>
-    </div>
-    <div>
-        <div class="uk-flex uk-flex-center uk-flex-middle">
             <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios.svg?sanitize=true" width="50" alt="Safari">
         </div>
-        <p>9.1+</p>
+        <p>10+</p>
     </div>
     <div>
         <div class="uk-flex uk-flex-center uk-flex-middle">
