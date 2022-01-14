@@ -25,7 +25,7 @@ To apply this component, add the `uk-parallax` attribute to any element. Add an 
 You can use the following options to animate a number of CSS property.
 
 | Option             | Description                        | Default&nbsp;Unit | Default Start |
-| :----------------- | :--------------------------------- | ----------------- | :------------ |
+|:-------------------|:-----------------------------------|-------------------|:--------------|
 | `x`                | Animate translateX.                | `px`              | `0`           |
 | `y`                | Animate translateY.                | `px`              | `0`           |
 | `bgy`              | Animate background Y position.     | `px`              | *Current*     |
@@ -247,7 +247,7 @@ The parallax can also be applied to certain viewports only. Add the `media` opti
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option     | Value           | Default | Description                                                                                                                                                |
-| :--------- | :-------------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|:-----------|:----------------|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `easing`   | Number          | `1`     | Animation easing during scrolling                                                                                                                          |
 | `target`   | String          | `false` | Element dimension reference for animation duration.                                                                                                        |
 | `viewport` | Number          | `1`     | Animation range depending on the viewport.                                                                                                                 |

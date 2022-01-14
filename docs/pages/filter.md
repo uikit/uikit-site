@@ -121,7 +121,7 @@ The Filter component comes unstyled, which allows you to use any of the other UI
 By default, the filter uses a `slide` animation for the items between the different filtering states. To apply a different animation, just add the `animation` option to the attribute.
 
 | Animation      | Description                                                |
-| :------------- | :--------------------------------------------------------- |
+|:---------------|:-----------------------------------------------------------|
 | `slide`        | Fade items out and in or slide them to their new position. |
 | `fade`         | Fade all items out and in.                                 |
 | `delayed-fade` | Fade items slightly delayed out and in.                    |
@@ -833,12 +833,12 @@ Here is a comprehensive example with a masonry grid:
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option      | Value           | Default | Description                                          |
-| :---------- | :-------------- | :------ | :--------------------------------------------------- |
-| `target`    | String          | ''      | The targeted list on which to apply the filter to.   |
-| `selActive` | String, Boolean | false   | A selector for the initially active filter controls. |
-| `animation` | String, Boolean | 'slide' | Animation mode: `slide`, `fade`, `delayed-fade` or `false`.                        |
-| `duration`  | Number          | 250     | Animation duration in milliseconds.                  |
+| Option      | Value           | Default | Description                                                 |
+|:------------|:----------------|:--------|:------------------------------------------------------------|
+| `target`    | String          | ''      | The targeted list on which to apply the filter to.          |
+| `selActive` | String, Boolean | false   | A selector for the initially active filter controls.        |
+| `animation` | String, Boolean | 'slide' | Animation mode: `slide`, `fade`, `delayed-fade` or `false`. |
+| `duration`  | Number          | 250     | Animation duration in milliseconds.                         |
 
 `target` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
@@ -859,6 +859,6 @@ UIkit.filter(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name           | Description                              |
-| :------------- | :--------------------------------------- |
+|:---------------|:-----------------------------------------|
 | `beforeFilter` | Fires before the filter is applied.      |
 | `afterFilter`  | Fires after the filter has been applied. |

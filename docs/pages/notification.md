@@ -145,8 +145,8 @@ UIkit.notification(message, status);
 
 The following events will be triggered on elements with this component attached:
 
-| Name | Description |
-| --- | --- |
+| Name    | Description                                   |
+|---------|-----------------------------------------------|
 | `close` | Fires after the notification has been closed. |
 
 ### Methods

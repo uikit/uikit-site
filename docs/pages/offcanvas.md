@@ -6,10 +6,10 @@
 
 To apply this component, add the `uk-offcanvas` attribute to a parent `<div>` element and use the following classes.
 
-| Class                   | Description                                                           |
-|:------------------------|:----------------------------------------------------------------------|
-| `.uk-offcanvas-bar`     | Add this class to a child `<div>` element.                            |
-| `.uk-offcanvas-close`   | Add this class and the `uk-close` attribute to an `<a>` or `<button>` element to create a close button and enable its functionality. |
+| Class                 | Description                                                                                                                          |
+|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| `.uk-offcanvas-bar`   | Add this class to a child `<div>` element.                                                                                           |
+| `.uk-offcanvas-close` | Add this class and the `uk-close` attribute to an `<a>` or `<button>` element to create a close button and enable its functionality. |
 
 You can use any element to toggle an off-canvas sidebar. To enable the necessary JavaScript, add the `uk-toggle` attribute. An `<a>` element needs to be linked to the id of the off-canvas container. If you are using another element, like a button, just add the `uk-toggle="target: #ID"` attribute to target the id of the off-canvas container.
 
@@ -251,14 +251,14 @@ You can use the [Nav component](nav.md) inside an off-canvas to create a mobile 
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option    | Value   | Default | Description                                                     |
-|:----------|:--------|:--------|:----------------------------------------------------------------|
-| `mode`    | String  | `slide` | Off-canvas animation mode: `slide`, `reveal`, `push` or `none`. |
-| `flip`    | Boolean | `false` | Flip off-canvas to the right side.                              |
-| `overlay` | Boolean | `false` | Display the off-canvas together with an overlay.                |
-| `esc-close` | Boolean | `true`| Close the off-canvas when the _Esc_ key is pressed.             |
-| `bg-close`  | Boolean | `true`| Close the off-canvas when the background is clicked.            |
-| `container` | String | `false` | Define a target container via a selector to specify where the off-canvas should be appended in the DOM. Setting it to `false` will prevent this behavior. |
+| Option      | Value   | Default | Description                                                                                                                                               |
+|:------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `mode`      | String  | `slide` | Off-canvas animation mode: `slide`, `reveal`, `push` or `none`.                                                                                           |
+| `flip`      | Boolean | `false` | Flip off-canvas to the right side.                                                                                                                        |
+| `overlay`   | Boolean | `false` | Display the off-canvas together with an overlay.                                                                                                          |
+| `esc-close` | Boolean | `true`  | Close the off-canvas when the _Esc_ key is pressed.                                                                                                       |
+| `bg-close`  | Boolean | `true`  | Close the off-canvas when the background is clicked.                                                                                                      |
+| `container` | String  | `false` | Define a target container via a selector to specify where the off-canvas should be appended in the DOM. Setting it to `false` will prevent this behavior. |
 
 `mode` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 

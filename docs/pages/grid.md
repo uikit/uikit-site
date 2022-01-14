@@ -40,8 +40,8 @@ To create the grid container, add the `uk-grid` attribute to a `<div>` element. 
 
 The Grid component comes with a default gap that is decreased automatically from a certain breakpoint usually on a smaller desktop viewport width. To apply a different gap, add one of the following classes.
 
-| Class               | Description                                                                             |
-| :------------------ | :-------------------------------------------------------------------------------------- |
+| Class               | Description                                                                          |
+|:--------------------|:-------------------------------------------------------------------------------------|
 | `.uk-grid-small`    | Add this class to apply a small gap.                                                 |
 | `.uk-grid-medium`   | Add this class to apply a medium gap like the default one, but without a breakpoint. |
 | `.uk-grid-large`    | Add this class to apply a large gap with breakpoints.                                |
@@ -108,7 +108,7 @@ The Grid component comes with a default gap that is decreased automatically from
 To apply a different gap to just the column or row, add one of the following classes.
 
 | Class                                                 | Description                                                                      |
-| :---------------------------------------------------- | :------------------------------------------------------------------------------- |
+|:------------------------------------------------------|:---------------------------------------------------------------------------------|
 | `.uk-grid-column-small`<br>`.uk-grid-row-small`       | Add one of these classes to apply a small gap to the column or row.              |
 | `.uk-grid-column-medium`<br>`.uk-grid-row-medium`     | Add one of these classes to apply a medium gap to the column or row.             |
 | `.uk-grid-column-large`<br>`.uk-grid-row-large`       | Add one of these classes to apply a large gap to the column or row.              |
@@ -511,7 +511,7 @@ The parallax effect is also applied if grid columns wrap into the next row, as s
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option         | Value   | Default         | Description                                                                                                     |
-| :------------- | :------ | :-------------- | :-------------------------------------------------------------------------------------------------------------- |
+|:---------------|:--------|:----------------|:----------------------------------------------------------------------------------------------------------------|
 | `margin `      | String  | uk-grid-margin  | This class is added to items that break into the next row, typically to create margin to the previous row.      |
 | `first-column` | String  | uk-first-column | This class is added to the first element in each row.                                                           |
 | `masonry`      | Boolean | false           | Enables masonry layout for this grid.                                                                           |

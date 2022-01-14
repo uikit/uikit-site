@@ -5,7 +5,7 @@ import {escape} from 'he';
 import {append, includes, remove} from 'uikit-util';
 
 export function sluggify(text) {
-    return text.toLowerCase().trim().replace(/(&amp;| & )/g, '-and-').replace(/&(.+?);/g, '').replace(/[\s\W-]+/g, '-');
+    return text.toLowerCase().trim().replace(/&amp;| & /g, '-and-').replace(/&.+?;/g, '').replace(/[\s\W-]+/g, '-');
 }
 
 export function parse(markdown, cb) {
@@ -59,7 +59,7 @@ export function parse(markdown, cb) {
     return marked(markdown, {renderer}, (err, content) => {
 
         if (includes(content, '{%isodate%}')) {
-            content = content.replace(/{%isodate%}/g, (new Date(Date.now() + 864e5 * 7)).toISOString().replace(/\.(\d+)Z/, '+00:00'));
+            content = content.replace(/{%isodate%}/g, (new Date(Date.now() + 864e5 * 7)).toISOString().replace(/\.\d+Z/, '+00:00'));
         }
 
         if (cb) {

@@ -109,7 +109,7 @@ When toggling multiple items with an animation, you might want to wait until the
 A toggle can be triggered in different ways. Just add the `mode` option to the `uk-toggle` attribute and apply one of these values.
 
 | Value          | Description                                                                      |
-| :------------- | :------------------------------------------------------------------------------- |
+|:---------------|:---------------------------------------------------------------------------------|
 | `hover`        | The toggle will be triggered on hover.                                           |
 | `click `       | The toggle will be triggered on click. This is the default value.                |
 | `click, hover` | The toggle will be triggered on click and hover.                                 |
@@ -151,7 +151,7 @@ When using the `media` mode, the `media` option with one of possible values has 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option      | Value           | Default | Description                                                                                                                                                                       |
-| :---------- | :-------------- | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|:------------|:----------------|:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `target`    | String          | `false` | CSS selector of the element(s) to toggle.                                                                                                                                         |
 | `mode`      | String          | `click` | Comma separated list of trigger behaviour modes. (`hover`, `click`, `media`)                                                                                                      |
 | `cls`       | String          | `false` | The class that is being toggled. Defaults to the `hidden` attribute.                                                                                                              |
@@ -182,14 +182,14 @@ UIkit.toggle(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name         | Description                                                              |
-| :----------- | :----------------------------------------------------------------------- |
+| Name         | Description                                                                                    |
+|:-------------|:-----------------------------------------------------------------------------------------------|
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
-| `show`       | Fires after an item is shown.                                            |
-| `shown`      | Fires after the item's show animation has completed.                     |
+| `show`       | Fires after an item is shown.                                                                  |
+| `shown`      | Fires after the item's show animation has completed.                                           |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
-| `hide`       | Fires after an item's hide animation has started.                        |
-| `hidden`     | Fires after an item is hidden.                                           |
+| `hide`       | Fires after an item's hide animation has started.                                              |
+| `hidden`     | Fires after an item is hidden.                                                                 |
 
 ### Methods
 

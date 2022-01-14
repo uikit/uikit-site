@@ -324,19 +324,19 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option           | Value           | Default        | Description                                                                                        |
-|:-----------------|:----------------|:---------------|:---------------------------------------------------------------------------------------------------|
+| Option           | Value           | Default        | Description                                                                                   |
+|:-----------------|:----------------|:---------------|:----------------------------------------------------------------------------------------------|
 | `toggle`         | String, Boolean | `- *`          | CSS selector for the element to be used as toggle. By default, the preceding element is used. |
-| `pos`            | String          | `bottom-left`  | The position of the dropdown.                                                                      |
-| `mode`           | String          | `click, hover` | Comma separated list of dropdown trigger behaviour modes: `hover`, `click`                         |
-| `delay-show`     | Number          | `0`            | Delay time in milliseconds before a dropdown is displayed in hover mode.                           |
-| `delay-hide`     | Number          | `800`          | Delay time in milliseconds before a dropdown is hidden in hover mode.                              |
-| `boundary`       | String          | `window`       | CSS selector of the element to maintain the drop's visibility.                                     |
-| `boundary-align` | Boolean         | `false`        | Align the dropdown to its boundary.                                                                |
-| `flip`           | Boolean, String | `true`         | Automatically flip the drop. Possible values are `false`, `true`, `x` or `y`.                      |
-| `offset`         | Number          | `0`            | The offset of the dropdown's container.                                                            |
-| `animation`      | String          | `false`        | Space separated names of animations to apply.                                                      |
-| `duration`       | Number          | `200`          | Animation duration in milliseconds.                                                                |                                                      |
+| `pos`            | String          | `bottom-left`  | The position of the dropdown.                                                                 |
+| `mode`           | String          | `click, hover` | Comma separated list of dropdown trigger behaviour modes: `hover`, `click`                    |
+| `delay-show`     | Number          | `0`            | Delay time in milliseconds before a dropdown is displayed in hover mode.                      |
+| `delay-hide`     | Number          | `800`          | Delay time in milliseconds before a dropdown is hidden in hover mode.                         |
+| `boundary`       | String          | `window`       | CSS selector of the element to maintain the drop's visibility.                                |
+| `boundary-align` | Boolean         | `false`        | Align the dropdown to its boundary.                                                           |
+| `flip`           | Boolean, String | `true`         | Automatically flip the drop. Possible values are `false`, `true`, `x` or `y`.                 |
+| `offset`         | Number          | `0`            | The offset of the dropdown's container.                                                       |
+| `animation`      | String          | `false`        | Space separated names of animations to apply.                                                 |
+| `duration`       | Number          | `200`          | Animation duration in milliseconds.                                                           |                                                      |
 ***
 
 ## JavaScript
@@ -353,16 +353,16 @@ UIkit.dropdown(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name         | Description                                                              |
-|:-------------|:-------------------------------------------------------------------------|
-| `toggle`     | Fires before an item is toggled.                                         |
+| Name         | Description                                                                                    |
+|:-------------|:-----------------------------------------------------------------------------------------------|
+| `toggle`     | Fires before an item is toggled.                                                               |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
-| `show`       | Fires after an item is shown.                                            |
-| `shown`      | Fires after the item's show animation has completed.                     |
+| `show`       | Fires after an item is shown.                                                                  |
+| `shown`      | Fires after the item's show animation has completed.                                           |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
-| `hide`       | Fires before an item is hidden.                                          |
-| `hidden`     | Fires after an item is hidden.                                           |
-| `stack`      | Fires when the `drop-stack`class is applied.                             |
+| `hide`       | Fires before an item is hidden.                                                                |
+| `hidden`     | Fires after an item is hidden.                                                                 |
+| `stack`      | Fires when the `drop-stack`class is applied.                                                   |
 
 ### Methods
 

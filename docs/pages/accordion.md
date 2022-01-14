@@ -154,18 +154,18 @@ To specify which items should be opened initially, add the `.uk-open` class to t
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option        | Value   | Default | Description                                |
-|:--------------|:--------|:--------|:-------------------------------------------|
-| `active`      | Number  | `false` | Index of the element to open initially.    |
-| `animation`   | Boolean | `true`  | Reveal item directly or with a transition. |
-| `collapsible` | Boolean | `true`  | Allow all items to be closed.              |
-| `content`     | String  | `> .uk-accordion-content` | The content selector, which selects the accordion content elements. |
-| `duration`    | Number  | `200`   | Animation duration in milliseconds.        |
-| `multiple`    | Boolean | `false` | Allow multiple open items.                 |
-| `targets`     | String  | `> *`   | CSS selector of the element(s) to toggle.  |
-| `toggle`      | String  | `> .uk-accordion-title` | The toggle selector, which toggles accordion items. |
-| `transition`  | String  | `ease`  | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
-| `offset`      | Number  | `0`     | Pixel offset added to scroll top.   |
+| Option        | Value   | Default                   | Description                                                                                                                                                                                              |
+|:--------------|:--------|:--------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `active`      | Number  | `false`                   | Index of the element to open initially.                                                                                                                                                                  |
+| `animation`   | Boolean | `true`                    | Reveal item directly or with a transition.                                                                                                                                                               |
+| `collapsible` | Boolean | `true`                    | Allow all items to be closed.                                                                                                                                                                            |
+| `content`     | String  | `> .uk-accordion-content` | The content selector, which selects the accordion content elements.                                                                                                                                      |
+| `duration`    | Number  | `200`                     | Animation duration in milliseconds.                                                                                                                                                                      |
+| `multiple`    | Boolean | `false`                   | Allow multiple open items.                                                                                                                                                                               |
+| `targets`     | String  | `> *`                     | CSS selector of the element(s) to toggle.                                                                                                                                                                |
+| `toggle`      | String  | `> .uk-accordion-title`   | The toggle selector, which toggles accordion items.                                                                                                                                                      |
+| `transition`  | String  | `ease`                    | The transition to use when revealing items. Use keyword for [easing functions](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function#Keywords_for_common_timing-functions). |
+| `offset`      | Number  | `0`                       | Pixel offset added to scroll top.                                                                                                                                                                        |
 
 ***
 
@@ -183,14 +183,14 @@ UIkit.accordion(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name         | Description                                                              |
-|:-------------|:-------------------------------------------------------------------------|
+| Name         | Description                                                                                    |
+|:-------------|:-----------------------------------------------------------------------------------------------|
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
-| `show`       | Fires after an item is shown.                                            |
-| `shown`      | Fires after the item's show animation has completed.                     |
+| `show`       | Fires after an item is shown.                                                                  |
+| `shown`      | Fires after the item's show animation has completed.                                           |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
-| `hide`       | Fires after an item's hide animation has started.                        |
-| `hidden`     | Fires after an item is hidden.                                           |
+| `hide`       | Fires after an item's hide animation has started.                                              |
+| `hidden`     | Fires after an item is hidden.                                                                 |
 
 ### Methods
 

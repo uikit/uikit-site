@@ -1,24 +1,20 @@
 <template>
-
     <div>
-
         <div class="uk-navbar-container tm-navbar-container" uk-sticky="media: 960">
             <div class="uk-container uk-container-expand">
                 <nav class="uk-navbar">
-
                     <div class="uk-navbar-left">
-
                         <a href="../" class="uk-navbar-item uk-logo">
                             <img class="uk-margin-small-right" uk-svg :src="'../images/uikit-logo.svg'"> UIkit
                         </a>
-
                     </div>
 
                     <div class="uk-navbar-right">
-
                         <ul class="uk-navbar-nav uk-visible@m">
                             <li><a href="../pro">Pro</a></li>
-                            <li class="uk-active"><a href="./">Documentation</a></li>
+                            <li class="uk-active">
+                                <a href="./">Documentation</a>
+                            </li>
                             <li><a href="../changelog">Changelog</a></li>
                         </ul>
 
@@ -28,34 +24,32 @@
                         </div>
 
                         <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas" uk-toggle></a>
-
                     </div>
-
                 </nav>
             </div>
         </div>
 
         <div class="tm-sidebar-left uk-visible@m">
-
             <h3>Documentation</h3>
 
-            <ul v-for="(pages, category, index) in navigation" class="uk-nav uk-nav-default tm-nav" :class="{'uk-margin-top': index}">
-                <li class="uk-nav-header">{{ category }}</li>
-                <router-link v-for="(p, label) in pages" :key="p" tag="li" :to="p"><a>{{ label }}</a></router-link>
+            <ul v-for="(pages, category, index) in navigation" :key="category" class="uk-nav uk-nav-default tm-nav" :class="{'uk-margin-top': index}">
+                <li class="uk-nav-header">
+                    {{ category }}
+                </li>
+                <router-link v-for="(p, label) in pages" :key="p" tag="li" :to="p">
+                    <a>{{ label }}</a>
+                </router-link>
             </ul>
-
         </div>
 
         <div class="tm-main uk-section uk-section-default">
             <div class="uk-container uk-container-small uk-position-relative">
-
                 <router-view/>
 
                 <div class="tm-sidebar-right uk-visible@l">
                     <div uk-sticky="offset: 160">
-
                         <ul class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
-                            <li v-for="(id, subject) in ids">
+                            <li v-for="(id, subject) in ids" :key="id">
                                 <a :href="`#${id}`">{{ subject }}</a>
                             </li>
                             <li class="uk-nav-divider"></li>
@@ -84,33 +78,34 @@
                                 </a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
-
             </div>
         </div>
 
         <div id="offcanvas" uk-offcanvas="mode: push; overlay: true">
             <div class="uk-offcanvas-bar">
                 <div class="uk-panel">
-
                     <ul class="uk-nav uk-nav-default tm-nav">
-                        <li class="uk-nav-header">General</li>
+                        <li class="uk-nav-header">
+                            General
+                        </li>
                         <li><a href="../index">Home</a></li>
                         <li><a href="../pro">Pro</a></li>
                         <li><a href="../changelog">Changelog</a></li>
                         <li><a href="../download">Download</a></li>
                     </ul>
 
-                    <ul v-for="(pages, category) in navigation" class="uk-nav uk-nav-default tm-nav uk-margin-top">
-                        <li class="uk-nav-header">{{ category }}</li>
-                        <router-link v-for="(p, label) in pages" :key="p" tag="li" :to="p"><a>{{ label }}</a></router-link>
+                    <ul v-for="(pages, category) in navigation" :key="category" class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                        <li class="uk-nav-header">
+                            {{ category }}
+                        </li>
+                        <router-link v-for="(p, label) in pages" :key="p" tag="li" :to="p">
+                            <a>{{ label }}</a>
+                        </router-link>
                     </ul>
                 </div>
             </div>
         </div>
-
     </div>
-
 </template>

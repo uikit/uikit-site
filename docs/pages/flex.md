@@ -63,11 +63,11 @@ These classes define the horizontal alignment of flex items and distribute the s
 
 UIkit provides a number of responsive flex classes for horizontal alignment. Basically, they work just like the usual flex alignment classes, except that they have suffixes that represent the breakpoint from which they come to effect.
 
-| Class | Description |
-|:------|:------------|
-| `.uk-flex-left@s`<br> `.uk-flex-center@s`<br> `.uk-flex-right@s`<br> `.uk-flex-between@s`<br> `.uk-flex-around@s` | Only affects device widths of _640px_ and higher. |
-| `.uk-flex-left@m`<br> `.uk-flex-center@m`<br> `.uk-flex-right@m`<br> `.uk-flex-between@m`<br> `.uk-flex-around@m` | Only affects device widths of _960px_ and higher. |
-| `.uk-flex-left@l`<br> `.uk-flex-center@l`<br> `.uk-flex-right@l`<br> `.uk-flex-between@l`<br> `.uk-flex-around@l` | Only affects device widths of _1200px_ and higher. |
+| Class                                                                                                                  | Description                                        |
+|:-----------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------|
+| `.uk-flex-left@s`<br> `.uk-flex-center@s`<br> `.uk-flex-right@s`<br> `.uk-flex-between@s`<br> `.uk-flex-around@s`      | Only affects device widths of _640px_ and higher.  |
+| `.uk-flex-left@m`<br> `.uk-flex-center@m`<br> `.uk-flex-right@m`<br> `.uk-flex-between@m`<br> `.uk-flex-around@m`      | Only affects device widths of _960px_ and higher.  |
+| `.uk-flex-left@l`<br> `.uk-flex-center@l`<br> `.uk-flex-right@l`<br> `.uk-flex-between@l`<br> `.uk-flex-around@l`      | Only affects device widths of _1200px_ and higher. |
 | `.uk-flex-left@xl`<br> `.uk-flex-center@xl`<br> `.uk-flex-right@xl`<br> `.uk-flex-between@xl`<br> `.uk-flex-around@xl` | Only affects device widths of _1600px_ and higher. |
 
 ```html

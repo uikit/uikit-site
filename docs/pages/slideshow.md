@@ -383,7 +383,7 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
             <video src="" autoplay loop muted playsinline uk-cover></video>
         </li>
         <li>
-            <iframe src="" frameborder="0" uk-cover></iframe>
+            <iframe src="" uk-cover></iframe>
         </li>
     </ul>
 </div>
@@ -400,7 +400,7 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
             <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" autoplay loop muted playsinline uk-cover></video>
         </li>
         <li>
-            <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen uk-cover></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1" width="1920" height="1080" allowfullscreen uk-cover></iframe>
         </li>
     </ul>
 
@@ -730,10 +730,10 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `animation`         | String          | `slide` | Slideshow animation mode: `slide`, `fade`, `scale`, `pull` or `push`. |
 | `autoplay`          | Boolean         | `false` | Slideshow autoplays.                                                  |
 | `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.                  |
-| `draggable`         | Boolean         | `true ` | Enable pointer dragging.                             |
-| `easing`            | String  | `ease`     | The animation easing (CSS timing functions or cubic-bezier).                   |
+| `draggable`         | Boolean         | `true ` | Enable pointer dragging.                                              |
+| `easing`            | String          | `ease`  | The animation easing (CSS timing functions or cubic-bezier).          |
 | `finite`            | Boolean         | `false` | Disable infinite sliding.                                             |
-| `pause-on-hover`    | Boolean         | `true` | Pause autoplay mode on hover.                                         |
+| `pause-on-hover`    | Boolean         | `true`  | Pause autoplay mode on hover.                                         |
 | `index`             | Number          | `0`     | Slideshow item to show. 0 based index.                                |
 | `velocity`          | Number          | `1`     | The animation velocity (pixel/ms).                                    |
 | `ratio`             | Boolean, String | `16:9`  | The ratio. (`false` prevents height adjustment)                       |

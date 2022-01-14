@@ -68,10 +68,10 @@ UIkit.scroll(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name           | Description                                                             |
-|:---------------|:------------------------------------------------------------------------|
+| Name           | Description                                                                                   |
+|:---------------|:----------------------------------------------------------------------------------------------|
 | `beforescroll` | Fires before scroll begins. Can prevent scrolling by calling `preventDefault()` on the event. |
-| `scrolled`     | Fires after scrolling is finished.                                      |
+| `scrolled`     | Fires after scrolling is finished.                                                            |
 
 
 ### Methods

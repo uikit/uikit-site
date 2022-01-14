@@ -1,10 +1,10 @@
 <template>
-
     <div>
-        <div v-if="error" class="uk-alert uk-alert-danger">{{ error }}</div>
+        <div v-if="error" class="uk-alert uk-alert-danger">
+            {{ error }}
+        </div>
         <div ref="container"></div>
     </div>
-
 </template>
 
 <script>

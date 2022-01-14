@@ -31,7 +31,7 @@ To apply this component, add the `.uk-button` class and a modifier such as `.uk-
 There are several style modifiers available. Just add one of the following classes to apply a different look.
 
 | Class                  | Description                               |
-| :--------------------- | :---------------------------------------- |
+|:-----------------------|:------------------------------------------|
 | `.uk-button-default`   | Default button style.                     |
 | `.uk-button-primary`   | Indicates the primary action.             |
 | `.uk-button-secondary` | Indicates an important action.            |

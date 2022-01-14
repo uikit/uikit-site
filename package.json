@@ -6,7 +6,7 @@
     "compile-uikit": "cd ./assets/uikit && yarn compile-less && yarn compile-rtl && yarn compile-js uikit && yarn compile-js tests",
     "compile-js": "webpack",
     "compile-less": "make-dir css && lessc less/theme.less > css/theme.css --relative-urls --rootpath=../less/ --clean-css",
-    "eslint": "eslint '**/app/**/*.+(js|vue)'",
+    "eslint": "eslint ./",
     "watch-js": "webpack -w --devtool=inline-source-map"
   },
   "eslintIgnore": [

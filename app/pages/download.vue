@@ -1,20 +1,19 @@
 <template>
-
     <div class="uk-section-primary tm-section-texture">
-
         <navbar class="uk-navbar-transparent"/>
 
         <div class="uk-section uk-flex uk-flex-middle uk-text-center" uk-height-viewport="offset-top: true">
             <div class="uk-width-1-1">
                 <div class="uk-container">
-
                     <p class="uk-margin-large-bottom">
-                        <canvas style="color: #fff" width="142" height="117" uk-svg src="./images/download.svg"></canvas>
+                        <canvas style="color: #fff;" width="142" height="117" uk-svg src="./images/download.svg"></canvas>
                     </p>
 
                     <h1>Thanks for giving UIkit a try.</h1>
 
-                    <p class="uk-margin-medium-bottom uk-text-large">Please support our open source project and share the love on<br class="uk-visible@s"> Twitter or Facebook. It would really mean a lot to us.</p>
+                    <p class="uk-margin-medium-bottom uk-text-large">
+                        Please support our open source project and share the love on<br class="uk-visible@s"> Twitter or Facebook. It would really mean a lot to us.
+                    </p>
 
                     <div class="uk-grid-medium uk-child-width-auto uk-flex-inline" uk-grid>
                         <div>
@@ -30,13 +29,10 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
     </div>
-
 </template>
 
 <script>

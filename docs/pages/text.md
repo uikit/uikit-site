@@ -9,7 +9,7 @@ Combine this component with the [Heading component](heading.md) to style your co
 UIkit offers various text utilities to style your text.
 
 | Class           | Description                                                                                                           |
-| :-------------- | :-------------------------------------------------------------------------------------------------------------------- |
+|:----------------|:----------------------------------------------------------------------------------------------------------------------|
 | `.uk-text-lead` | <span class="uk-text-lead">Add this class to highlight text, for example in article subtitles.</span>                 |
 | `.uk-text-meta` | <span class="uk-text-meta">Add this class to a paragraph which contains meta data about an article or similar.</span> |
 
@@ -20,7 +20,7 @@ UIkit offers various text utilities to style your text.
 The following classes will modify the font size of your text.
 
 | Class              | Description                                                                       |
-| :----------------- | :-------------------------------------------------------------------------------- |
+|:-------------------|:----------------------------------------------------------------------------------|
 | `.uk-text-small`   | <span class="uk-text-small">Add this class to decrease the font size.</span>      |
 | `.uk-text-default` | <span class="uk-text-default">Add this class to set default the font size.</span> |
 | `.uk-text-large`   | <span class="uk-text-large">Add this class to increase the font size.</span>      |
@@ -32,7 +32,7 @@ The following classes will modify the font size of your text.
 Add one of the following classes to modify the font weight of your text.
 
 | Class              | Description                                                                         |
-| :----------------- | :---------------------------------------------------------------------------------- |
+|:-------------------|:------------------------------------------------------------------------------------|
 | `.uk-text-light`   | <span class="uk-text-light">Add this class to apply a font weight of `300`.</span>  |
 | `.uk-text-normal`  | <span class="uk-text-normal">Add this class to apply a font weight of `400`.</span> |
 | `.uk-text-bold`    | <span class="uk-text-bold">Add this class to apply a font weight of `700`.</span>   |
@@ -52,7 +52,7 @@ Add the `.uk-text-italic` class to create <span class="uk-text-italic">italic te
 The following classes will transform text into uppercased, capitalized or lowercased characters.
 
 | Class                 | Description                                                                                  |
-| :-------------------- | :------------------------------------------------------------------------------------------- |
+|:----------------------|:---------------------------------------------------------------------------------------------|
 | `.uk-text-capitalize` | <span class="uk-text-capitalize">Add this class to transform your text to capitalize.</span> |
 | `.uk-text-uppercase`  | <span class="uk-text-uppercase">Add this class to transform your text to uppercase.</span>   |
 | `.uk-text-lowercase`  | <span class="uk-text-lowercase">Add this class to transform your text to lowercase.</span>   |
@@ -70,7 +70,7 @@ Add the `.uk-text-decoration-none` class to remove any text decoration from a <a
 Use one of these classes to apply a different color to text elements.
 
 | Class                | Description                                                                                       |
-| :------------------- | :------------------------------------------------------------------------------------------------ |
+|:---------------------|:--------------------------------------------------------------------------------------------------|
 | `.uk-text-muted`     | <span class="uk-text-muted">Add this class to mute text.</span>                                   |
 | `.uk-text-emphasis`  | <span class="uk-text-emphasis">Add this class to emphasize text.</span>                           |
 | `.uk-text-primary`   | <span class="uk-text-primary">Add this class to emphasize text with the primary color.</span>     |
@@ -96,7 +96,7 @@ To apply a gradient or background image to text, add the `.uk-text-background` c
 Add one of these useful classes to align your text.
 
 | Class              | Description                |
-| :----------------- | :------------------------- |
+|:-------------------|:---------------------------|
 | `.uk-text-left`    | Aligns text to the left.   |
 | `.uk-text-right`   | Aligns text to the right.  |
 | `.uk-text-center`  | Centers text horizontally. |
@@ -135,7 +135,7 @@ Add one of these useful classes to align your text.
 UIkit provides a number of responsive alignment classes. Basically, they work just like the usual alignment classes, except that they have suffixes that represent the breakpoint from which they come to effect.
 
 | Class                                                               | Description                                   |
-| :------------------------------------------------------------------ | :-------------------------------------------- |
+|:--------------------------------------------------------------------|:----------------------------------------------|
 | `.uk-text-left@s`<br> `.uk-text-center@s`<br> `.uk-text-right@s`    | Affects device widths of _640px_ and larger.  |
 | `.uk-text-left@m`<br> `.uk-text-center@m`<br>   `.uk-text-right@m`  | Affects device widths of _960px_ and larger.  |
 | `.uk-text-left@l`<br> `.uk-text-center@l`<br> `.uk-text-right@l`    | Affects device widths of _1200px_ and larger. |
@@ -174,7 +174,7 @@ UIkit provides a number of responsive alignment classes. Basically, they work ju
 Add one of these classes to vertically align text to an object.
 
 | Class               | Description                  |
-| :------------------ | :--------------------------- |
+|:--------------------|:-----------------------------|
 | `.uk-text-top`      | Aligns text to the top.      |
 | `.uk-text-middle`   | Centers text vertically.     |
 | `.uk-text-bottom`   | Aligns text to the bottom.   |
@@ -204,7 +204,7 @@ Add one of these classes to vertically align text to an object.
 Add one of these useful classes to wrap your text.
 
 | Class               | Description                                                                                        |
-| :------------------ | :------------------------------------------------------------------------------------------------- |
+|:--------------------|:---------------------------------------------------------------------------------------------------|
 | `.uk-text-truncate` | Prevents text from wrapping into multiple lines, truncating it and displaying an ellipsis instead. |
 | `.uk-text-break`    | Breaks strings, if their length exceeds the width of their container.                              |
 | `.uk-text-nowrap`   | Prevents text from wrapping into multiple lines.                                                   |
