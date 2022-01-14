@@ -67,7 +67,7 @@
 
                 renderer.heading = (text, level) => {
 
-                    text = text.replace(/\(.*?\)/, '<span class="uk-text-muted">$1</span>');
+                    text = text.replace(/\(.*?\)/, '<span class="uk-text-muted">$&</span>');
 
                     if (level === 2) {
                         return '<h' + level + ' class="uk-h3">' + text + '</h' + level + '>';
