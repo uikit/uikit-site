@@ -27,7 +27,7 @@ The compiled files of all UIkit versions are also hosted on the jsDelivr content
 
 ## File structure of the source
 
-The Github project contains all source files which are compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are bundled and transpiled into ECMAScript 5 and icons are bundled into the icon library.
+The GitHub project contains all source files which are compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are bundled and transpiled into ECMAScript 5 and icons are bundled into the icon library.
 
 | Folder   | Description                                             |
 |:---------|:--------------------------------------------------------|
@@ -37,7 +37,7 @@ The Github project contains all source files which are compiled into the `dist` 
 
 ***
 
-## Compile from Github source
+## Compile from GitHub source
 
 To compile UIkit yourself, you can use the included build scripts.
 
@@ -88,7 +88,7 @@ The compiled `dist` folder now contains additional files which are not checked i
     /components
 ```
 
-To use UIkit's CSS and JavaScript, [include the files](introduction.md#html-markup) in your own HTML and then create the markup of any of the components listed here in the docs.
+To use UIkit's CSS and JavaScript, [include the files](introduction.md#html-markup) in your own HTML and then create the markup of the components listed here in the docs.
 
 To compile UIkit automatically everytime you change the LESS or JavaScript, you can use the included build scripts.
 

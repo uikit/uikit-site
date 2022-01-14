@@ -4,7 +4,7 @@
 
 ## Panel
 
-UIkit uses panels to outline certain sections of your content. These can be arranged in grid columns from the [Grid component](grid.md) component, for example.
+UIkit uses panels to outline certain sections of your content. These can be arranged in grid columns from the [Grid component](grid.md), for example.
 
 Add the `.uk-panel` class to a `<div>` element to create a position context, set box-sizing to border-box, apply a clearfix and to remove the bottom margin of its last child element.
 

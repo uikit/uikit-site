@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Get familiar with the basic setup and overview of UIkit.</p>
 
-First of all you need to download UIkit. For other packages and links to a CDN, head to the [installation guide](installation.md) to learn more.
+First you need to download UIkit. For other packages and links to a CDN, head to the [installation guide](installation.md) to learn more.
 
 <a class="uk-button uk-button-primary" href="https://getuikit.com/download">Download UIkit</a>
 

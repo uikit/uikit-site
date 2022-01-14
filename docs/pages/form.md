@@ -80,7 +80,7 @@ Provide the user with basic information through feedback states on form controls
 | `.uk-form-danger`  | Add this class to notify the user that the value is not validated. |
 | `.uk-form-success` | Add this class to notify the user that the value is validated.     |
 
-Add the `disabled` attribute to a form control and it will be appear muted.
+Add the `disabled` attribute to a form control. It will appear muted.
 
 ```example
 <div class="uk-margin">

@@ -290,7 +290,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 ## Ratio
 
-Add the `ratio: 2` parameter to the `uk-icon` attribute to double its size – or any other number, depending on how big you want you icon to be.
+Add the `ratio: 2` parameter to the `uk-icon` attribute to double its size – or any other number, depending on how big you want your icon to be.
 
 ```html
 <span uk-icon="icon: check; ratio: 2"></span>

@@ -195,7 +195,7 @@ Add the `.uk-modal-container` class to expand the modal dialog to the default [C
 
 ## Full modifier
 
-To create a modal, that fills the entire page, add the `.uk-modal-full` class. It is also recommended to add the `.uk-modal-close-full` class to the close button, so that it adapts its styling.
+To create a modal, that fills the entire page, add the `.uk-modal-full` class. It is also recommended adding the `.uk-modal-close-full` class to the close button, so that it adapts its styling.
 
 ```html
 <div class="uk-modal-full" uk-modal>

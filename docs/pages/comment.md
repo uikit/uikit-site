@@ -4,7 +4,7 @@
 
 ## Usage
 
-The Comment component consists of the comment itself, a comment header, including an avatar, a title and meta data, and a comment body.
+The Comment component consists of the comment itself, a comment header, including an avatar, a title and metadata, and a comment body.
 
 | Class                | Description                                                                        |
 |:---------------------|:-----------------------------------------------------------------------------------|

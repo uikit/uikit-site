@@ -526,7 +526,7 @@ Add content overlays using the [Position component](position.md). It allows you 
 
 Add the `uk-slideshow-parallax` attribute to any element inside the slides to animate it together with the slideshow animation. Add an option with the desired animation values for each CSS property you want to animate. Define at least one start and end value. It can be done by passing two values separated by a comma.
 
-This functionality is inherited from the [Parallax component](parallax.md), and it allows to animate CSS properties depending on the scroll position of the slideshow animation. Take a look at the [possible properties](parallax.md#animated-properties) that can be animated.
+This functionality is inherited from the [Parallax component](parallax.md), and it allows animating CSS properties depending on the scroll position of the slideshow animation. Take a look at the [possible properties](parallax.md#animated-properties) that can be animated.
 
 ```html
 <div uk-slideshow>

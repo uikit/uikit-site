@@ -266,7 +266,7 @@ To add a simple Ken Burns effect, add the `.uk-animation-kenburns` class to any 
 <img class="uk-animation-kenburns" src="" alt="">
 ```
 
-By default the animation starts on page load. In this example we used the [Scrollspy](scrollspy.md) component, to toggle the effect when the image enters the view.
+By default, the animation starts on page load. In this example we used the [Scrollspy](scrollspy.md) component, to toggle the effect when the image enters the view.
 
 ```example
 <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>

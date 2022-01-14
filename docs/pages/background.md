@@ -82,7 +82,7 @@ This component features classes to specify the size of background images by keep
 
 ## Position modifiers
 
-To alter the background position of your image — which is in the top left hand corner of the area by default, add one of the following classes.
+To alter the background position of your image — which is in the top left-hand corner of the area by default, add one of the following classes.
 
 | Class                          | Description                                                           |
 |:-------------------------------|:----------------------------------------------------------------------|

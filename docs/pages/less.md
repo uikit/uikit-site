@@ -8,11 +8,11 @@ When you have [installed UIkit](installation.md) with Less sources, you can comp
 
 ## How to build
 
-The Less source files allow you to customize UIkit. To use the customized version on your website, you need to compile the Less sources into CSS. There are basically two approaches available to you: Setup your own build process or use the build scripts included in UIkit.
+The Less source files allow you to customize UIkit. To use the customized version on your website, you need to compile the Less sources into CSS. There are basically two approaches available to you: Set up your own build process or use the build scripts included in UIkit.
 
 ### Use your own build process
 
-To include UIkit in your project's build workflow, you need to import the core UIkit styles (`uikit.less`) or UIkit with its default theme (`uikit.theme.less`) into your project's own Less file. This main Less file then needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
+To include UIkit in your project's build workflow, you need to import the core UIkit styles (`uikit.less`) or UIkit with its default theme (`uikit.theme.less`) into your project's own Less file. This main Less file than needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
 
 ```less
 // Import UIkit default theme (or uikit.less with only core styles)
@@ -61,7 +61,7 @@ The generated CSS files will be located in the `/dist/css` folder.
 
 ## Create a UIkit theme
 
-When you have setup a file to put in your own Less code, you can get started to theme UIkit the way you want. If you have never used Less before, check out the [language features](http://lesscss.org/features/). When working with the UIkit Less sources, we have a few recommendations.
+When you have set up a file to put in your own Less code, you can get started to theme UIkit the way you want. If you have never used Less before, check out the [language features](http://lesscss.org/features/). When working with the UIkit Less sources, we have a few recommendations.
 
 ### Use variables
 

@@ -434,7 +434,7 @@ A navbar can contain a dropdown from the [Dropdown component](dropdown.md). Just
 
 ### Multiple columns
 
-The [Dropdown component](dropdown.md) allows you arrange the dropdown content in columns. To accommodate up to five columns, you also need to add one of the following classes. Columns will stack, if they no longer fit into the container.
+The [Dropdown component](dropdown.md) allows you to arrange the dropdown content in columns. To accommodate up to five columns, you also need to add one of the following classes. Columns will stack, if they no longer fit into the container.
 
 | Class                         | Description                                              |
 |:------------------------------|:---------------------------------------------------------|

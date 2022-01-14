@@ -20,8 +20,8 @@
                             <a class="uk-button uk-button-primary tm-button-primary uk-hidden@s" href="docs/introduction">Get Started</a>
                         </div>
                         <div>
-                            <a class="uk-button uk-button-default tm-button-default uk-button-large tm-button-large uk-visible@s" href="https://github.com/uikit/uikit">Github</a>
-                            <a class="uk-button uk-button-default tm-button-default uk-hidden@s" href="https://github.com/uikit/uikit">Github</a>
+                            <a class="uk-button uk-button-default tm-button-default uk-button-large tm-button-large uk-visible@s" href="https://github.com/uikit/uikit">GitHub</a>
+                            <a class="uk-button uk-button-default tm-button-default uk-hidden@s" href="https://github.com/uikit/uikit">GitHub</a>
                         </div>
                     </div>
                 </div>

@@ -88,7 +88,7 @@ To start the migration, replace the UIkit 2 files of your website with their UIk
 
 ![Console output](images/migration-console.gif)
 
-Every notice or warning message tells you what to change, including a list of all affected HTML elements. More complex changes are explained with examples that are easy to follow. The best way to migrate is to fix one component after another. That way you can see if the error messages are gone after a reload and also see the changes on your site.
+Every notice or warning message tells you what to change, including a list of all affected HTML elements. More complex changes are explained with examples that are easy to follow. The best way to migrate is to fix one component after another. That way you can see if the error messages are gone after a page reload and also see the changes on your site.
 
 ### Warnings
 

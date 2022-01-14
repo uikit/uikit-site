@@ -1,6 +1,6 @@
 # Filter
 
-<p class="uk-text-lead">Filter or sort items in any given layout by meta data.</p>
+<p class="uk-text-lead">Filter or sort items in any given layout by metadata.</p>
 
 The Filter component is often used together with the [Grid component](grid.md), especially the masonry grid, but it's not bound to it. Any layout can be filtered or sorted no matter how the items are positioned. Items fade and move with smooth transitions between the different filtering and sorting states.
 
@@ -28,7 +28,7 @@ To apply this component, you need a container element with the `uk-filter="targe
 
 Next, we need to define the meta data for each layout item, for example which category the item belongs to. Use any HTML class or attribute to do so.
 
-To apply a filter control, add the `uk-filter-control` attribute. To define the meta data that should be filtered, use the `filter: SELECTOR` option. The selector can be any CSS selector like a HTML class or an attribute you define for the layout items.
+To apply a filter control, add the `uk-filter-control` attribute. To define the meta data that should be filtered, use the `filter: SELECTOR` option. The selector can be any CSS selector like an HTML class or an attribute you define for the layout items.
 
 ```html
 <div uk-filter="target: .js-filter">

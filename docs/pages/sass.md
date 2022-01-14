@@ -33,7 +33,7 @@ $global-link-color: #DA7D02;
 
 ## Create a UIkit theme
 
-When you have setup a file to put in your own SCSS code, you can get started to theme UIkit the way you want. If you have never used SCSS before, check out the [language features](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#features). When working with the UIkit SCSS sources, we have a few recommendations.
+When you have set up a file to put in your own SCSS code, you can get started to theme UIkit the way you want. If you have never used SCSS before, check out the [language features](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#features). When working with the UIkit SCSS sources, we have a few recommendations.
 
 ### Use variables
 

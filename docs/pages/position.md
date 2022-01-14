@@ -104,7 +104,7 @@ If you want a position element to cover its container, just add the `.uk-positio
 
 ### Outside
 
-There are two classes to center elements outside on the left and right of the parent container. This is useful to position the [Slidenav component](slidenav.md) outside of an [Slideshow](slideshow.md) or [Slider](slider.md) component.
+There are two classes to center elements outside on the left and right of the parent container. This is useful to position the [Slidenav component](slidenav.md) outside of a [Slideshow](slideshow.md) or [Slider](slider.md) component.
 
 | Class                           | Description                                                     |
 |:--------------------------------|:----------------------------------------------------------------|
