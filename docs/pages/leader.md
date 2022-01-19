@@ -38,7 +38,7 @@ To change the dot to any custom character, just add the `fill: STRING` option to
 </div>
 ```
 
-**Note** The default fill character can be set through CSS or a LESS variable.
+**Note** The default fill character can be set through CSS or a Less variable.
 
 ```css
 .uk-leader-fill-content::before { content: '.'; }

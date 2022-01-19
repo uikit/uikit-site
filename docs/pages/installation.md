@@ -90,7 +90,7 @@ The compiled `dist` folder now contains additional files which are not checked i
 
 To use UIkit's CSS and JavaScript, [include the files](introduction.md#html-markup) in your own HTML and then create the markup of the components listed here in the docs.
 
-To compile UIkit automatically everytime you change the LESS or JavaScript, you can use the included build scripts.
+To compile UIkit automatically everytime you change Less or JavaScript files, you can use the included build scripts.
 
 ```sh
 yarn watch

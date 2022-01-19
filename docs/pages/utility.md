@@ -520,7 +520,7 @@ You can even automatically display alternative logos for light and dark backgrou
 </div>
 ```
 
-**Note** To inject a SVG logo as inline SVG, use the [SVG component](svg.md).
+**Note** To inject an SVG logo as inline SVG, use the [SVG component](svg.md).
 
 ***
 
