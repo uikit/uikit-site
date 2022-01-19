@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Use a custom prefix and the scope mode to make UIkit work in any environment.</p>
 
-By default, all classes and attributes in UIkit start with the `uk-` prefix. This avoids name collisions when introducing UIkit to existing projects or when combining it with other frameworks. UIkit allows to change that prefix. This even allows to use multiple versions of UIkit alongside each other. In addition, the scope mode allows to limit the UIkit styles to only affect certain parts on your pages.
+By default, all classes and attributes in UIkit start with the `uk-` prefix. This avoids name collisions when introducing UIkit to existing projects or when combining it with other frameworks. UIkit allows to change that prefix. This even allows using multiple versions of UIkit alongside each other. In addition, the scope mode allows to limit the UIkit styles to only affect certain parts on your pages.
 
 ***
 
