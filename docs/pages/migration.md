@@ -5,7 +5,7 @@
 ***
 
 ## Migration from UIkit 3.4 to 3.5
- 
+
 In UIkit 3.5 all Less variables and class names which have `xxlarge` in their name got renamed to `2xlarge` for better consistency. Just find and replace these Less variables if you are using a custom Less theme. There is just one class in the [Width component](width) which has to be updated in your markup.
 
 | Class              | Replace with       |
@@ -35,7 +35,7 @@ Since UIkit 3.2 adds a new `uk-text-bolder` class to the [Text component](text),
 
 ## Migration from UIkit 3.0 to 3.1
 
-UIkit 3.1 adds the `@deprecated` Less variable. By default, it is set to `false`, and deprecated classes are not compiled into the CSS. 
+UIkit 3.1 adds the `@deprecated` Less variable. By default, it is set to `false`, and deprecated classes are not compiled into the CSS.
 
 If you want to update your markup later and use the deprecated classes along the new ones, set the variable to `true` in your custom UIkit theme.
 

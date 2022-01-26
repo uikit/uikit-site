@@ -220,7 +220,7 @@ The Parallax component can be used to animate SVG strokes. The effect looks like
 
 ## SVG Images
 
-The Parallax component can be applied to the elements of inline SVG images, like `rect`, `circle` and `path`. 
+The Parallax component can be applied to the elements of inline SVG images, like `rect`, `circle` and `path`.
 
 ```html
 <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">

@@ -85,7 +85,7 @@ You can also use a dropdown from the [Dropdown component](dropdown.md) with a su
         <div uk-dropdown="mode: click">
             <ul class="uk-nav uk-dropdown-nav">...</ul>
         </div>
-        
+
     </li>
 </ul>
 ```
