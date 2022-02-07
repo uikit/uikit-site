@@ -4,12 +4,24 @@
 
 ***
 
+## Migration from UIkit 3.10 to 3.11
+
+UIkit 3.11 adds new `start` and `end` options to the [Parallax component](parallax) and deprecates the `viewport` option. Replace the `viewport` option with the `end` option. Simply, calculate `1` minus your viewport value and multiply it with `100vh + 100%`. Here are some examples:
+
+| Viewport Value | End Value    |
+| -------------- | ------------ |
+| `0.6`          | `40vh + 40%` |
+| `0.5`          | `50vh + 50%` |
+| `0.3`          | `70vh + 70%` |
+
+***
+
 ## Migration from UIkit 3.4 to 3.5
 
 In UIkit 3.5 all Less variables and class names which have `xxlarge` in their name got renamed to `2xlarge` for better consistency. Just find and replace these Less variables if you are using a custom Less theme. There is just one class in the [Width component](width) which has to be updated in your markup.
 
 | Class              | Replace with       |
-|--------------------|--------------------|
+| ------------------ | ------------------ |
 | `uk-width-xxlarge` | `uk-width-2xlarge` |
 
 
@@ -20,7 +32,7 @@ In UIkit 3.5 all Less variables and class names which have `xxlarge` in their na
 UIkit 3.3 adds a new `uk-container-xlarge` class to the [Container component](container) with a width of `1600px` as default value. This is why the class `uk-container-large` changes its width from `1600px` to `1400px`. Update your markup by replacing the following classes.
 
 | Class                | Replace with          |
-|----------------------|-----------------------|
+| -------------------- | --------------------- |
 | `uk-container-large` | `uk-container-xlarge` |
 
 ***
@@ -48,7 +60,7 @@ If you want to update your markup later and use the deprecated classes along the
 The Primary and Hero classes in the [Heading component](heading) are deprecated. Update your markup by replacing the following classes.
 
 | Class                | Replace with        |
-|----------------------|---------------------|
+| -------------------- | ------------------- |
 | `uk-heading-primary` | `uk-heading-medium` |
 | `uk-heading-hero`    | `uk-heading-xlarge` |
 

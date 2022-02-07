@@ -4,7 +4,7 @@
 
 ## Usage
 
-To apply this component, add the `uk-parallax` attribute to any element. Add an option with the desired animation target value for each CSS property you want to animate.
+To apply this component, add the `uk-parallax` attribute to any element. Add an option with the desired animation end value for each CSS property you want to animate.
 
 ```html
 <div uk-parallax="bgy: -200">...</div>
@@ -48,16 +48,16 @@ The value can define any allowed unit type, e.g. `x: 20vw`. For some options, th
 
 ***
 
-## Start and end values
+## Start and end steps
 
-Options are always animated from their default start value to the target value set in the option. However, you can also define a start value yourself. This is done by passing two values separated by comma.
+Options are always animated from their default start value to the end value set in the option. However, you can also define a start value yourself. This is done by passing two values separated by comma.
 
 ```html
 <div uk-parallax="opacity: 0,1">...</div>
 ```
 
 ```example
-<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('images/dark.jpg');">
+<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
     <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
         <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">Headline</h1>
         <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -74,29 +74,11 @@ Define multiple steps for a property by using a comma separated list of values.
 ```
 
 ```example
-<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('images/dark.jpg');">
+<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
     <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
         <h1 uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; viewport: 0.5;">Headline</h1>
         <p uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-</div>
-```
-
-***
-
-## Viewport position
-
-Using the `viewport` option you can adjust the animation duration. The value defines how far inside the viewport the target element is scrolled until the animation is completed. With the value `1` or `false`, the animation lasts as long as the element is in the viewport (default behavior). Setting it to `0.5`, for example, animates the property until the scroll position reaches the middle of the target element.
-
-```html
-<div uk-parallax="viewport: 0.5">...</div>
-```
-
-```example
-<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" style="background-image: url('images/dark.jpg');">
-
-    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">Headline</h1>
-
 </div>
 ```
 
@@ -113,7 +95,7 @@ Different parallax animations can easily be nested.
 ```
 
 ```example
-<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
+<div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
 
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="y: 100,0">Headline</h1>
 
@@ -133,10 +115,34 @@ Usually, the animation lasts as long as the element itself is in the viewport. T
 ```
 
 ```example
-<div id="test-target" class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
+<div id="test-target" class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('images/dark.jpg');">
 
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; y: 100,0">Headline</h1>
 
+</div>
+```
+
+***
+
+## Start and End
+
+Using the `start` and `end` options you can adjust the animation duration. The `start` option defines when the animation starts. The default value of `0` means that the target's upper border and viewport's lower border intersect. The `end` option defines when the animation ends. The default value of `0` means that the target's lower border and the viewport's upper border intersect.
+ Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the target's height. Both options allow for basic mathematics operands, `+` and `-`. 
+
+```html
+<div uk-parallax="start: 100%; end: 100%;">...</div>
+<div uk-parallax="start: 40vh; end: 40vh;">...</div>
+<div uk-parallax="start: 100% + 50; end: 100% + 50;">...</div>
+```
+
+```example
+<div id="test-start-end" class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
+     <div class="uk-grid uk-margin-auto uk-flex-inline">
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; y: 398; easing: 0;">0 / 0</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; start: 100%; end: 100%; y: 398; easing: 0;">100% / 100%</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; start: 40vh; end: 40vh; y: 398; easing: 0;">40vh / 40vh</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; start: 100% + 100; end: 100% + 100; y: 398; easing: 0;">100% + 100 / 100% + 100</div></div>
+    </div>
 </div>
 ```
 
@@ -149,13 +155,13 @@ To adjust the easing of the animation, add the `easing` option. `0` transitions 
 ```example
 <div id="test-easing" class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
      <div class="uk-grid uk-margin-auto uk-margin-auto-vertical uk-flex-inline">
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: -2">-2</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: -1">-1</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: -0.5">-0.5</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: 0">0</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: 0.5">0.5</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: 1">1</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="y: 200; easing: 2">2</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: -2">-2</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: -1">-1</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: -0.5">-0.5</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: 0">0</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: 0.5">0.5</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: 1">1</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-easing; start: 100%; end: 100%; y: 200; easing: 2">2</div></div>
     </div>
 </div>
 ```
@@ -171,9 +177,9 @@ Transition from one color to another, for example for borders, backgrounds or te
 ```
 
 ```example
-<div id="test-color" class="test-color uk-height-large uk-overflow-hidden uk-flex uk-flex-top" uk-parallax="background-color: yellow,white; border-color: #00f,#f00; viewport: 0.5" style="border: 10px solid #000;">
+<div id="test-color" class="test-color uk-height-large uk-overflow-hidden uk-flex" uk-parallax="start: 100%; end: 100%; background-color: yellow,white; border-color: #00f,#f00;" style="border: 10px solid #000;">
 
-    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; color: #0f0; viewport: 0.5">Headline</h1>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; start: 100%; end: 100%; color: #0f0;">Headline</h1>
 
 </div>
 ```
@@ -189,9 +195,9 @@ CSS filters are an easy way to add graphical effects to any element on your page
 ```
 
 ```example
-<div id="test-filter" class="uk-height-large uk-background-cover uk-overflow-hidden uk-flex uk-flex-top" uk-parallax="sepia: 100;" style="background-image: url('images/light.jpg');">
+<div id="test-filter" class="uk-height-large uk-background-cover uk-overflow-hidden uk-flex" uk-parallax="start: 100%; end: 100%; sepia: 100;" style="background-image: url('images/light.jpg');">
 
-    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; blur: 0,10;">Headline</h1>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; start: 100%; end: 100%; blur: 0,10;">Headline</h1>
 
 </div>
 ```
@@ -209,7 +215,7 @@ The Parallax component can be used to animate SVG strokes. The effect looks like
 ```
 
 ```example
-<div class="uk-text-center" uk-parallax="stroke: 100%; viewport: 0.7">
+<div class="uk-text-center" uk-parallax="start: 100%; end: 100%; stroke: 100%;">
     <img src="images/strokes.svg" alt="" uk-svg>
 </div>
 ```
@@ -240,18 +246,23 @@ The parallax can also be applied to certain viewports only. Add the `media` opti
 <div uk-parallax="media: @m"></div>
 ```
 
+## Sticky Parallax
+
+Together with the [Sticky component](sticky.md) you can achieve complex sticky parallax effects. View some examples in the tests for the [Sticky Parallax](../assets/uikit/tests/sticky-parallax.html).
+
 ***
 
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option     | Value          | Default | Description                                                                                                                                                |
-|:-----------|:---------------|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `easing`   | Number         | `1`     | Animation easing during scrolling                                                                                                                          |
-| `target`   | String         | `false` | Element dimension reference for animation duration.                                                                                                        |
-| `viewport` | Number         | `1`     | Animation range depending on the viewport.                                                                                                                 |
-| `media`    | Number, String | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
+| Option   | Value          | Default | Description                                                                                                                                                |
+| :------- | :------------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `easing` | Number         | `1`     | Animation easing during scrolling                                                                                                                          |
+| `target` | String         | `false` | Element dimension reference for animation duration.                                                                                                        |
+| `start`  | Number, String | `0`     | Start offset. The value can be in vh, % and px. It supports basic mathematics operands + and -.                                                            |
+| `end`    | Number, String | `0`     | End offset. The value can be in vh, % and px. It supports basic mathematics operands + and -.                                                              |
+| `media`  | Number, String | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
 ***
 
