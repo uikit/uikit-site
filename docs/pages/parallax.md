@@ -246,12 +246,12 @@ The parallax can also be applied to certain viewports only. Add the `media` opti
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option     | Value           | Default | Description                                                                                                                                                |
-|:-----------|:----------------|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `easing`   | Number          | `1`     | Animation easing during scrolling                                                                                                                          |
-| `target`   | String          | `false` | Element dimension reference for animation duration.                                                                                                        |
-| `viewport` | Number          | `1`     | Animation range depending on the viewport.                                                                                                                 |
-| `media`    | Integer, String | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
+| Option     | Value          | Default | Description                                                                                                                                                |
+|:-----------|:---------------|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `easing`   | Number         | `1`     | Animation easing during scrolling                                                                                                                          |
+| `target`   | String         | `false` | Element dimension reference for animation duration.                                                                                                        |
+| `viewport` | Number         | `1`     | Animation range depending on the viewport.                                                                                                                 |
+| `media`    | Number, String | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
 ***
 

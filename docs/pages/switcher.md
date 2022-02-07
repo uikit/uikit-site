@@ -402,6 +402,6 @@ UIkit.switcher(element).show(index);
 
 Shows the Switcher item with given index.
 
-| Name    | Type                  | Default | Description                           |
-|:--------|:----------------------|:--------|:--------------------------------------|
-| `index` | String, Integer, Node | 0       | Switcher item to show. 0 based index. |
+| Name    | Type                 | Default | Description                           |
+|:--------|:---------------------|:--------|:--------------------------------------|
+| `index` | String, Number, Node | 0       | Switcher item to show. 0 based index. |

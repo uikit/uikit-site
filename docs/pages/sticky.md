@@ -153,7 +153,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `cls-inactive`   | String                                | `''`        | The inactive class.                                                                                                                                                      |
 | `width-element`  | CSS selector                          | `false`     | The element the Sticky should get its width from in active mode.                                                                                                         |
 | `show-on-up`     | Boolean                               | `false`     | Only show sticky element when scrolling up.                                                                                                                              |
-| `media `         | Integer, String                       | `false`     | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)).               |
+| `media `         | Number, String                        | `false`     | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)).               |
 | `target-offset ` | Boolean, Number                       | `false`     | Initially make sure that the Sticky is not over a targeted element via location hash.                                                                                    |
 
 ***

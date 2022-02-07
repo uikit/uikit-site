@@ -118,13 +118,13 @@ You can close all open notifications by calling `UIkit.notification.closeAll()`.
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option     | Value   | Default      | Description                                                         |
-|:-----------|:--------|:-------------|:--------------------------------------------------------------------|
-| `message ` | String  | `false`      | Notification message to show.                                       |
-| `status`   | String  | `null`       | Notification status color.                                          |
-| `timeout`  | Integer | `5000`       | Visibility duration until a notification disappears.                |
-| `group`    | String  | `null`       | Useful, if you want to close all notifications in a specific group. |
-| `pos`      | String  | `top-center` | Display corner.                                                     |
+| Option     | Value  | Default      | Description                                                         |
+|:-----------|:-------|:-------------|:--------------------------------------------------------------------|
+| `message ` | String | `false`      | Notification message to show.                                       |
+| `status`   | String | `null`       | Notification status color.                                          |
+| `timeout`  | Number | `5000`       | Visibility duration until a notification disappears.                |
+| `group`    | String | `null`       | Useful, if you want to close all notifications in a specific group. |
+| `pos`      | String | `top-center` | Display corner.                                                     |
 
 ***
 

@@ -177,15 +177,15 @@ Tabs can be used to trigger a dropdown menu from the [Dropdown component](dropdo
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option      | Value           | Default | Description                                                                                                                                                  |
-|:------------|:----------------|:--------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `connect`   | CSS selector    | `false` | Related item's container. By default, this is the next element with the 'uk-switcher' class.                                                                 |
-| `toggle `   | CSS selector    | `> *`   | The toggle selector, which triggers content switching on click.                                                                                              |
-| `active `   | Number          | `0`     | Active index on init. Providing a negative number indicates a position starting from the end of the set.                                                     |
-| `animation` | String          | `false` | The space separated names of animations to use. Comma separate for animation out.                                                                            |
-| `duration`  | Number          | `200`   | The animation duration.                                                                                                                                      |
-| `swiping`   | Boolean         | `true`  | Use swiping.                                                                                                                                                 |
-| `media`     | Integer, String | `960`   | When to switch to horizontal mode - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
+| Option      | Value          | Default | Description                                                                                                                                                  |
+|:------------|:---------------|:--------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `connect`   | CSS selector   | `false` | Related item's container. By default, this is the next element with the 'uk-switcher' class.                                                                 |
+| `toggle `   | CSS selector   | `> *`   | The toggle selector, which triggers content switching on click.                                                                                              |
+| `active `   | Number         | `0`     | Active index on init. Providing a negative number indicates a position starting from the end of the set.                                                     |
+| `animation` | String         | `false` | The space separated names of animations to use. Comma separate for animation out.                                                                            |
+| `duration`  | Number         | `200`   | The animation duration.                                                                                                                                      |
+| `swiping`   | Boolean        | `true`  | Use swiping.                                                                                                                                                 |
+| `media`     | Number, String | `960`   | When to switch to horizontal mode - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
 ***
 
@@ -224,6 +224,6 @@ UIkit.tab(element).show(index);
 
 Shows the Tab item with given index.
 
-| Name    | Type                  | Default | Description                      |
-|:--------|:----------------------|:--------|:---------------------------------|
-| `index` | String, Integer, Node | 0       | Tab item to show. 0 based index. |
+| Name    | Type                 | Default | Description                      |
+|:--------|:---------------------|:--------|:---------------------------------|
+| `index` | String, Number, Node | 0       | Tab item to show. 0 based index. |

@@ -421,7 +421,7 @@ UIkit.nav(element).toggle(index, animate);
 
 Toggles the content pane.
 
-| Name      | Type                  | Default | Description                                  |
-|:----------|:----------------------|:--------|:---------------------------------------------|
-| `index`   | String, Integer, Node | 0       | Nav pane to toggle. 0 based index.           |
-| `animate` | Boolean               | true    | Suppress opening animation by passing false. |
+| Name      | Type                 | Default | Description                                  |
+|:----------|:---------------------|:--------|:---------------------------------------------|
+| `index`   | String, Number, Node | 0       | Nav pane to toggle. 0 based index.           |
+| `animate` | Boolean              | true    | Suppress opening animation by passing false. |
