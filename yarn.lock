@@ -2046,10 +2046,10 @@ type-fest@^1.0.1, type-fest@^1.0.2:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-1.2.0.tgz#4cdf38ef9b047922c26038080cb269752ae359a2"
   integrity sha512-++0N6KyAj0t2webXst0PE0xuXb4Dv3z1Z+4SGzK+j/epeWBZCfkQbkW/ezscZwpinmBQ5wu/l4TqagKSVcAGCA==
 
-uikit@3.11.0:
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.11.0.tgz#45c50050d06620fdb217b917dd7910ac7083f21e"
-  integrity sha512-dy7b/AZyzeQzMOKRMWdHXIC0yVimgO+wpSSR0feJhf9S7DX53m4ZKmHpydmkiAfwAgs1KSfAG9O1m4CItHjxEg==
+uikit@3.11.1:
+  version "3.11.1"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.11.1.tgz#3f0b47f4b2e7610375c5f7cdbf550d086c81e22f"
+  integrity sha512-nUUtvE/wZe+oFF+8WLGlvsdHg1KI75SHHEhf5FcSVFG1AHEJkqOKhPhgU6FQLporAiPTsapzURN/bP765gI2bA==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
