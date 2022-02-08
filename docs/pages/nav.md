@@ -262,7 +262,27 @@ Add the `.uk-nav-center` class to center nav items. This can be combined with th
 
 ```example
 <div class="uk-card uk-card-default uk-card-body uk-width-1-2@s">
-    <ul class="uk-nav-default uk-nav-center uk-nav-parent-icon" uk-nav>
+    <ul class="uk-nav-default uk-nav-center" uk-nav>
+        <li class="uk-active"><a href="#">Active</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div>
+```
+
+***
+
+## Divider modifier
+
+Add the `.uk-nav-divider` class to separate nav items with lines. This can be combined with the default and primary style modifiers.
+
+```html
+<ul class="uk-nav uk-nav-default uk-nav-divider">...</ul>
+```
+
+```example
+<div class="uk-width-1-2@s">
+    <ul class="uk-nav-default uk-nav-divider" uk-nav>
         <li class="uk-active"><a href="#">Active</a></li>
         <li><a href="#">Item</a></li>
         <li><a href="#">Item</a></li>
@@ -401,7 +421,7 @@ UIkit.nav(element).toggle(index, animate);
 
 Toggles the content pane.
 
-| Name      | Type                  | Default | Description                                  |
-|:----------|:----------------------|:--------|:---------------------------------------------|
-| `index`   | String, Integer, Node | 0       | Nav pane to toggle. 0 based index.           |
-| `animate` | Boolean               | true    | Suppress opening animation by passing false. |
+| Name      | Type                 | Default | Description                                  |
+|:----------|:---------------------|:--------|:---------------------------------------------|
+| `index`   | String, Number, Node | 0       | Nav pane to toggle. 0 based index.           |
+| `animate` | Boolean              | true    | Suppress opening animation by passing false. |

@@ -4,9 +4,50 @@
 
 ***
 
-## Migration from UIkit 3.x
+## Migration from UIkit 3.10 to 3.11
 
-In UIkit 3.1 a Less variable `@deprecated` was added. By default, it is set to `false`, and deprecated classes are not compiled into the CSS. 
+UIkit 3.11 adds new `start` and `end` options to the [Parallax component](parallax) and deprecates the `viewport` option. Replace the `viewport` option with the `end` option. Simply, calculate `1` minus your viewport value and multiply it with `100vh + 100%`. Here are some examples:
+
+| Viewport Value | End Value    |
+| -------------- | ------------ |
+| `0.6`          | `40vh + 40%` |
+| `0.5`          | `50vh + 50%` |
+| `0.3`          | `70vh + 70%` |
+
+***
+
+## Migration from UIkit 3.4 to 3.5
+
+In UIkit 3.5 all Less variables and class names which have `xxlarge` in their name got renamed to `2xlarge` for better consistency. Just find and replace these Less variables if you are using a custom Less theme. There is just one class in the [Width component](width) which has to be updated in your markup.
+
+| Class              | Replace with       |
+| ------------------ | ------------------ |
+| `uk-width-xxlarge` | `uk-width-2xlarge` |
+
+
+***
+
+## Migration from UIkit 3.2 to 3.3
+
+UIkit 3.3 adds a new `uk-container-xlarge` class to the [Container component](container) with a width of `1600px` as default value. This is why the class `uk-container-large` changes its width from `1600px` to `1400px`. Update your markup by replacing the following classes.
+
+| Class                | Replace with          |
+| -------------------- | --------------------- |
+| `uk-container-large` | `uk-container-xlarge` |
+
+***
+
+## Migration from UIkit 3.1 to 3.2
+
+### Text Component
+
+Since UIkit 3.2 adds a new `uk-text-bolder` class to the [Text component](text), the class `uk-text-bold` now applies literally a `bold` font weight instead of `bolder`. The `@text-bold-font-weight` variable, which was set to `bolder`, got removed.
+
+***
+
+## Migration from UIkit 3.0 to 3.1
+
+UIkit 3.1 adds the `@deprecated` Less variable. By default, it is set to `false`, and deprecated classes are not compiled into the CSS.
 
 If you want to update your markup later and use the deprecated classes along the new ones, set the variable to `true` in your custom UIkit theme.
 
@@ -16,16 +57,16 @@ If you want to update your markup later and use the deprecated classes along the
 
 ### Heading Component
 
-In UIkit 3.1 the Primary and Hero classes in the [Heading component](heading#size-modifiers) were deprecated. Update your markup by replacing the following classes.
+The Primary and Hero classes in the [Heading component](heading) are deprecated. Update your markup by replacing the following classes.
 
-| Deprecated           | Replace with        |
-|----------------------|---------------------|
+| Class                | Replace with        |
+| -------------------- | ------------------- |
 | `uk-heading-primary` | `uk-heading-medium` |
 | `uk-heading-hero`    | `uk-heading-xlarge` |
 
 ***
 
-## Migration from UIkit 2.x
+## Migration from UIkit 2 to 3
 
 Uikit 3 offers a migration tool that runs in your browser and lists all necessary changes from an existing Uikit 2 site. Two options are available to run the tool: Via a bookmark or by including a single JavaScript file. The necessary migration changes are then listed in your browser's console.
 
@@ -59,7 +100,7 @@ To start the migration, replace the UIkit 2 files of your website with their UIk
 
 ![Console output](images/migration-console.gif)
 
-Every notice or warning message tells you what to change, including a list of all affected HTML elements. More complex changes are explained with examples that are easy to follow. The best way to migrate is to fix one component after another. That way you can see if the error messages are gone after a reload and also see the changes on your site.
+Every notice or warning message tells you what to change, including a list of all affected HTML elements. More complex changes are explained with examples that are easy to follow. The best way to migrate is to fix one component after another. That way you can see if the error messages are gone after a page reload and also see the changes on your site.
 
 ### Warnings
 

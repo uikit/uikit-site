@@ -1,5 +1,3 @@
-/* global window, document */
-
 export default function (id, config = {}) {
 
     gtag('js', new Date());

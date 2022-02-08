@@ -50,10 +50,12 @@ To apply a background color to an element, add one of the following classes. The
 
 This component features classes to specify the size of background images by keeping its intrinsic ratio.
 
-| Class                    | Description                                                                                    |
-|:-------------------------|:-----------------------------------------------------------------------------------------------|
-| `.uk-background-cover`   | Scales the background image to completely cover the containing area.                           |
-| `.uk-background-contain` | Scales the background image as far as its width and height can fit inside the containing area. |
+| Class                       | Description                                                                                    |
+|:----------------------------|:-----------------------------------------------------------------------------------------------|
+| `.uk-background-cover`      | Scales the background image to completely cover the containing area.                           |
+| `.uk-background-contain`    | Scales the background image as far as its width and height can fit inside the containing area. |
+| `.uk-background-width-1-1`  | Scales the background image to fill 100% of the available width.                               |
+| `.uk-background-height-1-1` | Scales the background image to fill 100% of the available height.                              |
 
 **Note** When using these classes, the background position automatically shifts to the middle and background-repeat is set to no-repeat.
 
@@ -80,7 +82,7 @@ This component features classes to specify the size of background images by keep
 
 ## Position modifiers
 
-To alter the background position of your image — which is in the top left hand corner of the area by default, add one of the following classes.
+To alter the background position of your image — which is in the top left-hand corner of the area by default, add one of the following classes.
 
 | Class                          | Description                                                           |
 |:-------------------------------|:----------------------------------------------------------------------|

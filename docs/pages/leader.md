@@ -38,7 +38,7 @@ To change the dot to any custom character, just add the `fill: STRING` option to
 </div>
 ```
 
-**Note** The default fill character can be set through CSS or a LESS variable.
+**Note** The default fill character can be set through CSS or a Less variable.
 
 ```css
 .uk-leader-fill-content::before { content: '.'; }
@@ -65,10 +65,10 @@ It's possible to disable the leader for different device widths by applying the 
 
 The table below lists the available settings of the `uk-leader` attribute. [Learn more](javascript.md#component-configuration)
 
-| Option  | Value  | Default     | Description                                                                                             |
-|:--------|:-------|:------------|:--------------------------------------------------------------------------------------------------------|
-| `fill`  | String | ``          | Optional fill character.                                                                                |
-| `media` | Integer, String | `false`     | Condition for the space filling - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
+| Option  | Value          | Default | Description                                                                                                                                                |
+|:--------|:---------------|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `fill`  | String         | ``      | Optional fill character.                                                                                                                                   |
+| `media` | Number, String | `false` | Condition for the space filling - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
 ***
 

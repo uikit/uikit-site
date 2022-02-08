@@ -103,10 +103,10 @@ UIkit.alert(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name         | Description                                                              |
-|:-------------|:-------------------------------------------------------------------------|
-| `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
-| `hide`       | Fires after an item is hidden.                                           |
+| Name         | Description                                                                                    |
+|:-------------|:-----------------------------------------------------------------------------------------------|
+| `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
+| `hide`       | Fires after an item is hidden.                                                                 |
 
 ### Methods
 

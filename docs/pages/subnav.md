@@ -70,15 +70,22 @@ Add the `.uk-subnav-pill` class to highlight the active menu item with a backgro
 
 ***
 
-## Subnav with Dropdown
+## Subnav and Dropdown
 
 You can also use a dropdown from the [Dropdown component](dropdown.md) with a subnav.
 
 ```html
 <ul class="uk-subnav">
     <li>
+
+        <!-- This is the menu item toggling the dropdown -->
         <a href=""></a>
-        <div uk-dropdown="mode: click;"></div>
+
+        <!-- This is the dropdown -->
+        <div uk-dropdown="mode: click">
+            <ul class="uk-nav uk-dropdown-nav">...</ul>
+        </div>
+
     </li>
 </ul>
 ```
@@ -88,8 +95,8 @@ You can also use a dropdown from the [Dropdown component](dropdown.md) with a su
     <li class="uk-active"><a href="#">Active</a></li>
     <li><a href="#">Item</a></li>
     <li>
-        <a href="#">More <span uk-icon="icon:  triangle-down"></span></a>
-        <div uk-dropdown="mode: click;">
+        <a href="#">More <span uk-icon="icon: triangle-down"></span></a>
+        <div uk-dropdown="mode: click">
             <ul class="uk-nav uk-dropdown-nav">
                 <li class="uk-active"><a href="#">Active</a></li>
                 <li><a href="#">Item</a></li>

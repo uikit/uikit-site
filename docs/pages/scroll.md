@@ -48,7 +48,6 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option     | Value  | Default | Description                         |
 |:-----------|:-------|:--------|:------------------------------------|
-| `duration` | Number | `1000`  | Animation duration in milliseconds. |
 | `offset`   | Number | `0`     | Pixel offset added to scroll top.   |
 
 ## JavaScript
@@ -69,10 +68,10 @@ UIkit.scroll(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name           | Description                                                             |
-|:---------------|:------------------------------------------------------------------------|
-| `beforescroll` | Fires before scroll begins. Can prevent scrolling by returning `false`. |
-| `scrolled`     | Fires after scrolling is finished.                                      |
+| Name           | Description                                                                                   |
+|:---------------|:----------------------------------------------------------------------------------------------|
+| `beforescroll` | Fires before scroll begins. Can prevent scrolling by calling `preventDefault()` on the event. |
+| `scrolled`     | Fires after scrolling is finished.                                                            |
 
 
 ### Methods

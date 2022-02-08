@@ -6,10 +6,10 @@ The Image component improves page speed significantly by following these methods
 
 - Only images which are initially in the viewport are loaded.
 - Other images are lazy loaded as they enter the viewport when scrolling.
-- An empty placeholder image is generated instantly to prevent content jumping while images are being loaded or not yet in the viewport.
-- Optionally, the placeholder image can have any kind of background or preload animation.
 
 The Image components supports the `img` element and the CSS `background-image` property. The `srcset` attribute for images is supported as well creating the optimal images for different device widths and high resolution (retina) displays. The Image component even makes it possible to use `srcset` for the CSS `background-image` property.
+
+**Note** To prevent images from causing jank on page load, use `height` and `width` attributes.
 
 ***
 
@@ -189,16 +189,18 @@ img[data-src][src*='data:image'] { background: rgba(0,0,0,0.1); }
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option       | Value  | Default | Description                                                                                                                    |
-|:-------------|:-------|:--------|:-------------------------------------------------------------------------------------------------------------------------------|
-| `dataSrc`    | String | ''      | The image's `src` attribute.                                                                                                   |
-| `dataSrcset` | String | false   | The image's `srcset` attribute.                                                                                                |
-| `sizes`      | String | false   | The image's `sizes` attribute.                                                                                                 |
+| Option       | Value  | Default | Description                                                                                                                          |
+|:-------------|:-------|:--------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| `dataSrc`    | String | ''      | The image's `src` attribute.                                                                                                         |
+| `dataSrcset` | String | false   | The image's `srcset` attribute.                                                                                                      |
+| `sizes`      | String | false   | The image's `sizes` attribute.                                                                                                       |
 | `width`      | String | false   | The image's `width` attribute. It will be used to determine the placeholder's width and the position of the image in the document.   |
 | `height`     | String | false   | The image's `height` attribute. It will be used to determine the placeholder's height and the position of the image in the document. |
-| `offsetTop`  | String | '50vh'  | The offset increases the viewport's bounding box vertically before computing an intersection with the image.                   |
-| `offsetLeft` | String | 0       | The offset increases the viewport's bounding box horizontally before computing an intersection with the image.                |
-| `target`     | String | false   | A list of targets who's bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.                |
+| `offsetTop`  | String | '50vh'  | The offset increases the viewport's bounding box vertically before computing an intersection with the image.                         |
+| `offsetLeft` | String | 0       | The offset increases the viewport's bounding box horizontally before computing an intersection with the image.                       |
+| `target`     | String | false   | A list of targets who's bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.         |
+
+`dataSrc` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
 ***
 
@@ -211,3 +213,5 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ```js
 UIkit.img(element, options);
 ```
+
+**Note** The Image component keeps records of already loaded images in the Session Storage. That's how it tries to determine if an image is already cached. A cached image is loaded immediately, without the lazy loading mechanism to prevent any rendering flashes. Prior to testing the Image component, make sure to clear these records from your browser's Session Storage.

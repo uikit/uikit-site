@@ -8,11 +8,11 @@ When you have [installed UIkit](installation.md) with Less sources, you can comp
 
 ## How to build
 
-The Less source files allow you to customize UIkit. To use the customized version on your website, you need to compile the Less sources into CSS. There are basically two approaches available to you: Setup your own build process or use the build scripts included in UIkit.
+The Less source files allow you to customize UIkit. To use the customized version on your website, you need to compile the Less sources into CSS. There are basically two approaches available to you: Set up your own build process or use the build scripts included in UIkit.
 
 ### Use your own build process
 
-To include UIkit in your project's build workflow, you need to import the core UIkit styles (`uikit.less`) or UIkit with its default theme (`uikit.theme.less`) into your project's own Less file. This main Less file then needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
+To include UIkit in your project's build workflow, you need to import the core UIkit styles (`uikit.less`) or UIkit with its default theme (`uikit.theme.less`) into your project's own Less file. This main Less file than needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
 
 ```less
 // Import UIkit default theme (or uikit.less with only core styles)
@@ -55,13 +55,13 @@ yarn watch
 
 The generated CSS files will be located in the `/dist/css` folder.
 
-**Note** The custom theme is also available in the test files, just navigate your browser to the index of the `/test` directory and select your theme from the Dropdown menu.
+**Note** The custom theme is also available in the test files, just navigate your browser to the index of the `/tests` directory and select your theme from the Dropdown menu.
 
 ***
 
 ## Create a UIkit theme
 
-When you have setup a file to put in your own Less code, you can get started to theme UIkit the way you want. If you have never used Less before, check out the [language features](http://lesscss.org/features/). When working with the UIkit Less sources, we have a few recommendations.
+When you have set up a file to put in your own Less code, you can get started to theme UIkit the way you want. If you have never used Less before, check out the [language features](http://lesscss.org/features/). When working with the UIkit Less sources, we have a few recommendations.
 
 ### Use variables
 
@@ -96,7 +96,7 @@ First, find a rule that you want to extend by looking through the component's Le
     box-sizing: border-box;
 
     // mixin to allow adding new declarations
-    .hook-card;
+    .hook-card();
 }
 ```
 
@@ -157,7 +157,7 @@ You can also disable the inverse mode for specific components:
 
 ## How to structure your theme
 
-In the examples above, we have added all custom rules directly to `/custom/my-theme.less`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Less compiler. You should better sort all rules into single files per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/less/uikit.theme.less`.
+In the examples above, we have added all custom rules directly to `/custom/my-theme.less`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Less compiler. You should better sort all rules into a single file per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/less/uikit.theme.less`.
 
 **Note** The example assumes you are building a theme in the `/custom` directory of the full UIkit project. You can adapt these paths if you have set up your own build process.
 

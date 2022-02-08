@@ -26,7 +26,7 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 
 **Note** SVGs will adapt the current color for their stroke and fill color. To prevent this behavior, add the `.uk-preserve` class to the SVG itself or the elements inside the SVG.
 
-Inline SVG images can also be lazy loaded using the the [Image component](image.md#inline-svg).
+Inline SVG images can also be lazy loaded using the [Image component](image.md#inline-svg).
 
 ***
 
@@ -41,7 +41,7 @@ There are two ways to animate SVG strokes. First by using the [Animation compone
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option             | Value   | Default | Description                                                                                                   |
-| :----------------- | :------ | :------ | :------------------------------------------------------------------------------------------------------------ |
+|:-------------------|:--------|:--------|:--------------------------------------------------------------------------------------------------------------|
 | `src`              | String  | `''`    | The SVG source URL. If a location hash is present, only the `<symbol>` of the SVG with the given ID is shown. |
 | `stroke-animation` | Boolean | `false` | Animate all elements with the `stroke` attribute in the SVG.                                                  |
 

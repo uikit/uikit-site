@@ -57,13 +57,13 @@ To create a close button, enable its functionality and add proper styling and po
 Add the `uk-close` attribute from the [Close component](close.md), to apply a close icon.
 
 ```html
-<div id="my-id">
+<div>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-default" type="button" uk-close></button>
     </div>
 </div>
 
-<div id="my-id">
+<div>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
     </div>
@@ -103,7 +103,7 @@ Add the `uk-close` attribute from the [Close component](close.md), to apply a cl
 To vertically center the modal dialog, you can use the `.uk-margin-auto-vertical` class from the [Margin component](margin.md).
 
 ```html
-<div id="my-id" class="uk-flex-top" uk-modal>
+<div class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical"></div>
 </div>
 ```
@@ -136,7 +136,7 @@ To divide the modal into different content sections, use the following classes.
 | `.uk-modal-footer` | Add this class to a `<div>` element to create the modal footer. |
 
 ```html
-<div id="my-id" uk-modal>
+<div uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-default" type="button" uk-close></button>
         <div class="uk-modal-header">
@@ -176,7 +176,7 @@ To divide the modal into different content sections, use the following classes.
 Add the `.uk-modal-container` class to expand the modal dialog to the default [Container](container.md) width.
 
 ```html
-<div id="my-id" class="uk-modal-container" uk-modal>...</div>
+<div class="uk-modal-container" uk-modal>...</div>
 ```
 
 ```example
@@ -195,10 +195,10 @@ Add the `.uk-modal-container` class to expand the modal dialog to the default [C
 
 ## Full modifier
 
-To create a modal, that fills the entire page, add the `.uk-modal-full` class. It is also recommended to add the `.uk-modal-close-full` class to the close button, so that it adapts its styling.
+To create a modal, that fills the entire page, add the `.uk-modal-full` class. It is also recommended adding the `.uk-modal-close-full` class to the close button, so that it adapts its styling.
 
 ```html
-<div id="my-id" class="uk-modal-full" uk-modal>
+<div class="uk-modal-full" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
     </div>
@@ -231,7 +231,7 @@ Using the [grid](grid.md) and [width](width.md) classes, you can create a nice, 
 By default, the page will scroll with the modal, if its content exceeds the window height. To apply a scrollbar inside the modal, add the `uk-overflow-auto` attribute from the [Utility component](utility.md#overflow-auto) to the modal body.
 
 ```html
-<div id="my-id" uk-modal>
+<div uk-modal>
     <div class="uk-modal-dialog" uk-overflow-auto></div>
 </div>
 ```
@@ -320,14 +320,14 @@ If you want to display media, you should first check, if the [Lightbox component
 <div id="modal-media-youtube" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" frameborder="0" uk-video></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" uk-video uk-responsive></iframe>
     </div>
 </div>
 
 <div id="modal-media-vimeo" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <iframe src="https://player.vimeo.com/video/1084537" width="500" height="281" frameborder="0" uk-video></iframe>
+        <iframe src="https://player.vimeo.com/video/1084537" width="1280" height="720" uk-video uk-responsive></iframe>
     </div>
 </div>
 ```
@@ -397,15 +397,15 @@ You can group multiple modals by linking from one to the other and back. Use thi
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option      | Value   | Default | Description                                                                                        |
-|:------------|:--------|:--------|:---------------------------------------------------------------------------------------------------|
-| `esc-close` | Boolean | `true`  | Close the modal when the _Esc_ key is pressed.                                                     |
-| `bg-close`  | Boolean | `true`  | Close the modal when the background is clicked.                                                    |
-| `stack`     | Boolean | `false` | Stack modals, when more than one is open. By default, the previous modal will be hidden.           |
-| `container` | String  | `true`  | Define a target container via a selector to specify where the modal should be appended in the DOM. Setting it to `false` will prevent this behavior. |
-| `cls-page`  | String  | `'uk-modal-page'`   | Class to add to `<body>` when modal is active                |
-| `cls-panel` | String  | `'uk-modal-dialog'` | Class of the element to be considered the panel of the modal |
-| `sel-close` | String  | `'.uk-modal-close,` `.uk-modal-close-default,` `.uk-modal-close-outside,` `.uk-modal-close-full'` | CSS selector for all elements that should trigger the closing of the modal |
+| Option      | Value   | Default                                                                                           | Description                                                                                                                                          |
+|:------------|:--------|:--------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| `esc-close` | Boolean | `true`                                                                                            | Close the modal when the _Esc_ key is pressed.                                                                                                       |
+| `bg-close`  | Boolean | `true`                                                                                            | Close the modal when the background is clicked.                                                                                                      |
+| `stack`     | Boolean | `false`                                                                                           | Stack modals, when more than one is open. By default, the previous modal will be hidden.                                                             |
+| `container` | String  | `true`                                                                                            | Define a target container via a selector to specify where the modal should be appended in the DOM. Setting it to `false` will prevent this behavior. |
+| `cls-page`  | String  | `'uk-modal-page'`                                                                                 | Class to add to `<html>` when modal is active                                                                                                        |
+| `cls-panel` | String  | `'uk-modal-dialog'`                                                                               | Class of the element to be considered the panel of the modal                                                                                         |
+| `sel-close` | String  | `'.uk-modal-close,` `.uk-modal-close-default,` `.uk-modal-close-outside,` `.uk-modal-close-full'` | CSS selector for all elements that should trigger the closing of the modal                                                                           |
 
 ***
 
@@ -465,7 +465,7 @@ The component comes with a number of prepared modal dialogs that you can use for
 | `UIkit.modal.prompt('Name:', 'Your name')`    | Show a dialog asking for a text input.                   |
 | `UIkit.modal.dialog('<p>UIkit dialog!</p>');` | Show dialog with any HTML content.                       |
 
-To process the user input, the modal uses a promise based interface which provides a `then()` function to register your callback functions.
+To process the user input, the modal uses a promise based interface which provides a `then()` function to register your callback functions. The `UIkit.modal.dialog` function however will return the modal itself.
 
 ```js
 UIkit.modal.confirm('UIkit confirm!').then(function() {
@@ -473,6 +473,13 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 }, function () {
     console.log('Rejected.')
 });
+```
+
+The returned promise has a property `dialog`, which holds a reference to the modal itself. This lets you manipulate e.g. the markup of the modal's element.
+
+```js
+const modal = UIkit.modal.confirm('UIkit confirm!').dialog; // The modal component
+const el = modal.$el; // The modal element
 ```
 
 ```example

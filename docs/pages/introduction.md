@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Get familiar with the basic setup and overview of UIkit.</p>
 
-First of all you need to download UIkit. For other packages and links to a CDN, head to the [installation guide](installation.md) to learn more.
+First you need to download UIkit. For other packages and links to a CDN, head to the [installation guide](installation.md) to learn more.
 
 <a class="uk-button uk-button-primary" href="https://getuikit.com/download">Download UIkit</a>
 
@@ -60,13 +60,19 @@ The following table lists the versions that UIkit is tested on. "Latest" means t
 <div class="uk-child-width-1-3 uk-child-width-expand@s uk-text-center" uk-grid uk-height-match="> * > div">
     <div>
         <div class="uk-flex uk-flex-center uk-flex-middle">
-            <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome.svg?sanitize=true" width="50" alt="Chrome">
+            <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox.svg?sanitize=true" width="50" alt="Firefox">
         </div>
         <p>Latest</p>
     </div>
     <div>
         <div class="uk-flex uk-flex-center uk-flex-middle">
-            <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox.svg?sanitize=true" width="50" alt="Firefox">
+            <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios.svg?sanitize=true" width="50" alt="Safari">
+        </div>
+        <p>Latest</p>
+    </div>
+    <div>
+        <div class="uk-flex uk-flex-center uk-flex-middle">
+            <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome.svg?sanitize=true" width="50" alt="Chrome">
         </div>
         <p>Latest</p>
     </div>
@@ -75,18 +81,6 @@ The following table lists the versions that UIkit is tested on. "Latest" means t
             <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge.svg?sanitize=true" width="50" alt="Edge">
         </div>
         <p>Latest</p>
-    </div>
-    <div>
-        <div class="uk-flex uk-flex-center uk-flex-middle">
-            <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11.svg?sanitize=true" width="50" alt="IE">
-        </div>
-        <p>11+</p>
-    </div>
-    <div>
-        <div class="uk-flex uk-flex-center uk-flex-middle">
-            <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios.svg?sanitize=true" width="50" alt="Safari">
-        </div>
-        <p>9.1+</p>
     </div>
     <div>
         <div class="uk-flex uk-flex-center uk-flex-middle">

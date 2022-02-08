@@ -170,21 +170,39 @@ The Lightbox uses the `href` attribute to figure out the type of the linked cont
 
 ***
 
+## Custom Attributes
+
+You can add custom attributes to lightbox content items by using the `data-attrs` attribute. The attributes are passed like the usual component options, e.g. `data-attrs="width: 1280; height: 720;"`
+
+```html
+<div uk-lightbox>
+    <a class="uk-button" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-attrs="width: 1280; height: 720;"></a>
+</div>
+```
+
+```example
+<div uk-lightbox>
+    <a class="uk-button uk-button-default" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube" data-attrs="width: 1280; height: 720;">YouTube</a>
+</div>
+```
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 ### Lightbox
 
-| Option              | Value           | Default | Description                                          |
-|:--------------------|:----------------|:--------|:-----------------------------------------------------|
-| `animation`         | String          | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`. |
-| `autoplay`          | Number          | `0`     | Lightbox autoplays. (Delay in milliseconds)          |
-| `autoplay-interval` | Number          | `0`     | The delay between switching slides in autoplay mode. |
-| `pause-on-hover`    | Boolean         | false   | Pause autoplay mode on hover.                        |
-| `video-autoplay`    | Boolean         | false   | Lightbox videos autoplay.                            |
-| `index`             | String, Integer | 0       | Lightbox item to show. 0 based index.                |
-| `toggle`            | CSS selector    | `a`     | Toggle selector - opens the Lightbox Panel upon click. |
+| Option              | Value          | Default | Description                                            |
+|:--------------------|:---------------|:--------|:-------------------------------------------------------|
+| `animation`         | String         | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`.   |
+| `autoplay`          | Number         | `0`     | Lightbox autoplays. (Delay in milliseconds)            |
+| `autoplay-interval` | Number         | `0`     | The delay between switching slides in autoplay mode.   |
+| `pause-on-hover`    | Boolean        | false   | Pause autoplay mode on hover.                          |
+| `video-autoplay`    | Boolean        | false   | Lightbox videos autoplay.                              |
+| `index`             | String, Number | 0       | Lightbox item to show. 0 based index.                  |
+| `toggle`            | CSS selector   | `a`     | Toggle selector - opens the Lightbox Panel upon click. |
 
 ***
 
@@ -226,19 +244,20 @@ Hides the Lightbox's Panel.
 
 If you only want to use the lightbox panel directly through the JS API, you can set the following options.
 
-| Option              | Value   | Default        | Description                                                                           |
-|:--------------------|:--------|:---------------|:--------------------------------------------------------------------------------------|
-| `animation`         | String  | `slide`        | Lightbox animation mode: `slide`, `fade` or `scale`.                                  |
-| `autoplay`          | Boolean  | `false`       | Lightbox autoplays.                                          |
-| `autoplay-interval` | Number  | `7000`            | The delay between switching slides in autoplay mode.                                  |
-| `pause-on-hover`    | Boolean | `false`          | Pause autoplay mode on hover.                                                         |
-| `video-autoplay`    | Boolean | `false`          | Lightbox videos autoplay.                                                             |
-| `index`             | Number  | `0`            | The initial item to show. (zero based)                                                |
-| `velocity`          | Number  | `2`            | The animation velocity (pixel/ms).                                                    |
-| `preload`           | Number  | `1`            | The number of items to preload. (left and right of the currently active item)         |
-| `items`             | Array   | `[]`           | An array of items to display, e.g. `[{source: 'images/size1.jpg', caption: '900x600'}]` |
-| `template`          | String  | Default markup | The template string.                                                                  |
-| `delay-controls`    | Number  | `3000`         | Delay time before controls fade out in ms.                                            |
+| Option              | Value   | Default        | Description                                                                                           |
+|:--------------------|:--------|:---------------|:------------------------------------------------------------------------------------------------------|
+| `animation`         | String  | `slide`        | Lightbox animation mode: `slide`, `fade` or `scale`.                                                  |
+| `autoplay`          | Boolean | `false`        | Lightbox autoplays.                                                                                   |
+| `autoplay-interval` | Number  | `7000`         | The delay between switching slides in autoplay mode.                                                  |
+| `pause-on-hover`    | Boolean | `false`        | Pause autoplay mode on hover.                                                                         |
+| `video-autoplay`    | Boolean | `false`        | Lightbox videos autoplay.                                                                             |
+| `index`             | Number  | `0`            | The initial item to show. (zero based)                                                                |
+| `velocity`          | Number  | `2`            | The animation velocity (pixel/ms).                                                                    |
+| `preload`           | Number  | `1`            | The number of items to preload. (left and right of the currently active item)                         |
+| `items`             | Array   | `[]`           | An array of items to display, e.g. `[{source: 'images/size1.jpg', caption: '900x600'}]`               |
+| `template`          | String  | Default markup | The template string.                                                                                  |
+| `delay-controls`    | Number  | `3000`         | Delay time before controls fade out in ms.                                                            |
+| `container`         | String  | `body`         | Define a target container via a selector to specify where the Lightbox should be appended in the DOM. |
 
 ### Events
 
@@ -272,9 +291,9 @@ UIkit.lightboxPanel(element).show(index);
 
 Shows the Lightbox Panel and item.
 
-| Name    | Type            | Default | Description                           |
-|:--------|:----------------|:--------|:--------------------------------------|
-| `index` | String, Integer | 0       | Lightbox item to show. 0 based index. |
+| Name    | Type           | Default | Description                           |
+|:--------|:---------------|:--------|:--------------------------------------|
+| `index` | String, Number | 0       | Lightbox item to show. 0 based index. |
 
 #### Hide
 

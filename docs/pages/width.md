@@ -175,7 +175,7 @@ In addition to the calculated width classes, you can also add one of the followi
 | `.uk-width-medium`  | Applies a fixed width of _300px_. |
 | `.uk-width-large`   | Applies a fixed width of _450px_. |
 | `.uk-width-xlarge`  | Applies a fixed width of _600px_. |
-| `.uk-width-xxlarge` | Applies a fixed width of _750px_. |
+| `.uk-width-2xlarge` | Applies a fixed width of _750px_. |
 
 ```html
 <div class="uk-width-medium"></div>
@@ -185,8 +185,8 @@ In addition to the calculated width classes, you can also add one of the followi
 <div class="uk-width-small uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">Small</div></div>
 <div class="uk-width-medium uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">Medium</div></div>
 <div class="uk-width-large uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">Large</div></div>
-<div class="uk-width-xlarge uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">X Large</div></div>
-<div class="uk-width-xxlarge uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">XX Large</div></div>
+<div class="uk-width-xlarge uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">X-Large</div></div>
+<div class="uk-width-2xlarge uk-margin"><div class="uk-card uk-card-small uk-card-default uk-card-body">2X-Large</div></div>
 ```
 
 ***

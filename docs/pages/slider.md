@@ -94,11 +94,13 @@ The `.uk-slider-container` class is responsible for the clipping of the slider i
 </div>
 ```
 
+Since the slider effect needs a clipping container, box shadows of content items are also clipped. To widen the container to prevent box-shadows from clipping, add the `.uk-slider-container-offset` class.
+
 ***
 
-## Gutter
+## Gap
 
-To apply a gutter to the slider items, use the [Grid component](grid.md) and add the `.uk-grid` class to the slider. The elements will then be spaced according to the grid gutter. You can use the modifiers like `.uk-grid-small` to change the gutter.
+To apply a gap to the slider items, use the [Grid component](grid.md) and add the `.uk-grid` class to the slider. The elements will then be spaced according to the grid gap. You can use the modifiers like `.uk-grid-small` to change the gap.
 
 ```html
 <div uk-slider>
@@ -343,12 +345,12 @@ To navigate through your slides, just use the `uk-slider-item` attribute. To tar
 
 The flexibility of the Slideshow component allows you to use any of the other UIkit components to navigate through items. For example the [Slidenav](slidenav.md), [Dotnav](dotnav.md) and [Thumbnav](thumbnav.md) components can be used to style the slideshow navigations.
 
-If there is no item specific content in the navigation items, you can also add the `.uk-slideshow-nav` class instead of adding navigation items manually. It will generate its items automatically using `<li><a href="#"></a></li>` as markup. This is a useful shortcut when using the [Dotnav](dotnav.md).
+If there is no item specific content in the navigation items, you can also add the `.uk-slider-nav` class instead of adding navigation items manually. It will generate its items automatically using `<li><a href="#"></a></li>` as markup. This is a useful shortcut when using the [Dotnav](dotnav.md).
 
 ```html
 <div uk-slider>
 
-    <ul class="uk-slider-items">...</ul>
+    <ul class="uk-slider-items">...</ul
 
     <ul class="uk-slider-nav uk-dotnav"></ul>
 
@@ -578,7 +580,7 @@ Use the [Cover component](cover.md) so that images cover the whole item area and
 The slider is not restricted to images. Any content can be used like text, videos, images with text overlays or ken burns effect. Here is an example using the [Card component](card.md).
 
 ```example
-<div uk-slider="center: true">
+<div class="uk-slider-container-offset" uk-slider>
 
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
@@ -650,7 +652,7 @@ The slider is not restricted to images. Any content can be used like text, video
 </div>
 ```
 
-**Note** Since the slider effect needs a clipping container, box shadows of content items are also clipped. To get the best visual result, it's recommended to use the `uk-slider="center: true"` mode if your content items have a box shadow.
+**Note** Since the slider effect needs a clipping container, box shadows of content items are also clipped. To widen the container to prevent box-shadows from clipping, add the `.uk-slider-container-offset` class. Alternatively, use the `uk-slider="center: true"` mode if your content items have a box shadow.
 
 ***
 
@@ -733,7 +735,7 @@ Add content overlays using the [Position component](position.md). It allows you 
 
 Add the `uk-slider-parallax` attribute to any element inside the slides to animate it together with the slider animation. Add an option with the desired animation values for each CSS property you want to animate. Define at least one start and end value. It can be done by passing two values separated by a comma.
 
-This functionality is inherited from the [Parallax component](parallax.md), and it allows to animate CSS properties depending on the scroll position of the slider animation. Take a look at the [possible properties](parallax.md#animated-properties) that can be animated.
+This functionality is inherited from the [Parallax component](parallax.md), and it allows animating CSS properties depending on the scroll position of the slider animation. Take a look at the [possible properties](parallax.md#animated-properties) that can be animated.
 
 ```html
 <div uk-slider>
@@ -992,18 +994,18 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ### Slider
 
-| Option              | Value   | Default | Description                                          |
-|:--------------------|:--------|:--------|:-----------------------------------------------------|
-| `autoplay`          | Boolean | `false` | Slider autoplays.                                    |
-| `autoplay-interval` | Number  | `7000`  | The delay between switching slides in autoplay mode. |
-| `center`            | Boolean | `false` | Center the active slide.                             |
-| `draggable`         | Boolean | `true ` | Enable pointer dragging.                             |
-| `easing`            | String  | `ease`     | The animation easing (CSS timing functions or cubic-bezier).                   |
-| `finite`            | Boolean | `false` | Disable infinite sliding.                            |
-| `index`             | Number  | `0`     | Slider item to show. 0 based index.                  |
-| `pause-on-hover`    | Boolean | `true`  | Pause autoplay mode on hover.                        |
-| `sets`              | Boolean | `false` | Slide in sets.                                       |
-| `velocity`          | Number  | `1`     | The animation velocity (pixel/ms).                   |
+| Option              | Value   | Default | Description                                                  |
+|:--------------------|:--------|:--------|:-------------------------------------------------------------|
+| `autoplay`          | Boolean | `false` | Slider autoplays.                                            |
+| `autoplay-interval` | Number  | `7000`  | The delay between switching slides in autoplay mode.         |
+| `center`            | Boolean | `false` | Center the active slide.                                     |
+| `draggable`         | Boolean | `true ` | Enable pointer dragging.                                     |
+| `easing`            | String  | `ease`  | The animation easing (CSS timing functions or cubic-bezier). |
+| `finite`            | Boolean | `false` | Disable infinite sliding.                                    |
+| `index`             | Number  | `0`     | Slider item to show. 0 based index.                          |
+| `pause-on-hover`    | Boolean | `true`  | Pause autoplay mode on hover.                                |
+| `sets`              | Boolean | `false` | Slide in sets.                                               |
+| `velocity`          | Number  | `1`     | The animation velocity (pixel/ms).                           |
 
 ***
 

@@ -6,14 +6,14 @@
 
 The Navbar component consists of a navbar container, the navbar itself and one or more navigations.
 
-| Element                | Description                                                                                                    |
-|:-----------------------|:---------------------------------------------------------------------------------------------------------------|
-| `uk-navbar`            | Add this attribute to a `<nav>` element to define the Navbar component.                                        |
-| `.uk-navbar-container` | Add this class to the same `<nav>` element or a parent element to add the navbar background style.             |
-| `.uk-navbar-left`<br> `.uk-navbar-center`<br>  `.uk-navbar-right` | Add one of these classes to a `<div>` element to align the navigation. |
-| `.uk-navbar-nav`       | Add this class to a `<ul>` element to create the navigation. Use `<a>` elements as menu items within the list. |
-| `.uk-parent`           | Add this class to indicate a parent menu item.                                                                 |
-| `.uk-active`           | Add this class to indicate an active menu item.                                                                |
+| Element                                                           | Description                                                                                                    |
+|:------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|
+| `uk-navbar`                                                       | Add this attribute to a `<nav>` element to define the Navbar component.                                        |
+| `.uk-navbar-container`                                            | Add this class to the same `<nav>` element or a parent element to add the navbar background style.             |
+| `.uk-navbar-left`<br> `.uk-navbar-center`<br>  `.uk-navbar-right` | Add one of these classes to a `<div>` element to align the navigation.                                         |
+| `.uk-navbar-nav`                                                  | Add this class to a `<ul>` element to create the navigation. Use `<a>` elements as menu items within the list. |
+| `.uk-parent`                                                      | Add this class to indicate a parent menu item.                                                                 |
+| `.uk-active`                                                      | Add this class to indicate an active menu item.                                                                |
 
 ```html
 <nav class="uk-navbar-container" uk-navbar>
@@ -434,7 +434,7 @@ A navbar can contain a dropdown from the [Dropdown component](dropdown.md). Just
 
 ### Multiple columns
 
-The [Dropdown component](dropdown.md) allows you arrange the dropdown content in columns. To accommodate up to five columns, you also need to add one of the following classes. Columns will stack, if they no longer fit into the container.
+The [Dropdown component](dropdown.md) allows you to arrange the dropdown content in columns. To accommodate up to five columns, you also need to add one of the following classes. Columns will stack, if they no longer fit into the container.
 
 | Class                         | Description                                              |
 |:------------------------------|:---------------------------------------------------------|
@@ -876,7 +876,6 @@ By default, the dropbar overlays the site content. Add the `dropbar-mode: push;`
 
 ## Sticky Navbar
 
-
 For a basic sticky navbar, wrap the navbar inside a container with the `uk-sticky` attribute from the [Sticky component](sticky.md).
 
 The navbar itself has a modifier class `uk-navbar-sticky` that ensures an optimized styling for the sticky state (for example an additional box shadow). To let the sticky component dynamically add and remove that class, set `cls-active: uk-navbar-sticky`. To ensure that the class is added to the navbar container, set `sel-target: .uk-navbar-container`.
@@ -1011,18 +1010,18 @@ By default, the immediate toggling of classes does not look ideal. Instead, we c
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option           | Value        | Default        | Description                                                               |
-|:-----------------|:-------------|:---------------|:--------------------------------------------------------------------------|
-| `align`          | String       | `left`         | Dropdown alignment: `left`, `right`, `center`                             |
-| `mode`           | String       | `click, hover` | Comma separated list of dropdown trigger behavior modes: `click`, `hover` |
-| `delay-show`     | Number       | `0`            | Delay time in hover mode before a dropdown is shown in milliseconds.      |
-| `delay-hide`     | Number       | `800`          | Delay time in hover mode before a dropdown is hidden in milliseconds.     |
-| `boundary`       | CSS selector | `window`       | Referenced element to keep the dropdown's visibility.                     |
-| `boundary-align` | Boolean      | `false`        | Align the dropdown to the boundary.                                       |
-| `offset`         | Number       | `0`            | The offset of the dropdown container.                                     |
-| `dropbar `       | Boolean      | `false`        | Enable or disable dropbar behavior.                                       |
-| `dropbar-mode`   | String       | `slide`        | The mode in which the dropbar appears: `slide`, `push`                    |
-| `duration`       | Number       | `200`          | The dropbar transition duration.                                          |
+| Option           | Value           | Default        | Description                                                                                                            |
+|:-----------------|:----------------|:---------------|:-----------------------------------------------------------------------------------------------------------------------|
+| `align`          | String          | `left`         | Dropdown alignment: `left`, `right`, `center`                                                                          |
+| `mode`           | String          | `click, hover` | Comma separated list of dropdown trigger behavior modes: `click`, `hover`                                              |
+| `delay-show`     | Number          | `0`            | Delay time in hover mode before a dropdown is shown in milliseconds.                                                   |
+| `delay-hide`     | Number          | `800`          | Delay time in hover mode before a dropdown is hidden in milliseconds.                                                  |
+| `boundary`       | Boolean, String | `true`         | CSS selector of referenced element to keep the dropdown's visibility. By default, it's the navbar component's element. |
+| `boundary-align` | Boolean         | `false`        | Align the dropdown to the boundary.                                                                                    |
+| `offset`         | Number          | `0`            | The offset of the dropdown container.                                                                                  |
+| `dropbar `       | Boolean         | `false`        | Enable or disable dropbar behavior.                                                                                    |
+| `dropbar-mode`   | String          | `slide`        | The mode in which the dropbar appears: `slide`, `push`                                                                 |
+| `duration`       | Number          | `200`          | The dropbar transition duration.                                                                                       |
 
 ***
 
@@ -1040,11 +1039,11 @@ UIkit.navbar(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name         | Description                                                              |
-|:-------------|:-------------------------------------------------------------------------|
-| `beforeshow` | Fires before an item is shown. Can prevent showing by returning `false`. |
-| `show`       | Fires after an item is shown.                                            |
-| `shown`      | Fires after the item's show animation has completed.                     |
-| `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
-| `hide`       | Fires after an item's hide animation has started.                        |
-| `hidden`     | Fires after an item is hidden.                                           |
+| Name         | Description                                                                                    |
+|:-------------|:-----------------------------------------------------------------------------------------------|
+| `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
+| `show`       | Fires after an item is shown.                                                                  |
+| `shown`      | Fires after the item's show animation has completed.                                           |
+| `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
+| `hide`       | Fires after an item's hide animation has started.                                              |
+| `hidden`     | Fires after an item is hidden.                                                                 |

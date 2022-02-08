@@ -349,14 +349,15 @@ To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribu
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option      | Value        | Default | Description                                                                                              |
-|:------------|:-------------|:--------|:---------------------------------------------------------------------------------------------------------|
-| `connect`   | CSS selector | `~.uk-switcher` | Related items container. By default succeeding elements with class 'uk-switcher'.             |
-| `toggle `   | CSS selector | `> * > :first-child`   | Select the clickable elements which trigger content switching.                                          |
-| `active `   | Number       | `0`     | Active index on init. Providing a negative number indicates a position starting from the end of the set. |
-| `animation` | String       | `false` | The space separated names of animations to use. Comma separate for animation out.                        |
-| `duration`  | Number       | `200`   | The animation duration.                                                                                  |
-| `swiping`   | Boolean      | `true`  | Use swiping.                                                                                             |
+| Option      | Value        | Default              | Description                                                                                              |
+|:------------|:-------------|:---------------------|:---------------------------------------------------------------------------------------------------------|
+| `connect`   | CSS selector | `~.uk-switcher`      | Related items container. By default succeeding elements with class 'uk-switcher'.                        |
+| `toggle `   | CSS selector | `> * > :first-child` | Select the clickable elements which trigger content switching.                                           |
+| `itemNav `  | CSS selector | `false`              | Related nav container. By default, nav items are found in related items container only.                  |
+| `active `   | Number       | `0`                  | Active index on init. Providing a negative number indicates a position starting from the end of the set. |
+| `animation` | String       | `false`              | The space separated names of animations to use. Comma separate for animation out.                        |
+| `duration`  | Number       | `200`                | The animation duration.                                                                                  |
+| `swiping`   | Boolean      | `true`               | Use swiping.                                                                                             |
 
 `connect` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
@@ -380,14 +381,14 @@ UIkit.switcher(element, options);
 
 The following events will be triggered on the connected items of the elements with this component attached:
 
-| Name         | Description                                                              |
-|:-------------|:-------------------------------------------------------------------------|
-| `beforeshow` | Fires before an item is shown. Can prevent showing by returning `false`. |
-| `show`       | Fires after an item is shown.                                            |
-| `shown`      | Fires after the item's show animation has completed.                     |
-| `beforehide` | Fires before an item is hidden. Can prevent hiding by returning `false`. |
-| `hide`       | Fires after an item's hide animation has started.                        |
-| `hidden`     | Fires after an item is hidden.                                           |
+| Name         | Description                                                                                    |
+|:-------------|:-----------------------------------------------------------------------------------------------|
+| `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
+| `show`       | Fires after an item is shown.                                                                  |
+| `shown`      | Fires after the item's show animation has completed.                                           |
+| `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
+| `hide`       | Fires after an item's hide animation has started.                                              |
+| `hidden`     | Fires after an item is hidden.                                                                 |
 
 ### Methods
 
@@ -401,6 +402,6 @@ UIkit.switcher(element).show(index);
 
 Shows the Switcher item with given index.
 
-| Name    | Type                  | Default | Description                           |
-|:--------|:----------------------|:--------|:--------------------------------------|
-| `index` | String, Integer, Node | 0       | Switcher item to show. 0 based index. |
+| Name    | Type                 | Default | Description                           |
+|:--------|:---------------------|:--------|:--------------------------------------|
+| `index` | String, Number, Node | 0       | Switcher item to show. 0 based index. |

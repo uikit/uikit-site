@@ -4,7 +4,7 @@
 
 ## Panel
 
-UIkit uses panels to outline certain sections of your content. These can be arranged in grid columns from the [Grid component](grid.md) component, for example.
+UIkit uses panels to outline certain sections of your content. These can be arranged in grid columns from the [Grid component](grid.md), for example.
 
 Add the `.uk-panel` class to a `<div>` element to create a position context, set box-sizing to border-box, apply a clearfix and to remove the bottom margin of its last child element.
 
@@ -60,10 +60,10 @@ Add the `.uk-panel-scrollable` class to give the panel a fixed height and make i
 
 Floating elements are taken from the document flow and aligned to the left or right side of their container. It is important to clear floats or in the worst case, you might end up with a scrambled site. The following classes will help you to set up basic layouts.
 
-| Class             | Description                                       |
-|:------------------|:--------------------------------------------------|
-| `.uk-float-left`  | Add this class to float the element to the left.  |
-| `.uk-float-right` | Add this class to float the element to the right. |
+| Class             | Description                                                                                                                                                     |
+|:------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `.uk-float-left`  | Add this class to float the element to the left.                                                                                                                |
+| `.uk-float-right` | Add this class to float the element to the right.                                                                                                               |
 | `.uk-clearfix`    | Add this class to a parent container to clear floats. Alternatively, you can create a new block format context, e.g. by adding the `.uk-overflow-hidden` class. |
 
 
@@ -84,9 +84,9 @@ Floating elements are taken from the document flow and aligned to the left or ri
 
 These utilities provide different classes to modify an element's overflow behavior.
 
-| Class                 | Description                               |
-|-----------------------|-------------------------------------------|
-| `.uk-overflow-hidden` | Add this class to clip content that exceeds the dimensions of its container. |
+| Class                 | Description                                                                                                                                                           |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `.uk-overflow-hidden` | Add this class to clip content that exceeds the dimensions of its container.                                                                                          |
 | `.uk-overflow-auto`   | Add this class to create a container that provides a horizontal or vertical scrollbar whenever the elements content it are wider or higher than the container itself. |
 
 **Note** The `.uk-overflow-auto` class is useful when having to handle tables on a responsive website, which at some point would just get too big. It also works great on `<pre>` elements.
@@ -286,7 +286,7 @@ These utilities provide different classes for resizing elements.
 Add one of these classes to change the display properties of an element.
 
 | Class                      | Description                                                |
-| -------------------------- | ---------------------------------------------------------- |
+|----------------------------|------------------------------------------------------------|
 | `.uk-display-block`        | Forces the element to behave like a block element.         |
 | `.uk-display-inline`       | Forces the element to behave like an inline element.       |
 | `.uk-display-inline-block` | Forces the element to behave like an inline-block element. |
@@ -322,16 +322,16 @@ These classes are often used to create a position context on containers with an 
 
 In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the width of their parent container by default. To apply responsive behavior to iframes, add the `uk-responsive` attribute . For other elements or to apply a different behavior, just add one of the following classes.
 
-| Class                   | Description |
-|:------------------------|:------------|
-| `.uk-responsive-width`  | Add this class to apply the same responsive behavior to any other element. It adjusts the object's width according to its parent's width, keeping the original aspect ratio.   |
-| `.uk-responsive-height` | Add this class to adjust the object's height (instead of its width) according to its parent's height, keeping the original aspect ratio. |
-| `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all relevant elements content it. If you are embedding Google Maps into your site, you may need this to fix the map's images.      |
+| Class                   | Description                                                                                                                                                                                                                                                                                                |
+|:------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `.uk-responsive-width`  | Add this class to apply the same responsive behavior to any other element. It adjusts the object's width according to its parent's width, keeping the original aspect ratio.                                                                                                                               |
+| `.uk-responsive-height` | Add this class to adjust the object's height (instead of its width) according to its parent's height, keeping the original aspect ratio.                                                                                                                                                                   |
+| `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all relevant elements content it. If you are embedding Google Maps into your site, you may need this to fix the map's images. |
 
 ```html
 <img class="uk-responsive-height" src="" alt="">
 
-<iframe src="" width="" height="" frameborder="0" uk-responsive></iframe>
+<iframe src="" width="" height="" uk-responsive></iframe>
 ```
 
 ***
@@ -384,7 +384,7 @@ You can apply different box shadows to elements. Just add one of the following c
     </div>
 
     <div>
-        <div class="uk-box-shadow-xlarge uk-padding">XLarge</div>
+        <div class="uk-box-shadow-xlarge uk-padding">X-Large</div>
     </div>
 </div>
 ```
@@ -431,7 +431,7 @@ To apply a box shadow on hover, add one of the following classes. This can also 
     </div>
 
     <div>
-        <div class="uk-box-shadow-hover-xlarge uk-padding">Hover XLarge</div>
+        <div class="uk-box-shadow-hover-xlarge uk-padding">Hover X-Large</div>
     </div>
 
     <div>
@@ -439,7 +439,7 @@ To apply a box shadow on hover, add one of the following classes. This can also 
     </div>
 
     <div>
-        <div class="uk-box-shadow-xlarge uk-box-shadow-hover-medium uk-padding">XLarge + Hover Medium</div>
+        <div class="uk-box-shadow-xlarge uk-box-shadow-hover-medium uk-padding">X-Large + Hover Medium</div>
     </div>
 </div>
 ```
@@ -520,7 +520,7 @@ You can even automatically display alternative logos for light and dark backgrou
 </div>
 ```
 
-**Note** To inject a SVG logo as inline SVG, use the [SVG component](svg.md).
+**Note** To inject an SVG logo as inline SVG, use the [SVG component](svg.md).
 
 ***
 

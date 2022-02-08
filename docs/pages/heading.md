@@ -2,12 +2,14 @@
 
 <p class="uk-text-lead">Define different styles for headings.</p>
 
+Combine this component with the [Text component](text.md) to style your headings.
+
 ## Size modifiers
 
-Add one of the following classes to modify the size and style of headings. Usually, these classes would be used on heading elements but they work also with any other element like a `div` element. Note that these classes extend the heading classes from the [Base component](base.md#headings) upward, and the smallest modifier picks up the size after `h1` element.
+Add one of the following classes to modify the size and style of headings. Usually, these classes would be used on heading elements, but they work also with any other element like a `div` element. Note that these classes extend the heading classes from the [Base component](base.md#headings) upward, and the smallest modifier picks up the size after `h1` element.
 
 | Class                 | Description                                      |
-| :-------------------- | :----------------------------------------------- |
+|:----------------------|:-------------------------------------------------|
 | `.uk-heading-small`   | Add this class to apply a small-sized heading.   |
 | `.uk-heading-medium`  | Add this class to apply a medium-sized heading.  |
 | `.uk-heading-large`   | Add this class to apply a large-sized heading.   |
@@ -22,8 +24,8 @@ Add one of the following classes to modify the size and style of headings. Usual
 <h1 class="uk-heading-small">Small</h1>
 <h1 class="uk-heading-medium">Medium</h1>
 <h1 class="uk-heading-large">Large</h1>
-<h1 class="uk-heading-xlarge">XLarge</h1>
-<h1 class="uk-heading-2xlarge">2XLarge</h1>
+<h1 class="uk-heading-xlarge">X-Large</h1>
+<h1 class="uk-heading-2xlarge">2X-Large</h1>
 ```
 
 ***

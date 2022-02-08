@@ -1,6 +1,6 @@
 # Filter
 
-<p class="uk-text-lead">Filter or sort items in any given layout by meta data.</p>
+<p class="uk-text-lead">Filter or sort items in any given layout by metadata.</p>
 
 The Filter component is often used together with the [Grid component](grid.md), especially the masonry grid, but it's not bound to it. Any layout can be filtered or sorted no matter how the items are positioned. Items fade and move with smooth transitions between the different filtering and sorting states.
 
@@ -28,7 +28,7 @@ To apply this component, you need a container element with the `uk-filter="targe
 
 Next, we need to define the meta data for each layout item, for example which category the item belongs to. Use any HTML class or attribute to do so.
 
-To apply a filter control, add the `uk-filter-control` attribute. To define the meta data that should be filtered, use the `filter: SELECTOR` option. The selector can be any CSS selector like a HTML class or an attribute you define for the layout items.
+To apply a filter control, add the `uk-filter-control` attribute. To define the meta data that should be filtered, use the `filter: SELECTOR` option. The selector can be any CSS selector like an HTML class or an attribute you define for the layout items.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -112,6 +112,74 @@ If `target` is the only option in the `uk-filter` attribute value, you can also 
 ```
 
 The Filter component comes unstyled, which allows you to use any of the other UIkit components to create the filter controls and layout items. For example, the [Nav](nav.md), [Subnav](subnav.md) and [Tab](tab.md) components can be used to style the filter controls. Usually, the [Grid component](grid.md) is used to create the item layout.
+
+
+***
+
+## Animations
+
+By default, the filter uses a `slide` animation for the items between the different filtering states. To apply a different animation, just add the `animation` option to the attribute.
+
+| Animation      | Description                                                |
+|:---------------|:-----------------------------------------------------------|
+| `slide`        | Fade items out and in or slide them to their new position. |
+| `fade`         | Fade all items out and in.                                 |
+| `delayed-fade` | Fade items slightly delayed out and in.                    |
+
+```html
+<div uk-filter="animation: fade">...</div>
+```
+
+```example
+<div uk-filter="target: .js-filter; animation: fade">
+
+    <ul class="uk-subnav uk-subnav-pill">
+        <li uk-filter-control=".tag-white"><a href="#">White</a></li>
+        <li uk-filter-control=".tag-blue"><a href="#">Blue</a></li>
+        <li uk-filter-control=".tag-black"><a href="#">Black</a></li>
+    </ul>
+
+    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+        <li class="tag-white">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </li>
+        <li class="tag-blue">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </li>
+        <li class="tag-white">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </li>
+        <li class="tag-white">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </li>
+        <li class="tag-black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+        <li class="tag-black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+        <li class="tag-blue">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </li>
+        <li class="tag-black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+        <li class="tag-blue">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </li>
+        <li class="tag-white">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </li>
+        <li class="tag-blue">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </li>
+        <li class="tag-black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+    </ul>
+
+</div>
+```
 
 ***
 
@@ -765,10 +833,12 @@ Here is a comprehensive example with a masonry grid:
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option      | Value           | Default | Description                                          |
-|:------------|:----------------|:--------|:-----------------------------------------------------|
-| `target`    | String          | ''      | The targeted list on which to apply the filter to.   |
-| `selActive` | String, Boolean | false   | A selector for the initially active filter controls. |
+| Option      | Value           | Default | Description                                                 |
+|:------------|:----------------|:--------|:------------------------------------------------------------|
+| `target`    | String          | ''      | The targeted list on which to apply the filter to.          |
+| `selActive` | String, Boolean | false   | A selector for the initially active filter controls.        |
+| `animation` | String, Boolean | 'slide' | Animation mode: `slide`, `fade`, `delayed-fade` or `false`. |
+| `duration`  | Number          | 250     | Animation duration in milliseconds.                         |
 
 `target` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 

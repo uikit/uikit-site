@@ -18,30 +18,30 @@ To apply this component, add the `uk-sortable` attribute to a container and crea
 ```
 
 ```example
-<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s uk-text-center" uk-sortable="handle: .uk-card" uk-grid>
+<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 1</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 2</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 2</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 3</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 3</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 4</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 4</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 5</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 5</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 6</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 6</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 7</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 7</div>
     </li>
     <li>
-        <div class="uk-card uk-card-default uk-card-body">Item 8</div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 8</div>
     </li>
 </ul>
 ```
@@ -62,45 +62,45 @@ By default, the entire sortable element can be used for drag and drop sorting. T
 ```
 
 ```example
-<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s uk-text-center" uk-sortable="handle: .uk-sortable-handle" uk-grid>
+<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-sortable-handle" uk-grid>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 1
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 1
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 2
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 2
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 3
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 3
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 4
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 4
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 5
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 5
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 6
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 6
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 7
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 7
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right" uk-icon="icon: table"></span>Item 8
+            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 8
         </div>
     </li>
 </ul>
@@ -193,20 +193,21 @@ You can also apply one or more custom classes to items when they are being dragg
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option            | Value  | Default                   | Description                                   |
-|:------------------|:-------|:--------------------------|:----------------------------------------------|
-| `group`           | String | `''`                      | The group                                     |
-| `animation`       | Number | `150`                     | The animation duration.                       |
-| `threshold`       | Number | `10`                      | Mouse move threshold before dragging starts.  |
-| `cls-item`        | String | `uk-sortable-item`        | The item class.                               |
-| `cls-placeholder` | String | `uk-sortable-placeholder` | The placeholder class.                        |
-| `cls-drag`        | String | `uk-sortable-drag`        | The ghost class.                              |
-| `cls-drag-state`  | String | `uk-sortable-dragging`    | The body's dragging class.                    |
-| `cls-base`        | String | `uk-sortable`             | The list's class.                             |
-| `cls-no-drag`     | String | `uk-sortable-nodrag`      | Disable dragging on elements with this class. |
-| `cls-empty`       | String | `uk-sortable-empty`       | The empty list class.                         |
-| `cls-custom`      | String | `''`                      | The ghost's custom class.                     |
-| `handle`          | String | `false`                   | The handle selector.                          |
+| Option            | Value           | Default                   | Description                                   |
+|:------------------|:----------------|:--------------------------|:----------------------------------------------|
+| `group`           | String          | `''`                      | The group                                     |
+| `animation`       | String, Boolean | 'slide'                   | Animation mode: `slide`, `false`.             |
+| `duration`        | Number          | 250                       | Animation duration in milliseconds.           |
+| `threshold`       | Number          | `5`                       | Mouse move threshold before dragging starts.  |
+| `cls-item`        | String          | `uk-sortable-item`        | The item class.                               |
+| `cls-placeholder` | String          | `uk-sortable-placeholder` | The placeholder class.                        |
+| `cls-drag`        | String          | `uk-sortable-drag`        | The ghost class.                              |
+| `cls-drag-state`  | String          | `uk-drag`                 | The body's dragging class.                    |
+| `cls-base`        | String          | `uk-sortable`             | The list's class.                             |
+| `cls-no-drag`     | String          | `uk-sortable-nodrag`      | Disable dragging on elements with this class. |
+| `cls-empty`       | String          | `uk-sortable-empty`       | The empty list class.                         |
+| `cls-custom`      | String          | `''`                      | The ghost's custom class.                     |
+| `handle`          | String          | `false`                   | The handle selector.                          |
 
 ***
 

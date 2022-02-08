@@ -35,7 +35,7 @@ const router = new VueRouter({
     linkActiveClass: 'uk-active'
 });
 
-Vue.component('navbar', Navbar);
+Vue.component('Navbar', Navbar);
 
 new Vue({
 

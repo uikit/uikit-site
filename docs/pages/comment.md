@@ -4,7 +4,7 @@
 
 ## Usage
 
-The Comment component consists of the comment itself, a comment header, including an avatar, a title and meta data, and a comment body.
+The Comment component consists of the comment itself, a comment header, including an avatar, a title and metadata, and a comment body.
 
 | Class                | Description                                                                        |
 |:---------------------|:-----------------------------------------------------------------------------------|
@@ -29,16 +29,18 @@ The Comment component consists of the comment itself, a comment header, includin
 
 ```example
 <article class="uk-comment">
-    <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
-        <div class="uk-width-auto">
-            <img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
-        </div>
-        <div class="uk-width-expand">
-            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
-            <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                <li><a href="#">12 days ago</a></li>
-                <li><a href="#">Reply</a></li>
-            </ul>
+    <header class="uk-comment-header">
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                <img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+            </div>
+            <div class="uk-width-expand">
+                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                    <li><a href="#">12 days ago</a></li>
+                    <li><a href="#">Reply</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <div class="uk-comment-body">
@@ -59,16 +61,18 @@ To style a comment differently, for example to highlight it as the admin's comme
 
 ```example
 <article class="uk-comment uk-comment-primary">
-    <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
-        <div class="uk-width-auto">
-            <img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
-        </div>
-        <div class="uk-width-expand">
-            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
-            <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                <li><a href="#">12 days ago</a></li>
-                <li><a href="#">Reply</a></li>
-            </ul>
+    <header class="uk-comment-header">
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                <img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+            </div>
+            <div class="uk-width-expand">
+                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                    <li><a href="#">12 days ago</a></li>
+                    <li><a href="#">Reply</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <div class="uk-comment-body">

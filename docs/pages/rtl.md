@@ -29,7 +29,7 @@ Take a look at the available components and just create markup as usual. There i
 
 ## Compile from source
 
-If you [setup UIkit from Github source](installation.md#compile-from-github-source), you can also compile the RTL version of UIkit yourself. This will include any [custom UIkit theme](less.md) you have created in the `custom/` directory.
+If you [set up UIkit from GitHub source](installation.md#compile-from-github-source), you can also compile the RTL version of UIkit yourself. This will include any [custom UIkit theme](less.md) you have created in the `custom/` directory.
 
 ```sh
 yarn

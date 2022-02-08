@@ -13,7 +13,7 @@ Once you have [installed UIkit](installation.md), include the JavaScript files o
 
 UIkit is listening for DOM manipulations and will automatically initialize, connect and disconnect components as they are inserted or removed from the DOM. That way it can easily be used with JavaScript frameworks like [Vue.js](http://vuejs.org/) and React.
 
-**Note** The UIkit website and its documentation that you are currently looking at is built that way. It is a perfect example of how <em>UIkit and Vue.js</em> can be integrated. Head over to its [Github repo](https://github.com/uikit/uikit-site) to see what a good setup can look like.
+**Note** The UIkit website and its documentation that you are currently looking at is built that way. It is a perfect example of how <em>UIkit and Vue.js</em> can be integrated. Head over to its [GitHub repo](https://github.com/uikit/uikit-site) to see what a good setup can look like.
 
 ***
 
@@ -32,10 +32,18 @@ You can use UIkit components by adding `uk-*` or `data-uk-*` attributes to your 
 You can also initialize components via JavaScript and apply them to elements in your document.
 
 ```js
-var stickys = UIkit.sticky('#sticky', {
+var sticky = UIkit.sticky('#sticky', {
     offset: 50
 });
 ```
+
+You can retrieve an already initialized component by passing a selector or an element as a first Argument to the component function.
+
+ ```js
+ var sticky = UIkit.sticky('#sticky');
+ ```
+
+Omitting the second parameter will not re-initialize the component but serve as a getter function.
 
 ***
 
@@ -133,7 +141,7 @@ var notifications = UIkit.notification('MyMessage', 'danger');
 **Note**
 The options names must be in their camel cased representation, e.g. `show-on-up` becomes `showOnUp`.
 
-After initialisation you can get your component by calling the same initialisation function, omitting the options parameter.
+After initialisation, you can get your component by calling the same initialisation function, omitting the options parameter.
 
 ```javscript
 // Sticky is now the prior initialised components
@@ -153,7 +161,7 @@ UIkit.offcanvas('#offcanvas').toggle();
 
 Any component functions and variables prefixed with an underscore are considered as part of the internal API, which may change at any given time.
 
-Each component triggers DOM events that you can react to. For example when an Modal is shown or a Scrollspy element becomes visible.
+Each component triggers DOM events that you can react to. For example when a Modal is shown or a Scrollspy element becomes visible.
 
 ```js
 UIkit.util.on('#offcanvas', 'show', function () {
@@ -163,12 +171,14 @@ UIkit.util.on('#offcanvas', 'show', function () {
 
 The component's documentation page lists its events.
 
+**Note** Components often trigger event with the same name (e.g. 'show'). Usually events [bubble through the DOM](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture). Check the event target, to ensure the event was triggered by the desired component.
+
 Sometimes, components like Grid or Tab are hidden in the markup. This may happen when used in combination with the Switcher, Modal or Dropdown. Once they become visible, they need to adjust or fix their height and other dimensions.
 
 UIkit offers several ways of updating a component. Omitting the `type` parameter will trigger an `update` event.
 
 ```js
-// Calls the update hook on components registered on the element itself, it's parents and children.
+// Calls the update hook on components registered on the element itself, its parents and children.
 UIkit.update(element = document.body, type = 'update');
 
 // Updates the component itself.

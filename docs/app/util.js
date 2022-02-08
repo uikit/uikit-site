@@ -5,7 +5,7 @@ import {escape} from 'he';
 import {append, includes, remove} from 'uikit-util';
 
 export function sluggify(text) {
-    return text.toLowerCase().trim().replace(/(&amp;| & )/g, '-and-').replace(/&(.+?);/g, '').replace(/[\s\W-]+/g, '-');
+    return text.toLowerCase().trim().replace(/&amp;| & /g, '-and-').replace(/&.+?;/g, '').replace(/[\s\W-]+/g, '-');
 }
 
 export function parse(markdown, cb) {
@@ -48,7 +48,7 @@ export function parse(markdown, cb) {
     };
 
     renderer.strong = text => text === 'Note' ? `<span class="uk-label">${text}</span>` : `<strong>${text}</strong>`;
-    renderer.list = text => `<ul class="uk-list uk-list-bullet">${text}</ul>`;
+    renderer.list = text => `<ul class="uk-list uk-list-disc">${text}</ul>`;
     renderer.image = (href, title, text) => href.match(/modal$/) ? modal(href, text) : base.image(href, title, text);
     renderer.link = (href, title, text) => href.match(/\.md/) ? base.link(href.replace(/.md(.*)/, '$1'), title, text) : base.link(href, title, text);
     renderer.code = (code, lang, escaped) => lang === 'example' ? example(code) : '<div class="uk-margin-medium">' + base.code(code, lang, escaped) + '</div>';
@@ -59,7 +59,7 @@ export function parse(markdown, cb) {
     return marked(markdown, {renderer}, (err, content) => {
 
         if (includes(content, '{%isodate%}')) {
-            content = content.replace(/{%isodate%}/g, (new Date(Date.now() + 864e5 * 7)).toISOString().replace(/\.(\d+)Z/, '+00:00'));
+            content = content.replace(/{%isodate%}/g, (new Date(Date.now() + 864e5 * 7)).toISOString().replace(/\.\d+Z/, '+00:00'));
         }
 
         if (cb) {
