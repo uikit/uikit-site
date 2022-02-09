@@ -189,103 +189,103 @@
                 <div class="uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2" uk-grid>
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-copper-hill.jpg" alt="Copper Hill Frontpage Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/copper-hill/" data-modal></a>
+                            <img src="images/pro/layout-line-gallery.jpg" alt="Line Gallery Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/line-gallery/" data-modal></a>
                         </div>
                     </div>
 
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-horizon-overview.jpg" alt="Horizon Overview Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/horizon/?page_id=19" data-modal></a>
+                            <img src="images/pro/layout-union-dental.jpg" alt="Union Dental Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/union-dental/" data-modal></a>
                         </div>
                     </div>
 
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-sonic.jpg" alt="Sonic Frontpage Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/sonic/" data-modal></a>
+                            <img src="images/pro/layout-devstack.jpg" alt="Devstack Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/devstack/" data-modal></a>
                         </div>
                     </div>
 
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-joline.jpg" alt="Joline Frontpage Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/joline/" data-modal></a>
+                            <img src="images/pro/layout-design-escapes.jpg" alt="Design Escapes Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/design-escapes/" data-modal></a>
                         </div>
                     </div>
 
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-sonic-location.jpg" alt="Sonic Location Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/sonic/?page_id=22" data-modal></a>
+                            <img src="images/pro/layout-paladin.jpg" alt="Paladin Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/paladin/" data-modal></a>
                         </div>
                     </div>
 
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-max.jpg" alt="Max Frontpage Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/max/" data-modal></a>
+                            <img src="images/pro/layout-kitchen-daily.jpg" alt="Kitchen Daily Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/kitchen-daily/" data-modal></a>
                         </div>
                     </div>
 
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-joline-spots-case-study.jpg" alt="Joline Case Study Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/joline/?page_id=24" data-modal></a>
+                            <img src="images/pro/layout-creative-hub.jpg" alt="Creative Hub Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/creative-hub" data-modal></a>
                         </div>
                     </div>
 
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-fjord.jpg" alt="Fjord Frontpage Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/fjord/" data-modal></a>
+                            <img src="images/pro/layout-tech-space.jpg" alt="Tech Space Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/tech-space/" data-modal></a>
                         </div>
                     </div>
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-horizon.jpg" alt="Horizon Frontpage Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/horizon/" data-modal></a>
+                            <img src="images/pro/layout-framerate.jpg" alt="Framerate Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/framerate/" data-modal></a>
                         </div>
                     </div>
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-fuse.jpg" alt="Fuse Frontpage Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/fuse/" data-modal></a>
+                            <img src="images/pro/layout-design-bites.jpg" alt="Design Bites Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/design-bites/" data-modal></a>
                         </div>
                     </div>
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-fjord-resources.jpg" alt="Fjord Resources Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/fjord/?page_id=21" data-modal></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-copper-hill-lunch.jpg" alt="Copper Hill Lunch Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/copper-hill/?page_id=28" data-modal></a>
+                            <img src="images/pro/layout-matthew-taylor.jpg" alt="Matthew Taylor Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/matthew-taylor/" data-modal></a>
                         </div>
                     </div>
 
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-sonic-speakers.jpg" alt="Sonic Speakers Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/sonic/?page_id=20" data-modal></a>
+                            <img src="images/pro/layout-soda.jpg" alt="Soda Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/soda/" data-modal></a>
                         </div>
                     </div>
 
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-horizon-products.jpg" alt="Horizon Products Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/horizon/?page_id=13" data-modal></a>
+                            <img src="images/pro/layout-makai.jpg" alt="Makai Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/makai" data-modal></a>
                         </div>
                     </div>
 
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
-                            <img src="images/pro/layout-joline-about.jpg" alt="Joline About Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/joline/?page_id=20" data-modal></a>
+                            <img src="images/pro/layout-balou.jpg" alt="Balou Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/balou/" data-modal></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
+                            <img src="images/pro/layout-yoko.jpg" alt="Yoko Home Layout">
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/yoko/" data-modal></a>
                         </div>
                     </div>
                 </div>
