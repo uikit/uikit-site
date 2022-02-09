@@ -104,7 +104,7 @@
                         Pre-built styles
                     </h2>
                     <p class="uk-text-large tm-text-large">
-                        Try out any UIkit theme with one click. You can switch between styles from the library and your content adapts automatically.
+                        Try out any of UIkit theme with one click. You can switch between 100+ styles from the library, and your content will adapt automatically.
                     </p>
                 </div>
 
@@ -225,7 +225,7 @@
                     <div>
                         <div class="uk-inline tm-box-shadow-medium uk-transition-toggle" tabindex="0">
                             <img src="images/pro/layout-max.jpg" alt="Max Frontpage Layout">
-                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/themes/wordpress/2016/max/" data-modal></a>
+                            <a class="tm-overlay-default uk-position-cover uk-transition-fade" href="https://demo.yootheme.com/wordpress/themes/max/" data-modal></a>
                         </div>
                     </div>
 
