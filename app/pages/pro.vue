@@ -355,7 +355,7 @@
 
         <!-- Modal -->
 
-        <div id="modal-demo" ref="modal" class="uk-modal-full" uk-modal>
+        <div id="modal-demo" ref="modal" class="uk-modal-full" uk-modal @hide="src = ''">
             <div class="uk-modal-dialog tm-modal-dialog uk-flex uk-flex-column" uk-height-viewport>
                 <button class="uk-modal-close-full tm-modal-close-full uk-close-large" type="button" uk-close></button>
                 <div class="tm-modal-header">
@@ -371,7 +371,7 @@
                     </div>
                 </div>
                 <div class="tm-modal-body uk-flex-1 uk-flex">
-                    <iframe ref="iframe" class="uk-width-1-1 tm-box-shadow-modal" src=""></iframe>
+                    <iframe :src="src" class="uk-width-1-1 tm-box-shadow-modal"></iframe>
                 </div>
             </div>
         </div>
@@ -387,6 +387,7 @@
     export default {
 
         data: () => ({
+            src: '',
             imgLoaded: false
         }),
 
@@ -394,7 +395,7 @@
 
             on(this.$el, 'click', '[data-modal]', e => {
 
-                const {iframe, modal: modalEl} = this.$refs;
+                const {modal: modalEl} = this.$refs;
 
                 e.preventDefault();
 
@@ -405,10 +406,8 @@
                     return;
                 }
 
-                iframe.src = '';
                 modal(modalEl).show();
-
-                requestAnimationFrame(() => iframe.src = el.href);
+                this.src = el.href;
 
             });
         }
