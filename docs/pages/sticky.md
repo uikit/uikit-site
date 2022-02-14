@@ -11,7 +11,9 @@ To create an element that remains at the top of the viewport when scrolling down
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="bottom: #offset">Stick to the top</div>
+<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="bottom: ~ .uk-height-large">Stick to the top</div>
+
+<div class="uk-height-large"></div>
 ```
 
 **Note** Example elements on this page are only sticky until you scroll down to the next heading and disappear afterwards. This was done so as not to clutter your screen with all variations of sticky containers.
@@ -27,7 +29,9 @@ You can position the element below the viewport edge. Add the `offset` attribute
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="offset: 100; bottom: #top">Stick 100px below the top</div>
+<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="offset: 100; bottom: ~ .uk-height-large">Stick 100px below the top</div>
+
+<div class="uk-height-large"></div>
 ```
 
 ***
@@ -52,14 +56,16 @@ To apply the sticky behavior with a delay, add the `top` attribute, which can be
 ```example
 <div class="uk-child-width-1-2@s" uk-grid>
     <div>
-        <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="top: 200; bottom: #animation">Stick to the top but only after 200px scrolling</div>
+        <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="top: 200; bottom: ![uk-grid] ~ .uk-height-large">Stick to the top but only after 200px scrolling</div>
     </div>
     <div>
-        <div id="container-1" class="uk-background-muted uk-height-medium" style="margin-bottom: 200px;">
-            <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="top: #container-1; bottom: #animation">Stick to the top but below the box</div>
+        <div id="container-1" class="uk-background-muted uk-height-medium">
+            <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="top: #container-1; bottom: ![uk-grid] ~ .uk-height-large">Stick to the top but below the box</div>
         </div>
     </div>
 </div>
+
+<div class="uk-height-large"></div>
 ```
 
 ***
@@ -73,7 +79,9 @@ Add an animation from the [Animation component](animation.md) in order to have t
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-card-body" style="margin-bottom: 200px; z-index: 980;" uk-sticky="top: 100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">Animation Slide Top</div>
+<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="top: 100; animation: uk-animation-slide-top; bottom: ~ .uk-height-large">Animation Slide Top</div>
+
+<div class="uk-height-large"></div>
 ```
 
 ***
@@ -87,7 +95,9 @@ You can make the sticky element show only when scrolling up to save space. Toget
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-card-body" style="margin-bottom: 200px; z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">Slide in on scroll up</div>
+<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: ~ .uk-height-large">Slide in on scroll up</div>
+
+<div class="uk-height-large"></div>
 ```
 
 ***
@@ -111,9 +121,7 @@ Bind the sticky behavior to a specific element, so that it disappears after scro
 <div class="uk-child-width-1-2@s" uk-grid>
     <div>
         <div class="uk-background-muted uk-height-medium">
-            <div class="uk-height-medium uk-background-muted">
-                <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="bottom: true">Stick until the bottom of its parent container</div>
-            </div>
+            <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="bottom: true">Stick until the bottom of its parent container</div>
         </div>
     </div>
     <div>
@@ -123,7 +131,84 @@ Bind the sticky behavior to a specific element, so that it disappears after scro
     </div>
 </div>
 
-<h3 id="container-2">Some Headline</h3>
+<h3 id="container-2" style="margin-top: 300px;">Some Headline</h3>
+
+```
+
+***
+
+## Oversized Content
+
+todo
+
+```example
+<div id="js-oversized" class="uk-child-width-1-2@s" uk-grid>
+    <div>
+
+        <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="bottom: #js-oversized">
+        
+            <h3>Sticky 1</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h3>Sticky 2</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h3>Sticky 3</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h3>Sticky 4</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h3>Sticky 5</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+        </div>
+
+    </div>
+    <div>
+        <div class="uk-background-muted uk-padding">
+
+            <h3>Headline 1</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h3>Headline 2</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h3>Headline 3</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h3>Headline 4</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h3>Headline 5</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h3>Headline 6</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h3>Headline 7</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h3>Headline 8</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
+
+    </div>
+</div>
 
 ```
 
@@ -139,12 +224,35 @@ It's possible to disable the sticky behavior for different devices widths by app
 
 ***
 
+## Position
+
+By default, the element sticks to the top of the viewport. You can set the `position` option to use a different position. Possible values are as follows:
+
+| Value     | Description                                                                             |
+| :-------- | :-------------------------------------------------------------------------------------- |
+| `top`     | Stick to the top                                                                        |
+| `bottom ` | Stick to the bottom.                                                                    |
+| `auto`    | Stick to top if smaller than the viewport. Stick to bottom if larger than the viewport. |
+
+
+```html
+<div uk-sticky="position: bottom"></div>
+```
+
+```example
+<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="position: bottom; bottom: ~ .uk-height-large">Sticky bottom</div>
+
+<div class="uk-height-large"></div>
+```
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option           | Value                                 | Default     | Description                                                                                                                                                              |
-|:-----------------|:--------------------------------------|:------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :--------------- | :------------------------------------ | :---------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `top`            | Number, viewport height, CSS selector | `0`         | The top offset from where the element should be stick.                                                                                                                   |
 | `bottom `        | Boolean, CSS selector                 | `false`     | The bottom offset until the element should stick. If `bottom` is an element, its bottom offset will be used. (true: parent element, prefixed with '!' a parent selector) |
 | `offset `        | String                                | `0`         | The offset the Sticky should be fixed to.                                                                                                                                |
@@ -173,6 +281,6 @@ UIkit.sticky(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name       | Description                                  |
-|:-----------|:---------------------------------------------|
+| :--------- | :------------------------------------------- |
 | `active`   | Fires after the element becomes sticky.      |
 | `inactive` | Fires after the element is no longer sticky. |
