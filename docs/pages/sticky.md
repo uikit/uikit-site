@@ -139,7 +139,7 @@ Bind the sticky behavior to a specific element, so that it disappears after scro
 
 ## Oversized Content
 
-todo
+Sticky content that is larger than the viewport will scroll down and stick to the bottom of the viewport. Changing the scroll direction will immediately scroll the sticky content up and change the sticky behavior to stick to the top of the viewport.
 
 ```example
 <div id="js-oversized" class="uk-child-width-1-2@s" uk-grid>
@@ -228,12 +228,11 @@ It's possible to disable the sticky behavior for different devices widths by app
 
 By default, the element sticks to the top of the viewport. You can set the `position` option to use a different position. Possible values are as follows:
 
-| Value     | Description                                                                             |
-| :-------- | :-------------------------------------------------------------------------------------- |
-| `top`     | Stick to the top                                                                        |
-| `bottom ` | Stick to the bottom.                                                                    |
-| `auto`    | Stick to top if smaller than the viewport. Stick to bottom if larger than the viewport. |
-
+| Value     | Description                                                                                                               |
+| :-------- | :------------------------------------------------------------------------------------------------------------------------ |
+| `top`     | Stick to the top of the viewport.                                                                                         |
+| `bottom ` | Stick to the bottom of the viewport.                                                                                      |
+| `auto`    | Stick to the top of the viewport, but if the content is larger than the viewport, stick it to the bottom of the viewport. |
 
 ```html
 <div uk-sticky="position: bottom"></div>
