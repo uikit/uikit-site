@@ -20,13 +20,12 @@
 
     /* global marked */
 
-    import {ajax} from 'uikit-util';
-
     export default {
 
-        mounted() {
+        async mounted() {
 
-            ajax('assets/uikit/CHANGELOG.md?{{BUILD}}').then(({response}) => this.$refs.changelog.innerHTML = this.parse(response));
+            const response = await fetch('assets/uikit/CHANGELOG.md?{{BUILD}}');
+            this.$refs.changelog.innerHTML = this.parse(await response.text());
 
         },
 

@@ -26,7 +26,16 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                use: 'buble-loader',
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [['@babel/preset-env', {
+                            targets: {
+                                safari: '12'
+                            }
+                        }]]
+                    }
+                },
                 exclude: /node_modules/
             },
             {

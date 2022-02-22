@@ -53,21 +53,23 @@
 
 <script>
 
-    import {$, ajax, noop} from 'uikit-util';
+    import {$, noop} from 'uikit-util';
 
     export default {
 
         mounted() {
 
-            ajax('https://api.github.com/repos/uikit/uikit', {responseType: 'json'}).then(({response}) => {
+            fetch('https://api.github.com/repos/uikit/uikit').then(async response => {
 
-                if (response && response.stargazers_count) {
+                const {stargazers_count} = await response.json();
+
+                if (stargazers_count) {
                     $('[uikit-stargazers]').innerText = response.stargazers_count;
                 }
 
             }, noop);
 
-            ajax('assets/uikit/package.json', {responseType: 'json'}).then(({response}) => $('[uikit-version]').innerText = response.version);
+            fetch('assets/uikit/package.json').then(async response => $('[uikit-version]').innerText = (await response.json()).version);
 
         }
     };

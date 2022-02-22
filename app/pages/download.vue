@@ -37,15 +37,13 @@
 
 <script>
 
-    import {ajax} from 'uikit-util';
-
     export default {
 
-        mounted() {
+        async mounted() {
 
-            ajax('assets/uikit/package.json', {responseType: 'json'}).then(({response}) =>
-                setTimeout(() => location.href = `https://github.com/uikit/uikit/releases/download/v${response.version}/uikit-${response.version}.zip`, 100)
-            );
+            const response = await fetch('assets/uikit/package.json');
+            const {version} = await response.json();
+            setTimeout(() => location.href = `https://github.com/uikit/uikit/releases/download/v${version}/uikit-${version}.zip`, 100);
 
         }
     };
