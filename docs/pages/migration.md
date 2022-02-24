@@ -4,6 +4,14 @@
 
 ***
 
+## Migration from UIkit 3.11 to 3.12
+
+Uikit 3.12 deprecates `uk-img` from the [Image component](image) for the `<img>` element. Simply, use the native `loading="lazy"` attribute instead. This also applies if `uk-img` is used to target adjacent slides within Slideshows or Sliders. Both components, Slideshow and Slider, work with lazy loading images out of the box.
+
+| Attribute | Replace with     |
+| --------- | ---------------- |
+| `uk-img`  | `loading="lazy"` |
+
 ## Migration from UIkit 3.10 to 3.11
 
 UIkit 3.11 adds new `start` and `end` options to the [Parallax component](parallax) and deprecates the `viewport` option. Replace the `viewport` option with the `end` option. Simply, calculate `1` minus your viewport value and multiply it with `100vh + 100%`. Here are some examples:
