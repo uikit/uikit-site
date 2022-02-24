@@ -73,17 +73,17 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
     <div>
         <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
-            <img src="images/photo.jpg" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
         </a>
     </div>
     <div>
         <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
-            <img src="images/dark.jpg" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="">
         </a>
     </div>
     <div>
         <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
-            <img src="images/light.jpg" alt="">
+            <img src="images/light.jpg" width="1800" height="1200" alt="">
         </a>
     </div>
 </div>
@@ -92,17 +92,17 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: fade">
     <div>
         <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
-            <img src="images/photo.jpg" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
         </a>
     </div>
     <div>
         <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
-            <img src="images/dark.jpg" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="">
         </a>
     </div>
     <div>
         <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
-            <img src="images/light.jpg" alt="">
+            <img src="images/light.jpg" width="1800" height="1200" alt="">
         </a>
     </div>
 </div>
@@ -111,17 +111,17 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: scale">
     <div>
         <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
-            <img src="images/photo.jpg" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
         </a>
     </div>
     <div>
         <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
-            <img src="images/dark.jpg" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="">
         </a>
     </div>
     <div>
         <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
-            <img src="images/light.jpg" alt="">
+            <img src="images/light.jpg" width="1800" height="1200" alt="">
         </a>
     </div>
 </div>

@@ -15,13 +15,13 @@ For example, the [Slideshow](slideshow.md#videos), [Lightbox](lightbox.md#conten
 To apply this component, add the `uk-video` attribute to a `<video>` element. The video will be paused whenever it's hidden with CSS and resume once it becomes visible again.
 
 ```html
-<video uk-video></video>
+<video src="" width="" height="" uk-video></video>
 ```
 
 ```example
 <button class="uk-button uk-button-default uk-margin" type="button" uk-toggle="target: +">Toggle HTML5 Video</button>
 
-<video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" controls playsinline hidden uk-video></video>
+<video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" controls playsinline hidden uk-video></video>
 ```
 
 ***
@@ -31,11 +31,11 @@ To apply this component, add the `uk-video` attribute to a `<video>` element. Th
 To play a video when it enters the viewport and pause it again when it leaves the viewport, just add the `uk-video="autoplay: inview"` attribute to a `<video>` element.
 
 ```html
-<video uk-video="autoplay: inview"></video>
+<video src="" width="" height="" uk-video="autoplay: inview"></video>
 ```
 
 ```example
-<video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" loop muted playsinline uk-video="autoplay: inview"></video>
+<video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video>
 ```
 
 ***

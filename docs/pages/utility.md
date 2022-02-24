@@ -158,10 +158,10 @@ Add the `uk-overflow-auto` attribute to expand an element's height to make it fi
 
         <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
             <div class="uk-grid-small" uk-grid>
-                <div class="uk-width-1-2"><img src="images/light.jpg" alt=""></div>
-                <div class="uk-width-1-2"><img src="images/dark.jpg" alt=""></div>
-                <div class="uk-width-1-2"><img src="images/photo.jpg" alt=""></div>
-                <div class="uk-width-1-2"><img src="images/photo2.jpg" alt=""></div>
+                <div class="uk-width-1-2"><img src="images/light.jpg" width="1800" height="1200" alt=""></div>
+                <div class="uk-width-1-2"><img src="images/dark.jpg" width="1800" height="1200" alt=""></div>
+                <div class="uk-width-1-2"><img src="images/photo.jpg" width="1800" height="1200" alt=""></div>
+                <div class="uk-width-1-2"><img src="images/photo2.jpg" width="1800" height="1200" alt=""></div>
             </div>
         </div>
 
@@ -304,14 +304,14 @@ These classes are often used to create a position context on containers with an 
 
 ```html
 <div class="uk-inline">
-    <img alt="">
+    <img src="" width="" height="" alt="">
     <div class="uk-position-cover"></div>
 </div>
 ```
 
 ```example
 <div class="uk-inline">
-    <img src="images/photo.jpg" width="300" alt="">
+    <img src="images/photo.jpg" width="300" height="200" alt="">
     <div class="uk-position-medium uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">Overlay</div>
 </div>
 ```
@@ -329,7 +329,7 @@ In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the widt
 | `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all relevant elements content it. If you are embedding Google Maps into your site, you may need this to fix the map's images. |
 
 ```html
-<img class="uk-responsive-height" src="" alt="">
+<img class="uk-responsive-height" src="" width="" height="" alt="">
 
 <iframe src="" width="" height="" uk-responsive></iframe>
 ```
@@ -484,7 +484,7 @@ You can also use an `<img>` element, for example an SVG, as a logo.
 
 ```html
 <a class="uk-logo" href="">
-    <img src="" alt="">
+    <img src="" width="" height="" alt="">
 </a>
 ```
 
@@ -493,8 +493,8 @@ You can even automatically display alternative logos for light and dark backgrou
 ```html
 <div class="uk-light">
     <a class="uk-logo" href="">
-        <img src="" alt="">
-        <img class="uk-logo-inverse" src="" alt="">
+        <img src="" width="" height="" alt="">
+        <img class="uk-logo-inverse" src="" width="" height="" alt="">
     </a>
 </div>
 ```
@@ -504,16 +504,16 @@ You can even automatically display alternative logos for light and dark backgrou
     <div>
         <div class="uk-panel uk-padding uk-background-muted">
             <a class="uk-logo" href="#">
-                <img src="images/logo-placeholder.svg" alt="">
-                <img class="uk-logo-inverse" src="images/logo-placeholder-light.svg" alt="">
+                <img src="images/logo-placeholder.svg" width="130" height="70" alt="">
+                <img class="uk-logo-inverse" src="images/logo-placeholder-light.svg" width="130" height="70" alt="">
             </a>
         </div>
     </div>
     <div>
         <div class="uk-panel uk-padding uk-background-secondary uk-light">
             <a class="uk-logo" href="#">
-                <img src="images/logo-placeholder.svg" alt="">
-                <img class="uk-logo-inverse" src="images/logo-placeholder-light.svg" alt="">
+                <img src="images/logo-placeholder.svg" width="130" height="70" alt="">
+                <img class="uk-logo-inverse" src="images/logo-placeholder-light.svg" width="130" height="70" alt="">
             </a>
         </div>
     </div>
@@ -550,7 +550,7 @@ Add one of the following classes to apply different blend modes to your backgrou
 ```html
 <div class="uk-position-relative">
     <div class="uk-blend-multiply uk-overlay uk-overlay-primary"></div>
-    <img src="" alt="">
+    <img src="" width="" height="" alt="">
 </div>
 ```
 
@@ -558,7 +558,7 @@ Add one of the following classes to apply different blend modes to your backgrou
 <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-small uk-light" uk-grid>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-multiply" src="images/dark.jpg" alt="Blend Multiply">
+            <img class="uk-blend-multiply" src="images/dark.jpg" width="1800" height="1200" alt="Blend Multiply">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Multiply</p>
             </div>
@@ -566,7 +566,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-screen" src="images/dark.jpg" alt="Blend Screen">
+            <img class="uk-blend-screen" src="images/dark.jpg" width="1800" height="1200" alt="Blend Screen">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Screen</p>
             </div>
@@ -574,7 +574,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-overlay" src="images/dark.jpg" alt="Blend Overlay">
+            <img class="uk-blend-overlay" src="images/dark.jpg" width="1800" height="1200" alt="Blend Overlay">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Overlay</p>
             </div>
@@ -582,7 +582,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-darken" src="images/dark.jpg" alt="Blend Darken">
+            <img class="uk-blend-darken" src="images/dark.jpg" width="1800" height="1200" alt="Blend Darken">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Darken</p>
             </div>
@@ -590,7 +590,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-lighten" src="images/dark.jpg" alt="Blend Lighten">
+            <img class="uk-blend-lighten" src="images/dark.jpg" width="1800" height="1200" alt="Blend Lighten">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Lighten</p>
             </div>
@@ -598,7 +598,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-color-dodge" src="images/dark.jpg" alt="Blend Color Dodge">
+            <img class="uk-blend-color-dodge" src="images/dark.jpg" width="1800" height="1200" alt="Blend Color Dodge">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Color Dodge</p>
             </div>
@@ -606,7 +606,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-color-burn" src="images/dark.jpg" alt="Blend Color Burn">
+            <img class="uk-blend-color-burn" src="images/dark.jpg" width="1800" height="1200" alt="Blend Color Burn">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Color Burn</p>
             </div>
@@ -614,7 +614,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-hard-light" src="images/dark.jpg" alt="Blend Hard Light">
+            <img class="uk-blend-hard-light" src="images/dark.jpg" width="1800" height="1200" alt="Blend Hard Light">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Hard Light</p>
             </div>
@@ -622,7 +622,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-soft-light" src="images/dark.jpg" alt="Blend Soft Light">
+            <img class="uk-blend-soft-light" src="images/dark.jpg" width="1800" height="1200" alt="Blend Soft Light">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Soft Light</p>
             </div>
@@ -630,7 +630,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-difference" src="images/dark.jpg" alt="Blend Difference">
+            <img class="uk-blend-difference" src="images/dark.jpg" width="1800" height="1200" alt="Blend Difference">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Difference</p>
             </div>
@@ -638,7 +638,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-exclusion" src="images/dark.jpg" alt="Blend Exclusion">
+            <img class="uk-blend-exclusion" src="images/dark.jpg" width="1800" height="1200" alt="Blend Exclusion">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Exclusion</p>
             </div>
@@ -646,7 +646,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-hue" src="images/dark.jpg" alt="Blend Hue">
+            <img class="uk-blend-hue" src="images/dark.jpg" width="1800" height="1200" alt="Blend Hue">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Hue</p>
             </div>
@@ -654,7 +654,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-saturation" src="images/dark.jpg" alt="Blend Saturation">
+            <img class="uk-blend-saturation" src="images/dark.jpg" width="1800" height="1200" alt="Blend Saturation">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Saturation</p>
             </div>
@@ -662,7 +662,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-color" src="images/dark.jpg" alt="Blend Color">
+            <img class="uk-blend-color" src="images/dark.jpg" width="1800" height="1200" alt="Blend Color">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Color</p>
             </div>
@@ -670,7 +670,7 @@ Add one of the following classes to apply different blend modes to your backgrou
     </div>
     <div>
         <div class="uk-inline uk-background-primary">
-            <img class="uk-blend-luminosity" src="images/dark.jpg" alt="Blend Luminosity">
+            <img class="uk-blend-luminosity" src="images/dark.jpg" width="1800" height="1200" alt="Blend Luminosity">
             <div class="uk-position-center">
                 <p class="uk-h4 uk-margin-remove">Luminosity</p>
             </div>
@@ -687,7 +687,7 @@ To center an element to itself, add the `uk-transform-center` class. This is par
 
 ```example
 <div class="uk-inline">
-    <img src="images/light.jpg" alt="">
+    <img src="images/light.jpg" width="1800" height="1200" alt="">
     <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 50%" href="#" uk-marker></a>
 </div>
 ```

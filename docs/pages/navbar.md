@@ -153,7 +153,7 @@ When using an image or colored background for the hero section of your website, 
 
 ```example
 <div class="uk-position-relative">
-    <img src="images/light.jpg" alt="">
+    <img src="images/light.jpg" width="1800" height="1200" alt="">
     <div class="uk-position-top">
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
             <div class="uk-navbar-left">

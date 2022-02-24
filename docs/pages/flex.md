@@ -227,7 +227,7 @@ The Flex component can be combined with a grid from the [Grid component](grid.md
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     </div>
     <div class="uk-width-1-3@m uk-flex-first">
-        <img src="images/light.jpg" alt="Image">
+        <img src="images/light.jpg" width="1800" height="1200" alt="Image">
     </div>
 </div>
 ```

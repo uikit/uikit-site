@@ -19,7 +19,7 @@ The Comment component consists of the comment itself, a comment header, includin
 ```html
 <article class="uk-comment">
     <header class="uk-comment-header">
-        <img class="uk-comment-avatar" src="" alt="">
+        <img class="uk-comment-avatar" src="" width="" height="" alt="">
         <h4 class="uk-comment-title"></h4>
         <ul class="uk-comment-meta uk-subnav"></ul>
     </header>

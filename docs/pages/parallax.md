@@ -210,13 +210,13 @@ The Parallax component can be used to animate SVG strokes. The effect looks like
 
 ```html
 <div uk-parallax="stroke: 45">
-    <img src="" alt="" uk-svg>
+    <img src="" width="" height="" alt="" uk-svg>
 </div>
 ```
 
 ```example
 <div class="uk-text-center" uk-parallax="start: 100%; end: 100%; stroke: 100%;">
-    <img src="images/strokes.svg" alt="" uk-svg>
+    <img src="images/strokes.svg" width="350" height="340" alt="" uk-svg>
 </div>
 ```
 
