@@ -4,6 +4,8 @@
 
 SVGs or Scalable Vector Graphics are really handy, for example to display a logo that remains crisp when scaling or that is animated. The SVG component provides more control to style and animate the image and its vector parts. It injects the image into the markup as an inline SVG including all attributes, like IDs, classes, width and height, so that they can easily be targeted using CSS.
 
+**Note** The ``loading="lazy"` attribute for `<img>` elements is taken into account and SVG images will be injected as inline SVG as they enter the viewport.
+
 ***
 
 ## Usage
