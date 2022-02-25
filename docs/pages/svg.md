@@ -4,8 +4,6 @@
 
 SVGs or Scalable Vector Graphics are really handy, for example to display a logo that remains crisp when scaling or that is animated. The SVG component provides more control to style and animate the image and its vector parts. It injects the image into the markup as an inline SVG including all attributes, like IDs, classes, width and height, so that they can easily be targeted using CSS.
 
-**Note** The ``loading="lazy"` attribute for `<img>` elements is taken into account and SVG images will be injected as inline SVG as they enter the viewport.
-
 ***
 
 ## Usage
@@ -28,7 +26,7 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 
 **Note** SVGs will adapt the current color for their stroke and fill color. To prevent this behavior, add the `.uk-preserve` class to the SVG itself or the elements inside the SVG.
 
-Inline SVG images can also be lazy loaded using the [Image component](image.md#inline-svg).
+**Note** The `loading="lazy"` attribute for `<img>` elements is taken into account and SVG images will be injected as inline SVG as they enter the viewport.
 
 ***
 

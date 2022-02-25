@@ -41,7 +41,7 @@ Add an image in the background of each slide using the `uk-cover` attribute from
 </div>
 ```
 
-**Note** To lazy load images in the slides, take a look at the [Image component](image.md#target).
+**Note** To lazy load images in the slides, use the `loading="lazy"` attribute. The Slideshow will automatically remove the attribute from images in adjacent slides.
 
 ***
 
