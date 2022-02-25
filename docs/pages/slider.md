@@ -1059,3 +1059,12 @@ UIkit.slider(element).stopAutoplay();
 ```
 
 Stops the slider autoplay.
+
+#### getIndex
+
+```js
+UIkit.slider(element).getIndex();
+```
+
+Returns the active index.
+
