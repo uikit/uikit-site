@@ -72,7 +72,7 @@ To define the widths of the slider items, use the [Width component](width.md). E
 </div>
 ```
 
-**Note** To lazy load images in the slides, use the `loading="lazy"` attribute. Images will only be loaded as they enter the viewport.
+**Note** To lazy load images in the slides, use the `loading="lazy"` attribute. The Slider will automatically remove the attribute from images in adjacent slides.
 
 ***
 

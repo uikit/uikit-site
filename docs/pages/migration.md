@@ -12,6 +12,8 @@ Uikit 3.12 deprecates `uk-img` from the [Image component](image) for the `<img>`
 | --------- | ---------------- |
 | `uk-img`  | `loading="lazy"` |
 
+**Important** This change also requires `<img>` elements to have `width` and `height` attributes to prevent layout shifts.
+
 ## Migration from UIkit 3.10 to 3.11
 
 UIkit 3.11 adds new `start` and `end` options to the [Parallax component](parallax) and deprecates the `viewport` option. Replace the `viewport` option with the `end` option. Simply, calculate `1` minus your viewport value and multiply it with `100vh + 100%`. Here are some examples:
