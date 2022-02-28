@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Use background images with lazy loading, responsive images and different image sources</p>
 
-The image component emulates browser features of the `<img>` element features but for background images. This includes `loading="lazy"`, `srcset` and `sizes` attributes as well as the `<source>` element from the `<picture>` element. This speeds up page loading times and decreases traffic by only loading background images as they enter the viewport. Optimized background images are served for different device widths and high resolution (retina) displays.
+The image component emulates browser features of the `<img>` element, but for background images. This includes `loading="lazy"`, `srcset` and `sizes` attributes as well as the `<source>` element from the `<picture>` element. This speeds up page loading times and decreases traffic by only loading background images as they enter the viewport. Optimized background images are served for different device widths and high resolution (retina) displays.
 
 ***
 
@@ -77,7 +77,7 @@ To use different image sources like the `<picture>` element with the `<source>` 
 </div>
 ```
 
-It possible to offer multiple image sources, but also with multiple resolutions for each one using `srcset`.
+It's possible to offer multiple image sources, but also multiple resolutions for each one, using `srcset`.
 
 ```html
 <div sources="srcset: ____; media: ____" data-src="" data-srcset="" sizes="" uk-img>...</div>
@@ -86,7 +86,8 @@ It possible to offer multiple image sources, but also with multiple resolutions 
 ```example
 <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
      sources="srcset: https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?fit=crop&w=650&h=433&q=80 650w,
-                      https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?fit=crop&w=1300&h=866&q=80 1300w; media: (min-width: 1200px)"
+                      https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?fit=crop&w=1300&h=866&q=80 1300w; 
+              media: (min-width: 1200px)"
      data-src="https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?fit=crop&w=650&h=433&q=80"
      data-srcset="https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?fit=crop&w=650&h=433&q=80 650w,
                   https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?fit=crop&w=1300&h=866&q=80 1300w"
