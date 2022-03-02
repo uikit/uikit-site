@@ -24,7 +24,7 @@ To apply this component, add the `uk-img` and the `data-src` attribute containin
 
 ## Eager loading
 
-To avoid lazy loading background images in the first visible viewport but still use other features of this component, add the `loading="eager"` parameter to the `uk-img` attribute.
+To avoid lazy loading background images for the first visible viewport but still use other features of this component, add the `loading="eager"` parameter to the `uk-img` attribute.
 
 ```html
 <div data-src="" uk-img="loading: eager">...</div>
@@ -40,7 +40,7 @@ To avoid lazy loading background images in the first visible viewport but still 
 
 ## Srcset
 
-To use `srcset` for background images, just add the `data-srcset` attribute. Optionally, add the `sizes` attribute but without prefix.
+To use the `srcset` feature for background images, just add the `data-srcset` attribute. Optionally, add the `sizes` attribute but without prefix.
 
 ```html
 <div data-src="" data-srcset="" sizes="" uk-img>...</div>
@@ -60,7 +60,7 @@ To use `srcset` for background images, just add the `data-srcset` attribute. Opt
 
 ## Picture sources
 
-To use different image sources like the `<picture>` element with the `<source>` element does, just add the `source` attribute with `srcset`, `media` and `type` parameters.
+To use different image sources just like the `<picture>` element that contains `<source>` elements does, add the `source` attribute with `srcset`, `media` and `type` parameters.
 
 ```html
 <div sources="srcset: ____; media: ____" data-src="" uk-img>...</div>
@@ -77,7 +77,7 @@ To use different image sources like the `<picture>` element with the `<source>` 
 </div>
 ```
 
-It's possible to offer multiple image sources, but also multiple resolutions for each one, using `srcset`.
+It's possible to offer multiple image sources and also multiple resolutions for each source using `srcset`.
 
 ```html
 <div sources="srcset: ____; media: ____" data-src="" data-srcset="" sizes="" uk-img>...</div>
@@ -154,9 +154,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `height`     | String | false   | The image's `height` attribute. It will be used to determine the placeholder's height and the position of the image in the document. |
 | `offsetTop`  | String | '50vh'  | The offset increases the viewport's bounding box vertically before computing an intersection with the image.                         |
 | `offsetLeft` | String | 0       | The offset increases the viewport's bounding box horizontally before computing an intersection with the image.                       |
-| `target`     | String | false   | A list of targets who's bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.         |
+| `target`     | String | false   | A list of targets whose bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.         |
 
-`dataSrc` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+`dataSrc` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
 ***
 

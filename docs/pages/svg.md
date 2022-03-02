@@ -26,7 +26,7 @@ Using the `uk-svg` attribute also allows you to inject a symbol from the SVG fil
 
 **Note** SVGs will adapt the current color for their stroke and fill color. To prevent this behavior, add the `.uk-preserve` class to the SVG itself or the elements inside the SVG.
 
-**Note** The `loading="lazy"` attribute for `<img>` elements is taken into account and SVG images will be injected as inline SVG as they enter the viewport.
+**Note** The `loading="lazy"` attribute for `<img>` elements is taken into account, and SVG images will be injected as inline SVG as they enter the viewport.
 
 ***
 
