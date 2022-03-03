@@ -143,8 +143,8 @@ Usually, the animation lasts as long as the element itself is in the viewport. T
 
 ## Start and End
 
-Using the `start` and `end` options you can adjust the animation duration. The `start` option defines when the animation starts. The default value of `0` means that the target's upper border and viewport's lower border intersect. The `end` option defines when the animation ends. The default value of `0` means that the target's lower border and the viewport's upper border intersect.
- Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the target's height. Both options allow basic mathematics operands, `+` and `-`. 
+Using the `start` and `end` options you can adjust the animation duration. The `start` option defines when the animation starts. The default value of `0` means that the target's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the target's bottom border and the viewport's top border intersect.
+Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the target's height. Both options allow basic mathematics operands, `+` and `-`. 
 
 ```html
 <div uk-parallax="start: 100%; end: 100%;">...</div>
