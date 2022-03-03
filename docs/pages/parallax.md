@@ -148,8 +148,8 @@ Using the `start` and `end` options you can adjust the animation duration. The `
 
 ```html
 <div uk-parallax="start: 100%; end: 100%;">...</div>
-<div uk-parallax="start: 40vh; end: 40vh;">...</div>
-<div uk-parallax="start: 100% + 50; end: 100% + 50;">...</div>
+<div uk-parallax="start: 30vh; end: 30vh;">...</div>
+<div uk-parallax="start: 100% + 100; end: 100% + 100;">...</div>
 ```
 
 ```example
@@ -157,7 +157,7 @@ Using the `start` and `end` options you can adjust the animation duration. The `
      <div class="uk-grid uk-margin-auto uk-flex-inline">
         <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; y: 398; easing: 0;">0 / 0</div></div>
         <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; start: 100%; end: 100%; y: 398; easing: 0;">100% / 100%</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; start: 40vh; end: 40vh; y: 398; easing: 0;">40vh / 40vh</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; start: 30vh; end: 30vh; y: 398; easing: 0;">30vh / 30vh</div></div>
         <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; start: 100% + 100; end: 100% + 100; y: 398; easing: 0;">100% + 100 / 100% + 100</div></div>
     </div>
 </div>
