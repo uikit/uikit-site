@@ -340,25 +340,27 @@ In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the widt
 
 Define how the content of an image or video should be resized to fit its element.
 
-| Class                    | Description                                                                         |
-| :----------------------- | :---------------------------------------------------------------------------------- |
-| `.uk-object-fit-none`    | Doesn't scale the image at all.                                                      |
-| `.uk-object-fit-cover`   | Scales the image to completely cover the containing area.                           |
-| `.uk-object-fit-contain` | Scales the image as far as its width and height can fit inside the containing area. |
+| Class                   | Description                                                                                                 |
+| :---------------------- | :---------------------------------------------------------------------------------------------------------- |
+| `.uk-object-cover`      | Scales the image by keeping its aspect ratio to completely cover the content box.                           |
+| `.uk-object-contain`    | Scales the image by keeping its aspect ratio as far as its width and height can fit inside the content box. |
+| `.uk-object-fill`       | Scales the image to fill the element's content box.                                                         |
+| `.uk-object-none`       | Doesn't scale the image at all.                                                                             |
+| `.uk-object-scale-down` | Like contain, but never up-scales.                                                                          |
 
 **Note** Since images and video are responsive by default in UIki, it's mandatory to set the aspect ratio when using one of these classes.
 
 ```html
-<img class="uk-object-fit-cover" src="" width="1000" height="1000" alt="" style="aspect-ratio: 1 / 1">
+<img class="uk-object-cover" src="" width="1000" height="1000" alt="" style="aspect-ratio: 1 / 1">
 ```
 
 ```example
 <div class="uk-child-width-1-2@s" uk-grid>
     <div>
-        <img class="uk-object-fit-cover" src="images/photo.jpg" width="1000" height="1000" alt="" style="aspect-ratio: 1 / 1;">
+        <img class="uk-object-cover" src="images/photo.jpg" width="1000" height="1000" alt="" style="aspect-ratio: 1 / 1;">
     </div>
     <div>
-        <img class="uk-object-fit-contain" src="images/photo.jpg" width="1000" height="1000" alt="" style="aspect-ratio: 1 / 1;">
+        <img class="uk-object-contain" src="images/photo.jpg" width="1000" height="1000" alt="" style="aspect-ratio: 1 / 1;">
     </div>
 </div>
 ```
