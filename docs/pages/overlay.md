@@ -8,7 +8,7 @@ Add the `.uk-overlay` class to an element following an image to create the overl
 
 ```html
 <div class="uk-inline">
-    <img src="" alt="">
+    <img src="" width="" height="" alt="">
     <div class="uk-overlay uk-position-bottom"></div>
 </div>
 ```
@@ -17,7 +17,7 @@ Add the `.uk-overlay` class to an element following an image to create the overl
 
 ```example
 <div class="uk-inline">
-    <img src="images/photo.jpg" alt="">
+    <img src="images/photo.jpg" width="1800" height="1200" alt="">
     <div class="uk-overlay uk-light uk-position-bottom">
         <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
@@ -39,7 +39,7 @@ For a simple background color, add the `.uk-overlay-default` class.
     <div>
 
         <div class="uk-inline">
-            <img src="images/photo.jpg" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
             <div class="uk-overlay uk-overlay-default uk-position-bottom">
                 <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -49,7 +49,7 @@ For a simple background color, add the `.uk-overlay-default` class.
     <div>
 
         <div class="uk-inline">
-            <img src="images/photo.jpg" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
             <div class="uk-overlay-default uk-position-cover"></div>
             <div class="uk-overlay uk-position-bottom uk-dark">
                 <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -71,7 +71,7 @@ For a prominent background color, add the `.uk-overlay-primary` class.
     <div>
 
         <div class="uk-inline">
-            <img src="images/photo.jpg" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
             <div class="uk-overlay uk-overlay-primary uk-position-bottom">
                 <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -81,7 +81,7 @@ For a prominent background color, add the `.uk-overlay-primary` class.
     <div>
 
         <div class="uk-inline">
-            <img src="images/photo.jpg" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
             <div class="uk-overlay-primary uk-position-cover"></div>
             <div class="uk-overlay uk-position-bottom uk-light">
                 <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -109,7 +109,7 @@ To display an overlay icon, add the `uk-overlay-icon` attribute to a `<span>` el
     <div>
 
         <div class="uk-inline uk-light">
-            <img src="images/dark.jpg" alt="">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="">
             <div class="uk-position-center">
                 <span uk-overlay-icon></span>
             </div>
@@ -119,7 +119,7 @@ To display an overlay icon, add the `uk-overlay-icon` attribute to a `<span>` el
     <div>
 
         <div class="uk-inline uk-dark">
-            <img src="images/photo.jpg" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
             <div class="uk-overlay-default uk-position-cover">
                 <div class="uk-position-center">
                     <span uk-overlay-icon></span>
@@ -145,7 +145,7 @@ Add one of the `.uk-position-*` classes from the [Position component](position.m
 <div class="uk-child-width-1-2@m" uk-grid>
     <div>
         <div class="uk-inline">
-            <img src="images/photo.jpg" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
             <div class="uk-overlay uk-overlay-default uk-position-top">
                 <p>Top</p>
             </div>
@@ -153,7 +153,7 @@ Add one of the `.uk-position-*` classes from the [Position component](position.m
     </div>
     <div>
         <div class="uk-inline">
-            <img src="images/photo.jpg" alt="">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
             <div class="uk-overlay uk-overlay-default uk-position-center">
                 <p>Center</p>
             </div>

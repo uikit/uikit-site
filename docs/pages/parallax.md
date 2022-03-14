@@ -48,7 +48,7 @@ The value can define any allowed unit type, e.g. `x: 20vw`. For some options, th
 
 ***
 
-## Start and end steps
+## Start and end stops
 
 Options are always animated from their default start value to the end value set in the option. However, you can also define a start value yourself. This is done by passing two values separated by comma.
 
@@ -59,15 +59,15 @@ Options are always animated from their default start value to the end value set 
 ```example
 <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
     <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-        <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">Headline</h1>
-        <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">Headline</h1>
+        <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
 </div>
 ```
 
-### Multiple steps
+### Multiple stops
 
-Define multiple steps for a property by using a comma separated list of values.
+Define multiple stops for a property by using a comma separated list of values.
 
 ```html
 <div uk-parallax="x: 0,50,150">...</div>
@@ -76,8 +76,25 @@ Define multiple steps for a property by using a comma separated list of values.
 ```example
 <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
     <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-        <h1 uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; viewport: 0.5;">Headline</h1>
-        <p uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h1 uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; end: 50vh + 50%;">Headline</h1>
+        <p uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; end: 50vh + 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+</div>
+```
+
+### Stop Positions
+
+An animation stop can be defined by a value and a position. The position has to be set in percent. If you don't specify the position of a stop, it is placed halfway between the one that precedes it and the one that follows it.
+
+```html
+<div uk-parallax="x: 0,50 10%,150 50%">...</div>
+```
+
+```example
+<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
+    <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+        <h1 uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; end: 50vh + 50%;">Headline</h1>
+        <p uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; end: 50vh + 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
 </div>
 ```
@@ -126,13 +143,13 @@ Usually, the animation lasts as long as the element itself is in the viewport. T
 
 ## Start and End
 
-Using the `start` and `end` options you can adjust the animation duration. The `start` option defines when the animation starts. The default value of `0` means that the target's upper border and viewport's lower border intersect. The `end` option defines when the animation ends. The default value of `0` means that the target's lower border and the viewport's upper border intersect.
- Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the target's height. Both options allow basic mathematics operands, `+` and `-`. 
+Using the `start` and `end` options you can adjust the animation duration. The `start` option defines when the animation starts. The default value of `0` means that the target's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the target's bottom border and the viewport's top border intersect.
+Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the target's height. Both options allow basic mathematics operands, `+` and `-`. 
 
 ```html
 <div uk-parallax="start: 100%; end: 100%;">...</div>
-<div uk-parallax="start: 40vh; end: 40vh;">...</div>
-<div uk-parallax="start: 100% + 50; end: 100% + 50;">...</div>
+<div uk-parallax="start: 30vh; end: 30vh;">...</div>
+<div uk-parallax="start: 100% + 100; end: 100% + 100;">...</div>
 ```
 
 ```example
@@ -140,7 +157,7 @@ Using the `start` and `end` options you can adjust the animation duration. The `
      <div class="uk-grid uk-margin-auto uk-flex-inline">
         <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; y: 398; easing: 0;">0 / 0</div></div>
         <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; start: 100%; end: 100%; y: 398; easing: 0;">100% / 100%</div></div>
-        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; start: 40vh; end: 40vh; y: 398; easing: 0;">40vh / 40vh</div></div>
+        <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; start: 30vh; end: 30vh; y: 398; easing: 0;">30vh / 30vh</div></div>
         <div><div class="uk-card uk-card-default uk-padding-small" uk-parallax="target: #test-start-end; start: 100% + 100; end: 100% + 100; y: 398; easing: 0;">100% + 100 / 100% + 100</div></div>
     </div>
 </div>
@@ -210,13 +227,13 @@ The Parallax component can be used to animate SVG strokes. The effect looks like
 
 ```html
 <div uk-parallax="stroke: 45">
-    <img src="" alt="" uk-svg>
+    <img src="" width="" height="" alt="" uk-svg>
 </div>
 ```
 
 ```example
 <div class="uk-text-center" uk-parallax="start: 100%; end: 100%; stroke: 100%;">
-    <img src="images/strokes.svg" alt="" uk-svg>
+    <img src="images/strokes.svg" width="350" height="340" alt="" uk-svg>
 </div>
 ```
 

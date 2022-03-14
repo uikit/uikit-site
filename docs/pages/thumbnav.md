@@ -13,7 +13,7 @@ To create a navigation with thumbnails, use the following classes. This componen
 
 ```html
 <ul class="uk-thumbnav">
-    <li class="uk-active"><a href=""><img src="" alt=""></a></li>
+    <li class="uk-active"><a href=""><img src="" width="" height="" alt=""></a></li>
     <li><a href=""><img src="" alt=""></a></li>
 </ul>
 ```
@@ -22,9 +22,9 @@ To create a navigation with thumbnails, use the following classes. This componen
 
 ```example
 <ul class="uk-thumbnav" uk-margin>
-    <li class="uk-active"><a href="#"><img src="images/photo.jpg" width="100" alt=""></a></li>
-    <li><a href="#"><img src="images/dark.jpg" width="100" alt=""></a></li>
-    <li><a href="#"><img src="images/light.jpg" width="100" alt=""></a></li>
+    <li class="uk-active"><a href="#"><img src="images/photo.jpg" width="100" height="67" alt=""></a></li>
+    <li><a href="#"><img src="images/dark.jpg" width="100" height="67" alt=""></a></li>
+    <li><a href="#"><img src="images/light.jpg" width="100" height="67" alt=""></a></li>
 </ul>
 ```
 
@@ -40,9 +40,9 @@ The thumbnav can also be displayed vertically. Just add the `.uk-thumbnav-vertic
 
 ```example
 <ul class="uk-thumbnav uk-thumbnav-vertical" uk-margin>
-    <li class="uk-active"><a href="#"><img src="images/photo.jpg" width="100" alt=""></a></li>
-    <li><a href="#"><img src="images/dark.jpg" width="100" alt=""></a></li>
-    <li><a href="#"><img src="images/light.jpg" width="100" alt=""></a></li>
+    <li class="uk-active"><a href="#"><img src="images/photo.jpg" width="100" height="67" alt=""></a></li>
+    <li><a href="#"><img src="images/dark.jpg" width="100" height="67" alt=""></a></li>
+    <li><a href="#"><img src="images/light.jpg" width="100" height="67" alt=""></a></li>
 </ul>
 ```
 
@@ -82,9 +82,9 @@ To position the thumbnav on top of an element or the [Slideshow component](slide
 
     <div class="uk-position-bottom-center uk-position-small">
         <ul class="uk-thumbnav">
-            <li uk-slideshow-item="0"><a href="#"><img src="images/photo.jpg" width="100" alt=""></a></li>
-            <li uk-slideshow-item="1"><a href="#"><img src="images/dark.jpg" width="100" alt=""></a></li>
-            <li uk-slideshow-item="2"><a href="#"><img src="images/light.jpg" width="100" alt=""></a></li>
+            <li uk-slideshow-item="0"><a href="#"><img src="images/photo.jpg" width="100" height="67" alt=""></a></li>
+            <li uk-slideshow-item="1"><a href="#"><img src="images/dark.jpg" width="100" height="67" alt=""></a></li>
+            <li uk-slideshow-item="2"><a href="#"><img src="images/light.jpg" width="100" height="67" alt=""></a></li>
         </ul>
     </div>
 

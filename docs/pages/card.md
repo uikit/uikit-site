@@ -197,7 +197,7 @@ To display an image inside a card without any spacing, add one of the following 
 ```html
 <div class="uk-card uk-card-default">
     <div class="uk-card-media-top">
-        <img src="" alt="">
+        <img src="" width="" height="" alt="">
     </div>
     <div class="uk-card-body"></div>
 </div>
@@ -208,7 +208,7 @@ To display an image inside a card without any spacing, add one of the following 
     <div>
         <div class="uk-card uk-card-default">
             <div class="uk-card-media-top">
-                <img src="images/light.jpg" alt="">
+                <img src="images/light.jpg" width="1800" height="1200" alt="">
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title">Media Top</h3>
@@ -223,7 +223,7 @@ To display an image inside a card without any spacing, add one of the following 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
             </div>
             <div class="uk-card-media-bottom">
-                <img src="images/light.jpg" alt="">
+                <img src="images/light.jpg" width="1800" height="1200" alt="">
             </div>
         </div>
     </div>

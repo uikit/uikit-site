@@ -13,7 +13,7 @@
 
     import {notification} from 'uikit';
     import {html, parse, openOnCodepen} from './util';
-    import {$, $$, ajax, attr, offset, on, Promise, startsWith, ucfirst} from 'uikit-util';
+    import {$, $$, attr, offset, on, startsWith, ucfirst} from 'uikit-util';
     import navigation from './navigation.json';
 
     const components = Object.keys(navigation['Components']).map(label => navigation['Components'][label]);
@@ -46,8 +46,9 @@
                             return;
                         }
 
-                        ajax(`pages/${page}.md?{{BUILD}}`).then(({response}) => {
+                        fetch(`pages/${page}.md?{{BUILD}}`).then(async response => {
 
+                            response = await response.text();
                             if (startsWith(response.trim(), '<!DOCTYPE html>')) {
                                 response = `<h1>Not Found</h1>
                                             <p class="uk-text-lead">We Couldn't Find Your Page!</p>`;

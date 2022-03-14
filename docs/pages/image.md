@@ -1,186 +1,142 @@
 # Image
 
-<p class="uk-text-lead">Speed up page loading times and decrease traffic by only loading images as they enter the viewport.</p>
+<p class="uk-text-lead">Use background images with lazy loading, responsive images and different image sources</p>
 
-The Image component improves page speed significantly by following these methods:
-
-- Only images which are initially in the viewport are loaded.
-- Other images are lazy loaded as they enter the viewport when scrolling.
-
-The Image components supports the `img` element and the CSS `background-image` property. The `srcset` attribute for images is supported as well creating the optimal images for different device widths and high resolution (retina) displays. The Image component even makes it possible to use `srcset` for the CSS `background-image` property.
-
-**Note** To prevent images from causing jank on page load, use `height` and `width` attributes.
+The image component emulates browser features of the `<img>` element, but for background images. This includes `loading="lazy"`, `srcset` and `sizes` attributes as well as the `<source>` element from the `<picture>` element. This speeds up page loading times and decreases traffic by only loading background images as they enter the viewport. Optimized background images are served for different device widths and high resolution (retina) displays.
 
 ***
 
 ## Usage
 
-To apply this component, add the `uk-img` attribute to an `<img>` element and add the `data-` prefix to the `src` attribute so that it reads `data-src`.
-
-```html
-<img data-src="" width="" height="" alt="" uk-img>
-```
-
-The `width` and `height` attributes are required so an empty placeholder can be generated in the exact same size as the image. Alternatively, use `data-width` and `data-height` if you don't want to set the explicit attributes.
-
-```example
-<img data-src="images/light.jpg" width="1800" height="1200" alt="" uk-img>
-```
-
-### Inline SVG
-
-To lazy load SVG images which are injected as inline SVG using the [SVG component](svg.md), make sure to apply the `data-src` option in the component attribute and not as data attribute.
-
-```html
-<img width="" height="" alt="" uk-img="data-src:" uk-svg>
-```
-
-***
-
-## Srcset
-
-To use the `srcset` attribute, just prefix it as `data-srcset`.
-
-```html
-<img data-src="" data-srcset="" sizes="" width="" height="" alt="" uk-img>
-```
-
-```example
-<img data-src="https://images.unsplash.com/photo-1522201949034-507737bce479?fit=crop&w=650&h=433&q=80"
-     data-srcset="https://images.unsplash.com/photo-1522201949034-507737bce479?fit=crop&w=650&h=433&q=80 650w,
-                  https://images.unsplash.com/photo-1522201949034-507737bce479?fit=crop&w=1300&h=866&q=80 1300w"
-     sizes="(min-width: 650px) 650px, 100vw" width="650" height="433" alt="" uk-img>
-
-```
-
-***
-
-## Background image
-
-To use this component with the CSS `background-image` property, add it to a `<div>` or any other element.
+To apply this component, add the `uk-img` and the `data-src` attribute containing the image path for the background image to a `div` or any other element. By default, the background image will be lazy loaded as it enters the viewport when scrolling.
 
 ```html
 <div data-src="" uk-img>...</div>
 ```
 
 ```example
-<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="images/photo.jpg" uk-img>
+<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80" uk-img>
+  <h1>Background Image</h1>
+</div>
+```
+
+****
+
+## Eager loading
+
+To avoid lazy loading background images for the first visible viewport but still use other features of this component, add the `loading="eager"` parameter to the `uk-img` attribute.
+
+```html
+<div data-src="" uk-img="loading: eager">...</div>
+```
+
+```example
+<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="https://images.unsplash.com/photo-1495321308589-43affb814eee?fit=crop&w=650&h=433&q=80" uk-img="loading: eager">
   <h1>Background Image</h1>
 </div>
 ```
 
 ***
 
-### Background image with Srcset
+## Srcset
 
-The Image component allows you to use `srcset` for background images. Just add the `data-srcset` attribute. If you need the `sizes` attribute, prefix it as `data-sizes`.
+To use the `srcset` feature for background images, just add the `data-srcset` attribute. Optionally, add the `sizes` attribute but without prefix.
 
 ```html
-<div data-src="" data-srcset="" data-sizes="" uk-img>...</div>
+<div data-src="" data-srcset="" sizes="" uk-img>...</div>
 ```
 
 ```example
-<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-     data-src="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80"
-     data-srcset="https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=650&h=433&q=80 650w,
-                  https://images.unsplash.com/photo-1490822180406-880c226c150b?fit=crop&w=1300&h=866&q=80 1300w"
-     data-sizes="(min-width: 650px) 650px, 100vw" uk-img>
+<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover"
+     data-src="https://images.unsplash.com/photo-1485627941502-d2e6429a8af0?fit=crop&w=650&h=433&q=80"
+     data-srcset="https://images.unsplash.com/photo-1485627941502-d2e6429a8af0?fit=crop&w=650&h=433&q=80 650w,
+                  https://images.unsplash.com/photo-1485627941502-d2e6429a8af0?fit=crop&w=1300&h=866&q=80 1300w"
+     sizes="(min-width: 650px) 650px, 100vw" uk-img>
     <h1>Background Image</h1>
 </div>
 ```
 
 ***
 
-## Target
+## Picture sources
 
-Usually, the image starts loading when it enters the viewport. To start loading images based on the viewport visibility of another element, use the `target` option. This is very useful to lazy load images in the [Slideshow](slideshow.md) and [Slider](slider.md) components.
-
-```html
-<img data-src="" width="" height="" alt="" uk-img="target: .my-class">
-```
-
-The following example loads all images in the slides as soon as the slideshow enters the viewport. It uses `!.uk-slideshow-items` as a target selector. The `!` looks up the DOM to find the next parent element with the `.uk-slideshow-items` class.
-
-```example
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
-
-    <ul class="uk-slideshow-items">
-        <li>
-            <img data-src="images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
-        </li>
-        <li>
-            <img data-src="images/dark.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
-        </li>
-        <li>
-            <img data-src="images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
-        </li>
-    </ul>
-
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-
-</div>
-```
-
-***
-
-### Load previous and next
-
-It's also possible to load only the image of the active slide and lazy load the images of the other slides. Just target the previous and next slides for each image by using the `target: !* -*, !* +*` option. There are two exceptions where you have to select the first and the last slides.
-
-| Selector                              | Description                                                                                        |
-|:--------------------------------------|:---------------------------------------------------------------------------------------------------|
-| `!* -*`                               | Looks for the direct parent (`!*`) and selects the preceding element (`-*`).                       |
-| `!* +* `                              | Looks for the direct parent (`!*`) and selects the succeeding element (`+*`).                      |
-| `!.uk-slideshow-items > :last-child`  | Looks for the next parent element with the `.uk-slideshow-item` class and selects the last child.  |
-| `!.uk-slideshow-items > :first-child` | Looks for the next parent element with the `.uk-slideshow-item` class and selects the first child. |
+To use different image sources just like the `<picture>` element that contains `<source>` elements does, add the `source` attribute with `srcset`, `media` and `type` parameters.
 
 ```html
-<ul class="uk-slideshow-items">
-    <li>
-        <img data-src="" width="" height="" alt="" uk-img="target: !ul > :last-child, !* +*">
-    </li>
-    <li>
-        <img data-src="" width="" height="" alt="" uk-img="target: !* -*, !* +*">
-    </li>
-    <li>
-        <img data-src="" width="" height="" alt="" uk-img="target: !* -*, !* +*">
-    </li>
-    <li>
-        <img data-src="" width="" height="" alt="" uk-img="target: !* -*, !ul > :first-child">
-    </li>
-</ul>
+<div sources="srcset: ____; media: ____" data-src="" uk-img>...</div>
+
+<div sources="srcset: ____; type: ____" data-src="" uk-img>...</div>
 ```
 
 ```example
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
-
-    <ul class="uk-slideshow-items">
-        <li>
-            <img data-src="images/photo.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !ul > :last-child, !* +*">
-        </li>
-        <li>
-            <img data-src="images/dark.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !* +*">
-        </li>
-        <li>
-            <img data-src="images/light.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !ul > :first-child">
-        </li>
-    </ul>
-
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-
+<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+     sources="srcset: https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?fit=crop&w=650&h=433&q=80; media: (min-width: 1200px)"
+     data-src="https://images.unsplash.com/photo-1546349851-64285be8e9fa?fit=crop&w=650&h=433&q=80"
+     uk-img>
+    <h1>Background Image</h1>
 </div>
 ```
 
-***
+It's possible to offer multiple image sources and also multiple resolutions for each source using `srcset`.
 
-## Custom placeholder
+```html
+<div sources="srcset: ____; media: ____" data-src="" data-srcset="" sizes="" uk-img>...</div>
+```
 
-By default, the placeholder image is transparent. Use the `img[data-src][src*='data:image']` selector to add a custom background or preload animation.
+```example
+<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+     sources="srcset: https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?fit=crop&w=650&h=433&q=80 650w,
+                      https://images.unsplash.com/photo-1464621922360-27f3bf0eca75?fit=crop&w=1300&h=866&q=80 1300w; 
+              media: (min-width: 1200px)"
+     data-src="https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?fit=crop&w=650&h=433&q=80"
+     data-srcset="https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?fit=crop&w=650&h=433&q=80 650w,
+                  https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?fit=crop&w=1300&h=866&q=80 1300w"
+     sizes="(min-width: 650px) 650px, 100vw" uk-img>
+    <h1>Background Image</h1>
+</div>
+```
 
-```css
-img[data-src][src*='data:image'] { background: rgba(0,0,0,0.1); }
+Multiple sources can be defined using JSON syntax.
+
+```json
+[
+    {
+        "srcset": "____",
+        "media": "____"
+    },
+    {
+        "srcset": "____",
+        "type": "____"
+    }
+]
+```
+
+The JSON needs to be HTML encoded.
+
+```html
+<div sources="[{&quot;type&quot;: &quot;____&quot;,
+                &quot;srcset&quot;: &quot;____&quot;
+               },
+               {&quot;type&quot;: &quot;____&quot;,
+                &quot;srcset&quot;: &quot;____&quot;
+               }]"
+     data-src="" uk-img>...</div>
+```
+
+This example offers alternative image formats like *WebP* and *AVIF*.
+
+```example
+<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover"
+     sources="[{&quot;srcset&quot;: &quot;images/image-type.avif&quot;,
+                &quot;type&quot;: &quot;image\/avif&quot;
+                },
+                {&quot;srcset&quot;: &quot;images/image-type.webp&quot;,
+                &quot;type&quot;: &quot;image\/webp&quot;
+                }]"
+        data-src="images/image-type.jpg"
+        uk-img>
+    <h1>Background Image</h1>
+</div>
 ```
 
 ***
@@ -198,9 +154,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `height`     | String | false   | The image's `height` attribute. It will be used to determine the placeholder's height and the position of the image in the document. |
 | `offsetTop`  | String | '50vh'  | The offset increases the viewport's bounding box vertically before computing an intersection with the image.                         |
 | `offsetLeft` | String | 0       | The offset increases the viewport's bounding box horizontally before computing an intersection with the image.                       |
-| `target`     | String | false   | A list of targets who's bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.         |
+| `target`     | String | false   | A list of targets whose bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.         |
 
-`dataSrc` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
+`dataSrc` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
 ***
 
