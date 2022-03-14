@@ -32,10 +32,10 @@
             <div class="uk-container uk-container-expand uk-text-center uk-position-relative">
                 <ul class="uk-subnav tm-subnav uk-flex-inline uk-flex-center uk-margin-remove-bottom" uk-margin>
                     <li>
-                        <span>Version <span uikit-version></span></span>
+                        <span>Version <span v-text="version"></span></span>
                     </li>
                     <li>
-                        <a href="https://github.com/uikit/uikit/stargazers"><span class="uk-margin-small-right" uk-icon="star"></span><span uikit-stargazers>13728</span> Stargazers</a>
+                        <a href="https://github.com/uikit/uikit/stargazers"><span class="uk-margin-small-right" uk-icon="star"></span><span v-text="stargazers_count"></span> Stargazers</a>
                     </li>
                     <li>
                         <a class="uk-text-lowercase" href="https://twitter.com/getuikit"><span class="uk-margin-small-right" uk-icon="twitter"></span>@getuikit</a>
@@ -53,23 +53,21 @@
 
 <script>
 
-    import {$, noop} from 'uikit-util';
-
     export default {
+
+        data: () => ({
+            stargazers_count: 17380,
+            version: '3.12.0'
+        }),
 
         mounted() {
 
-            fetch('https://api.github.com/repos/uikit/uikit').then(async response => {
+            fetch('https://api.github.com/repos/uikit/uikit').then(
+                async response => this.stargazers_count = (await response.json()).stargazers_count,
+                () => {}
+            );
 
-                const {stargazers_count} = await response.json();
-
-                if (stargazers_count) {
-                    $('[uikit-stargazers]').innerText = response.stargazers_count;
-                }
-
-            }, noop);
-
-            fetch('assets/uikit/package.json').then(async response => $('[uikit-version]').innerText = (await response.json()).version);
+            fetch('assets/uikit/package.json').then(async response => this.version = (await response.json()).version);
 
         }
     };
