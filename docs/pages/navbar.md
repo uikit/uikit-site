@@ -778,102 +778,6 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
 
 ***
 
-### Push
-
-By default, the dropbar overlays the site content. Add the `dropbar-mode: push;` option, to push the content down instead.
-
-**Note** The push mode does not work well if the navbar is contained within a sticky component.
-
-```html
-<nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push">...</nav>
-<div class="uk-navbar-dropbar"></div>
-```
-
-```example
-<div class="uk-position-relative">
-
-    <nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push">
-
-        <div class="uk-navbar-left">
-
-            <ul class="uk-navbar-nav">
-                <li>
-                    <a href="#">Item</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li class="uk-nav-header">Header</li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li class="uk-nav-divider"></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                        <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
-                            <div>
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-header">Header</li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-header">Header</li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-
-        <div class="uk-navbar-right">
-
-            <ul class="uk-navbar-nav">
-                <li>
-                    <a href="#">Parent</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li class="uk-nav-header">Header</li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li class="uk-nav-divider"></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-
-    </nav>
-
-    <div class="uk-navbar-dropbar"></div>
-
-</div>
-```
-
-***
-
 ## Sticky Navbar
 
 For a basic sticky navbar, wrap the navbar inside a container with the `uk-sticky` attribute from the [Sticky component](sticky.md).
@@ -1020,7 +924,6 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `boundary-align` | Boolean         | `false`        | Align the dropdown to the boundary.                                                                                    |
 | `offset`         | Number          | `0`            | The offset of the dropdown container.                                                                                  |
 | `dropbar `       | Boolean         | `false`        | Enable or disable dropbar behavior.                                                                                    |
-| `dropbar-mode`   | String          | `slide`        | The mode in which the dropbar appears: `slide`, `push`                                                                 |
 | `duration`       | Number          | `200`          | The dropbar transition duration.                                                                                       |
 
 ***
