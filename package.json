@@ -23,7 +23,7 @@
     "less-plugin-clean-css": "^1.5.1",
     "make-dir-cli": "^3.0.0",
     "symlink-dir": "^5.0.1",
-    "uikit": "3.13.3",
+    "uikit": "3.13.4",
     "uniqid": "^5.4.0",
     "vue-loader": "^15.9.8",
     "vue-template-compiler": "^2.6.14",
