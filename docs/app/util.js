@@ -102,7 +102,7 @@ export function openOnCodepen(code) {
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&apos;');
 
-    const [form] = append(document.body, `<form action="https://codepen.io/pen/define" method="POST" target="_blank">
+    const form = append(document.body, `<form action="https://codepen.io/pen/define" method="POST" target="_blank">
             <input type="hidden" name="data" value='${data}'>
         </form>`);
 
