@@ -180,15 +180,22 @@
  ========================================================================== */
 
 /*
- * 1. Force vertical scrollbar
- * 2. Prevent horizontal scrolling if elements are moved out of the viewport to the right
+ * Force vertical scrollbar (has to be on `html`)
  */
 
-html {
+html { overflow-y: scroll; }
+
+/*
+ * Clip content positioned outside (right or bottom) of the `body`
+ * Has to be set on the `body` element. Otherwise touch gestures can still scroll horizontally.
+ * 1. Use `clip` to forbid all scrolling, including programmatic scrolling.
+ *    `hidden` fallback can be removed with Safari 15.5.
+*/
+
+body {
+    overflow: hidden;
     /* 1 */
-    overflow-y: scroll;
-    /* 2 */
-    overflow-x: hidden;
+    overflow: clip;
 }
 
 
