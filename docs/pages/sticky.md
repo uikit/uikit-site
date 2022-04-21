@@ -11,9 +11,9 @@ To create an element that remains at the top of the viewport when scrolling down
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="end: ~ .uk-height-large">Stick to the top</div>
-
-<div class="uk-height-large"></div>
+<div class="uk-background-muted uk-height-large">
+    <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: !.uk-height-large; offset: 80">Stick to the top</div>
+</div>
 ```
 
 **Note** Example elements on this page are only sticky until you scroll down to the next heading and disappear afterwards. This was done so as not to clutter your screen with all variations of sticky containers.
@@ -21,7 +21,7 @@ To create an element that remains at the top of the viewport when scrolling down
 ***
 
 ## Position
-`autoplay: true` option to the attribute
+
 By default, the element sticks to the top of the viewport. You can set the `position: bottom` option to stick to the bottom of the viewport.
 
 ```html
@@ -29,9 +29,9 @@ By default, the element sticks to the top of the viewport. You can set the `posi
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="position: bottom; end: ~ .uk-height-large">Stick to the  bottom</div>
-
-<div class="uk-height-large"></div>
+<div class="uk-background-muted uk-height-large">
+    <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="position: bottom; end: !.uk-height-large">Stick to the bottom</div>
+</div>
 ```
 
 ***
@@ -57,18 +57,25 @@ To apply an offset to when the element should start being sticky, add the `start
 ```
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="start: 200; end: ![uk-grid] ~ .uk-height-large">Start being sticky after 200px scrolling</div>
-    </div>
-    <div>
-        <div id="container-1" class="uk-background-muted uk-height-medium">
-            <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="start: #container-1; end: ![uk-grid] ~ .uk-height-large">Start being sticky after the top of the box</div>
+<div class="uk-background-muted uk-height-large">
+
+    <div class="uk-child-width-1-4@s" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="start: 200; end: !.uk-height-large; offset: 80">200px</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="start: 100%; end: !.uk-height-large; offset: 80">100%</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="start: 20vh; end: !.uk-height-large; offset: 80">20vh</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="start: !.uk-height-large; end: !.uk-height-large + div; offset: 80">Selector</div>
         </div>
     </div>
-</div>
 
-<div class="uk-height-large"></div>
+</div>
+<div style="height: 200px"></div>
 ```
 
 ***
@@ -78,13 +85,13 @@ To apply an offset to when the element should start being sticky, add the `start
 To apply an offset to when the element should stop being sticky, add the `stop` option. The value can be in vh, % and px. It supports basic mathematics operands + and -. A value of `0` means that the element's top border and viewport's top border intersect, which would cause the element not to be sticky at all if start is also set to `0`. A CSS Selector will set the end to the referenced element's bottom and the element's bottom border. `false` will make the element stick until the end of the page. `true` selects the parent element.
 
 ```html
-<!-- Sticks until 500px scrolling -->
-<div uk-sticky="end: 500"></div>
+<!-- Sticks until 200px scrolling -->
+<div uk-sticky="end: 200"></div>
 
 <!-- Sticks until scrolling the elements height -->
 <div uk-sticky="end: 100%"></div>
 
-<!-- Sticks until 50vh scrolling -->
+<!-- Sticks until 20vh scrolling -->
 <div uk-sticky="end: 20vh"></div>
 
 <!-- Sticks until the bottom of the selected element -->
@@ -98,21 +105,24 @@ To apply an offset to when the element should stop being sticky, add the `stop` 
 ```
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid>
-    <div>
+<div class="uk-background-muted uk-height-large">
+
+    <div class="uk-child-width-1-4@s" uk-grid>
         <div>
-            <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="end: #container-2">Stick until the next headline</div>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: 200; offset: 80">200px</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: 100%; offset: 80">100%</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: 20vh; offset: 80">20vh</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: !.uk-height-large; offset: 80">Selector</div>
         </div>
     </div>
-    <div>
-        <div class="uk-background-muted uk-height-medium">
-            <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="end: true">Stick until the bottom of its parent container</div>
-        </div>
-    </div>
+
 </div>
-
-<h3 id="container-2" style="margin-start: 300px;">Some Headline</h3>
-
 ```
 
 ***
@@ -122,29 +132,29 @@ To apply an offset to when the element should stop being sticky, add the `stop` 
 To set an offset to the viewports edge when the element is sticky, add the `offset` option. The value can be in vh, % and px. It supports basic mathematics operands + and -.
 
 ```html
-<div uk-sticky="offset: 100"></div>
+<div uk-sticky="offset: 200"></div>
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="offset: 100; end: ~ .uk-height-large">Stick 100px below the top</div>
-
-<div class="uk-height-large"></div>
+<div class="uk-background-muted uk-height-large">
+    <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: !.uk-height-large; offset: 200">Stick 200px below the top</div>
+</div>
 ```
 
 ***
 
 ## Animation
 
-Add an animation from the [Animation component](animation.md) in order to have the sticky element reappear smoothly.
+Add an animation from the [Animation component](animation.md) in order to have the sticky element reappear smoothly if a start offset is set.
 
 ```html
-<div uk-sticky="animation: uk-animation-slide-top"></div>
+<div uk-sticky="start: 200; animation: uk-animation-slide-top"></div>
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="start: 100; end: ~ .uk-height-large; animation: uk-animation-slide-top">Animation Slide Top</div>
-
-<div class="uk-height-large"></div>
+<div class="uk-background-muted uk-height-large">
+    <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="start: 200; end: !.uk-height-large; offset: 80; animation: uk-animation-slide-top">Animation Slide Top</div>
+</div>
 ```
 
 ***
@@ -158,9 +168,9 @@ You can make the sticky element show only when scrolling up to save space. Toget
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="end: ~ .uk-height-large; show-on-up: true; animation: uk-animation-slide-top">Slide in on scroll up</div>
-
-<div class="uk-height-large"></div>
+<div class="uk-background-muted uk-height-large">
+    <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: !.uk-height-large; offset: 80; show-on-up: true; animation: uk-animation-slide-top">Slide in on scroll up</div>
+</div>
 ```
 
 ***
@@ -173,6 +183,12 @@ It's possible to disable the sticky behavior for different devices widths by app
 <div uk-sticky="media: 640"></div>
 ```
 
+```example
+<div class="uk-background-muted uk-height-large">
+    <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: !.uk-height-large; offset: 80; media: 640">Only be sticky on viewports larger than 640px.</div>
+</div>
+```
+
 ***
 
 ## Oversized Content
@@ -180,10 +196,10 @@ It's possible to disable the sticky behavior for different devices widths by app
 Sticky content that is larger than the viewport will scroll down and stick to the bottom of the viewport. Changing the scroll direction will immediately scroll the sticky content up and change the sticky behavior to stick to the top of the viewport.
 
 ```example
-<div id="js-oversized" class="uk-child-width-1-2@s" uk-grid>
+<div id="js-oversized" class="uk-child-width-1-2" uk-grid>
     <div>
 
-        <div class="uk-card uk-card-default uk-card-body" style="z-index: 980;" uk-sticky="end: #js-oversized">
+        <div class="uk-card uk-card-default uk-card-body uk-position-z-index" uk-sticky="end: #js-oversized; offset: 80">
         
             <h3>Sticky 1</h3>
 
@@ -253,6 +269,35 @@ Sticky content that is larger than the viewport will scroll down and stick to th
 ***
 
 ## Overflow Flip
+
+In combination with the all the sticky options the `overflow-flip: true` option allows to create two nice effects. A certain area can be covered by following content or revealed by previous content. To archive the effects the this option flips the Sticky's position option if the element overflows the viewport and disables overflow scrolling.
+
+```html
+<!-- Section will be covered by the next section -->
+<div uk-sticky="overflow-flip: true; end: 100%"></div>
+
+<div>Some section.</div>
+
+<!-- Section will be revealed by the previous section -->
+<div uk-sticky="position: bottom; overflow-flip: true; start: -100%; end: 0"></div>
+```
+
+```example
+<div class="uk-position-relative uk-position-z-index">
+    <div class="uk-background-primary uk-padding uk-flex uk-flex-center uk-flex-middle uk-text-center uk-light uk-height-medium uk-position-z-index-negative" uk-sticky="overflow-flip: true; end: 100%; offset: 80">
+        overflow-flip: true<br>
+        end: 100%
+    </div>
+    <div class="uk-background-muted uk-padding uk-flex uk-flex-center uk-flex-middle uk-text-center uk-height-medium">Cover previous section.<br>Reveal next section.</div>
+    <div class="uk-background-primary uk-padding uk-flex uk-flex-center uk-flex-middle uk-text-center uk-light uk-height-medium uk-position-z-index-negative" uk-sticky="position: bottom; overflow-flip: true; start: -100%; end: 0">
+        position: bottom<br>
+        overflow-flip: true<br>
+        start: -100%<br>
+        end: 0
+    </div>
+</div>
+```
+
 
 ***
 
