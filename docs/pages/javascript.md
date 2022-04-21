@@ -58,25 +58,25 @@ Options can be set:
 with the `key: value;` format,
 
 ```html
-<div uk-sticky="offset: 50; top: 100;"></div>
+<div uk-sticky="start: 100; offset: 50;"></div>
 ```
 
 in valid JSON format,
 
 ```html
-<div uk-sticky='{"offset": 50, "top": 100}'></div>
+<div uk-sticky='{"start": 100, "offset": 50}'></div>
 ```
 
 with single attributes,
 
 ```html
-<div uk-sticky offset="50" top="100"></div>
+<div uk-sticky start="100" offset="50"></div>
 ```
 
 or as single attributes prefixed with `data-`.
 
 ```html
-<div uk-sticky data-offset="50" data-top="100"></div>
+<div uk-sticky data-start="100" data-offset="50"></div>
 ```
 
 For _Primary_ options, its key may be omitted, if it's the only option in the attribute value. Please take a look at the specific component documentation to find which option is the _Primary_ option.

@@ -1,6 +1,6 @@
 <template>
     <div class="uk-section-primary tm-section-texture uk-preserve-color">
-        <navbar class="uk-light" uk-sticky="media: 960;show-on-up: true;animation: uk-animation-slide-top;cls-inactive: uk-navbar-transparent;top: 400"/>
+        <navbar class="uk-light" uk-sticky="start: 400; show-on-up: true; animation: uk-animation-slide-top; cls-inactive: uk-navbar-transparent; media: 960;"/>
 
         <div class="uk-section" uk-height-viewport="expand: true">
             <div class="uk-container uk-container-small">

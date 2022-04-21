@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="uk-section-primary tm-section-intro">
-            <navbar class="uk-light" uk-sticky="media: 960;show-on-up: true;animation: uk-animation-slide-top;cls-inactive: uk-navbar-transparent;top: 400"/>
+            <navbar class="uk-light" uk-sticky="start: 400; show-on-up: true; animation: uk-animation-slide-top; cls-inactive: uk-navbar-transparent; media: 960"/>
 
             <div class="uk-section uk-padding-remove-bottom">
                 <div class="uk-container">
