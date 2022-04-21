@@ -25,7 +25,7 @@ To apply this component, add the `uk-parallax` attribute to any element. Add an 
 You can use the following options to animate a number of CSS property.
 
 | Option             | Description                        | Default&nbsp;Unit | Default Start |
-|:-------------------|:-----------------------------------|-------------------|:--------------|
+| :----------------- | :--------------------------------- | ----------------- | :------------ |
 | `x`                | Animate translateX.                | `px`              | `0`           |
 | `y`                | Animate translateY.                | `px`              | `0`           |
 | `bgy`              | Animate background Y position.     | `px`              | *Current*     |
@@ -276,9 +276,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option   | Value          | Default | Description                                                                                                                                                |
 | :------- | :------------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `easing` | Number         | `1`     | Animation easing during scrolling                                                                                                                          |
-| `target` | String         | `false` | Element dimension reference for animation duration.                                                                                                        |
-| `start`  | Number, String | `0`     | Start offset. The value can be in vh, % and px. It supports basic mathematics operands + and -.                                                            |
-| `end`    | Number, String | `0`     | End offset. The value can be in vh, % and px. It supports basic mathematics operands + and -.                                                              |
+| `target` | CSS Selector   | `false` | Element dimension reference for animation duration.                                                                                                        |
+| `start`  | Length         | `0`     | Start offset. The value can be in vh, % and px. It supports basic mathematics operands + and -.                                                            |
+| `end`    | Length         | `0`     | End offset. The value can be in vh, % and px. It supports basic mathematics operands + and -.                                                              |
 | `media`  | Number, String | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
 ***
