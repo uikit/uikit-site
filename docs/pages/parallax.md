@@ -277,8 +277,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 | :------- | :------------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `easing` | Number         | `1`     | Animation easing during scrolling                                                                                                                          |
 | `target` | CSS Selector   | `false` | Element dimension reference for animation duration.                                                                                                        |
-| `start`  | Length         | `0`     | Start offset. The value can be in vh, % and px. It supports basic mathematics operands + and -.                                                            |
-| `end`    | Length         | `0`     | End offset. The value can be in vh, % and px. It supports basic mathematics operands + and -.                                                              |
+| `start`  | Length         | `0`     | Start offset. The value can be in vh, % and px. It supports basic mathematics operands + and -. The default value of `0` means that the target's top border and viewport's bottom border intersect.                                                            |
+| `end`    | Length         | `0`     | End offset. The value can be in vh, % and px. It supports basic mathematics operands + and -. The default value of `0` means that the target's bottom border and the viewport's top border intersect.                                                           |
 | `media`  | Number, String | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
 ***
