@@ -4,6 +4,21 @@
 
 ***
 
+## Migration from UIkit 3.13 to 3.14
+
+UIkit 3.14 renames the `top` and `bottom` options to `start` and `end` in the [Sticky component](sticky). 
+
+| Option   | Replace with |
+| -------- | ------------ |
+| `top`    | `start`      |
+| `bottom` | `end`        |
+
+It also deprecates the `position: auto` option from the [Sticky component](sticky). Simply use the new `overflow-flip: true` options instead.
+
+| Option           | Replace with          |
+| ---------------- | --------------------- |
+| `position: auto` | `overflow-flip: true` |
+
 ## Migration from UIkit 3.11 to 3.12
 
 UIkit 3.12 deprecates `uk-img` from the [Image component](image) for the `<img>` element. Simply use the native `loading="lazy"` attribute instead. This also applies if `uk-img` is used to target adjacent slides within Slideshows or Sliders. Both components, Slideshow and Slider, work with lazy loading images out of the box.
