@@ -193,7 +193,7 @@ It's possible to disable the sticky behavior for different device widths by appl
 
 ## Oversized Content
 
-Sticky content that is larger than the viewport will scroll down and stick to the bottom of the viewport. Changing the scroll direction will immediately scroll the sticky content up and change the sticky behavior to stick to the top of the viewport.
+Sticky content that is larger than the viewport will scroll down and stick to the bottom of the viewport. Changing the scroll direction will immediately scroll the sticky content up and change the sticky behavior to stick to the top of the viewport. Scrolling down will change the behavior again. 
 
 ```example
 <div id="js-oversized" class="uk-child-width-1-2" uk-grid>
@@ -270,7 +270,7 @@ Sticky content that is larger than the viewport will scroll down and stick to th
 
 ## Overflow Flip
 
-In combination with other sticky options the `overflow-flip: true` option can be used to cover an element by following content or reveal it by previous content. For example, if the element sticks to the top, using this option will cover it by the following content. Using bottom position in combination with a negative start will allow the element to be revealed by the previous content. If the element overflows the viewport, the `overflow-flip` option will flip the position option and disable overflow scrolling.
+The `overflow-flip` option disables the sticky behavior for oversized content. Instead, it only flips the sticky position if the element is larger than the viewport. Changing the scroll direction will not affect the sticky position. Together with the `start` and `end` options, two nice sticky effects can be achieved. Cover an element by following content or reveal it by previous content.
 
 ```html
 <!-- Section will be covered by the next section -->
