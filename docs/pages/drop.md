@@ -102,7 +102,7 @@ Add one of the following options to the `uk-drop` attribute to adjust the drop's
 ```
 
 | Position         | Description                                                                   |
-|:-----------------|:------------------------------------------------------------------------------|
+| :--------------- | :---------------------------------------------------------------------------- |
 | `bottom-left`    | Aligns the drop to the bottom left.                                           |
 | `bottom-center`  | Aligns the drop to the bottom center.                                         |
 | `bottom-right`   | Aligns the drop to the bottom right.                                          |
@@ -216,19 +216,20 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option           | Value           | Default        | Description                                                                                   |
-|:-----------------|:----------------|:---------------|:----------------------------------------------------------------------------------------------|
-| `toggle`         | String, Boolean | `- *`          | CSS selector for the element to be used as toggle. By default, the preceding element is used. |
-| `pos`            | String          | `bottom-left`  | The position of the drop.                                                                     |
-| `mode`           | String          | `click, hover` | Comma separated list of drop trigger behaviour modes: `hover`, `click`                        |
-| `delay-show`     | Number          | `0`            | Delay time in milliseconds before a drop is displayed in hover mode.                          |
-| `delay-hide`     | Number          | `800`          | Delay time in milliseconds before a drop is hidden in hover mode.                             |
-| `boundary`       | Boolean, String | `true`         | CSS selector of the element to maintain the drop's visibility. By default, it's the window.   |
-| `boundary-align` | Boolean         | `false`        | Align the drop to its boundary.                                                               |
-| `flip`           | Boolean, String | `true`         | Automatically flip the drop. Possible values are `false`, `true`, `x` or `y`.                 |
-| `offset`         | Number          | `0`            | The offset of the drop's container.                                                           |
-| `animation`      | String          | `false`        | Space separated names of animations to apply.                                                 |
-| `duration`       | Number          | `200`          | Animation duration in milliseconds.                                                           |
+| Option           | Value               | Default        | Description                                                                                   |
+| :--------------- | :------------------ | :------------- | :-------------------------------------------------------------------------------------------- |
+| `toggle`         | String, Boolean     | `- *`          | CSS selector for the element to be used as toggle. By default, the preceding element is used. |
+| `pos`            | String              | `bottom-left`  | The position of the drop.                                                                     |
+| `mode`           | String              | `click, hover` | Comma separated list of drop trigger behaviour modes: `hover`, `click`                        |
+| `delay-show`     | Number              | `0`            | Delay time in milliseconds before a drop is displayed in hover mode.                          |
+| `delay-hide`     | Number              | `800`          | Delay time in milliseconds before a drop is hidden in hover mode.                             |
+| `display`        | `dynamic`, `static` | `dynamic`      | Disable dynamic positioning while scrolling by setting this option to `static`.               |
+| `boundary`       | Boolean, String     | `true`         | CSS selector of the element to maintain the drop's visibility. By default, it's the window.   |
+| `boundary-align` | Boolean             | `false`        | Align the drop to its boundary.                                                               |
+| `flip`           | Boolean, String     | `true`         | Automatically flip the drop. Possible values are `false`, `true`, `x` or `y`.                 |
+| `offset`         | Number              | `0`            | The offset of the drop's container.                                                           |
+| `animation`      | String              | `false`        | Space separated names of animations to apply.                                                 |
+| `duration`       | Number              | `200`          | Animation duration in milliseconds.                                                           |
 
 `pos` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
@@ -253,7 +254,7 @@ UIkit.drop(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name         | Description                                                                                    |
-|:-------------|:-----------------------------------------------------------------------------------------------|
+| :----------- | :--------------------------------------------------------------------------------------------- |
 | `toggle`     | Fires before an item is toggled.                                                               |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
@@ -283,6 +284,6 @@ UIkit.drop(element).hide(delay);
 
 Hides the Drop.
 
-| Name        | Type    | Default | Description                      |
-|:------------|:--------|:--------|:---------------------------------|
-| `delay`     | Boolean | true    | Delay hiding the Drop.           |
+| Name    | Type    | Default | Description            |
+| :------ | :------ | :------ | :--------------------- |
+| `delay` | Boolean | true    | Delay hiding the Drop. |
