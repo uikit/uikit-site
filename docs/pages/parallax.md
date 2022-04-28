@@ -4,7 +4,31 @@
 
 ## Usage
 
-To apply this component, add the `uk-parallax` attribute to any element. Add an option with the desired animation end value for each CSS property you want to animate.
+To apply this component, add the `uk-parallax` attribute to any element. Use one of the following options to animate the corresponding CSS property.
+
+| Option             | Description                        | Values         | Default Start |
+| :----------------- | :--------------------------------- | -------------- | :------------ |
+| `x`                | Animate translateX.                | Length         | `0`           |
+| `y`                | Animate translateY.                | Length         | `0`           |
+| `bgy`              | Animate background Y position.     | Length         | *Current*     |
+| `bgx`              | Animate background X position.     | Length         | *Current*     |
+| `rotate`           | Animate rotation clockwise.        | `deg`          | `0`           |
+| `scale`            | Animate scaling.                   | Number, Length | `1`           |
+| `color`            | Animate color                      | Color          | *Current*     |
+| `background-color` | Animate background-color           | Color          | *Current*     |
+| `border-color`     | Animate border color               | Color          | *Current*     |
+| `opacity`          | Animate the opacity.               | Number         | *Current*     |
+| `blur`             | Animate the blur filter.           | `px`           | `0`           |
+| `hue`              | Animate the hue rotation filter.   | `deg`          | `0`           |
+| `grayscale`        | Animate the grayscale filter.      | `%`            | `0`           |
+| `invert`           | Animate the invert filter.         | `%`            | `0`           |
+| `saturate`         | Animate the saturate filter.       | `%`            | `0`           |
+| `sepia`            | Animate the sepia filter.          | `%`            | `0`           |
+| `stroke`           | Animate strokes within SVG images. |                | `0`           |
+
+You can use `px`, `%`, `vw` and `vh` units for the length values. The pixel unit can be left out. For example, `x: 200` is the same as `x: 200px`. Basic mathematics operands `+` and `-` are also supported. 
+
+Properties are always animated from their default start value to the end value set in the option.
 
 ```html
 <div uk-parallax="bgy: -200">...</div>
@@ -20,37 +44,9 @@ To apply this component, add the `uk-parallax` attribute to any element. Add an 
 
 ***
 
-## Animated properties
+## Start and end
 
-You can use the following options to animate a number of CSS property.
-
-| Option             | Description                        | Default&nbsp;Unit | Default Start |
-| :----------------- | :--------------------------------- | ----------------- | :------------ |
-| `x`                | Animate translateX.                | `px`              | `0`           |
-| `y`                | Animate translateY.                | `px`              | `0`           |
-| `bgy`              | Animate background Y position.     | `px`              | *Current*     |
-| `bgx`              | Animate background X position.     | `px`              | *Current*     |
-| `rotate`           | Animate rotation clockwise.        | `deg`             | `0`           |
-| `scale`            | Animate scaling.                   |                   | `1`           |
-| `color`            | Animate color                      |                   | *Current*     |
-| `background-color` | Animate background-color           |                   | *Current*     |
-| `border-color`     | Animate border color               |                   | *Current*     |
-| `opacity`          | Animate the opacity.               |                   | *Current*     |
-| `blur`             | Animate the blur filter.           | `px`              | `0`           |
-| `hue`              | Animate the hue rotation filter.   | `deg`             | `0`           |
-| `grayscale`        | Animate the grayscale filter.      | `%`               | `0`           |
-| `invert`           | Animate the invert filter.         | `%`               | `0`           |
-| `saturate`         | Animate the saturate filter.       | `%`               | `0`           |
-| `sepia`            | Animate the sepia filter.          | `%`               | `0`           |
-| `stroke`           | Animate strokes within SVG images. |                   | `0`           |
-
-The value can define any allowed unit type, e.g. `x: 20vw`. For some options, the unit of a value can be left out. It will be mapped to the default unit. For example, `x: 200` is the same as `x: 200px`.
-
-***
-
-## Start and end stops
-
-Properties are always animated from their default start value to the end value set in the option. However, you can also define a start value yourself. This is done by passing two values separated by comma.
+A custom start value can be defined using two values separated by comma.
 
 ```html
 <div uk-parallax="opacity: 0,1">...</div>
@@ -65,9 +61,11 @@ Properties are always animated from their default start value to the end value s
 </div>
 ```
 
-### Multiple stops
+***
 
-Define multiple stops for a property by using a comma separated list of values.
+## Multiple stops
+
+To better control the property animation, you can set intermediate stops along the animation sequence. Just use a comma separated list of values. The animation will be equally distributed between the stops.
 
 ```html
 <div uk-parallax="x: 0,50,150">...</div>
@@ -82,9 +80,11 @@ Define multiple stops for a property by using a comma separated list of values.
 </div>
 ```
 
-### Stop Positions
+***
 
-An animation stop can be defined by a value and a position. The position has to be set in percent. If you don't specify the position of a stop, it is placed halfway between the one that precedes it and the one that follows it.
+## Stop positions
+
+Set an optional stop position to specify percentage along the animation sequence when the stop occurs.
 
 ```html
 <div uk-parallax="x: 0,50 10%,150 50%">...</div>
@@ -273,13 +273,13 @@ Together with the [Sticky component](sticky.md) you can achieve complex sticky p
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option   | Value          | Default | Description                                                                                                                                                |
-| :------- | :------------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `easing` | Number         | `1`     | Animation easing during scrolling                                                                                                                          |
-| `target` | CSS Selector   | `false` | Element dimension reference for animation duration.                                                                                                        |
-| `start`  | Length         | `0`     | Start offset. The value can be in vh, % and px. It supports basic mathematics operands + and -. The default value of `0` means that the target's top border and viewport's bottom border intersect.                                                            |
-| `end`    | Length         | `0`     | End offset. The value can be in vh, % and px. It supports basic mathematics operands + and -. The default value of `0` means that the target's bottom border and the viewport's top border intersect.                                                           |
-| `media`  | Number, String | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
+| Option   | Value          | Default | Description                                                                                                                                                                                           |
+| :------- | :------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `easing` | Number         | `1`     | Animation easing during scrolling                                                                                                                                                                     |
+| `target` | CSS Selector   | `false` | Element dimension reference for animation duration.                                                                                                                                                   |
+| `start`  | Length         | `0`     | Start offset. The value can be in vh, % and px. It supports basic mathematics operands + and -. The default value of `0` means that the target's top border and viewport's bottom border intersect.   |
+| `end`    | Length         | `0`     | End offset. The value can be in vh, % and px. It supports basic mathematics operands + and -. The default value of `0` means that the target's bottom border and the viewport's top border intersect. |
+| `media`  | Number, String | `false` | Condition for the active status - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)).                                            |
 
 ***
 
