@@ -50,7 +50,7 @@ The value can define any allowed unit type, e.g. `x: 20vw`. For some options, th
 
 ## Start and end stops
 
-Options are always animated from their default start value to the end value set in the option. However, you can also define a start value yourself. This is done by passing two values separated by comma.
+Properties are always animated from their default start value to the end value set in the option. However, you can also define a start value yourself. This is done by passing two values separated by comma.
 
 ```html
 <div uk-parallax="opacity: 0,1">...</div>
