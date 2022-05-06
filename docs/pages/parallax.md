@@ -6,29 +6,30 @@
 
 To apply this component, add the `uk-parallax` attribute to any element. Use one of the following options to animate the corresponding CSS property.
 
-| Option             | Description                        | Values         | Default Start |
-| :----------------- | :--------------------------------- | -------------- | :------------ |
-| `x`                | Animate translateX.                | Length         | `0`           |
-| `y`                | Animate translateY.                | Length         | `0`           |
-| `bgy`              | Animate background Y position.     | Length         | *Current*     |
-| `bgx`              | Animate background X position.     | Length         | *Current*     |
-| `rotate`           | Animate rotation clockwise.        | `deg`          | `0`           |
-| `scale`            | Animate scaling.                   | Number, Length | `1`           |
-| `color`            | Animate color                      | Color          | *Current*     |
-| `background-color` | Animate background-color           | Color          | *Current*     |
-| `border-color`     | Animate border color               | Color          | *Current*     |
-| `opacity`          | Animate the opacity.               | Number         | *Current*     |
-| `blur`             | Animate the blur filter.           | `px`           | `0`           |
-| `hue`              | Animate the hue rotation filter.   | `deg`          | `0`           |
-| `grayscale`        | Animate the grayscale filter.      | `%`            | `0`           |
-| `invert`           | Animate the invert filter.         | `%`            | `0`           |
-| `saturate`         | Animate the saturate filter.       | `%`            | `0`           |
-| `sepia`            | Animate the sepia filter.          | `%`            | `0`           |
-| `stroke`           | Animate strokes within SVG images. |                | `0`           |
+| Option             | Description                        | Values         | Start Value |
+| :----------------- | :--------------------------------- | -------------- | :---------- |
+| `x`                | Animate translateX.                | Length         | `0`         |
+| `y`                | Animate translateY.                | Length         | `0`         |
+| `bgy`              | Animate background Y position.     | Length         | *Initial*   |
+| `bgx`              | Animate background X position.     | Length         | *Initial*   |
+| `rotate`           | Animate rotation clockwise.        | `deg`          | `0`         |
+| `scale`            | Animate scaling.                   | Number, Length | `1`         |
+| `color`            | Animate color                      | Color          | *Initial*   |
+| `background-color` | Animate background-color           | Color          | *Initial*   |
+| `border-color`     | Animate border color               | Color          | *Initial*   |
+| `opacity`          | Animate the opacity.               | Number         | *Initial*   |
+| `blur`             | Animate the blur filter.           | `px`           | `0`         |
+| `hue`              | Animate the hue rotation filter.   | `deg`          | `0`         |
+| `grayscale`        | Animate the grayscale filter.      | `%`            | `0`         |
+| `invert`           | Animate the invert filter.         | `%`            | `0`         |
+| `saturate`         | Animate the saturate filter.       | `%`            | `0`         |
+| `sepia`            | Animate the sepia filter.          | `%`            | `0`         |
+| `stroke`           | Animate strokes within SVG images. |                | `0`         |
 
 You can use `px`, `%`, `vw` and `vh` units for the length values. The pixel unit can be left out. For example, `x: 200` is the same as `x: 200px`. Basic mathematics operands `+` and `-` are also supported. 
 
-Properties are always animated from their default start value to the end value set in the option.
+Set one of the options to create an animation stop. The property is animated from its start value to the defined stop value. 
+
 
 ```html
 <div uk-parallax="bgy: -200">...</div>
@@ -44,9 +45,9 @@ Properties are always animated from their default start value to the end value s
 
 ***
 
-## Start and end
+## Start stop
 
-A custom start value can be defined using two values separated by comma.
+To set a custom start value, create another animation stop by using two values separated by comma. 
 
 ```html
 <div uk-parallax="opacity: 0,1">...</div>
@@ -123,7 +124,7 @@ Different parallax animations can easily be nested.
 
 ## Target
 
-Usually, the animation lasts as long as the element itself is in the viewport. To start and stop the animation based on the viewport visibility of another element, use the `target` option. This can be helpful when using nested animations.
+The animation starts and stops depending on the element position in the viewport. To start and stop the animation based on the viewport visibility of another element, use the `target` option. This can be helpful when using nested animations.
 
 ```html
 <div id="target">
@@ -141,10 +142,9 @@ Usually, the animation lasts as long as the element itself is in the viewport. T
 
 ***
 
-## Start and End
+## Start and end
 
-Using the `start` and `end` options you can adjust the animation duration. The `start` option defines when the animation starts. The default value of `0` means that the target's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the target's bottom border and the viewport's top border intersect.
-Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the target's height. Both options allow basic mathematics operands, `+` and `-`. 
+To adjust the animation duration, set the `start` and `end` options. The `start` option defines when the animation starts. The default value of `0` means that the target's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the target's bottom border and the viewport's top border intersect. Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the target's height. Both options allow basic mathematics operands, `+` and `-`. 
 
 ```html
 <div uk-parallax="start: 100%; end: 100%;">...</div>
