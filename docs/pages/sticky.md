@@ -283,7 +283,7 @@ The `overflow-flip` option disables the sticky behavior for oversized content. I
 ```
 
 ```example
-<div class="uk-position-relative uk-position-z-index">
+<div class="uk-position-relative uk-position-z-index-zero">
     <div class="uk-background-primary uk-padding uk-flex uk-flex-center uk-flex-middle uk-text-center uk-light uk-height-medium uk-position-z-index-negative" uk-sticky="overflow-flip: true; end: 100%; offset: 80">
         overflow-flip: true<br>
         end: 100%
