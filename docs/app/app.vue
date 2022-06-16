@@ -48,7 +48,7 @@
 
                 <div class="tm-sidebar-right uk-visible@l">
                     <div uk-sticky="offset: 160">
-                        <ul class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+                        <ul class="uk-nav uk-nav-default tm-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
                             <li v-for="(id, subject) in ids" :key="id">
                                 <a :href="`#${id}`">{{ subject }}</a>
                             </li>
