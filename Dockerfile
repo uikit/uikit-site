@@ -1,4 +1,4 @@
-FROM node:16-alpine as build
+FROM node:18-alpine as build
 
 # environment variables
 ARG COMMIT_HASH=empty
@@ -29,7 +29,7 @@ RUN sed -i "s/{{BUILD}}/$COMMIT_HASH/g" app/main.min.js && \
     rm -rf ./assets/uikit/node_modules/
 
 # build uikit v2
-FROM node:16-alpine as build-v2
+FROM node:18-alpine as build-v2
 ADD https://github.com/uikit/uikit-site/releases/download/2016.12/uikit-site-v2.zip uikit.zip
 RUN unzip uikit.zip -d ./uikit && \
     rm uikit.zip && \
