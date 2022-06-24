@@ -1,7 +1,0 @@
-.git*
-.circleci
-node_modules
-yarn.lock
-migrate.min.js
-fonts
-v2
