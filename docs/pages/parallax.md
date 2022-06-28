@@ -66,7 +66,7 @@ To set a custom start value, create another animation stop by using two values s
 
 ## Multiple stops
 
-To better control the property animation, you can set intermediate stops along the animation sequence. Just use a comma separated list of values. The animation will be equally distributed between the stops.
+To better control the property animation, you can set intermediate stops along the animation sequence. Just use a comma-separated list of values. The animation will be equally distributed between the stops.
 
 ```html
 <div uk-parallax="x: 0,50,150">...</div>

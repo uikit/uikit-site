@@ -394,7 +394,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `collapsible` | Boolean      | `true`         | Allow all items to be closed.                                                     |
 | `multiple`    | Boolean      | `false`        | Allow multiple open items.                                                        |
 | `transition`  | String       | `ease`         | The transition to use.                                                            |
-| `animation`   | String       | `true`         | The space separated names of animations to use. Comma separate for animation out. |
+| `animation`   | String       | `true`         | Space-separated names of [animations](animation.md). Comma-separated for animation out. |
 | `duration`    | Number       | `200`          | The animation duration in milliseconds.                                           |
 
 ***

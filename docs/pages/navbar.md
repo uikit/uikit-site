@@ -915,7 +915,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option           | Value           | Default        | Description                                                                                                            |
 |:-----------------|:----------------|:---------------|:-----------------------------------------------------------------------------------------------------------------------|
 | `align`          | String          | `left`         | Dropdown alignment: `left`, `right`, `center`                                                                          |
-| `mode`           | String          | `click, hover` | Comma separated list of dropdown trigger behavior modes: `click`, `hover`                                              |
+| `mode`           | String          | `click, hover` | Comma-separated list of dropdown trigger behavior modes: `click`, `hover`                                              |
 | `delay-show`     | Number          | `0`            | Delay time in hover mode before a dropdown is shown in milliseconds.                                                   |
 | `delay-hide`     | Number          | `800`          | Delay time in hover mode before a dropdown is hidden in milliseconds.                                                  |
 | `boundary`       | Boolean, String | `true`         | CSS selector of referenced element to keep the dropdown's visibility. By default, it's the navbar component's element. |

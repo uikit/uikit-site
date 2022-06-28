@@ -328,7 +328,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 |:-----------------|:----------------|:---------------|:----------------------------------------------------------------------------------------------|
 | `toggle`         | String, Boolean | `- *`          | CSS selector for the element to be used as toggle. By default, the preceding element is used. |
 | `pos`            | String          | `bottom-left`  | The position of the dropdown.                                                                 |
-| `mode`           | String          | `click, hover` | Comma separated list of dropdown trigger behaviour modes: `hover`, `click`                    |
+| `mode`           | String          | `click, hover` | Comma-separated list of dropdown trigger behaviour modes: `hover`, `click`                    |
 | `delay-show`     | Number          | `0`            | Delay time in milliseconds before a dropdown is displayed in hover mode.                      |
 | `delay-hide`     | Number          | `800`          | Delay time in milliseconds before a dropdown is hidden in hover mode.                         |
 | `boundary`       | String          | `window`       | CSS selector of the element to maintain the drop's visibility.                                |

@@ -4,6 +4,46 @@
 
 ***
 
+## Migration from UIkit 3.14 to 3.15
+
+The [Nav component](nav) component in UIkit 3.15 now uses a JavaScript component to create the parent icon for a nav item instead of compiling the parent icon into the CSS. Just search for the `.uk-nav-parent-icon` class and remove it from the markup. Simply use a `span` with the `uk-nav-parent-icon"` attribute for each nav item with children instead. Here is a quick example.
+
+```
+<ul class="uk-nav-default" uk-nav>
+    <li class="uk-parent">
+        <a href="#">Parent <span uk-nav-parent-icon></span></a>
+        <ul class="uk-nav-sub">
+            <li><a href="#">Sub item</a></li>
+            <li><a href="#">Sub item</a> </li>
+        </ul>
+    </li>
+</ul>
+```
+
+The [Drop component](drop) and [Dropdown component](dropdown) component removes alignment `*-justify` from the `pos` option. Search for `pos: top-justify`, `pos: bottom-justify`, `pos: left-justify` and `pos: right-justify` and use the new  `stretch` option instead.
+
+| Option                | Replace with                   |
+| --------------------- | ------------------------------ |
+| `pos: top-justify`    | `pos: top-left; stretch: x`    |
+| `pos: bottom-justify` | `pos: bottom-left; stretch: x` |
+| `pos: left-justify`   | `pos: left-top; stretch: y`    |
+| `pos: right-justify`  | `pos: right-top; stretch: y`   |
+
+
+The following Less variables are also renamed. Just find and replace these Less variables if you are using a custom Less theme.
+
+| Less variable                            | Replace with                              |
+| ---------------------------------------- | ----------------------------------------- |
+| `@offcanvas-bar-width-m`                 | `@offcanvas-bar-width-s`                  |
+| `@offcanvas-bar-padding-vertical-m`      | `@offcanvas-bar-padding-vertical-s`       |
+| `@offcanvas-bar-padding-horizontal-m`    | `@offcanvas-bar-padding-horizontal-s`     |
+| `@nav-primary-item-font-size`            | `@nav-primary-font-size`                  |
+| `@nav-primary-item-line-height`          | `@nav-primary-line-height`                |
+| `@navbar-dropdown-dropbar-margin-top`    | `@navbar-dropdown-dropbar-padding-top`    |
+| `@navbar-dropdown-dropbar-margin-bottom` | `@navbar-dropdown-dropbar-padding-bottom` |
+
+***
+
 ## Migration from UIkit 3.13 to 3.14
 
 UIkit 3.14 renames the `top` and `bottom` options to `start` and `end` in the [Sticky component](sticky). 
