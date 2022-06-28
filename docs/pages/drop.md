@@ -11,12 +11,12 @@ Any content, like a button, can toggle the drop component. Just add the `uk-drop
 <div uk-drop></div>
 ```
 
-A dropdown can be enabled by hovering and clicking the toggle. Just add the `mode: click` option to the attribute to force `click` mode only. If you want to group the toggle and the dropdown, you can just add the `.uk-inline` class from the [Utility component](utility.md#inline) to a container element around both.
+To group the toggle and the dropdown, just wrap them with a container element and add the `.uk-inline` class from the [Utility component](utility.md#inline).
 
 ```html
 <div class="uk-inline">
     <button type="button"></button>
-    <div uk-drop="mode: click"></div>
+    <div uk-drop></div>
 </div>
 ```
 
@@ -24,8 +24,31 @@ A dropdown can be enabled by hovering and clicking the toggle. Just add the `mod
 
 ```example
 <div class="uk-inline">
-    <button class="uk-button uk-button-default" type="button">Hover</button>
+    <button class="uk-button uk-button-default" type="button">Hover, Click</button>
     <div uk-drop>
+        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+</div>
+```
+
+## Mode
+
+By default, the drop is toggled on hover and on click. Set the `animation` option to change the toggle behavior.
+
+| Mode          | Description                     |
+| :------------ | :------------------------------ |
+| `click,hover` | Toggle drop on click and hover. |
+| `click`       | Toggle drop on click only.      |
+| `hover`       | Toggle drop on hover only.      |
+
+```html
+<div uk-drop="mode: click"></div>
+```
+
+```example
+<div class="uk-inline">
+    <button class="uk-button uk-button-default" type="button">Hover</button>
+    <div uk-drop="mode: hover">
         <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
 </div>
@@ -72,7 +95,23 @@ Use one of the classes from the [Width component](width.md) to adjust the drop's
 
 ## Position
 
-Add one of the following options to the `uk-drop` attribute to adjust the drop's alignment.
+By default, the drop is positioned below the toggle. To change its position set the `pos` option to the `uk-drop` attribute. The first part of the value refers to the side where the drop is positioned while the second part defines its alignment to the toggle.
+
+
+| Position        | Description                                                                |
+| :-------------- | :------------------------------------------------------------------------- |
+| `top-left`      | Positions the drop above the toggle and aligns it to the left.             |
+| `top-center`    | Positions the drop above the toggle and aligns it to the center.           |
+| `top-right`     | Positions the drop above the toggle and aligns it in the right.            |
+| `bottom-left`   | Positions the drop below the toggle and aligns it to the left.             |
+| `bottom-center` | Positions the drop below the toggle and aligns it to the center.           |
+| `bottom-right`  | Positions the drop below the toggle and aligns it in the right.            |
+| `left-top`      | Positions the drop to the left of the toggle and aligns it to the top.     |
+| `left-center`   | Positions the drop to the left of the toggle and aligns it to the center.  |
+| `left-bottom`   | Positions the drop to the left of the toggle and aligns it to the bottom.  |
+| `right-top`     | Positions the drop to the right of the toggle and aligns it to the top.    |
+| `right-center`  | Positions the drop to the right of the toggle and aligns it to the center. |
+| `right-bottom`  | Positions the drop to the right of the toggle and aligns it to the bottom. |
 
 ```html
 <div uk-drop="pos: top-left"></div>
@@ -101,33 +140,16 @@ Add one of the following options to the `uk-drop` attribute to adjust the drop's
 </div>
 ```
 
-| Position         | Description                                                                   |
-| :--------------- | :---------------------------------------------------------------------------- |
-| `bottom-left`    | Aligns the drop to the bottom left.                                           |
-| `bottom-center`  | Aligns the drop to the bottom center.                                         |
-| `bottom-right`   | Aligns the drop to the bottom right.                                          |
-| `bottom-justify` | Aligns the drop to the bottom and justifies its width to the related element. |
-| `top-left`       | Aligns the drop to the top left.                                              |
-| `top-center`     | Aligns the drop to the top center.                                            |
-| `top-right`      | Aligns the drop to the top right.                                             |
-| `top-justify`    | Aligns the drop to the top and justifies its width to the related element.    |
-| `left-top`       | Aligns the drop to the left top.                                              |
-| `left-center`    | Aligns the drop to the left center.                                           |
-| `left-bottom`    | Aligns the drop to the left bottom.                                           |
-| `right-top`      | Aligns the drop to the right top.                                             |
-| `right-center`   | Aligns the drop to the right center.                                          |
-| `right-bottom`   | Aligns the drop to the right bottom.                                          |
-
 ***
 
 ## Boundary
 
-By default, the drop flips automatically when it exceeds the viewport's edge. If you want to flip it according to a container's boundary, just add the `boundary: .my-class` option to the `uk-drop` attribute, using a selector for the container. That way you can determine any parent element as the drop's boundary.
+By default, the drop automatically changes its positions if it exceeds the viewport or any other parent scrolling ancestor. It will flip its position to the other side to prevent it from covering the toggle and shift its alignment to fit into the viewport. To set a different boundary other than the scrolling ancestors, just add the `boundary: SELECTOR` option to the `uk-drop` attribute using a selector for the boundary.
 
 ```html
 <div class="my-class">
     <button type="button"></button>
-    <div uk-drop="boundary: .my-class"></div>
+    <div uk-drop="boundary: !.my-class"></div>
 </div>
 ```
 
@@ -149,9 +171,31 @@ By default, the drop flips automatically when it exceeds the viewport's edge. If
 
 ***
 
-### Boundary alignment
+## Shift and Flip
 
-You can also align the drop to its boundary. To do so, add the `boundary-align: true` option to the attribute.
+To disable automatic shifting and flipping, add the `shift: false` or `flip: false` option to the `uk-drop` attribute.
+
+```html
+<button type="button"></button>
+<div uk-drop="boundary: !.my-class"></div>
+```
+
+***
+
+## Display
+
+By default, the drop repositions on scrolling. To disable dynamic positioning, add `display: static` option to the `uk-drop` attribute. The drop will only be positioned once when opened.
+
+```html
+<button type="button"></button>
+<div uk-drop="boundary: !.my-class"></div>
+```
+
+***
+
+## Target
+
+By default, the drop is aligned to its toggle. To position the drop to a different element, just add `target: SELECTOR` option to the `uk-drop` attribute. To change just the side where the drop is positioned or the alignment to another element, use `target-x: SELECTOR` or `target-y: SELECTOR`.
 
 ```html
 <div class="my-class">
@@ -178,9 +222,31 @@ You can also align the drop to its boundary. To do so, add the `boundary-align: 
 
 ***
 
+## Stretch
+
+To stretch the drop to fill the size of the viewport, add the `stretch: true` option to the `uk-drop` attribute. To only stretch to one axis, use `stretch: x` or `stretch: y`. If the `boundary` option is set, the drop stretches to the defined boundary.
+
+```html
+<button type="button"></button>
+<div uk-drop="boundary: .my-class; boundary-align: true"></div>
+```
+
+***
+
+## Inset
+
+By default, the drop is positioned outside the toggle. To change the position to the inside, add the `inset: true` option to the `uk-drop` attribute. This option should only be used if the `target` option is also set, the drop doesn't cover its toggle.
+
+```html
+<button type="button"></button>
+<div uk-drop="boundary: .my-class; boundary-align: true"></div>
+```
+
+***
+
 ## Offset
 
-To define a custom offset between the drop container and the toggle, add the `offset` option with a value for the offset, measured in pixels.
+To define a custom offset between the drop and its toggle, add the `offset` option with a value in pixels.
 
 ```html
 <div uk-drop="offset: 80"></div>
@@ -197,7 +263,7 @@ To define a custom offset between the drop container and the toggle, add the `of
 
 ## Animation
 
-Apply one or more animations to the dropdown by adding the `animation: uk-animation-*` option with one of the classes from the [Animation component](animation.md). You can also determine the animation's duration. Just add the `duration` option with your value.
+Apply one or more animations to the dropdown by adding the `animation: uk-animation-*` option with one of the classes from the [Animation component](animation.md). You can also determine the animation's duration. Just add the `duration` option with a value in milliseconds.
 
 ```html
 <div uk-drop="animation: uk-animation-slide-top-small; duration: 1000"></div>
@@ -220,7 +286,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | :--------------- | :------------------ | :------------- | :-------------------------------------------------------------------------------------------- |
 | `toggle`         | String, Boolean     | `- *`          | CSS selector for the element to be used as toggle. By default, the preceding element is used. |
 | `pos`            | String              | `bottom-left`  | The position of the drop.                                                                     |
-| `mode`           | String              | `click, hover` | Comma separated list of drop trigger behaviour modes: `hover`, `click`                        |
+| `mode`           | String              | `click, hover` | Comma-separated list of drop trigger behaviour modes: `hover`, `click`                        |
 | `delay-show`     | Number              | `0`            | Delay time in milliseconds before a drop is displayed in hover mode.                          |
 | `delay-hide`     | Number              | `800`          | Delay time in milliseconds before a drop is hidden in hover mode.                             |
 | `display`        | `dynamic`, `static` | `dynamic`      | Disable dynamic positioning while scrolling by setting this option to `static`.               |
