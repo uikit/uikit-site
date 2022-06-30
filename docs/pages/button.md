@@ -178,7 +178,7 @@ Use button groups to split buttons into a standard action on the left and a drop
 
         <!-- The button toggling the dropdown -->
         <button class="uk-button uk-button-default" type="button"></button>
-        <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;"></div>
+        <div uk-dropdown="mode: click; target: !.uk-button-group;"></div>
 
     </div>
 </div>
@@ -190,7 +190,7 @@ Use button groups to split buttons into a standard action on the left and a drop
     <button class="uk-button uk-button-default">Dropdown</button>
     <div class="uk-inline">
         <button class="uk-button uk-button-default" type="button"><span uk-icon="icon:  triangle-down"></span></button>
-        <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
+        <div uk-dropdown="mode: click; target: !.uk-button-group;">
             <ul class="uk-nav uk-dropdown-nav">
                 <li class="uk-active"><a href="#">Active</a></li>
                 <li><a href="#">Item</a></li>

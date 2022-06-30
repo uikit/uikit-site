@@ -89,7 +89,6 @@ Use one of the classes from the [Width component](width.md) to adjust the drop's
 
 By default, the drop is positioned below the toggle. To change its position set the `pos` option to the `uk-drop` attribute. The first part of the value refers to the side where the drop is positioned while the second part defines its alignment to the toggle.
 
-
 | Position        | Description                                                                |
 | :-------------- | :------------------------------------------------------------------------- |
 | `top-left`      | Positions the drop above the toggle and aligns it to the left.             |
@@ -237,8 +236,7 @@ By default, the drop is positioned outside the toggle. To change the position to
 To stretch the drop to fill the size of the viewport, add the `stretch: true` option to the `uk-drop` attribute. To only stretch to one axis, use `stretch: x` or `stretch: y`. If the `boundary` option is set, the drop stretches to the defined boundary.
 
 ```html
-<button type="button"></button>
-<div uk-drop="boundary: .my-class; boundary-align: true"></div>
+<div uk-drop="stretch: true"></div>
 ```
 
 ```example
