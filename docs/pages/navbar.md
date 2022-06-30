@@ -7,7 +7,7 @@
 The Navbar component consists of a navbar container, the navbar itself and one or more navigations.
 
 | Element                                                           | Description                                                                                                    |
-|:------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|
+| :---------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
 | `uk-navbar`                                                       | Add this attribute to a `<nav>` element to define the Navbar component.                                        |
 | `.uk-navbar-container`                                            | Add this class to the same `<nav>` element or a parent element to add the navbar background style.             |
 | `.uk-navbar-left`<br> `.uk-navbar-center`<br>  `.uk-navbar-right` | Add one of these classes to a `<div>` element to align the navigation.                                         |
@@ -435,7 +435,7 @@ A navbar can contain a dropdown from the [Dropdown component](dropdown.md). Just
 The [Dropdown component](dropdown.md) allows you to arrange the dropdown content in columns. To accommodate up to five columns, you also need to add one of the following classes. Columns will stack, if they no longer fit into the container.
 
 | Class                         | Description                                              |
-|:------------------------------|:---------------------------------------------------------|
+| :---------------------------- | :------------------------------------------------------- |
 | `.uk-navbar-dropdown-width-2` | Add this class to double the dropdown's width.           |
 | `.uk-navbar-dropdown-width-3` | Add this class to triple the dropdown's width.           |
 | `.uk-navbar-dropdown-width-4` | Add this class to multiply the dropdown's width by four. |
@@ -495,16 +495,58 @@ The [Dropdown component](dropdown.md) allows you to arrange the dropdown content
 
 ***
 
-### Boundary alignment
+### Alignment
 
-Dropdowns can be aligned to the navbar's boundary. Just append the `boundary-align: true` parameter to the `uk-navbar` attribute. Add the `align: left`, `align: center` or `align: right` option to change the alignment. By default, dropdowns are aligned to the left.
+By default, the dropdowns are positioned below the navbar item and are aligned to the left. To change the alignment set the `align` option to the `uk-navbar` attribute.
+
+| Position | Description                         |
+| :------- | :---------------------------------- |
+| `left`   | Aligns the dropdowns to the left.   |
+| `right`  | Aligns the dropdowns to the right.  |
+| `center` | Aligns the dropdowns to the center. |
 
 ```html
-<nav class="uk-navbar-container" uk-navbar="boundary-align: true; align: center;">...</nav>
+<div uk-navbar="align: center"></div>
 ```
 
 ```example
-<nav class="uk-navbar-container" uk-navbar="boundary-align: true; align: center;">
+<nav class="uk-navbar-container" uk-navbar="align: center">
+    <div class="uk-navbar-center">
+
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="#">Center</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+</nav>
+```
+
+***
+
+### Target
+
+By default, the dropdowns are aligned their navbar item. To position the dropdown to a different element, just add `target: SELECTOR` option to the `uk-navbar` attribute.
+
+```html
+<nav class="uk-navbar-container" uk-navbar="target: !.uk-navbar">...</nav>
+```
+
+```example
+<nav class="uk-navbar-container" uk-navbar="target: !.uk-navbar; align: center;">
     <div class="uk-navbar-left">
 
         <ul class="uk-navbar-nav">
@@ -624,7 +666,7 @@ Dropdowns can be aligned to the navbar's boundary. Just append the `boundary-ali
 To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` option. In the following example it is aligned to the boundary of the parent navbar.
 
 ```html
-<div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; boundary-align: true; pos: bottom-justify;">...</div>
+<div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">...</div>
 ```
 
 ```example
@@ -634,7 +676,7 @@ To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` optio
         <ul class="uk-navbar-nav">
             <li>
                 <a href="#">Item</a>
-                <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; boundary-align: true; pos: bottom-justify;">
+                <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                         <li class="uk-active"><a href="#">Active</a></li>
                         <li><a href="#">Item</a></li>
@@ -648,7 +690,7 @@ To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` optio
             </li>
            <li>
                <a href="#">Item</a>
-               <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; boundary-align: true; pos: bottom-justify;">
+               <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">
                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
                        <div>
                            <ul class="uk-nav uk-navbar-dropdown-nav">
@@ -913,7 +955,7 @@ By default, the immediate toggling of classes does not look ideal. Instead, we c
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option           | Value           | Default        | Description                                                                                                            |
-|:-----------------|:----------------|:---------------|:-----------------------------------------------------------------------------------------------------------------------|
+| :--------------- | :-------------- | :------------- | :--------------------------------------------------------------------------------------------------------------------- |
 | `align`          | String          | `left`         | Dropdown alignment: `left`, `right`, `center`                                                                          |
 | `mode`           | String          | `click, hover` | Comma-separated list of dropdown trigger behavior modes: `click`, `hover`                                              |
 | `delay-show`     | Number          | `0`            | Delay time in hover mode before a dropdown is shown in milliseconds.                                                   |
@@ -941,7 +983,7 @@ UIkit.navbar(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name         | Description                                                                                    |
-|:-------------|:-----------------------------------------------------------------------------------------------|
+| :----------- | :--------------------------------------------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
 | `shown`      | Fires after the item's show animation has completed.                                           |

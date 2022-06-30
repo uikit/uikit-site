@@ -415,8 +415,7 @@ By default, the dropdown is positioned outside the toggle. To change the positio
 To stretch the dropdown to fill the size of the viewport, add the `stretch: true` option to the `uk-dropdown` attribute. To only stretch to one axis, use `stretch: x` or `stretch: y`. If the `boundary` option is set, the dropdown stretches to the defined boundary.
 
 ```html
-<button type="button"></button>
-<div uk-dropdown="boundary: .my-class; boundary-align: true"></div>
+<div uk-dropdown="stretch: true"></div>
 ```
 
 ```example
