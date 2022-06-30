@@ -271,6 +271,19 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: uk-animation-slide-top-small; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 ```
 
+Alternatively, the Drop component has two additional animation types which are not covered by the Animation component. `slide-*` animations slide the drop and its content from a selected direction, while in the `reveal-*` animations, the content of the drop stays static and is revealed from a selected direction.
+
+| Animation       | Description                       |
+| :-------------- | :-------------------------------- |
+| `slide-top`     | Slides the drop from the top.     |
+| `slide-bottom`  | Slides the drop from the bottom.  |
+| `slide-left`    | Slides the drop from the left.    |
+| `slide-right`   | Slides the drop from the right.   |
+| `reveal-top`    | Reveals the drop from the top.    |
+| `reveal-bottom` | Reveals the drop from the bottom. |
+| `reveal-left`   | Reveals the drop from the left.   |
+| `reveal-right`  | Reveals the drop from the right.  |
+
 ```html
 <div uk-drop="animation: slide-top; animate-out: true"></div>
 ```
