@@ -158,8 +158,8 @@ Add the `.uk-dropdown-large` class for a dropdown with larger padding.
 
 By default, the dropdown is positioned below the toggle. To change its position set the `pos` option to the `uk-dropdown` attribute. The first part of the value refers to the side where the dropdown is positioned while the second part defines its alignment to the toggle.
 
-| Position        | Description                                                                |
-| :-------------- | :------------------------------------------------------------------------- |
+| Position        | Description                                                                    |
+| :-------------- | :----------------------------------------------------------------------------- |
 | `top-left`      | Positions the dropdown above the toggle and aligns it to the left.             |
 | `top-center`    | Positions the dropdown above the toggle and aligns it to the center.           |
 | `top-right`     | Positions the dropdown above the toggle and aligns it in the right.            |
@@ -470,8 +470,8 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 
 Alternatively, the Drop component has two additional animation types which are not covered by the Animation component. `slide-*` animations slide the dropdown and its content from a selected direction, while in the `reveal-*` animations, the content of the dropdown stays static and is revealed from a selected direction.
 
-| Animation       | Description                       |
-| :-------------- | :-------------------------------- |
+| Animation       | Description                           |
+| :-------------- | :------------------------------------ |
 | `slide-top`     | Slides the dropdown from the top.     |
 | `slide-bottom`  | Slides the dropdown from the bottom.  |
 | `slide-left`    | Slides the dropdown from the left.    |
@@ -582,19 +582,28 @@ To define a custom offset between the dropdown and its toggle, add the `offset` 
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option           | Value           | Default        | Description                                                                                   |
-|:-----------------|:----------------|:---------------|:----------------------------------------------------------------------------------------------|
-| `toggle`         | String, Boolean | `- *`          | CSS selector for the element to be used as toggle. By default, the preceding element is used. |
-| `pos`            | String          | `bottom-left`  | The position of the dropdown.                                                                 |
-| `mode`           | String          | `click, hover` | Comma-separated list of dropdown trigger behaviour modes: `hover`, `click`                    |
-| `delay-show`     | Number          | `0`            | Delay time in milliseconds before a dropdown is displayed in hover mode.                      |
-| `delay-hide`     | Number          | `800`          | Delay time in milliseconds before a dropdown is hidden in hover mode.                         |
-| `boundary`       | String          | `window`       | CSS selector of the element to maintain the drop's visibility.                                |
-| `boundary-align` | Boolean         | `false`        | Align the dropdown to its boundary.                                                           |
-| `flip`           | Boolean, String | `true`         | Automatically flip the drop. Possible values are `false`, `true`, `x` or `y`.                 |
-| `offset`         | Number          | `0`            | The offset of the dropdown's container.                                                       |
-| `animation`      | String          | `false`        | Space separated names of animations to apply.                                                 |
-| `duration`       | Number          | `200`          | Animation duration in milliseconds.                                                           |                                                      |
+| Option          | Value                 | Default             | Description                                                                                                  |
+| :-------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
+| `toggle`        | CSS selector          | `- *`               | CSS selector for the element to be used as toggle. By default, the preceding element.                        |
+| `pos`           | String                | `bottom-left`       | Drop position.                                                                                               |
+| `stretch`       | false, true, `x`, `y` | `true`              | Stretch dropdown on both (true) or given axis.                                                               |
+| `mode`          | click, hover          | click, hover        | Comma-separated list of dropdown trigger behaviour modes.                                                    |
+| `delay-show`    | Number                | `0`                 | Delay time in hover mode before a dropdown is shown in ms.                                                   |
+| `delay-hide`    | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms. mode.                                            |
+| `display`       | `dynamic`, `static`   | `dynamic`           | Disable dynamic positioning while scrolling by setting this option to `static`.                              |
+| `boundary`      | CSS selector          | `false`             | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
+| `target`        | Boolean, CSS selector | `false`             | The element the dropdown is positioned to. (`true` for window)                                               |
+| `target-x`      | Boolean, CSS selector | `false`             | The element's X axis the dropdown is positioned to. (`true` for window)                                      |
+| `target-y`      | Boolean, CSS selector | `false`             | The element's Y axis the dropdown is positioned to. (`true` for window)                                      |
+| `inset`         | Boolean               | `false`             | Position inside its target.                                                                                  |
+| `flip`          | Boolean               | `true`              | Flips the dropdown along the main axis if it overflows the boundary.                                         |
+| `shift`         | Boolean               | `true`              | Shifts the dropdown along the cross axis if it overflows the boundary.                                       |
+| `offset`        | Number                | `0`                 | The dropdown offset.                                                                                         |
+| `animation`     | String                | `uk-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                      |
+| `animation-out` | Boolean               | `false`             | Use animation when closing the drop.                                                                         |
+| `bg-scroll`     | Boolean               | `true`              | Allow background scrolling while dropdown is opened.                                                         |
+| `duration`      | Number                | `200`               | The animation duration.                                                                                      |
+| `container`     | Boolean               | `false`             | Define a target container via a selector to specify where the dropdown should be appended in the DOM.        |
 ***
 
 ## JavaScript
@@ -612,7 +621,7 @@ UIkit.dropdown(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name         | Description                                                                                    |
-|:-------------|:-----------------------------------------------------------------------------------------------|
+| :----------- | :--------------------------------------------------------------------------------------------- |
 | `toggle`     | Fires before an item is toggled.                                                               |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
@@ -642,6 +651,6 @@ UIkit.dropdown(element).hide(delay);
 
 Hides the Dropdown.
 
-| Name        | Type    | Default | Description                      |
-|:------------|:--------|:--------|:---------------------------------|
-| `delay`     | Boolean | true    | Delay hiding the Dropdown.       |
+| Name    | Type    | Default | Description                |
+| :------ | :------ | :------ | :------------------------- |
+| `delay` | Boolean | true    | Delay hiding the Dropdown. |
