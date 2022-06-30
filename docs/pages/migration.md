@@ -20,6 +20,8 @@ The [Nav component](nav) component in UIkit 3.15 now uses a JavaScript component
 </ul>
 ```
 
+### Drop, Dropdown and Navbar Dropdown
+
 The [Drop component](drop), [Dropdown component](dropdown) and [Navbar component](navbar) components remove alignment `*-justify` from the `pos` option. Search for `pos: top-justify`, `pos: bottom-justify`, `pos: left-justify` and `pos: right-justify` and use the new  `stretch` option instead.
 
 | Option                | Replace with                   |
@@ -35,25 +37,27 @@ The `boundary-align` option is also removed. Search for `boundary: SELECTOR` in 
 | ------------------------------------------ | ------------------ |
 | `boundary: SELECTOR; boundary-align: true` | `target: SELECTOR` |
 
-The `flip` option is split into two options `flip` and `shift`. Depending on the position direction update the markup as follows.
+The `flip` option is split into two options `flip` and `shift`. Update the options as follow.
 
 | Option        | Replace with                |
 | ------------- | --------------------------- |
 | `flip: false` | `flip: false; shift: false` |
 
-If the Position is `top-*` and `bottom-*`:
+If the Position is `top-*` or `bottom-*`:
 
 | Option    | Replace with   |
 | --------- | -------------- |
 | `flip: x` | `flip: false`  |
 | `flip: y` | `shift: false` |
 
-If the Position is `left-*` and `right-*`:
+If the Position is `left-*` or `right-*`:
 
 | Option    | Replace with   |
 | --------- | -------------- |
 | `flip: x` | `shift: false` |
 | `flip: y` | `flip: false`  |
+
+### Less Variables
 
 The following Less variables are also renamed. Just find and replace these Less variables if you are using a custom Less theme.
 
