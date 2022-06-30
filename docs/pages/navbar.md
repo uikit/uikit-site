@@ -619,12 +619,12 @@ Dropdowns can be aligned to the navbar's boundary. Just append the `boundary-ali
 
 ***
 
-### Justify
+### Stretch
 
-To justify a dropdown, use the [Drop component](drop.md) and its position feature. In the following example it is aligned to the boundary of the parent navbar.
+To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` option. In the following example it is aligned to the boundary of the parent navbar.
 
 ```html
-<div class="uk-navbar-dropdown" uk-drop="boundary: .parent; boundary-align: true; pos: bottom-justify;">...</div>
+<div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; boundary-align: true; pos: bottom-justify;">...</div>
 ```
 
 ```example
@@ -634,7 +634,7 @@ To justify a dropdown, use the [Drop component](drop.md) and its position featur
         <ul class="uk-navbar-nav">
             <li>
                 <a href="#">Item</a>
-                <div class="uk-navbar-dropdown" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
+                <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; boundary-align: true; pos: bottom-justify;">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                         <li class="uk-active"><a href="#">Active</a></li>
                         <li><a href="#">Item</a></li>
@@ -648,7 +648,7 @@ To justify a dropdown, use the [Drop component](drop.md) and its position featur
             </li>
            <li>
                <a href="#">Item</a>
-               <div class="uk-navbar-dropdown" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
+               <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; boundary-align: true; pos: bottom-justify;">
                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
                        <div>
                            <ul class="uk-nav uk-navbar-dropdown-nav">
