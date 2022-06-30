@@ -23,12 +23,32 @@ A dropdown can be enabled by hovering and clicking the toggle. Just add the `mod
 ```example
 <div class="uk-inline">
     <button class="uk-button uk-button-default" type="button">Hover</button>
-    <div uk-dropdown>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div uk-dropdown>
+        <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+    </div>
 </div>
 
 <div class="uk-inline">
     <button class="uk-button uk-button-default" type="button">Click</button>
-    <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div uk-dropdown="mode: click">
+        <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+    </div>
 </div>
 ```
 
@@ -64,7 +84,7 @@ A dropdown can contain a nav from the [Nav component](nav.md). Just add the `.uk
 
 ## Grid in dropdown
 
-You can place a grid from the [Grid component](grid.md) inside a dropdown, which can hold a navigation or any other content. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically, whenever the dropdown no longer fits its container, just add the `.uk-dropdown-grid` class.
+You can place a grid from the [Grid component](grid.md) inside a dropdown. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically, whenever the dropdown no longer fits its container, just add the `.uk-dropdown-grid` class.
 
 ```html
 <div class="uk-width-large" uk-dropdown>
@@ -106,9 +126,52 @@ Use one of the classes from the [Width component](width.md) to adjust the dropdo
 
 ***
 
+## Large modifier
+
+Add the `.uk-dropdown-large` class for a dropdown with larger padding.
+
+
+```html
+<div class="uk-dropdown-large" uk-dropdown></div>
+```
+
+```example
+<div class="uk-inline">
+    <button class="uk-button uk-button-default" type="button">Large</button>
+    <div class="uk-dropdown-large" uk-dropdown>
+        <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+    </div>
+</div>
+```
+
+***
+
 ## Position
 
-Add one of the following options to the `uk-dropdown` attribute to adjust the dropdown's alignment.
+By default, the dropdown is positioned below the toggle. To change its position set the `pos` option to the `uk-dropdown` attribute. The first part of the value refers to the side where the dropdown is positioned while the second part defines its alignment to the toggle.
+
+| Position        | Description                                                                |
+| :-------------- | :------------------------------------------------------------------------- |
+| `top-left`      | Positions the dropdown above the toggle and aligns it to the left.             |
+| `top-center`    | Positions the dropdown above the toggle and aligns it to the center.           |
+| `top-right`     | Positions the dropdown above the toggle and aligns it in the right.            |
+| `bottom-left`   | Positions the dropdown below the toggle and aligns it to the left.             |
+| `bottom-center` | Positions the dropdown below the toggle and aligns it to the center.           |
+| `bottom-right`  | Positions the dropdown below the toggle and aligns it in the right.            |
+| `left-top`      | Positions the dropdown to the left of the toggle and aligns it to the top.     |
+| `left-center`   | Positions the dropdown to the left of the toggle and aligns it to the center.  |
+| `left-bottom`   | Positions the dropdown to the left of the toggle and aligns it to the bottom.  |
+| `right-top`     | Positions the dropdown to the right of the toggle and aligns it to the top.    |
+| `right-center`  | Positions the dropdown to the right of the toggle and aligns it to the center. |
+| `right-bottom`  | Positions the dropdown to the right of the toggle and aligns it to the bottom. |
 
 ```html
 <div uk-dropdown="pos: top-left"></div>
@@ -131,8 +194,8 @@ Add one of the following options to the `uk-dropdown` attribute to adjust the dr
 </div>
 
 <div class="uk-inline">
-    <button class="uk-button uk-button-default" type="button">Bottom Justify</button>
-    <div uk-dropdown="pos: bottom-justify">
+    <button class="uk-button uk-button-default" type="button">Bottom Center</button>
+    <div uk-dropdown="pos: bottom-center">
         <ul class="uk-nav uk-dropdown-nav">
             <li class="uk-active"><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
@@ -146,8 +209,8 @@ Add one of the following options to the `uk-dropdown` attribute to adjust the dr
 </div>
 
 <div class="uk-inline">
-    <button class="uk-button uk-button-default" type="button">Right Center</button>
-    <div uk-dropdown="pos: right-center">
+    <button class="uk-button uk-button-default" type="button">Right Top</button>
+    <div uk-dropdown="pos: right-top">
         <ul class="uk-nav uk-dropdown-nav">
             <li class="uk-active"><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
@@ -160,42 +223,25 @@ Add one of the following options to the `uk-dropdown` attribute to adjust the dr
     </div>
 </div>
 ```
-
-| Position         | Description                                                                       |
-|:-----------------|:----------------------------------------------------------------------------------|
-| `bottom-left`    | Aligns the dropdown to the bottom left.                                           |
-| `bottom-center`  | Aligns the dropdown to the bottom center.                                         |
-| `bottom-right`   | Aligns the dropdown to the bottom right.                                          |
-| `bottom-justify` | Aligns the dropdown to the bottom and justifies its width to the related element. |
-| `top-left`       | Aligns the dropdown to the top left.                                              |
-| `top-center`     | Aligns the dropdown to the top center.                                            |
-| `top-right`      | Aligns the dropdown to the top right.                                             |
-| `top-justify`    | Aligns the dropdown to the top and justifies its width to the related element.    |
-| `left-top`       | Aligns the dropdown to the left top.                                              |
-| `left-center`    | Aligns the dropdown to the left center.                                           |
-| `left-bottom`    | Aligns the dropdown to the left bottom.                                           |
-| `right-top`      | Aligns the dropdown to the right top.                                             |
-| `right-center`   | Aligns the dropdown to the right center.                                          |
-| `right-bottom`   | Aligns the dropdown to the right bottom.                                          |
 
 ***
 
 ## Boundary
 
-By default, the dropdown flips automatically when it exceeds the viewport's edge. If you want to flip it according to a container's boundary, just add the `boundary: .my-class` option to the `uk-dropdown` attribute, using a selector for the container. That way you can determine any parent element as the drop's boundary.
+By default, the dropdown automatically changes its positions if it exceeds the viewport or any other parent scrolling ancestor. It will flip its position to the other side to prevent it from covering the toggle and shift its alignment to fit into the viewport. To set a different boundary other than the scrolling ancestors, just add the `boundary: SELECTOR` option to the `uk-dropdown` attribute using a selector for the boundary.
 
 ```html
 <div class="my-class">
     <button type="button"></button>
-    <div uk-dropdown="boundary: .my-class"></div>
+    <div uk-dropdown="boundary: !.my-class"></div>
 </div>
 ```
 
 ```example
-<div class="boundary uk-panel uk-placeholder uk-width-2-3@s">
+<div class="boundary uk-panel uk-placeholder uk-height-medium">
 
-    <button class="uk-button uk-button-default uk-float-left" type="button">Hover</button>
-    <div uk-dropdown="boundary: .boundary">
+    <button class="uk-button uk-button-default uk-float-left" type="button">Bottom Right</button>
+    <div uk-dropdown="pos: bottom-right; boundary: !.boundary">
         <ul class="uk-nav uk-dropdown-nav">
             <li class="uk-active"><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
@@ -207,8 +253,8 @@ By default, the dropdown flips automatically when it exceeds the viewport's edge
         </ul>
     </div>
 
-    <button class="uk-button uk-button-default uk-float-right" type="button">Hover</button>
-    <div uk-dropdown="boundary: .boundary">
+    <button class="uk-button uk-button-default uk-float-right" type="button">Bottom Left</button>
+    <div uk-dropdown="pos: bottom-left; boundary: !.boundary">
         <ul class="uk-nav uk-dropdown-nav">
             <li class="uk-active"><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
@@ -225,22 +271,19 @@ By default, the dropdown flips automatically when it exceeds the viewport's edge
 
 ***
 
-### Boundary alignment
+## Shift and Flip
 
-You can also align the dropdown to its boundary. To do so, add the `boundary-align: true` option to the attribute.
+To disable automatic shifting and flipping, add the `shift: false` or `flip: false` option to the `uk-dropdown` attribute.
 
 ```html
-<div class="my-class">
-    <button type="button"></button>
-    <div uk-dropdown="boundary: .my-class; boundary-align: true"></div>
-</div>
+<div uk-dropdown="shift: false; flip: false"></div>
 ```
 
 ```example
-<div class="boundary-align uk-panel uk-placeholder">
+<div class="boundary uk-panel uk-placeholder uk-height-medium">
 
-    <button class="uk-button uk-button-default uk-float-left" type="button">Justify</button>
-    <div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+    <button class="uk-button uk-button-default uk-float-left" type="button">Bottom Right</button>
+    <div uk-dropdown="pos: bottom-right; boundary: !.boundary; shift: false; flip: false">
         <ul class="uk-nav uk-dropdown-nav">
             <li class="uk-active"><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
@@ -252,8 +295,8 @@ You can also align the dropdown to its boundary. To do so, add the `boundary-ali
         </ul>
     </div>
 
-    <button class="uk-button uk-button-default uk-float-right" type="button">Center</button>
-    <div uk-dropdown="pos: bottom-center; boundary: .boundary-align; boundary-align: true">
+    <button class="uk-button uk-button-default uk-float-right" type="button">Bottom Left</button>
+    <div uk-dropdown="pos: bottom-left; boundary: !.boundary; shift: false; flip: false">
         <ul class="uk-nav uk-dropdown-nav">
             <li class="uk-active"><a href="#">Active</a></li>
             <li><a href="#">Item</a></li>
@@ -263,6 +306,247 @@ You can also align the dropdown to its boundary. To do so, add the `boundary-ali
             <li class="uk-nav-divider"></li>
             <li><a href="#">Item</a></li>
         </ul>
+    </div>
+
+</div>
+```
+
+***
+
+## Display
+
+By default, the dropdown repositions on scrolling. To disable dynamic positioning, add `display: static` option to the `uk-dropdown` attribute. The dropdown will only be positioned once when opened.
+
+```html
+<div uk-dropdown="display: static"></div>
+```
+
+***
+
+## Target
+
+By default, the dropdown is aligned to its toggle. To position the dropdown to a different element, just add `target: SELECTOR` option to the `uk-dropdown` attribute. To change just the side where the dropdown is positioned or the alignment to another element, use `target-x: SELECTOR` or `target-y: SELECTOR`.
+
+```html
+<div class="my-class">
+    <button type="button"></button>
+    <div uk-dropdown="target: !.my-class"></div>
+</div>
+```
+
+```example
+<div class="target uk-panel uk-placeholder uk-height-medium">
+
+    <button class="uk-button uk-button-default uk-float-left" type="button">Bottom Left</button>
+    <div uk-dropdown="pos: bottom-left; target: !.target">
+        <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+    </div>
+
+    <button class="uk-button uk-button-default uk-float-right" type="button">Bottom Right</button>
+    <div uk-dropdown="pos: bottom-right; target: !.target">
+        <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+    </div>
+
+</div>
+```
+
+***
+
+## Inset
+
+By default, the dropdown is positioned outside the toggle. To change the position to the inside, add the `inset: true` option to the `uk-dropdown` attribute. This option should only be used if the `target` option is also set, the dropdown doesn't cover its toggle.
+
+```html
+<div uk-dropdown="target: .my-class; inset: true"></div>
+```
+
+```example
+<div class="target uk-panel uk-placeholder uk-height-large">
+
+    <button class="uk-button uk-button-default uk-float-left" type="button">Bottom Left</button>
+    <div uk-dropdown="pos: bottom-left; target: !.target; inset: true">
+        <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+    </div>
+
+    <button class="uk-button uk-button-default uk-float-right" type="button">Bottom Right</button>
+    <div uk-dropdown="pos: bottom-right; target: !.target; inset: true">
+        <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+    </div>
+
+</div>
+```
+
+***
+
+## Stretch
+
+To stretch the dropdown to fill the size of the viewport, add the `stretch: true` option to the `uk-dropdown` attribute. To only stretch to one axis, use `stretch: x` or `stretch: y`. If the `boundary` option is set, the dropdown stretches to the defined boundary.
+
+```html
+<button type="button"></button>
+<div uk-dropdown="boundary: .my-class; boundary-align: true"></div>
+```
+
+```example
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="#">Stretch to Navbar</a>
+                <div class="uk-navbar-dropdown" uk-dropdown="boundary: !.uk-navbar; stretch: x; flip: false">
+                    <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+```
+
+***
+
+## Animation
+
+Apply one or more animations to the dropdown by adding the `animation: uk-animation-*` option with one of the classes from the [Animation component](animation.md). You can also determine the animation's duration. Just add the `duration` option with a value in milliseconds. Set `animate-out: true` to also show an animation when closing the drop.
+
+```html
+<div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000"></div>
+```
+
+```example
+<button class="uk-button uk-button-default" type="button">Hover</button>
+<div uk-dropdown="animation: uk-animation-slide-top-small; animate-out: true">
+    <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+</div>
+```
+
+Alternatively, the Drop component has two additional animation types which are not covered by the Animation component. `slide-*` animations slide the dropdown and its content from a selected direction, while in the `reveal-*` animations, the content of the dropdown stays static and is revealed from a selected direction.
+
+| Animation       | Description                       |
+| :-------------- | :-------------------------------- |
+| `slide-top`     | Slides the dropdown from the top.     |
+| `slide-bottom`  | Slides the dropdown from the bottom.  |
+| `slide-left`    | Slides the dropdown from the left.    |
+| `slide-right`   | Slides the dropdown from the right.   |
+| `reveal-top`    | Reveals the dropdown from the top.    |
+| `reveal-bottom` | Reveals the dropdown from the bottom. |
+| `reveal-left`   | Reveals the dropdown from the left.   |
+| `reveal-right`  | Reveals the dropdown from the right.  |
+
+```html
+<div uk-dropdown="animation: slide-top; animate-out: true"></div>
+```
+
+```example
+<div class="uk-margin" uk-margin>
+
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Slide Top</button>
+        <div uk-dropdown="animation: slide-top; animate-out: true">
+            <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Reveal Top</button>
+        <div uk-dropdown="animation: reveal-top; animate-out: true">
+            <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Slide Left</button>
+        <div uk-dropdown="animation: slide-left; animate-out: true">
+            <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Reveal Left</button>
+        <div uk-dropdown="animation: reveal-left; animate-out: true">
+            <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+        </div>
     </div>
 
 </div>
@@ -272,7 +556,7 @@ You can also align the dropdown to its boundary. To do so, add the `boundary-ali
 
 ## Offset
 
-To define a custom offset between the dropdown container and the toggle, add the `offset` option with a value for the offset, measured in pixels.
+To define a custom offset between the dropdown and its toggle, add the `offset` option with a value in pixels.
 
 ```html
 <div uk-dropdown="offset: 80"></div>
@@ -282,39 +566,14 @@ To define a custom offset between the dropdown container and the toggle, add the
 <button class="uk-button uk-button-default" type="button">Hover</button>
 <div uk-dropdown="offset: 80">
     <ul class="uk-nav uk-dropdown-nav">
-        <li class="uk-active"><a href="#">Active</a></li>
-        <li><a href="#">Item</a></li>
-        <li class="uk-nav-header">Header</li>
-        <li><a href="#">Item</a></li>
-        <li><a href="#">Item</a></li>
-        <li class="uk-nav-divider"></li>
-        <li><a href="#">Item</a></li>
-    </ul>
-</div>
-```
-
-***
-
-## Animation
-
-Apply one or more animations to the dropdown by adding the `animation: uk-animation-*` option with one of the classes from the [Animation component](animation.md). You can also determine the animation's duration. Just add the `duration` option with your value.
-
-```html
-<div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000"></div>
-```
-
-```example
-<button class="uk-button uk-button-default" type="button">Hover</button>
-<div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
-    <ul class="uk-nav uk-dropdown-nav">
-        <li class="uk-active"><a href="#">Active</a></li>
-        <li><a href="#">Item</a></li>
-        <li class="uk-nav-header">Header</li>
-        <li><a href="#">Item</a></li>
-        <li><a href="#">Item</a></li>
-        <li class="uk-nav-divider"></li>
-        <li><a href="#">Item</a></li>
-    </ul>
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
 </div>
 ```
 
