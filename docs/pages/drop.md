@@ -25,9 +25,7 @@ To group the toggle and the dropdown, just wrap them with a container element an
 ```example
 <div class="uk-inline">
     <button class="uk-button uk-button-default" type="button">Hover, Click</button>
-    <div uk-drop>
-        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-    </div>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 </div>
 ```
 
@@ -48,16 +46,12 @@ By default, the drop is toggled on hover and on click. Set the `animation` optio
 ```example
 <div class="uk-inline">
     <button class="uk-button uk-button-default" type="button">Hover</button>
-    <div uk-drop="mode: hover">
-        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-    </div>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="mode: hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 </div>
 
 <div class="uk-inline">
     <button class="uk-button uk-button-default" type="button">Click</button>
-    <div uk-drop="mode: click">
-        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-    </div>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 </div>
 ```
 
@@ -77,15 +71,13 @@ Use one of the classes from the [Width component](width.md) to adjust the drop's
 
 ```example
 <button class="uk-button uk-button-default" type="button">Hover</button>
-<div class="uk-width-large" uk-drop>
-    <div class="uk-card uk-card-body uk-card-default">
-        <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </div>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </div>
+<div class="uk-card uk-card-body uk-card-default uk-width-large" uk-drop>
+    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
         </div>
     </div>
 </div>
@@ -120,23 +112,17 @@ By default, the drop is positioned below the toggle. To change its position set 
 ```example
 <div class="uk-inline">
     <button class="uk-button uk-button-default" type="button">Top Right</button>
-    <div uk-drop="pos: top-right">
-        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-    </div>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="pos: top-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 </div>
 
 <div class="uk-inline">
-    <button class="uk-button uk-button-default" type="button">Bottom Justify</button>
-    <div uk-drop="pos: bottom-justify">
-        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-    </div>
+    <button class="uk-button uk-button-default" type="button">Bottom Center</button>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="pos: bottom-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 </div>
 
 <div class="uk-inline">
-    <button class="uk-button uk-button-default" type="button">Right Center</button>
-    <div uk-drop="pos: right-center">
-        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-    </div>
+    <button class="uk-button uk-button-default" type="button">Right Top</button>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="pos: right-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 </div>
 ```
 
@@ -154,17 +140,13 @@ By default, the drop automatically changes its positions if it exceeds the viewp
 ```
 
 ```example
-<div class="boundary uk-panel uk-placeholder uk-width-2-3@s">
+<div class="boundary uk-panel uk-placeholder uk-height-medium">
 
-    <button class="uk-button uk-button-default uk-float-left" type="button">Hover</button>
-    <div uk-drop="boundary: .boundary">
-        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-    </div>
+    <button class="uk-button uk-button-default uk-float-left" type="button">Bottom Right</button>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="pos: bottom-right; boundary: !.boundary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 
-    <button class="uk-button uk-button-default uk-float-right" type="button">Hover</button>
-    <div uk-drop="boundary: .boundary">
-        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-    </div>
+    <button class="uk-button uk-button-default uk-float-right" type="button">Bottom Left</button>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="pos: bottom-left; boundary: !.boundary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 
 </div>
 ```
@@ -176,8 +158,19 @@ By default, the drop automatically changes its positions if it exceeds the viewp
 To disable automatic shifting and flipping, add the `shift: false` or `flip: false` option to the `uk-drop` attribute.
 
 ```html
-<button type="button"></button>
-<div uk-drop="boundary: !.my-class"></div>
+<div uk-drop="shift: false; flip: false"></div>
+```
+
+```example
+<div class="boundary uk-panel uk-placeholder uk-height-medium">
+
+    <button class="uk-button uk-button-default uk-float-left" type="button">Bottom Right</button>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="pos: bottom-right; boundary: !.boundary; shift: false; flip: false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+
+    <button class="uk-button uk-button-default uk-float-right" type="button">Bottom Left</button>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="pos: bottom-left; boundary: !.boundary; shift: false; flip: false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+
+</div>
 ```
 
 ***
@@ -187,8 +180,7 @@ To disable automatic shifting and flipping, add the `shift: false` or `flip: fal
 By default, the drop repositions on scrolling. To disable dynamic positioning, add `display: static` option to the `uk-drop` attribute. The drop will only be positioned once when opened.
 
 ```html
-<button type="button"></button>
-<div uk-drop="boundary: !.my-class"></div>
+<div uk-drop="display: static"></div>
 ```
 
 ***
@@ -200,22 +192,40 @@ By default, the drop is aligned to its toggle. To position the drop to a differe
 ```html
 <div class="my-class">
     <button type="button"></button>
-    <div uk-drop="boundary: .my-class; boundary-align: true"></div>
+    <div uk-drop="target: !.my-class"></div>
 </div>
 ```
 
 ```example
-<div class="boundary-align uk-panel uk-placeholder">
+<div class="target uk-panel uk-placeholder uk-height-medium">
 
-    <button class="uk-button uk-button-default uk-float-left" type="button">Justify</button>
-    <div uk-drop="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
-        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-    </div>
+    <button class="uk-button uk-button-default uk-float-left" type="button">Bottom Left</button>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="pos: bottom-left; target: !.target">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 
-    <button class="uk-button uk-button-default uk-float-right" type="button">Center</button>
-    <div uk-drop="pos: bottom-center; boundary: .boundary-align; boundary-align: true">
-        <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-    </div>
+    <button class="uk-button uk-button-default uk-float-right" type="button">Bottom Right</button>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="pos: bottom-right; target: !.target">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+
+</div>
+```
+
+***
+
+## Inset
+
+By default, the drop is positioned outside the toggle. To change the position to the inside, add the `inset: true` option to the `uk-drop` attribute. This option should only be used if the `target` option is also set, the drop doesn't cover its toggle.
+
+```html
+<div uk-drop="target: .my-class; inset: true"></div>
+```
+
+```example
+<div class="target uk-panel uk-placeholder uk-height-medium">
+
+    <button class="uk-button uk-button-default uk-float-left" type="button">Bottom Left</button>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="pos: bottom-left; target: !.target; inset: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+
+    <button class="uk-button uk-button-default uk-float-right" type="button">Bottom Right</button>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="pos: bottom-right; target: !.target; inset: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 
 </div>
 ```
@@ -231,15 +241,64 @@ To stretch the drop to fill the size of the viewport, add the `stretch: true` op
 <div uk-drop="boundary: .my-class; boundary-align: true"></div>
 ```
 
+```example
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="#">Stretch to Navbar</a>
+                <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+```
+
 ***
 
-## Inset
+## Animation
 
-By default, the drop is positioned outside the toggle. To change the position to the inside, add the `inset: true` option to the `uk-drop` attribute. This option should only be used if the `target` option is also set, the drop doesn't cover its toggle.
+Apply one or more animations to the dropdown by adding the `animation: uk-animation-*` option with one of the classes from the [Animation component](animation.md). You can also determine the animation's duration. Just add the `duration` option with a value in milliseconds. Set `animate-out: true` to also show an animation when closing the drop.
 
 ```html
-<button type="button"></button>
-<div uk-drop="boundary: .my-class; boundary-align: true"></div>
+<div uk-drop="animation: uk-animation-slide-top-small; duration: 1000"></div>
+```
+
+```example
+<button class="uk-button uk-button-default" type="button">Hover</button>
+<div class="uk-card uk-card-body uk-card-default" uk-drop="animation: uk-animation-slide-top-small; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+```
+
+```html
+<div uk-drop="animation: slide-top; animate-out: true"></div>
+```
+
+```example
+<div class="uk-margin" uk-margin>
+
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Slide Top</button>
+        <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: slide-top; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Reveal Top</button>
+        <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: reveal-top; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Slide Left</button>
+        <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: slide-left; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Reveal Left</button>
+        <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: reveal-left; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    </div>
+
+</div>
 ```
 
 ***
@@ -254,26 +313,7 @@ To define a custom offset between the drop and its toggle, add the `offset` opti
 
 ```example
 <button class="uk-button uk-button-default" type="button">Hover</button>
-<div uk-drop="offset: 80">
-    <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-</div>
-```
-
-***
-
-## Animation
-
-Apply one or more animations to the dropdown by adding the `animation: uk-animation-*` option with one of the classes from the [Animation component](animation.md). You can also determine the animation's duration. Just add the `duration` option with a value in milliseconds.
-
-```html
-<div uk-drop="animation: uk-animation-slide-top-small; duration: 1000"></div>
-```
-
-```example
-<button class="uk-button uk-button-default" type="button">Hover</button>
-<div uk-drop="animation: uk-animation-slide-top-small; duration: 1000">
-    <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-</div>
+<div class="uk-card uk-card-body uk-card-default" uk-drop="offset: 80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 ```
 
 ***
