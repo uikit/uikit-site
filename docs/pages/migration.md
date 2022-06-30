@@ -20,7 +20,7 @@ The [Nav component](nav) component in UIkit 3.15 now uses a JavaScript component
 </ul>
 ```
 
-The [Drop component](drop) and [Dropdown component](dropdown) component removes alignment `*-justify` from the `pos` option. Search for `pos: top-justify`, `pos: bottom-justify`, `pos: left-justify` and `pos: right-justify` and use the new  `stretch` option instead.
+The [Drop component](drop), [Dropdown component](dropdown) and [Navbar component](navbar) components remove alignment `*-justify` from the `pos` option. Search for `pos: top-justify`, `pos: bottom-justify`, `pos: left-justify` and `pos: right-justify` and use the new  `stretch` option instead.
 
 | Option                | Replace with                   |
 | --------------------- | ------------------------------ |
@@ -29,6 +29,31 @@ The [Drop component](drop) and [Dropdown component](dropdown) component removes 
 | `pos: left-justify`   | `pos: left-top; stretch: y`    |
 | `pos: right-justify`  | `pos: right-top; stretch: y`   |
 
+The `boundary-align` option is also removed. Search for `boundary: SELECTOR` in combination with `boundary-align: true` and use the new `target` option with the same selector from `boundary` instead.
+
+| Option                                     | Replace with       |
+| ------------------------------------------ | ------------------ |
+| `boundary: SELECTOR; boundary-align: true` | `target: SELECTOR` |
+
+The `flip` option is split into two options `flip` and `shift`. Depending on the position direction update the markup as follows.
+
+| Option        | Replace with                |
+| ------------- | --------------------------- |
+| `flip: false` | `flip: false; shift: false` |
+
+If the Position is `top-*` and `bottom-*`:
+
+| Option    | Replace with   |
+| --------- | -------------- |
+| `flip: x` | `flip: false`  |
+| `flip: y` | `shift: false` |
+
+If the Position is `left-*` and `right-*`:
+
+| Option    | Replace with   |
+| --------- | -------------- |
+| `flip: x` | `shift: false` |
+| `flip: y` | `flip: false`  |
 
 The following Less variables are also renamed. Just find and replace these Less variables if you are using a custom Less theme.
 
