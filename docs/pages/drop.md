@@ -59,7 +59,7 @@ By default, the drop is toggled on hover and on click. Set the `animation` optio
 
 ## Grid in drop
 
-You can place a grid from the [Grid component](grid.md) inside a drop. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically, whenever the drop no longer fits its container, just add the `.uk-drop-grid` class.
+You can place a grid from the [Grid component](grid.md) inside a drop. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically whenever the drop no longer fits its container, just add the `.uk-drop-grid` class.
 
 ```html
 <div class="uk-width-large" uk-drop>
@@ -87,7 +87,7 @@ Use one of the classes from the [Width component](width.md) to adjust the drop's
 
 ## Position
 
-By default, the drop is positioned below the toggle. To change its position set the `pos` option to the `uk-drop` attribute. The first part of the value refers to the side where the drop is positioned while the second part defines its alignment to the toggle.
+By default, the drop is positioned below the toggle. To change its position, set the `pos` option to the `uk-drop` attribute. The first part of the value refers to the side where the drop is positioned, while the second part defines its alignment to the toggle.
 
 | Position        | Description                                                                |
 | :-------------- | :------------------------------------------------------------------------- |
@@ -129,7 +129,7 @@ By default, the drop is positioned below the toggle. To change its position set 
 
 ## Boundary
 
-By default, the drop automatically changes its positions if it exceeds the viewport or any other parent scrolling ancestor. It will flip its position to the other side to prevent it from covering the toggle and shift its alignment to fit into the viewport. To set a different boundary other than the scrolling ancestors, just add the `boundary: SELECTOR` option to the `uk-drop` attribute using a selector for the boundary.
+By default, the drop automatically changes its positions if it exceeds the viewport or any other parent scrolling ancestor. It will flip its position to the other side to prevent it from covering the toggle and shift its alignment to fit into the viewport. To set a different boundary other than the scrolling ancestor, just add the `boundary: SELECTOR` option to the `uk-drop` attribute using a selector for the boundary.
 
 ```html
 <div class="my-class">
@@ -152,7 +152,7 @@ By default, the drop automatically changes its positions if it exceeds the viewp
 
 ***
 
-## Shift and Flip
+## Shift and flip
 
 To disable automatic shifting and flipping, add the `shift: false` or `flip: false` option to the `uk-drop` attribute.
 
@@ -211,7 +211,7 @@ By default, the drop is aligned to its toggle. To position the drop to a differe
 
 ## Inset
 
-By default, the drop is positioned outside the toggle. To change the position to the inside, add the `inset: true` option to the `uk-drop` attribute. This option should only be used if the `target` option is also set, the drop doesn't cover its toggle.
+By default, the drop is positioned outside the toggle. To change the position to the inside, add the `inset: true` option to the `uk-drop` attribute. This option should only be used if the `target` option is also set so the drop doesn't cover its toggle.
 
 ```html
 <div uk-drop="target: .my-class; inset: true"></div>
@@ -338,17 +338,17 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `toggle`        | CSS selector          | `- *`               | CSS selector for the element to be used as toggle. By default, the preceding element.                    |
 | `pos`           | String                | `bottom-left`       | Drop position.                                                                                           |
 | `stretch`       | Boolean, `x`, `y`     | `true`              | Stretch drop on both (true) or given axis.                                                               |
-| `mode`          | click, hover          | click, hover        | Comma-separated list of drop trigger behaviour modes.                                                    |
+| `mode`          | click, hover          | click, hover        | Comma-separated list of drop trigger behavior modes.                                                     |
 | `delay-show`    | Number                | `0`                 | Delay time in hover mode before a drop is shown in ms.                                                   |
-| `delay-hide`    | Number                | `800`               | Delay time in hover mode before a drop is hidden in ms. mode.                                            |
+| `delay-hide`    | Number                | `800`               | Delay time in hover mode before a drop is hidden in ms.                                                  |
 | `display`       | `dynamic`, `static`   | `dynamic`           | Disable dynamic positioning while scrolling by setting this option to `static`.                          |
 | `boundary`      | CSS selector          | `false`             | The area the drop can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
-| `target`        | Boolean, CSS selector | `false`             | The element the drop is positioned to. (`true` for window)                                               |
-| `target-x`      | Boolean, CSS selector | `false`             | The element's X axis the drop is positioned to. (`true` for window)                                      |
-| `target-y`      | Boolean, CSS selector | `false`             | The element's Y axis the drop is positioned to. (`true` for window)                                      |
+| `target`        | Boolean, CSS selector | `false`             | The element the drop is positioned to (`true` for window).                                               |
+| `target-x`      | Boolean, CSS selector | `false`             | The element's X axis the drop is positioned to (`true` for window).                                      |
+| `target-y`      | Boolean, CSS selector | `false`             | The element's Y axis the drop is positioned to (`true` for window).                                      |
 | `inset`         | Boolean               | `false`             | Position inside its target.                                                                              |
-| `flip`          | Boolean               | `true`              | Flips the drop along the main axis if it overflows the boundary.                                         |
-| `shift`         | Boolean               | `true`              | Shifts the drop along the cross axis if it overflows the boundary.                                       |
+| `flip`          | Boolean               | `true`              | Flip the drop along the main axis if it overflows the boundary.                                          |
+| `shift`         | Boolean               | `true`              | Shift the drop along the cross axis if it overflows the boundary.                                        |
 | `offset`        | Number                | `0`                 | The drop offset.                                                                                         |
 | `animation`     | String                | `uk-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                  |
 | `animation-out` | Boolean               | `false`             | Use animation when closing the drop.                                                                     |
@@ -399,7 +399,7 @@ The following methods are available for the component:
 UIkit.drop(element).show();
 ```
 
-Shows the Drop.
+Shows the drop.
 
 #### Hide
 
@@ -407,8 +407,8 @@ Shows the Drop.
 UIkit.drop(element).hide(delay);
 ```
 
-Hides the Drop.
+Hides the drop.
 
 | Name    | Type    | Default | Description            |
 | :------ | :------ | :------ | :--------------------- |
-| `delay` | Boolean | true    | Delay hiding the Drop. |
+| `delay` | Boolean | true    | Delay hiding the drop. |

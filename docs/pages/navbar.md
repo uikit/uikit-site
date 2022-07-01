@@ -54,7 +54,7 @@ The Navbar component consists of a navbar container, the navbar itself and one o
 
 ## Multiple navigations
 
-You can place more than one navigation inside a navbar container. That way you can have a left aligned, a centered and a right aligned navigation inside the same navbar.
+You can place more than one navigation inside a navbar container. That way you can have a left-aligned, a centered and a right-aligned navigation inside the same navbar.
 
 ```html
 <nav class="uk-navbar-container" uk-navbar>
@@ -145,7 +145,7 @@ A parent item inside the navbar can be enabled by either hovering or clicking th
 
 ## Transparent modifier
 
-When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just add the `.uk-navbar-transparent` class to the `<nav>` element. If necessary, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to adjust the navbar's color.
+When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just add the `.uk-navbar-transparent` class to the `<nav>` element. If necessary, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to adjust the navbar color.
 
 ```html
 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>...</nav>
@@ -244,7 +244,7 @@ To define a subtitle, create a `<div>` element inside an item's `<a>` element. A
 
 ## Content item
 
-You can also add custom content to the navbar, like text, icons, buttons or forms. Add the `.uk-navbar-item` class to a `<div>` element that serves as a container for your content
+You can also add custom content to the navbar, like text, icons, buttons or forms. Add the `.uk-navbar-item` class to a `<div>` element that serves as a container for your content.
 
 ```html
 <div class="uk-navbar-container" uk-navbar>
@@ -339,7 +339,7 @@ You can create a split menu with a centered logo. Just add the `uk-navbar-center
 
 ## Toggle item
 
-Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to an `<a>` or `<div>` element to create an icon as a toggle. By default, there is no JavaScript attached to the toggle. As an example, you can add an off-canvas navigation from the [Off-canvas component](offcanvas.md) or a modal from the [Modal component](modal.md).
+Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to an `<a>` or `<div>` element to create an icon as a toggle. By default, there is no JavaScript attached to the toggle. As an example, you can add an offcanvas navigation from the [Offcanvas component](offcanvas.md) or a modal from the [Modal component](modal.md).
 
 ```html
 <div class="uk-navbar-container" uk-navbar>
@@ -369,7 +369,7 @@ Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to a
 
 ## Dropdowns
 
-A navbar can contain a dropdown from the [Dropdown component](dropdown.md). Just add the `.uk-navbar-dropdown` modifier to the dropdown, so it fits perfectly into the navbar's styling. Add the `.uk-navbar-dropdown-nav` class to navs inside the dropdown.
+A navbar can contain a dropdown from the [Dropdown component](dropdown.md). Just add the `.uk-navbar-dropdown` modifier to the dropdown so it fits perfectly into the navbar styling. Add the `.uk-navbar-dropdown-nav` class to navs inside the dropdown.
 
 ```html
 <ul class="uk-navbar-nav">
@@ -432,7 +432,7 @@ A navbar can contain a dropdown from the [Dropdown component](dropdown.md). Just
 
 ### Multiple columns
 
-The [Dropdown component](dropdown.md) allows you to arrange the dropdown content in columns. To accommodate up to five columns, you also need to add one of the following classes. Columns will stack, if they no longer fit into the container.
+The [Dropdown component](dropdown.md) allows you to arrange the dropdown content in columns. To accommodate up to five columns, you also need to add one of the following classes. Columns will stack if they no longer fit into the container.
 
 | Class                         | Description                                              |
 | :---------------------------- | :------------------------------------------------------- |
@@ -497,7 +497,7 @@ The [Dropdown component](dropdown.md) allows you to arrange the dropdown content
 
 ### Alignment
 
-By default, the dropdowns are positioned below the navbar item and are aligned to the left. To change the alignment set the `align` option to the `uk-navbar` attribute.
+By default, the dropdowns are positioned below the navbar item and are aligned to the left. To change the alignment, set the `align` option to the `uk-navbar` attribute.
 
 | Position | Description                         |
 | :------- | :---------------------------------- |
@@ -539,7 +539,7 @@ By default, the dropdowns are positioned below the navbar item and are aligned t
 
 ### Target
 
-By default, the dropdowns are aligned their navbar item. To position the dropdown to a different element, just add `target: SELECTOR` option to the `uk-navbar` attribute.
+By default, the dropdowns are aligned to their navbar item. To position the dropdown to a different element, just add `target: SELECTOR` option to the `uk-navbar` attribute.
 
 ```html
 <nav class="uk-navbar-container" uk-navbar="target: !.uk-navbar">...</nav>
@@ -663,7 +663,7 @@ By default, the dropdowns are aligned their navbar item. To position the dropdow
 
 ### Stretch
 
-To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` option. In the following example it is aligned to the boundary of the parent navbar.
+To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` option. In the following example the dropdown is aligned to the boundary of the parent navbar.
 
 ```html
 <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">...</div>
@@ -822,7 +822,7 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
 
 For a basic sticky navbar, wrap the navbar inside a container with the `uk-sticky` attribute from the [Sticky component](sticky.md).
 
-The navbar itself has a modifier class `uk-navbar-sticky` that ensures an optimized styling for the sticky state (for example an additional box shadow). To let the sticky component dynamically add and remove that class, set `cls-active: uk-navbar-sticky`. To ensure that the class is added to the navbar container, set `sel-target: .uk-navbar-container`.
+The navbar itself has a modifier class `uk-navbar-sticky` that ensures an optimized styling for the sticky state (for example, an additional box shadow). To let the sticky component dynamically add and remove that class, set `cls-active: uk-navbar-sticky`. To ensure that the class is added to the navbar container, set `sel-target: .uk-navbar-container`.
 
 **Note** You can view more examples in the tests for the [Sticky Navbar](../assets/uikit/tests/sticky-navbar.html).
 
@@ -857,7 +857,7 @@ The navbar itself has a modifier class `uk-navbar-sticky` that ensures an optimi
 </div>
 ```
 
-Instead of using a Dropdown, you can show a Dropbar, which means that the subnavigation is displayed in full width below the navbar. Simply set `dropbar: true` inside the `uk-navbar` attribute.
+Instead of using a Dropdown, you can show a Dropbar, which means that the subnavigation is displayed in a full width below the navbar. Simply set `dropbar: true` inside the `uk-navbar` attribute.
 
 ```html
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
@@ -892,11 +892,11 @@ Instead of using a Dropdown, you can show a Dropbar, which means that the subnav
 
 ***
 
-### Transparent Sticky Navbar
+### Transparent sticky navbar
 
 When you use a [transparent navbar](navbar.md#transparent-modifier), your markup contains the `.uk-navbar-transparent` class together with `.uk-light` or `.uk-dark`. When the navbar is sticky, it is usually required to remove these classes and add them when the navbar returns to the non-sticky state. To do that, set `cls-inactive: uk-navbar-transparent uk-light`.
 
-By default, the immediate toggling of classes does not look ideal. Instead, we can set `start: 200` to let the navbar disappear and then re-appear when the user has scrolled 200px past the navbar. In that case we can also define to have the navbar slide in with an animation, just set `animation: uk-animation-slide-top`.
+By default, the immediate toggling of classes does not look ideal. Instead, we can set `start: 200` to let the navbar disappear and then re-appear when the user has scrolled 200px past the navbar. In that case you can also allow the navbar to slide in with an animation. Just set `animation: uk-animation-slide-top`.
 
 ```html
 <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light">
@@ -958,14 +958,14 @@ Any of these options can be applied to the component attribute. Separate multipl
 | :-------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
 | `align`         | String                | `left`              | Dropdown alignment: `left`, `right`, `center`                                                                |
 | `stretch`       | Boolean, `x`, `y`     | `true`              | Stretch dropdown on both (true) or given axis.                                                               |
-| `mode`          | click, hover          | click, hover        | Comma-separated list of dropdown trigger behaviour modes.                                                    |
+| `mode`          | click, hover          | click, hover        | Comma-separated list of dropdown trigger behavior modes.                                                     |
 | `delay-show`    | Number                | `0`                 | Delay time in hover mode before a dropdown is shown in ms.                                                   |
-| `delay-hide`    | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms. mode.                                            |
+| `delay-hide`    | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
 | `display`       | `dynamic`, `static`   | `dynamic`           | Disable dynamic positioning while scrolling by setting this option to `static`.                              |
 | `boundary`      | CSS selector          | `true`              | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
-| `target`        | Boolean, CSS selector | `false`             | The element the dropdown is positioned to. (`true` for window)                                               |
-| `target-x`      | Boolean, CSS selector | `false`             | The element's X axis the dropdown is positioned to. (`true` for window)                                      |
-| `target-y`      | Boolean, CSS selector | `false`             | The element's Y axis the dropdown is positioned to. (`true` for window)                                      |
+| `target`        | Boolean, CSS selector | `false`             | The element the dropdown is positioned to (`true` for window).                                               |
+| `target-x`      | Boolean, CSS selector | `false`             | The element's X axis the dropdown is positioned to (`true` for window).                                      |
+| `target-y`      | Boolean, CSS selector | `false`             | The element's Y axis the dropdown is positioned to (`true` for window).                                      |
 | `inset`         | Boolean               | `false`             | Position inside its target.                                                                                  |
 | `flip`          | Boolean               | `false`             | Flips the dropdown along the main axis if it overflows the boundary.                                         |
 | `shift`         | Boolean               | `true`              | Shifts the dropdown along the cross axis if it overflows the boundary.                                       |

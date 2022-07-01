@@ -4,7 +4,7 @@
 
 ## Usage
 
-Basically, a dropdown is a specific case of the [drop](drop.md) that provides its own styling. Any content, like a button, can toggle a dropdown. Just add the `uk-dropdown` attribute to a block element following the toggle.
+A dropdown is an example of the [drop](drop.md) that provides its own styling. Any content, like a button, can toggle a dropdown. Just add the `uk-dropdown` attribute to a block element following the toggle.
 
 ```html
 <button type="button"></button>
@@ -84,7 +84,7 @@ A dropdown can contain a nav from the [Nav component](nav.md). Just add the `.uk
 
 ## Grid in dropdown
 
-You can place a grid from the [Grid component](grid.md) inside a dropdown. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically, whenever the dropdown no longer fits its container, just add the `.uk-dropdown-grid` class.
+You can place a grid from the [Grid component](grid.md) inside a dropdown. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically whenever the dropdown no longer fits its container, just add the `.uk-dropdown-grid` class.
 
 ```html
 <div class="uk-width-large" uk-dropdown>
@@ -156,7 +156,7 @@ Add the `.uk-dropdown-large` class for a dropdown with larger padding.
 
 ## Position
 
-By default, the dropdown is positioned below the toggle. To change its position set the `pos` option to the `uk-dropdown` attribute. The first part of the value refers to the side where the dropdown is positioned while the second part defines its alignment to the toggle.
+By default, the dropdown is positioned below the toggle. To change its position, set the `pos` option to the `uk-dropdown` attribute. The first part of the value refers to the side where the dropdown is positioned, while the second part defines its alignment to the toggle.
 
 | Position        | Description                                                                    |
 | :-------------- | :----------------------------------------------------------------------------- |
@@ -370,7 +370,7 @@ By default, the dropdown is aligned to its toggle. To position the dropdown to a
 
 ## Inset
 
-By default, the dropdown is positioned outside the toggle. To change the position to the inside, add the `inset: true` option to the `uk-dropdown` attribute. This option should only be used if the `target` option is also set, the dropdown doesn't cover its toggle.
+By default, the dropdown is positioned outside the toggle. To change the position to the inside, add the `inset: true` option to the `uk-dropdown` attribute. This option should only be used if the `target` option is also set so the dropdown doesn't cover its toggle.
 
 ```html
 <div uk-dropdown="target: .my-class; inset: true"></div>
@@ -587,23 +587,24 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `toggle`        | CSS selector          | `- *`               | CSS selector for the element to be used as toggle. By default, the preceding element.                        |
 | `pos`           | String                | `bottom-left`       | Drop position.                                                                                               |
 | `stretch`       | Boolean, `x`, `y`     | `true`              | Stretch dropdown on both (true) or given axis.                                                               |
-| `mode`          | click, hover          | click, hover        | Comma-separated list of dropdown trigger behaviour modes.                                                    |
+| `mode`          | click, hover          | click, hover        | Comma-separated list of dropdown trigger behavior modes.                                                     |
 | `delay-show`    | Number                | `0`                 | Delay time in hover mode before a dropdown is shown in ms.                                                   |
-| `delay-hide`    | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms. mode.                                            |
+| `delay-hide`    | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
 | `display`       | `dynamic`, `static`   | `dynamic`           | Disable dynamic positioning while scrolling by setting this option to `static`.                              |
 | `boundary`      | CSS selector          | `false`             | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
-| `target`        | Boolean, CSS selector | `false`             | The element the dropdown is positioned to. (`true` for window)                                               |
-| `target-x`      | Boolean, CSS selector | `false`             | The element's X axis the dropdown is positioned to. (`true` for window)                                      |
-| `target-y`      | Boolean, CSS selector | `false`             | The element's Y axis the dropdown is positioned to. (`true` for window)                                      |
+| `target`        | Boolean, CSS selector | `false`             | The element the dropdown is positioned to (`true` for window).                                               |
+| `target-x`      | Boolean, CSS selector | `false`             | The element's X axis the dropdown is positioned to (`true` for window).                                      |
+| `target-y`      | Boolean, CSS selector | `false`             | The element's Y axis the dropdown is positioned to (`true` for window).                                      |
 | `inset`         | Boolean               | `false`             | Position inside its target.                                                                                  |
-| `flip`          | Boolean               | `true`              | Flips the dropdown along the main axis if it overflows the boundary.                                         |
-| `shift`         | Boolean               | `true`              | Shifts the dropdown along the cross axis if it overflows the boundary.                                       |
+| `flip`          | Boolean               | `true`              | Flip the dropdown along the main axis if it overflows the boundary.                                          |
+| `shift`         | Boolean               | `true`              | Shift the dropdown along the cross axis if it overflows the boundary.                                        |
 | `offset`        | Number                | `0`                 | The dropdown offset.                                                                                         |
 | `animation`     | String                | `uk-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                      |
 | `animation-out` | Boolean               | `false`             | Use animation when closing the drop.                                                                         |
 | `bg-scroll`     | Boolean               | `true`              | Allow background scrolling while dropdown is opened.                                                         |
 | `duration`      | Number                | `200`               | The animation duration.                                                                                      |
 | `container`     | Boolean               | `false`             | Define a target container via a selector to specify where the dropdown should be appended in the DOM.        |
+
 ***
 
 ## JavaScript
@@ -641,7 +642,7 @@ The following methods are available for the component:
 UIkit.dropdown(element).show();
 ```
 
-Shows the Dropdown.
+Shows the dropdown.
 
 #### Hide
 
@@ -649,7 +650,7 @@ Shows the Dropdown.
 UIkit.dropdown(element).hide(delay);
 ```
 
-Hides the Dropdown.
+Hides the dropdown.
 
 | Name    | Type    | Default | Description                |
 | :------ | :------ | :------ | :------------------------- |
