@@ -77,17 +77,17 @@ Add the `.uk-parent` class to an item to turn it into a parent. Add the `.uk-nav
 
 ## Accordion
 
-By default, child menu items are always visible. To apply an accordion effect, just add the `uk-nav` attribute to the main `<ul>`. Add the `.uk-nav-parent-icon` class to apply icons, indicating parent items.
+By default, child menu items are always visible. To apply an accordion effect, just add the `uk-nav` attribute to the main `<ul>`.
 
 **Note** The attribute automatically sets the `.uk-nav` class, so you don't have to apply it manually.
 
 ```html
-<ul class="uk-nav-parent-icon" uk-nav>...</ul>
+<ul uk-nav>...</ul>
 ```
 
 ```example
 <div class="uk-width-1-2@s uk-width-2-5@m">
-    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+    <ul class="uk-nav-default" uk-nav>
         <li class="uk-active"><a href="#">Active</a></li>
         <li class="uk-parent">
             <a href="#">Parent</a>
@@ -115,20 +115,25 @@ By default, child menu items are always visible. To apply an accordion effect, j
 
 ***
 
-### Multiple open subnavs
+### Parent icon
 
-When clicking on a parent item, an open one will close, allowing only one open nested list at a time. To allow multiple open subnavs, just add the `multiple: true` option to the attribute.
+To create a parent icon, just add the `uk-nav-parent-icon` attribute to a `<span>` element.
 
 ```html
-<ul class="uk-nav-parent-icon" uk-nav="multiple: true">...</ul>
+<ul uk-nav>
+    <li>
+        <a href="">Parent <span uk-nav-parent-icon></span></a>
+        ...
+    </li>
+</ul>
 ```
 
 ```example
 <div class="uk-width-1-2@s uk-width-2-5@m">
-    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true">
+    <ul class="uk-nav-default" uk-nav>
         <li class="uk-active"><a href="#">Active</a></li>
         <li class="uk-parent">
-            <a href="#">Parent</a>
+            <a href="#">Parent <span uk-nav-parent-icon></span></a>
             <ul class="uk-nav-sub">
                 <li><a href="#">Sub item</a></li>
                 <li>
@@ -141,7 +146,45 @@ When clicking on a parent item, an open one will close, allowing only one open n
             </ul>
         </li>
         <li class="uk-parent">
-            <a href="#">Parent</a>
+            <a href="#">Parent <span uk-nav-parent-icon></span></a>
+            <ul class="uk-nav-sub">
+                <li><a href="#">Sub item</a></li>
+                <li><a href="#">Sub item</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+```
+
+***
+
+### Multiple open subnavs
+
+When clicking on a parent item, an open one will close, allowing only one open nested list at a time. To allow multiple open subnavs, just add the `multiple: true` option to the attribute.
+
+```html
+<ul uk-nav="multiple: true">...</ul>
+```
+
+```example
+<div class="uk-width-1-2@s uk-width-2-5@m">
+    <ul class="uk-nav-default" uk-nav="multiple: true">
+        <li class="uk-active"><a href="#">Active</a></li>
+        <li class="uk-parent">
+            <a href="#">Parent <span uk-nav-parent-icon></span></a>
+            <ul class="uk-nav-sub">
+                <li><a href="#">Sub item</a></li>
+                <li>
+                    <a href="#">Sub item</a>
+                    <ul>
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="uk-parent">
+            <a href="#">Parent <span uk-nav-parent-icon></span></a>
             <ul class="uk-nav-sub">
                 <li><a href="#">Sub item</a></li>
                 <li><a href="#">Sub item</a></li>
@@ -182,6 +225,36 @@ Add one of the following classes to a list item to create a header or a divider 
 
 ***
 
+## Subtitle
+
+Add the `.uk-nav-subtitle` class to a `div` element to create an item subtitled.
+
+```html
+<ul class="uk-nav">
+    <li>
+        <a href="">
+            <div>
+                Item
+                <div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div>
+            </div>
+        </a>
+    </li>
+</ul>
+```
+
+```example
+<div class="uk-width-1-2@s uk-width-2-5@m">
+    <ul class="uk-nav uk-nav-default">
+        <li class="uk-active"><a href="#"><div>Active<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
+        <li><a href="#"><div>Item<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
+        <li><a href="#"><div>Item<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
+        <li><a href="#"><div>Item<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
+    </ul>
+</div>
+```
+
+***
+
 ## Default modifier
 
 Add the `.uk-nav-default` class to give the nav its default style. You can place the nav inside cards or anywhere else in your content.
@@ -192,17 +265,17 @@ Add the `.uk-nav-default` class to give the nav its default style. You can place
 
 ```example
 <div class="uk-card uk-card-default uk-card-body uk-width-1-2@s">
-    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+    <ul class="uk-nav-default" uk-nav>
         <li class="uk-active"><a href="#">Active</a></li>
         <li class="uk-parent">
-            <a href="#">Parent</a>
+            <a href="#">Parent <span uk-nav-parent-icon></span></a>
             <ul class="uk-nav-sub">
                 <li><a href="#">Sub item</a></li>
                 <li><a href="#">Sub item</a></li>
             </ul>
         </li>
         <li class="uk-parent">
-            <a href="#">Parent</a>
+            <a href="#">Parent <span uk-nav-parent-icon></span></a>
             <ul class="uk-nav-sub">
                 <li><a href="#">Sub item</a></li>
                 <li><a href="#">Sub item</a></li>
@@ -229,17 +302,17 @@ Add the `.uk-nav-primary` class to give the nav a more distinct styling, for exa
 
 ```example
 <div class="uk-width-1-2@s">
-    <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
+    <ul class="uk-nav-primary" uk-nav>
         <li class="uk-active"><a href="#">Active</a></li>
         <li class="uk-parent">
-            <a href="#">Parent</a>
+            <a href="#">Parent <span uk-nav-parent-icon></span></a>
             <ul class="uk-nav-sub">
                 <li><a href="#">Sub item</a></li>
                 <li><a href="#">Sub item</a></li>
             </ul>
         </li>
         <li class="uk-parent">
-            <a href="#">Parent</a>
+            <a href="#">Parent <span uk-nav-parent-icon></span></a>
             <ul class="uk-nav-sub">
                 <li><a href="#">Sub item</a></li>
                 <li><a href="#">Sub item</a></li>
@@ -262,22 +335,11 @@ Add the `.uk-nav-secondary` class to have an extra style if the nav has subtitle
 
 ```example
 <div class="uk-width-1-2@s">
-    <ul class="uk-nav-secondary uk-nav-parent-icon" uk-nav>
-        <li class="uk-active"><a href="#"><div>Active<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur.</div></div></a></li>
-        <li class="uk-parent">
-            <a href="#"><div>Parent<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur.</div></div></a>
-            <ul class="uk-nav-sub">
-                <li><a href="#">Sub item</a></li>
-                <li><a href="#">Sub item</a></li>
-            </ul>
-        </li>
-        <li class="uk-parent">
-            <a href="#"><div>Parent<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur.</div></div></a>
-            <ul class="uk-nav-sub">
-                <li class="uk-active"><a href="#">Active</a></li>
-                <li><a href="#">Sub item</a></li>
-            </ul>
-        </li>
+    <ul class="uk-nav uk-nav-secondary">
+        <li class="uk-active"><a href="#"><div>Active<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
+        <li><a href="#"><div>Item<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
+        <li><a href="#"><div>Item<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
+        <li><a href="#"><div>Item<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div></div></a></li>
     </ul>
 </div>
 ```
@@ -286,7 +348,7 @@ Add the `.uk-nav-secondary` class to have an extra style if the nav has subtitle
 
 ## Center modifier
 
-Add the `.uk-nav-center` class to center nav items. This can be combined with the default, primary and secondary style modifiers.
+Add the `.uk-nav-center` class to center nav items. This can be combined with the default and primary style modifiers.
 
 ```html
 <ul class="uk-nav uk-nav-default uk-nav-center">...</ul>
