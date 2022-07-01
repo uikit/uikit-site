@@ -153,7 +153,7 @@ When clicking on a parent item, an open one will close, allowing only one open n
 
 ***
 
-## Header & divider
+## Header and divider
 
 Add one of the following classes to a list item to create a header or a divider between items.
 
@@ -252,9 +252,41 @@ Add the `.uk-nav-primary` class to give the nav a more distinct styling, for exa
 
 ***
 
+## Secondary modifier
+
+Add the `.uk-nav-secondary` class to have an extra style if the nav has subtitles.
+
+```html
+<ul class="uk-nav uk-nav-secondary">...</ul>
+```
+
+```example
+<div class="uk-width-1-2@s">
+    <ul class="uk-nav-secondary uk-nav-parent-icon" uk-nav>
+        <li class="uk-active"><a href="#"><div>Active<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur.</div></div></a></li>
+        <li class="uk-parent">
+            <a href="#"><div>Parent<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur.</div></div></a>
+            <ul class="uk-nav-sub">
+                <li><a href="#">Sub item</a></li>
+                <li><a href="#">Sub item</a></li>
+            </ul>
+        </li>
+        <li class="uk-parent">
+            <a href="#"><div>Parent<div class="uk-nav-subtitle">Subtitle lorem ipsum dolor sit amet, consectetur.</div></div></a>
+            <ul class="uk-nav-sub">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Sub item</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+```
+
+***
+
 ## Center modifier
 
-Add the `.uk-nav-center` class to center nav items. This can be combined with the default and primary style modifiers.
+Add the `.uk-nav-center` class to center nav items. This can be combined with the default, primary and secondary style modifiers.
 
 ```html
 <ul class="uk-nav uk-nav-default uk-nav-center">...</ul>
@@ -274,7 +306,7 @@ Add the `.uk-nav-center` class to center nav items. This can be combined with th
 
 ## Divider modifier
 
-Add the `.uk-nav-divider` class to separate nav items with lines. This can be combined with the default and primary style modifiers.
+Add the `.uk-nav-divider` class to separate nav items with lines. This can be combined with the default, primary and secondary style modifiers.
 
 ```html
 <ul class="uk-nav uk-nav-default uk-nav-divider">...</ul>
@@ -356,9 +388,9 @@ Add the `.uk-navbar-dropdown-nav` class to place the nav inside a navbar dropdow
 
 ***
 
-## Nav in Off-canvas
+## Nav in offcanvas
 
-A nav can be used inside an off-canvas from the [Off-canvas component](offcanvas.md). No modifier class needs to be added.
+A nav can be used inside an offcanvas from the [Offcanvas component](offcanvas.md). No modifier class needs to be added.
 
 ```example
 <a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle>Open</a>
