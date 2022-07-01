@@ -337,7 +337,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | :-------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------------------- |
 | `toggle`        | CSS selector          | `- *`               | CSS selector for the element to be used as toggle. By default, the preceding element.                    |
 | `pos`           | String                | `bottom-left`       | Drop position.                                                                                           |
-| `stretch`       | false, true, `x`, `y` | `true`              | Stretch drop on both (true) or given axis.                                                               |
+| `stretch`       | Boolean, `x`, `y`     | `true`              | Stretch drop on both (true) or given axis.                                                               |
 | `mode`          | click, hover          | click, hover        | Comma-separated list of drop trigger behaviour modes.                                                    |
 | `delay-show`    | Number                | `0`                 | Delay time in hover mode before a drop is shown in ms.                                                   |
 | `delay-hide`    | Number                | `800`               | Delay time in hover mode before a drop is hidden in ms. mode.                                            |

@@ -957,7 +957,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option          | Value                 | Default             | Description                                                                                                  |
 | :-------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
 | `align`         | String                | `left`              | Dropdown alignment: `left`, `right`, `center`                                                                |
-| `stretch`       | false, true, `x`, `y` | `true`              | Stretch dropdown on both (true) or given axis.                                                               |
+| `stretch`       | Boolean, `x`, `y`     | `true`              | Stretch dropdown on both (true) or given axis.                                                               |
 | `mode`          | click, hover          | click, hover        | Comma-separated list of dropdown trigger behaviour modes.                                                    |
 | `delay-show`    | Number                | `0`                 | Delay time in hover mode before a dropdown is shown in ms.                                                   |
 | `delay-hide`    | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms. mode.                                            |
