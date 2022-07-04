@@ -23,32 +23,12 @@ A dropdown can be enabled by hovering and clicking the toggle. Just add the `mod
 ```example
 <div class="uk-inline">
     <button class="uk-button uk-button-default" type="button">Hover</button>
-    <div uk-dropdown>
-        <ul class="uk-nav uk-dropdown-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">Item</a></li>
-        </ul>
-    </div>
+    <div uk-dropdown>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 </div>
 
 <div class="uk-inline">
     <button class="uk-button uk-button-default" type="button">Click</button>
-    <div uk-dropdown="mode: click">
-        <ul class="uk-nav uk-dropdown-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">Item</a></li>
-        </ul>
-    </div>
+    <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 </div>
 ```
 
