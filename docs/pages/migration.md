@@ -57,6 +57,12 @@ If the Position is `left-*` or `right-*`:
 | `flip: x` | `shift: false` |
 | `flip: y` | `flip: false`  |
 
+### Navbar Dropbar
+
+We removed the style from the dropbar in the Navbar component and now use the new Dropbar component instead. This is why the Navbar component sets `.uk-dropbar` and `.uk-dropbar-top` in addition to the `.uk-navbar-dropbar` class. If you placed the dropbar markup manually, you need to add those classes yourself. 
+
+In Less we have removed the `@navbar-dropbar-background` variable, so to set a background, use the `@dropbar-background` variable instead. Make sure to add any further style you applied to the navbar dropbar as well. 
+
 ### Less Variables
 
 The following Less variables are also renamed. Just find and replace these Less variables if you are using a custom Less theme.
