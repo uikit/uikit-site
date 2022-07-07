@@ -291,14 +291,12 @@ To disable automatic shifting and flipping, add the `shift: false` or `flip: fal
 </div>
 ```
 
-***
+## Auto Update
 
-## Display
-
-By default, the dropdown repositions on scrolling. To disable dynamic positioning, add `display: static` option to the `uk-dropdown` attribute. The dropdown will only be positioned once when opened.
+By default, the drop repositions on scrolling. To disable dynamic positioning, add `auto-update: false` option to the `uk-dropdown` attribute. The dropdown will only be positioned once when opened.
 
 ```html
-<div uk-dropdown="display: static"></div>
+<div uk-dropdown="auto-update: false"></div>
 ```
 
 ***
@@ -392,7 +390,7 @@ By default, the dropdown is positioned outside the toggle. To change the positio
 
 ## Stretch
 
-To stretch the dropdown to fill the size of the viewport, add the `stretch: true` option to the `uk-dropdown` attribute. To only stretch to one axis, use `stretch: x` or `stretch: y`. If the `boundary` option is set, the dropdown stretches to the defined boundary.
+To stretch the dropdown to fill the size of its closest scrolling ancestor, add the `stretch: true` option to the `uk-dropdown` attribute. To only stretch to one axis, use `stretch: x` or `stretch: y`. If the `boundary` option is set, the dropdown stretches to the defined boundary.
 
 ```html
 <div uk-dropdown="stretch: true"></div>
@@ -448,7 +446,7 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 </div>
 ```
 
-Alternatively, the Drop component has two additional animation types which are not covered by the Animation component. `slide-*` animations slide the dropdown and its content from a selected direction, while in the `reveal-*` animations, the content of the dropdown stays static and is revealed from a selected direction.
+Alternatively, the Drop component has two additional animation types which are not covered by the Animation component. `slide-*` animations slide the dropdown and its content from a selected direction, while with the `reveal-*` animations, the content of the dropdown stays static and is revealed from a selected direction.
 
 | Animation       | Description                           |
 | :-------------- | :------------------------------------ |
@@ -570,7 +568,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `mode`          | click, hover          | click, hover        | Comma-separated list of dropdown trigger behavior modes.                                                     |
 | `delay-show`    | Number                | `0`                 | Delay time in hover mode before a dropdown is shown in ms.                                                   |
 | `delay-hide`    | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
-| `display`       | `dynamic`, `static`   | `dynamic`           | Disable dynamic positioning while scrolling by setting this option to `static`.                              |
+| `auto-update`   | Boolean               | `true`              | Disable dynamic positioning while scrolling by setting this option to `false`.                               |
 | `boundary`      | CSS selector          | `false`             | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
 | `target`        | Boolean, CSS selector | `false`             | The element the dropdown is positioned to (`true` for window).                                               |
 | `target-x`      | Boolean, CSS selector | `false`             | The element's X axis the dropdown is positioned to (`true` for window).                                      |
