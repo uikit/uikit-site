@@ -31,7 +31,7 @@ To group the toggle and the dropdown, just wrap them with a container element an
 
 ## Mode
 
-By default, the drop is toggled on hover and on click. Set the `animation` option to change the toggle behavior.
+By default, the drop is toggled on hover and on click. Set the `mode` option to change the toggle behavior.
 
 | Mode          | Description                     |
 | :------------ | :------------------------------ |
@@ -174,12 +174,12 @@ To disable automatic shifting and flipping, add the `shift: false` or `flip: fal
 
 ***
 
-## Display
+## Auto Update
 
-By default, the drop repositions on scrolling. To disable dynamic positioning, add `display: static` option to the `uk-drop` attribute. The drop will only be positioned once when opened.
+By default, the drop repositions on scrolling. To disable dynamic positioning, add `auto-update: false` option to the `uk-drop` attribute. The drop will only be positioned once when opened.
 
 ```html
-<div uk-drop="display: static"></div>
+<div uk-drop="auto-update: false"></div>
 ```
 
 ***
@@ -233,7 +233,7 @@ By default, the drop is positioned outside the toggle. To change the position to
 
 ## Stretch
 
-To stretch the drop to fill the size of the viewport, add the `stretch: true` option to the `uk-drop` attribute. To only stretch to one axis, use `stretch: x` or `stretch: y`. If the `boundary` option is set, the drop stretches to the defined boundary.
+To stretch the drop to fill the size of its closest scrolling ancestor, add the `stretch: true` option to the `uk-drop` attribute. To only stretch to one axis, use `stretch: x` or `stretch: y`. If the `boundary` option is set, the drop stretches to the defined boundary.
 
 ```html
 <div uk-drop="stretch: true"></div>
@@ -269,7 +269,7 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: uk-animation-slide-top-small; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 ```
 
-Alternatively, the Drop component has two additional animation types which are not covered by the Animation component. `slide-*` animations slide the drop and its content from a selected direction, while in the `reveal-*` animations, the content of the drop stays static and is revealed from a selected direction.
+Alternatively, the Drop component has two additional animation types which are not covered by the Animation component. `slide-*` animations slide the drop and its content from a selected direction, while with the `reveal-*` animations, the content of the drop stays static and is revealed from a selected direction.
 
 | Animation       | Description                       |
 | :-------------- | :-------------------------------- |
@@ -334,14 +334,14 @@ To define a custom offset between the drop and its toggle, add the `offset` opti
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option          | Value                 | Default             | Description                                                                                              |
-| :-------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------------------- |
+|:----------------|:----------------------|:--------------------|:---------------------------------------------------------------------------------------------------------|
 | `toggle`        | CSS selector          | `- *`               | CSS selector for the element to be used as toggle. By default, the preceding element.                    |
 | `pos`           | String                | `bottom-left`       | Drop position.                                                                                           |
 | `stretch`       | Boolean, `x`, `y`     | `true`              | Stretch drop on both (true) or given axis.                                                               |
 | `mode`          | click, hover          | click, hover        | Comma-separated list of drop trigger behavior modes.                                                     |
 | `delay-show`    | Number                | `0`                 | Delay time in hover mode before a drop is shown in ms.                                                   |
 | `delay-hide`    | Number                | `800`               | Delay time in hover mode before a drop is hidden in ms.                                                  |
-| `display`       | `dynamic`, `static`   | `dynamic`           | Disable dynamic positioning while scrolling by setting this option to `static`.                          |
+| `auto-update`   | Boolean               | `true`              | Disable dynamic positioning while scrolling by setting this option to `false`.                           |
 | `boundary`      | CSS selector          | `false`             | The area the drop can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
 | `target`        | Boolean, CSS selector | `false`             | The element the drop is positioned to (`true` for window).                                               |
 | `target-x`      | Boolean, CSS selector | `false`             | The element's X axis the drop is positioned to (`true` for window).                                      |
