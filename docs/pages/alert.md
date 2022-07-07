@@ -75,11 +75,11 @@ There are several style modifiers available. Just add one of the following class
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option      | Value           | Default           | Description                                              |
-|:------------|:----------------|:------------------|:---------------------------------------------------------|
-| `animation` | Boolean, String | `true`            | Fade out or use the [Animation component](animation.md). |
-| `duration`  | Number          | `150`             | Animation duration in milliseconds.                      |
-| `sel-close` | CSS selector    | `.uk-alert-close` | The close trigger element.                               |
+| Option       | Value        | Default           | Description                         |
+|:-------------|:-------------|:------------------|:------------------------------------|
+| `animation`  | Boolean      | `true`            | Fade out or hide directly.          |
+| `duration`   | Number       | `150`             | Animation duration in milliseconds. |
+| `sel-close`  | CSS selector | `.uk-alert-close` | The close trigger element.          |
 
 `animation` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
