@@ -1,5 +1,4 @@
 export default function (id, config = {}) {
-
     gtag('js', new Date());
     gtag('config', id, config);
 
@@ -8,8 +7,7 @@ export default function (id, config = {}) {
 }
 
 export function gtag() {
-
-    let {dataLayer} = window;
+    let { dataLayer } = window;
 
     if (!dataLayer) {
         dataLayer = window.dataLayer = [];
@@ -19,7 +17,6 @@ export function gtag() {
 }
 
 export function getScript(src) {
-
     const script = document.createElement('script');
 
     script.src = src;

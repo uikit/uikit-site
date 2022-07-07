@@ -19,12 +19,12 @@ if (location.pathname && location.pathname !== '/') {
 }
 
 const routes = [
-    {path: '/', component: IndexPage},
-    {path: '/index', component: IndexPage},
-    {path: '/pro', component: ProPage},
-    {path: '/changelog', component: ChangelogPage},
-    {path: '/download', component: DownloadPage},
-    {path: '/*', component: ErrorPage}
+    { path: '/', component: IndexPage },
+    { path: '/index', component: IndexPage },
+    { path: '/pro', component: ProPage },
+    { path: '/changelog', component: ChangelogPage },
+    { path: '/download', component: DownloadPage },
+    { path: '/*', component: ErrorPage },
 ];
 
 const router = new VueRouter({
@@ -32,13 +32,12 @@ const router = new VueRouter({
     routes,
     mode: 'history',
     history: true,
-    linkActiveClass: 'uk-active'
+    linkActiveClass: 'uk-active',
 });
 
 Vue.component('Navbar', Navbar);
 
 new Vue({
-
     router,
 
     el: '#app',
@@ -48,9 +47,8 @@ new Vue({
     data: () => ({
         navigation,
         page: false,
-        loading: false
-    })
-
+        loading: false,
+    }),
 });
 
-analytics('UA-42150424-1', {anonymize_ip: true});
+analytics('UA-42150424-1', { anonymize_ip: true });

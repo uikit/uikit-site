@@ -5,7 +5,12 @@
                 <nav class="uk-navbar">
                     <div class="uk-navbar-left">
                         <a href="../" class="uk-navbar-item uk-logo">
-                            <img class="uk-margin-small-right" uk-svg :src="'../images/uikit-logo.svg'"> UIkit
+                            <img
+                                class="uk-margin-small-right"
+                                uk-svg
+                                :src="'../images/uikit-logo.svg'"
+                            />
+                            UIkit
                         </a>
                     </div>
 
@@ -19,11 +24,20 @@
                         </ul>
 
                         <div class="uk-navbar-item uk-visible@m">
-                            <a class="uk-button uk-button-default tm-button-default uk-icon" href="../download">Download <canvas uk-icon="download" width="20" height="20"></canvas>
+                            <a
+                                class="uk-button uk-button-default tm-button-default uk-icon"
+                                href="../download"
+                                >Download
+                                <canvas uk-icon="download" width="20" height="20"></canvas>
                             </a>
                         </div>
 
-                        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas" uk-toggle></a>
+                        <a
+                            class="uk-navbar-toggle uk-hidden@m"
+                            uk-navbar-toggle-icon
+                            href="#offcanvas"
+                            uk-toggle
+                        ></a>
                     </div>
                 </nav>
             </div>
@@ -32,7 +46,12 @@
         <div class="tm-sidebar-left uk-visible@m">
             <h3>Documentation</h3>
 
-            <ul v-for="(pages, category, index) in navigation" :key="category" class="uk-nav uk-nav-default tm-nav" :class="{'uk-margin-top': index}">
+            <ul
+                v-for="(pages, category, index) in navigation"
+                :key="category"
+                class="uk-nav uk-nav-default tm-nav"
+                :class="{ 'uk-margin-top': index }"
+            >
                 <li class="uk-nav-header">
                     {{ category }}
                 </li>
@@ -44,17 +63,23 @@
 
         <div class="tm-main uk-section uk-section-default">
             <div class="uk-container uk-container-small uk-position-relative">
-                <router-view/>
+                <router-view />
 
                 <div class="tm-sidebar-right uk-visible@l">
                     <div uk-sticky="offset: 160">
-                        <ul class="uk-nav uk-nav-default tm-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+                        <ul
+                            class="uk-nav uk-nav-default tm-nav"
+                            uk-scrollspy-nav="closest: li; scroll: true; offset: 100"
+                        >
                             <li v-for="(id, subject) in ids" :key="id">
                                 <a :href="`#${id}`">{{ subject }}</a>
                             </li>
                             <li class="uk-nav-divider"></li>
                             <li v-if="component">
-                                <a :href="`../assets/uikit/tests/${component}.html`" target="_blank">
+                                <a
+                                    :href="`../assets/uikit/tests/${component}.html`"
+                                    target="_blank"
+                                >
                                     <span class="uk-margin-small-right" uk-icon="push"></span>
                                     <span class="uk-text-middle">Open test</span>
                                 </a>
@@ -72,7 +97,10 @@
                                 </a>
                             </li>
                             <li>
-                                <a :href="`https://github.com/uikit/uikit-site/tree/develop/docs/pages/${page}.md`" target="_blank">
+                                <a
+                                    :href="`https://github.com/uikit/uikit-site/tree/develop/docs/pages/${page}.md`"
+                                    target="_blank"
+                                >
                                     <span class="uk-margin-small-right" uk-icon="pencil"></span>
                                     <span class="uk-text-middle">Edit this page</span>
                                 </a>
@@ -87,16 +115,18 @@
             <div class="uk-offcanvas-bar">
                 <div class="uk-panel">
                     <ul class="uk-nav uk-nav-default tm-nav">
-                        <li class="uk-nav-header">
-                            General
-                        </li>
+                        <li class="uk-nav-header">General</li>
                         <li><a href="../index">Home</a></li>
                         <li><a href="../pro">Pro</a></li>
                         <li><a href="../changelog">Changelog</a></li>
                         <li><a href="../download">Download</a></li>
                     </ul>
 
-                    <ul v-for="(pages, category) in navigation" :key="category" class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                    <ul
+                        v-for="(pages, category) in navigation"
+                        :key="category"
+                        class="uk-nav uk-nav-default tm-nav uk-margin-top"
+                    >
                         <li class="uk-nav-header">
                             {{ category }}
                         </li>

@@ -1,7 +1,5 @@
 {
-
     "Getting started": {
-
         "Introduction": "introduction",
         "Installation": "installation",
         "Less": "less",
@@ -12,11 +10,9 @@
         "Avoiding conflicts": "avoiding-conflicts",
         "RTL support": "rtl",
         "Migration": "migration"
-
     },
 
     "Components": {
-
         "Accordion": "accordion",
         "Alert": "alert",
         "Align": "align",
@@ -97,7 +93,5 @@
         "Video": "video",
         "Visibility": "visibility",
         "Width": "width"
-
     }
-
 }
