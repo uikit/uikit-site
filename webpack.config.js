@@ -1,25 +1,24 @@
-const {VueLoaderPlugin} = require('vue-loader');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
-
     mode: 'production',
 
     externals: {
-        'vue': 'Vue',
+        vue: 'Vue',
         'vue-router': 'VueRouter',
-        'uikit': 'UIkit',
+        uikit: 'UIkit',
         'uikit-util': 'UIkit.util',
-        'he': 'he'
+        he: 'he',
     },
 
     entry: {
         'app/main': './app/main',
-        'docs/app/main': './docs/app/main'
+        'docs/app/main': './docs/app/main',
     },
 
     output: {
         path: __dirname,
-        filename: './[name].min.js'
+        filename: './[name].min.js',
     },
 
     module: {
@@ -29,24 +28,26 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: [['@babel/preset-env', {
-                            targets: {
-                                safari: '12'
-                            }
-                        }]]
-                    }
+                        presets: [
+                            [
+                                '@babel/preset-env',
+                                {
+                                    targets: {
+                                        safari: '12',
+                                    },
+                                },
+                            ],
+                        ],
+                    },
                 },
-                exclude: /node_modules/
+                exclude: /node_modules/,
             },
             {
                 test: /\.vue$/,
-                use: 'vue-loader'
-            }
-        ]
+                use: 'vue-loader',
+            },
+        ],
     },
 
-    plugins: [
-        new VueLoaderPlugin()
-    ]
-
+    plugins: [new VueLoaderPlugin()],
 };

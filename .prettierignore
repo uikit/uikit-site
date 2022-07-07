@@ -1,4 +1,8 @@
 /*
+!/*.js
+!/*.json
+*.min.js
+
 !/app
 !/docs
 /docs/*
