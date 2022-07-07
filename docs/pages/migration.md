@@ -57,6 +57,13 @@ If the Position is `left-*` or `right-*`:
 | `flip: x` | `shift: false` |
 | `flip: y` | `flip: false`  |
 
+The `display` option is removed. Use `auto-update` instead.
+
+| Option             | Replace with         |
+|--------------------|----------------------|
+| `display: static`  | `auto-update: false` |
+| `display: dynamic` | `auto-update: true`  |
+
 ### Navbar Dropbar
 
 We removed the style from the dropbar in the Navbar component and now use the new Dropbar component instead. This is why the Navbar component sets `.uk-dropbar` and `.uk-dropbar-top` in addition to the `.uk-navbar-dropbar` class. If you placed the dropbar markup manually, you need to add those classes yourself. 
