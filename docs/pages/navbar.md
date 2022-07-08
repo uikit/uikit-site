@@ -365,6 +365,27 @@ Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to a
 </nav>
 ```
 
+To changes toggle icon from a menu icon to a close icon with a smooth animation, add the `.uk-navbar-toggle-animate` class.
+
+```html
+<a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href=""></a>
+```
+
+```example
+<nav class="uk-navbar uk-navbar-container uk-margin" uk-navbar>
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+        <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+```
+
 ***
 
 ## Dropdowns
