@@ -14,7 +14,7 @@ To apply this component, add the `.uk-dropbar` class and add a modifier class fo
 ```
 
 ```example
-<div class="uk-overflow-auto uk-height-small">
+<div class="uk-overflow-auto uk-height-medium">
     <div class="uk-inline">
         <button class="uk-button uk-button-default" type="button">Hover</button>
         <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
@@ -89,27 +89,37 @@ A dropbar can contain a nav from the [Nav component](nav.md). Just add the `.uk-
 
 ## Large modifier
 
-Add the `.uk-dropdown-large` class for a dropdown with larger padding.
+Add the `.uk-dropbar-large` class for a dropbar with larger vertical padding.
 
 
 ```html
-<div class="uk-dropdown-large" uk-dropdown></div>
+<div class="uk-dropbar-large" uk-dropbar></div>
 ```
 
 ```example
-<div class="uk-inline">
-    <button class="uk-button uk-button-default" type="button">Large</button>
-    <div class="uk-dropdown-large" uk-dropdown>
-        <ul class="uk-nav uk-dropdown-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">Item</a></li>
-        </ul>
-    </div>
+<div class="uk-overflow-auto uk-height-large">
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="#">Hover</a>
+                    <div class="uk-dropbar uk-dropbar-top uk-dropbar-large" uk-drop="stretch: x">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
 </div>
 ```
 
@@ -147,15 +157,15 @@ To open the dropbar from a specific direction use the `pos` and `stretch` option
             <ul class="uk-navbar-nav">
                 <li>
                     <a href="#">Top</a>
-                    <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x; target: !.uk-navbar-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                 </li>
                 <li>
                     <a href="#">Left</a>
-                    <div class="uk-dropbar uk-dropbar-left" uk-drop="pos: left-top; stretch: y">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <div class="uk-dropbar uk-dropbar-left" uk-drop="stretch: y; target: !.uk-navbar-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
                 </li>
                 <li>
                     <a href="#">Right</a>
-                    <div class="uk-dropbar uk-dropbar-right" uk-drop="pos: right-top; stretch: y">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <div class="uk-dropbar uk-dropbar-right" uk-drop="pos: bottom-right; stretch: y; target: !.uk-navbar-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
                 </li>
             </ul>
 
@@ -163,6 +173,8 @@ To open the dropbar from a specific direction use the `pos` and `stretch` option
     </nav>
 </div>
 ```
+
+***
 
 ## Animation
 
@@ -190,16 +202,28 @@ To animate the dropbar use the `slide-*` or `reveal-*` animations from the [Drop
 
             <ul class="uk-navbar-nav">
                 <li>
+                    <a href="#">Slide Top</a>
+                    <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x; target: !.uk-navbar-container; animation: slide-top; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </li>
+                <li>
                     <a href="#">Reveal Top</a>
-                    <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x; animation: reveal-top; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x; target: !.uk-navbar-container; animation: reveal-top; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                 </li>
                 <li>
                     <a href="#">Slide Left</a>
-                    <div class="uk-dropbar uk-dropbar-left" uk-drop="pos: left-top; stretch: y; animation: slide-left; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <div class="uk-dropbar uk-dropbar-left" uk-drop="stretch: y; target: !.uk-navbar-container; animation: slide-left; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                </li>
+                <li>
+                    <a href="#">Reveal Left</a>
+                    <div class="uk-dropbar uk-dropbar-left" uk-drop="stretch: y; target: !.uk-navbar-container; animation: reveal-left; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
                 </li>
                 <li>
                     <a href="#">Slide Right</a>
-                    <div class="uk-dropbar uk-dropbar-right" uk-drop="pos: right-top; stretch: y; animation: slide-right; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <div class="uk-dropbar uk-dropbar-right" uk-drop="pos: bottom-right; stretch: y;  target: !.uk-navbar-container; animation: slide-right; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                </li>
+                <li>
+                    <a href="#">Reveal Right</a>
+                    <div class="uk-dropbar uk-dropbar-right" uk-drop="pos: bottom-right; stretch: y;  target: !.uk-navbar-container; animation: reveal-right; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
                 </li>
             </ul>
 
