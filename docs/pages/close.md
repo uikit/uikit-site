@@ -6,7 +6,6 @@
 
 To apply this component, add the `uk-close` attribute to an `<a>` or `<button>` element.
 
-
 ```html
 <button type="button" uk-close></button>
 
