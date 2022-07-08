@@ -47,84 +47,6 @@ The dropbar is typically used together with the [Navbar component](navbar.md).
 
 ***
 
-## Nav in dropbar
-
-A dropbar can contain a nav from the [Nav component](nav.md). Just add the `.uk-nav` class and the the `.uk-dropdown-nav` modifier to a `<ul>` element.
-
-```html
-<button type="button"></button>
-<div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x">
-    <ul class="uk-nav uk-dropdown-nav">...</ul>
-</div>
-```
-
-```example
-<div class="uk-overflow-auto uk-height-large">
-    <nav class="uk-navbar-container" uk-navbar>
-        <div class="uk-navbar-left">
-
-            <ul class="uk-navbar-nav">
-                <li>
-                    <a href="#">Hover</a>
-                    <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li class="uk-nav-header">Header</li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li class="uk-nav-divider"></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-</div>
-```
-
-***
-
-## Large modifier
-
-Add the `.uk-dropbar-large` class for a dropbar with larger vertical padding.
-
-
-```html
-<div class="uk-dropbar-large" uk-dropbar></div>
-```
-
-```example
-<div class="uk-overflow-auto uk-height-large">
-    <nav class="uk-navbar-container" uk-navbar>
-        <div class="uk-navbar-left">
-
-            <ul class="uk-navbar-nav">
-                <li>
-                    <a href="#">Hover</a>
-                    <div class="uk-dropbar uk-dropbar-top uk-dropbar-large" uk-drop="stretch: x">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li class="uk-nav-header">Header</li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li class="uk-nav-divider"></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-</div>
-```
-
-***
-
 ## Direction
 
 To set the appropriate dropbar style, add one of the following direction modifier classes.
@@ -224,6 +146,84 @@ To animate the dropbar use the `slide-*` or `reveal-*` animations from the [Drop
                 <li>
                     <a href="#">Reveal Right</a>
                     <div class="uk-dropbar uk-dropbar-right" uk-drop="pos: bottom-right; stretch: y;  target: !.uk-navbar-container; animation: reveal-right; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
+```
+
+***
+
+## Nav in dropbar
+
+A dropbar can contain a nav from the [Nav component](nav.md). Just add the `.uk-nav` class and the the `.uk-dropdown-nav` modifier to a `<ul>` element.
+
+```html
+<button type="button"></button>
+<div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x">
+    <ul class="uk-nav uk-dropdown-nav">...</ul>
+</div>
+```
+
+```example
+<div class="uk-overflow-auto uk-height-large">
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="#">Hover</a>
+                    <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
+```
+
+***
+
+## Large modifier
+
+Add the `.uk-dropbar-large` class for a dropbar with larger vertical padding.
+
+
+```html
+<div class="uk-dropbar uk-dropbar-top uk-dropbar-large" uk-drop="stretch: x"></div>
+```
+
+```example
+<div class="uk-overflow-auto uk-height-large">
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="#">Hover</a>
+                    <div class="uk-dropbar uk-dropbar-top uk-dropbar-large" uk-drop="stretch: x">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
 
