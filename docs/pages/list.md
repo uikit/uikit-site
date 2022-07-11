@@ -37,7 +37,7 @@ Add one of the following classes to set the marker of a list item.
 | `.uk-list-hyphen`  | Use a hyphen as marker                           |
 
 ```html
-<ul class="uk-list uk-list-disc">...</ul>
+<ul class="uk-list uk-list-disc">…</ul>
 ```
 
 ```example
@@ -105,7 +105,7 @@ Add one of the following classes to set the marker color.
 | `.uk-list-secondary` | Add this class to emphasize the marker with the secondary color. |
 
 ```html
-<ul class="uk-list uk-list-disc uk-list-primary">...</ul>
+<ul class="uk-list uk-list-disc uk-list-primary">…</ul>
 ```
 
 ```example
@@ -159,7 +159,7 @@ Add one of the following classes to set the marker color.
 Add the `.uk-list-bullet` class to set a custom image bullet as marker of a list item. Mind, that it can not be combined with color modifiers.
 
 ```html
-<ul class="uk-list uk-list-bullet">...</ul>
+<ul class="uk-list uk-list-bullet">…</ul>
 ```
 
 ```example
@@ -177,7 +177,7 @@ Add the `.uk-list-bullet` class to set a custom image bullet as marker of a list
 Add the `.uk-list-divider` class to separate list items with lines.
 
 ```html
-<ul class="uk-list uk-list-divider">...</ul>
+<ul class="uk-list uk-list-divider">…</ul>
 ```
 
 ```example
@@ -195,7 +195,7 @@ Add the `.uk-list-divider` class to separate list items with lines.
 Add zebra-striping to a list using the `.uk-list-striped` class.
 
 ```html
-<ul class="uk-list uk-list-striped">...</ul>
+<ul class="uk-list uk-list-striped">…</ul>
 ```
 
 ```example
@@ -218,7 +218,7 @@ Add one of the following classes to increase or decrease the spacing between lis
 | `.uk-list-collapse` | Remove the spacing between list items.   |
 
 ```html
-<ul class="uk-list uk-list-large">...</ul>
+<ul class="uk-list uk-list-large">…</ul>
 ```
 
 ```example

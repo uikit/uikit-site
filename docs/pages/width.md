@@ -109,7 +109,7 @@ To create a grid whose child elements' widths are evenly split, you don't have t
 <div class="uk-child-width-1-4" uk-grid>
     <div></div>
     <div></div>
-    ...
+    …
 </div>
 ```
 
@@ -139,7 +139,7 @@ Items that use width classes with fractions will break into a new row, if they n
 <div class="uk-child-width-expand" uk-grid>
     <div></div>
     <div></div>
-    ...
+    …
 </div>
 ```
 
@@ -200,7 +200,7 @@ You can also combine `.uk-child-width-*` classes with `.uk-width-*` classes for 
     <div></div>
     <div class="uk-width-1-3"></div>
     <div></div>
-    ...
+    …
 </div>
 ```
 

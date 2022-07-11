@@ -56,7 +56,7 @@ By default, the entire sortable element can be used for drag and drop sorting. T
 <ul uk-sortable="handle: .uk-sortable-handle">
     <li>
         <div class="uk-sortable-handle"></div>
-        ...
+        …
     </li>
 </ul>
 ```
@@ -172,7 +172,7 @@ To be able to sort items from one list to another, you can group them by adding 
 You can also apply one or more custom classes to items when they are being dragged. To do so, add the `cls-custom: MY-CLASS` option to the attribute.
 
 ```html
-<ul uk-sortable="cls-custom: my-class">...</ul>
+<ul uk-sortable="cls-custom: my-class">…</ul>
 ```
 
 **Note** In this example, we are using a nav from the [Nav component](nav.md). When dragging an item it will get a box-shadow and background.

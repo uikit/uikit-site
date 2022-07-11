@@ -39,7 +39,7 @@ To add list items without a link, use a `<span>` element instead of an `<a>`. Al
 Add the `.uk-subnav-divider` class to separate menu items with lines.
 
 ```html
-<ul class="uk-subnav uk-subnav-divider">...</ul>
+<ul class="uk-subnav uk-subnav-divider">…</ul>
 ```
 
 ```example
@@ -57,7 +57,7 @@ Add the `.uk-subnav-divider` class to separate menu items with lines.
 Add the `.uk-subnav-pill` class to highlight the active menu item with a background.
 
 ```html
-<ul class="uk-subnav uk-subnav-pill">...</ul>
+<ul class="uk-subnav uk-subnav-pill">…</ul>
 ```
 
 ```example
@@ -83,7 +83,7 @@ You can also use a dropdown from the [Dropdown component](dropdown.md) with a su
 
         <!-- This is the dropdown -->
         <div uk-dropdown="mode: click">
-            <ul class="uk-nav uk-dropdown-nav">...</ul>
+            <ul class="uk-nav uk-dropdown-nav">…</ul>
         </div>
 
     </li>

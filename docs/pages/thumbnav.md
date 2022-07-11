@@ -35,7 +35,7 @@ To create a navigation with thumbnails, use the following classes. This componen
 The thumbnav can also be displayed vertically. Just add the `.uk-thumbnav-vertical` modifier.
 
 ```html
-<ul class="uk-thumbnav uk-thumbnav-vertical">...</ul>
+<ul class="uk-thumbnav uk-thumbnav-vertical">…</ul>
 ```
 
 ```example
@@ -59,7 +59,7 @@ To position the thumbnav on top of an element or the [Slideshow component](slide
     <!-- The element which is wrapped goes here -->
 
     <div class="uk-position-bottom-center uk-position-small">
-        <ul class="uk-thumbnav">...</ul>
+        <ul class="uk-thumbnav">…</ul>
     </div>
 
 </div>

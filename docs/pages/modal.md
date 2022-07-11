@@ -176,7 +176,7 @@ To divide the modal into different content sections, use the following classes.
 Add the `.uk-modal-container` class to expand the modal dialog to the default [Container](container.md) width.
 
 ```html
-<div class="uk-modal-container" uk-modal>...</div>
+<div class="uk-modal-container" uk-modal>…</div>
 ```
 
 ```example

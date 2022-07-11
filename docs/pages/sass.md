@@ -155,16 +155,16 @@ uikit/src/scss/
         _import.scss
         accordion.scss
         alert.scss
-        ...
+        …
 
     theme/
         _import.scss
         accordion.scss
         alert.scss
-        ...
+        …
 
     <!-- other uikit files, some of which we will import below -->
-    ...
+    …
 
 <!-- in here, we now put all your customizations, divided by component -->
 theme/
@@ -180,7 +180,7 @@ theme/
     align-mixins.scss
 
     <!-- etc for all components you customize -->
-    ...
+    …
 
 <!-- this is your entry point to compile scss -->
 site.scss
@@ -196,7 +196,7 @@ The entry point for the Sass compiler is `site.scss`. Here you compile all sourc
 @import "theme/accordion.scss";
 @import "theme/alert.scss";
 @import "theme/align.scss";
-// ... import all
+// … import all
 
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables.scss";
@@ -206,7 +206,7 @@ The entry point for the Sass compiler is `site.scss`. Here you compile all sourc
 @import "theme/accordion-mixins.scss";
 @import "theme/alert-mixins.scss";
 @import "theme/align-mixins.scss";
-// ... import all
+// … import all
 
 // 4. Import UIkit
 @import "uikit/src/scss/uikit.scss";

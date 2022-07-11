@@ -191,7 +191,7 @@ To apply a gap to the slider items, use the [Grid component](grid.md) and add th
 By default, items of the slider always are aligned to the left. To center the list items, just add `center: true` to the attribute.
 
 ```html
-<div uk-slider="center: true">...</div>
+<div uk-slider="center: true">…</div>
 ```
 
 ```example
@@ -245,7 +245,7 @@ By default, items of the slider always are aligned to the left. To center the li
 To activate autoplay, just add the `autoplay: true` option to the attribute. You can also set the interval in milliseconds between switching slides using `autoplay-interval: 6000`. To pause autoplay when hovering the slider, use `pause-on-hover: true`.
 
 ```html
-<div uk-slider="autoplay: true">...</div>
+<div uk-slider="autoplay: true">…</div>
 ```
 
 ***
@@ -255,7 +255,7 @@ To activate autoplay, just add the `autoplay: true` option to the attribute. You
 By default, infinite scrolling is enabled. To disable this behavior, just add the `finite: true` option to the attribute.
 
 ```html
-<div uk-slider="finite: true">...</div>
+<div uk-slider="finite: true">…</div>
 ```
 
 ***
@@ -265,7 +265,7 @@ By default, infinite scrolling is enabled. To disable this behavior, just add th
 To loop through a set of slides instead of single items, just add `sets: true` to the attribute.
 
 ```html
-<div uk-slider="sets: true">...</div>
+<div uk-slider="sets: true">…</div>
 ```
 
 ```example
@@ -329,15 +329,15 @@ To navigate through your slides, just use the `uk-slider-item` attribute. To tar
 ```html
 <div uk-slider>
 
-    <ul class="uk-slider-items">...</ul>
+    <ul class="uk-slider-items">…</ul>
 
-    <a href="#" uk-slider-item="previous">...</a>
-    <a href="#" uk-slider-item="next">...</a>
+    <a href="#" uk-slider-item="previous">…</a>
+    <a href="#" uk-slider-item="next">…</a>
 
     <ul>
-        <li uk-slider-item="0"><a href="#">...</a></li>
-        <li uk-slider-item="1"><a href="#">...</a></li>
-        <li uk-slider-item="2"><a href="#">...</a></li>
+        <li uk-slider-item="0"><a href="#">…</a></li>
+        <li uk-slider-item="1"><a href="#">…</a></li>
+        <li uk-slider-item="2"><a href="#">…</a></li>
     </ul>
 
 </div>
@@ -350,7 +350,7 @@ If there is no item specific content in the navigation items, you can also add t
 ```html
 <div uk-slider>
 
-    <ul class="uk-slider-items">...</ul
+    <ul class="uk-slider-items">…</ul
 
     <ul class="uk-slider-nav uk-dotnav"></ul>
 
@@ -429,11 +429,11 @@ To place a navigation outside of a slider, add the `.uk-position-center-left-out
     <div class="uk-position-relative">
 
         <div class="uk-slider-container">
-            <ul class="uk-slider-items">...</ul>
+            <ul class="uk-slider-items">…</ul>
         </div>
 
-        <a class="uk-position-center-left-out" href="#" uk-slider-item="previous">...</a>
-        <a class="uk-position-center-right-out" href="#" uk-slider-item="next">...</a>
+        <a class="uk-position-center-left-out" href="#" uk-slider-item="previous">…</a>
+        <a class="uk-position-center-right-out" href="#" uk-slider-item="next">…</a>
 
     </div>
 
@@ -759,13 +759,13 @@ This functionality is inherited from the [Parallax component](parallax.md), and 
 In the example above, the content will start at `100` and animate half way to `0` while the slide moves in. When the slide starts again to move out, the content will continue to animate to `-100`. This works because the start and end values have the same distance. For different distances, three values are needed: _Start_ (Slide animates in), _Middle_ (Slide is centered), _End_ (Slide animates out).
 
 ```html
-<div uk-slider-parallax="x: 300,0,-100">...</div>
+<div uk-slider-parallax="x: 300,0,-100">…</div>
 ```
 
 The next example defines different in and out animations. The content slides in by moving from `100` to `0` and fades out from `1` to `0`.
 
 ```html
-<div uk-slider-parallax="x: 100,0,0; opacity: 1,1,0">...</div>
+<div uk-slider-parallax="x: 100,0,0; opacity: 1,1,0">…</div>
 ```
 
 ```example

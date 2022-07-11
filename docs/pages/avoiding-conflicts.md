@@ -39,17 +39,15 @@ You will find the generated CSS and JS files in the `/dist` folder. To use the s
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        ...
-    </head>
+    <head>…</head>
     <body>
 
         <!-- non UIkit markup -->
-        ...
+        …
 
         <div class="uk-scope">
             <!-- your UIkit markup -->
-            ...
+            …
         </div>
     </body>
 </html>
@@ -61,7 +59,7 @@ To do so, set the following parameter:
 ```javascript
 // simply pass the selector
 UIkit.container = '.uk-scope';
-...
+
 // or you can set an element directly, for example:
 UIkit.container = document.getElementById('#id-of-scope-element');
 ```

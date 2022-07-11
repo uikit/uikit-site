@@ -93,7 +93,7 @@ To expand all children of a container to the same height regardless of their con
 You can also target and match specific elements inside the container, like cards. Just add the `target: SELECTOR` option to the attribute.
 
 ```html
-<div uk-grid uk-height-match="target: SELECTOR">...</div>
+<div uk-grid uk-height-match="target: SELECTOR">…</div>
 ```
 
 ```example
@@ -120,7 +120,7 @@ You can also target and match specific elements inside the container, like cards
 If your grid wraps into multiple rows, only grid columns within the same row are matched. To match grid columns across all rows, just add the `row: false` option to the attribute.
 
 ```html
-<div uk-grid uk-height-match="row: false">...</div>
+<div uk-grid uk-height-match="row: false">…</div>
 ```
 
 ```example

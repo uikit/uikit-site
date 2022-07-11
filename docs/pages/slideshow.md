@@ -59,7 +59,7 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
 
 ```html
-<div uk-slideshow="animation: fade">...</div>
+<div uk-slideshow="animation: fade">…</div>
 ```
 
 ```example
@@ -194,7 +194,7 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 To activate autoplay, just add the `autoplay: true` option to the attribute. You can also set the interval in milliseconds between switching slides using `autoplay-interval: 6000`. To pause autoplay when hovering the slideshow, use `pause-on-hover: true`.
 
 ```html
-<div uk-slideshow="autoplay: true">...</div>
+<div uk-slideshow="autoplay: true">…</div>
 ```
 
 ***
@@ -204,7 +204,7 @@ To activate autoplay, just add the `autoplay: true` option to the attribute. You
 By default, infinite scrolling is enabled. To disable this behavior, just add the `finite: true` option to the attribute.
 
 ```html
-<div uk-slideshow="finite: true">...</div>
+<div uk-slideshow="finite: true">…</div>
 ```
 
 ***
@@ -214,7 +214,7 @@ By default, infinite scrolling is enabled. To disable this behavior, just add th
 The slideshow always takes up the full width of its parent container. The height adapts according to the defined ratio. To change the default ratio of 16:9, just add the `ratio` option to the attribute. It's recommended to use the same ratio as the background images. For example, just use their width and height, like `1600:1200`.
 
 ```html
-<div uk-slideshow="ratio: 7:3">...</div>
+<div uk-slideshow="ratio: 7:3">…</div>
 ```
 
 ```example
@@ -245,7 +245,7 @@ The slideshow always takes up the full width of its parent container. The height
 By default, the slideshow height adopts to the defined ratio. A minimum or maximum height can be set using the `min-height` and `max-height` options.
 
 ```html
-<div uk-slideshow="min-height: 300; max-height: 600">...</div>
+<div uk-slideshow="min-height: 300; max-height: 600">…</div>
 ```
 
 ```example
@@ -277,7 +277,7 @@ Adding the `uk-height-viewport` attribute from the [Height component](height.md#
 
 ```html
 <div uk-slideshow="ratio: false">
-    <ul class="uk-slideshow-items" uk-height-viewport="min-height: 300">...</ul>
+    <ul class="uk-slideshow-items" uk-height-viewport="min-height: 300">…</ul>
 </div>
 ```
 
@@ -313,15 +313,15 @@ To navigate through your slides, just use the `uk-slideshow-item` attribute. To 
 ```html
 <div uk-slideshow>
 
-    <ul class="uk-slideshow-items">...</ul>
+    <ul class="uk-slideshow-items">…</ul>
 
-    <a href="#" uk-slideshow-item="previous">...</a>
-    <a href="#" uk-slideshow-item="next">...</a>
+    <a href="#" uk-slideshow-item="previous">…</a>
+    <a href="#" uk-slideshow-item="next">…</a>
 
     <ul>
-        <li uk-slideshow-item="0"><a href="#">...</a></li>
-        <li uk-slideshow-item="1"><a href="#">...</a></li>
-        <li uk-slideshow-item="2"><a href="#">...</a></li>
+        <li uk-slideshow-item="0"><a href="#">…</a></li>
+        <li uk-slideshow-item="1"><a href="#">…</a></li>
+        <li uk-slideshow-item="2"><a href="#">…</a></li>
     </ul>
 
 </div>
@@ -334,7 +334,7 @@ If there is no item specific content in the navigation items, you can also add t
 ```html
 <div uk-slideshow>
 
-    <ul class="uk-slideshow-items">...</ul>
+    <ul class="uk-slideshow-items">…</ul>
 
     <ul class="uk-slideshow-nav uk-dotnav"></ul>
 
@@ -550,13 +550,13 @@ This functionality is inherited from the [Parallax component](parallax.md), and 
 In the example above, the content will start at `100` and animate half way to `0` while the slide moves in. When the slide starts again to move out, the content will continue to animate to `-100`. This works because the start and end values have the same distance. For different distances, three values are needed: _Start_ (Slide animates in), _Middle_ (Slide is centered), _End_ (Slide animates out).
 
 ```html
-<div uk-slideshow-parallax="x: 300,0,-100">...</div>
+<div uk-slideshow-parallax="x: 300,0,-100">…</div>
 ```
 
 The next example defines different in and out animations. The content slides in by moving from `100` to `0` and fades out from `1` to `0`.
 
 ```html
-<div uk-slideshow-parallax="x: 100,0,0; opacity: 1,1,0">...</div>
+<div uk-slideshow-parallax="x: 100,0,0; opacity: 1,1,0">…</div>
 ```
 
 ```example

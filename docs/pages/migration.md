@@ -12,10 +12,7 @@ The [Nav component](nav) component in UIkit 3.15 now uses a JavaScript component
 <ul class="uk-nav-default" uk-nav>
     <li class="uk-parent">
         <a href="#">Parent <span uk-nav-parent-icon></span></a>
-        <ul class="uk-nav-sub">
-            <li><a href="#">Sub item</a></li>
-            <li><a href="#">Sub item</a> </li>
-        </ul>
+        <ul class="uk-nav-sub">…</ul>
     </li>
 </ul>
 ```

@@ -44,7 +44,7 @@ Add the `.uk-parent` class to an item to turn it into a parent. Add the `.uk-nav
             <li><a href=""></a></li>
             <li>
                 <a href=""></a>
-                <ul>...</ul>
+                <ul>…</ul>
             </li>
         </ul>
     </li>
@@ -82,7 +82,7 @@ By default, child menu items are always visible. To apply an accordion effect, j
 **Note** The attribute automatically sets the `.uk-nav` class, so you don't have to apply it manually.
 
 ```html
-<ul uk-nav>...</ul>
+<ul uk-nav>…</ul>
 ```
 
 ```example
@@ -123,7 +123,7 @@ To create a parent icon, just add the `uk-nav-parent-icon` attribute to a `<span
 <ul uk-nav>
     <li>
         <a href="">Parent <span uk-nav-parent-icon></span></a>
-        ...
+        …
     </li>
 </ul>
 ```
@@ -163,7 +163,7 @@ To create a parent icon, just add the `uk-nav-parent-icon` attribute to a `<span
 When clicking on a parent item, an open one will close, allowing only one open nested list at a time. To allow multiple open subnavs, just add the `multiple: true` option to the attribute.
 
 ```html
-<ul uk-nav="multiple: true">...</ul>
+<ul uk-nav="multiple: true">…</ul>
 ```
 
 ```example
@@ -260,7 +260,7 @@ Add the `.uk-nav-subtitle` class to a `div` element to create an item subtitled.
 Add the `.uk-nav-default` class to give the nav its default style. You can place the nav inside cards or anywhere else in your content.
 
 ```html
-<ul class="uk-nav uk-nav-default">...</ul>
+<ul class="uk-nav uk-nav-default">…</ul>
 ```
 
 ```example
@@ -297,7 +297,7 @@ Add the `.uk-nav-default` class to give the nav its default style. You can place
 Add the `.uk-nav-primary` class to give the nav a more distinct styling, for example when placing it inside a modal.
 
 ```html
-<ul class="uk-nav uk-nav-primary">...</ul>
+<ul class="uk-nav uk-nav-primary">…</ul>
 ```
 
 ```example
@@ -330,7 +330,7 @@ Add the `.uk-nav-primary` class to give the nav a more distinct styling, for exa
 Add the `.uk-nav-secondary` class to have an extra style if the nav has subtitles.
 
 ```html
-<ul class="uk-nav uk-nav-secondary">...</ul>
+<ul class="uk-nav uk-nav-secondary">…</ul>
 ```
 
 ```example
@@ -351,7 +351,7 @@ Add the `.uk-nav-secondary` class to have an extra style if the nav has subtitle
 Add the `.uk-nav-center` class to center nav items. This can be combined with the default and primary style modifiers.
 
 ```html
-<ul class="uk-nav uk-nav-default uk-nav-center">...</ul>
+<ul class="uk-nav uk-nav-default uk-nav-center">…</ul>
 ```
 
 ```example
@@ -371,7 +371,7 @@ Add the `.uk-nav-center` class to center nav items. This can be combined with th
 Add the `.uk-nav-divider` class to separate nav items with lines. This can be combined with the default, primary and secondary style modifiers.
 
 ```html
-<ul class="uk-nav uk-nav-default uk-nav-divider">...</ul>
+<ul class="uk-nav uk-nav-default uk-nav-divider">…</ul>
 ```
 
 ```example
@@ -392,7 +392,7 @@ Add the `.uk-dropdown-nav` class to place a nav inside a default dropdown from t
 
 ```html
 <div uk-dropdown>
-    <ul class="uk-nav uk-dropdown-nav">...</ul>
+    <ul class="uk-nav uk-dropdown-nav">…</ul>
 </div>
 ```
 
@@ -419,7 +419,7 @@ Add the `.uk-navbar-dropdown-nav` class to place the nav inside a navbar dropdow
 
 ```html
 <div class="uk-navbar-dropdown">
-    <ul class="uk-nav uk-navbar-dropdown-nav">...</ul>
+    <ul class="uk-nav uk-navbar-dropdown-nav">…</ul>
 </div>
 ```
 

@@ -59,7 +59,7 @@ You can use any element to toggle an off-canvas sidebar. To enable the necessary
 To add an overlay, blanking out the page, add the `overlay: true` parameter to the `uk-offcanvas` attribute.
 
 ```html
-<div id="my-id" uk-offcanvas="overlay: true">...</div>
+<div id="my-id" uk-offcanvas="overlay: true">…</div>
 ```
 
 ```example
@@ -86,7 +86,7 @@ To add an overlay, blanking out the page, add the `overlay: true` parameter to t
 Add the `flip: true` parameter to the `uk-offcanvas` attribute to adjust its alignment, so that it slides in from the right.
 
 ```html
-<div id="my-id" uk-offcanvas="flip: true">...</div>
+<div id="my-id" uk-offcanvas="flip: true">…</div>
 ```
 
 ```example
@@ -120,7 +120,7 @@ By default, the off-canvas slides in. But you can actually choose between differ
 | `mode: none`   | The off-canvas appears and overlays the content without an animation.         |
 
 ```html
-<div id="my-id" uk-offcanvas="mode: push">...</div>
+<div id="my-id" uk-offcanvas="mode: push">…</div>
 ```
 
 ```example
@@ -190,7 +190,7 @@ You can use the [Nav component](nav.md) inside an off-canvas to create a mobile 
 ```html
 <div id="my-id" uk-offcanvas>
     <div class="uk-offcanvas-bar">
-        <ul class="uk-nav uk-nav-default">...</ul>
+        <ul class="uk-nav uk-nav-default">…</ul>
     </div>
 </div>
 ```

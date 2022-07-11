@@ -58,9 +58,9 @@ You can place more than one navigation inside a navbar container. That way you c
 
 ```html
 <nav class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-left">...</div>
-    <div class="uk-navbar-center">...</div>
-    <div class="uk-navbar-right">...</div>
+    <div class="uk-navbar-left">…</div>
+    <div class="uk-navbar-center">…</div>
+    <div class="uk-navbar-right">…</div>
 </nav>
 ```
 
@@ -115,7 +115,7 @@ You can place more than one navigation inside a navbar container. That way you c
 A parent item inside the navbar can be enabled by either hovering or clicking the toggle. Just add the `mode: click` option to the `uk-navbar` attribute.
 
 ```html
-<nav class="uk-navbar-container" uk-navbar="mode: click">...</nav>
+<nav class="uk-navbar-container" uk-navbar="mode: click">…</nav>
 ```
 
 ```example
@@ -148,7 +148,7 @@ A parent item inside the navbar can be enabled by either hovering or clicking th
 When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just add the `.uk-navbar-transparent` class to the `<nav>` element. If necessary, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to adjust the navbar color.
 
 ```html
-<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>...</nav>
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>…</nav>
 ```
 
 ```example
@@ -191,7 +191,7 @@ To define a subtitle, create a `<div>` element inside an item's `<a>` element. A
 <li>
     <a href="">
         <div>
-            ...
+            …
             <div class="uk-navbar-subtitle"></div>
         </div>
     </a>
@@ -250,8 +250,8 @@ You can also add custom content to the navbar, like text, icons, buttons or form
 <div class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
         <a href="" class="uk-navbar-item uk-logo"></a>
-        <ul class="uk-navbar-nav">...</ul>
-        <div class="uk-navbar-item">...</div>
+        <ul class="uk-navbar-nav">…</ul>
+        <div class="uk-navbar-item">…</div>
     </div>
 </div>
 ```
@@ -297,9 +297,9 @@ You can create a split menu with a centered logo. Just add the `uk-navbar-center
 ```html
 <div class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-center">
-        <div class="uk-navbar-center-left">...</div>
+        <div class="uk-navbar-center-left">…</div>
         <a href="" class="uk-navbar-item uk-logo"></a>
-        <div class="uk-navbar-center-right">...</div>
+        <div class="uk-navbar-center-right">…</div>
     </div>
 </div>
 ```
@@ -397,7 +397,7 @@ A navbar can contain a dropdown from the [Dropdown component](dropdown.md). Just
     <li>
         <a href=""></a>
         <div class="uk-navbar-dropdown">
-            <ul class="uk-nav uk-navbar-dropdown-nav">...</ul>
+            <ul class="uk-nav uk-navbar-dropdown-nav">…</ul>
         </div>
     </li>
 </ul>
@@ -459,9 +459,7 @@ To create a parent icon, just add the `uk-navbar-parent-icon` attribute to a `<s
 <ul class="uk-navbar-nav">
     <li>
         <a href="">Parent <span uk-navbar-parent-icon></span></a>
-        <div class="uk-navbar-dropdown">
-            ...
-        </div>
+        <div class="uk-navbar-dropdown">…</div>
     </li>
 </ul>
 ```
@@ -529,9 +527,9 @@ The [Dropdown component](dropdown.md) allows you to arrange the dropdown content
 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
     <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
         <div>
-            <ul class="uk-nav uk-navbar-dropdown-nav">...</ul>
+            <ul class="uk-nav uk-navbar-dropdown-nav">…</ul>
         </div>
-        <div>...</div>
+        <div>…</div>
     </div>
 </div>
 ```
@@ -626,7 +624,7 @@ By default, the dropdowns are positioned below the navbar item and are aligned t
 By default, the dropdowns are aligned to their navbar item. To position the dropdown to a different element, just add `target: SELECTOR` option to the `uk-navbar` attribute.
 
 ```html
-<nav class="uk-navbar-container" uk-navbar="target: !.uk-navbar">...</nav>
+<nav class="uk-navbar-container" uk-navbar="target: !.uk-navbar">…</nav>
 ```
 
 ```example
@@ -750,7 +748,7 @@ By default, the dropdowns are aligned to their navbar item. To position the drop
 To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` option. In the following example the dropdown is aligned to the boundary of the parent navbar.
 
 ```html
-<div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">...</div>
+<div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">…</div>
 ```
 
 ```example
@@ -814,7 +812,7 @@ To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` optio
 A dropbar extends to the full width of the navbar and displays the dropdown without its default styling. To place dropdowns inside such a dropbar, add the `dropbar: true` option to the `uk-navbar`.
 
 ```html
-<nav class="uk-navbar-container" uk-navbar="dropbar: true;">...</nav>
+<nav class="uk-navbar-container" uk-navbar="dropbar: true;">…</nav>
 <div class="uk-navbar-dropbar"></div>
 ```
 
@@ -912,7 +910,7 @@ The navbar itself has a modifier class `uk-navbar-sticky` that ensures an optimi
 
 ```html
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    <nav class="uk-navbar-container" uk-navbar>...</nav>
+    <nav class="uk-navbar-container" uk-navbar>…</nav>
 </div>
 ```
 
@@ -945,7 +943,7 @@ Instead of using a Dropdown, you can show a Dropbar, which means that the subnav
 
 ```html
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    <nav class="uk-navbar-container" uk-navbar="dropbar: true;">...</nav>
+    <nav class="uk-navbar-container" uk-navbar="dropbar: true;">…</nav>
 </div>
 ```
 
@@ -984,7 +982,7 @@ By default, the immediate toggling of classes does not look ideal. Instead, we c
 
 ```html
 <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light">
-    <nav class="uk-navbar-container" uk-navbar>...</nav>
+    <nav class="uk-navbar-container" uk-navbar>…</nav>
 </div>
 ```
 

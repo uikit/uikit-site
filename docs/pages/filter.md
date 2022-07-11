@@ -127,7 +127,7 @@ By default, the filter uses a `slide` animation for the items between the differ
 | `delayed-fade` | Fade items slightly delayed out and in.                    |
 
 ```html
-<div uk-filter="animation: fade">...</div>
+<div uk-filter="animation: fade">…</div>
 ```
 
 ```example
@@ -188,7 +188,7 @@ By default, the filter uses a `slide` animation for the items between the differ
 Add the `.uk-active` class to a filter control, and the filter will be applied initially.
 
 ```html
-<li class="uk-active" uk-filter-control="[data-color='blue']">...</li>
+<li class="uk-active" uk-filter-control="[data-color='blue']">…</li>
 ```
 
 ```example
@@ -249,7 +249,7 @@ Add the `.uk-active` class to a filter control, and the filter will be applied i
 To reset the filter and target all items, use the `uk-filter-control` attribute without any specified selector.
 
 ```html
-<li uk-filter-control>...</li>
+<li uk-filter-control>…</li>
 ```
 
 ```example

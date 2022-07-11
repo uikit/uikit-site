@@ -56,7 +56,7 @@ The Comment component consists of the comment itself, a comment header, includin
 To style a comment differently, for example to highlight it as the admin's comment, just add the `.uk-comment-primary` class.
 
 ```html
-<article class="uk-comment uk-comment-primary">...</article>
+<article class="uk-comment uk-comment-primary">…</article>
 ```
 
 ```example
@@ -90,10 +90,10 @@ Add the `.uk-comment-list` class to a `<ul>` element to create a list of comment
 ```html
 <ul class="uk-comment-list">
     <li>
-        <article class="uk-comment">...</article>
+        <article class="uk-comment">…</article>
         <ul>
             <li>
-                <article class="uk-comment">...</article>
+                <article class="uk-comment">…</article>
             </li>
         </ul>
     </li>

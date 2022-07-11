@@ -28,7 +28,7 @@ To apply this component, add the `.uk-iconnav` class to a `<ul>`  element.  Use 
 By default, the items of an iconnav are aligned horizontally. To apply a vertical alignment, add the `.uk-iconnav-vertical` class.
 
 ```html
-<ul class="uk-iconnav uk-iconnav-vertical">...</ul>
+<ul class="uk-iconnav uk-iconnav-vertical">…</ul>
 ```
 
 ```example

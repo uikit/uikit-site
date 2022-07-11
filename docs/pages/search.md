@@ -90,7 +90,7 @@ To enable an action, use an `<a>` or `<button>` element to create the icon.
 To apply the default search styling, add the `.uk-search-default` class.
 
 ```html
-<form class="uk-search uk-search-default">...</form>
+<form class="uk-search uk-search-default">…</form>
 ```
 
 ```example
@@ -107,7 +107,7 @@ To apply the default search styling, add the `.uk-search-default` class.
 To increase the size of the search, for example when creating an overlay search, add the `.uk-search-large` class.
 
 ```html
-<form class="uk-search uk-search-large">...</form>
+<form class="uk-search uk-search-large">…</form>
 ```
 
 ```example
@@ -124,7 +124,7 @@ To increase the size of the search, for example when creating an overlay search,
 A search can be used inside a navbar from the [Navbar component](navbar.md). Just add the `.uk-search-navbar` class.
 
 ```html
-<form class="uk-search uk-search-navbar">...</form>
+<form class="uk-search uk-search-navbar">…</form>
 ```
 
 ```example

@@ -11,7 +11,7 @@ The image component emulates browser features of the `<img>` element, but for ba
 To apply this component, add the `uk-img` and the `data-src` attribute containing the image path for the background image to a `div` or any other element. By default, the background image will be lazy loaded as it enters the viewport when scrolling.
 
 ```html
-<div data-src="" uk-img>...</div>
+<div data-src="" uk-img>…</div>
 ```
 
 ```example
@@ -27,7 +27,7 @@ To apply this component, add the `uk-img` and the `data-src` attribute containin
 To avoid lazy loading background images for the first visible viewport but still use other features of this component, add the `loading="eager"` parameter to the `uk-img` attribute.
 
 ```html
-<div data-src="" uk-img="loading: eager">...</div>
+<div data-src="" uk-img="loading: eager">…</div>
 ```
 
 ```example
@@ -43,7 +43,7 @@ To avoid lazy loading background images for the first visible viewport but still
 To use the `srcset` feature for background images, just add the `data-srcset` attribute. Optionally, add the `sizes` attribute but without prefix.
 
 ```html
-<div data-src="" data-srcset="" sizes="" uk-img>...</div>
+<div data-src="" data-srcset="" sizes="" uk-img>…</div>
 ```
 
 ```example
@@ -63,9 +63,9 @@ To use the `srcset` feature for background images, just add the `data-srcset` at
 To use different image sources just like the `<picture>` element that contains `<source>` elements does, add the `source` attribute with `srcset`, `media` and `type` parameters.
 
 ```html
-<div sources="srcset: ____; media: ____" data-src="" uk-img>...</div>
+<div sources="srcset: ____; media: ____" data-src="" uk-img>…</div>
 
-<div sources="srcset: ____; type: ____" data-src="" uk-img>...</div>
+<div sources="srcset: ____; type: ____" data-src="" uk-img>…</div>
 ```
 
 ```example
@@ -80,7 +80,7 @@ To use different image sources just like the `<picture>` element that contains `
 It's possible to offer multiple image sources and also multiple resolutions for each source using `srcset`.
 
 ```html
-<div sources="srcset: ____; media: ____" data-src="" data-srcset="" sizes="" uk-img>...</div>
+<div sources="srcset: ____; media: ____" data-src="" data-srcset="" sizes="" uk-img>…</div>
 ```
 
 ```example
@@ -120,7 +120,7 @@ The JSON needs to be HTML encoded.
                {&quot;type&quot;: &quot;____&quot;,
                 &quot;srcset&quot;: &quot;____&quot;
                }]"
-     data-src="" uk-img>...</div>
+     data-src="" uk-img>…</div>
 ```
 
 This example offers alternative image formats like *WebP* and *AVIF*.

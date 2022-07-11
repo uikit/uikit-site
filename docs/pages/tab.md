@@ -36,7 +36,7 @@ The tab component consists of clickable tabs, that are aligned side by side in a
 Add the `.uk-tab-bottom` class to flip tab items to the bottom.
 
 ```html
-<ul class="uk-tab-bottom" uk-tab>...</ul>
+<ul class="uk-tab-bottom" uk-tab>…</ul>
 ```
 
 ```example
@@ -56,9 +56,9 @@ Add the `.uk-tab-left` or `.uk-tab-right` class to align tabs vertically to the 
 When using the vertical alignment, you will usually create a grid to apply the layout as seen in the [Switcher example](switcher.md#vertical-tabs).
 
 ```html
-<ul class="uk-tab-left" uk-tab>...</ul>
+<ul class="uk-tab-left" uk-tab>…</ul>
 
-<ul class="uk-tab-right" uk-tab>...</ul>
+<ul class="uk-tab-right" uk-tab>…</ul>
 ```
 
 ```example
@@ -88,7 +88,7 @@ When using the vertical alignment, you will usually create a grid to apply the l
 To change the default breakpoint between the vertical and horizontal alignment, just apply the `media` option to the attribute with the appropriate viewport width. Add a number in pixel, for example `media: 640`, or a breakpoint, for example `media: @m`.
 
 ```html
-<ul class="uk-tab-left" uk-tab="media: @s">...</ul>
+<ul class="uk-tab-left" uk-tab="media: @s">…</ul>
 ```
 
 ***
@@ -98,7 +98,7 @@ To change the default breakpoint between the vertical and horizontal alignment, 
 You can combine tabs with the [Flex component](flex.md) or the [Width component](width.md) to modify the alignment of the navigations.
 
 ```html
-<ul class="uk-flex-right" uk-tab>...</ul>
+<ul class="uk-flex-right" uk-tab>…</ul>
 ```
 
 ```example
@@ -143,7 +143,7 @@ Tabs can be used to trigger a dropdown menu from the [Dropdown component](dropdo
 
         <!-- This is the dropdown -->
         <div uk-dropdown="mode: click">
-            <ul class="uk-nav uk-dropdown-nav">...</ul>
+            <ul class="uk-nav uk-dropdown-nav">…</ul>
         </div>
 
     </li>

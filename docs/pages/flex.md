@@ -105,8 +105,8 @@ These classes define the vertical alignment of flex items. By default, flex item
 ```example
 <div class="uk-flex uk-flex-middle uk-text-center">
     <div class="uk-card uk-card-default uk-card-body">Item 1</div>
-    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 2<br>...</div>
-    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3<br>...<br>...</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 2<br>…</div>
+    <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3<br>…<br>…</div>
 </div>
 ```
 

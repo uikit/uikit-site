@@ -41,7 +41,7 @@ A dropdown can contain a nav from the [Nav component](nav.md). Just add the `.uk
 ```html
 <button type="button"></button>
 <div uk-dropdown>
-    <ul class="uk-nav uk-dropdown-nav">...</ul>
+    <ul class="uk-nav uk-dropdown-nav">…</ul>
 </div>
 ```
 
@@ -68,7 +68,7 @@ You can place a grid from the [Grid component](grid.md) inside a dropdown. Just 
 
 ```html
 <div class="uk-width-large" uk-dropdown>
-    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>...</div>
+    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>…</div>
 </div>
 ```
 

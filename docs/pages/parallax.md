@@ -32,7 +32,7 @@ Set one of the options to create an animation stop. The property is animated fro
 
 
 ```html
-<div uk-parallax="bgy: -200">...</div>
+<div uk-parallax="bgy: -200">…</div>
 ```
 
 ```example
@@ -50,7 +50,7 @@ Set one of the options to create an animation stop. The property is animated fro
 To set a custom start value, create another animation stop by using two values separated by comma. 
 
 ```html
-<div uk-parallax="opacity: 0,1">...</div>
+<div uk-parallax="opacity: 0,1">…</div>
 ```
 
 ```example
@@ -69,7 +69,7 @@ To set a custom start value, create another animation stop by using two values s
 To better control the property animation, you can set intermediate stops along the animation sequence. Just use a comma-separated list of values. The animation will be equally distributed between the stops.
 
 ```html
-<div uk-parallax="x: 0,50,150">...</div>
+<div uk-parallax="x: 0,50,150">…</div>
 ```
 
 ```example
@@ -88,7 +88,7 @@ To better control the property animation, you can set intermediate stops along t
 Set an optional stop position to specify percentage along the animation sequence when the stop occurs.
 
 ```html
-<div uk-parallax="x: 0,50 10%,150 50%">...</div>
+<div uk-parallax="x: 0,50 10%,150 50%">…</div>
 ```
 
 ```example
@@ -108,7 +108,7 @@ Different parallax animations can easily be nested.
 
 ```html
 <div uk-parallax="bgx: -50">
-    <div uk-parallax="x: -100, 100">...</div>
+    <div uk-parallax="x: -100, 100">…</div>
 </div>
 ```
 
@@ -128,7 +128,7 @@ The animation starts and stops depending on the element position in the viewport
 
 ```html
 <div id="target">
-    <div uk-parallax="target: #target">...</div>
+    <div uk-parallax="target: #target">…</div>
 </div>
 ```
 
@@ -147,9 +147,9 @@ The animation starts and stops depending on the element position in the viewport
 To adjust the animation duration, set the `start` and `end` options. The `start` option defines when the animation starts. The default value of `0` means that the target's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the target's bottom border and the viewport's top border intersect. Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the target's height. Both options allow basic mathematics operands, `+` and `-`. 
 
 ```html
-<div uk-parallax="start: 100%; end: 100%;">...</div>
-<div uk-parallax="start: 30vh; end: 30vh;">...</div>
-<div uk-parallax="start: 100% + 100; end: 100% + 100;">...</div>
+<div uk-parallax="start: 100%; end: 100%;">…</div>
+<div uk-parallax="start: 30vh; end: 30vh;">…</div>
+<div uk-parallax="start: 100% + 100; end: 100% + 100;">…</div>
 ```
 
 ```example
@@ -190,7 +190,7 @@ To adjust the easing of the animation, add the `easing` option. `0` transitions 
 Transition from one color to another, for example for borders, backgrounds or text colors. Define colors using `rgb()` definitions, color keywords or hex values.
 
 ```html
-<div uk-parallax="border-color: #00f,#f00">...</div>
+<div uk-parallax="border-color: #00f,#f00">…</div>
 ```
 
 ```example
@@ -208,7 +208,7 @@ Transition from one color to another, for example for borders, backgrounds or te
 CSS filters are an easy way to add graphical effects to any element on your page. While they are still an experimental feature for [some browsers](https://caniuse.com/filter), you can safely use them as long as your usability does not suffer. Using the Parallax component, you can dynamically change the amount of a filter on your element.
 
 ```html
-<div uk-parallax="blur: 10; sepia: 100;">...</div>
+<div uk-parallax="blur: 10; sepia: 100;">…</div>
 ```
 
 ```example

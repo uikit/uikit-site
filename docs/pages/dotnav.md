@@ -35,7 +35,7 @@ To create a navigation with dots, use the following classes. This component is b
 The dotnav can also be displayed vertically. Just add the `.uk-dotnav-vertical` modifier.
 
 ```html
-<ul class="uk-dotnav uk-dotnav-vertical">...</ul>
+<ul class="uk-dotnav uk-dotnav-vertical">…</ul>
 ```
 
 ```example
@@ -63,7 +63,7 @@ Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md)
     <!-- The element which is wrapped goes here -->
 
     <div class="uk-position-bottom-center uk-position-small">
-        <ul class="uk-dotnav">...</ul>
+        <ul class="uk-dotnav">…</ul>
     </div>
 
 </div>
@@ -103,6 +103,6 @@ The dotnav can also be centered vertically inside your viewport by adding the `.
 
 ```html
 <div class="uk-position-center-right uk-position-medium uk-position-fixed">
-    <ul class="uk-dotnav uk-dotnav-vertical">...</ul>
+    <ul class="uk-dotnav uk-dotnav-vertical">…</ul>
 </div>
 ```

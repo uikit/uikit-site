@@ -66,7 +66,7 @@ To apply this component, add the `.uk-table` class to a `<table>` element.
 Add the `.uk-table-divider` class to display a divider between table rows.
 
 ```html
-<table class="uk-table uk-table-divider">...</table>
+<table class="uk-table uk-table-divider">…</table>
 ```
 
 ```example
@@ -105,7 +105,7 @@ Add the `.uk-table-divider` class to display a divider between table rows.
 Add zebra-striping to a table by adding the `.uk-table-striped` class.
 
 ```html
-<table class="uk-table uk-table-striped">...</table>
+<table class="uk-table uk-table-striped">…</table>
 ```
 
 ```example
@@ -144,7 +144,7 @@ Add zebra-striping to a table by adding the `.uk-table-striped` class.
 Add the `.uk-table-hover` class to display a hover state on table rows.
 
 ```html
-<table class="uk-table uk-table-hover">...</table>
+<table class="uk-table uk-table-hover">…</table>
 ```
 
 ```example
@@ -183,7 +183,7 @@ Add the `.uk-table-hover` class to display a hover state on table rows.
 Add the `.uk-table-small` or `.uk-table-large` class to a table to make it smaller or larger.
 
 ```html
-<table class="uk-table uk-table-small">...</table>
+<table class="uk-table uk-table-small">…</table>
 ```
 
 ```example
@@ -222,7 +222,7 @@ Add the `.uk-table-small` or `.uk-table-large` class to a table to make it small
 To remove the outer padding of the first and last column so that they are flush with the table, add the `.uk-table-justify` class.
 
 ```html
-<table class="uk-table uk-table-justify">...</table>
+<table class="uk-table uk-table-justify">…</table>
 ```
 
 ```example
@@ -257,7 +257,7 @@ To remove the outer padding of the first and last column so that they are flush 
 To vertically center table content, just add the `.uk-table-middle` class. You can also apply the class to `<tr>` or `<td>` elements for a more specific selection.
 
 ```html
-<table class="uk-table uk-table-middle">...</table>
+<table class="uk-table uk-table-middle">…</table>
 ```
 
 ```example
@@ -292,7 +292,7 @@ If your table happens to be wider than its container element or would eventually
 
 ```html
 <div class="uk-overflow-auto">
-    <table class="uk-table">...</table>
+    <table class="uk-table">…</table>
 </div>
 ```
 
@@ -370,7 +370,7 @@ If your table happens to be wider than its container element or would eventually
 If you want table columns to stack on small screens, add the `.uk-table-responsive` class.
 
 ```html
-<table class="uk-table uk-table-responsive">...</table>
+<table class="uk-table uk-table-responsive">…</table>
 ```
 
 ```example

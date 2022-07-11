@@ -249,8 +249,8 @@ These utilities provide different classes for resizing elements.
             <code>
 &lt;!-- Resize vertically --&gt;
 &lt;div uk-grid&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
+    &lt;div class="uk-width-1-2"&gt;…&lt;/div&gt;
+    &lt;div class="uk-width-1-2"&gt;…&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="uk-child-width-1-2" uk-grid&gt;
@@ -265,8 +265,8 @@ These utilities provide different classes for resizing elements.
             <code>
 &lt;!-- Resize horizontally and vertically --&gt;
 &lt;div uk-grid&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
-    &lt;div class="uk-width-1-2"&gt;...&lt;/div&gt;
+    &lt;div class="uk-width-1-2"&gt;…&lt;/div&gt;
+    &lt;div class="uk-width-1-2"&gt;…&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="uk-child-width-1-2" uk-grid&gt;

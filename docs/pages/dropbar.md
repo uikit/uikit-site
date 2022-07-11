@@ -169,7 +169,7 @@ A dropbar can contain a nav from the [Nav component](nav.md). Just add the `.uk-
 ```html
 <button type="button"></button>
 <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x">
-    <ul class="uk-nav uk-dropdown-nav">...</ul>
+    <ul class="uk-nav uk-dropdown-nav">…</ul>
 </div>
 ```
 

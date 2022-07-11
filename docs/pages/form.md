@@ -197,11 +197,11 @@ Define labels and controls and apply a stacked or horizontal layout to form elem
 <form class="uk-form-stacked">
     <div>
         <label class="uk-form-label"></label>
-        <div class="uk-form-controls">...</div>
+        <div class="uk-form-controls">…</div>
     </div>
     <div>
         <div class="uk-form-label"></div>
-        <div class="uk-form-controls">...</div>
+        <div class="uk-form-controls">…</div>
     </div>
 </form>
 ```
@@ -247,11 +247,11 @@ Use the `.uk-form-controls-text` class to better align checkboxes and radio butt
 <form class="uk-form-horizontal">
     <div>
         <label class="uk-form-label"></label>
-        <div class="uk-form-controls">...</div>
+        <div class="uk-form-controls">…</div>
     </div>
     <div>
         <div class="uk-form-label"></div>
-        <div class="uk-form-controls uk-form-controls-text">...</div>
+        <div class="uk-form-controls uk-form-controls-text">…</div>
     </div>
 </form>
 ```

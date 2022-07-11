@@ -50,7 +50,7 @@ The Accordion component consists of a parent container with the `uk-accordion` a
 By default, all accordion items can be collapsed. To prevent this behavior and always maintain one open item, add the `collapsible: false` option to the attribute.
 
 ```html
-<ul uk-accordion="collapsible: false">...</ul>
+<ul uk-accordion="collapsible: false">…</ul>
 ```
 
 ```example
@@ -83,7 +83,7 @@ By default, all accordion items can be collapsed. To prevent this behavior and a
 To display multiple content sections at the same time without one collapsing when the other one is opened, add the `multiple: true` option to the `uk-accordion` attribute.
 
 ```html
-<ul uk-accordion="multiple: true">...</ul>
+<ul uk-accordion="multiple: true">…</ul>
 ```
 
 ```example

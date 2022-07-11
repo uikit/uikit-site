@@ -76,12 +76,12 @@ It is also possible to connect multiple content containers. Just add the `connec
 
 ```html
 <!-- This is the nav containing the toggling elements -->
-<ul uk-switcher="connect: .my-class">...</ul>
+<ul uk-switcher="connect: .my-class">…</ul>
 
 <!-- These are the containers of the content items -->
-<ul class="uk-switcher my-class">...</ul>
+<ul class="uk-switcher my-class">…</ul>
 
-<ul class="uk-switcher my-class">...</ul>
+<ul class="uk-switcher my-class">…</ul>
 ```
 
 ```example
@@ -115,7 +115,7 @@ It is also possible to connect multiple content containers. Just add the `connec
 You can apply all animations from the [Animation component](animation) to switcher items. To do so, add the `animation` parameter with the relevant class to the `uk-switcher` attribute.
 
 ```html
-<ul uk-switcher="animation: uk-animation-fade">...</ul>
+<ul uk-switcher="animation: uk-animation-fade">…</ul>
 ```
 
 ```example
@@ -139,7 +139,7 @@ You can apply all animations from the [Animation component](animation) to switch
 You can also apply multiple animations from the [Animation component](animation). That way you can add different in and out animations.
 
 ```html
-<ul uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">...</ul>
+<ul uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">…</ul>
 ```
 
 ```example
@@ -164,7 +164,7 @@ The switcher is easily applied to the [Subnav component](subnav).
 
 ```html
 <!-- This is the subnav containing the toggling elements -->
-<ul class="uk-subnav uk-subnav-pill" uk-switcher>...</ul>
+<ul class="uk-subnav uk-subnav-pill" uk-switcher>…</ul>
 
 <!-- This is the container of the content items -->
 <ul class="uk-switcher"></ul>
@@ -193,10 +193,10 @@ As an exception to the rule, add the `uk-tab` attribute instead of `uk-switcher`
 
 ```html
 <!-- This is the subnav containing the toggling elements -->
-<ul uk-tab>...</ul>
+<ul uk-tab>…</ul>
 
 <!-- This is the container of the content items -->
-<ul class="uk-switcher">...</ul>
+<ul class="uk-switcher">…</ul>
 ```
 
 ```example
@@ -222,10 +222,10 @@ Use the [Grid](grid) and [Width](width) components to display content correctly 
 ```html
 <div uk-grid>
     <div class="uk-width-auto">
-        <ul class="uk-tab-left" uk-tab="connect: #my-id">...</ul>
+        <ul class="uk-tab-left" uk-tab="connect: #my-id">…</ul>
     </div>
     <div class="uk-width-expand">
-        <ul id="my-id" class="uk-switcher">...</ul>
+        <ul id="my-id" class="uk-switcher">…</ul>
     </div>
 </div>
 ```
@@ -284,7 +284,7 @@ The switcher can also be applied to buttons or button groups from the [Button co
     <button class="uk-button uk-button-default" type="button"></button>
 </div>
 
-<ul class="uk-switcher">...</ul>
+<ul class="uk-switcher">…</ul>
 ```
 
 ```example
@@ -312,10 +312,10 @@ To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribu
 ```html
 <div uk-grid>
     <div class="uk-width-small">
-        <ul class="uk-nav uk-nav-default" uk-switcher="connect: #my-id">...</ul>
+        <ul class="uk-nav uk-nav-default" uk-switcher="connect: #my-id">…</ul>
     </div>
     <div class="uk-width-expand">
-        <ul id="my-id" class="uk-switcher">...</ul>
+        <ul id="my-id" class="uk-switcher">…</ul>
     </div>
 </div>
 ```
