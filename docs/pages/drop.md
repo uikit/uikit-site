@@ -29,6 +29,8 @@ To group the toggle and the dropdown, just wrap them with a container element an
 </div>
 ```
 
+***
+
 ## Mode
 
 By default, the drop is toggled on hover and on click. Set the `mode` option to change the toggle behavior.
@@ -245,7 +247,7 @@ To stretch the drop to fill the size of its closest scrolling ancestor, add the 
 
         <ul class="uk-navbar-nav">
             <li>
-                <a href="#">Stretch to Navbar</a>
+                <a href="#">Hover</a>
                 <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
             </li>
         </ul>
@@ -291,22 +293,22 @@ Alternatively, the Drop component has two additional animation types which are n
 
     <div class="uk-inline">
         <button class="uk-button uk-button-default" type="button">Slide Top</button>
-        <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: slide-top; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+        <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: slide-top; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
 
     <div class="uk-inline">
         <button class="uk-button uk-button-default" type="button">Reveal Top</button>
-        <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: reveal-top; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+        <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: reveal-top; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
 
     <div class="uk-inline">
         <button class="uk-button uk-button-default" type="button">Slide Left</button>
-        <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: slide-left; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+        <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: slide-left; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
 
     <div class="uk-inline">
         <button class="uk-button uk-button-default" type="button">Reveal Left</button>
-        <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: reveal-left; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+        <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: reveal-left; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
     </div>
 
 </div>

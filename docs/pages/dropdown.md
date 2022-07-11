@@ -291,6 +291,8 @@ To disable automatic shifting and flipping, add the `shift: false` or `flip: fal
 </div>
 ```
 
+***
+
 ## Auto Update
 
 By default, the drop repositions on scrolling. To disable dynamic positioning, add `auto-update: false` option to the `uk-dropdown` attribute. The dropdown will only be positioned once when opened.
@@ -402,17 +404,17 @@ To stretch the dropdown to fill the size of its closest scrolling ancestor, add 
 
         <ul class="uk-navbar-nav">
             <li>
-                <a href="#">Stretch to Navbar</a>
+                <a href="#">Hover</a>
                 <div class="uk-navbar-dropdown" uk-dropdown="boundary: !.uk-navbar; stretch: x; flip: false">
                     <ul class="uk-nav uk-dropdown-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">Item</a></li>
-        </ul>
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
                 </div>
             </li>
         </ul>
@@ -435,14 +437,14 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 <button class="uk-button uk-button-default" type="button">Hover</button>
 <div uk-dropdown="animation: uk-animation-slide-top-small; animate-out: true">
     <ul class="uk-nav uk-dropdown-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">Item</a></li>
-        </ul>
+        <li class="uk-active"><a href="#">Active</a></li>
+        <li><a href="#">Item</a></li>
+        <li class="uk-nav-header">Header</li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li class="uk-nav-divider"></li>
+        <li><a href="#">Item</a></li>
+    </ul>
 </div>
 ```
 
@@ -468,61 +470,61 @@ Alternatively, the Drop component has two additional animation types which are n
 
     <div class="uk-inline">
         <button class="uk-button uk-button-default" type="button">Slide Top</button>
-        <div uk-dropdown="animation: slide-top; animate-out: true">
+        <div uk-dropdown="animation: slide-top; animate-out: true; duration: 700">
             <ul class="uk-nav uk-dropdown-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">Item</a></li>
-        </ul>
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Item</a></li>
+            </ul>
         </div>
     </div>
 
     <div class="uk-inline">
         <button class="uk-button uk-button-default" type="button">Reveal Top</button>
-        <div uk-dropdown="animation: reveal-top; animate-out: true">
+        <div uk-dropdown="animation: reveal-top; animate-out: true; duration: 700">
             <ul class="uk-nav uk-dropdown-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">Item</a></li>
-        </ul>
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Item</a></li>
+            </ul>
         </div>
     </div>
 
     <div class="uk-inline">
         <button class="uk-button uk-button-default" type="button">Slide Left</button>
-        <div uk-dropdown="animation: slide-left; animate-out: true">
+        <div uk-dropdown="animation: slide-left; animate-out: true; duration: 700">
             <ul class="uk-nav uk-dropdown-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">Item</a></li>
-        </ul>
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Item</a></li>
+            </ul>
         </div>
     </div>
 
     <div class="uk-inline">
         <button class="uk-button uk-button-default" type="button">Reveal Left</button>
-        <div uk-dropdown="animation: reveal-left; animate-out: true">
+        <div uk-dropdown="animation: reveal-left; animate-out: true; duration: 700">
             <ul class="uk-nav uk-dropdown-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">Item</a></li>
-        </ul>
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Item</a></li>
+            </ul>
         </div>
     </div>
 
