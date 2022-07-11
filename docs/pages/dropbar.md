@@ -6,7 +6,13 @@ The dropbar provide a section-like style for the [Drop component](drop.md). In o
 
 ## Usage
 
-To apply this component, add the `.uk-dropbar` class and add a modifier class for the direction from which the dropbar appears, for example `.uk-dropbar-top`. Additionally, add the `uk-drop` attribute to a block element following the toggle. Any content, like a button, can toggle the drop component. Since the dropbar visually requires to extend to the full width or height of the viewport, add the `stretch: true` option to the `uk-drop` attribute. To only stretch to one axis, use `stretch: x` or `stretch: y`. For all the animation details take a look at the [Drop component](drop.md).
+To apply this component, add the `.uk-dropbar` class and add a modifier class for the direction from which the dropbar appears, for example `.uk-dropbar-top`.
+
+```html
+<div class="uk-dropbar uk-dropbar-top"></div>
+```
+
+Additionally, add the `uk-drop` attribute to the dropbar and a toggle element before. Any content, like a button, can toggle the drop component. Since the dropbar visually requires to extend to the full width or height of the viewport, add the `stretch: true` option to the `uk-drop` attribute. To only stretch to one axis, use `stretch: x` or `stretch: y`. For all the animation details take a look at the [Drop component](drop.md).
 
 ```html
 <button type="button"></button>
@@ -114,7 +120,7 @@ To animate the dropbar use the `slide-*` or `reveal-*` animations from the [Drop
 | `reveal-right`  | Reveals the dropbar from the right.  |
 
 ```html
-<div uk-dropdown="animation: slide-top; animate-out: true"></div>
+<div uk-drop="animation: slide-top; animate-out: true"></div>
 ```
 
 ```example
@@ -158,7 +164,7 @@ To animate the dropbar use the `slide-*` or `reveal-*` animations from the [Drop
 
 ## Nav in dropbar
 
-A dropbar can contain a nav from the [Nav component](nav.md). Just add the `.uk-nav` class and the the `.uk-dropdown-nav` modifier to a `<ul>` element.
+A dropbar can contain a nav from the [Nav component](nav.md). Just add the `.uk-nav` class to a `<ul>` element and use the same `.uk-dropdown-nav` modifier from the [Dropdown component](dropdown.md) to have the same nav style.
 
 ```html
 <button type="button"></button>
