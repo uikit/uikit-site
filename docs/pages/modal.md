@@ -320,14 +320,14 @@ If you want to display media, you should first check, if the [Lightbox component
 <div id="modal-media-youtube" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" allow="autoplay" uk-video uk-responsive></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA" width="1920" height="1080" uk-video uk-responsive></iframe>
     </div>
 </div>
 
 <div id="modal-media-vimeo" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <iframe src="https://player.vimeo.com/video/1084537" width="1280" height="720" allow="autoplay" uk-video uk-responsive></iframe>
+        <iframe src="https://player.vimeo.com/video/1084537" width="1280" height="720" uk-video uk-responsive></iframe>
     </div>
 </div>
 ```
