@@ -563,7 +563,7 @@ To define a custom offset between the dropdown and its toggle, add the `offset` 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option        | Value                 | Default             | Description                                                                                                  |
-|:--------------| :-------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
+|:--------------|:----------------------|:--------------------|:-------------------------------------------------------------------------------------------------------------|
 | `toggle`      | CSS selector          | `- *`               | CSS selector for the element to be used as toggle. By default, the preceding element.                        |
 | `pos`         | String                | `bottom-left`       | Drop position.                                                                                               |
 | `stretch`     | Boolean, `x`, `y`     | `true`              | Stretch dropdown on both (true) or given axis.                                                               |
