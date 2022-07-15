@@ -335,28 +335,28 @@ To define a custom offset between the drop and its toggle, add the `offset` opti
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option          | Value                 | Default             | Description                                                                                              |
-|:----------------|:----------------------|:--------------------|:---------------------------------------------------------------------------------------------------------|
-| `toggle`        | CSS selector          | `- *`               | CSS selector for the element to be used as toggle. By default, the preceding element.                    |
-| `pos`           | String                | `bottom-left`       | Drop position.                                                                                           |
-| `stretch`       | Boolean, `x`, `y`     | `true`              | Stretch drop on both (true) or given axis.                                                               |
-| `mode`          | click, hover          | click, hover        | Comma-separated list of drop trigger behavior modes.                                                     |
-| `delay-show`    | Number                | `0`                 | Delay time in hover mode before a drop is shown in ms.                                                   |
-| `delay-hide`    | Number                | `800`               | Delay time in hover mode before a drop is hidden in ms.                                                  |
-| `auto-update`   | Boolean               | `true`              | Disable dynamic positioning while scrolling by setting this option to `false`.                           |
-| `boundary`      | CSS selector          | `false`             | The area the drop can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
-| `target`        | Boolean, CSS selector | `false`             | The element the drop is positioned to (`true` for window).                                               |
-| `target-x`      | Boolean, CSS selector | `false`             | The element's X axis the drop is positioned to (`true` for window).                                      |
-| `target-y`      | Boolean, CSS selector | `false`             | The element's Y axis the drop is positioned to (`true` for window).                                      |
-| `inset`         | Boolean               | `false`             | Position inside its target.                                                                              |
-| `flip`          | Boolean               | `true`              | Flip the drop along the main axis if it overflows the boundary.                                          |
-| `shift`         | Boolean               | `true`              | Shift the drop along the cross axis if it overflows the boundary.                                        |
-| `offset`        | Number                | `0`                 | The drop offset.                                                                                         |
-| `animation`     | String                | `uk-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                  |
-| `animation-out` | Boolean               | `false`             | Use animation when closing the drop.                                                                     |
-| `bg-scroll`     | Boolean               | `true`              | Allow background scrolling while drop is opened.                                                         |
-| `duration`      | Number                | `200`               | The animation duration.                                                                                  |
-| `container`     | Boolean               | `false`             | Define a target container via a selector to specify where the drop should be appended in the DOM.        |
+| Option        | Value                 | Default             | Description                                                                                              |
+|:--------------|:----------------------|:--------------------|:---------------------------------------------------------------------------------------------------------|
+| `toggle`      | CSS selector          | `- *`               | CSS selector for the element to be used as toggle. By default, the preceding element.                    |
+| `pos`         | String                | `bottom-left`       | Drop position.                                                                                           |
+| `stretch`     | Boolean, `x`, `y`     | `true`              | Stretch drop on both (true) or given axis.                                                               |
+| `mode`        | click, hover          | click, hover        | Comma-separated list of drop trigger behavior modes.                                                     |
+| `delay-show`  | Number                | `0`                 | Delay time in hover mode before a drop is shown in ms.                                                   |
+| `delay-hide`  | Number                | `800`               | Delay time in hover mode before a drop is hidden in ms.                                                  |
+| `auto-update` | Boolean               | `true`              | Disable dynamic positioning while scrolling by setting this option to `false`.                           |
+| `boundary`    | CSS selector          | `false`             | The area the drop can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
+| `target`      | Boolean, CSS selector | `false`             | The element the drop is positioned to (`true` for window).                                               |
+| `target-x`    | Boolean, CSS selector | `false`             | The element's X axis the drop is positioned to (`true` for window).                                      |
+| `target-y`    | Boolean, CSS selector | `false`             | The element's Y axis the drop is positioned to (`true` for window).                                      |
+| `inset`       | Boolean               | `false`             | Position inside its target.                                                                              |
+| `flip`        | Boolean               | `true`              | Flip the drop along the main axis if it overflows the boundary.                                          |
+| `shift`       | Boolean               | `true`              | Shift the drop along the cross axis if it overflows the boundary.                                        |
+| `offset`      | Number                | `0`                 | The drop offset.                                                                                         |
+| `animation`   | String                | `uk-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                  |
+| `animate-out` | Boolean               | `false`             | Use animation when closing the drop.                                                                     |
+| `bg-scroll`   | Boolean               | `true`              | Allow background scrolling while drop is opened.                                                         |
+| `duration`    | Number                | `200`               | The animation duration.                                                                                  |
+| `container`   | Boolean               | `false`             | Define a target container via a selector to specify where the drop should be appended in the DOM.        |
 
 `pos` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
