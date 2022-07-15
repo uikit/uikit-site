@@ -167,7 +167,7 @@ To adjust the animation duration, set the `start` and `end` options. The `start`
 
 ## Easing
 
-To adjust the easing of the animation, add the `easing` option. `0` transitions at an even speed. A positive value starts off quickly slowing down until complete while a negative value starts off slowly increasing the speed until complete.
+To adjust the easing of the animation, add the `easing` option. `0` transitions at an even speed. A negative value starts off quickly slowing down until complete while a positive value starts off slowly increasing the speed until complete.
 
 ```example
 <div id="test-easing" class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
