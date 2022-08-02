@@ -8,7 +8,7 @@ You have the following options to get UIkit:
 
 - Download the [latest release](https://github.com/uikit/uikit/releases/latest) with pre-built JavaScript and CSS.
 - Install with [Yarn](https://yarnpkg.com/en/package/uikit) to get the pre-built JavaScript, CSS and the Less source files. This is recommended when using UIkit for a typical web project: ```yarn add uikit```
-- Clone the repo to get all source files including build scripts: `git clone git://github.com/uikit/uikit.git`
+- Clone the repo to get all source files including build scripts: `git clone git@github.com:uikit/uikit.git`
 
 The compiled files of all UIkit versions are also hosted on the jsDelivr content delivery network via [jsdelivr.com](https://www.jsdelivr.com/package/npm/uikit).
 
