@@ -216,7 +216,7 @@ By default, the drop is aligned to its toggle. To position the drop to a differe
 By default, the drop is positioned outside the toggle. To change the position to the inside, add the `inset: true` option to the `uk-drop` attribute. This option should only be used if the `target` option is also set so the drop doesn't cover its toggle.
 
 ```html
-<div uk-drop="target: .my-class; inset: true"></div>
+<div uk-drop="target: !.my-class; inset: true"></div>
 ```
 
 ```example
