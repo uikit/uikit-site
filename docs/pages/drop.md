@@ -131,7 +131,7 @@ By default, the drop is positioned below the toggle. To change its position, set
 
 ## Boundary
 
-By default, the drop automatically changes its positions if it exceeds the viewport or any other parent scrolling ancestor. It will flip its position to the other side to prevent it from covering the toggle and shift its alignment to fit into the viewport. To set a different boundary other than the scrolling ancestor, just add the `boundary: SELECTOR` option to the `uk-drop` attribute using a selector for the boundary.
+By default, the drop automatically changes its positions if it exceeds the viewport or any other parent scrolling ancestor. It will flip its position to the other side to prevent it from covering the toggle and shift its alignment to fit into the viewport. To set a different boundary other than the scrolling ancestor, just add the `boundary: SELECTOR` option to the `uk-drop` attribute using a selector for the boundary. To set a boundary on one axis only, use `boundary-x: SELECTOR` or `boundary-y: SELECTOR`.
 
 ```html
 <div class="my-class">
@@ -345,6 +345,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `delay-hide`  | Number                | `800`               | Delay time in hover mode before a drop is hidden in ms.                                                  |
 | `auto-update` | Boolean               | `true`              | Disable dynamic positioning while scrolling by setting this option to `false`.                           |
 | `boundary`    | CSS selector          | `false`             | The area the drop can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
+| `boundary-x`  | CSS selector          | `false`             | The area on the x-axis the drop can't exceed causing it to flip and shift.                               |
+| `boundary-y`  | CSS selector          | `false`             | The area on the y-axis the drop can't exceed causing it to flip and shift.                               |
 | `target`      | Boolean, CSS selector | `false`             | The element the drop is positioned to (`true` for window).                                               |
 | `target-x`    | Boolean, CSS selector | `false`             | The element's X axis the drop is positioned to (`true` for window).                                      |
 | `target-y`    | Boolean, CSS selector | `false`             | The element's Y axis the drop is positioned to (`true` for window).                                      |
