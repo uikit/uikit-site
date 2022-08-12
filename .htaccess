@@ -19,11 +19,11 @@ AddType  text/html;charset=utf-8  .md
 </IfModule>
 
 <FilesMatch "\.html$">
-    Header set Cache-Control "public, must-revalidate"
+    Header set Cache-Control "public, max-age=300"
 </FilesMatch>
 
 <FilesMatch "package\.json$">
-    Header set Cache-Control "public, must-revalidate"
+    Header set Cache-Control "public, max-age=300"
 </FilesMatch>
 
 <FilesMatch ".(js|css|ico|svg|jpg|jpeg|bmp|png|gif|webp|woff|woff2)$">
