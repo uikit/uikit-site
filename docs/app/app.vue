@@ -4,7 +4,11 @@
             <div class="uk-container uk-container-expand">
                 <nav class="uk-navbar">
                     <div class="uk-navbar-left">
-                        <a href="../" class="uk-navbar-item uk-logo">
+                        <a
+                            href="../"
+                            class="uk-navbar-item uk-logo"
+                            aria-label="Back to the homepage"
+                        >
                             <img
                                 class="uk-margin-small-right"
                                 uk-svg
@@ -37,6 +41,7 @@
                             uk-navbar-toggle-icon
                             href="#offcanvas"
                             uk-toggle
+                            aria-label="Open Menu"
                         ></a>
                     </div>
                 </nav>

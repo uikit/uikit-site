@@ -3,7 +3,11 @@
         <div class="uk-container uk-container-expand">
             <nav class="uk-navbar">
                 <div class="uk-navbar-left">
-                    <router-link class="uk-navbar-item uk-logo" to="/">
+                    <router-link
+                        class="uk-navbar-item uk-logo"
+                        to="/"
+                        aria-label="Back to the homepage"
+                    >
                         <canvas
                             class="uk-margin-small-right"
                             width="28"
@@ -41,6 +45,7 @@
                         uk-navbar-toggle-icon
                         href="#offcanvas"
                         uk-toggle
+                        aria-label="Open Menu"
                     ></a>
                 </div>
             </nav>

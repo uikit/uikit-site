@@ -145,161 +145,34 @@
                 </div>
 
                 <div class="uk-child-width-1-4@m uk-child-width-1-2@s" uk-grid>
-                    <div>
+                    <div
+                        v-for="id in [
+                            'line-gallery',
+                            'union-dental',
+                            'devstack',
+                            'design-escapes',
+                            'paladin',
+                            'kitchen-daily',
+                            'creative-hub',
+                            'tech-space',
+                        ]"
+                        :key="id"
+                    >
                         <div
                             class="uk-inline tm-box-shadow-medium uk-transition-toggle"
                             tabindex="0"
                         >
                             <img
-                                src="images/pro/style-line-gallery.jpg"
+                                :src="`images/pro/style-${id}.jpg`"
                                 width="1200"
                                 height="900"
-                                alt="Line Gallery Style"
+                                :alt="`${titleCase(id)} Style`"
                                 loading="lazy"
                             />
                             <a
                                 class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/line-gallery/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/style-union-dental.jpg"
-                                width="1200"
-                                height="900"
-                                alt="Union Dental Style"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/union-dental/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/style-devstack.jpg"
-                                width="1200"
-                                height="900"
-                                alt="Devstack Style"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/devstack/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/style-design-escapes.jpg"
-                                width="1200"
-                                height="900"
-                                alt="Design Escapes Style"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/design-escapes/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/style-paladin.jpg"
-                                width="1200"
-                                height="900"
-                                alt="Paladin Style"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/paladin/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/style-kitchen-daily.jpg"
-                                width="1200"
-                                height="900"
-                                alt="Kitchen Daily Style"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/kitchen-daily/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/style-creative-hub.jpg"
-                                width="1200"
-                                height="900"
-                                alt="Creative Hub Style"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/creative-hub/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/style-tech-space.jpg"
-                                width="1200"
-                                height="900"
-                                alt="Tech Space Style"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/tech-space/"
+                                :href="`https://demo.yootheme.com/wordpress/themes/${id}/`"
+                                :aria-label="`Show ${titleCase(id)} style demo`"
                                 data-modal
                             ></a>
                         </div>
@@ -324,298 +197,41 @@
                 </div>
 
                 <div class="uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2" uk-grid>
-                    <div>
+                    <div
+                        v-for="id in [
+                            'line-gallery',
+                            'union-dental',
+                            'devstack',
+                            'design-escapes',
+                            'paladin',
+                            'kitchen-daily',
+                            'creative-hub',
+                            'tech-space',
+                            'framerate',
+                            'design-bites',
+                            'matthew-taylor',
+                            'soda',
+                            'makai',
+                            'balou',
+                            'yoko',
+                        ]"
+                        :key="id"
+                    >
                         <div
                             class="uk-inline tm-box-shadow-medium uk-transition-toggle"
                             tabindex="0"
                         >
                             <img
-                                src="images/pro/layout-line-gallery.jpg"
+                                :src="`images/pro/layout-${id}.jpg`"
                                 width="800"
                                 height="1250"
-                                alt="Line Gallery Home Layout"
+                                :alt="`${titleCase(id)} Home Layout`"
                                 loading="lazy"
                             />
                             <a
                                 class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/line-gallery/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-union-dental.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Union Dental Home Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/union-dental/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-devstack.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Devstack Home Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/devstack/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-design-escapes.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Design Escapes Home Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/design-escapes/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-paladin.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Paladin Home Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/paladin/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-kitchen-daily.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Kitchen Daily Home Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/kitchen-daily/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-creative-hub.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Creative Hub Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/creative-hub"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-tech-space.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Tech Space Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/tech-space/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-framerate.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Framerate Home Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/framerate/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-design-bites.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Design Bites Home Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/design-bites/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-matthew-taylor.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Matthew Taylor Home Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/matthew-taylor/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-soda.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Soda Home Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/soda/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-makai.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Makai Home Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/makai"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-balou.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Balou Home Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/balou/"
-                                data-modal
-                            ></a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            class="uk-inline tm-box-shadow-medium uk-transition-toggle"
-                            tabindex="0"
-                        >
-                            <img
-                                src="images/pro/layout-yoko.jpg"
-                                width="800"
-                                height="1250"
-                                alt="Yoko Home Layout"
-                                loading="lazy"
-                            />
-                            <a
-                                class="tm-overlay-default uk-position-cover uk-transition-fade"
-                                href="https://demo.yootheme.com/wordpress/themes/yoko/"
+                                :href="`https://demo.yootheme.com/wordpress/themes/${id}/`"
+                                :aria-label="`Show ${titleCase(id)} layout demo`"
                                 data-modal
                             ></a>
                         </div>
@@ -662,7 +278,11 @@
                     <div class="uk-child-width-auto@m uk-flex-middle" uk-grid>
                         <div>
                             <div class="uk-text-left@m uk-text-center">
-                                <a class="uk-logo" href="./index">
+                                <a
+                                    class="uk-logo uk-flex"
+                                    href="./index"
+                                    aria-label="Back to the homepage"
+                                >
                                     <canvas
                                         class="uk-margin-small-right"
                                         width="28"
@@ -699,6 +319,7 @@
                                             href="https://github.com/uikit/uikit"
                                             class="uk-icon-link"
                                             uk-icon="github"
+                                            aria-label="Go to GitHub"
                                         ></a>
                                     </div>
                                     <div>
@@ -706,6 +327,7 @@
                                             href="https://discordapp.com/invite/NEt4Pv7"
                                             class="uk-icon-link"
                                             uk-icon="commenting"
+                                            aria-label="Go to Discord"
                                         ></a>
                                     </div>
                                     <div>
@@ -713,6 +335,7 @@
                                             href="https://twitter.com/getuikit"
                                             class="uk-icon-link"
                                             uk-icon="twitter"
+                                            aria-label="Go to Twitter"
                                         ></a>
                                     </div>
                                     <div>
@@ -720,6 +343,7 @@
                                             href="https://www.facebook.com/getuikit"
                                             class="uk-icon-link"
                                             uk-icon="facebook"
+                                            aria-label="Go to Facebook"
                                         ></a>
                                     </div>
                                 </div>
@@ -798,5 +422,16 @@ export default {
             this.src = el.href;
         });
     },
+
+    methods: {
+        titleCase,
+    },
 };
+
+function titleCase(str) {
+    return str.replace(
+        /\w\S*/g,
+        (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+    );
+}
 </script>
