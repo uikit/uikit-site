@@ -189,7 +189,7 @@ Use button groups to split buttons into a standard action on the left and a drop
 <div class="uk-button-group">
     <button class="uk-button uk-button-default">Dropdown</button>
     <div class="uk-inline">
-        <button class="uk-button uk-button-default" type="button"><span uk-icon="icon:  triangle-down"></span></button>
+        <button class="uk-button uk-button-default" type="button" aria-label="Toggle Dropdown"><span uk-icon="icon:  triangle-down"></span></button>
         <div uk-dropdown="mode: click; target: !.uk-button-group;">
             <ul class="uk-nav uk-dropdown-nav">
                 <li class="uk-active"><a href="#">Active</a></li>
