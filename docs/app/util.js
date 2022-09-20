@@ -1,6 +1,5 @@
 /* global marked */
 
-import uniqid from 'uniqid';
 import { escape } from 'he';
 import { append, includes, remove } from 'uikit-util';
 
@@ -12,7 +11,7 @@ export function sluggify(text) {
         .replace(/&.+?;/g, '')
         .replace(/[\s\W-]+/g, '-');
 }
-
+let _id = 0;
 export function parse(markdown, cb) {
     const renderer = new marked.Renderer({ langPrefix: 'lang-' });
     const base = new marked.Renderer({ langPrefix: 'lang-' });
@@ -27,7 +26,7 @@ export function parse(markdown, cb) {
                 </div>`;
     };
     const example = (code) => {
-        const id = uniqid('code-');
+        const id = 'code-example-' + _id++;
 
         return `<div class="uk-position-relative uk-margin-medium">
 

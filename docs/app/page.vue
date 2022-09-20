@@ -96,7 +96,7 @@ export default {
         on(
             this.$refs.container,
             'click',
-            'a:not([href^="http"]):not([href^="#"]):not([href^="/"]):not([href^="../"]):not([href^="images/"])',
+            'a[href]:not([href^="http"]):not([href^="#"]):not([href^="/"]):not([href^="../"]):not([href^="images/"])',
             (e) => {
                 e.preventDefault();
                 this.router.replace(e.target.pathname + e.target.hash);
