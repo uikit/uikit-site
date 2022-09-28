@@ -93,6 +93,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="clock"></span> clock</li>
             <li><span class="uk-margin-small-right" uk-icon="history"></span> history</li>
             <li><span class="uk-margin-small-right" uk-icon="future"></span> future</li>
+            <li><span class="uk-margin-small-right" uk-icon="crosshairs"></span> crosshairs</li>
             <li><span class="uk-margin-small-right" uk-icon="pencil"></span> pencil</li>
             <li><span class="uk-margin-small-right" uk-icon="trash"></span> trash</li>
             <li><span class="uk-margin-small-right" uk-icon="move"></span> move</li>
