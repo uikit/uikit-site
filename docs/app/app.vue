@@ -7,7 +7,7 @@
                         <a
                             href="../"
                             class="uk-navbar-item uk-logo"
-                            aria-label="Back to the homepage"
+                            aria-label="Back to Home"
                         >
                             <img
                                 class="uk-margin-small-right"

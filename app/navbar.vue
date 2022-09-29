@@ -6,7 +6,7 @@
                     <router-link
                         class="uk-navbar-item uk-logo"
                         to="/"
-                        aria-label="Back to the homepage"
+                        aria-label="Back to Home"
                     >
                         <canvas
                             class="uk-margin-small-right"
