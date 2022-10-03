@@ -45,7 +45,6 @@
                         uk-navbar-toggle-icon
                         href="#offcanvas"
                         uk-toggle
-                        aria-label="Open Menu"
                     ></a>
                 </div>
             </nav>
