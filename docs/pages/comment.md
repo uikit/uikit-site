@@ -28,7 +28,7 @@ The Comment component consists of the comment itself, a comment header, includin
 ```
 
 ```example
-<article class="uk-comment">
+<article class="uk-comment" role="comment">
     <header class="uk-comment-header">
         <div class="uk-grid-medium uk-flex-middle" uk-grid>
             <div class="uk-width-auto">
@@ -60,7 +60,7 @@ To style a comment differently, for example to highlight it as the admin's comme
 ```
 
 ```example
-<article class="uk-comment uk-comment-primary">
+<article class="uk-comment uk-comment-primary" role="comment">
     <header class="uk-comment-header">
         <div class="uk-grid-medium uk-flex-middle" uk-grid>
             <div class="uk-width-auto">
@@ -103,7 +103,7 @@ Add the `.uk-comment-list` class to a `<ul>` element to create a list of comment
 ```example
 <ul class="uk-comment-list">
     <li>
-        <article class="uk-comment uk-visible-toggle" tabindex="-1">
+        <article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
             <header class="uk-comment-header uk-position-relative">
                 <div class="uk-grid-medium uk-flex-middle" uk-grid>
                     <div class="uk-width-auto">
@@ -122,7 +122,7 @@ Add the `.uk-comment-list` class to a `<ul>` element to create a list of comment
         </article>
         <ul>
             <li>
-                <article class="uk-comment uk-comment-primary uk-visible-toggle" tabindex="-1">
+                <article class="uk-comment uk-comment-primary uk-visible-toggle" tabindex="-1" role="comment">
                     <header class="uk-comment-header uk-position-relative">
                         <div class="uk-grid-medium uk-flex-middle" uk-grid>
                             <div class="uk-width-auto">
@@ -141,7 +141,7 @@ Add the `.uk-comment-list` class to a `<ul>` element to create a list of comment
                 </article>
             </li>
             <li>
-                <article class="uk-comment uk-visible-toggle" tabindex="-1">
+                <article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
                     <header class="uk-comment-header uk-position-relative">
                         <div class="uk-grid-medium uk-flex-middle" uk-grid>
                             <div class="uk-width-auto">
