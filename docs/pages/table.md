@@ -489,7 +489,7 @@ To optimize the display of table cells and their specific content, you can add o
         </thead>
         <tbody>
             <tr>
-                <td><input class="uk-checkbox" type="checkbox"></td>
+                <td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"></td>
                 <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" height="40" alt=""></td>
                 <td class="uk-table-link">
                     <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
@@ -498,7 +498,7 @@ To optimize the display of table cells and their specific content, you can add o
                 <td class="uk-text-nowrap">Lorem ipsum dolor</td>
             </tr>
             <tr>
-                <td><input class="uk-checkbox" type="checkbox"></td>
+                <td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"></td>
                 <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" height="40" alt=""></td>
                 <td class="uk-table-link">
                     <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
@@ -507,7 +507,7 @@ To optimize the display of table cells and their specific content, you can add o
                 <td class="uk-text-nowrap">Lorem ipsum dolor</td>
             </tr>
             <tr>
-                <td><input class="uk-checkbox" type="checkbox"></td>
+                <td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"></td>
                 <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" height="40" alt=""></td>
                 <td class="uk-table-link">
                     <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
@@ -516,7 +516,7 @@ To optimize the display of table cells and their specific content, you can add o
                 <td class="uk-text-nowrap">Lorem ipsum dolor</td>
             </tr>
             <tr>
-                <td><input class="uk-checkbox" type="checkbox"></td>
+                <td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"></td>
                 <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" height="40" alt=""></td>
                 <td class="uk-table-link">
                     <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>

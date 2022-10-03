@@ -279,7 +279,7 @@ Add the `.uk-logo` class from the [Utility component](utility.md) to an `<a>` or
 
         <div class="uk-navbar-item">
             <form action="javascript:void(0)">
-                <input class="uk-input uk-form-width-small" type="text" placeholder="Input">
+                <input class="uk-input uk-form-width-small" type="text" placeholder="Input" aria-label="Input">
                 <button class="uk-button uk-button-default">Button</button>
             </form>
         </div>

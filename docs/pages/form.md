@@ -37,18 +37,18 @@ Add the `.uk-fieldset` class to a `<fieldset>` element and the `.uk-legend` clas
         <legend class="uk-legend">Legend</legend>
 
         <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Input">
+            <input class="uk-input" type="text" placeholder="Input" aria-label="Input">
         </div>
 
         <div class="uk-margin">
-            <select class="uk-select">
+            <select class="uk-select" aria-label="Select">
                 <option>Option 01</option>
                 <option>Option 02</option>
             </select>
         </div>
 
         <div class="uk-margin">
-            <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+            <textarea class="uk-textarea" rows="5" placeholder="Textarea" aria-label="Textarea"></textarea>
         </div>
 
         <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
@@ -62,7 +62,7 @@ Add the `.uk-fieldset` class to a `<fieldset>` element and the `.uk-legend` clas
         </div>
 
         <div class="uk-margin">
-            <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+            <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1" aria-label="Range">
         </div>
 
     </fieldset>
@@ -84,15 +84,15 @@ Add the `disabled` attribute to a form control. It will appear muted.
 
 ```example
 <div class="uk-margin">
-    <input class="uk-input uk-form-danger uk-form-width-medium" type="text" placeholder="form-danger" value="form-danger">
+    <input class="uk-input uk-form-danger uk-form-width-medium" type="text" placeholder="form-danger" aria-label="form-danger" value="form-danger">
 </div>
 
 <div class="uk-margin">
-    <input class="uk-input uk-form-success uk-form-width-medium" type="text" placeholder="form-success" value="form-success">
+    <input class="uk-input uk-form-success uk-form-width-medium" type="text" placeholder="form-success" aria-label="form-success" value="form-success">
 </div>
 
 <div class="uk-margin">
-    <input class="uk-input uk-form-width-medium" type="text" placeholder="disabled" value="disabled" disabled>
+    <input class="uk-input uk-form-width-medium" type="text" placeholder="disabled" aria-label="disabled" value="disabled" disabled>
 </div>
 ```
 
@@ -111,15 +111,15 @@ Add one of the classes to an `<input>`, `<select>` or `<textarea>` element to mo
 <form>
 
     <div class="uk-margin">
-        <input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large">
+        <input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large" aria-label="Large">
     </div>
 
     <div class="uk-margin">
-        <input class="uk-input uk-form-width-medium" type="text" placeholder="Default">
+        <input class="uk-input uk-form-width-medium" type="text" placeholder="Default" aria-label="Default">
     </div>
 
     <div class="uk-margin">
-        <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Small">
+        <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Small" aria-label="Small">
     </div>
 
 </form>
@@ -142,19 +142,19 @@ Add one of the following classes to an `<input>`, `<select>` or `<textarea>` ele
 <form>
 
     <div class="uk-margin">
-        <input class="uk-input uk-form-width-large" type="text" placeholder="Large">
+        <input class="uk-input uk-form-width-large" type="text" placeholder="Large" aria-label="Large">
     </div>
 
     <div class="uk-margin">
-        <input class="uk-input uk-form-width-medium" type="text" placeholder="Medium">
+        <input class="uk-input uk-form-width-medium" type="text" placeholder="Medium" aria-label="Medium">
     </div>
 
     <div class="uk-margin">
-        <input class="uk-input uk-form-width-small" type="text" placeholder="Small">
+        <input class="uk-input uk-form-width-small" type="text" placeholder="Small" aria-label="Small">
     </div>
 
     <div class="uk-margin">
-        <input class="uk-input uk-form-width-xsmall" type="text" placeholder="X-Small">
+        <input class="uk-input uk-form-width-xsmall" type="text" placeholder="X-Small" aria-label="X-Small">
     </div>
 
 </form>
@@ -164,7 +164,7 @@ You can also apply the `.uk-width-*` classes from the [Width component](width.md
 
 ```example
 <form>
-    <input class="uk-input uk-width-1-2" type="text" placeholder="uk-width-1-2">
+    <input class="uk-input uk-width-1-2" type="text" placeholder="uk-width-1-2" aria-label="uk-width-1-2">
 </form>
 ```
 
@@ -176,7 +176,7 @@ Add the `.uk-form-blank` class to minimize the styling of form controls.
 
 ```example
 <form>
-    <input class="uk-input uk-form-blank uk-form-width-medium" type="text" placeholder="Form blank">
+    <input class="uk-input uk-form-blank uk-form-width-medium" type="text" placeholder="Form blank" placeholder="Form blank">
 </form>
 ```
 
@@ -306,14 +306,14 @@ You use an icon from the [Icon component](icon.md) inside a form. Add the `.uk-f
     <div class="uk-margin">
         <div class="uk-inline">
             <span class="uk-form-icon" uk-icon="icon: user"></span>
-            <input class="uk-input" type="text">
+            <input class="uk-input" type="text" aria-label="Not clickable icon">
         </div>
     </div>
 
     <div class="uk-margin">
         <div class="uk-inline">
             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-            <input class="uk-input" type="text">
+            <input class="uk-input" type="text" aria-label="Not clickable icon">
         </div>
     </div>
 
@@ -339,14 +339,14 @@ To enable an action, for example opening a modal to pick an image or link, use a
     <div class="uk-margin">
         <div class="uk-inline">
             <a class="uk-form-icon" href="#" uk-icon="icon: pencil"></a>
-            <input class="uk-input" type="text">
+            <input class="uk-input" type="text" aria-label="Clickable icon">
         </div>
     </div>
 
     <div class="uk-margin">
         <div class="uk-inline">
             <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: link"></a>
-            <input class="uk-input" type="text">
+            <input class="uk-input" type="text" aria-label="Clickable icon">
         </div>
     </div>
 
@@ -362,22 +362,22 @@ You can also use the [Grid](grid.md) and [Width](width.md) components to define 
 ```example
 <form class="uk-grid-small" uk-grid>
     <div class="uk-width-1-1">
-        <input class="uk-input" type="text" placeholder="100">
+        <input class="uk-input" type="text" placeholder="100 aria-label="100">
     </div>
     <div class="uk-width-1-2@s">
-        <input class="uk-input" type="text" placeholder="50">
+        <input class="uk-input" type="text" placeholder="50" aria-label="50">
     </div>
     <div class="uk-width-1-4@s">
-        <input class="uk-input" type="text" placeholder="25">
+        <input class="uk-input" type="text" placeholder="25" aria-label="25">
     </div>
     <div class="uk-width-1-4@s">
-        <input class="uk-input" type="text" placeholder="25">
+        <input class="uk-input" type="text" placeholder="25" aria-label="25">
     </div>
     <div class="uk-width-1-2@s">
-        <input class="uk-input" type="text" placeholder="50">
+        <input class="uk-input" type="text" placeholder="50" aria-label="50">
     </div>
     <div class="uk-width-1-2@s">
-        <input class="uk-input" type="text" placeholder="50">
+        <input class="uk-input" type="text" placeholder="50" aria-label="50">
     </div>
 </form>
 ```
@@ -404,7 +404,7 @@ Use a button or text as a file input.
 
     <div class="uk-margin">
         <div uk-form-custom>
-            <input type="file">
+            <input type="file" aria-label="Custom controls">
             <button class="uk-button uk-button-default" type="button" tabindex="-1">Select</button>
         </div>
     </div>
@@ -412,15 +412,15 @@ Use a button or text as a file input.
     <div class="uk-margin">
         <span class="uk-text-middle">Here is a text</span>
         <div uk-form-custom>
-            <input type="file">
+            <input type="file" aria-label="Custom controls">
             <span class="uk-link">upload</span>
         </div>
     </div>
 
     <div class="uk-margin" uk-margin>
         <div uk-form-custom="target: true">
-            <input type="file">
-            <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" disabled>
+            <input type="file" aria-label="Custom controls">
+            <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" aria-label="Custom controls" disabled>
         </div>
         <button class="uk-button uk-button-default">Submit</button>
     </div>
@@ -449,7 +449,7 @@ Use a button, text or a link as a select form. Just add the `target: SELECTOR` o
 
     <div class="uk-margin">
         <div uk-form-custom="target: true">
-            <select>
+            <select aria-label="Custom controls">
                 <option value="1">Option 01</option>
                 <option value="2">Option 02</option>
                 <option value="3">Option 03</option>
@@ -461,7 +461,7 @@ Use a button, text or a link as a select form. Just add the `target: SELECTOR` o
 
     <div class="uk-margin">
         <div uk-form-custom="target: > * > span:last-child">
-            <select>
+            <select aria-label="Custom controls">
                 <option value="1">Option 01</option>
                 <option value="2">Option 02</option>
                 <option value="3">Option 03</option>
@@ -476,7 +476,7 @@ Use a button, text or a link as a select form. Just add the `target: SELECTOR` o
 
     <div class="uk-margin">
         <div uk-form-custom="target: > * > span:first-child">
-            <select>
+            <select aria-label="Custom controls">
                 <option value="">Please select...</option>
                 <option value="1">Option 01</option>
                 <option value="2">Option 02</option>
