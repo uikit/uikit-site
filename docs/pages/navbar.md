@@ -262,7 +262,7 @@ Add the `.uk-logo` class from the [Utility component](utility.md) to an `<a>` or
 <nav class="uk-navbar-container uk-margin" uk-navbar>
     <div class="uk-navbar-left">
 
-        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+        <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">Logo</a>
 
         <ul class="uk-navbar-nav">
             <li>

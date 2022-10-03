@@ -548,7 +548,7 @@ You can even automatically display alternative logos for light and dark backgrou
 <div class="uk-child-width-expand@s" uk-grid>
     <div>
         <div class="uk-panel uk-padding uk-background-muted">
-            <a class="uk-logo" href="#">
+            <a class="uk-logo" href="#" aria-label="Back to Home">
                 <img src="images/logo-placeholder.svg" width="130" height="70" alt="">
                 <img class="uk-logo-inverse" src="images/logo-placeholder-light.svg" width="130" height="70" alt="">
             </a>
@@ -556,7 +556,7 @@ You can even automatically display alternative logos for light and dark backgrou
     </div>
     <div>
         <div class="uk-panel uk-padding uk-background-secondary uk-light">
-            <a class="uk-logo" href="#">
+            <a class="uk-logo" href="#" aria-label="Back to Home">
                 <img src="images/logo-placeholder.svg" width="130" height="70" alt="">
                 <img class="uk-logo-inverse" src="images/logo-placeholder-light.svg" width="130" height="70" alt="">
             </a>
