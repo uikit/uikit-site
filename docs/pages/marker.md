@@ -4,7 +4,7 @@
 
 ## Usage
 
-To apply this component, add the `uk-marker` attribute to any element. You can use the [Position component](position.md) to place the marker on top of an image. Also add the `.uk-transform-center` classes from the [Utility component](utility.md#transform) to center the marker itself to its upper left corner.
+To apply this component, add the `uk-marker` attribute to any element. You can use the [Position component](position.md) to place the marker on top of an image. Also add the `.uk-transform-center` classes from the [Utility component](utility.md#transform-center) to center the marker itself to its upper left corner.
 
 ```html
 <a href="" uk-marker></a>

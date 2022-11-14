@@ -161,7 +161,7 @@ To apply different background colors and paddings, add one of the following clas
 
 ### Preserve color
 
-The `.uk-section-primary` and `.uk-section-secondary` classes are extending the inverse style from the [Inverse component](inverse.md) automatically. If you want to prevent this behavior, for example because you are using [cards](cards.md) in these sections, add the `.uk-preserve-color` class.
+The `.uk-section-primary` and `.uk-section-secondary` classes are extending the inverse style from the [Inverse component](inverse.md) automatically. If you want to prevent this behavior, for example because you are using [cards](card.md) in these sections, add the `.uk-preserve-color` class.
 
 ```html
 <div class="uk-section uk-section-primary uk-preserve-color"></div>

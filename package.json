@@ -5,7 +5,7 @@
         "compile": "yarn compile-js && yarn compile-less && yarn compile-uikit",
         "compile-uikit": "cd ./assets/uikit && yarn compile-less && yarn compile-rtl && yarn compile-js uikit tests",
         "compile-js": "webpack",
-        "compile-less": "make-dir css && lessc less/theme.less > css/theme.css --relative-urls --rootpath=../less/ --clean-css",
+        "compile-less": "make-dir css && lessc less/theme.less > css/theme.css --rewrite-urls=all --clean-css",
         "eslint": "eslint ./",
         "watch-js": "webpack -w --devtool=inline-source-map"
     },

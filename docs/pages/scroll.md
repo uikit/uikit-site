@@ -60,10 +60,6 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 UIkit.scroll(element, options);
 ```
 
-<div style="height: 2000px;"></div>
-
-<a id="target" class="uk-button uk-button-primary" href="#top" uk-scroll>Scroll up</a>
-
 ### Events
 
 The following events will be triggered on elements with this component attached:
@@ -89,3 +85,7 @@ Scroll to the given element.
 | Name | Type           | Default   | Description               |
 |:-----|:---------------|:----------|:--------------------------|
 | `el` | Node, Selector | undefined | The element to scroll to. |
+
+<div style="height: 2000px;"></div>
+
+<a id="target" class="uk-button uk-button-primary" href="#top" uk-scroll>Scroll up</a>
