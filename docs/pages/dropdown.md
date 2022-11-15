@@ -139,7 +139,7 @@ Add the `.uk-dropdown-large` class for a dropdown with larger padding.
 By default, the dropdown is positioned below the toggle. To change its position, set the `pos` option to the `uk-dropdown` attribute. The first part of the value refers to the side where the dropdown is positioned, while the second part defines its alignment to the toggle.
 
 | Position        | Description                                                                    |
-| :-------------- | :----------------------------------------------------------------------------- |
+| --------------- | ------------------------------------------------------------------------------ |
 | `top-left`      | Positions the dropdown above the toggle and aligns it to the left.             |
 | `top-center`    | Positions the dropdown above the toggle and aligns it to the center.           |
 | `top-right`     | Positions the dropdown above the toggle and aligns it in the right.            |
@@ -451,7 +451,7 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 Alternatively, the Drop component has two additional animation types which are not covered by the Animation component. `slide-*` animations slide the dropdown and its content from a selected direction, while with the `reveal-*` animations, the content of the dropdown stays static and is revealed from a selected direction.
 
 | Animation       | Description                           |
-| :-------------- | :------------------------------------ |
+| --------------- | ------------------------------------- |
 | `slide-top`     | Slides the dropdown from the top.     |
 | `slide-bottom`  | Slides the dropdown from the bottom.  |
 | `slide-left`    | Slides the dropdown from the left.    |
@@ -563,7 +563,7 @@ To define a custom offset between the dropdown and its toggle, add the `offset` 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option        | Value                 | Default             | Description                                                                                                  |
-|:--------------|:----------------------|:--------------------|:-------------------------------------------------------------------------------------------------------------|
+|---------------|-----------------------|---------------------|--------------------------------------------------------------------------------------------------------------|
 | `toggle`      | CSS selector          | `- *`               | CSS selector for the element to be used as toggle. By default, the preceding element.                        |
 | `pos`         | String                | `bottom-left`       | Drop position.                                                                                               |
 | `stretch`     | Boolean, `x`, `y`     | `true`              | Stretch dropdown on both (true) or given axis.                                                               |
@@ -602,7 +602,7 @@ UIkit.dropdown(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name         | Description                                                                                    |
-| :----------- | :--------------------------------------------------------------------------------------------- |
+| ------------ | ---------------------------------------------------------------------------------------------- |
 | `toggle`     | Fires before an item is toggled.                                                               |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
@@ -633,5 +633,5 @@ UIkit.dropdown(element).hide(delay);
 Hides the dropdown.
 
 | Name    | Type    | Default | Description                |
-| :------ | :------ | :------ | :------------------------- |
+| ------- | ------- | ------- | -------------------------- |
 | `delay` | Boolean | true    | Delay hiding the Dropdown. |

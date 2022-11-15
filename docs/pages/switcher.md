@@ -350,7 +350,7 @@ To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribu
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option      | Value        | Default              | Description                                                                                              |
-| :---------- | :----------- | :------------------- | :------------------------------------------------------------------------------------------------------- |
+| ----------- | ------------ | -------------------- | -------------------------------------------------------------------------------------------------------- |
 | `connect`   | CSS selector | `~.uk-switcher`      | Related items container. By default succeeding elements with class 'uk-switcher'.                        |
 | `toggle `   | CSS selector | `> * > :first-child` | Select the clickable elements which trigger content switching.                                           |
 | `itemNav `  | CSS selector | `false`              | Related nav container. By default, nav items are found in related items container only.                  |
@@ -382,7 +382,7 @@ UIkit.switcher(element, options);
 The following events will be triggered on the connected items of the elements with this component attached:
 
 | Name         | Description                                                                                    |
-| :----------- | :--------------------------------------------------------------------------------------------- |
+| ------------ | ---------------------------------------------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
 | `shown`      | Fires after the item's show animation has completed.                                           |
@@ -403,5 +403,5 @@ UIkit.switcher(element).show(index);
 Shows the Switcher item with given index.
 
 | Name    | Type                 | Default | Description                           |
-| :------ | :------------------- | :------ | :------------------------------------ |
+| ------- | -------------------- | ------- | ------------------------------------- |
 | `index` | String, Number, Node | 0       | Switcher item to show. 0 based index. |

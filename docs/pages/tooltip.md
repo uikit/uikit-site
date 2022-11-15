@@ -31,7 +31,7 @@ Add one of the following options to the `uk-tooltip` attribute to adjust the too
 ```
 
 | Attribute           | Description                             |
-| :------------------ | :-------------------------------------- |
+| ------------------- | --------------------------------------- |
 | `pos: top`          | Aligns the tooltip to the top.          |
 | `pos: top-left`     | Aligns the tooltip to the top left.     |
 | `pos: top-right`    | Aligns the tooltip to the top right.    |
@@ -75,7 +75,7 @@ If you want the tooltip to appear with a little delay, just add the `delay` opti
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option      | Value  | Default                 | Description                                                                                          |
-| :---------- | :----- | :---------------------- | :--------------------------------------------------------------------------------------------------- |
+| ----------- | ------ | ----------------------- | ---------------------------------------------------------------------------------------------------- |
 | `title`     | String | ``                      | Tooltip text.                                                                                        |
 | `pos`       | String | `top`                   | Tooltip position.                                                                                    |
 | `offset`    | Number | `false`                 | Tooltip offset.                                                                                      |
@@ -108,7 +108,7 @@ UIkit.tooltip(element, options);
 The following events will be triggered on elements, which are injected by this component:
 
 | Name         | Description                                                                                    |
-| :----------- | :--------------------------------------------------------------------------------------------- |
+| ------------ | ---------------------------------------------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
 | `shown`      | Fires after the item's show animation has completed.                                           |

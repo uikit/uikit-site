@@ -7,7 +7,7 @@
 To apply this component, add the `uk-offcanvas` attribute to a parent `<div>` element and use the following classes.
 
 | Class                 | Description                                                                                                                          |
-|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------|
+|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | `.uk-offcanvas-bar`   | Add this class to a child `<div>` element.                                                                                           |
 | `.uk-offcanvas-close` | Add this class and the `uk-close` attribute to an `<a>` or `<button>` element to create a close button and enable its functionality. |
 
@@ -113,7 +113,7 @@ Add the `flip: true` parameter to the `uk-offcanvas` attribute to adjust its ali
 By default, the off-canvas slides in. But you can actually choose between different animation modes for the off-canvas' entrance. Just add one of the following attributes.
 
 | Parameter      | Description                                                                   |
-|:---------------|:------------------------------------------------------------------------------|
+|----------------|-------------------------------------------------------------------------------|
 | `mode: slide`  | The off-canvas slides out and overlays the content. This is the default mode. |
 | `mode: push`   | The off-canvas slides out and pushes the site.                                |
 | `mode: reveal` | The off-canvas slides out and reveals its content while pushing the site.     |
@@ -252,7 +252,7 @@ You can use the [Nav component](nav.md) inside an off-canvas to create a mobile 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option      | Value   | Default | Description                                                                                                                                               |
-|:------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------------|---------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `mode`      | String  | `slide` | Off-canvas animation mode: `slide`, `reveal`, `push` or `none`.                                                                                           |
 | `flip`      | Boolean | `false` | Flip off-canvas to the right side.                                                                                                                        |
 | `overlay`   | Boolean | `false` | Display the off-canvas together with an overlay.                                                                                                          |
@@ -283,7 +283,7 @@ UIkit.offcanvas(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name         | Description                                          |
-|:-------------|:-----------------------------------------------------|
+|--------------|------------------------------------------------------|
 | `beforeshow` | Fires before an item is shown.                       |
 | `show`       | Fires after an item is shown.                        |
 | `shown`      | Fires after the item's show animation has completed. |

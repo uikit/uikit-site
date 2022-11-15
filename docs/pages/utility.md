@@ -61,7 +61,7 @@ Add the `.uk-panel-scrollable` class to give the panel a fixed height and make i
 Floating elements are taken from the document flow and aligned to the left or right side of their container. It is important to clear floats or in the worst case, you might end up with a scrambled site. The following classes will help you to set up basic layouts.
 
 | Class             | Description                                                                                                                                                     |
-| :---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `.uk-float-left`  | Add this class to float the element to the left.                                                                                                                |
 | `.uk-float-right` | Add this class to float the element to the right.                                                                                                               |
 | `.uk-clearfix`    | Add this class to a parent container to clear floats. Alternatively, you can create a new block format context, e.g. by adding the `.uk-overflow-hidden` class. |
@@ -225,7 +225,7 @@ It's often used within the [Modal component](modal.md).
 You can change the target heights by adding the `selContainer` and `selContent` options to the attribute. [Learn more](javascript.md#component-configuration)
 
 | Option         | Value  | Default            | Description                                                                       |
-| :------------- | :----- | :----------------- | :-------------------------------------------------------------------------------- |
+| -------------- | ------ | ------------------ | --------------------------------------------------------------------------------- |
 | `selContainer` | String | `.uk-modal`        | CSS selector for the container element which provides the height.                 |
 | `selContent`   | String | `.uk-modal-dialog` | CSS selector for the element which wraps the inner content to provide its height. |
 
@@ -236,7 +236,7 @@ You can change the target heights by adding the `selContainer` and `selContent` 
 These utilities provide different classes for resizing elements.
 
 | Class                 | Description                                                |
-| :-------------------- | :--------------------------------------------------------- |
+| --------------------- | ---------------------------------------------------------- |
 | `.uk-resize`          | Add this class to enable horizontal and vertical resizing. |
 | `.uk-resize-vertical` | Add this class to enable only vertical resizing.           |
 
@@ -298,7 +298,7 @@ Add one of these classes to change the display properties of an element.
 These classes are often used to create a position context on containers with an image as a child. The container keeps the same size as the image as well as the responsive behavior. That way content that is placed on top of the image with the [Position component](position.md) will not flow out of the image dimensions.
 
 | Class             | Description                                                                                                            |
-| :---------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | `.uk-inline`      | Add this class to apply inline-block behavior to an element, add a max-width of 100% and to create a position context. |
 | `.uk-inline-clip` | Same as `.uk-inline`, it but also clips overflowing child elements.                                                    |
 
@@ -323,7 +323,7 @@ These classes are often used to create a position context on containers with an 
 In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the width of their parent container by default. To apply responsive behavior to iframes, add the `uk-responsive` attribute . For other elements or to apply a different behavior, just add one of the following classes.
 
 | Class                   | Description                                                                                                                                                                                                                                                                                                |
-| :---------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `.uk-responsive-width`  | Add this class to apply the same responsive behavior to any other element. It adjusts the object's width according to its parent's width, keeping the original aspect ratio.                                                                                                                               |
 | `.uk-responsive-height` | Add this class to adjust the object's height (instead of its width) according to its parent's height, keeping the original aspect ratio.                                                                                                                                                                   |
 | `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all relevant elements content it. If you are embedding Google Maps into your site, you may need this to fix the map's images. |
@@ -341,7 +341,7 @@ In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the widt
 Define how the content of an image or video should be resized to fit its element.
 
 | Class                   | Description                                                                                                 |
-| :---------------------- | :---------------------------------------------------------------------------------------------------------- |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------- |
 | `.uk-object-cover`      | Scales the image by keeping its aspect ratio to completely cover the content box.                           |
 | `.uk-object-contain`    | Scales the image by keeping its aspect ratio as far as its width and height can fit inside the content box. |
 | `.uk-object-fill`       | Scales the image to fill the element's content box.                                                         |
@@ -368,7 +368,7 @@ Define how the content of an image or video should be resized to fit its element
 To modify the alignment of the image or video within its element, add one of the `uk-object-position-*` classes.
 
 | Class                               | Description                |
-| :---------------------------------- | :------------------------- |
+| ----------------------------------- | -------------------------- |
 | `.uk-object-position-top-left`      | Align to the top left.     |
 | `.uk-object-position-top-center`    | Align to the top.          |
 | `.uk-object-position-top-right`     | Align to the top right.    |
@@ -386,7 +386,7 @@ To modify the alignment of the image or video within its element, add one of the
 To modify the border radius of an element, like an image, add one of the following classes.
 
 | Class                | Description                              |
-| :------------------- | :--------------------------------------- |
+| -------------------- | ---------------------------------------- |
 | `.uk-border-rounded` | Add this class to apply rounded corners. |
 | `.uk-border-circle`  | Add this class to apply a circled shape. |
 | `.uk-border-pill`    | Add this class to apply a pill shape.    |
@@ -404,7 +404,7 @@ To modify the border radius of an element, like an image, add one of the followi
 You can apply different box shadows to elements. Just add one of the following classes.
 
 | Class                   | Description                                      |
-| :---------------------- | :----------------------------------------------- |
+| ----------------------- | ------------------------------------------------ |
 | `.uk-box-shadow-small`  | Add this class to apply a small box shadow.      |
 | `.uk-box-shadow-medium` | Add this class to apply a medium box shadow.     |
 | `.uk-box-shadow-large`  | Add this class to apply a large box shadow.      |
@@ -459,7 +459,7 @@ To apply a box shadow at the bottom of an element so that appears to be hovering
 To apply a box shadow on hover, add one of the following classes. This can also be used to modify the shadow size on hover. To do so, just combine them with one of the classes above.
 
 | Class                         | Description                                               |
-| :---------------------------- | :-------------------------------------------------------- |
+| ----------------------------- | --------------------------------------------------------- |
 | `.uk-box-shadow-hover-small`  | Add this class to apply a small box shadow on hover.      |
 | `.uk-box-shadow-hover-medium` | Add this class to apply a medium box shadow on hover.     |
 | `.uk-box-shadow-hover-large`  | Add this class to apply a large box shadow on hover.      |
@@ -575,7 +575,7 @@ Add one of the following classes to apply different blend modes to your backgrou
 
 
 | Class                   | Description                                    |
-| :---------------------- | :--------------------------------------------- |
+| ----------------------- | ---------------------------------------------- |
 | `.uk-blend-multiply`    | This class sets the blend mode to multiply.    |
 | `.uk-blend-screen`      | This class sets the blend mode to screen.      |
 | `.uk-blend-overlay`     | This class sets the blend mode to overlay.     |
@@ -744,7 +744,7 @@ To center an element to itself, add the `uk-transform-center` class. This is par
 To modify the origin of an animation, like scaling, add one of the `uk-transform-origin-*` classes. This can be combined with the [Animation component](animation.md).
 
 | Class                                | Description                                      |
-| :----------------------------------- | :----------------------------------------------- |
+| ------------------------------------ | ------------------------------------------------ |
 | `.uk-transform-origin-top-left`      | The transition originates from the top left.     |
 | `.uk-transform-origin-top-center`    | The transition originates from the top.          |
 | `.uk-transform-origin-top-right`     | The transition originates from the top right.    |

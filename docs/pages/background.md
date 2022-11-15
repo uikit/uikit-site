@@ -7,7 +7,7 @@
 To apply a background color to an element, add one of the following classes. The actual color for each modifier is defined by the UIkit style that you have chosen or customized.
 
 | Class                      | Description                           |
-|:---------------------------|:--------------------------------------|
+|----------------------------|---------------------------------------|
 | `.uk-background-default`   | Applies the default background color. |
 | `.uk-background-muted`     | Applies a muted background color.     |
 | `.uk-background-primary`   | Applies the primary background color. |
@@ -51,7 +51,7 @@ To apply a background color to an element, add one of the following classes. The
 This component features classes to specify the size of background images by keeping its intrinsic ratio.
 
 | Class                       | Description                                                                                    |
-|:----------------------------|:-----------------------------------------------------------------------------------------------|
+|-----------------------------|------------------------------------------------------------------------------------------------|
 | `.uk-background-cover`      | Scales the background image to completely cover the containing area.                           |
 | `.uk-background-contain`    | Scales the background image as far as its width and height can fit inside the containing area. |
 | `.uk-background-width-1-1`  | Scales the background image to fill 100% of the available width.                               |
@@ -85,7 +85,7 @@ This component features classes to specify the size of background images by keep
 To alter the background position of your image — which is in the top left-hand corner of the area by default, add one of the following classes.
 
 | Class                          | Description                                                           |
-|:-------------------------------|:----------------------------------------------------------------------|
+|--------------------------------|-----------------------------------------------------------------------|
 | `.uk-background-top-left`      | The initial position of the image is in the top left hand corner.     |
 | `.uk-background-top-center`    | The initial position of the image is at the top.                      |
 | `.uk-background-top-right`     | The initial position of the image is in the top right hand corner.    |
@@ -146,7 +146,7 @@ You can also apply a fixed background attachment, so that the image remains in i
 Add one of the following classes to limit the display of background images to certain viewport sizes. This is great in cases where the image and content overlap on a phone screen in a way that would make text illegible.
 
 | Class                     | Description                                                            |
-|:--------------------------|:-----------------------------------------------------------------------|
+|---------------------------|------------------------------------------------------------------------|
 | `.uk-background-image@s`  | Displays the background image on device widths of _640px_ and larger.  |
 | `.uk-background-image@m`  | Displays the background image on device widths of _960px_ and larger.  |
 | `.uk-background-image@l`  | Displays the background image on device widths of _1200px_ and larger. |
@@ -173,7 +173,7 @@ Add one of the following classes to apply different blend modes to your backgrou
 
 
 | Class                              | Description                                    |
-|:-----------------------------------|:-----------------------------------------------|
+|------------------------------------|------------------------------------------------|
 | `.uk-background-blend-multiply`    | This class sets the blend mode to multiply.    |
 | `.uk-background-blend-screen`      | This class sets the blend mode to screen.      |
 | `.uk-background-blend-overlay`     | This class sets the blend mode to overlay.     |

@@ -9,7 +9,7 @@ The Modal component consists of an overlay, a dialog and an optional close butto
 Add the `uk-modal` attribute to a `<div>` element to create the modal container and an overlay that blanks out the page. It is important to add an `id` to indicate the element for toggling. Use the following classes to define the modal's sections.
 
 | Class              | Description                                                                                             |
-|:-------------------|:--------------------------------------------------------------------------------------------------------|
+|--------------------|---------------------------------------------------------------------------------------------------------|
 | `.uk-modal-dialog` | Add this class to a child `<div>` element to create the dialog                                          |
 | `.uk-modal-body`   | Add this class to create padding between the modal and its content.                                     |
 | `.uk-modal-title`  | Add this class to a heading element to create the modal title.                                          |
@@ -131,7 +131,7 @@ To vertically center the modal dialog, you can use the `.uk-margin-auto-vertical
 To divide the modal into different content sections, use the following classes.
 
 | Class              | Description                                                     |
-|:-------------------|:----------------------------------------------------------------|
+|--------------------|-----------------------------------------------------------------|
 | `.uk-modal-header` | Add this class to a `<div>` element to create the modal header. |
 | `.uk-modal-footer` | Add this class to a `<div>` element to create the modal footer. |
 
@@ -398,7 +398,7 @@ You can group multiple modals by linking from one to the other and back. Use thi
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option      | Value   | Default                                                                                           | Description                                                                                                                                          |
-|:------------|:--------|:--------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------------|---------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `esc-close` | Boolean | `true`                                                                                            | Close the modal when the _Esc_ key is pressed.                                                                                                       |
 | `bg-close`  | Boolean | `true`                                                                                            | Close the modal when the background is clicked.                                                                                                      |
 | `stack`     | Boolean | `false`                                                                                           | Stack modals, when more than one is open. By default, the previous modal will be hidden.                                                             |
@@ -424,7 +424,7 @@ UIkit.modal(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name         | Description                                          |
-|:-------------|:-----------------------------------------------------|
+|--------------|------------------------------------------------------|
 | `beforeshow` | Fires before an item is shown.                       |
 | `show`       | Fires after an item is shown.                        |
 | `shown`      | Fires after the item's show animation has completed. |
@@ -459,7 +459,7 @@ Hides the Modal.
 The component comes with a number of prepared modal dialogs that you can use for user interaction. You can call the dialog directly from JavaScript and use callback functions to process the user input.
 
 | Code                                          | Description                                              |
-|:----------------------------------------------|:---------------------------------------------------------|
+|-----------------------------------------------|----------------------------------------------------------|
 | `UIkit.modal.alert('UIkit alert!')`           | Show an alert box with one button.                       |
 | `UIkit.modal.confirm('UIkit confirm!')`       | Show a confirm dialog with your message and two buttons. |
 | `UIkit.modal.prompt('Name:', 'Your name')`    | Show a dialog asking for a text input.                   |

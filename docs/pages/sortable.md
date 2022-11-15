@@ -194,7 +194,7 @@ You can also apply one or more custom classes to items when they are being dragg
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option            | Value           | Default                   | Description                                   |
-|:------------------|:----------------|:--------------------------|:----------------------------------------------|
+|-------------------|-----------------|---------------------------|-----------------------------------------------|
 | `group`           | String          | `''`                      | The group                                     |
 | `animation`       | String, Boolean | 'slide'                   | Animation mode: `slide`, `false`.             |
 | `duration`        | Number          | 250                       | Animation duration in milliseconds.           |
@@ -226,7 +226,7 @@ UIkit.sortable(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name      | Description                              |
-|:----------|:-----------------------------------------|
+|-----------|------------------------------------------|
 | `start`   | Fires after dragging starts.             |
 | `stop`    | Fires after dragging stops.              |
 | `moved`   | Fires after an element has been moved.   |

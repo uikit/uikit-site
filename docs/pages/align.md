@@ -7,7 +7,7 @@
 To align images or other elements with spacing between the text and the element, add one of these classes.
 
 | Class              | Description                                                         |
-|:-------------------|:--------------------------------------------------------------------|
+|--------------------|---------------------------------------------------------------------|
 | `.uk-align-left`   | Floats the element to the left and creates right and bottom margin. |
 | `.uk-align-right`  | Floats the element to the right and creates left and bottom margin. |
 | `.uk-align-center` | Centers the element and creates bottom margin.                      |
@@ -31,7 +31,7 @@ To align images or other elements with spacing between the text and the element,
 UIkit provides a number of responsive alignment classes. Basically, they work just like the usual alignment classes, except that they have suffixes that represent the breakpoint from which they come to effect.
 
 | Class                                        | Description                                        |
-|:---------------------------------------------|:---------------------------------------------------|
+|----------------------------------------------|----------------------------------------------------|
 | `.uk-align-left@s`<br> `.uk-align-right@s`   | Only affects device widths of _640px_ and higher.  |
 | `.uk-align-left@m`<br> `.uk-align-right@m`   | Only affects device widths of _960px_ and higher.  |
 | `.uk-align-left@l`<br> `.uk-align-right@l`   | Only affects device widths of _1200px_ and higher. |

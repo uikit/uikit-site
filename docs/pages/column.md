@@ -7,7 +7,7 @@
 Add one of the `.uk-column-*` classes to an element to display its inline content in multiple columns.
 
 | Class            | Description                           |
-|:-----------------|:--------------------------------------|
+|------------------|---------------------------------------|
 | `.uk-column-1-2` | Display the content in two columns.   |
 | `.uk-column-1-3` | Display the content in three columns. |
 | `.uk-column-1-4` | Display the content in four columns.  |
@@ -35,7 +35,7 @@ Add one of the `.uk-column-*` classes to an element to display its inline conten
 UIkit provides a number of responsive column classes. Basically they work just like the usual column classes, except that they have suffixes that represent the breakpoint from which they come to effect.
 
 | Class                                      | Description                                        |
-|:-------------------------------------------|:---------------------------------------------------|
+|--------------------------------------------|----------------------------------------------------|
 | `.uk-column-1-2@s` to `.uk-column-1-6@s`   | Only affects device widths of _640px_ and higher.  |
 | `.uk-column-1-2@m` to `.uk-column-1-6@m`   | Only affects device widths of _960px_ and higher.  |
 | `.uk-column-1-2@l` to `.uk-column-1-6@l`   | Only affects device widths of _1200px_ and higher. |

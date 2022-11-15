@@ -58,7 +58,7 @@ The dropbar is typically used together with the [Navbar component](navbar.md).
 To set the appropriate dropbar style, add one of the following direction modifier classes.
 
 | Direction           | Description                       |
-| :------------------ | :-------------------------------- |
+| ------------------- | --------------------------------- |
 | `uk-dropbar-top`    | Open the dropbar from the top.    |
 | `uk-dropbar-bottom` | Open the dropbar from the bottom. |
 | `uk-dropbar-left`   | Open the dropbar from the left.   |
@@ -67,7 +67,7 @@ To set the appropriate dropbar style, add one of the following direction modifie
 To open the dropbar from a specific direction use the `pos` and `stretch` option from the [Drop component](drop.md).
 
 | Position                       | Description                                                                   |
-| :----------------------------- | :---------------------------------------------------------------------------- |
+| ------------------------------ | ----------------------------------------------------------------------------- |
 | `pos: top-left; stretch: x`    | Positions the dropbar above the toggle and stretches it horizontally.         |
 | `pos: bottom-left; stretch: x` | Positions the dropbar below the toggle and stretches it horizontally          |
 | `pos: left-top; stretch: y`    | Positions the dropbar to the left of the toggle and stretches it vertically   |
@@ -109,7 +109,7 @@ To open the dropbar from a specific direction use the `pos` and `stretch` option
 To animate the dropbar use the `slide-*` or `reveal-*` animations from the [Drop component](drop.md). `slide-*` animations slide the dropbar and its content from a selected direction, while in the `reveal-*` animations, the content of the dropbar stays static and is revealed from a selected direction. Set `animate-out: true` to also show an animation when closing the dropbar.
 
 | Animation       | Description                           |
-| :-------------- | :------------------------------------ |
+| --------------- | ------------------------------------- |
 | `slide-top`     | Slides the dropbar from the top.     |
 | `slide-bottom`  | Slides the dropbar from the bottom.  |
 | `slide-left`    | Slides the dropbar from the left.    |

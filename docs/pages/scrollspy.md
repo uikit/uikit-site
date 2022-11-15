@@ -128,7 +128,7 @@ You can also give each target a separate `cls` option. Just add the `uk-scrollsp
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option        | Value   | Default | Description                                                |
-|:--------------|:--------|:--------|:-----------------------------------------------------------|
+|---------------|---------|---------|------------------------------------------------------------|
 | `cls`         | String  | ``      | Class to toggle when the element enters/leaves viewport.   |
 | `hidden`      | Boolean | `true`  | Hides the element while out of view.                       |
 | `offset-top`  | Number  | `0`     | Top offset before triggering in view.                      |
@@ -159,7 +159,7 @@ UIkit.scrollspy(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name      | Description                                     |
-|:----------|:------------------------------------------------|
+|-----------|-------------------------------------------------|
 | `inview`  | Fires after an item moves into the viewport.    |
 | `outview` | Fires after an item moves into out of viewport. |
 
@@ -185,7 +185,7 @@ For an example of the scrollspy nav, just check out the fixed nav on the right s
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option     | Value   | Default                    | Description                                                                                           |
-|:-----------|:--------|:---------------------------|:------------------------------------------------------------------------------------------------------|
+|------------|---------|----------------------------|-------------------------------------------------------------------------------------------------------|
 | `cls`      | String  | `uk-active`                | Class to add to the active links.                                                                     |
 | `closest`  | String  | `uk-scrollspy-init-inview` | Target to apply the class to.                                                                         |
 | `scroll`   | Boolean | `false`                    | Adds the [Scroll component](scroll.md) to its links.                                                  |
@@ -209,5 +209,5 @@ UIkit.scrollspyNav(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name     | Description                         |
-|:---------|:------------------------------------|
+|----------|-------------------------------------|
 | `active` | Fires after an item becomes active. |

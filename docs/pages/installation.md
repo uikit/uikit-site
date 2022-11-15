@@ -30,7 +30,7 @@ The compiled files of all UIkit versions are also hosted on the jsDelivr content
 The GitHub project contains all source files which are compiled into the `dist` folder. [Less](http://lesscss.org) sources are compiled into CSS files, JavaScript sources are bundled and transpiled into ECMAScript 5 and icons are bundled into the icon library.
 
 | Folder   | Description                                             |
-|:---------|:--------------------------------------------------------|
+|----------|---------------------------------------------------------|
 | `/src`   | Contains all Less, JavaScript and image sources.        |
 | `/dist`  | Contains compiled CSS and JS, updated on every release. |
 | `/tests` | Contains HTML test files of all components.             |

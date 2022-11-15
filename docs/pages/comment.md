@@ -7,7 +7,7 @@
 The Comment component consists of the comment itself, a comment header, including an avatar, a title and metadata, and a comment body.
 
 | Class                | Description                                                                        |
-|:---------------------|:-----------------------------------------------------------------------------------|
+|----------------------|------------------------------------------------------------------------------------|
 | `.uk-comment`        | Add this class to define the Comment component.                                    |
 | `.uk-comment-body`   | Add this class to create a comment body.                                           |
 | `.uk-comment-header` | Add this class to create a comment header.                                         |

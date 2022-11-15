@@ -7,7 +7,7 @@
 To create a navigation with thumbnails, use the following classes. This component is built with Flexbox. So to align a thumbnav, you can use [Flex component](flex.md).
 
 | Class          | Description                                                                                                                            |
-|:---------------|:---------------------------------------------------------------------------------------------------------------------------------------|
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | `.uk-thumbnav` | Add this class to a `<ul>` element to define the Thumbnav component. Nest your thumbnail images inside `<a>` elements within the list. |
 | `.uk-active `  | Add this class to a list item to apply an active state.                                                                                |
 

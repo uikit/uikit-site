@@ -7,7 +7,7 @@
 The Card component consists of the card itself, the card body and an optional card title. Typically, cards are arranged in grid columns from the [Grid component](grid.md).
 
 | Class            | Description                                                                    |
-|:-----------------|:-------------------------------------------------------------------------------|
+|------------------|--------------------------------------------------------------------------------|
 | `.uk-card`       | Add this class to a `<div>` element to define the Card component.              |
 | `.uk-card-body`  | Add this class to the card to create padding between the card and its content. |
 | `.uk-card-title` | Add this class to a heading to define a card title.                            |
@@ -34,7 +34,7 @@ By default, a card is blank. That is why it is important to add a modifier class
 UIkit includes a number of modifiers that can be used to add a specific style to cards.
 
 | Class                | Description                                                                 |
-|:---------------------|:----------------------------------------------------------------------------|
+|----------------------|-----------------------------------------------------------------------------|
 | `.uk-card-default`   | Add this class to create a visually styled box.                             |
 | `.uk-card-primary`   | Add this class to modify the card and emphasize it with a primary color.    |
 | `.uk-card-secondary` | Add this class to modify the card and give it a secondary background color. |
@@ -116,7 +116,7 @@ To create a hover effect on the card, add the `.uk-card-hover` class. This comes
 You can apply different size modifiers to cards that will decrease or increase their padding.
 
 | Class            | Description                                |
-|:-----------------|:-------------------------------------------|
+|------------------|--------------------------------------------|
 | `.uk-card-small` | Add this class to apply a smaller padding. |
 | `.uk-card-large` | Add this class to apply a larger padding.  |
 
@@ -188,7 +188,7 @@ You can also divide a card into header and footer — around the default body. J
 To display an image inside a card without any spacing, add one of the following classes to a `<div>` around the `<img>` element. Mind that you need to modify the source order accordingly.
 
 | Class                   | Description                                                           |
-|:------------------------|:----------------------------------------------------------------------|
+|-------------------------|-----------------------------------------------------------------------|
 | `.uk-card-media-top`    | This class indicates that the media element is aligned to the top.    |
 | `.uk-card-media-bottom` | This class indicates that the media element is aligned to the bottom. |
 | `.uk-card-media-left`   | This class indicates that the media element is aligned to the left.   |

@@ -7,7 +7,7 @@
 The Search component consists of a search form and the search input itself.
 
 | Class/Attribute    | Description                                                           |
-|:-------------------|:----------------------------------------------------------------------|
+|--------------------|-----------------------------------------------------------------------|
 | `.uk-search`       | Add this class to a container element to define the Search component. |
 | `.uk-search-input` | Add this class to an `<input>` element to create the search field.    |
 

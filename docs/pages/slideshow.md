@@ -50,7 +50,7 @@ Add an image in the background of each slide using the `uk-cover` attribute from
 By default, the slideshow uses a `slide` animation. You can set the `animation` option to use a different animation. Possible values are as follows:
 
 | Animation | Description                        |
-|:----------|:-----------------------------------|
+|-----------|------------------------------------|
 | `slide`   | Slides slide in side by side.      |
 | `fade`    | Slides fade in.                    |
 | `scale`   | Slides are scaled up and fade out. |
@@ -726,7 +726,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 ### Slideshow
 
 | Option              | Value           | Default | Description                                                           |
-|:--------------------|:----------------|:--------|:----------------------------------------------------------------------|
+|---------------------|-----------------|---------|-----------------------------------------------------------------------|
 | `animation`         | String          | `slide` | Slideshow animation mode: `slide`, `fade`, `scale`, `pull` or `push`. |
 | `autoplay`          | Boolean         | `false` | Slideshow autoplays.                                                  |
 | `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.                  |
@@ -757,7 +757,7 @@ UIkit.slideshow(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name             | Description                                               |
-|:-----------------|:----------------------------------------------------------|
+|------------------|-----------------------------------------------------------|
 | `beforeitemshow` | Fires before an item is shown.                            |
 | `itemshow`       | Fires after an item is shown.                             |
 | `itemshown`      | Fires after an item's show animation has completed.       |

@@ -11,7 +11,7 @@ UIkit's Width component is often used in combination with [grids](grid.md) to sp
 Add one of the `.uk-width-*` classes to an element to determine its size. Typically, you would use a grid from the [Grid component](grid.md) and its child elements to create the units.
 
 | Class                                                              | Description                                           |
-| :----------------------------------------------------------------- | :---------------------------------------------------- |
+| ------------------------------------------------------------------ | ----------------------------------------------------- |
 | `.uk-width-1-1`                                                    | Fills 100% of the available width.                    |
 | `.uk-width-1-2`                                                    | The element takes up halves of its parent container.  |
 | `.uk-width-1-3`, `.uk-width-2-3`                                   | The element takes up thirds of its parent container.  |
@@ -67,7 +67,7 @@ Add one of the `.uk-width-*` classes to an element to determine its size. Typica
 The Width component provides additional modifiers to give you more flexibility in the distribution of items.
 
 | Class              | Description                                                            |
-| :----------------- | :--------------------------------------------------------------------- |
+| ------------------ | ---------------------------------------------------------------------- |
 | `.uk-width-auto`   | The item expands only to the width of its own content.                 |
 | `.uk-width-expand` | The item expands to fill up the remaining space of the grid container. |
 
@@ -96,7 +96,7 @@ The Width component provides additional modifiers to give you more flexibility i
 To create a grid whose child elements' widths are evenly split, you don't have to apply the same class to each list item within the grid. Just add one of the `.uk-child-width-*` classes to the grid itself.
 
 | Class                    | Description                                                         |
-| :----------------------- | :------------------------------------------------------------------ |
+| ------------------------ | ------------------------------------------------------------------- |
 | `.uk-child-width-1-2`    | All elements take up half of their parent container.                |
 | `.uk-child-width-1-3`    | All elements take up a third of their parent container.             |
 | `.uk-child-width-1-4`    | All elements take up a fourth of their parent container.            |
@@ -170,7 +170,7 @@ Items that use width classes with fractions will break into a new row, if they n
 In addition to the calculated width classes, you can also add one of the following classes, which apply fixed widths.
 
 | Class               | Description                       |
-| :------------------ | :-------------------------------- |
+| ------------------- | --------------------------------- |
 | `.uk-width-small`   | Applies a fixed width of _150px_. |
 | `.uk-width-medium`  | Applies a fixed width of _300px_. |
 | `.uk-width-large`   | Applies a fixed width of _450px_. |
@@ -228,7 +228,7 @@ You can also combine `.uk-child-width-*` classes with `.uk-width-*` classes for 
 UIkit provides a number of responsive widths classes. Basically they work just like the usual width classes, except that they have suffixes that represent the breakpoint from which they come to effect. These classes can be combined with the [Visibility component](visibility.md). This is great to adjust your layout and content for different device sizes.
 
 | Class                                       | Description                                                                             |
-| :------------------------------------------ | :-------------------------------------------------------------------------------------- |
+| ------------------------------------------- | --------------------------------------------------------------------------------------- |
 | `.uk-width-*`<br> `.uk-child-width-*`       | Affects all device widths, grid columns stay side by side.                              |
 | `.uk-width-*@s`<br> `.uk-child-width-*@s`   | Affects device widths of _640px_ and larger. Grid columns will stack on smaller sizes.  |
 | `.uk-width-*@m`<br> `.uk-child-width-*@m`   | Affects device widths of _960px_ and larger. Grid columns will stack on smaller sizes.  |

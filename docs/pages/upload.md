@@ -180,7 +180,7 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option             | Value    | Default                 | Description                                                                                                |
-|:-------------------|:---------|:------------------------|:-----------------------------------------------------------------------------------------------------------|
+|--------------------|----------|-------------------------|------------------------------------------------------------------------------------------------------------|
 | `url`              | String   | `''`                    | The request url.                                                                                           |
 | `multiple`         | Boolean  | `false`                 | Allow multiple files to be uploaded.                                                                       |
 | `name`             | String   | `files[]`               | The name parameter.                                                                                        |

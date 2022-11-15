@@ -54,7 +54,7 @@ UIkit.notification("…", {pos: 'top-right'})
 ```
 
 | Position        | Code                                                |
-|:----------------|:----------------------------------------------------|
+|-----------------|-----------------------------------------------------|
 | `top-left`      | `UIkit.notification("…", {pos: 'top-left'})`      |
 | `top-center`    | `UIkit.notification("…", {pos: 'top-center'})`    |
 | `top-right`     | `UIkit.notification("…", {pos: 'top-right'})`     |
@@ -86,7 +86,7 @@ UIkit.notification("…", {status: 'primary'})
 ```
 
 | Style     | Code                                            |
-|:----------|:------------------------------------------------|
+|-----------|-------------------------------------------------|
 | `primary` | `UIkit.notification("…", {status:'primary'})` |
 | `success` | `UIkit.notification("…", {status:'success'})` |
 | `warning` | `UIkit.notification("…", {status:'warning'})` |
@@ -119,7 +119,7 @@ You can close all open notifications by calling `UIkit.notification.closeAll()`.
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option     | Value  | Default      | Description                                                         |
-|:-----------|:-------|:-------------|:--------------------------------------------------------------------|
+|------------|--------|--------------|---------------------------------------------------------------------|
 | `message ` | String | `false`      | Notification message to show.                                       |
 | `status`   | String | `null`       | Notification status color.                                          |
 | `timeout`  | Number | `5000`       | Visibility duration until a notification disappears. If set to `0`, notification will not hide automatically.               |
@@ -162,5 +162,5 @@ UIkit.notification(element).close(immediate);
 Closes the notification.
 
 | Name        | Type    | Default | Description                      |
-|:------------|:--------|:--------|:---------------------------------|
+|-------------|---------|---------|----------------------------------|
 | `immediate` | Boolean | true    | Transition the notification out. |

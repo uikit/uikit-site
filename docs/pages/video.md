@@ -61,7 +61,7 @@ To mute YouTube or Vimeo videos by default, add the `uk-video="automute: true"` 
 The table below lists the available settings of the `uk-video` attribute. [Learn more](javascript.md#component-configuration)
 
 | Option     | Value           | Default | Description                                                                                                                                                                          |
-|:-----------|:----------------|:--------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|------------|-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `autoplay` | Boolean, String | `true`  | The video automatically plays/pauses as it's visible/hidden on the page. A value of `inview` will delay loading the video and play/pause the video as it enters/leaves the viewport. |
 | `automute` | Boolean         | `false` | Automatically mute YouTube or Vimeo videos.                                                                                                                                          |
 

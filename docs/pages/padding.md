@@ -7,7 +7,7 @@
 To apply this component, add one of the following classes to a block element.
 
 | Class               | Description                          |
-|:--------------------|:-------------------------------------|
+|---------------------|--------------------------------------|
 | `.uk-padding`       | Adds default padding to the element. |
 | `.uk-padding-small` | Adds small padding to the element.   |
 | `.uk-padding-large` | Adds large padding to the element.   |
@@ -29,7 +29,7 @@ To apply this component, add one of the following classes to a block element.
 In some cases you want to remove padding from an element, rather than adding it. To do so, apply one of the following classes.
 
 | Class                           | Description                                     |
-|:--------------------------------|:------------------------------------------------|
+|---------------------------------|-------------------------------------------------|
 | `.uk-padding-remove`            | Removes all padding from an element.            |
 | `.uk-padding-remove-top`        | Removes top padding from an element.            |
 | `.uk-padding-remove-bottom`     | Removes bottom padding from an element.         |

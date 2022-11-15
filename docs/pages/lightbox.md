@@ -163,7 +163,7 @@ The Lightbox uses the `href` attribute to figure out the type of the linked cont
 **Hint** YouTube and Vimeo Urls will be handled automatically.
 
 | Option               | Description                            |
-|:---------------------|:---------------------------------------|
+|----------------------|----------------------------------------|
 | `data-type="image"`  | The content type is an image.          |
 | `data-type="video"`  | The content type is a video.           |
 | `data-type="iframe"` | The content type is a regular website. |
@@ -195,7 +195,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 ### Lightbox
 
 | Option              | Value          | Default | Description                                            |
-|:--------------------|:---------------|:--------|:-------------------------------------------------------|
+|---------------------|----------------|---------|--------------------------------------------------------|
 | `animation`         | String         | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`.   |
 | `autoplay`          | Number         | `0`     | Lightbox autoplays. (Delay in milliseconds)            |
 | `autoplay-interval` | Number         | `0`     | The delay between switching slides in autoplay mode.   |
@@ -245,7 +245,7 @@ Hides the Lightbox's Panel.
 If you only want to use the lightbox panel directly through the JS API, you can set the following options.
 
 | Option              | Value   | Default        | Description                                                                                           |
-|:--------------------|:--------|:---------------|:------------------------------------------------------------------------------------------------------|
+|---------------------|---------|----------------|-------------------------------------------------------------------------------------------------------|
 | `animation`         | String  | `slide`        | Lightbox animation mode: `slide`, `fade` or `scale`.                                                  |
 | `autoplay`          | Boolean | `false`        | Lightbox autoplays.                                                                                   |
 | `autoplay-interval` | Number  | `7000`         | The delay between switching slides in autoplay mode.                                                  |
@@ -264,7 +264,7 @@ If you only want to use the lightbox panel directly through the JS API, you can 
 The following events will be triggered on elements with this component attached:
 
 | Name             | Description                                              |
-|:-----------------|:---------------------------------------------------------|
+|------------------|----------------------------------------------------------|
 | `beforeshow`     | Fires before the Lightbox is shown.                      |
 | `beforehide`     | Fires before the Lightbox is hidden.                     |
 | `show`           | Fires after the Lightbox is shown.                       |
@@ -292,7 +292,7 @@ UIkit.lightboxPanel(element).show(index);
 Shows the Lightbox Panel and item.
 
 | Name    | Type           | Default | Description                           |
-|:--------|:---------------|:--------|:--------------------------------------|
+|---------|----------------|---------|---------------------------------------|
 | `index` | String, Number | 0       | Lightbox item to show. 0 based index. |
 
 #### Hide

@@ -9,7 +9,7 @@ To apply this component, add one of the `.uk-position-*` classes to a block elem
 **Note** This is often used to position an overlay from the [Overlay component](overlay.md). Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to apply a light or dark color for better visibility.
 
 | Class                 | Description                          |
-|:----------------------|:-------------------------------------|
+|-----------------------|--------------------------------------|
 | `.uk-position-top`    | Positions the element at the top.    |
 | `.uk-position-left`   | Positions the element at the left.   |
 | `.uk-position-right`  | Positions the element at the right.  |
@@ -45,7 +45,7 @@ To apply this component, add one of the `.uk-position-*` classes to a block elem
 You can also apply more specific positions that won't spread over one side of the parent container by adding one of the following classes.
 
 | Class                        | Description                                              |
-|:-----------------------------|:---------------------------------------------------------|
+|------------------------------|----------------------------------------------------------|
 | `.uk-position-top-left`      | Positions the element at the top left.                   |
 | `.uk-position-top-center`    | Positions the element at the top center.                 |
 | `.uk-position-top-right`     | Positions the element at the top right.                  |
@@ -107,7 +107,7 @@ If you want a position element to cover its container, just add the `.uk-positio
 There are two classes to center elements outside on the left and right of the parent container. This is useful to position the [Slidenav component](slidenav.md) outside of a [Slideshow](slideshow.md) or [Slider](slider.md) component.
 
 | Class                           | Description                                                     |
-|:--------------------------------|:----------------------------------------------------------------|
+|---------------------------------|-----------------------------------------------------------------|
 | `.uk-position-center-left-out`  | Positions the element vertically centered outside on the left.  |
 | `.uk-position-center-right-out` | Positions the element vertically centered outside on the right. |
 
@@ -309,7 +309,7 @@ To apply a large margin to positioned elements, add the `.uk-position-large` cla
 This component features a number of general position utility classes:
 
 | Class                   | Description                                   |
-|:------------------------|:----------------------------------------------|
+|-------------------------|-----------------------------------------------|
 | `.uk-position-relative` | Add this class to apply relative positioning. |
 | `.uk-position-absolute` | Add this class to apply absolute positioning. |
 | `.uk-position-fixed`    | Add this class to apply fixed positioning.    |

@@ -351,7 +351,7 @@ You can also make any background image scale to the size of an icon. Just add th
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option  | Value  | Default | Description          |
-|:--------|:-------|:--------|:---------------------|
+|---------|--------|---------|----------------------|
 | `icon`  | String | `''`    | The icon to display. |
 | `ratio` | Number | `1`     | The icon size ratio. |
 

@@ -411,7 +411,7 @@ If you want table columns to stack on small screens, add the `.uk-table-responsi
 To modify the column width or content, you can use one of the following classes. You just need to add this class to one of the column cells. It's recommended on the header cell.
 
 | Class               | Description                                                                                                                |
-|:--------------------|:---------------------------------------------------------------------------------------------------------------------------|
+|---------------------|----------------------------------------------------------------------------------------------------------------------------|
 | `.uk-table-shrink ` | Add this class to a `<th>` or `<td>` element to reduce the column width to fit its content.                                |
 | `.uk-table-expand`  | Add this class to a `<th>` or `<td>` element to expand the column width to fill the remaining space and apply a min-width. |
 | `.uk-width-*`       | Add one of these classes from the [Width component](width.md) to a `<th>` or `<td>` element to modify the column width.    |

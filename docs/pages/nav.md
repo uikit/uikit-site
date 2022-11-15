@@ -7,7 +7,7 @@
 To apply this component, use the following classes.
 
 | Class         | Description                                                                                                      |
-|:--------------|:-----------------------------------------------------------------------------------------------------------------|
+|---------------|------------------------------------------------------------------------------------------------------------------|
 | `.uk-nav`     | Add this class to a `<ul>` element to define the Nav component. Use `<a>` elements as nav items within the list. |
 | `.uk-active ` | Add this class to a list item to apply an active state to a menu item.                                           |
 
@@ -201,7 +201,7 @@ When clicking on a parent item, an open one will close, allowing only one open n
 Add one of the following classes to a list item to create a header or a divider between items.
 
 | Element           | Description                                                                  |
-|:------------------|:-----------------------------------------------------------------------------|
+|-------------------|------------------------------------------------------------------------------|
 | `.uk-nav-header`  | Add this class to a `<li>` element to create a header.                       |
 | `.uk-nav-divider` | Add this class to a `<li>` element to create a divider separating nav items. |
 
@@ -481,7 +481,7 @@ A nav can be used inside an offcanvas from the [Offcanvas component](offcanvas.m
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option        | Value        | Default        | Description                                                                       |
-|:--------------|:-------------|:---------------|:----------------------------------------------------------------------------------|
+|---------------|--------------|----------------|-----------------------------------------------------------------------------------|
 | `targets`     | CSS selector | `> .uk-parent` | The element(s) to toggle.                                                         |
 | `toggle `     | CSS selector | `> a`          | The toggle element(s).                                                            |
 | `content`     | CSS selector | `> ul`         | The content element(s).                                                           |
@@ -516,6 +516,6 @@ UIkit.nav(element).toggle(index, animate);
 Toggles the content pane.
 
 | Name      | Type                 | Default | Description                                  |
-|:----------|:---------------------|:--------|:---------------------------------------------|
+|-----------|----------------------|---------|----------------------------------------------|
 | `index`   | String, Number, Node | 0       | Nav pane to toggle. 0 based index.           |
 | `animate` | Boolean              | true    | Suppress opening animation by passing false. |

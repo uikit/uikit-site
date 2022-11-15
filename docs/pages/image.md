@@ -146,7 +146,7 @@ This example offers alternative image formats like *WebP* and *AVIF*.
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option       | Value  | Default | Description                                                                                                                          |
-|:-------------|:-------|:--------|:-------------------------------------------------------------------------------------------------------------------------------------|
+|--------------|--------|---------|--------------------------------------------------------------------------------------------------------------------------------------|
 | `dataSrc`    | String | ''      | The image's `src` attribute.                                                                                                         |
 | `dataSrcset` | String | false   | The image's `srcset` attribute.                                                                                                      |
 | `sizes`      | String | false   | The image's `sizes` attribute.                                                                                                       |

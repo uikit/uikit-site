@@ -41,7 +41,7 @@ There are two ways to animate SVG strokes. First by using the [Animation compone
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option             | Value   | Default | Description                                                                                                   |
-|:-------------------|:--------|:--------|:--------------------------------------------------------------------------------------------------------------|
+|--------------------|---------|---------|---------------------------------------------------------------------------------------------------------------|
 | `src`              | String  | `''`    | The SVG source URL. If a location hash is present, only the `<symbol>` of the SVG with the given ID is shown. |
 | `stroke-animation` | Boolean | `false` | Animate all elements with the `stroke` attribute in the SVG.                                                  |
 

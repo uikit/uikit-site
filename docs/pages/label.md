@@ -21,7 +21,7 @@ To create a label, just add the `.uk-label` class to a `<span>` element.
 Add one of the following classes for additional styles.
 
 | Class               | Description                              |
-|:--------------------|:-----------------------------------------|
+|---------------------|------------------------------------------|
 | `.uk-label-success` | Indicates success or a positive message. |
 | `.uk-label-warning` | Indicates a warning.                     |
 | `.uk-label-danger`  | Indicates an error or important message. |

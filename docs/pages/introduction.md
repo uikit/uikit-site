@@ -13,7 +13,7 @@ First you need to download UIkit. For other packages and links to a CDN, head to
 The Zip file contains the compiled CSS and JavaScript files, which is everything you need to get started. Later, you might want to [install and compile UIkit](installation.md) yourself and also [create your own UIkit theme](less.md).
 
 | Folder | Description                                                    |
-|:-------|:---------------------------------------------------------------|
+|--------|----------------------------------------------------------------|
 | `/css` | Contains the UIkit CSS and a right-to-left version.            |
 | `/js`  | Contains the UIkit JavaScript and the Icon Library JavaScript. |
 
