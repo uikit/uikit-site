@@ -160,7 +160,7 @@ To be able to sort items from one list to another, you can group them by adding 
     </div>
     <div>
         <h4>Empty Group</h4>
-        <div uk-sortable="group: sortable-group">
+        <div uk-sortable="group: sortable-group"></div>
     </div>
 </div>
 ```

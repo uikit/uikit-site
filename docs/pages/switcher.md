@@ -112,7 +112,7 @@ It is also possible to connect multiple content containers. Just add the `connec
 
 ## Animations
 
-You can apply all animations from the [Animation component](animation) to switcher items. To do so, add the `animation` parameter with the relevant class to the `uk-switcher` attribute.
+You can apply all animations from the [Animation component](animation.md) to switcher items. To do so, add the `animation` parameter with the relevant class to the `uk-switcher` attribute.
 
 ```html
 <ul uk-switcher="animation: uk-animation-fade">…</ul>
@@ -136,7 +136,7 @@ You can apply all animations from the [Animation component](animation) to switch
 
 ### Multiple animations
 
-You can also apply multiple animations from the [Animation component](animation). That way you can add different in and out animations.
+You can also apply multiple animations from the [Animation component](animation.md). That way you can add different in and out animations.
 
 ```html
 <ul uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">…</ul>
@@ -160,7 +160,7 @@ You can also apply multiple animations from the [Animation component](animation)
 
 ## Switcher and subnav
 
-The switcher is easily applied to the [Subnav component](subnav).
+The switcher is easily applied to the [Subnav component](subnav.md).
 
 ```html
 <!-- This is the subnav containing the toggling elements -->
@@ -189,7 +189,7 @@ The switcher is easily applied to the [Subnav component](subnav).
 
 ## Switcher and tab
 
-As an exception to the rule, add the `uk-tab` attribute instead of `uk-switcher` to the tabbed navigation to combine the switcher with the [Tab component](tab).
+As an exception to the rule, add the `uk-tab` attribute instead of `uk-switcher` to the tabbed navigation to combine the switcher with the [Tab component](tab.md).
 
 ```html
 <!-- This is the subnav containing the toggling elements -->
@@ -217,7 +217,7 @@ As an exception to the rule, add the `uk-tab` attribute instead of `uk-switcher`
 
 ### Vertical tabs
 
-Use the [Grid](grid) and [Width](width) components to display content correctly with a vertical tabbed navigation.
+Use the [Grid](grid.md) and [Width](width.md) components to display content correctly with a vertical tabbed navigation.
 
 ```html
 <div uk-grid>
@@ -275,7 +275,7 @@ Use the [Grid](grid) and [Width](width) components to display content correctly 
 
 ## Switcher and button
 
-The switcher can also be applied to buttons or button groups from the [Button component](button). Just add the switcher attribute to a block around a group of buttons or to the element with the `.uk-button-group` class.
+The switcher can also be applied to buttons or button groups from the [Button component](button.md). Just add the switcher attribute to a block around a group of buttons or to the element with the `.uk-button-group` class.
 
 ```html
 <!-- This is a switcher using a number of buttons -->
@@ -307,7 +307,7 @@ The switcher can also be applied to buttons or button groups from the [Button co
 
 ## Switcher and nav
 
-To apply the switcher to the [Nav component](nav), add the `uk-switcher` attribute to the nav `<ul>` element. Use the [Grid](grid) and [Width](width) components to arrange nav and content in a grid layout.
+To apply the switcher to the [Nav component](nav.md), add the `uk-switcher` attribute to the nav `<ul>` element. Use the [Grid](grid.md) and [Width](width.md) components to arrange nav and content in a grid layout.
 
 ```html
 <div uk-grid>

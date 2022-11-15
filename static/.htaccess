@@ -31,3 +31,8 @@ DirectorySlash Off
 <FilesMatch ".(js|css|ico|svg|jpg|jpeg|bmp|png|gif|webp|woff|woff2)$">
     Header set Cache-Control "public, max-age=84600"
 </FilesMatch>
+
+# Don't show directory listings
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>

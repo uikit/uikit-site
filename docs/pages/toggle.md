@@ -74,7 +74,7 @@ The Toggle component allows you to add animations to items when toggling between
 
 ### Multiple animations
 
-You can also apply multiple animations from the [Animation component](animation). That way you can add different in and out animations.
+You can also apply multiple animations from the [Animation component](animation.md). That way you can add different in and out animations.
 
 ```html
 <button type="button" uk-toggle="target: #my-id; animation: uk-animation-slide-left, uk-animation-slide-bottom"></button>

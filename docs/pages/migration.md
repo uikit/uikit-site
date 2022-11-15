@@ -6,7 +6,7 @@
 
 ## Migration from UIkit 3.14 to 3.15
 
-The [Nav component](nav) component in UIkit 3.15 now uses a JavaScript component to create the parent icon for a nav item instead of compiling the parent icon into the CSS. Just search for the `.uk-nav-parent-icon` class and remove it from the markup. Simply use a `span` with the `uk-nav-parent-icon"` attribute for each nav item with children instead. Here is a quick example.
+The [Nav component](nav.md) in UIkit 3.15 now uses a JavaScript component to create the parent icon for a nav item instead of compiling the parent icon into the CSS. Just search for the `.uk-nav-parent-icon` class and remove it from the markup. Simply use a `span` with the `uk-nav-parent-icon"` attribute for each nav item with children instead. Here is a quick example.
 
 ```
 <ul class="uk-nav-default" uk-nav>
@@ -19,7 +19,7 @@ The [Nav component](nav) component in UIkit 3.15 now uses a JavaScript component
 
 ### Drop, Dropdown and Navbar Dropdown
 
-The [Drop component](drop), [Dropdown component](dropdown) and [Navbar component](navbar) components remove alignment `*-justify` from the `pos` option. Search for `pos: top-justify`, `pos: bottom-justify`, `pos: left-justify` and `pos: right-justify` and use the new  `stretch` option instead.
+The [Drop component](drop.md), [Dropdown component](dropdown.md) and [Navbar component](navbar.md) components remove alignment `*-justify` from the `pos` option. Search for `pos: top-justify`, `pos: bottom-justify`, `pos: left-justify` and `pos: right-justify` and use the new  `stretch` option instead.
 
 | Option                | Replace with                   |
 | --------------------- | ------------------------------ |
@@ -85,14 +85,14 @@ The following Less variables are also renamed. Just find and replace these Less 
 
 ## Migration from UIkit 3.13 to 3.14
 
-UIkit 3.14 renames the `top` and `bottom` options to `start` and `end` in the [Sticky component](sticky). 
+UIkit 3.14 renames the `top` and `bottom` options to `start` and `end` in the [Sticky component](sticky.md). 
 
 | Option   | Replace with |
 | -------- | ------------ |
 | `top`    | `start`      |
 | `bottom` | `end`        |
 
-It also deprecates the `position: auto` option from the [Sticky component](sticky). Simply use the new `overflow-flip: true` options instead.
+It also deprecates the `position: auto` option from the [Sticky component](sticky.md). Simply use the new `overflow-flip: true` options instead.
 
 | Option           | Replace with          |
 | ---------------- | --------------------- |
@@ -100,7 +100,7 @@ It also deprecates the `position: auto` option from the [Sticky component](stick
 
 ## Migration from UIkit 3.11 to 3.12
 
-UIkit 3.12 deprecates `uk-img` from the [Image component](image) for the `<img>` element. Simply use the native `loading="lazy"` attribute instead. This also applies if `uk-img` is used to target adjacent slides within Slideshows or Sliders. Both components, Slideshow and Slider, work with lazy loading images out of the box.
+UIkit 3.12 deprecates `uk-img` from the [Image component](image.md) for the `<img>` element. Simply use the native `loading="lazy"` attribute instead. This also applies if `uk-img` is used to target adjacent slides within Slideshows or Sliders. Both components, Slideshow and Slider, work with lazy loading images out of the box.
 
 | Attribute | Replace with     |
 | --------- | ---------------- |
@@ -110,7 +110,7 @@ UIkit 3.12 deprecates `uk-img` from the [Image component](image) for the `<img>`
 
 ## Migration from UIkit 3.10 to 3.11
 
-UIkit 3.11 adds new `start` and `end` options to the [Parallax component](parallax) and deprecates the `viewport` option. Replace the `viewport` option with the `end` option. Simply calculate `1` minus your viewport value and multiply it by `100vh + 100%`. Here are some examples:
+UIkit 3.11 adds new `start` and `end` options to the [Parallax component](parallax.md) and deprecates the `viewport` option. Replace the `viewport` option with the `end` option. Simply calculate `1` minus your viewport value and multiply it by `100vh + 100%`. Here are some examples:
 
 | Viewport Value | End Value    |
 | -------------- | ------------ |
@@ -122,7 +122,7 @@ UIkit 3.11 adds new `start` and `end` options to the [Parallax component](parall
 
 ## Migration from UIkit 3.4 to 3.5
 
-In UIkit 3.5 all Less variables and class names which have `xxlarge` in their name got renamed to `2xlarge` for better consistency. Just find and replace these Less variables if you are using a custom Less theme. There is just one class in the [Width component](width) which has to be updated in your markup.
+In UIkit 3.5 all Less variables and class names which have `xxlarge` in their name got renamed to `2xlarge` for better consistency. Just find and replace these Less variables if you are using a custom Less theme. There is just one class in the [Width component](width.md) which has to be updated in your markup.
 
 | Class              | Replace with       |
 | ------------------ | ------------------ |
@@ -133,7 +133,7 @@ In UIkit 3.5 all Less variables and class names which have `xxlarge` in their na
 
 ## Migration from UIkit 3.2 to 3.3
 
-UIkit 3.3 adds a new `uk-container-xlarge` class to the [Container component](container) with a width of `1600px` as default value. This is why the class `uk-container-large` changes its width from `1600px` to `1400px`. Update your markup by replacing the following classes.
+UIkit 3.3 adds a new `uk-container-xlarge` class to the [Container component](container.md) with a width of `1600px` as default value. This is why the class `uk-container-large` changes its width from `1600px` to `1400px`. Update your markup by replacing the following classes.
 
 | Class                | Replace with          |
 | -------------------- | --------------------- |
@@ -145,7 +145,7 @@ UIkit 3.3 adds a new `uk-container-xlarge` class to the [Container component](co
 
 ### Text Component
 
-Since UIkit 3.2 adds a new `uk-text-bolder` class to the [Text component](text), the class `uk-text-bold` now applies literally a `bold` font weight instead of `bolder`. The `@text-bold-font-weight` variable, which was set to `bolder`, got removed.
+Since UIkit 3.2 adds a new `uk-text-bolder` class to the [Text component](text.md), the class `uk-text-bold` now applies literally a `bold` font weight instead of `bolder`. The `@text-bold-font-weight` variable, which was set to `bolder`, got removed.
 
 ***
 
@@ -161,7 +161,7 @@ If you want to update your markup later and use the deprecated classes along the
 
 ### Heading Component
 
-The Primary and Hero classes in the [Heading component](heading) are deprecated. Update your markup by replacing the following classes.
+The Primary and Hero classes in the [Heading component](heading.md) are deprecated. Update your markup by replacing the following classes.
 
 | Class                | Replace with        |
 | -------------------- | ------------------- |

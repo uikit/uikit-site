@@ -42,14 +42,14 @@ To create a search icon, add the `uk-search-icon` attribute to a `<span>` elemen
 <div class="uk-margin">
     <form class="uk-search uk-search-default">
         <span uk-search-icon></span>
-        <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search" aria-label="Search">
+        <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
     </form>
 </div>
 
 <div class="uk-margin">
     <form class="uk-search uk-search-default">
         <span class="uk-search-icon-flip" uk-search-icon></span>
-        <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search" aria-label="Search">
+        <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
     </form>
 </div>
 ```
@@ -71,14 +71,14 @@ To enable an action, use an `<a>` or `<button>` element to create the icon.
 <div class="uk-margin">
     <form class="uk-search uk-search-default">
         <a href="" uk-search-icon></a>
-        <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search" aria-label="Search">
+        <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
     </form>
 </div>
 
 <div class="uk-margin">
     <form class="uk-search uk-search-default">
         <a href="" class="uk-search-icon-flip" uk-search-icon></a>
-        <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search" aria-label="Search">
+        <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
     </form>
 </div>
 ```

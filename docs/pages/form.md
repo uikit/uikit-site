@@ -176,7 +176,7 @@ Add the `.uk-form-blank` class to minimize the styling of form controls.
 
 ```example
 <form>
-    <input class="uk-input uk-form-blank uk-form-width-medium" type="text" placeholder="Form blank" placeholder="Form blank">
+    <input class="uk-input uk-form-blank uk-form-width-medium" type="text" placeholder="Form blank">
 </form>
 ```
 
@@ -362,7 +362,7 @@ You can also use the [Grid](grid.md) and [Width](width.md) components to define 
 ```example
 <form class="uk-grid-small" uk-grid>
     <div class="uk-width-1-1">
-        <input class="uk-input" type="text" placeholder="100 aria-label="100">
+        <input class="uk-input" type="text" placeholder="100" aria-label="100">
     </div>
     <div class="uk-width-1-2@s">
         <input class="uk-input" type="text" placeholder="50" aria-label="50">

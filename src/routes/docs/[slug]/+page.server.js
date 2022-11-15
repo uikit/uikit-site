@@ -53,8 +53,8 @@ function parse(markdown) {
 
                     <div class="uk-position-top-right uk-margin-small-top">
                         <ul class="uk-iconnav">
-                            <li><a class="js-copy" uk-tooltip="Copy to Clipboard" rel="#${id}"><img class="uk-icon" src="../images/icon-clipboard.svg" uk-svg></a></li>
-                            <li><a class="js-codepen" uk-tooltip="Edit on Codepen" rel="#${id}"><img class="uk-icon" src="../images/icon-flask.svg" uk-svg></a></li>
+                            <li><a href class="js-copy" uk-tooltip="Copy to Clipboard" rel="#${id}"><img class="uk-icon" src="../images/icon-clipboard.svg" uk-svg></a></li>
+                            <li><a href class="js-codepen" uk-tooltip="Edit on Codepen" rel="#${id}"><img class="uk-icon" src="../images/icon-flask.svg" uk-svg></a></li>
                         </ul>
                     </div>
                 </div>`;
@@ -67,7 +67,7 @@ function parse(markdown) {
         href.match(/modal$/) ? modal(href, text) : base.image(href, title, text);
     renderer.link = (href, title, text) =>
         href.match(/\.md/)
-            ? base.link(href.replace(/.md(.*)/, '$1'), title, text)
+            ? base.link(href.replace(/(.*?).md(.*)/, '/docs/$1$2'), title, text)
             : base.link(href, title, text);
     renderer.code = (code, lang) => {
         return lang === 'example'
@@ -80,15 +80,24 @@ function parse(markdown) {
     renderer.table = (header, body) =>
         `<div class="uk-overflow-auto"><table class="uk-table uk-table-divider"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
 
-    let title;
+    let pageTitle;
     let ids = [];
+    let found = new Set();
     renderer.heading = (text, level) => {
         if (level === 1) {
-            title = text;
+            pageTitle = text;
         }
 
-        const id = sluggify(text);
-        ids.push({ id, title: text });
+        const title = text.replaceAll(/<(\w+)>(.*?)<\/\1>/g, '$2');
+        let id = sluggify(title);
+
+        while (found.has(id)) {
+            id += '-2';
+        }
+
+        found.add(id);
+        ids.push({ id, title });
+
         return `<h${level} id="${id}" class="uk-h${
             level > 1 ? level + 1 : level
         } tm-heading-fragment"><a href="#${id}">${text}</a></h${level}>`;
@@ -106,6 +115,6 @@ function parse(markdown) {
             );
         }
 
-        return { ids, content, title };
+        return { ids, content, title: pageTitle };
     });
 }

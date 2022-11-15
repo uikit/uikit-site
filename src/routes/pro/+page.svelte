@@ -354,11 +354,7 @@
             </div>
         </div>
         <div class="tm-modal-body uk-flex-1 uk-flex">
-            <iframe
-                src=""
-                class="uk-width-1-1 tm-box-shadow-modal"
-                title="YOOtheme Pro Layout Demo"
-            />
+            <iframe class="uk-width-1-1 tm-box-shadow-modal" title="YOOtheme Pro Layout Demo" />
         </div>
     </div>
     <script>
@@ -379,6 +375,10 @@
 
             modal(modalEl).show();
             $('iframe', modalEl).src = el.href;
+        });
+
+        on('#modal-demo', 'hidden', (e) => {
+            $('iframe', e.target).src = '';
         });
     </script>
 </div>
