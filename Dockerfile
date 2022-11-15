@@ -10,10 +10,12 @@ COPY package.json .
 COPY yarn.lock .
 RUN yarn install
 
-# build uikit tests
+# compile css and uikit tests
+# build static files
 WORKDIR /app
 COPY . .
 RUN yarn compile
+RUN yarn build
 
 # build uikit v2
 FROM node:18-alpine as build-v2
