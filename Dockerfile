@@ -10,23 +10,10 @@ COPY package.json .
 COPY yarn.lock .
 RUN yarn install
 
-# install uikit
-WORKDIR /app/node_modules/uikit
-RUN yarn install
-
-# build uikit
+# build uikit tests
 WORKDIR /app
 COPY . .
-RUN mv ./node_modules/uikit ./assets && \
-    yarn compile
-
-# cleanup
-RUN sed -i "s/{{BUILD}}/$COMMIT_HASH/g" app/main.min.js && \
-    sed -i "s/{{BUILD}}/$COMMIT_HASH/g" docs/app/main.min.js && \
-    sed -i "s/{{BUILD}}/$COMMIT_HASH/g" docs/index.html && \
-    sed -i "s/{{BUILD}}/$COMMIT_HASH/g" index.html && \
-    rm -rf ./node_modules/ && \
-    rm -rf ./assets/uikit/node_modules/
+RUN yarn compile
 
 # build uikit v2
 FROM node:18-alpine as build-v2
@@ -50,5 +37,5 @@ RUN sed -i "s/ServerAdmin you@example.com/ServerAdmin info@getuikit.com/" ./conf
 
 # copy htdocs
 WORKDIR /usr/local/apache2/htdocs
-COPY --from=build /app/ .
+COPY --from=build /app/build/ .
 COPY --from=build-v2 /app/ ./v2

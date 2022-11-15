@@ -69,7 +69,6 @@ The following events will be triggered on elements with this component attached:
 | `beforescroll` | Fires before scroll begins. Can prevent scrolling by calling `preventDefault()` on the event. |
 | `scrolled`     | Fires after scrolling is finished.                                                            |
 
-
 ### Methods
 
 The following methods are available for the component:
@@ -88,4 +87,4 @@ Scroll to the given element.
 
 <div style="height: 2000px;"></div>
 
-<a id="target" class="uk-button uk-button-primary" href="#top" uk-scroll>Scroll up</a>
+<a id="target" class="uk-button uk-button-primary" href uk-scroll>Scroll up</a>

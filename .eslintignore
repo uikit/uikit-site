@@ -1,2 +1,5 @@
-*.min.js
-/assets/uikit
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+yarn.lock

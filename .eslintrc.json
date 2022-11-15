@@ -1,29 +1,19 @@
 {
     "root": true,
-    "env": {
-        "es2021": true,
-        "browser": true
-    },
     "extends": ["eslint:recommended", "prettier"],
+    "plugins": ["svelte3"],
+    "overrides": [{ "files": ["*.svelte"], "processor": "svelte3/svelte3" }],
     "parserOptions": {
         "sourceType": "module",
-        "ecmaVersion": 2022
+        "ecmaVersion": 2020
     },
-    "overrides": [
-        {
-            "files": ["*.vue"],
-            "plugins": ["vue"],
-            "extends": ["eslint:recommended", "plugin:vue/recommended", "prettier"],
-            "rules": {
-                "vue/multi-word-component-names": "off"
-            }
-        },
-        {
-            "files": ["*.config.js"],
-            "env": {
-                "browser": false,
-                "node": true
-            }
-        }
-    ]
+    "env": {
+        "browser": true,
+        "es2017": true,
+        "node": true
+    },
+    "globals": {
+        "UIkit": true,
+        "ClipboardJS": true
+    }
 }

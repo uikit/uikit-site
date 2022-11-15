@@ -1,4 +1,4 @@
-export default function (id, config = {}) {
+function analytics(id, config = {}) {
     gtag('js', new Date());
     gtag('config', id, config);
 
@@ -6,7 +6,7 @@ export default function (id, config = {}) {
     getScript(`https://www.googletagmanager.com/gtag/js?id=${id}`);
 }
 
-export function gtag() {
+function gtag() {
     let { dataLayer } = window;
 
     if (!dataLayer) {
@@ -16,7 +16,7 @@ export function gtag() {
     dataLayer.push(arguments);
 }
 
-export function getScript(src) {
+function getScript(src) {
     const script = document.createElement('script');
 
     script.src = src;

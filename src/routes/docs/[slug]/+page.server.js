@@ -1,9 +1,17 @@
-/* global marked */
+import { readdir, readFile } from 'node:fs/promises';
+import hljs from 'highlight.js';
+import marked from 'marked';
 
-import { escape } from 'he';
-import { append, includes, remove } from 'uikit-util';
+export async function load({ params }) {
+    return {
+        tests: [...(await readdir('./static/assets/uikit/tests/'))]
+            .filter((file) => file.endsWith('.html'))
+            .map((file) => file.slice(0, -5)),
+        doc: parse(await readFile(`./docs/pages/${params.slug}.md`, { encoding: 'utf8' })),
+    };
+}
 
-export function sluggify(text) {
+function sluggify(text) {
     return text
         .toLowerCase()
         .trim()
@@ -11,8 +19,9 @@ export function sluggify(text) {
         .replace(/&.+?;/g, '')
         .replace(/[\s\W-]+/g, '-');
 }
+
 let _id = 0;
-export function parse(markdown, cb) {
+function parse(markdown) {
     const renderer = new marked.Renderer({ langPrefix: 'lang-' });
     const base = new marked.Renderer({ langPrefix: 'lang-' });
     const modal = (href, text) => {
@@ -28,7 +37,7 @@ export function parse(markdown, cb) {
     const example = (code) => {
         const id = 'code-example-' + _id++;
 
-        return `<div class="uk-position-relative uk-margin-medium">
+        return `<div class="uk-position-relative uk-margin-medium js-example">
 
                     <ul uk-tab="swiping: false">
                         <li><a href="#">Preview</a></li>
@@ -37,9 +46,9 @@ export function parse(markdown, cb) {
 
                     <ul class="uk-switcher uk-margin">
                         <li>${code}</li>
-                        <li><pre><code id="${id}" class="lang-html">${escape(
-            code
-        )}</code></pre></li>
+                        <li><pre><code id="${id}" class="lang-html">${
+            hljs.highlightAuto(code).value
+        }</code></pre></li>
                     </ul>
 
                     <div class="uk-position-top-right uk-margin-small-top">
@@ -60,82 +69,43 @@ export function parse(markdown, cb) {
         href.match(/\.md/)
             ? base.link(href.replace(/.md(.*)/, '$1'), title, text)
             : base.link(href, title, text);
-    renderer.code = (code, lang, escaped) =>
-        lang === 'example'
+    renderer.code = (code, lang) => {
+        return lang === 'example'
             ? example(code)
-            : '<div class="uk-margin-medium">' + base.code(code, lang, escaped) + '</div>';
+            : `<div class="uk-margin-medium"><pre><code>${
+                  hljs.highlightAuto(code).value
+              }</code></pre></div>`;
+    };
     renderer.hr = () => '<hr class="uk-margin-large">';
     renderer.table = (header, body) =>
         `<div class="uk-overflow-auto"><table class="uk-table uk-table-divider"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
-    renderer.heading = (text, level) =>
-        `<h${level} id="${sluggify(text)}" class="uk-h${
+
+    let title;
+    let ids = [];
+    renderer.heading = (text, level) => {
+        if (level === 1) {
+            title = text;
+        }
+
+        const id = sluggify(text);
+        ids.push({ id, title: text });
+        return `<h${level} id="${id}" class="uk-h${
             level > 1 ? level + 1 : level
-        } tm-heading-fragment"><a href="#${sluggify(text)}">${text}</a></h${level}>`;
+        } tm-heading-fragment"><a href="#${id}">${text}</a></h${level}>`;
+    };
 
     return marked(markdown, { renderer }, (err, content) => {
-        if (includes(content, '{%isodate%}')) {
+        if (err) {
+            throw err;
+        }
+
+        if (content.includes('{%isodate%}')) {
             content = content.replace(
                 /{%isodate%}/g,
-                new Date(Date.now() + 864e5 * 7).toISOString().replace(/\.\d+Z/, '+00:00')
+                new Date(Date.now() + 604800000).toISOString().replace(/\.\d+Z/, '+00:00')
             );
         }
 
-        if (cb) {
-            cb.apply(this, [err, content]);
-        }
+        return { ids, content, title };
     });
-}
-
-// https://blog.codepen.io/documentation/api/prefill/
-export function openOnCodepen(code) {
-    const regexp = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
-    const scripts = (code.match(regexp) || []).join('\n').replace(/<\/?script>/g, '');
-    const base = location.href.substring(0, location.href.lastIndexOf('/'));
-
-    code = code
-        .replace(regexp, '')
-        .replace(
-            /<(?:img|a)[^>]+(?:src|href)="(?!\/|#|[a-z0-9\-.]+:)(.+?)"|url\((?!\/|#|[a-z0-9\-.]+:)(.+?)\)/g,
-            (match, src, url) => match.replace(src || url, `${base}/${src || url}`)
-        );
-
-    const nc = Date.now() % 9999;
-    let data = {
-        title: '',
-        description: '',
-        html: code,
-        html_pre_processor: 'none',
-        css: '',
-        css_pre_processor: 'none',
-        css_starter: 'neither',
-        css_prefix_free: false,
-        js: scripts || '',
-        js_pre_processor: 'none',
-        js_modernizr: false,
-        html_classes: '',
-        css_external: `https://getuikit.com/assets/uikit/dist/css/uikit.css?nc=${nc}`,
-        js_external: `https://getuikit.com/assets/uikit/dist/js/uikit.js?nc=${nc};https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=${nc}`,
-    };
-
-    data = JSON.stringify(data)
-        // Quotes will screw up the JSON
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&apos;');
-
-    const form = append(
-        document.body,
-        `<form action="https://codepen.io/pen/define" method="POST" target="_blank">
-            <input type="hidden" name="data" value='${data}'>
-        </form>`
-    );
-
-    form.submit();
-    remove(form);
-}
-
-export function html(el, html) {
-    el.innerHTML = '';
-    const range = document.createRange();
-    range.selectNode(el);
-    el.appendChild(range.createContextualFragment(html));
 }

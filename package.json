@@ -1,34 +1,31 @@
 {
     "scripts": {
-        "setup": "yarn && yarn uikit && yarn compile",
-        "uikit": "cd ./node_modules/uikit && yarn && cd ../../ && symlink-dir ./node_modules/uikit ./assets/uikit",
-        "compile": "yarn compile-js && yarn compile-less && yarn compile-uikit",
-        "compile-uikit": "cd ./assets/uikit && yarn compile-less && yarn compile-rtl && yarn compile-js uikit tests",
-        "compile-js": "webpack",
-        "compile-less": "make-dir css && lessc less/theme.less > css/theme.css --rewrite-urls=all --clean-css",
-        "eslint": "eslint ./",
-        "watch-js": "webpack -w --devtool=inline-source-map"
+        "dev": "vite dev",
+        "build": "vite build",
+        "preview": "vite preview",
+        "postinstall": "symlink-dir ./node_modules/uikit ./static/assets/uikit && cd ./static/assets/uikit && yarn install",
+        "compile": "yarn compile-less && yarn compile-uikit-tests",
+        "compile-less": "make-dir static/css && lessc less/theme.less > static/css/theme.css --rewrite-urls=all --clean-css",
+        "compile-uikit-tests": "cd ./static/assets/uikit && yarn compile-js tests"
     },
-    "eslintIgnore": [
-        "*.min.js",
-        "*.json"
-    ],
     "devDependencies": {
-        "@babel/core": "^7.18.10",
-        "@babel/preset-env": "^7.18.10",
-        "babel-loader": "^8.2.5",
-        "eslint": "8.21.0",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-vue": "^9.3.0",
+        "@sveltejs/adapter-static": "next",
+        "@sveltejs/kit": "next",
+        "clipboard": "2.0.4",
+        "eslint": "^8.16.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-svelte3": "^4.0.0",
+        "highlight.js": "9.12.0",
         "less": "^4.1.3",
         "less-plugin-clean-css": "^1.5.1",
         "make-dir-cli": "^3.0.0",
+        "marked": "0.6.2",
         "prettier": "^2.6.2",
+        "prettier-plugin-svelte": "^2.7.0",
         "symlink-dir": "^5.0.1",
-        "uikit": "3.15.12",
-        "vue-loader": "^15.10.0",
-        "vue-template-compiler": "^2.7.8",
-        "webpack": "^5.74.0",
-        "webpack-cli": "^4.10.0"
-    }
+        "svelte": "^3.46.0",
+        "uikit": "^3.15.12",
+        "vite": "^3.1.0"
+    },
+    "type": "module"
 }

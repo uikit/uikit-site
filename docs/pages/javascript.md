@@ -13,8 +13,6 @@ Once you have [installed UIkit](installation.md), include the JavaScript files o
 
 UIkit is listening for DOM manipulations and will automatically initialize, connect and disconnect components as they are inserted or removed from the DOM. That way it can easily be used with JavaScript frameworks like [Vue.js](http://vuejs.org/) and React.
 
-**Note** The UIkit website and its documentation that you are currently looking at is built that way. It is a perfect example of how <em>UIkit and Vue.js</em> can be integrated. Head over to its [GitHub repo](https://github.com/uikit/uikit-site) to see what a good setup can look like.
-
 ***
 
 ## Component usage

@@ -1,9 +1,8 @@
 /*
-!/*.js
+!/src
+!/static
+/static/*
+!/static/analytics.js
 !/*.json
-*.min.js
-
-!/app
-!/docs
-/docs/*
-!/docs/app
+!/*.js
+**/*.less

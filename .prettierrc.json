@@ -8,6 +8,9 @@
             "options": {
                 "tabWidth": 2
             }
-        }
-    ]
+        },
+        { "files": "*.svelte", "options": { "parser": "svelte" } }
+    ],
+    "plugins": ["prettier-plugin-svelte"],
+    "pluginSearchDirs": ["."]
 }

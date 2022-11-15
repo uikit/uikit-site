@@ -4,4 +4,6 @@ This is the UIkit 3 website as found on [getuikit.com](https://getuikit.com). Us
 
 1. Clone the repository
 2. `yarn` to fetch all dependencies
-3. `yarn setup` to compile all resources
+3. - `yarn dev` start a development server
+   - `yarn build` build a production version of your app
+   - `yarn preview` run the production version locally

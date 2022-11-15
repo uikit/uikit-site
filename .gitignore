@@ -1,8 +1,7 @@
-/node_modules
-/assets/uikit
-!/assets/google
-/css
-main.min.js
-js/*.min.js
+/.idea
+/.svelte-kit
+/build
+/static/assets
+/static/css
+node_modules
 .DS_Store
-.idea
