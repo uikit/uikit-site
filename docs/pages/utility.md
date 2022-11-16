@@ -106,18 +106,6 @@ These utilities provide different classes to modify an element's overflow behavi
                 <th>Table Heading</th>
             </tr>
         </thead>
-        <tfoot>
-            <tr>
-                <td>Table Footer</td>
-                <td>Table Footer</td>
-                <td>Table Footer</td>
-                <td>Table Footer</td>
-                <td>Table Footer</td>
-                <td>Table Footer</td>
-                <td>Table Footer</td>
-                <td>Table Footer</td>
-            </tr>
-        </tfoot>
         <tbody>
             <tr>
                 <td>Table Data</td>
@@ -140,6 +128,18 @@ These utilities provide different classes to modify an element's overflow behavi
                 <td>Table Data</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+            </tr>
+        </tfoot>
     </table>
 </div>
 ```

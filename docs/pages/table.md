@@ -14,16 +14,16 @@ To apply this component, add the `.uk-table` class to a `<table>` element.
             <th></th>
         </tr>
     </thead>
-    <tfoot>
-        <tr>
-            <td></td>
-        </tr>
-    </tfoot>
     <tbody>
         <tr>
             <td></td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td></td>
+        </tr>
+    </tfoot>
 </table>
 ```
 
@@ -37,13 +37,6 @@ To apply this component, add the `.uk-table` class to a `<table>` element.
             <th>Table Heading</th>
         </tr>
     </thead>
-    <tfoot>
-        <tr>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-        </tr>
-    </tfoot>
     <tbody>
         <tr>
             <td>Table Data</td>
@@ -56,6 +49,13 @@ To apply this component, add the `.uk-table` class to a `<table>` element.
             <td>Table Data</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Table Footer</td>
+            <td>Table Footer</td>
+            <td>Table Footer</td>
+        </tr>
+    </tfoot>
 </table>
 ```
 
