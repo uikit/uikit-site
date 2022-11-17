@@ -1,5 +1,5 @@
 import { readFile } from 'node:fs/promises';
-import marked from 'marked';
+import { marked } from 'marked';
 
 export async function load() {
     return {
