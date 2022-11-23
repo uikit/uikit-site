@@ -96,7 +96,9 @@ function parse(markdown) {
         }
 
         found.add(id);
-        ids.push({ id, title });
+        if (level === 2) {
+            ids.push({ id, title });
+        }
 
         return `<h${level} id="${id}" class="uk-h${
             level > 1 ? level + 1 : level
