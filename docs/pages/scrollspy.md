@@ -127,14 +127,13 @@ You can also give each target a separate `cls` option. Just add the `uk-scrollsp
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option        | Value   | Default | Description                                                |
-|---------------|---------|---------|------------------------------------------------------------|
-| `cls`         | String  | ``      | Class to toggle when the element enters/leaves viewport.   |
-| `hidden`      | Boolean | `true`  | Hides the element while out of view.                       |
-| `offset-top`  | Number  | `0`     | Top offset before triggering in view.                      |
-| `offset-left` | Number  | `0`     | Left offset before triggering in view.                     |
-| `repeat`      | Boolean | `false` | Applies the `cls` class every time the element is in view. |
-| `delay`       | Number  | `0`     | Delay time in ms.                                          |
+| Option   | Value   | Default | Description                                                                                                                                |
+|----------|---------|---------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| `cls`    | String  | ``      | Class to toggle when the element enters/leaves viewport.                                                                                   |
+| `hidden` | Boolean | `true`  | Hides the element while out of view.                                                                                                       |
+| `margin` | String  | `-1px`  | The margin is added to the viewport's bounding box, before computing an intersection with the element. The value must be in px or % units. |
+| `repeat` | Boolean | `false` | Applies the `cls` class every time the element is in view.                                                                                 |
+| `delay`  | Number  | `0`     | Delay time in ms.                                                                                                                          |
 
 `cls` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 

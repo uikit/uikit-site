@@ -145,16 +145,13 @@ This example offers alternative image formats like *WebP* and *AVIF*.
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option       | Value  | Default | Description                                                                                                                          |
-|--------------|--------|---------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `dataSrc`    | String | ''      | The image's `src` attribute.                                                                                                         |
-| `dataSrcset` | String | false   | The image's `srcset` attribute.                                                                                                      |
-| `sizes`      | String | false   | The image's `sizes` attribute.                                                                                                       |
-| `width`      | String | false   | The image's `width` attribute. It will be used to determine the placeholder's width and the position of the image in the document.   |
-| `height`     | String | false   | The image's `height` attribute. It will be used to determine the placeholder's height and the position of the image in the document. |
-| `offsetTop`  | String | '50vh'  | The offset increases the viewport's bounding box vertically before computing an intersection with the image.                         |
-| `offsetLeft` | String | 0       | The offset increases the viewport's bounding box horizontally before computing an intersection with the image.                       |
-| `target`     | String | false   | A list of targets whose bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.         |
+| Option    | Value  | Default | Description                                                                                                                                                                             |
+|-----------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `dataSrc` | String | ''      | The image's `src` attribute.                                                                                                                                                            |
+| `sources` | String | ''      | The image's sources. This option is used for background images only. The sources attributes be passed in `key: value;` format for a single source. For multiple sources in JSON format. |
+| `loading` | `lazy` | `eager` | `lazy`                                                                                                                                                                                  | Enable lazy/eager loading. Set to `eager` for images within the first visible viewport.                                                                                                           |
+| `margin`  | String | `50%`   | The margin is added to the viewport's bounding box, before computing an intersection with the image. The value must be in px or % units.                                                |
+| `target`  | String | false   | A list of targets whose bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.                                                            |
 
 `dataSrc` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
