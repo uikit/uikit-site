@@ -904,7 +904,7 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
 
 For a basic sticky navbar, wrap the navbar inside a container with the `uk-sticky` attribute from the [Sticky component](sticky.md).
 
-The navbar itself has a modifier class `uk-navbar-sticky` that ensures an optimized styling for the sticky state (for example, an additional box shadow). To let the sticky component dynamically add and remove that class, set `cls-active: uk-navbar-sticky`. To ensure that the class is added to the navbar container, set `sel-target: .uk-navbar-container`.
+The navbar itself has a modifier class `uk-navbar-sticky` that ensures an optimized styling for the sticky state (for example, an additional box shadow). To let the Sticky component dynamically add and remove that class, set `cls-active: uk-navbar-sticky`. To ensure that the class is added to the navbar container, set `sel-target: .uk-navbar-container`.
 
 **Note** You can view more examples in the tests for the [Sticky Navbar](../assets/uikit/tests/sticky-navbar.html).
 
