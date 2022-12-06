@@ -4,7 +4,7 @@
 
 ## Usage
 
-The article component consists of the article itself, a title and meta data.
+The Article component consists of the article itself, a title and meta data.
 
 | Class               | Description                                                                                                |
 |---------------------|------------------------------------------------------------------------------------------------------------|

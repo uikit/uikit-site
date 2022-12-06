@@ -42,7 +42,7 @@ The Pagination component consists of button-like styled links, that are aligned 
 
 ## Alignment
 
-The pagination component utilizes flexbox, so navigations can easily be aligned with the [Flex component](flex.md).
+The Pagination component utilizes flexbox, so navigations can easily be aligned with the [Flex component](flex.md).
 
 ```html
 <ul class="uk-pagination uk-flex-center">…</ul>
