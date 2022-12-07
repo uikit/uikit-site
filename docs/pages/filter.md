@@ -862,3 +862,15 @@ The following events will be triggered on elements with this component attached:
 |----------------|------------------------------------------|
 | `beforeFilter` | Fires before the filter is applied.      |
 | `afterFilter`  | Fires after the filter has been applied. |
+
+***
+
+## Accessibility
+
+The Filter component will handle setting the appropriate WAI-ARIA Roles, States, and Properties. The 
+filter control element will have the state `aria-selected`.
+
+### Keyboard Interaction
+
+- <kbd>Enter</kbd> or <kbd>Space</kbd>: When focus is on a filter control it toggles the filter.
+- <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus to the next/previous focusable element.

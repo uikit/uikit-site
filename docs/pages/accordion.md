@@ -208,3 +208,16 @@ Toggles the content pane.
 |-----------|----------------------|---------|----------------------------------------------|
 | `index`   | String, Number, Node | 0       | Accordion pane to toggle. 0 based index.     |
 | `animate` | Boolean              | true    | Suppress opening animation by passing false. |
+
+***
+
+## Accessibility
+
+Adheres to the [Accordion WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/).
+
+The Accordion component will handle setting the appropriate WAI-ARIA Roles, States, and Properties. It will automatically add IDs to the `title` and `content` elements. The title elements will have the role `button`, the state `aria-expanded` and the property `aria-controls`. The `content` elements will have the role `region` and the property `aria-labelledby`.
+
+### Keyboard Interaction
+
+- <kbd>Enter</kbd> or <kbd>Space</kbd>: When focus is on the `title` it toggles `content`.
+- <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus to the next/previous focusable element.
