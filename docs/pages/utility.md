@@ -348,7 +348,7 @@ Define how the content of an image or video should be resized to fit its element
 | `.uk-object-none`       | Doesn't scale the image at all.                                                                             |
 | `.uk-object-scale-down` | Like contain, but never up-scales.                                                                          |
 
-**Note** Since images and video are responsive by default in UIki, it's mandatory to set the aspect ratio when using one of these classes.
+**Note** Since images and video are responsive by default in UIkit, it's mandatory to set the aspect ratio when using one of these classes.
 
 ```html
 <img class="uk-object-cover" src="" width="1000" height="1000" alt="" style="aspect-ratio: 1 / 1">
