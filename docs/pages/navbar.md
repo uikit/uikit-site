@@ -365,7 +365,7 @@ Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to a
 </nav>
 ```
 
-To changes toggle icon from a menu icon to a close icon with a smooth animation, add the `.uk-navbar-toggle-animate` class.
+To change toggle icon from a menu icon to a close icon with a smooth animation, add the `.uk-navbar-toggle-animate` class.
 
 ```html
 <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href=""></a>
