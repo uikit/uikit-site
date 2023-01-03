@@ -26,9 +26,9 @@ To apply this component, add the `uk-parallax` attribute to any element. Use one
 | `sepia`            | Animate the sepia filter.          | `%`            | `0`         |
 | `stroke`           | Animate strokes within SVG images. |                | `0`         |
 
-You can use `px`, `%`, `vw` and `vh` units for the length values. The pixel unit can be left out. For example, `x: 200` is the same as `x: 200px`. Basic mathematics operands `+` and `-` are also supported. 
+You can use `px`, `%`, `vw` and `vh` units for the length values. The pixel unit can be left out. For example, `x: 200` is the same as `x: 200px`. Basic mathematics operands `+` and `-` are also supported.
 
-Set one of the options to create an animation stop. The property is animated from its start value to the defined stop value. 
+Set one of the options to create an animation stop. The property is animated from its start value to the defined stop value.
 
 
 ```html
@@ -47,7 +47,7 @@ Set one of the options to create an animation stop. The property is animated fro
 
 ## Start stop
 
-To set a custom start value, create another animation stop by using two values separated by comma. 
+To set a custom start value, create another animation stop by using two values separated by comma.
 
 ```html
 <div uk-parallax="opacity: 0,1">…</div>
@@ -144,7 +144,7 @@ The animation starts and stops depending on the element position in the viewport
 
 ## Start and end
 
-To adjust the animation duration, set the `start` and `end` options. The `start` option defines when the animation starts. The default value of `0` means that the target's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the target's bottom border and the viewport's top border intersect. Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the target's height. Both options allow basic mathematics operands, `+` and `-`. 
+To adjust the animation duration, set the `start` and `end` options. The `start` option defines when the animation starts. The default value of `0` means that the target's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the target's bottom border and the viewport's top border intersect. Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the target's height. Both options allow basic mathematics operands, `+` and `-`.
 
 ```html
 <div uk-parallax="start: 100%; end: 100%;">…</div>

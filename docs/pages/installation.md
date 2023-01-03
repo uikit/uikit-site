@@ -99,7 +99,7 @@ yarn watch
 <script>
     fetch('../assets/uikit/package.json').then(function (response) {
         response.json().then(({version}) => {
-            UIkit.util.$$('pre').forEach(function (pre) { 
+            UIkit.util.$$('pre').forEach(function (pre) {
                 pre.innerHTML = pre.innerHTML.replace(/\[uikit-version]/g, version);
             });
         });

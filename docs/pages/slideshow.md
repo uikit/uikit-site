@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create a responsive slideshow with images and videos.</p>
 
-The Slideshow component is fully responsive and supports touch and swipe navigation as well as mouse drag for desktops. When swiping between slides, the animation literally sticks at your fingertips or mouse cursor. It even accelerates to keep up with your pace when you click through previous and next navigation. All animations are hardware accelerated for a smoother performance.
+The Slideshow component is fully responsive and supports touch and swipe navigation as well as mouse drag for desktops. When swiping between slides, the animation literally sticks at your fingertips or mouse cursor. It accelerates to keep up with your pace when you click through previous and next navigation. All animations are hardware accelerated for a smoother performance.
 
 ## Usage
 
