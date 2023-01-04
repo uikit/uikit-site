@@ -514,3 +514,9 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ```js
 UIkit.formCustom(element, options);
 ```
+
+***
+
+## Accessibility
+
+Make sure that the form controls have an accessible name. If no `<label>` element is associated, use an `aria-label` property.

@@ -298,3 +298,9 @@ Add one of the following classes to increase or decrease the spacing between lis
 
 </div>
 ```
+
+***
+
+## Accessibility
+
+If the list is a `<div>` element, it should get the role `list` and its children the role `listitem`.

@@ -163,3 +163,9 @@ Add the `.uk-comment-list` class to a `<ul>` element to create a list of comment
     </li>
 </ul>
 ```
+
+***
+
+## Accessibility
+
+Each comment element should get a role `comment`.

@@ -304,3 +304,9 @@ The search icon can be used as a toggle to open the search inside a navbar – a
     </div>
 </div>
 ```
+
+***
+
+## Accessibility
+
+Make sure that the search `<input>` element has an `aria-label` property.
