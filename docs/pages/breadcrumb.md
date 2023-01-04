@@ -31,6 +31,6 @@ To add list items without a link, use a `<span>` element instead of an `<a>`. Al
 
 ## Accessibility
 
-Breadcrumb component should follow the [Breadcrumb design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/).
+The Breadcrumb component should adhere to the [Breadcrumb design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/).
 
-You should provide an `aria-label` property and if the last item is the current page and a link, it should get a property `aria-current="page"`.
+Add an `aria-label` property and describe the type of the provided navigation, and if the last item is the current page and a link, add a property `aria-current="page"`.

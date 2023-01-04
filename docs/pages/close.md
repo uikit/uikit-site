@@ -107,9 +107,9 @@ This is an example of how this component is used with the [Modal component](moda
 
 ## Accessibility
 
-The Close component will handle setting the appropriate WAI-ARIA Roles and Properties.
+The Close component handles setting the appropriate WAI-ARIA Roles and Properties.
 
-The element will have a `role="button"` and a property `aria-label`.
+The element has a `role="button"` and a property `aria-label`.
 
 ***
 

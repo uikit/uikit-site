@@ -799,14 +799,14 @@ Stops the slideshow autoplay.
 
 Adheres to the [Slide Show WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/).
 
-The Slideshow component will handle setting the appropriate WAI-ARIA Roles, States, and Properties. It will automatically add IDs to the `list` and `item` elements. 
+The Slideshow component handles setting the appropriate WAI-ARIA Roles, States, and Properties. It automatically adds IDs to the `list` and `item` elements. 
 
-The root element will have the `aria-roledescription` set to `carousel` property. The `list` element will have the `aria-live` property. The `slide` elements will have the role `group` or `tabpanel` depending on the navigation, the `aria-roledescription` property set to `slide` and an `aria-label` property. The `nav items` in the `nav` element are implemented using the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/). The previous/next `nav items` are implemented using the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/).
+The root element has the `aria-roledescription` set to `carousel` property. The `list` element has the `aria-live` property. The `slide` elements have the role `group` or `tabpanel` depending on the navigation, the `aria-roledescription` property set to `slide` and an `aria-label` property. The `nav items` in the `nav` element are implemented using the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/). The previous/next `nav items` are implemented using the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/).
 
 ### Keyboard Interaction
 
 - Autoplay stops when any element in the Slideshow component receives focus.
-- <kbd>Enter</kbd> or <kbd>Space</kbd>: When focus is on a `nav item` it shows the referenced `slide`.
+- <kbd>Enter</kbd> or <kbd>Space</kbd>: When focus is on a `nav item`, it shows the referenced `slide`.
 - <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus to through `nav items`.
 - If a `nav` element is present, it implements keyboard interaction using the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
 

@@ -1086,16 +1086,16 @@ The following events will be triggered on elements with this component attached:
 
 Adheres to the [Menu or Menu bar WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menu/).
 
-The Navbar component will handle setting the appropriate WAI-ARIA Roles, States, and Properties.
+The Navbar component handles setting the appropriate WAI-ARIA Roles, States, and Properties.
 
-The root element will have the role `menubar`. The nav items will have a role `menuitem`. See the [Drop component](drop.md) for further States and Properties on the nav items.
+The root element has the role `menubar`. The nav items have a role `menuitem`. See the [Drop component](drop.md) for further States and Properties on the nav items.
 
-The toggle item will have a `role="button"` and a property `aria-label`.
+The toggle item has a `role="button"` and a property `aria-label`.
 
 ### Keyboard Interaction
 
 - <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus into the menubar or out of the menubar.
-- The `nav` items can be navigated using the Arrow keys. They implement keyboard interaction using the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
+- The `nav` items can be navigated using the arrow keys. They implement keyboard interaction using the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
 
 ***
 

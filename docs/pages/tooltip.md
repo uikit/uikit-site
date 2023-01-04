@@ -144,13 +144,12 @@ UIkit.tooltip(element).hide();
 
 Hides the Tooltip.
 
-
 ***
 
 ## Accessibility
 
 Adheres to the [Tooltip Widget WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/).
 
-The Tooltip component will handle setting the appropriate WAI-ARIA Roles, States, and Properties. It will automatically add an ID to the tooltip element.
+The Tooltip component handles setting the appropriate WAI-ARIA Roles, States, and Properties. It automatically adds an ID to the tooltip element.
 
-The element will have the `aria-describedby` set to the ID of the tooltip element. The tooltip element will have a role `tooltip`.
+The tooltip element has the `aria-describedby` set to the ID of the tooltip element. The tooltip element has a role `tooltip`.

@@ -642,6 +642,6 @@ Hides the dropdown.
 
 Adheres to the [Menu Button WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/).
 
-The Dropdown component will handle setting the appropriate WAI-ARIA Roles, States and Properties.
+The Dropdown component handles setting the appropriate WAI-ARIA Roles, States and Properties.
 
 The Toggle element has the role `button`, the state `aria-expanded` and the property `aria-haspopup="true"`.

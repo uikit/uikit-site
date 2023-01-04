@@ -323,7 +323,7 @@ Stops the Lightbox's autoplay.
 
 ## Accessibility
 
-The Lightbox component is a combination of the [Modal component](modal.md) and the [Slideshow component](slideshow.md)
+The Lightbox component is a combination of the [Modal component](modal.md) and the [Slideshow component](slideshow.md). Use accessibility practices described for each component.
 
 ### Keyboard Interaction
 
@@ -333,7 +333,7 @@ The Lightbox component is a combination of the [Modal component](modal.md) and t
 
 ## i18n
 
-The Slideshow component uses the following translation strings. Learn more about [translating components](i18n.md).
+The Lightbox component uses the following translation strings. Learn more about [translating components](i18n.md).
 
 | Key          | Default          | Description                             |
 |--------------|------------------|-----------------------------------------|

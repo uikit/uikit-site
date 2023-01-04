@@ -163,6 +163,6 @@ Stops the countdown.
 
 ## Accessibility
 
-The Countdown component will handle setting the appropriate WAI-ARIA Role.
+The Countdown component handles setting the appropriate WAI-ARIA Role.
 
-The root element will have the role `timer`.
+The root element has the role `timer`.

@@ -37,9 +37,9 @@ To apply this component, add the `uk-marker` attribute to any element. You can u
 
 ## Accessibility
 
-The Marker component will handle setting the appropriate WAI-ARIA Roles and Properties.
+The Marker component handles setting the appropriate WAI-ARIA Roles and Properties.
 
-The element will have a `role="button"` and a property `aria-label`.
+The element has a `role="button"` and a property `aria-label`.
 
 ***
 

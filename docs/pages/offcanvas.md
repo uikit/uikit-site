@@ -317,9 +317,9 @@ Hides the Offcanvas.
 
 Adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/).
 
-The Offcanvas component will handle setting the appropriate WAI-ARIA Roles and Properties.
+The Offcanvas component handles setting the appropriate WAI-ARIA Roles and Properties.
 
-The root element will have the role `dialog` and the `aria-modal` property if used with `overlay: true`.
+The root element has the role `dialog` and the `aria-modal` property if used with `overlay: true`.
 
 ### Keyboard Interaction
 

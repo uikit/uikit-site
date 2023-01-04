@@ -168,4 +168,4 @@ Add the `.uk-comment-list` class to a `<ul>` element to create a list of comment
 
 ## Accessibility
 
-Each comment element should get a role `comment`.
+To improve accessibility for the Comment component, add a role `comment` to each comment element.

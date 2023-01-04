@@ -234,13 +234,15 @@ Shows the Tab item with given index.
 
 Adheres to the [Tab WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
 
-The Tab component will handle setting the appropriate WAI-ARIA Roles, States, and Properties. It will automatically add IDs to the `toggle` and `content` elements. The `toggle` list element will have the role `tablist` and if it has left/right modifiers, the state `aria-orientation` set to `vertical`. Each `toggle` element will have the role `tab`, the state `aria-selected` and the property `aria-controls`. Each `content` element will have the role `tabpanel` and the property `aria-labelledby`.
+The Tab component handles setting the appropriate WAI-ARIA Roles, States, and Properties. It automatically adds IDs to the `toggle` and `content` elements. 
+
+The `toggle` list element has the role `tablist` and if it has left/right modifiers, the state `aria-orientation` set to `vertical`. Each `toggle` element has the role `tab`, the state `aria-selected` and the property `aria-controls`. Each `content` element has the role `tabpanel` and the property `aria-labelledby`.
 
 ### Keyboard Interaction
 
-The Tab component uses the Manual Activation behavior by default. Set `follow-focus` to `true` to switch to Automatic Activation.
+The Tab component uses the manual activation behavior by default. Set `follow-focus` to `true` to switch to automatic activation.
 
-- <kbd>Enter</kbd> or <kbd>Space</kbd>: When focus is on the `toggle` it toggles its `content` element.
+- <kbd>Enter</kbd> or <kbd>Space</kbd>: When focus is on the `toggle`, it toggles its `content` element.
 - <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus to or from the currently active `toggle`.
-- <kbd>Left/Up Arrow</kbd> or <kbd>Right/Down Arrow</kbd>: Depending on the orientation, if focus is on a `toggle` it moves focus to the next/previous `toggle`. If in Automatic Activation mode, it also toggles the associated `content` element.
-- <kbd>Home</kbd> or <kbd>End</kbd>: If focus is on a `toggle` it moves focus to the first/last `toggle`. If in Automatic Activation mode, it also toggles the associated `content` element.
+- <kbd>Left/Up Arrow</kbd> or <kbd>Right/Down Arrow</kbd>: Depending on the orientation, if focus is on a `toggle`, it moves focus to the next/previous `toggle`. If in automatic activation mode, it also toggles the associated `content` element.
+- <kbd>Home</kbd> or <kbd>End</kbd>: If focus is on a `toggle`, it moves focus to the first/last `toggle`. If in automatic activation mode, it also toggles the associated `content` element.

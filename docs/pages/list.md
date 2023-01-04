@@ -303,4 +303,4 @@ Add one of the following classes to increase or decrease the spacing between lis
 
 ## Accessibility
 
-If the list is a `<div>` element, it should get the role `list` and its children the role `listitem`.
+To improve accessibility for the List component, add the role `list` to the list itself and the role `listitem` to its children if the list is a `<div>` element.
