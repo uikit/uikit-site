@@ -8,10 +8,10 @@
         "Webpack": "webpack",
         "Custom icons": "custom-icons",
         "Avoiding conflicts": "avoiding-conflicts",
-        "RTL support": "rtl",
-        "Migration": "migration",
         "Accessibility": "accessibility",
-        "i18n": "i18n"
+        "i18n": "i18n",
+        "RTL support": "rtl",
+        "Migration": "migration"
     },
 
     "Components": {

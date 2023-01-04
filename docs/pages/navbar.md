@@ -1097,6 +1097,8 @@ The toggle item will have a `role="button"` and a property `aria-label`.
 - <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus into the menubar or out of the menubar.
 - The `nav` items can be navigated using the Arrow keys. They implement keyboard interaction using the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
 
+***
+
 ## i18n
 
 The Toggle Item component uses the following translation strings. Learn more about [translating components](i18n.md).

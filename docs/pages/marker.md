@@ -41,6 +41,8 @@ The Marker component will handle setting the appropriate WAI-ARIA Roles and Prop
 
 The element will have a `role="button"` and a property `aria-label`.
 
+***
+
 ## i18n
 
 The Marker component uses the following translation strings. Learn more about [translating components](i18n.md).

@@ -810,6 +810,8 @@ The root element will have the `aria-roledescription` set to `carousel` property
 - <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus to through `nav items`.
 - If a `nav` element is present, it implements keyboard interaction using the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
 
+***
+
 ## i18n
 
 The Slideshow component uses the following translation strings. Learn more about [translating components](i18n.md).

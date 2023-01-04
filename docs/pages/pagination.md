@@ -101,6 +101,8 @@ The Pagination Next/Previous icons will handle setting the appropriate WAI-ARIA 
 
 The elements will have a `role="button"` and a property `aria-label`.
 
+***
+
 ## i18n
 
 The Pagination Next/Previous component uses the following translation strings. Learn more about [translating components](i18n.md).
