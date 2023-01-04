@@ -328,3 +328,16 @@ The Lightbox component is a combination of the [Modal component](modal.md) and t
 ### Keyboard Interaction
 
 - <kbd>Left Arrow</kbd> or <kbd>Right Arrow</kbd>: When Lightbox is shown, will navigate to previous/next slide.
+
+***
+
+## i18n
+
+The Slideshow component uses the following translation strings. Learn more about [translating components](i18n.md).
+
+| Key          | Default          | Description                             |
+|--------------|------------------|-----------------------------------------|
+| `next`       | `Next Slide`     | `aria-label` for next slide button.     |
+| `previous`   | `Previous Slide` | `aria-label` for previous slide button. |
+| `slideLabel` | `%s of %s`       | `aria-label` for slide.                 |
+| `close`      | `Close`          | `aria-label` for close button.          |
