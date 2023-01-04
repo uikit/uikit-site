@@ -1,10 +1,14 @@
 # Accessibility
 
-UIkit strives to be an accessible front-end framework by default. In general the overall accessibility of websites and applications built with UIkit still depends on the website's author. If implemented correctly, it should be possible to build websites and applications with UIkit that comply to the [WCAG rules](https://www.w3.org/TR/WCAG/).
+UIkit is a fully accessible front-end framework. All its interactive components are accessible out of the box. Still, the accessibility largely depends on the author's markup. In this documentation we provide best practice examples on how to use UIkit to comply with the [WCAG 2.1](https://www.w3.org/TR/WCAG/) standards. 
 
-## Markup
+## Color Contrasts
 
-This documentation provides usage and markup examples of accessible UIkit components.
+UIkit's default color palette may have insufficient color contrast, in particular the muted text and background colors. WCAG 2.1 requires a 4.5:1 ratio for text contrast and 3:1 ratio for the non-text color. To meet the color contrast requirements, overwrite the [Less variables](less.md#use-variables) accordingly.
+
+```less
+@global-muted-color: #777;
+```
 
 ## Interactive components
 
