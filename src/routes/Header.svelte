@@ -8,7 +8,7 @@
     uk-sticky={`media: 960; ${$$props['uk-sticky'] || ''}`}
 >
     <div class="uk-container uk-container-expand">
-        <nav class="uk-navbar">
+        <nav class="uk-navbar" uk-navbar>
             <div class="uk-navbar-left">
                 <a
                     class="uk-navbar-item uk-logo"

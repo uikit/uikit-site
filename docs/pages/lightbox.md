@@ -318,3 +318,13 @@ UIkit.lightboxPanel(element).stopAutoplay();
 ```
 
 Stops the Lightbox's autoplay.
+
+***
+
+## Accessibility
+
+The Lightbox component is a combination of the [Modal component](modal.md) and the [Slideshow component](slideshow.md)
+
+### Keyboard Interaction
+
+- <kbd>Left Arrow</kbd> or <kbd>Right Arrow</kbd>: When Lightbox is shown, will navigate to previous/next slide.

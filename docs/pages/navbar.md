@@ -7,7 +7,7 @@
 The Navbar component consists of a navbar container, the navbar itself and one or more navigations.
 
 | Element                                                           | Description                                                                                                    |
-| ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | `uk-navbar`                                                       | Add this attribute to a `<nav>` element to define the Navbar component.                                        |
 | `.uk-navbar-container`                                            | Add this class to the same `<nav>` element or a parent element to add the navbar background style.             |
 | `.uk-navbar-left`<br> `.uk-navbar-center`<br>  `.uk-navbar-right` | Add one of these classes to a `<div>` element to align the navigation.                                         |
@@ -1072,10 +1072,35 @@ UIkit.navbar(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name         | Description                                                                                    |
-| ------------ | ---------------------------------------------------------------------------------------------- |
+|--------------|------------------------------------------------------------------------------------------------|
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
 | `shown`      | Fires after the item's show animation has completed.                                           |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
 | `hide`       | Fires after an item's hide animation has started.                                              |
 | `hidden`     | Fires after an item is hidden.                                                                 |
+
+***
+
+## Accessibility
+
+Adheres to the [Menu or Menu bar WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menu/).
+
+The Navbar component will handle setting the appropriate WAI-ARIA Roles, States, and Properties.
+
+The root element will have the role `menubar`. The nav items will have a role `menuitem`. See the [Drop component](drop.md) for further States and Properties on the nav items.
+
+The toggle item will have a `role="button"` and a property `aria-label`.
+
+### Keyboard Interaction
+
+- <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus into the menubar or out of the menubar.
+- The `nav` items can be navigated using the Arrow keys. They implement keyboard interaction using the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
+
+## i18n
+
+The Toggle Item component uses the following translation strings. Learn more about [translating components](i18n.md).
+
+| Key     | Default     | Description             |
+|---------|-------------|-------------------------|
+| `label` | `Open Menu` | `aria-label` attribute. |

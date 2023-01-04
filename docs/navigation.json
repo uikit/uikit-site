@@ -9,7 +9,9 @@
         "Custom icons": "custom-icons",
         "Avoiding conflicts": "avoiding-conflicts",
         "RTL support": "rtl",
-        "Migration": "migration"
+        "Migration": "migration",
+        "Accessibility": "accessibility",
+        "i18n": "i18n"
     },
 
     "Components": {

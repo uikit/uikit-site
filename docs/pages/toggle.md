@@ -202,3 +202,11 @@ UIkit.toggle(element).toggle();
 ```
 
 Toggles the Toggle's target.
+
+***
+
+## Accessibility
+
+The Toggle component will handle setting the appropriate WAI-ARIA Role.
+
+The root element will have the role `button` if it's an anchor element `<a>`.

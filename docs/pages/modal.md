@@ -531,3 +531,17 @@ const el = modal.$el; // The modal element
 
 </p>
 ```
+
+***
+
+## Accessibility
+
+Adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/).
+
+The Modal component will handle setting the appropriate WAI-ARIA Roles and Properties.
+
+The root element will have the role `dialog` and the `aria-modal` property if used with `overlay: true`.
+
+### Keyboard Interaction
+
+- <kbd>Esc</kbd>: If `bg-close: true`, will close the Modal.

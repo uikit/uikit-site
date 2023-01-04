@@ -421,5 +421,5 @@ The Switcher component uses the Manual Activation behavior by default. Set `foll
 
 - <kbd>Enter</kbd> or <kbd>Space</kbd>: When focus is on the `toggle` it toggles its `content` element.
 - <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus to or from the currently active `toggle`.
-- <kbd>Left/Up Arrow</kbd> or <kbd>Right/Down Arrow</kbd>: Depending on the orientation, if focus is on a `toggle` it moves focus to the next/previous `toggle`. If in Automatic Activation mode, it also toggles the associated `content` element. 
+- <kbd>Left/Up Arrow</kbd> or <kbd>Right/Down Arrow</kbd>: Depending on the orientation, if focus is on a `toggle` it moves focus to the next/previous `toggle`. If in Automatic Activation mode, it also toggles the associated `content` element.
 - <kbd>Home</kbd> or <kbd>End</kbd>: If focus is on a `toggle` it moves focus to the first/last `toggle`. If in Automatic Activation mode, it also toggles the associated `content` element.

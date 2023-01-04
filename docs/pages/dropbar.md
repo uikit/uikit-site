@@ -237,3 +237,13 @@ Add the `.uk-dropbar-large` class for a dropbar with larger vertical padding.
     </nav>
 </div>
 ```
+
+***
+
+## Accessibility
+
+Adheres to the [Menu Button WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/).
+
+The Dropbar component will handle setting the appropriate WAI-ARIA Roles, States and Properties.
+
+The Toggle element has the role `button`, the state `aria-expanded` and the property `aria-haspopup="true"`.

@@ -164,3 +164,11 @@ Closes the notification.
 | Name        | Type    | Default | Description                      |
 |-------------|---------|---------|----------------------------------|
 | `immediate` | Boolean | true    | Transition the notification out. |
+
+***
+
+## Accessibility
+
+The Notification component will handle setting the appropriate WAI-ARIA Role.
+
+The root element will have the role `alert`.

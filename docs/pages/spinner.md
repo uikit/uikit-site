@@ -26,3 +26,11 @@ Add the `ratio: 3` parameter to the `uk-spinner` attribute to triple its size â€
 <span class="uk-margin-small-right" uk-spinner="ratio: 3"></span>
 <span uk-spinner="ratio: 4.5"></span>
 ```
+
+***
+
+## Accessibility
+
+The Spinner component will handle setting the appropriate WAI-ARIA Role.
+
+The root element will have the role `status`.

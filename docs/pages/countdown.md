@@ -158,3 +158,11 @@ UIkit.countdown(element).stop();
 ```
 
 Stops the countdown.
+
+***
+
+## Accessibility
+
+The Countdown component will handle setting the appropriate WAI-ARIA Role.
+
+The root element will have the role `timer`.
