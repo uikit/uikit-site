@@ -797,11 +797,20 @@ Stops the slideshow autoplay.
 
 ## Accessibility
 
-Adheres to the [Slide Show WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/).
+The Slideshow component adheres to the [Carousel WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) and sets the appropriate WAI-ARIA roles, states and properties.
 
-The Slideshow component handles setting the appropriate WAI-ARIA Roles, States, and Properties. It automatically adds IDs to the `list` and `item` elements. 
+- The *container* element has the `aria-roledescription` property set to `carousel`. 
+- The *list* element has an ID, the `aria-live` property.
+- The *list item* elements have IDs, the `group` role if the slideshow has only a previous/next navigation or the `tabpanel` role if it has a tab navigation, the `aria-roledescription` property set to `slide` and an `aria-label` property.
 
-The root element has the `aria-roledescription` set to `carousel` property. The `list` element has the `aria-live` property. The `slide` elements have the role `group` or `tabpanel` depending on the navigation, the `aria-roledescription` property set to `slide` and an `aria-label` property. The `nav items` in the `nav` element are implemented using the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/). The previous/next `nav items` are implemented using the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/).
+ The tab navigation adheres to the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
+
+- The *tab navigation* has the `tablist` role. 
+- The *tab navigation items* have the `tab` role, the `aria-selected` state, the `aria-controls` property set to the ID of the respective item element, and an `aria-label` property.
+  
+The previous/next navigation adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/). 
+  
+- The *prev/next navigation items* have the `button` role if `<a>` (TODO Jan), the `aria-controls` property set to the ID of the list element (TODO Jan), and an `aria-label` property.
 
 ### Keyboard Interaction
 

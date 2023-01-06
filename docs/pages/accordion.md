@@ -213,19 +213,10 @@ Toggles the content pane.
 
 ## Accessibility
 
-The Accordion component adhers the [Accordion WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) and sets the appropriate WAI-ARIA roles, states and properties.
+The Accordion component adheres to the [Accordion WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) and sets the appropriate WAI-ARIA roles, states and properties.
 
-It automatically adds IDs to the `title` and `content` elements. 
-
-The title elements have the role `button`, the state `aria-expanded` and the property `aria-controls`. The `content` elements have the role `region` and the property `aria-labelledby`.
-
-| Element   | Attribute                 | Description |
-| --------- | ------------------------- | ----------- |
-| `title`   | `role="button"`           | xxxx        |
-|           | `aria-expanded="true"`    | xxxx        |
-|           | `aria-controls="ID"`      |             |
-| `content` | `role="region"`           | xxxx        |
-|           | `aria-labelledby="IDREF"` | xxxx        |
+- The *title* elements have IDs, the `button` role, the `aria-expanded` state and the `aria-controls` property set to the ID of the respective content element.
+- The *content* elements have IDs, the `region` role and the `aria-labelledby` property set to the ID of the respective title element.
 
 ### Keyboard Interaction
 
