@@ -323,7 +323,20 @@ Stops the Lightbox's autoplay.
 
 ## Accessibility
 
-The Lightbox component is a combination of the [Modal component](modal.md) and the [Slideshow component](slideshow.md). Use accessibility practices described for each component.
+The Lightbox component adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/) and the [Carousel WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) and sets the appropriate WAI-ARIA roles, states and properties.
+
+- The *lightbox* has the `dialog` role, the `aria-modal` property and the `aria-roledescription` property set to `carousel`. 
+- The *slide list* has an ID, the `presentation` role and the `aria-live` property.
+- The *slides* have an ID, the `group` role, the `aria-roledescription` property set to `slide` and an `aria-label` property.
+  
+The previous/next navigation adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/). 
+  
+- The *prev/next navigation items* have the `button` role, the `aria-controls` property set to the ID of the slide list, and an `aria-label` property.
+
+The Close component automatically sets the appropriate WAI-ARIA roles and properties.
+
+- The *close icon* has the `aria-label` property, and if an `<a>` element is used, the `button` role.
+
 
 ### Keyboard Interaction
 

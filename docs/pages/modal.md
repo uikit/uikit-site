@@ -536,11 +536,9 @@ const el = modal.$el; // The modal element
 
 ## Accessibility
 
-Adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/).
+The Modal component adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/) and sets the appropriate WAI-ARIA roles and properties.
 
-The Modal component handles setting the appropriate WAI-ARIA Roles and Properties.
-
-The root element has the role `dialog` and the `aria-modal` property if used with `overlay: true`.
+- The container element has the `dialog` role and the `aria-modal` property if used with `overlay: true`.
 
 ### Keyboard Interaction
 

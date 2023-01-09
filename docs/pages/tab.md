@@ -232,11 +232,11 @@ Shows the Tab item with given index.
 
 ## Accessibility
 
-Adheres to the [Tab WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
+The Tab component adheres to the [Tab WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/) and sets the appropriate WAI-ARIA roles, states and properties.
 
-The Tab component handles setting the appropriate WAI-ARIA Roles, States, and Properties. It automatically adds IDs to the `toggle` and `content` elements. 
-
-The `toggle` list element has the role `tablist` and if it has left/right modifiers, the state `aria-orientation` set to `vertical`. Each `toggle` element has the role `tab`, the state `aria-selected` and the property `aria-controls`. Each `content` element has the role `tabpanel` and the property `aria-labelledby`.
+- The `toggle list` element has the `tablist` role, and if it has left/right modifiers, the `aria-orientation` state set to `vertical`.
+- The `toggle` element has the ID, the `tab` role, the `aria-selected` state and the `aria-controls` property set to the ID of the respective item element.
+- The `content` element has the ID, the `tabpanel` role and the `aria-labelledby` property.
 
 ### Keyboard Interaction
 

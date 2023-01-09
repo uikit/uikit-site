@@ -148,8 +148,6 @@ Hides the Tooltip.
 
 ## Accessibility
 
-Adheres to the [Tooltip Widget WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/).
+The Tooltip component adheres to the [Tooltip Widget WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/) and sets the appropriate WAI-ARIA roles, states and properties.
 
-The Tooltip component handles setting the appropriate WAI-ARIA Roles, States, and Properties. It automatically adds an ID to the tooltip element.
-
-The tooltip element has the `aria-describedby` set to the ID of the tooltip element. The tooltip element has a role `tooltip`.
+- The *tooltip* element has the ID, the `tooltip` role and the `aria-describedby` property set to the ID of the tooltip element. 

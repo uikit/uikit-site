@@ -1084,13 +1084,12 @@ The following events will be triggered on elements with this component attached:
 
 ## Accessibility
 
-Adheres to the [Menu or Menu bar WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menu/).
+The Navbar component adheres to the [Menu or Menu bar WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menu/) and sets the appropriate WAI-ARIA roles, states and properties. 
 
-The Navbar component handles setting the appropriate WAI-ARIA Roles, States, and Properties.
+- The container element has the `menubar` role. 
+- The *nav items* have the `menuitem` role. See the [Drop component](drop.md) for further states and properties on the nav items.
 
-The root element has the role `menubar`. The nav items have a role `menuitem`. See the [Drop component](drop.md) for further States and Properties on the nav items.
-
-The toggle item has a `role="button"` and a property `aria-label`.
+- The *toggle item* has the `button` role and the `aria-label` property.
 
 ### Keyboard Interaction
 

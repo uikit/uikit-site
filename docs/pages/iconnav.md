@@ -4,7 +4,7 @@
 
 ## Usage
 
-To apply this component, add the `.uk-iconnav` class to a `<ul>`  element.  Use `<a>` elements as menu items within the list and add icons from the [Icon component](icon.md). To apply an active state to a menu item, just add the `.uk-active` class.
+To apply this component, add the `.uk-iconnav` class to a `<ul>`  element. Use `<a>` elements as menu items within the list and add icons from the [Icon component](icon.md). To apply an active state to a menu item, just add the `.uk-active` class.
 
 ```html
 <ul class="uk-iconnav">
@@ -37,5 +37,19 @@ By default, the items of an iconnav are aligned horizontally. To apply a vertica
     <li><a href="#" uk-icon="icon: file-edit"></a></li>
     <li><a href="#" uk-icon="icon: copy"></a></li>
     <li><a href="#"><span uk-icon="icon: bag"></span> (2)</a></li>
+</ul>
+```
+
+***
+
+## Accessibility
+
+Set the appropriate WAI-ARIA roles, states and properties to the Iconnav component. 
+
+- Set the `aria-label` property to the `<a>` elements to describe their meaning.
+
+```html
+<ul class="uk-iconnav">
+    <li><a href="" uk-icon="icon: check" aria-label="…"></a></li>
 </ul>
 ```

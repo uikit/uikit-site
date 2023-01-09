@@ -17,6 +17,7 @@ Add one of the following classes to form controls inside a `<form>` element to d
 
 ```html
 <form>
+    <input class="uk-input" type="text">
     <select class="uk-select">
         <option></option>
         <option></option>
@@ -519,4 +520,10 @@ UIkit.formCustom(element, options);
 
 ## Accessibility
 
-To improve accessibility for the Form component, make sure that the form controls have an accessible name. If no `<label>` element is associated, use an `aria-label` property.
+Set the appropriate WAI-ARIA roles, states and properties to the Form component. 
+
+- If no `<label>` element is associated with the form control, set the `aria-label` property to the form control to describe its meaning.
+
+```html
+<input class="uk-input" type="text" aria-label="…">
+```

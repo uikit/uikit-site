@@ -387,3 +387,15 @@ A JavaScript Promise that will resolve with the added SVG Node.
 ```js
 UIkit.icon(element).svg.then(function(svg) { svg.querySelector('path').style.stroke = 'red'; })
 ```
+
+***
+
+## Accessibility
+
+Set the appropriate WAI-ARIA roles, states and properties to the Icon component. 
+
+- If an `<a>` element is used, set the `aria-label` property to the `<a>` element to describe its meaning.
+
+```html
+<a href="" uk-icon="icon: heart" aria-label="…"></a>
+```

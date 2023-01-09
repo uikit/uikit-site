@@ -97,9 +97,9 @@ To apply a previous and next button, add the `uk-pagination-previous` or `uk-pag
 
 ## Accessibility
 
-The previous/next pagination buttons handle setting the appropriate WAI-ARIA Roles and Properties.
+The previous/next pagination buttons set the appropriate WAI-ARIA roles and properties.
 
-The elements will have a `role="button"` and a property `aria-label`.
+- The prev/next elements have the `button` role and the `aria-label` property.
 
 ***
 
