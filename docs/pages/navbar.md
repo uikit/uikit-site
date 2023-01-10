@@ -1084,23 +1084,24 @@ The following events will be triggered on elements with this component attached:
 
 ## Accessibility
 
-The Navbar component adheres to the [Menu or Menu bar WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menu/) and sets the appropriate WAI-ARIA roles, states and properties. 
+The Navbar component adheres to the [Menu or Menu bar WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menu/) and automatically sets the appropriate WAI-ARIA roles, states and properties. 
 
-- The container element has the `menubar` role. 
-- The *nav items* have the `menuitem` role. See the [Drop component](drop.md) for further states and properties on the nav items.
+- The *navbar* has the `menubar` role. 
+- The *nav items* and *toggle items* have the `menuitem` role, the `aria-expanded` state and the `aria-haspopup` property.
+- The *toggle items* also have the `aria-label` property.
 
-- The *toggle item* has the `button` role and the `aria-label` property.
+### Keyboard interaction
 
-### Keyboard Interaction
+The Navbar component can be accessed through keyboard using the following keys.
 
-- <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus into the menubar or out of the menubar.
-- The `nav` items can be navigated using the arrow keys. They implement keyboard interaction using the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
+- The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus inside or outside of the navbar. 
+- The <kbd>left/right arrow</kbd> keys navigate through the navbar items. In hover mode the dropdown will open automatically. If the focus is on the last item, it move to the first item. 
+- The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown of the focused navbar item. 
+- The <kbd>up/down arrow</kbd> keys navigates through the nav items in a dropdown. If the focus is on the last item, it move to the first item.
 
-***
+### Internationalization
 
-## i18n
-
-The Toggle Item component uses the following translation strings. Learn more about [translating components](i18n.md).
+The Toggle Item component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
 
 | Key     | Default     | Description             |
 |---------|-------------|-------------------------|

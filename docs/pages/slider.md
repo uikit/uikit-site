@@ -1064,33 +1064,33 @@ Stops the slider autoplay.
 
 ## Accessibility
 
-The Slider component adheres to the [Carousel WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) and sets the appropriate WAI-ARIA roles, states and properties.
+The Slider component adheres to the [Carousel WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *container* element has the `aria-roledescription` property set to `carousel`. 
-- The *list* element has an ID, the `aria-live` property.
-- The *list item* elements have IDs, the `group` role if the slideshow has only a previous/next navigation or the `tabpanel` role if it has a tab navigation, the `aria-roledescription` property set to `slide` and an `aria-label` property.
+- The *slider* has the `aria-roledescription` property set to `carousel`. 
+- The *slide list* has an ID, the `presentation` role and the `aria-live` property.
+- The *slides* have an ID, the `group` role if the slider has only a previous/next navigation or the `tabpanel` role if it has a tab navigation, the `aria-roledescription` property set to `slide` and an `aria-label` property.
 
 The tab navigation adheres to the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
 
 - The *tab navigation* has the `tablist` role. 
-- The *tab navigation items* have the `tab` role, the `aria-selected` state, the `aria-controls` property set to the ID of the respective item element, and an `aria-label` property.
-  
+- The *tab navigation items* have the `presentation` role. 
+- The *tab navigation links* have the `tab` role, the `aria-selected` state, the `aria-controls` property set to the ID of the respective slide, and an `aria-label` property.
+
 The previous/next navigation adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/). 
-  
-- The *prev/next navigation items* have the `button` role if `<a>` (TODO Jan), the `aria-controls` the `aria-controls` property set to the ID of the list element (TODO Jan), and an `aria-label` property.
 
-### Keyboard Interaction
+- The *prev/next navigation items* have an `aria-label` property, the `aria-controls` property set to the ID of the slide list, and if an `<a>` element is used, the `button` role.
 
-- Autoplay stops when any element in the Slider component receives focus.
-- <kbd>Enter</kbd> or <kbd>Space</kbd>: When focus is on a `nav item`, it shows the referenced `slide`.
-- <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus to through `nav items`.
-- If a `nav` element is present, it implements keyboard interaction using the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
+### Keyboard interaction
 
-***
+Autoplay stops when any element in the Slider component receives focus. The tab navigation can be accessed through keyboard using the following keys.
 
-## i18n
+- The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus on the active tab in the tab navigation. If the focus already is on the active tab, the focus will move to the next element outside the tab navigation. 
+- The <kbd>left/right arrow</kbd> or <kbd>right/down arrow</kbd> keys, depending on the orientation, navigate through the tabs. The corresponding slide will get active automatically. If the focus is on the last tab, it move to the first tab. 
+- The <kbd>home</kbd> or <kbd>end</kbd> keys move the focus to the first or last tab.
 
-The Slider component uses the following translation strings. Learn more about [translating components](i18n.md).
+### Internationalization
+
+The Slider component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
 
 | Key          | Default          | Description                               |
 |--------------|------------------|-------------------------------------------|

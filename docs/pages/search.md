@@ -309,4 +309,10 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
 ## Accessibility
 
-To improve accessibility for the Search component, make sure that the search `<input>` element has an `aria-label` property.
+Set the appropriate WAI-ARIA roles, states and properties to the Search component. 
+
+- If no `<label>` element is associated with the search control, set the `aria-label` property to the search `<input>` element to describe its meaning.
+
+```html
+<input class="uk-search-input" type="search" aria-label="…">
+```

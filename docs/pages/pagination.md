@@ -97,15 +97,13 @@ To apply a previous and next button, add the `uk-pagination-previous` or `uk-pag
 
 ## Accessibility
 
-The previous/next pagination buttons set the appropriate WAI-ARIA roles and properties.
+The previous/next pagination adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The prev/next elements have the `button` role and the `aria-label` property.
+- The *prev/next pagination items* have the `button` role and the `aria-label` property.
 
-***
+### Internationalization
 
-## i18n
-
-The Pagination component uses the following translation strings. Learn more about [translating components](i18n.md).
+The Pagination component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
 
 | Key          | Default              | Description             |
 |--------------|----------------------|-------------------------|

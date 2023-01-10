@@ -215,10 +215,13 @@ Toggles the content pane.
 
 The Accordion component adheres to the [Accordion WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *titles* have an ID, the `button` role, the `aria-expanded` state and the `aria-controls` property set to the ID of the respective content element.
-- The *contents* have an ID, the `region` role and the `aria-labelledby` property set to the ID of the respective title element.
+- The *titles* have an ID, the `button` role, the `aria-expanded` state and the `aria-controls` property set to the ID of the respective content.
+- The *contents* have an ID, the `region` role and the `aria-labelledby` property set to the ID of the respective title.
 
-### Keyboard Interaction
+### Keyboard interaction
 
-- <kbd>Enter</kbd> or <kbd>Space</kbd>: When focus is on the `title`, it toggles `content`.
-- <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus to the next/previous focusable element.
+The Accordion component can be accessed through keyboard using the following keys.
+
+- The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys navigate through accordion titles.
+- The <kbd>enter</kbd> key toggles the content of the focused title.
+  

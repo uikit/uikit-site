@@ -169,6 +169,6 @@ Closes the notification.
 
 ## Accessibility
 
-The Notification component sets the appropriate WAI-ARIA role.
+The Notification component automatically sets the appropriate WAI-ARIA role, states and properties.
 
-- The notification element has the `alert` role.
+- The *notification* has the `alert` role.

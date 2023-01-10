@@ -232,17 +232,21 @@ Shows the Tab item with given index.
 
 ## Accessibility
 
-The Tab component adheres to the [Tab WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/) and sets the appropriate WAI-ARIA roles, states and properties.
+The Tab component adheres to the [Tab WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The `toggle list` element has the `tablist` role, and if it has left/right modifiers, the `aria-orientation` state set to `vertical`.
-- The `toggle` element has the ID, the `tab` role, the `aria-selected` state and the `aria-controls` property set to the ID of the respective item element.
-- The `content` element has the ID, the `tabpanel` role and the `aria-labelledby` property.
+- The *tab navigation* has the `tablist` role, and if it is a [Nav component](nav.md), the `aria-orientation` state set to `vertical`. 
+- The *tab navigation items* have the `presentation` role. 
+- The *tab navigation links* have an ID, the `tab` role, the `aria-selected` state and the `aria-controls` property set to the ID of the respective content item. 
+- The *content list* has the `presentation` role.
+- The *content list items* have the ID, the `tabpanel` role and the `aria-labelledby` property set to the ID of the respective tab.
 
-### Keyboard Interaction
+### Keyboard interaction
 
-The Tab component uses the manual activation behavior by default. Set `follow-focus` to `true` to switch to automatic activation.
+The tab navigation can be accessed through keyboard using the following keys.
 
-- <kbd>Enter</kbd> or <kbd>Space</kbd>: When focus is on the `toggle`, it toggles its `content` element.
-- <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus to or from the currently active `toggle`.
-- <kbd>Left/Up Arrow</kbd> or <kbd>Right/Down Arrow</kbd>: Depending on the orientation, if focus is on a `toggle`, it moves focus to the next/previous `toggle`. If in automatic activation mode, it also toggles the associated `content` element.
-- <kbd>Home</kbd> or <kbd>End</kbd>: If focus is on a `toggle`, it moves focus to the first/last `toggle`. If in automatic activation mode, it also toggles the associated `content` element.
+- The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus on the active tab in the tab navigation. If the focus already is on the active tab, the focus will move to the next element outside the tab navigation. 
+- The <kbd>left/right arrow</kbd> or <kbd>up/down arrow</kbd> keys, depending on the orientation, navigate through the tabs. If the focus is on the last tab, it move to the first tab.  
+- The <kbd>enter</kbd> or <kbd>space</kbd> keys activate the corresponding content item of the focused tab.
+- The <kbd>home</kbd> or <kbd>end</kbd> keys move the focus to the first or last tab.
+
+By default, the Switcher component has the manual activation behavior. This means the corresponding content items will only be activated using the <kbd>enter</kbd> or <kbd>space</kbd>keys. To switch to automatic activation, set `follow-focus` to `true`. When navigating through tab items, the corresponding content item will get active automatically. 

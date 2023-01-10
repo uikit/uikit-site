@@ -111,11 +111,9 @@ The Close component automatically sets the appropriate WAI-ARIA roles and proper
 
 - The *close icon* has the `aria-label` property, and if an `<a>` element is used, the `button` role.
 
-***
+### Internationalization
 
-## i18n
-
-The Close component uses the following translation strings. Learn more about [translating components](i18n.md).
+The Close component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
 
 | Key          | Default        | Description             |
 |--------------|----------------|-------------------------|

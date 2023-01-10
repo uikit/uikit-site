@@ -31,6 +31,6 @@ Add the `ratio: 3` parameter to the `uk-spinner` attribute to triple its size â€
 
 ## Accessibility
 
-The Spinner component sets the appropriate WAI-ARIA role.
+The Spinner component automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The spinner element has the `status` role.
+- The *spinner* has the `status` role.

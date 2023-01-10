@@ -41,11 +41,9 @@ The Marker component automatically sets the appropriate WAI-ARIA roles, states a
 
 - The *marker* has the `aria-label` property, and if an `<a>` element is used, the `button` role. 
 
-***
+### Internationalization
 
-## i18n
-
-The Marker component uses the following translation strings. Learn more about [translating components](i18n.md).
+The Marker component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
 
 | Key     | Default | Description             |
 |---------|---------|-------------------------|

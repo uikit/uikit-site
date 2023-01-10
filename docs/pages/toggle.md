@@ -207,6 +207,7 @@ Toggles the Toggle's target.
 
 ## Accessibility
 
-The Toggle component sets the appropriate WAI-ARIA role.
+The Toggle component automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *toggle* element has the `button` role if it's an anchor element `<a>`. If the element has an attribute `aria-expanded`, it automatically updates it when toggling. This can be useful when trying to implement the [Disclosure (Show/Hide) design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/).
+- The *toggle* element has the `button` role if an `<a>` element is used. 
+- To implement the [Disclosure (Show/Hide) design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/), manually set an `aria-expanded` attribute. It will automatically update when toggling.

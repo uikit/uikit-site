@@ -873,5 +873,7 @@ The Filter component automatically sets the appropriate WAI-ARIA roles, states a
 
 ### Keyboard Interaction
 
-- <kbd>Enter</kbd> or <kbd>Space</kbd>: When focus is on a filter control, it toggles the filter.
-- <kbd>Tab</kbd> or <kbd>Shift + Tab</kbd>: Moves focus to the next/previous focusable element.
+The Filter component can be accessed through keyboard using the following keys.
+
+- The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys navigate through the filter controls.
+- The <kbd>enter</kbd> key activates the focused filter.
