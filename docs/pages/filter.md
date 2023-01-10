@@ -870,10 +870,3 @@ The following events will be triggered on elements with this component attached:
 The Filter component automatically sets the appropriate WAI-ARIA roles, states and properties. 
 
 - The *filter controls* have the `aria-selected` state.
-
-### Keyboard Interaction
-
-The Filter component can be accessed through keyboard using the following keys.
-
-- The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys navigate through the filter controls.
-- The <kbd>enter</kbd> key activates the focused filter.

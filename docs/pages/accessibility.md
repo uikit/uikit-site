@@ -24,7 +24,7 @@ For the UIkit default style, it should be sufficient to change the following glo
 
 UIkit's interactive JavaScript components, for example, slideshow, lightbox, dropdown, among others, are accessible for keyboard users. We implement the common keyboard navigation convention in which the <kbd>tab</kbd> and <kbd>shift+tab</kbd> keys move focus from one component to another while other keys like arrow keys move focus inside of components that include multiple focusable elements. Learn more about keyboard interaction in the documentation of each component.
 
-By using relevant [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) roles, properties and states, the JavaScript components are readable and operable using assistive technologies like screen readers. They automatically set the required HTML attributes in the markup. Learn more about accessibility in the documentation of each component. 
+By using relevant [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) roles, states and properties, the JavaScript components are readable and operable using assistive technologies like screen readers. They automatically set the required HTML attributes in the markup. Learn more about accessibility in the documentation of each component. 
 
 Since our JavaScript components are designed to be generic, it's not always possible to determine the precise WAI-ARIA roles and properties that need to be set by a component. Please refer to the [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/) for further reading. 
 

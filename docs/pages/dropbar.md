@@ -242,6 +242,13 @@ Add the `.uk-dropbar-large` class for a dropbar with larger vertical padding.
 
 ## Accessibility
 
-The Dropdown component adheres to the [Menu Button WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
+The Drop component adheres to the [Menu Button WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
 - The *toggle* has the `button` role, the `aria-expanded` state and the `aria-haspopup` property.
+
+### Keyboard interaction
+
+The Drop component can be accessed through keyboard using the following keys.
+
+- The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the drop. 
+- The <kbd>esc</kbd> key closes the drop even if focus has moved to another element.

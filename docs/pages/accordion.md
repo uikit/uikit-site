@@ -223,5 +223,4 @@ The Accordion component adheres to the [Accordion WAI-ARIA design pattern](https
 The Accordion component can be accessed through keyboard using the following keys.
 
 - The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys navigate through accordion titles.
-- The <kbd>enter</kbd> key toggles the content of the focused title.
-  
+- The <kbd>enter</kbd> or <kbd>space</kbd> key toggles the content of the focused title.
