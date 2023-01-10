@@ -199,9 +199,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `animation`         | String         | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`.   |
 | `autoplay`          | Boolean        | `false` | Lightbox autoplays.                                    |
 | `autoplay-interval` | Number         | `7000`  | The delay between switching slides in autoplay mode.   |
-| `pause-on-hover`    | Boolean        | false   | Pause autoplay mode on hover.                          |
-| `video-autoplay`    | Boolean        | false   | Lightbox videos autoplay.                              |
-| `index`             | String, Number | 0       | Lightbox item to show. 0 based index.                  |
+| `pause-on-hover`    | Boolean        | `false` | Pause autoplay mode on hover.                          |
+| `video-autoplay`    | Boolean        | `false` | Lightbox videos autoplay.                              |
+| `index`             | String, Number | `0`     | Lightbox item to show. 0 based index.                  |
 | `toggle`            | CSS selector   | `a`     | Toggle selector - opens the Lightbox Panel upon click. |
 
 ***
