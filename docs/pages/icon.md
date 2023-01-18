@@ -102,6 +102,8 @@ Here is an overview of all currently available icons. Over time, we will keep ad
     <div>
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="link"></span> link</li>
+            <li><span class="uk-margin-small-right" uk-icon="eye"></span> eye</li>
+            <li><span class="uk-margin-small-right" uk-icon="eye-slash"></span> eye-slash</li>
             <li><span class="uk-margin-small-right" uk-icon="question"></span> question</li>
             <li><span class="uk-margin-small-right" uk-icon="info"></span> info</li>
             <li><span class="uk-margin-small-right" uk-icon="warning"></span> warning</li>
@@ -313,9 +315,11 @@ To reset the default link styling to a more muted color when using an icon insid
 ```
 
 ```example
-<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="copy"></a>
-<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="file-edit"></a>
-<a href="#" class="uk-icon-link" uk-icon="trash"></a>
+<div>
+    <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="copy"></a>
+    <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="file-edit"></a>
+    <a href="#" class="uk-icon-link" uk-icon="trash"></a>
+</div>
 ```
 
 ***
@@ -329,9 +333,11 @@ Use the modifier `.uk-icon-button` class on an `<a>` element to create an icon b
 ```
 
 ```example
-<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
-<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
-<a href="" class="uk-icon-button" uk-icon="youtube"></a>
+<div>
+    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+    <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+    <a href="" class="uk-icon-button" uk-icon="youtube"></a>
+</div>
 ```
 
 ***
