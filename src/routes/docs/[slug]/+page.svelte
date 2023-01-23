@@ -53,7 +53,7 @@
                         </li>
                     {/each}
                     <li class="uk-nav-divider" />
-                    {#if data.tests.includes($page.params.slug)}
+                    {#if data.test}
                         <li>
                             <a
                                 href="../assets/uikit/tests/{$page.params.slug}.html"

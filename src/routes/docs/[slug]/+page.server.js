@@ -1,12 +1,10 @@
-import { readdir, readFile } from 'node:fs/promises';
+import { stat, readFile } from 'node:fs/promises';
 import hljs from 'highlight.js';
 import { marked } from 'marked';
 
 export async function load({ params }) {
     return {
-        tests: [...(await readdir('./static/assets/uikit/tests/'))]
-            .filter((file) => file.endsWith('.html'))
-            .map((file) => file.slice(0, -5)),
+        test: await exists(`./static/assets/uikit/tests/${params.slug}.html`),
         doc: parse(await readFile(`./docs/pages/${params.slug}.md`, { encoding: 'utf8' })),
     };
 }
@@ -119,4 +117,12 @@ function parse(markdown) {
 
         return { ids, content, title: pageTitle };
     });
+}
+
+async function exists(file) {
+    try {
+        return Boolean(await stat(file));
+    } catch (e) {
+        return false;
+    }
 }
