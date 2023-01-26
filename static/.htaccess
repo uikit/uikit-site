@@ -20,7 +20,7 @@ DirectorySlash Off
   RewriteRule ^showcase(.*)$ https://getuikit.com/v2/showcase$1 [R=301,L]
 
   # Redirect requests without trailing slash
-  RewriteCond %{REQUEST_FILENAME} !^v2/
+  RewriteCond %{REQUEST_URI} !^/v2/
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_URI} (.+)/$
   RewriteRule ^ %1 [L,R=301]
