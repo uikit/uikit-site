@@ -15,14 +15,14 @@ DirectorySlash Off
   RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
   RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
+  # redirect v2 showcase urls
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^showcase(.*)$ https://getuikit.com/v2/showcase$1 [R=301,L]
+
   # Redirect requests without trailing slash
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_URI} (.+)/$
   RewriteRule ^ %1 [L,R=301]
-
-  # redirect v2 showcase urls
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule ^showcase(.*)$ https://getuikit.com/v2/showcase$1 [R=301,L]
 
   # Rewrite /foo to /foo.html if it exists
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
