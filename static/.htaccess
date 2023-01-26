@@ -5,11 +5,20 @@ AddType  text/html;charset=utf-8  .md
 # Prevent mod_dir appending a slash to directory requests
 DirectorySlash Off
 
+<IfModule mod_alias.c>
+    RedirectMatch 301 ^/docs$ /docs/introduction
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
   RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
   RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+  # Redirect requests without trailing slash
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^ %1 [L,R=301]
 
   # redirect v2 showcase urls
   RewriteCond %{REQUEST_FILENAME} !-f
