@@ -84,6 +84,7 @@ function parse(markdown) {
     renderer.heading = (text, level) => {
         if (level === 1) {
             pageTitle = text;
+            return `<h1>${text}</h1>`;
         }
 
         const title = text.replaceAll(/<(\w+)>(.*?)<\/\1>/g, '$2');
@@ -99,7 +100,7 @@ function parse(markdown) {
         }
 
         return `<h${level} id="${id}" class="uk-h${
-            level > 1 ? level + 1 : level
+            level + 1
         } tm-heading-fragment"><a href="#${id}">${text}</a></h${level}>`;
     };
 
