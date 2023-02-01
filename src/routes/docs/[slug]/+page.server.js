@@ -1,11 +1,14 @@
-import { readdir, readFile } from 'node:fs/promises';
+import { stat, readFile } from 'node:fs/promises';
 import hljs from 'highlight.js';
 import { marked } from 'marked';
 import algoliasearch from 'algoliasearch';
 import striptags from 'striptags';
+const appid = import.meta.env.VITE_APP_ID;
+const indexname = import.meta.env.VITE_INDEX_NAME;
+const adminkey = import.meta.env.VITE_ADMIN_KEY;
 const production = import.meta.env.PROD;
-const client = algoliasearch('DVWQJS6O43', '9c81ca6dbb8facb4830e25c9d763655d');
-const index = client.initIndex('dev_uikit');
+const client = algoliasearch(appid, adminkey);
+const index = client.initIndex(indexname);
 let cleared = false;
 if (production) {
     index.clearObjects().then(() => {
@@ -15,9 +18,7 @@ if (production) {
 
 export async function load({ params }) {
     return {
-        tests: [...(await readdir('./static/assets/uikit/tests/'))]
-            .filter((file) => file.endsWith('.html'))
-            .map((file) => file.slice(0, -5)),
+        test: await exists(`./static/assets/uikit/tests/${params.slug}.html`),
         doc: parse(await readFile(`./docs/pages/${params.slug}.md`, { encoding: 'utf8' })),
     };
 }
@@ -241,4 +242,12 @@ function parse(markdown) {
 
         return { ids, content, title: pageTitle };
     });
+}
+
+async function exists(file) {
+    try {
+        return Boolean(await stat(file));
+    } catch (e) {
+        return false;
+    }
 }

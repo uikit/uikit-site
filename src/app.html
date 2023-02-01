@@ -10,17 +10,29 @@
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="UIkit" />
-    <meta property="og:description"
-        content="UIkit, a lightweight and modular front-end framework for developing fast and powerful web interfaces." />
+        <meta
+            property="og:description"
+            content="UIkit, a lightweight and modular front-end framework for developing fast and powerful web interfaces."
+        />
     <meta property="og:url" content="https://getuikit.com/" />
     <meta property="og:site_name" content="UIkit" />
     <meta property="og:image" content="https://getuikit.com/images/uikit-meta.png" />
     <link rel="shortcut icon" href="%sveltekit.assets%/images/favicon.png" />
     <link rel="apple-touch-icon" href="%sveltekit.assets%/images/apple-touch-icon.png" />
-    <link rel="preload" href="%sveltekit.assets%/fonts/ProximaNova-Reg-webfont.woff2" as="font" type="font/woff2"
-        crossorigin />
-    <link rel="preload" href="%sveltekit.assets%/fonts/ProximaNova-Light-webfont.woff2" as="font" type="font/woff2"
-        crossorigin />
+        <link
+            rel="preload"
+            href="%sveltekit.assets%/fonts/ProximaNova-Reg-webfont.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            href="%sveltekit.assets%/fonts/ProximaNova-Light-webfont.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
     <link rel="stylesheet" href="%sveltekit.assets%/css/theme.css" />
     <script src="%sveltekit.assets%/assets/uikit/dist/js/uikit.min.js"></script>
     <script src="%sveltekit.assets%/assets/uikit/dist/js/uikit-icons.min.js" defer></script>
@@ -37,10 +49,13 @@
     %sveltekit.body%
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script>
+  const searchkey = document.getElementsByName("searchkey")[0].getAttribute("value");
+  const indexname = document.getElementsByName("indexname")[0].getAttribute("value");
+  const appid = document.getElementsByName("appid")[0].getAttribute("value");
   docsearch({
-    apiKey: '749fa9f8aabd98ffc10654e49f088696',
-    indexName: 'dev_uikit',
-    appId: 'DVWQJS6O43',
+    apiKey: searchkey,
+    indexName: indexname,
+    appId: appid,
     inputSelector: '.uk-search-input',
     debug: false,
   });
