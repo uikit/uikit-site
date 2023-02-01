@@ -88,7 +88,7 @@ function parse(markdown) {
         return text;
     };
     renderer.html = (html) => {
-        curcontent = curcontent + " " + striptags(html);
+        curcontent = curcontent + ' ' + striptags(html);
         return html;
     };
     renderer.link = (href, title, text) =>
@@ -150,7 +150,7 @@ function parse(markdown) {
                     lvl0 = 'Getting Started';
                 }
                 curcontent = curcontent.replaceAll('&#39;s', "'s");
-                curcontent = curcontent.replaceAll(/&\w+;/g, "");
+                curcontent = curcontent.replaceAll(/&\w+;/g, '');
                 if (curcontent.lastIndexOf(text) != -1) {
                     curcontent = curcontent.slice(0, curcontent.lastIndexOf(text));
                 }
@@ -188,14 +188,10 @@ function parse(markdown) {
                 };
                 if (cleared === false) {
                     setTimeout(() => {
-                        index.saveObject(object).then(() => {
-                            
-                        });
+                        index.saveObject(object).then(() => {});
                     }, 1000);
                 } else {
-                    index.saveObject(object).then(() => {
-                        
-                    });
+                    index.saveObject(object).then(() => {});
                 }
                 curcontent = '';
             }

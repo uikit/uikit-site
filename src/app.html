@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:site" content="@getuikit" />
-    <meta name="twitter:image" content="https://getuikit.com/images/uikit-meta.png" />
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="UIkit" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:site" content="@getuikit" />
+        <meta name="twitter:image" content="https://getuikit.com/images/uikit-meta.png" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="UIkit" />
         <meta
             property="og:description"
             content="UIkit, a lightweight and modular front-end framework for developing fast and powerful web interfaces."
         />
-    <meta property="og:url" content="https://getuikit.com/" />
-    <meta property="og:site_name" content="UIkit" />
-    <meta property="og:image" content="https://getuikit.com/images/uikit-meta.png" />
-    <link rel="shortcut icon" href="%sveltekit.assets%/images/favicon.png" />
-    <link rel="apple-touch-icon" href="%sveltekit.assets%/images/apple-touch-icon.png" />
+        <meta property="og:url" content="https://getuikit.com/" />
+        <meta property="og:site_name" content="UIkit" />
+        <meta property="og:image" content="https://getuikit.com/images/uikit-meta.png" />
+        <link rel="shortcut icon" href="%sveltekit.assets%/images/favicon.png" />
+        <link rel="apple-touch-icon" href="%sveltekit.assets%/images/apple-touch-icon.png" />
         <link
             rel="preload"
             href="%sveltekit.assets%/fonts/ProximaNova-Reg-webfont.woff2"
@@ -32,33 +32,36 @@
             type="font/woff2"
             crossorigin
         />
-    <link rel="stylesheet" href="%sveltekit.assets%/css/theme.css" />
-    <script src="%sveltekit.assets%/assets/uikit/dist/js/uikit.min.js"></script>
-    <script src="%sveltekit.assets%/assets/uikit/dist/js/uikit-icons.min.js" defer></script>
-    <script src="%sveltekit.assets%/analytics.js" onload="analytics('UA-42150424-1', { anonymize_ip: true })"
-        defer></script>
+        <link rel="stylesheet" href="%sveltekit.assets%/css/theme.css" />
+        <script src="%sveltekit.assets%/assets/uikit/dist/js/uikit.min.js"></script>
+        <script src="%sveltekit.assets%/assets/uikit/dist/js/uikit-icons.min.js" defer></script>
+        <script
+            src="%sveltekit.assets%/analytics.js"
+            onload="analytics('UA-42150424-1', { anonymize_ip: true })"
+            defer
+        ></script>
         <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
-      />
-    %sveltekit.head%
-</head>
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
+        />
+        %sveltekit.head%
+    </head>
 
-<body>
-    %sveltekit.body%
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  const searchkey = document.getElementsByName("searchkey")[0].getAttribute("value");
-  const indexname = document.getElementsByName("indexname")[0].getAttribute("value");
-  const appid = document.getElementsByName("appid")[0].getAttribute("value");
-  docsearch({
-    apiKey: searchkey,
-    indexName: indexname,
-    appId: appid,
-    inputSelector: '.uk-search-input',
-    debug: false,
-  });
-  // DocSearch done by Lois Gilly
-</script>
-</body>
+    <body>
+        %sveltekit.body%
+        <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+        <script>
+            const searchkey = document.getElementsByName('searchkey')[0].getAttribute('value');
+            const indexname = document.getElementsByName('indexname')[0].getAttribute('value');
+            const appid = document.getElementsByName('appid')[0].getAttribute('value');
+            docsearch({
+                apiKey: searchkey,
+                indexName: indexname,
+                appId: appid,
+                inputSelector: '.uk-search-input',
+                debug: false,
+            });
+            // DocSearch done by Lois Gilly
+        </script>
+    </body>
 </html>
