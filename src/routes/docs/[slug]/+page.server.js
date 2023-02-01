@@ -1,10 +1,23 @@
-import { stat, readFile } from 'node:fs/promises';
+import { readdir, readFile } from 'node:fs/promises';
 import hljs from 'highlight.js';
 import { marked } from 'marked';
+import algoliasearch from 'algoliasearch';
+import striptags from 'striptags';
+const production = import.meta.env.PROD;
+const client = algoliasearch('DVWQJS6O43', '9c81ca6dbb8facb4830e25c9d763655d');
+const index = client.initIndex('dev_uikit');
+let cleared = false;
+if (production) {
+    index.clearObjects().then(() => {
+        cleared = true;
+    });
+}
 
 export async function load({ params }) {
     return {
-        test: await exists(`./static/assets/uikit/tests/${params.slug}.html`),
+        tests: [...(await readdir('./static/assets/uikit/tests/'))]
+            .filter((file) => file.endsWith('.html'))
+            .map((file) => file.slice(0, -5)),
         doc: parse(await readFile(`./docs/pages/${params.slug}.md`, { encoding: 'utf8' })),
     };
 }
@@ -19,6 +32,10 @@ function sluggify(text) {
 }
 
 let _id = 0;
+let curcontent = '';
+let curlvl1 = '';
+let curlvl2 = '';
+let curlvl3 = '';
 function parse(markdown) {
     const renderer = new marked.Renderer({ langPrefix: 'lang-' });
     const base = new marked.Renderer({ langPrefix: 'lang-' });
@@ -63,6 +80,16 @@ function parse(markdown) {
     renderer.list = (text) => `<ul class="uk-list uk-list-disc">${text}</ul>`;
     renderer.image = (href, title, text) =>
         href.match(/modal$/) ? modal(href, text) : base.image(href, title, text);
+    renderer.text = (text) => {
+        if (curlvl1 != '') {
+            curcontent = curcontent + ' ' + text;
+        }
+        return text;
+    };
+    renderer.html = (html) => {
+        curcontent = curcontent + " " + striptags(html);
+        return html;
+    };
     renderer.link = (href, title, text) =>
         href.match(/\.md/)
             ? base.link(href.replace(/(.*?).md(.*)/, '/docs/$1$2'), title, text)
@@ -75,8 +102,14 @@ function parse(markdown) {
               }</code></pre></div>`;
     };
     renderer.hr = () => '<hr class="uk-margin-large">';
-    renderer.table = (header, body) =>
-        `<div class="uk-overflow-auto"><table class="uk-table uk-table-divider"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
+    renderer.table = (header, body) => {
+        let edited = body.replaceAll(/<\w+>|<\/\w+>?/g, ' ');
+        edited = edited.replaceAll(/\s\s+/g, ' ');
+        if (curlvl1 != '') {
+            curcontent = curcontent + edited;
+        }
+        return `<div class="uk-overflow-auto"><table class="uk-table uk-table-divider"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
+    };
 
     let pageTitle;
     let ids = [];
@@ -84,7 +117,97 @@ function parse(markdown) {
     renderer.heading = (text, level) => {
         if (level === 1) {
             pageTitle = text;
-            return `<h1>${text}</h1>`;
+        }
+
+        if (production) {
+            if (curlvl1 != '' && curcontent != '') {
+                const urlbase = 'https://getuikit.com/docs/';
+                let id = '';
+                let url = '';
+                let weight = 0;
+                let lvl0 = 'Components';
+                let lvl1 = curlvl1;
+                let lvl2 = curlvl2 == '' ? null : curlvl2;
+                let lvl3 = curlvl3 == '' ? null : curlvl3;
+                const general = ['Home', 'Pro', 'Changelog', 'Download'];
+                const getstarted = [
+                    'Introduction',
+                    'Installation',
+                    'Less',
+                    'Sass',
+                    'JavaScript',
+                    'Webpack',
+                    'Custom icons',
+                    'Avoiding conflicts',
+                    'RTL support',
+                    'Migration',
+                ];
+                if (general.indexOf(curlvl1) > -1) {
+                    lvl0 = 'General';
+                }
+                if (getstarted.indexOf(curlvl1) > -1) {
+                    lvl0 = 'Getting Started';
+                }
+                curcontent = curcontent.replaceAll('&#39;s', "'s");
+                curcontent = curcontent.replaceAll(/&\w+;/g, "");
+                if (curcontent.lastIndexOf(text) != -1) {
+                    curcontent = curcontent.slice(0, curcontent.lastIndexOf(text));
+                }
+                let hierarchy = {
+                    lvl0: lvl0,
+                    lvl1: lvl1,
+                    lvl2: lvl2,
+                    lvl3: lvl3,
+                    lvl4: null,
+                    lvl5: null,
+                };
+
+                url = urlbase + lvl1.toLowerCase();
+
+                if (lvl3 != null) {
+                    id = (lvl0 + lvl1 + lvl2 + lvl3).toLowerCase().replaceAll(' ', '');
+                    url = url + '#' + lvl3.toLowerCase().replaceAll(' ', '-');
+                    weight = 3;
+                } else if (lvl2 != null) {
+                    id = (lvl0 + lvl1 + lvl2).toLowerCase().replaceAll(' ', '');
+                    url = url + '#' + lvl2.toLowerCase().replaceAll(' ', '-');
+                    weight = 2;
+                } else {
+                    id = (lvl0 + lvl1).toLowerCase().replaceAll(' ', '');
+                    weight = 1;
+                }
+
+                const object = {
+                    objectID: id,
+                    content: curcontent,
+                    hierarchy: hierarchy,
+                    url: url,
+                    weight: weight,
+                    anchor: null,
+                };
+                if (cleared === false) {
+                    setTimeout(() => {
+                        index.saveObject(object).then(() => {
+                            
+                        });
+                    }, 1000);
+                } else {
+                    index.saveObject(object).then(() => {
+                        
+                    });
+                }
+                curcontent = '';
+            }
+            if (level === 1) {
+                curlvl1 = text;
+                curlvl2 = '';
+                curlvl3 = '';
+            } else if (level === 2) {
+                curlvl2 = text;
+                curlvl3 = '';
+            } else if (level == 3) {
+                curlvl3 = text;
+            }
         }
 
         const title = text.replaceAll(/<(\w+)>(.*?)<\/\1>/g, '$2');
@@ -100,7 +223,7 @@ function parse(markdown) {
         }
 
         return `<h${level} id="${id}" class="uk-h${
-            level + 1
+            level > 1 ? level + 1 : level
         } tm-heading-fragment"><a href="#${id}">${text}</a></h${level}>`;
     };
 
@@ -118,12 +241,4 @@ function parse(markdown) {
 
         return { ids, content, title: pageTitle };
     });
-}
-
-async function exists(file) {
-    try {
-        return Boolean(await stat(file));
-    } catch (e) {
-        return false;
-    }
 }
