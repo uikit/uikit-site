@@ -1618,10 +1618,10 @@ type-fest@^1.0.1, type-fest@^1.2.1, type-fest@^1.2.2:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-1.4.0.tgz#e9fb813fe3bf1744ec359d55d1affefa76f14be1"
   integrity sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==
 
-uikit@3.15.22:
-  version "3.15.22"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.15.22.tgz#3ec11c33c6d1b37fd432d501af8dc46add665c9c"
-  integrity sha512-J41leVNqyGIcXcE9YDTmUQc1GjwUsieUeLONZ7tMH0hvZiQ8D6/sIK6TySPsQMD9Lz+P/zf23yAkDijhLY/uOw==
+uikit@3.15.23:
+  version "3.15.23"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.15.23.tgz#15e0a0199559ea902f183585da16039865e1308a"
+  integrity sha512-+7X+hYjFkX4mpWX6EvgKl8q43B5YvMdYsQGJfNVh5keke7fDlFov4bbL0MSb82o6tYVvmrrjWK8qXBzDFg4cPg==
 
 undici@5.16.0:
   version "5.16.0"
