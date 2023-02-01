@@ -203,6 +203,7 @@ function parse(markdown) {
                 curlvl1 = text;
                 curlvl2 = '';
                 curlvl3 = '';
+                return `<h1>${text}</h1>`;
             } else if (level === 2) {
                 curlvl2 = text;
                 curlvl3 = '';
@@ -224,7 +225,7 @@ function parse(markdown) {
         }
 
         return `<h${level} id="${id}" class="uk-h${
-            level > 1 ? level + 1 : level
+            level + 1
         } tm-heading-fragment"><a href="#${id}">${text}</a></h${level}>`;
     };
 
