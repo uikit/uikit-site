@@ -9,7 +9,7 @@
 >
     <div class="uk-container uk-container-expand">
         <nav class="uk-navbar">
-            <div class="uk-navbar-left">
+            <div class="nav-overlay uk-navbar-left">
                 <a
                     class="uk-navbar-item uk-logo"
                     class:uk-active={$page.url.pathname === `${base}/`}
@@ -26,21 +26,14 @@
                     />
                     UIkit
                 </a>
-                <a class="uk-navbar-toggle" uk-search-icon href="#" />
-                <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
-                    <form class="uk-search uk-search-navbar uk-width-1-1">
-                        <input
-                            id="uk-search-input"
-                            class="uk-search-input"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"
-                            autofocus
-                        />
-                    </form>
-                </div>
+                <a
+                    class="uk-navbar-toggle"
+                    uk-search-icon
+                    uk-toggle="target: .nav-overlay; animation: uk-animation-fade"
+                    href="#"
+                />
             </div>
-            <div class="uk-navbar-right">
+            <div class="nav-overlay uk-navbar-right">
                 <ul class="uk-navbar-nav uk-visible@m">
                     <li class:uk-active={$page.url.pathname === `${base}/pro`}>
                         <a
@@ -86,6 +79,28 @@
                     uk-navbar-toggle-icon
                     href="#offcanvas"
                     uk-toggle
+                />
+            </div>
+            <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+                <div class="uk-navbar-item uk-width-expand">
+                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                        <input
+                            id="uk-search-input"
+                            class="uk-search-input"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                            autofocus
+                        />
+                    </form>
+                </div>
+
+                <a
+                    id="uk-close-btn"
+                    class="uk-navbar-toggle"
+                    uk-close
+                    uk-toggle="target: .nav-overlay; animation: uk-animation-fade"
+                    href="#"
                 />
             </div>
         </nav>
