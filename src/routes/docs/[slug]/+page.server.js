@@ -18,8 +18,8 @@ function sluggify(text) {
         .replace(/[\s\W-]+/g, '-');
 }
 
-let _id = 0;
 function parse(markdown) {
+    let _id = 0;
     const renderer = new marked.Renderer({ langPrefix: 'lang-' });
     const base = new marked.Renderer({ langPrefix: 'lang-' });
     const modal = (href, text) => {
