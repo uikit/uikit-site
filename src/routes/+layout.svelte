@@ -8,9 +8,9 @@
 </script>
 
 <svelte:head>
-    <meta name="searchkey" value="{import.meta.env.VITE_SEARCH_KEY}">
-    <meta name="appid" value="{import.meta.env.VITE_APP_ID}">
-    <meta name="indexname" value="{import.meta.env.VITE_INDEX_NAME}">
+    <meta name="searchkey" value="{import.meta.env.VITE_ALGOLIA_SEARCH_KEY}">
+    <meta name="appid" value="{import.meta.env.VITE_ALGOLIA_APP_ID}">
+    <meta name="indexname" value="{import.meta.env.VITE_ALGOLIA_INDEX_NAME}">
     <script src={DocSearch} defer/>
     <link rel="preload" as="style" href={DocStyle} onload="this.onload=null;this.rel='stylesheet'"/>
 </svelte:head>

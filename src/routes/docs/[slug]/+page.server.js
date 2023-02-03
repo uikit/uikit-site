@@ -1,62 +1,18 @@
 import { stat, readFile } from 'node:fs/promises';
 import hljs from 'highlight.js';
 import { marked } from 'marked';
-import algoliasearch from 'algoliasearch';
 import striptags from 'striptags';
-const appid = import.meta.env.VITE_APP_ID;
-const indexname = import.meta.env.VITE_INDEX_NAME;
-const adminkey = import.meta.env.VITE_ADMIN_KEY;
+import { addObject, saveToIndex, setup } from './indexer';
 const production = import.meta.env.PROD;
-const client = algoliasearch(appid, adminkey);
-const index = client.initIndex(indexname);
-const navigation = JSON.parse(await readFile('./docs/navigation.json', { encoding: 'utf8' }));
-let settings = {
-    searchableAttributes: [
-        'hierarchy.lvl0',
-        'hierarchy.lvl1',
-        'hierarchy.lvl2',
-        'hierarchy.lvl3',
-        'content',
-    ],
-    ranking: [
-        'proximity',
-        'attribute',
-        'words',
-        'exact',
-        'filters',
-        'typo',
-        'custom',
-    ],
-    customRanking: ['asc(weight)'],
-    minWordSizefor1Typo: 3,
-    minWordSizefor2Typos: 7,
-    disableTypoToleranceOnAttributes: [
-        'hierarchy.lvl0',
-        'hierarchy.lvl1',
-        'hierarchy.lvl2',
-        'hierarchy.lvl3',
-    ],
-    attributesToHighlight: ['hierarchy', 'content'],
-    highlightPreTag: '<span class="algolia-docsearch-suggestion--highlight">',
-    highlightPostTag: '</span>',
-    attributesToSnippet: ['content:10'],
-    attributesToRetrieve: ['anchor', 'content', 'hierarchy', 'url'],
-    distinct: true,
-    attributeForDistinct: 'url',
-    removeWordsIfNoResults: 'allOptional',
-    advancedSyntax: true,
-};
 let cleared = false;
 
 export async function load({ params }) {
     if (!cleared && production) {
-        await index.clearObjects();
-        index.setSettings(settings);
+        await setup();
         cleared = true;
     }
     let doc = parse(await readFile(`./docs/pages/${params.slug}.md`, { encoding: 'utf8' }));
-    index.saveObjects(doc.objects);
-    doc.objects = null;
+    saveToIndex();
     return {
         test: await exists(`./static/assets/uikit/tests/${params.slug}.html`),
         doc: doc,
@@ -78,7 +34,6 @@ function parse(markdown) {
     let curlvl1 = '';
     let curlvl2 = '';
     let curlvl3 = '';
-    let objects = [];
     const renderer = new marked.Renderer({ langPrefix: 'lang-' });
     const base = new marked.Renderer({ langPrefix: 'lang-' });
     const modal = (href, text) => {
@@ -162,9 +117,7 @@ function parse(markdown) {
 
         if (production) {
             if (curlvl1 != '' && curcontent != '') {
-                let object = buildobject(curlvl1, curlvl2, curlvl3, curcontent, text);
-
-                objects.push(object);
+                addObject(curlvl1, curlvl2, curlvl3, curcontent, text);
 
                 curcontent = '';
             }
@@ -210,61 +163,10 @@ function parse(markdown) {
             );
         }
 
-        objects.push(buildobject(curlvl1, curlvl2, curlvl3, curcontent));
+        addObject(curlvl1, curlvl2, curlvl3, curcontent);
 
-        return { ids, content, title: pageTitle, objects };
+        return { ids, content, title: pageTitle };
     });
-}
-
-function buildobject(lvl1, lvl2, lvl3, content, newpage = '') {
-    const urlbase = 'https://getuikit.com/docs/';
-    let id = '';
-    let url = '';
-    let weight = 0;
-    let lvl0 = 'Components';
-    lvl2 = lvl2 == '' ? null : lvl2;
-    lvl3 = lvl3 == '' ? null : lvl3;
-    if (navigation['Getting started'][lvl1]) {
-        lvl0 = 'Getting Started';
-    }
-    content = content.replaceAll('&#39;s', "'s");
-    content = content.replaceAll(/&\w+;/g, '');
-    if (content.lastIndexOf(newpage) != -1) {
-        content = content.slice(0, content.lastIndexOf(newpage));
-    }
-    let hierarchy = {
-        lvl0: lvl0,
-        lvl1: lvl1,
-        lvl2: lvl2,
-        lvl3: lvl3,
-        lvl4: null,
-        lvl5: null,
-    };
-
-    url = urlbase + lvl1.toLowerCase();
-
-    if (lvl3 != null) {
-        id = (lvl0 + lvl1 + lvl2 + lvl3).toLowerCase().replaceAll(' ', '');
-        url = url + '#' + lvl3.toLowerCase().replaceAll(' ', '-');
-        weight = 3;
-    } else if (lvl2 != null) {
-        id = (lvl0 + lvl1 + lvl2).toLowerCase().replaceAll(' ', '');
-        url = url + '#' + lvl2.toLowerCase().replaceAll(' ', '-');
-        weight = 2;
-    } else {
-        id = (lvl0 + lvl1).toLowerCase().replaceAll(' ', '');
-        weight = 1;
-    }
-
-    const object = {
-        objectID: id,
-        content: content,
-        hierarchy: hierarchy,
-        url: url,
-        weight: weight,
-        anchor: null,
-    };
-    return object;
 }
 
 async function exists(file) {
