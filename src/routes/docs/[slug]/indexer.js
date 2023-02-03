@@ -27,7 +27,7 @@ const settings = {
         'typo',
         'custom',
     ],
-    customRanking: ['asc(weight)'],
+    customRanking: ['desc(weight)'],
     minWordSizefor1Typo: 3,
     minWordSizefor2Typos: 7,
     disableTypoToleranceOnAttributes: [
@@ -84,14 +84,14 @@ function addObject(lvl1, lvl2, lvl3, content, newpage = "") {
     if (hierarchy.lvl3 != null) {
         id = (hierarchy.lvl0 + hierarchy.lvl1 + hierarchy.lvl2 + hierarchy.lvl3).toLowerCase().replaceAll(' ', '');
         url = url + '#' + hierarchy.lvl3.toLowerCase().replaceAll(' ', '-');
-        weight = 3;
+        weight = 1;
     } else if (hierarchy.lvl2 != null) {
         id = (hierarchy.lvl0 + hierarchy.lvl1 + hierarchy.lvl2).toLowerCase().replaceAll(' ', '');
         url = url + '#' + hierarchy.lvl2.toLowerCase().replaceAll(' ', '-');
         weight = 2;
     } else {
         id = (hierarchy.lvl0 + hierarchy.lvl1).toLowerCase().replaceAll(' ', '');
-        weight = 1;
+        weight = 3;
     }
 
     const object = {
