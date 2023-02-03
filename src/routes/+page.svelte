@@ -6,9 +6,6 @@
 
 <svelte:head>
     <title>UIkit</title>
-    <meta name="searchkey" value="{import.meta.env.VITE_SEARCH_KEY}">
-    <meta name="appid" value="{import.meta.env.VITE_APP_ID}">
-    <meta name="indexname" value="{import.meta.env.VITE_INDEX_NAME}">
 </svelte:head>
 
 <div class="uk-section-primary tm-section-texture">

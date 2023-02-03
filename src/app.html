@@ -19,10 +19,6 @@
         <link rel="shortcut icon" href="%sveltekit.assets%/images/favicon.png" />
         <link rel="apple-touch-icon" href="%sveltekit.assets%/images/apple-touch-icon.png" />
         <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
-        />
-        <link
             rel="preload"
             href="%sveltekit.assets%/fonts/ProximaNova-Reg-webfont.woff2"
             as="font"
@@ -49,20 +45,24 @@
 
     <body>
         %sveltekit.body%
-        <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
         <script>
-            const searchkey = document.getElementsByName('searchkey')[0].getAttribute('value');
-            const indexname = document.getElementsByName('indexname')[0].getAttribute('value');
-            const appid = document.getElementsByName('appid')[0].getAttribute('value');
-            const search = docsearch({
-                apiKey: searchkey,
-                indexName: indexname,
-                appId: appid,
-                inputSelector: '.uk-search-input',
-                debug: false,
-            });
-            document.getElementById('uk-close-btn').addEventListener('click', function () {
-                search.autocomplete.autocomplete.setVal('');
+            document.addEventListener('DOMContentLoaded', () => {
+                const searchkey = document.getElementsByName('searchkey')[0].getAttribute('value');
+                const indexname = document.getElementsByName('indexname')[0].getAttribute('value');
+                const appid = document.getElementsByName('appid')[0].getAttribute('value');
+                document.getElementsByName('searchkey')[0].remove();
+                document.getElementsByName('indexname')[0].remove();
+                document.getElementsByName('appid')[0].remove();
+                const search = docsearch({
+                    apiKey: searchkey,
+                    indexName: indexname,
+                    appId: appid,
+                    inputSelector: '.uk-search-input',
+                    debug: false,
+                });
+                document.getElementById('uk-close-btn').addEventListener('click', function () {
+                    search.autocomplete.autocomplete.setVal('');
+                });
             });
             // DocSearch done by Lois Gilly
         </script>

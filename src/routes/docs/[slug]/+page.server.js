@@ -9,17 +9,57 @@ const adminkey = import.meta.env.VITE_ADMIN_KEY;
 const production = import.meta.env.PROD;
 const client = algoliasearch(appid, adminkey);
 const index = client.initIndex(indexname);
+const navigation = JSON.parse(await readFile('./docs/navigation.json', { encoding: 'utf8' }));
+let settings = {
+    searchableAttributes: [
+        'hierarchy.lvl0',
+        'hierarchy.lvl1',
+        'hierarchy.lvl2',
+        'hierarchy.lvl3',
+        'content',
+    ],
+    ranking: [
+        'proximity',
+        'attribute',
+        'words',
+        'exact',
+        'filters',
+        'typo',
+        'custom',
+    ],
+    customRanking: ['asc(weight)'],
+    minWordSizefor1Typo: 3,
+    minWordSizefor2Typos: 7,
+    disableTypoToleranceOnAttributes: [
+        'hierarchy.lvl0',
+        'hierarchy.lvl1',
+        'hierarchy.lvl2',
+        'hierarchy.lvl3',
+    ],
+    attributesToHighlight: ['hierarchy', 'content'],
+    highlightPreTag: '<span class="algolia-docsearch-suggestion--highlight">',
+    highlightPostTag: '</span>',
+    attributesToSnippet: ['content:10'],
+    attributesToRetrieve: ['anchor', 'content', 'hierarchy', 'url'],
+    distinct: true,
+    attributeForDistinct: 'url',
+    removeWordsIfNoResults: 'allOptional',
+    advancedSyntax: true,
+};
 let cleared = false;
-if (production) {
-    index.clearObjects().then(() => {
-        cleared = true;
-    });
-}
 
 export async function load({ params }) {
+    if (!cleared && production) {
+        await index.clearObjects();
+        index.setSettings(settings);
+        cleared = true;
+    }
+    let doc = parse(await readFile(`./docs/pages/${params.slug}.md`, { encoding: 'utf8' }));
+    index.saveObjects(doc.objects);
+    doc.objects = null;
     return {
         test: await exists(`./static/assets/uikit/tests/${params.slug}.html`),
-        doc: parse(await readFile(`./docs/pages/${params.slug}.md`, { encoding: 'utf8' })),
+        doc: doc,
     };
 }
 
@@ -33,11 +73,12 @@ function sluggify(text) {
 }
 
 let _id = 0;
-let curcontent = '';
-let curlvl1 = '';
-let curlvl2 = '';
-let curlvl3 = '';
 function parse(markdown) {
+    let curcontent = '';
+    let curlvl1 = '';
+    let curlvl2 = '';
+    let curlvl3 = '';
+    let objects = [];
     const renderer = new marked.Renderer({ langPrefix: 'lang-' });
     const base = new marked.Renderer({ langPrefix: 'lang-' });
     const modal = (href, text) => {
@@ -104,10 +145,9 @@ function parse(markdown) {
     };
     renderer.hr = () => '<hr class="uk-margin-large">';
     renderer.table = (header, body) => {
-        let edited = body.replaceAll(/<\w+>|<\/\w+>?/g, ' ');
-        edited = edited.replaceAll(/\s\s+/g, ' ');
+        let edited = striptags(body);
         if (curlvl1 != '') {
-            curcontent = curcontent + edited;
+            curcontent = curcontent + ' ' + edited;
         }
         return `<div class="uk-overflow-auto"><table class="uk-table uk-table-divider"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
     };
@@ -122,77 +162,10 @@ function parse(markdown) {
 
         if (production) {
             if (curlvl1 != '' && curcontent != '') {
-                const urlbase = 'https://getuikit.com/docs/';
-                let id = '';
-                let url = '';
-                let weight = 0;
-                let lvl0 = 'Components';
-                let lvl1 = curlvl1;
-                let lvl2 = curlvl2 == '' ? null : curlvl2;
-                let lvl3 = curlvl3 == '' ? null : curlvl3;
-                const general = ['Home', 'Pro', 'Changelog', 'Download'];
-                const getstarted = [
-                    'Introduction',
-                    'Installation',
-                    'Less',
-                    'Sass',
-                    'JavaScript',
-                    'Webpack',
-                    'Custom icons',
-                    'Avoiding conflicts',
-                    'RTL support',
-                    'Migration',
-                ];
-                if (general.indexOf(curlvl1) > -1) {
-                    lvl0 = 'General';
-                }
-                if (getstarted.indexOf(curlvl1) > -1) {
-                    lvl0 = 'Getting Started';
-                }
-                curcontent = curcontent.replaceAll('&#39;s', "'s");
-                curcontent = curcontent.replaceAll(/&\w+;/g, '');
-                if (curcontent.lastIndexOf(text) != -1) {
-                    curcontent = curcontent.slice(0, curcontent.lastIndexOf(text));
-                }
-                let hierarchy = {
-                    lvl0: lvl0,
-                    lvl1: lvl1,
-                    lvl2: lvl2,
-                    lvl3: lvl3,
-                    lvl4: null,
-                    lvl5: null,
-                };
+                let object = buildobject(curlvl1, curlvl2, curlvl3, curcontent, text);
 
-                url = urlbase + lvl1.toLowerCase();
+                objects.push(object);
 
-                if (lvl3 != null) {
-                    id = (lvl0 + lvl1 + lvl2 + lvl3).toLowerCase().replaceAll(' ', '');
-                    url = url + '#' + lvl3.toLowerCase().replaceAll(' ', '-');
-                    weight = 3;
-                } else if (lvl2 != null) {
-                    id = (lvl0 + lvl1 + lvl2).toLowerCase().replaceAll(' ', '');
-                    url = url + '#' + lvl2.toLowerCase().replaceAll(' ', '-');
-                    weight = 2;
-                } else {
-                    id = (lvl0 + lvl1).toLowerCase().replaceAll(' ', '');
-                    weight = 1;
-                }
-
-                const object = {
-                    objectID: id,
-                    content: curcontent,
-                    hierarchy: hierarchy,
-                    url: url,
-                    weight: weight,
-                    anchor: null,
-                };
-                if (cleared === false) {
-                    setTimeout(() => {
-                        index.saveObject(object).then(() => {});
-                    }, 1000);
-                } else {
-                    index.saveObject(object).then(() => {});
-                }
                 curcontent = '';
             }
             if (level === 1) {
@@ -237,8 +210,61 @@ function parse(markdown) {
             );
         }
 
-        return { ids, content, title: pageTitle };
+        objects.push(buildobject(curlvl1, curlvl2, curlvl3, curcontent));
+
+        return { ids, content, title: pageTitle, objects };
     });
+}
+
+function buildobject(lvl1, lvl2, lvl3, content, newpage = '') {
+    const urlbase = 'https://getuikit.com/docs/';
+    let id = '';
+    let url = '';
+    let weight = 0;
+    let lvl0 = 'Components';
+    lvl2 = lvl2 == '' ? null : lvl2;
+    lvl3 = lvl3 == '' ? null : lvl3;
+    if (navigation['Getting started'][lvl1]) {
+        lvl0 = 'Getting Started';
+    }
+    content = content.replaceAll('&#39;s', "'s");
+    content = content.replaceAll(/&\w+;/g, '');
+    if (content.lastIndexOf(newpage) != -1) {
+        content = content.slice(0, content.lastIndexOf(newpage));
+    }
+    let hierarchy = {
+        lvl0: lvl0,
+        lvl1: lvl1,
+        lvl2: lvl2,
+        lvl3: lvl3,
+        lvl4: null,
+        lvl5: null,
+    };
+
+    url = urlbase + lvl1.toLowerCase();
+
+    if (lvl3 != null) {
+        id = (lvl0 + lvl1 + lvl2 + lvl3).toLowerCase().replaceAll(' ', '');
+        url = url + '#' + lvl3.toLowerCase().replaceAll(' ', '-');
+        weight = 3;
+    } else if (lvl2 != null) {
+        id = (lvl0 + lvl1 + lvl2).toLowerCase().replaceAll(' ', '');
+        url = url + '#' + lvl2.toLowerCase().replaceAll(' ', '-');
+        weight = 2;
+    } else {
+        id = (lvl0 + lvl1).toLowerCase().replaceAll(' ', '');
+        weight = 1;
+    }
+
+    const object = {
+        objectID: id,
+        content: content,
+        hierarchy: hierarchy,
+        url: url,
+        weight: weight,
+        anchor: null,
+    };
+    return object;
 }
 
 async function exists(file) {

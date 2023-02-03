@@ -29,5 +29,8 @@
         "uikit": "3.15.23",
         "vite": "^4.0.2"
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "docsearch.js": "^2.6.3"
+    }
 }
