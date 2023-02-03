@@ -28,8 +28,8 @@ function sluggify(text) {
         .replace(/[\s\W-]+/g, '-');
 }
 
-let _id = 0;
 function parse(markdown) {
+    let _id = 0;
     let curcontent = '';
     let curlvl1 = '';
     let curlvl2 = '';
