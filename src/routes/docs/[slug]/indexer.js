@@ -107,6 +107,6 @@ function addObject(lvl1, lvl2, lvl3, content, newpage = "") {
 }
 
 async function saveToIndex() {
-    await index.saveObjects(objects);
-    objects = [];
+    index.saveObjects(objects);
+    setTimeout(() => { objects = []; }, 1000);
 }
