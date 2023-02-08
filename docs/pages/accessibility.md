@@ -32,7 +32,7 @@ If you find the documentation or the components lacking accessibility, please op
 
 ***
 
-## Internationalization (i18n)
+## Internationalization
 
 UIkit supports language internationalization (i18n) of its components. The default texts for the `aria-label` attributes can be translated. The translation keys for each component can be found in the corresponding documentation.
 
