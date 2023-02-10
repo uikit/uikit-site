@@ -28,7 +28,7 @@ In this example we are using the [Subnav component](subnav.md).
     <ul class="uk-subnav">
         <li class="uk-active"><a href="#">Active</a></li>
         <li>
-            <a href="#">Parent <span uk-subnav-parent-icon></span></a>
+            <a href="#">Parent <span uk-drop-parent-icon></span></a>
             <div class="uk-dropdown">
                 <ul class="uk-nav uk-dropdown-nav">
                     <li class="uk-active"><a href="#">Active</a></li>
@@ -38,7 +38,7 @@ In this example we are using the [Subnav component](subnav.md).
             </div>
         </li>
         <li>
-            <a href="#">Parent <span uk-subnav-parent-icon></span></a>
+            <a href="#">Parent <span uk-drop-parent-icon></span></a>
             <div class="uk-dropdown">
                 <ul class="uk-nav uk-dropdown-nav">
                     <li class="uk-active"><a href="#">Active</a></li>
@@ -67,7 +67,7 @@ A parent item inside the navbar can be enabled by either hovering or clicking th
     <ul class="uk-subnav">
         <li class="uk-active"><a href="#">Active</a></li>
         <li>
-            <a href="#">Parent <span uk-subnav-parent-icon></span></a>
+            <a href="#">Parent <span uk-drop-parent-icon></span></a>
             <div class="uk-dropdown">
                 <ul class="uk-nav uk-dropdown-nav">
                     <li class="uk-active"><a href="#">Active</a></li>
@@ -77,7 +77,7 @@ A parent item inside the navbar can be enabled by either hovering or clicking th
             </div>
         </li>
         <li>
-            <a href="#">Parent <span uk-subnav-parent-icon></span></a>
+            <a href="#">Parent <span uk-drop-parent-icon></span></a>
             <div class="uk-dropdown">
                 <ul class="uk-nav uk-dropdown-nav">
                     <li class="uk-active"><a href="#">Active</a></li>
@@ -112,7 +112,7 @@ By default, the dropdowns are positioned below the dropbar item and are aligned 
     <ul class="uk-subnav">
         <li class="uk-active"><a href="#">Active</a></li>
         <li>
-            <a href="#">Parent <span uk-subnav-parent-icon></span></a>
+            <a href="#">Parent <span uk-drop-parent-icon></span></a>
             <div class="uk-dropdown">
                 <ul class="uk-nav uk-dropdown-nav">
                     <li class="uk-active"><a href="#">Active</a></li>
@@ -122,7 +122,7 @@ By default, the dropdowns are positioned below the dropbar item and are aligned 
             </div>
         </li>
         <li>
-            <a href="#">Parent <span uk-subnav-parent-icon></span></a>
+            <a href="#">Parent <span uk-drop-parent-icon></span></a>
             <div class="uk-dropdown">
                 <ul class="uk-nav uk-dropdown-nav">
                     <li class="uk-active"><a href="#">Active</a></li>
@@ -433,7 +433,7 @@ The dropnav is easily applied to the [Subnav component](subnav.md).
     <ul class="uk-subnav uk-subnav-pill">
         <li class="uk-active"><a href="#">Active</a></li>
         <li>
-            <a href="#">Parent <span uk-subnav-parent-icon></span></a>
+            <a href="#">Parent <span uk-drop-parent-icon></span></a>
             <div class="uk-dropdown">
                 <ul class="uk-nav uk-dropdown-nav">
                     <li class="uk-active"><a href="#">Active</a></li>
@@ -443,7 +443,7 @@ The dropnav is easily applied to the [Subnav component](subnav.md).
             </div>
         </li>
         <li>
-            <a href="#">Parent <span uk-subnav-parent-icon></span></a>
+            <a href="#">Parent <span uk-drop-parent-icon></span></a>
             <div class="uk-dropdown">
                 <ul class="uk-nav uk-dropdown-nav">
                     <li class="uk-active"><a href="#">Active</a></li>
