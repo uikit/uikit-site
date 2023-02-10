@@ -64,11 +64,11 @@ A dropdown can contain a nav from the [Nav component](nav.md). Just add the `.uk
 
 ## Grid in dropdown
 
-You can place a grid from the [Grid component](grid.md) inside a dropdown. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically whenever the dropdown no longer fits its container, just add the `.uk-dropdown-grid` class.
+You can place a grid from the [Grid component](grid.md) inside a dropdown. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically whenever the dropdown no longer fits its container, just add the `.uk-drop-grid` class.
 
 ```html
 <div class="uk-width-large" uk-dropdown>
-    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>…</div>
+    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>…</div>
 </div>
 ```
 
@@ -77,7 +77,7 @@ Use one of the classes from the [Width component](width.md) to adjust the dropdo
 ```example
 <button class="uk-button uk-button-default" type="button">Hover</button>
 <div class="uk-width-large" uk-dropdown>
-    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
         <div>
             <ul class="uk-nav uk-dropdown-nav">
                 <li class="uk-active"><a href="#">Active</a></li>

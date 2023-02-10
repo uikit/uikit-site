@@ -512,9 +512,11 @@ To create a parent icon, just add the `uk-navbar-parent-icon` attribute to a `<s
 
 ***
 
-### Multiple columns
+## Grid in dropdown
 
-The [Dropdown component](dropdown.md) allows you to arrange the dropdown content in columns. To accommodate up to five columns, you also need to add one of the following classes. Columns will stack if they no longer fit into the container.
+You can place a grid from the [Grid component](grid.md) inside a dropdown. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically whenever the dropdown no longer fits its container, just add the `.uk-drop-grid` class.
+
+To accommodate up to five columns, you also need to add one of the following classes. Columns will stack if they no longer fit into the container.
 
 | Class                         | Description                                              |
 | ----------------------------- | -------------------------------------------------------- |
@@ -525,7 +527,7 @@ The [Dropdown component](dropdown.md) allows you to arrange the dropdown content
 
 ```html
 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+    <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
         <div>
             <ul class="uk-nav uk-navbar-dropdown-nav">…</ul>
         </div>
@@ -542,7 +544,7 @@ The [Dropdown component](dropdown.md) allows you to arrange the dropdown content
             <li>
                 <a href="#">Two Columns</a>
                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                    <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
                         <div>
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li class="uk-active"><a href="#">Active</a></li>
@@ -649,7 +651,7 @@ By default, the dropdowns are aligned to their navbar item. To position the drop
             <li>
                 <a href="#">Item</a>
                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                    <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
                         <div>
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li class="uk-active"><a href="#">Active</a></li>
@@ -678,7 +680,7 @@ By default, the dropdowns are aligned to their navbar item. To position the drop
             <li>
                 <a href="#">Item</a>
                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3">
-                    <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
+                    <div class="uk-drop-grid uk-child-width-1-3" uk-grid>
                         <div>
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li class="uk-active"><a href="#">Active</a></li>
@@ -773,7 +775,7 @@ To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` optio
            <li>
                <a href="#">Item</a>
                <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">
-                   <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                   <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
                        <div>
                            <ul class="uk-nav uk-navbar-dropdown-nav">
                                <li class="uk-active"><a href="#">Active</a></li>
@@ -841,7 +843,7 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
                 <li>
                     <a href="#">Item</a>
                     <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                        <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                        <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
                             <div>
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li class="uk-active"><a href="#">Active</a></li>
