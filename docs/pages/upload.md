@@ -102,7 +102,7 @@ This example shows how to realize a drop area with the option to select the file
 
 ***
 
-## JavaScript
+## Upload listeners
 
 To create `select` and `drop` upload listeners, you need to instantiate each upload class with the target element and options, which define callbacks and useful settings.
 
