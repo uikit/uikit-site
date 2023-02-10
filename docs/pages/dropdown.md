@@ -251,7 +251,7 @@ By default, the dropdown automatically changes its positions if it exceeds the v
 
 ***
 
-## Shift and Flip
+## Shift and flip
 
 To disable automatic shifting and flipping, add the `shift: false` or `flip: false` option to the `uk-dropdown` attribute.
 
@@ -293,7 +293,7 @@ To disable automatic shifting and flipping, add the `shift: false` or `flip: fal
 
 ***
 
-## Auto Update
+## Auto update
 
 By default, the drop repositions on scrolling. To disable dynamic positioning, add `auto-update: false` option to the `uk-dropdown` attribute. The dropdown will only be positioned once when opened.
 

@@ -11,7 +11,7 @@ The Dropnav component consists of a number of toggles and their related dropdown
 The Dropnav toggles are styled through other components, some of which will be shown here.
 
 ```html
-<ul uk-dropbar>
+<ul uk-dropnav>
     <li>
         <a href=""></a>
         <div class="uk-dropdown">
@@ -54,9 +54,107 @@ In this example we are using the [Subnav component](subnav.md).
 
 ***
 
+## Dropbar
+
+A dropbar extends to the full width of the dropbar and displays the dropdown without its default styling. To place dropdowns inside such a dropbar, add the `dropbar: true` option to the `uk-dropnav`.
+
+```html
+<nav uk-dropnav="dropbar: true">…</nav>
+<div class="uk-dropbar"></div>
+```
+
+```example
+<div class="uk-position-relative">
+
+    <nav uk-dropnav="dropbar: true">
+
+        <ul class="uk-subnav uk-margin-remove">
+            <li>
+                <a href="#">Item</a>
+                <div class="uk-dropdown">
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Item</a>
+                <div class="uk-dropdown uk-width-xlarge">
+                    <div class="uk-child-width-1-2" uk-grid>
+                        <div>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#">Item</a>
+                <div class="uk-dropdown uk-width-xlarge">
+                    <div class="uk-child-width-1-2" uk-grid>
+                        <div>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-header">Header</li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="uk-dropbar"></div>
+
+</div>
+```
+
+***
+
 ## Click mode
 
-A parent item inside the navbar can be enabled by either hovering or clicking the toggle. Just add the `mode: click` option to the `uk-dropnav` attribute.
+A parent item inside the dropnav can be enabled by either hovering or clicking the toggle. Just add the `mode: click` option to the `uk-dropnav` attribute.
 
 ```html
 <nav uk-dropnav="mode: click">…</nav>
@@ -322,115 +420,22 @@ To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` optio
 
 ***
 
-## Dropbar
+## Parent icon
 
-A dropbar extends to the full width of the dropbar and displays the dropdown without its default styling. To place dropdowns inside such a dropbar, add the `dropbar: true` option to the `uk-dropnav`.
-
-```html
-<nav uk-dropnav="dropbar: true">…</nav>
-<div class="uk-dropbar"></div>
-```
-
-```example
-<div class="uk-position-relative">
-
-    <nav uk-dropnav="dropbar: true">
-
-        <ul class="uk-subnav uk-margin-remove">
-            <li>
-                <a href="#">Item</a>
-                <div class="uk-dropdown">
-                    <ul class="uk-nav uk-dropdown-nav">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li class="uk-nav-header">Header</li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <a href="#">Item</a>
-                <div class="uk-dropdown uk-width-xlarge">
-                    <div class="uk-child-width-1-2" uk-grid>
-                        <div>
-                            <ul class="uk-nav uk-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-header">Header</li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-divider"></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="uk-nav uk-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-header">Header</li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-divider"></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <a href="#">Item</a>
-                <div class="uk-dropdown uk-width-xlarge">
-                    <div class="uk-child-width-1-2" uk-grid>
-                        <div>
-                            <ul class="uk-nav uk-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-header">Header</li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-divider"></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="uk-nav uk-dropdown-nav">
-                                <li class="uk-active"><a href="#">Active</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-header">Header</li>
-                                <li><a href="#">Item</a></li>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-nav-divider"></li>
-                                <li><a href="#">Item</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-    </nav>
-
-    <div class="uk-dropbar"></div>
-
-</div>
-```
-
-## Dropnav and subnav
-
-The dropnav is easily applied to the [Subnav component](subnav.md).
+To create a parent icon, just use the [Drop component](drop.md) and add the `uk-drop-parent-icon` attribute to a `<span>` element.
 
 ```html
-<nav uk-dropnav>
-    <ul class="uk-subnav uk-subnav-pill">…</ul>
-<nav>
+<ul uk-dropnav>
+    <li>
+        <a href="">Parent <span uk-drop-parent-icon></span></a>
+        <div class="uk-dropdown">…</div>
+    </li>
+</ul>
 ```
 
 ```example
 <nav uk-dropnav>
-    <ul class="uk-subnav uk-subnav-pill">
+    <ul class="uk-subnav">
         <li class="uk-active"><a href="#">Active</a></li>
         <li>
             <a href="#">Parent <span uk-drop-parent-icon></span></a>
@@ -474,7 +479,7 @@ The dropnav is easily applied to the [Tab component](tab.md).
     <ul class="uk-tab">
         <li class="uk-active"><a href="#">Active</a></li>
         <li>
-            <a href="#">Parent</a>
+            <a href="#">Parent <span uk-drop-parent-icon></span></a>
             <div class="uk-dropdown">
                 <ul class="uk-nav uk-dropdown-nav">
                     <li class="uk-active"><a href="#">Active</a></li>
@@ -484,97 +489,7 @@ The dropnav is easily applied to the [Tab component](tab.md).
             </div>
         </li>
         <li>
-            <a href="#">Parent</a>
-            <div class="uk-dropdown">
-                <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
-                </ul>
-            </div>
-        </li>
-        <li><a href="#">Item</a></li>
-    </ul>
-</nav>
-```
-
-***
-
-## Dropnav and thumbnav
-
-The dropnav is easily applied to the [Thumbnav component](thumbnav.md).
-
-```html
-<nav uk-dropnav>
-    <ul class="uk-thumbnav">…</ul>
-<nav>
-```
-
-```example
-<nav uk-dropnav>
-    <ul class="uk-thumbnav">
-        <li class="uk-active">
-            <a href="#"><img src="images/photo.jpg" width="100" height="67" alt=""></a>
-            <div class="uk-dropdown">
-                <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <a href="#"><img src="images/dark.jpg" width="100" height="67" alt=""></a>
-            <div class="uk-dropdown">
-                <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <a href="#"><img src="images/light.jpg" width="100" height="67" alt=""></a>
-            <div class="uk-dropdown">
-                <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
-                </ul>
-            </div>
-        </li>
-    </ul>
-</nav>
-```
-
-***
-
-## Dropnav and nav
-
-The dropnav is easily applied to the vertical [Nav component](nav.md).
-
-```html
-<nav uk-dropnav="pos: left-top">
-    <ul class="uk-nav uk-nav-default">…</ul>
-<nav>
-```
-
-```example
-<nav uk-dropnav>
-    <ul class="uk-nav uk-nav-default">
-        <li class="uk-active"><a href="#">Active</a></li>
-        <li>
-            <a href="#">Parent</a>
-            <div class="uk-dropdown">
-                <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <a href="#">Parent</a>
+            <a href="#">Parent <span uk-drop-parent-icon></span></a>
             <div class="uk-dropdown">
                 <ul class="uk-nav uk-dropdown-nav">
                     <li class="uk-active"><a href="#">Active</a></li>
@@ -622,7 +537,7 @@ Learn more about [JavaScript components](javascript.md#programmatic-use).
 ### Initialization
 
 ```js
-UIkit.navbar(element, options);
+UIkit.dropnav(element, options);
 ```
 
 ### Events
@@ -642,19 +557,19 @@ The following events will be triggered on elements with this component attached:
 
 ## Accessibility
 
-The Navbar component adheres to the [Menu or Menu bar WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menu/) and automatically sets the appropriate WAI-ARIA roles, states and properties. 
+The Dropnav component adheres to the [Menu or Menu bar WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menu/) and automatically sets the appropriate WAI-ARIA roles, states and properties. 
 
-- The *navbar* has the `menubar` role. 
+- The *dropnav* has the `menubar` role. 
 - The *nav items* and *toggle items* have the `menuitem` role, the `aria-expanded` state and the `aria-haspopup` property.
 - The *toggle items* also have the `aria-label` property.
 
 ### Keyboard interaction
 
-The Navbar component can be accessed through keyboard using the following keys.
+The Dropnav component can be accessed through keyboard using the following keys.
 
-- The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus inside or outside of the navbar. 
-- The <kbd>left/right arrow</kbd> keys navigate through the navbar items. In hover mode the dropdown will open automatically. If the focus is on the last item, it move to the first item. 
-- The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown of the focused navbar item. 
+- The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus inside or outside of the dropnav. 
+- The <kbd>left/right arrow</kbd> keys navigate through the dropnav items. In hover mode the dropdown will open automatically. If the focus is on the last item, it move to the first item. 
+- The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown of the focused dropnav item. 
 - The <kbd>up/down arrow</kbd> keys navigates through the nav items in a dropdown. If the focus is on the last item, it move to the first item.
 - The <kbd>esc</kbd> key closes any dropdown even if focus has moved to another element.
 
