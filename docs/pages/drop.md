@@ -59,6 +59,24 @@ By default, the drop is toggled on hover and on click. Set the `mode` option to 
 
 ***
 
+## Parent icon
+
+To create a parent icon, just add the `uk-drop-parent-icon` attribute to a `<span>` element.
+
+```html
+<button type="button">Parent <span uk-drop-parent-icon></span></button>
+<div uk-drop="mode: click"></div>
+```
+
+```example
+<div class="uk-inline">
+    <button class="uk-button uk-button-default" type="button">Parent <span uk-drop-parent-icon></span></button>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+</div>
+```
+
+***
+
 ## Grid in drop
 
 You can place a grid from the [Grid component](grid.md) inside a drop. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically whenever the drop no longer fits its container, just add the `.uk-drop-grid` class.
