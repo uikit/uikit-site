@@ -6,7 +6,7 @@
 
 ## Migration from UIkit 3.15 to 3.16
 
-UIkit 3.16 simplifies some classes from the [Drop component](drop.md). Update your markup by replacing the following classes.
+UIkit 3.16 simplifies some classes in the [Drop component](drop.md). Update your markup by replacing the following classes.
 
 | Class                      | Replace with    |
 | -------------------------- | --------------- |
@@ -14,6 +14,16 @@ UIkit 3.16 simplifies some classes from the [Drop component](drop.md). Update yo
 | `uk-dropdown-grid`         | `uk-drop-grid`  |
 | `uk-navbar-dropdown-close` | `uk-drop-close` |
 | `uk-navbar-dropdown-grid`  | `uk-drop-grid`  |
+
+The Dropdown, Dropbar and Navbar Dropdown CSS is now based on the Drop component. Therefore, they have no longer individual `z-index` Less variables. If you have used one of those variables in a custom UIkit theme, you have to replace them.
+
+| Less variable              | Replace with               |
+| -------------------------- | -------------------------- |
+| `@dropdown-z-index`        | `@drop-z-index`            |
+| `@dropbar-z-index`         | `@drop-z-index`            |
+| `@navbar-dropdown-z-index` | `@drop-z-index`            |
+
+***
 
 ## Migration from UIkit 3.14 to 3.15
 
