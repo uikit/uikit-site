@@ -603,7 +603,7 @@ By default, the dropdowns are aligned to their navbar item. To position the drop
 ```example
 <nav class="uk-navbar-container">
     <div class="uk-container">
-        <div uk-navbar="target: !.uk-navbar; align: center;">
+        <div uk-navbar="target: !.uk-navbar; align: center">
 
             <div class="uk-navbar-left">
 
@@ -723,10 +723,10 @@ By default, the dropdowns are aligned to their navbar item. To position the drop
 
 ### Dropbar
 
-A dropbar extends to the full width of the navbar and displays the dropdown without its default styling. To place dropdowns inside such a dropbar, add the `dropbar: true` option to the `uk-navbar`. Optionally, use `dropbar-anchor` to select after which element the dropbar will be injected into the markup.
+A dropbar extends to the full width of the navbar and displays the dropdown without its default styling. To place dropdowns inside such a dropbar, add the `dropbar: true` option to the `uk-navbar`. Optionally, use `dropbar-anchor` option to select after which element the dropbar will be injected into the markup.
 
 ```html
-<nav class="uk-navbar-container" uk-navbar="dropbar: true;">…</nav>
+<nav class="uk-navbar-container" uk-navbar="dropbar: true">…</nav>
 ```
 
 ```example
@@ -734,7 +734,7 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
 
     <nav class="uk-navbar-container">
         <div class="uk-container">
-            <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container;">
+            <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
 
                 <div class="uk-navbar-left">
 
@@ -833,8 +833,9 @@ To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` optio
             <div class="uk-navbar-left">
 
                 <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
                     <li>
-                        <a href="#">Item</a>
+                        <a href="#">Parent</a>
                         <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li class="uk-active"><a href="#">Active</a></li>
@@ -848,7 +849,7 @@ To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` optio
                         </div>
                     </li>
                     <li>
-                        <a href="#">Item</a>
+                        <a href="#">Parent</a>
                         <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">
                             <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
                                 <div>
@@ -1043,7 +1044,7 @@ The navbar itself has a modifier class `uk-navbar-sticky` that ensures an optimi
 ```example
 <div class="uk-background-primary uk-height-large">
 
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: !.uk-height-large; offset: 200;">
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: !.uk-height-large; offset: 200">
 
         <nav class="uk-navbar-container">
             <div class="uk-container">
@@ -1080,18 +1081,18 @@ Instead of using a Dropdown, you can show a Dropbar, which means that the subnav
 
 ```html
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    <nav class="uk-navbar-container" uk-navbar="dropbar: true;">…</nav>
+    <nav class="uk-navbar-container" uk-navbar="dropbar: true">…</nav>
 </div>
 ```
 
 ```example
 <div class="uk-background-primary uk-height-large">
 
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: !.uk-height-large; offset: 200;">
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: !.uk-height-large; offset: 200">
 
         <nav class="uk-navbar-container">
             <div class="uk-container">
-                <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container;">
+                <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
 
                     <div class="uk-navbar-left">
 
