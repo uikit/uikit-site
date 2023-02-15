@@ -2,6 +2,8 @@
 
 <p class="uk-text-lead">Position any element in relation to another element.</p>
 
+The Drop component is aim-aware. This means the drop stays opened as long as the mouse pointer moves to the drop. An additional delay ensures that the drop stays open even if the mouse pointer is moved shortly in another direction. A drop is closed immediately when another drop is opened.
+
 ## Usage
 
 Any content, like a button, can toggle the drop component. Just add the `uk-drop` attribute to a block element following the toggle.

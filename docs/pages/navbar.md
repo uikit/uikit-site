@@ -2,6 +2,8 @@
 
 <p class="uk-text-lead">Create a navigation bar that can be used for your main site navigation.</p>
 
+The Navbar component initializes all dropdowns with the same options, so they don't have to be initialized individually. The navbar dropdowns are also aim-aware. This means the dropdowns stay opened as long as the mouse pointer moves to the dropdown. An additional delay ensures that dropdowns stay open even if the mouse pointer is moved shortly in another direction. In hover mode dropdowns are closed immediately when another menu item is hovered.
+
 ## Usage
 
 The Navbar component consists of a navbar container, the navbar itself and one or more navigations.

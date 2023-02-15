@@ -2,7 +2,9 @@
 
 <p class="uk-text-lead">Create a toggleable, full-width section called dropbar.</p>
 
-The dropbar provide a section-like style for the [Drop component](drop.md). In opposite to the dropdown which is positioned anywhere on a page with space around, the dropbar extends to the full width or height of the viewport so it perfectly fits three edges without spacing.
+The Dropbar component provides a section-like style for the [Drop component](drop.md). In opposite to the dropdown which is positioned anywhere on a page with space around, the dropbar extends to the full width or height of the viewport so it perfectly fits three edges without spacing.
+
+The Dropbar component is aim-aware. This means the dropbar stays opened as long as the mouse pointer moves to the dropbar. An additional delay ensures that the dropbar stays open even if the mouse pointer is moved shortly in another direction. A dropbar is closed immediately when another dropbar is opened.
 
 ## Usage
 
