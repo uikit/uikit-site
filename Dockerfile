@@ -15,8 +15,9 @@ RUN pnpm install
 # build static files
 WORKDIR /app
 COPY . .
-RUN pnpm compile
-RUN pnpm build
+RUN pnpm compile && \
+    pnpm build && \
+    rm -rf ./build/assets/uikit/node_modules/
 
 # build uikit v2
 FROM node:18 as build-v2
