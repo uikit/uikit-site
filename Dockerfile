@@ -1,4 +1,4 @@
-FROM node:18-alpine as build
+FROM node:18 as build
 
 # environment variables
 ARG COMMIT_HASH=empty
@@ -7,18 +7,19 @@ ENV COMMIT_HASH $COMMIT_HASH
 # install dependencies
 WORKDIR /app
 COPY package.json .
-COPY yarn.lock .
-RUN yarn install
+COPY pnpm-lock.yaml .
+RUN curl -L https://pnpm.js.org/pnpm.js | node - add --global pnpm@7
+RUN pnpm install
 
 # compile css and uikit tests
 # build static files
 WORKDIR /app
 COPY . .
-RUN yarn compile
-RUN yarn build
+RUN pnpm compile
+RUN pnpm build
 
 # build uikit v2
-FROM node:18-alpine as build-v2
+FROM node:18 as build-v2
 ADD https://github.com/uikit/uikit-site/releases/download/2016.12/uikit-site-v2.zip uikit.zip
 RUN unzip uikit.zip -d ./uikit && \
     rm uikit.zip && \

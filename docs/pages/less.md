@@ -40,17 +40,17 @@ Create a file `/custom/my-theme.less` (or any other name) and import the core UI
 // See "how to create a theme" below for more info.
 ```
 
-To compile UIkit and your custom theme into CSS, run the yarn task `compile` .
+To compile UIkit and your custom theme into CSS, run the pnpm task `compile` .
 
 ```sh
 # Run once to install all dependencies
-yarn install
+pnpm install
 
 # Compile all source files including your theme
-yarn compile
+pnpm compile
 
 # Watch files and compile automatically everytime a file changes
-yarn watch
+pnpm watch
 ```
 
 The generated CSS files will be located in the `/dist/css` folder.

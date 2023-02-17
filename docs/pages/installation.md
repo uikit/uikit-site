@@ -7,7 +7,7 @@
 You have the following options to get UIkit:
 
 - Download the [latest release](https://github.com/uikit/uikit/releases/latest) with pre-built JavaScript and CSS.
-- Install with [Yarn](https://yarnpkg.com/en/package/uikit) to get the pre-built JavaScript, CSS and the Less source files. This is recommended when using UIkit for a typical web project: ```yarn add uikit```
+- Install with [pnpm](https://pnpm.io/) to get the pre-built JavaScript, CSS and the Less source files. This is recommended when using UIkit for a typical web project: ```pnpm add uikit```
 - Clone the repo to get all source files including build scripts: `git clone git@github.com:uikit/uikit.git`
 
 The compiled files of all UIkit versions are also hosted on the jsDelivr content delivery network via [jsdelivr.com](https://www.jsdelivr.com/package/npm/uikit).
@@ -43,13 +43,13 @@ To compile UIkit yourself, you can use the included build scripts.
 
 ```sh
 # Run once to install all dependencies
-yarn
+pnpm install
 
 # Compile all source files
-yarn compile
+pnpm compile
 
 # Watch files and compile automatically everytime a file changes
-yarn watch
+pnpm watch
 ```
 
 The compiled `dist` folder now contains additional files which are not checked in by default. The build task will create even more additional files if you have added a [custom UIkit theme](less.md#use-included-build-process).
@@ -93,7 +93,7 @@ To use UIkit's CSS and JavaScript, [include the files](introduction.md#html-mark
 To compile UIkit automatically everytime you change Less or JavaScript files, you can use the included build scripts.
 
 ```sh
-yarn watch
+pnpm watch
 ```
 
 <script>

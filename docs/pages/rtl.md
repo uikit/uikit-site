@@ -32,8 +32,8 @@ Take a look at the available components and just create markup as usual. There i
 If you [set up UIkit from GitHub source](installation.md#compile-from-github-source), you can also compile the RTL version of UIkit yourself. This will include any [custom UIkit theme](less.md) you have created in the `custom/` directory.
 
 ```sh
-yarn
-yarn compile-rtl
+pnpm install
+pnpm compile-rtl
 ```
 
 The resulting files are now located in the `dist/` folder and end with `*.rtl.css`. The JavaScript files stay the same as with the default LTR version.

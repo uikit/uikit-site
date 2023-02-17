@@ -3,10 +3,10 @@
         "dev": "vite dev",
         "build": "vite build",
         "preview": "vite preview",
-        "postinstall": "symlink-dir ./node_modules/uikit ./static/assets/uikit && cd ./static/assets/uikit && yarn install",
-        "compile": "yarn compile-less && yarn compile-uikit-tests",
+        "postinstall": "symlink-dir ./node_modules/uikit ./static/assets/uikit && cd ./static/assets/uikit && pnpm install",
+        "compile": "pnpm compile-less && pnpm compile-uikit-tests",
         "compile-less": "make-dir static/css && lessc less/theme.less > static/css/theme.css --rewrite-urls=all --clean-css",
-        "compile-uikit-tests": "cd ./static/assets/uikit && yarn compile-js tests"
+        "compile-uikit-tests": "cd ./static/assets/uikit && pnpm compile-js tests"
     },
     "devDependencies": {
         "@sveltejs/adapter-static": "1.0.5",
