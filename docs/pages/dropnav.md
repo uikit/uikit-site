@@ -56,7 +56,7 @@ In this example we are using the [Subnav component](subnav.md).
 
 ## Dropbar
 
-A dropbar extends to the full width of the dropbar and displays the dropdown without its default styling. To place dropdowns inside such a dropbar, add the `dropbar: true` option to the `uk-dropnav`. Optionally, use `dropbar-anchor` option to select after which element the dropbar will be injected into the markup.
+A dropbar extends to the full width of the dropnav and displays the dropdown without its default styling. To place dropdowns inside such a dropbar, add the `dropbar: true` option to the `uk-dropnav`. Optionally, use `dropbar-anchor` option to select after which element the dropbar will be injected into the markup.
 
 ```html
 <nav uk-dropnav="dropbar: true">…</nav>
