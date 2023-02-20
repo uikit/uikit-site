@@ -52,7 +52,7 @@ The Navbar component consists of a navbar container, the navbar itself and one o
 </nav>
 ```
 
-The navbar nor the navbar container has horizontal padding. To set the same horizontal padding as the rest of the page use the [Container component](container.md).
+Neither the navbar, nor the navbar container have horizontal padding. To set the same horizontal padding as the rest of the page use the [Container component](container.md).
 
 ```html
 <nav class="uk-navbar-container">
