@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Position any element in relation to another element.</p>
 
-The Drop component is aim-aware. This means the drop stays opened as long as the mouse pointer moves towards the drop. An additional delay ensures that the drop stays open even if the mouse pointer is moved shortly in another direction. A drop is closed immediately when another drop is opened.
+The Drop component is aim-aware. This means the drop stays open as long as the mouse pointer moves towards the drop. An additional delay ensures that the drop stays open even if the mouse pointer shortly moves in another direction. A drop closes immediately if another menu item is hovered.
 
 ## Usage
 
