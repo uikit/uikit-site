@@ -19,7 +19,7 @@
         openOnCodepen($(e.current.rel).innerText);
     });
 
-    on(document, 'click', '.js-example [href="#"]', (e) => e.preventDefault());
+    on(document, 'click', '.js-example [href="#"],a.js-copy', (e) => e.preventDefault());
 
     // https://blog.codepen.io/documentation/api/prefill/
     function openOnCodepen(code) {
