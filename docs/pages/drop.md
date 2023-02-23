@@ -2,6 +2,8 @@
 
 <p class="uk-text-lead">Position any element in relation to another element.</p>
 
+The Drop component is aim-aware. This means the drop stays open as long as the mouse pointer moves towards the drop. An additional delay ensures that the drop stays open even if the mouse pointer shortly moves in another direction. A drop closes immediately if another menu item is hovered.
+
 ## Usage
 
 Any content, like a button, can toggle the drop component. Just add the `uk-drop` attribute to a block element following the toggle.
@@ -59,7 +61,25 @@ By default, the drop is toggled on hover and on click. Set the `mode` option to 
 
 ***
 
-## Grid in drop
+## Parent icon
+
+To create a parent icon, just add the `uk-drop-parent-icon` attribute to a `<span>` element.
+
+```html
+<button type="button">Parent <span uk-drop-parent-icon></span></button>
+<div uk-drop="mode: click"></div>
+```
+
+```example
+<div class="uk-inline">
+    <button class="uk-button uk-button-default" type="button">Parent <span uk-drop-parent-icon></span></button>
+    <div class="uk-card uk-card-body uk-card-default" uk-drop="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+</div>
+```
+
+***
+
+## Width and Grid
 
 You can place a grid from the [Grid component](grid.md) inside a drop. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically whenever the drop no longer fits its container, just add the `.uk-drop-grid` class.
 
@@ -176,7 +196,7 @@ To disable automatic shifting and flipping, add the `shift: false` or `flip: fal
 
 ***
 
-## Auto Update
+## Auto update
 
 By default, the drop repositions on scrolling. To disable dynamic positioning, add `auto-update: false` option to the `uk-drop` attribute. The drop will only be positioned once when opened.
 
@@ -416,3 +436,19 @@ Hides the drop.
 | Name    | Type    | Default | Description            |
 | ------- | ------- | ------- | ---------------------- |
 | `delay` | Boolean | true    | Delay hiding the drop. |
+
+
+***
+
+## Accessibility
+
+The Drop component adheres to the [Menu Button WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
+
+- The *toggle* has the `button` role, the `aria-expanded` state and the `aria-haspopup` property.
+
+### Keyboard interaction
+
+The Drop component can be accessed through keyboard using the following keys.
+
+- The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the drop. 
+- The <kbd>esc</kbd> key closes the drop even if focus has moved to another element.

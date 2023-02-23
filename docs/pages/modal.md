@@ -531,3 +531,21 @@ const el = modal.$el; // The modal element
 
 </p>
 ```
+
+***
+
+## Accessibility
+
+The Modal component adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/) and automatically sets the appropriate WAI-ARIA roles and properties.
+
+- The *modal* has the `dialog` role and the `aria-modal` property.
+
+The Close component automatically sets the appropriate WAI-ARIA roles and properties.
+
+- The *close icon* has the `aria-label` property, and if an `<a>` element is used, the `button` role.
+
+### Keyboard interaction
+
+The Modal component can be accessed through keyboard using the following keys.
+
+- The <kbd>esc</kbd> key closes the modal. This behaviour is disabled if the `bg-close: false` option is set.

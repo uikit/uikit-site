@@ -91,3 +91,20 @@ To apply a previous and next button, add the `uk-pagination-previous` or `uk-pag
     <li class="uk-margin-auto-left"><a href="#">Next <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
 </ul>
 ```
+
+
+***
+
+## Accessibility
+
+The previous/next pagination adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
+
+- The *prev/next pagination items* have the `button` role and the `aria-label` property.
+
+### Internationalization
+
+The Pagination component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
+
+| Key          | Default              | Description             |
+|--------------|----------------------|-------------------------|
+| `label`      | `Next/Previous page` | `aria-label` attribute. |

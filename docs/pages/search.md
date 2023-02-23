@@ -263,7 +263,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
                         </form>
                     </div>
                     <div class="uk-width-auto">
-                        <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                        <a class="uk-drop-close" href="#" uk-close></a>
                     </div>
                 </div>
 
@@ -303,4 +303,16 @@ The search icon can be used as a toggle to open the search inside a navbar – a
         </form>
     </div>
 </div>
+```
+
+***
+
+## Accessibility
+
+Set the appropriate WAI-ARIA roles, states and properties to the Search component. 
+
+- If no `<label>` element is associated with the search control, set the `aria-label` property to the search `<input>` element to describe its meaning.
+
+```html
+<input class="uk-search-input" type="search" aria-label="…">
 ```

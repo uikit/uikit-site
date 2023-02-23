@@ -8,6 +8,7 @@
         "Webpack": "webpack",
         "Custom icons": "custom-icons",
         "Avoiding conflicts": "avoiding-conflicts",
+        "Accessibility": "accessibility",
         "RTL support": "rtl",
         "Migration": "migration"
     },
@@ -36,6 +37,7 @@
         "Drop": "drop",
         "Dropbar": "dropbar",
         "Dropdown": "dropdown",
+        "Dropnav": "dropnav",
         "Filter": "filter",
         "Flex": "flex",
         "Form": "form",

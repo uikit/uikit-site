@@ -29,7 +29,7 @@ To apply this component, add the `.uk-list` class to an unordered or ordered lis
 Add one of the following classes to set the marker of a list item.
 
 | Class              | Description                                      |
-|--------------------|--------------------------------------------------|
+| ------------------ | ------------------------------------------------ |
 | `.uk-list-disc`    | Use filled circle as marker.                     |
 | `.uk-list-circle`  | Use a hollow circle as marker.                   |
 | `.uk-list-square`  | Use a filled square as marker                    |
@@ -98,7 +98,7 @@ Add one of the following classes to set the marker of a list item.
 Add one of the following classes to set the marker color.
 
 | Class                | Description                                                      |
-|----------------------|------------------------------------------------------------------|
+| -------------------- | ---------------------------------------------------------------- |
 | `.uk-list-muted`     | Add this class to mute the marker.                               |
 | `.uk-list-emphasis`  | Add this class to emphasize the marker.                          |
 | `.uk-list-primary`   | Add this class to emphasize the marker with the primary color.   |
@@ -213,7 +213,7 @@ Add zebra-striping to a list using the `.uk-list-striped` class.
 Add one of the following classes to increase or decrease the spacing between list items. You can combine this with any of the other list modifiers.
 
 | Class               | Description                              |
-|---------------------|------------------------------------------|
+| ------------------- | ---------------------------------------- |
 | `.uk-list-large`    | Increase the spacing between list items. |
 | `.uk-list-collapse` | Remove the spacing between list items.   |
 
@@ -296,5 +296,21 @@ Add one of the following classes to increase or decrease the spacing between lis
         </ul>
     </div>
 
+</div>
+```
+
+***
+
+## Accessibility
+
+Set the appropriate WAI-ARIA roles, states and properties to the List component. 
+
+- If a `<div>` element is used, set the `list` role to the list, and the `listitem` role to the list items.
+  
+```html
+<div class="uk-list" role="list">
+    <div role="listitem">List item 1</div>
+    <div role="listitem">List item 2</div>
+    <div role="listitem">List item 3</div>
 </div>
 ```

@@ -163,3 +163,24 @@ Add the `.uk-comment-list` class to a `<ul>` element to create a list of comment
     </li>
 </ul>
 ```
+
+***
+
+## Accessibility
+
+Set the appropriate WAI-ARIA roles, states and properties to the Comment component. 
+
+- Set the `comment` role for each *comment*.
+  
+```html
+<ul class="uk-comment-list">
+    <li>
+        <article class="uk-comment" role="comment">…</article>
+        <ul>
+            <li>
+                <article class="uk-comment" role="comment">…</article>
+            </li>
+        </ul>
+    </li>
+</ul>
+```

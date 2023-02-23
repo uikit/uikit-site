@@ -102,3 +102,19 @@ This is an example of how this component is used with the [Modal component](moda
     </div>
 </div>
 ```
+
+***
+
+## Accessibility
+ 
+The Close component automatically sets the appropriate WAI-ARIA roles and properties.
+
+- The *close icon* has the `aria-label` property, and if an `<a>` element is used, the `button` role.
+
+### Internationalization
+
+The Close component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
+
+| Key          | Default        | Description             |
+|--------------|----------------|-------------------------|
+| `label`      | `Close`        | `aria-label` attribute. |

@@ -15,3 +15,19 @@ To add a smooth effect when using the totop to jump up the page, use the [Scroll
 ```example
 <a href="#" uk-totop uk-scroll></a>
 ```
+
+***
+
+## Accessibility
+
+The Totop component automatically sets the appropriate WAI-ARIA roles, states and properties.
+
+- The *totop icon* has the `aria-label` property, and if an `<a>` element is used, the `button` role.
+
+### Internationalization
+
+The Totop component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
+
+| Key     | Default       | Description             |
+|---------|---------------|-------------------------|
+| `label` | `Back to top` | `aria-label` attribute. |

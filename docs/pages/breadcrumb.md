@@ -26,3 +26,18 @@ To add list items without a link, use a `<span>` element instead of an `<a>`. Al
     </ul>
 </nav>
 ```
+
+***
+
+## Accessibility
+
+In order for the Breadcrumb component to adhere to the [Breadcrumb design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/), set the appropriate WAI-ARIA roles, states and properties.
+
+- Contain the breadcrumb list within a `nav` element and set the `aria-label` property to describe the type of the provided navigation.
+- If the last item is the current page and a link, set the `aria-current="page"` property.
+
+```html
+<nav aria-label="Breadcrumb">
+    <ul class="uk-breadcrumb">…</ul>
+</nav>
+```

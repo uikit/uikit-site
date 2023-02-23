@@ -349,15 +349,16 @@ To apply the switcher to the [Nav component](nav.md), add the `uk-switcher` attr
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option      | Value        | Default              | Description                                                                                              |
-| ----------- | ------------ | -------------------- | -------------------------------------------------------------------------------------------------------- |
-| `connect`   | CSS selector | `~.uk-switcher`      | Related items container. By default succeeding elements with class 'uk-switcher'.                        |
-| `toggle `   | CSS selector | `> * > :first-child` | Select the clickable elements which trigger content switching.                                           |
-| `itemNav `  | CSS selector | `false`              | Related nav container. By default, nav items are found in related items container only.                  |
-| `active `   | Number       | `0`                  | Active index on init. Providing a negative number indicates a position starting from the end of the set. |
-| `animation` | String       | `false`              | Space-separated names of [animations](animation.md). Comma-separated for animation out.                  |
-| `duration`  | Number       | `200`                | The animation duration.                                                                                  |
-| `swiping`   | Boolean      | `true`               | Use swiping.                                                                                             |
+| Option        | Value        | Default              | Description                                                                                              |
+|---------------|--------------|----------------------|----------------------------------------------------------------------------------------------------------|
+| `connect`     | CSS selector | `~.uk-switcher`      | Related items container. By default succeeding elements with class 'uk-switcher'.                        |
+| `toggle `     | CSS selector | `> * > :first-child` | Select the clickable elements which trigger content switching.                                           |
+| `itemNav `    | CSS selector | `false`              | Related nav container. By default, nav items are found in related items container only.                  |
+| `active `     | Number       | `0`                  | Active index on init. Providing a negative number indicates a position starting from the end of the set. |
+| `animation`   | String       | `false`              | Space-separated names of [animations](animation.md). Comma-separated for animation out.                  |
+| `duration`    | Number       | `200`                | The animation duration.                                                                                  |
+| `swiping`     | Boolean      | `true`               | Use swiping.                                                                                             |
+| `followFocus` | Boolean      | `false`              | Selection follows focus automatically.                                                                   |
 
 `connect` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
@@ -405,3 +406,26 @@ Shows the Switcher item with given index.
 | Name    | Type                 | Default | Description                           |
 | ------- | -------------------- | ------- | ------------------------------------- |
 | `index` | String, Number, Node | 0       | Switcher item to show. 0 based index. |
+
+***
+
+## Accessibility
+
+The Switcher component adheres to the [Tab WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
+
+- The *toggle navigation* has the `tablist` role, and if it is a [Nav component](nav.md), the `aria-orientation` state set to `vertical`. 
+- The *toggle navigation items* have the `presentation` role. 
+- The *toggle navigation links* have an ID, the `tab` role, the `aria-selected` state and the `aria-controls` property set to the ID of the respective content item. 
+- The *content list* has the `presentation` role.
+- The *content list items* have the ID, the `tabpanel` role and the `aria-labelledby` property set to the ID of the respective toggle item.
+
+### Keyboard interaction
+
+The toggle navigation can be accessed through keyboard using the following keys.
+
+- The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus on the active toggle in the toggle navigation. If the focus already is on the active toggle, the focus will move to the next element outside the toggle navigation. 
+- The <kbd>left/right arrow</kbd> or <kbd>up/down arrow</kbd> keys, depending on the orientation, navigate through the toggles. If the focus is on the last toggle, it moves to the first toggle.  
+- The <kbd>enter</kbd> or <kbd>space</kbd> keys activate the corresponding content item of the focused toggle.
+- The <kbd>home</kbd> or <kbd>end</kbd> keys move the focus to the first or last toggle.
+
+By default, the Switcher component has the manual activation behavior. This means the corresponding content items will only be activated using the <kbd>enter</kbd> or <kbd>space</kbd>keys. To switch to automatic activation, set `follow-focus` to `true`. When navigating through toggle items, the corresponding content item will get active automatically. 

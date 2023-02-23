@@ -156,7 +156,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `mode`      | String         | `click` | Comma-separated list of trigger behaviour modes. (`hover`, `click`, `media`)                                                                                                      |
 | `cls`       | String         | `false` | The class that is being toggled. Defaults to the `hidden` attribute.                                                                                                              |
 | `media`     | Number, String | `false` | In media mode, the breakpoint that triggers the toggle - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
-| `animation` | String         | `false` | Space-separated names of [animations](animation.md). Comma-separated for animation out.                                                                                    |
+| `animation` | String         | `false` | Space-separated names of [animations](animation.md). Comma-separated for animation out.                                                                                           |
 | `duration`  | Number         | `200`   | Animation duration in milliseconds.                                                                                                                                               |
 | `queued`    | Boolean        | `true`  | Toggle the targets successively.                                                                                                                                                  |
 
@@ -202,3 +202,12 @@ UIkit.toggle(element).toggle();
 ```
 
 Toggles the Toggle's target.
+
+***
+
+## Accessibility
+
+The Toggle component automatically sets the appropriate WAI-ARIA roles, states and properties.
+
+- The *toggle* element has the `button` role if an `<a>` element is used. 
+- To implement the [Disclosure (Show/Hide) design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/), manually set an `aria-expanded` attribute. It will automatically update when toggling.

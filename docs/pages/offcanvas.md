@@ -310,3 +310,21 @@ UIkit.offcanvas(element).hide();
 ```
 
 Hides the Offcanvas.
+
+***
+
+## Accessibility
+
+The Offcanvas component adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/) and automatically sets the appropriate WAI-ARIA roles, states and properties. 
+
+- The *offcanvas bar* has the `dialog` role, and if the offcanvas has an overlay, the `aria-modal` property.
+
+The Close component automatically sets the appropriate WAI-ARIA roles and properties.
+
+- The *close icon* has the `aria-label` property, and if an `<a>` element is used, the `button` role.
+
+### Keyboard interaction
+
+The Offcanvas component can be accessed through keyboard using the following keys.
+
+- The <kbd>esc</kbd> key closes the offcanvas. This behaviour is disabled if the `bg-close: false` option is set.

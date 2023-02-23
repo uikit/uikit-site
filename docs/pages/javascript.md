@@ -51,27 +51,27 @@ Each component comes with a set of configuration options that let you customize 
 
 ### Instance
 
-Options can be set:
+Options can be set as shown in the following examples. 
 
-with the `key: value;` format,
+With the `key: value;` format:
 
 ```html
 <div uk-sticky="start: 100; offset: 50;"></div>
 ```
 
-in valid JSON format,
+In valid JSON format:
 
 ```html
 <div uk-sticky='{"start": 100, "offset": 50}'></div>
 ```
 
-with single attributes,
+As single attributes:
 
 ```html
 <div uk-sticky start="100" offset="50"></div>
 ```
 
-or as single attributes prefixed with `data-`.
+Or as single attributes prefixed with `data-`:
 
 ```html
 <div uk-sticky data-start="100" data-offset="50"></div>

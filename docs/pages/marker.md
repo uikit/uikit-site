@@ -32,3 +32,19 @@ To apply this component, add the `uk-marker` attribute to any element. You can u
     </div>
 </div>
 ```
+
+***
+
+## Accessibility
+
+The Marker component automatically sets the appropriate WAI-ARIA roles, states and properties.
+
+- The *marker* has the `aria-label` property, and if an `<a>` element is used, the `button` role. 
+
+### Internationalization
+
+The Marker component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
+
+| Key     | Default | Description             |
+|---------|---------|-------------------------|
+| `label` | `Open`  | `aria-label` attribute. |

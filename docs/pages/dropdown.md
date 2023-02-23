@@ -2,6 +2,8 @@
 
 <p class="uk-text-lead">Defines different styles for a toggleable dropdown.</p>
 
+The Dropdown component is aim-aware. This means the dropdown stays open as long as the mouse pointer moves towards the dropdown. An additional delay ensures that the dropdown stays open even if the mouse pointer shortly moves in another direction. A dropdown closes immediately if another menu item is hovered.
+
 ## Usage
 
 A dropdown is an example of the [drop](drop.md) that provides its own styling. Any content, like a button, can toggle a dropdown. Just add the `uk-dropdown` attribute to a block element following the toggle.
@@ -62,13 +64,13 @@ A dropdown can contain a nav from the [Nav component](nav.md). Just add the `.uk
 
 ***
 
-## Grid in dropdown
+## Width and Grid
 
-You can place a grid from the [Grid component](grid.md) inside a dropdown. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically whenever the dropdown no longer fits its container, just add the `.uk-dropdown-grid` class.
+You can place a grid from the [Grid component](grid.md) inside a dropdown. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically whenever the dropdown no longer fits its container, just add the `.uk-drop-grid` class.
 
 ```html
 <div class="uk-width-large" uk-dropdown>
-    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>…</div>
+    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>…</div>
 </div>
 ```
 
@@ -77,7 +79,7 @@ Use one of the classes from the [Width component](width.md) to adjust the dropdo
 ```example
 <button class="uk-button uk-button-default" type="button">Hover</button>
 <div class="uk-width-large" uk-dropdown>
-    <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
         <div>
             <ul class="uk-nav uk-dropdown-nav">
                 <li class="uk-active"><a href="#">Active</a></li>
@@ -251,7 +253,7 @@ By default, the dropdown automatically changes its positions if it exceeds the v
 
 ***
 
-## Shift and Flip
+## Shift and flip
 
 To disable automatic shifting and flipping, add the `shift: false` or `flip: false` option to the `uk-dropdown` attribute.
 
@@ -293,7 +295,7 @@ To disable automatic shifting and flipping, add the `shift: false` or `flip: fal
 
 ***
 
-## Auto Update
+## Auto update
 
 By default, the drop repositions on scrolling. To disable dynamic positioning, add `auto-update: false` option to the `uk-dropdown` attribute. The dropdown will only be positioned once when opened.
 
@@ -635,3 +637,18 @@ Hides the dropdown.
 | Name    | Type    | Default | Description                |
 | ------- | ------- | ------- | -------------------------- |
 | `delay` | Boolean | true    | Delay hiding the Dropdown. |
+
+***
+
+## Accessibility
+
+The Dropdown component adheres to the [Menu Button WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
+
+- The *toggle* has the `button` role, the `aria-expanded` state and the `aria-haspopup` property.
+
+### Keyboard interaction
+
+The Dropdown component can be accessed through keyboard using the following keys.
+
+- The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown. 
+- The <kbd>esc</kbd> key closes the dropdown even if focus has moved to another element.

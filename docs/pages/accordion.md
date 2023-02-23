@@ -7,7 +7,7 @@
 The Accordion component consists of a parent container with the `uk-accordion` attribute, and a title and content part for each accordion item.
 
 | Class                   | Description                                                                |
-|-------------------------|----------------------------------------------------------------------------|
+| ----------------------- | -------------------------------------------------------------------------- |
 | `.uk-accordion-title`   | Defines and styles the toggle for each accordion item. Use `<a>` elements. |
 | `.uk-accordion-content` | Defines the content part for each accordion item.                          |
 
@@ -155,7 +155,7 @@ To specify which items should be opened initially, add the `.uk-open` class to t
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option        | Value   | Default                   | Description                                                                                                                                                                                              |
-|---------------|---------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------- | ------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `active`      | Number  | `false`                   | Index of the element to open initially.                                                                                                                                                                  |
 | `animation`   | Boolean | `true`                    | Reveal item directly or with a transition.                                                                                                                                                               |
 | `collapsible` | Boolean | `true`                    | Allow all items to be closed.                                                                                                                                                                            |
@@ -184,7 +184,7 @@ UIkit.accordion(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name         | Description                                                                                    |
-|--------------|------------------------------------------------------------------------------------------------|
+| ------------ | ---------------------------------------------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
 | `shown`      | Fires after the item's show animation has completed.                                           |
@@ -205,6 +205,22 @@ UIkit.accordion(element).toggle(index, animate);
 Toggles the content pane.
 
 | Name      | Type                 | Default | Description                                  |
-|-----------|----------------------|---------|----------------------------------------------|
+| --------- | -------------------- | ------- | -------------------------------------------- |
 | `index`   | String, Number, Node | 0       | Accordion pane to toggle. 0 based index.     |
 | `animate` | Boolean              | true    | Suppress opening animation by passing false. |
+
+***
+
+## Accessibility
+
+The Accordion component adheres to the [Accordion WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
+
+- The *titles* have an ID, the `button` role, the `aria-expanded` state and the `aria-controls` property set to the ID of the respective content.
+- The *contents* have an ID, the `region` role and the `aria-labelledby` property set to the ID of the respective title.
+
+### Keyboard interaction
+
+The Accordion component can be accessed through keyboard using the following keys.
+
+- The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys navigate through accordion titles.
+- The <kbd>enter</kbd> or <kbd>space</kbd> key toggles the content of the focused title.

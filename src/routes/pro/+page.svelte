@@ -260,6 +260,7 @@
                                 class="uk-margin-small-right"
                                 width="28"
                                 height="34"
+                                alt="UIkit"
                             />
                             UIkit
                         </a>

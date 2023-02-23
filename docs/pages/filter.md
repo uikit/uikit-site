@@ -862,3 +862,11 @@ The following events will be triggered on elements with this component attached:
 |----------------|------------------------------------------|
 | `beforeFilter` | Fires before the filter is applied.      |
 | `afterFilter`  | Fires after the filter has been applied. |
+
+***
+
+## Accessibility
+
+The Filter component automatically sets the appropriate WAI-ARIA roles, states and properties. 
+
+- The *filter controls* have the `aria-selected` state.
