@@ -79,7 +79,7 @@ To create a parent icon, just add the `uk-drop-parent-icon` attribute to a `<spa
 
 ***
 
-## Grid in drop
+## Width and Grid
 
 You can place a grid from the [Grid component](grid.md) inside a drop. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically whenever the drop no longer fits its container, just add the `.uk-drop-grid` class.
 

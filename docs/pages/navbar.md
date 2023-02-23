@@ -957,7 +957,7 @@ To create a parent icon, just add the `uk-navbar-parent-icon` attribute to a `<s
 
 ***
 
-## Grid in dropdown/dropbar
+## Width and Grid
 
 You can place a grid from the [Grid component](grid.md) inside a dropdown. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically whenever the dropdown no longer fits its container, just add the `.uk-drop-grid` class.
 

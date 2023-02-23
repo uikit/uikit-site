@@ -64,7 +64,7 @@ A dropdown can contain a nav from the [Nav component](nav.md). Just add the `.uk
 
 ***
 
-## Grid in dropdown
+## Width and Grid
 
 You can place a grid from the [Grid component](grid.md) inside a dropdown. Just wrap the content with a `<div>` element and add the `uk-grid` attribute. If the grid should stack automatically whenever the dropdown no longer fits its container, just add the `.uk-drop-grid` class.
 
