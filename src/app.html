@@ -32,11 +32,17 @@
             type="font/woff2"
             crossorigin
         />
-        <link rel="stylesheet" href="%sveltekit.assets%/css/theme.css" />
-        <script src="%sveltekit.assets%/assets/uikit/dist/js/uikit.min.js"></script>
-        <script src="%sveltekit.assets%/assets/uikit/dist/js/uikit-icons.min.js" defer></script>
+        <link
+            rel="stylesheet"
+            href="%sveltekit.assets%/css/theme.css?%sveltekit.env.PUBLIC_CACHE%"
+        />
+        <script src="%sveltekit.assets%/assets/uikit/dist/js/uikit.min.js?%sveltekit.env.PUBLIC_CACHE%"></script>
         <script
-            src="%sveltekit.assets%/analytics.js"
+            src="%sveltekit.assets%/assets/uikit/dist/js/uikit-icons.min.js?%sveltekit.env.PUBLIC_CACHE%"
+            defer
+        ></script>
+        <script
+            src="%sveltekit.assets%/analytics.js?%sveltekit.env.PUBLIC_CACHE%"
             onload="analytics('UA-42150424-1', { anonymize_ip: true })"
             defer
         ></script>
