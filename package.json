@@ -10,9 +10,9 @@
     },
     "devDependencies": {
         "@sveltejs/adapter-static": "2.0.1",
-        "@sveltejs/kit": "^1.8.3",
+        "@sveltejs/kit": "^1.8.5",
         "clipboard": "2.0.11",
-        "eslint": "^8.34.0",
+        "eslint": "^8.35.0",
         "eslint-config-prettier": "^8.6.0",
         "eslint-plugin-svelte3": "^4.0.0",
         "highlight.js": "9.12.0",
