@@ -1,7 +1,4 @@
-(function () {
-    const { notification } = UIkit;
-    const { $, on } = UIkit.util;
-
+(function ({ notification, util: { $, on } }) {
     new ClipboardJS('a.js-copy', {
         text: (trigger) => $(trigger.rel)?.innerText,
     })
@@ -68,4 +65,4 @@
     const sidebar = $('.tm-sidebar-left');
     on(sidebar, 'scroll', () => sessionStorage.setItem('scroll', sidebar.scrollTop));
     sidebar.scrollTop = sessionStorage.getItem('scroll') || 0;
-})();
+})(UIkit);
