@@ -1,6 +1,7 @@
 <script>
     import { page } from '$app/stores';
     import { assets, base } from '$app/paths';
+    import Algolia from './Algolia.svelte';
 </script>
 
 <div
@@ -26,6 +27,11 @@
                     />
                     UIkit
                 </a>
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <Algolia />
+                    </li>
+                </ul>
             </div>
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav uk-visible@m">
