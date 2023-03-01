@@ -477,8 +477,10 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 
 The returned promise has a property `dialog`, which holds a reference to the modal itself. This lets you manipulate e.g. the markup of the modal's element.
 
+To translate the button labels, the dialog functions accepts an optional `options` object parameter. This has a key `i18n` and two properties `ok` and `cancel`.
+
 ```js
-const modal = UIkit.modal.confirm('UIkit confirm!').dialog; // The modal component
+const modal = UIkit.modal.confirm('UIkit confirm!', {i18n: {ok: 'okay'}}).dialog; // The modal component
 const el = modal.$el; // The modal element
 ```
 
