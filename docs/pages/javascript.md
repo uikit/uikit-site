@@ -108,7 +108,7 @@ Options passed via the component attribute will have the highest precedence, fol
 
 ### Globally
 
-Component options can be changed globally by extending a component.
+Component options can be changed globally by extending a component. It will affect newly created instances only.
 
 ```js
 UIkit.mixin({
@@ -118,6 +118,8 @@ UIkit.mixin({
     }
 }, 'sticky');
 ```
+
+Omitting the second parameter, will apply the custom behavior to every UIkit instance created afterwards.
 
 ***
 
