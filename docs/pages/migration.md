@@ -27,7 +27,7 @@ The Dropdown, Dropbar and Navbar Dropdown CSS is now based on the Drop component
 
 ## Migration from UIkit 3.14 to 3.15
 
-The [Nav component](nav.md) in UIkit 3.15 now uses a JavaScript component to create the parent icon for a nav item instead of compiling the parent icon into the CSS. Just search for the `.uk-nav-parent-icon` class and remove it from the markup. Simply use a `span` with the `uk-nav-parent-icon"` attribute for each nav item with children instead. Here is a quick example.
+The [Nav component](nav.md) in UIkit 3.15 now uses a JavaScript component to create the parent icon for a nav item instead of compiling the parent icon into the CSS. Just search for the `.uk-nav-parent-icon` class and remove it from the markup. Simply use a `span` with the `uk-nav-parent-icon` attribute for each nav item with children instead. Here is a quick example.
 
 ```
 <ul class="uk-nav-default" uk-nav>
