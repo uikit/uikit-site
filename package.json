@@ -8,6 +8,7 @@
         "compile-less": "make-dir static/css && lessc less/theme.less > static/css/theme.css --rewrite-urls=all --clean-css",
         "compile-uikit-tests": "cd ./static/assets/uikit && pnpm compile-js tests"
     },
+    "packageManager": "pnpm@7.29.1",
     "devDependencies": {
         "@sveltejs/adapter-static": "2.0.1",
         "@sveltejs/kit": "^1.8.5",
