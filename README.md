@@ -4,6 +4,7 @@ This is the UIkit 3 website as found on [getuikit.com](https://getuikit.com). Us
 
 1. Clone the repository
 2. `pnpm install` to fetch all dependencies
-3. - `pnpm dev` start a development server
+3. `pnpm compile` to compile the css and uikit tests
+4. - `pnpm dev` start a development server
    - `pnpm build` build a production version of your app
    - `pnpm preview` run the production version locally
