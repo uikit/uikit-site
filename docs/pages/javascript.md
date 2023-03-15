@@ -195,3 +195,19 @@ component.$destroy();
 // Also destroys the component, but also removes the element from the DOM.
 component.$destroy(true);
 ```
+
+***
+
+## UIkit initialization
+
+You might need to execute code after UIkit is loaded, but before it initializes its components on the page.
+
+This hook allows you to register custom components or component mixins.
+
+You can hook into this step in the lifecycle by listening for the `uikit:init` event UIkit triggers on the document.
+
+```js
+document.addEventListener('uikit:init', () => {
+    // do something
+})
+```
