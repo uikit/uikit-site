@@ -1172,7 +1172,7 @@ By default, the immediate toggling of classes does not look ideal. Instead, we c
 ```example
 <div class="uk-section-primary uk-preserve-color">
 
-    <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light">
+    <div uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; end: !.uk-section-primary;">
 
         <nav class="uk-navbar-container">
             <div class="uk-container uk-container-expand">
