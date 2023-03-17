@@ -16,7 +16,7 @@ specifiers:
   prettier-plugin-svelte: ^2.9.0
   svelte: ^3.56.0
   symlink-dir: ^5.1.1
-  uikit: 3.16.7
+  uikit: 3.16.8
   vite: ^4.1.4
 
 devDependencies:
@@ -35,7 +35,7 @@ devDependencies:
   prettier-plugin-svelte: 2.9.0_gan2xfhhcbz3kbkivttwsjndea
   svelte: 3.56.0
   symlink-dir: 5.1.1
-  uikit: 3.16.7
+  uikit: 3.16.8
   vite: 4.1.4_less@4.1.3
 
 packages:
@@ -958,6 +958,11 @@ packages:
     resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
     dev: true
 
+  /graceful-fs/4.2.11:
+    resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
+    dev: true
+    optional: true
+
   /graceful-readlink/1.0.1:
     resolution: {integrity: sha512-8tLu60LgxF6XpdbK8OW3FA+IfTNBn1ZHGHKF4KQbEeSkajYw5PlYJcKluntgegDPTg8UkHjpet1T82vk6TQ68w==}
     dev: true
@@ -1157,7 +1162,7 @@ packages:
       tslib: 2.5.0
     optionalDependencies:
       errno: 0.1.8
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       image-size: 0.5.5
       make-dir: 2.1.0
       mime: 1.6.0
@@ -1788,8 +1793,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /uikit/3.16.7:
-    resolution: {integrity: sha512-oSFZZSjmslxOwUhm3lRcpfrQQaFn2N6qRSuHpB5RKX/I6AzP2bEdzBj2U8XwecYhTJfcGsrdrXMpBiFryJrtcQ==}
+  /uikit/3.16.8:
+    resolution: {integrity: sha512-/MOgbHKbZV8x3XDJgi/8+0s7HWcfhR5AKA7BItuyE/n0R2Etkup2BqAnhWRXUBOzZFay/rHZECnspK4eUguVYQ==}
     dev: true
 
   /undici/5.20.0:
