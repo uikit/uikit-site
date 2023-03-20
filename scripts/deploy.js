@@ -18,8 +18,9 @@ if (porcelain) {
 
 await $`pnpm update uikit@latest`;
 
-const version = ($`pnpm view uikit version`).stdout;
-await $`git commit -am "Bump UIkit to version ${version}"`;
+const version = (await $`pnpm view uikit version`).stdout;
+const message = `Bump UIkit to version ${version}`;
+await $`git commit -am ${message}`;
 
 await $`git push origin`;
 await $`git checkout main`;
