@@ -11,7 +11,7 @@ UIkit offers various text utilities to style your text.
 | Class           | Description                                                                                                           |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------|
 | `.uk-text-lead` | <span class="uk-text-lead">Add this class to highlight text, for example in article subtitles.</span>                 |
-| `.uk-text-meta` | <span class="uk-text-meta">Add this class to a paragraph which contains meta data about an article or similar.</span> |
+| `.uk-text-meta` | <span class="uk-text-meta">Add this class to a paragraph which contains meta text about an article or similar.</span> |
 
 ***
 

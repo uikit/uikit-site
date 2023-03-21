@@ -26,9 +26,9 @@ To apply this component, you need a container element with the `uk-filter="targe
 </div>
 ```
 
-Next, we need to define the meta data for each layout item, for example which category the item belongs to. Use any HTML class or attribute to do so.
+Next, we need to define the metadata for each layout item, for example which category the item belongs to. Use any HTML class or attribute to do so.
 
-To apply a filter control, add the `uk-filter-control` attribute. To define the meta data that should be filtered, use the `filter: SELECTOR` option. The selector can be any CSS selector like an HTML class or an attribute you define for the layout items.
+To apply a filter control, add the `uk-filter-control` attribute. To define the metadata that should be filtered, use the `filter: SELECTOR` option. The selector can be any CSS selector like an HTML class or an attribute you define for the layout items.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -306,9 +306,9 @@ To reset the filter and target all items, use the `uk-filter-control` attribute 
 
 ***
 
-## Meta Data
+## Metadata
 
-Items can have different meta data for filtering. You just need to define the HTML classes or `data` attributes and create the corresponding CSS selectors for the filter controls. This example uses `data` attributes for the filter instead of HTML classes.
+Items can have different metadata for filtering. You just need to define the HTML classes or `data` attributes and create the corresponding CSS selectors for the filter controls. This example uses `data` attributes for the filter instead of HTML classes.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -380,7 +380,7 @@ Items can have different meta data for filtering. You just need to define the HT
 
 ## Multiple Filters
 
-Define different types of meta data and add any number of controls to filter them. The filter controls are exclusive, meaning just one criterion is filtered at a time.
+Define different types of metadata and add any number of controls to filter them. The filter controls are exclusive, meaning just one criterion is filtered at a time.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -507,7 +507,7 @@ Define different types of meta data and add any number of controls to filter the
 
 ## Groups
 
-To filter items by multiple criteria at the same time, the filter controls need to be grouped. Just add the `group: NAME` option to the `uk-filter-control` attribute and define group names for the meta data.
+To filter items by multiple criteria at the same time, the filter controls need to be grouped. Just add the `group: NAME` option to the `uk-filter-control` attribute and define group names for the metadata.
 
 ```html
 <div uk-filter="target: .js-filter">
@@ -636,7 +636,7 @@ To filter items by multiple criteria at the same time, the filter controls need 
 
 ## Sorting
 
-To sort items alphanumerically, just add the `sort: ATTRIBUTE` option to the `uk-filter-control` attribute and define the meta data attribute by which the items should be sorted. By default, items are sorted in ascending order. Add the `order: desc` to sort items in descending order.
+To sort items alphanumerically, just add the `sort: ATTRIBUTE` option to the `uk-filter-control` attribute and define the metadata attribute by which the items should be sorted. By default, items are sorted in ascending order. Add the `order: desc` to sort items in descending order.
 
 ```html
 <div uk-filter="target: .js-filter">
