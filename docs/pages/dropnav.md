@@ -478,7 +478,7 @@ The Dropnav component can be accessed through keyboard using the following keys.
 - The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus inside or outside the dropnav. 
 - The <kbd>left/right arrow</kbd> keys navigate through the dropnav items. In hover mode the dropdown will open automatically. If the focus is on the last item, it moves to the first item. 
 - The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown of the focused dropnav item. 
-- The <kbd>up/down arrow</kbd> keys navigates through the nav items in a dropdown. If the focus is on the last item, it move to the first item.
+- The <kbd>up/down arrow</kbd> keys navigates through the nav items in a dropdown. If the focus is on the last item, it moves to the first item.
 - The <kbd>esc</kbd> key closes any dropdown even if focus has moved to another element.
 
 ### Internationalization

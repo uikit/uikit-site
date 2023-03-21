@@ -380,7 +380,7 @@ Items can have different meta data for filtering. You just need to define the HT
 
 ## Multiple Filters
 
-Define different types of meta data and add any number of controls to filter them. The filter controls are exclusive, meaning just one criteria is filtered at a time.
+Define different types of meta data and add any number of controls to filter them. The filter controls are exclusive, meaning just one criterion is filtered at a time.
 
 ```html
 <div uk-filter="target: .js-filter">

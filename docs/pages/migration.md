@@ -55,7 +55,7 @@ The `boundary-align` option is also removed. Search for `boundary: SELECTOR` in 
 | ------------------------------------------ | ------------------ |
 | `boundary: SELECTOR; boundary-align: true` | `target: SELECTOR` |
 
-The `flip` option is split into two options `flip` and `shift`. Update the options as follow.
+The `flip` option is split into two options `flip` and `shift`. Update the options as follows.
 
 | Option        | Replace with                |
 | ------------- | --------------------------- |

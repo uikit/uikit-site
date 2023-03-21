@@ -445,7 +445,7 @@ To change toggle icon from a menu icon to a close icon with a smooth animation, 
 
 ## Dropdowns
 
-A navbar can contain a dropdown from the [Dropdown component](dropdown.md). Just add the `.uk-navbar-dropdown` modifier to the dropdown so it fits perfectly into the navbar styling. Add the `.uk-navbar-dropdown-nav` class to navs inside the dropdown.
+A navbar can contain a dropdown from the [Dropdown component](dropdown.md). Just add the `.uk-navbar-dropdown` modifier to the dropdown, so it fits perfectly into the navbar styling. Add the `.uk-navbar-dropdown-nav` class to navs inside the dropdown.
 
 ```html
 <ul class="uk-navbar-nav">
@@ -1279,7 +1279,7 @@ The Navbar component can be accessed through keyboard using the following keys.
 - The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus inside or outside the navbar. 
 - The <kbd>left/right arrow</kbd> keys navigate through the navbar items. In hover mode the dropdown will open automatically. If the focus is on the last item, it moves to the first item. 
 - The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown of the focused navbar item. 
-- The <kbd>up/down arrow</kbd> keys navigates through the nav items in a dropdown. If the focus is on the last item, it move to the first item.
+- The <kbd>up/down arrow</kbd> keys navigates through the nav items in a dropdown. If the focus is on the last item, it moves to the first item.
 - The <kbd>esc</kbd> key closes any dropdown even if focus has moved to another element.
 
 ### Internationalization

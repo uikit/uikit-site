@@ -110,7 +110,7 @@ Add the `flip: true` parameter to the `uk-offcanvas` attribute to adjust its ali
 
 ## Animation modes
 
-By default, the off-canvas slides in. But you can actually choose between different animation modes for the off-canvas' entrance. Just add one of the following attributes.
+By default, the off-canvas slides in. But you can actually choose between different animation modes for the off-canvas's entrance. Just add one of the following attributes.
 
 | Parameter      | Description                                                                   |
 |----------------|-------------------------------------------------------------------------------|

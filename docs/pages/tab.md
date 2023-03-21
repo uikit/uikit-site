@@ -245,7 +245,7 @@ The Tab component adheres to the [Tab WAI-ARIA design pattern](https://www.w3.or
 The tab navigation can be accessed through keyboard using the following keys.
 
 - The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus on the active tab in the tab navigation. If the focus already is on the active tab, the focus will move to the next element outside the tab navigation. 
-- The <kbd>left/right arrow</kbd> or <kbd>up/down arrow</kbd> keys, depending on the orientation, navigate through the tabs. If the focus is on the last tab, it move to the first tab.  
+- The <kbd>left/right arrow</kbd> or <kbd>up/down arrow</kbd> keys, depending on the orientation, navigate through the tabs. If the focus is on the last tab, it moves to the first tab.  
 - The <kbd>enter</kbd> or <kbd>space</kbd> keys activate the corresponding content item of the focused tab.
 - The <kbd>home</kbd> or <kbd>end</kbd> keys move the focus to the first or last tab.
 

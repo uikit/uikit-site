@@ -1085,7 +1085,7 @@ The previous/next navigation adheres to the [button pattern](https://www.w3.org/
 Autoplay stops when any element in the Slider component receives focus. The tab navigation can be accessed through keyboard using the following keys.
 
 - The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus on the active tab in the tab navigation. If the focus already is on the active tab, the focus will move to the next element outside the tab navigation. 
-- The <kbd>left/right arrow</kbd> or <kbd>right/down arrow</kbd> keys, depending on the orientation, navigate through the tabs. The corresponding slide will get active automatically. If the focus is on the last tab, it move to the first tab. 
+- The <kbd>left/right arrow</kbd> or <kbd>right/down arrow</kbd> keys, depending on the orientation, navigate through the tabs. The corresponding slide will get active automatically. If the focus is on the last tab, it moves to the first tab. 
 - The <kbd>home</kbd> or <kbd>end</kbd> keys move the focus to the first or last tab.
 
 ### Internationalization
