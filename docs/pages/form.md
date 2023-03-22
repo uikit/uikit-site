@@ -429,6 +429,8 @@ Use a button or text as a file input.
 </form>
 ```
 
+**Note** The hover and focus state for `uk-form-custom` are not styled by default, but you could use the adjacent sibling selector to do so.
+
 ***
 
 ### Select
