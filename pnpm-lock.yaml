@@ -17,7 +17,7 @@ specifiers:
   prettier-plugin-svelte: ^2.9.0
   svelte: ^3.56.0
   symlink-dir: ^5.1.1
-  uikit: 3.16.10
+  uikit: 3.16.11
   vite: ^4.2.1
 
 devDependencies:
@@ -37,7 +37,7 @@ devDependencies:
   prettier-plugin-svelte: 2.9.0_qxqp5gy6svdre77bij4htbymji
   svelte: 3.56.0
   symlink-dir: 5.1.1
-  uikit: 3.16.10
+  uikit: 3.16.11
   vite: 4.2.1_less@4.1.3
 
 packages:
@@ -1858,8 +1858,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /uikit/3.16.10:
-    resolution: {integrity: sha512-nR1CShw6ON+yZTUrABUITffP6KWUyX2ce3f41g2qNXYZkVqTdjV/PeGIrZptPvdbKMea/tXomPX8o2FV3oYFZw==}
+  /uikit/3.16.11:
+    resolution: {integrity: sha512-5Mb+sTIcZ/rjCaRbDvC65MpDNMY6F95M3cywbeTYTcV66RkPTHIAfdLDjrZ0NA4njFSc7mZ7BBtqftVoUPjoWQ==}
     dev: true
 
   /undici/5.20.0:
