@@ -21,6 +21,12 @@
     {/if}
 </svelte:head>
 
+<div class="uk-hidden-visually uk-notification uk-notification-top-left uk-width-auto">
+    <div class="uk-notification-message">
+        <a href="#tm-main">Skip to main content</a>
+    </div>
+</div>
+
 <slot />
 
 <Offcanvas navigation={data.navigation} />

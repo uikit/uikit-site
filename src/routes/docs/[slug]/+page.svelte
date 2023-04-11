@@ -37,7 +37,7 @@
     {/each}
 </div>
 
-<div class="tm-main uk-section uk-section-default">
+<div id="tm-main" class="tm-main uk-section uk-section-default">
     <div class="uk-container uk-container-small uk-position-relative">
         {@html data.doc.content}
 
