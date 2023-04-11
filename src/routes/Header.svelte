@@ -27,13 +27,11 @@
                     />
                     UIkit
                 </a>
-                <ul class="uk-navbar-nav">
-                    <li>
-                        <Algolia />
-                    </li>
-                </ul>
             </div>
             <div class="uk-navbar-right">
+                <div class="uk-navbar-item">
+                    <Algolia />
+                </div>
                 <ul class="uk-navbar-nav uk-visible@m">
                     <li class:uk-active={$page.url.pathname === `${base}/pro`}>
                         <a
