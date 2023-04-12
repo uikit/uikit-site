@@ -193,7 +193,7 @@ The Primary and Hero classes in the [Heading component](heading.md) are deprecat
 
 ## Migration from UIkit 2 to 3
 
-Uikit 3 offers a migration tool that runs in your browser and lists all necessary changes from an existing Uikit 2 site. Two options are available to run the tool: Via a bookmark or by including a single JavaScript file. The necessary migration changes are then listed in your browser's console.
+Uikit 3 offers a migration tool that runs in your browser and lists all necessary changes from an existing <a href="https://getuikit.com/v2/">Uikit 2 site</a>. Two options are available to run the tool: Via a bookmark or by including a single JavaScript file. The necessary migration changes are then listed in your browser's console.
 
 ### Browser bookmark
 

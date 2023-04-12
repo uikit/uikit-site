@@ -89,11 +89,6 @@
                     >
                 </li>
             </ul>
-
-            <a
-                class="uk-button uk-button-default tm-button-default uk-position-center-right uk-position-medium uk-visible@m"
-                href="https://getuikit.com/v2/">UIkit 2 <span uk-icon="arrow-right" /></a
-            >
         </div>
     </div>
 </div>

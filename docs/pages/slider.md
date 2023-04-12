@@ -1044,7 +1044,7 @@ UIkit.slider(element).show(index);
 
 Shows the slider item.
 
-#### startAutoplay
+#### StartAutoplay
 
 ```js
 UIkit.slider(element).startAutoplay();
@@ -1052,7 +1052,7 @@ UIkit.slider(element).startAutoplay();
 
 Starts the slider autoplay.
 
-#### stopAutoplay
+#### StopAutoplay
 
 ```js
 UIkit.slider(element).stopAutoplay();
