@@ -12,7 +12,7 @@
     "devDependencies": {
         "@docsearch/css": "^3.3.3",
         "@docsearch/js": "^3.3.3",
-        "@sveltejs/adapter-static": "2.0.1",
+        "@sveltejs/adapter-static": "2.0.2",
         "@sveltejs/kit": "^1.8.5",
         "clipboard": "2.0.11",
         "eslint": "^8.36.0",
