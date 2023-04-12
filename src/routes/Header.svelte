@@ -1,6 +1,7 @@
 <script>
     import { page } from '$app/stores';
     import { assets, base } from '$app/paths';
+    import Algolia from './Algolia.svelte';
 </script>
 
 <div
@@ -28,6 +29,9 @@
                 </a>
             </div>
             <div class="uk-navbar-right">
+                <div class="uk-navbar-item">
+                    <Algolia />
+                </div>
                 <ul class="uk-navbar-nav uk-visible@m">
                     <li class:uk-active={$page.url.pathname === `${base}/pro`}>
                         <a
