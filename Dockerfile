@@ -16,8 +16,8 @@ RUN pnpm install
 WORKDIR /app
 COPY . .
 RUN pnpm compile && \
-    pnpm build && \
-    rm -rf ./build/assets/uikit/node_modules/
+    rm -rf ./build/assets/uikit/node_modules/ && \
+    pnpm build
 
 # build uikit v2
 FROM node:18 as build-v2
