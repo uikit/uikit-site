@@ -4,7 +4,7 @@
 
 ## Usage
 
-To apply this component, add the `uk-countdown` attribute to a container element and define a date when the countdown should expire. Just add `date: YYYY-MM-DDThh:mm:ssTZD` option to the attribute, using the [ISO 8601 format](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#ECMAScript_5_ISO-8601_format_support), e.g. `2017-12-04T22:00:00+00:00` (UTC time).
+To apply this component, add the `uk-countdown` attribute to a container element and define a date when the countdown should expire. Just add `date: YYYY-MM-DDThh:mm:ssTZD` option to the attribute, using the [ISO 8601 format](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#ECMAScript_5_ISO-8601_format_support), e.g. `{%isodate%}` (UTC time).
 
 Add the following classes to child elements to apply the necessary functionality and styling.
 
@@ -166,3 +166,7 @@ Stops the countdown.
 The Countdown component automatically sets the appropriate WAI-ARIA roles, states and properties.
 
 - The *container* element has the `timer` role.
+
+<script>
+    UIkit.util.attr(UIkit.util.$$('[uk-countdown]'), 'date', Date.now() + 7 * 24 * 60 * 60 * 1000);
+</script>
