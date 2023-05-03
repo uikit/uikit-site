@@ -9,103 +9,63 @@ export async function load({ params }) {
     };
 }
 
-function sluggify(text) {
-    return text
-        .toLowerCase()
-        .trim()
-        .replace(/&amp;| & /g, '-and-')
-        .replace(/&.+?;/g, '')
-        .replace(/[\s\W-]+/g, '-');
-}
-
 async function parse(markdown) {
-    let _id = 0;
-    const renderer = new marked.Renderer();
     const base = new marked.Renderer();
-    const modal = (href, text) => {
-        const slug = `modal-${sluggify(text)}`;
-        return `<a href="#${slug}" uk-toggle><p class="uk-margin-large-bottom"><img src="${href}" alt="${text}"></p></a>
-                <div id="${slug}" class="uk-modal-full" uk-modal>
-                    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle uk-height-viewport">
-                        <button class="uk-modal-close-full" type="button" uk-close></button>
-                        <img src="${href}" alt="${text}">
-                    </div>
-                </div>`;
-    };
-    const example = (code) => {
-        const id = 'code-example-' + _id++;
-
-        return `<div class="uk-position-relative uk-margin-medium js-example">
-
-                    <ul uk-tab="swiping: false">
-                        <li><a href="#">Preview</a></li>
-                        <li><a href="#">Markup</a></li>
-                    </ul>
-
-                    <ul class="uk-switcher uk-margin">
-                        <li>${code}</li>
-                        <li><pre><code id="${id}">${
-            hljs.highlightAuto(code).value
-        }</code></pre></li>
-                    </ul>
-
-                    <div class="uk-position-top-right uk-margin-small-top">
-                        <ul class="uk-iconnav">
-                            <li><a href class="js-copy" uk-tooltip="Copy to Clipboard" rel="#${id}" role="button" aria-label="Copy to Clipboard"><img class="uk-icon" src="../images/icon-clipboard.svg" uk-svg></a></li>
-                            <li><a href class="js-codepen" uk-tooltip="Edit on Codepen" rel="#${id}" aria-label="Edit on Codepen"><img class="uk-icon" src="../images/icon-flask.svg" uk-svg></a></li>
-                        </ul>
-                    </div>
-                </div>`;
-    };
-
-    renderer.strong = (text) =>
-        text === 'Note' ? `<span class="uk-label">${text}</span>` : `<strong>${text}</strong>`;
-    renderer.list = (text) => `<ul class="uk-list uk-list-disc">${text}</ul>`;
-    renderer.image = (href, title, text) =>
-        href.match(/modal$/) ? modal(href, text) : base.image(href, title, text);
-    renderer.link = (href, title, text) =>
-        href.match(/\.md/)
-            ? base.link(href.replace(/(.*?).md(.*)/, '/docs/$1$2'), title, text)
-            : base.link(href, title, text);
-    renderer.code = (code, lang) => {
-        return lang === 'example'
-            ? example(code)
-            : `<div class="uk-margin-medium"><pre><code>${
-                  hljs.highlightAuto(code).value
-              }</code></pre></div>`;
-    };
-    renderer.hr = () => '<hr class="uk-margin-large">';
-    renderer.table = (header, body) =>
-        `<div class="uk-overflow-auto"><table class="uk-table uk-table-divider"><thead>${header}</thead><tbody>${body}</tbody></table></div>`;
+    const slugger = new marked.Slugger();
 
     let pageTitle;
     let ids = [];
-    let found = new Set();
-    renderer.heading = (text, level) => {
-        if (level === 1) {
-            pageTitle = text;
-            return `<h1>${text}</h1>`;
-        }
 
-        const title = text.replaceAll(/<(\w+)>(.*?)<\/\1>/g, '$2');
-        let id = sluggify(title);
+    const renderer = {
+        strong: (text) =>
+            text === 'Note' ? `<span class="uk-label">${text}</span>` : `<strong>${text}</strong>`,
 
-        while (found.has(id)) {
-            id += '-2';
-        }
+        list: (text) => `<ul class="uk-list uk-list-disc">${text}</ul>`,
 
-        found.add(id);
-        if (level === 2) {
-            ids.push({ id, title });
-        }
+        image: (href, title, text) =>
+            href.match(/modal$/)
+                ? modal(href, text, slugger.slug('modal'))
+                : base.image(href, title, text),
 
-        return `<h${level} id="${id}" class="uk-h${
-            level + 1
-        } tm-heading-fragment"><a href="#${id}">${text}</a></h${level}>`;
+        link: (href, title, text) =>
+            href.match(/\.md/)
+                ? base.link(href.replace(/(.*?).md(.*)/, '/docs/$1$2'), title, text)
+                : base.link(href, title, text),
+
+        code: (code, lang) =>
+            lang === 'example'
+                ? example(code, slugger.slug('code-example'))
+                : `<div class="uk-margin-medium"><pre><code>${
+                      hljs.highlightAuto(code).value
+                  }</code></pre></div>`,
+
+        hr: () => '<hr class="uk-margin-large">',
+
+        table: (header, body) =>
+            `<div class="uk-overflow-auto"><table class="uk-table uk-table-divider"><thead>${header}</thead><tbody>${body}</tbody></table></div>`,
+
+        heading(text, level) {
+            if (level === 1) {
+                pageTitle = text;
+                return `<h1>${text}</h1>`;
+            }
+
+            const title = text.replaceAll(/<(\w+)>(.*?)<\/\1>/g, '$2');
+            let id = slugger.slug(title);
+
+            if (level === 2) {
+                ids.push({ id, title });
+            }
+
+            return `<h${level} id="${id}" class="uk-h${
+                level + 1
+            } tm-heading-fragment"><a href="#${id}">${text}</a></h${level}>`;
+        },
     };
 
+    marked.use({ renderer });
+
     let content = await marked.parse(markdown, {
-        renderer,
         async: true,
         mangle: false,
         langPrefix: false,
@@ -120,6 +80,39 @@ async function parse(markdown) {
     }
 
     return { ids, content, title: pageTitle };
+}
+
+function modal(href, text, id) {
+    return `<a href="#${id}" uk-toggle><p class="uk-margin-large-bottom"><img src="${href}" alt="${text}"></p></a>
+            <div id="${id}" class="uk-modal-full" uk-modal>
+                <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle uk-height-viewport">
+                    <button class="uk-modal-close-full" type="button" uk-close></button>
+                    <img src="${href}" alt="${text}">
+                </div>
+            </div>`;
+}
+
+function example(code, id) {
+    return `<div class="uk-position-relative uk-margin-medium js-example">
+
+                <ul uk-tab="swiping: false">
+                    <li><a href="#">Preview</a></li>
+                    <li><a href="#">Markup</a></li>
+                </ul>
+
+                <ul class="uk-switcher uk-margin">
+                    <li>${code}</li>
+                    <li><pre><code id="${id}">${hljs.highlightAuto(code).value}</code></pre></li>
+                </ul>
+
+                <div class="uk-position-top-right uk-margin-small-top">
+                    <ul class="uk-iconnav">
+                        <li><a href class="js-copy" uk-tooltip="Copy to Clipboard" rel="#${id}" role="button" aria-label="Copy to Clipboard"><img class="uk-icon" src="../images/icon-clipboard.svg" uk-svg></a></li>
+                        <li><a href class="js-codepen" uk-tooltip="Edit on Codepen" rel="#${id}" aria-label="Edit on Codepen"><img class="uk-icon" src="../images/icon-flask.svg" uk-svg></a></li>
+                    </ul>
+                </div>
+                
+            </div>`;
 }
 
 async function exists(file) {

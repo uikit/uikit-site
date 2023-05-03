@@ -9,52 +9,41 @@ export async function load() {
     };
 }
 
-function parse(markdown) {
+const labels = {
+    Added: 'success',
+    Removed: 'warning',
+    Deprecated: 'warning',
+    Fixed: 'danger',
+    Security: 'danger',
+};
+
+async function parse(markdown) {
     let section;
-    const renderer = new marked.Renderer();
+    const renderer = {
+        list: (text) => `<ul class="uk-list">${text}</ul>`,
 
-    renderer.list = (text) => `<ul class="uk-list">${text}</ul>`;
+        listitem: (text) => `<li class="uk-flex uk-flex-top">
+                    <span class="uk-label uk-label-${labels[section]} uk-margin-right uk-text-center uk-width-small tm-label-changelog uk-flex-none">${section}</span>
+                    <div>${text}</div>
+                </li>`,
 
-    renderer.listitem = function (text) {
-        let label = '';
+        heading(text, level) {
+            text = text.replace(/\(.*?\)/, '<span class="uk-text-muted">$&</span>');
 
-        switch (section) {
-            case 'Added':
-                label = 'uk-label-success';
-                break;
+            if (level === 2) {
+                return `<h${level} class="uk-h3">${text}</h${level}>`;
+            }
 
-            case 'Removed':
-            case 'Deprecated':
-                label = 'uk-label-warning';
-                break;
+            if (level === 3) {
+                section = text;
+            }
 
-            case 'Fixed':
-            case 'Security':
-                label = 'uk-label-danger';
-        }
-
-        return `<li class="uk-flex uk-flex-top">
-                                <span class="uk-label ${label} uk-margin-right uk-text-center uk-width-small tm-label-changelog uk-flex-none">${section}</span>
-                                <div>${text}</div>
-                            </li>`;
+            return '';
+        },
     };
 
-    renderer.heading = (text, level) => {
-        text = text.replace(/\(.*?\)/, '<span class="uk-text-muted">$&</span>');
-
-        if (level === 2) {
-            return '<h' + level + ' class="uk-h3">' + text + '</h' + level + '>';
-        }
-
-        if (level === 3) {
-            section = text;
-        }
-
-        return '';
-    };
-
+    marked.use({ renderer });
     return marked.parse(markdown, {
-        renderer,
         async: true,
         mangle: false,
         langPrefix: false,
