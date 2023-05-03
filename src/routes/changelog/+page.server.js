@@ -3,7 +3,7 @@ import { marked } from 'marked';
 
 export async function load() {
     return {
-        changelog: parse(
+        changelog: await parse(
             await readFile('./static/assets/uikit/CHANGELOG.md', { encoding: 'utf8' })
         ),
     };
@@ -53,5 +53,11 @@ function parse(markdown) {
         return '';
     };
 
-    return marked(markdown, { renderer });
+    return marked.parse(markdown, {
+        renderer,
+        async: true,
+        mangle: false,
+        langPrefix: false,
+        headerIds: false,
+    });
 }

@@ -5,7 +5,7 @@ import { marked } from 'marked';
 export async function load({ params }) {
     return {
         test: await exists(`./static/assets/uikit/tests/${params.slug}.html`),
-        doc: parse(await readFile(`./docs/pages/${params.slug}.md`, { encoding: 'utf8' })),
+        doc: await parse(await readFile(`./docs/pages/${params.slug}.md`, { encoding: 'utf8' })),
     };
 }
 
@@ -18,10 +18,10 @@ function sluggify(text) {
         .replace(/[\s\W-]+/g, '-');
 }
 
-function parse(markdown) {
+async function parse(markdown) {
     let _id = 0;
-    const renderer = new marked.Renderer({ langPrefix: 'lang-' });
-    const base = new marked.Renderer({ langPrefix: 'lang-' });
+    const renderer = new marked.Renderer();
+    const base = new marked.Renderer();
     const modal = (href, text) => {
         const slug = `modal-${sluggify(text)}`;
         return `<a href="#${slug}" uk-toggle><p class="uk-margin-large-bottom"><img src="${href}" alt="${text}"></p></a>
@@ -44,7 +44,7 @@ function parse(markdown) {
 
                     <ul class="uk-switcher uk-margin">
                         <li>${code}</li>
-                        <li><pre><code id="${id}" class="lang-html">${
+                        <li><pre><code id="${id}">${
             hljs.highlightAuto(code).value
         }</code></pre></li>
                     </ul>
@@ -104,22 +104,22 @@ function parse(markdown) {
         } tm-heading-fragment"><a href="#${id}">${text}</a></h${level}>`;
     };
 
-    return marked(markdown, { renderer }, (err, content) => {
-        if (err) {
-            throw err;
-        }
-
-        if (content.includes('{%isodate%}')) {
-            content = content.replace(
-                /{%isodate%}/g,
-                new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
-                    .toISOString()
-                    .replace(/\.\d+Z/, '+00:00')
-            );
-        }
-
-        return { ids, content, title: pageTitle };
+    let content = await marked.parse(markdown, {
+        renderer,
+        async: true,
+        mangle: false,
+        langPrefix: false,
+        headerIds: false,
     });
+
+    if (content.includes('{%isodate%}')) {
+        content = content.replace(
+            /{%isodate%}/g,
+            new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().replace(/\.\d+Z/, '+00:00')
+        );
+    }
+
+    return { ids, content, title: pageTitle };
 }
 
 async function exists(file) {
