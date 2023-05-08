@@ -46,7 +46,6 @@ async function parse(markdown) {
     return marked.parse(markdown, {
         async: true,
         mangle: false,
-        langPrefix: false,
         headerIds: false,
     });
 }

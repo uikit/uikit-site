@@ -68,7 +68,6 @@ async function parse(markdown) {
     let content = await marked.parse(markdown, {
         async: true,
         mangle: false,
-        langPrefix: false,
         headerIds: false,
     });
 
