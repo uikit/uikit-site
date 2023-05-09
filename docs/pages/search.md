@@ -321,7 +321,7 @@ Set the appropriate WAI-ARIA roles, states and properties to the Search componen
 
 The Search component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
 
-| Key           | Default         | Description                               |
-|---------------|-----------------|-------------------------------------------|
-| `labelToggle` | `Open Search`   | `aria-label` attribute for toggle button. |
-| `labelSubmit` | `Submit Search` | `aria-label` attribute for submit button. |
+| Key      | Default         | Description                               |
+|----------|-----------------|-------------------------------------------|
+| `toggle` | `Open Search`   | `aria-label` attribute for toggle button. |
+| `submit` | `Submit Search` | `aria-label` attribute for submit button. |
