@@ -316,3 +316,12 @@ Set the appropriate WAI-ARIA roles, states and properties to the Search componen
 ```html
 <input class="uk-search-input" type="search" aria-label="…">
 ```
+
+### Internationalization
+
+The Search component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
+
+| Key           | Default         | Description                               |
+|---------------|-----------------|-------------------------------------------|
+| `labelToggle` | `Open Search`   | `aria-label` attribute for toggle button. |
+| `labelSubmit` | `Submit Search` | `aria-label` attribute for submit button. |
