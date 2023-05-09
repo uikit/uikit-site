@@ -28,7 +28,7 @@
         "prettier-plugin-svelte": "^2.10.0",
         "svelte": "^3.59.0",
         "symlink-dir": "^5.1.1",
-        "uikit": "3.16.16",
+        "uikit": "3.16.17",
         "vite": "^4.3.5"
     },
     "pnpm": {
