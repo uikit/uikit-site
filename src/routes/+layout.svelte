@@ -15,7 +15,7 @@
     {#if !devMode}
         <script
             src="{assets}/analytics.js?{PUBLIC_CACHE}"
-            onload={`analytics('UA-42150424-1', { anonymize_ip: true })`}
+            onload={`analytics('G-CFB78X3F60', { anonymize_ip: true })`}
             defer
         ></script>
     {/if}
