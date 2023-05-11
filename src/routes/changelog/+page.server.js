@@ -42,8 +42,8 @@ async function parse(markdown) {
         },
     };
 
-    marked.use({ renderer });
     return marked.parse(markdown, {
+        renderer: Object.assign(new marked.Renderer(), renderer),
         async: true,
         mangle: false,
         headerIds: false,
