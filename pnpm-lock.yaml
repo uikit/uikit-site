@@ -56,8 +56,8 @@ devDependencies:
     specifier: ^5.1.1
     version: 5.1.1
   uikit:
-    specifier: 3.16.18
-    version: 3.16.18
+    specifier: 3.16.19
+    version: 3.16.19
   vite:
     specifier: ^4.3.8
     version: 4.3.8(less@4.1.3)
@@ -2019,8 +2019,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /uikit@3.16.18:
-    resolution: {integrity: sha512-hS+tkZ0zINrt5w9p4rF/PSlja2bSgjDyKs02xge1BC7r5zphBwCVFA4Fj+lZPjYXe1BRhtUtFeQ2IPTWPOKnlg==}
+  /uikit@3.16.19:
+    resolution: {integrity: sha512-o3q00RX95tpPJrmfghdPJ9xC5FMgLABaqCw2iGXBK55ovqkvtRx4/1FycfaTQuB6Y26RAN/kFpWSEigcBIa3kg==}
     dev: true
 
   /undici@5.22.1:
