@@ -23,11 +23,11 @@
             <li class="uk-nav-header">
                 {category}
             </li>
-            {#each Object.entries(pages) as [label, p]}
-                <li class:uk-active={$page.url.pathname === `${base}/docs/${p}`}>
+            {#each Object.entries(pages) as [label, slug]}
+                <li class:uk-active={$page.params.slug === slug}>
                     <a
-                        href="{base}/docs/{p}"
-                        aria-current={$page.url.pathname === `${base}/docs/${p}`
+                        href="{base}/docs/{slug}"
+                        aria-current={$page.params.slug === slug
                             ? 'page'
                             : undefined}>{label}</a
                     >

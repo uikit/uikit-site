@@ -1,6 +1,6 @@
 <script>
     import Offcanvas from './Offcanvas.svelte';
-    import { assets, base } from '$app/paths';
+    import { assets } from '$app/paths';
     import { page } from '$app/stores';
 
     import { PUBLIC_CACHE } from '$env/static/public';
@@ -31,7 +31,7 @@
 
 <Offcanvas navigation={data.navigation} />
 
-{#if !$page.url.pathname.startsWith(`${base}/docs`)}
+{#if !$page.route.id?.startsWith('/docs')}
     <div>
         <script>
             sessionStorage.setItem('scroll', 0);

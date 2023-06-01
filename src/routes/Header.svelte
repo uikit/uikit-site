@@ -13,10 +13,10 @@
             <div class="uk-navbar-left">
                 <a
                     class="uk-navbar-item uk-logo"
-                    class:uk-active={$page.url.pathname === `${base}/`}
+                    class:uk-active={$page.route.id === '/'}
                     href="{base}/"
                     aria-label="Back to Home"
-                    aria-current={$page.url.pathname === `${base}/` ? 'page' : undefined}
+                    aria-current={$page.route.id === '/' ? 'page' : undefined}
                 >
                     <img
                         src="{assets}/images/uikit-logo.svg"
@@ -33,26 +33,26 @@
                     <Algolia />
                 </div>
                 <ul class="uk-navbar-nav uk-visible@m">
-                    <li class:uk-active={$page.url.pathname === `${base}/pro`}>
+                    <li class:uk-active={$page.route.id === '/pro'}>
                         <a
                             href="{base}/pro"
-                            aria-current={$page.url.pathname === `${base}/pro` ? 'page' : undefined}
+                            aria-current={$page.route.id === '/pro' ? 'page' : undefined}
                         >
                             Pro
                         </a>
                     </li>
-                    <li class:uk-active={$page.url.pathname.startsWith(`${base}/docs`)}>
+                    <li class:uk-active={$page.route.id?.startsWith('/docs')}>
                         <a
                             href="{base}/docs/introduction"
-                            aria-current={$page.url.pathname.startsWith(`${base}/docs`)
+                            aria-current={$page.route.id?.startsWith('/docs')
                                 ? 'page'
                                 : undefined}>Documentation</a
                         >
                     </li>
-                    <li class:uk-active={$page.url.pathname === `${base}/changelog`}>
+                    <li class:uk-active={$page.route.id === '/changelog'}>
                         <a
                             href="{base}/changelog"
-                            aria-current={$page.url.pathname === `${base}/changelog`
+                            aria-current={$page.route.id === '/changelog'
                                 ? 'page'
                                 : undefined}>Changelog</a
                         >
@@ -61,10 +61,10 @@
 
                 <div class="uk-navbar-item uk-visible@m">
                     <a
-                        class:uk-active={$page.url.pathname === `${base}/download`}
+                        class:uk-active={$page.route.id === '/download'}
                         class="uk-button uk-button-default tm-button-default uk-icon"
                         href="{base}/download"
-                        aria-current={$page.url.pathname === `${base}/download`
+                        aria-current={$page.route.id === '/download'
                             ? 'page'
                             : undefined}
                     >
