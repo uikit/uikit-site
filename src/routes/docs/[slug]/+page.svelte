@@ -29,7 +29,7 @@
                         href="{base}/docs/{slug}"
                         aria-current={$page.params.slug === slug
                             ? 'page'
-                            : undefined}>{label}</a
+                            : null}>{label}</a
                     >
                 </li>
             {/each}

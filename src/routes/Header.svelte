@@ -16,7 +16,7 @@
                     class:uk-active={$page.route.id === '/'}
                     href="{base}/"
                     aria-label="Back to Home"
-                    aria-current={$page.route.id === '/' ? 'page' : undefined}
+                    aria-current={$page.route.id === '/' ? 'page' : null}
                 >
                     <img
                         src="{assets}/images/uikit-logo.svg"
@@ -36,7 +36,7 @@
                     <li class:uk-active={$page.route.id === '/pro'}>
                         <a
                             href="{base}/pro"
-                            aria-current={$page.route.id === '/pro' ? 'page' : undefined}
+                            aria-current={$page.route.id === '/pro' ? 'page' : null}
                         >
                             Pro
                         </a>
@@ -46,7 +46,7 @@
                             href="{base}/docs/introduction"
                             aria-current={$page.route.id?.startsWith('/docs')
                                 ? 'page'
-                                : undefined}>Documentation</a
+                                : null}>Documentation</a
                         >
                     </li>
                     <li class:uk-active={$page.route.id === '/changelog'}>
@@ -54,7 +54,7 @@
                             href="{base}/changelog"
                             aria-current={$page.route.id === '/changelog'
                                 ? 'page'
-                                : undefined}>Changelog</a
+                                : null}>Changelog</a
                         >
                     </li>
                 </ul>
@@ -66,7 +66,7 @@
                         href="{base}/download"
                         aria-current={$page.route.id === '/download'
                             ? 'page'
-                            : undefined}
+                            : null}
                     >
                         Download <canvas uk-icon="download" width="20" height="20" />
                     </a>
