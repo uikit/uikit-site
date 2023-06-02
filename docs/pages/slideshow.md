@@ -735,7 +735,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `finite`            | Boolean         | `false` | Disable infinite sliding.                                             |
 | `pause-on-hover`    | Boolean         | `true`  | Pause autoplay mode on hover.                                         |
 | `index`             | Number          | `0`     | Slideshow item to show. 0 based index.                                |
-| `velocity`          | Number          | `1`     | The animation velocity (pixel/ms).                                    |
+| `velocity`          | Number          | `1`     | The animation velocity (pixel/ms), floating point.                    |
 | `ratio`             | Boolean, String | `16:9`  | The ratio. (`false` prevents height adjustment)                       |
 | `min-height`        | Boolean, Number | `false` | The minimum height.                                                   |
 | `max-height`        | Boolean, Number | `false` | The maximum height.                                                   |
