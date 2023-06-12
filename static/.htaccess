@@ -39,7 +39,7 @@ DirectorySlash Off
 </FilesMatch>
 
 <FilesMatch ".(js|css|ico|svg|jpg|jpeg|bmp|png|gif|webp|woff|woff2)$">
-    Header set Cache-Control "public, max-age=84600"
+    Header set Cache-Control "public, max-age=31536000"
 </FilesMatch>
 
 # Don't show directory listings
