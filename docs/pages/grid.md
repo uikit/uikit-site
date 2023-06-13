@@ -41,7 +41,7 @@ To create the grid container, add the `uk-grid` attribute to a `<div>` element. 
 The Grid component comes with a default gap that is decreased automatically from a certain breakpoint usually on a smaller desktop viewport width. To apply a different gap, add one of the following classes.
 
 | Class               | Description                                                                          |
-|---------------------|--------------------------------------------------------------------------------------|
+| ------------------- | ------------------------------------------------------------------------------------ |
 | `.uk-grid-small`    | Add this class to apply a small gap.                                                 |
 | `.uk-grid-medium`   | Add this class to apply a medium gap like the default one, but without a breakpoint. |
 | `.uk-grid-large`    | Add this class to apply a large gap with breakpoints.                                |
@@ -108,7 +108,7 @@ The Grid component comes with a default gap that is decreased automatically from
 To apply a different gap to just the column or row, add one of the following classes.
 
 | Class                                                 | Description                                                                      |
-|-------------------------------------------------------|----------------------------------------------------------------------------------|
+| ----------------------------------------------------- | -------------------------------------------------------------------------------- |
 | `.uk-grid-column-small`<br>`.uk-grid-row-small`       | Add one of these classes to apply a small gap to the column or row.              |
 | `.uk-grid-column-medium`<br>`.uk-grid-row-medium`     | Add one of these classes to apply a medium gap to the column or row.             |
 | `.uk-grid-column-large`<br>`.uk-grid-row-large`       | Add one of these classes to apply a large gap to the column or row.              |
@@ -381,40 +381,47 @@ You can easily combine the grid with the [Flex component](flex.md). That way you
 
 ## Masonry
 
-If grid cells have different heights, a layout free of gaps can be created by adding `masonry: true` to the attribute.
+If grid cells have different heights, set the `masonry` option to either `pack` or `next` to create a layout free of gaps.
+
+
+| Masonry | Description                                                      |
+| ------- | ---------------------------------------------------------------- |
+| `pack`  | Sorts the items to make the column heights as equal as possible. |
+| `next`  | Uses the natural item order.                                     |
+
 
 ```html
-<div uk-grid="masonry: true">…</div>
+<div uk-grid="masonry: pack">…</div>
 ```
 
 ```example
-<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
+<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: pack">
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 100px">Item</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 100px">Item 1</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 130px">Item</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 150px">Item 2</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 150px">Item</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item 3</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 160px">Item</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 120px">Item 4</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 120px">Item</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 180px">Item 5</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 250px">Item 6</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item 7</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 180px">Item</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 210px">Item 8</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 300px">Item 9</div>
     </div>
 </div>
 ```
@@ -436,30 +443,6 @@ To move single columns of a grid at different speeds while scrolling, just add `
 ```html
 <div uk-grid="parallax: 150">…</div>
 ```
-
-This effect can be applied to two types of markup. The following example uses three defined columns with three items each.
-
-```example
-<div class="uk-child-width-expand@s uk-text-center" uk-grid="parallax: 150">
-    <div>
-        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-        <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
-    </div>
-</div>
-```
-
-The parallax effect is also applied if grid columns wrap into the next row, as shown in the next example.
 
 ```example
 <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="parallax: 150">
@@ -502,6 +485,50 @@ The parallax effect is also applied if grid columns wrap into the next row, as s
 </div>
 ```
 
+To adjust the grid parallax duration, set the `parallax-start` and `parallax-end` options. The `parallax-start` option defines when the animation starts. The default value of `0` means that the grid's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the grids's bottom border and the viewport's top border intersect. Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the grid's height. Both options allow basic mathematics operands, `+` and `-`.
+
+```html
+<div uk-grid="parallax: 150; parallax-start: 100%; parallax-end: 100%;">…</div>
+```
+
+If a masonry grid is used and `parallax: true` is added to the attribute, the columns will parallax and end up flushed with one another. The `parallax` option can be set to zero or an additional translation.
+
+```html
+<div uk-grid="parallax: 0; parallax-justify: true; masonry: pack">…</div>
+```
+
+```example
+<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="parallax: 0; parallax-justify: true; masonry: pack">
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 100px">Item 1</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 150px">Item 2</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item 3</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 120px">Item 4</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 180px">Item 5</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 250px">Item 6</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 140px">Item 7</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 210px">Item 8</div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 300px">Item 9</div>
+    </div>
+</div>
+```
+
 **Note** You can view more examples in the [Grid Parallax](../assets/uikit/tests/grid-parallax.html) tests.
 
 ***
@@ -510,12 +537,15 @@ The parallax effect is also applied if grid columns wrap into the next row, as s
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option         | Value   | Default         | Description                                                                                                     |
-|----------------|---------|-----------------|-----------------------------------------------------------------------------------------------------------------|
-| `margin `      | String  | uk-grid-margin  | This class is added to items that break into the next row, typically to create margin to the previous row.      |
-| `first-column` | String  | uk-first-column | This class is added to the first element in each row.                                                           |
-| `masonry`      | Boolean | false           | Enables masonry layout for this grid.                                                                           |
-| `parallax`     | Number  | 0               | Parallax translation value. The value must be a positive integer. Falsy disables the parallax effect (default). |
+| Option             | Value           | Default                 | Description                                                                                                                                                                                         |
+| ------------------ | --------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `margin `          | String          | `uk-grid-margin`        | This class is added to items that break into the next row, typically to create margin to the previous row.                                                                                          |
+| `first-column`     | String          | `uk-first-column`       | This class is added to the first element in each row.                                                                                                                                               |
+| `masonry`          | String, Boolean | `false`, `pack`, `next` | Enables masonry layout for this grid.                                                                                                                                                               |
+| `parallax`         | Number          | `0`                     | Parallax translation value. The value can be in vh, % and px. Falsy disables the parallax effect (default).                                                                                         |
+| `parallax-start`   | Length          | `0`                     | Start offset. The value can be in vh, % and px. It supports basic mathematics operands + and -. The default value of `0` means that the grid's top border and viewport's bottom border intersect.   |
+| `parallax-end`     | Length          | `0`                     | End offset. The value can be in vh, % and px. It supports basic mathematics operands + and -. The default value of `0` means that the grid's bottom border and the viewport's top border intersect. |
+| `parallax-justify` | Boolean         | `false`                 | With parallax enabled, all columns will reach the bottom at the same time.                                                                                                                          |
 
 ***
 
