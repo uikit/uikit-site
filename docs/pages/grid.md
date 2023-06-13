@@ -403,7 +403,7 @@ If grid cells have different heights, set the `masonry` option to either `pack` 
         <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 150px">Item 2</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item 3</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 300px">Item 3</div>
     </div>
     <div>
         <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 120px">Item 4</div>
@@ -421,7 +421,7 @@ If grid cells have different heights, set the `masonry` option to either `pack` 
         <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 210px">Item 8</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 300px">Item 9</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item 9</div>
     </div>
 </div>
 ```
@@ -506,7 +506,7 @@ If a masonry grid is used and `parallax: true` is added to the attribute, the co
         <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 150px">Item 2</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item 3</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 300px">Item 3</div>
     </div>
     <div>
         <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 120px">Item 4</div>
@@ -524,7 +524,7 @@ If a masonry grid is used and `parallax: true` is added to the attribute, the co
         <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 210px">Item 8</div>
     </div>
     <div>
-        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 300px">Item 9</div>
+        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 200px">Item 9</div>
     </div>
 </div>
 ```
