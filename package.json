@@ -10,12 +10,12 @@
     },
     "packageManager": "pnpm@7.29.1",
     "devDependencies": {
-        "@docsearch/css": "^3.3.5",
-        "@docsearch/js": "^3.3.5",
+        "@docsearch/css": "^3.5.0",
+        "@docsearch/js": "^3.5.0",
         "@sveltejs/adapter-static": "2.0.2",
-        "@sveltejs/kit": "^1.18.0",
+        "@sveltejs/kit": "^1.20.2",
         "clipboard": "2.0.11",
-        "eslint": "^8.41.0",
+        "eslint": "^8.42.0",
         "eslint-config-prettier": "^8.8.0",
         "eslint-plugin-svelte3": "^4.0.0",
         "execa": "^7.1.1",
@@ -23,13 +23,13 @@
         "less": "^4.1.3",
         "less-plugin-clean-css": "^1.5.1",
         "make-dir-cli": "^3.0.0",
-        "marked": "^5.0.2",
+        "marked": "^5.1.0",
         "prettier": "^2.8.8",
-        "prettier-plugin-svelte": "^2.10.0",
+        "prettier-plugin-svelte": "^2.10.1",
         "svelte": "^3.59.1",
         "symlink-dir": "^5.1.1",
-        "uikit": "3.16.19",
-        "vite": "^4.3.8"
+        "uikit": "3.16.21",
+        "vite": "^4.3.9"
     },
     "pnpm": {
         "peerDependencyRules": {
