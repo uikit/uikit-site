@@ -10,7 +10,7 @@
     },
     "packageManager": "pnpm@7.29.1",
     "devDependencies": {
-        "@docsearch/css": "^3.5.0",
+        "@docsearch/css": "^3.5.1",
         "@docsearch/js": "^3.5.0",
         "@sveltejs/adapter-static": "2.0.2",
         "@sveltejs/kit": "^1.20.2",
