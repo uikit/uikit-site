@@ -1,22 +1,18 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 devDependencies:
   '@docsearch/css':
     specifier: ^3.5.0
     version: 3.5.0
   '@docsearch/js':
     specifier: ^3.5.0
-    version: 3.5.0(search-insights@2.6.0)
+    version: 3.5.0
   '@sveltejs/adapter-static':
     specifier: 2.0.2
-    version: 2.0.2(@sveltejs/kit@1.20.2)
+    version: 2.0.2(@sveltejs/kit@1.20.3)
   '@sveltejs/kit':
-    specifier: ^1.20.2
-    version: 1.20.2(svelte@3.59.1)(vite@4.3.9)
+    specifier: ^1.20.3
+    version: 1.20.3(svelte@3.59.1)(vite@4.3.9)
   clipboard:
     specifier: 2.0.11
     version: 2.0.11
@@ -68,10 +64,10 @@ devDependencies:
 
 packages:
 
-  /@algolia/autocomplete-core@1.9.2(algoliasearch@4.17.2)(search-insights@2.6.0):
+  /@algolia/autocomplete-core@1.9.2(algoliasearch@4.17.2):
     resolution: {integrity: sha512-hkG80c9kx9ClVAEcUJbTd2ziVC713x9Bji9Ty4XJfKXlxlsx3iXsoNhAwfeR4ulzIUg7OE5gez0UU1zVDdG7kg==}
     dependencies:
-      '@algolia/autocomplete-plugin-algolia-insights': 1.9.2(algoliasearch@4.17.2)(search-insights@2.6.0)
+      '@algolia/autocomplete-plugin-algolia-insights': 1.9.2(algoliasearch@4.17.2)
       '@algolia/autocomplete-shared': 1.9.2(algoliasearch@4.17.2)
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -79,13 +75,12 @@ packages:
       - search-insights
     dev: true
 
-  /@algolia/autocomplete-plugin-algolia-insights@1.9.2(algoliasearch@4.17.2)(search-insights@2.6.0):
+  /@algolia/autocomplete-plugin-algolia-insights@1.9.2(algoliasearch@4.17.2):
     resolution: {integrity: sha512-2LVsf4W66hVHQ3Ua/8k15oPlxjELCztbAkQm/hP42Sw+GLkHAdY1vaVRYziaWq64+Oljfg6FKkZHCdgXH+CGIA==}
     peerDependencies:
       search-insights: '>= 1 < 3'
     dependencies:
       '@algolia/autocomplete-shared': 1.9.2(algoliasearch@4.17.2)
-      search-insights: 2.6.0
     transitivePeerDependencies:
       - '@algolia/client-search'
       - algoliasearch
@@ -231,10 +226,10 @@ packages:
     resolution: {integrity: sha512-Ob5FQLubplcBNihAVtriR59FRBeP8u69F6mu4L4yIr60KfsPc10bOV0DoPErJw0zF9IBN2cNLW9qdmt8zWPxyg==}
     dev: true
 
-  /@docsearch/js@3.5.0(search-insights@2.6.0):
+  /@docsearch/js@3.5.0:
     resolution: {integrity: sha512-WqB+z+zVKSXDkGq028nClT9RvMzfFlemZuIulX5ZwWkdUtl4k7M9cmZA/c6kuZf7FG24XQsMHWuBjeUo9hLRyA==}
     dependencies:
-      '@docsearch/react': 3.5.0(search-insights@2.6.0)
+      '@docsearch/react': 3.5.0
       preact: 10.15.1
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -244,7 +239,7 @@ packages:
       - search-insights
     dev: true
 
-  /@docsearch/react@3.5.0(search-insights@2.6.0):
+  /@docsearch/react@3.5.0:
     resolution: {integrity: sha512-3IG8mmSMzSHNGy2S1VuPyYU9tFCxFpj5Ov8SYwsSHM4yMvFsaO9oFxXocA5lSenliIELhuOuS5+BdxHa/Qlf2A==}
     peerDependencies:
       '@types/react': '>= 16.8.0 < 19.0.0'
@@ -258,7 +253,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      '@algolia/autocomplete-core': 1.9.2(algoliasearch@4.17.2)(search-insights@2.6.0)
+      '@algolia/autocomplete-core': 1.9.2(algoliasearch@4.17.2)
       '@algolia/autocomplete-preset-algolia': 1.9.2(algoliasearch@4.17.2)
       '@docsearch/css': 3.5.0
       algoliasearch: 4.17.2
@@ -551,16 +546,16 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@sveltejs/adapter-static@2.0.2(@sveltejs/kit@1.20.2):
+  /@sveltejs/adapter-static@2.0.2(@sveltejs/kit@1.20.3):
     resolution: {integrity: sha512-9wYtf6s6ew7DHUHMrt55YpD1FgV7oWql2IGsW5BXquLxqcY9vjrqCFo0TzzDpo+ZPZkW/v77k0eOP6tsAb8HmQ==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.20.2(svelte@3.59.1)(vite@4.3.9)
+      '@sveltejs/kit': 1.20.3(svelte@3.59.1)(vite@4.3.9)
     dev: true
 
-  /@sveltejs/kit@1.20.2(svelte@3.59.1)(vite@4.3.9):
-    resolution: {integrity: sha512-MtR1i+HtmYWcRgtubw1GQqT/+CWXL/z24PegE0xYAdObbhdr7YtEfmoe705D/JZMtMmoPXrmSk4W0MfL5A3lYw==}
+  /@sveltejs/kit@1.20.3(svelte@3.59.1)(vite@4.3.9):
+    resolution: {integrity: sha512-lzg+Mp7451jneG/TzSLLsIPXNnceEjioij4d/vlkIqI7sEJTTe0PIV1uMZQW508PvyqQUmnKmpdiRu7fQj2HKg==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -580,7 +575,6 @@ packages:
       set-cookie-parser: 2.6.0
       sirv: 2.0.3
       svelte: 3.59.1
-      tiny-glob: 0.2.9
       undici: 5.22.1
       vite: 4.3.9(less@4.1.3)
     transitivePeerDependencies:
@@ -1199,14 +1193,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
-    dev: true
-
-  /globalyzer@0.1.0:
-    resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
-    dev: true
-
-  /globrex@0.1.2:
-    resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
     dev: true
 
   /good-listener@1.2.2:
@@ -1862,11 +1848,6 @@ packages:
     dev: true
     optional: true
 
-  /search-insights@2.6.0:
-    resolution: {integrity: sha512-vU2/fJ+h/Mkm/DJOe+EaM5cafJv/1rRTZpGJTuFPf/Q5LjzgMDsqPdSaZsAe+GAWHHsfsu+rQSAn6c8IGtBEVw==}
-    engines: {node: '>=8.16.0'}
-    dev: true
-
   /select@1.1.2:
     resolution: {integrity: sha512-OwpTSOfy6xSs1+pwcNrv0RBMOzI39Lp3qQKUTPVVPRjCdNa5JH/oPRiqsesIskK8TVgmRiHwO4KXlV2Li9dANA==}
     dev: true
@@ -2034,13 +2015,6 @@ packages:
     resolution: {integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==}
     dev: true
 
-  /tiny-glob@0.2.9:
-    resolution: {integrity: sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg==}
-    dependencies:
-      globalyzer: 0.1.0
-      globrex: 0.1.2
-    dev: true
-
   /totalist@3.0.1:
     resolution: {integrity: sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==}
     engines: {node: '>=6'}
@@ -2175,3 +2149,7 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
