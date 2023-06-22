@@ -8,8 +8,9 @@ ENV COMMIT_HASH $COMMIT_HASH
 WORKDIR /app
 COPY package.json .
 COPY pnpm-lock.yaml .
-RUN curl -L https://pnpm.js.org/pnpm.js | node - add --global pnpm@7
-RUN pnpm install
+RUN corepack enable && \
+    corepack prepare --activate && \
+    pnpm install
 
 # compile css and uikit tests
 # build static files

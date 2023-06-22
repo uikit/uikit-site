@@ -8,14 +8,14 @@
         "compile-less": "make-dir static/css && lessc less/theme.less > static/css/theme.css --rewrite-urls=all --clean-css",
         "compile-uikit-tests": "cd ./static/assets/uikit && pnpm compile-js tests"
     },
-    "packageManager": "pnpm@7.29.1",
+    "packageManager": "pnpm@8.6.3",
     "devDependencies": {
-        "@docsearch/css": "^3.5.0",
-        "@docsearch/js": "^3.5.0",
+        "@docsearch/css": "^3.5.1",
+        "@docsearch/js": "^3.5.1",
         "@sveltejs/adapter-static": "2.0.2",
-        "@sveltejs/kit": "^1.20.2",
+        "@sveltejs/kit": "^1.20.4",
         "clipboard": "2.0.11",
-        "eslint": "^8.42.0",
+        "eslint": "^8.43.0",
         "eslint-config-prettier": "^8.8.0",
         "eslint-plugin-svelte3": "^4.0.0",
         "execa": "^7.1.1",
@@ -26,7 +26,7 @@
         "marked": "^5.1.0",
         "prettier": "^2.8.8",
         "prettier-plugin-svelte": "^2.10.1",
-        "svelte": "^3.59.1",
+        "svelte": "^3.59.2",
         "symlink-dir": "^5.1.1",
         "uikit": "3.16.21",
         "vite": "^4.3.9"
