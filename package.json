@@ -6,7 +6,9 @@
         "postinstall": "symlink-dir ./node_modules/uikit ./static/assets/uikit && cd ./static/assets/uikit && pnpm install",
         "compile": "pnpm compile-less && pnpm compile-uikit-tests",
         "compile-less": "make-dir static/css && lessc less/theme.less > static/css/theme.css --rewrite-urls=all --clean-css",
-        "compile-uikit-tests": "cd ./static/assets/uikit && pnpm compile-js tests"
+        "compile-uikit-tests": "cd ./static/assets/uikit && pnpm compile-js tests",
+        "eslint": "eslint .",
+        "eslint-fix": "eslint --fix ."
     },
     "packageManager": "pnpm@8.6.3",
     "devDependencies": {

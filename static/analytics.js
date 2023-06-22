@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 function analytics(id, config = {}) {
     gtag('js', new Date());
     gtag('config', id, config);
