@@ -42,8 +42,8 @@ devDependencies:
     specifier: ^1.5.1
     version: 1.5.1
   make-dir-cli:
-    specifier: ^3.0.0
-    version: 3.0.0
+    specifier: ^3.1.0
+    version: 3.1.0
   marked:
     specifier: ^5.1.0
     version: 5.1.0
@@ -1589,12 +1589,12 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /make-dir-cli@3.0.0:
-    resolution: {integrity: sha512-8yCjIAOQ8tezWRJWUG3tbvN2I19hiVr8K5DPDVl8fECS3qz0ZbeL194ZGRdf8K3LgvbjDCTadge6NrN/I4XrNw==}
+  /make-dir-cli@3.1.0:
+    resolution: {integrity: sha512-5GlL4/K4P2Ut2gAuGP2hwsJV/V69bvA1buKs32bCZztrcdq7lNOzviMJgWmZfDLBC6Ttfw/c7Y62MuPRfKdhlg==}
     engines: {node: '>=12.17'}
     hasBin: true
     dependencies:
-      make-dir: 3.1.0
+      make-dir: 4.0.0
       meow: 10.1.5
     dev: true
 
@@ -1608,11 +1608,11 @@ packages:
     dev: true
     optional: true
 
-  /make-dir@3.1.0:
-    resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
-    engines: {node: '>=8'}
+  /make-dir@4.0.0:
+    resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
+    engines: {node: '>=10'}
     dependencies:
-      semver: 6.3.0
+      semver: 7.5.3
     dev: true
 
   /map-obj@1.0.1:
@@ -1745,7 +1745,7 @@ packages:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.12.1
-      semver: 7.5.2
+      semver: 7.5.3
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -2048,19 +2048,6 @@ packages:
     hasBin: true
     dev: true
     optional: true
-
-  /semver@6.3.0:
-    resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==}
-    hasBin: true
-    dev: true
-
-  /semver@7.5.2:
-    resolution: {integrity: sha512-SoftuTROv/cRjCze/scjGyiDtcUyxw1rgYQSZY7XTmtR5hX+dm76iDbTH8TkLPHCQmlbQVSSbNZCPM2hb0knnQ==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      lru-cache: 6.0.0
-    dev: true
 
   /semver@7.5.3:
     resolution: {integrity: sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==}
