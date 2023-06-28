@@ -1224,7 +1224,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `align`          | String                | `left`              | Dropdown alignment: `left`, `right`, `center`                                                                |
 | `dropbar `       | Boolean               | `false`             | Enable or disable dropbar behavior.                                                                          |
 | `dropbar-anchor` | CSS selector          | `false`             | If set, dropbar will be inserted after the anchor element.                                                   |
-| `stretch`        | Boolean, `x`, `y`     | `true`              | Stretch dropdown on both (true) or given axis.                                                               |
+| `stretch`        | Boolean, `x`, `y`     | `false`             | Stretch dropdown on both (true) or given axis.                                                               |
 | `mode`           | click, hover          | click, hover        | Comma-separated list of dropdown trigger behavior modes.                                                     |
 | `delay-show`     | Number                | `0`                 | Delay time in hover mode before a dropdown is shown in ms.                                                   |
 | `delay-hide`     | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
