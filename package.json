@@ -19,7 +19,7 @@
         "clipboard": "2.0.11",
         "eslint": "^8.43.0",
         "eslint-config-prettier": "^8.8.0",
-        "eslint-plugin-svelte": "^2.31.1",
+        "eslint-plugin-svelte": "^2.32.2",
         "execa": "^7.1.1",
         "highlight.js": "9.12.0",
         "less": "^4.1.3",
