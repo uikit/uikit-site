@@ -1,6 +1,6 @@
-import { stat, readFile } from 'node:fs/promises';
 import hljs from 'highlight.js';
 import { marked } from 'marked';
+import { readFile, stat } from 'node:fs/promises';
 
 export async function load({ params }) {
     return {
