@@ -362,7 +362,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option  | Value  | Default | Description          |
 |---------|--------|---------|----------------------|
-| `icon`  | String | `''`    | The icon to display. |
+| `icon`  | String |         | The icon to display. |
 | `ratio` | Number | `1`     | The icon size ratio. |
 
 `icon` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.

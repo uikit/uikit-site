@@ -42,7 +42,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option             | Value   | Default | Description                                                                                                   |
 |--------------------|---------|---------|---------------------------------------------------------------------------------------------------------------|
-| `src`              | String  | `''`    | The SVG source URL. If a location hash is present, only the `<symbol>` of the SVG with the given ID is shown. |
+| `src`              | String  |         | The SVG source URL. If a location hash is present, only the `<symbol>` of the SVG with the given ID is shown. |
 | `stroke-animation` | Boolean | `false` | Animate all elements with the `stroke` attribute in the SVG.                                                  |
 
 ***

@@ -568,8 +568,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 |---------------|-----------------------|---------------------|--------------------------------------------------------------------------------------------------------------|
 | `toggle`      | CSS selector          | `- *`               | CSS selector for the element to be used as toggle. By default, the preceding element.                        |
 | `pos`         | String                | `bottom-left`       | Drop position.                                                                                               |
-| `stretch`     | Boolean, `x`, `y`     | `false`             | Stretch dropdown on both (true) or given axis.                                                               |
-| `mode`        | click, hover          | click, hover        | Comma-separated list of dropdown trigger behavior modes.                                                     |
+| `stretch`     | Boolean, String       | `false`             | Stretch dropdown on both (true) or given axis (`x`, `y`).                                                    |
+| `mode`        | String                | `click, hover`      | Comma-separated list of dropdown trigger behavior modes (`click`, `hover`).                                  |
 | `delay-show`  | Number                | `0`                 | Delay time in hover mode before a dropdown is shown in ms.                                                   |
 | `delay-hide`  | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
 | `auto-update` | Boolean               | `true`              | Disable dynamic positioning while scrolling by setting this option to `false`.                               |

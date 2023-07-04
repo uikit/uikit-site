@@ -147,11 +147,11 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option    | Value  | Default | Description                                                                                                                                                                             |
 |-----------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dataSrc` | String | ''      | The image's `src` attribute.                                                                                                                                                            |
-| `sources` | String | ''      | The image's sources. This option is used for background images only. The sources attributes be passed in `key: value;` format for a single source. For multiple sources in JSON format. |
+| `dataSrc` | String |         | The image's `src` attribute.                                                                                                                                                            |
+| `sources` | String |         | The image's sources. This option is used for background images only. The sources attributes be passed in `key: value;` format for a single source. For multiple sources in JSON format. |
 | `loading` | String | `lazy`  | Enable lazy/eager loading. Set to `eager` for images within the first visible viewport.                                                                                                 |
 | `margin`  | String | `50%`   | The margin is added to the viewport's bounding box, before computing an intersection with the image. The value must be in px or % units.                                                |
-| `target`  | String | false   | A list of targets whose bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.                                                            |
+| `target`  | String | `false` | A list of targets whose bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.                                                            |
 
 `dataSrc` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 

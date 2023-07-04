@@ -129,7 +129,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option   | Value                 | Default | Description                                                                                                                                |
 |----------|-----------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `cls`    | String                | ``      | Class to toggle when the element enters/leaves viewport.                                                                                   |
+| `cls`    | String                |         | Class to toggle when the element enters/leaves viewport.                                                                                   |
 | `target` | Boolean, CSS selector | `false` | Target to apply the scrollspy to. Defaults to the element itself.                                                                          |
 | `hidden` | Boolean               | `true`  | Hides the element while out of view.                                                                                                       |
 | `margin` | String                | `-1px`  | The margin is added to the viewport's bounding box, before computing an intersection with the element. The value must be in px or % units. |

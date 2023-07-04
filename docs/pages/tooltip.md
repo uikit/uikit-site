@@ -75,8 +75,8 @@ If you want the tooltip to appear with a little delay, just add the `delay` opti
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option      | Value  | Default                 | Description                                                                                          |
-| ----------- | ------ | ----------------------- | ---------------------------------------------------------------------------------------------------- |
-| `title`     | String | ``                      | Tooltip text.                                                                                        |
+|-------------|--------|-------------------------|------------------------------------------------------------------------------------------------------|
+| `title`     | String |                         | Tooltip text.                                                                                        |
 | `pos`       | String | `top-center`            | Tooltip position.                                                                                    |
 | `offset`    | Number | `false`                 | Tooltip offset.                                                                                      |
 | `animation` | String | `uk-animation-scale-up` | Space-separated names of [animations](animation.md). Comma-separated for animation out.              |

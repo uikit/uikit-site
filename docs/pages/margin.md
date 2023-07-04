@@ -212,8 +212,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option         | Value  | Default             | Description                                                                                                |
 |----------------|--------|---------------------|------------------------------------------------------------------------------------------------------------|
-| `margin `      | String | uk-margin-small-top | This class is added to items that break into the next row, typically to create margin to the previous row. |
-| `first-column` | String | uk-first-column     | This class is added to the first element in each row.                                                      |
+| `margin `      | String | `uk-margin-small-top` | This class is added to items that break into the next row, typically to create margin to the previous row. |
+| `first-column` | String | `uk-first-column`     | This class is added to the first element in each row.                                                      |
 
 ***
 

@@ -67,7 +67,7 @@ The table below lists the available settings of the `uk-leader` attribute. [Lear
 
 | Option  | Value          | Default | Description                                                                                                                                                |
 |---------|----------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `fill`  | String         | ``      | Optional fill character.                                                                                                                                   |
+| `fill`  | String         |         | Optional fill character.                                                                                                                                   |
 | `media` | Number, String | `false` | Condition for the space filling - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)). |
 
 ***
