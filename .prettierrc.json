@@ -4,12 +4,9 @@
     "singleQuote": true,
     "overrides": [
         {
-            "files": ["**/*.yml"],
-            "options": {
-                "tabWidth": 2
-            }
-        },
-        { "files": "*.svelte", "options": { "parser": "svelte" } }
+            "files": "*.yml",
+            "options": { "tabWidth": 2 }
+        }
     ],
     "plugins": ["prettier-plugin-svelte", "prettier-plugin-organize-imports"]
 }
