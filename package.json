@@ -15,7 +15,7 @@
         "@docsearch/css": "^3.5.1",
         "@docsearch/js": "^3.5.1",
         "@sveltejs/adapter-static": "2.0.2",
-        "@sveltejs/kit": "^1.21.0",
+        "@sveltejs/kit": "^1.22.0",
         "clipboard": "2.0.11",
         "eslint": "^8.44.0",
         "eslint-config-prettier": "^8.8.0",
@@ -26,13 +26,13 @@
         "less-plugin-clean-css": "^1.5.1",
         "make-dir-cli": "^3.1.0",
         "marked": "^5.1.0",
-        "prettier": "^2.8.8",
+        "prettier": "^3.0.0",
         "prettier-plugin-organize-imports": "^3.2.2",
         "prettier-plugin-svelte": "^2.10.1",
-        "svelte": "^4.0.3",
+        "svelte": "^4.0.4",
         "symlink-dir": "^5.1.1",
         "uikit": "3.16.22",
-        "vite": "^4.3.9"
+        "vite": "^4.4.0"
     },
     "pnpm": {
         "peerDependencyRules": {

@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 export async function load() {
     return {
         changelog: await parse(
-            await readFile('./static/assets/uikit/CHANGELOG.md', { encoding: 'utf8' })
+            await readFile('./static/assets/uikit/CHANGELOG.md', { encoding: 'utf8' }),
         ),
     };
 }
