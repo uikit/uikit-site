@@ -384,10 +384,10 @@ You can easily combine the grid with the [Flex component](flex.md). That way you
 If grid cells have different heights, set the `masonry` option to either `pack` or `next` to create a layout free of gaps.
 
 
-| Masonry | Description                                                      |
-| ------- | ---------------------------------------------------------------- |
-| `pack`  | Sorts the items to make the column heights as equal as possible. |
-| `next`  | Uses the natural item order.                                     |
+| Masonry | Description                                                                              |
+| ------- | ---------------------------------------------------------------------------------------- |
+| `pack`  | Sorts items into columns with the most room to make column heights as equal as possible. |
+| `next`  | Uses the natural item order.                                                             |
 
 
 ```html
@@ -491,7 +491,7 @@ To adjust the grid parallax duration, set the `parallax-start` and `parallax-end
 <div uk-grid="parallax: 150; parallax-start: 100%; parallax-end: 100%;">…</div>
 ```
 
-If a masonry grid is used and `parallax: true` is added to the attribute, the columns will parallax and end up flushed with one another. The `parallax` option can be set to zero or an additional translation.
+To justify the grid parallax if columns have different heights, for example in masonry grids, set the `parallax-justify: true` option so all grid columns reach the bottom at the same time. Set `parallax: 0` to only move the columns by their height until they justify. But of course an additional parallax translation value can be set as well.
 
 ```html
 <div uk-grid="parallax: 0; parallax-justify: true; masonry: pack">…</div>
