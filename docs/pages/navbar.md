@@ -1213,6 +1213,21 @@ By default, the immediate toggling of classes does not look ideal. Instead, we c
 </div>
 ```
 
+### Dropbar transparent mode
+
+| Mode     | Description                                                    |
+| -------- | -------------------------------------------------------------- |
+| `remove` | Removes transparency of the navbar when the dropbar is opened. |
+| `behind` | Opens the dropbar behind the navbar.                           |
+
+#### Remove mode
+
+If a transparent navbar is only in the hero section, but not when sticky, it looks better to remove transparency in the hero section when opening a dropbar. To do that, set `dropbar-transparent-mode: remove`.
+
+#### Behind mode
+
+Alternatively, if a navbar is always transparent even when sticky, set `dropbar-transparent-mode: behind` to open the dropbar behind the navbar so it also no longer looks transparent.
+
 ***
 
 ## Component options
