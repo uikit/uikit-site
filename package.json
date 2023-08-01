@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "dev": "vite dev",
+        "dev": "vite dev --open",
         "build": "vite build",
         "preview": "vite preview",
         "postinstall": "symlink-dir ./node_modules/uikit ./static/assets/uikit && cd ./static/assets/uikit && pnpm install",
