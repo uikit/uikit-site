@@ -150,8 +150,6 @@ Add one of the following classes to set the marker color.
 </div>
 ```
 
-**Note** The color modifiers don't work in Chrome and Edge because the `::marker` pseudo-element is not supported yet. Vote this [Chromium issue](https://bugs.chromium.org/p/chromium/issues/detail?id=457718) up, to give it more attention.
-
 ***
 
 ## Image bullet modifier
