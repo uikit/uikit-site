@@ -45,8 +45,8 @@ devDependencies:
     specifier: ^3.1.0
     version: 3.1.0
   marked:
-    specifier: ^5.1.0
-    version: 5.1.0
+    specifier: ^7.0.2
+    version: 7.0.2
   prettier:
     specifier: ^3.0.0
     version: 3.0.0
@@ -1639,9 +1639,9 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /marked@5.1.0:
-    resolution: {integrity: sha512-z3/nBe7aTI8JDszlYLk7dDVNpngjw0o1ZJtrA9kIfkkHcIF+xH7mO23aISl4WxP83elU+MFROgahqdpd05lMEQ==}
-    engines: {node: '>= 18'}
+  /marked@7.0.2:
+    resolution: {integrity: sha512-ADEBjnCHOrsLoV7JPvUNWtELZ0b4SeIALhrfxuA9uhS3hw2PCezROoFduIqMOjeagBPto732+YC5tZHBMQRdqg==}
+    engines: {node: '>= 16'}
     hasBin: true
     dev: true
 
