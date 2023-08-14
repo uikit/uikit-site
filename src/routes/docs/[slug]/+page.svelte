@@ -45,7 +45,7 @@
             <div uk-sticky="offset: 160">
                 <ul
                     class="uk-nav uk-nav-default tm-nav"
-                    uk-scrollspy-nav="closest: li; scroll: true; offset: 100"
+                    uk-scrollspy-nav="closest: li; scroll: true"
                 >
                     {#each data.doc.ids as { title, id }}
                         <li>
