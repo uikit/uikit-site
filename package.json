@@ -10,7 +10,7 @@
         "eslint": "eslint .",
         "eslint-fix": "eslint --fix ."
     },
-    "packageManager": "pnpm@8.6.3",
+    "packageManager": "pnpm@8.6.12",
     "devDependencies": {
         "@docsearch/css": "^3.5.1",
         "@docsearch/js": "^3.5.1",
