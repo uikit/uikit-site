@@ -163,7 +163,7 @@ The Lightbox uses the `href` attribute to figure out the type of the linked cont
 **Hint** YouTube and Vimeo Urls will be handled automatically.
 
 | Option               | Description                            |
-|----------------------|----------------------------------------|
+| -------------------- | -------------------------------------- |
 | `data-type="image"`  | The content type is an image.          |
 | `data-type="video"`  | The content type is a video.           |
 | `data-type="iframe"` | The content type is a regular website. |
@@ -195,8 +195,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 ### Lightbox
 
 | Option              | Value          | Default | Description                                            |
-|---------------------|----------------|---------|--------------------------------------------------------|
-| `animation`         | String         | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`.   |
+| ------------------- | -------------- | ------- | ------------------------------------------------------ |
+| `animation`         | String         | `slide` | Lightbox animation mode (`slide`, `fade` or `scale`).  |
 | `autoplay`          | Boolean        | `false` | Lightbox autoplays.                                    |
 | `autoplay-interval` | Number         | `7000`  | The delay between switching slides in autoplay mode.   |
 | `pause-on-hover`    | Boolean        | `false` | Pause autoplay mode on hover.                          |
@@ -245,8 +245,8 @@ Hides the Lightbox's Panel.
 If you only want to use the lightbox panel directly through the JS API, you can set the following options.
 
 | Option              | Value   | Default        | Description                                                                                           |
-|---------------------|---------|----------------|-------------------------------------------------------------------------------------------------------|
-| `animation`         | String  | `slide`        | Lightbox animation mode: `slide`, `fade` or `scale`.                                                  |
+| ------------------- | ------- | -------------- | ----------------------------------------------------------------------------------------------------- |
+| `animation`         | String  | `slide`        | Lightbox animation mode (`slide`, `fade` or `scale`).                                                 |
 | `autoplay`          | Boolean | `false`        | Lightbox autoplays.                                                                                   |
 | `autoplay-interval` | Number  | `7000`         | The delay between switching slides in autoplay mode.                                                  |
 | `pause-on-hover`    | Boolean | `false`        | Pause autoplay mode on hover.                                                                         |
@@ -264,7 +264,7 @@ If you only want to use the lightbox panel directly through the JS API, you can 
 The following events will be triggered on elements with this component attached:
 
 | Name             | Description                                              |
-|------------------|----------------------------------------------------------|
+| ---------------- | -------------------------------------------------------- |
 | `beforeshow`     | Fires before the Lightbox is shown.                      |
 | `beforehide`     | Fires before the Lightbox is hidden.                     |
 | `show`           | Fires after the Lightbox is shown.                       |
@@ -292,7 +292,7 @@ UIkit.lightboxPanel(element).show(index);
 Shows the Lightbox Panel and item.
 
 | Name    | Type           | Default | Description                           |
-|---------|----------------|---------|---------------------------------------|
+| ------- | -------------- | ------- | ------------------------------------- |
 | `index` | String, Number | 0       | Lightbox item to show. 0 based index. |
 
 #### Hide
@@ -350,7 +350,7 @@ The lightbox gallery can be accessed through keyboard using the following keys.
 The Lightbox component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
 
 | Key          | Default          | Description                             |
-|--------------|------------------|-----------------------------------------|
+| ------------ | ---------------- | --------------------------------------- |
 | `next`       | `Next Slide`     | `aria-label` for next slide button.     |
 | `previous`   | `Previous Slide` | `aria-label` for previous slide button. |
 | `slideLabel` | `%s of %s`       | `aria-label` for slide.                 |

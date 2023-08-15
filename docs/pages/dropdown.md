@@ -574,6 +574,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `delay-hide`      | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
 | `auto-update`     | Boolean               | `true`              | Disable dynamic positioning while scrolling by setting this option to `false`.                               |
 | `boundary`        | CSS selector          | `false`             | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
+| `boundary-x`      | CSS selector          | `false`             | The area on the x-axis the drop can't exceed causing it to flip and shift.                               |
+| `boundary-y`      | CSS selector          | `false`             | The area on the y-axis the drop can't exceed causing it to flip and shift.                               |
 | `target`          | Boolean, CSS selector | `false`             | The element the dropdown is positioned to (`true` for window).                                               |
 | `target-x`        | Boolean, CSS selector | `false`             | The element's X axis the dropdown is positioned to (`true` for window).                                      |
 | `target-y`        | Boolean, CSS selector | `false`             | The element's Y axis the dropdown is positioned to (`true` for window).                                      |
@@ -589,6 +591,10 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `container`       | Boolean               | `false`             | Define a target container via a selector to specify where the dropdown should be appended in the DOM.        |
 
 `pos` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
+
+```html
+<span uk-dropdown="top-left"></span>
+```
 
 ***
 

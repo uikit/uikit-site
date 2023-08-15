@@ -50,7 +50,7 @@ Add an image in the background of each slide using the `uk-cover` attribute from
 By default, the slideshow uses a `slide` animation. You can set the `animation` option to use a different animation. Possible values are as follows:
 
 | Animation | Description                        |
-|-----------|------------------------------------|
+| --------- | ---------------------------------- |
 | `slide`   | Slides slide in side by side.      |
 | `fade`    | Slides fade in.                    |
 | `scale`   | Slides are scaled up and fade out. |
@@ -725,20 +725,20 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 ### Slideshow
 
-| Option              | Value           | Default | Description                                                           |
-|---------------------|-----------------|---------|-----------------------------------------------------------------------|
-| `animation`         | String          | `slide` | Slideshow animation mode: `slide`, `fade`, `scale`, `pull` or `push`. |
-| `autoplay`          | Boolean         | `false` | Slideshow autoplays.                                                  |
-| `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.                  |
-| `draggable`         | Boolean         | `true ` | Enable pointer dragging.                                              |
-| `easing`            | String          | `ease`  | The animation easing (CSS timing functions or cubic-bezier).          |
-| `finite`            | Boolean         | `false` | Disable infinite sliding.                                             |
-| `pause-on-hover`    | Boolean         | `true`  | Pause autoplay mode on hover.                                         |
-| `index`             | Number          | `0`     | Slideshow item to show. 0 based index.                                |
-| `velocity`          | Number          | `1`     | The animation velocity (pixel/ms).                                    |
-| `ratio`             | Boolean, String | `16:9`  | The ratio. (`false` prevents height adjustment)                       |
-| `min-height`        | Boolean, Number | `false` | The minimum height.                                                   |
-| `max-height`        | Boolean, Number | `false` | The maximum height.                                                   |
+| Option              | Value           | Default | Description                                                            |
+| ------------------- | --------------- | ------- | ---------------------------------------------------------------------- |
+| `animation`         | String          | `slide` | Slideshow animation mode (`slide`, `fade`, `scale`, `pull` or `push`). |
+| `autoplay`          | Boolean         | `false` | Slideshow autoplays.                                                   |
+| `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.                   |
+| `draggable`         | Boolean         | `true ` | Enable pointer dragging.                                               |
+| `easing`            | String          | `ease`  | The animation easing (CSS timing functions or cubic-bezier).           |
+| `finite`            | Boolean         | `false` | Disable infinite sliding.                                              |
+| `pause-on-hover`    | Boolean         | `true`  | Pause autoplay mode on hover.                                          |
+| `index`             | Number          | `0`     | Slideshow item to show. 0 based index.                                 |
+| `velocity`          | Number          | `1`     | The animation velocity (pixel/ms).                                     |
+| `ratio`             | Boolean, String | `16:9`  | The ratio. (`false` prevents height adjustment)                        |
+| `min-height`        | Boolean, Number | `false` | The minimum height.                                                    |
+| `max-height`        | Boolean, Number | `false` | The maximum height.                                                    |
 
 ***
 
@@ -756,14 +756,14 @@ UIkit.slideshow(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name             | Description                                               |
-|------------------|-----------------------------------------------------------|
-| `beforeitemshow` | Fires before an item is shown.                            |
-| `itemshow`       | Fires after an item is shown.                             |
-| `itemshown`      | Fires after an item's show animation has completed.       |
-| `beforeitemhide` | Fires before an item is hidden.                           |
-| `itemhide`       | Fires after an item's hide animation has started.         |
-| `itemhidden`     | Fires after an item's hide animation has completed.       |
+| Name             | Description                                         |
+| ---------------- | --------------------------------------------------- |
+| `beforeitemshow` | Fires before an item is shown.                      |
+| `itemshow`       | Fires after an item is shown.                       |
+| `itemshown`      | Fires after an item's show animation has completed. |
+| `beforeitemhide` | Fires before an item is hidden.                     |
+| `itemhide`       | Fires after an item's hide animation has started.   |
+| `itemhidden`     | Fires after an item's hide animation has completed. |
 
 ### Methods
 
@@ -826,7 +826,7 @@ Autoplay stops when any element in the Slideshow component receives focus. The t
 The Slideshow component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
 
 | Key          | Default          | Description                               |
-|--------------|------------------|-------------------------------------------|
+| ------------ | ---------------- | ----------------------------------------- |
 | `next`       | `Next Slide`     | `aria-label` for next slide button.       |
 | `previous`   | `Previous Slide` | `aria-label` for previous slide button.   |
 | `slideX`     | `Slide %s`       | `aria-label` for pagination slide button. |

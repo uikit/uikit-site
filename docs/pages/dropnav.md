@@ -434,6 +434,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `offset`          | Number                | `0`                 | The dropdown offset.                                                                                         |
 | `animation`       | String                | `uk-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                      |
 | `animate-out`     | Boolean               | `false`             | Use animation when closing the drop.                                                                         |
+| `bg-scroll`       | Boolean               | `true`              | Allow background scrolling while dropdown is opened.                                                         |
 | `close-on-scroll` | Boolean               | `false`             | Close the drop on scrolling a parent scroll container.                                                       |
 | `duration`        | Number                | `200`               | The animation duration.                                                                                      |
 | `container`       | Boolean               | `false`             | Define a target container via a selector to specify where the dropdown should be appended in the DOM.        |
