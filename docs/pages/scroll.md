@@ -48,7 +48,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option   | Value          | Default | Description                                                                                                             |
 |----------|----------------|---------|-------------------------------------------------------------------------------------------------------------------------|
-| `offset` | Boolean,Number | `false` | Offset added to scroll top. If no offset is provided (false) it falls back to the `--uk-scroll-offset` custom property. |
+| `offset` | Boolean, Number | `false` | Offset added to scroll top. If no offset is provided (false) it falls back to the `--uk-scroll-offset` custom property. |
 
 ## JavaScript
 

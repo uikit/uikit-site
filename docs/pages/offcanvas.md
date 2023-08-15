@@ -253,7 +253,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option      | Value   | Default | Description                                                                                                                                               |
 |-------------|---------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mode`      | String  | `slide` | Off-canvas animation mode: `slide`, `reveal`, `push` or `none`.                                                                                           |
+| `mode`      | String  | `slide` | Off-canvas animation mode (`slide`, `reveal`, `push` or `none`).                                                                                           |
 | `flip`      | Boolean | `false` | Flip off-canvas to the right side.                                                                                                                        |
 | `overlay`   | Boolean | `false` | Display the off-canvas together with an overlay.                                                                                                          |
 | `esc-close` | Boolean | `true`  | Close the off-canvas when the _Esc_ key is pressed.                                                                                                       |
