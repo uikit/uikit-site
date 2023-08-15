@@ -1,8 +1,8 @@
 /*
+!/.github
 !/src
 !/static
 /static/*
 !/static/analytics.js
 !/*.json
 !/*.js
-**/*.less

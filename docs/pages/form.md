@@ -504,7 +504,7 @@ You can add this option to the `uk-form-custom` attribute. [Learn more](javascri
 
 | Option   | Value                 | Default | Description           |
 |----------|-----------------------|---------|-----------------------|
-| `target` | CSS selector, Boolean | false   | Value display target. |
+| `target` | CSS selector, Boolean | `false` | Value display target. |
 
 ***
 

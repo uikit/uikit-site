@@ -195,9 +195,9 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option            | Value           | Default                   | Description                                   |
 |-------------------|-----------------|---------------------------|-----------------------------------------------|
-| `group`           | String          | `''`                      | The group                                     |
-| `animation`       | String, Boolean | 'slide'                   | Animation mode: `slide`, `false`.             |
-| `duration`        | Number          | 250                       | Animation duration in milliseconds.           |
+| `group`           | String          |                           | The group                                     |
+| `animation`       | String, Boolean | `slide`                   | Animation mode: `slide`, `false`.             |
+| `duration`        | Number          | `250`                     | Animation duration in milliseconds.           |
 | `threshold`       | Number          | `5`                       | Mouse move threshold before dragging starts.  |
 | `cls-item`        | String          | `uk-sortable-item`        | The item class.                               |
 | `cls-placeholder` | String          | `uk-sortable-placeholder` | The placeholder class.                        |
@@ -206,7 +206,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `cls-base`        | String          | `uk-sortable`             | The list's class.                             |
 | `cls-no-drag`     | String          | `uk-sortable-nodrag`      | Disable dragging on elements with this class. |
 | `cls-empty`       | String          | `uk-sortable-empty`       | The empty list class.                         |
-| `cls-custom`      | String          | `''`                      | The ghost's custom class.                     |
+| `cls-custom`      | String          |                           | The ghost's custom class.                     |
 | `handle`          | String          | `false`                   | The handle selector.                          |
 
 ***

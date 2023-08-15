@@ -1,6 +1,6 @@
-import { stat, readFile } from 'node:fs/promises';
 import hljs from 'highlight.js';
 import { marked } from 'marked';
+import { readFile, stat } from 'node:fs/promises';
 
 export async function load({ params }) {
     return {
@@ -74,7 +74,9 @@ async function parse(markdown) {
     if (content.includes('{%isodate%}')) {
         content = content.replace(
             /{%isodate%}/g,
-            new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().replace(/\.\d+Z/, '+00:00')
+            new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
+                .toISOString()
+                .replace(/\.\d+Z/, '+00:00'),
         );
     }
 

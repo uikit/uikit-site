@@ -44,17 +44,15 @@
                     <li class:uk-active={$page.route.id?.startsWith('/docs')}>
                         <a
                             href="{base}/docs/introduction"
-                            aria-current={$page.route.id?.startsWith('/docs')
-                                ? 'page'
-                                : null}>Documentation</a
+                            aria-current={$page.route.id?.startsWith('/docs') ? 'page' : null}
+                            >Documentation</a
                         >
                     </li>
                     <li class:uk-active={$page.route.id === '/changelog'}>
                         <a
                             href="{base}/changelog"
-                            aria-current={$page.route.id === '/changelog'
-                                ? 'page'
-                                : null}>Changelog</a
+                            aria-current={$page.route.id === '/changelog' ? 'page' : null}
+                            >Changelog</a
                         >
                     </li>
                 </ul>
@@ -64,9 +62,7 @@
                         class:uk-active={$page.route.id === '/download'}
                         class="uk-button uk-button-default tm-button-default uk-icon"
                         href="{base}/download"
-                        aria-current={$page.route.id === '/download'
-                            ? 'page'
-                            : null}
+                        aria-current={$page.route.id === '/download' ? 'page' : null}
                     >
                         Download <canvas uk-icon="download" width="20" height="20" />
                     </a>
@@ -77,6 +73,7 @@
                     uk-navbar-toggle-icon
                     href="#offcanvas"
                     uk-toggle
+                    aria-label="Open menu"
                 />
             </div>
         </nav>

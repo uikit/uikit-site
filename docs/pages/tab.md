@@ -178,7 +178,7 @@ Tabs can be used to trigger a dropdown menu from the [Dropdown component](dropdo
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option      | Value          | Default | Description                                                                                                                                                  |
-| ----------- | -------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|-------------|----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `connect`   | CSS selector   | `false` | Related item's container. By default, this is the next element with the 'uk-switcher' class.                                                                 |
 | `toggle `   | CSS selector   | `> *`   | The toggle selector, which triggers content switching on click.                                                                                              |
 | `active `   | Number         | `0`     | Active index on init. Providing a negative number indicates a position starting from the end of the set.                                                     |

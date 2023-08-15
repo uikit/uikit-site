@@ -835,10 +835,10 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option      | Value           | Default | Description                                                 |
 |-------------|-----------------|---------|-------------------------------------------------------------|
-| `target`    | String          | ''      | The targeted list on which to apply the filter to.          |
-| `selActive` | String, Boolean | false   | A selector for the initially active filter controls.        |
-| `animation` | String, Boolean | 'slide' | Animation mode: `slide`, `fade`, `delayed-fade` or `false`. |
-| `duration`  | Number          | 250     | Animation duration in milliseconds.                         |
+| `target`    | String          |         | The targeted list on which to apply the filter to.          |
+| `selActive` | String, Boolean | `false` | A selector for the initially active filter controls.        |
+| `animation` | String, Boolean | `slide` | Animation mode: `slide`, `fade`, `delayed-fade` or `false`. |
+| `duration`  | Number          | `250`   | Animation duration in milliseconds.                         |
 
 `target` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 

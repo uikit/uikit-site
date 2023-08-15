@@ -480,16 +480,16 @@ A nav can be used inside an offcanvas from the [Offcanvas component](offcanvas.m
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option        | Value        | Default        | Description                                                                       |
-|---------------|--------------|----------------|-----------------------------------------------------------------------------------|
-| `targets`     | CSS selector | `> .uk-parent` | The element(s) to toggle.                                                         |
-| `toggle `     | CSS selector | `> a`          | The toggle element(s).                                                            |
-| `content`     | CSS selector | `> ul`         | The content element(s).                                                           |
-| `collapsible` | Boolean      | `true`         | Allow all items to be closed.                                                     |
-| `multiple`    | Boolean      | `false`        | Allow multiple open items.                                                        |
-| `transition`  | String       | `ease`         | The transition to use.                                                            |
+| Option        | Value        | Default        | Description                                                                             |
+|---------------|--------------|----------------|-----------------------------------------------------------------------------------------|
+| `targets`     | CSS selector | `> .uk-parent` | The element(s) to toggle.                                                               |
+| `toggle `     | CSS selector | `> a`          | The toggle element(s).                                                                  |
+| `content`     | CSS selector | `> ul`         | The content element(s).                                                                 |
+| `collapsible` | Boolean      | `true`         | Allow all items to be closed.                                                           |
+| `multiple`    | Boolean      | `false`        | Allow multiple open items.                                                              |
+| `transition`  | String       | `ease`         | The transition to use.                                                                  |
 | `animation`   | String       | `true`         | Space-separated names of [animations](animation.md). Comma-separated for animation out. |
-| `duration`    | Number       | `200`          | The animation duration in milliseconds.                                           |
+| `duration`    | Number       | `200`          | The animation duration in milliseconds.                                                 |
 
 ***
 

@@ -28,7 +28,7 @@
             .replace(regexp, '')
             .replace(
                 /<(?:img|a)[^>]+(?:src|href)="(?!\/|#|[a-z0-9\-.]+:)(.+?)"|url\((?!\/|#|[a-z0-9\-.]+:)(.+?)\)/g,
-                (match, src, url) => match.replace(src || url, `${base}/${src || url}`)
+                (match, src, url) => match.replace(src || url, `${base}/${src || url}`),
             );
 
         const nc = Date.now() % 9999;

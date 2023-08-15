@@ -127,13 +127,14 @@ You can also give each target a separate `cls` option. Just add the `uk-scrollsp
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option   | Value   | Default | Description                                                                                                                                |
-|----------|---------|---------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `cls`    | String  | ``      | Class to toggle when the element enters/leaves viewport.                                                                                   |
-| `hidden` | Boolean | `true`  | Hides the element while out of view.                                                                                                       |
-| `margin` | String  | `-1px`  | The margin is added to the viewport's bounding box, before computing an intersection with the element. The value must be in px or % units. |
-| `repeat` | Boolean | `false` | Applies the `cls` class every time the element is in view.                                                                                 |
-| `delay`  | Number  | `0`     | Delay time in ms.                                                                                                                          |
+| Option   | Value                 | Default | Description                                                                                                                                |
+|----------|-----------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| `cls`    | String                |         | Class to toggle when the element enters/leaves viewport.                                                                                   |
+| `target` | Boolean, CSS selector | `false` | Target to apply the scrollspy to. Defaults to the element itself.                                                                          |
+| `hidden` | Boolean               | `true`  | Hides the element while out of view.                                                                                                       |
+| `margin` | String                | `-1px`  | The margin is added to the viewport's bounding box, before computing an intersection with the element. The value must be in px or % units. |
+| `repeat` | Boolean               | `false` | Applies the `cls` class every time the element is in view.                                                                                 |
+| `delay`  | Number                | `0`     | Delay time in ms.                                                                                                                          |
 
 `cls` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
@@ -183,13 +184,13 @@ For an example of the scrollspy nav, just check out the fixed nav on the right s
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option     | Value   | Default                    | Description                                                                                           |
-|------------|---------|----------------------------|-------------------------------------------------------------------------------------------------------|
-| `cls`      | String  | `uk-active`                | Class to add to the active links.                                                                     |
-| `closest`  | String  | `uk-scrollspy-init-inview` | Target to apply the class to.                                                                         |
-| `scroll`   | Boolean | `false`                    | Adds the [Scroll component](scroll.md) to its links.                                                  |
-| `overflow` | Boolean | `true`                     | If overflow is set to true, the first or last item will stay active if above or below the navigation. |
-| `offset`   | Number  | `0`                        | Pixel offset added to scroll top.                                                                     |
+| Option     | Value                 | Default     | Description                                                                                           |
+|------------|-----------------------|-------------|-------------------------------------------------------------------------------------------------------|
+| `cls`      | String                | `uk-active` | Class to add to the active links.                                                                     |
+| `closest`  | Boolean, CSS selector | `false`     | Target to apply the class to. Defaults to the element itself.                                         |
+| `scroll`   | Boolean               | `false`     | Adds the [Scroll component](scroll.md) to its links.                                                  |
+| `overflow` | Boolean               | `true`      | If overflow is set to true, the first or last item will stay active if above or below the navigation. |
+| `offset`   | Number                | `0`         | Pixel offset added to scroll top.                                                                     |
 
 ***
 

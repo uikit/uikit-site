@@ -274,7 +274,7 @@ Together with the [Sticky component](sticky.md) you can achieve complex sticky p
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option   | Value          | Default | Description                                                                                                                                                                                           |
-| -------- | -------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|----------|----------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `easing` | Number         | `1`     | Animation easing during scrolling                                                                                                                                                                     |
 | `target` | CSS Selector   | `false` | Element dimension reference for animation duration.                                                                                                                                                   |
 | `start`  | Length         | `0`     | Start offset. The value can be in vh, % and px. It supports basic mathematics operands + and -. The default value of `0` means that the target's top border and viewport's bottom border intersect.   |
