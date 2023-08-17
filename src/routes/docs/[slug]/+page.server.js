@@ -65,11 +65,7 @@ async function parse(markdown) {
 
     marked.use({ renderer });
 
-    let content = await marked.parse(markdown, {
-        async: true,
-        mangle: false,
-        headerIds: false,
-    });
+    let content = await marked.parse(markdown, { async: true });
 
     if (content.includes('{%isodate%}')) {
         content = content.replace(
