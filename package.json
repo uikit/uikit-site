@@ -12,8 +12,8 @@
     },
     "packageManager": "pnpm@8.6.12",
     "devDependencies": {
-        "@docsearch/css": "^3.5.1",
-        "@docsearch/js": "^3.5.1",
+        "@docsearch/css": "^3.5.2",
+        "@docsearch/js": "^3.5.2",
         "@sveltejs/adapter-static": "2.0.3",
         "@sveltejs/kit": "^1.22.6",
         "clipboard": "2.0.11",
