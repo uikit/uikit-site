@@ -723,8 +723,6 @@ Together with the [Overlay component](overlay.md), content transitions are used 
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-### Slideshow
-
 | Option              | Value           | Default | Description                                                           |
 |---------------------|-----------------|---------|-----------------------------------------------------------------------|
 | `animation`         | String          | `slide` | Slideshow animation mode: `slide`, `fade`, `scale`, `pull` or `push`. |

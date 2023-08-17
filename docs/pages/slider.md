@@ -992,8 +992,6 @@ To toggle transitions on hover, use the `.uk-transition-toggle` class from the [
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-### Slider
-
 | Option              | Value   | Default | Description                                                  |
 |---------------------|---------|---------|--------------------------------------------------------------|
 | `autoplay`          | Boolean | `false` | Slider autoplays.                                            |

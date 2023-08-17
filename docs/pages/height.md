@@ -144,7 +144,7 @@ If your grid wraps into multiple rows, only grid columns within the same row are
 
 ## Component options
 
-The table below lists the available settings of the `uk-height-match` attribute. [Learn more](javascript.md#component-configuration)
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option   | Value        | Default | Description                                                                                 |
 |----------|--------------|---------|---------------------------------------------------------------------------------------------|

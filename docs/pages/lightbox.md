@@ -192,8 +192,6 @@ You can add custom attributes to lightbox content items by using the `data-attrs
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-### Lightbox
-
 | Option              | Value          | Default | Description                                            |
 |---------------------|----------------|---------|--------------------------------------------------------|
 | `animation`         | String         | `slide` | Lightbox animation mode: `slide`, `fade` or `scale`.   |
