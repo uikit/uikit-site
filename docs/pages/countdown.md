@@ -168,5 +168,5 @@ The Countdown component automatically sets the appropriate WAI-ARIA roles, state
 - The *container* element has the `timer` role.
 
 <script>
-    UIkit.util.attr(UIkit.util.$$('[uk-countdown]'), 'date', Date.now() + 7 * 24 * 60 * 60 * 1000);
+    UIkit.util.attr(UIkit.util.$$('[uk-countdown]'), 'uk-countdown', `date: ${new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString()}`);
 </script>
