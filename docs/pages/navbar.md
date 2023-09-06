@@ -1088,7 +1088,7 @@ The navbar itself has a modifier class `uk-navbar-sticky` that ensures an optimi
 </div>
 ```
 
-Instead of using a Dropdown, you can show a Dropbar, which means that the subnavigation is displayed in a full width below the navbar. Simply set `dropbar: true` inside the `uk-navbar` attribute.
+Instead of using a Dropdown, you can also show the subnavigation in a Dropbar, which will stretch across the full width below the navbar. Simply set `dropbar: true` inside the `uk-navbar` attribute.
 
 ```html
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
@@ -1178,9 +1178,9 @@ Instead of using a Dropdown, you can show a Dropbar, which means that the subnav
 
 ### Transparent sticky navbar
 
-When you use a [transparent navbar](navbar.md#transparent-modifier), your markup contains the `.uk-navbar-transparent` class together with `.uk-light` or `.uk-dark`. When the navbar is sticky, it is usually required to remove these classes and add them when the navbar returns to the non-sticky state. To do that, set `cls-inactive: uk-navbar-transparent uk-light`.
+When a [transparent navbar](navbar.md#transparent-modifier) is used, the markup contains the `.uk-navbar-transparent` class together with `.uk-light` or `.uk-dark`. When the navbar is sticky, it is usually required to remove these classes and add them when the navbar returns to the non-sticky state. To do that, set `cls-inactive: uk-navbar-transparent uk-light`.
 
-By default, the immediate toggling of classes does not look ideal. Instead, we can set `start: 200` to let the navbar disappear and then re-appear when the user has scrolled 200px past the navbar. In that case you can also allow the navbar to slide in with an animation. Just set `animation: uk-animation-slide-top`.
+By default, the immediate toggling of classes does not look ideal. Instead, set `start: 200` to make the navbar disappear and then re-appear when the user has scrolled 200px past the navbar. In that case, the navbar can also slide in with an animation. Just set `animation: uk-animation-slide-top`.
 
 ```html
 <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light">
@@ -1234,12 +1234,11 @@ By default, the immediate toggling of classes does not look ideal. Instead, we c
 
 ### Dropbar transparent mode
 
-
 To optimize the look of a transparent navbar if it opens a dropbar, set the `dropbar-transparent-mode` option to one of the following values.
 
 | Mode     | Description                                                                                     |
 | -------- | ----------------------------------------------------------------------------------------------- |
-| `remove` | Remove transparency of the navbar when the dropbar opens and put it back if the dropbar closes. |
+| `remove` | Remove navbar transparency when the dropbar opens and add it when the dropbar closes.           |
 | `behind` | Open the dropbar behind the navbar so the navbar content is shown above the dropbar background. |
 
 For example, set `dropbar-transparent-mode: remove` if the navbar is only transparent in the hero section, but not when sticky.
@@ -1420,7 +1419,7 @@ Alternatively, if the navbar is always transparent even when sticky, set `dropba
 </div>
 ```
 
-If a blend mode for the sticky transparent navbar is used, the dropbar has to be placed outside of the blending element using `dropbar-anchor`, as well as the dropdowns using `container`. Because this is also outside of the sticky container only the navbar will stay sticky while the opened dropbar will scroll out of the view. This is why we added a new `close-on-scroll` option to close the dropbar when scrolling.
+If the sticky transparent navbar is used with the blend mode, the dropbar has to be placed outside of the blending element using `dropbar-anchor`, as well as the dropdowns using `container`. Since the blending element is also outside of the sticky container, only the navbar will stay sticky, and the opened dropbar will scroll out of the view. This is why we added a new `close-on-scroll` option to close the dropbar before scrolling.
 
 ```html
 <div class="uk-blend-difference uk-position-z-index-high" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">

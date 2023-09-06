@@ -24,7 +24,7 @@ To define a general offset when linking directly to a specific section on a page
 <a href="#my-id" uk-scroll="offset: 100"></a>
 ```
 
-If the `offset` option is not set, the offset falls back to the `--uk-scroll-offset` custom property which is defined in the UIkit CSS. By default, it's set to the navbar height. Using the custom property instead of setting the `offset` option has the advantage that the offset is only applied if a navbar is present on the page and second, that it allows to override the `--uk-scroll-offset` custom CSS property for different navbar heights on different viewports. 
+If the `offset` option is not set, the offset falls back to the `--uk-scroll-offset` custom property which is defined in the UIkit CSS. By default, it's set to the navbar height. Using the custom property instead of setting the `offset` option has the advantage that the offset is only applied if a navbar is present on the page. Additionaly, it allows overriding the `--uk-scroll-offset` custom CSS property for different navbar heights on different viewports.
 
 ***
 
