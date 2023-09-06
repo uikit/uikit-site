@@ -24,7 +24,7 @@ To define a general offset when linking directly to a specific section on a page
 <a href="#my-id" uk-scroll="offset: 100"></a>
 ```
 
-If the `offset` option is not set, the offset falls back to the `--uk-scroll-offset` custom property which is defined in the UIkit CSS. By default, it's set to the navbar height. Using the custom property instead of setting the `offset` option has the advantage that the offset is only applied if a navbar is present on the page. Additionaly, it allows overriding the `--uk-scroll-offset` custom CSS property for different navbar heights on different viewports.
+If the `offset` option is not set, the offset falls back to the `--uk-scroll-offset` custom property which is defined in the UIkit CSS. By default, it's set to the navbar height. Using the custom property instead of setting the `offset` option has the advantage that the offset is only applied if a navbar is present on the page. Additionally, it allows overriding the `--uk-scroll-offset` custom CSS property for different navbar heights on different viewports.
 
 ***
 
@@ -58,9 +58,9 @@ UIkit.util.on('#js-scroll-trigger', 'scrolled', function () {
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option   | Value          | Default | Description                                                                                                             |
-|----------|----------------|---------|-------------------------------------------------------------------------------------------------------------------------|
-| `offset` | Boolean, Number | `false` | Offset added to scroll top. If no offset is provided (false) it falls back to the `--uk-scroll-offset` custom property. |
+| Option   | Value           | Default | Description                                                                                                              |
+| -------- | --------------- | ------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `offset` | Boolean, Number | `false` | Offset added to scroll top. If no offset is provided (false), it falls back to the `--uk-scroll-offset` custom property. |
 
 ## JavaScript
 
@@ -77,7 +77,7 @@ UIkit.scroll(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name           | Description                                                                                   |
-|----------------|-----------------------------------------------------------------------------------------------|
+| -------------- | --------------------------------------------------------------------------------------------- |
 | `beforescroll` | Fires before scroll begins. Can prevent scrolling by calling `preventDefault()` on the event. |
 | `scrolled`     | Fires after scrolling is finished.                                                            |
 
@@ -94,7 +94,7 @@ UIkit.scroll(element).scrollTo(el);
 Scroll to the given element.
 
 | Name | Type           | Default   | Description               |
-|------|----------------|-----------|---------------------------|
+| ---- | -------------- | --------- | ------------------------- |
 | `el` | Node, Selector | undefined | The element to scroll to. |
 
 <div style="height: 2000px;"></div>

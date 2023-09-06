@@ -1419,7 +1419,7 @@ Alternatively, if the navbar is always transparent even when sticky, set `dropba
 </div>
 ```
 
-If the sticky transparent navbar is used with the blend mode, the dropbar has to be placed outside of the blending element using `dropbar-anchor`, as well as the dropdowns using `container`. Since the blending element is also outside of the sticky container, only the navbar will stay sticky, and the opened dropbar will scroll out of the view. This is why we added a new `close-on-scroll` option to close the dropbar before scrolling.
+If the sticky transparent navbar is used with a blend mode, the dropbar has to be placed outside of the blending element using `dropbar-anchor`, as well as the dropdowns using `container`. This also means the dropbar will be placed outside of the sticky container. As a result, only the navbar will stay sticky, and the opened dropbar will scroll out of the view. This is why we added a new `close-on-scroll` option to close the dropbar before scrolling.
 
 ```html
 <div class="uk-blend-difference uk-position-z-index-high" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
