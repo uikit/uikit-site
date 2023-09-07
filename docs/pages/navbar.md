@@ -159,6 +159,8 @@ You can place more than one navigation inside a navbar container. That way you c
 
 When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just add the `.uk-navbar-transparent` class to the `<nav>` element. If necessary, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to adjust the navbar color.
 
+Mind, the [Section](section.md) component defines a `--uk-section-color` custom property in the UIkit CSS. Different section styles define whether a light or dark style fits the section background best. If the transparent navbar intersects with a section, it automatically sets the corresponding `.uk-light` or `.uk-dark` class to adjust the navbar color. A sticky transparent navbar will automatically change its color depending on the section beneath.
+
 ```html
 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>…</nav>
 ```
