@@ -58,9 +58,9 @@ UIkit.util.on('#js-scroll-trigger', 'scrolled', function () {
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option   | Value           | Default | Description                                                                                                              |
-| -------- | --------------- | ------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `offset` | Boolean, Number | `false` | Offset added to scroll top. If no offset is provided (false), it falls back to the `--uk-scroll-offset` custom property. |
+| Option   | Value  | Default | Description                 |
+|----------|--------|---------|-----------------------------|
+| `offset` | Number | `0`     | Offset added to scroll top. |
 
 ## JavaScript
 
