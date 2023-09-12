@@ -4,6 +4,12 @@
 
 ***
 
+## Migration from UIkit 3.16 to 3.17
+
+The [Scroll component](nav.md) now detects if a sticky element like a sticky navbar is present and automatically adds the height as offset to the scroll target. If the `offset` option is set, the value is now added up. This means that you don't have to set the offset option to prevent the navbar from covering the scroll target anymore.
+
+***
+
 ## Migration from UIkit 3.15 to 3.16
 
 UIkit 3.16 simplifies some classes in the [Drop component](drop.md). Update your markup by replacing the following classes.
