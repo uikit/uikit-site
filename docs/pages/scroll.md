@@ -14,6 +14,8 @@ Simply add the `uk-scroll` attribute to any page-internal link that contains a U
 <a class="uk-button uk-button-primary" href="#target" uk-scroll>Scroll down</a>
 ```
 
+The height of a sticky element, for example the sticky navbar, is automatically added as offset to the scroll target so it is not covered by the sticky element. 
+
 ***
 
 ## Offset
@@ -24,7 +26,7 @@ To define a general offset when linking directly to a specific section on a page
 <a href="#my-id" uk-scroll="offset: 100"></a>
 ```
 
-Mind that UIkit detects if a sticky element like a sticky navbar is present and automatically adds the height as offset to the scroll target. If the `offset` option is set, the value is added up.
+If there is already an offset for a sticky element, the `offset` option is added up.
 
 ***
 

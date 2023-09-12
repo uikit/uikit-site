@@ -6,7 +6,7 @@
 
 ## Migration from UIkit 3.16 to 3.17
 
-The [Scroll component](nav.md) now detects if a sticky element like a sticky navbar is present and automatically adds the height as offset to the scroll target. If the `offset` option is set, the value is now added up. This means that you don't have to set the offset option to prevent the navbar from covering the scroll target anymore.
+The [Scroll component](nav.md) now automatically adds the height of a sticky element, for example the sticky navbar, as offset to the scroll target so it is not covered by the sticky element. If there is already an offset for a sticky element, the `offset` option is added up. This means that you don't have to set the offset option to prevent the navbar from covering the scroll target anymore.
 
 ***
 
