@@ -634,6 +634,103 @@ To filter items by multiple criteria at the same time, the filter controls need 
 
 ***
 
+## Filters Toggleable
+
+To create toggleable filters on items having multi meta data (tags of a blog for example), you just need to use the [Toggle](https://getuikit.com/docs/toggle) component to create two controls for each meta data. The first filter and the second unfilter.
+
+```html
+<!-- filter controls -->    
+<div class="uk-nav uk-margin-bottom">
+    <!-- toggleable control filter on meta data one -->
+    <button uk-filter-control="group: one; filter: [data-meta~='one']"
+            uk-toggle="target: .my-filter-control-one"
+            class="my-filter-control-one uk-button">
+        One
+    </button>               
+    <button uk-filter-control="group: one; filter: "
+            uk-toggle="target: .my-filter-control-one"
+            class="my-filter-control-one uk-button uk-button-primary"
+            hidden>
+        One
+    </button>
+    <!-- toggleable control filter on meta data two -->
+    <button uk-filter-control="group: two; filter: [data-meta~='two']"
+            uk-toggle="target: .my-filter-control-two"
+            class="my-filter-control-two uk-button">
+        Two
+    </button>               
+    <button uk-filter-control="group: two; filter: "
+            uk-toggle="target: .my-filter-control-two"
+            class="my-filter-control-two uk-button uk-button-primary"
+            hidden>
+        Two
+    </button>
+</div>
+````
+
+```example
+<div uk-filter="target: #my-filter" class="uk-position-relative">     
+    <div class="uk-nav uk-margin-bottom">               
+        <button uk-filter-control="group:one;filter:[data-meta~='one']"
+                class="my-filter-control-one uk-button"
+                uk-toggle="target: .my-filter-control-one">One
+        </button>               
+        <button uk-filter-control="group:one;filter:"
+                class="my-filter-control-one uk-button uk-button-primary"
+                hidden uk-toggle="target: .my-filter-control-one">One
+        </button>               
+        <button uk-filter-control="filter:[data-meta~='two'];group:two"
+                class="my-filter-control-two uk-button"
+                uk-toggle="target: .my-filter-control-two">Two
+        </button>               
+        <button uk-filter-control="filter:;group:two"
+                class="my-filter-control-two uk-button uk-button-primary"
+                hidden uk-toggle="target: .my-filter-control-two">Two
+        </button>               
+        <button uk-filter-control="filter:[data-meta~='three'];group:three"
+                class="my-filter-control-three uk-button"
+                uk-toggle="target: .my-filter-control-three">Three
+        </button>               
+        <button uk-filter-control="filter:;group:three"
+                class="my-filter-control-three uk-button uk-button-primary"
+                hidden uk-toggle="target: .my-filter-control-three">Three
+        </button>               
+    </div>           
+    <ul id="my-filter" class="uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>               
+        <li data-meta="one">
+            <div class="uk-card uk-card-default uk-card-body">Meta data: One
+            </div>
+        </li>               
+        <li data-meta="two">
+            <div  class="uk-card uk-card-default uk-card-body">Meta data: Two
+            </div>
+        </li>               
+        <li data-meta="three">
+            <div data-meta="three" class="uk-card uk-card-default uk-card-body">Meta data: Three
+            </div>
+        </li>               
+        <li data-meta="one two">
+            <div data-meta="one two" class="uk-card uk-card-default uk-card-body">Meta data: One, Two
+            </div>
+        </li>               
+        <li data-meta="one three">
+            <div data-meta="one three" class="uk-card uk-card-default uk-card-body">Meta data: One, Three
+            </div>
+        </li>               
+        <li data-meta="two three">
+            <div data-meta="two three" class="uk-card uk-card-default uk-card-body">Meta data: Two, Three
+            </div>
+        </li>               
+        <li data-meta="one two three">
+            <div data-meta="one two three" class="uk-card uk-card-default uk-card-body">Meta data: One, Two, Three
+            </div>
+        </li>           
+    </ul>       
+</div>
+```
+
+***
+
 ## Sorting
 
 To sort items alphanumerically, just add the `sort: ATTRIBUTE` option to the `uk-filter-control` attribute and define the metadata attribute by which the items should be sorted. By default, items are sorted in ascending order. Add the `order: desc` to sort items in descending order.
