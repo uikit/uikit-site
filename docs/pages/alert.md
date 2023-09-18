@@ -22,13 +22,13 @@ To create a close button and enable its functionality, add the `.uk-alert-close`
 
 ```html
 <div uk-alert>
-    <a class="uk-alert-close" uk-close></a>
+    <a href class="uk-alert-close" uk-close></a>
 </div>
 ```
 
 ```example
 <div uk-alert>
-    <a class="uk-alert-close" uk-close></a>
+    <a href class="uk-alert-close" uk-close></a>
     <h3>Notice</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
@@ -49,22 +49,22 @@ There are several style modifiers available. Just add one of the following class
 
 ```example
 <div class="uk-alert-primary" uk-alert>
-    <a class="uk-alert-close" uk-close></a>
+    <a href class="uk-alert-close" uk-close></a>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 </div>
 
 <div class="uk-alert-success" uk-alert>
-    <a class="uk-alert-close" uk-close></a>
+    <a href class="uk-alert-close" uk-close></a>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 </div>
 
 <div class="uk-alert-warning" uk-alert>
-    <a class="uk-alert-close" uk-close></a>
+    <a href class="uk-alert-close" uk-close></a>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 </div>
 
 <div class="uk-alert-danger" uk-alert>
-    <a class="uk-alert-close" uk-close></a>
+    <a href class="uk-alert-close" uk-close></a>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 </div>
 ```

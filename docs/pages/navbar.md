@@ -837,7 +837,7 @@ To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` optio
                 <ul class="uk-navbar-nav">
                     <li class="uk-active"><a href="#">Active</a></li>
                     <li>
-                        <a href="#">Parent</a>
+                        <a href>Parent</a>
                         <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li class="uk-active"><a href="#">Active</a></li>
@@ -851,7 +851,7 @@ To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` optio
                         </div>
                     </li>
                     <li>
-                        <a href="#">Parent</a>
+                        <a href>Parent</a>
                         <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">
                             <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
                                 <div>

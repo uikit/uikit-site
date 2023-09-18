@@ -406,7 +406,7 @@ To stretch the dropdown to fill the size of its closest scrolling ancestor, add 
 
         <ul class="uk-navbar-nav">
             <li>
-                <a href="#">Hover</a>
+                <a href>Hover</a>
                 <div class="uk-navbar-dropdown" uk-dropdown="boundary: !.uk-navbar; stretch: x; flip: false">
                     <ul class="uk-nav uk-dropdown-nav">
                         <li class="uk-active"><a href="#">Active</a></li>

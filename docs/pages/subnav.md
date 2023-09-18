@@ -95,7 +95,7 @@ You can also use a dropdown from the [Dropdown component](dropdown.md) with a su
     <li class="uk-active"><a href="#">Active</a></li>
     <li><a href="#">Item</a></li>
     <li>
-        <a href="#">More <span uk-icon="icon: triangle-down"></span></a>
+        <a href>More <span uk-icon="icon: triangle-down"></span></a>
         <div uk-dropdown="mode: click">
             <ul class="uk-nav uk-dropdown-nav">
                 <li class="uk-active"><a href="#">Active</a></li>

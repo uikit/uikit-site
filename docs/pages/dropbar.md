@@ -43,7 +43,7 @@ The dropbar is typically used together with the [Navbar component](navbar.md).
 
                     <ul class="uk-navbar-nav">
                         <li>
-                            <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+                            <a class="uk-navbar-toggle uk-navbar-toggle-animate" href uk-navbar-toggle-icon></a>
                             <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                         </li>
                     </ul>
@@ -96,15 +96,15 @@ To open the dropbar from a specific direction use the `pos` and `stretch` option
 
                     <ul class="uk-navbar-nav">
                         <li>
-                            <a href="#">Top</a>
+                            <a href>Top</a>
                             <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x; target: !.uk-navbar-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                         </li>
                         <li>
-                            <a href="#">Left</a>
+                            <a href>Left</a>
                             <div class="uk-dropbar uk-dropbar-left" uk-drop="stretch: y; target: !.uk-navbar-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
                         </li>
                         <li>
-                            <a href="#">Right</a>
+                            <a href>Right</a>
                             <div class="uk-dropbar uk-dropbar-right" uk-drop="pos: bottom-right; stretch: y; target: !.uk-navbar-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
                         </li>
                     </ul>
@@ -150,27 +150,27 @@ To animate the dropbar use the `slide-*` or `reveal-*` animations from the [Drop
 
                     <ul class="uk-navbar-nav">
                         <li>
-                            <a href="#">Slide Top</a>
+                            <a href>Slide Top</a>
                             <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x; target: !.uk-navbar-container; animation: slide-top; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                         </li>
                         <li>
-                            <a href="#">Reveal Top</a>
+                            <a href>Reveal Top</a>
                             <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x; target: !.uk-navbar-container; animation: reveal-top; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                         </li>
                         <li>
-                            <a href="#">Slide Left</a>
+                            <a href>Slide Left</a>
                             <div class="uk-dropbar uk-dropbar-left" uk-drop="stretch: y; target: !.uk-navbar-container; animation: slide-left; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
                         </li>
                         <li>
-                            <a href="#">Reveal Left</a>
+                            <a href>Reveal Left</a>
                             <div class="uk-dropbar uk-dropbar-left" uk-drop="stretch: y; target: !.uk-navbar-container; animation: reveal-left; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
                         </li>
                         <li>
-                            <a href="#">Slide Right</a>
+                            <a href>Slide Right</a>
                             <div class="uk-dropbar uk-dropbar-right" uk-drop="pos: bottom-right; stretch: y;  target: !.uk-navbar-container; animation: slide-right; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
                         </li>
                         <li>
-                            <a href="#">Reveal Right</a>
+                            <a href>Reveal Right</a>
                             <div class="uk-dropbar uk-dropbar-right" uk-drop="pos: bottom-right; stretch: y;  target: !.uk-navbar-container; animation: reveal-right; animate-out: true; duration: 700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
                         </li>
                     </ul>
@@ -208,7 +208,7 @@ A dropbar can contain a nav from the [Nav component](nav.md). Just add the `.uk-
 
                     <ul class="uk-navbar-nav">
                         <li>
-                            <a href="#">Hover</a>
+                            <a href>Hover</a>
                             <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li class="uk-active"><a href="#">Active</a></li>
@@ -254,7 +254,7 @@ Add the `.uk-dropbar-large` class for a dropbar with larger vertical padding.
 
                     <ul class="uk-navbar-nav">
                         <li>
-                            <a href="#">Hover</a>
+                            <a href>Hover</a>
                             <div class="uk-dropbar uk-dropbar-top uk-dropbar-large" uk-drop="stretch: x">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li class="uk-active"><a href="#">Active</a></li>

@@ -267,7 +267,7 @@ To stretch the drop to fill the size of its closest scrolling ancestor, add the 
 
         <ul class="uk-navbar-nav">
             <li>
-                <a href="#">Hover</a>
+                <a href>Hover</a>
                 <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
             </li>
         </ul>
