@@ -32,6 +32,9 @@ devDependencies:
   execa:
     specifier: ^8.0.1
     version: 8.0.1
+  github-slugger:
+    specifier: ^2.0.0
+    version: 2.0.0
   highlight.js:
     specifier: 9.12.0
     version: 9.12.0
@@ -1288,6 +1291,10 @@ packages:
   /get-stream@8.0.1:
     resolution: {integrity: sha512-VaUJspBffn/LMCJVoMvSAdmscJyS1auj5Zulnn5UoYcY531UWmdwhRWkcGKnGU93m5HSXP9LP2usOryrBtQowA==}
     engines: {node: '>=16'}
+    dev: true
+
+  /github-slugger@2.0.0:
+    resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
     dev: true
 
   /glob-parent@6.0.2:

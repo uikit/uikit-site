@@ -1,3 +1,4 @@
+import GithubSlugger from 'github-slugger';
 import hljs from 'highlight.js';
 import { marked } from 'marked';
 import { readFile, stat } from 'node:fs/promises';
@@ -11,7 +12,7 @@ export async function load({ params }) {
 
 async function parse(markdown) {
     const base = new marked.Renderer();
-    const slugger = new marked.Slugger();
+    const slugger = new GithubSlugger();
 
     let pageTitle;
     let ids = [];
