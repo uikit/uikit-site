@@ -14,6 +14,20 @@ Simply add the `uk-scroll` attribute to any page-internal link that contains a U
 <a class="uk-button uk-button-primary" href="#target" uk-scroll>Scroll down</a>
 ```
 
+The height of a sticky element, for example the sticky navbar, is automatically added as offset to the scroll target so it is not covered by the sticky element. 
+
+***
+
+## Offset
+
+To define a general offset when linking directly to a specific section on a page, add the `offset` option.
+
+```html
+<a href="#my-id" uk-scroll="offset: 100"></a>
+```
+
+If there is already an offset for a sticky element, the `offset` option is added up.
+
 ***
 
 ## Callback after scroll
@@ -46,9 +60,9 @@ UIkit.util.on('#js-scroll-trigger', 'scrolled', function () {
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option     | Value  | Default | Description                         |
-|------------|--------|---------|-------------------------------------|
-| `offset`   | Number | `0`     | Pixel offset added to scroll top.   |
+| Option   | Value  | Default | Description                 |
+|----------|--------|---------|-----------------------------|
+| `offset` | Number | `0`     | Offset added to scroll top. |
 
 ## JavaScript
 
@@ -65,7 +79,7 @@ UIkit.scroll(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name           | Description                                                                                   |
-|----------------|-----------------------------------------------------------------------------------------------|
+| -------------- | --------------------------------------------------------------------------------------------- |
 | `beforescroll` | Fires before scroll begins. Can prevent scrolling by calling `preventDefault()` on the event. |
 | `scrolled`     | Fires after scrolling is finished.                                                            |
 
@@ -82,7 +96,7 @@ UIkit.scroll(element).scrollTo(el);
 Scroll to the given element.
 
 | Name | Type           | Default   | Description               |
-|------|----------------|-----------|---------------------------|
+| ---- | -------------- | --------- | ------------------------- |
 | `el` | Node, Selector | undefined | The element to scroll to. |
 
 <div style="height: 2000px;"></div>

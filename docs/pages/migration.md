@@ -4,6 +4,14 @@
 
 ***
 
+## Migration from UIkit 3.16 to 3.17
+
+The [Scroll component](scroll.md) now automatically adds the height of a sticky element, for example the sticky navbar, as offset to the scroll target so it is not covered by the sticky element. If there is already an offset for a sticky element, the `offset` option is added up. This means that you don't have to set the offset option to prevent the navbar from covering the scroll target anymore.
+
+The [Grid component](grid.md) now has a new masonry `pack` mode which will sort items into columns with the most room. To keep backward compatibility, setting masonry to `true`, will just use the new `pack` mode. To show items in their natural order, as before, use the `next` mode.
+
+***
+
 ## Migration from UIkit 3.15 to 3.16
 
 UIkit 3.16 simplifies some classes in the [Drop component](drop.md). Update your markup by replacing the following classes.

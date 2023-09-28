@@ -9,7 +9,7 @@ The Navbar component initializes all dropdowns with the same options, so they do
 The Navbar component consists of a navbar container, the navbar itself and one or more navigations.
 
 | Element                                                           | Description                                                                                                    |
-|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | `uk-navbar`                                                       | Add this attribute to a `<nav>` element to define the Navbar component.                                        |
 | `.uk-navbar-container`                                            | Add this class to the same `<nav>` element or a parent element to add the navbar background style.             |
 | `.uk-navbar-left`<br> `.uk-navbar-center`<br>  `.uk-navbar-right` | Add one of these classes to a `<div>` element to align the navigation.                                         |
@@ -158,6 +158,8 @@ You can place more than one navigation inside a navbar container. That way you c
 ## Transparent modifier
 
 When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just add the `.uk-navbar-transparent` class to the `<nav>` element. If necessary, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to adjust the navbar color.
+
+Mind, the [Section](section.md) component defines the `--uk-navbar-color` custom property in the UIkit CSS. Different section styles define whether a light or dark style fits the section background best. If the transparent navbar intersects with a section, it automatically sets the corresponding `.uk-light` or `.uk-dark` class to adjust the navbar color. A sticky transparent navbar will automatically change its color depending on the section beneath.
 
 ```html
 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>…</nav>
@@ -1044,42 +1046,51 @@ The navbar itself has a modifier class `uk-navbar-sticky` that ensures an optimi
 ```
 
 ```example
-<div class="uk-background-primary uk-height-large">
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: + *; offset: 80">
 
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: !.uk-height-large; offset: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar>
 
-        <nav class="uk-navbar-container">
-            <div class="uk-container">
-                <div uk-navbar>
+                <div class="uk-navbar-left">
 
-                    <div class="uk-navbar-left">
-
-                        <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li>
-                                <a href="#">Parent</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Active</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li><a href="#">Item</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-
-                    </div>
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li>
+                            <a href="#">Parent</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
 
                 </div>
-            </div>
-        </nav>
-    </div>
 
+            </div>
+        </div>
+    </nav>
+
+</div>
+
+<div class="uk-section uk-section-secondary uk-background-cover" style="background-image: url('images/dark.jpg');">
+    <div class="uk-container">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+
+    </div>
 </div>
 ```
 
-Instead of using a Dropdown, you can show a Dropbar, which means that the subnavigation is displayed in a full width below the navbar. Simply set `dropbar: true` inside the `uk-navbar` attribute.
+Instead of using a Dropdown, you can also show the subnavigation in a Dropbar, which will stretch across the full width below the navbar. Simply set `dropbar: true` inside the `uk-navbar` attribute.
 
 ```html
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
@@ -1088,13 +1099,166 @@ Instead of using a Dropdown, you can show a Dropbar, which means that the subnav
 ```
 
 ```example
-<div class="uk-background-primary uk-height-large">
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: + *; offset: 80">
 
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: !.uk-height-large; offset: 200">
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
+
+                <div class="uk-navbar-left">
+
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li>
+                            <a href="#">Parent</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-header">Header</li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Parent</a>
+                            <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                    <div>
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+</div>
+
+<div class="uk-section uk-section-secondary uk-background-cover" style="background-image: url('images/dark.jpg');">
+    <div class="uk-container">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+
+    </div>
+</div>
+
+```
+
+***
+
+### Transparent sticky navbar
+
+When a [transparent navbar](navbar.md#transparent-modifier) is used, the markup contains the `.uk-navbar-transparent` class together with `.uk-light` or `.uk-dark`. When the navbar is sticky, it is usually required to remove these classes and add them when the navbar returns to the non-sticky state. To do that, set `cls-inactive: uk-navbar-transparent uk-light`.
+
+By default, the immediate toggling of classes does not look ideal. Instead, set `start: 200` to make the navbar disappear and then re-appear when the user has scrolled 200px past the navbar. In that case, the navbar can also slide in with an animation. Just set `animation: uk-animation-slide-top`.
+
+```html
+<div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light">
+    <nav class="uk-navbar-container" uk-navbar>…</nav>
+</div>
+```
+
+```example
+<div class="uk-section-secondary uk-background-cover uk-preserve-color" style="background-image: url('images/dark.jpg');">
+
+    <div uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; end: ! *; offset: 80">
+
+        <nav class="uk-navbar-container">
+            <div class="uk-container uk-container-expand">
+                <div uk-navbar>
+
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li>
+                            <a href="#">Parent</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="uk-section uk-light">
+        <div class="uk-container">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+
+        </div>
+    </div>
+
+</div>
+```
+
+### Dropbar transparent mode
+
+To optimize the look of a transparent navbar if it opens a dropbar, set the `dropbar-transparent-mode` option to one of the following values.
+
+| Mode     | Description                                                                                     |
+| -------- | ----------------------------------------------------------------------------------------------- |
+| `remove` | Remove navbar transparency when the dropbar opens and add it when the dropbar closes.           |
+| `behind` | Open the dropbar behind the navbar so the navbar content is shown above the dropbar background. |
+
+For example, set `dropbar-transparent-mode: remove` if the navbar is only transparent in the hero section, but not when sticky.
+
+```html
+<div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light">
+    <nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-transparent-mode: remove">…</nav>
+</div>
+```
+
+```example
+<div class="uk-section-secondary uk-background-cover uk-preserve-color" style="background-image: url('images/dark.jpg');">
+
+    <div uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; end: ! *; offset: 80">
 
         <nav class="uk-navbar-container">
             <div class="uk-container">
-                <div uk-navbar="dropbar: true; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
+                <div uk-navbar="dropbar: true; dropbar-transparent-mode: remove; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
 
                     <div class="uk-navbar-left">
 
@@ -1150,55 +1314,191 @@ Instead of using a Dropdown, you can show a Dropbar, which means that the subnav
                 </div>
             </div>
         </nav>
+
+    </div>
+
+    <div class="uk-section uk-light">
+        <div class="uk-container">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+
+        </div>
     </div>
 
 </div>
 ```
 
-***
-
-### Transparent sticky navbar
-
-When you use a [transparent navbar](navbar.md#transparent-modifier), your markup contains the `.uk-navbar-transparent` class together with `.uk-light` or `.uk-dark`. When the navbar is sticky, it is usually required to remove these classes and add them when the navbar returns to the non-sticky state. To do that, set `cls-inactive: uk-navbar-transparent uk-light`.
-
-By default, the immediate toggling of classes does not look ideal. Instead, we can set `start: 200` to let the navbar disappear and then re-appear when the user has scrolled 200px past the navbar. In that case you can also allow the navbar to slide in with an animation. Just set `animation: uk-animation-slide-top`.
+Alternatively, if the navbar is always transparent even when sticky, set `dropbar-transparent-mode: behind` to open the dropbar behind the navbar, so it is no longer transparent. If you need to inverse the color of the navbar content to better fit the dropbar background, set the Less variable `@navbar-dropbar-behind-color-mode` to either `light` or `dark`.
 
 ```html
-<div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light">
-    <nav class="uk-navbar-container" uk-navbar>…</nav>
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-position-relative uk-position-z-index-high" uk-navbar="dropbar: true; dropbar-transparent-mode: behind">…</nav>
 </div>
 ```
 
 ```example
-<div class="uk-section-primary uk-preserve-color">
+<div class="uk-section-secondary uk-background-cover uk-preserve-color" style="background-image: url('images/dark.jpg');">
 
-    <div uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; end: !.uk-section-primary;">
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: ! *; offset: 80">
 
-        <nav class="uk-navbar-container">
-            <div class="uk-container uk-container-expand">
-                <div uk-navbar>
+        <nav class="uk-navbar-container uk-navbar-transparent uk-light uk-position-relative uk-position-z-index-high">
+            <div class="uk-container">
+                <div uk-navbar="dropbar: true; dropbar-transparent-mode: behind; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
 
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li>
-                            <a href="#">Parent</a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
+                    <div class="uk-navbar-left">
+
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li>
+                                <a href="#">Parent</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Parent</a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                    <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
 
                 </div>
             </div>
         </nav>
+
     </div>
 
     <div class="uk-section uk-light">
+        <div class="uk-container">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+
+        </div>
+    </div>
+
+</div>
+```
+
+When using a sticky transparent navbar, it's quite common to blend it with the page background. In this case, the dropbar needs to be placed outside of the blending element using `dropbar-anchor`, and the dropdowns using `container`. Otherwise, the dropbar and dropdowns would also blend with the page background. This also means the dropbar will be placed outside of the sticky container. As a result, only the navbar will stay sticky, and the opened dropbar will scroll out of the view. This is why we added a new `close-on-scroll` option to close the dropbar before scrolling.
+
+```html
+<div class="uk-blend-difference uk-position-z-index-high" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="container: !.uk-section-default; dropbar: true; dropbar-transparent-mode: behind; close-on-scroll: true; dropbar-anchor: !.uk-blend-difference">…</nav>
+</div>
+```
+
+```example
+<div class="uk-section-default uk-background-cover uk-preserve-color" style="background-image: url('images/light.jpg');">
+
+    <div id="test">
+
+    <div class="uk-blend-difference uk-position-z-index-high" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: !.uk-section-default; offset: 80">
+
+        <nav class="uk-navbar-container uk-navbar-transparent">
+            <div class="uk-container">
+                <div uk-navbar="container: #test; dropbar: true; dropbar-transparent-mode: behind; close-on-scroll: true; dropbar-anchor: !.uk-blend-difference; target-y: #test .uk-navbar-container">
+
+                    <div class="uk-navbar-left">
+
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li>
+                                <a href="#">Parent</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Parent</a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                    <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    </div>
+
+    <div class="uk-section">
         <div class="uk-container">
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
@@ -1219,24 +1519,27 @@ By default, the immediate toggling of classes does not look ideal. Instead, we c
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option           | Value                 | Default             | Description                                                                                                  |
-|------------------|-----------------------|---------------------|--------------------------------------------------------------------------------------------------------------|
-| `align`          | String                | `left`              | Dropdown alignment: `left`, `right`, `center`                                                                |
-| `dropbar `       | Boolean               | `false`             | Enable or disable dropbar behavior.                                                                          |
-| `dropbar-anchor` | CSS selector          | `false`             | If set, dropbar will be inserted after the anchor element.                                                   |
-| `stretch`        | Boolean, String       | `false`             | Stretch dropdown on both (true) or given axis (`x`, `y`).                                                    |
-| `mode`           | String                | `click, hover`      | Comma-separated list of dropdown trigger behavior modes (`click`, `hover`).                                  |
-| `delay-show`     | Number                | `0`                 | Delay time in hover mode before a dropdown is shown in ms.                                                   |
-| `delay-hide`     | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
-| `boundary`       | CSS selector          | `true`              | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
-| `target`         | Boolean, CSS selector | `false`             | The element the dropdown is positioned to (`true` for window).                                               |
-| `target-x`       | Boolean, CSS selector | `false`             | The element's X axis the dropdown is positioned to (`true` for window).                                      |
-| `target-y`       | Boolean, CSS selector | `false`             | The element's Y axis the dropdown is positioned to (`true` for window).                                      |
-| `offset`         | Number                | `0`                 | The dropdown offset.                                                                                         |
-| `animation`      | String                | `uk-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                      |
-| `animate-out`    | Boolean               | `false`             | Use animation when closing the drop.                                                                         |
-| `duration`       | Number                | `200`               | The animation duration.                                                                                      |
-| `container`      | Boolean               | `false`             | Define a target container via a selector to specify where the dropdown should be appended in the DOM.        |
+| Option                     | Value                 | Default             | Description                                                                                                  |
+| -------------------------- | --------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `align`                    | String                | `left`              | Dropdown alignment (`left`, `right`, `center`).                                                              |
+| `dropbar `                 | Boolean               | `false`             | Enable or disable dropbar behavior.                                                                          |
+| `dropbar-anchor`           | CSS selector          | `false`             | If set, dropbar will be inserted after the anchor element.                                                   |
+| `dropbar-transparent-mode` | Boolean, String       | `false`             | The dropbar transparent mode (`behind`, `remove`).                                                           |
+| `stretch`                  | Boolean, String       | `false`             | Stretch dropdown on both (true) or given axis (`x`, `y`).                                                    |
+| `mode`                     | String                | `click, hover`      | Comma-separated list of dropdown trigger behavior modes (`click`, `hover`).                                  |
+| `delay-show`               | Number                | `0`                 | Delay time in hover mode before a dropdown is shown in ms.                                                   |
+| `delay-hide`               | Number                | `800`               | Delay time in hover mode before a dropdown is hidden in ms.                                                  |
+| `boundary`                 | CSS selector          | `true`              | The area the dropdown can't exceed causing it to flip and shift. By default, the nearest scrolling ancestor. |
+| `target`                   | Boolean, CSS selector | `false`             | The element the dropdown is positioned to (`true` for window).                                               |
+| `target-x`                 | Boolean, CSS selector | `false`             | The element's X axis the dropdown is positioned to (`true` for window).                                      |
+| `target-y`                 | Boolean, CSS selector | `false`             | The element's Y axis the dropdown is positioned to (`true` for window).                                      |
+| `offset`                   | Number                | `0`                 | The dropdown offset.                                                                                         |
+| `animation`                | String                | `uk-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                      |
+| `animate-out`              | Boolean               | `false`             | Use animation when closing the dropdown.                                                                     |
+| `bg-scroll`                | Boolean               | `true`              | Allow background scrolling while dropdown is opened.                                                         |
+| `close-on-scroll`          | Boolean               | `false`             | Close the dropdown on scrolling a parent scroll container.                                                   |
+| `duration`                 | Number                | `200`               | The animation duration.                                                                                      |
+| `container`                | Boolean               | `false`             | Define a target container via a selector to specify where the dropdown should be appended in the DOM.        |
 
 ***
 
@@ -1255,7 +1558,7 @@ UIkit.navbar(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name         | Description                                                                                    |
-|--------------|------------------------------------------------------------------------------------------------|
+| ------------ | ---------------------------------------------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
 | `shown`      | Fires after the item's show animation has completed.                                           |
@@ -1287,5 +1590,5 @@ The Navbar component can be accessed through keyboard using the following keys.
 The Toggle Item component uses the following translation strings. Learn more about [translating components](accessibility.md#internationalization).
 
 | Key     | Default     | Description             |
-|---------|-------------|-------------------------|
+| ------- | ----------- | ----------------------- |
 | `label` | `Open Menu` | `aria-label` attribute. |

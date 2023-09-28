@@ -128,7 +128,7 @@ You can also give each target a separate `cls` option. Just add the `uk-scrollsp
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
 | Option   | Value                 | Default | Description                                                                                                                                |
-|----------|-----------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| -------- | --------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | `cls`    | String                |         | Class to toggle when the element enters/leaves viewport.                                                                                   |
 | `target` | Boolean, CSS selector | `false` | Target to apply the scrollspy to. Defaults to the element itself.                                                                          |
 | `hidden` | Boolean               | `true`  | Hides the element while out of view.                                                                                                       |
@@ -159,7 +159,7 @@ UIkit.scrollspy(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name      | Description                                     |
-|-----------|-------------------------------------------------|
+| --------- | ----------------------------------------------- |
 | `inview`  | Fires after an item moves into the viewport.    |
 | `outview` | Fires after an item moves into out of viewport. |
 
@@ -190,7 +190,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `closest`  | Boolean, CSS selector | `false`     | Target to apply the class to. Defaults to the element itself.                                         |
 | `scroll`   | Boolean               | `false`     | Adds the [Scroll component](scroll.md) to its links.                                                  |
 | `overflow` | Boolean               | `true`      | If overflow is set to true, the first or last item will stay active if above or below the navigation. |
-| `offset`   | Number                | `0`         | Pixel offset added to scroll top.                                                                     |
+| `offset`   | Number                | `0`         | Offset added to scroll top.                                                                           |
 
 ***
 
@@ -209,5 +209,5 @@ UIkit.scrollspyNav(element, options);
 The following events will be triggered on elements with this component attached:
 
 | Name     | Description                         |
-|----------|-------------------------------------|
+| -------- | ----------------------------------- |
 | `active` | Fires after an item becomes active. |

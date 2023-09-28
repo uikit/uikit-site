@@ -224,10 +224,10 @@ It's often used within the [Modal component](modal.md).
 
 You can change the target heights by adding the `selContainer` and `selContent` options to the attribute. [Learn more](javascript.md#component-configuration)
 
-| Option         | Value  | Default            | Description                                                                       |
-| -------------- | ------ | ------------------ | --------------------------------------------------------------------------------- |
-| `selContainer` | String | `.uk-modal`        | CSS selector for the container element which provides the height.                 |
-| `selContent`   | String | `.uk-modal-dialog` | CSS selector for the element which wraps the inner content to provide its height. |
+| Option          | Value  | Default            | Description                                                                       |
+| --------------- | ------ | ------------------ | --------------------------------------------------------------------------------- |
+| `sel-container` | String | `.uk-modal`        | CSS selector for the container element which provides the height.                 |
+| `sel-content`   | String | `.uk-modal-dialog` | CSS selector for the element which wraps the inner content to provide its height. |
 
 ***
 
