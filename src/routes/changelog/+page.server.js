@@ -1,4 +1,4 @@
-import { marked } from 'marked';
+import { Marked } from 'marked';
 import { readFile } from 'node:fs/promises';
 
 export async function load() {
@@ -42,7 +42,5 @@ async function parse(markdown) {
         },
     };
 
-    marked.use({ renderer });
-
-    return marked.parse(markdown, { async: true });
+    return new Marked({ renderer }).parse(markdown, { async: true });
 }

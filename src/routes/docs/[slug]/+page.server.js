@@ -1,6 +1,6 @@
 import GithubSlugger from 'github-slugger';
 import hljs from 'highlight.js';
-import { marked } from 'marked';
+import { Marked, Renderer } from 'marked';
 import { readFile, stat } from 'node:fs/promises';
 
 export async function load({ params }) {
@@ -11,7 +11,7 @@ export async function load({ params }) {
 }
 
 async function parse(markdown) {
-    const base = new marked.Renderer();
+    const base = new Renderer();
     const slugger = new GithubSlugger();
 
     let pageTitle;
@@ -64,9 +64,7 @@ async function parse(markdown) {
         },
     };
 
-    marked.use({ renderer });
-
-    let content = await marked.parse(markdown, { async: true });
+    let content = await new Marked({ renderer }).parse(markdown, { async: true });
 
     if (content.includes('{%isodate%}')) {
         content = content.replace(
