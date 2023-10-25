@@ -15,7 +15,7 @@
         "@docsearch/css": "^3.5.2",
         "@docsearch/js": "^3.5.2",
         "@sveltejs/adapter-static": "2.0.3",
-        "@sveltejs/kit": "^1.26.0",
+        "@sveltejs/kit": "^1.27.0",
         "clipboard": "2.0.11",
         "eslint": "^8.52.0",
         "eslint-config-prettier": "^9.0.0",
@@ -30,7 +30,7 @@
         "prettier": "^3.0.3",
         "prettier-plugin-organize-imports": "^3.2.3",
         "prettier-plugin-svelte": "^3.0.3",
-        "svelte": "^4.2.1",
+        "svelte": "^4.2.2",
         "symlink-dir": "^5.2.0",
         "uikit": "3.17.6",
         "vite": "^4.5.0"
