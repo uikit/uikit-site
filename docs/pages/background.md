@@ -48,7 +48,7 @@ To apply a background color to an element, add one of the following classes. The
 
 ## Size modifiers
 
-This component features classes to specify the size of background images by keeping its intrinsic ratio.
+This component features classes to specify the size of background images by keeping their intrinsic ratios.
 
 | Class                       | Description                                                                                    |
 |-----------------------------|------------------------------------------------------------------------------------------------|
