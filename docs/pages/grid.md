@@ -45,7 +45,7 @@ The Grid component comes with a default gap that is decreased automatically from
 | `.uk-grid-small`    | Add this class to apply a small gap.                                                 |
 | `.uk-grid-medium`   | Add this class to apply a medium gap like the default one, but without a breakpoint. |
 | `.uk-grid-large`    | Add this class to apply a large gap with breakpoints.                                |
-| `.uk-grid-collapse` | Add this class to remove the grid gap entirely.                                      |
+| `.uk-grid-collapse` | Add this class to remove the grid-gap entirely.                                      |
 
 ```html
 <div class="uk-grid-small" uk-grid>…</div>
@@ -112,7 +112,7 @@ To apply a different gap to just the column or row, add one of the following cla
 | `.uk-grid-column-small`<br>`.uk-grid-row-small`       | Add one of these classes to apply a small gap to the column or row.              |
 | `.uk-grid-column-medium`<br>`.uk-grid-row-medium`     | Add one of these classes to apply a medium gap to the column or row.             |
 | `.uk-grid-column-large`<br>`.uk-grid-row-large`       | Add one of these classes to apply a large gap to the column or row.              |
-| `.uk-grid-column-collapse`<br>`.uk-grid-row-collapse` | Add one of these classes to remove the grid gap entirely from the column or row. |
+| `.uk-grid-column-collapse`<br>`.uk-grid-row-collapse` | Add one of these classes to remove the grid-gap entirely from the column or row. |
 
 ```html
 <div class="uk-grid-column-small uk-grid-row-large" uk-grid>…</div>
@@ -485,7 +485,7 @@ To move single columns of a grid at different speeds while scrolling, just add `
 </div>
 ```
 
-To adjust the grid parallax duration, set the `parallax-start` and `parallax-end` options. The `parallax-start` option defines when the animation starts. The default value of `0` means that the grid's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the grids's bottom border and the viewport's top border intersect. Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the grid's height. Both options allow basic mathematics operands, `+` and `-`.
+To adjust the grid parallax duration, set the `parallax-start` and `parallax-end` options. The `parallax-start` option defines when the animation starts. The default value of `0` means that the grid's top border and the viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the grid's bottom border and the viewport's top border intersect. Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the grid's height. Both options allow basic mathematics operands, `+` and `-`.
 
 ```html
 <div uk-grid="parallax: 150; parallax-start: 100%; parallax-end: 100%;">…</div>
