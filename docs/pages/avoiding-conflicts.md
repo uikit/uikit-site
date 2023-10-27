@@ -2,13 +2,13 @@
 
 <p class="uk-text-lead">Use a custom prefix and the scope mode to make UIkit work in any environment.</p>
 
-By default, all classes and attributes in UIkit start with the `uk-` prefix. This avoids name collisions when introducing UIkit to existing projects or when combining it with other frameworks. UIkit allows to change that prefix. This even allows using multiple versions of UIkit alongside each other. In addition, the scope mode allows to limit the UIkit styles to only affect certain parts on your pages.
+By default, all classes and attributes in UIkit start with the `uk-` prefix. This avoids name collisions when introducing UIkit to existing projects or when combining it with other frameworks. UIkit allows to change that prefix. This even allows the use of multiple versions of UIkit alongside each other. In addition, the scope mode allows you to limit the UIkit styles to only affect certain parts of your pages.
 
 ***
 
 ## Custom prefix
 
-Using a custom prefix allows using multiple versions of UIkit on the same page. This might be needed when you are building something like a CMS plugin. In such cases, you do not know what other versions of UIkit might be loaded, so it is a good idea to use a custom prefix.
+Using a custom prefix allows the use of multiple versions of UIkit on the same page. This might be needed when you are building something like a CMS plugin. In such cases, you do not know what other versions of UIkit might be loaded, so it is a good idea to use a custom prefix.
 
 When you have [set up UIkit from GitHub source](installation.md#compile-from-github-source), you can compile it with a custom prefix. If you choose a custom prefix, for example `xyz`, all attributes and classes will now start with that prefix, for example `xyz-grid` instead of `uk-grid`. The global JavaScript object `UIkit` will also be renamed to `xyzUIkit`.
 
