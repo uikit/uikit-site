@@ -2,11 +2,11 @@
 
 <p class="uk-text-lead">Create dropdown menus for any navigation.</p>
 
-The Dropnav component initializes all dropdowns in a navigation with the same options, so they don't have to be initialized individually. All dropdowns within the dropnav are aim-aware. This means the dropdowns stay open as long as the mouse pointer moves towards the dropdown. An additional delay ensures that dropdowns stay open even if the mouse pointer shortly moves in another direction. In hover mode dropdowns close immediately if another menu item is hovered.
+The Dropnav component initializes all dropdowns in navigation with the same options, so they don't have to be initialized individually. All dropdowns within the dropnav are aim-aware. This means the dropdowns stay open as long as the mouse pointer moves towards the dropdown. An additional delay ensures that dropdowns stay open even if the mouse pointer moves in another direction. In hover mode dropdowns close immediately if another menu item is hovered.
 
 ## Usage
 
-The Dropnav component consists of a number of toggles and their related dropdowns. Add the `uk-dropnav` attribute to a list element which contains the toggles or its parent container element. Use the [Dropdown component](dropdown.md) by adding the `.uk-dropdown` class to the dropdowns and the `.uk-dropdown-nav` class to navs inside the dropdown.
+The Dropnav component consists of a number of toggles and their related dropdowns. Add the `uk-dropnav` attribute to a list element that contains the toggles or its parent container element. Use the [Dropdown component](dropdown.md) by adding the `.uk-dropdown` class to the dropdowns and the `.uk-dropdown-nav` class to navs inside the dropdown.
 
 The Dropnav toggles are styled through other components, some of which will be shown here.
 
@@ -459,7 +459,7 @@ The following events will be triggered on elements with this component attached:
 | ------------ | ---------------------------------------------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
-| `shown`      | Fires after the item's show animation has completed.                                           |
+| `shown`      | Fires after the item's show animation has been completed.                                      |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
 | `hide`       | Fires after an item's hide animation has started.                                              |
 | `hidden`     | Fires after an item is hidden.                                                                 |
@@ -475,13 +475,13 @@ The Dropnav component adheres to the [Disclosure Navigation Menu WAI-ARIA design
 
 ### Keyboard interaction
 
-The Dropnav component can be accessed through keyboard using the following keys.
+The Dropnav component can be accessed through the keyboard using the following keys.
 
 - The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus inside or outside the dropnav. 
-- The <kbd>left/right arrow</kbd> keys navigate through the dropnav items. In hover mode the dropdown will open automatically. If the focus is on the last item, it moves to the first item. 
+- The <kbd>left/right arrow</kbd> keys navigate through the dropnav items. In hover mode, the dropdown will open automatically. If the focus is on the last item, it moves to the first item. 
 - The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown of the focused dropnav item. 
 - The <kbd>up/down arrow</kbd> keys navigates through the nav items in a dropdown. If the focus is on the last item, it moves to the first item.
-- The <kbd>esc</kbd> key closes any dropdown even if focus has moved to another element.
+- The <kbd>esc</kbd> key closes any dropdown even if the focus has moved to another element.
 
 ### Internationalization
 
