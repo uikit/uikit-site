@@ -1,6 +1,6 @@
 # Column
 
-<p class="uk-text-lead">Display your content in multiple text columns without having to split it in several containers.</p>
+<p class="uk-text-lead">Display your content in multiple text columns without having to split it into several containers.</p>
 
 ## Usage
 
@@ -32,7 +32,7 @@ Add one of the `.uk-column-*` classes to an element to display its inline conten
 
 ## Responsive
 
-UIkit provides a number of responsive column classes. Basically they work just like the usual column classes, except that they have suffixes that represent the breakpoint from which they come to effect.
+UIkit provides a number of responsive column classes. Basically, they work just like the usual column classes, except that they have suffixes that represent the breakpoint from which they come to effect.
 
 | Class                                      | Description                                        |
 |--------------------------------------------|----------------------------------------------------|
