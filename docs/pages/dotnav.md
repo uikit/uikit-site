@@ -1,6 +1,6 @@
 # Dotnav
 
-<p class="uk-text-lead">Create a dot navigation to operate slideshows or to scroll to different page sections.</p>
+<p class="uk-text-lead">Create dot navigation to operate slideshows or to scroll to different page sections.</p>
 
 ## Usage
 
@@ -99,7 +99,7 @@ Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md)
 
 ## Vertically center in viewport
 
-The dotnav can also be centered vertically inside your viewport by adding the `.uk-position-center-right` and `.uk-position-fixed` classes from the [Position component](position.md). This is useful for typical onepage websites.
+The dotnav can also be centered vertically inside your viewport by adding the `.uk-position-center-right` and `.uk-position-fixed` classes from the [Position component](position.md). This is useful for typical one-page websites.
 
 ```html
 <div class="uk-position-center-right uk-position-medium uk-position-fixed">
