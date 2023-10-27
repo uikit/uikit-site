@@ -387,7 +387,7 @@ You can also use the [Grid](grid.md) and [Width](width.md) components to define 
 
 ## Custom controls
 
-To replace a file inputs or select forms with your own HTML content, like a button or text, add the `uk-form-custom` attribute to a container element.
+To replace a file input or select forms with your own HTML content, like a button or text, add the `uk-form-custom` attribute to a container element.
 
 ### File
 
