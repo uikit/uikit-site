@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Defines different styles for a toggleable dropdown.</p>
 
-The Dropdown component is aim-aware. This means the dropdown stays open as long as the mouse pointer moves towards the dropdown. An additional delay ensures that the dropdown stays open even if the mouse pointer shortly moves in another direction. A dropdown closes immediately if another menu item is hovered.
+The Dropdown component is aim-aware. This means the dropdown stays open as long as the mouse pointer moves towards the dropdown. An additional delay ensures that the dropdown stays open even if the mouse pointer moves in another direction. A dropdown closes immediately if another menu item is hovered.
 
 ## Usage
 
@@ -138,16 +138,16 @@ Add the `.uk-dropdown-large` class for a dropdown with larger padding.
 
 ## Position
 
-By default, the dropdown is positioned below the toggle. To change its position, set the `pos` option to the `uk-dropdown` attribute. The first part of the value refers to the side where the dropdown is positioned, while the second part defines its alignment to the toggle.
+By default, the dropdown is positioned below the toggle. To change its position, set the `pos` option to the `uk-dropdown` attribute. The first part of the value refers to the side where the dropdown is positioned, while the second part defines its alignment with the toggle.
 
 | Position        | Description                                                                    |
 | --------------- | ------------------------------------------------------------------------------ |
 | `top-left`      | Positions the dropdown above the toggle and aligns it to the left.             |
 | `top-center`    | Positions the dropdown above the toggle and aligns it to the center.           |
-| `top-right`     | Positions the dropdown above the toggle and aligns it in the right.            |
+| `top-right`     | Positions the dropdown above the toggle and aligns it to the right.            |
 | `bottom-left`   | Positions the dropdown below the toggle and aligns it to the left.             |
 | `bottom-center` | Positions the dropdown below the toggle and aligns it to the center.           |
-| `bottom-right`  | Positions the dropdown below the toggle and aligns it in the right.            |
+| `bottom-right`  | Positions the dropdown below the toggle and aligns it to the right.            |
 | `left-top`      | Positions the dropdown to the left of the toggle and aligns it to the top.     |
 | `left-center`   | Positions the dropdown to the left of the toggle and aligns it to the center.  |
 | `left-bottom`   | Positions the dropdown to the left of the toggle and aligns it to the bottom.  |
@@ -450,7 +450,7 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 </div>
 ```
 
-Alternatively, the Drop component has two additional animation types which are not covered by the Animation component. `slide-*` animations slide the dropdown and its content from a selected direction, while with the `reveal-*` animations, the content of the dropdown stays static and is revealed from a selected direction.
+Alternatively, the Drop component has two additional animation types that are not covered by the Animation component. `slide-*` animations slide the dropdown and its content from a selected direction, while with the `reveal-*` animations, the content of the dropdown stays static and is revealed from a selected direction.
 
 | Animation       | Description                           |
 | --------------- | ------------------------------------- |
@@ -566,7 +566,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option            | Value                 | Default             | Description                                                                                                  |
 | ----------------- | --------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `toggle`          | CSS selector          | `- *`               | CSS selector for the element to be used as toggle. By default, the preceding element.                        |
+| `toggle`          | CSS selector          | `- *`               | CSS selector for the element to be used as a toggle. By default, the preceding element.                      |
 | `pos`             | String                | `bottom-left`       | Drop position.                                                                                               |
 | `stretch`         | Boolean, String       | `false`             | Stretch dropdown on both (true) or given axis (`x`, `y`).                                                    |
 | `mode`            | String                | `click, hover`      | Comma-separated list of dropdown trigger behavior modes (`click`, `hover`).                                  |
@@ -617,7 +617,7 @@ The following events will be triggered on elements with this component attached:
 | `toggle`     | Fires before an item is toggled.                                                               |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
-| `shown`      | Fires after the item's show animation has completed.                                           |
+| `shown`      | Fires after the item's show animation has been completed.                                      |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
 | `hide`       | Fires before an item is hidden.                                                                |
 | `hidden`     | Fires after an item is hidden.                                                                 |
@@ -657,7 +657,7 @@ The Dropdown component adheres to the [Menu Button WAI-ARIA design pattern](http
 
 ### Keyboard interaction
 
-The Dropdown component can be accessed through keyboard using the following keys.
+The Dropdown component can be accessed through the keyboard using the following keys.
 
 - The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown. 
-- The <kbd>esc</kbd> key closes the dropdown even if focus has moved to another element.
+- The <kbd>esc</kbd> key closes the dropdown even if the focus has moved to another element.
