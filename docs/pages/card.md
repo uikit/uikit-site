@@ -234,9 +234,9 @@ To display an image inside a card without any spacing, add one of the following 
 
 ### Horizontal alignment
 
-The `.uk-card-media-left` or the `.uk-card-media-right` classes are used to reset border radius or similar where necessary. They don't create the actual layout.
+The `.uk-card-media-left` or the `.uk-card-media-right` classes are used to reset border-radius or similar where necessary. They don't create the actual layout.
 
-To do that, you could for example add the `.uk-cover-container` class from the [Cover component](cover.md). Add the `uk-cover` attribute to the image element and use the [Grid](grid.md) and [Width](width.md) components to achieve the alignment. Create a `<canvas>` element with your image's width and height, so that it will retain its dimensions, if the grid stacks on smaller viewports. This is just one way of creating a side by side layout.
+To do that, you could for example add the `.uk-cover-container` class from the [Cover component](cover.md). Add the `uk-cover` attribute to the image element and use the [Grid](grid.md) and [Width](width.md) components to achieve the alignment. Create a `<canvas>` element with your image's width and height, so that it will retain its dimensions, if the grid stacks on smaller viewports. This is just one way of creating a side-by-side layout.
 
 ```html
 <div class="uk-card uk-card-default uk-child-width-1-2" uk-grid>
