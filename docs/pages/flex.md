@@ -81,7 +81,6 @@ These classes define the horizontal alignment of flex items and distribute the s
 
 These classes define the vertical alignment of flex items. By default, flex items fill the height of their container as does the `.uk-flex-stretch` class.
 
-
 | Class                                                                                         | Description                                                             |
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | `.uk-flex-stretch`                                                                            | Add this class to expand flex items to fill the height of their parent. |
@@ -151,11 +150,11 @@ The following classes modify the alignment of wrapping flex items.
 | Class                   | Description                                                                                                                |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | `.uk-flex-wrap-stretch` | Add this class, so that item lines stretch to take up the remaining space                                                  |
-| `.uk-flex-wrap-between` | Add this class to distribute item lines evenly, with the first row at the top and last row at the bottom of the container. |
+| `.uk-flex-wrap-between` | Add this class to distribute item lines evenly, with the first row at the top and the last row at the bottom of the container. |
 | `.uk-flex-wrap-around`  | Add this class to distribute lines evenly with equal space at the top and bottom of each row.                              |
-| `.uk-flex-wrap-top`     | Add this class to align multiline flex items to the top.                                                                   |
-| `.uk-flex-wrap-middle`  | Add this class to vertically center multirow flex items.                                                                   |
-| `.uk-flex-wrap-bottom`  | Add this class to align multiline flex items to the bottom.                                                                |
+| `.uk-flex-wrap-top`     | Add this class to align multi-line flex items to the top.                                                                  |
+| `.uk-flex-wrap-middle`  | Add this class to vertically centered multirow flex items.                                                                 |
+| `.uk-flex-wrap-bottom`  | Add this class to align multi-line flex items to the bottom.                                                               |
 
 ```html
 <div class="uk-flex uk-flex-wrap uk-flex-wrap-around"></div>
