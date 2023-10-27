@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Position any element in relation to another element.</p>
 
-The Drop component is aim-aware. This means the drop stays open as long as the mouse pointer moves towards the drop. An additional delay ensures that the drop stays open even if the mouse pointer shortly moves in another direction. A drop closes immediately if another menu item is hovered.
+The Drop component is aim-aware. This means the drop stays open as long as the mouse pointer moves towards the drop. An additional delay ensures that the drop stays open even if the mouse pointer moves in another direction. A drop closes immediately if another menu item is hovered.
 
 ## Usage
 
@@ -115,10 +115,10 @@ By default, the drop is positioned below the toggle. To change its position, set
 | --------------- | -------------------------------------------------------------------------- |
 | `top-left`      | Positions the drop above the toggle and aligns it to the left.             |
 | `top-center`    | Positions the drop above the toggle and aligns it to the center.           |
-| `top-right`     | Positions the drop above the toggle and aligns it in the right.            |
+| `top-right`     | Positions the drop above the toggle and aligns it to the right.            |
 | `bottom-left`   | Positions the drop below the toggle and aligns it to the left.             |
 | `bottom-center` | Positions the drop below the toggle and aligns it to the center.           |
-| `bottom-right`  | Positions the drop below the toggle and aligns it in the right.            |
+| `bottom-right`  | Positions the drop below the toggle and aligns it to the right.            |
 | `left-top`      | Positions the drop to the left of the toggle and aligns it to the top.     |
 | `left-center`   | Positions the drop to the left of the toggle and aligns it to the center.  |
 | `left-bottom`   | Positions the drop to the left of the toggle and aligns it to the bottom.  |
@@ -291,7 +291,7 @@ Apply one or more animations to the dropdown by adding the `animation: uk-animat
 <div class="uk-card uk-card-body uk-card-default" uk-drop="animation: uk-animation-slide-top-small; animate-out: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
 ```
 
-Alternatively, the Drop component has two additional animation types which are not covered by the Animation component. `slide-*` animations slide the drop and its content from a selected direction, while with the `reveal-*` animations, the content of the drop stays static and is revealed from a selected direction.
+Alternatively, the Drop component has two additional animation types that are not covered by the Animation component. `slide-*` animations slide the drop and its content from a selected direction, while with the `reveal-*` animations, the content of the drop stays static and is revealed from a selected direction.
 
 | Animation       | Description                       |
 | --------------- | --------------------------------- |
@@ -372,7 +372,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `target-y`        | Boolean, CSS selector | `false`             | The element's Y axis the drop is positioned to (`true` for window).                                      |
 | `inset`           | Boolean               | `false`             | Position inside its target.                                                                              |
 | `flip`            | Boolean               | `true`              | Flip the drop along the main axis if it overflows the boundary.                                          |
-| `shift`           | Boolean               | `true`              | Shift the drop along the cross axis if it overflows the boundary.                                        |
+| `shift`           | Boolean               | `true`              | Shift the drop along the cross-axis if it overflows the boundary.                                        |
 | `offset`          | Number                | `0`                 | The drop offset.                                                                                         |
 | `animation`       | String                | `uk-animation-fade` | Space-separated names of animations. Comma-separated for animation out.                                  |
 | `animate-out`     | Boolean               | `false`             | Use animation when closing the drop.                                                                     |
@@ -408,7 +408,7 @@ The following events will be triggered on elements with this component attached:
 | `toggle`     | Fires before an item is toggled.                                                               |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
-| `shown`      | Fires after the item's show animation has completed.                                           |
+| `shown`      | Fires after the item's show animation has been completed.                                      |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
 | `hide`       | Fires before an item is hidden.                                                                |
 | `hidden`     | Fires after an item is hidden.                                                                 |
@@ -449,7 +449,7 @@ The Drop component adheres to the [Menu Button WAI-ARIA design pattern](https://
 
 ### Keyboard interaction
 
-The Drop component can be accessed through keyboard using the following keys.
+The Drop component can be accessed through the keyboard using the following keys.
 
 - The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the drop. 
 - The <kbd>esc</kbd> key closes the drop even if focus has moved to another element.
