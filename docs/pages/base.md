@@ -6,7 +6,7 @@
 
 The Base component utilizes styling of the famous [Normalize.css](http://necolas.github.io/normalize.css/) to render elements consistently across all browsers and applies its default styling like colors, margins, font-sizes and more.
 
-**Note** [Form](form.md), [Button](button.md) and [Table](table.md) elements are not normalized or styled by default. This happens in their specific component class. UIkit tries to apply as little styling as possible to plain HTML elements in order to remain robust and conflict free with 3rd party CSS.
+**Note** [Form](form.md), [Button](button.md) and [Table](table.md) elements are not normalized or styled by default. This happens in their specific component class. UIkit tries to apply as little styling as possible to plain HTML elements in order to remain robust and conflict-free with 3rd party CSS.
 
 ***
 
@@ -31,7 +31,7 @@ The following list gives you a short overview of the most commonly used text-lev
 | `<em>`     | Emphasize text using the <em>em element</em>.                                                             |
 | `<i>`      | Set off part of a text by using the <i>i element</i>.                                                     |
 | `<ins>`    | Mark document changes as inserted text using the <ins>ins element</ins>.                                  |
-| `<kbd>`    | Use a <kbd>keybord input element</kbd> to display input in the browser's default monospace font.          |
+| `<kbd>`    | Use a <kbd>keybord input element</kbd> to display the input in the browser's default monospace font.      |
 | `<mark>`   | Highlight text with no semantic meaning using the <mark>mark element</mark>.                              |
 | `<q>`      | Define inline quotations using a <q>q element <q>inside</q> a q element</q>.                              |
 | `<s>`      | Define text with a strikethrough using the <s>s element</s>.                                              |
@@ -162,7 +162,7 @@ To quote multiple lines of content from another source within your document, use
 
 For multiple lines of code, use the `<pre>` element. It creates a new text block that preserves spaces, tabs and line breaks. Nest a `<code>` element inside to define the code block.
 
-**Note** Be sure to escape any angle brackets to make sure enclosed code is not interpreted as markup.
+**Note** Be sure to escape any angle brackets to make sure the enclosed code is not interpreted as markup.
 
 ```example
 <pre><code>// Code example
