@@ -17,7 +17,7 @@ Add one of the `.uk-animation-*` classes to any element. The animation is shown 
 | `.uk-animation-shake`                                                                                                                              | The element shakes.                                                                                                                    |
 | `.uk-animation-stroke`                                                                                                                             | The SVG element strokes are drawn.                                                                                                     |
 
-To toggle an animation on hover or focus, add the `.uk-animation-toggle` class to a parent element. Also add `tabindex="0"` to make the animation focusable through keyboard navigation and on touch devices.
+To toggle animation on hover or focus, add the `.uk-animation-toggle` class to a parent element. Also add `tabindex="0"` to make the animation focusable through keyboard navigation and on touch devices.
 
 ```html
 <div class="uk-animation-toggle" tabindex="0">
