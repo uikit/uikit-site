@@ -103,7 +103,7 @@ Add one of the following classes to add very large spacing to block elements.
 
 ## Remove margin
 
-Add one of the following classes to remove margin from block elements.
+Add one of the following classes to remove the margin from block elements.
 
 | Class                           | Description                                                |
 |---------------------------------|------------------------------------------------------------|
@@ -125,7 +125,7 @@ Add one of the following classes to remove margin from block elements.
 
 ### Responsive
 
-UIkit provides a number of responsive classes to remove margin. Basically, they work just like the usual margin remove classes, except that they have suffixes that represent the breakpoint from which they come to effect.
+UIkit provides a number of responsive classes to remove margins. Basically, they work just like the usual margin remove classes, except that they have suffixes that represent the breakpoint from which they come into effect.
 
 | Class                                                        | Description                                   |
 |--------------------------------------------------------------|-----------------------------------------------|
@@ -161,7 +161,7 @@ Add one of the following classes to set auto margin. This can be useful to cente
 
 ### Responsive
 
-UIkit provides a number of responsive margin auto classes. Basically, they work just like the usual margin auto classes, except that they have suffixes that represent the breakpoint from which they come to effect.
+UIkit provides a number of responsive margin auto classes. Basically, they work just like the usual margin auto classes, except that they have suffixes that represent the breakpoint from which they come into effect.
 
 | Class                                                                             | Description                                   |
 |-----------------------------------------------------------------------------------|-----------------------------------------------|
@@ -212,7 +212,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option         | Value  | Default             | Description                                                                                                |
 |----------------|--------|---------------------|------------------------------------------------------------------------------------------------------------|
-| `margin `      | String | `uk-margin-small-top` | This class is added to items that break into the next row, typically to create margin to the previous row. |
+| `margin `      | String | `uk-margin-small-top` | This class is added to items that break into the next row, typically to create a margin for the previous row. |
 | `first-column` | String | `uk-first-column`     | This class is added to the first element in each row.                                                      |
 
 ***
