@@ -4,7 +4,7 @@
 
 ## Usage
 
-The Scrollspy component listens to page scrolling and trigger events based on the scroll position. For example, if you scroll down a page, and an element appears in the viewport for the first time, you can trigger a smooth animation to fade in the element. Just add the `uk-scrollspy` attribute which takes the following options.
+The Scrollspy component listens to page scrolling and triggers events based on the scroll position. For example, if you scroll down a page, and an element appears in the viewport for the first time, you can trigger a smooth animation to fade in the element. Just add the `uk-scrollspy` attribute which takes the following options.
 
 Typically, classes from the [Animation component](animation.md) are used together with the Scrollspy component.
 
