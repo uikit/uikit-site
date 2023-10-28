@@ -1,10 +1,10 @@
 # Slidenav
 
-<p class="uk-text-lead">Defines a navigation with previous and next buttons to flip through slideshows.</p>
+<p class="uk-text-lead">Defines navigation with previous and next buttons to flip through slideshows.</p>
 
 ## Usage
 
-To create a navigation with previous and next buttons, just add the `uk-slidenav` attribute to `<a>` elements. Add the `previous` or `next` parameter to the attribute to style the nav items as previous or next buttons.
+To create navigation with previous and next buttons, just add the `uk-slidenav` attribute to `<a>` elements. Add the `previous` or `next` parameter to the attribute to style the nav items as previous or next buttons.
 
 ```html
 <a href="" uk-slidenav-next></a>
