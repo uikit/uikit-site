@@ -92,7 +92,7 @@ The `display` option is removed. Use `auto-update` instead.
 
 ### Navbar Dropbar
 
-We removed the style from the dropbar in the Navbar component and now use the new Dropbar component instead. This is why the Navbar component sets `.uk-dropbar` and `.uk-dropbar-top` in addition to the `.uk-navbar-dropbar` class. If you placed the dropbar markup manually, you need to add those classes yourself.
+We removed the style from the dropbar in the Navbar component and now use the new Dropbar component instead. This is why the Navbar component sets `.uk-dropbar` and `.uk-dropbar-top` in addition to the `.uk-navbar-dropbar` class. If you place the dropbar markup manually, you need to add those classes yourself.
 
 In Less we have removed the `@navbar-dropbar-background` variable, so to set a background, use the `@dropbar-background` variable instead. Make sure to add any further style you applied to the navbar dropbar as well.
 
@@ -151,7 +151,7 @@ UIkit 3.11 adds new `start` and `end` options to the [Parallax component](parall
 
 ## Migration from UIkit 3.4 to 3.5
 
-In UIkit 3.5 all Less variables and class names which have `xxlarge` in their name got renamed to `2xlarge` for better consistency. Just find and replace these Less variables if you are using a custom Less theme. There is just one class in the [Width component](width.md) which has to be updated in your markup.
+In UIkit 3.5 all Less variables and class names that have `xxlarge` in their name got renamed to `2xlarge` for better consistency. Just find and replace these Less variables if you are using a custom Less theme. There is just one class in the [Width component](width.md) which has to be updated in your markup.
 
 | Class              | Replace with       |
 | ------------------ | ------------------ |
@@ -182,7 +182,7 @@ Since UIkit 3.2 adds a new `uk-text-bolder` class to the [Text component](text.m
 
 UIkit 3.1 adds the `@deprecated` Less variable. By default, it is set to `false`, and deprecated classes are not compiled into the CSS.
 
-If you want to update your markup later and use the deprecated classes along the new ones, set the variable to `true` in your custom UIkit theme.
+If you want to update your markup later and use the deprecated classes along with the new ones, set the variable to `true` in your custom UIkit theme.
 
 ```
 @deprecated: true;
@@ -229,7 +229,7 @@ You can also run the migration tool by loading the needed JavaScript on your web
 
 ### Usage
 
-To start the migration, replace the UIkit 2 files of your website with their UIkit 3 equivalents (both JS and CSS) and run the migration tool using one of the solutions listed above. To learn how to change your markup, open the developer console of your browser. Your see a list of warnings and notices that tell you what to change. You can click the arrows next to any message to see more details about the necessary changes.
+To start the migration, replace the UIkit 2 files of your website with their UIkit 3 equivalents (both JS and CSS) and run the migration tool using one of the solutions listed above. To learn how to change your markup, open the developer console of your browser. You see a list of warnings and notices that tell you what to change. You can click the arrows next to any message to see more details about the necessary changes.
 
 ![Console output](images/migration-console.gif)
 
@@ -237,8 +237,8 @@ Every notice or warning message tells you what to change, including a list of al
 
 ### Warnings
 
-Warnings highlight all CSS classes or JavaScript attributes which are not supported anymore or have changed in UIkit 3. These warnings have to be fixed to migrate your website to UIkit 3.
+Warnings highlight all CSS classes or JavaScript attributes that are not supported anymore or have changed in UIkit 3. These warnings have to be fixed to migrate your website to UIkit 3.
 
 ### Notices
 
-Notices highlight potential issues that might not break your site. Some notices might not require a change at all. This is caused by the fact that some names from UIkit 2 still exist in UIkit 3, but now belong to a different component or carry different semantics. This can't be detected by the selectors we use to determine if this is a correct markup, so you need to take a look into it and need to decide if you already have changed it or still need to fix it.
+Notices highlight potential issues that might not break your site. Some notices might not require a change at all. This is caused by the fact that some names from UIkit 2 still exist in UIkit 3, but now belong to a different component or carry different semantics. This can't be detected by the selectors we use to determine if this is a correct markup, so you need to take a look into it and decide if you already have changed it or still need to fix it.
