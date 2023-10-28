@@ -6,7 +6,7 @@
 
 UIkit uses panels to outline certain sections of your content. These can be arranged in grid columns from the [Grid component](grid.md), for example.
 
-Add the `.uk-panel` class to a `<div>` element to create a position context, set box-sizing to border-box, apply a clearfix and to remove the bottom margin of its last child element.
+Add the `.uk-panel` class to a `<div>` element to create a position context, set box-sizing to border-box, apply a clear fix and remove the bottom margin of its last child element.
 
 ```example
 <div class="uk-child-width-1-3@s" uk-grid>
@@ -87,7 +87,7 @@ These utilities provide different classes to modify an element's overflow behavi
 | Class                 | Description                                                                                                                                                           |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `.uk-overflow-hidden` | Add this class to clip content that exceeds the dimensions of its container.                                                                                          |
-| `.uk-overflow-auto`   | Add this class to create a container that provides a horizontal or vertical scrollbar whenever the elements content it are wider or higher than the container itself. |
+| `.uk-overflow-auto`   | Add this class to create a container that provides a horizontal or vertical scrollbar whenever the elements content is wider or higher than the container itself. |
 
 **Note** The `.uk-overflow-auto` class is useful when having to handle tables on a responsive website, which at some point would just get too big. It also works great on `<pre>` elements.
 
@@ -299,8 +299,8 @@ These classes are often used to create a position context on containers with an 
 
 | Class             | Description                                                                                                            |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `.uk-inline`      | Add this class to apply inline-block behavior to an element, add a max-width of 100% and to create a position context. |
-| `.uk-inline-clip` | Same as `.uk-inline`, it but also clips overflowing child elements.                                                    |
+| `.uk-inline`      | Add this class to apply inline-block behavior to an element, add a max-width of 100% and create a position context. |
+| `.uk-inline-clip` | Same as `.uk-inline`, it also clips overflowing child elements.                                                    |
 
 ```html
 <div class="uk-inline">
@@ -326,7 +326,7 @@ In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the widt
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `.uk-responsive-width`  | Add this class to apply the same responsive behavior to any other element. It adjusts the object's width according to its parent's width, keeping the original aspect ratio.                                                                                                                               |
 | `.uk-responsive-height` | Add this class to adjust the object's height (instead of its width) according to its parent's height, keeping the original aspect ratio.                                                                                                                                                                   |
-| `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all relevant elements content it. If you are embedding Google Maps into your site, you may need this to fix the map's images. |
+| `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all relevant elements content. If you are embedding Google Maps into your site, you may need this to fix the map's images. |
 
 ```html
 <img class="uk-responsive-height" src="" width="" height="" alt="">
@@ -741,7 +741,7 @@ To center an element to itself, add the `uk-transform-center` class. This is par
 
 ## Transform origin
 
-To modify the origin of an animation, like scaling, add one of the `uk-transform-origin-*` classes. This can be combined with the [Animation component](animation.md).
+To modify the origin of animation, like scaling, add one of the `uk-transform-origin-*` classes. This can be combined with the [Animation component](animation.md).
 
 | Class                                | Description                                      |
 | ------------------------------------ | ------------------------------------------------ |
