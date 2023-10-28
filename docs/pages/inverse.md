@@ -6,7 +6,7 @@
 
 Add the `.uk-light` class to improve the visibility of objects on dark backgrounds in a light style. When using a dark style, add the `.uk-dark` class to elements on a light background.
 
-**Note** Only one class will come to effect, depending on the style you are using. For example, when using a style with a light background, you can only apply the `.uk-light` class to optimize content on dark backgrounds, as text will already be displayed in a dark color on light backgrounds — and vice versa.
+**Note** Only one class will come into effect, depending on the style you are using. For example, when using a style with a light background, you can only apply the `.uk-light` class to optimize the content on dark backgrounds, as the text will already be displayed in a dark color on light backgrounds — and vice versa.
 
 ```html
 <div class="uk-light"></div>
