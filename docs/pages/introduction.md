@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Get familiar with the basic setup and overview of UIkit.</p>
 
-First you need to download UIkit. For other packages and links to a CDN, head to the [installation guide](installation.md) to learn more.
+First, you need to download UIkit. For other packages and links to a CDN, head to the [installation guide](installation.md) to learn more.
 
 <a class="uk-button uk-button-primary" href="https://getuikit.com/download">Download UIkit</a>
 
@@ -55,7 +55,7 @@ Using UIkit works best if you have a solid code editor, for example [Sublime Tex
 
 ## Browser support
 
-The following table lists the versions that UIkit is tested on. "Latest" means that it works just fine on all recent versions of that browser. With many browser moving towards a rolling release strategy, pinning down browser support to a specific version has become a little tricky in recent years. Long story short: UIkit will work on pretty much any modern browser.
+The following table lists the versions that UIkit is tested on. "Latest" means that it works just fine on all recent versions of that browser. With many browsers moving towards a rolling release strategy, pinning down browser support to a specific version has become a little tricky in recent years. Long story short: UIkit will work on pretty much any modern browser.
 
 <div class="uk-child-width-1-3 uk-child-width-expand@s uk-text-center" uk-grid uk-height-match="> * > div">
     <div>
