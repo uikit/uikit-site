@@ -79,7 +79,7 @@ UIkit.notification("…", {pos: 'top-right'})
 
 ## Style
 
-A notification can be styled by adding a status to the message to indicate a primary, success, warning or a danger status.
+A notification can be styled by adding a status to the message to indicate a primary, success, warning or danger status.
 
 ```js
 UIkit.notification("…", {status: 'primary'})
