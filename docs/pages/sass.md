@@ -4,7 +4,7 @@
 
 When you have [installed UIkit](installation.md) with sources you will find the UIkit Sass version within the _/src/scss_ folder. The Sass version allows you to include customizations in the build process, rather than manually overwriting a lot of CSS rules by hand.
 
-**Note** Sass allows two different syntax version: Sass and SCSS. UIkit makes use of the SCSS syntax.
+**Note** Sass allows two different syntax versions: Sass and SCSS. UIkit makes use of the SCSS syntax.
 
 ***
 
@@ -93,7 +93,7 @@ For example, you can make a default button appear with a custom background whene
 
 ### Miscellaneous hooks
 
-Should there be neither a variable nor a hook available, you can also create your own selector. To do so, e.g. use the _hook-card-misc()_ mixin of the Card component and write a selector inside. This will sort your new selector to the right place of the compiled CSS file. Just add the following lines to your own SCSS file, i.e. to `site.scss` as described above:
+Should there be neither a variable nor a hook available, you can also create your own selector. To do so, e.g. use the _hook-card-misc()_ mixin of the Card component and write a selector inside. This will sort your new selector to the right place in the compiled CSS file. Just add the following lines to your own SCSS file, i.e. to `site.scss` as described above:
 
 ```scss
 // misc mixin
@@ -144,7 +144,7 @@ $tile-secondary-color-mode: none;
 
 ## How to structure your theme
 
-In the examples above, we have added all custom rules directly to `site.scss`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Sass compiler. You should better sort all rules into a single file per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/scss/theme`.
+In the examples above, we have added all custom rules directly to `site.scss`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend only using this file as an entry point for the Sass compiler. You should sort all rules into a single file per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/scss/theme`.
 
 
 ```html
