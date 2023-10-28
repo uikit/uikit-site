@@ -111,7 +111,7 @@ The following events will be triggered on elements, which are injected by this c
 | ------------ | ---------------------------------------------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
-| `shown`      | Fires after the item's show animation has completed.                                           |
+| `shown`      | Fires after the item's show animation has been completed.                                      |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
 | `hide`       | Fires after an item's hide animation has started.                                              |
 | `hidden`     | Fires after an item is hidden.                                                                 |
