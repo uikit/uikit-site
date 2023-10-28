@@ -64,7 +64,7 @@ To reset a link's color, so that it inherits the color from its parent, add the 
 
 ## Toggle
 
-To use an anchor as parent element and apply the link style on one of its child elements, just add the `.uk-link-toggle` class to the parent element and one of the `.uk-link-*` classes to the child element. For instance, you can link the whole card and still have the hover effect on the heading.
+To use an anchor as a parent element and apply the link style on one of its child elements, just add the `.uk-link-toggle` class to the parent element and one of the `.uk-link-*` classes to the child element. For instance, you can link the whole card and still have the hover effect on the heading.
 
 ```html
 <a class="uk-link-toggle" href="#">
