@@ -348,7 +348,7 @@ Add the `.uk-nav-secondary` class to have an extra style if the nav has subtitle
 
 ## Center modifier
 
-Add the `.uk-nav-center` class to center nav items. This can be combined with the default and primary style modifiers.
+Add the `.uk-nav-center` class to the center nav items. This can be combined with the default and primary style modifiers.
 
 ```html
 <ul class="uk-nav uk-nav-default uk-nav-center">…</ul>
