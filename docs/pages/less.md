@@ -12,7 +12,7 @@ The Less source files allow you to customize UIkit. To use the customized versio
 
 ### Use your own build process
 
-To include UIkit in your project's build workflow, you need to import the core UIkit styles (`uikit.less`) or UIkit with its default theme (`uikit.theme.less`) into your project's own Less file. This main Less file than needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
+To include UIkit in your project's build workflow, you need to import the core UIkit styles (`uikit.less`) or UIkit with its default theme (`uikit.theme.less`) into your project's own Less file. This main Less file then needs to be compiled in any way you like. Read the [official Less docs](http://lesscss.org/usage/) if you are unsure how to compile Less.
 
 ```less
 // Import UIkit default theme (or uikit.less with only core styles)
@@ -49,7 +49,7 @@ pnpm install
 # Compile all source files including your theme
 pnpm compile
 
-# Watch files and compile automatically everytime a file changes
+# Watch files and compile automatically every time a file changes
 pnpm watch
 ```
 
@@ -157,7 +157,7 @@ You can also disable the inverse mode for specific components:
 
 ## How to structure your theme
 
-In the examples above, we have added all custom rules directly to `/custom/my-theme.less`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend to only use this file as an entry point for the Less compiler. You should better sort all rules into a single file per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/less/uikit.theme.less`.
+In the examples above, we have added all custom rules directly to `/custom/my-theme.less`. When you change a few variables but are happy with the rest, this is perfectly fine. However, for larger customizations, we recommend only using this file as an entry point for the Less compiler. You should sort all rules into a single file per component inside of a subfolder. This is the same structure that you can find in the default theme `/src/less/uikit.theme.less`.
 
 **Note** The example assumes you are building a theme in the `/custom` directory of the full UIkit project. You can adapt these paths if you have set up your own build process.
 
@@ -189,7 +189,7 @@ The entry point for the Less compiler, `/custom/my-theme.less`:
 @import "my-theme/_import.less";
 ```
 
-Your theme folder has one file which imports all single component customizations, `custom/my-theme/_import.less`:
+Your theme folder has one file that imports all single component customizations, `custom/my-theme/_import.less`:
 
 ```less
 @import "accordion.less";
