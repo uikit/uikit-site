@@ -22,7 +22,7 @@ To apply this component, add the `uk-parallax` attribute to any element. Use one
 | `hue`              | Animate the hue rotation filter.   | `deg`          | `0`         |
 | `grayscale`        | Animate the grayscale filter.      | `%`            | `0`         |
 | `invert`           | Animate the invert filter.         | `%`            | `0`         |
-| `saturate`         | Animate the saturate filter.       | `%`            | `0`         |
+| `saturate`         | Animate the saturated filter.      | `%`            | `0`         |
 | `sepia`            | Animate the sepia filter.          | `%`            | `0`         |
 | `stroke`           | Animate strokes within SVG images. |                | `0`         |
 
@@ -47,7 +47,7 @@ Set one of the options to create an animation stop. The property is animated fro
 
 ## Start stop
 
-To set a custom start value, create another animation stop by using two values separated by comma.
+To set a custom start value, create another animation stop by using two values separated by a comma.
 
 ```html
 <div uk-parallax="opacity: 0,1">…</div>
@@ -85,7 +85,7 @@ To better control the property animation, you can set intermediate stops along t
 
 ## Stop positions
 
-Set an optional stop position to specify percentage along the animation sequence when the stop occurs.
+Set an optional stop position to specify the percentage along the animation sequence when the stop occurs.
 
 ```html
 <div uk-parallax="x: 0,50 10%,150 50%">…</div>
@@ -144,7 +144,7 @@ The animation starts and stops depending on the element position in the viewport
 
 ## Start and end
 
-To adjust the animation duration, set the `start` and `end` options. The `start` option defines when the animation starts. The default value of `0` means that the target's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the target's bottom border and the viewport's top border intersect. Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the target's height. Both options allow basic mathematics operands, `+` and `-`.
+To adjust the animation duration, set the `start` and `end` options. The `start` option defines when the animation starts. The default value of `0` means that the target's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the target's bottom border and the viewport's top border intersect. Values can be set in any dimension unit, namely `vh`, `%` and `px`. The `%` unit relates to the target's height. Both options allow basic mathematics operands, `+` and `-`.
 
 ```html
 <div uk-parallax="start: 100%; end: 100%;">…</div>
@@ -187,7 +187,7 @@ To adjust the easing of the animation, add the `easing` option. `0` transitions 
 
 ## Colors
 
-Transition from one color to another, for example for borders, backgrounds or text colors. Define colors using `rgb()` definitions, color keywords or hex values.
+The transition from one color to another, for example for borders, backgrounds or text colors. Define colors using `rgb()` definitions, color keywords or hex values.
 
 ```html
 <div uk-parallax="border-color: #00f,#f00">…</div>
@@ -257,7 +257,7 @@ The Parallax component can be applied to the elements of inline SVG images, like
 
 It's recommended to use `vw` or `vh` as length units instead of pixels. The parallax will adapt depending on the viewport.
 
-The parallax can also be applied to certain viewports only. Add the `media` option with one of possible values. For example, add a number in pixel, e.g. `640`, or a breakpoint, e.g. `@s`, `@m`, `@l` or `@xl`. The parallax will be shown for the specified viewport width and larger.
+The parallax can also be applied to certain viewports only. Add the `media` option with one of the possible values. For example, add a number in pixel, e.g. `640`, or a breakpoint, e.g. `@s`, `@m`, `@l` or `@xl`. The parallax will be shown for the specified viewport width and larger.
 
 ```html
 <div uk-parallax="media: @m"></div>
