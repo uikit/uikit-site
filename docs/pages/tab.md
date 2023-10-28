@@ -203,14 +203,14 @@ UIkit.tab(element, options);
 
 The following events will be triggered on the connected items of the elements with this component attached:
 
-| Name         | Description                                                                                    |
-| ------------ | ---------------------------------------------------------------------------------------------- |
-| `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
-| `show`       | Fires after an item is shown.                                                                  |
-| `shown`      | Fires after the item's show animation has completed.                                           |
-| `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
-| `hide`       | Fires after an item's hide animation has started.                                              |
-| `hidden`     | Fires after an item is hidden.                                                                 |
+| Name         | Description                                                                                         |
+| ------------ | --------------------------------------------------------------------------------------------------- |
+| `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event.      |
+| `show`       | Fires after an item is shown.                                                                       |
+| `shown`      | Fires after the item's show animation has been completed.                                           |
+| `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event.      |
+| `hide`       | Fires after an item's hide animation has started.                                                   |
+| `hidden`     | Fires after an item is hidden.                                                                      |
 
 ### Methods
 
@@ -222,7 +222,7 @@ The following methods are available for the component:
 UIkit.tab(element).show(index);
 ```
 
-Shows the Tab item with given index.
+Shows the Tab item with the given index.
 
 | Name    | Type                 | Default | Description                      |
 | ------- | -------------------- | ------- | -------------------------------- |
@@ -234,7 +234,7 @@ Shows the Tab item with given index.
 
 The Tab component adheres to the [Tab WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *tab navigation* has the `tablist` role, and if it is a [Nav component](nav.md), the `aria-orientation` state set to `vertical`. 
+- The *tab navigation* has the `tablist` role, and if it is a [Nav component](nav.md), the `aria-orientation` state is set to `vertical`. 
 - The *tab navigation items* have the `presentation` role. 
 - The *tab navigation links* have an ID, the `tab` role, the `aria-selected` state and the `aria-controls` property set to the ID of the respective content item. 
 - The *content list* has the `presentation` role.
@@ -242,7 +242,7 @@ The Tab component adheres to the [Tab WAI-ARIA design pattern](https://www.w3.or
 
 ### Keyboard interaction
 
-The tab navigation can be accessed through keyboard using the following keys.
+The tab navigation can be accessed through the keyboard using the following keys.
 
 - The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus on the active tab in the tab navigation. If the focus already is on the active tab, the focus will move to the next element outside the tab navigation. 
 - The <kbd>left/right arrow</kbd> or <kbd>up/down arrow</kbd> keys, depending on the orientation, navigate through the tabs. If the focus is on the last tab, it moves to the first tab.  
