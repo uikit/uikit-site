@@ -4,7 +4,7 @@
 
 ## Usage
 
-This JavaScript component utilizes the latest XMLHttpRequest Level 2 specification and provides the ability of uploading files via Ajax including tracking of the upload progress. The component provides two ways of uploading files: `select` and `drop`. While the `select` request can only be applied to `<input type="file">` elements, you can basically use any element with `drop`, which enables you to simply drag and drop files from your desktop into the specified element to upload them. Note that this component does not handle your file uploads on the server.
+This JavaScript component utilizes the latest XMLHttpRequest Level 2 specification and provides the ability to upload files via Ajax including tracking of the upload progress. The component provides two ways of uploading files: `select` and `drop`. While the `select` request can only be applied to `<input type="file">` elements, you can basically use any element with `drop`, which enables you to simply drag and drop files from your desktop into the specified element to upload them. Note that this component does not handle your file uploads on the server.
 
 ***
 
@@ -204,7 +204,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `load-end`         | Function |                         | The loadEnd callback.                                        |
 | `load-start`       | Function |                         | The loadStart callback.                                      |
 | `progress`         | Function |                         | The progress callback.                                       |
-| `fail`             | Function |                         | The fail callback. If name or MIME type are invalid.         |
+| `fail`             | Function |                         | The fail callback. If the name or MIME type is invalid.         |
 
 ***
 
