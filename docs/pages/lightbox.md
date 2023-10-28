@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create a responsive lightbox gallery with images and videos.</p>
 
-The Lightbox component is fully responsive and supports touch and swipe navigation, as well as mouse drag for desktops. When swiping between slides the animation literally sticks at your fingertip or mouse cursor. Clicking fast on the previous and next navigation, will make animations even accelerate to keep up with your pace. All animations are hardware accelerated for a smoother performance.
+The Lightbox component is fully responsive and supports touch and swipe navigation, as well as mouse drag for desktops. When swiping between slides the animation literally sticks to your fingertip or mouse cursor. Clicking fast on the previous and next navigation, will make animations even accelerate to keep up with your pace. All animations are hardware accelerated for a smoother performance.
 
 ## Usage
 
@@ -160,7 +160,7 @@ A lightbox is not restricted to images. Other media, like videos, can be display
 
 The Lightbox uses the `href` attribute to figure out the type of the linked content. If no filename extension is defined in the path, just add the `data-type` attribute to the `<a>` tag.
 
-**Hint** YouTube and Vimeo Urls will be handled automatically.
+**Hint** YouTube and Vimeo URLs will be handled automatically.
 
 | Option               | Description                            |
 | -------------------- | -------------------------------------- |
@@ -249,7 +249,7 @@ If you only want to use the lightbox panel directly through the JS API, you can 
 | `autoplay-interval` | Number  | `7000`         | The delay between switching slides in autoplay mode.                                                  |
 | `pause-on-hover`    | Boolean | `false`        | Pause autoplay mode on hover.                                                                         |
 | `video-autoplay`    | Boolean | `false`        | Lightbox videos autoplay.                                                                             |
-| `index`             | Number  | `0`            | The initial item to show. (zero based)                                                                |
+| `index`             | Number  | `0`            | The initial item to show. (zero-based)                                                                |
 | `velocity`          | Number  | `2`            | The animation velocity (pixel/ms).                                                                    |
 | `preload`           | Number  | `1`            | The number of items to preload. (left and right of the currently active item)                         |
 | `items`             | Array   | `[]`           | An array of items to display, e.g. `[{source: 'images/size1.jpg', caption: '900x600'}]`               |
@@ -337,7 +337,7 @@ The Close component automatically sets the appropriate WAI-ARIA roles and proper
 
 ### Keyboard interaction
 
-The lightbox gallery can be accessed through keyboard using the following keys.
+The lightbox gallery can be accessed through the keyboard using the following keys.
 
 - The <kbd>left/right arrow</kbd> keys navigate through the slides. If the focus is on the last slide, it moves to the first slide. 
 - The <kbd>home</kbd> or <kbd>end</kbd> keys move the focus to the first or last slide.
