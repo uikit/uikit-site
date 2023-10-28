@@ -2,13 +2,13 @@
 
 <p class="uk-text-lead">Use background images with lazy loading, responsive images and different image sources</p>
 
-The Image component emulates browser features of the `<img>` element, but for background images. This includes `loading="lazy"`, `srcset` and `sizes` attributes as well as the `<source>` element from the `<picture>` element. This speeds up page loading times and decreases traffic by only loading background images as they enter the viewport. Optimized background images are served for different device widths and high resolution (retina) displays.
+The Image component emulates browser features of the `<img>` element, but for background images. This includes `loading="lazy"`, `srcset` and `sizes` attributes as well as the `<source>` element from the `<picture>` element. This speeds up page loading times and decreases traffic by only loading background images as they enter the viewport. Optimized background images are served for different device widths and high-resolution (retina) displays.
 
 ***
 
 ## Usage
 
-To apply this component, add the `uk-img` and the `data-src` attribute containing the image path for the background image to a `div` or any other element. By default, the background image will be lazy loaded as it enters the viewport when scrolling.
+To apply this component, add the `uk-img` and the `data-src` attribute containing the image path for the background image to a `div` or any other element. By default, the background image will be lazy-loaded as it enters the viewport when scrolling.
 
 ```html
 <div data-src="" uk-img>…</div>
@@ -40,7 +40,7 @@ To avoid lazy loading background images for the first visible viewport but still
 
 ## Srcset
 
-To use the `srcset` feature for background images, just add the `data-srcset` attribute. Optionally, add the `sizes` attribute but without prefix.
+To use the `srcset` feature for background images, just add the `data-srcset` attribute. Optionally, add the `sizes` attribute but without a prefix.
 
 ```html
 <div data-src="" data-srcset="" sizes="" uk-img>…</div>
@@ -148,7 +148,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | Option    | Value  | Default | Description                                                                                                                                                                             |
 |-----------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dataSrc` | String |         | The image's `src` attribute.                                                                                                                                                            |
-| `sources` | String |         | The image's sources. This option is used for background images only. The sources attributes be passed in `key: value;` format for a single source. For multiple sources in JSON format. |
+| `sources` | String |         | The image's sources. This option is used for background images only. The source attributes are passed in `key: value;` format for a single source. For multiple sources in JSON format. |
 | `loading` | String | `lazy`  | Enable lazy/eager loading. Set to `eager` for images within the first visible viewport.                                                                                                 |
 | `margin`  | String | `50%`   | The margin is added to the viewport's bounding box, before computing an intersection with the image. The value must be in px or % units.                                                |
 | `target`  | String | `false` | A list of targets whose bounding boxes will be used to compute an intersection with the image. Defaults to the image itself.                                                            |
