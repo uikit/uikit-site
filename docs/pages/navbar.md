@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create a navigation bar with dropdown menus for the main site navigation.</p>
 
-The Navbar component initializes all dropdowns with the same options, so they don't have to be initialized individually. All dropdowns within the navbar are aim-aware. This means the dropdowns stay open as long as the mouse pointer moves towards the dropdown. An additional delay ensures that dropdowns stay open even if the mouse pointer shortly moves in another direction. In hover mode dropdowns close immediately if another menu item is hovered.
+The Navbar component initializes all dropdowns with the same options, so they don't have to be initialized individually. All dropdowns within the navbar are aim-aware. This means the dropdowns stay open as long as the mouse pointer moves towards the dropdown. An additional delay ensures that dropdowns stay open even if the mouse pointer moves in another direction. In hover mode dropdowns close immediately if another menu item is hovered.
 
 ## Usage
 
@@ -378,7 +378,7 @@ You can create a split menu with a centered logo. Just add the `uk-navbar-center
 
 ## Toggle item
 
-Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to an `<a>` or `<div>` element to create an icon as a toggle. By default, there is no JavaScript attached to the toggle. As an example, you can add an offcanvas navigation from the [Offcanvas component](offcanvas.md) or a modal from the [Modal component](modal.md).
+Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to an `<a>` or `<div>` element to create an icon as a toggle. By default, there is no JavaScript attached to the toggle. As an example, you can add an off-canvas navigation from the [Offcanvas component](offcanvas.md) or a modal from the [Modal component](modal.md).
 
 ```html
 <div class="uk-navbar-container" uk-navbar>
@@ -416,7 +416,7 @@ Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to a
 </nav>
 ```
 
-To change toggle icon from a menu icon to a close icon with a smooth animation, add the `.uk-navbar-toggle-animate` class.
+To change the toggle icon from a menu icon to a close icon with a smooth animation, add the `.uk-navbar-toggle-animate` class.
 
 ```html
 <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href=""></a>
@@ -1421,7 +1421,7 @@ Alternatively, if the navbar is always transparent even when sticky, set `dropba
 </div>
 ```
 
-When using a sticky transparent navbar, it's quite common to blend it with the page background. In this case, the dropbar needs to be placed outside of the blending element using `dropbar-anchor`, and the dropdowns using `container`. Otherwise, the dropbar and dropdowns would also blend with the page background. This also means the dropbar will be placed outside of the sticky container. As a result, only the navbar will stay sticky, and the opened dropbar will scroll out of the view. This is why we added a new `close-on-scroll` option to close the dropbar before scrolling.
+When using a sticky transparent navbar, it's quite common to blend it with the page background. In this case, the dropbar needs to be placed outside of the blending element using `dropbar-anchor`, and the dropdowns using `container`. Otherwise, the dropbar and dropdowns would also blend with the page background. This also means the dropbar will be placed outside of the sticky container. As a result, only the navbar will stay sticky, and the opened dropbar will scroll out of view. This is why we added a new `close-on-scroll` option to close the dropbar before scrolling.
 
 ```html
 <div class="uk-blend-difference uk-position-z-index-high" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
@@ -1561,7 +1561,7 @@ The following events will be triggered on elements with this component attached:
 | ------------ | ---------------------------------------------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
-| `shown`      | Fires after the item's show animation has completed.                                           |
+| `shown`      | Fires after the item's show animation has been completed.                                      |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
 | `hide`       | Fires after an item's hide animation has started.                                              |
 | `hidden`     | Fires after an item is hidden.                                                                 |
@@ -1577,13 +1577,13 @@ The Navbar component adheres to the [Disclosure Navigation Menu WAI-ARIA design 
 
 ### Keyboard interaction
 
-The Navbar component can be accessed through keyboard using the following keys.
+The Navbar component can be accessed through the keyboard using the following keys.
 
 - The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus inside or outside the navbar. 
 - The <kbd>left/right arrow</kbd> keys navigate through the navbar items. In hover mode the dropdown will open automatically. If the focus is on the last item, it moves to the first item. 
 - The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown of the focused navbar item. 
 - The <kbd>up/down arrow</kbd> keys navigates through the nav items in a dropdown. If the focus is on the last item, it moves to the first item.
-- The <kbd>esc</kbd> key closes any dropdown even if focus has moved to another element.
+- The <kbd>esc</kbd> key closes any dropdown even if the focus has moved to another element.
 
 ### Internationalization
 
