@@ -30,7 +30,7 @@ Add one of the following classes to set the marker of a list item.
 
 | Class              | Description                                      |
 | ------------------ | ------------------------------------------------ |
-| `.uk-list-disc`    | Use filled circle as marker.                     |
+| `.uk-list-disc`    | Use a filled circle as a marker.                 |
 | `.uk-list-circle`  | Use a hollow circle as marker.                   |
 | `.uk-list-square`  | Use a filled square as marker                    |
 | `.uk-list-decimal` | Use decimal numbers as marker. Beginning with 1. |
@@ -156,7 +156,7 @@ Add one of the following classes to set the marker color.
 
 ## Image bullet modifier
 
-Add the `.uk-list-bullet` class to set a custom image bullet as marker of a list item. Mind, that it can not be combined with color modifiers.
+Add the `.uk-list-bullet` class to set a custom image bullet as a marker of a list item. Mind, that it can not be combined with color modifiers.
 
 ```html
 <ul class="uk-list uk-list-bullet">…</ul>
