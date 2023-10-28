@@ -4,7 +4,7 @@
 
 ## Usage
 
-The Switcher component consists of a number of toggles and their related content items. Add the `uk-switcher` attribute to a list element which contains the toggles. Add the `.uk-switcher` class to the element containing the content items.
+The Switcher component consists of a number of toggles and their related content items. Add the `uk-switcher` attribute to a list element that contains the toggles. Add the `.uk-switcher` class to the element containing the content items.
 
 By default, the element with the `.uk-switcher` class has to succeed the toggle directly in order for the switcher to function. If you need it to be nested in another element, for example when using a grid, add the `connect: SELECTOR` option to the `uk-switcher` attribute and select the element containing the items for switching.
 
@@ -42,7 +42,7 @@ In this example we are using the [Subnav component](subnav.md).
 
 ## Navigation controls
 
-In some cases you want to switch to another content section from within the active content. This is possible using the `uk-switcher-item` attribute. To target the items, you need to set the attribute to the number of the respective content item.
+In some cases you want to switch to another content section from within the active content. This is possible using the `uk-switcher-item` attribute. To target the items, you need to set the attribute to the number of the respective content items.
 
 Setting the attribute to `next` and `previous` will switch to the adjacent items.
 
@@ -386,7 +386,7 @@ The following events will be triggered on the connected items of the elements wi
 | ------------ | ---------------------------------------------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
-| `shown`      | Fires after the item's show animation has completed.                                           |
+| `shown`      | Fires after the item's show animation has been completed.                                      |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
 | `hide`       | Fires after an item's hide animation has started.                                              |
 | `hidden`     | Fires after an item is hidden.                                                                 |
@@ -413,7 +413,7 @@ Shows the Switcher item with given index.
 
 The Switcher component adheres to the [Tab WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *toggle navigation* has the `tablist` role, and if it is a [Nav component](nav.md), the `aria-orientation` state set to `vertical`. 
+- The *toggle navigation* has the `tablist` role, and if it is a [Nav component](nav.md), the `aria-orientation` state is set to `vertical`. 
 - The *toggle navigation items* have the `presentation` role. 
 - The *toggle navigation links* have an ID, the `tab` role, the `aria-selected` state and the `aria-controls` property set to the ID of the respective content item. 
 - The *content list* has the `presentation` role.
@@ -421,7 +421,7 @@ The Switcher component adheres to the [Tab WAI-ARIA design pattern](https://www.
 
 ### Keyboard interaction
 
-The toggle navigation can be accessed through keyboard using the following keys.
+The toggle navigation can be accessed through the keyboard using the following keys.
 
 - The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus on the active toggle in the toggle navigation. If the focus already is on the active toggle, the focus will move to the next element outside the toggle navigation. 
 - The <kbd>left/right arrow</kbd> or <kbd>up/down arrow</kbd> keys, depending on the orientation, navigate through the toggles. If the focus is on the last toggle, it moves to the first toggle.  
