@@ -24,7 +24,7 @@ pnpm add uikit
 pnpm add --dev webpack
 ```
 
-As an entry file for the projects JavaScript, create a file `app/index.js` with the following content.
+As an entry file for the project JavaScript, create a file `app/index.js` with the following content.
 
 ```js
 import UIkit from 'uikit';
@@ -62,7 +62,7 @@ This way you have the reference to UIkit available without having to include its
 </html>
 ```
 
-**Note** For simplicity reasons, we have included the pre-built CSS. In a real project, you probably want to build the [Less](less.md) files and included the compiled CSS instead.
+**Note** For simplicity reasons, we have included the pre-built CSS. In a real project, you probably want to build the [Less](less.md) files and include the compiled CSS instead.
 
 ## Webpack config
 
