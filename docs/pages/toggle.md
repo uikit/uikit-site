@@ -60,7 +60,7 @@ If you don't want to toggle the `hidden` attribute, you can also toggle a custom
 
 ## Animations
 
-The Toggle component allows you to add animations to items when toggling between them. Just add one of the `.uk-animation-*` classes from the [Animation component](animation.md) to the animation parameter. The class will be applied to the in as well as the out animation. If you prefer a different out animation, just add another class.
+The Toggle component allows you to add animations to items when toggling between them. Just add one of the `.uk-animation-*` classes from the [Animation component](animation.md) to the animation parameter. The class will be applied to the in as well as the out animation. If you prefer a different animation, just add another class.
 
 ```html
 <button type="button" uk-toggle="target: #my-id; animation: uk-animation-fade"></button>
@@ -88,7 +88,7 @@ You can also apply multiple animations from the [Animation component](animation.
 
 ### Queued animations
 
-When toggling multiple items with an animation, you might want to wait until the first animation has run through before animating the second item in. To do so, just add the `queued: true` option to the `uk-toggle` attribute.
+When toggling multiple items with an animation, you might want to wait until the first animation has run through before animating the second item. To do so, just add the `queued: true` option to the `uk-toggle` attribute.
 
 ```html
 <button type="button" uk-toggle="target: .my-class; animation: uk-animation-fade; queued: true"></button>
