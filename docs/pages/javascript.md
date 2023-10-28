@@ -47,7 +47,7 @@ Omitting the second parameter will not re-initialize the component but serve as 
 
 ## Component configuration
 
-Each component comes with a set of configuration options that let you customize their behavior. You can set the options on a per instance level or globally.
+Each component comes with a set of configuration options that let you customize their behavior. You can set the options on a per-instance level or globally.
 
 ### Instance
 
@@ -125,7 +125,7 @@ Omitting the second parameter, will apply the custom behavior to every UIkit ins
 
 ## Programmatic use
 
-Programmatically, components may be initialized with the `element, options` arguments format in JavaScript. The `element` argument may be any `Node`, `selector` or `jQuery object`. You'll receive the initialized component as return value. `Functional Components` (e.g. `Notification`) should omit the `element` parameter.
+Programmatically, components may be initialized with the `element, options` arguments format in JavaScript. The `element` argument may be any `Node`, `selector` or `jQuery object`. You'll receive the initialized component as a return value. `Functional Components` (e.g. `Notification`) should omit the `element` parameter.
 
 ```js
 // Passing a selector and an options object.
@@ -139,9 +139,9 @@ var notifications = UIkit.notification('MyMessage', 'danger');
 ```
 
 **Note**
-The options names must be in their camel cased representation, e.g. `show-on-up` becomes `showOnUp`.
+The options names must be in their camel-cased representation, e.g. `show-on-up` becomes `showOnUp`.
 
-After initialisation, you can get your component by calling the same initialisation function, omitting the `options` parameter.
+After initialization, you can get your component by calling the same initialization function, omitting the `options` parameter.
 
 ```javscript
 // Sticky is now the prior initialised components
@@ -149,7 +149,7 @@ var sticky = UIkit.sticky('.sticky');
 ```
 
 **Note**
-Using `UIkit[componentName](selector)` with css selectors will always return the first occurrence only!
+Using `UIkit[componentName](selector)` with CSS selectors will always return the first occurrence only!
 If you need to access all instances do [query](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) the elements first. Then apply the getter to each element separately - `UIkit[componentName](element)`.
 
 
@@ -171,7 +171,7 @@ UIkit.util.on('#offcanvas', 'show', function () {
 
 The component's documentation page lists its events.
 
-**Note** Components often trigger event with the same name (e.g. 'show'). Usually events [bubble through the DOM](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture). Check the event target, to ensure the event was triggered by the desired component.
+**Note** Components often trigger events with the same name (e.g. 'show'). Usually events [bubble through the DOM](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture). Check the event target, to ensure the event was triggered by the desired component.
 
 Sometimes, components like Grid or Tab are hidden in the markup. This may happen when used in combination with the Switcher, Modal or Dropdown. Once they become visible, they need to adjust or fix their height and other dimensions.
 
