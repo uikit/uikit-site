@@ -123,7 +123,7 @@ Use `.uk-visible-*` classes to show the element for screens larger than the spec
 
 ## Toggle
 
-To display elements on hover or focus only, add the `.uk-visible-toggle` class to a parent element and one of the following classes to any child elements which should be hidden.
+To display elements on hover or focus only, add the `.uk-visible-toggle` class to a parent element and one of the following classes to any child elements that should be hidden.
 
 | Class                 | Description                                                    |
 |-----------------------|----------------------------------------------------------------|
