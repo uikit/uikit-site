@@ -195,7 +195,7 @@ Add the `.uk-modal-container` class to expand the modal dialog to the default [C
 
 ## Full modifier
 
-To create a modal, that fills the entire page, add the `.uk-modal-full` class. It is also recommended adding the `.uk-modal-close-full` class to the close button, so that it adapts its styling.
+To create a modal, that fills the entire page, add the `.uk-modal-full` class. It is also recommended to add the `.uk-modal-close-full` class to the close button, so that it adapts its styling.
 
 ```html
 <div class="uk-modal-full" uk-modal>
@@ -423,14 +423,14 @@ UIkit.modal(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name         | Description                                          |
-|--------------|------------------------------------------------------|
-| `beforeshow` | Fires before an item is shown.                       |
-| `show`       | Fires after an item is shown.                        |
-| `shown`      | Fires after the item's show animation has completed. |
-| `beforehide` | Fires before an item is hidden.                      |
-| `hide`       | Fires after an item's hide animation has started.    |
-| `hidden`     | Fires after an item is hidden.                       |
+| Name         | Description                                               |
+|--------------|-----------------------------------------------------------|
+| `beforeshow` | Fires before an item is shown.                            |
+| `show`       | Fires after an item is shown.                             |
+| `shown`      | Fires after the item's show animation has been completed. |
+| `beforehide` | Fires before an item is hidden.                           |
+| `hide`       | Fires after an item's hide animation has started.         |
+| `hidden`     | Fires after an item is hidden.                            |
 
 ### Methods
 
