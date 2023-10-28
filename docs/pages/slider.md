@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create a responsive carousel slider.</p>
 
-The Slider component is fully responsive and supports touch and swipe navigation as well as mouse drag for desktops. It even accelerates to keep up with your pace when you click through previous and next navigation. All animations are hardware accelerated for a smoother performance.
+The Slider component is fully responsive and supports touch and swipe navigation as well as mouse drag for desktops. It even accelerates to keep up with your pace when you click through the `previous and next navigation. All animations are hardware accelerated for a smoother performance.
 
 ## Usage
 
@@ -756,7 +756,7 @@ This functionality is inherited from the [Parallax component](parallax.md), and 
 </div>
 ```
 
-In the example above, the content will start at `100` and animate half way to `0` while the slide moves in. When the slide starts again to move out, the content will continue to animate to `-100`. This works because the start and end values have the same distance. For different distances, three values are needed: _Start_ (Slide animates in), _Middle_ (Slide is centered), _End_ (Slide animates out).
+In the example above, the content will start at `100` and animate halfway to `0` while the slide moves in. When the slide starts again to move out, the content will continue to animate to `-100`. This works because the start and end values have the same distance. For different distances, three values are needed: _Start_ (Slide animates in), _Middle_ (Slide is centered), _End_ (Slide animates out).
 
 ```html
 <div uk-slider-parallax="x: 300,0,-100">…</div>
@@ -1021,14 +1021,14 @@ UIkit.slider(element, options);
 
 The following events will be triggered on elements with this component attached:
 
-| Name             | Description                                               |
-|------------------|-----------------------------------------------------------|
-| `beforeitemshow` | Fires before an item is shown.                            |
-| `itemshow`       | Fires after an item is shown.                             |
-| `itemshown`      | Fires after an item's show animation has completed.       |
-| `beforeitemhide` | Fires before an item is hidden.                           |
-| `itemhide`       | Fires after an item's hide animation has started.         |
-| `itemhidden`     | Fires after an item's hide animation has completed.       |
+| Name             | Description                                                    |
+|------------------|----------------------------------------------------------------|
+| `beforeitemshow` | Fires before an item is shown.                                 |
+| `itemshow`       | Fires after an item is shown.                                  |
+| `itemshown`      | Fires after an item's show animation has been completed.       |
+| `beforeitemhide` | Fires before an item is hidden.                                |
+| `itemhide`       | Fires after an item's hide animation has started.              |
+| `itemhidden`     | Fires after an item's hide animation has been completed.       |
 
 ### Methods
 
@@ -1080,7 +1080,7 @@ The previous/next navigation adheres to the [button pattern](https://www.w3.org/
 
 ### Keyboard interaction
 
-Autoplay stops when any element in the Slider component receives focus. The tab navigation can be accessed through keyboard using the following keys.
+Autoplay stops when any element in the Slider component receives focus. The tab navigation can be accessed through the keyboard using the following keys.
 
 - The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus on the active tab in the tab navigation. If the focus already is on the active tab, the focus will move to the next element outside the tab navigation. 
 - The <kbd>left/right arrow</kbd> or <kbd>right/down arrow</kbd> keys, depending on the orientation, navigate through the tabs. The corresponding slide will get active automatically. If the focus is on the last tab, it moves to the first tab. 
