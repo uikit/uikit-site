@@ -11,7 +11,7 @@ UIkit offers various text utilities to style your text.
 | Class           | Description                                                                                                           |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------|
 | `.uk-text-lead` | <span class="uk-text-lead">Add this class to highlight text, for example in article subtitles.</span>                 |
-| `.uk-text-meta` | <span class="uk-text-meta">Add this class to a paragraph which contains meta text about an article or similar.</span> |
+| `.uk-text-meta` | <span class="uk-text-meta">Add this class to a paragraph that contains meta text about an article or similar.</span> |
 
 ***
 
@@ -29,13 +29,13 @@ The following classes will modify the font size of your text.
 
 ## Font weight
 
-Add one of the following classes to modify the font weight of your text.
+Add one of the following classes to modify the font-weight of your text.
 
 | Class              | Description                                                                         |
 |--------------------|-------------------------------------------------------------------------------------|
-| `.uk-text-light`   | <span class="uk-text-light">Add this class to apply a font weight of `300`.</span>  |
-| `.uk-text-normal`  | <span class="uk-text-normal">Add this class to apply a font weight of `400`.</span> |
-| `.uk-text-bold`    | <span class="uk-text-bold">Add this class to apply a font weight of `700`.</span>   |
+| `.uk-text-light`   | <span class="uk-text-light">Add this class to apply a font-weight of `300`.</span>  |
+| `.uk-text-normal`  | <span class="uk-text-normal">Add this class to apply a font-weight of `400`.</span> |
+| `.uk-text-bold`    | <span class="uk-text-bold">Add this class to apply a font-weight of `700`.</span>   |
 | `.uk-text-lighter` | <span class="uk-text-lighter">Add this class to apply a lighter font weight.</span> |
 | `.uk-text-bolder`  | <span class="uk-text-bolder">Add this class to apply a bolder font weight.</span>   |
 
@@ -49,7 +49,7 @@ Add the `.uk-text-italic` class to create <span class="uk-text-italic">italic te
 
 ## Text transform
 
-The following classes will transform text into uppercased, capitalized or lowercased characters.
+The following classes will transform the text into uppercased, capitalized or lowercase characters.
 
 | Class                 | Description                                                                                  |
 |-----------------------|----------------------------------------------------------------------------------------------|
