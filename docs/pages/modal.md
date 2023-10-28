@@ -465,7 +465,7 @@ The component comes with a number of prepared modal dialogs that you can use for
 | `UIkit.modal.prompt('Name:', 'Your name')`    | Show a dialog asking for a text input.                   |
 | `UIkit.modal.dialog('<p>UIkit dialog!</p>');` | Show dialog with any HTML content.                       |
 
-To process the user input, the modal uses a promise based interface which provides a `then()` function to register your callback functions. The `UIkit.modal.dialog` function however will return the modal itself.
+To process the user input, the modal uses a promise-based interface which provides a `then()` function to register your callback functions. The `UIkit.modal.dialog` function however will return the modal itself.
 
 ```js
 UIkit.modal.confirm('UIkit confirm!').then(function() {
@@ -477,7 +477,7 @@ UIkit.modal.confirm('UIkit confirm!').then(function() {
 
 The returned promise has a property `dialog`, which holds a reference to the modal itself. This lets you manipulate e.g. the markup of the modal's element.
 
-To translate the button labels, the dialog functions accepts an optional `options` object parameter. This has a key `i18n` and two properties `ok` and `cancel`.
+To translate the button labels, the dialog functions accept an optional `options` object parameter. This has a key `i18n` and two properties `ok` and `cancel`.
 
 ```js
 const modal = UIkit.modal.confirm('UIkit confirm!', {i18n: {ok: 'okay'}}).dialog; // The modal component
@@ -548,6 +548,6 @@ The Close component automatically sets the appropriate WAI-ARIA roles and proper
 
 ### Keyboard interaction
 
-The Modal component can be accessed through keyboard using the following keys.
+The Modal component can be accessed through the keyboard using the following keys.
 
 - The <kbd>esc</kbd> key closes the modal. This behaviour is disabled if the `bg-close: false` option is set.
