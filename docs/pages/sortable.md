@@ -50,7 +50,7 @@ To apply this component, add the `uk-sortable` attribute to a container and crea
 
 ## Handle
 
-By default, the entire sortable element can be used for drag and drop sorting. To create a handle which will be used instead, just add the `handle: SELECTOR` option to the attribute and add the handle class to the element that you want to use as a handle.
+By default, the entire sortable element can be used for drag and drop sorting. To create a handle that will be used instead, just add the `handle: SELECTOR` option to the attribute and add the handle class to the element that you want to use as a handle.
 
 ```html
 <ul uk-sortable="handle: .uk-sortable-handle">
