@@ -219,7 +219,7 @@ Add the `.uk-table-small` or `.uk-table-large` class to a table to make it small
 
 ## Justify modifier
 
-To remove the outer padding of the first and last column so that they are flush with the table, add the `.uk-table-justify` class.
+To remove the outer padding of the first and last columns so that they are flush with the table, add the `.uk-table-justify` class.
 
 ```html
 <table class="uk-table uk-table-justify">…</table>
@@ -452,7 +452,7 @@ To optimize the display of table cells and their specific content, you can add o
 
 | Class                 | Description                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `.uk-table-link`      | To link an entire cell, add this class to a `<th>`or `<td>` element and insert an `<a>`element. Add the `.uk-link-reset`class from the [Link component](link.md) to reset the default link styling.                                                                              |
+| `.uk-table-link`      | To link an entire cell, add this class to a `<th>`or `<td>` element and insert an `<a>` element. Add the `.uk-link-reset`class from the [Link component](link.md) to reset the default link styling.                                                                              |
 | `.uk-preserve-width ` | Since images are responsive by default in UIkit, using an image inside a table cell with the `.uk-table-shrink` class would reduce the image width to 0. To prevent this behavior, add the `.uk-preserve-width` class from the [Base component](base.md) to the `<img>` element. |
 | `.uk-text-truncate`   | When applying a fixed width to a table cell, you might want to add this class from the [Text component](text.md) to the `<td>` element to truncate the text.                                                                                                                     |
 | `.uk-text-nowrap`     | Add this class from the [Text component](text.md) to keep text from wrapping, for example when using the `.uk-table-shrink` class.                                                                                                                                               |
