@@ -66,8 +66,8 @@
             setTimeout(
                 () =>
                     (location.href = `https://github.com/uikit/uikit/releases/download/v${version}/uikit-${version}.zip`),
-                100
-            )
+                100,
+            ),
         );
     </script>
 </div>

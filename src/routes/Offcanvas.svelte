@@ -9,33 +9,23 @@
             <ul class="uk-nav uk-nav-default tm-nav">
                 <li class="uk-nav-header">General</li>
                 <li class:uk-active={$page.route.id === '/'}>
-                    <a
-                        href="{base}/"
-                        aria-current={$page.route.id === '/' ? 'page' : null}
-                        >Home</a
-                    >
+                    <a href="{base}/" aria-current={$page.route.id === '/' ? 'page' : null}>Home</a>
                 </li>
                 <li class:uk-active={$page.route.id === '/pro'}>
-                    <a
-                        href="{base}/pro"
-                        aria-current={$page.route.id === '/pro' ? 'page' : null}
+                    <a href="{base}/pro" aria-current={$page.route.id === '/pro' ? 'page' : null}
                         >Pro</a
                     >
                 </li>
                 <li class:uk-active={$page.route.id === '/changelog'}>
                     <a
                         href="{base}/changelog"
-                        aria-current={$page.route.id === '/changelog'
-                            ? 'page'
-                            : null}>Changelog</a
+                        aria-current={$page.route.id === '/changelog' ? 'page' : null}>Changelog</a
                     >
                 </li>
                 <li class:uk-active={$page.route.id === '/download'}>
                     <a
                         href="{base}/download"
-                        aria-current={$page.route.id === '/download'
-                            ? 'page'
-                            : null}>Download</a
+                        aria-current={$page.route.id === '/download' ? 'page' : null}>Download</a
                     >
                 </li>
             </ul>
@@ -49,9 +39,7 @@
                         <li class:uk-active={$page.params.slug === slug}>
                             <a
                                 href="{base}/docs/{slug}"
-                                aria-current={$page.params.slug === slug
-                                    ? 'page'
-                                    : null}>{label}</a
+                                aria-current={$page.params.slug === slug ? 'page' : null}>{label}</a
                             >
                         </li>
                     {/each}

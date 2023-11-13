@@ -27,9 +27,7 @@
                 <li class:uk-active={$page.params.slug === slug}>
                     <a
                         href="{base}/docs/{slug}"
-                        aria-current={$page.params.slug === slug
-                            ? 'page'
-                            : null}>{label}</a
+                        aria-current={$page.params.slug === slug ? 'page' : null}>{label}</a
                     >
                 </li>
             {/each}

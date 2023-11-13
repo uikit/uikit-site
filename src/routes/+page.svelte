@@ -28,7 +28,9 @@
                 </p>
 
                 <h1 class="uk-margin-medium uk-text-lead">
-                    UIkit is a lightweight and modular front-end framework<br class="uk-visible@s" />
+                    UIkit is a lightweight and modular front-end framework<br
+                        class="uk-visible@s"
+                    />
                     for developing fast and powerful web interfaces.
                 </h1>
 
