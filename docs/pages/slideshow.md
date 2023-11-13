@@ -372,6 +372,62 @@ If there is no item specific content in the navigation items, you can also add t
 
 ***
 
+## Parallax animation
+
+Instead of a step-by-step animation using navigation controls, the slideshow can use a a stepless parallax animation based on its scroll position in the viewport. Just add `parallax: true` to the attribute. If a navigation is set in the markup it won't be clickable but it will get the active state of the current slide.
+
+```html
+<div uk-slideshow="parallax: true">…</div>
+```
+
+```example
+<div uk-slideshow="animation: push; parallax: true;">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="images/photo.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="images/dark.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="images/light.jpg" alt="" uk-cover>
+        </li>
+    </ul>
+
+    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+```
+
+To adjust the parallax duration, set the `parallax-start` and `parallax-end` options. The `parallax-start` option defines when the animation starts. The default value of `0` means that the slideshow's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the slideshow's bottom border and the viewport's top border intersect. Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the slideshow's height. Both options allow basic mathematics operands, `+` and `-`.
+
+```html
+<div uk-slider="parallax: true; parallax-start: 100%; parallax-end: 100%;">…</div>
+```
+
+```example
+<div uk-slideshow="animation: push; parallax: true; parallax-start: 100%; parallax-end: 100%;">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="images/photo.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="images/dark.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="images/light.jpg" alt="" uk-cover>
+        </li>
+    </ul>
+
+    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+```
+
+***
+
 ## Videos
 
 The slideshow is not restricted to images. Other media, like videos, can be positioned in the background of each slide using the `uk-cover` attribute from the [Cover component](cover.md). Videos are muted, and play automatically. The video will pause whenever it's not visible, and resume once it becomes visible again.

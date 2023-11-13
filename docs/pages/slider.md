@@ -511,6 +511,124 @@ To place a navigation outside of a slider, add the `.uk-position-center-left-out
 
 ***
 
+## Parallax animation
+
+Instead of a step-by-step animation using navigation controls, the slider can use a a stepless parallax animation based on its scroll position in the viewport. Just add `parallax: true` to the attribute. If a navigation is set in the markup it won't be clickable but it will get the active state of the current slide.
+
+```html
+<div uk-slider="parallax: true">…</div>
+```
+
+```example
+<div uk-slider="parallax: true;">
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
+        <li>
+            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+        </li>
+        <li>
+            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>2</h1></div>
+        </li>
+        <li>
+            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>3</h1></div>
+        </li>
+        <li>
+            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>4</h1></div>
+        </li>
+        <li>
+            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>5</h1></div>
+        </li>
+        <li>
+            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>6</h1></div>
+        </li>
+        <li>
+            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>7</h1></div>
+        </li>
+        <li>
+            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>8</h1></div>
+        </li>
+        <li>
+            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>9</h1></div>
+        </li>
+        <li>
+            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>10</h1></div>
+        </li>
+    </ul>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+```
+
+To adjust the parallax duration, set the `parallax-start` and `parallax-end` options. The `parallax-start` option defines when the animation starts. The default value of `0` means that the slider's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the slider's bottom border and the viewport's top border intersect. Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the slider's height. Both options allow basic mathematics operands, `+` and `-`.
+
+```html
+<div uk-slider="parallax: true; parallax-start: 100%; parallax-end: 100%;">…</div>
+```
+
+```example
+<div uk-slider="parallax: true; parallax-start: 100%; parallax-end: 100%;">
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
+        <li>
+            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+        </li>
+        <li>
+            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>2</h1></div>
+        </li>
+        <li>
+            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>3</h1></div>
+        </li>
+        <li>
+            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>4</h1></div>
+        </li>
+        <li>
+            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>5</h1></div>
+        </li>
+        <li>
+            <img src="images/slider1.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>6</h1></div>
+        </li>
+        <li>
+            <img src="images/slider2.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>7</h1></div>
+        </li>
+        <li>
+            <img src="images/slider3.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>8</h1></div>
+        </li>
+        <li>
+            <img src="images/slider4.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>9</h1></div>
+        </li>
+        <li>
+            <img src="images/slider5.jpg" width="400" height="600" alt="">
+            <div class="uk-position-center uk-panel"><h1>10</h1></div>
+        </li>
+    </ul>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+```
+
+***
+
 ## Viewport height
 
 Adding the `uk-height-viewport` attribute from the [Height component](height.md#viewport-height) to the list of slider items will stretch the height of the `<ul>` and `<li>` elements to fill the whole viewport height. Since the width and height now aren't defined by the item's content anymore, you have to use absolute positioning for the content.
