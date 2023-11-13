@@ -200,31 +200,31 @@ By default, items of the slider always are aligned to the left. To center the li
     <ul class="uk-slider-items uk-grid">
         <li class="uk-width-3-4">
             <div class="uk-panel">
-                <img src="images/photo.jpg" width="400" height="600" alt="">
+                <img src="images/photo.jpg" width="600" height="400" alt="">
                 <div class="uk-position-center uk-panel"><h1>1</h1></div>
             </div>
         </li>
         <li class="uk-width-3-4">
             <div class="uk-panel">
-                <img src="images/dark.jpg" width="400" height="600" alt="">
+                <img src="images/dark.jpg" width="600" height="400" alt="">
                 <div class="uk-position-center uk-panel"><h1>2</h1></div>
             </div>
         </li>
         <li class="uk-width-3-4">
             <div class="uk-panel">
-                <img src="images/light.jpg" width="400" height="600" alt="">
+                <img src="images/light.jpg" width="600" height="400" alt="">
                 <div class="uk-position-center uk-panel"><h1>3</h1></div>
             </div>
         </li>
         <li class="uk-width-3-4">
             <div class="uk-panel">
-                <img src="images/photo2.jpg" width="400" height="600" alt="">
+                <img src="images/photo2.jpg" width="600" height="400" alt="">
                 <div class="uk-position-center uk-panel"><h1>4</h1></div>
             </div>
         </li>
         <li class="uk-width-3-4">
             <div class="uk-panel">
-                <img src="images/photo3.jpg" width="400" height="600" alt="">
+                <img src="images/photo3.jpg" width="600" height="400" alt="">
                 <div class="uk-position-center uk-panel"><h1>5</h1></div>
             </div>
         </li>
@@ -350,7 +350,7 @@ If there is no item specific content in the navigation items, you can also add t
 ```html
 <div uk-slider>
 
-    <ul class="uk-slider-items">…</ul
+    <ul class="uk-slider-items">…</ul>
 
     <ul class="uk-slider-nav uk-dotnav"></ul>
 
