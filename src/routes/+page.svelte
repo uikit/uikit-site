@@ -82,7 +82,7 @@
                 </li>
                 <li>
                     <a class="uk-text-lowercase" href="https://twitter.com/getuikit"
-                        ><span class="uk-margin-small-right" uk-icon="twitter" />@getuikit</a
+                        ><span class="uk-margin-small-right" uk-icon="x" />@getuikit</a
                     >
                 </li>
                 <li>
