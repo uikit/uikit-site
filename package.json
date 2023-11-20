@@ -17,7 +17,7 @@
         "@sveltejs/adapter-static": "2.0.3",
         "@sveltejs/kit": "^1.27.6",
         "clipboard": "2.0.11",
-        "eslint": "^8.53.0",
+        "eslint": "^8.54.0",
         "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-svelte": "^2.35.0",
         "execa": "^8.0.1",
@@ -30,7 +30,7 @@
         "prettier": "^3.1.0",
         "prettier-plugin-organize-imports": "^3.2.4",
         "prettier-plugin-svelte": "^3.1.0",
-        "svelte": "^4.2.3",
+        "svelte": "^4.2.7",
         "symlink-dir": "^5.2.0",
         "uikit": "3.17.10",
         "vite": "^5.0.0"
