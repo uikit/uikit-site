@@ -1,15 +1,14 @@
 # Inverse
 
-<p class="uk-text-lead">Inverse the style of any component for light or dark backgrounds.</p>
+<p class="uk-text-lead">Inverse colors of any component for light or dark backgrounds.</p>
+
+In general, there are UIkit styles which have light backgrounds, like the default UIkit style, or the styles with dark backgrounds. Depending on the background color, the default text color is either dark on light. But if the same style different background colors or background images are used, the opposite text color may be needed. Use the Inverse component to inverse the text color for such backgrounds. 
 
 ## Usage
 
-Add the `.uk-light` class to improve the visibility of content on dark backgrounds in a light style. When using a dark style, add the `.uk-dark` class to elements on a light background. These classes will color all containing content accordingly.
+Add the `.uk-light` class to color the text and all containing content to make it look great on dark backgrounds. Add the `.uk-dark` class to color the text and all containing content on light backgrounds correspondingly.
 
-Only one class, `.uk-light` or `.uk-dark`, actually changes the color of nested content depending on the UIkit style. For example, when using a style which has light backgrounds text is already displayed in a dark color and all content looks great by default. This is why the `.uk-dark` doesn't have to apply any CSS and only the `.uk-light` class does to actually change the color of its containing content. If the UIkit style has dark backgrounds it's  vice versa. Text is displayed in a light color, which is why `.uk-light` doesn't apply any CSS but `.uk-dark` does.
-
-Mind, that if the contents color is changed one time it can not be changed back.
-
+Since there is already a default text color, for light styles it is dark, and for dark styles it's light, only one of the classes is needed to change the text color for different backgrounds. In light styles, the `.uk-light` is needed and in dark styles the `.uk-dark` class. This also means that if one of the classes is used, the color cannot be changed back.
 
 ```html
 <div class="uk-light"></div>
@@ -45,6 +44,8 @@ Mind, that if the contents color is changed one time it can not be changed back.
 The `.uk-light` and `.uk-dark` classes are set on container elements and color their containing content. But there are cases where elements are not nested but have a position context and overlap each other. For example, a sticky navbar overlaps different sections beneath while scrolling. To color content depending on intersecting elements, add the `uk-inverse` attribute. It will set the `.uk-light` or `.uk-dark` class depending on the section beneath.
 
 It detects the color mode by looking for the `--uk-inverse` custom property which is set by the content beneath. For example, the `.uk-light` or `.uk-dark` classes set the property their self, as well as section or tiles which inverse the colors of their content. If for some reason the content beneath is and should not inverse its content colors, but only overlapping content should be colored use the `.uk-inverse-light` or `.uk-inverse-dark` classes. They only set the `--uk-inverse` custom property to the corresponding color but without coloring the containing content.
+
+***
 
 ## Disable inverse component
 
