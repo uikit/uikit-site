@@ -188,6 +188,108 @@ This works because the `.uk-light` and `.uk-dark` classes as well as background 
 
 If containing content should keep its text color, and only the overlapping content should inverse its color, use the `.uk-inverse-light` or `.uk-inverse-dark` classes. They set the `--uk-inverse` custom property to the corresponding color but without coloring the containing content.
 
+
+
+```html
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container" uk-navbar>…</nav>
+</div>
+
+<div class="uk-section uk-section-primary uk-preserve-color uk-inverse-light">
+```
+
+
+```example
+<div class="uk-position-relative">
+
+    <div class="uk-position-top">
+
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: !.uk-position-relative; offset: 80">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-inverse>
+                <div class="uk-container">
+                    <div uk-navbar>
+                        <div class="uk-navbar-left">
+
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li>
+                                    <a href="#">Parent</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Parent</a>
+                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                        <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-header">Header</li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-divider"></li>
+                                                    <li><a href="#">Item</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-header">Header</li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-divider"></li>
+                                                    <li><a href="#">Item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="uk-section uk-section-primary uk-preserve-color uk-inverse-light">
+        <div class="uk-container">
+
+            <div class="uk-panel uk-light uk-margin-medium">
+                <h3>Section Primary with cards</h3>
+            </div>
+
+            <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+```
+
 ***
 
 ## Disable inverse component
