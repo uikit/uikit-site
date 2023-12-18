@@ -388,7 +388,7 @@ Add the `.uk-nav-divider` class to separate nav items with lines. This can be co
 
 ## Size modifiers
 
-Add one of the following classes to modify the size primary navs.
+Add one of the following classes to modify the size of primary navs.
 
 | Class                 | Description                                      |
 |-----------------------|--------------------------------------------------|

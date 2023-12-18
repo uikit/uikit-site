@@ -37,9 +37,9 @@ Since there is already a default text color, for light styles it is dark, and fo
 
 *** 
 
-## Background components
+## Extending components
 
-Style modifiers from background components like [Section](section.md), [Tile](tile.md), [Card](card.md), [Overlay](overlay.md), [Off-canvas](offcanvas.md), [Navbar](navbar.md), [Dropdown](dropdown.md) and [Dropbar](dropbar.md), extend the inverse the style automatically to change the text color, so there is no need to add any class.
+Style modifiers from components which create backgrounds, like [Section](section.md), [Tile](tile.md), [Card](card.md), [Overlay](overlay.md), [Off-canvas](offcanvas.md), [Navbar](navbar.md), [Dropdown](dropdown.md) and [Dropbar](dropbar.md), extend the inverse style automatically to change the text color, so there is no need to add any class.
 
 ***
 
@@ -184,11 +184,9 @@ The `.uk-light` and `.uk-dark` classes are set on container elements and color t
 </div>
 ```
 
-This works because the `.uk-light` and `.uk-dark` classes as well as background components also set the `--uk-inverse` custom property to either light or dark. The JavaScript looks for the `--uk-inverse` custom property in the closest intersecting element in the stacking context and sets the `.uk-light` or `.uk-dark` class correspondingly.
+This works because the `.uk-light` and `.uk-dark` classes as well as all extending components also set the `--uk-inverse` custom property to either light or dark. The JavaScript looks for the `--uk-inverse` custom property in the closest intersecting element in the stacking context and sets the `.uk-light` or `.uk-dark` class correspondingly.
 
 If containing content should keep its text color, and only the overlapping content should inverse its color, use the `.uk-inverse-light` or `.uk-inverse-dark` classes. They set the `--uk-inverse` custom property to the corresponding color but without coloring the containing content.
-
-
 
 ```html
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
