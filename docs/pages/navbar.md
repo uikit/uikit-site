@@ -157,7 +157,7 @@ You can place more than one navigation inside a navbar container. That way you c
 
 ## Transparent modifier
 
-When using an image or colored background for the hero section of your website, you might want to turn the navbar transparent. Just add the `.uk-navbar-transparent` class on the same element as the `.uk-navbar-container` class. If necessary, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to adjust the navbar color.
+When using an image or a colored background for the hero section of your website, you might want to turn the navbar transparent. Just add the `.uk-navbar-transparent` class on the same element as the `.uk-navbar-container` class. If necessary, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md) to adjust the navbar color.
 
 ```html
 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>…</nav>
@@ -1181,7 +1181,6 @@ Instead of using a Dropdown, you can also show the subnavigation in a Dropbar, w
 When a [transparent navbar](navbar.md#transparent-modifier) becomes sticky, it is usually required to remove the `.uk-navbar-transparent` class together with `.uk-light` or `.uk-dark` and add them again when the navbar returns to the non-sticky state. To do that, set `cls-inactive: uk-navbar-transparent uk-light`.
 
 By default, the immediate toggling of classes does not look ideal. Instead, set `start: 200` to make the navbar disappear and then re-appear when the user has scrolled 200px past the navbar. In that case, the navbar can also slide in with an animation. Just set `animation: uk-animation-slide-top`.
-
 
 ```html
 <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light">
