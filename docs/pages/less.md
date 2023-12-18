@@ -122,8 +122,7 @@ Should there be neither a variable nor a hook available, you can also create you
 
 ### Disable inverse component
 
-
-The Inverse component generates CSS to color all component for the according background color. If your project does not need to inverse content colors, you can disable it when compiling Less. This allows smaller file sizes of the compiled CSS. To do so, search for Less variables containing `color-mode` (e.g. `@card-primary-color-mode`), and set them to `none`.
+The Inverse component generates CSS to color all components for the according background color. If your project does not need to inverse content colors, you can disable it when compiling Less. This results in a smaller file size of the compiled CSS. To do so, search for Less variables containing `color-mode` (e.g. `@card-primary-color-mode`), and set them to `none`.
 
 To disable the inverse styles completely, set:
 
