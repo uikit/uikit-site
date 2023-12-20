@@ -41,7 +41,7 @@ Since there is already a default text color, for light styles it is dark, and fo
 
 Style modifiers from components which create backgrounds, like [Section](section.md), [Tile](tile.md), [Card](card.md), [Overlay](overlay.md), [Off-canvas](offcanvas.md), [Navbar](navbar.md), [Dropdown](dropdown.md) and [Dropbar](dropbar.md), extend the inverse style automatically to change the text color, so there is no need to add any class.
 
-[Section](section.md) and [Tile](tile.md) components can prevent this behavior, for example because [cards](card.md) are used inside them. Simply add the `.uk-preserve-color` class.
+The [Section](section.md) and [Tile](tile.md) components can prevent this behavior. Simply add the `.uk-preserve-color` class. This is needed, for example, when they contain [cards](card.md).
 
 ```html
 <div class="uk-section uk-section-primary uk-preserve-color"></div>
@@ -106,7 +106,7 @@ Style modifiers from components which create backgrounds, like [Section](section
 
 ## Overlapping content
 
-The `.uk-light` and `.uk-dark` classes are set on container elements and color their containing content. But there are cases where elements are not nested but have a position context and overlap each other. For example, a sticky navbar overlaps different sections beneath while scrolling. To color content depending on intersecting elements, add the `uk-inverse` attribute. It will set the `.uk-light` or `.uk-dark` class depending on the section beneath.
+The `.uk-light` and `.uk-dark` classes are set on container elements and color their containing content. But there are cases where elements are not nested but have a position context and overlap each other. For example, a sticky navbar overlaps different sections behind while scrolling. To color content depending on intersecting elements, add the `uk-inverse` attribute. It will set the `.uk-light` or `.uk-dark` class depending on the section behind.
 
 ```html
 <div class="uk-position-relative">
@@ -248,7 +248,7 @@ This works because the `.uk-light` and `.uk-dark` classes as well as all extendi
 
 ### Color multiple parts separately
 
-To color multiple parts separately inside the container, just add the `target: SELECTOR` option to the `uk-inverse` attribute.
+To color different parts inside the container separately, just add the `target: SELECTOR` option to the `uk-inverse` attribute.
 
 ```html
 <div class="uk-position-relative">
@@ -390,7 +390,7 @@ To color multiple parts separately inside the container, just add the `target: S
 
 ### Inactive state
 
-To deactivate the automatic coloring of an element if it changes its state from transparent to opaque, just add the `sel-active: SELECTOR` option to the `uk-inverse` attribute.
+To prevent the element from changing its color automatically when it stops being transparent, just add the `sel-active: SELECTOR` option to the `uk-inverse` attribute.
 
 ```html
 <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent">
@@ -587,10 +587,10 @@ If containing content should keep its text color, and only the overlapping conte
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option       | Value        | Default | Description                                                                                                             |
-|--------------|--------------|---------|-------------------------------------------------------------------------------------------------------------------------|
-| `target`     | CSS selector | `false` | A list of targets that will checked.                                                                                    |
-| `sel-active` | CSS selector | `false` | A selector that needs to match for a color to be set, otherwise color is removed. If omitted, color will always be set. |
+| Option       | Value        | Default | Description                                                                                                                 |
+| ------------ | ------------ | ------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `target`     | CSS selector | `false` | A list of targets that will be checked.                                                                                     |
+| `sel-active` | CSS selector | `false` | A selector that needs to match for a color to be set, otherwise the color is removed. If omitted, color will always be set. |
 
 ***
 

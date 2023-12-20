@@ -1241,7 +1241,7 @@ To optimize the look of a transparent navbar if it opens a dropbar, set the `dro
 | `remove` | Remove navbar transparency when the dropbar opens and add it when the dropbar closes.           |
 | `behind` | Open the dropbar behind the navbar so the navbar content is shown above the dropbar background. |
 
-Use the [Inverse component](inverse.md) to color the transparent navbar depending on the background beneath. To deactivate the automatic coloring of the navbar when it changes its state from transparent to opaque, just add the `sel-active: .uk-navbar-transparent` option to the `uk-inverse` attribute.
+Use the [Inverse component](inverse.md) to color the transparent navbar depending on the background behind. To prevent the navbar from changing its color when it stops being transparent, just add the `sel-active: .uk-navbar-transparent` option to the `uk-inverse` attribute.
 
 For example, set `dropbar-transparent-mode: remove` if the navbar is only transparent in the hero section, but not when sticky.
 
@@ -1425,7 +1425,7 @@ Alternatively, if the navbar is always transparent even when sticky, set `dropba
 
 When using a sticky transparent navbar, it's quite common to blend it with the page background. In this case, the dropbar needs to be placed outside of the blending element using `dropbar-anchor`, and the dropdowns using `container`. Otherwise, the dropbar and dropdowns would also blend with the page background. This also means the dropbar will be placed outside of the sticky container. As a result, only the navbar will stay sticky, and the opened dropbar will scroll out of the view. This is why we added a new `close-on-scroll` option to close the dropbar before scrolling.
 
-Only white blends great with the page background. So make sure that the navbar has light colors using the `.uk-light` class and don't use the `uk-inverse` attribute to color the navbar.
+Since only white color blends well with the page background, make sure the navbar has light colors or use the `.uk-light` class. Do not use the `uk-inverse` attribute to color the navbar automatically.
 
 ```html
 <div class="uk-blend-difference uk-position-z-index-high" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
