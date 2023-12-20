@@ -290,6 +290,28 @@ If containing content should keep its text color, and only the overlapping conte
 
 ***
 
+## Component options
+
+Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
+
+| Option       | Value        | Default | Description |
+| ------------ | ------------ | ------- | ----------- |
+| `target`     | CSS selector | TODO    | TODO        |
+| `sel_active` | CSS selector | TODO    | TODO        |
+
+## JavaScript
+
+Learn more about [JavaScript components](javascript.md#programmatic-use).
+
+### Initialization
+
+```js
+UIkit.inverse(element, options);
+```
+
+***
+
 ## Disable inverse component
 
 The Inverse component generates CSS to color all components for the according background color. If your project does not need to inverse content colors, you can [disable the Inverse component](less.md#disable-inverse-component) when compiling Less.
+
