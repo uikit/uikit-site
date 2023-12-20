@@ -513,7 +513,7 @@ To place a navigation outside of a slider, add the `.uk-position-center-left-out
 
 ## Parallax animation
 
-Instead of a step-by-step animation using navigation controls, the slider can use a a stepless parallax animation based on its scroll position in the viewport. Just add `parallax: true` to the attribute. If a navigation is set in the markup it won't be clickable but it will get the active state of the current slide.
+Instead of a step-by-step animation using navigation controls, the slider can use a stepless parallax animation based on its scroll position in the viewport. Just add `parallax: true` to the attribute. If a navigation is set in the markup it won't be clickable but it will get the active state of the current slide.
 
 ```html
 <div uk-slider="parallax: true">…</div>
