@@ -1241,6 +1241,8 @@ To optimize the look of a transparent navbar if it opens a dropbar, set the `dro
 | `remove` | Remove navbar transparency when the dropbar opens and add it when the dropbar closes.           |
 | `behind` | Open the dropbar behind the navbar so the navbar content is shown above the dropbar background. |
 
+Use the [Inverse component](inverse.md) to color the transparent navbar depending on the background beneath. To deactivate the automatic coloring of the navbar when it changes its state from transparent to opaque, just add the `sel-active: .uk-navbar-transparent` option to the `uk-inverse` attribute.
+
 For example, set `dropbar-transparent-mode: remove` if the navbar is only transparent in the hero section, but not when sticky.
 
 ```html
@@ -1330,7 +1332,7 @@ For example, set `dropbar-transparent-mode: remove` if the navbar is only transp
 </div>
 ```
 
-Alternatively, if the navbar is always transparent even when sticky, set `dropbar-transparent-mode: behind` to open the dropbar behind the navbar, so it is no longer transparent. If you need to inverse the color of the navbar content to better fit the dropbar background, set the Less variable `@navbar-dropbar-behind-color-mode` to either `light` or `dark`.
+Alternatively, if the navbar is always transparent even when sticky, set `dropbar-transparent-mode: behind` to open the dropbar behind the navbar, so it is no longer transparent.
 
 ```html
 <div class="uk-inverse-light">
@@ -1423,6 +1425,8 @@ Alternatively, if the navbar is always transparent even when sticky, set `dropba
 
 When using a sticky transparent navbar, it's quite common to blend it with the page background. In this case, the dropbar needs to be placed outside of the blending element using `dropbar-anchor`, and the dropdowns using `container`. Otherwise, the dropbar and dropdowns would also blend with the page background. This also means the dropbar will be placed outside of the sticky container. As a result, only the navbar will stay sticky, and the opened dropbar will scroll out of the view. This is why we added a new `close-on-scroll` option to close the dropbar before scrolling.
 
+Only white blends great with the page background. So make sure that the navbar has light colors using the `.uk-light` class and don't use the `uk-inverse` attribute to color the navbar.
+
 ```html
 <div class="uk-blend-difference uk-position-z-index-high" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
     <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar="container: !.uk-section-default; dropbar: true; dropbar-transparent-mode: behind; close-on-scroll: true; dropbar-anchor: !.uk-blend-difference">…</nav>
@@ -1434,68 +1438,69 @@ When using a sticky transparent navbar, it's quite common to blend it with the p
 
     <div id="test">
 
-    <div class="uk-blend-difference uk-position-z-index-high" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: !.uk-section-default; offset: 80">
+        <div class="uk-blend-difference uk-position-z-index-high" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: !.uk-section-default; offset: 80">
 
-        <nav class="uk-navbar-container uk-navbar-transparent uk-light">
-            <div class="uk-container">
-                <div uk-navbar="container: #test; dropbar: true; dropbar-transparent-mode: behind; close-on-scroll: true; dropbar-anchor: !.uk-blend-difference; target-y: #test .uk-navbar-container">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-light">
+                <div class="uk-container">
+                    <div uk-navbar="container: #test; dropbar: true; dropbar-transparent-mode: behind; close-on-scroll: true; dropbar-anchor: !.uk-blend-difference; target-y: #test .uk-navbar-container">
 
-                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-left">
 
-                        <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li>
-                                <a href="#">Parent</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Active</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li class="uk-nav-header">Header</li>
-                                        <li><a href="#">Item</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li class="uk-nav-divider"></li>
-                                        <li><a href="#">Item</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">Parent</a>
-                                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                                    <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
-                                        <div>
-                                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                <li class="uk-active"><a href="#">Active</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-header">Header</li>
-                                                <li><a href="#">Item</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-divider"></li>
-                                                <li><a href="#">Item</a></li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                <li class="uk-active"><a href="#">Active</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-header">Header</li>
-                                                <li><a href="#">Item</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-divider"></li>
-                                                <li><a href="#">Item</a></li>
-                                            </ul>
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li>
+                                    <a href="#">Parent</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Parent</a>
+                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                        <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-header">Header</li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-divider"></li>
+                                                    <li><a href="#">Item</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-header">Header</li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-divider"></li>
+                                                    <li><a href="#">Item</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+
+                        </div>
 
                     </div>
-
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-    </div>
+        </div>
+
     </div>
 
     <div class="uk-section">
@@ -1512,6 +1517,150 @@ When using a sticky transparent navbar, it's quite common to blend it with the p
 
 </div>
 ```
+
+### Color navbar parts separately
+
+To color navbar parts separately, just add the `target: .uk-navbar-left, .uk-navbar-center, .uk-navbar-right` option to the `uk-inverse` attribute.
+
+```html
+<div class="uk-position-relative">
+
+    <div class="uk-position-top">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-inverse="target: .uk-navbar-left, .uk-navbar-center, .uk-navbar-right" uk-navbar>…</nav>
+        </div>
+    </div>
+
+    <div class="uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid>
+        <div>
+            <div class="uk-tile uk-tile-default">…</div>
+        </div>
+        <div>
+            <div class="uk-tile uk-tile-primary">…</div>
+        </div>
+        <div>
+            <div class="uk-tile uk-tile-secondary">…</div>
+        </div>
+    </div>
+
+</div>
+```
+
+```example
+<div class="uk-position-relative">
+
+    <div class="uk-position-top">
+
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: !.uk-position-relative; offset: 80">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-inverse="target: .uk-navbar-left, .uk-navbar-center, .uk-navbar-right">
+                <div class="uk-container">
+                    <div uk-navbar>
+                        <div class="uk-navbar-left">
+
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="uk-navbar-center">
+
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"><a href="">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="uk-navbar-right">
+
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"><a href="">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid>
+        <div>
+
+            <div class="uk-tile uk-tile-default">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+        </div>
+        <div>
+
+            <div class="uk-tile uk-tile-primary">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+        </div>
+        <div>
+
+            <div class="uk-tile uk-tile-secondary">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid>
+        <div>
+
+            <div class="uk-tile uk-tile-primary">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+        </div>
+        <div>
+
+            <div class="uk-tile uk-tile-muted">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+        </div>
+        <div>
+
+            <div class="uk-tile uk-tile-default">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid>
+        <div>
+
+            <div class="uk-tile uk-tile-default">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+        </div>
+        <div>
+
+            <div class="uk-tile uk-tile-secondary">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+        </div>
+        <div>
+
+            <div class="uk-tile uk-tile-muted">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+```
+
+For more detailed information on coloring the navbar depending on the page background, take a look at the [Inverse component](inverse.md).
 
 ***
 
