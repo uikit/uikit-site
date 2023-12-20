@@ -587,10 +587,10 @@ If containing content should keep its text color, and only the overlapping conte
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option       | Value        | Default | Description |
-| ------------ | ------------ | ------- | ----------- |
-| `target`     | CSS selector | TODO    | TODO        |
-| `sel_active` | CSS selector | TODO    | TODO        |
+| Option       | Value        | Default | Description                                                                                                             |
+|--------------|--------------|---------|-------------------------------------------------------------------------------------------------------------------------|
+| `target`     | CSS selector | `false` | A list of targets that will checked.                                                                                    |
+| `sel-active` | CSS selector | `false` | A selector that needs to match for a color to be set, otherwise color is removed. If omitted, color will always be set. |
 
 ***
 
