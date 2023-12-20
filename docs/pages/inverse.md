@@ -299,6 +299,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `target`     | CSS selector | TODO    | TODO        |
 | `sel_active` | CSS selector | TODO    | TODO        |
 
+***
+
 ## JavaScript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).

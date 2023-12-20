@@ -151,6 +151,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `target` | CSS selector | `> *`   | Elements that should match. By default, direct children will match.                         |
 | `row`    | Boolean      | `true`  | If your targets wrap into multiple rows, only grid columns within the same row are matched. |
 
+***
+
 ## JavaScript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).
