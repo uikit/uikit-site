@@ -15,7 +15,7 @@
         "@docsearch/css": "^3.5.2",
         "@docsearch/js": "^3.5.2",
         "@sveltejs/adapter-static": "3.0.1",
-        "@sveltejs/kit": "^2.1.2",
+        "@sveltejs/kit": "^2.3.0",
         "clipboard": "2.0.11",
         "eslint": "^8.56.0",
         "eslint-config-prettier": "^9.1.0",
