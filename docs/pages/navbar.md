@@ -1589,6 +1589,7 @@ To color navbar parts separately, just add the `target: .uk-navbar-left, .uk-nav
         <div>
 
             <div class="uk-tile uk-tile-default">
+                <div uk-height-placeholder="!.uk-position-relative .uk-position-top" class="uk-margin-remove-adjacent"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
@@ -1596,6 +1597,7 @@ To color navbar parts separately, just add the `target: .uk-navbar-left, .uk-nav
         <div>
 
             <div class="uk-tile uk-tile-primary">
+                <div uk-height-placeholder="!.uk-position-relative .uk-position-top" class="uk-margin-remove-adjacent"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
@@ -1603,6 +1605,7 @@ To color navbar parts separately, just add the `target: .uk-navbar-left, .uk-nav
         <div>
 
             <div class="uk-tile uk-tile-secondary">
+                <div uk-height-placeholder="!.uk-position-relative .uk-position-top" class="uk-margin-remove-adjacent"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
