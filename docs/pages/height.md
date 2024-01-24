@@ -144,12 +144,14 @@ If your grid wraps into multiple rows, only grid columns within the same row are
 
 ## Placeholder height
 
-To expand the height of a placeholder to a reference element, add the `uk-height-match` attribute.
+To set the height for a placeholder element, add the `uk-height-placeholder: SELECTOR` attribute where the selector targets the element with the required height.
 
 ```html
 <div id="my-id"></div>
 <div uk-height-placeholder="#my-id"></div>
 ```
+
+For example, if there is an absolutely positioned transparent navbar, a placeholder element with the same height as the navbar may be needed to push the elements down in the normal content flow. 
 
 ```example
 <div class="uk-position-relative">
