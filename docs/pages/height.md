@@ -142,14 +142,51 @@ If your grid wraps into multiple rows, only grid columns within the same row are
 
 ***
 
+## Placeholder height
+
+To set the height for a placeholder element, add the `uk-height-placeholder: SELECTOR` attribute where the selector targets the element with the required height.
+
+```html
+<div id="my-id"></div>
+<div uk-height-placeholder="#my-id"></div>
+```
+
+For example, if there is an absolutely positioned transparent navbar, a placeholder element with the same height as the navbar may be needed to push the elements down in the normal content flow. 
+
+```example
+<div class="uk-position-relative">
+
+    <div class="tm-header uk-position-top">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-inverse="sel-active: .uk-navbar-transparent">
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a class="uk-navbar-item uk-logo" href="#">Transparent Navbar</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="uk-section-muted">
+        <div uk-height-placeholder="!.uk-position-relative .tm-header"></div>
+        <div class="uk-section">
+            <div class="uk-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+```
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option   | Value        | Default | Description                                                                                 |
-| -------- | ------------ | ------- | ------------------------------------------------------------------------------------------- |
-| `target` | CSS selector | `> *`   | Elements that should match. By default, direct children will match.                         |
-| `row`    | Boolean      | `true`  | If your targets wrap into multiple rows, only grid columns within the same row are matched. |
+***
 
 ## JavaScript
 

@@ -28,7 +28,7 @@
                     Please support our open source project and share the love on<br
                         class="uk-visible@s"
                     />
-                    Twitter or Facebook. It would really mean a lot to us.
+                    X or Facebook. It would really mean a lot to us.
                 </p>
 
                 <div class="uk-grid-medium uk-child-width-auto uk-flex-inline" uk-grid>
@@ -39,8 +39,8 @@
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <span class="uk-margin-small-right" uk-icon="twitter" />
-                            <span class="uk-text-middle">Share on Twitter</span>
+                            <span class="uk-margin-small-right" uk-icon="x" />
+                            <span class="uk-text-middle">Share on X</span>
                         </a>
                     </div>
                     <div>

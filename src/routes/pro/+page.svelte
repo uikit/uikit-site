@@ -301,8 +301,8 @@
                                 <a
                                     href="https://twitter.com/getuikit"
                                     class="uk-icon-link"
-                                    uk-icon="twitter"
-                                    aria-label="Go to Twitter"
+                                    uk-icon="x"
+                                    aria-label="Go to X"
                                 />
                             </div>
                             <div>
