@@ -102,6 +102,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
     <div>
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="link"></span> link</li>
+            <li><span class="uk-margin-small-right" uk-icon="link-external"></span> link-external</li>
             <li><span class="uk-margin-small-right" uk-icon="eye"></span> eye</li>
             <li><span class="uk-margin-small-right" uk-icon="eye-slash"></span> eye-slash</li>
             <li><span class="uk-margin-small-right" uk-icon="question"></span> question</li>
@@ -196,6 +197,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="shrink"></span> shrink</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-up"></span> arrow-up</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-down"></span> arrow-down</li>
+            <li><span class="uk-margin-small-right" uk-icon="arrow-up-right"></span> arrow-up-right</li>
         </ul>
     </div>
     <div>
