@@ -69,11 +69,11 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="search"></span> search</li>
             <li><span class="uk-margin-small-right" uk-icon="location"></span> location</li>
             <li><span class="uk-margin-small-right" uk-icon="bookmark"></span> bookmark</li>
+            <li><span class="uk-margin-small-right" uk-icon="code"></span> code</li>
         </ul>
     </div>
     <div>
         <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="code"></span> code</li>
             <li><span class="uk-margin-small-right" uk-icon="paint-bucket"></span> paint-bucket</li>
             <li><span class="uk-margin-small-right" uk-icon="camera"></span> camera</li>
             <li><span class="uk-margin-small-right" uk-icon="video-camera"></span> video-camera</li>
@@ -97,12 +97,12 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="pencil"></span> pencil</li>
             <li><span class="uk-margin-small-right" uk-icon="trash"></span> trash</li>
             <li><span class="uk-margin-small-right" uk-icon="move"></span> move</li>
+            <li><span class="uk-margin-small-right" uk-icon="link"></span> link</li>
+            <li><span class="uk-margin-small-right" uk-icon="link-external"></span> link-external</li>
         </ul>
     </div>
     <div>
         <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="link"></span> link</li>
-            <li><span class="uk-margin-small-right" uk-icon="link-external"></span> link-external</li>
             <li><span class="uk-margin-small-right" uk-icon="eye"></span> eye</li>
             <li><span class="uk-margin-small-right" uk-icon="eye-slash"></span> eye-slash</li>
             <li><span class="uk-margin-small-right" uk-icon="question"></span> question</li>
@@ -198,7 +198,6 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="arrow-up-right"></span> arrow-up-right</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-up"></span> arrow-up</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-down"></span> arrow-down</li>
-            <li><span class="uk-margin-small-right" uk-icon="arrow-up-right"></span> arrow-up-right</li>
         </ul>
     </div>
     <div>
