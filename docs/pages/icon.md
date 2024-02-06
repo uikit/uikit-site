@@ -195,6 +195,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="forward"></span> forward</li>
             <li><span class="uk-margin-small-right" uk-icon="expand"></span> expand</li>
             <li><span class="uk-margin-small-right" uk-icon="shrink"></span> shrink</li>
+            <li><span class="uk-margin-small-right" uk-icon="arrow-up-right"></span> arrow-up-right</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-up"></span> arrow-up</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-down"></span> arrow-down</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-up-right"></span> arrow-up-right</li>
@@ -270,8 +271,8 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="instagram"></span> instagram</li>
             <li><span class="uk-margin-small-right" uk-icon="joomla"></span> joomla</li>
             <li><span class="uk-margin-small-right" uk-icon="linkedin"></span> linkedin</li>
-            <li><span class="uk-margin-small-right" uk-icon="microsoft"></span> microsoft</li>
             <li><span class="uk-margin-small-right" uk-icon="mastodon"></span> mastodon</li>
+            <li><span class="uk-margin-small-right" uk-icon="microsoft"></span> microsoft</li>
             <li><span class="uk-margin-small-right" uk-icon="pagekit"></span> pagekit</li>
             <li><span class="uk-margin-small-right" uk-icon="pinterest"></span> pinterest</li>
             <li><span class="uk-margin-small-right" uk-icon="reddit"></span> reddit</li>
