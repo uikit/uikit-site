@@ -4,8 +4,6 @@ updates:
     directory: '/'
     schedule:
       interval: 'daily'
-    ignore:
-      - dependency-name: 'highlight.js'
     groups:
       dev-dependencies:
         patterns:
