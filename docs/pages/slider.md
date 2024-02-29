@@ -1110,18 +1110,19 @@ To toggle transitions on hover, use the `.uk-transition-toggle` class from the [
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option              | Value   | Default | Description                                                  |
-|---------------------|---------|---------|--------------------------------------------------------------|
-| `autoplay`          | Boolean | `false` | Slider autoplays.                                            |
-| `autoplay-interval` | Number  | `7000`  | The delay between switching slides in autoplay mode.         |
-| `center`            | Boolean | `false` | Center the active slide.                                     |
-| `draggable`         | Boolean | `true ` | Enable pointer dragging.                                     |
-| `easing`            | String  | `ease`  | The animation easing (CSS timing functions or cubic-bezier). |
-| `finite`            | Boolean | `false` | Disable infinite sliding.                                    |
-| `index`             | Number  | `0`     | Slider item to show. 0 based index.                          |
-| `pause-on-hover`    | Boolean | `true`  | Pause autoplay mode on hover.                                |
-| `sets`              | Boolean | `false` | Slide in sets.                                               |
-| `velocity`          | Number  | `1`     | The animation velocity (pixel/ms).                           |
+| Option              | Value   | Default | Description                                                             |
+|---------------------|---------|---------|-------------------------------------------------------------------------|
+| `autoplay`          | Boolean | `false` | Slider autoplays.                                                       |
+| `autoplay-interval` | Number  | `7000`  | The delay between switching slides in autoplay mode.                    |
+| `center`            | Boolean | `false` | Center the active slide.                                                |
+| `draggable`         | Boolean | `true ` | Enable pointer dragging.                                                |
+| `easing`            | String  | `ease`  | The animation easing (CSS timing functions or cubic-bezier).            |
+| `finite`            | Boolean | `false` | Disable infinite sliding.                                               |
+| `index`             | Number  | `0`     | Slider item to show. 0 based index.                                     |
+| `active`            | String  | `all`   | Slider item/items to apply the transition active class to (all, first). |
+| `pause-on-hover`    | Boolean | `true`  | Pause autoplay mode on hover.                                           |
+| `sets`              | Boolean | `false` | Slide in sets.                                                          |
+| `velocity`          | Number  | `1`     | The animation velocity (pixel/ms).                                      |
 
 ***
 
