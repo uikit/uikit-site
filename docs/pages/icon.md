@@ -253,6 +253,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="android-robot"></span> android-robot</li>
             <li><span class="uk-margin-small-right" uk-icon="apple"></span> apple</li>
             <li><span class="uk-margin-small-right" uk-icon="behance"></span> behance</li>
+            <li><span class="uk-margin-small-right" uk-icon="bluesky"></span> bluesky</li>
             <li><span class="uk-margin-small-right" uk-icon="discord"></span> discord</li>
             <li><span class="uk-margin-small-right" uk-icon="dribbble"></span> dribbble</li>
             <li><span class="uk-margin-small-right" uk-icon="etsy"></span> etsy</li>
