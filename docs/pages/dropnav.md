@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Create dropdown menus for any navigation.</p>
 
-The Dropnav component initializes all dropdowns in navigation with the same options, so they don't have to be initialized individually. All dropdowns within the dropnav are aim-aware. This means the dropdowns stay open as long as the mouse pointer moves towards the dropdown. An additional delay ensures that dropdowns stay open even if the mouse pointer moves in another direction. In hover mode dropdowns close immediately if another menu item is hovered.
+The Dropnav component initializes all dropdowns in navigation with the same options, so they don't have to be initialized individually. All dropdowns within the dropnav are aim-aware. This means the dropdowns stay open as long as the mouse pointer moves towards the dropdown. An additional delay ensures that dropdowns stay open even if the mouse pointer shortly moves in another direction. In hover mode dropdowns close immediately if another menu item is hovered.
 
 ## Usage
 
