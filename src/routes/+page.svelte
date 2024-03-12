@@ -28,7 +28,9 @@
                 </p>
 
                 <h1 class="uk-margin-medium uk-text-lead">
-                    UIkit is a lightweight and modular front-end framework<br class="uk-visible@s" />
+                    UIkit is a lightweight and modular front-end framework<br
+                        class="uk-visible@s"
+                    />
                     for developing fast and powerful web interfaces.
                 </h1>
 
@@ -80,7 +82,7 @@
                 </li>
                 <li>
                     <a class="uk-text-lowercase" href="https://twitter.com/getuikit"
-                        ><span class="uk-margin-small-right" uk-icon="twitter" />@getuikit</a
+                        ><span class="uk-margin-small-right" uk-icon="x" />@getuikit</a
                     >
                 </li>
                 <li>

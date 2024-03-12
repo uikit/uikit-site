@@ -14,7 +14,7 @@ Add the following classes to child elements to apply the necessary functionality
 | `.uk-countdown-hours`   | Add this class to indicate the hours to be counted down.    |
 | `.uk-countdown-minutes` | Add this class to indicate the minutes to be counted down.  |
 | `.uk-countdown-seconds` | Add this class to indicate the seconds to be counted down.  |
-| `.uk-countdown-number`  | This class adds the neccessary style to a countdown number. |
+| `.uk-countdown-number`  | This class adds the necessary style to a countdown number.  |
 
 ```html
 <div uk-countdown="date: {%isodate%}">

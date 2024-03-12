@@ -42,6 +42,45 @@ To apply this component, add the `.uk-tile` class to a `<div>` element. By defau
 </div>
 ```
 
+### Preserve color
+
+The `.uk-tile-primary` and `.uk-tile-secondary` classes are extending the inverse style from the [Inverse component](inverse.md) automatically. If you want to prevent this behavior, for example because you are using [cards](card.md) in these sections, add the `.uk-preserve-color` class.
+
+```html
+<div class="uk-tile uk-tile-primary uk-preserve-color"></div>
+```
+
+```example
+<div class="uk-child-width-1-2@s uk-grid-collapse uk-grid-match uk-text-center" uk-grid>
+    <div>
+        <div class="uk-tile uk-tile-primary">
+
+            <div class="uk-panel uk-light uk-margin-medium">
+                <h3>Tile Primary with card</h3>
+            </div>
+
+            <div class="uk-card uk-card-default uk-card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <div class="uk-tile uk-tile-secondary">
+
+            <div class="uk-panel uk-light uk-margin-medium">
+                <h3>Tile Secondary with card</h3>
+            </div>
+
+            <div class="uk-card uk-card-default uk-card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+```
+
 ***
 
 ## Tile and padding

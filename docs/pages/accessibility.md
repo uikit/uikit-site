@@ -22,7 +22,7 @@ For the UIkit default style, it should be sufficient to change the following glo
 
 ## Interactive components
 
-UIkit's interactive JavaScript components, for example, slideshow, lightbox, dropdown, among others, are accessible for keyboard users. We implement the common keyboard navigation convention in which the <kbd>tab</kbd> and <kbd>shift+tab</kbd> keys move focus from one component to another while other keys like arrow keys move focus inside of components that include multiple focusable elements. Learn more about keyboard interaction in the documentation of each component.
+UIkit's interactive JavaScript components, for example, slideshow, lightbox, dropdown, among others, are accessible to keyboard users. We implement the common keyboard navigation convention in which the <kbd>tab</kbd> and <kbd>shift+tab</kbd> keys move focus from one component to another while other keys like arrow keys move focus inside of components that include multiple focusable elements. Learn more about keyboard interaction in the documentation of each component.
 
 By using relevant [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) roles, states and properties, the JavaScript components are readable and operable using assistive technologies like screen readers. They automatically set the required HTML attributes in the markup. Learn more about accessibility in the documentation of each component. 
 
@@ -54,7 +54,7 @@ As a single attribute:
 <div uk-marker i18n="label: Open;"></div>
 ```
 
-As single attribute prefixed with `data-`:
+As a single attribute prefixed with `data-`:
 
 ```html
 <div uk-marker data-i18n="label: Open;"></div>

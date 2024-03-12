@@ -4,6 +4,26 @@
 
 ***
 
+## Migration from UIkit 3.17 to 3.18
+
+If you have created a custom UIkit style, and overridden a `*-color-mode` variable, make sure it is set to either `light` or `dark`. It can no longer be set to `none` or be empty. 
+
+UIkit 3.18 introduces new `*-color-mode` Less variables for the default and muted style modifiers in Section, Tile, Card and Overlay components, just like for the primary and secondary style modifiers. Since the default UIkit style has light backgrounds, their color mode variables are set to dark by default. If you have a dark custom UIkit style where the color mode variables change to the opposite color, you also have to change the new color mode variables to light.
+
+```
+// For dark UIkit styles only 
+
+@card-default-color-mode: light;
+
+@overlay-default-color-mode: light;
+
+@section-default-color-mode: light;
+@section-muted-color-mode: light;
+
+@tile-default-color-mode: light;
+@tile-muted-color-mode: light;
+```
+
 ## Migration from UIkit 3.16 to 3.17
 
 The [Scroll component](scroll.md) now automatically adds the height of a sticky element, for example the sticky navbar, as offset to the scroll target so it is not covered by the sticky element. If there is already an offset for a sticky element, the `offset` option is added up. This means that you don't have to set the offset option to prevent the navbar from covering the scroll target anymore.

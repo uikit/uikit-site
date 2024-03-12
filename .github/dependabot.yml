@@ -3,9 +3,7 @@ updates:
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-      interval: 'daily'
-    ignore:
-      - dependency-name: 'highlight.js'
+      interval: 'weekly'
     groups:
       dev-dependencies:
         patterns:

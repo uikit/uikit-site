@@ -69,11 +69,11 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="search"></span> search</li>
             <li><span class="uk-margin-small-right" uk-icon="location"></span> location</li>
             <li><span class="uk-margin-small-right" uk-icon="bookmark"></span> bookmark</li>
+            <li><span class="uk-margin-small-right" uk-icon="code"></span> code</li>
         </ul>
     </div>
     <div>
         <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="code"></span> code</li>
             <li><span class="uk-margin-small-right" uk-icon="paint-bucket"></span> paint-bucket</li>
             <li><span class="uk-margin-small-right" uk-icon="camera"></span> camera</li>
             <li><span class="uk-margin-small-right" uk-icon="video-camera"></span> video-camera</li>
@@ -97,11 +97,12 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="pencil"></span> pencil</li>
             <li><span class="uk-margin-small-right" uk-icon="trash"></span> trash</li>
             <li><span class="uk-margin-small-right" uk-icon="move"></span> move</li>
+            <li><span class="uk-margin-small-right" uk-icon="link"></span> link</li>
+            <li><span class="uk-margin-small-right" uk-icon="link-external"></span> link-external</li>
         </ul>
     </div>
     <div>
         <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="link"></span> link</li>
             <li><span class="uk-margin-small-right" uk-icon="eye"></span> eye</li>
             <li><span class="uk-margin-small-right" uk-icon="eye-slash"></span> eye-slash</li>
             <li><span class="uk-margin-small-right" uk-icon="question"></span> question</li>
@@ -194,6 +195,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="forward"></span> forward</li>
             <li><span class="uk-margin-small-right" uk-icon="expand"></span> expand</li>
             <li><span class="uk-margin-small-right" uk-icon="shrink"></span> shrink</li>
+            <li><span class="uk-margin-small-right" uk-icon="arrow-up-right"></span> arrow-up-right</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-up"></span> arrow-up</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-down"></span> arrow-down</li>
         </ul>
@@ -251,6 +253,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="android-robot"></span> android-robot</li>
             <li><span class="uk-margin-small-right" uk-icon="apple"></span> apple</li>
             <li><span class="uk-margin-small-right" uk-icon="behance"></span> behance</li>
+            <li><span class="uk-margin-small-right" uk-icon="bluesky"></span> bluesky</li>
             <li><span class="uk-margin-small-right" uk-icon="discord"></span> discord</li>
             <li><span class="uk-margin-small-right" uk-icon="dribbble"></span> dribbble</li>
             <li><span class="uk-margin-small-right" uk-icon="etsy"></span> etsy</li>
@@ -258,36 +261,40 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="flickr"></span> flickr</li>
             <li><span class="uk-margin-small-right" uk-icon="foursquare"></span> foursquare</li>
             <li><span class="uk-margin-small-right" uk-icon="github"></span> github</li>
+            <li><span class="uk-margin-small-right" uk-icon="github-alt"></span> github-alt</li>
         </ul>
     </div>
     <div>
         <ul class="uk-list">
-            <li><span class="uk-margin-small-right" uk-icon="github-alt"></span> github-alt</li>
             <li><span class="uk-margin-small-right" uk-icon="gitter"></span> gitter</li>
             <li><span class="uk-margin-small-right" uk-icon="google"></span> google</li>
             <li><span class="uk-margin-small-right" uk-icon="instagram"></span> instagram</li>
             <li><span class="uk-margin-small-right" uk-icon="joomla"></span> joomla</li>
             <li><span class="uk-margin-small-right" uk-icon="linkedin"></span> linkedin</li>
+            <li><span class="uk-margin-small-right" uk-icon="mastodon"></span> mastodon</li>
             <li><span class="uk-margin-small-right" uk-icon="microsoft"></span> microsoft</li>
-            <li><span class="uk-margin-small-right" uk-icon="pagekit"></span> pagekit</li>
             <li><span class="uk-margin-small-right" uk-icon="pinterest"></span> pinterest</li>
             <li><span class="uk-margin-small-right" uk-icon="reddit"></span> reddit</li>
+            <li><span class="uk-margin-small-right" uk-icon="signal"></span> signal</li>
             <li><span class="uk-margin-small-right" uk-icon="soundcloud"></span> soundcloud</li>
-            <li><span class="uk-margin-small-right" uk-icon="tiktok"></span> tiktok</li>
+            <li><span class="uk-margin-small-right" uk-icon="telegram"></span> telegram</li>
+            <li><span class="uk-margin-small-right" uk-icon="threads"></span> threads</li>
         </ul>
     </div>
     <div>
         <ul class="uk-list">
+            <li><span class="uk-margin-small-right" uk-icon="tiktok"></span> tiktok</li>
             <li><span class="uk-margin-small-right" uk-icon="tripadvisor"></span> tripadvisor</li>
             <li><span class="uk-margin-small-right" uk-icon="tumblr"></span> tumblr</li>
             <li><span class="uk-margin-small-right" uk-icon="twitch"></span> twitch</li>
-            <li><span class="uk-margin-small-right" uk-icon="twitter"></span> twitter</li>
             <li><span class="uk-margin-small-right" uk-icon="uikit"></span> uikit</li>
             <li><span class="uk-margin-small-right" uk-icon="vimeo"></span> vimeo</li>
             <li><span class="uk-margin-small-right" uk-icon="whatsapp"></span> whatsapp</li>
             <li><span class="uk-margin-small-right" uk-icon="wordpress"></span> wordpress</li>
+            <li><span class="uk-margin-small-right" uk-icon="x"></span> x</li>
             <li><span class="uk-margin-small-right" uk-icon="xing"></span> xing</li>
             <li><span class="uk-margin-small-right" uk-icon="yelp"></span> yelp</li>
+            <li><span class="uk-margin-small-right" uk-icon="yootheme"></span> yootheme</li>
             <li><span class="uk-margin-small-right" uk-icon="youtube"></span> youtube</li>
         </ul>
     </div>
@@ -333,12 +340,12 @@ To reset the default link styling to a more muted color when using an icon insid
 Use the modifier `.uk-icon-button` class on an `<a>` element to create an icon button, which can be used for social icons.
 
 ```html
-<a href="" class="uk-icon-button" uk-icon="twitter"></a>
+<a href="" class="uk-icon-button" uk-icon="instagram"></a>
 ```
 
 ```example
 <div>
-    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
     <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
     <a href="" class="uk-icon-button" uk-icon="youtube"></a>
 </div>

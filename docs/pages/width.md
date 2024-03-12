@@ -62,7 +62,7 @@ Add one of the `.uk-width-*` classes to an element to determine its size. Typica
 
 ***
 
-## Auto & expand
+## Auto and expand
 
 The Width component provides additional modifiers to give you more flexibility in the distribution of items.
 

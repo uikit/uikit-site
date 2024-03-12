@@ -36,8 +36,8 @@ There are several style modifiers available. Just add one of the following class
 | `.uk-button-primary`   | Indicates the primary action.             |
 | `.uk-button-secondary` | Indicates an important action.            |
 | `.uk-button-danger`    | Indicates a dangerous or negative action. |
-| `.uk-button-text`      | Applies an typographic style.             |
-| `.uk-button-link`      | Applies an plain link style.              |
+| `.uk-button-text`      | Applies a typographic style.              |
+| `.uk-button-link`      | Applies a plain link style.               |
 
 ```html
 <button class="uk-button uk-button-primary"></button>
@@ -99,7 +99,7 @@ Add the `.uk-width-1-1` class from the [Width component](width.md) and the butto
 
 ## Group
 
-To create a button group, add the `.uk-button-group` class to a `<div>` element around the buttons. That's it! No further markup needed.
+To create a button group, add the `.uk-button-group` class to a `<div>` element around the buttons. That's it! No further markup is needed.
 
 ```html
 <div class="uk-button-group">

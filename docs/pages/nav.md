@@ -386,6 +386,33 @@ Add the `.uk-nav-divider` class to separate nav items with lines. This can be co
 
 ***
 
+## Size modifiers
+
+Add one of the following classes to modify the size of primary navs.
+
+| Class                 | Description                                      |
+|-----------------------|--------------------------------------------------|
+| `.uk-nav-medium`  | Add this class to apply a medium-sized primary nav.  |
+| `.uk-nav-large`   | Add this class to apply a large-sized primary nav.   |
+| `.uk-nav-xlarge`  | Add this class to apply a xlarge-sized primary nav.  |
+
+```html
+<ul class="uk-nav uk-nav-primary uk-nav-large">…</ul>
+```
+
+```example
+<div class="uk-width-1-2@s">
+    <ul class="uk-nav-primary uk-nav-large" uk-nav>
+        <li class="uk-active"><a href="#">Active</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div>
+```
+
+***
+
 ## Nav in Dropdown
 
 Add the `.uk-dropdown-nav` class to place a nav inside a default dropdown from the [Dropdown component](dropdown.md).

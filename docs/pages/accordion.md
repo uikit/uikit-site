@@ -187,7 +187,7 @@ The following events will be triggered on elements with this component attached:
 | ------------ | ---------------------------------------------------------------------------------------------- |
 | `beforeshow` | Fires before an item is shown. Can prevent showing by calling `preventDefault()` on the event. |
 | `show`       | Fires after an item is shown.                                                                  |
-| `shown`      | Fires after the item's show animation has completed.                                           |
+| `shown`      | Fires after the item's show animation has been completed.                                           |
 | `beforehide` | Fires before an item is hidden. Can prevent hiding by calling `preventDefault()` on the event. |
 | `hide`       | Fires after an item's hide animation has started.                                              |
 | `hidden`     | Fires after an item is hidden.                                                                 |
@@ -220,7 +220,7 @@ The Accordion component adheres to the [Accordion WAI-ARIA design pattern](https
 
 ### Keyboard interaction
 
-The Accordion component can be accessed through keyboard using the following keys.
+The Accordion component can be accessed through the keyboard using the following keys.
 
 - The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys navigate through accordion titles.
 - The <kbd>enter</kbd> or <kbd>space</kbd> key toggles the content of the focused title.

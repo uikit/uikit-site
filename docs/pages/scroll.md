@@ -64,6 +64,8 @@ Any of these options can be applied to the component attribute. Separate multipl
 |----------|--------|---------|-----------------------------|
 | `offset` | Number | `0`     | Offset added to scroll top. |
 
+***
+
 ## JavaScript
 
 Learn more about [JavaScript components](javascript.md#programmatic-use).
