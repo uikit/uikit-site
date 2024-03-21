@@ -5,8 +5,8 @@
 </script>
 
 <div
-    class={`uk-navbar-container tm-navbar-container ${$$props.class || ''}`}
-    uk-sticky={`media: 960; ${$$props['uk-sticky'] || ''}`}
+    class={`uk-navbar-container tm-navbar-container ${$$props.class ?? ''}`}
+    uk-sticky={`media: 960; target-offset: 0; ${$$props['uk-sticky'] ?? ''}`}
 >
     <div class="uk-container uk-container-expand">
         <nav class="uk-navbar" uk-navbar>

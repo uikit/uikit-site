@@ -10,7 +10,7 @@
 <div class="uk-section-primary tm-section-texture uk-preserve-color">
     <Header
         class="uk-light"
-        uk-sticky="start: 400; show-on-up: true; animation: uk-animation-slide-top; cls-inactive: uk-navbar-transparent; media: 960"
+        uk-sticky="start: 400; show-on-up: true; animation: uk-animation-slide-top; cls-inactive: uk-navbar-transparent"
     />
 
     <div id="tm-main" class="uk-section" uk-height-viewport="expand: true">
