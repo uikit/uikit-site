@@ -403,7 +403,7 @@ Instead of a step-by-step animation using navigation controls, the slideshow can
 To adjust the parallax duration, set the `parallax-start` and `parallax-end` options. The `parallax-start` option defines when the animation starts. The default value of `0` means that the slideshow's top border and viewport's bottom border intersect. The `end` option defines when the animation ends. The default value of `0` means that the slideshow's bottom border and the viewport's top border intersect. Values can be set in any dimension units, namely `vh`, `%` and `px`. The `%` unit relates to the slideshow's height. Both options allow basic mathematics operands, `+` and `-`.
 
 ```html
-<div uk-slider="parallax: true; parallax-start: 100%; parallax-end: 100%;">…</div>
+<div uk-slideshow="parallax: true; parallax-start: 100%; parallax-end: 100%;">…</div>
 ```
 
 ```example
