@@ -21,21 +21,23 @@ The Pagination component consists of button-like styled links, that are aligned 
 ```
 
 ```example
-<ul class="uk-pagination" uk-margin>
-    <li><a href="#"><span uk-pagination-previous></span></a></li>
-    <li><a href="#">1</a></li>
-    <li class="uk-disabled"><span>…</span></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#">6</a></li>
-    <li class="uk-active"><span>7</span></li>
-    <li><a href="#">8</a></li>
-    <li><a href="#">9</a></li>
-    <li><a href="#">10</a></li>
-    <li class="uk-disabled"><span>…</span></li>
-    <li><a href="#">20</a></li>
-    <li><a href="#"><span uk-pagination-next></span></a></li>
-</ul>
+<nav aria-label="Pagination">
+    <ul class="uk-pagination" uk-margin>
+        <li><a href="#"><span uk-pagination-previous></span></a></li>
+        <li><a href="#">1</a></li>
+        <li class="uk-disabled"><span>…</span></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li class="uk-active"><span aria-current="page">7</span></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#">10</a></li>
+        <li class="uk-disabled"><span>…</span></li>
+        <li><a href="#">20</a></li>
+        <li><a href="#"><span uk-pagination-next></span></a></li>
+    </ul>
+</nav>
 ```
 
 ***
@@ -49,27 +51,31 @@ The Pagination component utilizes flexbox, so navigations can easily be aligned 
 ```
 
 ```example
-<ul class="uk-pagination uk-flex-center" uk-margin>
-    <li><a href="#"><span uk-pagination-previous></span></a></li>
-    <li><a href="#">1</a></li>
-    <li class="uk-disabled"><span>…</span></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#">6</a></li>
-    <li class="uk-active"><span>7</span></li>
-    <li><a href="#">8</a></li>
-    <li><a href="#"><span uk-pagination-next></span></a></li>
-</ul>
+<nav aria-label="Pagination">
+    <ul class="uk-pagination uk-flex-center" uk-margin>
+        <li><a href="#"><span uk-pagination-previous></span></a></li>
+        <li><a href="#">1</a></li>
+        <li class="uk-disabled"><span>…</span></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li class="uk-active"><span aria-current="page">7</span></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#"><span uk-pagination-next></span></a></li>
+    </ul>
+</nav>
 
-<ul class="uk-pagination uk-flex-right uk-margin-medium-top" uk-margin>
-    <li><a href="#"><span uk-pagination-previous></span></a></li>
-    <li><a href="#">1</a></li>
-    <li class="uk-disabled"><span>…</span></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#">6</a></li>
-    <li class="uk-active"><span>7</span></li>
-    <li><a href="#">8</a></li>
-    <li><a href="#"><span uk-pagination-next></span></a></li>
-</ul>
+<nav aria-label="Pagination">
+    <ul class="uk-pagination uk-flex-right uk-margin-medium-top" uk-margin>
+        <li><a href="#"><span uk-pagination-previous></span></a></li>
+        <li><a href="#">1</a></li>
+        <li class="uk-disabled"><span>…</span></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li class="uk-active"><span aria-current="page">7</span></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#"><span uk-pagination-next></span></a></li>
+    </ul>
+</nav>
 ```
 
 ***
@@ -86,16 +92,29 @@ To apply a previous and next button, add the `uk-pagination-previous` or `uk-pag
 ```
 
 ```example
-<ul class="uk-pagination">
-    <li><a href="#"><span class="uk-margin-small-right" uk-pagination-previous></span> Previous</a></li>
-    <li class="uk-margin-auto-left"><a href="#">Next <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-</ul>
+<nav>
+    <ul class="uk-pagination">
+        <li><a href="#"><span class="uk-margin-small-right" uk-pagination-previous></span> Previous</a></li>
+        <li class="uk-margin-auto-left"><a href="#">Next <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+    </ul>
+</nav>
 ```
 
 
 ***
 
 ## Accessibility
+
+Set the appropriate WAI-ARIA roles, states and properties to the Pagination component.
+
+- Contain the pagination list within a `nav` element and set the `aria-label` property to describe the type of the provided navigation.
+- Set the `aria-current="page"` property to the active item.
+
+```html
+<nav aria-label="Pagination">
+    <ul class="uk-pagination">…</ul>
+</nav>
+```
 
 The previous/next pagination adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
