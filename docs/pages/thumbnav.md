@@ -68,17 +68,17 @@ To position the thumbnav on top of an element or the [Slideshow component](slide
 ```example
 <div class="uk-position-relative" uk-slideshow="animation: fade">
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="images/photo.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/dark.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/light.jpg" alt="" uk-cover>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <div class="uk-position-bottom-center uk-position-small">
         <ul class="uk-thumbnav">

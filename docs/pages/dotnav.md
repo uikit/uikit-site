@@ -72,17 +72,17 @@ Use the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md)
 ```example
 <div class="uk-position-relative uk-light" uk-slideshow>
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="images/photo.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/dark.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/size1.jpg" alt="" uk-cover>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <div class="uk-position-bottom-center uk-position-small">
         <ul class="uk-dotnav">

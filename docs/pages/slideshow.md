@@ -12,28 +12,28 @@ Add an image in the background of each slide using the `uk-cover` attribute from
 
 ```html
 <div uk-slideshow>
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="" alt="" uk-cover>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="images/photo.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/dark.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/light.jpg" alt="" uk-cover>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -70,17 +70,17 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
-            <ul class="uk-slideshow-items">
-                <li>
+            <div class="uk-slideshow-items">
+                <div>
                     <img src="images/photo.jpg" alt="" uk-cover>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/dark.jpg" alt="" uk-cover>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/light.jpg" alt="" uk-cover>
-                </li>
-            </ul>
+                </div>
+            </div>
 
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -94,17 +94,17 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
 
-            <ul class="uk-slideshow-items">
-                <li>
+            <div class="uk-slideshow-items">
+                <div>
                     <img src="images/photo.jpg" alt="" uk-cover>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/dark.jpg" alt="" uk-cover>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/light.jpg" alt="" uk-cover>
-                </li>
-            </ul>
+                </div>
+            </div>
 
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -118,17 +118,17 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale">
 
-            <ul class="uk-slideshow-items">
-                <li>
+            <div class="uk-slideshow-items">
+                <div>
                     <img src="images/photo.jpg" alt="" uk-cover>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/dark.jpg" alt="" uk-cover>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/light.jpg" alt="" uk-cover>
-                </li>
-            </ul>
+                </div>
+            </div>
 
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -142,17 +142,17 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: pull">
 
-            <ul class="uk-slideshow-items">
-                <li>
+            <div class="uk-slideshow-items">
+                <div>
                     <img src="images/photo.jpg" alt="" uk-cover>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/dark.jpg" alt="" uk-cover>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/light.jpg" alt="" uk-cover>
-                </li>
-            </ul>
+                </div>
+            </div>
 
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -166,17 +166,17 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
-            <ul class="uk-slideshow-items">
-                <li>
+            <div class="uk-slideshow-items">
+                <div>
                     <img src="images/photo.jpg" alt="" uk-cover>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/dark.jpg" alt="" uk-cover>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/light.jpg" alt="" uk-cover>
-                </li>
-            </ul>
+                </div>
+            </div>
 
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -220,17 +220,17 @@ The slideshow always takes up the full width of its parent container. The height
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push">
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="images/photo.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/dark.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/light.jpg" alt="" uk-cover>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -251,17 +251,17 @@ By default, the slideshow height adopts the defined ratio. A minimum or maximum 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="min-height: 300; max-height: 600; animation: push">
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="images/photo.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/dark.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/light.jpg" alt="" uk-cover>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -284,17 +284,17 @@ Adding the `uk-height-viewport` attribute from the [Height component](height.md#
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: false">
 
-    <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 30">
-        <li>
+    <div class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 30">
+        <div>
             <img src="images/photo.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/dark.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/light.jpg" alt="" uk-cover>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -313,7 +313,7 @@ To navigate through your slides, just use the `uk-slideshow-item` attribute. To 
 ```html
 <div uk-slideshow>
 
-    <ul class="uk-slideshow-items">…</ul>
+    <div class="uk-slideshow-items">…</div>
 
     <a href uk-slideshow-item="previous">…</a>
     <a href uk-slideshow-item="next">…</a>
@@ -334,7 +334,7 @@ If there is no item specific content in the navigation items, you can also add t
 ```html
 <div uk-slideshow>
 
-    <ul class="uk-slideshow-items">…</ul>
+    <div class="uk-slideshow-items">…</div>
 
     <ul class="uk-slideshow-nav uk-dotnav"></ul>
 
@@ -346,17 +346,17 @@ If there is no item specific content in the navigation items, you can also add t
 
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-        <ul class="uk-slideshow-items">
-            <li>
+        <div class="uk-slideshow-items">
+            <div>
                 <img src="images/photo.jpg" alt="" uk-cover>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/dark.jpg" alt="" uk-cover>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/light.jpg" alt="" uk-cover>
-            </li>
-        </ul>
+            </div>
+        </div>
 
         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -383,17 +383,17 @@ Instead of a step-by-step animation using navigation controls, the slideshow can
 ```example
 <div uk-slideshow="animation: push; parallax: true;">
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="images/photo.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/dark.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/light.jpg" alt="" uk-cover>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
@@ -409,17 +409,17 @@ To adjust the parallax duration, set the `parallax-start` and `parallax-end` opt
 ```example
 <div uk-slideshow="animation: push; parallax: true; parallax-start: 100%; parallax-end: 100%;">
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="images/photo.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/dark.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/light.jpg" alt="" uk-cover>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
@@ -434,31 +434,31 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
 
 ```html
 <div uk-slideshow>
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <video src="" autoplay loop muted playsinline uk-cover></video>
-        </li>
-        <li>
+        </div>
+        <div>
             <iframe src="" uk-cover></iframe>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="images/photo.jpg" alt="" uk-cover>
-        </li>
-        <li>
+        </div>
+        <div>
             <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" autoplay loop muted playsinline uk-cover></video>
-        </li>
-        <li>
+        </div>
+        <div>
             <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1" width="1920" height="1080" allowfullscreen uk-cover></iframe>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -474,36 +474,36 @@ To add a simple Ken Burns effect, wrap the image with a `div` and add the `.uk-p
 
 ```html
 <div uk-slideshow>
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
                 <img src="" alt="" uk-cover>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
                 <img src="images/photo.jpg" alt="" uk-cover>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
                 <img src="images/dark.jpg" alt="" uk-cover>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
                 <img src="images/light.jpg" alt="" uk-cover>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -519,16 +519,16 @@ Add content overlays using the [Position component](position.md). It allows you 
 
 ```html
 <div uk-slideshow>
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="" alt="" uk-cover>
             <div class="uk-position-center uk-position-small">
 
                 <!-- The content goes here -->
 
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
@@ -537,36 +537,36 @@ Add content overlays using the [Position component](position.md). It allows you 
 ```example
 <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="images/photo.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center uk-light">
                 <h2 class="uk-margin-remove">Center</h2>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/dark.jpg" alt="" uk-cover>
             <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
                 <h3 class="uk-margin-remove">Bottom</h3>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/light.jpg" alt="" uk-cover>
             <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
                 <h3 class="uk-margin-remove">Overlay Bottom</h3>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/dark.jpg" alt="" uk-cover>
             <div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
                 <h3 class="uk-margin-remove">Overlay Bottom Right</h3>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <div class="uk-light">
         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
@@ -586,8 +586,8 @@ This functionality is inherited from the [Parallax component](parallax.md), and 
 
 ```html
 <div uk-slideshow>
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="" alt="" uk-cover>
             <div class="uk-position-center uk-position-small">
 
@@ -598,8 +598,8 @@ This functionality is inherited from the [Parallax component](parallax.md), and 
                 </div>
 
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
@@ -618,29 +618,29 @@ The next example defines different in and out animations. The content slides in 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="images/photo.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
                 <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
                 <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/dark.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
                 <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
                 <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/light.jpg" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center">
                 <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
                 <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -656,22 +656,22 @@ The parallax attribute can be used to add additional effects to the slideshow an
 
 ```html
 <div uk-slideshow="animation: push">
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
                 <img src="" alt="" uk-cover>
             </div>
             <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
                 <img src="images/photo.jpg" alt="" uk-cover>
             </div>
@@ -682,8 +682,8 @@ The parallax attribute can be used to add additional effects to the slideshow an
                     <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
                 <img src="images/dark.jpg" alt="" uk-cover>
             </div>
@@ -694,8 +694,8 @@ The parallax attribute can be used to add additional effects to the slideshow an
                     <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
                 <img src="images/light.jpg" alt="" uk-cover>
             </div>
@@ -706,8 +706,8 @@ The parallax attribute can be used to add additional effects to the slideshow an
                     <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
@@ -721,8 +721,8 @@ Transition classes from the [Transition component](transition.md) are triggered 
 
 ```html
 <div uk-slideshow>
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="" alt="" uk-cover>
             <div class="uk-position-bottom uk-position-small">
 
@@ -733,8 +733,8 @@ Transition classes from the [Transition component](transition.md) are triggered 
                 </div>
 
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
@@ -743,29 +743,29 @@ Together with the [Overlay component](overlay.md), content transitions are used 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
 
-    <ul class="uk-slideshow-items">
-        <li>
+    <div class="uk-slideshow-items">
+        <div>
             <img src="images/photo.jpg" alt="" uk-cover>
             <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                 <h3 class="uk-margin-remove">Bottom</h3>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/dark.jpg" alt="" uk-cover>
             <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                 <h3 class="uk-margin-remove">Bottom</h3>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/light.jpg" alt="" uk-cover>
             <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right uk-width-medium">
                 <h3 class="uk-margin-remove">Left</h3>
                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>

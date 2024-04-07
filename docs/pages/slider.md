@@ -12,59 +12,59 @@ To define the widths of the slider items, use the [Width component](width.md). E
 
 ```html
 <div uk-slider>
-    <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@">
-        <li>
+    <div class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@">
+        <div>
             <img src="" width="" height="" alt="">
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-        <li>
+    <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+        <div>
             <img src="images/slider1.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider2.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>2</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider3.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>3</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider4.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>4</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider5.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>5</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider1.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>6</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider2.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>7</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider3.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>8</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider4.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>9</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider5.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>10</h1></div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
@@ -84,11 +84,11 @@ The `.uk-slider-container` class is responsible for the clipping of the slider i
 <div uk-slider>
 
     <div class="uk-slider-container">
-        <ul class="uk-slider-items uk-child-width-1-4">
-            <li>
+        <div class="uk-slider-items uk-child-width-1-4">
+            <div>
                 <img src="" width="" height="" alt="">
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 
 </div>
@@ -104,79 +104,79 @@ To apply a gap to the slider items, use the [Grid component](grid.md) and add th
 
 ```html
 <div uk-slider>
-    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
-        <li>
+    <div class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
+        <div>
             <img src="" width="" height="" alt="">
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
-        <li>
+    <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+        <div>
             <div class="uk-panel">
                 <img src="images/slider1.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>1</h1></div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-panel">
                 <img src="images/slider2.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>2</h1></div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-panel">
                 <img src="images/slider3.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>3</h1></div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-panel">
                 <img src="images/slider4.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>4</h1></div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-panel">
                 <img src="images/slider5.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>5</h1></div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-panel">
                 <img src="images/slider1.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>6</h1></div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-panel">
                 <img src="images/slider2.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>7</h1></div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-panel">
                 <img src="images/slider3.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>8</h1></div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-panel">
                 <img src="images/slider4.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>9</h1></div>
             </div>
-        </li>
-        <li>
+        </div>
+        <div>
             <div class="uk-panel">
                 <img src="images/slider5.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>10</h1></div>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
@@ -197,38 +197,38 @@ By default, items of the slider always are aligned to the left. To center the li
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
 
-    <ul class="uk-slider-items uk-grid">
-        <li class="uk-width-3-4">
+    <div class="uk-slider-items uk-grid">
+        <div class="uk-width-3-4">
             <div class="uk-panel">
                 <img src="images/photo.jpg" width="600" height="400" alt="">
                 <div class="uk-position-center uk-panel"><h1>1</h1></div>
             </div>
-        </li>
-        <li class="uk-width-3-4">
+        </div>
+        <div class="uk-width-3-4">
             <div class="uk-panel">
                 <img src="images/dark.jpg" width="600" height="400" alt="">
                 <div class="uk-position-center uk-panel"><h1>2</h1></div>
             </div>
-        </li>
-        <li class="uk-width-3-4">
+        </div>
+        <div class="uk-width-3-4">
             <div class="uk-panel">
                 <img src="images/light.jpg" width="600" height="400" alt="">
                 <div class="uk-position-center uk-panel"><h1>3</h1></div>
             </div>
-        </li>
-        <li class="uk-width-3-4">
+        </div>
+        <div class="uk-width-3-4">
             <div class="uk-panel">
                 <img src="images/photo2.jpg" width="600" height="400" alt="">
                 <div class="uk-position-center uk-panel"><h1>4</h1></div>
             </div>
-        </li>
-        <li class="uk-width-3-4">
+        </div>
+        <div class="uk-width-3-4">
             <div class="uk-panel">
                 <img src="images/photo3.jpg" width="600" height="400" alt="">
                 <div class="uk-position-center uk-panel"><h1>5</h1></div>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
@@ -271,48 +271,48 @@ To loop through a set of slides instead of single items, just add `sets: true` t
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
 
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m">
-        <li>
+    <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m">
+        <div>
             <img src="images/slider1.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider2.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>2</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider3.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>3</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider4.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>4</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider5.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>5</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider1.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>6</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider2.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>7</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider3.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>8</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider4.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>9</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider5.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>10</h1></div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
@@ -329,7 +329,7 @@ To navigate through your slides, just use the `uk-slider-item` attribute. To tar
 ```html
 <div uk-slider>
 
-    <ul class="uk-slider-items">…</ul>
+    <div class="uk-slider-items">…</div>
 
     <a href uk-slider-item="previous">…</a>
     <a href uk-slider-item="next">…</a>
@@ -350,7 +350,7 @@ If there is no item specific content in the navigation items, you can also add t
 ```html
 <div uk-slider>
 
-    <ul class="uk-slider-items">…</ul>
+    <div class="uk-slider-items">…</div>
 
     <ul class="uk-slider-nav uk-dotnav"></ul>
 
@@ -362,48 +362,48 @@ If there is no item specific content in the navigation items, you can also add t
 
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-            <li>
+        <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+            <div>
                 <img src="images/slider1.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>1</h1></div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/slider2.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>2</h1></div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/slider3.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>3</h1></div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/slider4.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>4</h1></div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/slider5.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>5</h1></div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/slider1.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>6</h1></div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/slider2.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>7</h1></div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/slider3.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>8</h1></div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/slider4.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>9</h1></div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/slider5.jpg" width="400" height="600" alt="">
                 <div class="uk-position-center uk-panel"><h1>10</h1></div>
-            </li>
-        </ul>
+            </div>
+        </div>
 
         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
@@ -429,7 +429,7 @@ To place a navigation outside of a slider, add the `.uk-position-center-left-out
     <div class="uk-position-relative">
 
         <div class="uk-slider-container">
-            <ul class="uk-slider-items">…</ul>
+            <div class="uk-slider-items">…</div>
         </div>
 
         <a class="uk-position-center-left-out" href uk-slider-item="previous">…</a>
@@ -448,48 +448,48 @@ To place a navigation outside of a slider, add the `.uk-position-center-left-out
     <div class="uk-position-relative">
 
         <div class="uk-slider-container uk-light">
-            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-                <li>
+            <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                <div>
                     <img src="images/slider1.jpg" width="400" height="600" alt="">
                     <div class="uk-position-center uk-panel"><h1>1</h1></div>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/slider2.jpg" width="400" height="600" alt="">
                     <div class="uk-position-center uk-panel"><h1>2</h1></div>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/slider3.jpg" width="400" height="600" alt="">
                     <div class="uk-position-center uk-panel"><h1>3</h1></div>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/slider4.jpg" width="400" height="600" alt="">
                     <div class="uk-position-center uk-panel"><h1>4</h1></div>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/slider5.jpg" width="400" height="600" alt="">
                     <div class="uk-position-center uk-panel"><h1>5</h1></div>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/slider1.jpg" width="400" height="600" alt="">
                     <div class="uk-position-center uk-panel"><h1>6</h1></div>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/slider2.jpg" width="400" height="600" alt="">
                     <div class="uk-position-center uk-panel"><h1>7</h1></div>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/slider3.jpg" width="400" height="600" alt="">
                     <div class="uk-position-center uk-panel"><h1>8</h1></div>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/slider4.jpg" width="400" height="600" alt="">
                     <div class="uk-position-center uk-panel"><h1>9</h1></div>
-                </li>
-                <li>
+                </div>
+                <div>
                     <img src="images/slider5.jpg" width="400" height="600" alt="">
                     <div class="uk-position-center uk-panel"><h1>10</h1></div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
 
         <div class="uk-hidden@s uk-light">
@@ -522,48 +522,48 @@ Instead of a step-by-step animation using navigation controls, the slider can us
 ```example
 <div uk-slider="parallax: true;">
 
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
-        <li>
+    <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
+        <div>
             <img src="images/slider1.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider2.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>2</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider3.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>3</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider4.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>4</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider5.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>5</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider1.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>6</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider2.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>7</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider3.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>8</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider4.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>9</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider5.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>10</h1></div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
@@ -579,48 +579,48 @@ To adjust the parallax duration, set the `parallax-start` and `parallax-end` opt
 ```example
 <div uk-slider="parallax: true; parallax-start: 100%; parallax-end: 100%;">
 
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
-        <li>
+    <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
+        <div>
             <img src="images/slider1.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider2.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>2</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider3.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>3</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider4.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>4</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider5.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>5</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider1.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>6</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider2.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>7</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider3.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>8</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider4.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>9</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider5.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>10</h1></div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
@@ -637,51 +637,51 @@ Use the [Cover component](cover.md) so that images cover the whole item area and
 
 ```html
 <div uk-slider>
-    <ul class="uk-slider-items uk-child-width-1-3@m uk-grid-match" uk-height-viewport="min-height: 300">
-        <li>
+    <div class="uk-slider-items uk-child-width-1-3@m uk-grid-match" uk-height-viewport="min-height: 300">
+        <div>
             <div class="uk-cover-container">
                 <img src="" alt="" uk-cover>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
 
-    <ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 30">
-        <li class="uk-width-3-4">
+    <div class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 30">
+        <div class="uk-width-3-4">
             <div class="uk-cover-container">
                 <img src="images/photo.jpg" alt="" uk-cover>
                 <div class="uk-position-center uk-panel"><h1>1</h1></div>
             </div>
-        </li>
-        <li class="uk-width-3-4">
+        </div>
+        <div class="uk-width-3-4">
             <div class="uk-cover-container">
                 <img src="images/dark.jpg" alt="" uk-cover>
                 <div class="uk-position-center uk-panel"><h1>2</h1></div>
             </div>
-        </li>
-        <li class="uk-width-3-4">
+        </div>
+        <div class="uk-width-3-4">
             <div class="uk-cover-container">
                 <img src="images/light.jpg" alt="" uk-cover>
                 <div class="uk-position-center uk-panel"><h1>3</h1></div>
             </div>
-        </li>
-        <li class="uk-width-3-4">
+        </div>
+        <div class="uk-width-3-4">
             <div class="uk-cover-container">
                 <img src="images/photo2.jpg" alt="" uk-cover>
                 <div class="uk-position-center uk-panel"><h1>4</h1></div>
             </div>
-        </li>
-        <li class="uk-width-3-4">
+        </div>
+        <div class="uk-width-3-4">
             <div class="uk-cover-container">
                 <img src="images/photo3.jpg" alt="" uk-cover>
                 <div class="uk-position-center uk-panel"><h1>5</h1></div>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
@@ -702,8 +702,8 @@ The slider is not restricted to images. Any content can be used like text, video
 
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
-            <li>
+        <div class="uk-slider-items uk-child-width-1-2@s uk-grid">
+            <div>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
                         <img src="images/photo.jpg" width="1800" height="1200" alt="">
@@ -713,8 +713,8 @@ The slider is not restricted to images. Any content can be used like text, video
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                 </div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
                         <img src="images/dark.jpg" width="1800" height="1200" alt="">
@@ -724,8 +724,8 @@ The slider is not restricted to images. Any content can be used like text, video
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                 </div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
                         <img src="images/light.jpg" width="1800" height="1200" alt="">
@@ -735,8 +735,8 @@ The slider is not restricted to images. Any content can be used like text, video
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                 </div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
                         <img src="images/photo2.jpg" width="1800" height="1200" alt="">
@@ -746,8 +746,8 @@ The slider is not restricted to images. Any content can be used like text, video
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                 </div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
                         <img src="images/photo3.jpg" width="1800" height="1200" alt="">
@@ -757,8 +757,8 @@ The slider is not restricted to images. Any content can be used like text, video
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
 
         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
@@ -780,16 +780,16 @@ Add content overlays using the [Position component](position.md). It allows you 
 
 ```html
 <div uk-slider>
-    <ul class="uk-slider-items">
-        <li>
+    <div class="uk-slider-items">
+        <div>
             <img src="" width="" height="" alt="">
             <div class="uk-position-center">
 
                 <!-- The content goes here -->
 
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
@@ -798,48 +798,48 @@ Add content overlays using the [Position component](position.md). It allows you 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-        <li>
+    <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+        <div>
             <img src="images/slider1.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider2.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>2</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider3.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>3</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider4.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>4</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider5.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>5</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider1.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>6</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider2.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>7</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider3.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>8</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider4.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>9</h1></div>
-        </li>
-        <li>
+        </div>
+        <div>
             <img src="images/slider5.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1>10</h1></div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
@@ -857,8 +857,8 @@ This functionality is inherited from the [Parallax component](parallax.md), and 
 
 ```html
 <div uk-slider>
-    <ul class="uk-slider-items">
-        <li>
+    <div class="uk-slider-items">
+        <div>
             <img src="" width="" height="" alt="">
             <div class="uk-position-center">
 
@@ -869,8 +869,8 @@ This functionality is inherited from the [Parallax component](parallax.md), and 
                 </div>
 
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
@@ -889,8 +889,8 @@ The next example defines different in and out animations. The content slides in 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
-    <ul class="uk-slider-items uk-grid">
-        <li class="uk-width-4-5">
+    <div class="uk-slider-items uk-grid">
+        <div class="uk-width-4-5">
             <div class="uk-panel">
                 <img src="images/photo.jpg" width="1800" height="1200" alt="">
                 <div class="uk-position-center uk-text-center">
@@ -898,8 +898,8 @@ The next example defines different in and out animations. The content slides in 
                     <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-        </li>
-        <li class="uk-width-4-5">
+        </div>
+        <div class="uk-width-4-5">
             <div class="uk-panel">
                 <img src="images/dark.jpg" width="1800" height="1200" alt="">
                 <div class="uk-position-center uk-text-center">
@@ -907,8 +907,8 @@ The next example defines different in and out animations. The content slides in 
                     <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-        </li>
-        <li class="uk-width-4-5">
+        </div>
+        <div class="uk-width-4-5">
             <div class="uk-panel">
                 <img src="images/light.jpg" width="1800" height="1200" alt="">
                 <div class="uk-position-center uk-text-center">
@@ -916,8 +916,8 @@ The next example defines different in and out animations. The content slides in 
                     <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-        </li>
-        <li class="uk-width-4-5">
+        </div>
+        <div class="uk-width-4-5">
             <div class="uk-panel">
                 <img src="images/photo2.jpg" width="1800" height="1200" alt="">
                 <div class="uk-position-center uk-text-center">
@@ -925,8 +925,8 @@ The next example defines different in and out animations. The content slides in 
                     <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-        </li>
-        <li class="uk-width-4-5">
+        </div>
+        <div class="uk-width-4-5">
             <div class="uk-panel">
                 <img src="images/photo3.jpg" width="1800" height="1200" alt="">
                 <div class="uk-position-center uk-text-center">
@@ -934,8 +934,8 @@ The next example defines different in and out animations. The content slides in 
                     <p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
@@ -952,8 +952,8 @@ Add `clsActivated: uk-transition-active` to the attribute to trigger transition 
 
 ```html
 <div uk-slider="clsActivated: uk-transition-active">
-    <ul class="uk-slider-items">
-        <li>
+    <div class="uk-slider-items">
+        <div>
             <img src="" width="" height="" alt="">
             <div class="uk-position-bottom">
 
@@ -964,8 +964,8 @@ Add `clsActivated: uk-transition-active` to the attribute to trigger transition 
                 </div>
 
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
@@ -974,8 +974,8 @@ Together with the [Overlay component](overlay.md), content transitions are used 
 ```example
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
 
-    <ul class="uk-slider-items uk-grid">
-        <li class="uk-width-3-4">
+    <div class="uk-slider-items uk-grid">
+        <div class="uk-width-3-4">
             <div class="uk-panel">
                 <img src="images/photo.jpg" width="1800" height="1200" alt="">
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
@@ -983,8 +983,8 @@ Together with the [Overlay component](overlay.md), content transitions are used 
                     <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
-        </li>
-        <li class="uk-width-3-4">
+        </div>
+        <div class="uk-width-3-4">
             <div class="uk-panel">
                 <img src="images/dark.jpg" width="1800" height="1200" alt="">
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
@@ -992,8 +992,8 @@ Together with the [Overlay component](overlay.md), content transitions are used 
                     <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
-        </li>
-        <li class="uk-width-3-4">
+        </div>
+        <div class="uk-width-3-4">
             <div class="uk-panel">
                 <img src="images/light.jpg" width="1800" height="1200" alt="">
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
@@ -1001,8 +1001,8 @@ Together with the [Overlay component](overlay.md), content transitions are used 
                     <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
-        </li>
-        <li class="uk-width-3-4">
+        </div>
+        <div class="uk-width-3-4">
             <div class="uk-panel">
                 <img src="images/photo2.jpg" width="1800" height="1200" alt="">
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
@@ -1010,8 +1010,8 @@ Together with the [Overlay component](overlay.md), content transitions are used 
                     <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
-        </li>
-        <li class="uk-width-3-4">
+        </div>
+        <div class="uk-width-3-4">
             <div class="uk-panel">
                 <img src="images/photo3.jpg" width="1800" height="1200" alt="">
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
@@ -1019,8 +1019,8 @@ Together with the [Overlay component](overlay.md), content transitions are used 
                     <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
@@ -1036,8 +1036,8 @@ To toggle transitions on hover, use the `.uk-transition-toggle` class from the [
 
 ```html
 <div uk-slider>
-    <ul class="uk-slider-items">
-        <li class="uk-transition-toggle" tabindex="0">
+    <div class="uk-slider-items">
+        <div class="uk-transition-toggle" tabindex="0">
             <img src="" width="" height="" alt="">
             <div class="uk-position-bottom">
 
@@ -1048,56 +1048,56 @@ To toggle transitions on hover, use the `.uk-transition-toggle` class from the [
                 </div>
 
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 ```
 
 ```example
 <div uk-slider>
 
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
-        <li class="uk-transition-toggle" tabindex="0">
+    <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light">
+        <div class="uk-transition-toggle" tabindex="0">
             <img src="images/slider1.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">1</h1></div>
-        </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        </div>
+        <div class="uk-transition-toggle" tabindex="0">
             <img src="images/slider2.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">2</h1></div>
-        </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        </div>
+        <div class="uk-transition-toggle" tabindex="0">
             <img src="images/slider3.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">3</h1></div>
-        </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        </div>
+        <div class="uk-transition-toggle" tabindex="0">
             <img src="images/slider4.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">4</h1></div>
-        </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        </div>
+        <div class="uk-transition-toggle" tabindex="0">
             <img src="images/slider5.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">5</h1></div>
-        </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        </div>
+        <div class="uk-transition-toggle" tabindex="0">
             <img src="images/slider1.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">6</h1></div>
-        </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        </div>
+        <div class="uk-transition-toggle" tabindex="0">
             <img src="images/slider2.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">7</h1></div>
-        </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        </div>
+        <div class="uk-transition-toggle" tabindex="0">
             <img src="images/slider3.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">8</h1></div>
-        </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        </div>
+        <div class="uk-transition-toggle" tabindex="0">
             <img src="images/slider4.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">9</h1></div>
-        </li>
-        <li class="uk-transition-toggle" tabindex="0">
+        </div>
+        <div class="uk-transition-toggle" tabindex="0">
             <img src="images/slider5.jpg" width="400" height="600" alt="">
             <div class="uk-position-center uk-panel"><h1 class="uk-transition-slide-bottom-small">10</h1></div>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
