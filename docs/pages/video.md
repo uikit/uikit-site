@@ -26,16 +26,33 @@ To apply this component, add the `uk-video` attribute to a `<video>` element. Th
 
 ***
 
-## Autoplay inview
+## Autoplay
 
-To play a video when it enters the viewport and pause it again when it leaves the viewport, just add the `uk-video="autoplay: inview"` attribute to a `<video>` element.
+There are two autoplay options to play the video. Just add the `autoplay` option to the `uk-video` attribute and apply one of these values.
+
+| Values   | Description                                                                                    |
+| -------- | ---------------------------------------------------------------------------------------------- |
+| `inview` | Play video when it enters the viewport and pause it again when it leaves the viewport.         |
+| `hover`  | Play video when the mouse hovers the video and pause it again when the mouse leaves the hover. |
 
 ```html
 <video src="" width="" height="" uk-video="autoplay: inview"></video>
+<video src="" width="" height="" uk-video="autoplay: hover"></video>
 ```
 
 ```example
-<video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video>
+<div class="uk-child-width-1-2@m" uk-grid>
+    <div>
+
+        <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video>
+
+    </div>
+    <div>
+
+        <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: hover"></video>
+
+    </div>
+</div>
 ```
 
 ***
@@ -60,10 +77,10 @@ To mute YouTube or Vimeo videos by default, add the `uk-video="automute: true"` 
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option     | Value           | Default | Description                                                                                                                                                                          |
-|------------|-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `autoplay` | Boolean, String | `true`  | The video automatically plays/pauses as it's visible/hidden on the page. A value of `inview` will delay loading the video and play/pause the video as it enters/leaves the viewport. |
-| `automute` | Boolean         | `false` | Automatically mute YouTube or Vimeo videos.                                                                                                                                          |
+| Option     | Value           | Default | Description                                                                                                                                                                       |
+| ---------- | --------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `autoplay` | Boolean, String | `true`  | The video automatically plays/pauses as it's visible/hidden on the page. Additionally, the video can play when its in the viewport or hovered with the mouse (`inview`, `hover`). |
+| `automute` | Boolean         | `false` | Automatically mute YouTube or Vimeo videos.                                                                                                                                       |
 
 `autoplay` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
