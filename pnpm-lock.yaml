@@ -58,7 +58,7 @@ devDependencies:
     version: 3.2.5
   prettier-plugin-organize-imports:
     specifier: ^3.2.4
-    version: 3.2.4(prettier@3.2.5)(typescript@5.4.3)
+    version: 3.2.4(prettier@3.2.5)(typescript@5.4.4)
   prettier-plugin-svelte:
     specifier: ^3.2.2
     version: 3.2.2(prettier@3.2.5)(svelte@4.2.12)
@@ -69,8 +69,8 @@ devDependencies:
     specifier: ^5.2.1
     version: 5.2.1
   uikit:
-    specifier: 3.19.2
-    version: 3.19.2
+    specifier: 3.19.3
+    version: 3.19.3
   vite:
     specifier: ^5.2.7
     version: 5.2.7(less@4.2.0)
@@ -2076,7 +2076,7 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-organize-imports@3.2.4(prettier@3.2.5)(typescript@5.4.3):
+  /prettier-plugin-organize-imports@3.2.4(prettier@3.2.5)(typescript@5.4.4):
     resolution: {integrity: sha512-6m8WBhIp0dfwu0SkgfOxJqh+HpdyfqSSLfKKRZSFbDuEQXDDndb8fTpRWkUrX/uBenkex3MgnVk0J3b3Y5byog==}
     peerDependencies:
       '@volar/vue-language-plugin-pug': ^1.0.4
@@ -2090,7 +2090,7 @@ packages:
         optional: true
     dependencies:
       prettier: 3.2.5
-      typescript: 5.4.3
+      typescript: 5.4.4
     dev: true
 
   /prettier-plugin-svelte@3.2.2(prettier@3.2.5)(svelte@4.2.12):
@@ -2469,14 +2469,14 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /typescript@5.4.3:
-    resolution: {integrity: sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==}
+  /typescript@5.4.4:
+    resolution: {integrity: sha512-dGE2Vv8cpVvw28v8HCPqyb08EzbBURxDpuhJvTrusShUfGnhHBafDsLdS1EhhxyL6BJQE+2cT3dDPAv+MQ6oLw==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
 
-  /uikit@3.19.2:
-    resolution: {integrity: sha512-4Ls0yyBqk/vjgH3qvlPSljFYwh1VxfoeaA4mfGjedVCFqCkd7rucOg383/HsfXHxIc3Ezx3syiPaqxaiIFxcSw==}
+  /uikit@3.19.3:
+    resolution: {integrity: sha512-mvnieyt2wp52AYzTMJy+Scydgg3lmhKe8CuIbhpqCRvnhSvy+hS7myw2aFNKap2AvC2hP0+0jVNZunOfpsSMIg==}
     dev: true
 
   /universalify@2.0.1:
