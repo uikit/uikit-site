@@ -6,23 +6,23 @@
         "postinstall": "symlink-dir ./node_modules/uikit ./static/assets/uikit && cd ./static/assets/uikit && pnpm install",
         "compile": "pnpm compile-less && pnpm compile-uikit-tests",
         "compile-less": "make-dir static/css && lessc less/theme.less > static/css/theme.css --rewrite-urls=all --clean-css",
-        "compile-uikit-tests": "cd ./static/assets/uikit && pnpm compile-js tests",
-        "eslint": "eslint .",
-        "eslint-fix": "eslint --fix ."
+        "compile-uikit-tests": "cd ./static/assets/uikit && pnpm compile-js tests"
     },
     "packageManager": "pnpm@8.10.1",
     "devDependencies": {
         "@docsearch/css": "^3.6.0",
         "@docsearch/js": "^3.6.0",
+        "@eslint/js": "^9.0.0",
         "@sveltejs/adapter-static": "3.0.1",
         "@sveltejs/kit": "^2.5.5",
-        "@sveltejs/vite-plugin-svelte": "^3.0.2",
+        "@sveltejs/vite-plugin-svelte": "^3.1.0",
         "clipboard": "2.0.11",
-        "eslint": "^8.57.0",
+        "eslint": "^9.0.0",
         "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-svelte": "^2.35.1",
+        "eslint-plugin-svelte": "^2.37.0",
         "execa": "^8.0.1",
         "github-slugger": "^2.0.0",
+        "globals": "^15.0.0",
         "highlight.js": "11.9.0",
         "less": "^4.2.0",
         "less-plugin-clean-css": "^1.5.1",
@@ -31,10 +31,10 @@
         "prettier": "^3.2.5",
         "prettier-plugin-organize-imports": "^3.2.4",
         "prettier-plugin-svelte": "^3.2.2",
-        "svelte": "^4.2.12",
-        "symlink-dir": "^5.2.1",
+        "svelte": "^4.2.13",
+        "symlink-dir": "^6.0.0",
         "uikit": "3.19.4",
-        "vite": "^5.2.7"
+        "vite": "^5.2.8"
     },
     "pnpm": {
         "peerDependencyRules": {
