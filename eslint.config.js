@@ -27,7 +27,7 @@ export default [
             'no-unused-vars': ['error', { caughtErrors: 'none' }],
         },
         languageOptions: {
-            ecmaVersion: 2022,
+            ecmaVersion: 'latest',
             sourceType: 'module',
             globals: {
                 UIkit: true,
