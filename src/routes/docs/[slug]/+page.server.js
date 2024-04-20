@@ -96,10 +96,10 @@ function example(code, id) {
                     <li><a href="#">Markup</a></li>
                 </ul>
 
-                <ul class="uk-switcher uk-margin">
-                    <li>${code}</li>
-                    <li><pre><code id="${id}">${hljs.highlightAuto(code).value}</code></pre></li>
-                </ul>
+                <div class="uk-switcher uk-margin">
+                    <div>${code}</div>
+                    <div><pre><code id="${id}">${hljs.highlightAuto(code).value}</code></pre></div>
+                </div>
 
                 <div class="uk-position-top-right uk-margin-small-top">
                     <ul class="uk-iconnav">

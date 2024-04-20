@@ -17,9 +17,9 @@ Typically, the switcher toggles are styled through other components, some of whi
 </ul>
 
 <!-- This is the container of the content items -->
-<ul class="uk-switcher">
-    <li></li>
-</ul>
+<div class="uk-switcher">
+    <div></div>
+</div>
 ```
 
 In this example we are using the [Subnav component](subnav.md).
@@ -31,11 +31,11 @@ In this example we are using the [Subnav component](subnav.md).
     <li><a href="#">Item</a></li>
 </ul>
 
-<ul class="uk-switcher uk-margin">
-    <li>Hello!</li>
-    <li>Hello again!</li>
-    <li>Bazinga!</li>
-</ul>
+<div class="uk-switcher uk-margin">
+    <div>Hello!</div>
+    <div>Hello again!</div>
+    <div>Bazinga!</div>
+</div>
 ```
 
 ***
@@ -47,12 +47,12 @@ In some cases you want to switch to another content section from within the acti
 Setting the attribute to `next` and `previous` will switch to the adjacent items.
 
 ```html
-<ul class="uk-switcher uk-margin">
-    <li><a href="#" uk-switcher-item="0"></a></li>
-    <li><a href="#" uk-switcher-item="1"></a></li>
-    <li><a href="#" uk-switcher-item="next"></a></li>
-    <li><a href="#" uk-switcher-item="previous"></a></li>
-</ul>
+<div class="uk-switcher uk-margin">
+    <div><a href="#" uk-switcher-item="0"></a></div>
+    <div><a href="#" uk-switcher-item="1"></a></div>
+    <div><a href="#" uk-switcher-item="next"></a></div>
+    <div><a href="#" uk-switcher-item="previous"></a></div>
+</div>
 ```
 
 ```example
@@ -61,11 +61,11 @@ Setting the attribute to `next` and `previous` will switch to the adjacent items
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
 </ul>
-<ul class="uk-switcher uk-margin">
-    <li>Hello! <a href="#" uk-switcher-item="2">Switch to item 3</a></li>
-    <li>Hello again! <a href="#" uk-switcher-item="next">Next item</a></li>
-    <li>Bazinga! <a href="#" uk-switcher-item="previous">Previous item</a></li>
-</ul>
+<div class="uk-switcher uk-margin">
+    <div>Hello! <a href="#" uk-switcher-item="2">Switch to item 3</a></div>
+    <div>Hello again! <a href="#" uk-switcher-item="next">Next item</a></div>
+    <div>Bazinga! <a href="#" uk-switcher-item="previous">Previous item</a></div>
+</div>
 ```
 
 ***
@@ -79,9 +79,9 @@ It is also possible to connect multiple content containers. Just add the `connec
 <ul uk-switcher="connect: .my-class">…</ul>
 
 <!-- These are the containers of the content items -->
-<ul class="uk-switcher my-class">…</ul>
+<div class="uk-switcher my-class">…</div>
 
-<ul class="uk-switcher my-class">…</ul>
+<div class="uk-switcher my-class">…</div>
 ```
 
 ```example
@@ -93,19 +93,19 @@ It is also possible to connect multiple content containers. Just add the `connec
 
 <h4>Container 1</h4>
 
-<ul class="uk-switcher switcher-container uk-margin">
-    <li>Hello!</li>
-    <li>Hello again!</li>
-    <li>Bazinga!</li>
-</ul>
+<div class="uk-switcher switcher-container uk-margin">
+    <div>Hello!</div>
+    <div>Hello again!</div>
+    <div>Bazinga!</div>
+</div>
 
 <h4>Container 2</h4>
 
-<ul class="uk-switcher switcher-container uk-margin">
-    <li>Hello! The first item.</li>
-    <li>Hello again! The second item.</li>
-    <li>Bazinga! The third item.</li>
-</ul>
+<div class="uk-switcher switcher-container uk-margin">
+    <div>Hello! The first item.</div>
+    <div>Hello again! The second item.</div>
+    <div>Bazinga! The third item.</div>
+</div>
 ```
 
 ***
@@ -125,11 +125,11 @@ You can apply all animations from the [Animation component](animation.md) to swi
     <li><a href="#">Item</a></li>
 </ul>
 
-<ul class="uk-switcher uk-margin">
-    <li>Hello!</li>
-    <li>Hello again!</li>
-    <li>Bazinga!</li>
-</ul>
+<div class="uk-switcher uk-margin">
+    <div>Hello!</div>
+    <div>Hello again!</div>
+    <div>Bazinga!</div>
+</div>
 ```
 
 ***
@@ -149,11 +149,11 @@ You can also apply multiple animations from the [Animation component](animation.
     <li><a href="#">Item</a></li>
 </ul>
 
-<ul class="uk-switcher uk-margin">
-    <li>Hello!</li>
-    <li>Hello again!</li>
-    <li>Bazinga!</li>
-</ul>
+<div class="uk-switcher uk-margin">
+    <div>Hello!</div>
+    <div>Hello again!</div>
+    <div>Bazinga!</div>
+</div>
 ```
 
 ***
@@ -167,7 +167,7 @@ The switcher is easily applied to the [Subnav component](subnav.md).
 <ul class="uk-subnav uk-subnav-pill" uk-switcher>…</ul>
 
 <!-- This is the container of the content items -->
-<ul class="uk-switcher"></ul>
+<div class="uk-switcher"></div>
 ```
 
 ```example
@@ -177,11 +177,11 @@ The switcher is easily applied to the [Subnav component](subnav.md).
     <li><a href="#">Item</a></li>
 </ul>
 
-<ul class="uk-switcher uk-margin">
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
-</ul>
+<div class="uk-switcher uk-margin">
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+</div>
 ```
 
 
@@ -206,11 +206,11 @@ As an exception to the rule, add the `uk-tab` attribute instead of `uk-switcher`
     <li><a href="#">Item</a></li>
 </ul>
 
-<ul class="uk-switcher uk-margin">
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
-</ul>
+<div class="uk-switcher uk-margin">
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+</div>
 ```
 
 ***
@@ -225,7 +225,7 @@ Use the [Grid](grid.md) and [Width](width.md) components to display content corr
         <ul class="uk-tab-left" uk-tab="connect: #my-id">…</ul>
     </div>
     <div class="uk-width-expand">
-        <ul id="my-id" class="uk-switcher">…</ul>
+        <div id="my-id" class="uk-switcher">…</div>
     </div>
 </div>
 ```
@@ -242,11 +242,11 @@ Use the [Grid](grid.md) and [Width](width.md) components to display content corr
                 </ul>
             </div>
             <div class="uk-width-expand@m">
-                <ul id="component-tab-left" class="uk-switcher">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
-                </ul>
+                <div id="component-tab-left" class="uk-switcher">
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+                </div>
             </div>
         </div>
     </div>
@@ -260,11 +260,11 @@ Use the [Grid](grid.md) and [Width](width.md) components to display content corr
                 </ul>
             </div>
             <div class="uk-width-expand@m">
-                <ul id="component-tab-right" class="uk-switcher">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
-                </ul>
+                <div id="component-tab-right" class="uk-switcher">
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+                </div>
             </div>
         </div>
     </div>
@@ -284,7 +284,7 @@ The switcher can also be applied to buttons or button groups from the [Button co
     <button class="uk-button uk-button-default" type="button"></button>
 </div>
 
-<ul class="uk-switcher">…</ul>
+<div class="uk-switcher">…</div>
 ```
 
 ```example
@@ -294,11 +294,11 @@ The switcher can also be applied to buttons or button groups from the [Button co
     <button class="uk-button uk-button-default" type="button">Item</button>
 </div>
 
-<ul class="uk-switcher uk-margin">
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
-</ul>
+<div class="uk-switcher uk-margin">
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+</div>
 ```
 
 **Note** Since this example does not wrap the buttons into list items the clickable elements which trigger the content switching has to be changed by using the `toggle` option.
@@ -315,7 +315,7 @@ To apply the switcher to the [Nav component](nav.md), add the `uk-switcher` attr
         <ul class="uk-nav uk-nav-default" uk-switcher="connect: #my-id">…</ul>
     </div>
     <div class="uk-width-expand">
-        <ul id="my-id" class="uk-switcher">…</ul>
+        <div id="my-id" class="uk-switcher">…</div>
     </div>
 </div>
 ```
@@ -333,11 +333,11 @@ To apply the switcher to the [Nav component](nav.md), add the `uk-switcher` attr
     </div>
     <div class="uk-width-expand@m">
 
-        <ul id="component-nav" class="uk-switcher">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-            <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
-        </ul>
+        <div id="component-nav" class="uk-switcher">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+        </div>
 
     </div>
 </div>
