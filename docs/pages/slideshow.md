@@ -856,7 +856,7 @@ Stops the slideshow autoplay.
 The Slideshow component adheres to the [Carousel WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
 - The *slideshow* has the `aria-roledescription` property set to `carousel`. 
-- The *slide list* has an ID, the `presentation` role and the `aria-live` property.
+- The *slide list* has an ID and the `aria-live` property.
 - The *slides* have an ID, the `group` role if the slideshow has only a previous/next navigation or the `tabpanel` role if it has a tab navigation, the `aria-roledescription` property set to `slide` and an `aria-label` property.
 
 The tab navigation adheres to the [tab pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/).
