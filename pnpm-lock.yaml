@@ -75,8 +75,8 @@ devDependencies:
     specifier: ^6.0.0
     version: 6.0.0
   uikit:
-    specifier: 3.20.2
-    version: 3.20.2
+    specifier: 3.20.3
+    version: 3.20.3
   vite:
     specifier: ^5.2.10
     version: 5.2.10(less@4.2.0)
@@ -2506,8 +2506,8 @@ packages:
     hasBin: true
     dev: true
 
-  /uikit@3.20.2:
-    resolution: {integrity: sha512-2cRBimGvNLGrdNjmDhhccT6dKFvfV1Sx63U8kohn1BOYYjlXf7GMfsMbfDi8H4fEOGIsj5DwXsbcm7AbjVzlPg==}
+  /uikit@3.20.3:
+    resolution: {integrity: sha512-faYiMtmJ56aGGTHw/kcAzbnyQ2YjV4ttwbeTT1YiGne1ygrm9NpPeV+gNBHLQ94tnLEmvRJ2ZislkuFULvjy0g==}
     dev: true
 
   /universalify@2.0.1:
