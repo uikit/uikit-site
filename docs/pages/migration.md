@@ -4,6 +4,21 @@
 
 ***
 
+## Migration from UIkit 3.20 to 3.21
+
+UIkit 3.21 introduces a search modifier in the [Search component](search.md) which is dedicated for a search used in the navbar. There was an old search modifier with the same name but which was rather used in dropdowns. We renamed this modifier to medium since it has a sightly large style than the default search. Update your markup by replacing the following classes.
+
+| Class              | Replace with       |
+| ------------------ | ------------------ |
+| `uk-search-navbar` | `uk-search-medium` |
+
+If you have customized the Less variables of the search navbar modifier in a custom UIkit theme, you have to replace them.
+
+| Less variable              | Replace with               |
+| -------------------------- | -------------------------- |
+| `@search-navbar-*`         | `@search-medium-*`         |
+| `@inverse-search-navbar-*` | `@inverse-search-medium-*` |
+
 ## Migration from UIkit 3.17 to 3.18
 
 If you have created a custom UIkit style, and overridden a `*-color-mode` variable, make sure it is set to either `light` or `dark`. It can no longer be set to `none` or be empty. 
@@ -45,11 +60,11 @@ UIkit 3.16 simplifies some classes in the [Drop component](drop.md). Update your
 
 The Dropdown, Dropbar and Navbar Dropdown CSS is now based on the Drop component. Therefore, they have no longer individual `z-index` Less variables. If you have used one of those variables in a custom UIkit theme, you have to replace them.
 
-| Less variable              | Replace with               |
-| -------------------------- | -------------------------- |
-| `@dropdown-z-index`        | `@drop-z-index`            |
-| `@dropbar-z-index`         | `@drop-z-index`            |
-| `@navbar-dropdown-z-index` | `@drop-z-index`            |
+| Less variable              | Replace with    |
+| -------------------------- | --------------- |
+| `@dropdown-z-index`        | `@drop-z-index` |
+| `@dropbar-z-index`         | `@drop-z-index` |
+| `@navbar-dropdown-z-index` | `@drop-z-index` |
 
 ***
 

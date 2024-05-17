@@ -36,6 +36,11 @@ To create a search icon, add the `uk-search-icon` attribute to a `<span>` elemen
     <span uk-search-icon></span>
     <input class="uk-search-input" type="search" placeholder="" aria-label="">
 </form>
+
+<form class="uk-search uk-search-default">
+    <input class="uk-search-input" type="search" placeholder="" aria-label="">
+    <span class="uk-search-icon-flip" uk-search-icon></span>
+</form>
 ```
 
 ```example
@@ -48,8 +53,8 @@ To create a search icon, add the `uk-search-icon` attribute to a `<span>` elemen
 
 <div class="uk-margin">
     <form class="uk-search uk-search-default">
-        <span class="uk-search-icon-flip" uk-search-icon></span>
         <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
+        <span class="uk-search-icon-flip" uk-search-icon></span>
     </form>
 </div>
 ```
@@ -62,23 +67,28 @@ To enable an action, use an `<a>` or `<button>` element to create the icon.
 
 ```html
 <form class="uk-search uk-search-default">
-    <a href="" uk-search-icon></a>
+    <button uk-search-icon></button>
     <input class="uk-search-input" type="search" placeholder="" aria-label="">
+</form>
+
+<form class="uk-search uk-search-default">
+    <input class="uk-search-input" type="search" placeholder="" aria-label="">
+    <button class="uk-search-icon-flip" uk-search-icon></button>
 </form>
 ```
 
 ```example
 <div class="uk-margin">
     <form class="uk-search uk-search-default">
-        <a href="" uk-search-icon></a>
+        <button uk-search-icon></button>
         <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
     </form>
 </div>
 
 <div class="uk-margin">
     <form class="uk-search uk-search-default">
-        <a href="" class="uk-search-icon-flip" uk-search-icon></a>
         <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
+        <button class="uk-search-icon-flip" uk-search-icon></button>
     </form>
 </div>
 ```
@@ -102,26 +112,9 @@ To apply the default search styling, add the `.uk-search-default` class.
 
 ***
 
-## Large modifier
-
-To increase the size of the search, for example when creating an overlay search, add the `.uk-search-large` class.
-
-```html
-<form class="uk-search uk-search-large">…</form>
-```
-
-```example
-<form class="uk-search uk-search-large">
-    <span uk-search-icon></span>
-    <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
-</form>
-```
-
-***
-
 ## Navbar modifier
 
-A search can be used inside a navbar from the [Navbar component](navbar.md). Just add the `.uk-search-navbar` class.
+To apply a dedicated search style when used in a navbar from the [Navbar component](navbar.md), add the `.uk-search-navbar` class.
 
 ```html
 <form class="uk-search uk-search-navbar">…</form>
@@ -140,6 +133,40 @@ A search can be used inside a navbar from the [Navbar component](navbar.md). Jus
 
     </div>
 </nav>
+```
+
+***
+
+## Medium modifier
+
+To increase the size of the search, for example when using the search in a dropdown, add the `.uk-search-medium` class.
+
+```html
+<form class="uk-search uk-search-medium">…</form>
+```
+
+```example
+<form class="uk-search uk-search-medium">
+    <span uk-search-icon></span>
+    <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
+</form>
+```
+
+***
+
+## Large modifier
+
+To increase the size of the search, for example when using the search in a fullscreen modal, add the `.uk-search-large` class.
+
+```html
+<form class="uk-search uk-search-large">…</form>
+```
+
+```example
+<form class="uk-search uk-search-large">
+    <span uk-search-icon></span>
+    <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
+</form>
 ```
 
 ***
