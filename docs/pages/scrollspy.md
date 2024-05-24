@@ -184,13 +184,13 @@ For an example of the scrollspy nav, just check out the fixed nav on the right s
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option     | Value                 | Default     | Description                                                                                           |
-|------------|-----------------------|-------------|-------------------------------------------------------------------------------------------------------|
-| `cls`      | String                | `uk-active` | Class to add to the active links.                                                                     |
-| `closest`  | Boolean, CSS selector | `false`     | Target to apply the class to. Defaults to the element itself.                                         |
-| `scroll`   | Boolean               | `false`     | Adds the [Scroll component](scroll.md) to its links.                                                  |
-| `overflow` | Boolean               | `true`      | If overflow is set to true, the first or last item will stay active if above or below the navigation. |
-| `offset`   | Number                | `0`         | Offset added to scroll top.                                                                           |
+| Option    | Value                 | Default     | Description                                                   |
+|-----------|-----------------------|-------------|---------------------------------------------------------------|
+| `cls`     | String                | `uk-active` | Class to add to the active links.                             |
+| `closest` | Boolean, CSS selector | `false`     | Target to apply the class to. Defaults to the element itself. |
+| `scroll`  | Boolean               | `false`     | Adds the [Scroll component](scroll.md) to its links.          |
+| `target`  | CSS selector          | `a[href]`   | Targets the anchor elements that should be used.              |
+| `offset`  | Number                | `0`         | Offset added to scroll top.                                   |
 
 ***
 
