@@ -78,8 +78,8 @@ importers:
         specifier: ^6.0.0
         version: 6.0.0
       uikit:
-        specifier: 3.21.3
-        version: link:../_uikit
+        specifier: 3.21.4
+        version: 3.21.4
       vite:
         specifier: ^5.2.11
         version: 5.2.11(less@4.2.0)
@@ -1278,6 +1278,9 @@ packages:
     resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  uikit@3.21.4:
+    resolution: {integrity: sha512-vL+FoWnM/bc+4CCUxpAie+r/lg7ufCWnLwcoXLUy9+KkAxC4k/LcxqjCYUlvdV8DdhElpxCD0THMiGTpjQASeg==}
 
   universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
@@ -2512,6 +2515,8 @@ snapshots:
       prelude-ls: 1.2.1
 
   typescript@5.4.5: {}
+
+  uikit@3.21.4: {}
 
   universalify@2.0.1: {}
 
