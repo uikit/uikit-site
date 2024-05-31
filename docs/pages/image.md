@@ -60,7 +60,7 @@ To use the `srcset` feature for background images, just add the `data-srcset` at
 
 ## Picture sources
 
-To use different image sources just like the `<picture>` element that contains `<source>` elements does, add the `source` attribute with `srcset`, `media` and `type` parameters.
+To use different image sources just like the `<picture>` element that contains `<source>` elements does, add the `sources` attribute with `srcset`, `media` and `type` parameters.
 
 ```html
 <div sources="srcset: ____; media: ____" data-src="" uk-img>…</div>
