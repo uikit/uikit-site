@@ -22,7 +22,7 @@ async function parse(markdown) {
     const renderer = {
         list: (text) => `<ul class="uk-list">${text}</ul>`,
 
-        listitem: (text) => `<li class="uk-flex uk-flex-top">
+        listitem: ({ text }) => `<li class="uk-flex uk-flex-top">
                     <span class="uk-label uk-label-${labels[section]} uk-margin-right uk-text-center uk-width-small tm-label-changelog uk-flex-none">${section}</span>
                     <div>${text}</div>
                 </li>`,
