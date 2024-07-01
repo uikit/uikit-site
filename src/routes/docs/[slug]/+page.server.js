@@ -23,15 +23,19 @@ async function parse(markdown) {
 
         list: (text) => `<ul class="uk-list uk-list-disc">${text}</ul>`,
 
-        image: (href, title, text) =>
-            href.match(/modal$/)
+        image(href, title, text) {
+            return href.match(/modal$/)
                 ? modal(href, text, slugger.slug('modal'))
-                : base.image(href, title, text),
+                : base.image.call(this, { href, title, text });
+        },
 
-        link: (href, title, text) =>
-            href.match(/\.md/)
-                ? base.link(href.replace(/(.*?).md(.*)/, '/docs/$1$2'), title, text)
-                : base.link(href, title, text),
+        link(href, title, text) {
+            return base.link.call(this, {
+                href: href.match(/\.md/) ? href.replace(/(.*?).md(.*)/, '/docs/$1$2') : href,
+                title,
+                tokens: [{ text, type: 'text' }],
+            });
+        },
 
         code: (code, lang) =>
             lang === 'example'
