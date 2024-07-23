@@ -89,3 +89,15 @@ webpack # If you installed webpack globally
 ```
 
 This completes the basic setup of your project. Navigate to `index.html` in your browser and confirm that the basic UIkit styling is applied to your page. If the bundling was successful, a notification should pop up at the top of your page and the button should display a message on hover.
+
+# Webpack Encore
+
+To include UIkit's JavaScript & icons in your project add the following content in your js entry file:
+
+```js
+const UIkit = require('uikit');
+global.UIkit = UIkit;
+
+const Icons = require('uikit/dist/js/uikit-icons');
+UIkit.use(Icons);
+```
