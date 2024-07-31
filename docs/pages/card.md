@@ -145,7 +145,7 @@ You can apply different size modifiers to cards that will decrease or increase t
 
 ***
 
-## Header & footer
+## Header and footer
 
 You can also divide a card into header and footer — around the default body. Just add the `.uk-card-header` or `.uk-card-footer` class to a `<div>` element inside the card.
 
