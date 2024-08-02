@@ -365,19 +365,19 @@ Define how the content of an image or video should be resized to fit its element
 </div>
 ```
 
-To modify the alignment of the image or video within its element, add one of the `uk-object-position-*` classes.
+To modify the alignment of the image or video within its element, add one of the `uk-object-*` position classes.
 
-| Class                               | Description                |
-| ----------------------------------- | -------------------------- |
-| `.uk-object-position-top-left`      | Align to the top left.     |
-| `.uk-object-position-top-center`    | Align to the top.          |
-| `.uk-object-position-top-right`     | Align to the top right.    |
-| `.uk-object-position-center-left`   | Align to the left.         |
-| `.uk-object-position-center-center` | Align to the center.       |
-| `.uk-object-position-center-right`  | Align to the right.        |
-| `.uk-object-position-bottom-left`   | Align to the bottom left.  |
-| `.uk-object-position-bottom-center` | Align to the bottom.       |
-| `.uk-object-position-bottom-right`  | Align to the bottom right. |
+| Class                      | Description                |
+| -------------------------- | -------------------------- |
+| `.uk-object-top-left`      | Align to the top left.     |
+| `.uk-object-top-center`    | Align to the top.          |
+| `.uk-object-top-right`     | Align to the top right.    |
+| `.uk-object-center-left`   | Align to the left.         |
+| `.uk-object-center-center` | Align to the center.       |
+| `.uk-object-center-right`  | Align to the right.        |
+| `.uk-object-bottom-left`   | Align to the bottom left.  |
+| `.uk-object-bottom-center` | Align to the bottom.       |
+| `.uk-object-bottom-right`  | Align to the bottom right. |
 
 ***
 
