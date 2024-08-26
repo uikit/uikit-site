@@ -58,7 +58,7 @@
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span class="uk-margin-small-right" uk-icon="push" />
+                                <span class="uk-margin-small-right" uk-icon="link-external" />
                                 <span class="uk-text-middle">Open test</span>
                             </a>
                         </li>
