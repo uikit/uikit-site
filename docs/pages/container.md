@@ -40,6 +40,42 @@ Add one of the following classes to the container to apply a different max-width
 
 ***
 
+## Expand modifiers
+
+Add one of the following classes to the container to expand one side only.
+
+| Class                        | Description             |
+|------------------------------|-------------------------|
+| `.uk-container-expand-left`  | Expand left side only.  |
+| `.uk-container-expand-right` | Expand right side only. |
+
+```html
+<div class="uk-container uk-container-expand-left"></div>
+
+<div class="uk-container uk-container-expand-right"></div>
+```
+
+***
+
+## Padding modifiers
+
+Add one of the following classes to the container to reset container on the left or right side
+
+**Note** There has to be negative margin on the item, because it's specific to the item.
+
+| Class                                     | Description           |
+|-------------------------------------------|-----------------------|
+| `.uk-container-item-padding-remove-left`  | Remove left padding.  |
+| `.uk-container-item-padding-remove-right` | Remove right padding. |
+
+```html
+<div class="uk-container uk-container-item-padding-remove-left"></div>
+
+<div class="uk-container uk-container-item-padding-remove-right"></div>
+```
+
+***
+
 ## Container in sections
 
 You can apply this component to modify the width of content inside sections from the [Section component](section.md).
