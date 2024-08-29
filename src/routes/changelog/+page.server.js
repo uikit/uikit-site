@@ -20,21 +20,23 @@ const labels = {
 async function parse(markdown) {
     let section;
     const renderer = {
-        list: (text) => `<ul class="uk-list">${text}</ul>`,
+        list({ items }) {
+            return `<ul class="uk-list">${items.map((item) => this.listitem(item)).join('')}</ul>`;
+        },
 
         listitem: ({ text }) => `<li class="uk-flex uk-flex-top">
                     <span class="uk-label uk-label-${labels[section]} uk-margin-right uk-text-center uk-width-small tm-label-changelog uk-flex-none">${section}</span>
                     <div>${text}</div>
                 </li>`,
 
-        heading(text, level) {
+        heading({ text, depth }) {
             text = text.replace(/\(.*?\)/, '<span class="uk-text-muted">$&</span>');
 
-            if (level === 2) {
-                return `<h${level} class="uk-h3">${text}</h${level}>`;
+            if (depth === 2) {
+                return `<h${depth} class="uk-h3">${text}</h${depth}>`;
             }
 
-            if (level === 3) {
+            if (depth === 3) {
                 section = text;
             }
 

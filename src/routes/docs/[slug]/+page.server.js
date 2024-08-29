@@ -18,18 +18,20 @@ async function parse(markdown) {
     let ids = [];
 
     const renderer = {
-        strong: (text) =>
+        strong: ({ text }) =>
             text === 'Note' ? `<span class="uk-label">${text}</span>` : `<strong>${text}</strong>`,
 
-        list: (text) => `<ul class="uk-list uk-list-disc">${text}</ul>`,
+        list({ items }) {
+            return `<ul class="uk-list uk-list-disc">${items.map((item) => this.listitem(item)).join('')}</ul>`;
+        },
 
-        image(href, title, text) {
+        image({ href, title, text }) {
             return href.match(/modal$/)
                 ? modal(href, text, slugger.slug('modal'))
                 : base.image.call(this, { href, title, text });
         },
 
-        link(href, title, text) {
+        link({ href, title, text }) {
             return base.link.call(this, {
                 href: href.match(/\.md/) ? href.replace(/(.*?).md(.*)/, '/docs/$1$2') : href,
                 title,
@@ -37,20 +39,22 @@ async function parse(markdown) {
             });
         },
 
-        code: (code, lang) =>
-            lang === 'example'
-                ? example(code, slugger.slug('code-example'))
+        code: ({ text, lang }) => {
+            return lang === 'example'
+                ? example(text, slugger.slug('code-example'))
                 : `<div class="uk-margin-medium"><pre><code>${
-                      hljs.highlightAuto(code).value
-                  }</code></pre></div>`,
+                      hljs.highlightAuto(text).value
+                  }</code></pre></div>`;
+        },
 
         hr: () => '<hr class="uk-margin-large">',
 
-        table: (header, body) =>
-            `<div class="uk-overflow-auto"><table class="uk-table uk-table-divider"><thead>${header}</thead><tbody>${body}</tbody></table></div>`,
+        table({ header, rows }) {
+            return `<div class="uk-overflow-auto"><table class="uk-table uk-table-divider"><thead>${this.tablerow({ text: header.map((cell) => this.tablecell(cell)).join('') })}</thead><tbody>${rows.map((row) => this.tablerow({ text: row.map((cell) => this.tablecell(cell)).join('') })).join('')}</tbody></table></div>`;
+        },
 
-        heading(text, level) {
-            if (level === 1) {
+        heading({ text, depth }) {
+            if (depth === 1) {
                 pageTitle = text;
                 return `<h1>${text}</h1>`;
             }
@@ -58,13 +62,13 @@ async function parse(markdown) {
             const title = text.replaceAll(/<(\w+)>(.*?)<\/\1>/g, '$2');
             let id = slugger.slug(title);
 
-            if (level === 2) {
+            if (depth === 2) {
                 ids.push({ id, title });
             }
 
-            return `<h${level} id="${id}" class="uk-h${
-                level + 1
-            } tm-heading-fragment"><a href="#${id}">${text}</a></h${level}>`;
+            return `<h${depth} id="${id}" class="uk-h${
+                depth + 1
+            } tm-heading-fragment"><a href="#${id}">${text}</a></h${depth}>`;
         },
     };
 

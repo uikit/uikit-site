@@ -327,4 +327,4 @@ The Close component automatically sets the appropriate WAI-ARIA roles and proper
 
 The Offcanvas component can be accessed through the keyboard using the following keys.
 
-- The <kbd>esc</kbd> key closes the offcanvas. This behaviour is disabled if the `bg-close: false` option is set.
+- The <kbd>esc</kbd> key closes the offcanvas. This behaviour is disabled if the `esc-close: false` option is set.
