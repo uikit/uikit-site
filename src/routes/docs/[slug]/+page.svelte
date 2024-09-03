@@ -39,8 +39,8 @@
     <div class="uk-container uk-container-small uk-position-relative">
         {@html data.doc.content}
 
-        <div class="tm-sidebar-right uk-visible@l">
             <div uk-sticky="offset: 160">
+        <div class="tm-sidebar-right uk-visible@l uk-height-1-1">
                 <ul
                     class="uk-nav uk-nav-default tm-nav"
                     uk-scrollspy-nav="closest: li; scroll: true; offset: 20"
