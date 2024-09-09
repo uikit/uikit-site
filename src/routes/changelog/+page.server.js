@@ -24,10 +24,12 @@ async function parse(markdown) {
             return `<ul class="uk-list">${items.map((item) => this.listitem(item)).join('')}</ul>`;
         },
 
-        listitem: ({ text }) => `<li class="uk-flex uk-flex-top">
+        listitem({ tokens }) {
+            return `<li class="uk-flex uk-flex-top">
                     <span class="uk-label uk-label-${labels[section]} uk-margin-right uk-text-center uk-width-small tm-label-changelog uk-flex-none">${section}</span>
-                    <div>${text}</div>
-                </li>`,
+                    <div>${this.parser.parse(tokens)}</div>
+                </li>`;
+        },
 
         heading({ text, depth }) {
             text = text.replace(/\(.*?\)/, '<span class="uk-text-muted">$&</span>');
