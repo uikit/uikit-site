@@ -24,10 +24,11 @@ async function parse(markdown) {
             return `<ul class="uk-list">${items.map((item) => this.listitem(item)).join('')}</ul>`;
         },
 
-        listitem({ tokens }) {
+        listitem(token) {
+            // console.log(tokens);
             return `<li class="uk-flex uk-flex-top">
                     <span class="uk-label uk-label-${labels[section]} uk-margin-right uk-text-center uk-width-small tm-label-changelog uk-flex-none">${section}</span>
-                    <div>${this.parser.parse(tokens)}</div>
+                    <div>${this.text(token)}</div>
                 </li>`;
         },
 
