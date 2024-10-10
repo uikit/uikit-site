@@ -218,7 +218,7 @@ To show a counter with the current item number and the total number of items, ad
 To adapt the color of the overlaying controls for better visibility depending on the lightbox content, use the `data-attrs` option to add the `.uk-inverse-light` or `.uk-inverse.dark` class from the [Inverse component](inverse.md).
 
 ```html
-<div uk-lightbox="slidenav: false; nav: thumbnav">
+<div uk-lightbox>
     <a href="image.jpg" attrs='{"class": "uk-inverse-light"}'></a>
 </div>
 ```
