@@ -4,6 +4,29 @@
 
 ***
 
+## Migration from UIkit 3.21 to 3.22
+
+The [Lightbox component](lightbox.md) got reworked. We removed the `uk-lightbox-toolbar-icon` and `uk-lightbox-button` classes including all their Less variables starting with `@lightbox-toolbar-icon-*` and `@lightbox-button-*`. If you have customized the lightbox using one of these classes or Less variables you have to remove it.
+
+We renamed the `uk-lightbox-toolbar` class to `uk-lightbox-caption` including all their Less variable. Just find and replace these Less variables if you are using a custom Less theme.
+
+| Less variable                          | Replace with                           |
+| -------------------------------------- | -------------------------------------- |
+| `@lightbox-toolbar-padding-vertical`   | `@lightbox-caption-padding-vertical`   |
+| `@lightbox-toolbar-padding-horizontal` | `@lightbox-caption-padding-horizontal` |
+| `@lightbox-toolbar-background`         | `@lightbox-caption-background`         |
+| `@lightbox-toolbar-color`              | `@lightbox-caption-color`              |
+
+The following Less variables are also renamed.
+
+| Less variable          | Replace with      |
+| ---------------------- | ----------------- |
+| `@lightbox-item-color` | `@lightbox-color` |
+
+The [Search component](search.md) now calculates the search box and search icon padding differently. Also the search medium and large styles are changed to look the same as the search default style but in a different size. If you have customized the Less variables of the search you need to revise your customizations.
+
+***
+
 ## Migration from UIkit 3.20 to 3.21
 
 UIkit 3.21 introduces a search modifier in the [Search component](search.md) which is dedicated for a search used in the navbar. There was an old search modifier with the same name, but it was rather used in dropdowns. We renamed this modifier to medium, since it has a slightly larger style than the default search. Update your markup by replacing the following classes.
@@ -18,6 +41,8 @@ If you have customized the Less variables of the search navbar modifier in a cus
 | -------------------------- | -------------------------- |
 | `@search-navbar-*`         | `@search-medium-*`         |
 | `@inverse-search-navbar-*` | `@inverse-search-medium-*` |
+
+***
 
 ## Migration from UIkit 3.17 to 3.18
 
@@ -38,6 +63,8 @@ UIkit 3.18 introduces new `*-color-mode` Less variables for the default and mute
 @tile-default-color-mode: light;
 @tile-muted-color-mode: light;
 ```
+
+***
 
 ## Migration from UIkit 3.16 to 3.17
 
