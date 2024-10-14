@@ -460,20 +460,20 @@ Hides the Lightbox's Panel.
 
 If you only want to use the lightbox panel directly through the JS API, you can set the following options.
 
-| Option              | Value   | Default        | Description                                                                                           |
-| ------------------- | ------- | -------------- | ----------------------------------------------------------------------------------------------------- |
-| `animation`         | String  | `slide`        | Lightbox animation mode (`slide`, `fade` or `scale`).                                                 |
-| `autoplay`          | Boolean | `false`        | Lightbox autoplays.                                                                                   |
-| `autoplay-interval` | Number  | `7000`         | The delay between switching slides in autoplay mode.                                                  |
-| `pause-on-hover`    | Boolean | `false`        | Pause autoplay mode on hover.                                                                         |
-| `video-autoplay`    | Boolean | `false`        | Lightbox videos autoplay.                                                                             |
-| `index`             | Number  | `0`            | The initial item to show. (zero-based)                                                                |
-| `velocity`          | Number  | `2`            | The animation velocity (pixel/ms).                                                                    |
-| `preload`           | Number  | `1`            | The number of items to preload. (left and right of the currently active item)                         |
-| `items`             | Array   | `[]`           | An array of items to display, e.g. `[{source: 'images/size1.jpg', caption: '900x600'}]`               |
-| `template`          | String  | Default markup | The template string.                                                                                  |
-| `delay-controls`    | Number  | `3000`         | Delay time before controls fade out in ms.                                                            |
-| `container`         | String  | `body`         | Define a target container via a selector to specify where the Lightbox should be appended in the DOM. |
+| Option              | Value           | Default        | Description                                                                                           |
+|---------------------|-----------------|----------------|-------------------------------------------------------------------------------------------------------|
+| `animation`         | String          | `slide`        | Lightbox animation mode (`slide`, `fade` or `scale`).                                                 |
+| `autoplay`          | Boolean         | `false`        | Lightbox autoplays.                                                                                   |
+| `autoplay-interval` | Number          | `7000`         | The delay between switching slides in autoplay mode.                                                  |
+| `pause-on-hover`    | Boolean         | `false`        | Pause autoplay mode on hover.                                                                         |
+| `video-autoplay`    | Boolean, String | `false`        | Lightbox videos autoplay. A value of `inline` will autoplay the video, muted and without controls.    |
+| `index`             | Number          | `0`            | The initial item to show. (zero-based)                                                                |
+| `velocity`          | Number          | `2`            | The animation velocity (pixel/ms).                                                                    |
+| `preload`           | Number          | `1`            | The number of items to preload. (left and right of the currently active item)                         |
+| `items`             | Array           | `[]`           | An array of items to display, e.g. `[{source: 'images/size1.jpg', caption: '900x600'}]`               |
+| `template`          | String          | Default markup | The template string.                                                                                  |
+| `delay-controls`    | Number          | `3000`         | Delay time before controls fade out in ms. Setting `0` will prevent hiding controls.                  |
+| `container`         | String          | `body`         | Define a target container via a selector to specify where the Lightbox should be appended in the DOM. |
 
 ### Events
 
