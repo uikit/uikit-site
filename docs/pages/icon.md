@@ -121,6 +121,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="minus"></span> minus</li>
             <li><span class="uk-margin-small-right" uk-icon="minus-circle"></span> minus-circle</li>
             <li><span class="uk-margin-small-right" uk-icon="close"></span> close</li>
+            <li><span class="uk-margin-small-right" uk-icon="close-circle"></span> close-circle</li>
             <li><span class="uk-margin-small-right" uk-icon="check"></span> check</li>
             <li><span class="uk-margin-small-right" uk-icon="ban"></span> ban</li>
             <li><span class="uk-margin-small-right" uk-icon="refresh"></span> refresh</li>
@@ -196,12 +197,13 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="expand"></span> expand</li>
             <li><span class="uk-margin-small-right" uk-icon="shrink"></span> shrink</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-up-right"></span> arrow-up-right</li>
+            <li><span class="uk-margin-small-right" uk-icon="arrow-up-arrow-down"></span> arrow-up-arrow-down</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-up"></span> arrow-up</li>
-            <li><span class="uk-margin-small-right" uk-icon="arrow-down"></span> arrow-down</li>
         </ul>
     </div>
     <div>
         <ul class="uk-list">
+        <li><span class="uk-margin-small-right" uk-icon="arrow-down"></span> arrow-down</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-left"></span> arrow-left</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-right"></span> arrow-right</li>
             <li><span class="uk-margin-small-right" uk-icon="chevron-up"></span> chevron-up</li>
