@@ -6,7 +6,7 @@
 
 ## Migration from UIkit 3.21 to 3.22
 
-The [Lightbox component](lightbox.md) got reworked. We removed the `uk-lightbox-toolbar-icon` and `uk-lightbox-button` classes including all their Less variables starting with `@lightbox-toolbar-icon-*` and `@lightbox-button-*`. If you have customized the lightbox using one of these classes or Less variables you have to remove it.
+The [Lightbox component](lightbox.md) got reworked. We removed the `uk-lightbox-toolbar-icon` and `uk-lightbox-button` classes including all their Less variables starting with `@lightbox-toolbar-icon-*` and `@lightbox-button-*`. If you have customized the lightbox using one of these classes or Less variables, you have to remove it.
 
 We renamed the `uk-lightbox-toolbar` class to `uk-lightbox-caption` including all their Less variable. Just find and replace these Less variables if you are using a custom Less theme.
 
@@ -23,7 +23,7 @@ The following Less variables are also renamed.
 | ---------------------- | ----------------- |
 | `@lightbox-item-color` | `@lightbox-color` |
 
-The [Search component](search.md) now calculates the search box and search icon padding differently. Also the search medium and large styles are changed to look the same as the search default style but in a different size. If you have customized the Less variables of the search you need to revise your customizations.
+The [Search component](search.md) now calculates the search box and search icon padding differently. Also, the search medium and large styles are changed to look the same as the search default style but in a different size. If you have customized the Less variables of the search, you need to revise your customizations.
 
 ***
 
