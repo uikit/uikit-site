@@ -197,7 +197,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
             <li><span class="uk-margin-small-right" uk-icon="expand"></span> expand</li>
             <li><span class="uk-margin-small-right" uk-icon="shrink"></span> shrink</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-up-right"></span> arrow-up-right</li>
-            <li><span class="uk-margin-small-right" uk-icon="arrow-up-arrow-down"></span> arrow-up-arrow-down</li>
+            <li><span class="uk-margin-small-right" uk-icon="arrow-down-arrow-up"></span> arrow-down-arrow-up</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-up"></span> arrow-up</li>
         </ul>
     </div>
