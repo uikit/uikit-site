@@ -203,7 +203,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
     </div>
     <div>
         <ul class="uk-list">
-        <li><span class="uk-margin-small-right" uk-icon="arrow-down"></span> arrow-down</li>
+            <li><span class="uk-margin-small-right" uk-icon="arrow-down"></span> arrow-down</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-left"></span> arrow-left</li>
             <li><span class="uk-margin-small-right" uk-icon="arrow-right"></span> arrow-right</li>
             <li><span class="uk-margin-small-right" uk-icon="chevron-up"></span> chevron-up</li>
