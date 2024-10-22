@@ -410,15 +410,19 @@ To override the default lightbox template, add the `template: #ID` option to lin
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option              | Value          | Default | Description                                            |
-| ------------------- | -------------- | ------- | ------------------------------------------------------ |
-| `animation`         | String         | `slide` | Lightbox animation mode (`slide`, `fade` or `scale`).  |
-| `autoplay`          | Boolean        | `false` | Lightbox autoplays.                                    |
-| `autoplay-interval` | Number         | `7000`  | The delay between switching slides in autoplay mode.   |
-| `pause-on-hover`    | Boolean        | `false` | Pause autoplay mode on hover.                          |
-| `video-autoplay`    | Boolean        | `false` | Lightbox videos autoplay.                              |
-| `index`             | String, Number | `0`     | Lightbox item to show. 0 based index.                  |
-| `toggle`            | CSS selector   | `a`     | Toggle selector - opens the Lightbox Panel upon click. |
+| Option              | Value           | Default | Description                                                                                                |
+|---------------------|-----------------|---------|------------------------------------------------------------------------------------------------------------|
+| `animation`         | String          | `slide` | Lightbox animation mode (`slide`, `fade` or `scale`).                                                      |
+| `autoplay`          | Boolean         | `false` | Lightbox autoplays.                                                                                        |
+| `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.                                                       |
+| `pause-on-hover`    | Boolean         | `false` | Pause autoplay mode on hover.                                                                              |
+| `video-autoplay`    | Boolean, String | `false` | Lightbox videos autoplay. A value of `inline` will autoplay the video, make it muted and without controls. |
+| `counter`           | Boolean         | `false` | Lightbox shows counter.                                                                                    |
+| `nav`               | Boolean, String | `false` | Lightbox navigation (`dotnav`, `thumbnav`).                                                                |
+| `slidenav`          | Boolean         | `true`  | Lightbox shows slidenav controls.                                                                          |
+| `index`             | String, Number  | `0`     | Lightbox item to show. 0 based index.                                                                      |
+| `delay-controls`    | Number          | `3000`  | Delay time before controls fade out in ms. Setting `0` will prevent hiding controls.                       |
+| `toggle`            | CSS selector    | `a`     | Toggle selector - opens the Lightbox Panel upon click.                                                     |
 
 ***
 
@@ -467,6 +471,9 @@ If you only want to use the lightbox panel directly through the JS API, you can 
 | `autoplay-interval` | Number          | `7000`         | The delay between switching slides in autoplay mode.                                                       |
 | `pause-on-hover`    | Boolean         | `false`        | Pause autoplay mode on hover.                                                                              |
 | `video-autoplay`    | Boolean, String | `false`        | Lightbox videos autoplay. A value of `inline` will autoplay the video, make it muted and without controls. |
+| `counter`           | Boolean         | `false`        | Lightbox shows counter.                                                                                    |
+| `nav`               | Boolean, String | `false`        | Lightbox navigation (`dotnav`, `thumbnav`).                                                                |
+| `slidenav`          | Boolean         | `true`         | Lightbox shows slidenav controls.                                                                          |
 | `index`             | Number          | `0`            | The initial item to show. (zero-based)                                                                     |
 | `velocity`          | Number          | `2`            | The animation velocity (pixel/ms).                                                                         |
 | `preload`           | Number          | `1`            | The number of items to preload. (left and right of the currently active item)                              |
