@@ -294,7 +294,7 @@ Add the `.uk-logo` class from the [Utility component](utility.md) to an `<a>` or
                 <ul class="uk-navbar-nav">
                     <li>
                         <a href="#">
-                            <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
+                            <span class="uk-icon uk-margin-xsmall-right" uk-icon="icon: star"></span>
                             Features
                         </a>
                     </li>
@@ -405,7 +405,7 @@ Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to a
 
             <div class="uk-navbar-left">
                 <a class="uk-navbar-toggle" href="#">
-                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-xsmall-left">Menu</span>
                 </a>
             </div>
 

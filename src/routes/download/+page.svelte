@@ -39,7 +39,7 @@
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <span class="uk-margin-small-right" uk-icon="x" />
+                            <span class="uk-margin-xsmall-right" uk-icon="x" />
                             <span class="uk-text-middle">Share on X</span>
                         </a>
                     </div>
@@ -50,7 +50,7 @@
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <span class="uk-margin-small-right" uk-icon="facebook" />
+                            <span class="uk-margin-xsmall-right" uk-icon="facebook" />
                             <span class="uk-text-middle">Post on Facebook</span>
                         </a>
                     </div>

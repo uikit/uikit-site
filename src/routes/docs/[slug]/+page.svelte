@@ -58,7 +58,7 @@
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span class="uk-margin-small-right" uk-icon="link-external" />
+                                <span class="uk-margin-xsmall-right" uk-icon="link-external" />
                                 <span class="uk-text-middle">Open test</span>
                             </a>
                         </li>
@@ -69,7 +69,7 @@
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <span class="uk-margin-small-right" uk-icon="warning" />
+                            <span class="uk-margin-xsmall-right" uk-icon="warning" />
                             <span class="uk-text-middle">Report issue</span>
                         </a>
                     </li>
@@ -79,7 +79,7 @@
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <span class="uk-margin-small-right" uk-icon="commenting" />
+                            <span class="uk-margin-xsmall-right" uk-icon="commenting" />
                             <span class="uk-text-middle">Get help</span>
                         </a>
                     </li>
@@ -90,7 +90,7 @@
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <span class="uk-margin-small-right" uk-icon="pencil" />
+                            <span class="uk-margin-xsmall-right" uk-icon="pencil" />
                             <span class="uk-text-middle">Edit this page</span>
                         </a>
                     </li>

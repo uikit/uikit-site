@@ -151,7 +151,7 @@ To quote multiple lines of content from another source within your document, use
 
 ```example
 <blockquote cite="#">
-    <p class="uk-margin-small-bottom">The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a footer or cite element.</p>
+    <p class="uk-margin-remove">The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a footer or cite element.</p>
     <footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
 </blockquote>
 ```

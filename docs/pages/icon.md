@@ -313,7 +313,7 @@ Add the `ratio: 2` parameter to the `uk-icon` attribute to double its size – o
 ```
 
 ```example
-<span class="uk-margin-small-right" uk-icon="icon: check; ratio: 2"></span>
+<span class="uk-margin-xsmall-right" uk-icon="icon: check; ratio: 2"></span>
 <span uk-icon="icon: check; ratio: 3.5"></span>
 ```
 

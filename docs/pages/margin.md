@@ -25,6 +25,25 @@ Add one or more of the following classes to any element to create the same verti
 
 ***
 
+## X-Small margin
+
+Add one of the following classes to add very small spacing to block elements.
+
+| Class                     | Description                                                                            |
+|---------------------------|----------------------------------------------------------------------------------------|
+| `.uk-margin-xsmall`        | Adds smaller top margin, if it is preceded by another element, and always bottom margin. |
+| `.uk-margin-xsmall-top`    | Adds smaller top margin.                                                                 |
+| `.uk-margin-xsmall-bottom` | Adds smaller bottom margin.                                                              |
+| `.uk-margin-xsmall-left`   | Adds smaller left margin.                                                                |
+| `.uk-margin-xsmall-right`  | Adds smaller right margin.                                                               |
+
+```example
+<div class="uk-margin-xsmall uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+<div class="uk-margin-xsmall uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+```
+
+***
+
 ## Small margin
 
 Add one of the following classes to add small spacing to block elements.
