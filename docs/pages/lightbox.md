@@ -219,19 +219,19 @@ To adapt the color of the overlaying controls for better visibility depending on
 
 ```html
 <div uk-lightbox>
-    <a href="image.jpg" attrs='{"class": "uk-inverse-light"}'></a>
+    <a href="image.jpg" data-attrs="class: uk-inverse-light"></a>
 </div>
 ```
 
 ```example
 <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="nav: thumbnav; slidenav: false">
     <div>
-        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2" attrs='{"class": "uk-inverse-light"}'>
+        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2" data-attrs="class: uk-inverse-light">
             <img src="images/dark.jpg" width="1800" height="1200" alt="">
         </a>
     </div>
     <div>
-        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3" attrs='{"class": "uk-inverse-dark"}'>
+        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3" data-attrs="class: uk-inverse-dark">
             <img src="images/light.jpg" width="1800" height="1200" alt="">
         </a>
     </div>
