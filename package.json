@@ -15,7 +15,7 @@
         "@docsearch/js": "^3.6.2",
         "@eslint/js": "^9.12.0",
         "@sveltejs/adapter-static": "3.0.5",
-        "@sveltejs/kit": "^2.7.0",
+        "@sveltejs/kit": "^2.8.3",
         "@sveltejs/vite-plugin-svelte": "^3.1.2",
         "clipboard": "2.0.11",
         "eslint": "^9.12.0",
