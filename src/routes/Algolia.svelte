@@ -16,4 +16,4 @@
     </script>
 </svelte:head>
 
-<span id="docsearch" />
+<span id="docsearch"></span>

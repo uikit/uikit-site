@@ -169,7 +169,7 @@
                             href={`https://demo.yootheme.com/wordpress/themes/${id}/`}
                             aria-label={`Show ${titleCase(id)} style demo`}
                             data-modal
-                        />
+                        ></a>
                     </div>
                 </div>
             {/each}
@@ -208,7 +208,7 @@
                             href={`https://demo.yootheme.com/wordpress/themes/${id}/`}
                             aria-label={`Show ${titleCase(id)} layout demo`}
                             data-modal
-                        />
+                        ></a>
                     </div>
                 </div>
             {/each}
@@ -287,7 +287,7 @@
                                     class="uk-icon-link"
                                     uk-icon="github"
                                     aria-label="Go to GitHub"
-                                />
+                                ></a>
                             </div>
                             <div>
                                 <a
@@ -295,7 +295,7 @@
                                     class="uk-icon-link"
                                     uk-icon="commenting"
                                     aria-label="Go to Discord"
-                                />
+                                ></a>
                             </div>
                             <div>
                                 <a
@@ -303,7 +303,7 @@
                                     class="uk-icon-link"
                                     uk-icon="x"
                                     aria-label="Go to X"
-                                />
+                                ></a>
                             </div>
                             <div>
                                 <a
@@ -311,7 +311,7 @@
                                     class="uk-icon-link"
                                     uk-icon="facebook"
                                     aria-label="Go to Facebook"
-                                />
+                                ></a>
                             </div>
                         </div>
                     </div>
@@ -330,7 +330,7 @@
             type="button"
             aria-label="Close"
             uk-close
-        />
+        ></button>
         <div class="tm-modal-header">
             <div class="uk-grid-medium uk-flex-middle" uk-grid>
                 <div>
@@ -356,7 +356,8 @@
             </div>
         </div>
         <div class="tm-modal-body uk-flex-1 uk-flex">
-            <iframe class="uk-width-1-1 tm-box-shadow-modal" title="YOOtheme Pro Layout Demo" />
+            <iframe class="uk-width-1-1 tm-box-shadow-modal" title="YOOtheme Pro Layout Demo"
+            ></iframe>
         </div>
     </div>
     <script>
