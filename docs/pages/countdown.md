@@ -123,9 +123,10 @@ To add a label to each number, use the `.uk-countdown-label` class.
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. For more information, take a look at the chapter on [component configuration](javascript.md#component-configuration).
 
-| Option | Value  | Default | Description                                                                                                                                         |
-|--------|--------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `date` | String | `false` | Any string parsable by ```Date.parse```. See [Reference](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse). |
+| Option   | Value   | Default | Description                                                                                                                                         |
+|----------|---------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| `date`   | String  | `false` | Any string parsable by ```Date.parse```. See [Reference](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse). |
+| `reload` | Boolean | `false` | Reload page after countdown reaches end. The page is only reloaded, if the timer has previously been started once.                                  |
 
 ***
 
