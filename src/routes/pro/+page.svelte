@@ -328,6 +328,7 @@
         <button
             class="uk-modal-close-full tm-modal-close-full uk-close-large"
             type="button"
+            aria-label="Close"
             uk-close
         />
         <div class="tm-modal-header">
