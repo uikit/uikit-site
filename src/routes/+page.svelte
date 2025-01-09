@@ -75,19 +75,19 @@
                 <li>
                     <a href="https://github.com/uikit/uikit/stargazers"
                         ><span
-                            class="uk-margin-small-right"
+                            class="uk-margin-xsmall-right"
                             uk-icon="star"
                         />{data.stargazers_count} Stargazers</a
                     >
                 </li>
                 <li>
                     <a class="uk-text-lowercase" href="https://twitter.com/getuikit"
-                        ><span class="uk-margin-small-right" uk-icon="x" />@getuikit</a
+                        ><span class="uk-margin-xsmall-right" uk-icon="x" />@getuikit</a
                     >
                 </li>
                 <li>
                     <a href="https://discordapp.com/invite/NEt4Pv7"
-                        ><span class="uk-margin-small-right" uk-icon="commenting" />Community</a
+                        ><span class="uk-margin-xsmall-right" uk-icon="commenting" />Community</a
                     >
                 </li>
             </ul>

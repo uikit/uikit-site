@@ -65,42 +65,42 @@ By default, the entire sortable element can be used for drag and drop sorting. T
 <ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-sortable-handle" uk-grid>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 1
+            <span class="uk-sortable-handle uk-margin-xsmall-right uk-text-center" uk-icon="icon: table"></span>Item 1
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 2
+            <span class="uk-sortable-handle uk-margin-xsmall-right uk-text-center" uk-icon="icon: table"></span>Item 2
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 3
+            <span class="uk-sortable-handle uk-margin-xsmall-right uk-text-center" uk-icon="icon: table"></span>Item 3
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 4
+            <span class="uk-sortable-handle uk-margin-xsmall-right uk-text-center" uk-icon="icon: table"></span>Item 4
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 5
+            <span class="uk-sortable-handle uk-margin-xsmall-right uk-text-center" uk-icon="icon: table"></span>Item 5
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 6
+            <span class="uk-sortable-handle uk-margin-xsmall-right uk-text-center" uk-icon="icon: table"></span>Item 6
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 7
+            <span class="uk-sortable-handle uk-margin-xsmall-right uk-text-center" uk-icon="icon: table"></span>Item 7
         </div>
     </li>
     <li>
         <div class="uk-card uk-card-default uk-card-body">
-            <span class="uk-sortable-handle uk-margin-small-right uk-text-center" uk-icon="icon: table"></span>Item 8
+            <span class="uk-sortable-handle uk-margin-xsmall-right uk-text-center" uk-icon="icon: table"></span>Item 8
         </div>
     </li>
 </ul>

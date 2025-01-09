@@ -22,7 +22,7 @@ To apply this component, add the `uk-lightbox` attribute to a container to turn 
 
 ***
 
-## Alt Attribute
+## Alt attribute
 
 To add an `alt` attribute to the image in the lightbox, set the `data-alt` attribute on an anchor.
 
@@ -129,6 +129,117 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 
 ***
 
+## Navigations
+
+By default, the lightbox shows a slidenav from the [Slidenav component](slidenav.md). To hide the slidenav, set the `slidenav: false` option. To show an item-based navigation, for example, from the [Thumbnav component](thumbnav.md) or [Dotnav component](dotnav.md), set the `nav` option to `thumbnav` or `dotnav`. 
+
+```html
+<div uk-lightbox="slidenav: false; nav: thumbnav">
+    <a href="image.jpg"></a>
+</div>
+```
+
+```example
+<div class="uk-h3">Thumbnav</div>
+<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="nav: thumbnav; slidenav: false">
+    <div>
+        <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
+            <img src="images/light.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+</div>
+
+<div class="uk-h3">Dotnav</div>
+<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="nav: dotnav; slidenav: false">
+    <div>
+        <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
+            <img src="images/light.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+</div>
+```
+
+***
+
+## Counter
+
+To show a counter with the current item number and the total number of items, add the `counter: true` option.
+
+```html
+<div uk-lightbox="counter: true">
+    <a href="image.jpg"></a>
+</div>
+```
+
+```example
+<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="counter: true">
+    <div>
+        <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
+            <img src="images/light.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+</div>
+```
+
+***
+
+## Color mode
+
+To adapt the color of the overlaying controls for better visibility depending on the lightbox content, use the `data-attrs` option to add the `.uk-inverse-light` or `.uk-inverse.dark` class from the [Inverse component](inverse.md).
+
+```html
+<div uk-lightbox>
+    <a href="image.jpg" data-attrs="class: uk-inverse-light"></a>
+</div>
+```
+
+```example
+<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="nav: thumbnav; slidenav: false">
+    <div>
+        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2" data-attrs="class: uk-inverse-light">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3" data-attrs="class: uk-inverse-dark">
+            <img src="images/light.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+</div>
+```
+
+***
+
 ## Content sources
 
 A lightbox is not restricted to images. Other media, like videos, can be displayed as well. The video will pause whenever it's not visible and resume once it becomes visible again. To display a poster image for a video, set the `data-poster` attribute.
@@ -170,7 +281,43 @@ The Lightbox uses the `href` attribute to figure out the type of the linked cont
 
 ***
 
-## Custom Attributes
+## Delay controls
+
+By default, the controls are hidden after a short time if the mouse doesn't move. Set the `delay-controls: 0` option to always show the controls.
+
+```html
+<div uk-lightbox="delay-controls: 0">
+    <a href="image.jpg"></a>
+</div>
+```
+
+```example
+<div uk-lightbox="delay-controls: 0">
+    <a class="uk-button uk-button-default" href="images/photo.jpg" data-caption="Caption">Open Lightbox</a>
+</div>
+```
+
+***
+
+## BG close
+
+By default, the lightbox closes if the background is clicked. To prevent this behavior, set the `bg-close: false` option.
+
+```html
+<div uk-lightbox="bg-close: false">
+    <a href="image.jpg"></a>
+</div>
+```
+
+```example
+<div uk-lightbox="bg-close: false">
+    <a class="uk-button uk-button-default" href="images/photo.jpg" data-caption="Caption">Open Lightbox</a>
+</div>
+```
+
+***
+
+## Custom attributes
 
 You can add custom attributes to lightbox content items by using the `data-attrs` attribute. The attributes are passed like the usual component options, e.g. `data-attrs="width: 1280; height: 720;"`
 
@@ -188,19 +335,94 @@ You can add custom attributes to lightbox content items by using the `data-attrs
 
 ***
 
+## Custom template
+
+This is the default lightbox template.
+
+```html
+<div class="uk-lightbox uk-overflow-hidden">
+    <div class="uk-lightbox-items"></div>
+    <div class="uk-position-top-right uk-position-small uk-transition-fade" uk-inverse>
+        <button class="uk-lightbox-close uk-close-large" type="button" uk-close></button>
+    </div>
+    <div class="uk-position-center-left uk-position-medium uk-transition-fade" uk-inverse>
+        <a class="uk-lightbox-slidenav" href uk-slidenav-previous uk-lightbox-item="previous"></a>
+    </div>
+    <div class="uk-position-center-right uk-position-medium uk-transition-fade" uk-inverse>
+        <a class="uk-lightbox-slidenav" href uk-slidenav-next uk-lightbox-item="next"></a>
+    </div>
+    <div class="uk-position-center-right uk-position-medium" uk-inverse uk-toggle="cls: uk-position-center-right uk-position-bottom-center; mode: media; media: @s">
+        <ul class="uk-lightbox-thumbnav uk-thumbnav uk-thumbnav-vertical" uk-toggle="cls: uk-thumbnav-vertical; mode: media; media: @s"></ul>
+        <ul class="uk-lightbox-dotnav uk-dotnav uk-dotnav-vertical" uk-toggle="cls: uk-dotnav-vertical; mode: media; media: @s"></ul>
+    </div>
+    <div class="uk-lightbox-counter uk-text-large uk-position-top-left uk-position-small uk-transition-fade" uk-inverse></div>
+    <div class="uk-lightbox-caption uk-position-bottom uk-text-center uk-transition-slide-bottom uk-transition-opaque"></div>
+</div>
+```
+
+To override the default lightbox template, add the `template: #ID` option to link it to a `template` element with the new lightbox layout.
+
+```html
+<template id="js-lightbox-template">…</template>
+
+<div uk-lightbox="template: #js-lightbox-template">…</div>
+```
+
+```example
+<template id="js-lightbox-template">
+    <div class="uk-lightbox uk-overflow-hidden">
+        <div class="uk-lightbox-items"></div>
+        <div class="uk-position-top-right uk-position-small uk-transition-fade" uk-inverse>
+            <button class="uk-lightbox-close uk-close-large" type="button" uk-close></button>
+        </div>
+        <div class="uk-position-bottom uk-position-medium uk-text-center uk-transition-fade" uk-inverse>
+            <div class="uk-grid-small uk-width-auto uk-flex-inline uk-flex-middle" uk-grid>
+                <div><a class="uk-lightbox-slidenav" href uk-slidenav-previous uk-lightbox-item="previous"></a></div>
+                <div><div class="uk-lightbox-counter"></div></div>
+                <div><a class="uk-lightbox-slidenav" href uk-slidenav-next uk-lightbox-item="next"></a></div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="template: #js-lightbox-template; counter: true">
+    <div>
+        <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
+            <img src="images/photo.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+    <div>
+        <a class="uk-inline" href="images/light.jpg" data-caption="Caption 3">
+            <img src="images/light.jpg" width="1800" height="1200" alt="">
+        </a>
+    </div>
+</div>
+```
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option              | Value          | Default | Description                                            |
-| ------------------- | -------------- | ------- | ------------------------------------------------------ |
-| `animation`         | String         | `slide` | Lightbox animation mode (`slide`, `fade` or `scale`).  |
-| `autoplay`          | Boolean        | `false` | Lightbox autoplays.                                    |
-| `autoplay-interval` | Number         | `7000`  | The delay between switching slides in autoplay mode.   |
-| `pause-on-hover`    | Boolean        | `false` | Pause autoplay mode on hover.                          |
-| `video-autoplay`    | Boolean        | `false` | Lightbox videos autoplay.                              |
-| `index`             | String, Number | `0`     | Lightbox item to show. 0 based index.                  |
-| `toggle`            | CSS selector   | `a`     | Toggle selector - opens the Lightbox Panel upon click. |
+| Option              | Value           | Default | Description                                                                                                |
+|---------------------|-----------------|---------|------------------------------------------------------------------------------------------------------------|
+| `animation`         | String          | `slide` | Lightbox animation mode (`slide`, `fade` or `scale`).                                                      |
+| `autoplay`          | Boolean         | `false` | Lightbox autoplays.                                                                                        |
+| `autoplay-interval` | Number          | `7000`  | The delay between switching slides in autoplay mode.                                                       |
+| `pause-on-hover`    | Boolean         | `false` | Pause autoplay mode on hover.                                                                              |
+| `video-autoplay`    | Boolean, String | `false` | Lightbox videos autoplay. A value of `inline` will autoplay the video, make it muted and without controls. |
+| `counter`           | Boolean         | `false` | Lightbox shows counter.                                                                                    |
+| `nav`               | Boolean, String | `false` | Lightbox navigation (`dotnav`, `thumbnav`).                                                                |
+| `slidenav`          | Boolean         | `true`  | Lightbox shows slidenav controls.                                                                          |
+| `index`             | String, Number  | `0`     | Lightbox item to show. 0 based index.                                                                      |
+| `delay-controls`    | Number          | `3000`  | Delay time before controls fade out in ms. Setting `0` will prevent hiding controls.                       |
+| `toggle`            | CSS selector    | `a`     | Toggle selector - opens the Lightbox Panel upon click.                                                     |
 
 ***
 
@@ -242,20 +464,23 @@ Hides the Lightbox's Panel.
 
 If you only want to use the lightbox panel directly through the JS API, you can set the following options.
 
-| Option              | Value   | Default        | Description                                                                                           |
-| ------------------- | ------- | -------------- | ----------------------------------------------------------------------------------------------------- |
-| `animation`         | String  | `slide`        | Lightbox animation mode (`slide`, `fade` or `scale`).                                                 |
-| `autoplay`          | Boolean | `false`        | Lightbox autoplays.                                                                                   |
-| `autoplay-interval` | Number  | `7000`         | The delay between switching slides in autoplay mode.                                                  |
-| `pause-on-hover`    | Boolean | `false`        | Pause autoplay mode on hover.                                                                         |
-| `video-autoplay`    | Boolean | `false`        | Lightbox videos autoplay.                                                                             |
-| `index`             | Number  | `0`            | The initial item to show. (zero-based)                                                                |
-| `velocity`          | Number  | `2`            | The animation velocity (pixel/ms).                                                                    |
-| `preload`           | Number  | `1`            | The number of items to preload. (left and right of the currently active item)                         |
-| `items`             | Array   | `[]`           | An array of items to display, e.g. `[{source: 'images/size1.jpg', caption: '900x600'}]`               |
-| `template`          | String  | Default markup | The template string.                                                                                  |
-| `delay-controls`    | Number  | `3000`         | Delay time before controls fade out in ms.                                                            |
-| `container`         | String  | `body`         | Define a target container via a selector to specify where the Lightbox should be appended in the DOM. |
+| Option              | Value           | Default        | Description                                                                                                |
+| ------------------- | --------------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
+| `animation`         | String          | `slide`        | Lightbox animation mode (`slide`, `fade` or `scale`).                                                      |
+| `autoplay`          | Boolean         | `false`        | Lightbox autoplays.                                                                                        |
+| `autoplay-interval` | Number          | `7000`         | The delay between switching slides in autoplay mode.                                                       |
+| `pause-on-hover`    | Boolean         | `false`        | Pause autoplay mode on hover.                                                                              |
+| `video-autoplay`    | Boolean, String | `false`        | Lightbox videos autoplay. A value of `inline` will autoplay the video, make it muted and without controls. |
+| `counter`           | Boolean         | `false`        | Lightbox shows counter.                                                                                    |
+| `nav`               | Boolean, String | `false`        | Lightbox navigation (`dotnav`, `thumbnav`).                                                                |
+| `slidenav`          | Boolean         | `true`         | Lightbox shows slidenav controls.                                                                          |
+| `index`             | Number          | `0`            | The initial item to show. (zero-based)                                                                     |
+| `velocity`          | Number          | `2`            | The animation velocity (pixel/ms).                                                                         |
+| `preload`           | Number          | `1`            | The number of items to preload. (left and right of the currently active item)                              |
+| `items`             | Array           | `[]`           | An array of items to display, e.g. `[{source: 'images/size1.jpg', caption: '900x600'}]`                    |
+| `template`          | String          | Default markup | The template string.                                                                                       |
+| `delay-controls`    | Number          | `3000`         | Delay time before controls fade out in ms. Setting `0` will prevent hiding controls.                       |
+| `container`         | String          | `body`         | Define a target container via a selector to specify where the Lightbox should be appended in the DOM.      |
 
 ### Events
 

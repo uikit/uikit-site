@@ -219,3 +219,18 @@ Add one of these useful classes to wrap your text.
     </div>
 </div>
 ```
+
+***
+
+## Text stroke
+
+Add the `.uk-text-stroke` class to create an outlined heading.
+
+```example
+<h1 class="uk-heading-small uk-text-stroke">Small</h1>
+<h1 class="uk-heading-medium uk-text-stroke">Medium</h1>
+<h1 class="uk-heading-large uk-text-stroke">Large</h1>
+<h1 class="uk-heading-xlarge uk-text-stroke">X-Large</h1>
+<h1 class="uk-heading-2xlarge uk-text-stroke">2X-Large</h1>
+<h1 class="uk-heading-3xlarge uk-text-stroke">3X-Large</h1>
+```
