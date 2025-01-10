@@ -1,4 +1,4 @@
-FROM node:20 as build
+FROM node:22 as build
 
 # environment variables
 ARG COMMIT_HASH=empty
