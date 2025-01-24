@@ -8,13 +8,13 @@ To apply this component, add the `uk-countdown` attribute to a container element
 
 Add the following classes to child elements to apply the necessary functionality and styling.
 
-| Class                   | Description                                                 |
-|-------------------------|-------------------------------------------------------------|
-| `.uk-countdown-days`    | Add this class to indicate the days to be counted down.     |
-| `.uk-countdown-hours`   | Add this class to indicate the hours to be counted down.    |
-| `.uk-countdown-minutes` | Add this class to indicate the minutes to be counted down.  |
-| `.uk-countdown-seconds` | Add this class to indicate the seconds to be counted down.  |
-| `.uk-countdown-number`  | This class adds the necessary style to a countdown number.  |
+| Class                   | Description                                                |
+| ----------------------- | ---------------------------------------------------------- |
+| `.uk-countdown-days`    | Add this class to indicate the days to be counted down.    |
+| `.uk-countdown-hours`   | Add this class to indicate the hours to be counted down.   |
+| `.uk-countdown-minutes` | Add this class to indicate the minutes to be counted down. |
+| `.uk-countdown-seconds` | Add this class to indicate the seconds to be counted down. |
+| `.uk-countdown-number`  | This class adds the necessary style to a countdown number. |
 
 ```html
 <div uk-countdown="date: {%isodate%}">
@@ -124,9 +124,9 @@ To add a label to each number, use the `.uk-countdown-label` class.
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. For more information, take a look at the chapter on [component configuration](javascript.md#component-configuration).
 
 | Option   | Value   | Default | Description                                                                                                                                         |
-|----------|---------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------- | ------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `date`   | String  | `false` | Any string parsable by ```Date.parse```. See [Reference](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse). |
-| `reload` | Boolean | `false` | Reload page after countdown reaches end. The page is only reloaded, if the timer has previously been started once.                                  |
+| `reload` | Boolean | `false` | Reload page after countdown expires. Initially expired countdowns won't reload the page.                                                            |
 
 ***
 
