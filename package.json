@@ -11,14 +11,14 @@
     },
     "packageManager": "pnpm@9.9.0",
     "devDependencies": {
-        "@docsearch/css": "^3.8.2",
-        "@docsearch/js": "^3.8.2",
-        "@eslint/js": "^9.18.0",
+        "@docsearch/css": "^3.8.3",
+        "@docsearch/js": "^3.8.3",
+        "@eslint/js": "^9.19.0",
         "@sveltejs/adapter-static": "3.0.8",
-        "@sveltejs/kit": "^2.16.0",
+        "@sveltejs/kit": "^2.16.1",
         "@sveltejs/vite-plugin-svelte": "^5.0.3",
         "clipboard": "2.0.11",
-        "eslint": "^9.18.0",
+        "eslint": "^9.19.0",
         "eslint-config-prettier": "^10.0.1",
         "eslint-plugin-svelte": "^2.46.1",
         "execa": "^9.5.2",
@@ -32,10 +32,10 @@
         "prettier": "^3.4.2",
         "prettier-plugin-organize-imports": "^4.1.0",
         "prettier-plugin-svelte": "^3.3.3",
-        "svelte": "^5.19.0",
+        "svelte": "^5.19.3",
         "symlink-dir": "^6.0.4",
         "uikit": "3.22.3",
-        "vite": "^6.0.9"
+        "vite": "^6.0.11"
     },
     "pnpm": {
         "peerDependencyRules": {
