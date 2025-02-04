@@ -637,7 +637,7 @@ Use the [Cover component](cover.md) so that images cover the whole item area and
 
 ```html
 <div uk-slider>
-    <div class="uk-slider-items uk-child-width-1-3@m uk-grid-match" uk-height-viewport="min-height: 300">
+    <div class="uk-slider-items uk-child-width-1-3@m uk-grid-match" uk-height-viewport="min: 300">
         <div>
             <div class="uk-cover-container">
                 <img src="" alt="" uk-cover>

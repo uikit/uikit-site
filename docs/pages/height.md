@@ -41,12 +41,13 @@ UIkit provides a number of useful classes to alter an element's height.
 
 Add the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `offset-top`, `offset-bottom` or `expand` options to the attribute. [Learn more](javascript.md#component-configuration)
 
-| Option          | Value                                | Default | Description                                                                                                                                                                               |
-| --------------- | ------------------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `offset-top`    | Boolean, CSS Selector                | `false` | Subtracts the element's (true) or given element's (CSS Selector) offset top from its height.                                                                                              |
-| `offset-bottom` | Boolean, Number, Pixel, CSS Selector | `false` | Subtracts the height (true) of the sibling that immediately follows the element, the given percentage (Number), Pixel (px) value from element's own height or the given element's height. |
-| `expand`        | Boolean                              | `false` | Expands the element's height to make a short page fill the viewport.                                                                                                                      |
-| `min-height`    | Number                               | `0`     | Sets a minimum height. Useful if all children are positioned absolutely.                                                                                                                  |
+| Option          | Value                                | Default      | Description                                                                                                                                                                               |
+|-----------------|--------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `offset-top`    | Boolean, CSS Selector                | `false`      | Subtracts the element's (true) or given element's (CSS Selector) offset top from its height.                                                                                              |
+| `offset-bottom` | Boolean, Number, Pixel, CSS Selector | `false`      | Subtracts the height (true) of the sibling that immediately follows the element, the given percentage (Number), Pixel (px) value from element's own height or the given element's height. |
+| `expand`        | Boolean                              | `false`      | Expands the element's height to make a short page fill the viewport.                                                                                                                      |
+| `min`           | Number                               | `0`          | Sets a minimum height. Useful if all children are positioned absolutely.                                                                                                                  |
+| `property`      | String                               | `min-height` | The CSS property to set. (min-height, height, max-height)                                                                                                                                 |
 
 ```html
 <div uk-height-viewport></div>
@@ -57,7 +58,7 @@ Add the `uk-height-viewport` attribute to create a container that fills the heig
 
 <div uk-height-viewport="expand: true"></div>
 
-<div uk-height-viewport="min-height: 300"></div>
+<div uk-height-viewport="min: 300"></div>
 ```
 
 You can view examples in the tests for [Height Viewport](../assets/uikit/tests/height-viewport.html) and [Height Expand](../assets/uikit/tests/height-expand.html).

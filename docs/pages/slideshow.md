@@ -277,7 +277,7 @@ Adding the `uk-height-viewport` attribute from the [Height component](height.md#
 
 ```html
 <div uk-slideshow="ratio: false">
-    <ul class="uk-slideshow-items" uk-height-viewport="min-height: 300">…</ul>
+    <ul class="uk-slideshow-items" uk-height-viewport="min: 300">…</ul>
 </div>
 ```
 
