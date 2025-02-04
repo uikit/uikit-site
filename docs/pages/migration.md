@@ -4,6 +4,16 @@
 
 ***
 
+## Migration from UIkit 3.22 to 3.23
+
+UIkit 3.23 renames the `minHeight` option to `min` in the [Height Viewport component](height.md#viewport-height).
+
+| Option      | Replace with |
+| ----------- | ------------ |
+| `minHeight` | `min`        |
+
+***
+
 ## Migration from UIkit 3.21 to 3.22
 
 The [Lightbox component](lightbox.md) got reworked. We removed the `uk-lightbox-toolbar-icon` and `uk-lightbox-button` classes including all their Less variables starting with `@lightbox-toolbar-icon-*` and `@lightbox-button-*`. If you have customized the lightbox using one of these classes or Less variables, you have to remove it.
