@@ -33,11 +33,11 @@
             </ul>
 
             <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-                {#each Object.entries(navigation) as [category, pages]}
+                {#each Object.entries(navigation) as [category, pages] (category)}
                     <li class="uk-nav-header">
                         {category}
                     </li>
-                    {#each Object.entries(pages) as [label, slug]}
+                    {#each Object.entries(pages) as [label, slug] (slug)}
                         <li class:uk-active={page.params.slug === slug}>
                             <a
                                 href="{base}/docs/{slug}"

@@ -10,11 +10,7 @@
 
 <svelte:head>
     {#if !dev}
-        <script
-            src="{assets}/analytics.js?{PUBLIC_CACHE}"
-            onload={`analytics('G-CFB78X3F60', { anonymize_ip: true })`}
-            defer
-        ></script>
+        <script src="{assets}/analytics.js?{PUBLIC_CACHE}" defer></script>
     {/if}
 </svelte:head>
 

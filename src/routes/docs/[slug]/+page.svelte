@@ -18,12 +18,12 @@
 <div class="tm-sidebar-left uk-visible@m">
     <h3>Documentation</h3>
 
-    {#each Object.entries(data.navigation) as [category, pages], index}
+    {#each Object.entries(data.navigation) as [category, pages], index (category)}
         <ul class="uk-nav uk-nav-default tm-nav" class:uk-margin-top={index}>
             <li class="uk-nav-header">
                 {category}
             </li>
-            {#each Object.entries(pages) as [label, slug]}
+            {#each Object.entries(pages) as [label, slug] (slug)}
                 <li class:uk-active={page.params.slug === slug}>
                     <a
                         href="{base}/docs/{slug}"
@@ -45,7 +45,7 @@
                     class="uk-nav uk-nav-default tm-nav"
                     uk-scrollspy-nav="closest: li; scroll: true; offset: 20"
                 >
-                    {#each data.doc.ids as { title, id }}
+                    {#each data.doc.ids as { title, id } (id)}
                         <li>
                             <a href="#{id}">{title}</a>
                         </li>

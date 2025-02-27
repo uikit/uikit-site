@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 function analytics(id, config = {}) {
     gtag('js', new Date());
     gtag('config', id, config);
@@ -25,3 +24,5 @@ function getScript(src) {
 
     document.head.appendChild(script);
 }
+
+analytics('G-CFB78X3F60', { anonymize_ip: true });

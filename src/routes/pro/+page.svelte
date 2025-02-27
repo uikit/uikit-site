@@ -154,7 +154,7 @@
         </div>
 
         <div class="uk-child-width-1-4@m uk-child-width-1-2@s" uk-grid>
-            {#each ['line-gallery', 'union-dental', 'devstack', 'design-escapes', 'paladin', 'kitchen-daily', 'creative-hub', 'tech-space'] as id}
+            {#each ['line-gallery', 'union-dental', 'devstack', 'design-escapes', 'paladin', 'kitchen-daily', 'creative-hub', 'tech-space'] as id (id)}
                 <div>
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
                         <img
@@ -193,7 +193,7 @@
         </div>
 
         <div class="uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2" uk-grid>
-            {#each ['line-gallery', 'union-dental', 'devstack', 'design-escapes', 'paladin', 'kitchen-daily', 'creative-hub', 'tech-space', 'framerate', 'design-bites', 'matthew-taylor', 'soda', 'makai', 'balou', 'yoko'] as id}
+            {#each ['line-gallery', 'union-dental', 'devstack', 'design-escapes', 'paladin', 'kitchen-daily', 'creative-hub', 'tech-space', 'framerate', 'design-bites', 'matthew-taylor', 'soda', 'makai', 'balou', 'yoko'] as id (id)}
                 <div>
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
                         <img
