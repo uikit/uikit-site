@@ -29,10 +29,10 @@
         "less-plugin-clean-css": "^1.6.0",
         "make-dir-cli": "^4.0.0",
         "marked": "^15.0.7",
-        "prettier": "^3.5.2",
+        "prettier": "^3.5.3",
         "prettier-plugin-organize-imports": "^4.1.0",
         "prettier-plugin-svelte": "^3.3.3",
-        "svelte": "^5.20.5",
+        "svelte": "^5.21.0",
         "symlink-dir": "^6.0.4",
         "uikit": "3.23.1",
         "vite": "^6.2.0"
