@@ -82,7 +82,7 @@ To apply an offset to when the element should start being sticky, add the `start
 
 ## End
 
-To apply an offset to when the element should stop being sticky, add the `stop` option. The value can be in vh, % and px. It supports basic mathematics operands + and -. A value of `0` means that the element's top border and viewport's top border intersect, which would cause the element not to be sticky at all if the start is also set to `0`. A CSS Selector will set the end to the selected element's bottom border and the element's bottom border. `false` will make the element stick until the end of the page. `true` selects the parent element.
+To apply an offset to when the element should stop being sticky, add the `end` option. The value can be in vh, % and px. It supports basic mathematics operands + and -. A value of `0` means that the element's top border and viewport's top border intersect, which would cause the element not to be sticky at all if the start is also set to `0`. A CSS Selector will set the end to the selected element's bottom border and the element's bottom border. `false` will make the element stick until the end of the page. `true` selects the parent element.
 
 ```html
 <!-- Sticks until 200px scrolling -->
