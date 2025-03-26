@@ -6,11 +6,13 @@
     import { dev } from '$app/environment';
 
     let { data, children } = $props();
+
+    const analyticsScript = `${assets}/analytics.js?${PUBLIC_CACHE}`;
 </script>
 
 <svelte:head>
     {#if !dev}
-        <script src="{assets}/analytics.js?{PUBLIC_CACHE}" defer></script>
+        <script src={analyticsScript} defer></script>
     {/if}
 </svelte:head>
 
