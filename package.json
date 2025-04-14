@@ -15,11 +15,11 @@
         "@docsearch/js": "^3.9.0",
         "@eslint/js": "^9.24.0",
         "@sveltejs/adapter-static": "3.0.8",
-        "@sveltejs/kit": "^2.20.4",
+        "@sveltejs/kit": "^2.20.6",
         "@sveltejs/vite-plugin-svelte": "^5.0.3",
         "clipboard": "2.0.11",
         "eslint": "^9.24.0",
-        "eslint-config-prettier": "^10.1.1",
+        "eslint-config-prettier": "^10.1.2",
         "eslint-plugin-svelte": "^3.5.1",
         "execa": "^9.5.2",
         "github-slugger": "^2.0.0",
@@ -32,10 +32,10 @@
         "prettier": "^3.5.3",
         "prettier-plugin-organize-imports": "^4.1.0",
         "prettier-plugin-svelte": "^3.3.3",
-        "svelte": "^5.25.8",
+        "svelte": "^5.26.3",
         "symlink-dir": "^6.0.5",
         "uikit": "3.23.6",
-        "vite": "^6.2.5"
+        "vite": "^6.2.6"
     },
     "pnpm": {
         "peerDependencyRules": {
