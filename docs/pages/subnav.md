@@ -10,14 +10,13 @@ To apply this component, use the following classes. To align a subnav, for examp
 |---------------|---------------------------------------------------------------------------------------------------------------------|
 | `.uk-subnav`  | Add this class to a `<ul>` element to define the Subnav component. Use `<a>` elements as nav items within the list. |
 | `.uk-active ` | Add this class to a list item to apply an active state.                                                             |
-
-To add list items without a link, use a `<span>` element instead of an `<a>`. Alternatively, disable an `<a>` element by adding the `.uk-disabled` class to the `<li>` element and remove the `href` attribute from the anchor to make it inaccessible through keyboard navigation.
+| `.uk-disabled`   | Add this class to a list item to apply a disabled state and use a `<span>` instead of an `<a>` element.                        |
 
 ```html
 <ul class="uk-subnav">
     <li class="uk-active"><a href=""></a></li>
     <li><a href=""></a></li>
-    <li><span></span></li>
+    <li class="uk-disable"><span></span></li>
 </ul>
 ```
 
@@ -26,7 +25,7 @@ To add list items without a link, use a `<span>` element instead of an `<a>`. Al
     <li class="uk-active"><a href="#">Active</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
-    <li><span>Disabled</span></li>
+    <li class="uk-disable"><span>Disabled</span></li>
 </ul>
 ```
 
