@@ -28,14 +28,14 @@
         "less": "^4.3.0",
         "less-plugin-clean-css": "^1.6.0",
         "make-dir-cli": "^4.0.0",
-        "marked": "^15.0.8",
+        "marked": "^15.0.11",
         "prettier": "^3.5.3",
         "prettier-plugin-organize-imports": "^4.1.0",
         "prettier-plugin-svelte": "^3.3.3",
-        "svelte": "^5.28.1",
+        "svelte": "^5.28.2",
         "symlink-dir": "^6.0.5",
         "uikit": "3.23.6",
-        "vite": "^6.3.2"
+        "vite": "^6.3.3"
     },
     "pnpm": {
         "peerDependencyRules": {
