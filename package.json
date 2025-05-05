@@ -13,12 +13,12 @@
     "devDependencies": {
         "@docsearch/css": "^3.9.0",
         "@docsearch/js": "^3.9.0",
-        "@eslint/js": "^9.25.1",
+        "@eslint/js": "^9.26.0",
         "@sveltejs/adapter-static": "3.0.8",
-        "@sveltejs/kit": "^2.20.7",
+        "@sveltejs/kit": "^2.20.8",
         "@sveltejs/vite-plugin-svelte": "^5.0.3",
         "clipboard": "2.0.11",
-        "eslint": "^9.25.1",
+        "eslint": "^9.26.0",
         "eslint-config-prettier": "^10.1.2",
         "eslint-plugin-svelte": "^3.5.1",
         "execa": "^9.5.2",
@@ -35,7 +35,7 @@
         "svelte": "^5.28.2",
         "symlink-dir": "^6.0.5",
         "uikit": "3.23.6",
-        "vite": "^6.3.3"
+        "vite": "^6.3.5"
     },
     "pnpm": {
         "peerDependencyRules": {
