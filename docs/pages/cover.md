@@ -54,7 +54,7 @@ To apply the Cover component to an iframe, you need to add the `uk-cover` attrib
 
 ```example
 <div class="uk-cover-container uk-height-medium">
-    <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent" width="1920" height="1080" allowfullscreen uk-cover></iframe>
+    <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?playsinline=1&amp;rel=0&amp;controls=0&amp;loop=1" width="1920" height="1080" allowfullscreen uk-cover></iframe>
 </div>
 ```
 
