@@ -281,7 +281,7 @@ The search icon can be used as a toggle to open the search inside a navbar – a
 
         <div>
             <a class="uk-navbar-toggle" href uk-search-icon></a>
-            <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; flip: false">
+            <div class="uk-navbar-dropdown" uk-drop="mode: click; boundary: !.uk-navbar; flip: false">
 
                 <div class="uk-grid-small uk-flex-middle" uk-grid>
                     <div class="uk-width-expand">
