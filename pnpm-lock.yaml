@@ -78,8 +78,8 @@ importers:
         specifier: ^6.0.5
         version: 6.0.5
       uikit:
-        specifier: 3.23.8
-        version: 3.23.8
+        specifier: 3.23.9
+        version: 3.23.9
       vite:
         specifier: ^6.3.5
         version: 6.3.5(less@4.3.0)
@@ -1253,8 +1253,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  uikit@3.23.8:
-    resolution: {integrity: sha512-5KB0w3/zs2P6v9XtGjbxXUwSr0Bq7JVvJMO3a8iEnzXqUUb3m1SdOmfJl4Hdu3NdJYPiAKuQ+l/8I0qeF3MJ/A==}
+  uikit@3.23.9:
+    resolution: {integrity: sha512-rGb81dj2XKiW/OCn3CKqtBUcKl6DKFAnEFpyIDdMEkfEAon69nbebg/Eht08d0kPRysyMAXfn3sI5Ee8bnONww==}
 
   unicorn-magic@0.3.0:
     resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
@@ -2431,7 +2431,7 @@ snapshots:
 
   typescript@5.7.3: {}
 
-  uikit@3.23.8: {}
+  uikit@3.23.9: {}
 
   unicorn-magic@0.3.0: {}
 
