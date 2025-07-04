@@ -43,7 +43,7 @@ The dropbar is typically used together with the [Navbar component](navbar.md).
 
                     <ul class="uk-navbar-nav">
                         <li>
-                            <a class="uk-navbar-toggle uk-navbar-toggle-animate" href uk-navbar-toggle-icon></a>
+                            <a href>Parent</a>
                             <div class="uk-dropbar uk-dropbar-top" uk-drop="stretch: x">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                         </li>
                     </ul>
