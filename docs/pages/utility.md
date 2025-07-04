@@ -231,6 +231,84 @@ You can change the target heights by adding the `selContainer` and `selContent` 
 
 ***
 
+## Overflow Fade
+
+Add the `uk-overflow-fade` attribute to create a container that provides horizontal or vertical scrolling whenever the elements content is wider or higher than the container itself. It behaves similar to the `uk-overflow-auto` class but instead of showing a scrollbar it fades the child items out, indicating that more content is available when scrollling. This UI pattern is especially usefull for navigation which should not wrap into the next line.
+
+```html
+<div uk-overflow-fade>
+    …
+</div>
+```
+
+It's often used within the [Modal component](modal.md).
+
+```example
+<div uk-overflow-fade>
+    <ul class="uk-subnav uk-flex-nowrap" uk-dropnav="mode: click; container: body">
+        <li class="uk-active"><a href="#">Active</a></li>
+        <li>
+            <a href>Parent <span uk-drop-parent-icon></span></a>
+            <div class="uk-dropdown">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div>
+```
+
+It also work in the vertical direction.
+
+```example
+<div class="uk-height-medium uk-width-small uk-margin" uk-overflow-fade>
+    <ul class="uk-tab-left uk-flex-nowrap" uk-tab>
+        <li class="uk-active"><a href="#">Active</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+    </ul>
+</div>
+```
+
+***
+
 ## Resize
 
 These utilities provide different classes for resizing elements.
