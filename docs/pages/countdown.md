@@ -6,7 +6,7 @@
 
 To apply this component, add the `uk-countdown` attribute to a container element and define a date when the countdown should expire. Just add `date: YYYY-MM-DDThh:mm:ssTZD` option to the attribute, using the [ISO 8601 format](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#ECMAScript_5_ISO-8601_format_support), e.g. `{%isodate%}` (UTC time).
 
-Add the following classes to child elements to apply the necessary functionality and styling.
+Add the following classes to child elements to apply the necessary functionality.
 
 | Class                   | Description                                                |
 | ----------------------- | ---------------------------------------------------------- |
@@ -14,7 +14,7 @@ Add the following classes to child elements to apply the necessary functionality
 | `.uk-countdown-hours`   | Add this class to indicate the hours to be counted down.   |
 | `.uk-countdown-minutes` | Add this class to indicate the minutes to be counted down. |
 | `.uk-countdown-seconds` | Add this class to indicate the seconds to be counted down. |
-| `.uk-countdown-number`  | This class adds the necessary style to a countdown number. |
+| `.uk-countdown-number`  | Add this class to use it as selector for custom CSS style. |
 
 ```html
 <div uk-countdown="date: {%isodate%}">
@@ -25,8 +25,14 @@ Add the following classes to child elements to apply the necessary functionality
 </div>
 ```
 
+To style the countdown use style classes from the [Base component](base.md), [Heading component](heading.md) or [Text component](text.md).
+
+```html
+<div class="uk-h1" uk-countdown="date: {%isodate%}"></div>
+```
+
 ```example
-<div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="date: {%isodate%}">
+<div class="uk-h1 uk-grid-small uk-child-width-auto uk-flex-middle uk-margin" uk-grid uk-countdown="date: {%isodate%}">
     <div>
         <div class="uk-countdown-number uk-countdown-days"></div>
     </div>
@@ -61,7 +67,7 @@ To insert a separator between each number, use the `.uk-countdown-separator` cla
 ```
 
 ```example
-<div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="date: {%isodate%}">
+<div class="uk-h1 uk-grid-small uk-child-width-auto uk-flex-middle uk-margin" uk-grid uk-countdown="date: {%isodate%}">
     <div>
         <div class="uk-countdown-number uk-countdown-days"></div>
     </div>
@@ -93,26 +99,28 @@ To add a label to each number, use the `.uk-countdown-label` class.
 <div class="uk-countdown-label">Seconds</div>
 ```
 
+To style the labels use style classes from the [Base component](base.md), [Heading component](heading.md) or [Text component](text.md).
+
 ```example
-<div class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: {%isodate%}">
+<div class="uk-grid-small uk-child-width-auto uk-text-center uk-margin" uk-grid uk-countdown="date: {%isodate%}">
     <div>
-        <div class="uk-countdown-number uk-countdown-days"></div>
-        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+        <div class="uk-h1 uk-countdown-number uk-countdown-days"></div>
+        <div class="uk-countdown-label uk-text-small uk-visible@s">Days</div>
     </div>
-    <div class="uk-countdown-separator">:</div>
+    <div class="uk-h1"><div class="uk-countdown-separator">:</div></div>
     <div>
-        <div class="uk-countdown-number uk-countdown-hours"></div>
-        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+        <div class="uk-h1 uk-countdown-number uk-countdown-hours"></div>
+        <div class="uk-countdown-label uk-text-small uk-visible@s">Hours</div>
     </div>
-    <div class="uk-countdown-separator">:</div>
+    <div class="uk-h1"><div class="uk-countdown-separator">:</div></div>
     <div>
-        <div class="uk-countdown-number uk-countdown-minutes"></div>
-        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+        <div class="uk-h1 uk-countdown-number uk-countdown-minutes"></div>
+        <div class="uk-countdown-label uk-text-small uk-visible@s">Minutes</div>
     </div>
-    <div class="uk-countdown-separator">:</div>
+    <div class="uk-h1"><div class="uk-countdown-separator">:</div></div>
     <div>
-        <div class="uk-countdown-number uk-countdown-seconds"></div>
-        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+        <div class="uk-h1 uk-countdown-number uk-countdown-seconds"></div>
+        <div class="uk-countdown-label uk-text-small uk-visible@s">Seconds</div>
     </div>
 </div>
 ```
