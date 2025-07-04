@@ -332,9 +332,12 @@ To apply a large margin to positioned elements, add the `.uk-position-large` cla
 
 This component features a number of general position utility classes:
 
-| Class                   | Description                                   |
-| ----------------------- | --------------------------------------------- |
-| `.uk-position-relative` | Add this class to apply relative positioning. |
-| `.uk-position-absolute` | Add this class to apply absolute positioning. |
-| `.uk-position-fixed`    | Add this class to apply fixed positioning.    |
-| `.uk-position-z-index`  | Add this class to apply a z-index of 1.       |
+| Class                           | Description                                                                          |
+| ------------------------------- | ------------------------------------------------------------------------------------ |
+| `.uk-position-relative`         | Add this class to apply relative positioning.                                        |
+| `.uk-position-absolute`         | Add this class to apply absolute positioning.                                        |
+| `.uk-position-fixed`            | Add this class to apply fixed positioning.                                           |
+| `.uk-position-z-index`          | Add this class to apply a z-index of 1.                                              |
+| `.uk-position-z-index-negative` | Add this class to apply a z-index of -1.                                             |
+| `.uk-position-z-index-high`     | Add this class to apply a high z-index which is the lowest of UIkits z-index stack.  |
+| `.uk-position-z-index-highest`  | Add this class to apply a high z-index which is the highest of UIkits z-index stack. |
