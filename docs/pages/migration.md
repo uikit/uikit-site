@@ -4,6 +4,14 @@
 
 ***
 
+## Migration from UIkit 3.23 to 3.24
+
+UIkit 3.24 refactors the [Countdown component](countdown.md). Almost all Less variables are removed. If you have customized the countdown using Less variables, you have to remove them. Simply search for `@countdown` in your Less files. Instead use text classes from the [Heading component](heading.md) or [Base component](base.md) to style the countdown.
+
+We also deprecated the `automute` option in Video and Cover component. Use `muted` attribute for videos, `mute=1` for YouTube and `muted=1` for Vimeo instead.
+
+***
+
 ## Migration from UIkit 3.22 to 3.23
 
 UIkit 3.23 renames the `minHeight` option to `min` in the [Height Viewport component](height.md#viewport-height).
