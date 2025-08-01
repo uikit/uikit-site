@@ -10,6 +10,8 @@ UIkit 3.24 refactors the [Countdown component](countdown.md). Almost all Less va
 
 We also deprecated the `automute` option in Video and Cover component. Use `muted` attribute for videos, `mute=1` for YouTube and `muted=1` for Vimeo instead.
 
+We removed the `@deprecated` Less variable. If you have set the variable to `true` in your custom UIkit theme, simply remove it and make sure you have applied the migration from [UIkit 3.0 to 3.1](#migration-from-uikit-30-to-31) and [UIkit 3.4 to 3.5](#migration-from-uikit-34-to-35)
+
 ***
 
 ## Migration from UIkit 3.22 to 3.23
