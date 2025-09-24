@@ -233,7 +233,7 @@ You can change the target heights by adding the `selContainer` and `selContent` 
 
 ## Overflow Fade
 
-Add the `uk-overflow-fade` attribute to create a container that provides horizontal or vertical scrolling whenever the elements content is wider or higher than the container itself. It behaves similar to the `uk-overflow-auto` class but instead of showing a scrollbar it fades the child items out, indicating that more content is available when scrollling. This UI pattern is especially usefull for navigation which should not wrap into the next line.
+Add the `uk-overflow-fade` attribute to create a container that provides horizontal or vertical scrolling whenever the elements content is wider or higher than the container itself. It behaves similar to the `uk-overflow-auto` class but instead of showing a scrollbar it fades the child items out, indicating that more content is available when scrollling. This UI pattern is especially useful for navigation which should not wrap into the next line.
 
 ```html
 <div uk-overflow-fade>
