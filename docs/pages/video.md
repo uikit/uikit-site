@@ -51,7 +51,7 @@ There are two autoplay modes. Just add the `autoplay` option to the `uk-video` a
 </div>
 ```
 
-To restart the video from the very beginning after pausing it, add the `restart`option to the `uk-video` attribute.
+To restart the video from the very beginning after pausing it, add the `restart` option to the `uk-video` attribute.
 
 To toggle autoplay on hover using an element other than the video itself, just add `hover-target: SELECTOR` option to the `uk-video` attribute.
 
