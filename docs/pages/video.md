@@ -129,10 +129,11 @@ This also works for embedded iframe videos from YouTube or Vimeo too. Here, no e
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)
 
-| Option     | Value           | Default | Description                                                                                                                                                                       |
-| ---------- | --------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `autoplay` | Boolean, String | `true`  | The video automatically plays/pauses as it's visible/hidden on the page. Additionally, the video can play when its in the viewport or hovered with the mouse (`inview`, `hover`). |
-| `hover-target` | CSS Selector         | `self` | The element that functions as hover toggle when autoplay option is set to `hover`.                                                                                                                                       |
+| Option         | Value                 | Default | Description                                                                                                                                                                       |
+|----------------|-----------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `autoplay`     | Boolean, String       | `true`  | The video automatically plays/pauses as it's visible/hidden on the page. Additionally, the video can play when its in the viewport or hovered with the mouse (`inview`, `hover`). |
+| `restart`      | Boolean               | `false` | Video will seek to the beginning whenever video element's autoplay option pauses the video.                                                                                       |
+| `hover-target` | Boolean, CSS Selector | `false` | The element that functions as hover toggle when autoplay option is set to `hover`. Defaults to the element itself.                                                                |
 
 `autoplay` is the _Primary_ option, and its key may be omitted if it's the only option in the attribute value.
 
