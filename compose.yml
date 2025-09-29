@@ -1,0 +1,8 @@
+services:
+  uikit-site:
+    container_name: uikit-site
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
