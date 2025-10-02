@@ -65,8 +65,6 @@ jobs:
           source: .
           push: true
           targets: ${{ matrix.target }}
-          provenance: false
-          sbom: false
           set: |
             *.tags=${{ steps.meta.outputs.tags }}
             *.platform=${{ matrix.platforms }}
