@@ -40,8 +40,8 @@ jobs:
       attestations: write
       id-token: write
     steps:
-      # - name: Checkout repository
-      #   uses: actions/checkout@v5
+      - name: Checkout repository
+        uses: actions/checkout@v5
 
       # - name: Prepare
       #   run: |
