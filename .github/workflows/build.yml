@@ -64,5 +64,4 @@ jobs:
           targets: default
           set: |
             *.tags=${{ steps.meta.outputs.tags }}
-            *.labels=${{ steps.meta.outputs.labels }}
             *.platform=${{ matrix.platforms }}
