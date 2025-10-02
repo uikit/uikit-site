@@ -355,6 +355,41 @@ Use the modifier `.uk-icon-button` class on an `<a>` element to create an icon b
 
 ***
 
+## Overlay modifier
+
+Use the modifier `.uk-icon-overlay` class to make the icon work best on background images.
+
+```html
+<span class="uk-icon-overlay" uk-icon="play-circle"></a>
+```
+
+```example
+<div class="uk-child-width-1-2@m" uk-grid>
+    <div>
+
+        <a href class="uk-inline uk-dark">
+            <img src="images/light.jpg" width="1800" height="1200" alt="">
+            <div class="uk-position-center">
+                <span class="uk-icon-overlay" href="#" uk-icon="ratio: 3; icon: play-circle"></span>
+            </div>
+        </a>
+
+    </div>
+    <div>
+
+        <a href class="uk-inline uk-light">
+            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+            <div class="uk-position-center">
+                <span class="uk-icon-overlay" href="#" uk-icon="ratio: 3; icon: youtube"></span></li>
+            </div>
+        </a>
+
+    </div>
+</div>
+```
+
+***
+
 ## Image modifier
 
 You can also make any background image scale to the size of an icon. Just add the `.uk-icon-image` class and a background image path.

@@ -43,7 +43,7 @@ By default, a section is blank. That is why it is important to add a modifier cl
 To apply different background colors and paddings, add one of the following classes.
 
 | Class                   | Description                                     |
-|-------------------------|-------------------------------------------------|
+| ----------------------- | ----------------------------------------------- |
 | `.uk-section-default`   | Adds the default background color of your site. |
 | `.uk-section-muted`     | Adds a muted background color.                  |
 | `.uk-section-primary`   | Adds a primary background color.                |
@@ -199,12 +199,25 @@ The `.uk-section-primary` and `.uk-section-secondary` classes are extending the 
 You can add different paddings to each section or remove it altogether.
 
 | Class                         | Description                                                                            |
-|-------------------------------|----------------------------------------------------------------------------------------|
+| ----------------------------- | -------------------------------------------------------------------------------------- |
 | `.uk-section-xsmall`          | Add this class to decrease a section's padding to a minimum.                           |
 | `.uk-section-small`           | Add this class to decrease a section's padding.                                        |
 | `.uk-section-large`           | Add this class to increase a section's padding.                                        |
 | `.uk-section-xlarge`          | Add this class to further increase a section's padding.                                |
 | `.uk-padding-remove-vertical` | Add this class from the [Padding component](padding.md) to remove a section's padding. |
+
+Add one of the following classes to modify the padding in only one direction.
+
+| Class                       | Description                 |
+| --------------------------- | --------------------------- |
+| `.uk-section-xsmall-top`    | Add x-small top padding.    |
+| `.uk-section-xsmall-bottom` | Add x-small bottom padding. |
+| `.uk-section-small-top`     | Add small top padding.      |
+| `.uk-section-small-bottom`  | Add small bottom padding.   |
+| `.uk-section-medium-top`    | Add medium top padding.     |
+| `.uk-section-medium-bottom` | Add medium bottom padding.  |
+| `.uk-section-large-top`     | Add large top padding.      |
+| `.uk-section-large-bottom`  | Add large bottom padding.   |
 
 ```example
 <div class="uk-section uk-section-large uk-section-muted">

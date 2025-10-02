@@ -101,7 +101,7 @@ Add the `disabled` attribute to a form control. It will appear muted.
 
 ## Size modifiers
 
-Add one of the classes to an `<input>`, `<select>` or `<textarea>` element to modify its size.
+Add one of the classes to an `<input>`, `<select>`, `<textarea>`, `<checkbox>` or `<radio>` element to modify its size.
 
 | Class            | Description                                 |
 |------------------|---------------------------------------------|
@@ -113,17 +113,53 @@ Add one of the classes to an `<input>`, `<select>` or `<textarea>` element to mo
 
     <div class="uk-margin">
         <input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large" aria-label="Large">
+        <select class="uk-select uk-form-width-small uk-form-large" aria-label="Large">
+            <option>Option 01</option>
+            <option>Option 02</option>
+            <optgroup label="Optgroup">
+                <option>Option A</option>
+                <option>Option B</option>
+            </optgroup>
+        </select>
+        <input class="uk-checkbox uk-form-large" type="checkbox">
+        <input class="uk-radio uk-form-large" type="radio">
     </div>
 
     <div class="uk-margin">
         <input class="uk-input uk-form-width-medium" type="text" placeholder="Default" aria-label="Default">
+        <select class="uk-select uk-form-width-small aria-label="Default">
+            <option>Option 01</option>
+            <option>Option 02</option>
+            <optgroup label="Optgroup">
+                <option>Option A</option>
+                <option>Option B</option>
+            </optgroup>
+        </select>
+        <input class="uk-checkbox uk-form-large" type="checkbox">
+        <input class="uk-radio uk-form-large" type="radio">
     </div>
 
     <div class="uk-margin">
         <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Small" aria-label="Small">
+        <select class="uk-select uk-form-width-small uk-form-small" aria-label="Small">
+            <option>Option 01</option>
+            <option>Option 02</option>
+            <optgroup label="Optgroup">
+                <option>Option A</option>
+                <option>Option B</option>
+            </optgroup>
+        </select>
+        <input class="uk-checkbox uk-form-small" type="checkbox">
+        <input class="uk-radio uk-form-small" type="radio">
     </div>
 
 </form>
+
+
+
+                            
+
+
 ```
 
 ***
