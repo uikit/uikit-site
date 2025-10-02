@@ -16,10 +16,17 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     outputs:
+      targets: ${{ steps.targets.outputs.matrix }}
       matrix: ${{ steps.generate.outputs.matrix }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+
+      - name: Generate matrix
+        id: targets
+        uses: docker/bake-action/subaction/matrix@v6
+        with:
+          target: default
 
       - name: Generate matrix
         id: generate
@@ -48,7 +55,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY }}/${{ matrix.target }}
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
@@ -73,9 +80,9 @@ jobs:
 
       - name: Export digest
         run: |
-          mkdir -p ${{ runner.temp }}/digests
+          mkdir -p ${{ runner.temp }}/digests-${{ matrix.target}}
           digest="${{ fromJSON(steps.bake.outputs.metadata)[matrix.target]['containerimage.digest'] }}"
-          touch "${{ runner.temp }}/digests/${digest#sha256:}"
+          touch "${{ runner.temp }}/digests-${{ matrix.target}}/${digest#sha256:}"
 
       - name: Upload digest
         uses: actions/upload-artifact@v4
@@ -89,11 +96,15 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - build
+      - prepare
+    strategy:
+      matrix:
+        include: ${{ fromJson(needs.prepare.outputs.targets) }}
     steps:
       - name: Download digests
         uses: actions/download-artifact@v4
         with:
-          path: ${{ runner.temp }}/digests
+          path: ${{ runner.temp }}/digests-${{ matrix.target}}
           pattern: digests-*
           merge-multiple: true
 
@@ -111,17 +122,17 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY }}/${{ matrix.target }}
           tags: |
             type=ref,event=branch
             type=semver,pattern={{version}}
 
       - name: Create manifest list and push
-        working-directory: ${{ runner.temp }}/digests
+        working-directory: ${{ runner.temp }}/digests-${{ matrix.target}}
         run: |
           docker buildx imagetools create $(jq -cr '.tags | map("-t " + .) | join(" ")' <<< "$DOCKER_METADATA_OUTPUT_JSON") \
-            $(printf '${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}@sha256:%s ' *)
+            $(printf '${{ env.REGISTRY }}/${{ matrix.target }}@sha256:%s ' *)
 
       - name: Inspect image
         run: |
-          docker buildx imagetools inspect ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.version }}
+          docker buildx imagetools inspect ${{ env.REGISTRY }}/${{ matrix.target }}:${{ steps.meta.outputs.version }}
