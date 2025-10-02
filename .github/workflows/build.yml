@@ -24,7 +24,7 @@ jobs:
         id: generate
         uses: docker/bake-action/subaction/matrix@v6
         with:
-          target: site
+          target: default
           fields: platforms
 
   build:
@@ -34,11 +34,6 @@ jobs:
     strategy:
       matrix:
         include: ${{ fromJson(needs.prepare.outputs.matrix) }}
-    permissions:
-      contents: read
-      packages: write
-      attestations: write
-      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
