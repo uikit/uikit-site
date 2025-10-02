@@ -63,4 +63,6 @@ jobs:
           push: true
           targets: ${{ matrix.target }}
           set: |
+            *.tags=${{ steps.meta.outputs.tags }}
+            *.labels=${{ steps.meta.outputs.labels }}
             *.platform=${{ matrix.platforms }}
