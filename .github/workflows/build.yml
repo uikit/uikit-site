@@ -66,6 +66,7 @@ jobs:
         with:
           source: .
           push: true
+          targets: ${{ matrix.target }}
           set: |
             *.tags=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
             *.platform=${{ matrix.platforms }}
