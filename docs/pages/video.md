@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Display videos as animated images with precise autoplay control, and load them lazily or on click — even from YouTube.</p>
 
-The Video component allows to seamlessly display videos as animated images with a consistent autoplay behavior across all browsers. Videos automatically pause when they become hidden, for example inside a slideshow, and seamlessly resume from the same position once visible again. It also ensures the muted attribute is correctly applied even when videos are inserted into the DOM dynamically with JavaScript.
+The Video component allows you to seamlessly display videos as animated images with a consistent autoplay behavior across all browsers. Videos automatically pause when they become hidden, for example inside a slideshow, and seamlessly resume from the same position once visible again. It also ensures the muted attribute is correctly applied even when videos are inserted into the DOM dynamically with JavaScript.
 
 ***
 
