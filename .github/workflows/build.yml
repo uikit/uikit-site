@@ -10,6 +10,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  IMAGE_DESCRIPTION: UIkit Site on GitHub Container Registry
 
 jobs:
   prepare:
@@ -43,6 +44,10 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          annotations: |
+            org.opencontainers.image.description=${{ env.IMAGE_DESCRIPTION }}
+        env:
+          DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
@@ -60,6 +65,8 @@ jobs:
           source: .
           push: true
           targets: ${{ matrix.target }}
+          provenance: false
+          sbom: false
           set: |
             *.tags=${{ steps.meta.outputs.tags }}
             *.platform=${{ matrix.platforms }}
