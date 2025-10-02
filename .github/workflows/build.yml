@@ -60,21 +60,33 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Build and push by digest
-        id: build
-        uses: docker/build-push-action@v6
+      - name: Build
+        uses: docker/bake-action@v6
+        id: bake
         with:
-          platforms: ${{ matrix.platforms }}
-          labels: ${{ steps.meta.outputs.labels }}
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          provenance: false # Disable provenance to avoid unknown/unknown
-          sbom: false # Disable sbom to avoid unknown/unknown
-          outputs: type=image,push-by-digest=true,name-canonical=true,push=true
+          source: .
+          push: true
+          targets: ${{ matrix.target }}
+          files: |
+            ./docker-bake.hcl
+            cwd://${{ steps.meta.outputs.bake-file-tags }}
+            cwd://${{ steps.meta.outputs.bake-file-labels }}
+
+      # - name: Build and push by digest
+      #   id: build
+      #   uses: docker/build-push-action@v6
+      #   with:
+      #     platforms: ${{ matrix.platforms }}
+      #     labels: ${{ steps.meta.outputs.labels }}
+      #     tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+      #     provenance: false # Disable provenance to avoid unknown/unknown
+      #     sbom: false # Disable sbom to avoid unknown/unknown
+      #     outputs: type=image,push-by-digest=true,name-canonical=true,push=true
 
       - name: Export digest
         run: |
           mkdir -p ${{ runner.temp }}/digests
-          digest="${{ steps.build.outputs.digest }}"
+          digest="${{ fromJSON(steps.bake.outputs.metadata).image['containerimage.digest'] }}"
           touch "${{ runner.temp }}/digests/${digest#sha256:}"
 
       - name: Upload digest
