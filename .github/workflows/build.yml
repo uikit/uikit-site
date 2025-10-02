@@ -61,7 +61,7 @@ jobs:
         with:
           source: .
           push: true
-          targets: default
+          targets: ${{ matrix.target }}
           set: |
-            *.tags=${{ steps.meta.outputs.tags }}
+            *.tags=${{ steps.meta.outputs.tags }}-${{ matrix.platforms }}
             *.platform=${{ matrix.platforms }}
