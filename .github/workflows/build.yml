@@ -26,7 +26,7 @@ jobs:
         uses: docker/bake-action/subaction/matrix@v6
         with:
           target: default
-          fields: platforms,dockerfile
+          fields: platforms
 
   build:
     runs-on: ${{ startsWith(matrix.platforms, 'linux/arm') && 'ubuntu-24.04-arm' || 'ubuntu-latest' }}
