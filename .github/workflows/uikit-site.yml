@@ -1,4 +1,4 @@
-name: Deploy Caddy
+name: Deploy UIkit Site
 
 on:
     push:
@@ -16,8 +16,6 @@ jobs:
         secrets: inherit
 
     deploy:
-        if: github.ref == 'refs/heads/main'
-
         needs: [build]
 
         runs-on: ubuntu-latest
@@ -29,9 +27,8 @@ jobs:
             - name: Run playbook
               uses: dawidd6/action-ansible-playbook@v4
               with:
-                  playbook: playbooks/caddy/setup.yml
+                  playbook: scripts/playbook.yml
                   key: ${{ secrets.ACTIONS_SSH_PRIVATE_KEY }}
-                  inventory: ${{ secrets.SITE_HOST }},
-                  options: --extra-vars "github_username=${{ github.actor }} github_token=${{ secrets.GITHUB_TOKEN }}"
-                  configuration: |
-                      [defaults]
+                  inventory: |
+                      [uikit]
+                      ${{ secrets.SITE_HOST }}
