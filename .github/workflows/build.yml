@@ -1,0 +1,145 @@
+name: Build Docker Images
+
+on:
+  workflow_call:
+
+env:
+  TARGET: default
+  REGISTRY: ghcr.io
+  REGISTRY_NAMESPACE: ghcr.io/${{ github.repository_owner }}
+  REGISTRY_USERNAME: ${{ github.actor }}
+  REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - id: targets
+        name: Generate targets
+        uses: docker/bake-action/subaction/matrix@v6
+        with:
+          target: ${{ env.TARGET }}
+
+      - id: platforms
+        name: Generate platforms
+        uses: docker/bake-action/subaction/matrix@v6
+        with:
+          target: ${{ env.TARGET }}
+          fields: platforms
+
+    outputs:
+      targets: ${{ steps.targets.outputs.matrix }}
+      platforms: ${{ steps.platforms.outputs.matrix }}
+
+  build:
+    needs: prepare
+
+    runs-on: ${{ startsWith(matrix.platforms, 'linux/arm') && 'ubuntu-24.04-arm' || 'ubuntu-latest' }}
+
+    strategy:
+      matrix:
+        include: ${{ fromJson(needs.prepare.outputs.platforms) }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Prepare
+        run: |
+          platform=${{ matrix.platforms }}
+          echo "PLATFORM_PAIR=${platform//\//-}" >> $GITHUB_ENV
+
+      - id: meta
+        name: Docker metadata
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY_NAMESPACE }}/${{ matrix.target }}
+          flavor: |
+            latest=true
+
+      - name: Login to Docker Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ env.REGISTRY_USERNAME }}
+          password: ${{ env.REGISTRY_PASSWORD }}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - id: build
+        name: Build Docker image
+        uses: docker/bake-action@v6
+        with:
+          push: true
+          source: .
+          targets: ${{ matrix.target }}
+          provenance: false # Disable to avoid unknown/unknown
+          set: |
+            *.platform=${{ matrix.platforms }}
+          files: |
+            ./docker-bake.hcl
+            ${{ steps.meta.outputs.bake-file }}
+
+      - name: Export digest
+        run: |
+          mkdir -p ${{ runner.temp }}/digests
+          digest="${{ fromJSON(steps.build.outputs.metadata)[matrix.target]['containerimage.digest'] }}"
+          touch "${{ runner.temp }}/digests/${digest#sha256:}"
+
+      - name: Upload digest
+        uses: actions/upload-artifact@v4
+        with:
+          name: digests~${{ matrix.target }}~${{ env.PLATFORM_PAIR }}
+          path: ${{ runner.temp }}/digests/*
+          retention-days: 1
+          if-no-files-found: error
+
+  merge:
+    needs: [prepare, build]
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        include: ${{ fromJson(needs.prepare.outputs.targets) }}
+
+    steps:
+      - name: Download digests
+        uses: actions/download-artifact@v4
+        with:
+          path: ${{ runner.temp }}/digests
+          pattern: digests~${{ matrix.target }}~*
+          merge-multiple: true
+
+      - name: Login to Docker Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ env.REGISTRY_USERNAME }}
+          password: ${{ env.REGISTRY_PASSWORD }}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - id: meta
+        name: Docker metadata
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY_NAMESPACE }}/${{ matrix.target }}
+          flavor: |
+            latest=true
+
+      - name: Create manifest list and push
+        run: |
+          docker buildx imagetools create $(jq -cr '.tags | map("-t " + .) | join(" ")' <<< "$DOCKER_METADATA_OUTPUT_JSON") \
+            $(printf '${{ env.REGISTRY_NAMESPACE }}/${{ matrix.target }}@sha256:%s ' *)
+        working-directory: ${{ runner.temp }}/digests
+
+      - name: Inspect image
+        run: |
+          docker buildx imagetools inspect ${{ env.REGISTRY_NAMESPACE }}/${{ matrix.target }}:${{ steps.meta.outputs.version }}

@@ -1,0 +1,33 @@
+---
+- name: Setup UIkit Site
+
+  hosts:
+    - uikit
+
+  vars:
+    uikit:
+      image: "{{ uikit_image | default('ghcr.io/uikit/uikit-site:latest') }}"
+      domain: "{{ uikit_domain | default('uikit.' + ansible_default_ipv4.address + '.sslip.io') }}"
+
+  tasks:
+    - name: Pull image from GitHub Container Registry
+      community.docker.docker_image:
+        name: "{{ uikit.image }}"
+        source: pull
+        force_source: true
+
+    - name: Deploy uikit-site
+      community.docker.docker_container:
+        name: uikit
+        image: "{{ uikit.image }}"
+        networks:
+          - name: "{{ caddy_network | default('caddy') }}"
+        labels:
+          caddy: "{{ uikit.domain }}"
+          caddy.reverse_proxy: !unsafe "{{upstreams 80}}"
+        restart_policy: unless-stopped
+
+    - name: Setup complete
+      ansible.builtin.debug:
+        msg: |
+          - UIkit Site! is available at: https://{{ uikit.domain }}
