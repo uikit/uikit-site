@@ -1,0 +1,37 @@
+name: Deploy Caddy
+
+on:
+    push:
+        branches:
+            - feature/git-workflow
+
+env:
+    ANSIBLE_REMOTE_USER: root
+    ANSIBLE_ROLES_PATH: roles
+    ANSIBLE_PYTHON_INTERPRETER: auto_silent
+
+jobs:
+    build:
+        uses: ./.github/workflows/build.yml
+        secrets: inherit
+
+    deploy:
+        if: github.ref == 'refs/heads/main'
+
+        needs: [build]
+
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v5
+
+            - name: Run playbook
+              uses: dawidd6/action-ansible-playbook@v4
+              with:
+                  playbook: playbooks/caddy/setup.yml
+                  key: ${{ secrets.ACTIONS_SSH_PRIVATE_KEY }}
+                  inventory: ${{ secrets.SITE_HOST }},
+                  options: --extra-vars "github_username=${{ github.actor }} github_token=${{ secrets.GITHUB_TOKEN }}"
+                  configuration: |
+                      [defaults]
