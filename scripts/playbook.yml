@@ -10,6 +10,11 @@
       domain: "{{ uikit_domain | default('uikit.' + ansible_default_ipv4.address + '.sslip.io') }}"
 
   tasks:
+    - name: Docker logout
+      community.docker.docker_login:
+        state: absent
+        registry_url: ghcr.io
+
     - name: Pull image from GitHub Container Registry
       community.docker.docker_image:
         name: "{{ uikit.image }}"
