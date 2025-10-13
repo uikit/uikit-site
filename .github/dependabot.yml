@@ -5,11 +5,11 @@ updates:
     schedule:
       interval: weekly
     ignore:
-      - dependency-name: @docsearch/css
-        update-types: ['version-update:semver-major']
-      - dependency-name: @docsearch/js
-        update-types: ['version-update:semver-major']
+      - dependency-name: "@docsearch/css"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@docsearch/js"
+        update-types: ["version-update:semver-major"]
     groups:
       dev-dependencies:
         patterns:
-          - '*'
+          - "*"

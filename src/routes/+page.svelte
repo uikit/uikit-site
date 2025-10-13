@@ -74,10 +74,8 @@
                 </li>
                 <li>
                     <a href="https://github.com/uikit/uikit/stargazers"
-                        ><span
-                            class="uk-margin-xsmall-right"
-                            uk-icon="star"
-                       ></span>{data.stargazers_count} Stargazers</a
+                        ><span class="uk-margin-xsmall-right" uk-icon="star"
+                        ></span>{data.stargazers_count} Stargazers</a
                     >
                 </li>
                 <li>
@@ -87,7 +85,8 @@
                 </li>
                 <li>
                     <a href="https://discordapp.com/invite/NEt4Pv7"
-                        ><span class="uk-margin-xsmall-right" uk-icon="commenting"></span>Community</a
+                        ><span class="uk-margin-xsmall-right" uk-icon="commenting"
+                        ></span>Community</a
                     >
                 </li>
             </ul>
