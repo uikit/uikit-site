@@ -19,10 +19,10 @@ importers:
         version: 9.37.0
       '@sveltejs/adapter-static':
         specifier: 3.0.10
-        version: 3.0.10(@sveltejs/kit@2.46.4(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))
+        version: 3.0.10(@sveltejs/kit@2.46.5(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))
       '@sveltejs/kit':
-        specifier: ^2.46.4
-        version: 2.46.4(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))(svelte@5.39.11)(vite@7.1.9(less@4.4.2))
+        specifier: ^2.46.5
+        version: 2.46.5(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))(svelte@5.39.11)(vite@7.1.9(less@4.4.2))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^6.2.1
         version: 6.2.1(svelte@5.39.11)(vite@7.1.9(less@4.4.2))
@@ -75,8 +75,8 @@ importers:
         specifier: ^5.39.11
         version: 5.39.11
       symlink-dir:
-        specifier: ^7.1.0
-        version: 7.1.0
+        specifier: ^9.0.0
+        version: 9.0.0
       uikit:
         specifier: 3.24.2
         version: 3.24.2
@@ -544,8 +544,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/kit@2.46.4':
-    resolution: {integrity: sha512-J1fd80WokLzIm6EAV7z7C2+/C02qVAX645LZomARARTRJkbbJSY1Jln3wtBZYibUB8c9/5Z6xqLAV39VdbtWCQ==}
+  '@sveltejs/kit@2.46.5':
+    resolution: {integrity: sha512-7TSvMrCdmig5TMyYDW876C5FljhA0wlGixtvASCiqUqtLfmyEEpaysXjC7GhR5mWcGRrCGF+L2Bl1eEaW1wTCA==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -1234,9 +1234,9 @@ packages:
     resolution: {integrity: sha512-8MxWVm2+3YwrFbPaxOlT1bbMi6OTenrAgks6soZfiaS8Fptk4EVyRIFhJc3RpO264EeSNwgjWAdki0ufg4zkGw==}
     engines: {node: '>=18'}
 
-  symlink-dir@7.1.0:
-    resolution: {integrity: sha512-Nnht6e6PYs5RF2JXbc43Bm9Sskfu750yAhJfi/aniLgWjtqsfL/68bLkYSX3GSp1dTPxy7mVbO+bVbMc16XKrw==}
-    engines: {node: '>=18.12'}
+  symlink-dir@9.0.0:
+    resolution: {integrity: sha512-3i39G70eXo9POjx9RnYAgymfUO3AFrezABaJq0Sh+muMCR3Lx7B9KQR2uWMY+yc1QCwhEelVCGS6N+sR3aKCZg==}
+    engines: {node: '>=20.19'}
     hasBin: true
 
   tiny-emitter@2.1.0:
@@ -1721,11 +1721,11 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.46.4(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))':
+  '@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.46.5(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))':
     dependencies:
-      '@sveltejs/kit': 2.46.4(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))(svelte@5.39.11)(vite@7.1.9(less@4.4.2))
+      '@sveltejs/kit': 2.46.5(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))(svelte@5.39.11)(vite@7.1.9(less@4.4.2))
 
-  '@sveltejs/kit@2.46.4(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))(svelte@5.39.11)(vite@7.1.9(less@4.4.2))':
+  '@sveltejs/kit@2.46.5(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.39.11)(vite@7.1.9(less@4.4.2)))(svelte@5.39.11)(vite@7.1.9(less@4.4.2))':
     dependencies:
       '@standard-schema/spec': 1.0.0
       '@sveltejs/acorn-typescript': 1.0.6(acorn@8.15.0)
@@ -2433,7 +2433,7 @@ snapshots:
       magic-string: 0.30.19
       zimmerframe: 1.1.4
 
-  symlink-dir@7.1.0:
+  symlink-dir@9.0.0:
     dependencies:
       better-path-resolve: 1.0.0
       rename-overwrite: 6.0.3
