@@ -1,34 +1,35 @@
 name: Deploy UIkit Site
 
 on:
-    push:
-        branches:
-            - feature/git-workflow
+  push:
+    branches:
+      - main
 
 env:
-    ANSIBLE_REMOTE_USER: root
-    ANSIBLE_ROLES_PATH: roles
-    ANSIBLE_PYTHON_INTERPRETER: auto_silent
+  ANSIBLE_REMOTE_USER: root
+  ANSIBLE_PYTHON_INTERPRETER: auto_silent
 
 jobs:
-    build:
-        uses: ./.github/workflows/build.yml
-        secrets: inherit
+  build:
+    uses: ./.github/workflows/build.yml
+    secrets: inherit
 
-    deploy:
-        needs: [build]
+  deploy:
+    needs: [build]
 
-        runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
 
-            - name: Run playbook
-              uses: dawidd6/action-ansible-playbook@v4
-              with:
-                  playbook: ./.github/playbooks/setup.yml
-                  key: ${{ secrets.ACTIONS_SSH_PRIVATE_KEY }}
-                  inventory: |
-                      [uikit]
-                      91.98.38.146
+      - name: Run playbook
+        uses: dawidd6/action-ansible-playbook@v4
+        with:
+          playbook: ./.github/playbooks/setup.yml
+          options: -e "uikit_domain=getuikit.com"
+          inventory: |
+            [uikit]
+            91.98.38.146
+
+          key: ${{ secrets.ACTIONS_SSH_PRIVATE_KEY }}

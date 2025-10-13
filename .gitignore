@@ -4,4 +4,6 @@
 /static/assets
 /static/css
 node_modules
+.vscode
+.ansible
 .DS_Store
