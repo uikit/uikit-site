@@ -33,7 +33,7 @@
         "prettier-plugin-organize-imports": "^4.3.0",
         "prettier-plugin-svelte": "^3.4.0",
         "svelte": "^5.39.11",
-        "symlink-dir": "^9.0.0",
+        "symlink-dir": "^7.1.0",
         "uikit": "3.24.2",
         "vite": "^7.1.9"
     },

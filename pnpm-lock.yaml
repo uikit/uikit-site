@@ -75,8 +75,8 @@ importers:
         specifier: ^5.39.11
         version: 5.39.11
       symlink-dir:
-        specifier: ^9.0.0
-        version: 9.0.0
+        specifier: ^7.1.0
+        version: 7.1.0
       uikit:
         specifier: 3.24.2
         version: 3.24.2
@@ -1234,9 +1234,9 @@ packages:
     resolution: {integrity: sha512-8MxWVm2+3YwrFbPaxOlT1bbMi6OTenrAgks6soZfiaS8Fptk4EVyRIFhJc3RpO264EeSNwgjWAdki0ufg4zkGw==}
     engines: {node: '>=18'}
 
-  symlink-dir@9.0.0:
-    resolution: {integrity: sha512-3i39G70eXo9POjx9RnYAgymfUO3AFrezABaJq0Sh+muMCR3Lx7B9KQR2uWMY+yc1QCwhEelVCGS6N+sR3aKCZg==}
-    engines: {node: '>=20.19'}
+  symlink-dir@7.1.0:
+    resolution: {integrity: sha512-Nnht6e6PYs5RF2JXbc43Bm9Sskfu750yAhJfi/aniLgWjtqsfL/68bLkYSX3GSp1dTPxy7mVbO+bVbMc16XKrw==}
+    engines: {node: '>=18.12'}
     hasBin: true
 
   tiny-emitter@2.1.0:
@@ -2433,7 +2433,7 @@ snapshots:
       magic-string: 0.30.19
       zimmerframe: 1.1.4
 
-  symlink-dir@9.0.0:
+  symlink-dir@7.1.0:
     dependencies:
       better-path-resolve: 1.0.0
       rename-overwrite: 6.0.3
