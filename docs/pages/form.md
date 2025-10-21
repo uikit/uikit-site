@@ -127,7 +127,7 @@ Add one of the classes to an `<input>`, `<select>`, `<textarea>`, `<checkbox>` o
 
     <div class="uk-margin">
         <input class="uk-input uk-form-width-medium" type="text" placeholder="Default" aria-label="Default">
-        <select class="uk-select uk-form-width-small aria-label="Default">
+        <select class="uk-select uk-form-width-small" aria-label="Default">
             <option>Option 01</option>
             <option>Option 02</option>
             <optgroup label="Optgroup">

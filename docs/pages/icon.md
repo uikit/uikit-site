@@ -380,7 +380,7 @@ Use the modifier `.uk-icon-overlay` class to make the icon work best on backgrou
         <a href class="uk-inline uk-light">
             <img src="images/dark.jpg" width="1800" height="1200" alt="">
             <div class="uk-position-center">
-                <span class="uk-icon-overlay" href="#" uk-icon="ratio: 3; icon: youtube"></span></li>
+                <span class="uk-icon-overlay" href="#" uk-icon="ratio: 3; icon: youtube"></span>
             </div>
         </a>
 
