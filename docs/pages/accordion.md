@@ -11,8 +11,10 @@ The Accordion component consists of a parent container with the `uk-accordion` a
 | `.uk-accordion-title`   | Defines and styles the toggle for each accordion item. Use `<a>` elements. |
 | `.uk-accordion-content` | Defines the content part for each accordion item.                          |
 
+To apply a style to the accordion add the `.uk-accordion-default` modifier.
+
 ```html
-<ul uk-accordion>
+<ul class="uk-accordion-default" uk-accordion>
     <li>
         <a class="uk-accordion-title" href></a>
         <div class="uk-accordion-content"></div>
@@ -21,7 +23,7 @@ The Accordion component consists of a parent container with the `uk-accordion` a
 ```
 
 ```example
-<ul uk-accordion>
+<ul class="uk-accordion-default" uk-accordion>
     <li class="uk-open">
         <a class="uk-accordion-title" href>Item 1</a>
         <div class="uk-accordion-content">
@@ -50,11 +52,11 @@ The Accordion component consists of a parent container with the `uk-accordion` a
 By default, all accordion items can be collapsed. To prevent this behavior and always maintain one open item, add the `collapsible: false` option to the attribute.
 
 ```html
-<ul uk-accordion="collapsible: false">…</ul>
+<ul class="uk-accordion-default" uk-accordion="collapsible: false">…</ul>
 ```
 
 ```example
-<ul uk-accordion="collapsible: false">
+<ul class="uk-accordion-default" uk-accordion="collapsible: false">
     <li>
         <a class="uk-accordion-title" href>Item 1</a>
         <div class="uk-accordion-content">
@@ -83,11 +85,11 @@ By default, all accordion items can be collapsed. To prevent this behavior and a
 To display multiple content sections at the same time without one collapsing when the other one is opened, add the `multiple: true` option to the `uk-accordion` attribute.
 
 ```html
-<ul uk-accordion="multiple: true">…</ul>
+<ul class="uk-accordion-default" uk-accordion="multiple: true">…</ul>
 ```
 
 ```example
-<ul uk-accordion="multiple: true">
+<ul class="uk-accordion-default" uk-accordion="multiple: true">
     <li class="uk-open">
         <a class="uk-accordion-title" href>Item 1</a>
         <div class="uk-accordion-content">
@@ -118,7 +120,7 @@ To specify which items should be opened initially, add the `.uk-open` class to t
 **Note** Alternatively, you can open a single item by adding the `active: <index>` option to the `uk-accordion` attribute, e.g. `active: 1` to show the second element (the index is zero-based). Note that this will overwrite the `uk-open` class.
 
 ```html
-<ul uk-accordion>
+<ul class="uk-accordion-default" uk-accordion>
     <li></li>
     <li class="uk-open"></li>
     <li></li>
@@ -126,7 +128,7 @@ To specify which items should be opened initially, add the `.uk-open` class to t
 ```
 
 ```example
-<ul uk-accordion>
+<ul class="uk-accordion-default" uk-accordion>
     <li>
         <a class="uk-accordion-title" href>Item 1</a>
         <div class="uk-accordion-content">

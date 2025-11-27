@@ -4,6 +4,20 @@
 
 ***
 
+## Migration from UIkit 3.24 to 3.25
+
+UIkit 3.25 refactors the [Accordion component](accordion.md). The accordion style got moved in a dedicated style modifier to allow the accordion being used without any style. To apply the default style update your markup by adding the `.uk-accordion-default` class to all accordions. We renamed the all accordion Less variables and hooks accordingly. Just find and replace these Less variables and hooks if you are using them in a custom Less theme.
+
+| Less variable          | Replace with                   |
+| ---------------------- | ------------------------------ |
+| `@accordion-*`         | `@accordion-default-*`         |
+| `@inverse-accordion-*` | `@inverse-accordion-default-*` |
+
+| Less hooks                  | Replace with                        |
+| --------------------------- | ----------------------------------- |
+| `.hook-accordion-*`         | `.hook-accordion-default-*`         |
+| `.hook-inverse-accordion-*` | `.hook-inverse-accordion-default-*` |
+
 ## Migration from UIkit 3.23 to 3.24
 
 UIkit 3.24 refactors the [Countdown component](countdown.md). Almost all Less variables are removed. If you have customized the countdown using Less variables, you have to remove them. Simply search for `@countdown` in your Less files. Instead use text classes from the [Heading component](heading.md) or [Base component](base.md) to style the countdown.
