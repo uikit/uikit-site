@@ -47,6 +47,39 @@ To apply a style to the accordion add the `.uk-accordion-default` modifier.
 
 ***
 
+### Icon
+
+To create a accordion icon, just add a `span` element with the `uk-accordion-icon` attribute at the end of the accordion title.
+
+```html
+<a class="uk-accordion-title" href>Item 1 <span uk-accordion-icon></span></a>
+```
+
+```example
+<ul class="uk-accordion-default" uk-accordion>
+    <li class="uk-open">
+        <a class="uk-accordion-title" href>Item 1 <span uk-accordion-icon></a>
+        <div class="uk-accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href>Item 2 <span uk-accordion-icon></a>
+        <div class="uk-accordion-content">
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href>Item 3 <span uk-accordion-icon></a>
+        <div class="uk-accordion-content">
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+        </div>
+    </li>
+</ul>
+```
+
+***
+
 ## No collapsing
 
 By default, all accordion items can be collapsed. To prevent this behavior and always maintain one open item, add the `collapsible: false` option to the attribute.
@@ -58,19 +91,19 @@ By default, all accordion items can be collapsed. To prevent this behavior and a
 ```example
 <ul class="uk-accordion-default" uk-accordion="collapsible: false">
     <li>
-        <a class="uk-accordion-title" href>Item 1</a>
+        <a class="uk-accordion-title" href>Item 1 <span uk-accordion-icon></a>
         <div class="uk-accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </li>
     <li>
-        <a class="uk-accordion-title" href>Item 2</a>
+        <a class="uk-accordion-title" href>Item 2 <span uk-accordion-icon></a>
         <div class="uk-accordion-content">
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
         </div>
     </li>
     <li>
-        <a class="uk-accordion-title" href>Item 3</a>
+        <a class="uk-accordion-title" href>Item 3 <span uk-accordion-icon></a>
         <div class="uk-accordion-content">
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
         </div>
@@ -91,19 +124,19 @@ To display multiple content sections at the same time without one collapsing whe
 ```example
 <ul class="uk-accordion-default" uk-accordion="multiple: true">
     <li class="uk-open">
-        <a class="uk-accordion-title" href>Item 1</a>
+        <a class="uk-accordion-title" href>Item 1 <span uk-accordion-icon></a>
         <div class="uk-accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </li>
     <li>
-        <a class="uk-accordion-title" href>Item 2</a>
+        <a class="uk-accordion-title" href>Item 2 <span uk-accordion-icon></a>
         <div class="uk-accordion-content">
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
         </div>
     </li>
     <li>
-        <a class="uk-accordion-title" href>Item 3</a>
+        <a class="uk-accordion-title" href>Item 3 <span uk-accordion-icon></a>
         <div class="uk-accordion-content">
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
         </div>
@@ -130,19 +163,19 @@ To specify which items should be opened initially, add the `.uk-open` class to t
 ```example
 <ul class="uk-accordion-default" uk-accordion>
     <li>
-        <a class="uk-accordion-title" href>Item 1</a>
+        <a class="uk-accordion-title" href>Item 1 <span uk-accordion-icon></a>
         <div class="uk-accordion-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </li>
     <li class="uk-open">
-        <a class="uk-accordion-title" href>Item 2</a>
+        <a class="uk-accordion-title" href>Item 2 <span uk-accordion-icon></a>
         <div class="uk-accordion-content">
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
         </div>
     </li>
     <li>
-        <a class="uk-accordion-title" href>Item 3</a>
+        <a class="uk-accordion-title" href>Item 3 <span uk-accordion-icon></a>
         <div class="uk-accordion-content">
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
         </div>
