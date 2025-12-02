@@ -188,6 +188,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `params`           | Object   | `{}`                    | Additional parameters.                                       |
 | `allow`            | String   | `false`                 | File name filter. (eg. *.png)                                |
 | `mime`             | String   | `false`                 | File MIME type filter. (eg. image/*)                         |
+| `maxSize`          | Number   | `0`                     | The maximum file size per file. (kB)                         |
 | `concurrent`       | Number   | `1`                     | Number of files that will be uploaded simultaneously.        |
 | `type`             | String   |                         | The expected response data type (xml, json, script, or html) |
 | `method`           | String   | `POST`                  | The request method                                           |
