@@ -42,12 +42,13 @@ UIkit provides a number of useful classes to alter an element's height.
 Add the `uk-height-viewport` attribute to create a container that fills the height of the entire viewport. You can change the height behavior by adding the `offset-top`, `offset-bottom` or `expand` options to the attribute. [Learn more](javascript.md#component-configuration)
 
 | Option          | Value                                | Default      | Description                                                                                                                                                                               |
-|-----------------|--------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------- | ------------------------------------ | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `offset-top`    | Boolean, CSS Selector                | `false`      | Subtracts the element's (true) or given element's (CSS Selector) offset top from its height.                                                                                              |
 | `offset-bottom` | Boolean, Number, Pixel, CSS Selector | `false`      | Subtracts the height (true) of the sibling that immediately follows the element, the given percentage (Number), Pixel (px) value from element's own height or the given element's height. |
 | `expand`        | Boolean                              | `false`      | Expands the element's height to make a short page fill the viewport.                                                                                                                      |
 | `min`           | Number                               | `0`          | Sets a minimum height. Useful if all children are positioned absolutely.                                                                                                                  |
 | `property`      | String                               | `min-height` | The CSS property to set. (min-height, height, max-height)                                                                                                                                 |
+| `media`         | Boolean, Number, String              | `false`      | Condition for the component to be active - a width as integer (e.g. 640) or a breakpoint (e.g. @s, @m, @l, @xl) or any valid media query (e.g. (min-width: 900px)).                       |
 
 ```html
 <div uk-height-viewport></div>
