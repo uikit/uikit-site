@@ -135,8 +135,8 @@ Add one of the classes to an `<input>`, `<select>`, `<textarea>`, `<checkbox>` o
                 <option>Option B</option>
             </optgroup>
         </select>
-        <input class="uk-checkbox uk-form-large" type="checkbox">
-        <input class="uk-radio uk-form-large" type="radio">
+        <input class="uk-checkbox" type="checkbox">
+        <input class="uk-radio" type="radio">
     </div>
 
     <div class="uk-margin">
