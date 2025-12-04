@@ -1,18 +1,14 @@
 <script>
     import Offcanvas from './Offcanvas.svelte';
-    import { assets } from '$app/paths';
     import { page } from '$app/state';
-    import { PUBLIC_CACHE } from '$env/static/public';
     import { dev } from '$app/environment';
 
     let { data, children } = $props();
-
-    const analyticsScript = `${assets}/analytics.js?${PUBLIC_CACHE}`;
 </script>
 
 <svelte:head>
     {#if !dev}
-        <script src={analyticsScript} defer></script>
+        <script src="https://stats.yootheme.com/script.js" data-website-id="f3d923d6-34da-4326-907d-fefe4962bde9" defer></script>
     {/if}
 </svelte:head>
 
