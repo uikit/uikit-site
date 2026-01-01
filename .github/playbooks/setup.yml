@@ -7,7 +7,7 @@
   vars:
     uikit:
       image: "{{ uikit_image | default('ghcr.io/uikit/uikit-site:latest') }}"
-      domain: "{{ uikit_domain | default('uikit.' + ansible_default_ipv4.address + '.sslip.io') }}"
+      domain: "{{ uikit_domain | default('uikit.' + ansible_facts.default_ipv4.address + '.sslip.io') }}"
 
   tasks:
     - name: Pull image from GitHub Container Registry
@@ -16,7 +16,7 @@
         source: pull
         force_source: true
 
-    - name: Deploy uikit-site
+    - name: Deploy UIkit site
       community.docker.docker_container:
         name: uikit
         image: "{{ uikit.image }}"
@@ -26,6 +26,12 @@
           caddy: "{{ uikit.domain }}"
           caddy.reverse_proxy: !unsafe "{{upstreams 80}}"
         restart_policy: unless-stopped
+
+    - name: Prune unused images, not just dangling ones
+      community.docker.docker_prune:
+        images: true
+        images_filters:
+          dangling: false
 
     - name: Setup complete
       ansible.builtin.debug:
