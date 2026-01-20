@@ -8,6 +8,7 @@
     uikit:
       image: "{{ uikit_image | default('ghcr.io/uikit/uikit-site:latest') }}"
       domain: "{{ uikit_domain | default('uikit.' + ansible_facts.default_ipv4.address + '.sslip.io') }}"
+      project: "{{ uikit_project | default('uikit') }}"
 
   tasks:
     - name: Pull image from GitHub Container Registry
@@ -17,15 +18,27 @@
         force_source: true
 
     - name: Deploy UIkit site
-      community.docker.docker_container:
-        name: uikit
-        image: "{{ uikit.image }}"
-        networks:
-          - name: "{{ caddy_network | default('caddy') }}"
-        labels:
-          caddy: "{{ uikit.domain }}"
-          caddy.reverse_proxy: !unsafe "{{upstreams 80}}"
-        restart_policy: unless-stopped
+      community.docker.docker_compose_v2:
+        project_name: "{{ uikit.project }}"
+        remove_orphans: true
+        definition:
+          services:
+            app:
+              container_name: "{{ uikit.project }}"
+              image: "{{ uikit.image }}"
+              restart: unless-stopped
+
+              networks:
+                - caddy
+
+              labels:
+                caddy: "{{ uikit.domain }}"
+                caddy.reverse_proxy: !unsafe "{{upstreams 80}}"
+
+          networks:
+            caddy:
+              name: "{{ caddy_network | default('caddy') }}"
+              external: true
 
     - name: Prune unused images, not just dangling ones
       community.docker.docker_prune:
