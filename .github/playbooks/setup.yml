@@ -11,12 +11,6 @@
       project: "{{ uikit_project | default('uikit') }}"
 
   tasks:
-    - name: Pull image from GitHub Container Registry
-      community.docker.docker_image:
-        name: "{{ uikit.image }}"
-        source: pull
-        force_source: true
-
     - name: Deploy UIkit site
       community.docker.docker_compose_v2:
         project_name: "{{ uikit.project }}"
@@ -27,6 +21,8 @@
               container_name: "{{ uikit.project }}"
               image: "{{ uikit.image }}"
               restart: unless-stopped
+
+              pull_policy: always
 
               networks:
                 - caddy
