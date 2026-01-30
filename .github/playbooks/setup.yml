@@ -29,6 +29,7 @@
 
               labels:
                 caddy: "{{ uikit.domain }}"
+                caddy.encode: "" # zstd gzip
                 caddy.reverse_proxy: !unsafe "{{upstreams 80}}"
 
           networks:
