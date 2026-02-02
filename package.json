@@ -9,7 +9,7 @@
         "compile-less": "make-dir static/css && lessc less/theme.less > static/css/theme.css --rewrite-urls=all --clean-css",
         "compile-uikit-tests": "cd ./static/assets/uikit && pnpm compile-js tests"
     },
-    "packageManager": "pnpm@10.28.1",
+    "packageManager": "pnpm@10.28.2",
     "devDependencies": {
         "@docsearch/css": "^3.9.0",
         "@docsearch/js": "^3.9.0",
