@@ -29,8 +29,10 @@
 
               labels:
                 caddy: "{{ uikit.domain }}"
-                caddy.encode: "" # zstd gzip
                 caddy.reverse_proxy: !unsafe "{{upstreams 80}}"
+
+                caddy.log: "" # access log
+                caddy.encode: "" # zstd gzip
 
           networks:
             caddy:
