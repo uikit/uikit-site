@@ -1,6 +1,6 @@
 <script>
     import Header from './Header.svelte';
-    import { assets, base } from '$app/paths';
+    import { asset, resolve } from '$app/paths';
     let { data } = $props();
 </script>
 
@@ -20,7 +20,7 @@
             <div class="uk-container">
                 <p>
                     <img
-                        src="{assets}/images/uikit-logo-large.svg"
+                        src={asset('/images/uikit-logo-large.svg')}
                         width="168"
                         height="155"
                         alt="UIkit Logo"
@@ -41,11 +41,11 @@
                     <div>
                         <a
                             class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s"
-                            href="{base}/docs/introduction">Get Started</a
+                            href={resolve('/docs/introduction')}>Get Started</a
                         >
                         <a
                             class="uk-button uk-button-primary tm-button-primary uk-hidden@s"
-                            href="{base}/docs/introduction">Get Started</a
+                            href={resolve('/docs/introduction')}>Get Started</a
                         >
                     </div>
                     <div>

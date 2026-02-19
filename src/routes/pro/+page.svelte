@@ -1,6 +1,6 @@
 <script>
     import Header from '../Header.svelte';
-    import { assets, base } from '$app/paths';
+    import { asset, resolve } from '$app/paths';
 
     function titleCase(str) {
         return str
@@ -58,14 +58,14 @@
                     <div class="tm-intro-image">
                         <div class="uk-inline">
                             <img
-                                src="{assets}/images/pro/device-laptop.png"
+                                src={asset('/images/pro/device-laptop.png')}
                                 width="960"
                                 height="670"
                                 alt="Laptop Device"
                             />
                             <div style="position: absolute; top: 5%; left: 12%; right: 12%">
                                 <img
-                                    src="{assets}/images/pro/page-builder.gif"
+                                    src={asset('/images/pro/page-builder.gif')}
                                     width="730"
                                     height="456"
                                     alt="Animated Gif YOOtheme Pro Page Builder"
@@ -136,7 +136,7 @@
             <div class="uk-width-2-3@l">
                 <img
                     class="tm-box-shadow-large"
-                    src="{assets}/images/pro/style-customizer.gif"
+                    src={asset('/images/pro/style-customizer.gif')}
                     width="780"
                     height="456"
                     alt="Animated Gif YOOtheme Pro Style Customizer"
@@ -158,7 +158,7 @@
                 <div>
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
                         <img
-                            src="{assets}/images/pro/style-{id}.jpg"
+                            src={asset(`/images/pro/style-${id}.jpg`)}
                             width="1200"
                             height="900"
                             alt={`${titleCase(id)} Style`}
@@ -254,9 +254,9 @@
             <div class="uk-child-width-auto@m uk-flex-middle" uk-grid>
                 <div>
                     <div class="uk-text-left@m uk-text-center">
-                        <a class="uk-logo uk-flex" href="{base}/" aria-label="Back to Home">
+                        <a class="uk-logo uk-flex" href={resolve('/')} aria-label="Back to Home">
                             <img
-                                src="{assets}/images/uikit-logo.svg"
+                                src={asset('/images/uikit-logo.svg')}
                                 class="uk-margin-small-right"
                                 width="28"
                                 height="34"
@@ -268,13 +268,13 @@
                 </div>
                 <div class="uk-margin-auto">
                     <ul class="uk-subnav uk-flex-center" uk-margin>
-                        <li><a href="{base}/pro"> Pro </a></li>
-                        <li><a href="{base}/docs/introduction">Documentation</a></li>
+                        <li><a href={resolve('/pro')}> Pro </a></li>
+                        <li><a href={resolve('/docs/introduction')}>Documentation</a></li>
                         <li>
-                            <a href="{base}/changelog">Changelog</a>
+                            <a href={resolve('/changelog')}>Changelog</a>
                         </li>
                         <li>
-                            <a href="{base}/download">Download</a>
+                            <a href={resolve('/download')}>Download</a>
                         </li>
                     </ul>
                 </div>

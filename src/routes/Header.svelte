@@ -1,6 +1,6 @@
 <script>
     import { page } from '$app/state';
-    import { assets, base } from '$app/paths';
+    import { asset, resolve } from '$app/paths';
     import Algolia from './Algolia.svelte';
 
     let { ...props } = $props();
@@ -16,12 +16,12 @@
                 <a
                     class="uk-navbar-item uk-logo"
                     class:uk-active={page.route.id === '/'}
-                    href="{base}/"
+                    href={resolve('/')}
                     aria-label="Back to Home"
                     aria-current={page.route.id === '/' ? 'page' : null}
                 >
                     <img
-                        src="{assets}/images/uikit-logo.svg"
+                        src={asset('/images/uikit-logo.svg')}
                         class="uk-margin-small-right"
                         width="28"
                         height="34"
@@ -37,7 +37,7 @@
                 <ul class="uk-navbar-nav uk-visible@m">
                     <li class:uk-active={page.route.id === '/pro'}>
                         <a
-                            href="{base}/pro"
+                            href={resolve('/pro')}
                             aria-current={page.route.id === '/pro' ? 'page' : null}
                         >
                             Pro
@@ -45,14 +45,14 @@
                     </li>
                     <li class:uk-active={page.route.id?.startsWith('/docs')}>
                         <a
-                            href="{base}/docs/introduction"
+                            href={resolve('/docs/introduction')}
                             aria-current={page.route.id?.startsWith('/docs') ? 'page' : null}
                             >Documentation</a
                         >
                     </li>
                     <li class:uk-active={page.route.id === '/changelog'}>
                         <a
-                            href="{base}/changelog"
+                            href={resolve('/changelog')}
                             aria-current={page.route.id === '/changelog' ? 'page' : null}
                             >Changelog</a
                         >
@@ -63,7 +63,7 @@
                     <a
                         class:uk-active={page.route.id === '/download'}
                         class="uk-button uk-button-default tm-button-default uk-icon"
-                        href="{base}/download"
+                        href={resolve('/download')}
                         aria-current={page.route.id === '/download' ? 'page' : null}
                     >
                         Download <canvas uk-icon="download" width="20" height="20"></canvas>
