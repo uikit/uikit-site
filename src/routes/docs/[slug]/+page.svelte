@@ -1,6 +1,6 @@
 <script>
     import Header from '../../Header.svelte';
-    import { base } from '$app/paths';
+    import { resolve } from '$app/paths';
     import { page } from '$app/state';
     import Clipboard from 'clipboard/dist/clipboard.min?url';
     import Docs from '$lib/docs.js?url';
@@ -26,7 +26,7 @@
             {#each Object.entries(pages) as [label, slug] (slug)}
                 <li class:uk-active={page.params.slug === slug}>
                     <a
-                        href="{base}/docs/{slug}"
+                        href={resolve(`/docs/${slug}`)}
                         aria-current={page.params.slug === slug ? 'page' : null}>{label}</a
                     >
                 </li>
@@ -54,7 +54,7 @@
                     {#if data.test}
                         <li>
                             <a
-                                href="../assets/uikit/tests/{page.params.slug}.html"
+                                href={resolve(`../assets/uikit/tests/${page.params.slug}.html`)}
                                 target="_blank"
                                 rel="noreferrer"
                             >

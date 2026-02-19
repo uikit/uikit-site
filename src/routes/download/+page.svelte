@@ -1,6 +1,6 @@
 <script>
     import Header from '../Header.svelte';
-    import { assets } from '$app/paths';
+    import { asset } from '$app/paths';
     let { data } = $props();
 </script>
 
@@ -19,7 +19,7 @@
         <div class="uk-width-1-1">
             <div class="uk-container">
                 <p class="uk-margin-large-bottom">
-                    <img src="{assets}/images/download.svg" alt="" width="142" height="117" />
+                    <img src={asset('/images/download.svg')} alt="" width="142" height="117" />
                 </p>
 
                 <h1>Thanks for giving UIkit a try.</h1>
