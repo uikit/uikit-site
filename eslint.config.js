@@ -23,9 +23,6 @@ export default [
         },
     },
     {
-        rules: {
-            'no-unused-vars': ['error', { caughtErrors: 'none' }],
-        },
         languageOptions: {
             ecmaVersion: 'latest',
             sourceType: 'module',

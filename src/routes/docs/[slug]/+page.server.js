@@ -122,7 +122,7 @@ function example(code, id) {
 async function exists(file) {
     try {
         return Boolean(await stat(file));
-    } catch (e) {
+    } catch {
         return false;
     }
 }
