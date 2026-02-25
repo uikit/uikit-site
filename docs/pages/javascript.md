@@ -173,6 +173,17 @@ The component's documentation page lists its events.
 
 **Note** Components often trigger events with the same name (e.g. 'show'). Usually events [bubble through the DOM](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture). Check the event target, to ensure the event was triggered by the desired component.
 
+Binding an action to event listeners returns a function. If you wantt to remove those actions from the event, just execute teh returned function.
+
+```js
+let action_unbind = UIkit.util.on('#offcanvas', 'show', function () {
+    // do something
+});
+
+// unbind
+action_unbind();
+```
+
 Sometimes, components like Grid or Tab are hidden in the markup. This may happen when used in combination with the Switcher, Modal or Dropdown. Once they become visible, they need to adjust or fix their height and other dimensions.
 
 UIkit offers several ways of updating a component. Omitting the `type` parameter will trigger an `update` event.
