@@ -26,6 +26,10 @@ Add one of the following classes to the container to apply a different max-width
 | `.uk-container-xlarge` | Add this class for a xlarge container.                                                                         |
 | `.uk-container-expand` | Add this class, if you do not want to limit the container width but still want the dynamic horizontal padding. |
 
+| `.uk-container-expand-right` | Add this class, if you do not want to limit the container width but still want the dynamic right horizontal padding.
+
+| `.uk-container-expand-left` | Add this class, if you do not want to limit the container width but still want the dynamic left horizontal padding.
+
 ```html
 <div class="uk-container uk-container-xsmall"></div>
 
