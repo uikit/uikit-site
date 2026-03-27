@@ -75,8 +75,8 @@ importers:
         specifier: ^5.55.0
         version: 5.55.0
       symlink-dir:
-        specifier: ^10.0.1
-        version: 10.0.1
+        specifier: ^7.1.0
+        version: 7.1.0
       uikit:
         specifier: 3.25.13
         version: 3.25.13
@@ -593,9 +593,9 @@ packages:
     resolution: {integrity: sha512-/iZM6FnM4tnx9csuTxspMW4BOSegshwX5oBDznJ7S4WggL7Vczz5d2W11ecc4vRrQMQHXRSxzrCsyG5EsPPTbA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@zkochan/rimraf@4.0.0':
-    resolution: {integrity: sha512-0EdBn93hMsbx4svJsKQCch+sNMuXvzWbVYqTCGdctQmxtuYK57uCURZPNiNdwS2Y31d96DMWI3BpJ9DLN2Jxfw==}
-    engines: {node: '>=22.13'}
+  '@zkochan/rimraf@3.0.2':
+    resolution: {integrity: sha512-GBf4ua7ogWTr7fATnzk/JLowZDBnBJMm8RkMaC/KcvxZ9gxbMWix0/jImd815LmqKyIHZ7h7lADRddGMdGBuCA==}
+    engines: {node: '>=18.12'}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -626,9 +626,9 @@ packages:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
     engines: {node: 18 || 20 || >=22}
 
-  better-path-resolve@2.0.0:
-    resolution: {integrity: sha512-VvvsZgI0upmMbG1iEFiQ7hRG+fDJwmw7iFfKLzBVNhRd2ycauJ3+3w50ESX+pS2tvS9R2hMzijwE+vinDyqQzQ==}
-    engines: {node: '>=22.13'}
+  better-path-resolve@1.0.0:
+    resolution: {integrity: sha512-pbnl5XzGBdrFU/wT4jqmJVPn2B6UHPBOhzMQkY/SPUPB6QtUXtmBHBIwCbXJol93mOpGMnQyP/+BB19q04xj7g==}
+    engines: {node: '>=4'}
 
   brace-expansion@5.0.4:
     resolution: {integrity: sha512-h+DEnpVvxmfVefa4jFbCf5HdH5YMDXRsmKflpf1pILZWRFlTbJpxeU55nJl4Smt5HQaGzg1o6RHFPJaOqnmBDg==}
@@ -818,8 +818,8 @@ packages:
   flatted@3.4.2:
     resolution: {integrity: sha512-PjDse7RzhcPkIJwy5t7KPWQSZ9cAbzQXcafsetQoD7sOJRQlGikNbx7yZp2OotDnJyrDcbyRq3Ttb18iYOqkxA==}
 
-  fs-extra@11.3.4:
-    resolution: {integrity: sha512-CTXd6rk/M3/ULNQj8FBqBWHYBVYybQ3VPBw0xGKFe3tuH7ytT6ACnvzpIQ3UZtB8yvUKC2cXn1a+x+5EVQLovA==}
+  fs-extra@11.3.0:
+    resolution: {integrity: sha512-Z4XaCL6dUDHfP/jT25jJKMmtxvuwbkrD1vNSMFlo9lNLY2c5FHYSQgHPRZUjAB26TpDEoW9HCOgplrdbaPV/ew==}
     engines: {node: '>=14.14'}
 
   fsevents@2.3.3:
@@ -1206,9 +1206,9 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  rename-overwrite@7.0.0:
-    resolution: {integrity: sha512-DjRc82L24rSj0I67XFWZsC8ZQIzILbnLQGEtbPhLNlh/ovtwLApgITeKnP3qyI5J7st7fjKRuspkMiaiEb7NiQ==}
-    engines: {node: '>=22.13'}
+  rename-overwrite@6.0.6:
+    resolution: {integrity: sha512-bSbsw/VyMyDez6NJKxqURBCLRCm98uezWBi03UZCeEFccCNIthC6Jk5JazMjexOTdrYd4q/jIxTIwGtgk1k1gA==}
+    engines: {node: '>=18'}
 
   rolldown@1.0.0-rc.11:
     resolution: {integrity: sha512-NRjoKMusSjfRbSYiH3VSumlkgFe7kYAa3pzVOsVYVFY3zb5d7nS+a3KGQ7hJKXuYWbzJKPVQ9Wxq2UvyK+ENpw==}
@@ -1281,9 +1281,10 @@ packages:
     resolution: {integrity: sha512-SThllKq6TRMBwPtat7ASnm/9CDXnIhBR0NPGw0ujn2DVYx9rVwsPZxDaDQcYGdUz/3BYVsCzdq7pZarRQoGvtw==}
     engines: {node: '>=18'}
 
-  symlink-dir@10.0.1:
-    resolution: {integrity: sha512-34rLIwj9YzKr+2BTIpvp1/sYO8i3nmzTyrtx/iOKX2qWVEbqgWMfmkG41TDXiCaRi4I7dsHfTTnxUVi9p6RnIQ==}
-    engines: {node: '>=22.13'}
+  symlink-dir@7.1.0:
+    resolution: {integrity: sha512-Nnht6e6PYs5RF2JXbc43Bm9Sskfu750yAhJfi/aniLgWjtqsfL/68bLkYSX3GSp1dTPxy7mVbO+bVbMc16XKrw==}
+    engines: {node: '>=18.12'}
+    hasBin: true
 
   tiny-emitter@2.1.0:
     resolution: {integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==}
@@ -1816,7 +1817,7 @@ snapshots:
 
   '@typescript-eslint/types@8.57.2': {}
 
-  '@zkochan/rimraf@4.0.0': {}
+  '@zkochan/rimraf@3.0.2': {}
 
   acorn-jsx@5.3.2(acorn@8.16.0):
     dependencies:
@@ -1854,7 +1855,7 @@ snapshots:
 
   balanced-match@4.0.4: {}
 
-  better-path-resolve@2.0.0:
+  better-path-resolve@1.0.0:
     dependencies:
       is-windows: 1.0.2
 
@@ -2090,7 +2091,7 @@ snapshots:
 
   flatted@3.4.2: {}
 
-  fs-extra@11.3.4:
+  fs-extra@11.3.0:
     dependencies:
       graceful-fs: 4.2.11
       jsonfile: 6.2.0
@@ -2391,10 +2392,10 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  rename-overwrite@7.0.0:
+  rename-overwrite@6.0.6:
     dependencies:
-      '@zkochan/rimraf': 4.0.0
-      fs-extra: 11.3.4
+      '@zkochan/rimraf': 3.0.2
+      fs-extra: 11.3.0
 
   rolldown@1.0.0-rc.11:
     dependencies:
@@ -2485,10 +2486,10 @@ snapshots:
       magic-string: 0.30.21
       zimmerframe: 1.1.4
 
-  symlink-dir@10.0.1:
+  symlink-dir@7.1.0:
     dependencies:
-      better-path-resolve: 2.0.0
-      rename-overwrite: 7.0.0
+      better-path-resolve: 1.0.0
+      rename-overwrite: 6.0.6
 
   tiny-emitter@2.1.0: {}
 
