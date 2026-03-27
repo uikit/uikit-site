@@ -33,9 +33,9 @@
         "prettier-plugin-organize-imports": "^4.3.0",
         "prettier-plugin-svelte": "^3.5.1",
         "svelte": "^5.55.0",
-        "symlink-dir": "^7.1.0",
+        "symlink-dir": "^10.0.1",
         "uikit": "3.25.14",
-        "vite": "^8.0.2"
+        "vite": "^8.0.3"
     },
     "pnpm": {
         "peerDependencyRules": {
