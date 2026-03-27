@@ -35,7 +35,7 @@
         "svelte": "^5.55.0",
         "symlink-dir": "^7.1.0",
         "uikit": "3.25.14",
-        "vite": "^8.0.2"
+        "vite": "^8.0.3"
     },
     "pnpm": {
         "peerDependencyRules": {
