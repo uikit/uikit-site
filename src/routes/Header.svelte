@@ -76,6 +76,7 @@
                     href="#offcanvas"
                     uk-toggle
                     aria-label="Open menu"
+                    aria-controls="offcanvas"
                 ></a>
             </div>
         </nav>
