@@ -16,17 +16,17 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - id: targets
         name: Generate targets
-        uses: docker/bake-action/subaction/matrix@v6
+        uses: docker/bake-action/subaction/matrix@v7
         with:
           target: ${{ env.TARGET }}
 
       - id: platforms
         name: Generate platforms
-        uses: docker/bake-action/subaction/matrix@v6
+        uses: docker/bake-action/subaction/matrix@v7
         with:
           target: ${{ env.TARGET }}
           fields: platforms
@@ -46,7 +46,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Prepare
         run: |
@@ -55,25 +55,25 @@ jobs:
 
       - id: meta
         name: Docker metadata
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: ${{ env.REGISTRY_NAMESPACE }}/${{ matrix.target }}
           flavor: |
             latest=true
 
       - name: Login to Docker Registry
-        uses: docker/login-action@v3
+        uses: docker/login-action@v4
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ env.REGISTRY_USERNAME }}
           password: ${{ env.REGISTRY_PASSWORD }}
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
 
       - id: build
         name: Build Docker image
-        uses: docker/bake-action@v6
+        uses: docker/bake-action@v7
         with:
           push: true
           source: .
@@ -92,7 +92,7 @@ jobs:
           touch "${{ runner.temp }}/digests/${digest#sha256:}"
 
       - name: Upload digest
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: digests~${{ matrix.target }}~${{ env.PLATFORM_PAIR }}
           path: ${{ runner.temp }}/digests/*
@@ -110,25 +110,25 @@ jobs:
 
     steps:
       - name: Download digests
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           path: ${{ runner.temp }}/digests
           pattern: digests~${{ matrix.target }}~*
           merge-multiple: true
 
       - name: Login to Docker Registry
-        uses: docker/login-action@v3
+        uses: docker/login-action@v4
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ env.REGISTRY_USERNAME }}
           password: ${{ env.REGISTRY_PASSWORD }}
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
 
       - id: meta
         name: Docker metadata
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: ${{ env.REGISTRY_NAMESPACE }}/${{ matrix.target }}
           flavor: |
