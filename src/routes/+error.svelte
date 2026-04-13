@@ -1,9 +1,10 @@
 <script>
     import { page } from '$app/state';
+    import Header from './Header.svelte';
 </script>
 
 <div class="uk-section-primary tm-section-texture">
-    <navbar class="uk-navbar-transparent"></navbar>
+    <Header class="uk-navbar-transparent" />
 
     <div
         class="uk-section uk-section-small uk-flex uk-flex-middle uk-text-center"

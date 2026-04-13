@@ -1,5 +1,6 @@
 {
     "type": "module",
+    "private": true,
     "scripts": {
         "dev": "vite dev --open",
         "build": "vite build",

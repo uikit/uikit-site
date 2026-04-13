@@ -8,7 +8,11 @@
 
 <svelte:head>
     {#if !dev}
-        <script src="https://stats.yootheme.com/script.js" data-website-id="f3d923d6-34da-4326-907d-fefe4962bde9" defer></script>
+        <script
+            src="https://stats.yootheme.com/script.js"
+            data-website-id="f3d923d6-34da-4326-907d-fefe4962bde9"
+            defer
+        ></script>
     {/if}
 </svelte:head>
 
@@ -18,14 +22,12 @@
     </div>
 </div>
 
-{@render children?.()}
+{@render children()}
 
 <Offcanvas navigation={data.navigation} />
 
 {#if !page.route.id?.startsWith('/docs')}
-    <div>
-        <script>
-            sessionStorage.setItem('scroll', 0);
-        </script>
-    </div>
+    <script>
+        sessionStorage.setItem('scroll', 0);
+    </script>
 {/if}

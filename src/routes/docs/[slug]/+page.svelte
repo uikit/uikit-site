@@ -1,6 +1,6 @@
 <script>
     import Header from '../../Header.svelte';
-    import { resolve } from '$app/paths';
+    import { asset, resolve } from '$app/paths';
     import { page } from '$app/state';
     import Clipboard from 'clipboard/dist/clipboard.min?url';
     import Docs from '$lib/docs.js?url';
@@ -54,7 +54,7 @@
                     {#if data.test}
                         <li>
                             <a
-                                href={resolve(`../assets/uikit/tests/${page.params.slug}.html`)}
+                                href={asset(`/assets/uikit/tests/${page.params.slug}.html`)}
                                 target="_blank"
                                 rel="noreferrer"
                             >

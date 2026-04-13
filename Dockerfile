@@ -1,4 +1,4 @@
-FROM node:22 AS build
+FROM node:24 AS build
 
 # environment variables
 ARG COMMIT_HASH=empty
@@ -21,7 +21,7 @@ RUN pnpm compile && \
     pnpm build
 
 # build uikit v2
-FROM node:18 AS build-v2
+FROM node:24 AS build-v2
 ADD https://github.com/uikit/uikit-site/releases/download/2016.12/uikit-site-v2.zip uikit.zip
 RUN unzip uikit.zip -d ./uikit && \
     rm uikit.zip && \

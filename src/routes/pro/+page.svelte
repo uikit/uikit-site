@@ -5,7 +5,7 @@
     function titleCase(str) {
         return str
             .replaceAll('-', ' ')
-            .replace(/\b\w+/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+            .replace(/\b\w+/g, (txt) => txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase());
     }
 </script>
 
@@ -197,7 +197,7 @@
                 <div>
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
                         <img
-                            src={`images/pro/layout-${id}.jpg`}
+                            src={asset(`/images/pro/layout-${id}.jpg`)}
                             width="800"
                             height="1250"
                             alt={`${titleCase(id)} Home Layout`}
