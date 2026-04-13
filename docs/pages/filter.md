@@ -867,6 +867,6 @@ The following events will be triggered on elements with this component attached:
 
 ## Accessibility
 
-The Filter component automatically sets the appropriate WAI-ARIA roles, states and properties. 
+The Filter component automatically sets the appropriate WAI-ARIA roles, states and properties.
 
 - The *filter controls* have the `aria-selected` state.

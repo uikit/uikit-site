@@ -315,7 +315,7 @@ Hides the Offcanvas.
 
 ## Accessibility
 
-The Offcanvas component adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/) and automatically sets the appropriate WAI-ARIA roles, states and properties. 
+The Offcanvas component adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
 - The *offcanvas bar* has the `dialog` role, and if the offcanvas has an overlay, the `aria-modal` property.
 

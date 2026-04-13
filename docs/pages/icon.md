@@ -440,7 +440,7 @@ UIkit.icon(element).svg.then(function(svg) { svg.querySelector('path').style.str
 
 ## Accessibility
 
-Set the appropriate WAI-ARIA roles, states and properties to the Icon component. 
+Set the appropriate WAI-ARIA roles, states and properties to the Icon component.
 
 - If an `<a>` element is used, set the `aria-label` property to the `<a>` element to describe its meaning.
 

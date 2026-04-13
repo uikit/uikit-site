@@ -220,7 +220,7 @@ To define a subtitle, create a `<div>` element inside an item's `<a>` element. A
 <nav class="uk-navbar-container">
     <div class="uk-container">
         <div uk-navbar>
-                
+
             <div class="uk-navbar-left">
 
                 <ul class="uk-navbar-nav">
@@ -401,7 +401,7 @@ Add the `.uk-navbar-toggle` class and the `uk-navbar-toggle-icon` attribute to a
                     </ul>
                 </div>
             </div>
-        
+
         </div>
     </div>
 </nav>
@@ -1709,7 +1709,7 @@ The following events will be triggered on elements with this component attached:
 
 ## Accessibility
 
-The Navbar component adheres to the [Disclosure Navigation Menu WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/examples/disclosure-navigation-hybrid/) and automatically sets the appropriate WAI-ARIA states and properties. 
+The Navbar component adheres to the [Disclosure Navigation Menu WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/examples/disclosure-navigation-hybrid/) and automatically sets the appropriate WAI-ARIA states and properties.
 
 - The *nav items* and *toggle items* have the `aria-expanded` state and the `aria-haspopup` property.
 - The *toggle items* also have the `aria-label` property.
@@ -1718,9 +1718,9 @@ The Navbar component adheres to the [Disclosure Navigation Menu WAI-ARIA design 
 
 The Navbar component can be accessed through the keyboard using the following keys.
 
-- The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus inside or outside the navbar. 
-- The <kbd>left/right arrow</kbd> keys navigate through the navbar items. In hover mode the dropdown will open automatically. If the focus is on the last item, it moves to the first item. 
-- The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown of the focused navbar item. 
+- The <kbd>tab</kbd> or <kbd>shift+tab</kbd> keys place focus inside or outside the navbar.
+- The <kbd>left/right arrow</kbd> keys navigate through the navbar items. In hover mode the dropdown will open automatically. If the focus is on the last item, it moves to the first item.
+- The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown of the focused navbar item.
 - The <kbd>up/down arrow</kbd> keys navigates through the nav items in a dropdown. If the focus is on the last item, it moves to the first item.
 - The <kbd>esc</kbd> key closes any dropdown even if the focus has moved to another element.
 

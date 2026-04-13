@@ -301,10 +301,10 @@ Add one of the following classes to increase or decrease the spacing between lis
 
 ## Accessibility
 
-Set the appropriate WAI-ARIA roles, states and properties to the List component. 
+Set the appropriate WAI-ARIA roles, states and properties to the List component.
 
 - If a `<div>` element is used, set the `list` role to the list, and the `listitem` role to the list items.
-  
+
 ```html
 <div class="uk-list" role="list">
     <div role="listitem">List item 1</div>

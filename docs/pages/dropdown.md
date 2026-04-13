@@ -659,5 +659,5 @@ The Dropdown component adheres to the [Menu Button WAI-ARIA design pattern](http
 
 The Dropdown component can be accessed through the keyboard using the following keys.
 
-- The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown. 
+- The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the dropdown.
 - The <kbd>esc</kbd> key closes the dropdown even if the focus has moved to another element.

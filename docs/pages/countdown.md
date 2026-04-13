@@ -133,7 +133,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 
 | Option   | Value   | Default | Description                                                                                                                                         |
 | -------- | ------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `date`   | String  | `false` | Any string parsable by ```Date.parse```. See [Reference](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse). |
+| `date`   | String  | `false` | Any string parsable by `Date.parse`. See [Reference](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/parse). |
 | `reload` | Boolean | `false` | Reload page after countdown expires. Initially expired countdowns won't reload the page.                                                            |
 
 ***

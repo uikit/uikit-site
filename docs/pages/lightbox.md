@@ -131,7 +131,7 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 
 ## Navigations
 
-By default, the lightbox shows a slidenav from the [Slidenav component](slidenav.md). To hide the slidenav, set the `slidenav: false` option. To show an item-based navigation, for example, from the [Thumbnav component](thumbnav.md) or [Dotnav component](dotnav.md), set the `nav` option to `thumbnav` or `dotnav`. 
+By default, the lightbox shows a slidenav from the [Slidenav component](slidenav.md). To hide the slidenav, set the `slidenav: false` option. To show an item-based navigation, for example, from the [Thumbnav component](thumbnav.md) or [Dotnav component](dotnav.md), set the `nav` option to `thumbnav` or `dotnav`.
 
 ```html
 <div uk-lightbox="slidenav: false; nav: thumbnav">
@@ -548,11 +548,11 @@ Stops the Lightbox's autoplay.
 
 The Lightbox component adheres to the [Dialog (Modal) WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/) and the [Carousel WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
 
-- The *lightbox* has the `dialog` role, the `aria-modal` property and the `aria-roledescription` property set to `carousel`. 
+- The *lightbox* has the `dialog` role, the `aria-modal` property and the `aria-roledescription` property set to `carousel`.
 - The *slide list* has an ID, the `presentation` role and the `aria-live` property.
 - The *slides* have an ID, the `group` role, the `aria-roledescription` property set to `slide` and an `aria-label` property.
 
-The previous/next navigation adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/). 
+The previous/next navigation adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/).
 
 - The *prev/next navigation items* have the `button` role, the `aria-controls` property set to the ID of the slide list, and an `aria-label` property.
 
@@ -564,7 +564,7 @@ The Close component automatically sets the appropriate WAI-ARIA roles and proper
 
 The lightbox gallery can be accessed through the keyboard using the following keys.
 
-- The <kbd>left/right arrow</kbd> keys navigate through the slides. If the focus is on the last slide, it moves to the first slide. 
+- The <kbd>left/right arrow</kbd> keys navigate through the slides. If the focus is on the last slide, it moves to the first slide.
 - The <kbd>home</kbd> or <kbd>end</kbd> keys move the focus to the first or last slide.
 - The <kbd>esc</kbd> key closes the lightbox.
 

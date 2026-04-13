@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Inverse colors of any component for light or dark backgrounds.</p>
 
-In general, there are UIkit styles which have light backgrounds, like the default UIkit style, or the styles with dark backgrounds. Depending on the background color, the default text color is either dark on light. But if different background colors or background images are used, the opposite text color may be needed. Use the Inverse component to inverse the text color for such backgrounds. 
+In general, there are UIkit styles which have light backgrounds, like the default UIkit style, or the styles with dark backgrounds. Depending on the background color, the default text color is either dark on light. But if different background colors or background images are used, the opposite text color may be needed. Use the Inverse component to inverse the text color for such backgrounds.
 
 ## Usage
 
@@ -35,7 +35,7 @@ Since there is already a default text color, for light styles it is dark, and fo
 </div>
 ```
 
-*** 
+***
 
 ## Extending components
 

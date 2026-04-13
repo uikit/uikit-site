@@ -32,7 +32,7 @@ Using a scoped version of UIkit allows you to limit styles to only apply to a ce
 pnpm scope
 ```
 
-**Note** Type ```pnpm scope -- -h``` to get more options.
+**Note** Type `pnpm scope -- -h` to get more options.
 
 You will find the generated CSS and JS files in the `/dist` folder. To use the scoped version, wrap the document section with your UIkit markup in an element with the `.uk-scope` class.
 
@@ -53,7 +53,7 @@ You will find the generated CSS and JS files in the `/dist` folder. To use the s
 </html>
 ```
 
-Now you need to tell ```uk-modal```, ```uk-tooltip``` and ```uk-lightbox``` where to append themselves into the DOM when they do not have the ```container``` option set, e.g. the default container for said components.
+Now you need to tell `uk-modal`, `uk-tooltip` and `uk-lightbox` where to append themselves into the DOM when they do not have the `container` option set, e.g. the default container for said components.
 To do so, set the following parameter:
 
 ```javascript

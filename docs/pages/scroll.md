@@ -14,7 +14,7 @@ Simply add the `uk-scroll` attribute to any page-internal link that contains a U
 <a class="uk-button uk-button-primary" href="#target" uk-scroll>Scroll down</a>
 ```
 
-The height of a sticky element, for example the sticky navbar, is automatically added as offset to the scroll target so it is not covered by the sticky element. 
+The height of a sticky element, for example the sticky navbar, is automatically added as offset to the scroll target so it is not covered by the sticky element.
 
 ***
 

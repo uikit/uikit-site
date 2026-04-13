@@ -8,7 +8,7 @@ The Video component allows you to seamlessly display videos as animated images w
 
 ## Usage
 
-To apply this component, add the `uk-video` attribute to a `<video>` element. Autoplay is handled automatically, so the `autoplay` attribute is not required. The video continues playing when when it leaves the viewport but pauses if its visibility changes to hidden. Don't add any controls but the `playsinline`, `loop` and `muted` attributes instead to display the video as animated image. 
+To apply this component, add the `uk-video` attribute to a `<video>` element. Autoplay is handled automatically, so the `autoplay` attribute is not required. The video continues playing when when it leaves the viewport but pauses if its visibility changes to hidden. Don't add any controls but the `playsinline`, `loop` and `muted` attributes instead to display the video as animated image.
 
 ```html
 <video src="" width="" height="" playsinline loop muted uk-video></video>

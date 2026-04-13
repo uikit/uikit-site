@@ -141,7 +141,7 @@ To animate the dropbar use the `slide-*` or `reveal-*` animations from the [Drop
 
 ```example
 <div class="uk-overflow-auto uk-height-medium">
-    
+
     <nav class="uk-navbar-container">
         <div class="uk-container">
             <div uk-navbar>
@@ -245,7 +245,7 @@ Add the `.uk-dropbar-large` class for a dropbar with larger vertical padding.
 
 ```example
 <div class="uk-overflow-auto uk-height-large">
-    
+
     <nav class="uk-navbar-container">
         <div class="uk-container">
             <div uk-navbar>
@@ -290,5 +290,5 @@ The Drop component adheres to the [Menu Button WAI-ARIA design pattern](https://
 
 The Drop component can be accessed through keyboard using the following keys.
 
-- The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the drop. 
+- The <kbd>enter</kbd> or <kbd>space</kbd> keys open and close the drop.
 - The <kbd>esc</kbd> key closes the drop even if focus has moved to another element.

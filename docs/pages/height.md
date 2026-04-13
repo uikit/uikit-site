@@ -153,7 +153,7 @@ To set the height for a placeholder element, add the `uk-height-placeholder: SEL
 <div uk-height-placeholder="#my-id"></div>
 ```
 
-For example, if there is an absolutely positioned transparent navbar, a placeholder element with the same height as the navbar may be needed to push the elements down in the normal content flow. 
+For example, if there is an absolutely positioned transparent navbar, a placeholder element with the same height as the navbar may be needed to push the elements down in the normal content flow.
 
 ```example
 <div class="uk-position-relative">

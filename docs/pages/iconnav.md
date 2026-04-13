@@ -44,7 +44,7 @@ By default, the items of an iconnav are aligned horizontally. To apply a vertica
 
 ## Accessibility
 
-Set the appropriate WAI-ARIA roles, states and properties to the Iconnav component. 
+Set the appropriate WAI-ARIA roles, states and properties to the Iconnav component.
 
 - Set the `aria-label` property to the `<a>` elements to describe their meaning.
 

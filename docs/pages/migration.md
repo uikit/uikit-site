@@ -96,12 +96,12 @@ If you have customized the Less variables of the search navbar modifier in a cus
 
 ## Migration from UIkit 3.17 to 3.18
 
-If you have created a custom UIkit style and overridden a `*-color-mode` variable, make sure it is set to either `light` or `dark`. It can no longer be set to `none` or be empty. 
+If you have created a custom UIkit style and overridden a `*-color-mode` variable, make sure it is set to either `light` or `dark`. It can no longer be set to `none` or be empty.
 
 UIkit 3.18 introduces new `*-color-mode` Less variables for the default and muted style modifiers in Section, Tile, Card and Overlay components, just like for the primary and secondary style modifiers. Since the default UIkit style has light backgrounds, their color mode variables are set to dark by default. If you have a dark custom UIkit style where the color mode variables change to the opposite color, you also have to change the new color mode variables to light.
 
 ```
-// For dark UIkit styles only 
+// For dark UIkit styles only
 
 @card-default-color-mode: light;
 

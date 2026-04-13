@@ -37,9 +37,9 @@ var sticky = UIkit.sticky('#sticky', {
 
 You can retrieve an already initialized component by passing a selector or an element as a first Argument to the component function.
 
- ```js
- var sticky = UIkit.sticky('#sticky');
- ```
+```js
+var sticky = UIkit.sticky('#sticky');
+```
 
 Omitting the second parameter will not re-initialize the component but serve as a getter function.
 
@@ -51,7 +51,7 @@ Each component comes with a set of configuration options that let you customize 
 
 ### Instance
 
-Options can be set as shown in the following examples. 
+Options can be set as shown in the following examples.
 
 With the `key: value;` format:
 

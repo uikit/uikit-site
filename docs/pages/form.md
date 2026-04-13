@@ -157,7 +157,7 @@ Add one of the classes to an `<input>`, `<select>`, `<textarea>`, `<checkbox>` o
 
 
 
-                            
+
 
 
 ```
@@ -558,7 +558,7 @@ UIkit.formCustom(element, options);
 
 ## Accessibility
 
-Set the appropriate WAI-ARIA roles, states and properties to the Form component. 
+Set the appropriate WAI-ARIA roles, states and properties to the Form component.
 
 - If no `<label>` element is associated with the form control, set the `aria-label` property to the form control to describe its meaning.
 
