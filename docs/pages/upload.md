@@ -184,14 +184,13 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `url`              | String   |                         | The request url.                                                                              |
 | `multiple`         | Boolean  | `false`                 | Allow multiple files to be uploaded.                                                          |
 | `name`             | String   | `files[]`               | The name parameter.                                                                           |
-| `type`             | String   | `POST`                  | The request type.                                                                             |
+| `method`           | String   | `POST`                  | The request type.                                                                             |
 | `params`           | Object   | `{}`                    | Additional parameters.                                                                        |
 | `allow`            | String   | `false`                 | File name filter (eg. *.png). Separate multiple values with a pipe (*.png\|*.gif).            |
 | `mime`             | String   | `false`                 | File MIME type filter (eg. image/*). Separate multiple values with a pipe (image/*\|video/*). |
 | `maxSize`          | Number   | `0`                     | The maximum file size per file. (kB)                                                          |
 | `concurrent`       | Number   | `1`                     | Number of files that will be uploaded simultaneously.                                         |
 | `type`             | String   |                         | The expected response data type (xml, json, script, or html)                                  |
-| `method`           | String   | `POST`                  | The request method                                                                            |
 | `msg-invalid-mime` | String   | `Invalid File Type: %s` | Invalid MIME type message.                                                                    |
 | `msg-invalid-name` | String   | `Invalid File Name: %s` | Invalid name message.                                                                         |
 | `cls-dragover`     | String   | `uk-dragover`           | File name filter.                                                                             |

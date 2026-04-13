@@ -1,6 +1,6 @@
 # Totop
 
-<p id="toptext" class="uk-text-lead">Create a simple to-top scroller.</p>
+<p class="uk-text-lead">Create a simple to-top scroller.</p>
 
 ## Usage
 

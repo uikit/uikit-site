@@ -1,6 +1,6 @@
 # Marker
 
-<p id="toptext" class="uk-text-lead">Create a marker icon that can be displayed on top of images.</p>
+<p class="uk-text-lead">Create a marker icon that can be displayed on top of images.</p>
 
 ## Usage
 
