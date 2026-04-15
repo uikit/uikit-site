@@ -20,6 +20,8 @@ If `title` is the only option in the attribute value, you can also use `uk-toolt
 <button class="uk-button uk-button-default" uk-tooltip="Hello World">Hover</button>
 ```
 
+**Note** The tooltip content is rendered as HTML. Sanitization is the developer's responsibility.
+
 ***
 
 ## Alignment

@@ -39,8 +39,9 @@ UIkit.notification("<span uk-icon='icon: check'></span> Message");
 
 ```example
 <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Message with an icon'})">With icon</button>
-
 ```
+
+**Note** The message is rendered as HTML. Sanitization is the developer's responsibility.
 
 ***
 

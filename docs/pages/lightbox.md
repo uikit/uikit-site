@@ -56,6 +56,8 @@ To display a caption at the bottom of the lightbox, set the `data-caption` attri
 </div>
 ```
 
+**Note** The caption is rendered as HTML. Sanitization is the developer's responsibility.
+
 ***
 
 ## Animations

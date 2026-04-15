@@ -465,6 +465,8 @@ The component comes with a number of prepared modal dialogs that you can use for
 | `UIkit.modal.prompt('Name:', 'Your name')`    | Show a dialog asking for a text input.                   |
 | `UIkit.modal.dialog('<p>UIkit dialog!</p>');` | Show dialog with any HTML content.                       |
 
+**Note** The message and label are rendered as HTML. Sanitization is the developer's responsibility.
+
 To process the user input, the modal uses a promise-based interface which provides a `then()` function to register your callback functions. The `UIkit.modal.dialog` function however will return the modal itself.
 
 ```js
