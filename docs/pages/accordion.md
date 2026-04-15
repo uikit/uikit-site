@@ -49,7 +49,7 @@ To apply a style to the accordion add the `.uk-accordion-default` modifier.
 
 ### Icon
 
-To create a accordion icon, just add a `span` element with the `uk-accordion-icon` attribute at the end of the accordion title.
+To create an accordion icon, just add a `span` element with the `uk-accordion-icon` attribute at the end of the accordion title.
 
 ```html
 <a class="uk-accordion-title" href>Item 1 <span uk-accordion-icon></span></a>
