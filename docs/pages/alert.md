@@ -84,7 +84,7 @@ Any of these options can be applied to the component attribute. Separate multipl
 `animation` is the _Primary_ option and its key may be omitted, if it's the only option in the attribute value.
 
 ```html
-<span uk-toggle=".my-class"></span>
+<span uk-alert="false"></span>
 ```
 
 ***
