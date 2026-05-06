@@ -280,7 +280,7 @@ You can also add custom content to the navbar, like text, icons, buttons or form
 </nav>
 ```
 
-Add the `.uk-logo` class from the [Utility component](utility.md) to an `<a>` or `<div>` element to indicate your brand.
+Add the `.uk-logo` class from the [Logo component](logo.md) to an `<a>` or `<div>` element to indicate your brand.
 
 ```example
 <nav class="uk-navbar-container">

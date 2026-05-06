@@ -108,11 +108,9 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
 
 ```html
 <script>
-
     var bar = document.getElementById('js-progressbar');
 
     UIkit.upload('.js-upload', {
-
         url: '',
         multiple: true,
 
@@ -120,8 +118,7 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
             console.log('beforeSend', arguments);
 
             // The environment object can still be modified here.
-            // var {data, method, headers, xhr, responseType} = environment;
-
+            // var {url, data, method, headers, xhr, responseType} = environment;
         },
         beforeAll: function () {
             console.log('beforeAll', arguments);
@@ -166,12 +163,12 @@ To create `select` and `drop` upload listeners, you need to instantiate each upl
             }, 1000);
 
             alert('Upload Completed');
-        }
-
+        },
     });
-
 </script>
 ```
+
+The `environment` object can still be modified in the `beforeSend` callback. For example, you can change the `url`, `method`, `headers`, `data` or `responseType`, or directly access the `xhr` instance. Return `false` from `beforeSend` to cancel the request before it is sent.
 
 ***
 
