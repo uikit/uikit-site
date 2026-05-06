@@ -1,6 +1,6 @@
 # Dropcap
 
-<p class="uk-text-lead">Easily create a stylish drop cap for the first letter of your text.</p>
+<p class="uk-text-lead">Create a drop cap for the first letter of a paragraph.</p>
 
 ## Usage
 
