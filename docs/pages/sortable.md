@@ -18,7 +18,7 @@ To apply this component, add the `uk-sortable` attribute to a container and crea
 ```
 
 ```example
-<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
+<ul class="uk-grid uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" >
     <li>
         <div class="uk-card uk-card-default uk-card-body uk-text-center">Item 1</div>
     </li>
@@ -62,7 +62,7 @@ By default, the entire sortable element can be used for drag and drop sorting. T
 ```
 
 ```example
-<ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-sortable-handle" uk-grid>
+<ul class="uk-grid uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s" uk-sortable="handle: .uk-sortable-handle" >
     <li>
         <div class="uk-card uk-card-default uk-card-body">
             <span class="uk-sortable-handle uk-margin-xsmall-right uk-text-center" uk-icon="icon: table"></span>Item 1
@@ -123,7 +123,7 @@ To be able to sort items from one list to another, you can group them by adding 
 ```
 
 ```example
-<div class="uk-child-width-1-3@s" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s">
     <div>
         <h4>Group 1</h4>
         <div uk-sortable="group: sortable-group">
