@@ -22,14 +22,14 @@ Add one of the `.uk-width-*` classes to an element to determine its size. Typica
 **Note** We remove redundancy into each set of unit classes, so that for instance instead of `.uk-width-3-6` you should use `.uk-width-1-2`.
 
 ```html
-<div uk-grid>
+<div class="uk-grid">
     <div class="uk-width-1-2"></div>
     <div class="uk-width-1-2"></div>
 </div>
 ```
 
 ```example
-<div class="uk-text-center" uk-grid>
+<div class="uk-grid uk-text-center">
     <div class="uk-width-1-3">
         <div class="uk-card uk-card-default uk-card-body">1-3</div>
     </div>
@@ -41,7 +41,7 @@ Add one of the `.uk-width-*` classes to an element to determine its size. Typica
     </div>
 </div>
 
-<div class="uk-text-center" uk-grid>
+<div class="uk-grid uk-text-center">
     <div class="uk-width-1-2">
         <div class="uk-card uk-card-default uk-card-body">1-2</div>
     </div>
@@ -50,7 +50,7 @@ Add one of the `.uk-width-*` classes to an element to determine its size. Typica
     </div>
 </div>
 
-<div class="uk-text-center" uk-grid>
+<div class="uk-grid uk-text-center">
     <div class="uk-width-1-4">
         <div class="uk-card uk-card-default uk-card-body">1-4</div>
     </div>
@@ -72,14 +72,14 @@ The Width component provides additional modifiers to give you more flexibility i
 | `.uk-width-expand` | The item expands to fill up the remaining space of the grid container. |
 
 ```html
-<div uk-grid>
+<div class="uk-grid">
     <div class="uk-width-auto"></div>
     <div class="uk-width-expand"></div>
 </div>
 ```
 
 ```example
-<div class="uk-text-center" uk-grid>
+<div class="uk-grid uk-text-center">
     <div class="uk-width-auto">
         <div class="uk-card uk-card-default uk-card-body">Auto</div>
     </div>
@@ -106,7 +106,7 @@ To create a grid whose child elements' widths are evenly split, you don't have t
 | `.uk-child-width-expand` | Divides the grid into equal units depending on the available space. |
 
 ```html
-<div class="uk-child-width-1-4" uk-grid>
+<div class="uk-grid uk-child-width-1-4">
     <div></div>
     <div></div>
     …
@@ -114,7 +114,7 @@ To create a grid whose child elements' widths are evenly split, you don't have t
 ```
 
 ```example
-<div class="uk-child-width-1-4 uk-grid-small uk-text-center" uk-grid>
+<div class="uk-grid uk-child-width-1-4 uk-grid-small uk-text-center">
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
@@ -136,7 +136,7 @@ To create a grid whose child elements' widths are evenly split, you don't have t
 Items that use width classes with fractions will break into a new row, if they no longer fit their container's width. When using one of the _expand_ classes, however, the space will be evenly distributed among items that always stay in the same row.
 
 ```html
-<div class="uk-child-width-expand" uk-grid>
+<div class="uk-grid uk-child-width-expand">
     <div></div>
     <div></div>
     …
@@ -144,7 +144,7 @@ Items that use width classes with fractions will break into a new row, if they n
 ```
 
 ```example
-<div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
+<div class="uk-grid uk-child-width-expand uk-grid-small uk-text-center">
     <div>
         <div class="uk-card uk-card-default uk-card-body">Item</div>
     </div>
@@ -196,7 +196,7 @@ In addition to the calculated width classes, you can also add one of the followi
 You can also combine `.uk-child-width-*` classes with `.uk-width-*` classes for individual items. That way it is possible, for example, to create a grid with one item that has a specific width and all other items expanding to fill the remaining space.
 
 ```html
-<div class="uk-child-width-expand" uk-grid>
+<div class="uk-grid uk-child-width-expand">
     <div></div>
     <div class="uk-width-1-3"></div>
     <div></div>
@@ -205,7 +205,7 @@ You can also combine `.uk-child-width-*` classes with `.uk-width-*` classes for 
 ```
 
 ```example
-<div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
+<div class="uk-grid uk-child-width-expand uk-grid-small uk-text-center">
     <div>
         <div class="uk-card uk-card-default uk-card-body">Expand</div>
     </div>
@@ -236,7 +236,7 @@ UIkit provides a number of responsive width classes. Basically they work just li
 | `.uk-width-*@xl`<br> `.uk-child-width-*@xl` | Affects device widths of _1600px_ and larger. Grid columns will stack on smaller sizes. |
 
 ```example
-<div class="uk-grid-match uk-grid-small uk-text-center" uk-grid>
+<div class="uk-grid uk-grid-match uk-grid-small uk-text-center">
     <div class="uk-width-1-2@m">
         <div class="uk-card uk-card-default uk-card-body">1-2@m</div>
     </div>
@@ -257,7 +257,7 @@ UIkit provides a number of responsive width classes. Basically they work just li
     </div>
 </div>
 
-<div class="uk-grid-match uk-grid-small uk-text-center" uk-grid>
+<div class="uk-grid uk-grid-match uk-grid-small uk-text-center">
     <div class="uk-width-auto@m uk-visible@l">
         <div class="uk-card uk-card-primary uk-card-body">auto@m<br>visible@l</div>
     </div>

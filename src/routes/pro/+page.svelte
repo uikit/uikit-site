@@ -21,7 +21,7 @@
 
     <div id="tm-main" class="uk-section uk-padding-remove-bottom">
         <div class="uk-container">
-            <div uk-grid>
+            <div class="uk-grid">
                 <div class="uk-width-1-3@l uk-width-expand@xl uk-text-center uk-text-left@l">
                     <div class="tm-intro-text uk-inline uk-width-xlarge">
                         <h1 class="uk-h6 tm-h6 uk-margin-remove">YOOtheme Pro</h1>
@@ -30,7 +30,7 @@
                             creators
                         </h2>
 
-                        <div class="uk-grid-medium uk-flex-middle uk-flex-inline" uk-grid>
+                        <div class="uk-grid uk-grid-medium uk-flex-middle uk-flex-inline">
                             <div>
                                 <a
                                     class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s"
@@ -82,7 +82,7 @@
 
 <div class="uk-section uk-section-large uk-section-default uk-padding-remove-top">
     <div class="uk-container">
-        <div class="uk-child-width-expand@m uk-child-width-1-2@s" uk-grid>
+        <div class="uk-grid uk-child-width-expand@m uk-child-width-1-2@s">
             <div>
                 <h3 class="uk-h4">A perfect fit</h3>
                 <p>
@@ -121,7 +121,7 @@
 
 <div class="uk-section uk-section-default uk-section-large">
     <div class="uk-container">
-        <div class="uk-grid-large uk-flex-middle uk-text-center uk-text-left@l" uk-grid>
+        <div class="uk-grid uk-grid-large uk-flex-middle uk-text-center uk-text-left@l">
             <div class="uk-width-1-3@l uk-flex-last@l">
                 <div class="uk-inline uk-width-xlarge">
                     <h1 class="uk-h6 tm-h6 uk-margin-remove">Style Customizer</h1>
@@ -153,7 +153,7 @@
             </p>
         </div>
 
-        <div class="uk-child-width-1-4@m uk-child-width-1-2@s" uk-grid>
+        <div class="uk-grid uk-child-width-1-4@m uk-child-width-1-2@s">
             {#each ['line-gallery', 'union-dental', 'devstack', 'design-escapes', 'paladin', 'kitchen-daily', 'creative-hub', 'tech-space'] as id (id)}
                 <div>
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
@@ -192,7 +192,7 @@
             </p>
         </div>
 
-        <div class="uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2" uk-grid>
+        <div class="uk-grid uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2">
             {#each ['line-gallery', 'union-dental', 'devstack', 'design-escapes', 'paladin', 'kitchen-daily', 'creative-hub', 'tech-space', 'framerate', 'design-bites', 'matthew-taylor', 'soda', 'makai', 'balou', 'yoko'] as id (id)}
                 <div>
                     <div class="uk-inline tm-box-shadow-medium uk-transition-toggle">
@@ -225,7 +225,7 @@
             The all-in-one theme and page builder for WordPress &amp; Joomla
         </p>
 
-        <div class="uk-grid-medium uk-flex-middle uk-flex-center" uk-grid>
+        <div class="uk-grid uk-grid-medium uk-flex-middle uk-flex-center">
             <div>
                 <a
                     class="uk-button uk-button-default uk-button-large tm-button-primary tm-button-large uk-visible@s"
@@ -251,7 +251,7 @@
         <hr class="uk-margin-remove-bottom uk-margin-xlarge-top" />
 
         <div class="uk-margin-top uk-margin-bottom">
-            <div class="uk-child-width-auto@m uk-flex-middle" uk-grid>
+            <div class="uk-grid uk-child-width-auto@m uk-flex-middle">
                 <div>
                     <div class="uk-text-left@m uk-text-center">
                         <a class="uk-logo uk-flex" href={resolve('/')} aria-label="Back to Home">
@@ -280,7 +280,7 @@
                 </div>
                 <div>
                     <div class="uk-text-right@m uk-text-center">
-                        <div class="uk-child-width-auto uk-grid-small uk-flex-center" uk-grid>
+                        <div class="uk-grid uk-child-width-auto uk-grid-small uk-flex-center">
                             <div>
                                 <a
                                     href="https://github.com/uikit/uikit"
@@ -332,7 +332,7 @@
             uk-close
         ></button>
         <div class="tm-modal-header">
-            <div class="uk-grid-medium uk-flex-middle" uk-grid>
+            <div class="uk-grid uk-grid-medium uk-flex-middle">
                 <div>
                     <a
                         class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s"

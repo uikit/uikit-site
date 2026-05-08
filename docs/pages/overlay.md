@@ -35,7 +35,7 @@ By default, the overlay has padding, but no additional styling. Add one of these
 For a simple background color, add the `.uk-overlay-default` class.
 
 ```example
-<div class="uk-child-width-1-2@m" uk-grid>
+<div class="uk-grid uk-child-width-1-2@m">
     <div>
 
         <div class="uk-inline">
@@ -67,7 +67,7 @@ For a simple background color, add the `.uk-overlay-default` class.
 For a prominent background color, add the `.uk-overlay-primary` class.
 
 ```example
-<div class="uk-child-width-1-2@m" uk-grid>
+<div class="uk-grid uk-child-width-1-2@m">
     <div>
 
         <div class="uk-inline">
@@ -105,7 +105,7 @@ To display an overlay icon, add the `uk-overlay-icon` attribute to a `<span>` el
 ```
 
 ```example
-<div class="uk-child-width-1-2@m" uk-grid>
+<div class="uk-grid uk-child-width-1-2@m">
     <div>
 
         <div class="uk-inline uk-light">
@@ -142,7 +142,7 @@ Add one of the `.uk-position-*` classes from the [Position component](position.m
 ```
 
 ```example
-<div class="uk-child-width-1-2@m" uk-grid>
+<div class="uk-grid uk-child-width-1-2@m">
     <div>
         <div class="uk-inline">
             <img src="images/photo.jpg" width="1800" height="1200" alt="">

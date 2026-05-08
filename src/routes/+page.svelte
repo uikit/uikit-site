@@ -34,10 +34,7 @@
                     for developing fast and powerful web interfaces.
                 </h1>
 
-                <div
-                    class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-flex-center"
-                    uk-grid
-                >
+                <div class="uk-grid uk-child-width-auto uk-grid-medium uk-flex-inline uk-flex-center">
                     <div>
                         <a
                             class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s"

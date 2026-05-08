@@ -22,7 +22,7 @@ UIkit provides a number of useful classes to alter an element's height.
 ```
 
 ```example
-<div class="uk-child-width-1-3@s" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s">
     <div>
         <div class="uk-height-small uk-card uk-card-default uk-card-body uk-flex uk-flex-center uk-flex-middle">Small</div>
     </div>
@@ -95,11 +95,11 @@ To expand all children of a container to the same height regardless of their con
 You can also target and match specific elements inside the container, like cards. Just add the `target: SELECTOR` option to the attribute.
 
 ```html
-<div uk-grid uk-height-match="target: SELECTOR">…</div>
+<div class="uk-grid" uk-height-match="target: SELECTOR">…</div>
 ```
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid uk-height-match="target: > div > .uk-card">
+<div class="uk-grid uk-child-width-1-2@s" uk-height-match="target: > div > .uk-card">
     <div>
         <div class="uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
     </div>
@@ -122,11 +122,11 @@ You can also target and match specific elements inside the container, like cards
 If your grid wraps into multiple rows, only grid columns within the same row are matched. To match grid columns across all rows, just add the `row: false` option to the attribute.
 
 ```html
-<div uk-grid uk-height-match="row: false">…</div>
+<div class="uk-grid" uk-height-match="row: false">…</div>
 ```
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid uk-height-match="target: > div > .uk-card; row: false">
+<div class="uk-grid uk-child-width-1-2@s" uk-height-match="target: > div > .uk-card; row: false">
     <div class="uk-first-column">
         <div class="uk-card uk-card-default uk-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
     </div>

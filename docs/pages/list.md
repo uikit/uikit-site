@@ -41,7 +41,7 @@ Add one of the following classes to set the marker of a list item.
 ```
 
 ```example
-<div class="uk-child-width-expand@s" uk-grid>
+<div class="uk-grid uk-child-width-expand@s">
 
     <div>
         <h4>Disc</h4>
@@ -109,7 +109,7 @@ Add one of the following classes to set the marker color.
 ```
 
 ```example
-<div class="uk-child-width-expand@s" uk-grid>
+<div class="uk-grid uk-child-width-expand@s">
 
     <div>
         <h4>Muted</h4>
@@ -222,7 +222,7 @@ Add one of the following classes to increase or decrease the spacing between lis
 ```example
 <h4>Large</h4>
 
-<div class="uk-child-width-expand@s" uk-grid>
+<div class="uk-grid uk-child-width-expand@s">
 
     <div>
         <ul class="uk-list uk-list-large">
@@ -260,7 +260,7 @@ Add one of the following classes to increase or decrease the spacing between lis
 
 <h4>Collapse</h4>
 
-<div class="uk-child-width-expand@s" uk-grid>
+<div class="uk-grid uk-child-width-expand@s">
 
     <div>
         <ul class="uk-list uk-list-collapse">

@@ -103,7 +103,7 @@ Add one of these useful classes to align your text.
 | `.uk-text-justify` | Justifies text.            |
 
 ```example
-<div class="uk-child-width-1-3@s uk-grid-small" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s uk-grid-small">
     <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-left uk-card-body">
@@ -142,7 +142,7 @@ UIkit provides a number of responsive alignment classes. Basically, they work ju
 | `.uk-text-left@xl`<br> `.uk-text-center@xl`<br> `.uk-text-right@xl` | Affects device widths of _1600px_ and larger. |
 
 ```example
-<div class="uk-child-width-1-3@s uk-grid-small" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s uk-grid-small">
     <div>
         <div class="uk-card uk-card-default uk-card-small">
             <div class="uk-text-center@s uk-card-body">
@@ -181,7 +181,7 @@ Add one of these classes to vertically align text to an object.
 | `.uk-text-baseline` | Aligns text to the baseline. |
 
 ```example
-<div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+<div class="uk-grid uk-child-width-1-3@m uk-child-width-1-2@s">
     <div>
         <img src="images/avatar.jpg" width="50" height="50">
         <span class="uk-text-top">Lorem ipsum.</span>
@@ -210,7 +210,7 @@ Add one of these useful classes to wrap your text.
 | `.uk-text-nowrap`   | Prevents text from wrapping into multiple lines.                                                   |
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s">
     <div>
         <div class="uk-panel uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
     </div>

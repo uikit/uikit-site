@@ -13,7 +13,7 @@ To apply this component, add the `uk-marker` attribute to any element. You can u
 **Note** Add the `.uk-light` or `.uk-dark` class, so that elements will be optimized for better visibility on dark or light images.
 
 ```example
-<div class="uk-child-width-1-2" uk-grid>
+<div class="uk-grid uk-child-width-1-2">
     <div>
         <div class="uk-inline uk-dark">
             <img src="images/light.jpg" width="1800" height="1200" alt="">

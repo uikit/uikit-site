@@ -39,7 +39,7 @@ There are three autoplay modes. Just add the `autoplay` option to the `uk-video`
 ```
 
 ```example
-<div class="uk-child-width-1-2@m" uk-grid>
+<div class="uk-grid uk-child-width-1-2@m">
     <div>
 
         <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted uk-video="autoplay: inview"></video>
@@ -98,7 +98,7 @@ To change the viewport area in which the `inview` autoplay mode becomes active, 
 ```
 
 ```example
-<div class="uk-child-width-1-3@s" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s">
     <div>
         <video src="https://videos.pexels.com/video-files/8675550/8675550-hd_1920_1080_30fps.mp4" width="1920" height="1080" playsinline loop muted uk-video="autoplay: inview; inview-margin: -40% 0px -40% 0px"></video>
     </div>
@@ -118,7 +118,7 @@ If multiple videos are visible at the same time, use the `inview-queued` option 
 ```
 
 ```example
-<div class="uk-child-width-1-3@s" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s">
     <div>
         <video src="https://videos.pexels.com/video-files/8675550/8675550-hd_1920_1080_30fps.mp4" width="1920" height="1080" playsinline loop muted uk-video="autoplay: inview; inview-queued: 0.3"></video>
     </div>

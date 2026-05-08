@@ -32,7 +32,7 @@ To style the countdown use style classes from the [Base component](base.md), [He
 ```
 
 ```example
-<div class="uk-h1 uk-grid-small uk-child-width-auto uk-flex-middle uk-margin" uk-grid uk-countdown="date: {%isodate%}">
+<div class="uk-grid uk-h1 uk-grid-small uk-child-width-auto uk-flex-middle uk-margin" uk-countdown="date: {%isodate%}">
     <div>
         <div class="uk-countdown-number uk-countdown-days"></div>
     </div>
@@ -67,7 +67,7 @@ To insert a separator between each number, use the `.uk-countdown-separator` cla
 ```
 
 ```example
-<div class="uk-h1 uk-grid-small uk-child-width-auto uk-flex-middle uk-margin" uk-grid uk-countdown="date: {%isodate%}">
+<div class="uk-grid uk-h1 uk-grid-small uk-child-width-auto uk-flex-middle uk-margin" uk-countdown="date: {%isodate%}">
     <div>
         <div class="uk-countdown-number uk-countdown-days"></div>
     </div>
@@ -102,7 +102,7 @@ To add a label to each number, use the `.uk-countdown-label` class.
 To style the labels use style classes from the [Base component](base.md), [Heading component](heading.md) or [Text component](text.md).
 
 ```example
-<div class="uk-grid-small uk-child-width-auto uk-text-center uk-margin" uk-grid uk-countdown="date: {%isodate%}">
+<div class="uk-grid uk-grid-small uk-child-width-auto uk-text-center uk-margin" uk-countdown="date: {%isodate%}">
     <div>
         <div class="uk-h1 uk-countdown-number uk-countdown-days"></div>
         <div class="uk-countdown-label uk-text-small uk-visible@s">Days</div>

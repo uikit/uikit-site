@@ -220,7 +220,7 @@ As an exception to the rule, add the `uk-tab` attribute instead of `uk-switcher`
 Use the [Grid](grid.md) and [Width](width.md) components to display content correctly with a vertical tabbed navigation.
 
 ```html
-<div uk-grid>
+<div class="uk-grid">
     <div class="uk-width-auto">
         <ul class="uk-tab-left" uk-tab="connect: #my-id">…</ul>
     </div>
@@ -231,9 +231,9 @@ Use the [Grid](grid.md) and [Width](width.md) components to display content corr
 ```
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s">
     <div>
-        <div uk-grid>
+        <div class="uk-grid">
             <div class="uk-width-auto@m">
                 <ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
                     <li><a href="#">Active</a></li>
@@ -251,7 +251,7 @@ Use the [Grid](grid.md) and [Width](width.md) components to display content corr
         </div>
     </div>
     <div>
-        <div uk-grid>
+        <div class="uk-grid">
             <div class="uk-width-auto@m uk-flex-last@m">
                 <ul class="uk-tab-right" uk-tab="connect: #component-tab-right; animation: uk-animation-fade">
                     <li><a href="#">Active</a></li>
@@ -310,7 +310,7 @@ The switcher can also be applied to buttons or button groups from the [Button co
 To apply the switcher to the [Nav component](nav.md), add the `uk-switcher` attribute to the nav `<ul>` element. Use the [Grid](grid.md) and [Width](width.md) components to arrange nav and content in a grid layout.
 
 ```html
-<div uk-grid>
+<div class="uk-grid">
     <div class="uk-width-small">
         <ul class="uk-nav uk-nav-default" uk-switcher="connect: #my-id">…</ul>
     </div>
@@ -321,7 +321,7 @@ To apply the switcher to the [Nav component](nav.md), add the `uk-switcher` attr
 ```
 
 ```example
-<div uk-grid>
+<div class="uk-grid">
     <div class="uk-width-small@m">
 
         <ul class="uk-nav uk-nav-default" uk-switcher="connect: #component-nav; animation: uk-animation-fade">
