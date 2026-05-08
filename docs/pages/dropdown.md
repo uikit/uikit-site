@@ -70,7 +70,7 @@ You can place a grid from the [Grid component](grid.md) inside a dropdown. Just 
 
 ```html
 <div class="uk-width-large" uk-dropdown>
-    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>…</div>
+    <div class="uk-grid uk-drop-grid uk-child-width-1-2@m">…</div>
 </div>
 ```
 
@@ -79,7 +79,7 @@ Use one of the classes from the [Width component](width.md) to adjust the dropdo
 ```example
 <button class="uk-button uk-button-default" type="button">Hover</button>
 <div class="uk-width-large" uk-dropdown>
-    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
+    <div class="uk-grid uk-drop-grid uk-child-width-1-2@m">
         <div>
             <ul class="uk-nav uk-dropdown-nav">
                 <li class="uk-active"><a href="#">Active</a></li>

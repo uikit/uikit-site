@@ -62,7 +62,7 @@ When using the vertical alignment, you will usually create a grid to apply the l
 ```
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s">
     <div>
         <ul class="uk-tab-left" uk-tab>
             <li class="uk-active"><a href="#">Left</a></li>

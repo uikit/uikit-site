@@ -397,7 +397,7 @@ To enable an action, for example opening a modal to pick an image or link, use a
 You can also use the [Grid](grid.md) and [Width](width.md) components to define the layout of a form.
 
 ```example
-<form class="uk-grid-small" uk-grid>
+<form class="uk-grid uk-grid-small">
     <div class="uk-width-1-1">
         <input class="uk-input" type="text" placeholder="100" aria-label="100">
     </div>

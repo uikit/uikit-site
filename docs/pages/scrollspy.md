@@ -13,7 +13,7 @@ Typically, classes from the [Animation component](animation.md) are used togethe
 ```
 
 ```example
-<div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+<div class="uk-grid uk-child-width-1-2@m uk-grid-match">
     <div>
         <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
             <h3 class="uk-card-title">Left</h3>
@@ -45,7 +45,7 @@ You can also group scrollspy elements, so you won't have to apply the attribute 
 ```
 
 ```example
-<div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
+<div class="uk-grid uk-child-width-1-3@m" uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
     <div>
         <div class="uk-card uk-card-default uk-card-body">
             <h3 class="uk-card-title">Fade</h3>
@@ -99,7 +99,7 @@ You can also give each target a separate `cls` option. Just add the `uk-scrollsp
 ```
 
 ```example
-<div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+<div class="uk-grid uk-child-width-1-3@m" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
     <div>
         <div class="uk-card uk-card-default uk-card-body">
             <h3 class="uk-card-title">Bottom</h3>

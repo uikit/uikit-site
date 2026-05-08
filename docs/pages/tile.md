@@ -18,7 +18,7 @@ To apply this component, add the `.uk-tile` class to a `<div>` element. By defau
 ```
 
 ```example
-<div class="uk-child-width-1-2@s uk-grid-collapse uk-text-center" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s uk-grid-collapse uk-text-center">
     <div>
         <div class="uk-tile uk-tile-default">
             <p class="uk-h4">Default</p>
@@ -51,7 +51,7 @@ The `.uk-tile-primary` and `.uk-tile-secondary` classes are extending the invers
 ```
 
 ```example
-<div class="uk-child-width-1-2@s uk-grid-collapse uk-grid-match uk-text-center" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s uk-grid-collapse uk-grid-match uk-text-center">
     <div>
         <div class="uk-tile uk-tile-primary">
 
@@ -92,7 +92,7 @@ The Tile component has some padding by default. To remove this or to apply diffe
 ```
 
 ```example
-<div class="uk-child-width-1-3@s uk-grid-small uk-text-center" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s uk-grid-small uk-text-center">
     <div>
         <div class="uk-tile uk-tile-muted uk-padding-remove">
             <p class="uk-h4">Remove</p>

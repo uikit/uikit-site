@@ -17,7 +17,7 @@ Since there is already a default text color, for light styles it is dark, and fo
 ```
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s">
     <div>
         <div class="uk-light uk-background-secondary uk-padding">
             <h3>Light</h3>
@@ -57,7 +57,7 @@ The [Section](section.md) and [Tile](tile.md) components can prevent this behavi
             <h3>Section Primary with cards</h3>
         </div>
 
-        <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+        <div class="uk-grid uk-grid-match uk-child-width-expand@m">
             <div>
                 <div class="uk-card uk-card-default uk-card-body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -72,7 +72,7 @@ The [Section](section.md) and [Tile](tile.md) components can prevent this behavi
 
     </div>
 </div>
-<div class="uk-child-width-1-2@s uk-grid-collapse uk-grid-match uk-text-center" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s uk-grid-collapse uk-grid-match uk-text-center">
     <div>
         <div class="uk-tile uk-tile-primary">
 
@@ -158,7 +158,7 @@ The `.uk-light` and `.uk-dark` classes are set on container elements and color t
                                 <li>
                                     <a href="#">Parent</a>
                                     <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                                        <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                        <div class="uk-grid uk-drop-grid uk-child-width-1-2">
                                             <div>
                                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                                     <li class="uk-active"><a href="#">Active</a></li>
@@ -259,7 +259,7 @@ To color different parts inside the container separately, just add the `target: 
         </div>
     </div>
 
-    <div class="uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid>
+    <div class="uk-grid uk-child-width-1-3@s uk-grid-collapse uk-grid-match">
         <div>
             <div class="uk-tile uk-tile-default">…</div>
         </div>
@@ -313,7 +313,7 @@ To color different parts inside the container separately, just add the `target: 
         </div>
     </div>
 
-    <div class="uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid>
+    <div class="uk-grid uk-child-width-1-3@s uk-grid-collapse uk-grid-match">
         <div>
 
             <div class="uk-tile uk-tile-default">
@@ -337,7 +337,7 @@ To color different parts inside the container separately, just add the `target: 
         </div>
     </div>
 
-    <div class="uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid>
+    <div class="uk-grid uk-child-width-1-3@s uk-grid-collapse uk-grid-match">
         <div>
 
             <div class="uk-tile uk-tile-primary">
@@ -361,7 +361,7 @@ To color different parts inside the container separately, just add the `target: 
         </div>
     </div>
 
-    <div class="uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid>
+    <div class="uk-grid uk-child-width-1-3@s uk-grid-collapse uk-grid-match">
         <div>
 
             <div class="uk-tile uk-tile-default">
@@ -428,7 +428,7 @@ To prevent the element from changing its color automatically when it stops being
                                 <li>
                                     <a href="#">Parent</a>
                                     <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                                        <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                        <div class="uk-grid uk-drop-grid uk-child-width-1-2">
                                             <div>
                                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                                     <li class="uk-active"><a href="#">Active</a></li>
@@ -520,7 +520,7 @@ If containing content should keep its text color, and only the overlapping conte
                                 <li>
                                     <a href="#">Parent</a>
                                     <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                                        <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                        <div class="uk-grid uk-drop-grid uk-child-width-1-2">
                                             <div>
                                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                                     <li class="uk-active"><a href="#">Active</a></li>
@@ -562,7 +562,7 @@ If containing content should keep its text color, and only the overlapping conte
                 <h3>Section Primary with cards</h3>
             </div>
 
-            <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+            <div class="uk-grid uk-grid-match uk-child-width-expand@m">
                 <div>
                     <div class="uk-card uk-card-default uk-card-body">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>

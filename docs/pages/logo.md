@@ -46,7 +46,7 @@ You can automatically display alternative logos for light and dark backgrounds b
 ```
 
 ```example
-<div class="uk-child-width-expand@s" uk-grid>
+<div class="uk-grid uk-child-width-expand@s">
     <div>
         <div class="uk-panel uk-padding uk-background-muted">
             <a class="uk-logo" href="#" aria-label="Back to Home">

@@ -20,7 +20,7 @@ To apply a background color to an element, add one of the following classes. The
 **Note** To adapt your content for better visibility on each background, add the `.uk-light` or `.uk-dark` class from the [Inverse component](inverse.md). Use the [Padding component](padding.md) to add some padding to the elements.
 
 ```example
-<div class="uk-child-width-1-2@s uk-text-center" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s uk-text-center">
     <div>
         <div class="uk-background-default uk-padding uk-panel">
             <p class="uk-h4">Default</p>
@@ -64,7 +64,7 @@ This component features classes to specify the size of background images by keep
 ```
 
 ```example
-<div class="uk-child-width-1-2@s uk-light" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s uk-light">
     <div>
         <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/dark.jpg);">
             <p class="uk-h4">Cover</p>
@@ -101,7 +101,7 @@ To alter the background position of your image — which is in the top left-hand
 ```
 
 ```example
-<div class="uk-child-width-1-2@s uk-light" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s uk-light">
     <div>
         <div class="uk-background-top-right uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-middle uk-flex-center" style="background-image: url(images/dark.jpg);">
             <p class="uk-h4">Top Right</p>
@@ -195,7 +195,7 @@ Add one of the following classes to apply different blend modes to your backgrou
 ```
 
 ```example
-<div class="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-small uk-light" uk-grid>
+<div class="uk-grid uk-child-width-1-2 uk-child-width-1-3@s uk-grid-small uk-light">
     <div>
         <div class="uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(images/photo.jpg);">
             <p class="uk-h4">Multiply</p>
