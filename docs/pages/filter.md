@@ -69,7 +69,7 @@ If `target` is the only option in the `uk-filter` attribute value, you can also 
         <li uk-filter-control=".tag-black"><a href="#">Black</a></li>
     </ul>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+    <ul class="uk-grid js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center">
         <li class="tag-white">
             <div class="uk-card uk-card-default uk-card-body">Item</div>
         </li>
@@ -139,7 +139,7 @@ By default, the filter uses a `slide` animation for the items between the differ
         <li uk-filter-control=".tag-black"><a href="#">Black</a></li>
     </ul>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+    <ul class="uk-grid js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center">
         <li class="tag-white">
             <div class="uk-card uk-card-default uk-card-body">Item</div>
         </li>
@@ -200,7 +200,7 @@ Add the `.uk-active` class to a filter control, and the filter will be applied i
         <li uk-filter-control="[data-color='black']"><a href="#">Black</a></li>
     </ul>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+    <ul class="uk-grid js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center">
         <li data-color="white">
             <div class="uk-card uk-card-default uk-card-body">Item</div>
         </li>
@@ -262,7 +262,7 @@ To reset the filter and target all items, use the `uk-filter-control` attribute 
         <li uk-filter-control="[data-color='black']"><a href="#">Black</a></li>
     </ul>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+    <ul class="uk-grid js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center">
         <li data-color="white">
             <div class="uk-card uk-card-default uk-card-body">Item</div>
         </li>
@@ -334,7 +334,7 @@ Items can have different metadata for filtering. You just need to define the HTM
         <li uk-filter-control="[data-tags*='dark']"><a href="#">Dark Colors</a></li>
     </ul>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+    <ul class="uk-grid js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center">
         <li data-tags="white">
             <div class="uk-card uk-card-default uk-card-body">Item</div>
         </li>
@@ -403,7 +403,7 @@ Define different types of metadata and add any number of controls to filter them
 ```example
 <div uk-filter="target: .js-filter">
 
-    <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
+    <div class="uk-grid uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
         <div>
             <ul class="uk-subnav uk-subnav-pill" uk-margin>
                 <li class="uk-active" uk-filter-control><a href="#">All</a></li>
@@ -425,7 +425,7 @@ Define different types of metadata and add any number of controls to filter them
         </div>
     </div>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true">
+    <ul class="uk-grid js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true">
         <li data-color="white" data-size="large">
             <div class="uk-card uk-card-default uk-card-body">
                 <canvas width="600" height="800"></canvas>
@@ -532,7 +532,7 @@ To filter items by multiple criteria at the same time, the filter controls need 
 ```example
 <div uk-filter="target: .js-filter">
 
-    <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
+    <div class="uk-grid uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
         <div>
             <ul class="uk-subnav uk-subnav-pill" uk-margin>
                 <li class="uk-active" uk-filter-control><a href="#">All</a></li>
@@ -554,7 +554,7 @@ To filter items by multiple criteria at the same time, the filter controls need 
         </div>
     </div>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true">
+    <ul class="uk-grid js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true">
         <li data-color="white" data-size="large">
             <div class="uk-card uk-card-default uk-card-body">
                 <canvas width="600" height="800"></canvas>
@@ -661,7 +661,7 @@ To sort items alphanumerically, just add the `sort: ATTRIBUTE` option to the `uk
         <li uk-filter-control="sort: data-date; order: desc"><a href="#">Descending</a></li>
     </ul>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+    <ul class="uk-grid js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center">
         <li data-date="2016-06-01">
             <div class="uk-card uk-card-default uk-card-body">2016-06-01</div>
         </li>
@@ -714,10 +714,10 @@ Here is a comprehensive example with a masonry grid:
 ```example
 <div uk-filter="target: .js-filter">
 
-    <div class="uk-grid-small uk-flex-middle" uk-grid>
+    <div class="uk-grid uk-grid-small uk-flex-middle">
         <div class="uk-width-expand">
 
-            <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
+            <div class="uk-grid uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
                 <div>
                     <ul class="uk-subnav uk-subnav-pill" uk-margin>
                         <li class="uk-active" uk-filter-control><a href="#">All</a></li>
@@ -749,7 +749,7 @@ Here is a comprehensive example with a masonry grid:
         </div>
     </div>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true">
+    <ul class="uk-grid js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true">
         <li data-color="white" data-size="large" data-name="A">
             <div class="uk-card uk-card-default uk-card-body">
                 <canvas width="600" height="800"></canvas>

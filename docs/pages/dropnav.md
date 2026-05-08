@@ -84,7 +84,7 @@ A dropbar extends to the full width of the dropnav and displays the dropdown wit
         <li>
             <a href>Item</a>
             <div class="uk-dropdown uk-width-large">
-                <div class="uk-child-width-1-2" uk-grid>
+                <div class="uk-grid uk-child-width-1-2">
                     <div>
                         <ul class="uk-nav uk-dropdown-nav">
                             <li class="uk-active"><a href="#">Active</a></li>
@@ -232,7 +232,7 @@ By default, the dropdowns are aligned to their toggle item. To position the drop
             <li>
                 <a href>Parent</a>
                 <div class="uk-dropdown uk-width-large">
-                    <div class="uk-child-width-1-2" uk-grid>
+                    <div class="uk-grid uk-child-width-1-2">
                         <div>
                             <ul class="uk-nav uk-dropdown-nav">
                                 <li class="uk-active"><a href="#">Active</a></li>
@@ -296,7 +296,7 @@ To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` optio
         <li>
             <a href>Parent</a>
             <div class="uk-dropdown">
-                <div class="uk-child-width-1-2" uk-grid>
+                <div class="uk-grid uk-child-width-1-2">
                     <div>
                         <ul class="uk-nav uk-dropdown-nav">
                             <li class="uk-active"><a href="#">Active</a></li>
