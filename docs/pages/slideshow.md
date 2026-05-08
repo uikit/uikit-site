@@ -63,7 +63,7 @@ By default, the slideshow uses a `slide` animation. You can set the `animation` 
 ```
 
 ```example
-<div class="uk-child-width-1-2@m" uk-grid>
+<div class="uk-grid uk-child-width-1-2@m">
     <div>
 
         <div class="uk-h3">Slide</div>

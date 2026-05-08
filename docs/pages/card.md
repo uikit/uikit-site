@@ -51,7 +51,7 @@ UIkit includes a number of modifiers that can be used to add a specific style to
 ```
 
 ```example
-<div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+<div class="uk-grid uk-child-width-1-2@m uk-grid-small uk-grid-match">
     <div>
         <div class="uk-card uk-card-default uk-card-body">
             <h3 class="uk-card-title">Default</h3>
@@ -93,7 +93,7 @@ To create a hover effect on the card, add the `.uk-card-hover` class. This comes
 ```
 
 ```example
-<div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s uk-grid-match">
     <div>
         <div class="uk-card uk-card-hover uk-card-body">
             <h3 class="uk-card-title">Hover</h3>
@@ -148,7 +148,7 @@ You can apply different size modifiers to cards that will decrease or increase t
 ```
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s">
     <div>
         <div class="uk-card uk-card-default uk-card-small uk-card-body">
             <h3 class="uk-card-title">Small</h3>
@@ -183,7 +183,7 @@ You can also divide a card into header and footer — around the default body. J
 ```example
 <div class="uk-card uk-card-default uk-width-1-2@m">
     <div class="uk-card-header">
-        <div class="uk-grid-small uk-flex-middle" uk-grid>
+        <div class="uk-grid uk-grid-small uk-flex-middle">
             <div class="uk-width-auto">
                 <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg" alt="Avatar">
             </div>
@@ -225,7 +225,7 @@ To display an image inside a card without any spacing, add one of the following 
 ```
 
 ```example
-<div class="uk-child-width-1-2@m" uk-grid>
+<div class="uk-grid uk-child-width-1-2@m">
     <div>
         <div class="uk-card uk-card-default">
             <div class="uk-card-media-top">
@@ -260,7 +260,7 @@ The `.uk-card-media-left` or the `.uk-card-media-right` classes are used to rese
 To do that, you could for example add the `.uk-cover-container` class from the [Cover component](cover.md). Add the `uk-cover` attribute to the image element and use the [Grid](grid.md) and [Width](width.md) components to achieve the alignment. Create a `<canvas>` element with your image's width and height, so that it will retain its dimensions, if the grid stacks on smaller viewports. This is just one way of creating a side-by-side layout.
 
 ```html
-<div class="uk-card uk-card-default uk-child-width-1-2" uk-grid>
+<div class="uk-grid uk-card uk-card-default uk-child-width-1-2">
     <div class="uk-card-media-left uk-cover-container">
         <img src="" alt="" uk-cover>
         <canvas width="" height=""></canvas>
@@ -272,7 +272,7 @@ To do that, you could for example add the `.uk-cover-container` class from the [
 ```
 
 ```example
-<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+<div class="uk-grid uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin">
     <div class="uk-card-media-left uk-cover-container">
         <img src="images/light.jpg" alt="" uk-cover>
         <canvas width="600" height="400"></canvas>
@@ -285,7 +285,7 @@ To do that, you could for example add the `.uk-cover-container` class from the [
     </div>
 </div>
 
-<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+<div class="uk-grid uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin">
     <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
         <img src="images/light.jpg" alt="" uk-cover>
         <canvas width="600" height="400"></canvas>

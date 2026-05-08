@@ -614,7 +614,7 @@ By default, the dropdowns are aligned to their navbar item. To position the drop
                     <li>
                         <a href="#">Parent</a>
                         <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                            <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                            <div class="uk-grid uk-drop-grid uk-child-width-1-2">
                                 <div>
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li class="uk-active"><a href="#">Active</a></li>
@@ -643,7 +643,7 @@ By default, the dropdowns are aligned to their navbar item. To position the drop
                     <li>
                         <a href="#">Parent</a>
                         <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3">
-                            <div class="uk-drop-grid uk-child-width-1-3" uk-grid>
+                            <div class="uk-grid uk-drop-grid uk-child-width-1-3">
                                 <div>
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li class="uk-active"><a href="#">Active</a></li>
@@ -746,7 +746,7 @@ A dropbar extends to the full width of the navbar and displays the dropdown with
                         <li>
                             <a href="#">Parent</a>
                             <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                                <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                <div class="uk-grid uk-drop-grid uk-child-width-1-2">
                                     <div>
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
                                             <li class="uk-active"><a href="#">Active</a></li>
@@ -840,7 +840,7 @@ To stretch a dropdown, use the [Drop component](drop.md) and its `stretch` optio
                     <li>
                         <a href>Parent</a>
                         <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">
-                            <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                            <div class="uk-grid uk-drop-grid uk-child-width-1-2">
                                 <div>
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li class="uk-active"><a href="#">Active</a></li>
@@ -959,7 +959,7 @@ To accommodate up to five columns, you also need to add one of the following cla
 
 ```html
 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-    <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+    <div class="uk-grid uk-drop-grid uk-child-width-1-2">
         <div>
             <ul class="uk-nav uk-navbar-dropdown-nav">…</ul>
         </div>
@@ -979,7 +979,7 @@ To accommodate up to five columns, you also need to add one of the following cla
                     <li>
                         <a href="#">Two Columns</a>
                         <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                            <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                            <div class="uk-grid uk-drop-grid uk-child-width-1-2">
                                 <div>
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li class="uk-active"><a href="#">Active</a></li>
@@ -1111,7 +1111,7 @@ Instead of using a Dropdown, you can also show the subnavigation in a Dropbar, w
                         <li>
                             <a href="#">Parent</a>
                             <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                                <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                <div class="uk-grid uk-drop-grid uk-child-width-1-2">
                                     <div>
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
                                             <li class="uk-active"><a href="#">Active</a></li>
@@ -1268,7 +1268,7 @@ For example, set `dropbar-transparent-mode: remove` if the navbar is only transp
                             <li>
                                 <a href="#">Parent</a>
                                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                                    <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                    <div class="uk-grid uk-drop-grid uk-child-width-1-2">
                                         <div>
                                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                                 <li class="uk-active"><a href="#">Active</a></li>
@@ -1359,7 +1359,7 @@ Alternatively, if the navbar is always transparent even when sticky, set `dropba
                             <li>
                                 <a href="#">Parent</a>
                                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                                    <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                    <div class="uk-grid uk-drop-grid uk-child-width-1-2">
                                         <div>
                                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                                 <li class="uk-active"><a href="#">Active</a></li>
@@ -1452,7 +1452,7 @@ Since only white color blends well with the page background, make sure the navba
                                 <li>
                                     <a href="#">Parent</a>
                                     <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                                        <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                                        <div class="uk-grid uk-drop-grid uk-child-width-1-2">
                                             <div>
                                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                                     <li class="uk-active"><a href="#">Active</a></li>
@@ -1518,7 +1518,7 @@ To color navbar parts separately, just add the `target: .uk-navbar-left, .uk-nav
         </div>
     </div>
 
-    <div class="uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid>
+    <div class="uk-grid uk-child-width-1-3@s uk-grid-collapse uk-grid-match">
         <div>
             <div class="uk-tile uk-tile-default">…</div>
         </div>
@@ -1572,7 +1572,7 @@ To color navbar parts separately, just add the `target: .uk-navbar-left, .uk-nav
         </div>
     </div>
 
-    <div class="uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid>
+    <div class="uk-grid uk-child-width-1-3@s uk-grid-collapse uk-grid-match">
         <div>
 
             <div class="uk-tile uk-tile-default">
@@ -1599,7 +1599,7 @@ To color navbar parts separately, just add the `target: .uk-navbar-left, .uk-nav
         </div>
     </div>
 
-    <div class="uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid>
+    <div class="uk-grid uk-child-width-1-3@s uk-grid-collapse uk-grid-match">
         <div>
 
             <div class="uk-tile uk-tile-primary">
@@ -1623,7 +1623,7 @@ To color navbar parts separately, just add the `target: .uk-navbar-left, .uk-nav
         </div>
     </div>
 
-    <div class="uk-child-width-1-3@s uk-grid-collapse uk-grid-match" uk-grid>
+    <div class="uk-grid uk-child-width-1-3@s uk-grid-collapse uk-grid-match">
         <div>
 
             <div class="uk-tile uk-tile-default">

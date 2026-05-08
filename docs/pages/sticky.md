@@ -59,7 +59,7 @@ To apply an offset to when the element should start being sticky, add the `start
 ```example
 <div class="uk-background-muted uk-height-large">
 
-    <div class="uk-child-width-1-4@s" uk-grid>
+    <div class="uk-grid uk-child-width-1-4@s">
         <div>
             <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="start: 200; end: !.uk-height-large; offset: 80">200px</div>
         </div>
@@ -107,7 +107,7 @@ To apply an offset to when the element should stop being sticky, add the `end` o
 ```example
 <div class="uk-background-muted uk-height-large">
 
-    <div class="uk-child-width-1-4@s" uk-grid>
+    <div class="uk-grid uk-child-width-1-4@s">
         <div>
             <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: 200; offset: 80">200px</div>
         </div>
@@ -196,7 +196,7 @@ It's possible to disable the sticky behavior for different device widths by appl
 Sticky content that is larger than the viewport will scroll down and stick to the bottom of the viewport. Changing the scroll direction will immediately scroll the sticky content up and change the sticky behavior to stick to the top of the viewport. Scrolling down will change the behavior again.
 
 ```example
-<div id="js-oversized" class="uk-child-width-1-2" uk-grid>
+<div id="js-oversized" class="uk-grid uk-child-width-1-2">
     <div>
 
         <div class="uk-card uk-card-default uk-card-body uk-position-z-index" uk-sticky="end: #js-oversized; offset: 80">

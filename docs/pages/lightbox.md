@@ -72,7 +72,7 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 
 ```example
 <div class="uk-h3">Slide</div>
-<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
+<div class="uk-grid uk-child-width-1-3@m" uk-lightbox="animation: slide">
     <div>
         <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
             <img src="images/photo.jpg" width="1800" height="1200" alt="">
@@ -91,7 +91,7 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 </div>
 
 <div class="uk-h3">Fade</div>
-<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: fade">
+<div class="uk-grid uk-child-width-1-3@m" uk-lightbox="animation: fade">
     <div>
         <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
             <img src="images/photo.jpg" width="1800" height="1200" alt="">
@@ -110,7 +110,7 @@ By default, the Lightbox gallery uses a slide animation. You can set the `animat
 </div>
 
 <div class="uk-h3">Scale</div>
-<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: scale">
+<div class="uk-grid uk-child-width-1-3@m" uk-lightbox="animation: scale">
     <div>
         <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
             <img src="images/photo.jpg" width="1800" height="1200" alt="">
@@ -143,7 +143,7 @@ By default, the lightbox shows a slidenav from the [Slidenav component](slidenav
 
 ```example
 <div class="uk-h3">Thumbnav</div>
-<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="nav: thumbnav; slidenav: false">
+<div class="uk-grid uk-child-width-1-3@m" uk-lightbox="nav: thumbnav; slidenav: false">
     <div>
         <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
             <img src="images/photo.jpg" width="1800" height="1200" alt="">
@@ -162,7 +162,7 @@ By default, the lightbox shows a slidenav from the [Slidenav component](slidenav
 </div>
 
 <div class="uk-h3">Dotnav</div>
-<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="nav: dotnav; slidenav: false">
+<div class="uk-grid uk-child-width-1-3@m" uk-lightbox="nav: dotnav; slidenav: false">
     <div>
         <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
             <img src="images/photo.jpg" width="1800" height="1200" alt="">
@@ -194,7 +194,7 @@ To show a counter with the current item number and the total number of items, ad
 ```
 
 ```example
-<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="counter: true">
+<div class="uk-grid uk-child-width-1-3@m" uk-lightbox="counter: true">
     <div>
         <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
             <img src="images/photo.jpg" width="1800" height="1200" alt="">
@@ -226,7 +226,7 @@ To adapt the color of the overlaying controls for better visibility depending on
 ```
 
 ```example
-<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="nav: thumbnav; slidenav: false">
+<div class="uk-grid uk-child-width-1-3@m" uk-lightbox="nav: thumbnav; slidenav: false">
     <div>
         <a class="uk-inline" href="images/dark.jpg" data-caption="Caption 2" data-attrs="class: uk-inverse-light">
             <img src="images/dark.jpg" width="1800" height="1200" alt="">
@@ -378,7 +378,7 @@ To override the default lightbox template, add the `template: #ID` option to lin
             <button class="uk-lightbox-close uk-close-large" type="button" uk-close></button>
         </div>
         <div class="uk-position-bottom uk-position-medium uk-text-center uk-transition-fade" uk-inverse>
-            <div class="uk-grid-small uk-width-auto uk-flex-inline uk-flex-middle" uk-grid>
+            <div class="uk-grid uk-grid-small uk-width-auto uk-flex-inline uk-flex-middle">
                 <div><a class="uk-lightbox-slidenav" href uk-slidenav-previous uk-lightbox-item="previous"></a></div>
                 <div><div class="uk-lightbox-counter"></div></div>
                 <div><a class="uk-lightbox-slidenav" href uk-slidenav-next uk-lightbox-item="next"></a></div>
@@ -387,7 +387,7 @@ To override the default lightbox template, add the `template: #ID` option to lin
     </div>
 </template>
 
-<div class="uk-child-width-1-3@m" uk-grid uk-lightbox="template: #js-lightbox-template; counter: true">
+<div class="uk-grid uk-child-width-1-3@m" uk-lightbox="template: #js-lightbox-template; counter: true">
     <div>
         <a class="uk-inline" href="images/photo.jpg" data-caption="Caption 1">
             <img src="images/photo.jpg" width="1800" height="1200" alt="">

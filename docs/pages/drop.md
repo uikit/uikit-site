@@ -85,7 +85,7 @@ You can place a grid from the [Grid component](grid.md) inside a drop. Just wrap
 
 ```html
 <div class="uk-width-large" uk-drop>
-    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>…</div>
+    <div class="uk-grid uk-drop-grid uk-child-width-1-2@m">…</div>
 </div>
 ```
 
@@ -94,7 +94,7 @@ Use one of the classes from the [Width component](width.md) to adjust the drop's
 ```example
 <button class="uk-button uk-button-default" type="button">Hover</button>
 <div class="uk-card uk-card-body uk-card-default uk-width-large" uk-drop>
-    <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
+    <div class="uk-grid uk-drop-grid uk-child-width-1-2@m">
         <div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
         </div>

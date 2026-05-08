@@ -31,7 +31,7 @@
                     X or Facebook. It would really mean a lot to us.
                 </p>
 
-                <div class="uk-grid-medium uk-child-width-auto uk-flex-inline" uk-grid>
+                <div class="uk-grid uk-grid-medium uk-child-width-auto uk-flex-inline">
                     <div>
                         <a
                             class="uk-button uk-button-primary tm-button-primary uk-button-large"

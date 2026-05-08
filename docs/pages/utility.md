@@ -9,7 +9,7 @@ UIkit uses panels to outline certain sections of your content. These can be arra
 Add the `.uk-panel` class to a `<div>` element to create a position context, set box-sizing to border-box, apply a clear fix and remove the bottom margin of its last child element.
 
 ```example
-<div class="uk-child-width-1-3@s" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s">
     <div>
         <div class="uk-panel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
     </div>
@@ -157,7 +157,7 @@ Add the `uk-overflow-auto` attribute to expand an element's height to make it fi
         <p>Some content before the overflow auto container.</p>
 
         <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
-            <div class="uk-grid-small" uk-grid>
+            <div class="uk-grid uk-grid-small">
                 <div class="uk-width-1-2"><img src="images/light.jpg" width="1800" height="1200" alt=""></div>
                 <div class="uk-width-1-2"><img src="images/dark.jpg" width="1800" height="1200" alt=""></div>
                 <div class="uk-width-1-2"><img src="images/photo.jpg" width="1800" height="1200" alt=""></div>
@@ -321,7 +321,7 @@ These utilities provide different classes for resizing elements.
 <p>Grab and drag the bottom right corner of each box below to resize it</p>
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s">
     <div>
         <pre class="uk-resize-vertical">
             <code>
@@ -433,7 +433,7 @@ Define how the content of an image or video should be resized to fit its element
 ```
 
 ```example
-<div class="uk-child-width-1-2@s" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s">
     <div>
         <img class="uk-object-cover" src="images/photo.jpg" width="1000" height="1000" alt="" style="aspect-ratio: 1 / 1;">
     </div>
@@ -493,7 +493,7 @@ You can apply different box shadows to elements. Just add one of the following c
 ```
 
 ```example
-<div class="uk-child-width-1-2@s uk-text-center" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s uk-text-center">
     <div>
         <div class="uk-box-shadow-small uk-padding">Small</div>
     </div>
@@ -530,7 +530,7 @@ To apply a box shadow on hover, add one of the following classes. This can also 
 ```
 
 ```example
-<div class="uk-child-width-1-2@s uk-text-center" uk-grid>
+<div class="uk-grid uk-child-width-1-2@s uk-text-center">
     <div>
         <div class="uk-box-shadow-hover-small uk-padding">Hover Small</div>
     </div>
@@ -582,7 +582,7 @@ Add one of the following classes to apply different blend modes to your backgrou
 ```
 
 ```example
-<div class="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-small uk-light" uk-grid>
+<div class="uk-grid uk-child-width-1-2 uk-child-width-1-3@s uk-grid-small uk-light">
     <div>
         <div class="uk-inline uk-background-primary">
             <img class="uk-blend-multiply" src="images/dark.jpg" width="1800" height="1200" alt="Blend Multiply">
@@ -741,7 +741,7 @@ To modify the origin of animation, like scaling, add one of the `uk-transform-or
 ```
 
 ```example
-<div class="uk-child-width-1-3@m" uk-grid>
+<div class="uk-grid uk-child-width-1-3@m">
     <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-transform-origin-bottom-right uk-card uk-card-default uk-card-body uk-animation-scale-up">
             <p class="uk-text-center">Bottom Right</p>

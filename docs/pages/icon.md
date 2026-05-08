@@ -42,7 +42,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 <h4 class="uk-heading-line"><span>App</span></h4>
 
-<div class="uk-child-width-1-3@s" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s">
     <div>
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="home"></span> home</li>
@@ -133,7 +133,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 <h4 class="uk-heading-line"><span>Devices</span></h4>
 
-<div class="uk-child-width-1-3@s" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s">
     <div>
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="tv"></span> tv</li>
@@ -157,7 +157,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 <h4 class="uk-heading-line"><span>Storage</span></h4>
 
-<div class="uk-child-width-1-3@s" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s">
     <div>
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="file"></span> file</li>
@@ -189,7 +189,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 <h4 class="uk-heading-line"><span>Direction</span></h4>
 
-<div class="uk-child-width-1-3@s" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s">
     <div>
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="reply"></span> reply</li>
@@ -226,7 +226,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 <h4 class="uk-heading-line"><span>Editor</span></h4>
 
-<div class="uk-child-width-1-3@s" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s">
     <div>
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="bold"></span> bold</li>
@@ -247,7 +247,7 @@ Here is an overview of all currently available icons. Over time, we will keep ad
 
 <h4 class="uk-heading-line"><span>Brands</span></h4>
 
-<div class="uk-child-width-1-3@s" uk-grid>
+<div class="uk-grid uk-child-width-1-3@s">
     <div>
         <ul class="uk-list">
             <li><span class="uk-margin-small-right" uk-icon="500px"></span> 500px</li>
@@ -364,7 +364,7 @@ Use the modifier `.uk-icon-overlay` class to make the icon work best on backgrou
 ```
 
 ```example
-<div class="uk-child-width-1-2@m" uk-grid>
+<div class="uk-grid uk-child-width-1-2@m">
     <div>
 
         <a href class="uk-inline uk-dark">
