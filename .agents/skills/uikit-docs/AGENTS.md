@@ -3,6 +3,7 @@
 ## Overview
 
 Use this skill for auditing and updating UIkit docs from the local source repo.
+`SKILL.md` is the entry file for triggers and the short workflow. This file is the detailed operating guide.
 
 - Source: `/Users/hanna/Webserver/_uikit`
 - Docs: `/Users/hanna/Webserver/uikit-site`
@@ -19,6 +20,7 @@ Always work in this order:
 
 Treat UIkit component docs primarily as reference documentation.
 Do not invent option names, defaults, or behavior. Verify them in changelog, source, and tests.
+Use the relevant component page in `docs/pages/` or `docs/pages/migration.md` as the docs target.
 
 ## Audit First
 
@@ -65,6 +67,14 @@ Before finishing:
 1. re-read only the changed docs files
 2. confirm new wording against changelog, source, and tests
 3. confirm examples match supported behavior
+
+## Do / Don't
+
+- Do verify wording against commits, `CHANGELOG.md`, `src/`, and `tests/`
+- Do preserve the target file's existing formatting and structure
+- Do keep release docs audits and docs coverage notes concise
+- Don't invent behavior, defaults, or undocumented options
+- Don't expand edits beyond the specific missing docs, migration note, or component page update
 
 ## Output
 
