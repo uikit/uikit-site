@@ -4,6 +4,16 @@
 
 ***
 
+## Migration from UIkit 3.25 to 3.26
+
+UIkit 3.26 renames Floating Shadow from `.uk-box-shadow-bottom` to `.uk-floating-shadow`. Just find and replace the old class in your markup and custom CSS. Logo, Dropcap and Floating Shadow are now documented as standalone components instead of being grouped under the Utility component.
+
+Stacked grid columns now use `row-gap` without relying on the `uk-grid` attribute. If you previously added the `uk-grid` attribute only to preserve vertical spacing in stacked layouts, you may no longer need it unless you use JavaScript grid features such as masonry, parallax or dividers.
+
+Additionally, we refactored selector specificity in Grid, Base and Form to remove the `!important` keyword from the Margin component. If you use custom CSS or a custom UIkit build, review overrides that relied on the previous specificity or on Margin utilities using `!important`.
+
+***
+
 ## Migration from UIkit 3.24 to 3.25
 
 UIkit 3.25 refactors the [Accordion component](accordion.md). The accordion style got moved in a dedicated style modifier to allow the accordion being used without any style. To apply the default style update your markup by adding the `.uk-accordion-default` class to all accordions. We renamed the all accordion Less variables and hooks accordingly. Just find and replace these Less variables and hooks if you are using them in a custom Less theme.
