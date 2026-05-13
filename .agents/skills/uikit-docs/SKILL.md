@@ -1,38 +1,26 @@
 ---
 name: uikit-docs
-description: Audit UIkit changes and update `uikit-site` docs with minimal, source-verified edits and no formatting drift. Use when reviewing commits, tags, `CHANGELOG.md`, `src/`, `tests/`, or `docs/pages` for missing docs coverage, new component pages, migration notes, or release documentation.
+description: Audit UIkit changes and update `uikit-site` docs. Use when reviewing commits, tags, `CHANGELOG.md`, `src/`, `tests/`, or `docs/pages` for missing docs coverage, new component pages, migration notes, or release documentation.
+license: MIT
 ---
 
 # UIkit Docs
 
-Use this skill for UIkit docs work across the local repos:
+Audit and update UIkit docs from the local source repo. Use when auditing missing docs coverage for recent UIkit changes, adding a new docs page for a new component or feature, updating existing component docs or `migration.md`, or preparing docs before a release post.
 
-- source: `/Users/hanna/Webserver/_uikit`
-- docs: `/Users/hanna/Webserver/uikit-site`
-
-## Quick Start
-
-1. Check recent commits, tags, and the relevant version range
-2. Read `CHANGELOG.md`
-3. Verify behavior in `src/` and matching examples in `tests/`
-4. Audit or update `docs/pages/` only where needed
-
-## When to Use
-
-- auditing missing docs coverage for recent UIkit changes
-- adding a new docs page for a new component or feature
-- updating existing component docs or `migration.md`
-- preparing docs before a UIkit release post or release docs audit
+- Source repo: `/Users/hanna/Webserver/_uikit`
 
 ## Workflow
 
-1. Check commits, tags, and version range
-2. Read `CHANGELOG.md`
-3. Verify behavior in `src/` and `tests/`
-4. Audit docs coverage in `docs/pages`
-5. Create new docs pages or update existing ones only where needed
-6. Match the existing docs tone, terminology, structure, and formatting of nearby pages
+1. Check recent commits, tags, and the relevant version range.
+2. Read `CHANGELOG.md`.
+3. Verify behavior in affected files in `src/` and matching examples in `tests/`.
+4. Audit docs coverage in `docs/pages/` and classify each item as `documented`, `missing docs`, `migration only`, `needs example`, or `not user-facing`.
+5. Update only the relevant docs page in `docs/pages/` or `docs/pages/migration.md` or create new docs pages as needed.
 
-## Detailed Rules
+## Source Priority
 
-Use `AGENTS.md` in this skill for the full operating rules, audit criteria, writing constraints, and verification checklist.
+- Start with the relevant commit range and tags.
+- Use `CHANGELOG.md` as the release summary, but verify wording and behavior in `src/` and `tests/` before documenting anything.
+- Treat existing docs pages as structure and tone references, not as the source of truth for new behavior.
+- When editing a docs page, use the current page as the base document and nearby component pages only as pattern references.
