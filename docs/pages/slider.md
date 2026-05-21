@@ -1120,9 +1120,19 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `finite`            | Boolean | `false` | Disable infinite sliding.                                               |
 | `index`             | Number  | `0`     | Slider item to show. 0 based index.                                     |
 | `active`            | String  | `all`   | Slider item/items to apply the transition active class to (all, first). |
+| `parallax`          | Boolean | `false` | Connect the slider to scrolling.                                        |
 | `pause-on-hover`    | Boolean | `true`  | Pause autoplay mode on hover.                                           |
 | `sets`              | Boolean | `false` | Slide in sets.                                                          |
 | `velocity`          | Number  | `1`     | The animation velocity (pixel/ms).                                      |
+
+When `parallax` is enabled, the following parallax options are available.
+
+| Option            | Value        | Default | Description                                                                                                        |
+|-------------------|--------------|---------|--------------------------------------------------------------------------------------------------------------------|
+| `parallax-target` | CSS Selector | `false` | Element dimension reference for the parallax duration. Defaults to the slider item list.                            |
+| `parallax-start`  | Length       | `0`     | Start offset. The value can be set in `vh`, `%` and `px`, and it supports basic mathematics operands, `+` and `-`. |
+| `parallax-end`    | Length       | `0`     | End offset. The value can be set in `vh`, `%` and `px`, and it supports basic mathematics operands, `+` and `-`.   |
+| `parallax-easing` | Number       | `0`     | Animation easing during scrolling.                                                                                 |
 
 ***
 
