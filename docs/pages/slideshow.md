@@ -789,12 +789,22 @@ Any of these options can be applied to the component attribute. Separate multipl
 | `draggable`         | Boolean         | `true ` | Enable pointer dragging.                                               |
 | `easing`            | String          | `ease`  | The animation easing (CSS timing functions or cubic-bezier).           |
 | `finite`            | Boolean         | `false` | Disable infinite sliding.                                              |
+| `parallax`          | Boolean         | `false` | Connect the slideshow to scrolling.                                    |
 | `pause-on-hover`    | Boolean         | `true`  | Pause autoplay mode on hover.                                          |
 | `index`             | Number          | `0`     | Slideshow item to show. 0 based index.                                 |
 | `velocity`          | Number          | `1`     | The animation velocity (pixel/ms).                                     |
 | `ratio`             | Boolean, String | `16:9`  | The ratio. (`false` prevents height adjustment)                        |
 | `min-height`        | Boolean, Number | `false` | The minimum height.                                                    |
 | `max-height`        | Boolean, Number | `false` | The maximum height.                                                    |
+
+When `parallax` is enabled, the following parallax options are available.
+
+| Option            | Value        | Default | Description                                                                                                        |
+|-------------------|--------------|---------|--------------------------------------------------------------------------------------------------------------------|
+| `parallax-target` | CSS Selector | `false` | Element dimension reference for the parallax duration. Defaults to the slideshow item list.                         |
+| `parallax-start`  | Length       | `0`     | Start offset. The value can be set in `vh`, `%` and `px`, and it supports basic mathematics operands, `+` and `-`. |
+| `parallax-end`    | Length       | `0`     | End offset. The value can be set in `vh`, `%` and `px`, and it supports basic mathematics operands, `+` and `-`.   |
+| `parallax-easing` | Number       | `0`     | Animation easing during scrolling.                                                                                 |
 
 ***
 
