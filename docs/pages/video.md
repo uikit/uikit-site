@@ -17,7 +17,7 @@ To apply this component, add the `uk-video` attribute to a `<video>` element. Au
 ```example
 <button class="uk-button uk-button-default uk-margin" type="button" uk-toggle="target: +">Toggle Video</button>
 
-<video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted hidden uk-video></video>
+<video src="https://yootheme.com/assets/images/media/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted hidden uk-video></video>
 ```
 
 ***
@@ -40,12 +40,12 @@ There are two autoplay modes. Just add the `autoplay` option to the `uk-video` a
 <div class="uk-child-width-1-2@m" uk-grid>
     <div>
 
-        <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted uk-video="autoplay: inview"></video>
+        <video src="https://yootheme.com/assets/images/media/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted uk-video="autoplay: inview"></video>
 
     </div>
     <div>
 
-        <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted uk-video="autoplay: hover"></video>
+        <video src="https://yootheme.com/assets/images/media/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted uk-video="autoplay: hover"></video>
 
     </div>
 </div>
@@ -66,7 +66,7 @@ To load a video lazy, add the `preload="none"` attribute to the video. The Video
 ```
 
 ```example
-<video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted preload="none" uk-video></video>
+<video src="https://yootheme.com/assets/images/media/yootheme-pro.mp4" width="1920" height="1080" playsinline loop muted preload="none" uk-video></video>
 ```
 
 ***
@@ -80,7 +80,7 @@ To load a video with a poster image not before pressing play, add the `uk-video=
 ```
 
 ```example
-<video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" poster="images/photo.jpg" width="1920" height="1080" controls preload="none" uk-video="autoplay: false"></video>
+<video src="https://yootheme.com/assets/images/media/yootheme-pro.mp4" poster="images/photo.jpg" width="1920" height="1080" controls preload="none" uk-video="autoplay: false"></video>
 ```
 
 Alternatively display a placeholder image that is replaced by the video element. Just place the hidden video and the linked image side by side within a container element, and add the `uk-toggle` attribute from the [Toggle component](toggle.md) to the image link. Then, target both the hidden video and the linked image to toggle their visibility.
@@ -96,7 +96,7 @@ Alternatively display a placeholder image that is replaced by the video element.
 
 ```example
 <div class="uk-inline uk-light">
-    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" controls preload="none" hidden uk-video></video>
+    <video src="https://yootheme.com/assets/images/media/yootheme-pro.mp4" width="1920" height="1080" controls preload="none" hidden uk-video></video>
     <a href uk-toggle="target: ! > *">
         <img src="images/photo.jpg" width="1800" height="1200" alt="">
         <span class="uk-position-center uk-icon-overlay" uk-icon="icon: youtube; ratio: 3"></span>
@@ -117,7 +117,7 @@ This also works for embedded iframe videos from YouTube or Vimeo too. Here, no e
 
 ```example
 <div class="uk-inline uk-light">
-    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" controls preload="none" hidden uk-video></video>
+    <video src="https://yootheme.com/assets/images/media/yootheme-pro.mp4" width="1920" height="1080" controls preload="none" hidden uk-video></video>
     <a href uk-toggle="target: ! > *">
         <img src="images/photo.jpg" width="1800" height="1200" alt="">
         <span class="uk-position-center uk-icon-overlay" uk-icon="icon: youtube; ratio: 3"></span>

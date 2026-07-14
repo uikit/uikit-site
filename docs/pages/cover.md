@@ -36,7 +36,7 @@ The Cover component inherits all properties from the [Video component](video.md)
 
 ```example
 <div class="uk-cover-container uk-height-medium">
-    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" autoplay loop muted playsinline uk-cover></video>
+    <video src="https://yootheme.com/assets/images/media/yootheme-pro.mp4" autoplay loop muted playsinline uk-cover></video>
 </div>
 ```
 

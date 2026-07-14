@@ -313,7 +313,7 @@ If you want to display media, you should first check, if the [Lightbox component
 <div id="modal-media-video" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" controls playsinline uk-video></video>
+        <video src="https://yootheme.com/assets/images/media/yootheme-pro.mp4" width="1920" height="1080" controls playsinline uk-video></video>
     </div>
 </div>
 
