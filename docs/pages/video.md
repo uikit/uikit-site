@@ -72,7 +72,7 @@ To connect the video playback to scrolling, set `autoplay: parallax`. The video 
 ```
 
 ```example
-<video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" playsinline muted uk-video="autoplay: parallax; parallax-start: 100%; parallax-end: 100%"></video>
+<video src="https://yootheme.com/media/videos/yootheme-pro.mp4" width="1920" height="1080" playsinline muted uk-video="autoplay: parallax; parallax-start: 100%; parallax-end: 100%"></video>
 ```
 
 To adjust the scroll range that drives the video playback, set the `parallax-start` and `parallax-end` options. Use `parallax-target` to reference another element for the parallax duration and `parallax-easing` to adjust the animation easing. Learn more in the [Parallax component](parallax.md).
