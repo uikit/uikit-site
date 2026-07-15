@@ -453,7 +453,7 @@ The slideshow is not restricted to images. Other media, like videos, can be posi
             <img src="images/photo.jpg" alt="" uk-cover>
         </div>
         <div>
-            <video src="https://yootheme.com/assets/images/media/yootheme-pro.mp4" autoplay loop muted playsinline uk-cover></video>
+            <video src="https://yootheme.com/media/videos/yootheme-pro.mp4" autoplay loop muted playsinline uk-cover></video>
         </div>
         <div>
             <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?playsinline=1&amp;rel=0&amp;controls=0&amp;loop=1" width="1920" height="1080" allowfullscreen uk-cover></iframe>
