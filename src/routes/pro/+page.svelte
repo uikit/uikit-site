@@ -124,11 +124,11 @@
         <div class="uk-grid-large uk-flex-middle uk-text-center uk-text-left@l" uk-grid>
             <div class="uk-width-1-3@l uk-flex-last@l">
                 <div class="uk-inline uk-width-xlarge">
-                    <h1 class="uk-h6 tm-h6 uk-margin-remove">Style Customizer</h1>
+                    <h1 class="uk-h6 tm-h6 uk-margin-remove">Style Editor</h1>
                     <h2 class="uk-h1 uk-margin-top">Create your style</h2>
                     <p class="uk-text-large tm-text-large">
                         Modify the visual appearance of your site – including colors, fonts, margins
-                        and other style related properties – with a sophisticated style customizer
+                        and other style related properties – with a sophisticated style editor
                         for UIkit.
                     </p>
                 </div>
@@ -136,10 +136,10 @@
             <div class="uk-width-2-3@l">
                 <img
                     class="tm-box-shadow-large"
-                    src={asset('/images/pro/style-customizer.gif')}
+                    src={asset('/images/pro/style-editor.gif')}
                     width="780"
                     height="456"
-                    alt="Animated Gif YOOtheme Pro Style Customizer"
+                    alt="Animated Gif YOOtheme Pro Style Editor"
                     loading="lazy"
                 />
             </div>
