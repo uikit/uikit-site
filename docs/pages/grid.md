@@ -491,14 +491,14 @@ To adjust the grid parallax duration, set the `parallax-start` and `parallax-end
 <div uk-grid="parallax: 150; parallax-start: 100%; parallax-end: 100%;">…</div>
 ```
 
-To justify the grid parallax if columns have different heights, for example in masonry grids, set the `parallax-justify: true` option so all grid columns reach the bottom at the same time. Set `parallax: 0` to only move the columns by their height until they justify. But of course an additional parallax translation value can be set as well.
+To justify the grid parallax if columns have different heights, for example in masonry grids, set the `parallax-justify: true` option so all grid columns reach the bottom at the same time. An additional parallax translation value can be set as well.
 
 ```html
-<div uk-grid="parallax: 0; parallax-justify: true; masonry: pack">…</div>
+<div uk-grid="parallax-justify: true; masonry: pack">…</div>
 ```
 
 ```example
-<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="parallax: 0; parallax-justify: true; masonry: pack">
+<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="parallax-justify: true; masonry: pack">
     <div>
         <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" style="height: 100px">Item 1</div>
     </div>
