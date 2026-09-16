@@ -21,6 +21,12 @@ await $`pnpm update uikit --latest`;
 
 const version = (await $`pnpm view uikit version`).stdout;
 const message = `Bump UIkit to version ${version}`;
+const changes = (await $`git status --porcelain`).stdout;
+if (!changes) {
+    console.log(`UIkit is already at version ${version}`);
+    process.exit(0);
+}
+
 await $`git commit -am ${message}`;
 
 await $`git push origin`;
