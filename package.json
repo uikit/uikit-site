@@ -10,7 +10,7 @@
         "compile-less": "make-dir static/css && lessc less/theme.less > static/css/theme.css --rewrite-urls=all --clean-css",
         "compile-uikit-tests": "cd ./static/assets/uikit && pnpm compile-js tests"
     },
-    "packageManager": "pnpm@10.33.0",
+    "packageManager": "pnpm@12.4.2",
     "devDependencies": {
         "@docsearch/css": "^3.9.0",
         "@docsearch/js": "^3.9.0",
@@ -35,12 +35,5 @@
         "svelte": "^5.57.0",
         "uikit": "3.25.23",
         "vite": "^8.2.2"
-    },
-    "pnpm": {
-        "peerDependencyRules": {
-            "ignoreMissing": [
-                "@algolia/client-search"
-            ]
-        }
     }
 }
