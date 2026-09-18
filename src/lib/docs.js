@@ -1,14 +1,14 @@
 (function ({ notification, util: { $, on } }) {
-    new ClipboardJS('a.js-copy', {
-        text: (trigger) => $(trigger.rel)?.innerText,
-    })
+    on(document, 'click', 'a.js-copy', async (e) => {
+        e.preventDefault();
 
-        .on('success', () => {
+        try {
+            await navigator.clipboard.writeText($(e.current.rel).innerText);
             notification({ message: 'Copied!', pos: 'bottom-right' });
-        })
-        .on('error', () => {
+        } catch {
             notification({ message: 'Copy failed!', status: 'danger', pos: 'bottom-right' });
-        });
+        }
+    });
 
     on(document, 'click', 'a.js-codepen', (e) => {
         e.preventDefault();
@@ -16,7 +16,7 @@
         openOnCodepen($(e.current.rel).innerText);
     });
 
-    on(document, 'click', '.js-example [href="#"],a.js-copy', (e) => e.preventDefault());
+    on(document, 'click', '.js-example [href="#"]', (e) => e.preventDefault());
 
     // https://blog.codepen.io/documentation/api/prefill/
     function openOnCodepen(code) {

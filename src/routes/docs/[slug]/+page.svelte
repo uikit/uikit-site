@@ -2,14 +2,12 @@
     import Header from '../../Header.svelte';
     import { asset, resolve } from '$app/paths';
     import { page } from '$app/state';
-    import Clipboard from 'clipboard/dist/clipboard.min?url';
     import Docs from '$lib/docs.js?url';
     let { data } = $props();
 </script>
 
 <svelte:head>
     <title>{data.doc.title} - UIkit</title>
-    <script src={Clipboard} defer></script>
     <script src={Docs} defer></script>
 </svelte:head>
 

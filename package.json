@@ -18,7 +18,6 @@
         "@sveltejs/adapter-static": "3.0.10",
         "@sveltejs/kit": "^2.70.3",
         "@sveltejs/vite-plugin-svelte": "^7.3.0",
-        "clipboard": "2.0.11",
         "eslint": "^10.10.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-svelte": "^3.23.0",

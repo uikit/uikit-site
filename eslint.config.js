@@ -28,7 +28,6 @@ export default [
             sourceType: 'module',
             globals: {
                 UIkit: true,
-                ClipboardJS: true,
                 ...globals.browser,
                 ...globals.node,
             },
