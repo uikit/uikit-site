@@ -9,8 +9,6 @@ updates:
         update-types: ["version-update:semver-major"]
       - dependency-name: "@docsearch/js"
         update-types: ["version-update:semver-major"]
-      - dependency-name: "symlink-dir"
-        update-types: ["version-update:semver-major"]
     groups:
       dev-dependencies:
         patterns:

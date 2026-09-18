@@ -5,7 +5,7 @@
         "dev": "vite dev --open",
         "build": "vite build",
         "preview": "vite preview",
-        "postinstall": "symlink-dir ./node_modules/uikit ./static/assets/uikit && cd ./static/assets/uikit && pnpm install",
+        "postinstall": "node scripts/link-uikit.js && cd ./static/assets/uikit && pnpm install",
         "compile": "pnpm compile-less && pnpm compile-uikit-tests",
         "compile-less": "make-dir static/css && lessc less/theme.less > static/css/theme.css --rewrite-urls=all --clean-css",
         "compile-uikit-tests": "cd ./static/assets/uikit && pnpm compile-js tests"
@@ -33,7 +33,6 @@
         "prettier-plugin-organize-imports": "^4.3.0",
         "prettier-plugin-svelte": "^4.1.1",
         "svelte": "^5.57.0",
-        "symlink-dir": "^7.1.0",
         "uikit": "3.25.23",
         "vite": "^8.2.2"
     },
