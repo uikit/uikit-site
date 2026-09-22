@@ -8,6 +8,8 @@ ENV COMMIT_HASH=$COMMIT_HASH
 WORKDIR /app
 COPY package.json .
 COPY pnpm-lock.yaml .
+COPY pnpm-workspace.yaml .
+COPY scripts/link-uikit.js ./scripts/link-uikit.js
 RUN corepack enable && \
     corepack prepare --activate && \
     pnpm install
