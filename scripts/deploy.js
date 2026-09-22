@@ -17,16 +17,15 @@ if (porcelain) {
     process.exit(1);
 }
 
-await $`pnpm update uikit --latest`;
-
 const version = (await $`pnpm view uikit version`).stdout;
-const message = `Bump UIkit to version ${version}`;
+await $`pnpm update uikit@${version}`;
 const changes = (await $`git status --porcelain`).stdout;
 if (!changes) {
     console.log(`UIkit is already at version ${version}`);
     process.exit(0);
 }
 
+const message = `Bump UIkit to version ${version}`;
 await $`git commit -am ${message}`;
 
 await $`git push origin`;
