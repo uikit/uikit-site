@@ -2,7 +2,7 @@
     import Header from '../../Header.svelte';
     import { asset, resolve } from '$app/paths';
     import { page } from '$app/state';
-    import Docs from '$lib/docs.js?url';
+    import Docs from '#lib/docs.js?url';
     let { data } = $props();
 </script>
 

@@ -1,7 +1,7 @@
 <script>
     import Offcanvas from './Offcanvas.svelte';
     import { page } from '$app/state';
-    import { dev } from '$app/environment';
+    import { dev } from '$app/env';
 
     let { data, children } = $props();
 </script>
