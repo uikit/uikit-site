@@ -1,4 +1,7 @@
-FROM node:24 AS build
+ARG NODE_IMAGE=node:24
+ARG HTTPD_IMAGE=httpd:2.4-alpine
+
+FROM ${NODE_IMAGE} AS build
 
 # environment variables
 ARG COMMIT_HASH=empty
@@ -23,7 +26,7 @@ RUN pnpm compile && \
     pnpm build
 
 # build uikit v2
-FROM node:24 AS build-v2
+FROM ${NODE_IMAGE} AS build-v2
 ADD https://github.com/uikit/uikit-site/releases/download/2016.12/uikit-site-v2.zip uikit.zip
 RUN unzip uikit.zip -d ./uikit && \
     rm uikit.zip && \
@@ -35,7 +38,7 @@ RUN yarn install && \
     rm -rf ./node_modules/
 
 # setup httpd
-FROM httpd:2.4-alpine AS httpd
+FROM ${HTTPD_IMAGE} AS httpd
 WORKDIR /usr/local/apache2
 RUN sed -i "s/ServerAdmin you@example.com/ServerAdmin info@getuikit.com/" ./conf/httpd.conf && \
     sed -i "s/AllowOverride None/AllowOverride All/" ./conf/httpd.conf && \

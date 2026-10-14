@@ -5,6 +5,17 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+    inputs:
+      base_image_source:
+        description: Registry for Node and httpd base images
+        required: true
+        default: docker-hub
+        type: choice
+        options:
+          - docker-hub
+          - ecr-public
+
 env:
   ANSIBLE_REMOTE_USER: root
   ANSIBLE_PYTHON_INTERPRETER: auto_silent
@@ -13,6 +24,8 @@ jobs:
   build:
     uses: ./.github/workflows/build.yml
     secrets: inherit
+    with:
+      base_image_source: ${{ inputs.base_image_source || 'docker-hub' }}
 
   deploy:
     needs: [build]

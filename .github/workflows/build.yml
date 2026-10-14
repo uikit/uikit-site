@@ -2,6 +2,12 @@ name: Build Docker Images
 
 on:
   workflow_call:
+    inputs:
+      base_image_source:
+        description: Registry for Node and httpd base images
+        required: false
+        type: string
+        default: docker-hub
 
 env:
   TARGET: default
@@ -9,6 +15,8 @@ env:
   REGISTRY_NAMESPACE: ghcr.io/${{ github.repository_owner }}
   REGISTRY_USERNAME: ${{ github.actor }}
   REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+  NODE_IMAGE: ${{ inputs.base_image_source == 'ecr-public' && 'public.ecr.aws/docker/library/node:24' || 'node:24' }}
+  HTTPD_IMAGE: ${{ inputs.base_image_source == 'ecr-public' && 'public.ecr.aws/docker/library/httpd:2.4-alpine' || 'httpd:2.4-alpine' }}
 
 jobs:
   prepare:
@@ -81,6 +89,8 @@ jobs:
           provenance: false # Disable to avoid unknown/unknown
           set: |
             *.platform=${{ matrix.platforms }}
+            *.args.NODE_IMAGE=${{ env.NODE_IMAGE }}
+            *.args.HTTPD_IMAGE=${{ env.HTTPD_IMAGE }}
           files: |
             ./docker-bake.hcl
             ${{ steps.meta.outputs.bake-file }}
