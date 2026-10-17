@@ -198,6 +198,37 @@ component.$destroy(true);
 
 ***
 
+## Component lifecycle hooks
+
+When extending a component with `UIkit.mixin()`, define lifecycle hook functions to run code at specific points in the component's lifetime.
+
+| Hook               | Runs                                                                                                               |
+|--------------------|--------------------------------------------------------------------------------------------------------------------|
+| `created`          | After state, methods and computed properties have been initialized, before the component is mounted.               |
+| `beforeConnect`    | After properties have been initialized, before event handlers, observers, watchers and update handlers are set up. |
+| `connected`        | After connection setup completes and before the initial update.                                                    |
+| `beforeDisconnect` | Before the connection-specific handlers and observers are cleaned up.                                              |
+| `disconnected`     | After the connection-specific cleanup completes.                                                                   |
+| `destroy`          | When `$destroy()` is called, after disconnection and before the component is detached from its element.            |
+
+For example, use `connected` and `disconnected` to set up and clean up behavior that depends on the component element being connected to the document.
+
+```js
+UIkit.mixin({
+    connected() {
+        // Set up behavior for this.$el.
+    },
+
+    disconnected() {
+        // Clean up behavior set up while connected.
+    }
+}, 'sticky');
+```
+
+Lifecycle hooks are component options, not DOM events. Use component events when reacting to component behavior such as a Modal being shown.
+
+***
+
 ## UIkit initialization
 
 You might need to execute code after UIkit is loaded, but before it initializes its components on the page.
