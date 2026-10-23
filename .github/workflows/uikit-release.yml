@@ -1,0 +1,93 @@
+name: Update UIkit
+
+on:
+  repository_dispatch:
+    types: [uikit-release]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: uikit-release-${{ github.event.client_payload.version }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: Validate release version
+        id: release
+        env:
+          RELEASE_VERSION: ${{ github.event.client_payload.version }}
+        run: |
+          if [[ ! "$RELEASE_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?(\+[0-9A-Za-z.-]+)?$ ]]; then
+            echo '::error::Expected a published UIkit version in client_payload.version.'
+            exit 1
+          fi
+          echo "version=$RELEASE_VERSION" >> "$GITHUB_OUTPUT"
+          if [ "$(jq -r '.devDependencies.uikit' package.json)" != "$RELEASE_VERSION" ]; then
+            echo 'update=true' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install pnpm
+        if: steps.release.outputs.update == 'true'
+        uses: pnpm/action-setup@v6
+
+      - name: Set up Node.js
+        if: steps.release.outputs.update == 'true'
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Wait for npm publication
+        if: steps.release.outputs.update == 'true'
+        timeout-minutes: 11
+        env:
+          RELEASE_VERSION: ${{ steps.release.outputs.version }}
+        run: |
+          deadline=$((SECONDS + 600))
+          while (( SECONDS < deadline )); do
+            if published_version=$(npm view "uikit@$RELEASE_VERSION" version \
+              --registry=https://registry.npmjs.org --prefer-online \
+              --fetch-retries=0 --fetch-timeout=15000) && [ "$published_version" = "$RELEASE_VERSION" ]; then
+              echo "uikit@$RELEASE_VERSION is available on npm."
+              exit 0
+            fi
+            remaining=$((deadline - SECONDS))
+            if (( remaining <= 0 )); then
+              break
+            fi
+            echo "Waiting for uikit@$RELEASE_VERSION to propagate to npm..."
+            sleep "$((remaining < 30 ? remaining : 30))"
+          done
+          echo "::error::uikit@$RELEASE_VERSION did not become available on npm within 10 minutes."
+          exit 1
+
+      - name: Update UIkit dependency
+        if: steps.release.outputs.update == 'true'
+        env:
+          RELEASE_VERSION: ${{ steps.release.outputs.version }}
+        run: pnpm add --save-dev --save-exact --lockfile-only --ignore-scripts "uikit@$RELEASE_VERSION"
+
+      - name: Create pull request
+        if: steps.release.outputs.update == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: update/uikit-${{ steps.release.outputs.version }}
+          base: main
+          add-paths: |
+            package.json
+            pnpm-lock.yaml
+          commit-message: 'chore(deps): update uikit to ${{ steps.release.outputs.version }}'
+          title: 'chore(deps): update uikit to ${{ steps.release.outputs.version }}'
+          body: |
+            Updates UIkit to the newly published npm version `${{ steps.release.outputs.version }}`.
+
+            Release notes: https://github.com/uikit/uikit/releases/tag/v${{ steps.release.outputs.version }}
