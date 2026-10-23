@@ -116,9 +116,7 @@ Set the appropriate WAI-ARIA roles, states and properties to the Pagination comp
 </nav>
 ```
 
-The previous/next pagination adheres to the [button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
-
-- The *prev/next pagination items* have the `button` role and the `aria-label` property.
+The *prev/next pagination items* automatically receive accessible labels through the `aria-label` property and remain links when navigating to another page. Use buttons only for in-page actions rather than navigation.
 
 ### Internationalization
 
