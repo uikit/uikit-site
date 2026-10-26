@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         with:
-          ref: main
+          ref: develop
 
       - name: Validate release version
         id: release
@@ -81,7 +81,7 @@ jobs:
         uses: peter-evans/create-pull-request@v8
         with:
           branch: update/uikit-${{ steps.release.outputs.version }}
-          base: main
+          base: develop
           add-paths: |
             package.json
             pnpm-lock.yaml
