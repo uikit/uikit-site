@@ -44,7 +44,7 @@ jobs:
         if: steps.release.outputs.update == 'true'
         uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version: 26
 
       - name: Wait for npm publication
         if: steps.release.outputs.update == 'true'

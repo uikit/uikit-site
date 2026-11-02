@@ -15,7 +15,7 @@ env:
   REGISTRY_NAMESPACE: ghcr.io/${{ github.repository_owner }}
   REGISTRY_USERNAME: ${{ github.actor }}
   REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-  NODE_IMAGE: ${{ inputs.base_image_source == 'ecr-public' && 'public.ecr.aws/docker/library/node:24' || 'node:24' }}
+  NODE_IMAGE: ${{ inputs.base_image_source == 'ecr-public' && 'public.ecr.aws/docker/library/node:26' || 'node:26' }}
   HTTPD_IMAGE: ${{ inputs.base_image_source == 'ecr-public' && 'public.ecr.aws/docker/library/httpd:2.4-alpine' || 'httpd:2.4-alpine' }}
 
 jobs:
