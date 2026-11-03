@@ -13,8 +13,7 @@ COPY package.json .
 COPY pnpm-lock.yaml .
 COPY pnpm-workspace.yaml .
 COPY scripts/link-uikit.js ./scripts/link-uikit.js
-RUN corepack enable && \
-    corepack prepare --activate && \
+RUN npm install --global pnpm@12 && \
     pnpm install
 
 # compile css and uikit tests
