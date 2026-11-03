@@ -1,4 +1,4 @@
-ARG NODE_IMAGE=node:24
+ARG NODE_IMAGE=node:26
 ARG HTTPD_IMAGE=httpd:2.4-alpine
 
 FROM ${NODE_IMAGE} AS build
