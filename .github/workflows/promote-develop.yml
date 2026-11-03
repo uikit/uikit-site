@@ -1,0 +1,48 @@
+name: Promote develop
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: promote-develop
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout develop
+        uses: actions/checkout@v6
+        with:
+          ref: develop
+
+      - name: Create promotion pull request
+        id: pull-request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: promote/develop-to-main
+        run: |
+          git switch -C "$BRANCH"
+          git push --force origin "$BRANCH"
+
+          pr_number=$(gh pr list --head "$BRANCH" --base main --state open --json number --jq '.[0].number')
+          if [ -z "$pr_number" ]; then
+            pr_number=$(gh pr create \
+              --head "$BRANCH" \
+              --base main \
+              --title 'chore: promote develop to main' \
+              --body 'Promotes the latest changes from `develop` to `main`.')
+          fi
+          echo "pull-request-number=$pr_number" >> "$GITHUB_OUTPUT"
+
+      - name: Enable auto-merge
+        if: steps.pull-request.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.pull-request.outputs.pull-request-number }}
+        run: gh pr merge "$PR_NUMBER" --auto --squash --delete-branch
