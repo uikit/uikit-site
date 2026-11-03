@@ -32,7 +32,8 @@ RUN unzip uikit.zip -d ./uikit && \
     mv ./uikit ./app
 
 WORKDIR /app
-RUN yarn install && \
+RUN npm install --global --force yarn@1 && \
+    yarn install && \
     yarn gulp build-site && \
     rm -rf ./node_modules/
 
