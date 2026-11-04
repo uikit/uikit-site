@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: write
   contents: write
   pull-requests: write
 
@@ -20,6 +21,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           ref: develop
+          fetch-depth: 0
 
       - name: Create promotion pull request
         id: pull-request
@@ -27,6 +29,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           BRANCH: promote/develop-to-main
         run: |
+          if git merge-base --is-ancestor HEAD origin/main; then
+            echo 'Develop has already been promoted to main.'
+            exit 0
+          fi
+
           git switch -C "$BRANCH"
           git push --force origin "$BRANCH"
 
@@ -40,9 +47,21 @@ jobs:
           fi
           echo "pull-request-number=$pr_number" >> "$GITHUB_OUTPUT"
 
-      - name: Enable auto-merge
+      - name: Merge promotion pull request
         if: steps.pull-request.outputs.pull-request-number != ''
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ steps.pull-request.outputs.pull-request-number }}
-        run: gh pr merge "$PR_NUMBER" --auto --squash --delete-branch
+        run: |
+          gh pr merge "$PR_NUMBER" --merge --delete-branch
+          if [ "$(gh pr view "$PR_NUMBER" --json state --jq '.state')" != MERGED ]; then
+            echo '::error::Promotion has not merged; deployment will not be triggered.'
+            exit 1
+          fi
+
+      # GITHUB_TOKEN merges do not trigger the deployment's push workflow.
+      # Dispatch even on a retry where the promotion has already merged.
+      - name: Trigger deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run uikit-site.yml --ref main

@@ -5,6 +5,7 @@ on:
     types: [uikit-release]
 
 permissions:
+  actions: write
   contents: write
   pull-requests: write
 
@@ -108,8 +109,8 @@ jobs:
           PR_NUMBER: ${{ steps.pull-request.outputs.pull-request-number }}
         run: gh pr merge "$PR_NUMBER" --squash --delete-branch
 
+      # Retry promotion even if an earlier run already merged the dependency update.
       - name: Trigger main promotion
-        if: steps.pull-request.outputs.pull-request-number != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run promote-develop.yml --ref develop
