@@ -83,7 +83,7 @@
                     </li>
                     <li>
                         <a
-                            href="https://github.com/uikit/uikit-site/tree/develop/docs/pages/{page
+                            href="https://github.com/uikit/uikit-site/tree/main/docs/pages/{page
                                 .params.slug}.md"
                             target="_blank"
                             rel="noreferrer"

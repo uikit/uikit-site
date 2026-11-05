@@ -1,11 +1,11 @@
 import {$} from 'execa';
 
-await $`git checkout develop`;
+await $`git checkout main`;
 
 const branch = (await $`git branch --show-current`).stdout;
 
-if (branch !== 'develop') {
-    console.error('Current branch is not develop');
+if (branch !== 'main') {
+    console.error('Current branch is not main');
     process.exit(1);
 }
 
@@ -29,7 +29,3 @@ const message = `Bump UIkit to version ${version}`;
 await $`git commit -am ${message}`;
 
 await $`git push origin`;
-await $`git checkout main`;
-await $`git merge develop`;
-await $`git push origin`;
-await $`git checkout develop`;
