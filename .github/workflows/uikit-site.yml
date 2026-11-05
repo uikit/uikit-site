@@ -1,10 +1,6 @@
 name: Deploy UIkit Site
 
 on:
-  push:
-    branches:
-      - main
-
   workflow_dispatch:
     inputs:
       base_image_source:
