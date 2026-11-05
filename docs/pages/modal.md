@@ -544,6 +544,8 @@ The Modal component adheres to the [Dialog (Modal) WAI-ARIA design pattern](http
 
 - The *modal* has the `dialog` role and the `aria-modal` property.
 
+Add `autofocus` to an element inside the modal to set the initial focus. For headings or paragraphs, also add `tabindex="-1"` to make them focusable without adding them to the Tab sequence.
+
 The Close component automatically sets the appropriate WAI-ARIA roles and properties.
 
 - The *close icon* has the `aria-label` property, and if an `<a>` element is used, the `button` role.

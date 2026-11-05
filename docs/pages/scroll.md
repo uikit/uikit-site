@@ -56,6 +56,12 @@ UIkit.util.on('#js-scroll-trigger', 'scrolled', function () {
 
 ***
 
+## Accessibility
+
+After scrolling, the Scroll component moves keyboard focus to the destination so keyboard users can continue navigating from there.
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)

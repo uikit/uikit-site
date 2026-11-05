@@ -443,9 +443,14 @@ Hides the drop.
 
 ## Accessibility
 
-The Drop component adheres to the [Menu Button WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/) and automatically sets the appropriate WAI-ARIA roles, states and properties.
+The Drop component automatically sets the following WAI-ARIA roles, states and properties.
 
-- The *toggle* has the `button` role, the `aria-expanded` state and the `aria-haspopup` property.
+- An anchor used as the *toggle* has the `button` role.
+- The *toggle* has the `aria-expanded` state and the `aria-controls` property referencing the drop.
+
+Set `aria-haspopup` explicitly only when the drop has a matching popup role, for example, `aria-haspopup="menu"` for `role="menu"`.
+
+For menu popups, follow the [Menu Button WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/).
 
 ### Keyboard interaction
 

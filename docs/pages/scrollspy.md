@@ -178,6 +178,10 @@ To automatically update the active menu item depending on the scroll position of
 
 For an example of the scrollspy nav, just check out the fixed nav on the right side of this page or take a look at the test. Any of the following options can be applied to the `uk-scrollspy-nav` attribute. Separate multiple options with a semicolon.
 
+### Accessibility
+
+Updating the active menu item preserves keyboard focus. With `scroll: true`, activating a link moves focus to the destination after scrolling.
+
 ***
 
 ### Scrollspy nav options

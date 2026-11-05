@@ -1711,8 +1711,10 @@ The following events will be triggered on elements with this component attached:
 
 The Navbar component adheres to the [Disclosure Navigation Menu WAI-ARIA design pattern](https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/examples/disclosure-navigation-hybrid/) and automatically sets the appropriate WAI-ARIA states and properties.
 
-- The *nav items* and *toggle items* have the `aria-expanded` state and the `aria-haspopup` property.
+- The *nav items* and *toggle items* that open dropdowns have the `aria-expanded` state and the `aria-controls` property referencing their dropdown.
 - The *toggle items* also have the `aria-label` property.
+
+The `aria-haspopup` property is not set automatically and is not needed for ordinary navigation links.
 
 ### Keyboard interaction
 

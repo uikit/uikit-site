@@ -36,6 +36,14 @@ There are two ways to animate SVG strokes. First by using the [Animation compone
 
 ***
 
+## Accessibility
+
+Use `alt` text for meaningful images. The SVG component transfers it to the injected SVG as an `aria-label` and adds `role="img"` unless a role is already set. Existing `aria-label` attributes take precedence over `alt` text.
+
+For decorative images, use `alt=""` without an `aria-label` to hide the injected SVG from screen readers.
+
+***
+
 ## Component options
 
 Any of these options can be applied to the component attribute. Separate multiple options with a semicolon. [Learn more](javascript.md#component-configuration)

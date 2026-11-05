@@ -41,3 +41,5 @@ In order for the Breadcrumb component to adhere to the [Breadcrumb design patter
     <ul class="uk-breadcrumb">…</ul>
 </nav>
 ```
+
+Breadcrumb dividers are hidden from screen readers.
