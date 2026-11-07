@@ -12,6 +12,14 @@ Stacked grid columns now use `row-gap` without relying on the `uk-grid` attribut
 
 Additionally, we refactored selector specificity in Grid, Base and Form to remove the `!important` keyword from the Margin component. If you use custom CSS or a custom UIkit build, review overrides that relied on the previous specificity or on Margin utilities using `!important`.
 
+The [Accordion component](accordion.md) now uses a heading element containing an anchor for each accordion title. Update your markup by moving the `.uk-accordion-title` class from the anchor to the heading and keeping the accordion icon inside the anchor. Choose the heading level to fit your page structure. For example:
+
+```html
+<h3 class="uk-accordion-title">
+    <a href>Item 1 <span uk-accordion-icon></span></a>
+</h3>
+```
+
 ***
 
 ## Migration from UIkit 3.24 to 3.25
