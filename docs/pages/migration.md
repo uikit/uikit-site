@@ -20,6 +20,8 @@ The [Accordion component](accordion.md) now uses a heading element containing an
 </h3>
 ```
 
+Finally, UIkit 3.26 removes the `empty()`, `ready()` and `sortBy()` JavaScript utility functions. If you use them in custom JavaScript, update your code to no longer rely on them.
+
 ***
 
 ## Migration from UIkit 3.24 to 3.25
