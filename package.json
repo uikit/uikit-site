@@ -38,7 +38,7 @@
         "prettier-plugin-svelte": "^4.1.1",
         "svelte": "^5.57.3",
         "typescript": "^6.0.0",
-        "uikit": "3.25.30",
+        "uikit": "3.25.31",
         "vite": "^8.3.5"
     }
 }
