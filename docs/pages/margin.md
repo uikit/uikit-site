@@ -142,6 +142,19 @@ Add one of the following classes to remove the margin from block elements.
 
 ***
 
+### Trim block margins
+
+To remove the top margin of the first child and the bottom margin of the last child, add the `.uk-margin-trim-block` class to the parent element.
+
+```html
+<div class="uk-margin-trim-block">
+    <h2 class="uk-margin">First child</h2>
+    <p class="uk-margin">Last child</p>
+</div>
+```
+
+***
+
 ### Responsive
 
 UIkit provides a number of responsive classes to remove margins. Basically, they work just like the usual margin remove classes, except that they have suffixes that represent the breakpoint from which they come into effect.
@@ -173,6 +186,20 @@ Add one of the following classes to set auto margin. This can be useful to cente
 
 <div class="uk-flex uk-height-medium uk-background-muted uk-margin uk-text-center">
     <div class="uk-margin-auto uk-margin-auto-vertical uk-width-1-2@s uk-card uk-card-default uk-card-body">Flex item</div>
+</div>
+```
+
+***
+
+### Vertical gap
+
+To add automatic vertical gaps between flex items, add the `.uk-margin-auto-vertical-gap` class to each item.
+
+```example
+<div class="uk-flex uk-flex-column uk-height-medium uk-background-muted uk-padding-small uk-text-center">
+    <div class="uk-margin-auto-vertical-gap uk-card uk-card-default uk-card-body">Item 1</div>
+    <div class="uk-margin-auto-vertical-gap uk-card uk-card-primary uk-card-body">Item 2</div>
+    <div class="uk-margin-auto-vertical-gap uk-card uk-card-secondary uk-card-body">Item 3</div>
 </div>
 ```
 

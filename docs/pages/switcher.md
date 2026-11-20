@@ -114,9 +114,6 @@ It is also possible to connect multiple content containers. Just add the `connec
 
 You can apply all animations from the [Animation component](animation.md) to switcher items. To do so, add the `animation` parameter with the relevant class to the `uk-switcher` attribute.
 
-```html
-<ul uk-switcher="animation: uk-animation-fade">…</ul>
-```
 
 ```example
 <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
@@ -130,6 +127,13 @@ You can apply all animations from the [Animation component](animation.md) to swi
     <div>Hello again!</div>
     <div>Bazinga!</div>
 </div>
+```
+
+To use a different animation for a connected content container, add the `uk-switcher-animation` attribute to that container.
+
+```html
+<ul uk-switcher="animation: uk-animation-fade">…</ul>
+<div class="uk-switcher" uk-switcher-animation="uk-animation-slide-left-medium, uk-animation-slide-right-medium">…</div>
 ```
 
 ***

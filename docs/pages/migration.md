@@ -8,9 +8,11 @@
 
 UIkit 3.26 renames Floating Shadow from `.uk-box-shadow-bottom` to `.uk-floating-shadow`. Just find and replace the old class in your markup and custom CSS. Logo, Dropcap and Floating Shadow are now documented as standalone components instead of being grouped under the Utility component.
 
-Stacked grid columns now use `row-gap` without relying on the `uk-grid` attribute. If you previously added the `uk-grid` attribute only to preserve vertical spacing in stacked layouts, you may no longer need it unless you use JavaScript grid features such as masonry, parallax or dividers.
+Stacked grid columns now use `row-gap` without relying on the `uk-grid` attribute. If you added `uk-grid` only to create vertical spacing in a stacked layout, you can remove it. Keep it when you rely on grid JavaScript features such as masonry, parallax or dividers.
 
-Additionally, we refactored selector specificity in Grid, Base and Form to remove the `!important` keyword from the Margin component. If you use custom CSS or a custom UIkit build, review overrides that relied on the previous specificity or on Margin utilities using `!important`.
+Additionally, Margin and Padding utilities no longer rely on `!important`. To support this, selector specificity was reduced in the Grid, Base and Form components. Direction-specific Margin utilities also take precedence over general ones. If your custom CSS or UIkit build relies on the previous specificity or override behavior, review those rules.
+
+The [Overflow Fade](utility.md#overflow-fade) utility no longer uses the `uk-overflow-fade` attribute. Use `.uk-overflow-fade-horizontal` or `.uk-overflow-fade-vertical` instead. The [Slider component](slider.md) no longer supports `.uk-slider-container-offset` or the `@slider-container-offset-*` Less variables. Use `.uk-overflow-fade-horizontal` on the slider container and wrap it in `.uk-overflow-fade-offset` instead.
 
 The [Accordion component](accordion.md) now uses a heading element containing an anchor for each accordion title. Update your markup by moving the `.uk-accordion-title` class from the anchor to the heading and keeping the accordion icon inside the anchor. Choose the heading level to fit your page structure. For example:
 

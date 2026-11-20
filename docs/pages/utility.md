@@ -84,9 +84,9 @@ Floating elements are taken from the document flow and aligned to the left or ri
 
 These utilities provide different classes to modify an element's overflow behavior.
 
-| Class                 | Description                                                                                                                                                           |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `.uk-overflow-hidden` | Add this class to clip content that exceeds the dimensions of its container.                                                                                          |
+| Class                 | Description                                                                                                                                                       |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `.uk-overflow-hidden` | Add this class to clip content that exceeds the dimensions of its container.                                                                                      |
 | `.uk-overflow-auto`   | Add this class to create a container that provides a horizontal or vertical scrollbar whenever the elements content is wider or higher than the container itself. |
 
 **Note** The `.uk-overflow-auto` class is useful when having to handle tables on a responsive website, which at some point would just get too big. It also works great on `<pre>` elements.
@@ -233,10 +233,21 @@ You can change the target heights by adding the `selContainer` and `selContent` 
 
 ## Overflow Fade
 
-Add the `uk-overflow-fade` attribute to create a container that provides horizontal or vertical scrolling whenever the elements content is wider or higher than the container itself. It behaves similar to the `uk-overflow-auto` class but instead of showing a scrollbar it fades the child items out, indicating that more content is available when scrollling. This UI pattern is especially useful for navigation which should not wrap into the next line.
+Add the `.uk-overflow-fade-horizontal` or `.uk-overflow-fade-vertical` class to create a container that scrolls horizontally or vertically when its content is wider or taller than the container. The faded edges indicate that more content is available. This is especially useful for navigation that should not wrap onto another line. Add the `uk-overflow-drag` attribute to let users scroll the container by dragging it with a mouse.
+
+The `.uk-overflow-fade-animate` modifier updates the fades as the content scrolls. Use `.uk-overflow-fade-grid` on flex-based content to keep its items from wrapping or shrinking. To prevent shadows from being clipped, wrap the scrollable container in an element with `.uk-overflow-fade-offset`. Add `.uk-overflow-fade-outside` to move the fade area outside the content bounds.
+
+| Class                          | Description                                                      |
+| ------------------------------ | ---------------------------------------------------------------- |
+| `.uk-overflow-fade-horizontal` | Enables horizontal scrolling and fades the left and right edges. |
+| `.uk-overflow-fade-vertical`   | Enables vertical scrolling and fades the top and bottom edges.   |
+| `.uk-overflow-fade-animate`    | Animates the edge fades based on the scroll position.            |
+| `.uk-overflow-fade-grid`       | Prevents flex items from wrapping or shrinking.                  |
+| `.uk-overflow-fade-offset`     | Wrapper that prevents shadows from being clipped.                |
+| `.uk-overflow-fade-outside`    | Moves the fade area outside the content bounds.                  |
 
 ```html
-<div uk-overflow-fade>
+<div class="uk-overflow-fade-horizontal uk-overflow-fade-animate" uk-overflow-drag>
     …
 </div>
 ```
@@ -244,8 +255,8 @@ Add the `uk-overflow-fade` attribute to create a container that provides horizon
 It's often used within the [Modal component](modal.md).
 
 ```example
-<div uk-overflow-fade>
-    <ul class="uk-subnav uk-flex-nowrap" uk-dropnav="mode: click; container: body">
+<div class="uk-overflow-fade-horizontal uk-overflow-fade-animate" uk-overflow-drag>
+    <ul class="uk-subnav uk-flex-nowrap uk-overflow-fade-grid" uk-dropnav="mode: click; container: body">
         <li class="uk-active"><a href="#">Active</a></li>
         <li>
             <a href>Parent <span uk-drop-parent-icon></span></a>
@@ -279,11 +290,11 @@ It's often used within the [Modal component](modal.md).
 </div>
 ```
 
-It also work in the vertical direction.
+It also works in the vertical direction.
 
 ```example
-<div class="uk-height-medium uk-width-small uk-margin" uk-overflow-fade>
-    <ul class="uk-tab-left uk-flex-nowrap" uk-tab>
+<div class="uk-height-medium uk-width-small uk-margin uk-overflow-fade-vertical uk-overflow-fade-animate" uk-overflow-drag>
+    <ul class="uk-tab-left uk-flex-nowrap uk-overflow-fade-grid" uk-tab>
         <li class="uk-active"><a href="#">Active</a></li>
         <li><a href="#">Item</a></li>
         <li><a href="#">Item</a></li>
@@ -375,10 +386,10 @@ Add one of these classes to change the display properties of an element.
 
 These classes are often used to create a position context on containers with an image as a child. The container keeps the same size as the image as well as the responsive behavior. That way content that is placed on top of the image with the [Position component](position.md) will not flow out of the image dimensions.
 
-| Class             | Description                                                                                                            |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Class             | Description                                                                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------- |
 | `.uk-inline`      | Add this class to apply inline-block behavior to an element, add a max-width of 100% and create a position context. |
-| `.uk-inline-clip` | Same as `.uk-inline`, it also clips overflowing child elements.                                                    |
+| `.uk-inline-clip` | Same as `.uk-inline`, it also clips overflowing child elements.                                                     |
 
 ```html
 <div class="uk-inline">
@@ -400,10 +411,10 @@ These classes are often used to create a position context on containers with an 
 
 In UIkit `<img>`, `<canvas>`, `<audio>` and `<video>` elements adapt to the width of their parent container by default. To apply responsive behavior to iframes, add the `uk-responsive` attribute . For other elements or to apply a different behavior, just add one of the following classes.
 
-| Class                   | Description                                                                                                                                                                                                                                                                                                |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `.uk-responsive-width`  | Add this class to apply the same responsive behavior to any other element. It adjusts the object's width according to its parent's width, keeping the original aspect ratio.                                                                                                                               |
-| `.uk-responsive-height` | Add this class to adjust the object's height (instead of its width) according to its parent's height, keeping the original aspect ratio.                                                                                                                                                                   |
+| Class                   | Description                                                                                                                                                                                                                                                                                             |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `.uk-responsive-width`  | Add this class to apply the same responsive behavior to any other element. It adjusts the object's width according to its parent's width, keeping the original aspect ratio.                                                                                                                            |
+| `.uk-responsive-height` | Add this class to adjust the object's height (instead of its width) according to its parent's height, keeping the original aspect ratio.                                                                                                                                                                |
 | `.uk-preserve-width`    | Add this class to avoid the default responsive behavior and preserve the original image dimensions. You can also add the class to a parent element and it will be applied to all relevant elements content. If you are embedding Google Maps into your site, you may need this to fix the map's images. |
 
 ```html

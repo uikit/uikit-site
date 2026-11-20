@@ -94,7 +94,15 @@ The `.uk-slider-container` class is responsible for the clipping of the slider i
 </div>
 ```
 
-Since the slider effect needs a clipping container, box shadows of content items are also clipped. To widen the container to prevent box-shadows from clipping, add the `.uk-slider-container-offset` class.
+Since the slider effect needs a clipping container, box shadows of content items are also clipped. To prevent this and fade out the edges instead, add `.uk-overflow-fade-horizontal` to the slider container and wrap it in `.uk-overflow-fade-offset`. Add `.uk-overflow-fade-outside` to move the fades outside the content bounds.
+
+```html
+<div class="uk-overflow-fade-offset">
+    <div class="uk-slider-container uk-overflow-fade-horizontal uk-overflow-fade-outside">
+        <div class="uk-slider-items">…</div>
+    </div>
+</div>
+```
 
 ***
 
@@ -698,79 +706,77 @@ Use the [Cover component](cover.md) so that images cover the whole item area and
 The slider is not restricted to images. Any content can be used like text, videos, images with text overlays or ken burns effect. Here is an example using the [Card component](card.md).
 
 ```example
-<div class="uk-slider-container-offset" uk-slider>
-
+<div uk-slider>
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
-        <div class="uk-slider-items uk-child-width-1-2@s uk-grid">
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="images/photo.jpg" width="1800" height="1200" alt="">
+        <div class="uk-overflow-fade-offset">
+            <div class="uk-slider-container uk-overflow-fade-horizontal">
+                <div class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/photo.jpg" width="1800" height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/dark.jpg" width="1800" height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="images/dark.jpg" width="1800" height="1200" alt="">
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/light.jpg" width="1800" height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/photo2.jpg" width="1800" height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="images/light.jpg" width="1800" height="1200" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="images/photo2.jpg" width="1800" height="1200" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="images/photo3.jpg" width="1800" height="1200" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/photo3.jpg" width="1800" height="1200" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
-
     </div>
-
     <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
 </div>
 ```
 
-**Note** Since the slider effect needs a clipping container, box shadows of content items are also clipped. To widen the container to prevent box-shadows from clipping, add the `.uk-slider-container-offset` class. Alternatively, use the `uk-slider="center: true"` mode if your content items have a box shadow.
+**Note** Since the slider effect needs a clipping container, box shadows of content items are also clipped. Use `.uk-overflow-fade-horizontal` on the slider container and wrap it in `.uk-overflow-fade-offset` to prevent this. Alternatively, use the `uk-slider="center: true"` mode if your content items have a box shadow.
 
 ***
 

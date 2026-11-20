@@ -107,7 +107,7 @@ You can also apply more specific positions that won't spread over one side of th
 
 ### Cover
 
-If you want a position element to cover its container, just add the `.uk-position-cover` class.
+To make a positioned element cover its container, add the `.uk-position-cover` class. Applied directly to an `<img>` or `<video>`, it makes the media fill the container. Make sure the parent has dimensions and is positioned relatively, for example, using `.uk-position-relative`.
 
 
 ```html
@@ -121,6 +121,10 @@ If you want a position element to cover its container, just add the `.uk-positio
 
     <div class="uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">Cover</div>
 
+</div>
+
+<div class="uk-position-relative uk-width-medium uk-height-medium">
+    <img class="uk-position-cover" src="images/photo.jpg" width="1800" height="1200" alt="">
 </div>
 ```
 

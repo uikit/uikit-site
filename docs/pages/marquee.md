@@ -7,10 +7,10 @@
 To apply this component, add the `uk-marquee` attribute to a container element and wrap the
 scrolling items inside an element with the `.uk-marquee-items` class.
 
-| Class                  | Description                                              |
-| ---------------------- | -------------------------------------------------------- |
-| `.uk-marquee-items`    | Defines the element containing the scrolling items.      |
-| `.uk-marquee-vertical` | Displays the marquee vertically instead of horizontally. |
+| Class                  | Description                                         |
+| ---------------------- | --------------------------------------------------- |
+| `.uk-marquee-items`    | Defines the element containing the scrolling items. |
+| `.uk-marquee-vertical` | Displays the marquee vertically of horizontally.    |
 
 ```html
 <div class="uk-marquee" uk-marquee>
@@ -106,20 +106,42 @@ it completely.
 
 ## Fade out
 
-To softly fade out the marquee content at the edges, add the `fade-size` option. The value can be
-set in `vh`, `%` and `px`, and it supports basic mathematics operands, `+` and `-`.
+To softly fade the edges of a horizontal marquee, add `.uk-overflow-fade-horizontal`. Use
+`.uk-overflow-fade-vertical` for vertical marquees. Set the `--uk-overflow-fade-size` CSS variable
+to customize the fade size.
 
 ```html
-<div uk-marquee="fade-size: 80px">...</div>
+<div class="uk-marquee uk-overflow-fade-horizontal" style="--uk-overflow-fade-size: 80px" uk-marquee>...</div>
 ```
 
 ```example
-<div class="uk-marquee" uk-marquee="fade-size: 80px">
+<div class="uk-marquee uk-overflow-fade-horizontal" style="--uk-overflow-fade-size: 80px" uk-marquee>
     <div class="uk-marquee-items">
         <div class="uk-card uk-card-default uk-card-body uk-width-medium">Fade</div>
         <div class="uk-card uk-card-primary uk-card-body uk-width-medium">At the edges</div>
         <div class="uk-card uk-card-secondary uk-card-body uk-width-medium">For a softer look</div>
         <div class="uk-card uk-card-default uk-card-body uk-width-medium">On long content rows</div>
+    </div>
+</div>
+```
+
+***
+
+## Drag to scroll
+
+To let users drag the marquee with a pointer, set the `draggable` option to `true`. Dragging pauses the animation and moves the content with the pointer. When released, it eases back to its configured velocity. This works in both horizontal and vertical marquees.
+
+```html
+<div uk-marquee="draggable: true">...</div>
+```
+
+```example
+<div class="uk-marquee" uk-marquee="draggable: true">
+    <div class="uk-marquee-items">
+        <div class="uk-card uk-card-default uk-card-body uk-width-medium">Drag to scroll</div>
+        <div class="uk-card uk-card-primary uk-card-body uk-width-medium">Release to resume</div>
+        <div class="uk-card uk-card-secondary uk-card-body uk-width-medium">Follow the marquee</div>
+        <div class="uk-card uk-card-default uk-card-body uk-width-medium">With the pointer</div>
     </div>
 </div>
 ```
@@ -138,7 +160,7 @@ semicolon. [Learn more](javascript.md#component-configuration)
 | `start`          | Number  | `0`     | The animation start position from `0` to `100`.                                                        |
 | `pause`          | Boolean | `false` | Pause the marquee on hover.                                                                            |
 | `pause-velocity` | Number  | `10`    | The animation velocity while hovered. Set it to `0` to stop the marquee completely.                    |
-| `fade-size`      | Length  | `0`     | The fade size. The value can be set in `vh`, `%` and `px`, and it supports basic mathematics operands. |
+| `draggable`      | Boolean | `false` | Enable pointer dragging.                                                                               |
 
 ***
 

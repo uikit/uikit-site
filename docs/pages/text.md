@@ -222,6 +222,18 @@ Add one of these useful classes to wrap your text.
 
 ***
 
+### Balance text
+
+To balance text when it wraps into multiple lines, add the `.uk-text-balance` class.
+
+```example
+<div class="uk-width-large">
+    <h2 class="uk-heading-medium uk-text-balance">Lorem ipsum dolor sit amet, consectetur</h2>
+</div>
+```
+
+***
+
 ## Text stroke
 
 Add the `.uk-text-stroke` class to create an outlined heading.
