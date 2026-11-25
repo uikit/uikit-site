@@ -22,6 +22,14 @@ The [Accordion component](accordion.md) now uses a heading element containing an
 </h3>
 ```
 
+The [Height component](height.md#usage) renames its maximum height utility classes. Replace the following classes in your markup and custom CSS.
+
+| Class                   | Replace with            |
+| ----------------------- | ----------------------- |
+| `.uk-height-max-small`  | `.uk-max-height-small`  |
+| `.uk-height-max-medium` | `.uk-max-height-medium` |
+| `.uk-height-max-large`  | `.uk-max-height-large`  |
+
 Finally, UIkit 3.26 removes the `empty()`, `ready()` and `sortBy()` JavaScript utility functions. If you use them in custom JavaScript, update your code to no longer rely on them.
 
 ***
